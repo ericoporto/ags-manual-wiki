@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags31.md#Pointers)
-[![Next](forward.gif)](ags33.md#topic45)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags31#Pointers)
+[![Next](forward.gif)](ags33#topic45)
 
 ------------------------------------------------------------------------
 

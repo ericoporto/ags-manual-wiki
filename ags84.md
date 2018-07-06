@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags81.md#topic76)
-[![Previous](back.gif)](ags83.md#topic84)
-[![Next](forward.gif)](ags85.md#ASCIIcodes)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags81#topic76)
+[![Previous](back.gif)](ags83#topic84)
+[![Next](forward.gif)](ags85#ASCIIcodes)
 
 ------------------------------------------------------------------------
 

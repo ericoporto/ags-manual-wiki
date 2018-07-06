@@ -1,28 +1,28 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags57.md#topic54)
-[![Next](forward.gif)](ags59.md#topic55)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags57#topic54)
+[![Next](forward.gif)](ags59#topic55)
 
 ------------------------------------------------------------------------
 
 GUI InvWindow functions and properties
 --------------------------------------
 
-[BringToFront (inherited)](ags56.md#GUIControl.BringToFront)\
-[Clickable property (inherited)](ags56.md#GUIControl.Clickable)\
-[Enabled property (inherited)](ags56.md#GUIControl.Enabled)\
-[Height property (inherited)](ags56.md#GUIControl.Height)\
-[ID property (inherited)](ags56.md#GUIControl.ID)\
-[OwningGUI property (inherited)](ags56.md#GUIControl.OwningGUI)\
-[SendToBack (inherited)](ags56.md#GUIControl.SendToBack)\
-[SetPosition (inherited)](ags56.md#GUIControl.SetPosition)\
-[SetSize (inherited)](ags56.md#GUIControl.SetSize)\
-[Visible property (inherited)](ags56.md#GUIControl.Visible)\
-[Width property (inherited)](ags56.md#GUIControl.Width)\
-[X property (inherited)](ags56.md#GUIControl.X)\
-[Y property (inherited)](ags56.md#GUIControl.Y)\
-[ZOrder property (inherited)](ags56.md#GUIControl.ZOrder)
+[BringToFront (inherited)](ags56#GUIControl.BringToFront)\
+[Clickable property (inherited)](ags56#GUIControl.Clickable)\
+[Enabled property (inherited)](ags56#GUIControl.Enabled)\
+[Height property (inherited)](ags56#GUIControl.Height)\
+[ID property (inherited)](ags56#GUIControl.ID)\
+[OwningGUI property (inherited)](ags56#GUIControl.OwningGUI)\
+[SendToBack (inherited)](ags56#GUIControl.SendToBack)\
+[SetPosition (inherited)](ags56#GUIControl.SetPosition)\
+[SetSize (inherited)](ags56#GUIControl.SetSize)\
+[Visible property (inherited)](ags56#GUIControl.Visible)\
+[Width property (inherited)](ags56#GUIControl.Width)\
+[X property (inherited)](ags56#GUIControl.X)\
+[Y property (inherited)](ags56#GUIControl.Y)\
+[ZOrder property (inherited)](ags56#GUIControl.ZOrder)
 
 [ScrollDown (inv window)](#InvWindow.ScrollDown)\
 [ScrollUp (inv window)](#InvWindow.ScrollUp)\
@@ -56,8 +56,8 @@ Example:
 
 will scroll the *invMain* inv window down one row.
 
-*See Also:* [InvWindow.ScrollUp](ags58.md#InvWindow.ScrollUp),
-[InvWindow.TopItem](ags58.md#InvWindow.TopItem)
+*See Also:* [InvWindow.ScrollUp](ags58#InvWindow.ScrollUp),
+[InvWindow.TopItem](ags58#InvWindow.TopItem)
 
 ------------------------------------------------------------------------
 
@@ -80,8 +80,8 @@ Example:
 
 will scroll the *invMain* inv window up one row.
 
-*See Also:* [InvWindow.ScrollDown](ags58.md#InvWindow.ScrollDown),
-[InvWindow.TopItem](ags58.md#InvWindow.TopItem)
+*See Also:* [InvWindow.ScrollDown](ags58#InvWindow.ScrollDown),
+[InvWindow.TopItem](ags58#InvWindow.TopItem)
 
 ------------------------------------------------------------------------
 
@@ -113,7 +113,7 @@ inventory.
 
 Gets the inventory item that is currently displayed at the specified
 index in this inventory window. The number of items in the window can be
-retrieved with the [ItemCount](ags58.md#InvWindow.ItemCount) property.
+retrieved with the [ItemCount](ags58#InvWindow.ItemCount) property.
 Indexes range from 0 to ItemCount - 1.
 
 If an invalid index is supplied, *null* is returned.
@@ -126,7 +126,7 @@ Example:
 will display the name of the first item displayed in the *invMain*
 inventory window.
 
-*See Also:* [InvWindow.ItemCount](ags58.md#InvWindow.ItemCount)
+*See Also:* [InvWindow.ItemCount](ags58#InvWindow.ItemCount)
 
 ------------------------------------------------------------------------
 
@@ -153,9 +153,9 @@ Example:
 will enable the GUI buttons *btnInvUp* and *btnInvDown* if there are
 more inventory items than will fit in the inventory window.
 
-*See Also:* [InvWindow.ItemAtIndex](ags58.md#InvWindow.ItemAtIndex),
-[InvWindow.ItemsPerRow](ags58.md#InvWindow.ItemsPerRow),
-[InvWindow.RowCount](ags58.md#InvWindow.RowCount)
+*See Also:* [InvWindow.ItemAtIndex](ags58#InvWindow.ItemAtIndex),
+[InvWindow.ItemsPerRow](ags58#InvWindow.ItemsPerRow),
+[InvWindow.RowCount](ags58#InvWindow.RowCount)
 
 ------------------------------------------------------------------------
 
@@ -178,8 +178,8 @@ Example:
 
 sets the *invMain* inventory window to use item cells 50x30 large.
 
-*See Also:* [InvWindow.ItemWidth](ags58.md#InvWindow.ItemWidth),
-[InvWindow.RowCount](ags58.md#InvWindow.RowCount)
+*See Also:* [InvWindow.ItemWidth](ags58#InvWindow.ItemWidth),
+[InvWindow.RowCount](ags58#InvWindow.RowCount)
 
 ------------------------------------------------------------------------
 
@@ -202,8 +202,8 @@ Example:
 
 sets the *invMain* inventory window to use item cells 50x30 large.
 
-*See Also:* [InvWindow.ItemHeight](ags58.md#InvWindow.ItemHeight),
-[InvWindow.ItemsPerRow](ags58.md#InvWindow.ItemsPerRow)
+*See Also:* [InvWindow.ItemHeight](ags58#InvWindow.ItemHeight),
+[InvWindow.ItemsPerRow](ags58#InvWindow.ItemsPerRow)
 
 ------------------------------------------------------------------------
 
@@ -225,8 +225,8 @@ Example:
 
 displays how many items can be visible in the invMain window at once.
 
-*See Also:* [InvWindow.ItemWidth](ags58.md#InvWindow.ItemWidth),
-[InvWindow.RowCount](ags58.md#InvWindow.RowCount)
+*See Also:* [InvWindow.ItemWidth](ags58#InvWindow.ItemWidth),
+[InvWindow.RowCount](ags58#InvWindow.RowCount)
 
 ------------------------------------------------------------------------
 
@@ -246,8 +246,8 @@ Example:
 
 displays how many items can be visible in the invMain window at once.
 
-*See Also:* [InvWindow.ItemHeight](ags58.md#InvWindow.ItemHeight),
-[InvWindow.ItemsPerRow](ags58.md#InvWindow.ItemsPerRow)
+*See Also:* [InvWindow.ItemHeight](ags58#InvWindow.ItemHeight),
+[InvWindow.ItemsPerRow](ags58#InvWindow.ItemsPerRow)
 
 ------------------------------------------------------------------------
 
@@ -261,7 +261,7 @@ displays how many items can be visible in the invMain window at once.
 
 Gets/sets the index of the first item currently displayed in the
 inventory window. The first item is represented by 0, and the last item
-is has an index of [ItemCount](ags58.md#InvWindow.ItemCount) - 1.
+is has an index of [ItemCount](ags58#InvWindow.ItemCount) - 1.
 
 You can use this to work out whether to display scroll arrows or not.
 
@@ -277,6 +277,6 @@ Example:
 makes the *btnScrollUp* button visible or invisible depending on whether
 the inventory list can be scrolled up.
 
-*See Also:* [InvWindow.ItemCount](ags58.md#InvWindow.ItemCount)
+*See Also:* [InvWindow.ItemCount](ags58#InvWindow.ItemCount)
 
 

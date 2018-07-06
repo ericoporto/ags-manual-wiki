@@ -188,7 +188,7 @@ the screen, testing out the walkable and walk-behind areas.\
   ![](images/icon_info.gif){width="32" height="32"}   The normal way of exiting the game is to press Ctrl+Q. It's possible that during development of your game, you may create a script that causes the game to lock up - in this case, the emergency break key Alt+X will exit the game for you.
   --------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Go to part 3:** [Adding interaction](acintro3.md)
+**Go to part 3:** [Adding interaction](acintro3)
 
 Tutorial created 9 November 2002; updated 12 August 2007. Copyright (c)
 2001-2002 Chris Jones.

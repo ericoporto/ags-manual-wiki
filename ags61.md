@@ -1,28 +1,28 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags60.md#topic56)
-[![Next](forward.gif)](ags62.md#topic58)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags60#topic56)
+[![Next](forward.gif)](ags62#topic58)
 
 ------------------------------------------------------------------------
 
 GUI Slider properties
 ---------------------
 
-[BringToFront (inherited)](ags56.md#GUIControl.BringToFront)\
-[Clickable property (inherited)](ags56.md#GUIControl.Clickable)\
-[Enabled property (inherited)](ags56.md#GUIControl.Enabled)\
-[Height property (inherited)](ags56.md#GUIControl.Height)\
-[ID property (inherited)](ags56.md#GUIControl.ID)\
-[OwningGUI property (inherited)](ags56.md#GUIControl.OwningGUI)\
-[SendToBack (inherited)](ags56.md#GUIControl.SendToBack)\
-[SetPosition (inherited)](ags56.md#GUIControl.SetPosition)\
-[SetSize (inherited)](ags56.md#GUIControl.SetSize)\
-[Visible property (inherited)](ags56.md#GUIControl.Visible)\
-[Width property (inherited)](ags56.md#GUIControl.Width)\
-[X property (inherited)](ags56.md#GUIControl.X)\
-[Y property (inherited)](ags56.md#GUIControl.Y)\
-[ZOrder property (inherited)](ags56.md#GUIControl.ZOrder)
+[BringToFront (inherited)](ags56#GUIControl.BringToFront)\
+[Clickable property (inherited)](ags56#GUIControl.Clickable)\
+[Enabled property (inherited)](ags56#GUIControl.Enabled)\
+[Height property (inherited)](ags56#GUIControl.Height)\
+[ID property (inherited)](ags56#GUIControl.ID)\
+[OwningGUI property (inherited)](ags56#GUIControl.OwningGUI)\
+[SendToBack (inherited)](ags56#GUIControl.SendToBack)\
+[SetPosition (inherited)](ags56#GUIControl.SetPosition)\
+[SetSize (inherited)](ags56#GUIControl.SetSize)\
+[Visible property (inherited)](ags56#GUIControl.Visible)\
+[Width property (inherited)](ags56#GUIControl.Width)\
+[X property (inherited)](ags56#GUIControl.X)\
+[Y property (inherited)](ags56#GUIControl.Y)\
+[ZOrder property (inherited)](ags56#GUIControl.ZOrder)
 
 [BackgroundGraphic property (slider)](#Slider.BackgroundGraphic)\
 [HandleGraphic property](#Slider.HandleGraphic)\
@@ -53,7 +53,7 @@ displays the *sldHealth* slider's background image
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](ags61.md#Slider.HandleGraphic)
+*See Also:* [Slider.HandleGraphic](ags61#Slider.HandleGraphic)
 
 ------------------------------------------------------------------------
 
@@ -79,8 +79,8 @@ displays the *sldHealth* slider's handle image
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[Slider.BackgroundGraphic](ags61.md#Slider.BackgroundGraphic),
-[Slider.HandleOffset](ags61.md#Slider.HandleOffset)
+[Slider.BackgroundGraphic](ags61#Slider.BackgroundGraphic),
+[Slider.HandleOffset](ags61#Slider.HandleOffset)
 
 ------------------------------------------------------------------------
 
@@ -102,7 +102,7 @@ the right.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](ags61.md#Slider.HandleGraphic)
+*See Also:* [Slider.HandleGraphic](ags61#Slider.HandleGraphic)
 
 ------------------------------------------------------------------------
 
@@ -125,8 +125,8 @@ Example:
 
 sets the maximum value of the *sldHealth* slider to 200.
 
-*See Also:* [Slider.Min](ags61.md#Slider.Min),
-[Slider.Value](ags61.md#Slider.Value)
+*See Also:* [Slider.Min](ags61#Slider.Min),
+[Slider.Value](ags61#Slider.Value)
 
 ------------------------------------------------------------------------
 
@@ -150,8 +150,8 @@ Example:
 
 sets the minimum value of the *sldHealth* slider to 0.
 
-*See Also:* [Slider.Max](ags61.md#Slider.Max),
-[Slider.Value](ags61.md#Slider.Value)
+*See Also:* [Slider.Max](ags61#Slider.Max),
+[Slider.Value](ags61#Slider.Value)
 
 ------------------------------------------------------------------------
 
@@ -177,6 +177,6 @@ Example:
 
 will set the audio volume to the value of the slider *sldVolume*.
 
-*See Also:* [Label.Text](ags59.md#Label.Text)
+*See Also:* [Label.Text](ags59#Label.Text)
 
 

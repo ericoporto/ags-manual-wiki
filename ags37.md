@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags36.md#BlockingScripts)
-[![Next](forward.gif)](ags38.md#ExtenderFunctions)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags36#BlockingScripts)
+[![Next](forward.gif)](ags38#ExtenderFunctions)
 
 ------------------------------------------------------------------------
 

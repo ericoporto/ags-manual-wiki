@@ -86,7 +86,7 @@ the cells will be imported as a separate sprite.\
 
  
 
-**Go to part 7:**  [Animations](acintro7.md)
+**Go to part 7:**  [Animations](acintro7)
 
 Tutorial last updated 17 August 2007. Copyright (c) 2001-2007 Chris
 Jones.

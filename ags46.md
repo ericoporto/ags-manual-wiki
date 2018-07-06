@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags45.md#AudioChannelCommands)
-[![Next](forward.gif)](ags47.md#topic48)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags45#AudioChannelCommands)
+[![Next](forward.gif)](ags47#topic48)
 
 ------------------------------------------------------------------------
 
@@ -62,9 +62,9 @@ plays the *aExplosion* audio clip.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.PlayFrom](ags46.md#AudioClip.PlayFrom),
-[AudioClip.PlayQueued](ags46.md#AudioClip.PlayQueued),
-[AudioClip.Stop](ags46.md#AudioClip.Stop)
+*See Also:* [AudioClip.PlayFrom](ags46#AudioClip.PlayFrom),
+[AudioClip.PlayQueued](ags46#AudioClip.PlayQueued),
+[AudioClip.Stop](ags46#AudioClip.Stop)
 
 ------------------------------------------------------------------------
 
@@ -76,11 +76,11 @@ plays the *aExplosion* audio clip.
                                      optional RepeatStyle)
 
 Plays the audio clip, starting from *position*. For the meaning of the
-position, see the [AudioChannel.Seek](ags45.md#AudioChannel.Seek) help
+position, see the [AudioChannel.Seek](ags45#AudioChannel.Seek) help
 page.
 
 Otherwise, this command behaves identially to
-[AudioClip.Play](ags46.md#AudioClip.Play). Please see that help page
+[AudioClip.Play](ags46#AudioClip.Play). Please see that help page
 for more information.
 
 Example:
@@ -92,7 +92,7 @@ it is OGG/MP3).
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](ags46.md#AudioClip.Play)
+*See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ------------------------------------------------------------------------
 
@@ -108,7 +108,7 @@ Plays the audio clip, or queues it to be played later if it cannot be
 played now.
 
 This command behaves identially to
-[AudioClip.Play](ags46.md#AudioClip.Play), except that if there are no
+[AudioClip.Play](ags46#AudioClip.Play), except that if there are no
 available audio channels, it will queue this audio clip to be played
 when a channel becomes available.
 
@@ -130,7 +130,7 @@ be played afterwards.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](ags46.md#AudioClip.Play)
+*See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ------------------------------------------------------------------------
 
@@ -153,7 +153,7 @@ again.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](ags46.md#AudioClip.Play)
+*See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ------------------------------------------------------------------------
 
@@ -178,9 +178,9 @@ displays a message if aExplosion is a MIDI file
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Seek](ags45.md#AudioChannel.Seek),
-[AudioChannel.Position](ags45.md#AudioChannel.Position),
-[AudioClip.PlayFrom](ags46.md#AudioClip.PlayFrom)
+*See Also:* [AudioChannel.Seek](ags45#AudioChannel.Seek),
+[AudioChannel.Position](ags45#AudioChannel.Position),
+[AudioClip.PlayFrom](ags46#AudioClip.PlayFrom)
 
 ------------------------------------------------------------------------
 
@@ -212,7 +212,7 @@ checks if the aExplosion audio clip is available, and if so plays it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](ags46.md#AudioClip.Play)
+*See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ------------------------------------------------------------------------
 
@@ -238,5 +238,5 @@ displays a message if the *aExplosion* clip is music.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](ags46.md#AudioClip.Play),
-[Game.IsAudioPlaying](ags67.md#Game.IsAudioPlaying)
+*See Also:* [AudioClip.Play](ags46#AudioClip.Play),
+[Game.IsAudioPlaying](ags67#Game.IsAudioPlaying)

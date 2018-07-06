@@ -1,28 +1,28 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags61.md#topic57)
-[![Next](forward.gif)](ags63.md#topic59)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags61#topic57)
+[![Next](forward.gif)](ags63#topic59)
 
 ------------------------------------------------------------------------
 
 GUI Text Box functions and properties
 -------------------------------------
 
-[BringToFront (inherited)](ags56.md#GUIControl.BringToFront)\
-[Clickable property (inherited)](ags56.md#GUIControl.Clickable)\
-[Enabled property (inherited)](ags56.md#GUIControl.Enabled)\
-[Height property (inherited)](ags56.md#GUIControl.Height)\
-[ID property (inherited)](ags56.md#GUIControl.ID)\
-[OwningGUI property (inherited)](ags56.md#GUIControl.OwningGUI)\
-[SendToBack (inherited)](ags56.md#GUIControl.SendToBack)\
-[SetPosition (inherited)](ags56.md#GUIControl.SetPosition)\
-[SetSize (inherited)](ags56.md#GUIControl.SetSize)\
-[Visible property (inherited)](ags56.md#GUIControl.Visible)\
-[Width property (inherited)](ags56.md#GUIControl.Width)\
-[X property (inherited)](ags56.md#GUIControl.X)\
-[Y property (inherited)](ags56.md#GUIControl.Y)\
-[ZOrder property (inherited)](ags56.md#GUIControl.ZOrder)
+[BringToFront (inherited)](ags56#GUIControl.BringToFront)\
+[Clickable property (inherited)](ags56#GUIControl.Clickable)\
+[Enabled property (inherited)](ags56#GUIControl.Enabled)\
+[Height property (inherited)](ags56#GUIControl.Height)\
+[ID property (inherited)](ags56#GUIControl.ID)\
+[OwningGUI property (inherited)](ags56#GUIControl.OwningGUI)\
+[SendToBack (inherited)](ags56#GUIControl.SendToBack)\
+[SetPosition (inherited)](ags56#GUIControl.SetPosition)\
+[SetSize (inherited)](ags56#GUIControl.SetSize)\
+[Visible property (inherited)](ags56#GUIControl.Visible)\
+[Width property (inherited)](ags56#GUIControl.Width)\
+[X property (inherited)](ags56#GUIControl.X)\
+[Y property (inherited)](ags56#GUIControl.Y)\
+[ZOrder property (inherited)](ags56#GUIControl.ZOrder)
 
 [Font property (text box)](#TextBox.Font)\
 [Text property (text box)](#TextBox.Text)\
@@ -48,8 +48,8 @@ Example:
 
 will change the *txtUserInput* text box to use Font "Normal".
 
-*See Also:* [Label.Font](ags59.md#Label.Font),
-[TextBox.Text](ags62.md#TextBox.Text)
+*See Also:* [Label.Font](ags59#Label.Font),
+[TextBox.Text](ags62#TextBox.Text)
 
 ------------------------------------------------------------------------
 
@@ -74,9 +74,9 @@ Example:
 
 will clear the txtUserInput text box.
 
-*See Also:* [TextBox.Font](ags62.md#TextBox.Font),
-[String.CompareTo](ags76.md#String.CompareTo),
-[Label.Text](ags59.md#Label.Text)
+*See Also:* [TextBox.Font](ags62#TextBox.Font),
+[String.CompareTo](ags76#String.CompareTo),
+[Label.Text](ags59#Label.Text)
 
 ------------------------------------------------------------------------
 
@@ -97,6 +97,6 @@ will change text box 'txtInput' to have yellow text.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [TextBox.Text](ags62.md#TextBox.Text)
+*See Also:* [TextBox.Text](ags62#TextBox.Text)
 
 

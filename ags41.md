@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags40.md#TextScriptEvents)
-[![Next](forward.gif)](ags42.md#CustomDialogOptions)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags40#TextScriptEvents)
+[![Next](forward.gif)](ags42#CustomDialogOptions)
 
 ------------------------------------------------------------------------
 

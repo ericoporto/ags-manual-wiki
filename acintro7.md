@@ -185,7 +185,7 @@ return later to explore actual animations and more complex cutscenes.  
 
  
 
-**Go to part 8:**  [Conversations](acintro8.md)
+**Go to part 8:**  [Conversations](acintro8)
 
 Tutorial last updated 18 August 2007. Copyright (c) 2003-2007 Chris
 Jones.

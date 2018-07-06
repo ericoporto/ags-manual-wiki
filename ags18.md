@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags12.md#topic20)
-[![Previous](back.gif)](ags17.md#TextParser)
-[![Next](forward.gif)](ags19.md#GlobalVariables)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags12#topic20)
+[![Previous](back.gif)](ags17#TextParser)
+[![Next](forward.gif)](ags19#GlobalVariables)
 
 ------------------------------------------------------------------------
 
@@ -42,7 +42,7 @@ While most in-game text is translated automatically, there are a few
 instances when this is not possible. These are when a script uses
 functions like Append to build up a string, or CompareTo to check some
 user input. In these cases, you can use the
-[GetTranslation](ags54.md#GetTranslation) function to make it work.
+[GetTranslation](ags54#GetTranslation) function to make it work.
 
 You'll also have noticed a "Update" option when right-clicking a
 translation. This is useful if you've got a translated version of your

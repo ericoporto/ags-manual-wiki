@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags33.md#topic45)
-[![Next](forward.gif)](ags35.md#ScriptModules)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags33#topic45)
+[![Next](forward.gif)](ags35#ScriptModules)
 
 ------------------------------------------------------------------------
 
@@ -11,8 +11,8 @@ String formatting
 
 You will find many times in your game when you need to create a string
 based on the values of variables, and functions like
-[Display](ags78.md#Display) and
-[String.Format](ags76.md#String.Format) allow you to do so.
+[Display](ags78#Display) and
+[String.Format](ags76#String.Format) allow you to do so.
 
 AGS uses printf-style argument formatting (used by the C language). This
 means that you intersperse your text with special codes to insert a

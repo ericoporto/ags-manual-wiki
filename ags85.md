@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags81.md#topic76)
-[![Previous](back.gif)](ags84.md#KeyboardShortcuts)
-[![Next](forward.gif)](ags86.md#topic85)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags81#topic76)
+[![Previous](back.gif)](ags84#KeyboardShortcuts)
+[![Next](forward.gif)](ags86#topic85)
 
 ------------------------------------------------------------------------
 

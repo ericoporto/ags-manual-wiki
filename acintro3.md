@@ -151,7 +151,7 @@ tutorial.
 
  
 
-**Go to part 4:** [Objects and inventory](acintro4.md)
+**Go to part 4:** [Objects and inventory](acintro4)
 
 Tutorial created 21 November 2002; updated 12 August 2007. Copyright (c)
 2001-2002 Chris Jones.

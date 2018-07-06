@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags91.md#UpgradeTo32)
-[![Next](forward.gif)](ags93.md#UpgradeTo335)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags91#UpgradeTo32)
+[![Next](forward.gif)](ags93#UpgradeTo335)
 
 ------------------------------------------------------------------------
 
@@ -37,10 +37,10 @@ that may alter the appearance of your game. New projects will have
 "proper blending" mode set by default.
 
 To support alpha blending a new
-[HasAlphaChannel](ags50.md#DialogOptionsRenderingInfo.HasAlphaChannel)
+[HasAlphaChannel](ags50#DialogOptionsRenderingInfo.HasAlphaChannel)
 property has been added to DialogOptionsRenderingInfo class. This
 property must be set it in
-[dialog\_options\_get\_dimensions](ags42.md#CustomDialogOptions)
+[dialog\_options\_get\_dimensions](ags42#CustomDialogOptions)
 function, the one where you normally define size and position of the
 drawing surface.
 
@@ -52,21 +52,21 @@ The maximal number of Fonts has been increased from 15 to 30.
 
 There's now a new Speech script class that contains several
 speech-related properties. This renders a number of [global
-functions](ags54.md#GlobalCommands) obsolete, as well as some of the
-[game variables](ags39.md#Gamevariables). If you are using any of them
+functions](ags54#GlobalCommands) obsolete, as well as some of the
+[game variables](ags39#Gamevariables). If you are using any of them
 in your script you will likely get compilation errors. Simply replace
 them by the corresponding Speech properties, as shown in the table
 below:
 
   -------------------------------------- ----------------------------------------------------------------------------------
   **obsolete function/variable**         **replace with**
-  SetVoiceMode                           [Speech.VoiceMode](ags75.md#Speech.VoiceMode)
-  SetSkipSpeech                          [Speech.SkipStyle](ags75.md#Speech.SkipStyle)
-  SetSpeechStyle                         [Speech.Style](ags75.md#Speech.Style)
-  game.close\_mouth\_end\_speech\_time   [Speech.AnimationStopTimeMargin](ags75.md#Speech.AnimationStopTimeMargin)
-  game.speech\_text\_align               [Speech.TextAlignment](ags75.md#Speech.TextAlignment)
-  game.skip\_speech\_specific\_key       [Speech.SkipKey](ags75.md#Speech.SkipKey)
-  game.talkanim\_speed                   [Speech.GlobalSpeechAnimationDelay](ags75.md#Speech.GlobalSpeechAnimationDelay)
+  SetVoiceMode                           [Speech.VoiceMode](ags75#Speech.VoiceMode)
+  SetSkipSpeech                          [Speech.SkipStyle](ags75#Speech.SkipStyle)
+  SetSpeechStyle                         [Speech.Style](ags75#Speech.Style)
+  game.close\_mouth\_end\_speech\_time   [Speech.AnimationStopTimeMargin](ags75#Speech.AnimationStopTimeMargin)
+  game.speech\_text\_align               [Speech.TextAlignment](ags75#Speech.TextAlignment)
+  game.skip\_speech\_specific\_key       [Speech.SkipKey](ags75#Speech.SkipKey)
+  game.talkanim\_speed                   [Speech.GlobalSpeechAnimationDelay](ags75#Speech.GlobalSpeechAnimationDelay)
   -------------------------------------- ----------------------------------------------------------------------------------
 
 **Game-wide speech animation delay**

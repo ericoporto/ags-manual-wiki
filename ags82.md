@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags81.md#topic76)
-[![Previous](back.gif)](ags81.md#topic76)
-[![Next](forward.gif)](ags83.md#topic84)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags81#topic76)
+[![Previous](back.gif)](ags81#topic76)
+[![Next](forward.gif)](ags83#topic84)
 
 ------------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ Use inventory on hotspot
 
 occurs when the player clicks on the hotspot while in the "Use
 inventory" mode (cursor mode 4). You can use the
-[player.ActiveInventory](ags47.md#Character.ActiveInventory) property
+[player.ActiveInventory](ags47#Character.ActiveInventory) property
 to distinguish which item they used.\
 
 Speak to hotspot
@@ -173,7 +173,7 @@ Use inventory on inv
 
 occurs when the player uses another inventory object on this one. You
 can use the
-[player.ActiveInventory](ags47.md#Character.ActiveInventory) property
+[player.ActiveInventory](ags47#Character.ActiveInventory) property
 to distinguish which item they used.\
 This event allows the player to combine items, and so on. For example,
 if they had picked up a laptop computer and a battery separately, then

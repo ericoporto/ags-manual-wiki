@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags4.md#topic3)
-[![Previous](back.gif)](ags5.md#topic4)
-[![Next](forward.gif)](ags7.md#Setup)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags4#topic3)
+[![Previous](back.gif)](ags5#topic4)
+[![Next](forward.gif)](ags7#Setup)
 
 ------------------------------------------------------------------------
 
@@ -53,4 +53,4 @@ indicates that your graphics card is too old to run with the Direct3D
 driver. You should try one of the other two drivers instead.
 
 See Also: [System.HardwareAcceleration
-property](ags77.md#System.HardwareAcceleration)
+property](ags77#System.HardwareAcceleration)

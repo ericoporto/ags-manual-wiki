@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags47.md#topic48)
-[![Next](forward.gif)](ags49.md#topic50)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags47#topic48)
+[![Next](forward.gif)](ags49#topic50)
 
 ------------------------------------------------------------------------
 
@@ -46,13 +46,13 @@ Example:
 
 will display the current date and time in 24-hour format
 
-*See Also:* [DateTime.DayOfMonth](ags48.md#DateTime.DayOfMonth),
-[DateTime.Hour](ags48.md#DateTime.Hour),
-[DateTime.Minute](ags48.md#DateTime.Minute),
-[DateTime.Month](ags48.md#DateTime.Month),
-[DateTime.RawTime](ags48.md#DateTime.RawTime),
-[DateTime.Second](ags48.md#DateTime.Second),
-[DateTime.Year](ags48.md#DateTime.Year)
+*See Also:* [DateTime.DayOfMonth](ags48#DateTime.DayOfMonth),
+[DateTime.Hour](ags48#DateTime.Hour),
+[DateTime.Minute](ags48#DateTime.Minute),
+[DateTime.Month](ags48#DateTime.Month),
+[DateTime.RawTime](ags48#DateTime.RawTime),
+[DateTime.Second](ags48#DateTime.Second),
+[DateTime.Year](ags48#DateTime.Year)
 
 ------------------------------------------------------------------------
 
@@ -65,9 +65,9 @@ will display the current date and time in 24-hour format
 Gets the day of the month represented by the DateTime object. This will
 be from 1 to 31, representing the current day within the month.
 
-Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
+Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
-*See Also:* [DateTime.Now](ags48.md#DateTime.Now)
+*See Also:* [DateTime.Now](ags48#DateTime.Now)
 
 ------------------------------------------------------------------------
 
@@ -80,9 +80,9 @@ Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
 Gets the hour represented by the DateTime object. This will be from 0 to
 23, representing the hour in 24-hour format.
 
-Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
+Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
-*See Also:* [DateTime.Now](ags48.md#DateTime.Now)
+*See Also:* [DateTime.Now](ags48#DateTime.Now)
 
 ------------------------------------------------------------------------
 
@@ -95,9 +95,9 @@ Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
 Gets the minute represented by the DateTime object. This will be from 0
 to 59, representing the minute in 24-hour format.
 
-Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
+Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
-*See Also:* [DateTime.Now](ags48.md#DateTime.Now)
+*See Also:* [DateTime.Now](ags48#DateTime.Now)
 
 ------------------------------------------------------------------------
 
@@ -110,9 +110,9 @@ Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
 Gets the month represented by the DateTime object. This will be from 1
 to 12, representing the month of the year.
 
-Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
+Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
-*See Also:* [DateTime.Now](ags48.md#DateTime.Now)
+*See Also:* [DateTime.Now](ags48#DateTime.Now)
 
 ------------------------------------------------------------------------
 
@@ -146,8 +146,8 @@ Example:
 
 should display that 3 seconds have elapsed.
 
-*See Also:* [DateTime.Now](ags48.md#DateTime.Now),
-[SetTimer](ags54.md#SetTimer)
+*See Also:* [DateTime.Now](ags48#DateTime.Now),
+[SetTimer](ags54#SetTimer)
 
 ------------------------------------------------------------------------
 
@@ -160,9 +160,9 @@ should display that 3 seconds have elapsed.
 Gets the second represented by the DateTime object. This will be from 0
 to 59, representing the second.
 
-Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
+Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
-*See Also:* [DateTime.Now](ags48.md#DateTime.Now)
+*See Also:* [DateTime.Now](ags48#DateTime.Now)
 
 ------------------------------------------------------------------------
 
@@ -175,6 +175,6 @@ Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
 Gets the year represented by the DateTime object. This is the full year,
 for example *2005*.
 
-Example: For an example, see [DateTime.Now](ags48.md#DateTime.Now).
+Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
-*See Also:* [DateTime.Now](ags48.md#DateTime.Now)
+*See Also:* [DateTime.Now](ags48#DateTime.Now)

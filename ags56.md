@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags55.md#GUIFuncsAndProps)
-[![Next](forward.gif)](ags57.md#topic54)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags55#GUIFuncsAndProps)
+[![Next](forward.gif)](ags57#topic54)
 
 ------------------------------------------------------------------------
 
@@ -60,7 +60,7 @@ Example:
 
 will display what control the mouse is over.
 
-*See Also:* [GUI.GetAtScreenXY](ags55.md#GUI.GetAtScreenXY)
+*See Also:* [GUI.GetAtScreenXY](ags55#GUI.GetAtScreenXY)
 
 ------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ Example:
 attempts to set Button 2 on GUI ICONBAR to have NormalGraphic 44, but if
 that control is not a button, prints a message.
 
-*See Also:* [GUI.Controls](ags55.md#GUI.Controls)
+*See Also:* [GUI.Controls](ags55#GUI.Controls)
 
 ------------------------------------------------------------------------
 
@@ -116,8 +116,8 @@ Example:
 will move the *btnBigButton* button to be in front of all other controls
 on the GUI.
 
-*See Also:* [GUIControl.SendToBack](ags56.md#GUIControl.SendToBack),
-[GUIControl.ZOrder](ags56.md#GUIControl.ZOrder)
+*See Also:* [GUIControl.SendToBack](ags56#GUIControl.SendToBack),
+[GUIControl.ZOrder](ags56#GUIControl.ZOrder)
 
 ------------------------------------------------------------------------
 
@@ -154,7 +154,7 @@ Example:
 
 will make the *btnSaveGame* button non-clickable.
 
-*See Also:* [GUIControl.Enabled](ags56.md#GUIControl.Enabled)
+*See Also:* [GUIControl.Enabled](ags56#GUIControl.Enabled)
 
 ------------------------------------------------------------------------
 
@@ -194,8 +194,8 @@ Example:
 
 will disable the *btnSaveGame* button.
 
-*See Also:* [GUIControl.Clickable](ags56.md#GUIControl.Clickable),
-[GUIControl.Visible](ags56.md#GUIControl.Visible)
+*See Also:* [GUIControl.Clickable](ags56#GUIControl.Clickable),
+[GUIControl.Visible](ags56#GUIControl.Visible)
 
 ------------------------------------------------------------------------
 
@@ -218,8 +218,8 @@ Example:
 
 makes the *btnConfirm* button 20 pixels high.
 
-*See Also:* [GUIControl.SetSize](ags56.md#GUIControl.SetSize),
-[GUIControl.Width](ags56.md#GUIControl.Width)
+*See Also:* [GUIControl.SetSize](ags56#GUIControl.SetSize),
+[GUIControl.Width](ags56#GUIControl.Width)
 
 ------------------------------------------------------------------------
 
@@ -245,8 +245,8 @@ Example:
 uses the obsolete SetGUIObjectEnabled function to enable the lstSaves
 list box, and then uses the equivalent modern property to disable it.
 
-*See Also:* [GUIControl.OwningGUI](ags56.md#GUIControl.OwningGUI),
-[GUI.ID](ags55.md#GUI.ID)
+*See Also:* [GUIControl.OwningGUI](ags56#GUIControl.OwningGUI),
+[GUI.ID](ags55#GUI.ID)
 
 ------------------------------------------------------------------------
 
@@ -260,7 +260,7 @@ Gets the GUI control's owning GUI, which is the GUI that contains the
 control.
 
 Returns a GUI, which allows you to use all the usual [GUI functions and
-properties](ags55.md#GUIFuncsAndProps).
+properties](ags55#GUIFuncsAndProps).
 
 **Applies To**
 
@@ -276,8 +276,8 @@ Example:
 turns off the GUI that contains the lstSaves list box, then turns it on
 again using the niftier full pathing approach.
 
-*See Also:* [GUIControl.ID](ags56.md#GUIControl.ID),
-[GUI.ID](ags55.md#GUI.ID)
+*See Also:* [GUIControl.ID](ags56#GUIControl.ID),
+[GUI.ID](ags55#GUI.ID)
 
 ------------------------------------------------------------------------
 
@@ -302,8 +302,8 @@ will move the *btnBigButton* button to be behind all other controls on
 the GUI.
 
 *See Also:*
-[GUIControl.BringToFront](ags56.md#GUIControl.BringToFront),
-[GUIControl.ZOrder](ags56.md#GUIControl.ZOrder)
+[GUIControl.BringToFront](ags56#GUIControl.BringToFront),
+[GUIControl.ZOrder](ags56#GUIControl.ZOrder)
 
 ------------------------------------------------------------------------
 
@@ -333,11 +333,11 @@ Example:
 will move the *btnConfirm* button to be positioned at (40,10) within the
 GUI.
 
-*See Also:* [GUIControl.Enabled](ags56.md#GUIControl.Enabled),
-[GUI.SetPosition](ags55.md#GUI.SetPosition),
-[GUIControl.SetSize](ags56.md#GUIControl.SetSize),
-[GUIControl.X](ags56.md#GUIControl.X),
-[GUIControl.Y](ags56.md#GUIControl.Y)
+*See Also:* [GUIControl.Enabled](ags56#GUIControl.Enabled),
+[GUI.SetPosition](ags55#GUI.SetPosition),
+[GUIControl.SetSize](ags56#GUIControl.SetSize),
+[GUIControl.X](ags56#GUIControl.X),
+[GUIControl.Y](ags56#GUIControl.Y)
 
 ------------------------------------------------------------------------
 
@@ -366,10 +366,10 @@ Example:
 
 will resize the *invMain* control to have a size of 160 x 100.
 
-*See Also:* [GUIControl.Height](ags56.md#GUIControl.Height),
-[GUIControl.SetPosition](ags56.md#GUIControl.SetPosition),
-[GUI.SetSize](ags55.md#GUI.SetSize),
-[GUIControl.Width](ags56.md#GUIControl.Width),
+*See Also:* [GUIControl.Height](ags56#GUIControl.Height),
+[GUIControl.SetPosition](ags56#GUIControl.SetPosition),
+[GUI.SetSize](ags55#GUI.SetSize),
+[GUIControl.Width](ags56#GUIControl.Width),
 
 ------------------------------------------------------------------------
 
@@ -396,7 +396,7 @@ Example:
 
 will make the *btnSaveGame* button invisible.
 
-*See Also:* [GUIControl.Enabled](ags56.md#GUIControl.Enabled)
+*See Also:* [GUIControl.Enabled](ags56#GUIControl.Enabled)
 
 ------------------------------------------------------------------------
 
@@ -419,8 +419,8 @@ Example:
 
 makes the *btnConfirm* button 110 pixels wide.
 
-*See Also:* [GUIControl.Height](ags56.md#GUIControl.Height),
-[GUIControl.SetSize](ags56.md#GUIControl.SetSize)
+*See Also:* [GUIControl.Height](ags56#GUIControl.Height),
+[GUIControl.SetSize](ags56#GUIControl.SetSize)
 
 ------------------------------------------------------------------------
 
@@ -447,8 +447,8 @@ Example:
 will move the *btnConfirm* button to be positioned 10 pixels from the
 left of its GUI.
 
-*See Also:* [GUIControl.SetPosition](ags56.md#GUIControl.SetPosition),
-[GUIControl.Y](ags56.md#GUIControl.Y)
+*See Also:* [GUIControl.SetPosition](ags56#GUIControl.SetPosition),
+[GUIControl.Y](ags56#GUIControl.Y)
 
 ------------------------------------------------------------------------
 
@@ -475,8 +475,8 @@ Example:
 will move the *btnConfirm* button to be positioned 20 pixels from the
 top of its GUI.
 
-*See Also:* [GUIControl.SetPosition](ags56.md#GUIControl.SetPosition),
-[GUIControl.X](ags56.md#GUIControl.X)
+*See Also:* [GUIControl.SetPosition](ags56#GUIControl.SetPosition),
+[GUIControl.X](ags56#GUIControl.X)
 
 ------------------------------------------------------------------------
 
@@ -511,7 +511,7 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[GUIControl.BringToFront](ags56.md#GUIControl.BringToFront),
-[GUIControl.SendToBack](ags56.md#GUIControl.SendToBack)
+[GUIControl.BringToFront](ags56#GUIControl.BringToFront),
+[GUIControl.SendToBack](ags56#GUIControl.SendToBack)
 
 

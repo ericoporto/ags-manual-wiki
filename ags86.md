@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags85.md#ASCIIcodes)
-[![Next](forward.gif)](ags87.md#UpgradingTo27)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags85#ASCIIcodes)
+[![Next](forward.gif)](ags87#UpgradingTo27)
 
 ------------------------------------------------------------------------
 

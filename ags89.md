@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags88.md#UpgradingTo271)
-[![Next](forward.gif)](ags90.md#UpgradeTo31)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags88#UpgradingTo271)
+[![Next](forward.gif)](ags90#UpgradeTo31)
 
 ------------------------------------------------------------------------
 
@@ -15,7 +15,7 @@ used to it I'm sure you'll agree that it's a massive improvement over
 the old one.
 
 The best place to start is probably to flick through [the
-tutorial](ags9.md#StartingOff), which has been updated for AGS 3 and by
+tutorial](ags9#StartingOff), which has been updated for AGS 3 and by
 following it through you should get a good feeling for how the editor
 works.
 
@@ -64,7 +64,7 @@ equivalent of the old "Quick Save" option -- it will save your changes,
 but not compile the EXE file.
 
 The "Test game" option has become "Run" on the Build menu. This runs
-your game with the new [Script Debugger](ags24.md#Debuggingfeatures),
+your game with the new [Script Debugger](ags24#Debuggingfeatures),
 which allows you to pause and step through the script in order to track
 down problems.
 
@@ -91,20 +91,20 @@ since you can no longer just do "RawDrawImage" to draw something onto
 the room background.
 
 Instead, there is a new
-[DrawingSurface](ags51.md#DrawingSurfaceFunctions) object which you do
+[DrawingSurface](ags51#DrawingSurfaceFunctions) object which you do
 the drawing onto. You get one of these by calling
-[DynamicSprite.GetDrawingSurface](ags52.md#DynamicSprite.GetDrawingSurface)
+[DynamicSprite.GetDrawingSurface](ags52#DynamicSprite.GetDrawingSurface)
 or
-[Room.GetDrawingSurfaceForBackground](ags73.md#Room.GetDrawingSurfaceForBackground),
+[Room.GetDrawingSurfaceForBackground](ags73#Room.GetDrawingSurfaceForBackground),
 depending on what you want to draw onto; and you can then use the
 various drawing surface methods to do your drawing.
 
-You must call [Release](ags51.md#DrawingSurface.Release) on the surface
+You must call [Release](ags51#DrawingSurface.Release) on the surface
 once you have finished drawing onto it, which tells AGS to update the
 data in memory.
 
 For examples, see the
-[DrawingSurface](ags51.md#DrawingSurfaceFunctions) function help pages.
+[DrawingSurface](ags51#DrawingSurfaceFunctions) function help pages.
 
 **Other script changes**
 

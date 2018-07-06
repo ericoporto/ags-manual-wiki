@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags77.md#topic72)
-[![Next](forward.gif)](ags79.md#topic74)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags77#topic72)
+[![Next](forward.gif)](ags79#topic74)
 
 ------------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ Displays a message to the screen. It will be displayed in the standard
 message box, and centred in the middle of the screen.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](ags34.md#StringFormats)
+information, see the [string formatting](ags34#StringFormats)
 section.
 
 Example:
@@ -44,11 +44,11 @@ a key or clicking the mouse). While the window is displayed, all other
 processing, like animations and interface display, are disabled. This is
 usually used for responses to the player LOOKing at things.
 
-*See Also:* [DisplayAt](ags78.md#DisplayAt),
-[DisplayMessage](ags78.md#DisplayMessage),
-[Character.Say](ags47.md#Character.Say),
-[DisplayTopBar](ags78.md#DisplayTopBar),
-[String.Format](ags76.md#String.Format)
+*See Also:* [DisplayAt](ags78#DisplayAt),
+[DisplayMessage](ags78#DisplayMessage),
+[Character.Say](ags47#Character.Say),
+[DisplayTopBar](ags78#DisplayTopBar),
+[String.Format](ags76#String.Format)
 
 ------------------------------------------------------------------------
 
@@ -68,7 +68,7 @@ is then automatically calculated so that the message fits into the
 window.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](ags34.md#StringFormats)
+information, see the [string formatting](ags34#StringFormats)
 section.
 
 Note: This is a blocking call. See the "Display" help for more
@@ -80,8 +80,8 @@ Example:
 
 will display the message at coordinates 50,50 in a box 100 pixels wide.
 
-*See Also:* [Display](ags78.md#Display),
-[DisplayAtY](ags78.md#DisplayAtY)
+*See Also:* [Display](ags78#Display),
+[DisplayAtY](ags78#DisplayAtY)
 
 ------------------------------------------------------------------------
 
@@ -102,8 +102,8 @@ Example:
 
 will display the message at y coordinate 50.
 
-*See Also:* [Display](ags78.md#Display),
-[DisplayAt](ags78.md#DisplayAt)
+*See Also:* [Display](ags78#Display),
+[DisplayAt](ags78#DisplayAt)
 
 ------------------------------------------------------------------------
 
@@ -124,8 +124,8 @@ Example:
 
 will display the message 220 of the Room message editor.
 
-*See Also:* [Display](ags78.md#Display),
-[DisplayMessageAtY](ags78.md#DisplayMessageAtY)
+*See Also:* [Display](ags78#Display),
+[DisplayMessageAtY](ags78#DisplayMessageAtY)
 
 ------------------------------------------------------------------------
 
@@ -148,8 +148,8 @@ Example:
 
 will display global message 527, in the lower half of the screen.
 
-*See Also:* [DisplayAtY](ags78.md#DisplayAtY),
-[DisplayMessage](ags78.md#DisplayMessage)
+*See Also:* [DisplayAtY](ags78#DisplayAtY),
+[DisplayMessage](ags78#DisplayMessage)
 
 ------------------------------------------------------------------------
 
@@ -168,7 +168,7 @@ was talking by having their name in the caption, and can be handy if you
 don't want to draw a talking view for a character.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](ags34.md#StringFormats)
+information, see the [string formatting](ags34#StringFormats)
 section.
 
 The Y parameter specifies the Y location on the screen where the message
@@ -200,5 +200,5 @@ will display "Get out of my house and never return!" in the message box,
 with the caption bar reading "Evil wizard". The message box will have
 dark grey text on a light gray background.
 
-*See Also:* [Display](ags78.md#Display),
-[DisplayAt](ags78.md#DisplayAt)
+*See Also:* [Display](ags78#Display),
+[DisplayAt](ags78#DisplayAt)

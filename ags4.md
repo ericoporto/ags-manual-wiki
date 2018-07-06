@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags3.md#topic2)
-[![Next](forward.gif)](ags5.md#topic4)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags3#topic2)
+[![Next](forward.gif)](ags5#topic4)
 
 ------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ position using F5 and restore with F7.
 The controls described above work with the default setup; however, you
 can customize your game to use a different interface and shortcut keys.
 
-[**The demo game**](ags5.md#topic4)\
-[**Graphics driver selection**](ags6.md#GraphicsDriver)\
-[**Run-time engine setup**](ags7.md#Setup)\
+[**The demo game**](ags5#topic4)\
+[**Graphics driver selection**](ags6#GraphicsDriver)\
+[**Run-time engine setup**](ags7#Setup)\
 

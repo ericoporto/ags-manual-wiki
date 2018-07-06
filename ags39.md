@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags38.md#ExtenderFunctions)
-[![Next](forward.gif)](ags40.md#TextScriptEvents)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags38#ExtenderFunctions)
+[![Next](forward.gif)](ags40#TextScriptEvents)
 
 ------------------------------------------------------------------------
 
@@ -62,7 +62,7 @@ All the following variables are `int` variables.
 
   game.read\_dialog\_option\_color                 By default, -1. You can set this to a colour number, in which case dialog options that the player has selected before will be displayed in this colour.
 
-  game.roomscript\_finished                        The on\_call function has completed executing. (See [CallRoomScript](ags54.md#CallRoomScript))
+  game.roomscript\_finished                        The on\_call function has completed executing. (See [CallRoomScript](ags54#CallRoomScript))
 
   **game.score**                                   The player's score. To modify the score, use the GiveScore script function.
 
@@ -94,7 +94,7 @@ All the following variables are `int` variables.
 
   game.text\_shadow\_color                         Color used for speech text shadow (default 16).
 
-  game.top\_bar\_XXXX                              Customizations for [DisplayTopBar](ags78.md#DisplayTopBar), see link for details
+  game.top\_bar\_XXXX                              Customizations for [DisplayTopBar](ags78#DisplayTopBar), see link for details
 
   game.total\_score                                Maximum possible score, initially set in the editor.
 

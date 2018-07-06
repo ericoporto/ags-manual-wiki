@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags44.md#topic46)
-[![Next](forward.gif)](ags46.md#AudioClipCommands)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags44#topic46)
+[![Next](forward.gif)](ags46#AudioClipCommands)
 
 ------------------------------------------------------------------------
 
@@ -60,7 +60,7 @@ seek it back to the start.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Position](ags45.md#AudioChannel.Position)
+*See Also:* [AudioChannel.Position](ags45#AudioChannel.Position)
 
 ------------------------------------------------------------------------
 
@@ -96,7 +96,7 @@ of the *oMachine* room object.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](ags45.md#AudioChannel.Volume)
+*See Also:* [AudioChannel.Volume](ags45#AudioChannel.Volume)
 
 ------------------------------------------------------------------------
 
@@ -145,7 +145,7 @@ stop it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](ags67.md#Game.StopAudio)
+*See Also:* [Game.StopAudio](ags67#Game.StopAudio)
 
 ------------------------------------------------------------------------
 
@@ -193,7 +193,7 @@ finishes.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](ags46.md#AudioClip.Play)
+*See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ------------------------------------------------------------------------
 
@@ -219,7 +219,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.PositionMs](ags45.md#AudioChannel.PositionMs)
+*See Also:* [AudioChannel.PositionMs](ags45#AudioChannel.PositionMs)
 
 ------------------------------------------------------------------------
 
@@ -247,7 +247,7 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](ags46.md#AudioClip.Play)
+*See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ------------------------------------------------------------------------
 
@@ -280,8 +280,8 @@ will display what is currently playing on audio channel 2.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](ags46.md#AudioClip.Play),
-[System.AudioChannels](ags77.md#System.AudioChannels)
+*See Also:* [AudioClip.Play](ags46#AudioClip.Play),
+[System.AudioChannels](ags77#System.AudioChannels)
 
 ------------------------------------------------------------------------
 
@@ -307,7 +307,7 @@ What *position* represents depends on the FileType of the audio clip:
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](ags45.md#AudioChannel.Seek) function.
+[AudioChannel.Seek](ags45#AudioChannel.Seek) function.
 
 Example:
 
@@ -321,8 +321,8 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.PositionMs](ags45.md#AudioChannel.PositionMs),
-[AudioChannel.Seek](ags45.md#AudioChannel.Seek)
+[AudioChannel.PositionMs](ags45#AudioChannel.PositionMs),
+[AudioChannel.Seek](ags45#AudioChannel.Seek)
 
 ------------------------------------------------------------------------
 
@@ -340,7 +340,7 @@ offset into the sound in milliseconds. MIDI files will always return 0.
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](ags45.md#AudioChannel.Seek) function.
+[AudioChannel.Seek](ags45#AudioChannel.Seek) function.
 
 Example:
 
@@ -354,8 +354,8 @@ display its position.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:* *See Also:*
-[AudioChannel.LengthMs](ags45.md#AudioChannel.LengthMs),
-[AudioChannel.Position](ags45.md#AudioChannel.Position)
+[AudioChannel.LengthMs](ags45#AudioChannel.LengthMs),
+[AudioChannel.Position](ags45#AudioChannel.Position)
 
 ------------------------------------------------------------------------
 
@@ -396,6 +396,6 @@ reduce its volume.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.SetRoomLocation](ags45.md#AudioChannel.SetRoomLocation),
-[Game.SetAudioTypeVolume](ags67.md#Game.SetAudioTypeVolume),
-[System.Volume](ags77.md#System.Volume)
+[AudioChannel.SetRoomLocation](ags45#AudioChannel.SetRoomLocation),
+[Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume),
+[System.Volume](ags77#System.Volume)

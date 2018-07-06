@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags69.md#topic65)
-[![Next](forward.gif)](ags71.md#topic67)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags69#topic65)
+[![Next](forward.gif)](ags71#topic67)
 
 ------------------------------------------------------------------------
 
@@ -39,8 +39,8 @@ Example:
 will cause the palette indexes from 10 to 200 cycle around one slot and
 give a color effect.
 
-*See Also:* [FadeIn](ags74.md#FadeIn), [FadeOut](ags74.md#FadeOut),
-[SetPalRGB](ags70.md#SetPalRGB)
+*See Also:* [FadeIn](ags74#FadeIn), [FadeOut](ags74#FadeOut),
+[SetPalRGB](ags70#SetPalRGB)
 
 ------------------------------------------------------------------------
 
@@ -70,9 +70,9 @@ Example:
 
 will change palette slot number 10 from light green to yellow
 
-*See Also:* [CyclePalette](ags70.md#CyclePalette),
-[FadeIn](ags74.md#FadeIn), [FadeOut](ags74.md#FadeOut),
-[UpdatePalette](ags70.md#UpdatePalette)
+*See Also:* [CyclePalette](ags70#CyclePalette),
+[FadeIn](ags74#FadeIn), [FadeOut](ags74#FadeOut),
+[UpdatePalette](ags70#UpdatePalette)
 
 ------------------------------------------------------------------------
 
@@ -95,4 +95,4 @@ Example:
 will make the black colour turn bright red. When you actually change the
 variable, nothing happens. Call this function to update the screen.
 
-*See Also:* [SetPalRGB](ags70.md#SetPalRGB)
+*See Also:* [SetPalRGB](ags70#SetPalRGB)

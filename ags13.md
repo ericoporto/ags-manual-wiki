@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags12.md#topic20)
-[![Previous](back.gif)](ags12.md#topic20)
-[![Next](forward.gif)](ags14.md#topic21)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags12#topic20)
+[![Previous](back.gif)](ags12#topic20)
+[![Next](forward.gif)](ags14#topic21)
 
 ------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ sub-nodes called "Speech", "Types" and two default folders called
 **Speech**
 
 At the moment, voice speech files are not setup within the editor. See
-the [Speech](ags13.md#VoiceSpeech) help page to find out more about
+the [Speech](ags13#VoiceSpeech) help page to find out more about
 adding speech to your game.
 
 **Audio Types**
@@ -151,7 +151,7 @@ been started yet).
 
 **Overall system volume**
 
-There is a property called [System.Volume](ags77.md#System.Volume) that
+There is a property called [System.Volume](ags77#System.Volume) that
 controls the overall game volume, which you can use with some sort of
 volume control slider for the player. All individual sound volumes work
 within the overall system volume.
@@ -162,8 +162,8 @@ The new audio system in AGS gives you much more control over your game
 audio. Please see the following sections for a complete list of the
 supported commands:
 
-[AudioClip reference](ags46.md#AudioClipCommands), [AudioChannel
-reference](ags45.md#AudioChannelCommands)
+[AudioClip reference](ags46#AudioClipCommands), [AudioChannel
+reference](ags45#AudioChannelCommands)
 
 [Voice speech](#VoiceSpeech)\
 [The AudioCache folder](#AudioCache)\
@@ -218,7 +218,7 @@ the rest of your game data so that you can offer it as an optional extra
 download to the player. The game will function correctly if the file is
 not present.
 
-*SeeAlso:* [Speech.VoiceMode](ags75.md#Speech.VoiceMode)
+*SeeAlso:* [Speech.VoiceMode](ags75#Speech.VoiceMode)
 
 ------------------------------------------------------------------------
 

@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags46.md#AudioClipCommands)
-[![Next](forward.gif)](ags48.md#topic49)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags46#AudioClipCommands)
+[![Next](forward.gif)](ags48#topic49)
 
 ------------------------------------------------------------------------
 
@@ -142,9 +142,9 @@ Example:
 
 will give inventory item iKey to character EGO.
 
-*See Also:* [Character.HasInventory](ags47.md#Character.HasInventory),
-[Character.LoseInventory](ags47.md#Character.LoseInventory),
-[UpdateInventory](ags54.md#UpdateInventory)
+*See Also:* [Character.HasInventory](ags47#Character.HasInventory),
+[Character.LoseInventory](ags47#Character.LoseInventory),
+[UpdateInventory](ags54#UpdateInventory)
 
 ------------------------------------------------------------------------
 
@@ -176,8 +176,8 @@ tells character SOMEGUY to first of all walk to the centre of the screen
 normally (obeying walkable areas), then move to the bottom left corner
 and then top left corner afterwards.
 
-*See Also:* [Character.Move](ags47.md#Character.Move)
-[Character.Walk](ags47.md#Character.Walk)
+*See Also:* [Character.Move](ags47#Character.Move)
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -198,7 +198,7 @@ frame is worked out as DELAY + FRAME SPD, so the individual frame speeds
 are relative to this overall speed.
 
 Before using this command, you should use
-[LockView](ags47.md#Character.LockView) in order to select the view you
+[LockView](ags47#Character.LockView) in order to select the view you
 want to animate with and prevent any automatic animations (eg. walking
 or idle animations) from playing.
 
@@ -228,7 +228,7 @@ Example:
 will animate the character once using loop number 3 of view 5 backwards,
 and wait until the animation finishes before returning.
 
-*See Also:* [Object.Animate](ags68.md#Object.Animate)
+*See Also:* [Object.Animate](ags68#Object.Animate)
 
 ------------------------------------------------------------------------
 
@@ -275,7 +275,7 @@ coordinates 100,50. This will also mean that the game moves into room 4.
 **AGS 3.4.0** and later versions.
 
 *See Also:*
-[Character.ChangeRoomAutoPosition](ags47.md#Character.ChangeRoomAutoPosition)
+[Character.ChangeRoomAutoPosition](ags47#Character.ChangeRoomAutoPosition)
 
 ------------------------------------------------------------------------
 
@@ -317,7 +317,7 @@ will move the player character to room 4 and place him half way down the
 right hand side of the screen. This will also mean that the game moves
 into room 4.
 
-*See Also:* [Character.ChangeRoom](ags47.md#Character.ChangeRoom)
+*See Also:* [Character.ChangeRoom](ags47#Character.ChangeRoom)
 
 ------------------------------------------------------------------------
 
@@ -344,8 +344,8 @@ Example:
 
 will make the EGO character use view number 5 as his walking view.
 
-*See Also:* [Character.LockView](ags47.md#Character.LockView),
-[Character.NormalView](ags47.md#Character.NormalView)
+*See Also:* [Character.LockView](ags47#Character.LockView),
+[Character.NormalView](ags47#Character.NormalView)
 
 ------------------------------------------------------------------------
 
@@ -384,10 +384,10 @@ Example:
 will make the character EGO face the character MAN
 
 *See Also:*
-[Character.FaceDirection](ags47.md#Character.FaceDirection),
-[Character.FaceLocation](ags47.md#Character.FaceLocation),
-[Character.FaceObject](ags47.md#Character.FaceObject),
-[Character.Walk](ags47.md#Character.Walk)
+[Character.FaceDirection](ags47#Character.FaceDirection),
+[Character.FaceLocation](ags47#Character.FaceLocation),
+[Character.FaceObject](ags47#Character.FaceObject),
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -425,10 +425,10 @@ will make the character EGO face up-right.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[Character.FaceCharacter](ags47.md#Character.FaceCharacter),
-[Character.FaceLocation](ags47.md#Character.FaceLocation),
-[Character.FaceObject](ags47.md#Character.FaceObject),
-[Character.Walk](ags47.md#Character.Walk)
+[Character.FaceCharacter](ags47#Character.FaceCharacter),
+[Character.FaceLocation](ags47#Character.FaceLocation),
+[Character.FaceObject](ags47#Character.FaceObject),
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -469,10 +469,10 @@ Example:
 will make the character face to the east.
 
 *See Also:*
-[Character.FaceCharacter](ags47.md#Character.FaceCharacter),
-[Character.FaceDirection](ags47.md#Character.FaceDirection),
-[Character.FaceObject](ags47.md#Character.FaceObject),
-[Character.Walk](ags47.md#Character.Walk)
+[Character.FaceCharacter](ags47#Character.FaceCharacter),
+[Character.FaceDirection](ags47#Character.FaceDirection),
+[Character.FaceObject](ags47#Character.FaceObject),
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -507,10 +507,10 @@ Example:
 will make the player character face object 2.
 
 *See Also:*
-[Character.FaceCharacter](ags47.md#Character.FaceCharacter),
-[Character.FaceDirection](ags47.md#Character.FaceDirection),
-[Character.FaceLocation](ags47.md#Character.FaceLocation),
-[Character.Walk](ags47.md#Character.Walk)
+[Character.FaceCharacter](ags47#Character.FaceCharacter),
+[Character.FaceDirection](ags47#Character.FaceDirection),
+[Character.FaceLocation](ags47#Character.FaceLocation),
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -596,9 +596,9 @@ Example:
 
 will display the message if the mouse cursor is over the EGO character
 
-*See Also:* [Hotspot.GetAtScreenXY](ags63.md#Hotspot.GetAtScreenXY),
-[Object.GetAtScreenXY](ags68.md#Object.GetAtScreenXY),
-[Game.GetLocationName](ags54.md#Game.GetLocationName)
+*See Also:* [Hotspot.GetAtScreenXY](ags63#Hotspot.GetAtScreenXY),
+[Object.GetAtScreenXY](ags68#Object.GetAtScreenXY),
+[Game.GetLocationName](ags54#Game.GetLocationName)
 
 ------------------------------------------------------------------------
 
@@ -627,7 +627,7 @@ will print the message if EGO has its "Value" property set to more than
 200.
 
 *See Also:*
-[Character.GetTextProperty](ags47.md#Character.GetTextProperty)
+[Character.GetTextProperty](ags47#Character.GetTextProperty)
 
 ------------------------------------------------------------------------
 
@@ -655,7 +655,7 @@ Example:
 
 will retrieve EGO's "description" property and display it.
 
-*See Also:* [Character.GetProperty](ags47.md#Character.GetProperty)
+*See Also:* [Character.GetProperty](ags47#Character.GetProperty)
 
 ------------------------------------------------------------------------
 
@@ -684,7 +684,7 @@ will change EGO character's "XPLevel" custom property to 10.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[Character.SetTextProperty](ags47.md#Character.SetTextProperty)
+[Character.SetTextProperty](ags47#Character.SetTextProperty)
 
 ------------------------------------------------------------------------
 
@@ -710,7 +710,7 @@ will change EGO's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Character.SetProperty](ags47.md#Character.SetProperty)
+*See Also:* [Character.SetProperty](ags47#Character.SetProperty)
 
 ------------------------------------------------------------------------
 
@@ -721,16 +721,16 @@ will change EGO's "description" property.
     readonly bool Character.HasExplicitTint
 
 Returns *true* if the character has a light set explicitly with the
-[Character.SetLightLevel](ags47.md#Character.SetLightLevel) command.
+[Character.SetLightLevel](ags47#Character.SetLightLevel) command.
 
 Returns *false* if the character has no explicit light level, but it may
 still be lighted by
-[SetAmbientLightLevel](ags54.md#SetAmbientLightLevel) or a region
+[SetAmbientLightLevel](ags54#SetAmbientLightLevel) or a region
 light.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*SeeAlso:* [Character.SetLightLevel](ags47.md#Character.SetLightLevel)
+*SeeAlso:* [Character.SetLightLevel](ags47#Character.SetLightLevel)
 
 ------------------------------------------------------------------------
 
@@ -757,9 +757,9 @@ will display a message if the player has the key.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Character.AddInventory](ags47.md#Character.AddInventory),
-[Character.InventoryQuantity](ags47.md#Character.InventoryQuantity),
-[Character.LoseInventory](ags47.md#Character.LoseInventory)
+*See Also:* [Character.AddInventory](ags47#Character.AddInventory),
+[Character.InventoryQuantity](ags47#Character.InventoryQuantity),
+[Character.LoseInventory](ags47#Character.LoseInventory)
 
 ------------------------------------------------------------------------
 
@@ -786,9 +786,9 @@ will execute the colliding code only if the characters EGO and MAN are
 colliding.
 
 *See Also:*
-[Character.IsCollidingWithObject](ags47.md#Character.IsCollidingWithObject),
-[Object.IsCollidingWithObject](ags68.md#Object.IsCollidingWithObject),
-[AreThingsOverlapping](ags73.md#AreThingsOverlapping)
+[Character.IsCollidingWithObject](ags47#Character.IsCollidingWithObject),
+[Object.IsCollidingWithObject](ags68#Object.IsCollidingWithObject),
+[AreThingsOverlapping](ags73#AreThingsOverlapping)
 
 ------------------------------------------------------------------------
 
@@ -816,9 +816,9 @@ will execute the colliding code only if the character EGO and the object
 number 3 are colliding.
 
 *See Also:*
-[Character.IsCollidingWithChar](ags47.md#Character.IsCollidingWithChar),
-[Object.IsCollidingWithObject](ags68.md#Object.IsCollidingWithObject),
-[AreThingsOverlapping](ags73.md#AreThingsOverlapping)
+[Character.IsCollidingWithChar](ags47#Character.IsCollidingWithChar),
+[Object.IsCollidingWithObject](ags68#Object.IsCollidingWithObject),
+[AreThingsOverlapping](ags73#AreThingsOverlapping)
 
 ------------------------------------------------------------------------
 
@@ -829,7 +829,7 @@ number 3 are colliding.
     readonly int Character.LightLevel
 
 If the character has an individual light set explicitly with the
-[Character.SetLightLevel](ags47.md#Character.SetLightLevel) command,
+[Character.SetLightLevel](ags47#Character.SetLightLevel) command,
 this property returns the light level value. Otherwise it returns 0.
 
 **NOTE:** without individual light level set, Character.LightLevel
@@ -838,8 +838,8 @@ light.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*SeeAlso:* [Character.SetLightLevel](ags47.md#Character.SetLightLevel),
-[SetAmbientLightLevel](ags54.md#SetAmbientLightLevel),
+*SeeAlso:* [Character.SetLightLevel](ags47#Character.SetLightLevel),
+[SetAmbientLightLevel](ags54#SetAmbientLightLevel),
 Region.SetLightLevel (REF NOT FOUND)
 
 ------------------------------------------------------------------------
@@ -880,12 +880,12 @@ character to his normal view.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Animate](ags47.md#Character.Animate),
-[Character.ChangeView](ags47.md#Character.ChangeView),
-[Character.SpeechView](ags47.md#Character.SpeechView),
-[Character.LockViewAligned](ags47.md#Character.LockViewAligned),
-[Character.LockViewOffset](ags47.md#Character.LockViewOffset)
-[Character.UnlockView](ags47.md#Character.UnlockView),
+*See Also:* [Character.Animate](ags47#Character.Animate),
+[Character.ChangeView](ags47#Character.ChangeView),
+[Character.SpeechView](ags47#Character.SpeechView),
+[Character.LockViewAligned](ags47#Character.LockViewAligned),
+[Character.LockViewOffset](ags47#Character.LockViewOffset)
+[Character.UnlockView](ags47#Character.UnlockView),
 
 ------------------------------------------------------------------------
 
@@ -945,9 +945,9 @@ character to his normal view.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.LockView](ags47.md#Character.LockView),
-[Character.LockViewOffset](ags47.md#Character.LockViewOffset),
-[Character.UnlockView](ags47.md#Character.UnlockView)
+*See Also:* [Character.LockView](ags47#Character.LockView),
+[Character.LockViewOffset](ags47#Character.LockViewOffset),
+[Character.UnlockView](ags47#Character.UnlockView)
 
 ------------------------------------------------------------------------
 
@@ -983,9 +983,9 @@ second, then return him to normal.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Animate](ags47.md#Character.Animate),
-[Character.LockView](ags47.md#Character.LockView),
-[Character.UnlockView](ags47.md#Character.UnlockView)
+*See Also:* [Character.Animate](ags47#Character.Animate),
+[Character.LockView](ags47#Character.LockView),
+[Character.UnlockView](ags47#Character.UnlockView)
 
 ------------------------------------------------------------------------
 
@@ -1039,9 +1039,9 @@ all frames will be shifted 1 pixel right and 1 pixel up.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.LockView](ags47.md#Character.LockView),
-[Character.LockViewAligned](ags47.md#Character.LockViewAligned),
-[Character.UnlockView](ags47.md#Character.UnlockView)
+*See Also:* [Character.LockView](ags47#Character.LockView),
+[Character.LockViewAligned](ags47#Character.LockViewAligned),
+[Character.UnlockView](ags47#Character.UnlockView)
 
 ------------------------------------------------------------------------
 
@@ -1067,7 +1067,7 @@ Example:
 will make the character EGO lose the inventory item iKey from the
 inventory tab
 
-*See Also:* [Character.AddInventory](ags47.md#Character.AddInventory)
+*See Also:* [Character.AddInventory](ags47#Character.AddInventory)
 
 ------------------------------------------------------------------------
 
@@ -1082,7 +1082,7 @@ Starts the character moving from its current location to (X,Y), but does
 not play the character's walking animation.
 
 The parameters to this command are identical to the
-[Character.Walk](ags47.md#Character.Walk) command -- see that page for
+[Character.Walk](ags47#Character.Walk) command -- see that page for
 more details. The only difference is that *Walk* plays the walking
 animation whereas *Move* does not.
 
@@ -1098,12 +1098,12 @@ his destination.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Character.AddWaypoint](ags47.md#Character.AddWaypoint),
-[Character.FaceCharacter](ags47.md#Character.FaceCharacter),
-[Character.Walk](ags47.md#Character.Walk),
-[MoveCharacterToObject](ags54.md#MoveCharacterToObject),
-[Object.Move](ags68.md#Object.Move),
-[Character.StopMoving](ags47.md#Character.StopMoving)
+*See Also:* [Character.AddWaypoint](ags47#Character.AddWaypoint),
+[Character.FaceCharacter](ags47#Character.FaceCharacter),
+[Character.Walk](ags47#Character.Walk),
+[MoveCharacterToObject](ags54#MoveCharacterToObject),
+[Object.Move](ags68#Object.Move),
+[Character.StopMoving](ags47#Character.StopMoving)
 
 ------------------------------------------------------------------------
 
@@ -1154,8 +1154,8 @@ will tint the player character green for a second, then turn it back to
 normal.
 
 *See Also:*
-[Character.HasExplicitTint](ags47.md#Character.HasExplicitTint),
-[Character.Tint](ags47.md#Character.Tint)
+[Character.HasExplicitTint](ags47#Character.HasExplicitTint),
+[Character.Tint](ags47#Character.Tint)
 
 ------------------------------------------------------------------------
 
@@ -1180,8 +1180,8 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [IsInteractionAvailable](ags54.md#IsInteractionAvailable),
-[Character.RunInteraction](ags47.md#Character.RunInteraction)
+*See Also:* [IsInteractionAvailable](ags54#IsInteractionAvailable),
+[Character.RunInteraction](ags47#Character.RunInteraction)
 
 ------------------------------------------------------------------------
 
@@ -1203,10 +1203,10 @@ Example:
 
 will execute the code defined in the MAN's "TALK TO CHARACTER" event.
 
-*See Also:* [Room.ProcessClick](ags73.md#Room.ProcessClick),
-[Character.IsInteractionAvailable](ags47.md#Character.IsInteractionAvailable),
-[Hotspot.RunInteraction](ags63.md#Hotspot.RunInteraction),
-[InventoryItem.RunInteraction](ags64.md#InventoryItem.RunInteraction)
+*See Also:* [Room.ProcessClick](ags73#Room.ProcessClick),
+[Character.IsInteractionAvailable](ags47#Character.IsInteractionAvailable),
+[Hotspot.RunInteraction](ags63#Hotspot.RunInteraction),
+[InventoryItem.RunInteraction](ags64#InventoryItem.RunInteraction)
 
 ------------------------------------------------------------------------
 
@@ -1225,7 +1225,7 @@ speech text". The text displayed by this function looks identical to
 that used by the dialog system.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](ags34.md#StringFormats)
+information, see the [string formatting](ags34#StringFormats)
 section.
 
 Example:
@@ -1235,10 +1235,10 @@ Example:
 will display the message above the character's EGO head like the LEC
 games, whilst playing the character's talking animation.
 
-*See Also:* [Display](ags78.md#Display),
-[Character.SayAt](ags47.md#Character.SayAt),
-[Character.SayBackground](ags47.md#Character.SayBackground),
-[Character.Think](ags47.md#Character.Think)
+*See Also:* [Display](ags78#Display),
+[Character.SayAt](ags47#Character.SayAt),
+[Character.SayBackground](ags47#Character.SayBackground),
+[Character.Think](ags47#Character.Think)
 
 ------------------------------------------------------------------------
 
@@ -1250,7 +1250,7 @@ games, whilst playing the character's talking animation.
 
     SayAt(int x, int y, int width, string message)
 
-Similar to [Say](ags47.md#Character.Say), except that the text is
+Similar to [Say](ags47#Character.Say), except that the text is
 displayed with its top left corner at (X,Y), in an area WIDTH wide.
 
 You can use this function to write the character's speech text anywhere
@@ -1266,8 +1266,8 @@ Example:
 will display the message in the top right corner of the screen, whilst
 playing the character's talking animation.
 
-*See Also:* [Character.Say](ags47.md#Character.Say),
-[Character.SayBackground](ags47.md#Character.SayBackground)
+*See Also:* [Character.Say](ags47#Character.Say),
+[Character.SayBackground](ags47#Character.SayBackground)
 
 ------------------------------------------------------------------------
 
@@ -1295,7 +1295,7 @@ removed and replaced with the new MESSAGE.
 
 All background speech is automatically removed when a normal Say command
 is used (unless you set the global variable
-[game.bgspeech\_stay\_on\_display](ags39.md#Gamevariables) to 1).
+[game.bgspeech\_stay\_on\_display](ags39#Gamevariables) to 1).
 
 Example:
 
@@ -1304,7 +1304,7 @@ Example:
 will display the message above character MAN's head without pausing the
 game.
 
-*See Also:* [Character.Say](ags47.md#Character.Say)
+*See Also:* [Character.Say](ags47#Character.Say)
 
 ------------------------------------------------------------------------
 
@@ -1332,8 +1332,8 @@ will change the character that the player controls to character MAN and
 also change to the room that MAN is in, if he is not in the current
 room.
 
-*See Also:* [Character.ID](ags47.md#Character.ID),
-[Character.ChangeRoom](ags47.md#Character.ChangeRoom)
+*See Also:* [Character.ID](ags47#Character.ID),
+[Character.ChangeRoom](ags47#Character.ChangeRoom)
 
 ------------------------------------------------------------------------
 
@@ -1352,7 +1352,7 @@ effect, but you may still use negative values to produce darkening
 effect.
 
 To disable character lighting and tinting effects, call
-[RemoveTint](ags47.md#Character.RemoveTint).
+[RemoveTint](ags47#Character.RemoveTint).
 
 **NOTE**: Setting a light level will disable any RGB tint set for the
 character.
@@ -1368,10 +1368,10 @@ This will give character EGO maximal individual brightness.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Character.Tint](ags47.md#Character.Tint),
-[SetAmbientLightLevel](ags54.md#SetAmbientLightLevel),
-[Object.SetLightLevel](ags68.md#Object.SetLightLevel),
-[Region.LightLevel](ags72.md#Region.LightLevel)
+*See Also:* [Character.Tint](ags47#Character.Tint),
+[SetAmbientLightLevel](ags54#SetAmbientLightLevel),
+[Object.SetLightLevel](ags68#Object.SetLightLevel),
+[Region.LightLevel](ags72#Region.LightLevel)
 
 ------------------------------------------------------------------------
 
@@ -1438,11 +1438,11 @@ Example:
 will change the character EGO's speed to 10.
 
 *See Also:*
-[Character.AnimationSpeed](ags47.md#Character.AnimationSpeed),
-[Character.StopMoving](ags47.md#Character.StopMoving),
-[Character.Walk](ags47.md#Character.Walk),
-[Character.WalkSpeedX](ags47.md#Character.WalkSpeedX),
-[Character.WalkSpeedY](ags47.md#Character.WalkSpeedY)
+[Character.AnimationSpeed](ags47#Character.AnimationSpeed),
+[Character.StopMoving](ags47#Character.StopMoving),
+[Character.Walk](ags47#Character.Walk),
+[Character.WalkSpeedX](ags47#Character.WalkSpeedX),
+[Character.WalkSpeedY](ags47#Character.WalkSpeedY)
 
 ------------------------------------------------------------------------
 
@@ -1466,8 +1466,8 @@ Example:
 
 will stop the character when he reaches the coordinate x=300.
 
-*See Also:* [Character.Walk](ags47.md#Character.Walk),
-[Object.StopMoving](ags68.md#Object.StopMoving)
+*See Also:* [Character.Walk](ags47#Character.Walk),
+[Object.StopMoving](ags68#Object.StopMoving)
 
 ------------------------------------------------------------------------
 
@@ -1507,7 +1507,7 @@ If the character has a thinking animation, it will just loop through
 once (it won't repeat).
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](ags34.md#StringFormats)
+information, see the [string formatting](ags34#StringFormats)
 section.
 
 Example:
@@ -1518,12 +1518,12 @@ will display the message above EGO's head and play the character's
 thinking animation.
 
 *See Also:*
-[Character.BlinkWhileThinking](ags47.md#Character.BlinkWhileThinking),
-[Character.Say](ags47.md#Character.Say),
-[Character.Thinking](ags47.md#Character.Thinking),
-[Character.ThinkingFrame](ags47.md#Character.ThinkingFrame),
-[Character.ThinkView](ags47.md#Character.ThinkView),
-[game.speech\_bubble\_width](ags39.md#Gamevariables)
+[Character.BlinkWhileThinking](ags47#Character.BlinkWhileThinking),
+[Character.Say](ags47#Character.Say),
+[Character.Thinking](ags47#Character.Thinking),
+[Character.ThinkingFrame](ags47#Character.ThinkingFrame),
+[Character.ThinkView](ags47#Character.ThinkView),
+[game.speech\_bubble\_width](ags39#Gamevariables)
 
 ------------------------------------------------------------------------
 
@@ -1538,7 +1538,7 @@ Tints the character on the screen to (RED, GREEN, BLUE) with SATURATION
 percent saturation.
 
 This function applies a tint to a specific character. For the meaning of
-all the parameters, see [SetAmbientTint](ags54.md#SetAmbientTint).
+all the parameters, see [SetAmbientTint](ags54#SetAmbientTint).
 
 The tint set by this function overrides any ambient tint set for the
 room. For this reason, passing the SATURATION as 0 to this function does
@@ -1547,7 +1547,7 @@ character (even if an ambient tint is set).
 
 To remove the tint set by this function and return to using the ambient
 tint for this character, call
-[RemoveTint](ags47.md#Character.RemoveTint).
+[RemoveTint](ags47#Character.RemoveTint).
 
 **NOTE:** This function only works in hi-colour games and with hi-colour
 sprites.
@@ -1559,9 +1559,9 @@ Example:
 will tint the EGO character green.
 
 *See Also:*
-[Character.HasExplicitTint](ags47.md#Character.HasExplicitTint),
-[Character.RemoveTint](ags47.md#Character.RemoveTint),
-[SetAmbientTint](ags54.md#SetAmbientTint)
+[Character.HasExplicitTint](ags47#Character.HasExplicitTint),
+[Character.RemoveTint](ags47#Character.RemoveTint),
+[SetAmbientTint](ags54#SetAmbientTint)
 
 ------------------------------------------------------------------------
 
@@ -1574,19 +1574,19 @@ will tint the EGO character green.
 Gets the *Blue* setting for the character's current tint.
 
 This property is read-only; to change it, use the
-[Character.Tint](ags47.md#Character.Tint) command.
+[Character.Tint](ags47#Character.Tint) command.
 
 **NOTE:** If the
-[Character.HasExplicitTint](ags47.md#Character.HasExplicitTint)
+[Character.HasExplicitTint](ags47#Character.HasExplicitTint)
 property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](ags47.md#Character.Tint),
-[Character.HasExplicitTint](ags47.md#Character.HasExplicitTint),
-[Character.TintGreen](ags47.md#Character.TintGreen),
-[Character.TintRed](ags47.md#Character.TintRed),
-[Character.TintLuminance](ags47.md#Character.TintLuminance)
+*See Also:* [Character.Tint](ags47#Character.Tint),
+[Character.HasExplicitTint](ags47#Character.HasExplicitTint),
+[Character.TintGreen](ags47#Character.TintGreen),
+[Character.TintRed](ags47#Character.TintRed),
+[Character.TintLuminance](ags47#Character.TintLuminance)
 
 ------------------------------------------------------------------------
 
@@ -1599,20 +1599,20 @@ property is false, then this value is meaningless.
 Gets the *Green* setting for the character's current tint.
 
 This property is read-only; to change it, use the
-[Character.Tint](ags47.md#Character.Tint) command.
+[Character.Tint](ags47#Character.Tint) command.
 
 **NOTE:** If the
-[Character.HasExplicitTint](ags47.md#Character.HasExplicitTint)
+[Character.HasExplicitTint](ags47#Character.HasExplicitTint)
 property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](ags47.md#Character.Tint),
+*See Also:* [Character.Tint](ags47#Character.Tint),
 Character.TintEnabled (REF NOT FOUND),
-[Character.TintBlue](ags47.md#Character.TintBlue),
-[Character.TintRed](ags47.md#Character.TintRed),
-[Character.TintSaturation](ags47.md#Character.TintSaturation),
-[Character.TintLuminance](ags47.md#Character.TintLuminance)
+[Character.TintBlue](ags47#Character.TintBlue),
+[Character.TintRed](ags47#Character.TintRed),
+[Character.TintSaturation](ags47#Character.TintSaturation),
+[Character.TintLuminance](ags47#Character.TintLuminance)
 
 ------------------------------------------------------------------------
 
@@ -1625,20 +1625,20 @@ Character.TintEnabled (REF NOT FOUND),
 Gets the *Red* setting for the character's current tint.
 
 This property is read-only; to change it, use the
-[Character.Tint](ags47.md#Character.Tint) command.
+[Character.Tint](ags47#Character.Tint) command.
 
 **NOTE:** If the
-[Character.HasExplicitTint](ags47.md#Character.HasExplicitTint)
+[Character.HasExplicitTint](ags47#Character.HasExplicitTint)
 property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](ags47.md#Character.Tint),
+*See Also:* [Character.Tint](ags47#Character.Tint),
 Character.TintEnabled (REF NOT FOUND),
-[Character.TintBlue](ags47.md#Character.TintBlue),
-[Character.TintGreen](ags47.md#Character.TintGreen),
-[Character.TintSaturation](ags47.md#Character.TintSaturation),
-[Character.TintLuminance](ags47.md#Character.TintLuminance)
+[Character.TintBlue](ags47#Character.TintBlue),
+[Character.TintGreen](ags47#Character.TintGreen),
+[Character.TintSaturation](ags47#Character.TintSaturation),
+[Character.TintLuminance](ags47#Character.TintLuminance)
 
 ------------------------------------------------------------------------
 
@@ -1651,20 +1651,20 @@ Character.TintEnabled (REF NOT FOUND),
 Gets the *saturation* setting for the character's current tint.
 
 This property is read-only; to change it, use the
-[Character.Tint](ags47.md#Character.Tint) command.
+[Character.Tint](ags47#Character.Tint) command.
 
 **NOTE:** If the
-[Character.HasExplicitTint](ags47.md#Character.HasExplicitTint)
+[Character.HasExplicitTint](ags47#Character.HasExplicitTint)
 property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](ags47.md#Character.Tint),
+*See Also:* [Character.Tint](ags47#Character.Tint),
 Character.TintEnabled (REF NOT FOUND),
-[Character.TintBlue](ags47.md#Character.TintBlue),
-[Character.TintGreen](ags47.md#Character.TintGreen),
-[Character.TintRed](ags47.md#Character.TintRed),
-[Character.TintLuminance](ags47.md#Character.TintLuminance)
+[Character.TintBlue](ags47#Character.TintBlue),
+[Character.TintGreen](ags47#Character.TintGreen),
+[Character.TintRed](ags47#Character.TintRed),
+[Character.TintLuminance](ags47#Character.TintLuminance)
 
 ------------------------------------------------------------------------
 
@@ -1677,20 +1677,20 @@ Character.TintEnabled (REF NOT FOUND),
 Gets the *luminance* setting for the character's current tint.
 
 This property is read-only; to change it, use the
-[Character.Tint](ags47.md#Character.Tint) command.
+[Character.Tint](ags47#Character.Tint) command.
 
 **NOTE:** If the
-[Character.HasExplicitTint](ags47.md#Character.HasExplicitTint)
+[Character.HasExplicitTint](ags47#Character.HasExplicitTint)
 property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](ags47.md#Character.Tint),
+*See Also:* [Character.Tint](ags47#Character.Tint),
 Character.TintEnabled (REF NOT FOUND),
-[Character.TintBlue](ags47.md#Character.TintBlue),
-[Character.TintGreen](ags47.md#Character.TintGreen),
-[Character.TintRed](ags47.md#Character.TintRed),
-[Character.TintSaturation](ags47.md#Character.TintSaturation)
+[Character.TintBlue](ags47#Character.TintBlue),
+[Character.TintGreen](ags47#Character.TintGreen),
+[Character.TintRed](ags47#Character.TintRed),
+[Character.TintSaturation](ags47#Character.TintSaturation)
 
 ------------------------------------------------------------------------
 
@@ -1723,7 +1723,7 @@ character to its normal view.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.LockView](ags47.md#Character.LockView)
+*See Also:* [Character.LockView](ags47#Character.LockView)
 
 ------------------------------------------------------------------------
 
@@ -1756,13 +1756,13 @@ directly from its current location to (X,Y), ignoring the room walkable
 areas.
 
 If you don't want the character's walking animation to play, you can use
-the [Move](ags47.md#Character.Move) command instead.
+the [Move](ags47#Character.Move) command instead.
 
 **NOTE:** this function only works with characters which are on the
 current screen.
 
 **NOTE:** if you need to find out when the character has reached its
-destination, use the [Moving](ags47.md#Character.Moving) property.
+destination, use the [Moving](ags47#Character.Moving) property.
 
 Example:
 
@@ -1771,12 +1771,12 @@ Example:
 will make the character walk to 155,122. The script will not continue
 until the character has reached his destination.
 
-*See Also:* [Character.AddWaypoint](ags47.md#Character.AddWaypoint),
-[Character.FaceCharacter](ags47.md#Character.FaceCharacter),
-[Character.Move](ags47.md#Character.Move),
-[MoveCharacterToObject](ags54.md#MoveCharacterToObject),
-[Object.Move](ags68.md#Object.Move),
-[Character.StopMoving](ags47.md#Character.StopMoving)
+*See Also:* [Character.AddWaypoint](ags47#Character.AddWaypoint),
+[Character.FaceCharacter](ags47#Character.FaceCharacter),
+[Character.Move](ags47#Character.Move),
+[MoveCharacterToObject](ags54#MoveCharacterToObject),
+[Object.Move](ags68#Object.Move),
+[Character.StopMoving](ags47#Character.StopMoving)
 
 ------------------------------------------------------------------------
 
@@ -1807,7 +1807,7 @@ Example:
 will move the character EGO in a straight line towards co ordinates
 166,78 until he hits a non walkable area.
 
-*See Also:* [Character.Walk](ags47.md#Character.Walk)
+*See Also:* [Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -1850,7 +1850,7 @@ Returns 1 if the character is currently animating.\
 Returns 0 if the character has finished its animation.
 
 This property is read-only. To change character animation, use the
-[Animate](ags47.md#Character.Animate) command.
+[Animate](ags47#Character.Animate) command.
 
 Example:
 
@@ -1862,10 +1862,10 @@ will animate EGO and wait until the animation finishes.
 In reality, you would simply use the Blocking parameter of Animate so
 you wouldn't need to do this.
 
-*See Also:* [Character.Animate](ags47.md#Character.Animate),
-[Character.Moving](ags47.md#Character.Moving),
-[Character.Speaking](ags47.md#Character.Speaking),
-[Character.Thinking](ags47.md#Character.Thinking)
+*See Also:* [Character.Animate](ags47#Character.Animate),
+[Character.Moving](ags47#Character.Moving),
+[Character.Speaking](ags47#Character.Speaking),
+[Character.Thinking](ags47#Character.Thinking)
 
 ------------------------------------------------------------------------
 
@@ -1885,8 +1885,8 @@ Example:
 
 will change the player character's animation speed to 4.
 
-*See Also:* [Character.SetWalkSpeed](ags47.md#Character.SetWalkSpeed),
-[Character.SpeechAnimationDelay](ags47.md#Character.SpeechAnimationDelay)
+*See Also:* [Character.SetWalkSpeed](ags47#Character.SetWalkSpeed),
+[Character.SpeechAnimationDelay](ags47#Character.SpeechAnimationDelay)
 
 ------------------------------------------------------------------------
 
@@ -1913,8 +1913,8 @@ will move the character's baseline (which can be used for testing
 collisions, or for walk-behinds) to a line positioned at y coordinate =
 120.
 
-*See Also:* [Object.Baseline](ags68.md#Object.Baseline),
-[SetWalkBehindBase](ags73.md#SetWalkBehindBase)
+*See Also:* [Object.Baseline](ags68#Object.Baseline),
+[SetWalkBehindBase](ags73#SetWalkBehindBase)
 
 ------------------------------------------------------------------------
 
@@ -1932,7 +1932,7 @@ in game loops - an interval of 80 would play the blinking animation
 about every 2 seconds.
 
 This property has no effect if no
-[BlinkView](ags47.md#Character.BlinkView) has been set.
+[BlinkView](ags47#Character.BlinkView) has been set.
 
 Example:
 
@@ -1942,8 +1942,8 @@ Example:
 will change the character EGO's blink view to view 10, and play the
 animation every 4 seconds.
 
-*See Also:* [Character.BlinkView](ags47.md#Character.BlinkView),
-[Character.SpeechView](ags47.md#Character.SpeechView)
+*See Also:* [Character.BlinkView](ags47#Character.BlinkView),
+[Character.SpeechView](ags47#Character.SpeechView)
 
 ------------------------------------------------------------------------
 
@@ -1958,7 +1958,7 @@ animation every 4 seconds.
 Gets/sets the character's blinking view. To stop the character from
 blinking, set this to -1.
 
-The [BlinkInterval](ags47.md#Character.BlinkInterval) property sets how
+The [BlinkInterval](ags47#Character.BlinkInterval) property sets how
 often the blinking animation is played.
 
 Example:
@@ -1970,8 +1970,8 @@ will change the character EGO's blink view to view 10, and play the
 animation every 4 seconds.
 
 *See Also:*
-[Character.BlinkInterval](ags47.md#Character.BlinkInterval),
-[Character.SpeechView](ags47.md#Character.SpeechView)
+[Character.BlinkInterval](ags47#Character.BlinkInterval),
+[Character.SpeechView](ags47#Character.SpeechView)
 
 ------------------------------------------------------------------------
 
@@ -1992,8 +1992,8 @@ Example:
 
 will stop EGO from blinking while his thinking animation is playing.
 
-*See Also:* [Character.BlinkView](ags47.md#Character.BlinkView),
-[Character.Think](ags47.md#Character.Think)
+*See Also:* [Character.BlinkView](ags47#Character.BlinkView),
+[Character.Think](ags47#Character.Think)
 
 ------------------------------------------------------------------------
 
@@ -2015,7 +2015,7 @@ pixels, which is the size of walkable area that the character
 effectively removes by standing on it.
 
 **NOTE:** This property has no effect unless the
-[Solid](ags47.md#Character.Solid) property is set to *true*.
+[Solid](ags47#Character.Solid) property is set to *true*.
 
 Example:
 
@@ -2024,8 +2024,8 @@ Example:
 will make EGO block 20 pixels high (10 above and 10 below his baseline)
 
 *See Also:*
-[Character.BlockingWidth](ags47.md#Character.BlockingWidth),
-[Character.Solid](ags47.md#Character.Solid)
+[Character.BlockingWidth](ags47#Character.BlockingWidth),
+[Character.Solid](ags47#Character.Solid)
 
 ------------------------------------------------------------------------
 
@@ -2047,7 +2047,7 @@ pixels, which is the size of walkable area that the character
 effectively removes by standing on it.
 
 **NOTE:** This property has no effect unless the
-[Solid](ags47.md#Character.Solid) property is set to *true*.
+[Solid](ags47#Character.Solid) property is set to *true*.
 
 Example:
 
@@ -2057,8 +2057,8 @@ will make EGO block 50 pixels wide (25 pixels to the left of his X
 co-ordinate, and 25 to the right)
 
 *See Also:*
-[Character.BlockingHeight](ags47.md#Character.BlockingHeight),
-[Character.Solid](ags47.md#Character.Solid)
+[Character.BlockingHeight](ags47#Character.BlockingHeight),
+[Character.Solid](ags47#Character.Solid)
 
 ------------------------------------------------------------------------
 
@@ -2085,10 +2085,10 @@ Example:
 
 will make the game ignore clicks on the character MAN.
 
-*See Also:* [Object.Clickable](ags68.md#Object.Clickable),
-[Character.Move](ags47.md#Character.Move),
-[Character.Moving](ags47.md#Character.Moving),
-[Character.Walk](ags47.md#Character.Walk)
+*See Also:* [Object.Clickable](ags68#Object.Clickable),
+[Character.Move](ags47#Character.Move),
+[Character.Moving](ags47#Character.Moving),
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -2103,10 +2103,10 @@ character is not walking or moving it is equal to its current position.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Character.DestinationY](ags47.md#Character.DestinationY),
-[Character.Move](ags47.md#Character.Move),
-[Character.Moving](ags47.md#Character.Moving),
-[Character.Walk](ags47.md#Character.Walk)
+*See Also:* [Character.DestinationY](ags47#Character.DestinationY),
+[Character.Move](ags47#Character.Move),
+[Character.Moving](ags47#Character.Moving),
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -2121,10 +2121,10 @@ character is not walking or moving it is equal to its current position.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Character.DestinationX](ags47.md#Character.DestinationX),
-[Character.Move](ags47.md#Character.Move),
-[Character.Moving](ags47.md#Character.Moving),
-[Character.Walk](ags47.md#Character.Walk)
+*See Also:* [Character.DestinationX](ags47#Character.DestinationX),
+[Character.Move](ags47#Character.Move),
+[Character.Moving](ags47#Character.Moving),
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -2166,9 +2166,9 @@ Example:
 
 displays EGO's current frame number within his view.
 
-*SeeAlso:* [Character.Animate](ags47.md#Character.Animate),
-[Character.Loop](ags47.md#Character.Loop),
-[Character.View](ags47.md#Character.View)
+*SeeAlso:* [Character.Animate](ags47#Character.Animate),
+[Character.Loop](ags47#Character.Loop),
+[Character.View](ags47#Character.View)
 
 ------------------------------------------------------------------------
 
@@ -2179,10 +2179,10 @@ displays EGO's current frame number within his view.
     readonly bool Character.HasExplicitTint
 
 Returns *true* if the character has a tint set explicitly with the
-[Character.Tint](ags47.md#Character.Tint) command.
+[Character.Tint](ags47#Character.Tint) command.
 
 Returns *false* if the character has no explicit tint, but it may still
-be tinted by [SetAmbientTint](ags54.md#SetAmbientTint) or a region
+be tinted by [SetAmbientTint](ags54#SetAmbientTint) or a region
 tint.
 
 Example:
@@ -2196,8 +2196,8 @@ removes the player's tint if it currently has one.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*SeeAlso:* [Character.Tint](ags47.md#Character.Tint),
-[Character.RemoveTint](ags47.md#Character.RemoveTint)
+*SeeAlso:* [Character.Tint](ags47#Character.Tint),
+[Character.RemoveTint](ags47#Character.RemoveTint)
 
 ------------------------------------------------------------------------
 
@@ -2229,7 +2229,7 @@ Gets the character's current idle view. If the character doesn't have
 one, returns -1.
 
 This property is read-only; to change the view, use the
-[SetIdleView](ags47.md#Character.SetIdleView) function.
+[SetIdleView](ags47#Character.SetIdleView) function.
 
 Example:
 
@@ -2237,7 +2237,7 @@ Example:
 
 will display EGO's current idle view number.
 
-*SeeAlso:* [SetIdleView](ags47.md#Character.SetIdleView)
+*SeeAlso:* [SetIdleView](ags47#Character.SetIdleView)
 
 ------------------------------------------------------------------------
 
@@ -2289,8 +2289,8 @@ Example:
 
 will make the character EGO ignore walk-behinds.
 
-*See Also:* [Character.Baseline](ags47.md#Character.Baseline),
-[Object.IgnoreWalkbehinds](ags68.md#Object.IgnoreWalkbehinds)
+*See Also:* [Character.Baseline](ags47#Character.Baseline),
+[Object.IgnoreWalkbehinds](ags68#Object.IgnoreWalkbehinds)
 
 ------------------------------------------------------------------------
 
@@ -2316,7 +2316,7 @@ updated. In this case, you must call UpdateInventory to see any new or
 removed items.
 
 If you just want to quickly check whether the character has a particular
-item or not, use the [HasInventory](ags47.md#Character.HasInventory)
+item or not, use the [HasInventory](ags47#Character.HasInventory)
 function instead.
 
 Example:
@@ -2325,10 +2325,10 @@ Example:
 
 will display how many inventory items of type iCash the player has.
 
-*See Also:* [UpdateInventory](ags54.md#UpdateInventory),
-[Character.AddInventory](ags47.md#Character.AddInventory),
-[Character.HasInventory](ags47.md#Character.HasInventory),
-[Character.LoseInventory](ags47.md#Character.LoseInventory)
+*See Also:* [UpdateInventory](ags54#UpdateInventory),
+[Character.AddInventory](ags47#Character.AddInventory),
+[Character.HasInventory](ags47#Character.HasInventory),
+[Character.LoseInventory](ags47#Character.LoseInventory)
 
 ------------------------------------------------------------------------
 
@@ -2349,9 +2349,9 @@ Example:
 
 displays EGO's current loop number within his view.
 
-*SeeAlso:* [Character.Animate](ags47.md#Character.Animate),
-[Character.Frame](ags47.md#Character.Frame),
-[Character.View](ags47.md#Character.View)
+*SeeAlso:* [Character.Animate](ags47#Character.Animate),
+[Character.Frame](ags47#Character.Frame),
+[Character.View](ags47#Character.View)
 
 ------------------------------------------------------------------------
 
@@ -2370,7 +2370,7 @@ the script. This is equivalent to the "Ignore room area scaling"
 checkbox in the editor.
 
 If this is set to *true*, then the character's scaling level is set
-manually by the [Scaling](ags47.md#Character.Scaling) property (by
+manually by the [Scaling](ags47#Character.Scaling) property (by
 default this is `100%`). If it is set to *false*, then the character
 will be stretched or shrunk automatically as appropriate on walkable
 areas.
@@ -2383,7 +2383,7 @@ Example:
 will tell EGO to ignore walkable area scaling levels and be fixed to
 `50%` zoom level.
 
-*SeeAlso:* [Character.Scaling](ags47.md#Character.Scaling)
+*SeeAlso:* [Character.Scaling](ags47#Character.Scaling)
 
 ------------------------------------------------------------------------
 
@@ -2416,9 +2416,9 @@ him to (50,100), then turn it back on again.
 
 *Compatibility:* Supported by **AGS 3.1.1** and later versions.
 
-*See Also:* [Character.Move](ags47.md#Character.Move),
-[Character.Moving](ags47.md#Character.Moving),
-[Character.Walk](ags47.md#Character.Walk)
+*See Also:* [Character.Move](ags47#Character.Move),
+[Character.Moving](ags47#Character.Moving),
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -2433,8 +2433,8 @@ him to (50,100), then turn it back on again.
 Returns *true* if the character is currently moving, or *false* if not.
 
 This property is read-only; to change the character's movement, use the
-[Walk](ags47.md#Character.Walk), [Move](ags47.md#Character.Move) and
-[StopMoving](ags47.md#Character.StopMoving) commands.
+[Walk](ags47#Character.Walk), [Move](ags47#Character.Move) and
+[StopMoving](ags47#Character.StopMoving) commands.
 
 Example:
 
@@ -2444,12 +2444,12 @@ Example:
 will move EGO to 125,40 and return control to the player when he gets
 there.
 
-*See Also:* [Character.Animating](ags47.md#Character.Animating),
-[Character.Move](ags47.md#Character.Move),
-[Character.Speaking](ags47.md#Character.Speaking),
-[Character.StopMoving](ags47.md#Character.StopMoving),
-[Character.Thinking](ags47.md#Character.Thinking),
-[Character.Walk](ags47.md#Character.Walk)
+*See Also:* [Character.Animating](ags47#Character.Animating),
+[Character.Move](ags47#Character.Move),
+[Character.Speaking](ags47#Character.Speaking),
+[Character.StopMoving](ags47#Character.StopMoving),
+[Character.Thinking](ags47#Character.Thinking),
+[Character.Walk](ags47#Character.Walk)
 
 ------------------------------------------------------------------------
 
@@ -2488,7 +2488,7 @@ walking view, that is used when his view is not locked to something
 else.
 
 This property is read-only; to change it, use the
-[ChangeView](ags47.md#Character.ChangeView) command.
+[ChangeView](ags47#Character.ChangeView) command.
 
 Example:
 
@@ -2499,8 +2499,8 @@ Example:
 will display a message if EGO is currently displayed using his normal
 view.
 
-*See Also:* [Character.ChangeView](ags47.md#Character.ChangeView),
-[Character.View](ags47.md#Character.View)
+*See Also:* [Character.ChangeView](ags47#Character.ChangeView),
+[Character.View](ags47#Character.View)
 
 ------------------------------------------------------------------------
 
@@ -2518,7 +2518,7 @@ Otherwise, it will be the room number of the room that they were last
 in.
 
 This is a read-only property. It is set automatically by
-[ChangeRoom](ags47.md#Character.ChangeRoom).
+[ChangeRoom](ags47#Character.ChangeRoom).
 
 Example:
 
@@ -2539,7 +2539,7 @@ will display the EGO character's previous room.
 Gets the room number that the character is currently in.
 
 This is a read-only property. It is set by
-[ChangeRoom](ags47.md#Character.ChangeRoom).
+[ChangeRoom](ags47#Character.ChangeRoom).
 
 Example:
 
@@ -2572,7 +2572,7 @@ Example:
 
 will mean that EGO's speed is adjusted in line with his scaling
 
-*See Also:* [Character.ScaleVolume](ags47.md#Character.ScaleVolume)
+*See Also:* [Character.ScaleVolume](ags47#Character.ScaleVolume)
 
 ------------------------------------------------------------------------
 
@@ -2601,7 +2601,7 @@ will mean that EGO's footstep sounds are adjusted in line with his
 scaling
 
 *See Also:*
-[Character.ScaleMoveSpeed](ags47.md#Character.ScaleMoveSpeed)
+[Character.ScaleMoveSpeed](ags47#Character.ScaleMoveSpeed)
 
 ------------------------------------------------------------------------
 
@@ -2618,7 +2618,7 @@ zoom level, which will be between 5 and 200 (the default being 100 if
 they are not currently scaled).
 
 You can only set the value of this property if
-[ManualScaling](ags47.md#Character.ManualScaling) is enabled for the
+[ManualScaling](ags47#Character.ManualScaling) is enabled for the
 character; otherwise, the scaling is determined automatically based on
 the walkable area that the character is on.
 
@@ -2630,7 +2630,7 @@ Example:
 will tell EGO to ignore walkable area scaling levels and be fixed to
 `50%` zoom level.
 
-*SeeAlso:* [Character.ManualScaling](ags47.md#Character.ManualScaling)
+*SeeAlso:* [Character.ManualScaling](ags47#Character.ManualScaling)
 
 ------------------------------------------------------------------------
 
@@ -2657,8 +2657,8 @@ Example:
 will mean that EGO blocks the path other characters.
 
 *See Also:*
-[Character.BlockingHeight](ags47.md#Character.BlockingHeight),
-[Character.BlockingWidth](ags47.md#Character.BlockingWidth)
+[Character.BlockingHeight](ags47#Character.BlockingHeight),
+[Character.BlockingWidth](ags47#Character.BlockingWidth)
 
 ------------------------------------------------------------------------
 
@@ -2687,11 +2687,11 @@ Example:
 will animate the character using loop 3 while they are talking (only
 useful with Sierra-style speech).
 
-*See Also:* [Character.Animating](ags47.md#Character.Animating),
-[Character.Moving](ags47.md#Character.Moving),
-[Character.Say](ags47.md#Character.Say),
-[Character.SpeakingFrame](ags47.md#Character.SpeakingFrame),
-[Character.Thinking](ags47.md#Character.Thinking)
+*See Also:* [Character.Animating](ags47#Character.Animating),
+[Character.Moving](ags47#Character.Moving),
+[Character.Say](ags47#Character.Say),
+[Character.SpeakingFrame](ags47#Character.SpeakingFrame),
+[Character.Thinking](ags47#Character.Thinking)
 
 ------------------------------------------------------------------------
 
@@ -2708,7 +2708,7 @@ animation.
 
 This property is read-only. It is only accessible while the character is
 speaking; if you attempt to call it when
-[Character.Speaking](ags47.md#Character.Speaking) is *false* then it
+[Character.Speaking](ags47#Character.Speaking) is *false* then it
 will raise an error.
 
 Since speaking is a blocking command, this property will probably only
@@ -2725,8 +2725,8 @@ Example:
 will move cMan to the right every time the talking animation loops back
 to Frame 0.
 
-*See Also:* [Character.Say](ags47.md#Character.Say),
-[Character.Speaking](ags47.md#Character.Speaking)
+*See Also:* [Character.Say](ags47#Character.Say),
+[Character.Speaking](ags47#Character.Speaking)
 
 ------------------------------------------------------------------------
 
@@ -2755,11 +2755,11 @@ will change the player character's speech animation speed to 4.
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
 *See Also:*
-[Character.AnimationSpeed](ags47.md#Character.AnimationSpeed),
-[Character.SpeechView](ags47.md#Character.SpeechView),
-[Game.TextReadingSpeed](ags54.md#Game.TextReadingSpeed),
-[Speech.GlobalSpeechAnimationDelay](ags75.md#Speech.GlobalSpeechAnimationDelay),
-[Speech.UseGlobalSpeechAnimationDelay](ags75.md#Speech.UseGlobalSpeechAnimationDelay),
+[Character.AnimationSpeed](ags47#Character.AnimationSpeed),
+[Character.SpeechView](ags47#Character.SpeechView),
+[Game.TextReadingSpeed](ags54#Game.TextReadingSpeed),
+[Speech.GlobalSpeechAnimationDelay](ags75#Speech.GlobalSpeechAnimationDelay),
+[Speech.UseGlobalSpeechAnimationDelay](ags75#Speech.UseGlobalSpeechAnimationDelay),
 
 ------------------------------------------------------------------------
 
@@ -2784,7 +2784,7 @@ Example:
 
 will change the character's EGO talking color to yellow.
 
-*See Also:* [Character.SpeechView](ags47.md#Character.SpeechView)
+*See Also:* [Character.SpeechView](ags47#Character.SpeechView)
 
 ------------------------------------------------------------------------
 
@@ -2809,10 +2809,10 @@ Example:
 
 will change the character EGO's speech view to view 10.
 
-*See Also:* [Character.ChangeView](ags47.md#Character.ChangeView),
-[Character.BlinkView](ags47.md#Character.BlinkView),
-[Character.SpeechAnimationDelay](ags47.md#Character.SpeechAnimationDelay),
-[Character.SpeechColor](ags47.md#Character.SpeechColor)
+*See Also:* [Character.ChangeView](ags47#Character.ChangeView),
+[Character.BlinkView](ags47#Character.BlinkView),
+[Character.SpeechAnimationDelay](ags47#Character.SpeechAnimationDelay),
+[Character.SpeechColor](ags47#Character.SpeechColor)
 
 ------------------------------------------------------------------------
 
@@ -2845,11 +2845,11 @@ this will keep character semi-transparent while he is thinking.
 
 *Compatibility:* Supported by **AGS 3.3.4** and later versions.
 
-*See Also:* [Character.Animating](ags47.md#Character.Animating),
-[Character.Moving](ags47.md#Character.Moving),
-[Character.Speaking](ags47.md#Character.Speaking)
-[Character.Think](ags47.md#Character.Think),
-[Character.ThinkingFrame](ags47.md#Character.ThinkingFrame),
+*See Also:* [Character.Animating](ags47#Character.Animating),
+[Character.Moving](ags47#Character.Moving),
+[Character.Speaking](ags47#Character.Speaking)
+[Character.Think](ags47#Character.Think),
+[Character.ThinkingFrame](ags47#Character.ThinkingFrame),
 
 ------------------------------------------------------------------------
 
@@ -2866,7 +2866,7 @@ animation.
 
 This property is read-only. It is only accessible while the character is
 thinking; if you attempt to call it when
-[Character.Thinking](ags47.md#Character.Thinking) is *false* then it
+[Character.Thinking](ags47#Character.Thinking) is *false* then it
 will raise an error.
 
 Since thinking is a blocking command, this property will probably only
@@ -2885,8 +2885,8 @@ to Frame 0.
 
 *Compatibility:* Supported by **AGS 3.3.4** and later versions.
 
-*See Also:* [Character.Think](ags47.md#Character.Think),
-[Character.Thinking](ags47.md#Character.Thinking)
+*See Also:* [Character.Think](ags47#Character.Think),
+[Character.Thinking](ags47#Character.Thinking)
 
 ------------------------------------------------------------------------
 
@@ -2907,7 +2907,7 @@ Example:
 
 will change the character EGO's thinking view to 14.
 
-*See Also:* [Character.Think](ags47.md#Character.Think)
+*See Also:* [Character.Think](ags47#Character.Think)
 
 ------------------------------------------------------------------------
 
@@ -2950,7 +2950,7 @@ Example:
 will gradually fade out the character from its current transparency
 level to being fully invisible.
 
-*See Also:* [Object.Transparency](ags68.md#Object.Transparency)
+*See Also:* [Object.Transparency](ags68#Object.Transparency)
 
 ------------------------------------------------------------------------
 
@@ -2997,11 +2997,11 @@ Example:
 
 will display EGO's current view number.
 
-*SeeAlso:* [Character.ChangeView](ags47.md#Character.ChangeView),
-[Character.Frame](ags47.md#Character.Frame),
-[Character.LockView](ags47.md#Character.LockView),
-[Character.Loop](ags47.md#Character.Loop),
-[Character.NormalView](ags47.md#Character.NormalView)
+*SeeAlso:* [Character.ChangeView](ags47#Character.ChangeView),
+[Character.Frame](ags47#Character.Frame),
+[Character.LockView](ags47#Character.LockView),
+[Character.Loop](ags47#Character.Loop),
+[Character.NormalView](ags47#Character.NormalView)
 
 ------------------------------------------------------------------------
 
@@ -3023,8 +3023,8 @@ Example:
 
 will display the player's X speed.
 
-*See Also:* [Character.SetWalkSpeed](ags47.md#Character.SetWalkSpeed),
-[Character.WalkSpeedY](ags47.md#Character.WalkSpeedY)
+*See Also:* [Character.SetWalkSpeed](ags47#Character.SetWalkSpeed),
+[Character.WalkSpeedY](ags47#Character.WalkSpeedY)
 
 ------------------------------------------------------------------------
 
@@ -3046,8 +3046,8 @@ Example:
 
 will display the player's Y speed.
 
-*See Also:* [Character.SetWalkSpeed](ags47.md#Character.SetWalkSpeed),
-[Character.WalkSpeedX](ags47.md#Character.WalkSpeedX)
+*See Also:* [Character.SetWalkSpeed](ags47#Character.SetWalkSpeed),
+[Character.WalkSpeedX](ags47#Character.WalkSpeedX)
 
 ------------------------------------------------------------------------
 
@@ -3071,8 +3071,8 @@ Example:
 
 displays the player character's current coordinates.
 
-*See Also:* [Character.y](ags47.md#Character.y),
-[Character.z](ags47.md#Character.z)
+*See Also:* [Character.y](ags47#Character.y),
+[Character.z](ags47#Character.z)
 
 ------------------------------------------------------------------------
 
@@ -3096,8 +3096,8 @@ Example:
 
 displays the player character's current coordinates.
 
-*See Also:* [Character.x](ags47.md#Character.x),
-[Character.z](ags47.md#Character.z)
+*See Also:* [Character.x](ags47#Character.x),
+[Character.z](ags47#Character.z)
 
 ------------------------------------------------------------------------
 
@@ -3123,8 +3123,8 @@ Example:
 
 gradually levitates the character up to 20 pixels.
 
-*See Also:* [Character.x](ags47.md#Character.x),
-[Character.y](ags47.md#Character.y)
+*See Also:* [Character.x](ags47#Character.x),
+[Character.y](ags47#Character.y)
 
 ------------------------------------------------------------------------
 
@@ -3137,12 +3137,12 @@ gradually levitates the character up to 20 pixels.
 **This command is now obsolete. It has been replaced by the following
 properties:**
 
-[Clickable](ags47.md#Character.Clickable)\
-[DiagonalLoops](ags47.md#Character.DiagonalLoops)\
-[IgnoreLighting](ags47.md#Character.IgnoreLighting)\
-[ManualScaling](ags47.md#Character.ManualScaling)\
-[ScaleMoveSpeed](ags47.md#Character.ScaleMoveSpeed)\
-[Solid](ags47.md#Character.Solid)\
-[TurnBeforeWalking](ags47.md#Character.TurnBeforeWalking)
+[Clickable](ags47#Character.Clickable)\
+[DiagonalLoops](ags47#Character.DiagonalLoops)\
+[IgnoreLighting](ags47#Character.IgnoreLighting)\
+[ManualScaling](ags47#Character.ManualScaling)\
+[ScaleMoveSpeed](ags47#Character.ScaleMoveSpeed)\
+[Solid](ags47#Character.Solid)\
+[TurnBeforeWalking](ags47#Character.TurnBeforeWalking)
 
 

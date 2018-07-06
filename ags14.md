@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags12.md#topic20)
-[![Previous](back.gif)](ags13.md#MusAndSound)
-[![Next](forward.gif)](ags15.md#DistGame)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags12#topic20)
+[![Previous](back.gif)](ags13#MusAndSound)
+[![Next](forward.gif)](ags15#DistGame)
 
 ------------------------------------------------------------------------
 
@@ -173,11 +173,11 @@ display the player's current inventory, in the same way as the Lucasarts
 games did. To make the inventory window scrollable, you will need to add
 Up and Down arrow buttons, and attach script code to those buttons to
 use the available functions such as
-[InvWindow.ScrollUp](ags58.md#InvWindow.ScrollUp) and
-[InvWindow.ScrollDown](ags58.md#InvWindow.ScrollDown).
+[InvWindow.ScrollUp](ags58#InvWindow.ScrollUp) and
+[InvWindow.ScrollDown](ags58#InvWindow.ScrollDown).
 
 To see a full list of commands available for inventory windows, see the
-[GUI Inv Window Functions and Properties](ags58.md#GUIInvFuncs)
+[GUI Inv Window Functions and Properties](ags58#GUIInvFuncs)
 section.
 
 ------------------------------------------------------------------------

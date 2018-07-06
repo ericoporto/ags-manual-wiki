@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags70.md#topic66)
-[![Next](forward.gif)](ags72.md#topic68)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags70#topic66)
+[![Next](forward.gif)](ags72#topic68)
 
 ------------------------------------------------------------------------
 
@@ -49,7 +49,7 @@ will display a message if the game dictionary includes "machine"
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Parser.ParseText](ags71.md#Parser.ParseText)
+*See Also:* [Parser.ParseText](ags71#Parser.ParseText)
 
 ------------------------------------------------------------------------
 
@@ -72,8 +72,8 @@ Example:
 will get the players input and store it in string "command" for use with
 the said command.
 
-*See Also:* [Parser.FindWordID](ags71.md#Parser.FindWordID),
-[Parser.Said](ags71.md#Parser.Said)
+*See Also:* [Parser.FindWordID](ags71#Parser.FindWordID),
+[Parser.Said](ags71#Parser.Said)
 
 ------------------------------------------------------------------------
 
@@ -86,7 +86,7 @@ the said command.
 Checks whether the player typed in TEXT in their input passed to
 ParseText. Returns *true* if it matches, *false* otherwise.
 
-See [the text parser documentation](ags17.md#TextParser) for a more
+See [the text parser documentation](ags17#TextParser) for a more
 detailed description.
 
 Example:
@@ -101,8 +101,8 @@ Example:
 will bring up the restore game dialogue if the player types "load" in
 the text parser.
 
-*See Also:* [Parser.ParseText](ags71.md#Parser.ParseText),
-[Parser.SaidUnknownWord](ags71.md#Parser.SaidUnknownWord)
+*See Also:* [Parser.ParseText](ags71#Parser.ParseText),
+[Parser.SaidUnknownWord](ags71#Parser.SaidUnknownWord)
 
 ------------------------------------------------------------------------
 
@@ -127,5 +127,5 @@ Example:
 will display the message if the player types a word that's not in the
 vocabulary.
 
-*See Also:* [Parser.ParseText](ags71.md#Parser.ParseText),
-[Parser.Said](ags71.md#Parser.Said)
+*See Also:* [Parser.ParseText](ags71#Parser.ParseText),
+[Parser.Said](ags71#Parser.Said)

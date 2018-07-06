@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags39.md#Gamevariables)
-[![Next](forward.gif)](ags41.md#RepExec)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags39#Gamevariables)
+[![Next](forward.gif)](ags41#RepExec)
 
 ------------------------------------------------------------------------
 
@@ -73,7 +73,7 @@ on\_key\_press (eKeyCode keycode)
 
 Called whenever a key is pressed on the keyboard. KEYCODE holds the
 ASCII value of the key. A list of these values is in [this
-section](ags85.md#ASCIIcodes).
+section](ags85#ASCIIcodes).
 
 on\_mouse\_click (MouseButton button)
 
@@ -91,7 +91,7 @@ user moving the mouse wheel north or south, respectively.
 repeatedly\_execute()
 
 Called every game cycle (normally 40 times per second). See [this help
-page](ags41.md#RepExec) for more information.
+page](ags41#RepExec) for more information.
 
 repeatedly\_execute\_always()
 
@@ -99,7 +99,7 @@ Called every game cycle, even when a blocking routine (eg.
 speech/cutscene) is in progress. You **cannot** call any blocking
 functions from this event handler. **repeatedly\_execute\_always** is
 called **BEFORE** the game objects (characters, rooms, etc) get updated.
-See [this help page](ags41.md#RepExec) for more information.
+See [this help page](ags41#RepExec) for more information.
 
 late\_repeatedly\_execute\_always()
 
@@ -161,4 +161,4 @@ by individual room scripts. If you add their function definitions to
 your room script in a similar way to how they are in the global script,
 the room script can intercept the keypress/mouseclick first, and then
 decide whether to pass it on to the global script or not. See the
-[ClaimEvent](ags54.md#ClaimEvent) function for more.
+[ClaimEvent](ags54#ClaimEvent) function for more.

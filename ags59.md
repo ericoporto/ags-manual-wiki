@@ -1,28 +1,28 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags58.md#GUIInvFuncs)
-[![Next](forward.gif)](ags60.md#topic56)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags58#GUIInvFuncs)
+[![Next](forward.gif)](ags60#topic56)
 
 ------------------------------------------------------------------------
 
 GUI Label functions and properties
 ----------------------------------
 
-[BringToFront (inherited)](ags56.md#GUIControl.BringToFront)\
-[Clickable property (inherited)](ags56.md#GUIControl.Clickable)\
-[Enabled property (inherited)](ags56.md#GUIControl.Enabled)\
-[Height property (inherited)](ags56.md#GUIControl.Height)\
-[ID property (inherited)](ags56.md#GUIControl.ID)\
-[OwningGUI property (inherited)](ags56.md#GUIControl.OwningGUI)\
-[SendToBack (inherited)](ags56.md#GUIControl.SendToBack)\
-[SetPosition (inherited)](ags56.md#GUIControl.SetPosition)\
-[SetSize (inherited)](ags56.md#GUIControl.SetSize)\
-[Visible property (inherited)](ags56.md#GUIControl.Visible)\
-[Width property (inherited)](ags56.md#GUIControl.Width)\
-[X property (inherited)](ags56.md#GUIControl.X)\
-[Y property (inherited)](ags56.md#GUIControl.Y)\
-[ZOrder property (inherited)](ags56.md#GUIControl.ZOrder)
+[BringToFront (inherited)](ags56#GUIControl.BringToFront)\
+[Clickable property (inherited)](ags56#GUIControl.Clickable)\
+[Enabled property (inherited)](ags56#GUIControl.Enabled)\
+[Height property (inherited)](ags56#GUIControl.Height)\
+[ID property (inherited)](ags56#GUIControl.ID)\
+[OwningGUI property (inherited)](ags56#GUIControl.OwningGUI)\
+[SendToBack (inherited)](ags56#GUIControl.SendToBack)\
+[SetPosition (inherited)](ags56#GUIControl.SetPosition)\
+[SetSize (inherited)](ags56#GUIControl.SetSize)\
+[Visible property (inherited)](ags56#GUIControl.Visible)\
+[Width property (inherited)](ags56#GUIControl.Width)\
+[X property (inherited)](ags56#GUIControl.X)\
+[Y property (inherited)](ags56#GUIControl.Y)\
+[ZOrder property (inherited)](ags56#GUIControl.ZOrder)
 
 [Font property (label)](#Label.Font)\
 [Text property (label)](#Label.Text)\
@@ -51,9 +51,9 @@ Example:
 will change label 'lblStatus' to use font "Foreign" if a game
 translation is in use.
 
-*See Also:* [IsTranslationAvailable](ags54.md#IsTranslationAvailable),
-[Label.Text](ags59.md#Label.Text),
-[TextBox.Font](ags62.md#TextBox.Font)
+*See Also:* [IsTranslationAvailable](ags54#IsTranslationAvailable),
+[Label.Text](ags59#Label.Text),
+[TextBox.Font](ags62#TextBox.Font)
 
 ------------------------------------------------------------------------
 
@@ -78,10 +78,10 @@ Example:
 will display the name of the location the cursor is over on label
 'lblStatus'
 
-*See Also:* [Button.NormalGraphic](ags57.md#Button.NormalGraphic),
-[Button.Text](ags57.md#Button.Text),
-[Label.TextColor](ags59.md#Label.TextColor),
-[Label.Font](ags59.md#Label.Font)
+*See Also:* [Button.NormalGraphic](ags57#Button.NormalGraphic),
+[Button.Text](ags57#Button.Text),
+[Label.TextColor](ags59#Label.TextColor),
+[Label.Font](ags59#Label.Font)
 
 ------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ Example:
 
 will change label 'lblStatus' to have yellow text.
 
-*See Also:* [Label.Font](ags59.md#Label.Font),
-[Label.Text](ags59.md#Label.Text)
+*See Also:* [Label.Font](ags59#Label.Font),
+[Label.Text](ags59#Label.Text)
 
 

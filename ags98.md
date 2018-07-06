@@ -1,7 +1,7 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags97.md#topic86) ![Next](forward.gif)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags97#topic86) ![Next](forward.gif)
 
 ------------------------------------------------------------------------
 

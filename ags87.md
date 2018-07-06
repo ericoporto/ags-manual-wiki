@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags86.md#topic85)
-[![Next](forward.gif)](ags88.md#UpgradingTo271)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags86#topic85)
+[![Next](forward.gif)](ags88#UpgradingTo271)
 
 ------------------------------------------------------------------------
 
@@ -143,7 +143,7 @@ easy-to-remember word (such as *eBlock* and *eNoBlock*). Even better,
 when you call a function that uses an enum parameter, auto-complete
 automatically pops up the list of options for you to choose from.
 
-See the [enum keyword](ags44.md#enum) description for information on
+See the [enum keyword](ags44#enum) description for information on
 how to create your own.
 
 **So do I have to pass all these things like eBlock every time I call
@@ -152,7 +152,7 @@ the function?**
 Nope! Many functions now support **optional parameters**, where the most
 common options are selected automatically. If you look at the help for a
 function such as the [Animate character
-command](ags47.md#Character.Animate), you'll see some of the parameters
+command](ags47#Character.Animate), you'll see some of the parameters
 are defined as "optional". This means that you don't have to supply
 them; if you don't, the default option that will be chosen is described
 in the help for that command.
@@ -179,7 +179,7 @@ your script uses any variables with these names, it will no longer work.
 You'll need to change the variable name in order to compile.
 
 Also, the script language now supports *pointers*. Because they are a
-fairly complex topic, there's a [separate page](ags31.md#Pointers)
+fairly complex topic, there's a [separate page](ags31#Pointers)
 devoted to explaining what they are.
 
 **Blimey, that's a lot to take in. Where do I start?**

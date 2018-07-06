@@ -165,7 +165,7 @@ room itself (available when in Nothing mode):
 
  
 
-**Go to part 5:**  [Managing Inventory](acintro5.md)
+**Go to part 5:**  [Managing Inventory](acintro5)
 
 Tutorial last updated 12 August 2007. Copyright (c) 2001-2007 Chris
 Jones.

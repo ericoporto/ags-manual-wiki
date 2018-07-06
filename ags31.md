@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags30.md#topic43)
-[![Next](forward.gif)](ags32.md#topic44)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags30#topic43)
+[![Next](forward.gif)](ags32#topic44)
 
 ------------------------------------------------------------------------
 
@@ -134,8 +134,8 @@ have a *new* keyword, you cannot create pointers to custom struct types.
 
 You use pointers in the same way as you would in Java and C`#`. Various
 built-in AGS static methods return a pointer to an instance (for
-example, [File.Open](ags53.md#File.Open),
-[Hotspot.GetAtScreenXY](ags63.md#Hotspot.GetAtScreenXY), and so on).
+example, [File.Open](ags53#File.Open),
+[Hotspot.GetAtScreenXY](ags63#Hotspot.GetAtScreenXY), and so on).
 You can save this pointer into a pointer variable, and then call its
 methods as you would in Java or C`#`. The following examples are all
 valid:
@@ -187,6 +187,6 @@ with, which indicates that they are unassigned.
 
 Because there is no *new* keyword, you cannot create object instances;
 rather, they are returned by static member functions in AGS, such as
-[File.Open](ags53.md#File.Open) and
-[Hotspot.GetAtScreenXY](ags63.md#Hotspot.GetAtScreenXY). See the
+[File.Open](ags53#File.Open) and
+[Hotspot.GetAtScreenXY](ags63#Hotspot.GetAtScreenXY). See the
 examples for the functions to get an idea of how to use them.

@@ -462,7 +462,7 @@ of your own. There are many more advanced features that the system can
 do, but this should be enough to get you started. 
 
 When you're ready, feel free to proceed to the [Tutorial Chapter 2 - The
-Patronising Text Returns](ags30.md) which covers more advanced topics.
+Patronising Text Returns](ags30) which covers more advanced topics.
 
 Enjoy AGS!
 

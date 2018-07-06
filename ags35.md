@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags34.md#StringFormats)
-[![Next](forward.gif)](ags36.md#BlockingScripts)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags34#StringFormats)
+[![Next](forward.gif)](ags36#BlockingScripts)
 
 ------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ another.
 
 The scripts for the game can be seen under the "Scripts" node in the
 project tree. Each script has its own header, which is where you place
-the [import](ags44.md#importkeyword) definitions for that script to
+the [import](ags44#importkeyword) definitions for that script to
 allow the rest of your game to access its functionality.
 
 The order of the scripts is important. A script can only use
@@ -71,6 +71,6 @@ you need other scripts to handle any of this functionality, you can
 simply create a custom function in the script and then call it from the
 global script.
 
-The [ClaimEvent](ags54.md#ClaimEvent) command is supported for
+The [ClaimEvent](ags54#ClaimEvent) command is supported for
 on\_key\_press, on\_mouse\_click and on\_event. Calling it prevents the
 rest of the scripts (including the global script) from being called.

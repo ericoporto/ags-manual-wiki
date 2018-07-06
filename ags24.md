@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags12.md#topic20)
-[![Previous](back.gif)](ags23.md#topic38)
-[![Next](forward.gif)](ags25.md#topic39)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags12#topic20)
+[![Previous](back.gif)](ags23#topic38)
+[![Next](forward.gif)](ags25#topic39)
 
 ------------------------------------------------------------------------
 
@@ -52,7 +52,7 @@ XP or higher to take advantage of this feature.
 
 **2. The Debug() command**
 
-There is a scripting command, [Debug](ags54.md#Debug), which you can
+There is a scripting command, [Debug](ags54#Debug), which you can
 use in your script to help you find problems. The default setup enables
 some hotkeys for the various features - in particular, Ctrl+X allows you
 to teleport to another room, Ctrl+A shows the walkable areas on the

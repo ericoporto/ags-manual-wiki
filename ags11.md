@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags8.md#topic5)
-[![Previous](back.gif)](ags10.md#Settingupthegame)
-[![Next](forward.gif)](ags12.md#topic20)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags8#topic5)
+[![Previous](back.gif)](ags10#Settingupthegame)
+[![Next](forward.gif)](ags12#topic20)
 
 ------------------------------------------------------------------------
 
@@ -67,7 +67,7 @@ That's all you have to do. Draw on the walkable areas, hotspots and so
 on, as normal, and then save the room. The screen will scroll to follow
 the main character around.
 
-The script command [SetViewport](ags73.md#SetViewport) allows you to
+The script command [SetViewport](ags73#SetViewport) allows you to
 manually scroll the room around if you don't want it to follow the
 character.
 

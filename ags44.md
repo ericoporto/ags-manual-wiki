@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags43.md#BuiltInEnums)
-[![Next](forward.gif)](ags45.md#AudioChannelCommands)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags43#BuiltInEnums)
+[![Next](forward.gif)](ags45#AudioChannelCommands)
 
 ------------------------------------------------------------------------
 
@@ -70,7 +70,7 @@ Here's an example of using the array:
 this sets Health 3 to 50, Health 4 to 100, and the Health index that
 corresponds to the player character's ID number to 10.
 
-See Also: [Dynamic arrays](ags37.md#DynamicArrays)
+See Also: [Dynamic arrays](ags37#DynamicArrays)
 
 ------------------------------------------------------------------------
 
@@ -236,7 +236,7 @@ you could do:
 
 To get the actual number of things in the game rather than the AGS
 limit, use the
-[Game.CharacterCount](ags54.md#Game.CharacterCount)-style properties.
+[Game.CharacterCount](ags54#Game.CharacterCount)-style properties.
 
 ------------------------------------------------------------------------
 
@@ -397,7 +397,7 @@ of the loop.
 *statements*\
 `}` **while (** *expression* **);**
 
-Similarily to [while](ags44.md#whilestatement) runs *statements*
+Similarily to [while](ags44#whilestatement) runs *statements*
 continuously, so long as *expression* is true, but unlike **while** it
 checks the expression AFTER executing statements, not before. This also
 means that the statements will be executed at least once.
@@ -439,8 +439,8 @@ by changing some variable value. Every part of the command header -
 *initialization*, *expression* and *iteration* - is optional: there may
 be **for** command without initialization, or without iteration, or even
 without conditional expression (in which case loop should be ended with
-either [break](ags44.md#breakstatement) or
-[return](ags44.md#returnstatement) statement).
+either [break](ags44#breakstatement) or
+[return](ags44#returnstatement) statement).
 
 For example:
 
@@ -470,7 +470,7 @@ coordinate x = 100.
 **break**;
 
 `break` statement ends the execution of most inner loop or
-[switch](ags44.md#switchstatement) immediately. After this script
+[switch](ags44#switchstatement) immediately. After this script
 continues running from the next line after loop or switch.
 
 For example:
@@ -497,7 +497,7 @@ immediately.
 `continue` statement makes the loop skip remaining statements in current
 iteration and proceed to the next end-condition check, followed by the
 loop restart, if condition is still met, or loop end. If in
-[for](ags44.md#forstatement) kind of loop, the *iteration* statement is
+[for](ags44#forstatement) kind of loop, the *iteration* statement is
 executed right before that.
 
 For example:
@@ -543,7 +543,7 @@ then, elsewhere in your code you can simply call:
 to add inventory item *iKey* and play the sound.
 
 Generally, you place your functions in your global script. You then need
-to add an [import](ags44.md#importkeyword) line to your script header
+to add an [import](ags44#importkeyword) line to your script header
 to allow the function to be called from room scripts.
 
 **Optional parameters**
@@ -632,7 +632,7 @@ Now, you can declare a struct in one go, like so:
     sword.name = "Fine sword";
 
 Much neater and better organised. You can also combine structs with
-[arrays](ags44.md#Arrays):
+[arrays](ags44#Arrays):
 
     // at top of script
     Weapon weapons[10];
@@ -691,7 +691,7 @@ This creates a pointer variable `my_apple` of managed type `Apple`.
 However, this does **not** create an object itself yet, and `my_apple`
 is assigned **null** value now. If you try to access struct members
 using `my_apple` now, you will get errors. To create an actual object
-you need to use a [new](ags44.md#newstatement) keyword:
+you need to use a [new](ags44#newstatement) keyword:
 
     my_apple = new Apple;
 
@@ -740,8 +740,8 @@ function variable, and function ended), or is assigned another object,
 or simply assigned `null`, then the dynamic object is removed from your
 game forever.
 
-See Also: [new](ags44.md#newstatement), [Pointers in
-AGS](ags31.md#Pointers)
+See Also: [new](ags44#newstatement), [Pointers in
+AGS](ags31#Pointers)
 
 ------------------------------------------------------------------------
 
@@ -772,8 +772,8 @@ Example:
       SomeApple = new Apple;
     }
 
-See Also: [managed (struct)](ags44.md#managedmodifier), [Pointers in
-AGS](ags31.md#Pointers)
+See Also: [managed (struct)](ags44#managedmodifier), [Pointers in
+AGS](ags31#Pointers)
 
 ------------------------------------------------------------------------
 
@@ -845,7 +845,7 @@ There are two uses for the `this` keyword.
 
 **1. Accessing members of the current struct**
 
-When you are creating custom [structs](ags44.md#struct), you use the
+When you are creating custom [structs](ags44#struct), you use the
 "this" keyword inside member functions to refer to the current struct.
 For example:
 
@@ -873,7 +873,7 @@ sets the `myValue` variable to 5.
 
 **2. Declaring extender functions**
 
-Please see the [Extender functions](ags38.md#ExtenderFunctions) page
+Please see the [Extender functions](ags38#ExtenderFunctions) page
 for details.
 
 ------------------------------------------------------------------------
@@ -899,7 +899,7 @@ call them. You normally place import statements into the script header
 so that all rooms can benefit from them.
 
 In order to import the variable, it must have been exported from the
-global script with the [export keyword](ags44.md#exportkeyword).
+global script with the [export keyword](ags44#exportkeyword).
 
 **NOTE:** You **MUST** import external variables with the correct type.
 If `counter` was declared as a **short** in the global script, you MUST
@@ -938,7 +938,7 @@ function **noloopcheck** *function\_name* ( *parameters ...* ) `{`
 The noloopcheck keyword disables the script loop checking for the
 current function.
 
-Normally, if a [while](ags44.md#whilestatement) loop runs for more than
+Normally, if a [while](ags44#whilestatement) loop runs for more than
 150,000 loops, AGS will assume that the script has hung and abort the
 game. This is to assist scripting since otherwise the game would lock up
 if you scripted a loop wrongly.

@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags54.md#GlobalCommands)
-[![Next](forward.gif)](ags56.md#topic53)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags54#GlobalCommands)
+[![Next](forward.gif)](ags56#topic53)
 
 ------------------------------------------------------------------------
 
@@ -48,7 +48,7 @@ Example:
 
 will centre the CONTROLPANEL GUI in the middle of the screen.
 
-*See Also:* [GUI.SetPosition](ags55.md#GUI.SetPosition)
+*See Also:* [GUI.SetPosition](ags55#GUI.SetPosition)
 
 ------------------------------------------------------------------------
 
@@ -74,8 +74,8 @@ triggers OnClick event for gMainMenu.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Button.Click](ags57.md#Button.Click),
-[GUI.ProcessClick](ags55.md#GUI.ProcessClick)
+*See Also:* [Button.Click](ags57#Button.Click),
+[GUI.ProcessClick](ags55#GUI.ProcessClick)
 
 ------------------------------------------------------------------------
 
@@ -115,8 +115,8 @@ Example:
 will display the number of the GUI that the mouse is over.
 
 *See Also:*
-[GUIControl.GetAtScreenXY](ags56.md#GUIControl.GetAtScreenXY),
-[GUI.ID](ags55.md#GUI.ID), [GUI.ZOrder](ags55.md#GUI.ZOrder)
+[GUIControl.GetAtScreenXY](ags56#GUIControl.GetAtScreenXY),
+[GUI.ID](ags55#GUI.ID), [GUI.ZOrder](ags55#GUI.ZOrder)
 
 ------------------------------------------------------------------------
 
@@ -146,8 +146,8 @@ Pointer mode, which will ignore anything but interface.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Mouse.Click](ags66.md#Mouse.Click),
-[Room.ProcessClick](ags73.md#Room.ProcessClick)
+*See Also:* [Mouse.Click](ags66#Mouse.Click),
+[Room.ProcessClick](ags73#Room.ProcessClick)
 
 ------------------------------------------------------------------------
 
@@ -170,11 +170,11 @@ Example:
 
 will move the VERBCOIN GUI to the position where the cursor is.
 
-*See Also:* [GUI.Centre](ags55.md#GUI.Centre),
-[GUI.BackgroundGraphic](ags55.md#GUI.BackgroundGraphic),
-[GUIControl.SetPosition](ags56.md#GUIControl.SetPosition),
-[GUI.SetSize](ags55.md#GUI.SetSize), [GUI.X](ags55.md#GUI.X),
-[GUI.Y](ags55.md#GUI.Y)
+*See Also:* [GUI.Centre](ags55#GUI.Centre),
+[GUI.BackgroundGraphic](ags55#GUI.BackgroundGraphic),
+[GUIControl.SetPosition](ags56#GUIControl.SetPosition),
+[GUI.SetSize](ags55#GUI.SetSize), [GUI.X](ags55#GUI.X),
+[GUI.Y](ags55#GUI.Y)
 
 ------------------------------------------------------------------------
 
@@ -200,11 +200,11 @@ Example:
 
 changes the ICONBAR GUI to be the size of half the screen
 
-*See Also:* [GUI.Centre](ags55.md#GUI.Centre),
-[GUI.Height](ags55.md#GUI.Height),
-[GUIControl.SetPosition](ags56.md#GUIControl.SetPosition),
-[GUI.SetPosition](ags55.md#GUI.SetPosition),
-[GUI.Width](ags55.md#GUI.Width)
+*See Also:* [GUI.Centre](ags55#GUI.Centre),
+[GUI.Height](ags55#GUI.Height),
+[GUIControl.SetPosition](ags56#GUIControl.SetPosition),
+[GUI.SetPosition](ags55#GUI.SetPosition),
+[GUI.Width](ags55#GUI.Width)
 
 ------------------------------------------------------------------------
 
@@ -220,8 +220,8 @@ Gets/sets the background image of the GUI.
 
 You can set this to 0 to remove the background image from the GUI.
 
-*See Also:* [GUI.SetPosition](ags55.md#GUI.SetPosition),
-[Button.NormalGraphic](ags57.md#Button.NormalGraphic)
+*See Also:* [GUI.SetPosition](ags55#GUI.SetPosition),
+[Button.NormalGraphic](ags57#Button.NormalGraphic)
 
 ------------------------------------------------------------------------
 
@@ -250,7 +250,7 @@ Example:
 
 sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
-*See Also:* [GUI.GetAtScreenXY](ags55.md#GUI.GetAtScreenXY)
+*See Also:* [GUI.GetAtScreenXY](ags55#GUI.GetAtScreenXY)
 
 ------------------------------------------------------------------------
 
@@ -274,7 +274,7 @@ Example:
 
 disables all controls on the INVENTORY GUI.
 
-*See Also:* [GUI.Controls](ags55.md#GUI.Controls)
+*See Also:* [GUI.Controls](ags55#GUI.Controls)
 
 ------------------------------------------------------------------------
 
@@ -310,8 +310,8 @@ Example:
 gets list box number 4 from the INVENTORY GUI, and then adds an item to
 it. If control 4 isn't a listbox, you will get a Null Reference error.
 
-*See Also:* [GUIControl.As\*](ags56.md#GUIControl.AsType),
-[GUI.ControlCount](ags55.md#GUI.ControlCount)
+*See Also:* [GUIControl.As\*](ags56#GUIControl.AsType),
+[GUI.ControlCount](ags55#GUI.ControlCount)
 
 ------------------------------------------------------------------------
 
@@ -332,8 +332,8 @@ Example:
 
 displays the height of the ICONBAR GUI.
 
-*See Also:* [GUI.SetSize](ags55.md#GUI.SetSize),
-[GUI.Width](ags55.md#GUI.Width)
+*See Also:* [GUI.SetSize](ags55#GUI.SetSize),
+[GUI.Width](ags55#GUI.Width)
 
 ------------------------------------------------------------------------
 
@@ -356,7 +356,7 @@ uses the obsolete SetGUIClickable function to make the ICONBAR GUI
 clickable, and then uses the equivalent modern property to stop it being
 clickable.
 
-*See Also:* [GUIControl.ID](ags56.md#GUIControl.ID)
+*See Also:* [GUIControl.ID](ags56#GUIControl.ID)
 
 ------------------------------------------------------------------------
 
@@ -399,7 +399,7 @@ Example:
 
 will gradually fade the INVENTORY GUI out until it is invisible.
 
-*See Also:* [Object.Transparency](ags68.md#Object.Transparency)
+*See Also:* [Object.Transparency](ags68#Object.Transparency)
 
 ------------------------------------------------------------------------
 
@@ -437,7 +437,7 @@ Example:
 
 will turn on the SETTINGS GUI.
 
-*See Also:* [IsGamePaused](ags54.md#IsGamePaused)
+*See Also:* [IsGamePaused](ags54#IsGamePaused)
 
 ------------------------------------------------------------------------
 
@@ -458,8 +458,8 @@ Example:
 
 makes the INVENTORY GUI 5 pixels wider.
 
-*See Also:* [GUI.Height](ags55.md#GUI.Height),
-[GUI.SetSize](ags55.md#GUI.SetSize)
+*See Also:* [GUI.Height](ags55#GUI.Height),
+[GUI.SetSize](ags55#GUI.SetSize)
 
 ------------------------------------------------------------------------
 
@@ -482,8 +482,8 @@ Example:
 
 moves the VERBCOIN GUI right 5 pixels.
 
-*See Also:* [GUI.SetPosition](ags55.md#GUI.SetPosition),
-[GUI.Y](ags55.md#GUI.Y)
+*See Also:* [GUI.SetPosition](ags55#GUI.SetPosition),
+[GUI.Y](ags55#GUI.Y)
 
 ------------------------------------------------------------------------
 
@@ -507,8 +507,8 @@ Example:
 
 moves the VERBCOIN GUI down 5 pixels.
 
-*See Also:* [GUI.SetPosition](ags55.md#GUI.SetPosition),
-[GUI.X](ags55.md#GUI.X)
+*See Also:* [GUI.SetPosition](ags55#GUI.SetPosition),
+[GUI.X](ags55#GUI.X)
 
 ------------------------------------------------------------------------
 
@@ -533,6 +533,6 @@ Example:
 
 sets the STATUSLINE GUI to be behind all other GUIs.
 
-*See Also:* [GUI.GetAtScreenXY](ags55.md#GUI.GetAtScreenXY)
+*See Also:* [GUI.GetAtScreenXY](ags55#GUI.GetAtScreenXY)
 
 

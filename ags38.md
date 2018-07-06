@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags28.md#topic41)
-[![Previous](back.gif)](ags37.md#DynamicArrays)
-[![Next](forward.gif)](ags39.md#Gamevariables)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
+[![Previous](back.gif)](ags37#DynamicArrays)
+[![Next](forward.gif)](ags39#Gamevariables)
 
 ------------------------------------------------------------------------
 

@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags11.md#topic14)
-[![Next](forward.gif)](ags13.md#MusAndSound)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags11#topic14)
+[![Next](forward.gif)](ags13#MusAndSound)
 
 ------------------------------------------------------------------------
 
@@ -12,19 +12,19 @@ Other Features
 This section describes AGS features that were not covered in the
 tutorial.
 
-[**Music and sound**](ags13.md#MusAndSound)\
-[**Editing the GUIs**](ags14.md#topic21)\
-[**Distributing your game**](ags15.md#DistGame)\
-[**Backing up your game**](ags16.md#topic29)\
-[**The text parser**](ags17.md#TextParser)\
-[**Translations**](ags18.md#topic30)\
-[**Global variables**](ags19.md#GlobalVariables)\
-[**Custom Properties**](ags20.md#topic31)\
-[**Plugins**](ags21.md#topic32)\
-[**Lip sync**](ags22.md#topic33)\
-[**New Game templates**](ags23.md#topic38)\
-[**Debugging features**](ags24.md#Debuggingfeatures)\
-[**Auto-number speech files**](ags25.md#topic39)\
-[**Integration with Windows**](ags26.md#topic40)\
-[**Source Control integration**](ags27.md#SourceControl)\
+[**Music and sound**](ags13#MusAndSound)\
+[**Editing the GUIs**](ags14#topic21)\
+[**Distributing your game**](ags15#DistGame)\
+[**Backing up your game**](ags16#topic29)\
+[**The text parser**](ags17#TextParser)\
+[**Translations**](ags18#topic30)\
+[**Global variables**](ags19#GlobalVariables)\
+[**Custom Properties**](ags20#topic31)\
+[**Plugins**](ags21#topic32)\
+[**Lip sync**](ags22#topic33)\
+[**New Game templates**](ags23#topic38)\
+[**Debugging features**](ags24#Debuggingfeatures)\
+[**Auto-number speech files**](ags25#topic39)\
+[**Integration with Windows**](ags26#topic40)\
+[**Source Control integration**](ags27#SourceControl)\
 

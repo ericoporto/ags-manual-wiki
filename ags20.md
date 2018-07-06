@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags12.md#topic20)
-[![Previous](back.gif)](ags19.md#GlobalVariables)
-[![Next](forward.gif)](ags21.md#topic32)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags12#topic20)
+[![Previous](back.gif)](ags19#GlobalVariables)
+[![Next](forward.gif)](ags21#topic32)
 
 ------------------------------------------------------------------------
 
@@ -65,27 +65,27 @@ appear in the properties window for characters, objects, and so on.
 To access the properties from the script, there are various script
 functions. See their descriptions for how they work:
 
-[Character.GetProperty](ags47.md#Character.GetProperty),
-[Character.GetTextProperty](ags47.md#Character.GetTextProperty)\
-[Character.SetProperty](ags47.md#Character.SetProperty),
-[Character.SetTextProperty](ags47.md#Character.SetTextProperty)\
-[Hotspot.GetProperty](ags63.md#Hotspot.GetProperty),
-[Hotspot.GetTextProperty](ags63.md#Hotspot.GetTextProperty)\
-[Hotspot.SetProperty](ags63.md#Hotspot.SetProperty),
-[Hotspot.SetTextProperty](ags63.md#Hotspot.SetTextProperty)\
-[InventoryItem.GetProperty](ags64.md#InventoryItem.GetProperty),
-[InventoryItem.GetTextProperty](ags64.md#InventoryItem.GetTextProperty)\
-[InventoryItem.SetProperty](ags64.md#InventoryItem.SetProperty),
-[InventoryItem.SetTextProperty](ags64.md#InventoryItem.SetTextProperty)\
-[Object.GetProperty](ags68.md#Object.GetProperty),
-[Object.GetTextProperty](ags68.md#Object.GetTextProperty)\
-[Object.SetProperty](ags68.md#Object.SetProperty),
-[Object.SetTextProperty](ags68.md#Object.SetTextProperty)\
-[Room.GetProperty](ags73.md#Room.GetProperty),
-[Room.GetTextProperty](ags73.md#Room.GetTextProperty)\
-[Room.SetProperty](ags73.md#Room.SetProperty),
-[Room.SetTextProperty](ags73.md#Room.SetTextProperty)
+[Character.GetProperty](ags47#Character.GetProperty),
+[Character.GetTextProperty](ags47#Character.GetTextProperty)\
+[Character.SetProperty](ags47#Character.SetProperty),
+[Character.SetTextProperty](ags47#Character.SetTextProperty)\
+[Hotspot.GetProperty](ags63#Hotspot.GetProperty),
+[Hotspot.GetTextProperty](ags63#Hotspot.GetTextProperty)\
+[Hotspot.SetProperty](ags63#Hotspot.SetProperty),
+[Hotspot.SetTextProperty](ags63#Hotspot.SetTextProperty)\
+[InventoryItem.GetProperty](ags64#InventoryItem.GetProperty),
+[InventoryItem.GetTextProperty](ags64#InventoryItem.GetTextProperty)\
+[InventoryItem.SetProperty](ags64#InventoryItem.SetProperty),
+[InventoryItem.SetTextProperty](ags64#InventoryItem.SetTextProperty)\
+[Object.GetProperty](ags68#Object.GetProperty),
+[Object.GetTextProperty](ags68#Object.GetTextProperty)\
+[Object.SetProperty](ags68#Object.SetProperty),
+[Object.SetTextProperty](ags68#Object.SetTextProperty)\
+[Room.GetProperty](ags73#Room.GetProperty),
+[Room.GetTextProperty](ags73#Room.GetTextProperty)\
+[Room.SetProperty](ags73#Room.SetProperty),
+[Room.SetTextProperty](ags73#Room.SetTextProperty)
 
-**NOTE:** Calling [ResetRoom](ags73.md#ResetRoom) will reset that
+**NOTE:** Calling [ResetRoom](ags73#ResetRoom) will reset that
 room's properties to default values, as well as that room's hotspot and
 object properties.

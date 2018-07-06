@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags1.md#topic0)
-[![Next](forward.gif)](ags3.md#topic2)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags1#topic0)
+[![Next](forward.gif)](ags3#topic2)
 
 ------------------------------------------------------------------------
 
@@ -25,7 +25,7 @@ AGS is based around an easy-to-use IDE, where you can set up all the
 parts of your game, and then add some script to process game events.
 Making a game has never been so productive!
 
-To get started, [read the tutorial](ags9.md#StartingOff).
+To get started, [read the tutorial](ags9#StartingOff).
 
-[**System Requirements**](ags3.md#topic2)\
+[**System Requirements**](ags3#topic2)\
 

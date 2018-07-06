@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags93.md#UpgradeTo335)
-[![Next](forward.gif)](ags95.md#UpgradeTo341)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags93#UpgradeTo335)
+[![Next](forward.gif)](ags95#UpgradeTo341)
 
 ------------------------------------------------------------------------
 
@@ -68,16 +68,16 @@ course of the game. Now this restriction was eliminated and you can
 change any existing custom property in game script, using appropriate
 SetProperty and SetTextProperty functions:
 
-[Character.SetProperty](ags47.md#Character.SetProperty),
-[Character.SetTextProperty](ags47.md#Character.SetTextProperty),
-[Hotspot.SetProperty](ags63.md#Hotspot.SetProperty),
-[Hotspot.SetTextProperty](ags63.md#Hotspot.SetTextProperty),
-[InventoryItem.SetProperty](ags64.md#InventoryItem.SetProperty),
-[InventoryItem.SetTextProperty](ags64.md#InventoryItem.SetTextProperty),
-[Object.SetProperty](ags68.md#Object.SetProperty),
-[Object.SetTextProperty](ags68.md#Object.SetTextProperty),
-[Room.SetProperty](ags73.md#Room.SetProperty),
-[Room.SetTextProperty](ags73.md#Room.SetTextProperty)
+[Character.SetProperty](ags47#Character.SetProperty),
+[Character.SetTextProperty](ags47#Character.SetTextProperty),
+[Hotspot.SetProperty](ags63#Hotspot.SetProperty),
+[Hotspot.SetTextProperty](ags63#Hotspot.SetTextProperty),
+[InventoryItem.SetProperty](ags64#InventoryItem.SetProperty),
+[InventoryItem.SetTextProperty](ags64#InventoryItem.SetTextProperty),
+[Object.SetProperty](ags68#Object.SetProperty),
+[Object.SetTextProperty](ags68#Object.SetTextProperty),
+[Room.SetProperty](ags73#Room.SetProperty),
+[Room.SetTextProperty](ags73#Room.SetTextProperty)
 
 Besides, the number of properties is no longer limited by 30, you may
 make as much of them as you need for your game.
@@ -108,11 +108,11 @@ variable, define end condition and write iteration - all in its header.
 Another introduced command is `switch`. One `switch` can replace a long
 list of `if` and `else if` blocks.
 
-See: [switch](ags44.md#switchstatement),
-[do..while](ags44.md#dowhilestatement), [for](ags44.md#forstatement),
-[break](ags44.md#breakstatement),
-[continue](ags44.md#continuestatement),
-[managed](ags44.md#managedmodifier), [new](ags44.md#newstatement)
+See: [switch](ags44#switchstatement),
+[do..while](ags44#dowhilestatement), [for](ags44#forstatement),
+[break](ags44#breakstatement),
+[continue](ags44#continuestatement),
+[managed](ags44#managedmodifier), [new](ags44#newstatement)
 
 **Custom Dialog Options rendering extended**
 
@@ -129,11 +129,11 @@ screen.
 The `dialog_options_mouse_click` will now be called always, even if user
 clicks on the option, but on other hand option won't be run without
 explicit command:
-[RunActiveOption](ags50.md#DialogOptionsRenderingInfo.RunActiveOption).
+[RunActiveOption](ags50#DialogOptionsRenderingInfo.RunActiveOption).
 
 Along with RunActiveOption, DialogOptionsRenderingInfo (REF NOT FOUND)
 struct received another member function:
-[Update](ags50.md#DialogOptionsRenderingInfo.Update). It forces options
+[Update](ags50#DialogOptionsRenderingInfo.Update). It forces options
 GUI to redraw itself, hence may be used to implement custom animation,
 or similar behavior.
 
@@ -154,8 +154,8 @@ FOUND).
 
   -------------------------------- --------------------------------------------------
   **obsolete function/variable**   **replace with**
-  GetRoomProperty                  [Room.GetProperty](ags73.md#Room.GetProperty)
-  ProcessClick                     [Room.ProcessClick](ags73.md#Room.ProcessClick)
+  GetRoomProperty                  [Room.GetProperty](ags73#Room.GetProperty)
+  ProcessClick                     [Room.ProcessClick](ags73#Room.ProcessClick)
   -------------------------------- --------------------------------------------------
 
 **REMINDER:** you can also use "Script Compatibility Level" switch to

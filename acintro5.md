@@ -91,7 +91,7 @@ crosshair.
 
  
 
-**Go to part 6:** [Using your own graphics](acintro6.md)
+**Go to part 6:** [Using your own graphics](acintro6)
 
 Tutorial last updated 17 August 2007. Copyright (c) 2001-2007 Chris
 Jones.

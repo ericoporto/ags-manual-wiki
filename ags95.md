@@ -1,8 +1,8 @@
 []()
 
-[![Contents](contents.gif)](ags.md) [![Up](up.gif)](ags.md)
-[![Previous](back.gif)](ags94.md#UpgradeTo34)
-[![Next](forward.gif)](ags96.md#AnonymousUsageInfo)
+[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
+[![Previous](back.gif)](ags94#UpgradeTo34)
+[![Next](forward.gif)](ags96#AnonymousUsageInfo)
 
 ------------------------------------------------------------------------
 
@@ -55,7 +55,7 @@ directly create default config for your game using winsetup.exe.
 "Default Setup".
 
 For detailed information about Default Setup page refer to: [Default
-setup](ags10.md#Default%20setup).
+setup](ags10#Default%20setup).
 
 **Script API selector**
 
