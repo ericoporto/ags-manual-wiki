@@ -13,7 +13,7 @@ as a mini-CPU that executes your scripts.
 At the start of the game, the threads are all idle (not running any
 scripts):
 
-![](images/threads1.gif)\
+![](images/threads1.gif)
 
 Now, as and when your scripts need to be run, AGS will try to run them
 on the appropriate thread (the Room thread for local scripts, and the
@@ -22,7 +22,7 @@ Global thread for global scripts).
 So, on the first game loop, your global scripts' repeatedly\_execute
 will be run:
 
-![](images/threads2.gif)\
+![](images/threads2.gif)
 
 That's fine, and when it finishes running the thread becomes idle again.
 
@@ -31,7 +31,7 @@ Character.Say command. Say (or *DisplaySpeech* in old-style scripting)
 is a blocking command and does not return until the character finishes
 talking:
 
-![](images/threads3.gif)\
+![](images/threads3.gif)
 
 The global thread is now **blocked**, waiting for the character to
 finish talking. This means that none of your global script functions
@@ -55,7 +55,7 @@ What you'll find is that the code at the end of on\_mouse\_click
 actually gets called *before* the inventory item's event. Let's look at
 why:
 
-![](images/threads4.gif)\
+![](images/threads4.gif)
 
 Remember that AGS does not run events automatically; rather, the
 on\_mouse\_click script function handles the mouse click and calls
@@ -72,7 +72,7 @@ follow on afterwards.
 Now you might think that this means that object and hotspot events can
 run within on\_mouse\_click, since they use the room thread, like this:
 
-![](images/threads5.gif)\
+![](images/threads5.gif)
 
 However, this is not the case. It is still the global thread that is
 calling ProcessClick, so the room script will actually be run on the
@@ -85,7 +85,7 @@ allowed to run any blocking functions, this ensures that the thread
 never gets blocked and so it will always run, even when the other
 threads are busy:
 
-![](images/threads6.gif)\
+![](images/threads6.gif)
 
 I hope that helps explain blocking in terms of AGS scripting. If there's
 anything that you don't think is clear, please suggest amendments on the

@@ -125,8 +125,8 @@ Here's my script solution. As an added bonus, I've also given the player
 command:
 
 ![](images/intro4_5.jpg)\
-*Script for taking the key\
-*
+Script for taking the key
+
 
 Note that our solution is not perfect - the player can click the hand
 icon on the key from anywhere in the room and it will disappear. We are

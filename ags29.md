@@ -238,7 +238,7 @@ their values will keep getting reset.
 
 So, to declare a variable for use by one of the room interaction
 scripts, you need to place the definition **above** the main function
-body.  So, it should look something like this:\
+body.  So, it should look something like this:
 
 ---
 | <div dir="ltr">                                                          
