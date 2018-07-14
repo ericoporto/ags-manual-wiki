@@ -1,8 +1,5 @@
 []()
 
-[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
-[![Previous](back.gif)](ags96#AnonymousUsageInfo)
-[![Next](forward.gif)](ags98#Credits)
 
 ------------------------------------------------------------------------
 

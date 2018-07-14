@@ -1,8 +1,5 @@
 []()
 
-[![Contents](contents.gif)](ags) [![Up](up.gif)](ags)
-[![Previous](back.gif)](ags7#Setup)
-[![Next](forward.gif)](ags9#StartingOff)
 
 ------------------------------------------------------------------------
 

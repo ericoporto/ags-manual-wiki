@@ -1,8 +1,5 @@
 []()
 
-[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
-[![Previous](back.gif)](ags56#topic53)
-[![Next](forward.gif)](ags58#GUIInvFuncs)
 
 ------------------------------------------------------------------------
 

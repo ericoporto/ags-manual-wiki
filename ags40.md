@@ -1,8 +1,5 @@
 []()
 
-[![Contents](contents.gif)](ags) [![Up](up.gif)](ags28#topic41)
-[![Previous](back.gif)](ags39#Gamevariables)
-[![Next](forward.gif)](ags41#RepExec)
 
 ------------------------------------------------------------------------
 

@@ -1,8 +1,5 @@
 []()
 
-[![Contents](contents.gif)](ags) [![Up](up.gif)](ags4#topic3)
-[![Previous](back.gif)](ags4#topic3)
-[![Next](forward.gif)](ags6#GraphicsDriver)
 
 ------------------------------------------------------------------------
 

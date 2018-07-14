@@ -1,8 +1,5 @@
 []()
 
-[![Contents](contents.gif)](ags) [![Up](up.gif)](ags12#topic20)
-[![Previous](back.gif)](ags17#TextParser)
-[![Next](forward.gif)](ags19#GlobalVariables)
 
 ------------------------------------------------------------------------
 
