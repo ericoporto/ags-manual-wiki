@@ -184,8 +184,4 @@ If there is only one option enabled for a topic, then the game selects
 it automatically. You can use this to make Sierra-style conversations,
 because the options will never be shown to the player in this case.
 
-**\
-Go to part 9:**  [Cursors and fonts](acintro9)
-
-Tutorial last updated 18 August 2007. Copyright (c) 2003-2007 Chris
-Jones.
+Go to part 9:** [Cursors and fonts](acintro9)

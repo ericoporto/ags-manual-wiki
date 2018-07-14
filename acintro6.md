@@ -78,7 +78,4 @@ the cells will be imported as a separate sprite.\
 ![](images/icon_info.gif)\
 NOTE: Tiled sprite import only works if you selected "Import new sprite from file". If you used the "Replace sprite" option, only the first tile will be imported.
 
-**Go to part 7:**  [Animations](acintro7)
-
-Tutorial last updated 17 August 2007. Copyright (c) 2001-2007 Chris
-Jones.
+**Go to part 7:** [Animations](acintro7)

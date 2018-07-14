@@ -158,7 +158,4 @@ room itself (available when in Nothing mode):
 -   **MusicVolumeAdjustment** - this allows you to modify the background
     music volume for this screen.
 
-**Go to part 5:**  [Managing Inventory](acintro5)
-
-Tutorial last updated 12 August 2007. Copyright (c) 2001-2007 Chris
-Jones.
+**Go to part 5:** [Managing Inventory](acintro5)
