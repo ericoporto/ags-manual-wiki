@@ -123,7 +123,8 @@ clicks on the option, but on other hand option won't be run without
 explicit command:
 [RunActiveOption](ags50#DialogOptionsRenderingInfo.RunActiveOption).
 
-Along with RunActiveOption, DialogOptionsRenderingInfo (REF NOT FOUND)
+Along with RunActiveOption,
+[DialogOptionsRenderingInfo](ags50#DialogOptionsRenderingInfo)
 struct received another member function:
 [Update](ags50#DialogOptionsRenderingInfo.Update). It forces options
 GUI to redraw itself, hence may be used to implement custom animation,
