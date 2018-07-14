@@ -1,5 +1,5 @@
 DialogOptionsRenderingInfo functions and properties
----------------------------------------------------
+---
 
 The DialogOptionsRenderingInfo instance is used by the [custom dialog
 options](ags42#CustomDialogOptions) system. You can never create one
@@ -27,7 +27,7 @@ property](#DialogOptionsRenderingInfo.ParserTextBoxWidth)\
 [Y property
 (DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.Y)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -57,7 +57,7 @@ runs selected dialog option when player presses Enter/Return key.
 *See Also:*
 [DialogOptionsRenderingInfo.ActiveOptionID](ags50#DialogOptionsRenderingInfo.ActiveOptionID)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -82,7 +82,7 @@ current script ends.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -118,7 +118,7 @@ always selects the first option
 [DialogOptionsRenderingInfo.RunActiveOption](ags50#DialogOptionsRenderingInfo.RunActiveOption),
 [Dialog.GetOptionState](ags49#Dialog.GetOptionState)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -137,7 +137,7 @@ options](ags42#CustomDialogOptions) page.
 *See Also:* [Dialog.GetOptionState](ags49#Dialog.GetOptionState),
 [DialogOptionsRenderingInfo.Surface](ags50#DialogOptionsRenderingInfo.Surface)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -170,7 +170,7 @@ options in.
 [DialogOptionsRenderingInfo.Height](ags50#DialogOptionsRenderingInfo.Height),
 [DialogOptionsRenderingInfo.Width](ags50#DialogOptionsRenderingInfo.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -199,7 +199,7 @@ creates a 300x150 size area to draw the dialog options in
 *See Also:*
 [DialogOptionsRenderingInfo.Width](ags50#DialogOptionsRenderingInfo.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -236,7 +236,7 @@ options area
 [DialogOptionsRenderingInfo.ParserTextBoxX](ags50#DialogOptionsRenderingInfo.ParserTextBoxX),
 [DialogOptionsRenderingInfo.ParserTextBoxY](ags50#DialogOptionsRenderingInfo.ParserTextBoxY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -276,7 +276,7 @@ options area
 [DialogOptionsRenderingInfo.ParserTextBoxWidth](ags50#DialogOptionsRenderingInfo.ParserTextBoxWidth),
 [DialogOptionsRenderingInfo.ParserTextBoxY](ags50#DialogOptionsRenderingInfo.ParserTextBoxY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -315,7 +315,7 @@ options area
 *See Also:*
 [DialogOptionsRenderingInfo.ParserTextBoxX](ags50#DialogOptionsRenderingInfo.ParserTextBoxX)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -349,7 +349,7 @@ clears the dialog options area to yellow.
 *See Also:* [DrawingSurface
 functions](ags51#DrawingSurfaceFunctions)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -378,7 +378,7 @@ creates a 300x150 size area to draw the dialog options in
 *See Also:*
 [DialogOptionsRenderingInfo.Height](ags50#DialogOptionsRenderingInfo.Height)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -410,7 +410,7 @@ creates a 200x150 size area at (50, 20) to draw the dialog options in
 *See Also:*
 [DialogOptionsRenderingInfo.Y](ags50#DialogOptionsRenderingInfo.Y)
 
-------------------------------------------------------------------------
+---
 
 
 

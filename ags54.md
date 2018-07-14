@@ -95,7 +95,7 @@ property](#Game.IgnoreUserInputAfterTextTimeoutMs)\
 [UseNativeCoordinates property](#Game.UseNativeCoordinates)\
 [ViewCount property](#Game.ViewCount)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -128,7 +128,7 @@ will abort the game if MakeWider is called with a parameter less than
 
 SeeAlso: [QuitGame](ags54#QuitGame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -172,7 +172,7 @@ afterwards.
 
 SeeAlso: [The text parser documentation](ags17#TextParser)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -211,7 +211,7 @@ will attempt to change the translation to Spanish
 [Game.TranslationFilename](ags54#Game.TranslationFilename),
 [IsTranslationAvailable](ags54#IsTranslationAvailable)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -252,7 +252,7 @@ pressed the space bar.
 
 SeeAlso: [Script events](ags40#TextScriptEvents)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -290,7 +290,7 @@ with what they do:
 *See Also:* [Debugging features](ags24#Debuggingfeatures),
 [System.RuntimeInfo](ags77#System.RuntimeInfo)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -314,7 +314,7 @@ deletes save game slot 130 (which we should have saved earlier).
 *See Also:* [RestoreGameSlot](ags54#RestoreGameSlot),
 [SaveGameSlot](ags54#SaveGameSlot)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -342,7 +342,7 @@ will disable the user's interface.
 *See Also:* [EnableInterface](ags54#EnableInterface),
 [IsInterfaceEnabled](ags54#IsInterfaceEnabled)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -376,7 +376,7 @@ will give the player 5 points the first time this script is run.
 
 *See Also:* [GiveScore](ags54#GiveScore)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -397,7 +397,7 @@ will enable the user's interface.
 *See Also:* [DisableInterface](ags54#DisableInterface),
 [IsInterfaceEnabled](ags54#IsInterfaceEnabled)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -413,7 +413,7 @@ watched the cutscene, or 1 if they skipped it.
 [Game.InSkippableCutscene](ags54#Game.InSkippableCutscene),
 [Game.SkippingCutscene](ags54#Game.SkippingCutscene)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -445,7 +445,7 @@ will draw a bright green line onto the room background
 *See Also:*
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -471,7 +471,7 @@ Example:
 [Game.GetRunNextSettingForLoop](ags54#Game.GetRunNextSettingForLoop),
 [Game.GetViewFrame](ags54#Game.GetViewFrame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -495,7 +495,7 @@ Example:
 
 *See Also:* [SetGameOption](ags54#SetGameOption)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -522,7 +522,7 @@ GP\_NUMCHARACTERS)\
 [Game.InventoryItemCount](ags54#Game.InventoryItemCount)(was
 GP\_NUMINVITEMS)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -543,7 +543,7 @@ user has raised it )
 
 *See Also:* [SetGameSpeed](ags54#SetGameSpeed)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -568,7 +568,7 @@ will execute the code only if Global Integer 20 is 1.
 *See Also:* [SetGlobalInt](ags54#SetGlobalInt),
 [Game.GlobalStrings](ags54#Game.GlobalStrings)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -594,7 +594,7 @@ will execute the code only if interaction variable "climbed rock" is 1.
 *See Also:* [GetGlobalInt](ags54#GetGlobalInt),
 [SetGraphicalVariable](ags54#SetGraphicalVariable)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -631,7 +631,7 @@ variable.
 [GetLocationType](ags54#GetLocationType),
 [Object.Name](ags68#Object.Name)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -665,7 +665,7 @@ will set the cursor mode to talk if the cursor is over a character.
 [Game.GetLocationName](ags54#Game.GetLocationName),
 [Object.GetAtScreenXY](ags68#Object.GetAtScreenXY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -690,7 +690,7 @@ Example:
 [Game.GetFrameCountForLoop](ags54#Game.GetFrameCountForLoop),
 [Game.GetViewFrame](ags54#Game.GetViewFrame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -720,7 +720,7 @@ Example:
 [Game.GetFrameCountForLoop](ags54#Game.GetFrameCountForLoop),
 [Game.GetViewFrame](ags54#Game.GetViewFrame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -746,7 +746,7 @@ will get the description of save slot 10 into the variable.
 [RestoreGameSlot](ags54#RestoreGameSlot),
 [SaveGameSlot](ags54#SaveGameSlot)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -776,7 +776,7 @@ screen.
 *See Also:* [GetTextWidth](ags54#GetTextWidth),
 [DrawingSurface.DrawString](ags51#DrawingSurface.DrawString)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -806,7 +806,7 @@ will print "Hello!" onto the middle of the background scene.
 *See Also:* [GetTextHeight](ags54#GetTextHeight),
 [DrawingSurface.DrawString](ags51#DrawingSurface.DrawString)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -832,7 +832,7 @@ unchanged, so it is always safe to use this function.
 
 *See Also:* [IsTranslationAvailable](ags54#IsTranslationAvailable)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -863,7 +863,7 @@ Example:
 [ViewFrame.Graphic](ags79#ViewFrame.Graphic),
 [ViewFrame.Speed](ags79#ViewFrame.Speed)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -886,7 +886,7 @@ will give 5 points to the player.
 
 *See Also:* [Game.DoOnceOnly](ags54#Game.DoOnceOnly)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -907,7 +907,7 @@ will store the speech font's height in the variable.
 
 *See Also:* [GetFontLineSpacing](ags54#GetFontLineSpacing)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -940,7 +940,7 @@ speech font.
 
 *See Also:* [GetFontHeight](ags54#GetFontHeight)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -975,7 +975,7 @@ the user presses Cancel, the NAME string will be blank.
 
 *See Also:* [String.AsInt](ags76#String.AsInt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -990,7 +990,7 @@ previous versions of AGS, but is no longer supported.**
 
 Instead of using this command, you should create your own Inventory GUI.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1012,7 +1012,7 @@ will unpause the game if it's paused.
 
 *See Also:* [GUI.Visible](ags55#GUI.Visible)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1035,7 +1035,7 @@ will disable the user interface if it's enabled.
 *See Also:* [DisableInterface](ags54#DisableInterface),
 [EnableInterface](ags54#EnableInterface)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1066,7 +1066,7 @@ Example:
 [Character.IsInteractionAvailable](ags47#Character.IsInteractionAvailable),
 [Room.ProcessClick](ags73#Room.ProcessClick)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1102,7 +1102,7 @@ pressed.
 
 *See Also:* [Mouse.IsButtonDown](ags66#Mouse.IsButtonDown)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1127,7 +1127,7 @@ Example:
 
 will display a message if plugin is present.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1152,7 +1152,7 @@ will display a message when timer 1 expires.
 
 *See Also:* [SetTimer](ags54#SetTimer)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1168,7 +1168,7 @@ Returns 1 if a translation is in use, 0 if not.
 [Game.ChangeTranslation](ags54#Game.ChangeTranslation),
 [Game.TranslationFilename](ags54#Game.TranslationFilename)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1196,7 +1196,7 @@ will move the character EGO to the hotspot's 6 "walk to point".
 [Character.Walk](ags47#Character.Walk),
 [MoveCharacterToObject](ags54#MoveCharacterToObject)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1222,7 +1222,7 @@ Will move the character EGO below object number 0, then turn off object
 *See Also:* [Character.Walk](ags47#Character.Walk),
 [MoveCharacterToHotspot](ags54#MoveCharacterToHotspot)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1250,7 +1250,7 @@ will pause the game if the player presses the space bar
 
 *See Also:* [UnPauseGame](ags54#UnPauseGame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1272,7 +1272,7 @@ will quit the game without asking the player to confirm.
 
 *See Also:* [AbortGame](ags54#AbortGame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1300,7 +1300,7 @@ Example:
 will change the current room to room 1,2 or 3 depending on a random
 result.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1318,7 +1318,7 @@ will restart the game if the player presses the F7 key.
 
 *SeeAlso:* [SetRestartPoint](ags54#SetRestartPoint)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1341,7 +1341,7 @@ will bring up the restore game dialog if the player presses the F5 key.
 *See Also:* [RestoreGameSlot](ags54#RestoreGameSlot),
 [SaveGameDialog](ags54#SaveGameDialog)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1371,7 +1371,7 @@ will restore game slot 30 if this slot number exists.
 [RestoreGameDialog](ags54#RestoreGameDialog),
 [SaveGameSlot](ags54#SaveGameSlot)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1418,7 +1418,7 @@ Example:
 
 will run the MyGame game, passing it the value 51.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1442,7 +1442,7 @@ will bring up the save game dialog if the player presses the F3 key.
 *See Also:* [RestoreGameDialog](ags54#RestoreGameDialog),
 [SaveGameSlot](ags54#SaveGameSlot)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1473,7 +1473,7 @@ will save the current game position to slot 30 with the description
 [RestoreGameSlot](ags54#RestoreGameSlot),
 [SaveGameDialog](ags54#SaveGameDialog)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1503,7 +1503,7 @@ the filename the player typed.
 *See Also:*
 [DynamicSprite.SaveToFile](ags52#DynamicSprite.SaveToFile)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1545,7 +1545,7 @@ do not have individual light levels).
 [Object.SetLightLevel](ags68#Object.SetLightLevel),
 [Region.LightLevel](ags72#Region.LightLevel)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1590,7 +1590,7 @@ will tint everything on the screen with a hint of blue.
 [Object.Tint](ags68#Object.Tint),
 [Region.Tint](ags72#Region.Tint)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1604,7 +1604,7 @@ Settings pane.
 OPTION specifies which option to change, and VALUE is its new value.
 Valid OPTIONs are listed below:
 
-  -------------------------- ------------------------------------------------------------------------
+---
   **Option**                 **Values**
   OPT\_WALKONLOOK            Walk to hotspot in look mode (0 or 1)
   OPT\_DIALOGOPTIONSGUI      Dialog options on GUI (0=none, otherwise GUI name/number)
@@ -1629,7 +1629,7 @@ Valid OPTIONs are listed below:
   OPT\_MULTIPLEINV           Display multiple inv items multiple times (0 or 1)
   OPT\_SAVEGAMESCREENSHOTS   Save screenshots into save games (0 or 1)
   OPT\_PORTRAITPOSITION      Speech portrait side (0=left, 1=right, 2=alternate, 3=xpos)
-  -------------------------- ------------------------------------------------------------------------
+---
 
 The game settings which are not listed here either have a separate
 command to change them (such as Speech.Style), or simply cannot be
@@ -1647,7 +1647,7 @@ will disable pixel-perfect click detection.
 [Speech.Style](ags75#Speech.Style),
 [SetTextWindowGUI](ags54#SetTextWindowGUI)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1683,7 +1683,7 @@ will set the game speed to 80.
 
 *See Also:* [GetGameSpeed](ags54#GetGameSpeed)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1708,7 +1708,7 @@ will set the Global Integer 10 to 1.
 
 *See Also:* [GetGlobalInt](ags54#GetGlobalInt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1732,7 +1732,7 @@ will set the interaction editor "climbed rock" variable to 1.
 
 *See Also:* [GetGraphicalVariable](ags54#GetGraphicalVariable)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1768,7 +1768,7 @@ Example:
 
 will mean that the game continues to run in the background.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1790,7 +1790,7 @@ background.
 
 *SeeAlso:* [RestartGame](ags54#RestartGame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1837,7 +1837,7 @@ to do this in game\_start).
 [ListBox.FillSaveGameList](ags60#ListBox.FillSaveGameList),
 [RestoreGameDialog](ags54#RestoreGameDialog)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1858,7 +1858,7 @@ Example:
 will change Textwindow GUI 4 to be used for displaying text windows in
 future.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1885,7 +1885,7 @@ will set the timer 1 to expire after 1000 game cycles.
 
 *See Also:* [IsTimerExpired](ags54#IsTimerExpired)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1916,7 +1916,7 @@ blocking cutscene.
 
 *See Also:* [StartCutscene](ags54#StartCutscene)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1955,7 +1955,7 @@ ESC the game could appear to hang.
 [Game.InSkippableCutscene](ags54#Game.InSkippableCutscene),
 [Game.SkippingCutscene](ags54#Game.SkippingCutscene)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1977,7 +1977,7 @@ the editor.
 [Character.LoseInventory](ags47#Character.LoseInventory),
 [Character.InventoryQuantity](ags47#Character.InventoryQuantity)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1996,7 +1996,7 @@ will unpause the game if it is paused.
 
 *See Also:* [PauseGame](ags54#PauseGame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2021,7 +2021,7 @@ wait for 2 seconds (80 game cycles) and then face right.
 *See Also:* [WaitKey](ags54#WaitKey),
 [WaitMouseKey](ags54#WaitMouseKey)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2047,7 +2047,7 @@ presses a key.
 *See Also:* [Wait](ags54#Wait),
 [WaitMouseKey](ags54#WaitMouseKey)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2074,7 +2074,7 @@ presses a key or clicks the mouse.
 
 *See Also:* [Wait](ags54#Wait), [WaitKey](ags54#WaitKey)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2091,7 +2091,7 @@ audio clips for some reason.
 
 *See Also:* [Game.AudioClips](ags54#Game.AudioClips)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2117,7 +2117,7 @@ Example:
 
 *See Also:* [Game.AudioClipCount](ags54#Game.AudioClipCount)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2136,7 +2136,7 @@ Example:
 
     Display("The game has %d characters.", Game.CharacterCount);
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2156,7 +2156,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2176,7 +2176,7 @@ will display the game filename.
 
 *See Also:* [Game.Name](ags54#Game.Name)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2193,7 +2193,7 @@ Example:
 
     Display("The game has %d fonts.", Game.FontCount);
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2220,7 +2220,7 @@ Example:
 
 will display global message 997.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2245,7 +2245,7 @@ will set global string 15 to contain "Joe".
 *See Also:* [GetGlobalInt](ags54#GetGlobalInt),
 [SetGlobalInt](ags54#SetGlobalInt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2265,7 +2265,7 @@ Example:
 
     Display("The game has %d GUIs.", Game.GUICount);
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2299,7 +2299,7 @@ text is automatically removed from the screen.
 [Game.TextReadingSpeed](ags54#Game.TextReadingSpeed),
 [Speech.SkipStyle](ags75#Speech.SkipStyle)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2337,7 +2337,7 @@ will display a message if we are within a cutscene
 [EndCutscene](ags54#EndCutscene),
 [Game.SkippingCutscene](ags54#Game.SkippingCutscene)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2355,7 +2355,7 @@ Example:
 
     Display("The game has %d inventory items.", Game.InventoryItemCount);
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2391,7 +2391,7 @@ at least 2 seconds
 [Game.IgnoreUserInputAfterTextTimeoutMs](ags54#Game.IgnoreUserInputAfterTextTimeoutMs)
 [Game.TextReadingSpeed](ags54#Game.TextReadingSpeed)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2408,7 +2408,7 @@ Example:
 
     Display("The game has %d cursors.", Game.MouseCursorCount);
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2428,7 +2428,7 @@ will display the game name.
 
 *See Also:* [Game.FileName](ags54#Game.FileName)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2459,7 +2459,7 @@ will change the normal font to the font "Special".
 
 *See Also:* [Game.SpeechFont](ags54#Game.SpeechFont)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2498,7 +2498,7 @@ cutscene.
 [EndCutscene](ags54#EndCutscene),
 [Game.InSkippableCutscene](ags54#Game.InSkippableCutscene)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2522,7 +2522,7 @@ will change the speech font to "Standard".
 
 *See Also:* [Game.NormalFont](ags54#Game.NormalFont)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2544,7 +2544,7 @@ Example:
 
 *See Also:* [Game.SpriteWidth](ags54#Game.SpriteWidth)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2566,7 +2566,7 @@ Example:
 
 *See Also:* [Game.SpriteHeight](ags54#Game.SpriteHeight)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2605,7 +2605,7 @@ on-screen for twice as long as usual.
 [Game.MinimumTextDisplayTimeMs](ags54#Game.MinimumTextDisplayTimeMs),
 [Speech.SkipStyle](ags75#Speech.SkipStyle)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2630,7 +2630,7 @@ Example:
 *See Also:* [Game.ChangeTranslation](ags54#Game.ChangeTranslation),
 [IsTranslationAvailable](ags54#IsTranslationAvailable)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -2665,7 +2665,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-------------------------------------------------------------------------
+---
 
 
 

@@ -5,7 +5,7 @@ Palette functions
 [SetPalRGB](#SetPalRGB)\
 [UpdatePalette](#UpdatePalette)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -34,7 +34,7 @@ give a color effect.
 *See Also:* [FadeIn](ags74#FadeIn), [FadeOut](ags74#FadeOut),
 [SetPalRGB](ags70#SetPalRGB)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -66,7 +66,7 @@ will change palette slot number 10 from light green to yellow
 [FadeIn](ags74#FadeIn), [FadeOut](ags74#FadeOut),
 [UpdatePalette](ags70#UpdatePalette)
 
-------------------------------------------------------------------------
+---
 
 
 

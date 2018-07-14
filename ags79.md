@@ -9,7 +9,7 @@ ViewFrame functions and properties
 [Speed property (view frame)](#ViewFrame.Speed)\
 [View property (view frame)](#ViewFrame.View)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -34,7 +34,7 @@ Example:
 *See Also:* [Game.GetViewFrame](ags54#Game.GetViewFrame),
 [ViewFrame.Graphic](ags79#ViewFrame.Graphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -56,7 +56,7 @@ Example:
 [ViewFrame.Loop](ags79#ViewFrame.Loop),
 [ViewFrame.View](ags79#ViewFrame.View)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -75,7 +75,7 @@ Example:
 
 *See Also:* [Game.GetViewFrame](ags54#Game.GetViewFrame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -111,7 +111,7 @@ if so, plays it.
 
 *See Also:* [Game.GetViewFrame](ags54#Game.GetViewFrame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -133,7 +133,7 @@ Example:
 [ViewFrame.Frame](ags79#ViewFrame.Frame),
 [ViewFrame.View](ags79#ViewFrame.View)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -153,7 +153,7 @@ Example:
 
 *See Also:* [Game.GetViewFrame](ags54#Game.GetViewFrame)
 
-------------------------------------------------------------------------
+---
 
 
 

@@ -3,7 +3,7 @@ Adventure Game Studio 3.4.1
 
 ### by Chris Jones et al. 
 
-------------------------------------------------------------------------
+---
 
 Welcome to Adventure Game Studio!
 

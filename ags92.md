@@ -50,7 +50,7 @@ in your script you will likely get compilation errors. Simply replace
 them by the corresponding Speech properties, as shown in the table
 below:
 
-  -------------------------------------- ----------------------------------------------------------------------------------
+---
   **obsolete function/variable**         **replace with**
   SetVoiceMode                           [Speech.VoiceMode](ags75#Speech.VoiceMode)
   SetSkipSpeech                          [Speech.SkipStyle](ags75#Speech.SkipStyle)
@@ -59,7 +59,7 @@ below:
   game.speech\_text\_align               [Speech.TextAlignment](ags75#Speech.TextAlignment)
   game.skip\_speech\_specific\_key       [Speech.SkipKey](ags75#Speech.SkipKey)
   game.talkanim\_speed                   [Speech.GlobalSpeechAnimationDelay](ags75#Speech.GlobalSpeechAnimationDelay)
-  -------------------------------------- ----------------------------------------------------------------------------------
+---
 
 **Game-wide speech animation delay**
 

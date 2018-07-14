@@ -10,7 +10,7 @@ rooms.
 [Animating background scenes](#topic18)\
 [Lighting effects](#topic19)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -42,7 +42,7 @@ the walkable area. When the game is run, AGS will interpolate these
 values to make the character smoothly scale down from one value to
 another as he walks towards the back or front of the screen.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -63,7 +63,7 @@ The script command [SetViewport](ags73#SetViewport) allows you to
 manually scroll the room around if you don't want it to follow the
 character.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -87,7 +87,7 @@ numbers.
 **IMPORTANT:** Do NOT use any colour numbers above 15 on the mask
 bitmap. Use only palette indexes 0 to 15.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -130,7 +130,7 @@ importing). This means that when the current frame switches in-game, the
 palette will get reset - therefore you can't use special palette effects
 such as CyclePalette or SetPalRGB on screens with animating backgrounds.
 
-------------------------------------------------------------------------
+---
 
 
 

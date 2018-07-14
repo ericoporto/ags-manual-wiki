@@ -21,7 +21,7 @@ String functions
 [Chars property](#String.Chars)\
 [Length property](#String.Length)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -53,7 +53,7 @@ will display "HelloWorld".
 [String.Substring](ags76#String.Substring),
 [String.Truncate](ags76#String.Truncate)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -81,7 +81,7 @@ will display "Hello".
 
 *See Also:* [String.Append](ags76#String.Append)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -124,7 +124,7 @@ Example:
 will display "Strings match with case sensitivity off!", and then
 "Strings don't match with case sensitivity on!".
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -145,7 +145,7 @@ Example:
 
 will display "This is a test string".
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -174,7 +174,7 @@ will display the "Ends with script!" message.
 *See Also:* [String.IndexOf](ags76#String.IndexOf),
 [String.StartsWith](ags76#String.StartsWith)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -204,7 +204,7 @@ will create a text string containing "10".
 
 *See Also:* [Display](ags78#Display)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -238,7 +238,7 @@ Example:
 *See Also:* [String.EndsWith](ags76#String.EndsWith),
 [String.StartsWith](ags76#String.StartsWith)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -271,7 +271,7 @@ will set the myString variable to "Some text" if it is null or empty
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -297,7 +297,7 @@ will display "Old: THIS is a test string, new: this is a test string".
 
 *See Also:* [String.UpperCase](ags76#String.UpperCase)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -328,7 +328,7 @@ script!".
 
 *See Also:* [String.ReplaceCharAt](ags76#String.ReplaceCharAt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -358,7 +358,7 @@ will display "Old: Hello, new: Hemlo".
 *See Also:* [String.Chars](ags76#String.Chars),
 [String.Replace](ags76#String.Replace)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -387,7 +387,7 @@ will display the "Starts with hello!" message.
 *See Also:* [String.EndsWith](ags76#String.EndsWith),
 [String.IndexOf](ags76#String.IndexOf)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -413,7 +413,7 @@ will display "Original: Hello World!, Substring: lo Wo".
 *See Also:* [String.Append](ags76#String.Append),
 [String.Chars](ags76#String.Chars)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -438,7 +438,7 @@ will display "Original: Hello World!, Truncated: Hell".
 *See Also:* [String.Append](ags76#String.Append),
 [String.Substring](ags76#String.Substring)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -464,7 +464,7 @@ will display "Old: THIS is a test string, new: THIS IS A TEST STRING".
 
 *See Also:* [String.LowerCase](ags76#String.LowerCase)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -494,7 +494,7 @@ is useful for processing strings input from the user.
 [String.AsInt](ags76#String.AsInt),
 [String.Format](ags76#String.Format)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -531,7 +531,7 @@ useful for processing strings input from the user.
 [String.AsFloat](ags76#String.AsFloat),
 [String.Format](ags76#String.Format)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -563,7 +563,7 @@ will display "The 4th character is: s".
 *See Also:* [String.Length](ags76#String.Length),
 [String.ReplaceCharAt](ags76#String.ReplaceCharAt)
 
-------------------------------------------------------------------------
+---
 
 
 

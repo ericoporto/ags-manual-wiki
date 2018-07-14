@@ -12,7 +12,7 @@ commands in this section allow to play them.
 [IsAvailable property (audio clip)](#AudioClip.IsAvailable)\
 [Type property (audio clip)](#AudioClip.Type)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -58,7 +58,7 @@ plays the *aExplosion* audio clip.
 [AudioClip.PlayQueued](ags46#AudioClip.PlayQueued),
 [AudioClip.Stop](ags46#AudioClip.Stop)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -86,7 +86,7 @@ it is OGG/MP3).
 
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -124,7 +124,7 @@ be played afterwards.
 
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -147,7 +147,7 @@ again.
 
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -174,7 +174,7 @@ displays a message if aExplosion is a MIDI file
 [AudioChannel.Position](ags45#AudioChannel.Position),
 [AudioClip.PlayFrom](ags46#AudioClip.PlayFrom)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -206,7 +206,7 @@ checks if the aExplosion audio clip is available, and if so plays it.
 
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
-------------------------------------------------------------------------
+---
 
 
 

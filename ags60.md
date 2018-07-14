@@ -36,7 +36,7 @@ GUI List Box functions and properties
 [TopItem property (list box)](#ListBox.TopItem)\
 [Translated property (list box)](#ListBox.Translated)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -66,7 +66,7 @@ will take the input from the user and add it to the listbox.
 [ListBox.Items](ags60#ListBox.Items),
 [ListBox.RemoveItem](ags60#ListBox.RemoveItem)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -86,7 +86,7 @@ will remove all the items from listbox *lstNoteBook*.
 
 *See Also:* [ListBox.AddItem](ags60#ListBox.AddItem)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -122,7 +122,7 @@ actually for this task you would use FillSaveGameList instead.
 [ListBox.Clear](ags60#ListBox.Clear),
 [ListBox.FillSaveGameList](ags60#ListBox.FillSaveGameList)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -158,7 +158,7 @@ will fill listbox *lstSaveGames* with the list of the saved games.
 [ListBox.SaveGameSlots](ags60#ListBox.SaveGameSlots),
 [ListBox.SelectedIndex](ags60#ListBox.SelectedIndex)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -189,7 +189,7 @@ will display the item text that the mouse is currently hovering over.
 
 *See Also:* [ListBox.SelectedIndex](ags60#ListBox.SelectedIndex)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -218,7 +218,7 @@ will insert the Third Item in between the First and Second items.
 *See Also:* [ListBox.AddItem](ags60#ListBox.AddItem),
 [ListBox.RemoveItem](ags60#ListBox.RemoveItem)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -249,7 +249,7 @@ the list box will now just contain "Second item".
 *See Also:* [ListBox.Clear](ags60#ListBox.Clear),
 [ListBox.FillDirList](ags60#ListBox.FillDirList)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -268,7 +268,7 @@ will scroll the *lstTest* list box down one row.
 
 *See Also:* [ListBox.ScrollUp](ags60#ListBox.ScrollUp)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -287,7 +287,7 @@ will scroll the *lstTest* list box up one row.
 
 *See Also:* [ListBox.ScrollDown](ags60#ListBox.ScrollDown)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -306,7 +306,7 @@ will change the *lstSaveGames* list box to use Font "Speech".
 *See Also:* [Label.Font](ags59#Label.Font),
 [TextBox.Text](ags62#TextBox.Text)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -328,7 +328,7 @@ will hide the border around the Save Games list box.
 *See Also:*
 [ListBox.HideScrollArrows](ags60#ListBox.HideScrollArrows)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -355,7 +355,7 @@ will hide the built-in scroll arrows on the list box.
 
 *See Also:* [ListBox.HideBorder](ags60#ListBox.HideBorder)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -379,7 +379,7 @@ will pass the number of saved games to the int saves.
 
 *See Also:* [ListBox.Items](ags60#ListBox.Items)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -410,7 +410,7 @@ will get the text of the selected item in the list box.
 [ListBox.ItemCount](ags60#ListBox.ItemCount),
 [ListBox.AddItem](ags60#ListBox.AddItem)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -435,7 +435,7 @@ will display the number of rows that the listbox can display.
 [ListBox.ScrollDown](ags60#ListBox.ScrollDown),
 [ListBox.ScrollUp](ags60#ListBox.ScrollUp)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -467,7 +467,7 @@ FillSaveGameList had been used previously.
 [ListBox.FillSaveGameList](ags60#ListBox.FillSaveGameList),
 [ListBox.SelectedIndex](ags60#ListBox.SelectedIndex)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -491,7 +491,7 @@ Example:
 
 will get the text of the selected item in the listbox.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -514,7 +514,7 @@ Example:
 will automatically scroll listbox *lstSaveGames* back to the top of the
 list.
 
-------------------------------------------------------------------------
+---
 
 
 

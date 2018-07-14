@@ -17,7 +17,7 @@ palette setup and other things which do not depend on individual rooms.
 [Cursors](#topic12)\
 [Fonts](#topic13)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -68,7 +68,7 @@ entries from the PAL or PCX file you choose. It can read standard
 768-byte PAL files, SCI palette resources (renamed to extension .pal)
 and JASC PSP palette files.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -126,7 +126,7 @@ have a dot and mini-crosshair drawn on it, to show the player where the
 hotspot is. You can enter the colour for the centre dot and also for the
 surrounding 4 pixels.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -233,7 +233,7 @@ GUI.Transparency) will be ignored.
 you have the Anti Alias Sprites option turned on in Setup, it will not
 be applied to alpha-blended characters.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -259,7 +259,7 @@ as Character.Walk, Object.SetView, and so forth. I would suggest you
 leave this until you are more comfortable with AGS, and have some
 experience of how to use these functions.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -312,7 +312,7 @@ of all need to set the object's view to the correct view number (use the
 Object.SetView script command), and then use the Object.Animate script
 command to actually start the animation.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -463,7 +463,7 @@ created and all the settings imported.
 *NOTE: Because importing always creates a new slot, you cannot use it to
 overwrite an existing character.*
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -633,7 +633,7 @@ AGS automatically calls ParseText with the text they typed in before it
 calls dialog\_request, so you can use Said() calls to respond. See the
 [text parser](ags17#TextParser) section for more info.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -955,7 +955,7 @@ SetGameOption. **Basic properties**
 **Windows Game Explorer** See: [Windows Game
 Explorer](ags26#GameExplorer)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1005,7 +1005,7 @@ rebuild your game one more time to apply them.
 
 See also: [Run-time engine setup](ags7#Setup)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1050,7 +1050,7 @@ For the standard modes,
 -   Modes 1, 2, 3, 5, 8 and 9 will run the event with the same name as
     the cursor mode.
 
-------------------------------------------------------------------------
+---
 
 
 

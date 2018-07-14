@@ -23,7 +23,7 @@ System functions and properties
 [VSync property](#System.VSync)\
 [Windowed property](#System.Windowed)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -47,7 +47,7 @@ will display a message with the number of audio channels.
 
 *See Also:* [System.AudioChannels](ags77#System.AudioChannels)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -71,7 +71,7 @@ will display a message with Audio Channel 2's current volume.
 *See Also:* [Audio Channel commands](ags45#AudioChannelCommands),
 [System.AudioChannelCount](ags77#System.AudioChannelCount)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -98,7 +98,7 @@ will display a message if Caps Lock is on.
 *See Also:* [System.NumLock](ags77#System.NumLock),
 [System.ScrollLock](ags77#System.ScrollLock)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -122,7 +122,7 @@ will display the current resolution and colour depth
 *See Also:* [System.ScreenHeight](ags77#System.ScreenHeight),
 [System.ScreenWidth](ags77#System.ScreenWidth)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -152,7 +152,7 @@ will turn the screen brightness up to `50%` higher than normal
 *See Also:*
 [System.SupportsGammaControl](ags77#System.SupportsGammaControl)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -183,7 +183,7 @@ acceleration
 
 See Also: [AGS Graphics Drivers](ags6#GraphicsDriver)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -221,7 +221,7 @@ switches back to game.
 
 *See Also:* [SetMultitaskingMode](ags54#SetMultitaskingMode)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -248,7 +248,7 @@ will display a message if Num Lock is on.
 *See Also:* [System.CapsLock](ags77#System.CapsLock),
 [System.ScrollLock](ags77#System.ScrollLock)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -278,7 +278,7 @@ Example:
       Display("Not running on Windows!");
     }
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -303,7 +303,7 @@ menu option for toggling it at runtime.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -332,7 +332,7 @@ Example:
 
 *See Also:* [Debug](ags54#Debug)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -364,7 +364,7 @@ will display the current resolution and colour depth
 [System.ScreenWidth](ags77#System.ScreenWidth),
 [System.ViewportHeight](ags77#System.ViewportHeight)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -396,7 +396,7 @@ will display the current resolution and colour depth
 [System.ScreenHeight](ags77#System.ScreenHeight)
 [System.ViewportWidth](ags77#System.ViewportWidth)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -424,7 +424,7 @@ will display a message if Scroll Lock is on.
 *See Also:* [System.CapsLock](ags77#System.CapsLock),
 [System.NumLock](ags77#System.NumLock)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -456,7 +456,7 @@ will display a message if the system supports changing the gamma
 
 *See Also:* [System.Gamma](ags77#System.Gamma)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -478,7 +478,7 @@ Example:
 
 will display the AGS version number
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -501,7 +501,7 @@ will display the current viewport size
 *See Also:* [System.ScreenHeight](ags77#System.ScreenHeight),
 [System.ViewportWidth](ags77#System.ViewportWidth)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -524,7 +524,7 @@ will display the current viewport size
 *See Also:* [System.ScreenWidth](ags77#System.ScreenWidth),
 [System.ViewportHeight](ags77#System.ViewportHeight)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -551,7 +551,7 @@ will set the overall output volume to 80.
 *See Also:* [AudioChannel.Volume](ags45#AudioChannel.Volume),
 [Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -579,7 +579,7 @@ Example:
 
 will display a message if vsync is on
 
-------------------------------------------------------------------------
+---
 
 
 

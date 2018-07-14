@@ -14,7 +14,7 @@ Hotspot functions and properties
 [WalkToX property](#Hotspot.WalkToX)\
 [WalkToY property](#Hotspot.WalkToY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -49,7 +49,7 @@ will display a message depending on what the mouse is on.
 *See Also:* [Game.GetLocationName](ags54#Game.GetLocationName),
 [GetLocationType](ags54#GetLocationType)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -76,7 +76,7 @@ than 200.
 
 *See Also:* [Hotspot.GetTextProperty](ags63#Hotspot.GetTextProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -103,7 +103,7 @@ will retrieve hotspot 2's "description" property and display it.
 
 *See Also:* [Hotspot.GetProperty](ags63#Hotspot.GetProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -131,7 +131,7 @@ will change Door hotspot's "LockDifficulty" custom property to 5.
 
 *See Also:* [Hotspot.SetTextProperty](ags63#Hotspot.SetTextProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -157,7 +157,7 @@ will change Door's "description" property.
 
 *See Also:* [Hotspot.SetProperty](ags63#Hotspot.SetProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -183,7 +183,7 @@ Example:
 *See Also:* [IsInteractionAvailable](ags54#IsInteractionAvailable),
 [Hotspot.RunInteraction](ags63#Hotspot.RunInteraction)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -208,7 +208,7 @@ hDoor.
 [Character.RunInteraction](ags47#Character.RunInteraction),
 [Object.RunInteraction](ags68#Object.RunInteraction)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -239,7 +239,7 @@ will disable the hBrownTree hotspot.
 [RemoveWalkableArea](ags73#RemoveWalkableArea),
 [RestoreWalkableArea](ags73#RestoreWalkableArea)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -260,7 +260,7 @@ displays hDoor's hotspot number, and then displays hotspot 3's number
 
 *See Also:* [Hotspot.GetAtScreenXY](ags63#Hotspot.GetAtScreenXY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -284,7 +284,7 @@ will retrieve and then display hotspot 3's name.
 
 *See Also:* [Game.GetLocationName](ags54#Game.GetLocationName)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -306,7 +306,7 @@ will move the character to hotspot hTable's walk-to point.
 *See Also:* [Hotspot.WalkToY](ags63#Hotspot.WalkToY),
 [MoveCharacterToHotspot](ags54#MoveCharacterToHotspot)
 
-------------------------------------------------------------------------
+---
 
 
 

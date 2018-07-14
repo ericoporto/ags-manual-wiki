@@ -11,7 +11,7 @@ Properties Window (when clicking the lightning bolt icon).
 [Character events](#topic82)\
 [Region events](#topic83)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -55,7 +55,7 @@ Mouse moves over hotspot
 occurs repeatedly while the mouse cursor is over the hotspot. You can
 use this to highlight the cursor, and for other various effects.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -81,7 +81,7 @@ Use inventory on object
 works like "Use inventory on hotspot" - see that description (above) for
 more information.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -138,7 +138,7 @@ Player leaves room
 occurs when the player leaves the screen, just before the screen fades
 out.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -178,7 +178,7 @@ only applies to the Lucasarts-style inventory, occurs when the player
 clicks any other cursor mode (apart from look, talk and use\_inv) on the
 item.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -207,7 +207,7 @@ Any click on character
 occurs when the player clicks any other cursor mode (apart from look,
 talk and use\_inv) on the character.
 
-------------------------------------------------------------------------
+---
 
 
 

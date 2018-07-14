@@ -23,7 +23,7 @@ GUI Slider properties
 [Min property](#Slider.Min)\
 [Value property](#Slider.Value)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -47,7 +47,7 @@ displays the *sldHealth* slider's background image
 
 *See Also:* [Slider.HandleGraphic](ags61#Slider.HandleGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -74,7 +74,7 @@ displays the *sldHealth* slider's handle image
 [Slider.BackgroundGraphic](ags61#Slider.BackgroundGraphic),
 [Slider.HandleOffset](ags61#Slider.HandleOffset)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -96,7 +96,7 @@ the right.
 
 *See Also:* [Slider.HandleGraphic](ags61#Slider.HandleGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -120,7 +120,7 @@ sets the maximum value of the *sldHealth* slider to 200.
 *See Also:* [Slider.Min](ags61#Slider.Min),
 [Slider.Value](ags61#Slider.Value)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -145,7 +145,7 @@ sets the minimum value of the *sldHealth* slider to 0.
 *See Also:* [Slider.Max](ags61#Slider.Max),
 [Slider.Value](ags61#Slider.Value)
 
-------------------------------------------------------------------------
+---
 
 
 

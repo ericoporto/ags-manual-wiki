@@ -14,7 +14,7 @@ Inventory item functions and properties
 [ID property (inventory)](#InventoryItem.ID)\
 [Name property (inventory)](#InventoryItem.Name)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -53,7 +53,7 @@ will display the number of the inv item that the mouse is over
 *See Also:* [InventoryItem.Name](ags64#InventoryItem.Name),
 [Game.GetLocationName](ags54#Game.GetLocationName)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -81,7 +81,7 @@ to more than 200.
 *See Also:*
 [InventoryItem.GetTextProperty](ags64#InventoryItem.GetTextProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -110,7 +110,7 @@ will retrieve inv item 2's "description" property and display it.
 *See Also:*
 [InventoryItem.GetProperty](ags64#InventoryItem.GetProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -140,7 +140,7 @@ will change Stone's "weight" custom property to 120.
 *See Also:*
 [InventoryItem.SetTextProperty](ags64#InventoryItem.SetTextProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -168,7 +168,7 @@ will change key's "description" property.
 *See Also:*
 [InventoryItem.SetProperty](ags64#InventoryItem.SetProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -198,7 +198,7 @@ Example:
 *See Also:* [IsInteractionAvailable](ags54#IsInteractionAvailable),
 [InventoryItem.RunInteraction](ags64#InventoryItem.RunInteraction)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -225,7 +225,7 @@ this to work)
 [Room.ProcessClick](ags73#Room.ProcessClick),
 [Character.RunInteraction](ags47#Character.RunInteraction)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -250,7 +250,7 @@ will display inventory item *iKey*'s cursor graphic.
 
 *See Also:* [InventoryItem.Graphic](ags64#InventoryItem.Graphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -282,7 +282,7 @@ slot.
 [InventoryItem.GetAtScreenXY](ags64#InventoryItem.GetAtScreenXY),
 [InventoryItem.Name](ags64#InventoryItem.Name)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -304,7 +304,7 @@ inventory
 *See Also:* [Character.AddInventory](ags47#Character.AddInventory),
 [Character.LoseInventory](ags47#Character.LoseInventory)
 
-------------------------------------------------------------------------
+---
 
 
 

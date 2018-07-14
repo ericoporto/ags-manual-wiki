@@ -12,7 +12,7 @@ Multimedia functions
 [SetSpeechVolume](#SetSpeechVolume)\
 [StopAudio](#Game.StopAudio)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -72,7 +72,7 @@ Example:
 
 will play track 3 of the CD that's in the CD ROM drive.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -103,7 +103,7 @@ waits for any currently playing music to finish.
 
 *See Also:* [Game.StopAudio](ags67#Game.StopAudio)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -129,7 +129,7 @@ been renamed to avoid confusion.
 
 *See Also:* [AudioClip.IsAvailable](ags46#AudioClip.IsAvailable)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -159,7 +159,7 @@ the ESC key.
 
 *See Also:* [PlayVideo](ags67#PlayVideo)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -175,7 +175,7 @@ simulate this effect.
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play),
 [AudioChannel.Volume](ags45#AudioChannel.Volume)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -242,7 +242,7 @@ versions.
 
 *See Also:* [PlayFlic](ags67#PlayFlic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -271,7 +271,7 @@ while speech is playing.
 
 *See Also:* [Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -314,7 +314,7 @@ will change the volume of all currently playing and future music to
 [AudioClip.Play](ags46#AudioClip.Play),
 [System.Volume](ags77#System.Volume)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -334,7 +334,7 @@ will set the speech volume to 200.
 
 *See Also:* [Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume)
 
-------------------------------------------------------------------------
+---
 
 
 

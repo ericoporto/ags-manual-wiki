@@ -18,7 +18,7 @@ them.
 [PositionMs property](#AudioChannel.PositionMs)\
 [Volume property (audio channel)](#AudioChannel.Volume)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -54,7 +54,7 @@ seek it back to the start.
 
 *See Also:* [AudioChannel.Position](ags45#AudioChannel.Position)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -90,7 +90,7 @@ of the *oMachine* room object.
 
 *See Also:* [AudioChannel.Volume](ags45#AudioChannel.Volume)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -113,7 +113,7 @@ plays *aFunnyTalk* clip at the double speed.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -139,7 +139,7 @@ stop it.
 
 *See Also:* [Game.StopAudio](ags67#Game.StopAudio)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -161,7 +161,7 @@ channel it is playing on.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -187,7 +187,7 @@ finishes.
 
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -213,7 +213,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 *See Also:* [AudioChannel.PositionMs](ags45#AudioChannel.PositionMs)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -241,7 +241,7 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -275,7 +275,7 @@ will display what is currently playing on audio channel 2.
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play),
 [System.AudioChannels](ags77#System.AudioChannels)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -316,7 +316,7 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 [AudioChannel.PositionMs](ags45#AudioChannel.PositionMs),
 [AudioChannel.Seek](ags45#AudioChannel.Seek)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -349,7 +349,7 @@ display its position.
 [AudioChannel.LengthMs](ags45#AudioChannel.LengthMs),
 [AudioChannel.Position](ags45#AudioChannel.Position)
 
-------------------------------------------------------------------------
+---
 
 
 

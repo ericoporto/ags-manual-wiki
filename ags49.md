@@ -13,7 +13,7 @@ Dialog functions and properties
 [Start (dialog)](#Dialog.Start)\
 [StopDialog](#StopDialog)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -66,7 +66,7 @@ depending on what the player selected.
 *See Also:* [Dialog.Start](ags49#Dialog.Start),
 [Parser.ParseText](ags71#Parser.ParseText)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -108,7 +108,7 @@ currently switched on.
 [Dialog.SetHasOptionBeenChosen](ags49#Dialog.SetHasOptionBeenChosen),
 [Dialog.SetOptionState](ags49#Dialog.SetOptionState)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -133,7 +133,7 @@ will display the text for the third option of the dJoeBloggs dialog.
 *See Also:* [Dialog.OptionCount](ags49#Dialog.OptionCount),
 [Dialog.GetOptionState](ags49#Dialog.GetOptionState)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -162,7 +162,7 @@ before.
 *See Also:* [Dialog.GetOptionState](ags49#Dialog.GetOptionState),
 [Dialog.SetHasOptionBeenChosen](ags49#Dialog.SetHasOptionBeenChosen),
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -183,7 +183,7 @@ will display the ID number of the dFisherman dialog
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -207,7 +207,7 @@ will display the number of options in the dFisherman dialog.
 *See Also:* [Dialog.GetOptionText](ags49#Dialog.GetOptionText),
 [Dialog.GetOptionState](ags49#Dialog.GetOptionState)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -236,7 +236,7 @@ will mark option 1 of dialog dDialog1 as "not chosen yet".
 *See Also:* [Dialog.GetOptionState](ags49#Dialog.GetOptionState),
 [Dialog.HasOptionBeenChosen](ags49#Dialog.HasOptionBeenChosen)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -279,7 +279,7 @@ will enable option 2 of topic number 4 if the Global Integer 10 is 1.
 [Dialog.Start](ags49#Dialog.Start),
 [StopDialog](ags49#StopDialog)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -303,7 +303,7 @@ will display a message if dFisherman has the option enabled
 
 *Compatibility:* Supported by **AGS 3.2.1** and later versions.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -331,7 +331,7 @@ will start the conversation topic named dMerchant.
 *See Also:* [Dialog.DisplayOptions](ags49#Dialog.DisplayOptions),
 [Dialog.SetOptionState](ags49#Dialog.SetOptionState)
 
-------------------------------------------------------------------------
+---
 
 
 

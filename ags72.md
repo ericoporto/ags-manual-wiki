@@ -14,7 +14,7 @@ Region functions and properties
 [TintSaturation property](#Region.TintSaturation)\
 [TintLuminance property](#Region.TintLuminance)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -40,7 +40,7 @@ Example:
 
 *See Also:* [GetWalkableAreaAt](ags73#GetWalkableAreaAt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -71,7 +71,7 @@ walks onto region" for region 4.
 [Character.RunInteraction](ags47#Character.RunInteraction),
 [Hotspot.RunInteraction](ags63#Hotspot.RunInteraction)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -109,7 +109,7 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 *See Also:* [Region.LightLevel](ags72#Region.LightLevel),
 [SetAmbientTint](ags54#SetAmbientTint)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -139,7 +139,7 @@ will disable region number 3.
 [RemoveWalkableArea](ags73#RemoveWalkableArea),
 [RestoreWalkableArea](ags73#RestoreWalkableArea)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -158,7 +158,7 @@ displays region 3's number (which will be 3).
 
 *See Also:* [Region.GetAtRoomXY](ags72#Region.GetAtRoomXY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -205,7 +205,7 @@ will set region 2's level light to 100 if the Global Integer 10 is 1.
 [Character.SetLightLevel](ags47#Character.SetLightLevel),
 [Object.SetLightLevel](ags68#Object.SetLightLevel)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -231,7 +231,7 @@ will display a message if region 4 is tinted
 
 *See Also:* [Region.Tint](ags72#Region.Tint)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -263,7 +263,7 @@ will display a message with the region's tints.
 [Region.TintRed](ags72#Region.TintRed),
 [Region.TintLuminance](ags72#Region.TintLuminance)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -296,7 +296,7 @@ will display a message with the region's tints.
 [Region.TintSaturation](ags72#Region.TintSaturation),
 [Region.TintLuminance](ags72#Region.TintLuminance)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -329,7 +329,7 @@ will display a message with the region's tints.
 [Region.TintSaturation](ags72#Region.TintSaturation),
 [Region.TintLuminance](ags72#Region.TintLuminance)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -362,7 +362,7 @@ will display a message with the region's tints.
 [Region.TintRed](ags72#Region.TintRed),
 [Region.TintLuminance](ags72#Region.TintLuminance)
 
-------------------------------------------------------------------------
+---
 
 
 

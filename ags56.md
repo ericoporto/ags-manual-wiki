@@ -22,7 +22,7 @@ has its own specific section.
 [Y property (GUI controls)](#GUIControl.Y)\
 [ZOrder property (GUI controls)](#GUIControl.ZOrder)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -54,7 +54,7 @@ will display what control the mouse is over.
 
 *See Also:* [GUI.GetAtScreenXY](ags55#GUI.GetAtScreenXY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -86,7 +86,7 @@ that control is not a button, prints a message.
 
 *See Also:* [GUI.Controls](ags55#GUI.Controls)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -111,7 +111,7 @@ on the GUI.
 *See Also:* [GUIControl.SendToBack](ags56#GUIControl.SendToBack),
 [GUIControl.ZOrder](ags56#GUIControl.ZOrder)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -148,7 +148,7 @@ will make the *btnSaveGame* button non-clickable.
 
 *See Also:* [GUIControl.Enabled](ags56#GUIControl.Enabled)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -189,7 +189,7 @@ will disable the *btnSaveGame* button.
 *See Also:* [GUIControl.Clickable](ags56#GUIControl.Clickable),
 [GUIControl.Visible](ags56#GUIControl.Visible)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -213,7 +213,7 @@ makes the *btnConfirm* button 20 pixels high.
 *See Also:* [GUIControl.SetSize](ags56#GUIControl.SetSize),
 [GUIControl.Width](ags56#GUIControl.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -240,7 +240,7 @@ list box, and then uses the equivalent modern property to disable it.
 *See Also:* [GUIControl.OwningGUI](ags56#GUIControl.OwningGUI),
 [GUI.ID](ags55#GUI.ID)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -271,7 +271,7 @@ again using the niftier full pathing approach.
 *See Also:* [GUIControl.ID](ags56#GUIControl.ID),
 [GUI.ID](ags55#GUI.ID)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -297,7 +297,7 @@ the GUI.
 [GUIControl.BringToFront](ags56#GUIControl.BringToFront),
 [GUIControl.ZOrder](ags56#GUIControl.ZOrder)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -331,7 +331,7 @@ GUI.
 [GUIControl.X](ags56#GUIControl.X),
 [GUIControl.Y](ags56#GUIControl.Y)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -363,7 +363,7 @@ will resize the *invMain* control to have a size of 160 x 100.
 [GUI.SetSize](ags55#GUI.SetSize),
 [GUIControl.Width](ags56#GUIControl.Width),
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -390,7 +390,7 @@ will make the *btnSaveGame* button invisible.
 
 *See Also:* [GUIControl.Enabled](ags56#GUIControl.Enabled)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -414,7 +414,7 @@ makes the *btnConfirm* button 110 pixels wide.
 *See Also:* [GUIControl.Height](ags56#GUIControl.Height),
 [GUIControl.SetSize](ags56#GUIControl.SetSize)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -442,7 +442,7 @@ left of its GUI.
 *See Also:* [GUIControl.SetPosition](ags56#GUIControl.SetPosition),
 [GUIControl.Y](ags56#GUIControl.Y)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -470,7 +470,7 @@ top of its GUI.
 *See Also:* [GUIControl.SetPosition](ags56#GUIControl.SetPosition),
 [GUIControl.X](ags56#GUIControl.X)
 
-------------------------------------------------------------------------
+---
 
 
 

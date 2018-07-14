@@ -9,7 +9,7 @@ can integrate with the Game Explorer feature.
 [Enhanced Save Games](#EnhancedSaveGames)\
 [Windows Game Explorer](#GameExplorer)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -71,7 +71,7 @@ MS-DOS: **No**\
 Linux: **No**\
 MacOS: **No**
 
-------------------------------------------------------------------------
+---
 
 
 

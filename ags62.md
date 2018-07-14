@@ -20,7 +20,7 @@ GUI Text Box functions and properties
 [Text property (text box)](#TextBox.Text)\
 [TextColor property (text box)](#TextBox.TextColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -43,7 +43,7 @@ will change the *txtUserInput* text box to use Font "Normal".
 *See Also:* [Label.Font](ags59#Label.Font),
 [TextBox.Text](ags62#TextBox.Text)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -70,7 +70,7 @@ will clear the txtUserInput text box.
 [String.CompareTo](ags76#String.CompareTo),
 [Label.Text](ags59#Label.Text)
 
-------------------------------------------------------------------------
+---
 
 
 

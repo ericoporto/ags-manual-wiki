@@ -20,7 +20,7 @@ GUI functions and properties
 [Y property (GUI)](#GUI.Y)\
 [ZOrder property (gui)](#GUI.ZOrder)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -42,7 +42,7 @@ will centre the CONTROLPANEL GUI in the middle of the screen.
 
 *See Also:* [GUI.SetPosition](ags55#GUI.SetPosition)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -69,7 +69,7 @@ triggers OnClick event for gMainMenu.
 *See Also:* [Button.Click](ags57#Button.Click),
 [GUI.ProcessClick](ags55#GUI.ProcessClick)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -110,7 +110,7 @@ will display the number of the GUI that the mouse is over.
 [GUIControl.GetAtScreenXY](ags56#GUIControl.GetAtScreenXY),
 [GUI.ID](ags55#GUI.ID), [GUI.ZOrder](ags55#GUI.ZOrder)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -141,7 +141,7 @@ Pointer mode, which will ignore anything but interface.
 *See Also:* [Mouse.Click](ags66#Mouse.Click),
 [Room.ProcessClick](ags73#Room.ProcessClick)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -168,7 +168,7 @@ will move the VERBCOIN GUI to the position where the cursor is.
 [GUI.SetSize](ags55#GUI.SetSize), [GUI.X](ags55#GUI.X),
 [GUI.Y](ags55#GUI.Y)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -198,7 +198,7 @@ changes the ICONBAR GUI to be the size of half the screen
 [GUI.SetPosition](ags55#GUI.SetPosition),
 [GUI.Width](ags55#GUI.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -215,7 +215,7 @@ You can set this to 0 to remove the background image from the GUI.
 *See Also:* [GUI.SetPosition](ags55#GUI.SetPosition),
 [Button.NormalGraphic](ags57#Button.NormalGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -244,7 +244,7 @@ sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
 *See Also:* [GUI.GetAtScreenXY](ags55#GUI.GetAtScreenXY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -268,7 +268,7 @@ disables all controls on the INVENTORY GUI.
 
 *See Also:* [GUI.Controls](ags55#GUI.Controls)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -305,7 +305,7 @@ it. If control 4 isn't a listbox, you will get a Null Reference error.
 *See Also:* [GUIControl.As\*](ags56#GUIControl.AsType),
 [GUI.ControlCount](ags55#GUI.ControlCount)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -327,7 +327,7 @@ displays the height of the ICONBAR GUI.
 *See Also:* [GUI.SetSize](ags55#GUI.SetSize),
 [GUI.Width](ags55#GUI.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -350,7 +350,7 @@ clickable.
 
 *See Also:* [GUIControl.ID](ags56#GUIControl.ID)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -393,7 +393,7 @@ will gradually fade the INVENTORY GUI out until it is invisible.
 
 *See Also:* [Object.Transparency](ags68#Object.Transparency)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -431,7 +431,7 @@ will turn on the SETTINGS GUI.
 
 *See Also:* [IsGamePaused](ags54#IsGamePaused)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -453,7 +453,7 @@ makes the INVENTORY GUI 5 pixels wider.
 *See Also:* [GUI.Height](ags55#GUI.Height),
 [GUI.SetSize](ags55#GUI.SetSize)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -477,7 +477,7 @@ moves the VERBCOIN GUI right 5 pixels.
 *See Also:* [GUI.SetPosition](ags55#GUI.SetPosition),
 [GUI.Y](ags55#GUI.Y)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -502,7 +502,7 @@ moves the VERBCOIN GUI down 5 pixels.
 *See Also:* [GUI.SetPosition](ags55#GUI.SetPosition),
 [GUI.X](ags55#GUI.X)
 
-------------------------------------------------------------------------
+---
 
 
 

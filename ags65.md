@@ -22,7 +22,7 @@ Maths functions and properties
 [Tanh](#Maths.Tanh)\
 [Pi property](#Maths.Pi)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -49,7 +49,7 @@ displays the integer value of 10.7, rounded in the three different ways.
 
 *See Also:* [IntToFloat](ags65#IntToFloat)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -70,7 +70,7 @@ loads 10.0 into the variable *number*.
 
 *See Also:* [FloatToInt](ags65#FloatToInt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -92,7 +92,7 @@ calculates the arc-cosine of 1.0 and places it into variable *angle*.
 *See Also:* [Maths.Cos](ags65#Maths.Cos),
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -114,7 +114,7 @@ calculates the arc-sine of 0.5 and places it into variable *angle*.
 *See Also:* [Maths.Sin](ags65#Maths.Sin),
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -137,7 +137,7 @@ calculates the arc-tan of 0.5 and places it into variable *angle*.
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 [Maths.Tan](ags65#Maths.Tan)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -162,7 +162,7 @@ calculates the arc-tan of -862.42 / 78.5149 and places it into variable
 *See Also:* [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 [Maths.ArcTan](ags65#Maths.ArcTan)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -187,7 +187,7 @@ variable *cosine*.
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 [Maths.Sin](ags65#Maths.Sin), [Maths.Tan](ags65#Maths.Tan)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -213,7 +213,7 @@ variable *hcos*.
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 [Maths.Sinh](ags65#Maths.Sinh), [Maths.Tanh](ags65#Maths.Tanh)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -239,7 +239,7 @@ variable *cosine*.
 [Maths.RadiansToDegrees](ags65#Maths.RadiansToDegrees),
 [Maths.Sin](ags65#Maths.Sin), [Maths.Tan](ags65#Maths.Tan)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -265,7 +265,7 @@ the variable.
 *See Also:* [Maths.Log](ags65#Maths.Log),
 [Maths.Log10](ags65#Maths.Log10)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -289,7 +289,7 @@ variable.
 *See Also:* [Maths.Exp](ags65#Maths.Exp),
 [Maths.Log10](ags65#Maths.Log10)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -313,7 +313,7 @@ the variable.
 *See Also:* [Maths.Exp](ags65#Maths.Exp),
 [Maths.Log](ags65#Maths.Log)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -338,7 +338,7 @@ converts *PI* radians into degrees (which is 180).
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 [Maths.Sin](ags65#Maths.Sin), [Maths.Tan](ags65#Maths.Tan)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -358,7 +358,7 @@ calculates 4 to the power 3 (which is 64).
 
 *See Also:* [Maths.Sqrt](ags65#Maths.Sqrt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -383,7 +383,7 @@ variable *sine*.
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 [Maths.Cos](ags65#Maths.Cos), [Maths.Tan](ags65#Maths.Tan)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -410,7 +410,7 @@ variable *hsine*.
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 [Maths.Cosh](ags65#Maths.Cosh), [Maths.Tanh](ags65#Maths.Tanh)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -433,7 +433,7 @@ displays the square root of 4 (rounded down to the nearest integer).
 [Maths.RaiseToPower](ags65#Maths.RaiseToPower),
 [Maths.Sin](ags65#Maths.Sin), [Maths.Tan](ags65#Maths.Tan)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -458,7 +458,7 @@ variable *tan*.
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 [Maths.Cos](ags65#Maths.Cos), [Maths.Sin](ags65#Maths.Sin)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -485,7 +485,7 @@ calculates the hyperbolic tan of 45 degrees and places it into variable
 [Maths.DegreesToRadians](ags65#Maths.DegreesToRadians),
 [Maths.Cos](ags65#Maths.Cos), [Maths.Sin](ags65#Maths.Sin)
 
-------------------------------------------------------------------------
+---
 
 
 

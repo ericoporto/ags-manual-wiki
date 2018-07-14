@@ -6,7 +6,7 @@ Parser functions
 [Said](#Parser.Said)\
 [SaidUnknownWord](#Parser.SaidUnknownWord)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -43,7 +43,7 @@ will display a message if the game dictionary includes "machine"
 
 *See Also:* [Parser.ParseText](ags71#Parser.ParseText)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -67,7 +67,7 @@ the said command.
 *See Also:* [Parser.FindWordID](ags71#Parser.FindWordID),
 [Parser.Said](ags71#Parser.Said)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -96,7 +96,7 @@ the text parser.
 *See Also:* [Parser.ParseText](ags71#Parser.ParseText),
 [Parser.SaidUnknownWord](ags71#Parser.SaidUnknownWord)
 
-------------------------------------------------------------------------
+---
 
 
 

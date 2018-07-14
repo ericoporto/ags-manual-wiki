@@ -14,7 +14,7 @@ display are then listed afterwards.
 
 The special codes you can use are as follows:
 
-  ---------- ----------------------------------------------------------------
+---
   **Code**   **Description**
   `%d`       Integer (use to display value of int and short variables)
   `%0Xd`     Integer left-padded with up to X zeros
@@ -24,7 +24,7 @@ The special codes you can use are as follows:
   `%.Xf`     Float to X decimal places
   `%%`       Display the percent character (ie. no variable)
   `[`        Inserts a new line into the message
-  ---------- ----------------------------------------------------------------
+---
 
 Some examples:
 

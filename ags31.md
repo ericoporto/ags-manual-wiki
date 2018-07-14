@@ -10,7 +10,7 @@ experience -- select one of the links below:
 [Pointers for people who know Java or C`#`](#PointersForJavaCSharp)\
 [Pointers for people who know C or C++](#PointersForC)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -103,7 +103,7 @@ So, that concludes our introduction to pointers. Hopefully you've got an
 understanding of what they are and what they do; if there's anything you
 can't work out, feel free to ask on the Technical forums.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -149,7 +149,7 @@ if you have global pointer variables in your global script, it's a good
 idea to set them to *null* when you're no longer using them, to allow
 the memory to be freed.
 
-------------------------------------------------------------------------
+---
 
 
 

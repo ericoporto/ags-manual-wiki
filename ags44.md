@@ -24,7 +24,7 @@ Script language keywords
 [export](#exportkeyword)\
 [noloopcheck](#noloopcheck)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -64,13 +64,13 @@ corresponds to the player character's ID number to 10.
 
 See Also: [Dynamic arrays](ags37#DynamicArrays)
 
-------------------------------------------------------------------------
+---
 
 
 
 ### Data types
 
-  ---------- ----------------------------------------------------------------------------------------------------------------------------------------
+---
   **Type**   **Description**
   char       Single byte data type, can store a single character or number 0 to 255
   short      16-bit integer, can store numbers from -32,768 to 32,767
@@ -78,7 +78,7 @@ See Also: [Dynamic arrays](ags37#DynamicArrays)
   String     Stores a string of characters
   float      A 32-bit floating point number. Accuracy normally about 6 decimal places, but varies depending on the size of the number being stored.
   bool       a variable that stores either 'true' or 'false'
-  ---------- ----------------------------------------------------------------------------------------------------------------------------------------
+---
 
 You will normally only need to use the **int** and **String** data
 types. The smaller types are only useful for conserving memory if you
@@ -112,7 +112,7 @@ stored as 6.000001 or 5.999999; this is a common gotcha to all
 programming languages so just be aware of it if you use any floating
 point arithmetic.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -173,7 +173,7 @@ this:
 
 `if ((!a) && (b < 4))`
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -181,7 +181,7 @@ this:
 
 The following predefined macros are available in your scripts:
 
-  ---------------------- ------------------------------------------------------------------------------------
+---
   **Name**               **Description**
   DEBUG                  Defined if the game is being compiled in debug mode, not defined otherwise
   SCRIPT\_API\_vXXX      Defined if corresponding version of script API is enabled (e.g. SCRIPT\_API\_v340)
@@ -197,7 +197,7 @@ The following predefined macros are available in your scripts:
   AGS\_MAX\_OBJECTS      The maximum objects per room
   AGS\_MAX\_HOTSPOTS     The maximum hotspots per room
   AGS\_MAX\_REGIONS      The maximum regions per room
-  ---------------------- ------------------------------------------------------------------------------------
+---
 
 You can check for whether a macro is defined or not by using the
 `#ifdef` and `#ifndef` keywords:
@@ -230,7 +230,7 @@ To get the actual number of things in the game rather than the AGS
 limit, use the
 [Game.CharacterCount](ags54#Game.CharacterCount)-style properties.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -252,7 +252,7 @@ Note that this ability was only added in 2.72, so you cannot use the
 `#ifver` checks if you want your module to work with earlier versions
 than this.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -296,7 +296,7 @@ if it is not.
       Display("Globalint 5 is not 1 or 2.");
     }
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -357,7 +357,7 @@ line. cEgo sais "I like apples" and then also "I would like some
 berries". If there were any other player controlled character, not
 mentioned in this switch, they would go straight to default line.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -379,7 +379,7 @@ will run the script `Wait(1);` repeatedly, as long as `cEgo.Moving` is
 not zero. Once it is zero, the **while** statement will exit at the end
 of the loop.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -406,7 +406,7 @@ will run the script `cEgo.Move(cEgo.x + 1, cEgo.y);` once, and then
 continue run it repeatedly, as long as the right arrow key is pressed by
 player.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -453,7 +453,7 @@ Another example (note missing initialization and iteration):
 This will repeat `Wait(1);` until cEgo character does not move beyond
 coordinate x = 100.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -478,7 +478,7 @@ will run the script `Wait(1);` repeatedly, as long as `cEgo.Moving` is
 not zero. If player presses Escape key, the loop is terminated
 immediately.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -507,7 +507,7 @@ For example:
 will run first part of the loop statements always, and second part only
 when `i <= 50`.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -554,7 +554,7 @@ parameter, it will default to 5.
 declaration for the function in the script header. The default values
 cannot be specified in the actual function declaration itself.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -589,7 +589,7 @@ naturally:
       // more statements following
     }
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -639,7 +639,7 @@ Much neater and better organised. You can also combine structs with
 structs are essential if you have complex data that you need to store in
 your scripts.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -735,7 +735,7 @@ game forever.
 See Also: [new](ags44#newstatement), [Pointers in
 AGS](ags31#Pointers)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -767,7 +767,7 @@ Example:
 See Also: [managed (struct)](ags44#managedmodifier), [Pointers in
 AGS](ags31#Pointers)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -827,7 +827,7 @@ In summary, enums are not an essential part of scripting and you can get
 away perfectly well without using them, but in some specific situations
 they're very handy.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -868,7 +868,7 @@ sets the `myValue` variable to 5.
 Please see the [Extender functions](ags38#ExtenderFunctions) page
 for details.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -900,7 +900,7 @@ import it as a short, otherwise your game may crash.
 **NOTE:** You cannot import old-style `string` variables (this does not
 apply to new-style `String` variables).
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -919,7 +919,7 @@ For example:
 
 This exports three variables - my\_variable, counter and strength.
 
-------------------------------------------------------------------------
+---
 
 
 

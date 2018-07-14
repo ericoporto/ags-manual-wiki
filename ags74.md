@@ -11,7 +11,7 @@ Screen functions
 [ShakeScreenBackground](#ShakeScreenBackground)\
 [TintScreen](#TintScreen)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -37,7 +37,7 @@ in again.
 *See Also:* [CyclePalette](ags70#CyclePalette),
 [FadeOut](ags74#FadeOut), [SetFadeColor](ags74#SetFadeColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -62,7 +62,7 @@ in again.
 *See Also:* [CyclePalette](ags70#CyclePalette),
 [FadeIn](ags74#FadeIn), [SetFadeColor](ags74#SetFadeColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -91,7 +91,7 @@ Example:
 
 will flip the screen upside down.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -117,7 +117,7 @@ of black.
 SeeAlso: [FadeIn](ags74#FadeIn), [FadeOut](ags74#FadeOut),
 [SetScreenTransition](ags74#SetScreenTransition)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -142,7 +142,7 @@ transition type from then on.
 
 SeeAlso: [SetScreenTransition](ags74#SetScreenTransition)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -170,7 +170,7 @@ will change the room transitions to Fade.
 
 SeeAlso: [SetNextScreenTransition](ags74#SetNextScreenTransition)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -189,7 +189,7 @@ will shake the screen a little.
 
 *See Also:* [ShakeScreenBackground](ags74#ShakeScreenBackground)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -221,7 +221,7 @@ will shake the screen a little for 2 seconds.
 
 *See Also:* [ShakeScreen](ags74#ShakeScreen)
 
-------------------------------------------------------------------------
+---
 
 
 

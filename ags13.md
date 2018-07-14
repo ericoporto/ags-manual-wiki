@@ -160,7 +160,7 @@ reference](ags45#AudioChannelCommands)
 [Voice speech](#VoiceSpeech)\
 [The AudioCache folder](#AudioCache)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -212,7 +212,7 @@ not present.
 
 *SeeAlso:* [Speech.VoiceMode](ags75#Speech.VoiceMode)
 
-------------------------------------------------------------------------
+---
 
 
 

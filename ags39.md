@@ -9,7 +9,7 @@ by the script.
 
 All the following variables are `int` variables.
 
-  ------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
   game.abort\_key                                  The keycode for Abort Game, which allows the you to quit even if your script is stuck. Default 324 (Alt+X).
 
   game.ambient\_sounds\_persist                    If 0 (default), ambient sounds are stopped on room change. Set to 1 to tell AGS to leave ambient sounds playing when going to a new room.
@@ -103,6 +103,6 @@ All the following variables are `int` variables.
   palette\[SLOT\].b                                The blue component (0-63) of palette slot SLOT
 
   player.\[x,y,name,...\]                          Alias to the current player character.
-  ------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 

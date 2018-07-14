@@ -177,9 +177,9 @@ option.
 What colours you use is up to you, and depends on what sort of colour
 scheme you're going for with your graphics.
 
-  --------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------
+---
   ![](images/icon_info.gif){width="32" height="32"}   You should set up the palette as well as you can now, because changing it later may require you to re-import some graphics.
-  --------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------
+---
 
 ### Creating a 16-bit or 32-bit colour game
 

@@ -31,7 +31,7 @@ GUI Button functions and properties
 [Text property (button)](#Button.Text)\
 [TextColor property (button)](#Button.TextColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -47,7 +47,7 @@ that event it will be run, otherwise nothing happens.
 *See Also:* [GUI.Click](ags55#GUI.Click),
 [GUI.ProcessClick](ags55#GUI.ProcessClick)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -92,7 +92,7 @@ delay of 4 cycles per frame, and repeat the animation continually.
 [Button.View](ags57#Button.View),
 [Button.NormalGraphic](ags57#Button.NormalGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -121,7 +121,7 @@ will animate button and wait until the animation finishes.
 [Button.View](ags57#Button.View),
 [Button.Graphic](ags57#Button.Graphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -143,7 +143,7 @@ This property is read-only. To change button's animation, use the
 [Button.View](ags57#Button.View),
 [Button.Graphic](ags57#Button.Graphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -165,7 +165,7 @@ This property is read-only. To change button's animation, use the
 [Button.View](ags57#Button.View),
 [Button.Graphic](ags57#Button.Graphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -187,7 +187,7 @@ This property is read-only. To change button's animation, use the
 [Button.Loop](ags57#Button.Loop),
 [Button.Graphic](ags57#Button.Graphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -216,7 +216,7 @@ button's clickable area.
 
 *See Also:* [Button.Graphic](ags57#Button.Graphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -238,7 +238,7 @@ will change the *btnOK* button to use Font "Main".
 *See Also:* [Label.Font](ags59#Label.Font),
 [TextBox.Font](ags62#TextBox.Font)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -267,7 +267,7 @@ will display btnPlay's current sprite number.
 [Button.NormalGraphic](ags57#Button.NormalGraphic),
 [Button.PushedGraphic](ags57#Button.PushedGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -291,7 +291,7 @@ will display btnPlay's mouse-over sprite number.
 [Button.NormalGraphic](ags57#Button.NormalGraphic),
 [Button.PushedGraphic](ags57#Button.PushedGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -320,7 +320,7 @@ will display btnPlay's normal sprite number.
 [Button.PushedGraphic](ags57#Button.PushedGraphic),
 [Button.TextColor](ags57#Button.TextColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -345,7 +345,7 @@ will display btnPlay's pushed sprite number.
 [Button.MouseOverGraphic](ags57#Button.MouseOverGraphic),
 [Button.NormalGraphic](ags57#Button.NormalGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -370,7 +370,7 @@ will display the old text, then change button btnController to read
 *See Also:* [Button.NormalGraphic](ags57#Button.NormalGraphic),
 [Label.Text](ags59#Label.Text)
 
-------------------------------------------------------------------------
+---
 
 
 

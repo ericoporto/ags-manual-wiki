@@ -10,7 +10,7 @@ DateTime functions and properties
 [Second property](#DateTime.Second)\
 [Year property](#DateTime.Year)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -46,7 +46,7 @@ will display the current date and time in 24-hour format
 [DateTime.Second](ags48#DateTime.Second),
 [DateTime.Year](ags48#DateTime.Year)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -61,7 +61,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 *See Also:* [DateTime.Now](ags48#DateTime.Now)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -76,7 +76,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 *See Also:* [DateTime.Now](ags48#DateTime.Now)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -91,7 +91,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 *See Also:* [DateTime.Now](ags48#DateTime.Now)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -106,7 +106,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 *See Also:* [DateTime.Now](ags48#DateTime.Now)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -141,7 +141,7 @@ should display that 3 seconds have elapsed.
 *See Also:* [DateTime.Now](ags48#DateTime.Now),
 [SetTimer](ags54#SetTimer)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -156,7 +156,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 *See Also:* [DateTime.Now](ags48#DateTime.Now)
 
-------------------------------------------------------------------------
+---
 
 
 

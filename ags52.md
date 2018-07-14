@@ -23,7 +23,7 @@ DynamicSprite functions and properties
 [Height property (dynamic sprite)](#DynamicSprite.Height)\
 [Width property (dynamic sprite)](#DynamicSprite.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -71,7 +71,7 @@ the sprite.
 [DynamicSprite.Graphic](ags52#DynamicSprite.Graphic),
 [DynamicSprite.GetDrawingSurface](ags52#DynamicSprite.GetDrawingSurface)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -125,7 +125,7 @@ onto the top left corner of the background image.
 
 *See Also:* [DynamicSprite.Delete](ags52#DynamicSprite.Delete)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -176,7 +176,7 @@ previously was.
 
 *See Also:* [DynamicSprite.Delete](ags52#DynamicSprite.Delete)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -228,7 +228,7 @@ and then draws the result onto the background.
 *See Also:* [DynamicSprite.Delete](ags52#DynamicSprite.Delete),
 [DynamicSprite.Resize](ags52#DynamicSprite.Resize)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -281,7 +281,7 @@ Once the image is finished with, Delete should be called on it.
 *See Also:* [DynamicSprite.Delete](ags52#DynamicSprite.Delete),
 [DynamicSprite.CreateFromSaveGame](ags52#DynamicSprite.CreateFromSaveGame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -334,7 +334,7 @@ Once the GUI is disposed of, Delete should be called on the sprite.
 [DynamicSprite.CreateFromFile](ags52#DynamicSprite.CreateFromFile),
 [DynamicSprite.CreateFromScreenShot](ags52#DynamicSprite.CreateFromScreenShot)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -385,7 +385,7 @@ Once the GUI is disposed of, Delete should be called on the sprite.
 [DynamicSprite.CreateFromFile](ags52#DynamicSprite.CreateFromFile),
 [DynamicSprite.CreateFromSaveGame](ags52#DynamicSprite.CreateFromSaveGame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -423,7 +423,7 @@ to the left and right, and draws a line in the new area to the left.
 [DynamicSprite.Height](ags52#DynamicSprite.Height),
 [DynamicSprite.Width](ags52#DynamicSprite.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -465,7 +465,7 @@ transparency mask to use that of sprite 11, and displays it on object 0.
 *See Also:*
 [DynamicSprite.CreateFromExistingSprite](ags52#DynamicSprite.CreateFromExistingSprite)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -499,7 +499,7 @@ pixels, and then draw it onto the room background at (100,100).
 [DynamicSprite.Height](ags52#DynamicSprite.Height),
 [DynamicSprite.Width](ags52#DynamicSprite.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -536,7 +536,7 @@ and free the new image.
 [DynamicSprite.CreateFromScreenShot](ags52#DynamicSprite.CreateFromScreenShot),
 [DynamicSprite.Graphic](ags52#DynamicSprite.Graphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -566,7 +566,7 @@ it onto the room background at (100,100).
 [DynamicSprite.Resize](ags52#DynamicSprite.Resize),
 [DynamicSprite.Rotate](ags52#DynamicSprite.Rotate)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -601,7 +601,7 @@ object for 1 second and then removes it.
 [DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
 [DrawingSurface.Release](ags51#DrawingSurface.Release)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -637,7 +637,7 @@ size, and then draw it onto the room background at (100,100).
 [DynamicSprite.Height](ags52#DynamicSprite.Height),
 [DynamicSprite.Width](ags52#DynamicSprite.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -677,7 +677,7 @@ draw the result onto the screen, and then delete the image.
 [DynamicSprite.Height](ags52#DynamicSprite.Height),
 [DynamicSprite.Width](ags52#DynamicSprite.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -709,7 +709,7 @@ then save the result back to the disk.
 [DynamicSprite.CreateFromFile](ags52#DynamicSprite.CreateFromFile),
 [SaveScreenShot](ags54#SaveScreenShot)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -745,7 +745,7 @@ room background.
 [DynamicSprite.Width](ags52#DynamicSprite.Width),
 [SetAmbientTint](ags54#SetAmbientTint)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -770,7 +770,7 @@ displays the colour depth of the CustomAvatar.bmp image.
 *See Also:* [DynamicSprite.Height](ags52#DynamicSprite.Height),
 [DynamicSprite.Width](ags52#DynamicSprite.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -797,7 +797,7 @@ takes a screen shot, and draws it onto the background scene at
 [DynamicSprite.CreateFromScreenShot](ags52#DynamicSprite.CreateFromScreenShot),
 [DynamicSprite.Delete](ags52#DynamicSprite.Delete)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -821,7 +821,7 @@ displays the size of the CustomAvatar.bmp image.
 *See Also:* [DynamicSprite.Resize](ags52#DynamicSprite.Resize),
 [DynamicSprite.Width](ags52#DynamicSprite.Width)
 
-------------------------------------------------------------------------
+---
 
 
 

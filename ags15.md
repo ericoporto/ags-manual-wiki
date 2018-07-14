@@ -62,7 +62,7 @@ the player to have to download them.
 [Custom icon](#topic28)\
 [Splitting resource files](#SplitRes)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -84,7 +84,7 @@ You can also have a custom icon for the Setup program generated. To do
 so, create your icon as above but name it **setup.ico** in the game
 folder.
 
-------------------------------------------------------------------------
+---
 
 
 

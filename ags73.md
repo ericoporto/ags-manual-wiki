@@ -36,7 +36,7 @@ Room functions
 [TopEdge property](#Room.TopEdge)\
 [Width property (room)](#Room.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -73,7 +73,7 @@ if object 2 was a bullet, for instance.
 [Character.IsCollidingWithChar](ags47#Character.IsCollidingWithChar),
 [Object.IsCollidingWithObject](ags68#Object.IsCollidingWithObject)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -107,7 +107,7 @@ will disable all ground-level events, but leave light levels working
 [Region.Enabled](ags72#Region.Enabled),
 [EnableGroundLevelAreas](ags73#EnableGroundLevelAreas)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -129,7 +129,7 @@ will re-enable all ground-level events.
 [Region.Enabled](ags72#Region.Enabled),
 [DisableGroundLevelAreas](ags73#DisableGroundLevelAreas)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -150,7 +150,7 @@ will turn on object 2 if the background frame of the room is frame 4.
 
 *See Also:* [SetBackgroundFrame](ags73#SetBackgroundFrame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -191,7 +191,7 @@ background, then releases the image.
 [DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
 [DrawingSurface.Release](ags51#DrawingSurface.Release)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -209,7 +209,7 @@ Example:
 
 *See Also:* [Character.ID](ags47#Character.ID)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -241,7 +241,7 @@ box ticked.
 
 *See Also:* [Room.GetTextProperty](ags73#Room.GetTextProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -272,7 +272,7 @@ will retrieve the room's "description" property then display it.
 
 *See Also:* [Room.GetProperty](ags73#Room.GetProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -303,7 +303,7 @@ will change room's "Darkness" custom property to 10.
 
 *See Also:* [Room.SetTextProperty](ags73#Room.SetTextProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -332,7 +332,7 @@ will change room's "description" property.
 
 *See Also:* [Room.SetProperty](ags73#Room.SetProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -353,7 +353,7 @@ Example:
 *See Also:* [GetWalkableAreaAt](ags73#GetWalkableAreaAt),
 [SetAreaScaling](ags73#SetAreaScaling)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -381,7 +381,7 @@ to the right.
 *See Also:* [GetViewportY](ags73#GetViewportY),
 [SetViewport](ags73#SetViewport)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -407,7 +407,7 @@ to the bottom.
 *See Also:* [GetViewportX](ags73#GetViewportX),
 [SetViewport](ags73#SetViewport)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -434,7 +434,7 @@ Example:
 [Region.GetAtRoomXY](ags72#Region.GetAtRoomXY),
 [GetScalingAt](ags73#GetScalingAt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -464,7 +464,7 @@ will display a message if the player has been to room 14.
 
 *See Also:* [ResetRoom](ags73#ResetRoom)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -499,7 +499,7 @@ will simulate a click in the Look mode on co-ordinates (100, 50).
 [IsInteractionAvailable](ags54#IsInteractionAvailable),
 [Hotspot.RunInteraction](ags63#Hotspot.RunInteraction)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -525,7 +525,7 @@ to its original position and unlock the screen viewport.
 
 *See Also:* [SetViewport](ags73#SetViewport)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -549,7 +549,7 @@ will make the walking area 5 unwalkable.
 
 *See Also:* [RestoreWalkableArea](ags73#RestoreWalkableArea)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -580,7 +580,7 @@ to.
 
 *See Also:* [HasPlayerBeenInRoom](ags73#HasPlayerBeenInRoom)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -598,7 +598,7 @@ will make the walking area 4 walkable again.
 
 *See Also:* [RemoveWalkableArea](ags73#RemoveWalkableArea)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -630,7 +630,7 @@ percent.
 *See Also:* [GetScalingAt](ags73#GetScalingAt),
 [GetWalkableAreaAt](ags73#GetWalkableAreaAt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -661,7 +661,7 @@ integer 20 is 1.
 
 *See Also:* [GetBackgroundFrame](ags73#GetBackgroundFrame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -699,7 +699,7 @@ to follow the player around.
 [GetViewportY](ags73#GetViewportY),
 [ReleaseViewport](ags73#ReleaseViewport)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -727,7 +727,7 @@ will disable the walkbehind area number 3.
 
 *See Also:* [Object.Baseline](ags68#Object.Baseline)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -746,7 +746,7 @@ Example:
 [Room.RightEdge](ags73#Room.RightEdge),
 [Room.TopEdge](ags73#Room.TopEdge)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -765,7 +765,7 @@ Example:
 *See Also:*
 [DrawingSurface.DrawImage](ags51#DrawingSurface.DrawImage)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -784,7 +784,7 @@ Example:
 
 *See Also:* [Room.Width](ags73#Room.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -803,7 +803,7 @@ Example:
 [Room.RightEdge](ags73#Room.RightEdge),
 [Room.TopEdge](ags73#Room.TopEdge)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -829,7 +829,7 @@ Example:
 
 will print the contents of room message 1.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -848,7 +848,7 @@ Example:
 
     Display("The current room plays music %d when the player enters.", Room.MusicOnLoad);
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -864,7 +864,7 @@ Example:
 
     Display("The current room contains %d objects.", Room.ObjectCount);
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -883,7 +883,7 @@ Example:
 [Room.LeftEdge](ags73#Room.LeftEdge),
 [Room.TopEdge](ags73#Room.TopEdge)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -902,7 +902,7 @@ Example:
 [Room.LeftEdge](ags73#Room.LeftEdge),
 [Room.RightEdge](ags73#Room.RightEdge)
 
-------------------------------------------------------------------------
+---
 
 
 

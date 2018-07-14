@@ -67,7 +67,7 @@ in the same way as character names. For example, if a GUI is called
 [Text Boxes](#topic26)\
 [List Boxes](#topic27)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -90,7 +90,7 @@ in the "New mode number" property.
 
 To delete a GUI button, right-click it and choose Delete.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -120,7 +120,7 @@ Example: You have @SCORE@ out of @TOTALSCORE@ points.
 The Properties window also allows you to align the text to left, right
 or centre, as well as change its font and colour.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -153,7 +153,7 @@ of the GUI and that will be used to print the message text in.
 Additionally, you may configure padding - the distance kept between text
 window's border and text inside of it.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -172,7 +172,7 @@ To see a full list of commands available for inventory windows, see the
 [GUI Inv Window Functions and Properties](ags58#GUIInvFuncs)
 section.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -202,7 +202,7 @@ handle up and down, the event will get called repeatedly.
 Your script can find out the value of the slider using the Slider.Value
 script property.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -218,7 +218,7 @@ instead of being passed to the on\_key\_press function. When the player
 presses Return in the text box, the OnActivate event is called. You can
 then use the TextBox.Text property to retrieve what they typed in.
 
-------------------------------------------------------------------------
+---
 
 
 

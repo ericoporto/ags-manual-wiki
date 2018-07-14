@@ -27,7 +27,7 @@ GUI InvWindow functions and properties
 [RowCount property (inv window)](#InvWindow.RowCount)\
 [TopItem property (inv window)](#InvWindow.TopItem)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -51,7 +51,7 @@ will scroll the *invMain* inv window down one row.
 *See Also:* [InvWindow.ScrollUp](ags58#InvWindow.ScrollUp),
 [InvWindow.TopItem](ags58#InvWindow.TopItem)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -75,7 +75,7 @@ will scroll the *invMain* inv window up one row.
 *See Also:* [InvWindow.ScrollDown](ags58#InvWindow.ScrollDown),
 [InvWindow.TopItem](ags58#InvWindow.TopItem)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -95,7 +95,7 @@ Example:
 will change the *invMain* inventory window to display character JACK's
 inventory.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -120,7 +120,7 @@ inventory window.
 
 *See Also:* [InvWindow.ItemCount](ags58#InvWindow.ItemCount)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -149,7 +149,7 @@ more inventory items than will fit in the inventory window.
 [InvWindow.ItemsPerRow](ags58#InvWindow.ItemsPerRow),
 [InvWindow.RowCount](ags58#InvWindow.RowCount)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -173,7 +173,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 *See Also:* [InvWindow.ItemWidth](ags58#InvWindow.ItemWidth),
 [InvWindow.RowCount](ags58#InvWindow.RowCount)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -197,7 +197,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 *See Also:* [InvWindow.ItemHeight](ags58#InvWindow.ItemHeight),
 [InvWindow.ItemsPerRow](ags58#InvWindow.ItemsPerRow)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -220,7 +220,7 @@ displays how many items can be visible in the invMain window at once.
 *See Also:* [InvWindow.ItemWidth](ags58#InvWindow.ItemWidth),
 [InvWindow.RowCount](ags58#InvWindow.RowCount)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -241,7 +241,7 @@ displays how many items can be visible in the invMain window at once.
 *See Also:* [InvWindow.ItemHeight](ags58#InvWindow.ItemHeight),
 [InvWindow.ItemsPerRow](ags58#InvWindow.ItemsPerRow)
 
-------------------------------------------------------------------------
+---
 
 
 

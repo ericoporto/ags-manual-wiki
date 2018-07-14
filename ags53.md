@@ -19,7 +19,7 @@ File functions and properties
 [Error property](#File.Error)\
 [Position property (file)](#File.Position)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -94,7 +94,7 @@ it will write the string "test string" to the file and close it.
 [File.ReadStringBack](ags53#File.ReadStringBack),
 [File.WriteString](ags53#File.WriteString)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -118,7 +118,7 @@ it.
 
 *See Also:* [File.Open](ags53#File.Open)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -146,7 +146,7 @@ exists.
 *See Also:* [File.Exists](ags53#File.Exists),
 [File.Open](ags53#File.Open)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -183,7 +183,7 @@ will create the file "temp.tmp" if it doesn't exist
 *See Also:* [File.Delete](ags53#File.Delete),
 [File.Open](ags53#File.Open)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -209,7 +209,7 @@ the file.
 *See Also:* [File.ReadStringBack](ags53#File.ReadStringBack),
 [File.WriteInt](ags53#File.WriteInt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -236,7 +236,7 @@ string 'buffer'.
 [File.ReadRawInt](ags53#File.ReadRawInt),
 [File.WriteRawChar](ags53#File.WriteRawChar)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -264,7 +264,7 @@ number.
 *See Also:* [File.ReadStringBack](ags53#File.ReadStringBack),
 [File.ReadRawChar](ags53#File.ReadRawChar)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -297,7 +297,7 @@ will display the contents of the 'error.log' file, if it exists
 
 *See Also:* [File.WriteRawLine](ags53#File.WriteRawLine)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -326,7 +326,7 @@ file.
 *See Also:* [File.Open](ags53#File.Open),
 [File.WriteString](ags53#File.WriteString)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -373,7 +373,7 @@ will open the file test.dat, read `first_value`, skip 256 bytes, read
 
 *See Also:* [File.Position](ags53#File.Position)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -399,7 +399,7 @@ will open the file stats.dat and write the integer number in it.
 *See Also:* [File.ReadInt](ags53#File.ReadInt),
 [File.WriteString](ags53#File.WriteString)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -432,7 +432,7 @@ the file.
 *See Also:* [File.ReadRawChar](ags53#File.ReadRawChar),
 [File.WriteInt](ags53#File.WriteInt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -460,7 +460,7 @@ will write an error line in the file error.log.
 *See Also:* [File.ReadRawLineBack](ags53#File.ReadRawLineBack),
 [File.WriteString](ags53#File.WriteString)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -491,7 +491,7 @@ it will display an error message. Otherwise, it will write the string
 [File.Open](ags53#File.Open),
 [File.WriteRawLine](ags53#File.WriteRawLine)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -521,7 +521,7 @@ screen.
 [File.Open](ags53#File.Open),
 [File.ReadStringBack](ags53#File.ReadStringBack)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -559,7 +559,7 @@ there was a problem.
 *See Also:* [File.EOF](ags53#File.EOF),
 [File.ReadStringBack](ags53#File.ReadStringBack)
 
-------------------------------------------------------------------------
+---
 
 
 

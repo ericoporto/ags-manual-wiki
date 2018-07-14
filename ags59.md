@@ -20,7 +20,7 @@ GUI Label functions and properties
 [Text property (label)](#Label.Text)\
 [TextColor property (label)](#Label.TextColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -47,7 +47,7 @@ translation is in use.
 [Label.Text](ags59#Label.Text),
 [TextBox.Font](ags62#TextBox.Font)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -75,7 +75,7 @@ will display the name of the location the cursor is over on label
 [Label.TextColor](ags59#Label.TextColor),
 [Label.Font](ags59#Label.Font)
 
-------------------------------------------------------------------------
+---
 
 
 

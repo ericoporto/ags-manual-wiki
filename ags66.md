@@ -23,7 +23,7 @@ Mouse functions and properties
 [Mode property (mouse)](#Mouse.Mode)\
 [Visible property (mouse)](#Mouse.Visible)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -54,7 +54,7 @@ imported in the sprite's manager slot 120.
 [Mouse.GetModeGraphic](ags66#Mouse.GetModeGraphic),
 [Mouse.Mode](ags66#Mouse.Mode)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -79,7 +79,7 @@ will change the cursor's hotspot for walk mode to coordinates 10,10.
 [Mouse.ChangeModeGraphic](ags66#Mouse.ChangeModeGraphic),
 [Mouse.ChangeModeView](ags66#Mouse.ChangeModeView)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -104,7 +104,7 @@ will change the Look cursor's view to ROLLEYES.
 [Mouse.ChangeModeGraphic](ags66#Mouse.ChangeModeGraphic),
 [Mouse.ChangeModeHotspot](ags66#Mouse.ChangeModeHotspot)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -130,7 +130,7 @@ This will simulate user click at (100,100).
 *See Also:* [GUI.ProcessClick](ags55#GUI.ProcessClick),
 [Room.ProcessClick](ags73#Room.ProcessClick)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -156,7 +156,7 @@ game.
 
 *See Also:* [Mouse.Speed](ags66#Mouse.Speed)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -183,7 +183,7 @@ will make the walk mode unavailable until it's enabled again.
 *See Also:* [Mouse.EnableMode](ags66#Mouse.EnableMode),
 [Mouse.IsModeEnabled](ags66#Mouse.IsModeEnabled)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -205,7 +205,7 @@ will enable cursor mode walk which was disabled before.
 *See Also:* [Mouse.DisableMode](ags66#Mouse.DisableMode),
 [Mouse.IsModeEnabled](ags66#Mouse.IsModeEnabled)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -227,7 +227,7 @@ enabled.
 *See Also:* [Mouse.EnableMode](ags66#Mouse.EnableMode),
 [Mouse.DisableMode](ags66#Mouse.DisableMode)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -248,7 +248,7 @@ will display the sprite slot number of the current mouse cursor.
 
 *See Also:* [Mouse.ChangeModeGraphic](ags66#Mouse.ChangeModeGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -287,7 +287,7 @@ versions.\
 
 *See Also:* [IsKeyPressed](ags54#IsKeyPressed)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -317,7 +317,7 @@ current object
 
 *See Also:* [Mouse.Mode](ags66#Mouse.Mode)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -334,7 +334,7 @@ Use Inventory mode if the player has an active inventory item.
 
 *See Also:* [Mouse.Mode](ags66#Mouse.Mode)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -349,7 +349,7 @@ the Use Inventory mode if the player has an active inventory item.
 
 *See Also:* [Mouse.Mode](ags66#Mouse.Mode)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -378,7 +378,7 @@ screen.
 
 *See Also:* [Mouse.SetPosition](ags66#Mouse.SetPosition)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -404,7 +404,7 @@ will place the mouse cursor in the centre of the screen.
 
 *See Also:* [Mouse.SetBounds](ags66#Mouse.SetBounds)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -443,7 +443,7 @@ converts slider control's position into mouse speed.
 *See Also:* [Mouse.ControlEnabled](ags66#Mouse.ControlEnabled),
 [Mouse.SetPosition](ags66#Mouse.SetPosition)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -468,7 +468,7 @@ Example:
 
 will display the mouse position just before each dialog box is displayed
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -484,7 +484,7 @@ changed it with the UseModeGraphic function.
 
 *See Also:* [Mouse.UseModeGraphic](ags66#Mouse.UseModeGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -511,7 +511,7 @@ Cursors tab.
 [Mouse.Mode](ags66#Mouse.Mode),
 [Mouse.UseDefaultGraphic](ags66#Mouse.UseDefaultGraphic)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -544,7 +544,7 @@ will execute the code only if the current cursor mode is MODE 0 (WALK).
 [Mouse.UseModeGraphic](ags66#Mouse.UseModeGraphic),
 [Mouse.SelectNextMode](ags66#Mouse.SelectNextMode)
 
-------------------------------------------------------------------------
+---
 
 
 

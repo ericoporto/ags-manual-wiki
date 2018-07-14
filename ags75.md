@@ -14,7 +14,7 @@ Speech functions and properties
 [UseGlobalSpeechAnimationDelay](#Speech.UseGlobalSpeechAnimationDelay)\
 [VoiceMode](#Speech.VoiceMode)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -42,7 +42,7 @@ game speed) before speech time ends.
 *See Also:*
 [Speech.DisplayPostTimeMs](ags75#Speech.DisplayPostTimeMs)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -64,7 +64,7 @@ used.
 *See Also:* [Speech.PortraitXOffset](ags75#Speech.PortraitXOffset),
 [Speech.PortraitY](ags75#Speech.PortraitY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -87,7 +87,7 @@ and is set to zero by default.
 *See Also:*
 [Speech.AnimationStopTimeMargin](ags75#Speech.AnimationStopTimeMargin)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -113,7 +113,7 @@ used instead.
 [Character.SpeechAnimationDelay](ags47#Character.SpeechAnimationDelay),
 [Speech.UseGlobalSpeechAnimationDelay](ags75#Speech.UseGlobalSpeechAnimationDelay)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -136,7 +136,7 @@ side and respected portrait's border.
 [Speech.CustomPortraitPlacement](ags75#Speech.CustomPortraitPlacement),
 [Speech.PortraitY](ags75#Speech.PortraitY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -155,7 +155,7 @@ Gets/sets the character's speech portrait **y** coordinate on screen.
 [Speech.CustomPortraitPlacement](ags75#Speech.CustomPortraitPlacement),
 [Speech.PortraitXOffset](ags75#Speech.PortraitXOffset)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -181,7 +181,7 @@ will assign the "space" key to skip the speech.
 
 *See Also:* [Speech.SkipStyle](ags75#Speech.SkipStyle)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -215,7 +215,7 @@ or a key.
 [Game.TextReadingSpeed](ags54#Game.TextReadingSpeed),
 [Game.Speech.SkipKey](ags75#Speech.SkipKey)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -243,7 +243,7 @@ Example:
 
 will change the speech style to a close up portrait of the character.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -269,7 +269,7 @@ Example:
 
 will align the speech text at the right side.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -293,7 +293,7 @@ will make the game use global speech animation delay.
 [Character.SpeechAnimationDelay](ags47#Character.SpeechAnimationDelay),
 [Speech.GlobalSpeechAnimationDelay](ags75#Speech.GlobalSpeechAnimationDelay)
 
-------------------------------------------------------------------------
+---
 
 
 

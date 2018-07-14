@@ -57,9 +57,9 @@ Once you've drawn a hotspot, there are two other fields to set:
     AGS is to start the script names for hotspots with an *h*, for
     example *hDoor*. The name must be unique within the room.
 
-  --------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
   ![](images/icon_info.gif){width="32" height="32"}   In the Areas editor, all the hotspots except the currently selected one are drawn in grey. This is to emphasise which hotspot you have selected to edit. You can change this behaviour by toggling the "show non-selected masks greyed out" button at the right hand end of the toolbar.
-  --------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 #### Interactions
 

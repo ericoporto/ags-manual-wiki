@@ -9,7 +9,7 @@ Overlay functions and properties
 [X property (overlay)](#Overlay.X)\
 [Y property (overlay)](#Overlay.Y)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -44,7 +44,7 @@ it.
 *See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual),
 [Overlay.Remove](ags69#Overlay.Remove)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -105,7 +105,7 @@ removed.
 [Overlay.X](ags69#Overlay.X), [Overlay.Y](ags69#Overlay.Y),
 [Overlay.Remove](ags69#Overlay.Remove)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -129,7 +129,7 @@ and then remove the overlay from the screen.
 
 *See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -158,7 +158,7 @@ and then replace the overlay with another one.
 *See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual),
 [Overlay.Remove](ags69#Overlay.Remove)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -184,7 +184,7 @@ Then, removes the overlay and prints Valid again (which will now be 0).
 *See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual),
 [Overlay.Remove](ags69#Overlay.Remove)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -214,7 +214,7 @@ creates a text overlay, then gradually slides it across the screen.
 [Overlay.Y](ags69#Overlay.Y),
 [Overlay.Remove](ags69#Overlay.Remove)
 
-------------------------------------------------------------------------
+---
 
 
 

@@ -145,11 +145,11 @@ For detailed information see:
 
 **Some functions object-ised**
 
-  -------------------------------- --------------------------------------------------
+---
   **obsolete function/variable**   **replace with**
   GetRoomProperty                  [Room.GetProperty](ags73#Room.GetProperty)
   ProcessClick                     [Room.ProcessClick](ags73#Room.ProcessClick)
-  -------------------------------- --------------------------------------------------
+---
 
 **REMINDER:** you can also use "Script Compatibility Level" switch to
 enable old functions.

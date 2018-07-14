@@ -33,7 +33,7 @@ copies of the image and upload it to video memory if appropriate.
 [UseHighResCoordinates property](#DrawingSurface.UseHighResCoordinates)\
 [Width property (drawing surface)](#DrawingSurface.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -64,7 +64,7 @@ in the middle of it.
 *See Also:*
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -103,7 +103,7 @@ for a while and then restore the original background.
 *See Also:*
 [DrawingSurface.DrawSurface](ags51#DrawingSurface.DrawSurface)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -129,7 +129,7 @@ will draw a circle in the centre of the screen, of 50 pixels radius.
 [DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -178,7 +178,7 @@ will draw the *oDoor* object's graphic onto the room background at (100,
 [DrawingSurface.DrawSurface](ags51#DrawingSurface.DrawSurface),
 [Room.ColorDepth](ags73#Room.ColorDepth)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -215,7 +215,7 @@ the screen (160,100);
 [DrawingSurface.DrawTriangle](ags51#DrawingSurface.DrawTriangle),
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -251,7 +251,7 @@ will display message 10 in the centre of the screen, starting from Y =
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor),
 [DrawingSurface.DrawStringWrapped](ags51#DrawingSurface.DrawStringWrapped)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -282,7 +282,7 @@ draws a yellow pixel in the top left of the room background
 [DrawingSurface.GetPixel](ags51#DrawingSurface.GetPixel),
 [DrawingSurface.UseHighResCoordinates](ags51#DrawingSurface.UseHighResCoordinates)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -312,7 +312,7 @@ will draw a rectangle over the top left hand quarter of the screen.
 [DrawingSurface.DrawImage](ags51#DrawingSurface.DrawImage),
 [DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -342,7 +342,7 @@ will write some text onto the middle-left of the room background
 [DrawingSurface.DrawStringWrapped](ags51#DrawingSurface.DrawStringWrapped),
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -376,7 +376,7 @@ will display the text in the centre of the screen, starting from Y = 40.
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor),
 [DrawingSurface.DrawMessageWrapped](ags51#DrawingSurface.DrawMessageWrapped)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -417,7 +417,7 @@ this will draw background frame 1 onto frame 0 at 50`%` opacity.
 [DrawingSurface.DrawImage](ags51#DrawingSurface.DrawImage),
 [SetAmbientTint](ags54#SetAmbientTint)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -446,7 +446,7 @@ will draw a triangle with corners at the points (0,0),(160,100),(0,200).
 [DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
 [DrawingSurface.DrawRectangle](ags51#DrawingSurface.DrawRectangle)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -474,7 +474,7 @@ background, then releases the image.
 [DynamicSprite.GetDrawingSurface](ags52#DynamicSprite.GetDrawingSurface),
 [Room.GetDrawingSurfaceForBackground](ags73#Room.GetDrawingSurfaceForBackground)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -512,7 +512,7 @@ the middle.
 [DrawingSurface.DrawRectangle](ags51#DrawingSurface.DrawRectangle),
 [Game.GetColorFromRGB](ags54#Game.GetColorFromRGB)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -548,7 +548,7 @@ displays the pixel colour of the centre pixel on the screen.
 [DrawingSurface.DrawPixel](ags51#DrawingSurface.DrawPixel),
 [DrawingSurface.UseHighResCoordinates](ags51#DrawingSurface.UseHighResCoordinates)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -570,7 +570,7 @@ displays the size of the surface to the player
 [DrawingSurface.UseHighResCoordinates](ags51#DrawingSurface.UseHighResCoordinates),
 [DrawingSurface.Width](ags51#DrawingSurface.Width)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -610,7 +610,7 @@ draw a line from the top left to the bottom right of the screen.
 [DrawingSurface.DrawRectangle](ags51#DrawingSurface.DrawRectangle),
 [DrawingSurface.DrawTriangle](ags51#DrawingSurface.DrawTriangle)
 
-------------------------------------------------------------------------
+---
 
 
 

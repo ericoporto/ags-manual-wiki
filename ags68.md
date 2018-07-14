@@ -47,7 +47,7 @@ Object functions and properties
 [X property (object)](#Object.X)\
 [Y property (object)](#Object.Y)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -101,7 +101,7 @@ speed 3. The function won't return until the animation is finished.
 [Object.SetView](ags68#Object.SetView),
 [Object.StopAnimating](ags68#Object.StopAnimating)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -128,7 +128,7 @@ will execute the code only if object oRock is on the screen coordinates
 *See Also:* [Hotspot.GetAtScreenXY](ags63#Hotspot.GetAtScreenXY),
 [Game.GetLocationName](ags54#Game.GetLocationName)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -156,7 +156,7 @@ than 200.
 
 *See Also:* [Object.GetTextProperty](ags68#Object.GetTextProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -184,7 +184,7 @@ will retrieve Object 0's "description" property then display it.
 
 *See Also:* [Object.GetProperty](ags68#Object.GetProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -212,7 +212,7 @@ will change Table's "ItemCapacity" custom property to 5.
 
 *See Also:* [Object.SetTextProperty](ags68#Object.SetTextProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -238,7 +238,7 @@ will change table's "description" property.
 
 *See Also:* [Object.SetProperty](ags68#Object.SetProperty)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -265,7 +265,7 @@ will display the message if the objects 2 and 3 are colliding.
 
 *See Also:* [AreThingsOverlapping](ags73#AreThingsOverlapping)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -295,7 +295,7 @@ Example:
 will merge the object's image into the room's background image and make
 the object unusable.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -335,7 +335,7 @@ object gets there.
 [Character.Walk](ags47#Character.Walk),
 [Object.StopMoving](ags68#Object.StopMoving)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -358,7 +358,7 @@ will tint object 1 green for a second, then turn it back to normal.
 
 *See Also:* [Object.Tint](ags68#Object.Tint)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -384,7 +384,7 @@ Example:
 *See Also:* [IsInteractionAvailable](ags54#IsInteractionAvailable),
 [Object.RunInteraction](ags68#Object.RunInteraction)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -409,7 +409,7 @@ handler.
 [Character.RunInteraction](ags47#Character.RunInteraction),
 [Hotspot.RunInteraction](ags63#Hotspot.RunInteraction)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -447,7 +447,7 @@ This will give the lamp maximal individual brightness.
 [Character.SetLightLevel](ags47#Character.SetLightLevel),
 [Region.LightLevel](ags72#Region.LightLevel)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -474,7 +474,7 @@ will change object's 2 position to 50,100.
 *See Also:* [Object.X](ags68#Object.X),
 [Object.Y](ags68#Object.Y)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -502,7 +502,7 @@ view 5, loop 2, frame 0.
 
 *See Also:* [Object.Animate](ags68#Object.Animate)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -524,7 +524,7 @@ will stop object 2 animating if it currently is doing so.
 *See Also:* [Object.Animate](ags68#Object.Animate),
 [Object.Animating](ags68#Object.Animating)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -549,7 +549,7 @@ will stop object 2 moving if it currently is doing so.
 [Object.Move](ags68#Object.Move),
 [Character.StopMoving](ags47#Character.StopMoving)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -586,7 +586,7 @@ will tint object 1 green.
 *See Also:* [Object.RemoveTint](ags68#Object.RemoveTint),
 [SetAmbientTint](ags54#SetAmbientTint)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -617,7 +617,7 @@ you wouldn't need to do this.
 [Object.StopAnimating](ags68#Object.StopAnimating),
 [Object.X](ags68#Object.X), [Object.Y](ags68#Object.Y)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -649,7 +649,7 @@ will change object's 4 baseline to a line positioned at y coordinate
 [Object.Y](ags68#Object.Y),
 [SetWalkBehindBase](ags73#SetWalkBehindBase)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -681,7 +681,7 @@ its baseline)
 *See Also:* [Object.BlockingWidth](ags68#Object.BlockingWidth),
 [Object.Solid](ags68#Object.Solid)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -713,7 +713,7 @@ his centre, and 25 to the right)
 *See Also:* [Object.BlockingHeight](ags68#Object.BlockingHeight),
 [Object.Solid](ags68#Object.Solid)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -741,7 +741,7 @@ will make object 2 ignore clicks from the player.
 *See Also:* [Character.Clickable](ags47#Character.Clickable),
 [Object.IgnoreWalkbehinds](ags68#Object.IgnoreWalkbehinds)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -766,7 +766,7 @@ will display the oDoor object's current frame number
 [Object.Loop](ags68#Object.Loop),
 [Object.View](ags68#Object.View)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -791,7 +791,7 @@ manager's slot 100.
 
 *See Also:* [Object.SetView](ags68#Object.SetView)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -811,7 +811,7 @@ light.
 
 *SeeAlso:* [Object.SetLightLevel](ags68#Object.SetLightLevel)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -830,7 +830,7 @@ tinted by [SetAmbientTint](ags54#SetAmbientTint) or a region tint.
 *SeeAlso:* [Object.Tint](ags68#Object.Tint),
 [Object.RemoveTint](ags68#Object.RemoveTint)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -849,7 +849,7 @@ Example:
 uses the obsolete MoveObject function to move the Rock object to (100,
 50) at speed 5.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -874,7 +874,7 @@ will tell the Door object not to be scaled on walkable areas.
 *See Also:*
 [Object.IgnoreWalkbehinds](ags68#Object.IgnoreWalkbehinds)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -907,7 +907,7 @@ will make object 1 ignore walk behinds.
 [Object.Clickable](ags68#Object.Clickable),
 [Object.IgnoreScaling](ags68#Object.IgnoreScaling)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -927,7 +927,7 @@ property returns the light level value. Otherwise it returns 0.
 *SeeAlso:* [Object.SetLightLevel](ags68#Object.SetLightLevel),
 [SetAmbientLightLevel](ags54#SetAmbientLightLevel),
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -952,7 +952,7 @@ will display the oDoor object's current loop number
 [Object.Graphic](ags68#Object.Graphic),
 [Object.View](ags68#Object.View)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -979,7 +979,7 @@ object gets there.
 *See Also:* [Object.Animating](ags68#Object.Animating),
 [Object.StopMoving](ags68#Object.StopMoving)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1003,7 +1003,7 @@ will retrieve and then display object 0's name.
 
 *See Also:* [Game.GetLocationName](ags54#Game.GetLocationName)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1029,7 +1029,7 @@ will mean that the Smallrock object blocks the path of characters.
 *See Also:* [Object.BlockingHeight](ags68#Object.BlockingHeight),
 [Object.BlockingWidth](ags68#Object.BlockingWidth)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1054,7 +1054,7 @@ false, then this value is meaningless.
 [Object.TintRed](ags68#Object.TintRed),
 [Object.TintLuminance](ags68#Object.TintLuminance)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1079,7 +1079,7 @@ false, then this value is meaningless.
 [Object.TintSaturation](ags68#Object.TintSaturation),
 [Object.TintLuminance](ags68#Object.TintLuminance)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1104,7 +1104,7 @@ false, then this value is meaningless.
 [Object.TintSaturation](ags68#Object.TintSaturation),
 [Object.TintLuminance](ags68#Object.TintLuminance)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1129,7 +1129,7 @@ false, then this value is meaningless.
 [Object.TintRed](ags68#Object.TintRed),
 [Object.TintLuminance](ags68#Object.TintLuminance)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1154,7 +1154,7 @@ false, then this value is meaningless.
 [Object.TintRed](ags68#Object.TintRed),
 [Object.TintSaturation](ags68#Object.TintSaturation)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1199,7 +1199,7 @@ to being fully invisible.
 *See Also:* [Character.Transparency](ags47#Character.Transparency),
 [GUI.Transparency](ags55#GUI.Transparency)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1225,7 +1225,7 @@ will display the oDoor object's current view number
 [Object.Loop](ags68#Object.Loop),
 [Object.Frame](ags68#Object.Frame)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1247,7 +1247,7 @@ Example:
 
 will make object number 5 in the current room disappear.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -1272,7 +1272,7 @@ will display the X co-ordinate of object 1.
 [Object.Visible](ags68#Object.Visible),
 [Object.SetPosition](ags68#Object.SetPosition)
 
-------------------------------------------------------------------------
+---
 
 
 

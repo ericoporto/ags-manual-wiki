@@ -119,9 +119,9 @@ Just in case you missed it, I'll repeat what was just said in the
 Characters section - the "*Starts in room*" setting of the player
 character is used to determine which room the game starts off in.
 
-  --------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
   ![](images/icon_info.gif){width="32" height="32"}   **TIP:** This feature can be handy for testing various parts of your game. For example, when you're working on room 16, set the starting room to room 16 so that you can get to it instantly when you run the game to test it.  
-  --------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ### Cutscenes
 
@@ -129,9 +129,9 @@ You can easily add intro, outro and cutscene sequences to your game.
 There is no specific feature to do this - you simply use the provided
 animation and movement commands to do whatever you like.
 
-  --------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
   ![](images/icon_info.gif){width="32" height="32"}   A *cutscene* is simply the name given to a sequence of actions over which the player has no control. This usually applies to the entire introduction sequence, as well as far simpler in-game events. For example, if the player goes to pick up a rock from the ground, you may wish to use a bending-down animation to show him picking it up. During this bending down and standing back up, the player cannot control proceedings, so it is a cutscene.
-  --------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 Right, firstly let's do something very simple. When the player goes to
 pick up the key from the floor of our room, we want him to walk over to

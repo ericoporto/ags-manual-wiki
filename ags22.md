@@ -19,7 +19,7 @@ editor.
 [PAMELA](#topic36)\
 [Papagayo](#topic37)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -43,7 +43,7 @@ The "Default frame for unlisted characters" box allows you to set which
 frame is used when a character not listed in any of the text boxes is
 encountered.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -62,7 +62,7 @@ In order to do this, you need to download one of the third-party
 applications that produce lip sync data based on voice clips. AGS
 supports two such data formats: **PAMELA** and **Papagayo**.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -97,7 +97,7 @@ game.
 **NOTE:** Voice lip sync does not work well with MP3 files. It is
 strongly recommended that you use OGG or WAV for speech.
 
-------------------------------------------------------------------------
+---
 
 
 

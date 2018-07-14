@@ -30,7 +30,7 @@ RunInteraction](#SCUMM_VERBCOIN_GUI.RunInteraction)\
 [SCUMM\_VERBCOIN\_GUI doubleclick
 variable](#SCUMM_VERBCOIN_GUI.doubleclick)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -48,7 +48,7 @@ available if you used this template to create your game.
 [SCUMM\_VERBCOIN\_GUI.RunInteraction](ags80#SCUMM_VERBCOIN_GUI.RunInteraction),
 [SCUMM\_VERBCOIN\_GUI.Select](ags80#SCUMM_VERBCOIN_GUI.Select)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -68,7 +68,7 @@ Example:
 
 will disable all verbcoin processing code.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -93,7 +93,7 @@ default)
 *See Also:*
 [SCUMM\_VERBCOIN\_GUI.doubleclick](ags80#SCUMM_VERBCOIN_GUI.doubleclick)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -106,7 +106,7 @@ This function opens and closes your inventory.
 **NOTE:** This function is part of the Verb Coin template and is only
 available if you used this template to create your game.
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -134,7 +134,7 @@ item 11, 21, 31, ...
 [SCUMM\_VERBCOIN\_GUI.InvScroll\_Left](ags80#SCUMM_VERBCOIN_GUI.InvScroll_Left),
 [SCUMM\_VERBCOIN\_GUI.InvScroll\_Right](ags80#SCUMM_VERBCOIN_GUI.InvScroll_Right)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -152,7 +152,7 @@ available if you used this template to create your game.
 [SCUMM\_VERBCOIN\_GUI.Item\_Count](ags80#SCUMM_VERBCOIN_GUI.Item_Count),
 [SCUMM\_VERBCOIN\_GUI.InvScroll\_Right](ags80#SCUMM_VERBCOIN_GUI.InvScroll_Right)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -170,7 +170,7 @@ available if you used this template to create your game.
 [SCUMM\_VERBCOIN\_GUI.Item\_Count](ags80#SCUMM_VERBCOIN_GUI.Item_Count),
 [SCUMM\_VERBCOIN\_GUI.InvScroll\_Left](ags80#SCUMM_VERBCOIN_GUI.InvScroll_Left)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -196,7 +196,7 @@ the top or the bottom of the screen.
 *See Also:*
 [SCUMM\_VERBCOIN\_GUI.Inv\_Border\_SetPos](ags80#SCUMM_VERBCOIN_GUI.Inv_Border_SetPos)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -224,7 +224,7 @@ border to x-coordinate 295
 *See Also:*
 [SCUMM\_VERBCOIN\_GUI.Inv\_Border\_active](ags80#SCUMM_VERBCOIN_GUI.Inv_Border_active)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -257,7 +257,7 @@ Example:
 will tell the module your inventory gui is GUI nr.2 and that the
 underlay gui is GUI nr.3
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -278,7 +278,7 @@ Example:
 [SCUMM\_VERBCOIN\_GUI.Deselect](ags80#SCUMM_VERBCOIN_GUI.Deselect),
 [SCUMM\_VERBCOIN\_GUI.Select](ags80#SCUMM_VERBCOIN_GUI.Select)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -296,7 +296,7 @@ available if you used this template to create your game.
 [SCUMM\_VERBCOIN\_GUI.Deselect](ags80#SCUMM_VERBCOIN_GUI.Deselect),
 [SCUMM\_VERBCOIN\_GUI.RunInteraction](ags80#SCUMM_VERBCOIN_GUI.RunInteraction)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -320,7 +320,7 @@ Example:
 
 will tell the module your verbcoin gui is GUI nr.1
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -343,7 +343,7 @@ Example:
 
 will set the sprite for moving over the talk button to sprite 2
 
-------------------------------------------------------------------------
+---
 
 
 

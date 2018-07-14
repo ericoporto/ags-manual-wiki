@@ -8,7 +8,7 @@ Text display / Speech functions
 [DisplayMessageAtY](#DisplayMessageAtY)\
 [DisplayTopBar](#DisplayTopBar)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -42,7 +42,7 @@ usually used for responses to the player LOOKing at things.
 [DisplayTopBar](ags78#DisplayTopBar),
 [String.Format](ags76#String.Format)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -75,7 +75,7 @@ will display the message at coordinates 50,50 in a box 100 pixels wide.
 *See Also:* [Display](ags78#Display),
 [DisplayAtY](ags78#DisplayAtY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -97,7 +97,7 @@ will display the message at y coordinate 50.
 *See Also:* [Display](ags78#Display),
 [DisplayAt](ags78#DisplayAt)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -119,7 +119,7 @@ will display the message 220 of the Room message editor.
 *See Also:* [Display](ags78#Display),
 [DisplayMessageAtY](ags78#DisplayMessageAtY)
 
-------------------------------------------------------------------------
+---
 
 
 
@@ -143,7 +143,7 @@ will display global message 527, in the lower half of the screen.
 *See Also:* [DisplayAtY](ags78#DisplayAtY),
 [DisplayMessage](ags78#DisplayMessage)
 
-------------------------------------------------------------------------
+---
 
 
 
