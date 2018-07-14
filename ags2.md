@@ -3,7 +3,7 @@ Introduction
 
 Adventure Game Studio
 
-Copyright 1999-2011 Chris Jones and 2011-2017 various contributors
+Copyright 1999-2011 Chris Jones and 2011-2018 various contributors
 
 ---
 

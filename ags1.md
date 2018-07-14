@@ -1,7 +1,7 @@
 Copyright and terms of use
 --------------------------
 
-Copyright (c) 1999-2011 Chris Jones and 2011-2017 various contributors.
+Copyright (c) 1999-2011 Chris Jones and 2011-2018 various contributors.
 
 The software is provided under Artistic License 2.0
 (http://www.opensource.org/licenses/artistic-license-2.0.php). Adventure
