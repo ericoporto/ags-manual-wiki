@@ -60,10 +60,8 @@ screen. A good size would be about 20x50 pixels. This will look really
 small in the Import window, but your game runs at a much lower
 resolution so it'll look much larger.\
 
----
-  ![](images/icon_info.gif)\
-  NOTE (256-colour only): You may well find that the colours on your graphic look slightly strange once you've imported the image. This is because by default only the first 41 of the palette colours are allocated to sprites, so your graphic will be remapped to this much smaller palette. If you find that many of your imported sprites look strange, you can increase the number of colours assigned to sprites, at the expense of background colours (see the earlier part of the tutorial for palette setup).
----
+![](images/icon_info.gif)\
+NOTE (256-colour only): You may well find that the colours on your graphic look slightly strange once you've imported the image. This is because by default only the first 41 of the palette colours are allocated to sprites, so your graphic will be remapped to this much smaller palette. If you find that many of your imported sprites look strange, you can increase the number of colours assigned to sprites, at the expense of background colours (see the earlier part of the tutorial for palette setup).
 
 #### Tiled sprite import
 
@@ -77,10 +75,8 @@ to size the grid:
 Click the left button again once you are happy with the grid. Each of
 the cells will be imported as a separate sprite.\
 
----
-  ![](images/icon_info.gif)\
-  NOTE: Tiled sprite import only works if you selected "Import new sprite from file". If you used the "Replace sprite" option, only the first tile will be imported.
----
+![](images/icon_info.gif)\
+NOTE: Tiled sprite import only works if you selected "Import new sprite from file". If you used the "Replace sprite" option, only the first tile will be imported.
 
 **Go to part 7:**  [Animations](acintro7)
 

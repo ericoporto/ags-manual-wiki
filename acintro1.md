@@ -177,10 +177,8 @@ option.
 What colours you use is up to you, and depends on what sort of colour
 scheme you're going for with your graphics.
 
----
-  ![](images/icon_info.gif)\
-  You should set up the palette as well as you can now, because changing it later may require you to re-import some graphics.
----
+![](images/icon_info.gif)\
+You should set up the palette as well as you can now, because changing it later may require you to re-import some graphics.
 
 ### Creating a 16-bit or 32-bit colour game
 
@@ -199,7 +197,6 @@ memory and run slower than lower resolutions.
 Go back to the General Settings pane, and select your chosen resolution
 from the "Resolution" drop-down list.
 
-\
 **Go to part 2:** [Creating your first room](acintro2)
 
 Tutorial created 26 August 2002; updated 11 August 2007. Copyright (c)
