@@ -60,8 +60,7 @@ job, having a manual reference is invaluable:
     };
 
 *Used by:* [Character.LockView](ags47#Character.LockViewAligned),
-[Character.LockViewFrame](ags47#Character.LockViewOffset),
-Object.UnlockView (REF NOT FOUND)
+[Character.LockViewFrame](ags47#Character.LockViewOffset)
 
     enum RepeatStyle {
       eOnce,
