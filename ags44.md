@@ -472,10 +472,10 @@ For example:
     for (int i = 0; i < 100; i++)
     {
       // multiple statements here
-      
+
       if (i > 50)
         continue;
-      
+
       // more statements following
     }
 
@@ -553,10 +553,10 @@ naturally:
 
     function DoThisAndOptionallyThat(bool do_all) {
       // multiple statements here
-      
+
       if (!do_all)
         return; // quit the function prematurely
-        
+
       // more statements following
     }
 

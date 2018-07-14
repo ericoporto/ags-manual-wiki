@@ -1,7 +1,7 @@
 Adventure Game Studio 3.4.1
 ---------------------------
 
-### by Chris Jones et al. 
+### by Chris Jones et al.
 
 ---
 

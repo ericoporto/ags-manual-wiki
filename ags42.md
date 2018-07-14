@@ -100,8 +100,8 @@ not behave correctly.
             info.Surface.DrawingColor = dlg_opt_acolor;
           else
             info.Surface.DrawingColor = dlg_opt_ncolor;
-            
-          info.Surface.DrawStringWrapped(5, ypos, info.Width - 10, 
+
+          info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
                   eFontFont0, eAlignLeft, info.DialogToRender.GetOptionText(i));
           ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontFont0, info.Width - 10);
         }
@@ -175,7 +175,7 @@ to continually scan through all the options.
           else
             info.Surface.DrawingColor = dlg_opt_ncolor;
 
-          info.Surface.DrawStringWrapped(5, ypos, info.Width - 10, 
+          info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
               eFontFont0, eAlignLeft, info.DialogToRender.GetOptionText(i));
           ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontFont0, info.Width - 10);
         }
@@ -183,7 +183,7 @@ to continually scan through all the options.
       }
     }
 
-    function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode) 
+    function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode)
     {
       if (keycode == eKeyUpArrow && info.ActiveOptionID > 1)
         info.ActiveOptionID = info.ActiveOptionID - 1;
