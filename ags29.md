@@ -40,8 +40,7 @@ It's important to mention here that lines beginning with a double-slash
 help you remember what your script is doing. You can add comments to
 your script simply by starting the line with the `//` symbol.
 
-### **\
-Commands Explained**
+### Commands Explained
 
 Each different command you can use in the script is also called a
 **function**. All the available commands are listed in the Scripting
