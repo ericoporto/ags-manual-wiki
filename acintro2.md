@@ -31,7 +31,7 @@ There are four main parts to this window:
     seeing different aspects of the room.
 -   The *Room Background Preview* area is where you see the room's
     background image, along with various things on top of it, depending
-    on what's selected in the Room Parts option.
+    on what's selected in the Room Parts option.
 -   The *Properties* window allows you to set up various properties and
     events for the room.
 
@@ -71,7 +71,7 @@ position them appropriately. Bear in mind that it's the character's
 **feet** that are compared with these lines when positioning.
 
 ![](images/intro2_4.jpg)\
-*I've lined up the top and right edges correctly *
+*I've lined up the top and right edges correctly*
 
 At the moment, walking past the edge won't actually cause anything to
 happen, but we'll deal with that later. In my example, the character can

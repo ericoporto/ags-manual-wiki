@@ -95,7 +95,7 @@ we've used for our events like picking up the key. It's a much simpler
 dialog-only scripting language.
 
 Each of the "@" lines is an **entry point**. These define the different
-places where your script can start.  The "@S" entry point happens when
+places where your script can start. The "@S" entry point happens when
 the topic is first started - and so this is where we want our
 "Greetings" text to be displayed.
 
@@ -117,7 +117,7 @@ player.
 
 The numbered entry points will be run when the player selects the
 appropriate option - for example, if the player clicks the "Who are
-you?" option, then entry point  @1  will run.
+you?" option, then entry point @1 will run.
 
 Here's a finished script for this topic:
 

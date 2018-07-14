@@ -99,7 +99,7 @@ you can find a full description of all the options in the manual.
 -   **Clickable** - if this is not checked, then this character will be
     see-through to mouse clicks. This is similar to the way the player
     character worked in Lucasarts games - you cannot actually click on
-    Guybrush, it will always activate whatever is behind him. 
+    Guybrush, it will always activate whatever is behind him.
 
 The character's "*RealName*" field simply gives you an easy way to
 identify the character in the editor, and can also be accessed from the
@@ -118,7 +118,7 @@ Characters section - the "*Starts in room*" setting of the player
 character is used to determine which room the game starts off in.
 
 ![](images/icon_info.gif)\
-TIP: This feature can be handy for testing various parts of your game. For example, when you're working on room 16, set the starting room to room 16 so that you can get to it instantly when you run the game to test it. 
+TIP: This feature can be handy for testing various parts of your game. For example, when you're working on room 16, set the starting room to room 16 so that you can get to it instantly when you run the game to test it.
 
 ### Cutscenes
 
@@ -177,6 +177,6 @@ Our new command is run before the existing ones
 Now, hit F5 and try it out!
 
 OK, I think we've had enough of animations and cutscenes for now. We'll
-return later to explore actual animations and more complex cutscenes. 
+return later to explore actual animations and more complex cutscenes.
 
 **Go to part 8:** [Conversations](acintro8)

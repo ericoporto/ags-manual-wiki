@@ -101,7 +101,7 @@ door if he has either the door key or a chainsaw.
     }                                                                  
 ---
 
-The operator here is the double-vertical-bar  **||**  operator. It works
+The operator here is the double-vertical-bar **||** operator. It works
 similarly to the && operator, but it will process the commands inside it
 if either one expression, or the other, or both, are true.
 
@@ -176,7 +176,7 @@ This name can be anything you like - it is similar to naming a variable.
 
 There are some **fixed** functions, such as dialog\_request and
 on\_event, which are part of AGS and therefore you **MUST** use the
-correct number and type of parameters.  However, you may also add your
+correct number and type of parameters.  However, you may also add your
 own functions by naming them however you like, and having as many
 parameters as you need.
 

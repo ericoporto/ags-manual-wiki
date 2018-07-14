@@ -66,7 +66,7 @@ function. Looking this up in the manual gives us the definition:
 
 The key point here is the part of the first line inside the brackets.
 This is called the **parameter list** and defines what parameters you
-give to the function.  A parameter is some information that the function
+give to the function.  A parameter is some information that the function
 uses to decide what to do.\
 Each parameter is listed, separated by commas. They can be one of the
 following:
@@ -74,12 +74,12 @@ following:
 -   string *name\
     *This parameter is a string, ie. a piece of text. This means that
     for this parameter you supply text, surrounded by double-quotes. For
-    example,  `"My text"` .\
+    example, `"My text"` .\
     *name* is the name by which the parameter is referred to in the
     function description, it is not relevant for writing your script.
 -   int *name*\
     This parameter is an integer, ie. a numerical value. This means that
-    for this parameter you supply a number, for example  `65`  .
+    for this parameter you supply a number, for example `65`.
 -   CHARID\
     This parameter is a character script name. You need to supply the
     script name of one of the game characters.
@@ -119,8 +119,7 @@ each object in the room, each hotspot, and so on.
 
 The name by which you access an instance in the script is given in the
 editor as the item's *Script Name*. For example, assuming our main
-character's script name is cEgo, then his instance name will be  `cEgo`
-.
+character's script name is cEgo, then his instance name will be `cEgo`.
 
 To perform a command on something, you type its Script Name followed by
 a dot, followed by the command name. When you type the dot, the AGS
@@ -173,8 +172,8 @@ Our final script will look like this:
 | </div>                                                                   
 ---
 
-Note that the script system is case sensitive, so writing for example
-`addinventory(iposter); ` will not work.
+Note that the script system is case sensitive, so writing for example
+`addinventory(iposter);` will not work.
 
 The script commands are processed from top to bottom in the order that
 you write them, so writing something like:
@@ -372,7 +371,7 @@ this -- you can export the variable from the global script and then
 import it in the script header, but that's a bit advanced for this
 tutorial. A simpler way is to use one of the 300 GlobalInts, which use
 the script functions SetGlobalInt and GetGlobalInt to access them. See
-their manual descriptions for more information. 
+their manual descriptions for more information.
 
 ### Functions that return a value
 
