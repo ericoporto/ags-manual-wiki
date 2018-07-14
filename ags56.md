@@ -20,7 +20,7 @@ has its own specific section.
 [Width property (GUI controls)](#GUIControl.Width)\
 [X property (GUI controls)](#GUIControl.X)\
 [Y property (GUI controls)](#GUIControl.Y)\
-[ZOrder property (GUI controls)](#GUIControl.ZOrder)\
+[ZOrder property (GUI controls)](#GUIControl.ZOrder)
 
 ------------------------------------------------------------------------
 

@@ -45,7 +45,7 @@ Object functions and properties
 [View property (object)](#Object.View)\
 [Visible property (object)](#Object.Visible)\
 [X property (object)](#Object.X)\
-[Y property (object)](#Object.Y)\
+[Y property (object)](#Object.Y)
 
 ------------------------------------------------------------------------
 

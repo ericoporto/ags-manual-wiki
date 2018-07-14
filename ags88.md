@@ -9,7 +9,7 @@ There's a new String type (that's a capital 'S'). These new strings
 behave like Java/`C#` strings in that you can easily assign to and
 manipulate them.
 
-For example, in 2.7 and previous versions, you had to do this:\
+For example, in 2.7 and previous versions, you had to do this:
 
     string text;
     StrCopy(text, "This is my text");

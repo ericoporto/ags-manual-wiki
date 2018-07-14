@@ -17,7 +17,7 @@ File functions and properties
 [WriteString](#File.WriteString)\
 [EOF property](#File.EOF)\
 [Error property](#File.Error)\
-[Position property (file)](#File.Position)\
+[Position property (file)](#File.Position)
 
 ------------------------------------------------------------------------
 

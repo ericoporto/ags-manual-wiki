@@ -10,7 +10,7 @@ Multimedia functions
 [SetAudioTypeSpeechVolumeDrop](#Game.SetAudioTypeSpeechVolumeDrop)\
 [SetAudioTypeVolume](#Game.SetAudioTypeVolume)\
 [SetSpeechVolume](#SetSpeechVolume)\
-[StopAudio](#Game.StopAudio)\
+[StopAudio](#Game.StopAudio)
 
 ------------------------------------------------------------------------
 

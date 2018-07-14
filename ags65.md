@@ -20,7 +20,7 @@ Maths functions and properties
 [Sqrt](#Maths.Sqrt)\
 [Tan](#Maths.Tan)\
 [Tanh](#Maths.Tanh)\
-[Pi property](#Maths.Pi)\
+[Pi property](#Maths.Pi)
 
 ------------------------------------------------------------------------
 

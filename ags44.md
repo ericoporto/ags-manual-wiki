@@ -22,7 +22,7 @@ Script language keywords
 [this](#this)\
 [import](#importkeyword)\
 [export](#exportkeyword)\
-[noloopcheck](#noloopcheck)\
+[noloopcheck](#noloopcheck)
 
 ------------------------------------------------------------------------
 

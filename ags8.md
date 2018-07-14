@@ -6,5 +6,5 @@ create a simple game.
 
 [**Starting off**](ags9#StartingOff)\
 [**Setting up the game**](ags10#Settingupthegame)\
-[**Advanced room features**](ags11#topic14)\
+[**Advanced room features**](ags11#topic14)
 

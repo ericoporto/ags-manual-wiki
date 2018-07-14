@@ -25,7 +25,7 @@ property](#DialogOptionsRenderingInfo.ParserTextBoxWidth)\
 [X property
 (DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.X)\
 [Y property
-(DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.Y)\
+(DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.Y)
 
 ------------------------------------------------------------------------
 

@@ -6,7 +6,7 @@ Text display / Speech functions
 [DisplayAtY](#DisplayAtY)\
 [DisplayMessage](#DisplayMessage)\
 [DisplayMessageAtY](#DisplayMessageAtY)\
-[DisplayTopBar](#DisplayTopBar)\
+[DisplayTopBar](#DisplayTopBar)
 
 ------------------------------------------------------------------------
 

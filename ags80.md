@@ -28,7 +28,7 @@ RunInteraction](#SCUMM_VERBCOIN_GUI.RunInteraction)\
 [SCUMM\_VERBCOIN\_GUI Verbcoin\_GUI](#SCUMM_VERBCOIN_GUI.Verbcoin_GUI)\
 [SCUMM\_VERBCOIN\_GUI verbgraphic](#SCUMM_VERBCOIN_GUI.verbgraphic)\
 [SCUMM\_VERBCOIN\_GUI doubleclick
-variable](#SCUMM_VERBCOIN_GUI.doubleclick)\
+variable](#SCUMM_VERBCOIN_GUI.doubleclick)
 
 ------------------------------------------------------------------------
 

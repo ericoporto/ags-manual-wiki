@@ -12,7 +12,7 @@ Speech functions and properties
 [Style](#Speech.Style)\
 [TextAlignment](#Speech.TextAlignment)\
 [UseGlobalSpeechAnimationDelay](#Speech.UseGlobalSpeechAnimationDelay)\
-[VoiceMode](#Speech.VoiceMode)\
+[VoiceMode](#Speech.VoiceMode)
 
 ------------------------------------------------------------------------
 
@@ -187,7 +187,7 @@ will assign the "space" key to skip the speech.
 
 ### SkipStyle
 
-*(Formerly known as SetSkipSpeech, which is now obsolete)*\
+*(Formerly known as SetSkipSpeech, which is now obsolete)*
 
     static SkipSpeechStyle Speech.SkipStyle
 
@@ -221,7 +221,7 @@ or a key.
 
 ### Style
 
-*(Formerly known as SetSpeechStyle, which is now obsolete)*\
+*(Formerly known as SetSpeechStyle, which is now obsolete)*
 
     static eSpeechStyle Speech.Style
 

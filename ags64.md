@@ -12,7 +12,7 @@ Inventory item functions and properties
 [CursorGraphic property (inventory)](#InventoryItem.CursorGraphic)\
 [Graphic property (inventory)](#InventoryItem.Graphic)\
 [ID property (inventory)](#InventoryItem.ID)\
-[Name property (inventory)](#InventoryItem.Name)\
+[Name property (inventory)](#InventoryItem.Name)
 
 ------------------------------------------------------------------------
 

@@ -9,7 +9,7 @@ Screen functions
 [SetScreenTransition](#SetScreenTransition)\
 [ShakeScreen](#ShakeScreen)\
 [ShakeScreenBackground](#ShakeScreenBackground)\
-[TintScreen](#TintScreen)\
+[TintScreen](#TintScreen)
 
 ------------------------------------------------------------------------
 

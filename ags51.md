@@ -31,7 +31,7 @@ copies of the image and upload it to video memory if appropriate.
 [GetPixel](#DrawingSurface.GetPixel)\
 [Height property (drawing surface)](#DrawingSurface.Height)\
 [UseHighResCoordinates property](#DrawingSurface.UseHighResCoordinates)\
-[Width property (drawing surface)](#DrawingSurface.Width)\
+[Width property (drawing surface)](#DrawingSurface.Width)
 
 ------------------------------------------------------------------------
 

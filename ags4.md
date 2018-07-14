@@ -16,5 +16,5 @@ can customize your game to use a different interface and shortcut keys.
 
 [**The demo game**](ags5#topic4)\
 [**Graphics driver selection**](ags6#GraphicsDriver)\
-[**Run-time engine setup**](ags7#Setup)\
+[**Run-time engine setup**](ags7#Setup)
 

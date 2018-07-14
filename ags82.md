@@ -9,7 +9,7 @@ Properties Window (when clicking the lightning bolt icon).
 [Room events](#topic80)\
 [Inventory item events](#topic81)\
 [Character events](#topic82)\
-[Region events](#topic83)\
+[Region events](#topic83)
 
 ------------------------------------------------------------------------
 
@@ -36,7 +36,7 @@ Use inventory on hotspot
 occurs when the player clicks on the hotspot while in the "Use
 inventory" mode (cursor mode 4). You can use the
 [player.ActiveInventory](ags47#Character.ActiveInventory) property
-to distinguish which item they used.\
+to distinguish which item they used.
 
 Speak to hotspot
 

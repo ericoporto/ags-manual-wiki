@@ -93,7 +93,7 @@ property](#Game.IgnoreUserInputAfterTextTimeoutMs)\
 [TextReadingSpeed property](#Game.TextReadingSpeed)\
 [TranslationFilename property](#Game.TranslationFilename)\
 [UseNativeCoordinates property](#Game.UseNativeCoordinates)\
-[ViewCount property](#Game.ViewCount)\
+[ViewCount property](#Game.ViewCount)
 
 ------------------------------------------------------------------------
 

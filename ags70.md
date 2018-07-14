@@ -3,7 +3,7 @@ Palette functions
 
 [CyclePalette](#CyclePalette)\
 [SetPalRGB](#SetPalRGB)\
-[UpdatePalette](#UpdatePalette)\
+[UpdatePalette](#UpdatePalette)
 
 ------------------------------------------------------------------------
 

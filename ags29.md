@@ -201,7 +201,7 @@ So, did you remember these vital points:
     dot, followed by the command name.
 -   The *player* instance corresponds to the current player character.
 
-\
+
 
 ### Variables
 

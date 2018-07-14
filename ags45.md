@@ -16,7 +16,7 @@ them.
 [PlayingClip property](#AudioChannel.PlayingClip)\
 [Position property (audio channel)](#AudioChannel.Position)\
 [PositionMs property](#AudioChannel.PositionMs)\
-[Volume property (audio channel)](#AudioChannel.Volume)\
+[Volume property (audio channel)](#AudioChannel.Volume)
 
 ------------------------------------------------------------------------
 

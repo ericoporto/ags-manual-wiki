@@ -21,7 +21,7 @@ Mouse functions and properties
 [UseDefaultGraphic](#Mouse.UseDefaultGraphic)\
 [UseModeGraphic](#Mouse.UseModeGraphic)\
 [Mode property (mouse)](#Mouse.Mode)\
-[Visible property (mouse)](#Mouse.Visible)\
+[Visible property (mouse)](#Mouse.Visible)
 
 ------------------------------------------------------------------------
 

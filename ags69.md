@@ -7,7 +7,7 @@ Overlay functions and properties
 [SetText (overlay)](#Overlay.SetText)\
 [Valid property (overlay)](#Overlay.Valid)\
 [X property (overlay)](#Overlay.X)\
-[Y property (overlay)](#Overlay.Y)\
+[Y property (overlay)](#Overlay.Y)
 
 ------------------------------------------------------------------------
 

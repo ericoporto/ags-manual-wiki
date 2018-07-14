@@ -18,5 +18,5 @@ tutorial.
 [**Debugging features**](ags24#Debuggingfeatures)\
 [**Auto-number speech files**](ags25#topic39)\
 [**Integration with Windows**](ags26#topic40)\
-[**Source Control integration**](ags27#SourceControl)\
+[**Source Control integration**](ags27#SourceControl)
 

@@ -8,7 +8,7 @@ rooms.
 [Scrolling](#topic16)\
 [Importing a file as the walkable area mask](#topic17)\
 [Animating background scenes](#topic18)\
-[Lighting effects](#topic19)\
+[Lighting effects](#topic19)
 
 ------------------------------------------------------------------------
 

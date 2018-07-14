@@ -11,7 +11,7 @@ Dialog functions and properties
 [SetOptionState (dialog)](#Dialog.SetOptionState)\
 [ShowTextParser property (dialog)](#Dialog.ShowTextParser)\
 [Start (dialog)](#Dialog.Start)\
-[StopDialog](#StopDialog)\
+[StopDialog](#StopDialog)
 
 ------------------------------------------------------------------------
 

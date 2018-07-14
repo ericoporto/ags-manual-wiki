@@ -18,7 +18,7 @@ GUI Text Box functions and properties
 
 [Font property (text box)](#TextBox.Font)\
 [Text property (text box)](#TextBox.Text)\
-[TextColor property (text box)](#TextBox.TextColor)\
+[TextColor property (text box)](#TextBox.TextColor)
 
 ------------------------------------------------------------------------
 

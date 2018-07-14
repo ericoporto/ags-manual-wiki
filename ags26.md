@@ -7,7 +7,7 @@ player double-clicks them; and secondly, in Windows Vista and later, AGS
 can integrate with the Game Explorer feature.
 
 [Enhanced Save Games](#EnhancedSaveGames)\
-[Windows Game Explorer](#GameExplorer)\
+[Windows Game Explorer](#GameExplorer)
 
 ------------------------------------------------------------------------
 

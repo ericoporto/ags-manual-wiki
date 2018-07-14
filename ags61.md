@@ -21,7 +21,7 @@ GUI Slider properties
 [HandleOffset property](#Slider.HandleOffset)\
 [Max property](#Slider.Max)\
 [Min property](#Slider.Min)\
-[Value property](#Slider.Value)\
+[Value property](#Slider.Value)
 
 ------------------------------------------------------------------------
 

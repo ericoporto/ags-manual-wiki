@@ -29,7 +29,7 @@ GUI Button functions and properties
 [NormalGraphic property (button)](#Button.NormalGraphic)\
 [PushedGraphic property (button)](#Button.PushedGraphic)\
 [Text property (button)](#Button.Text)\
-[TextColor property (button)](#Button.TextColor)\
+[TextColor property (button)](#Button.TextColor)
 
 ------------------------------------------------------------------------
 

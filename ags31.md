@@ -8,7 +8,7 @@ experience -- select one of the links below:
 
 [Pointers for programming newbies](#PointersForNewbies)\
 [Pointers for people who know Java or C`#`](#PointersForJavaCSharp)\
-[Pointers for people who know C or C++](#PointersForC)\
+[Pointers for people who know C or C++](#PointersForC)
 
 ------------------------------------------------------------------------
 

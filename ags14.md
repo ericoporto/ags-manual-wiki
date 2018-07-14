@@ -65,7 +65,7 @@ in the same way as character names. For example, if a GUI is called
 [Custom inventory](#topic24)\
 [Sliders](#topic25)\
 [Text Boxes](#topic26)\
-[List Boxes](#topic27)\
+[List Boxes](#topic27)
 
 ------------------------------------------------------------------------
 

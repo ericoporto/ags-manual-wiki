@@ -34,7 +34,7 @@ GUI List Box functions and properties
 [SaveGameSlots property](#ListBox.SaveGameSlots)\
 [SelectedIndex property](#ListBox.SelectedIndex)\
 [TopItem property (list box)](#ListBox.TopItem)\
-[Translated property (list box)](#ListBox.Translated)\
+[Translated property (list box)](#ListBox.Translated)
 
 ------------------------------------------------------------------------
 

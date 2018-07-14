@@ -21,7 +21,7 @@ DynamicSprite functions and properties
 [ColorDepth property (dynamic sprite)](#DynamicSprite.ColorDepth)\
 [Graphic property (dynamic sprite)](#DynamicSprite.Graphic)\
 [Height property (dynamic sprite)](#DynamicSprite.Height)\
-[Width property (dynamic sprite)](#DynamicSprite.Width)\
+[Width property (dynamic sprite)](#DynamicSprite.Width)
 
 ------------------------------------------------------------------------
 

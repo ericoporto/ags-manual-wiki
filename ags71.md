@@ -4,7 +4,7 @@ Parser functions
 [FindWordID](#Parser.FindWordID)\
 [ParseText](#Parser.ParseText)\
 [Said](#Parser.Said)\
-[SaidUnknownWord](#Parser.SaidUnknownWord)\
+[SaidUnknownWord](#Parser.SaidUnknownWord)
 
 ------------------------------------------------------------------------
 

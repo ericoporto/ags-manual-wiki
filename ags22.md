@@ -17,7 +17,7 @@ editor.
 [Text-based lip syncing](#topic34)\
 [Voice-based lip sync](#topic35)\
 [PAMELA](#topic36)\
-[Papagayo](#topic37)\
+[Papagayo](#topic37)
 
 ------------------------------------------------------------------------
 

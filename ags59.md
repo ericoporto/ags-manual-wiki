@@ -18,7 +18,7 @@ GUI Label functions and properties
 
 [Font property (label)](#Label.Font)\
 [Text property (label)](#Label.Text)\
-[TextColor property (label)](#Label.TextColor)\
+[TextColor property (label)](#Label.TextColor)
 
 ------------------------------------------------------------------------
 

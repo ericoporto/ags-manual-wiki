@@ -99,7 +99,7 @@ property](#Character.MovementLinkedToAnimation)\
 [x property (character)](#Character.x)\
 [y property (character)](#Character.y)\
 [z property (character)](#Character.z)\
-[SetCharacterProperty](#SetCharacterProperty)\
+[SetCharacterProperty](#SetCharacterProperty)
 
 ------------------------------------------------------------------------
 

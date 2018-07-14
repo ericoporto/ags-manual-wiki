@@ -60,7 +60,7 @@ audio download, if your game uses lots of sound files but you don't want
 the player to have to download them.
 
 [Custom icon](#topic28)\
-[Splitting resource files](#SplitRes)\
+[Splitting resource files](#SplitRes)
 
 ------------------------------------------------------------------------
 

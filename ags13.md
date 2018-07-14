@@ -158,7 +158,7 @@ supported commands:
 reference](ags45#AudioChannelCommands)
 
 [Voice speech](#VoiceSpeech)\
-[The AudioCache folder](#AudioCache)\
+[The AudioCache folder](#AudioCache)
 
 ------------------------------------------------------------------------
 

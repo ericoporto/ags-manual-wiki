@@ -12,7 +12,7 @@ Region functions and properties
 [TintGreen property](#Region.TintGreen)\
 [TintRed property](#Region.TintRed)\
 [TintSaturation property](#Region.TintSaturation)\
-[TintLuminance property](#Region.TintLuminance)\
+[TintLuminance property](#Region.TintLuminance)
 
 ------------------------------------------------------------------------
 

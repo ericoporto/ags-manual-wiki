@@ -34,7 +34,7 @@ Room functions
 [ObjectCount property](#Room.ObjectCount)\
 [RightEdge property](#Room.RightEdge)\
 [TopEdge property](#Room.TopEdge)\
-[Width property (room)](#Room.Width)\
+[Width property (room)](#Room.Width)
 
 ------------------------------------------------------------------------
 

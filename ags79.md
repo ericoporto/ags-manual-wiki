@@ -7,7 +7,7 @@ ViewFrame functions and properties
 [LinkedAudio property (view frame)](#ViewFrame.LinkedAudio)\
 [Loop property (view frame)](#ViewFrame.Loop)\
 [Speed property (view frame)](#ViewFrame.Speed)\
-[View property (view frame)](#ViewFrame.View)\
+[View property (view frame)](#ViewFrame.View)
 
 ------------------------------------------------------------------------
 

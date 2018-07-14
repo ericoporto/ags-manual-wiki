@@ -21,7 +21,7 @@ System functions and properties
 [ViewportWidth property](#System.ViewportWidth)\
 [Volume property (system)](#System.Volume)\
 [VSync property](#System.VSync)\
-[Windowed property](#System.Windowed)\
+[Windowed property](#System.Windowed)
 
 ------------------------------------------------------------------------
 

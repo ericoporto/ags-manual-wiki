@@ -18,7 +18,7 @@ GUI functions and properties
 [Width property (GUI)](#GUI.Width)\
 [X property (GUI)](#GUI.X)\
 [Y property (GUI)](#GUI.Y)\
-[ZOrder property (gui)](#GUI.ZOrder)\
+[ZOrder property (gui)](#GUI.ZOrder)
 
 ------------------------------------------------------------------------
 

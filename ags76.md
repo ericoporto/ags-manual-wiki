@@ -19,7 +19,7 @@ String functions
 [AsFloat property](#String.AsFloat)\
 [AsInt property](#String.AsInt)\
 [Chars property](#String.Chars)\
-[Length property](#String.Length)\
+[Length property](#String.Length)
 
 ------------------------------------------------------------------------
 

@@ -10,7 +10,7 @@ commands in this section allow to play them.
 [Stop (audio clip)](#AudioClip.Stop)\
 [FileType property (audio clip)](#AudioClip.FileType)\
 [IsAvailable property (audio clip)](#AudioClip.IsAvailable)\
-[Type property (audio clip)](#AudioClip.Type)\
+[Type property (audio clip)](#AudioClip.Type)
 
 ------------------------------------------------------------------------
 

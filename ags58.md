@@ -25,7 +25,7 @@ GUI InvWindow functions and properties
 [ItemWidth property](#InvWindow.ItemWidth)\
 [ItemsPerRow property](#InvWindow.ItemsPerRow)\
 [RowCount property (inv window)](#InvWindow.RowCount)\
-[TopItem property (inv window)](#InvWindow.TopItem)\
+[TopItem property (inv window)](#InvWindow.TopItem)
 
 ------------------------------------------------------------------------
 

@@ -8,7 +8,7 @@ DateTime functions and properties
 [Month property](#DateTime.Month)\
 [RawTime property](#DateTime.RawTime)\
 [Second property](#DateTime.Second)\
-[Year property](#DateTime.Year)\
+[Year property](#DateTime.Year)
 
 ------------------------------------------------------------------------
 

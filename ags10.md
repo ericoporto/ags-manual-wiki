@@ -15,7 +15,7 @@ palette setup and other things which do not depend on individual rooms.
 [General settings](#topic11)\
 [Default setup](#Default%20setup)\
 [Cursors](#topic12)\
-[Fonts](#topic13)\
+[Fonts](#topic13)
 
 ------------------------------------------------------------------------
 

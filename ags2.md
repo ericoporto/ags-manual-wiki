@@ -19,5 +19,5 @@ Making a game has never been so productive!
 
 To get started, [read the tutorial](ags9#StartingOff).
 
-[**System Requirements**](ags3#topic2)\
+[**System Requirements**](ags3#topic2)
 

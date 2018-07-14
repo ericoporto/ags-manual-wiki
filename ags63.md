@@ -12,7 +12,7 @@ Hotspot functions and properties
 [ID property (hotspot)](#Hotspot.ID)\
 [Name property (hotspot)](#Hotspot.Name)\
 [WalkToX property](#Hotspot.WalkToX)\
-[WalkToY property](#Hotspot.WalkToY)\
+[WalkToY property](#Hotspot.WalkToY)
 
 ------------------------------------------------------------------------
 

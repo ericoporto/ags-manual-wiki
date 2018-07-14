@@ -58,5 +58,5 @@ properties**](ags51#DrawingSurfaceFunctions)\
 [**System functions and properties**](ags77#topic72)\
 [**Text display / Speech functions**](ags78#topic73)\
 [**ViewFrame functions and properties**](ags79#topic74)\
-[**SCUMM\_VERBCOIN\_GUI functions**](ags80#topic75)\
+[**SCUMM\_VERBCOIN\_GUI functions**](ags80#topic75)
 
