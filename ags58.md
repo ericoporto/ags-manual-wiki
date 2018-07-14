@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -34,7 +34,7 @@ GUI InvWindow functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ScrollDown (inv window)
 
@@ -58,7 +58,7 @@ will scroll the *invMain* inv window down one row.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ScrollUp (inv window)
 
@@ -82,7 +82,7 @@ will scroll the *invMain* inv window up one row.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CharacterToUse property
 
@@ -102,7 +102,7 @@ inventory.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ItemAtIndex property
 
@@ -127,7 +127,7 @@ inventory window.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ItemCount property (inv window)
 
@@ -156,7 +156,7 @@ more inventory items than will fit in the inventory window.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ItemHeight property
 
@@ -180,7 +180,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ItemWidth property
 
@@ -204,7 +204,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ItemsPerRow property
 
@@ -227,7 +227,7 @@ displays how many items can be visible in the invMain window at once.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RowCount property (inv window)
 
@@ -248,7 +248,7 @@ displays how many items can be visible in the invMain window at once.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TopItem property (inv window)
 

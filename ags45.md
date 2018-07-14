@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -25,7 +25,7 @@ them.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Seek (audio channel)
 
@@ -61,7 +61,7 @@ seek it back to the start.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetRoomLocation
 
@@ -97,7 +97,7 @@ of the *oMachine* room object.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Speed property (audio channel)
 
@@ -120,7 +120,7 @@ plays *aFunnyTalk* clip at the double speed.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Stop (audio channel)
 
@@ -146,7 +146,7 @@ stop it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ID property (audio channel)
 
@@ -168,7 +168,7 @@ channel it is playing on.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsPlaying property
 
@@ -194,7 +194,7 @@ finishes.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### LengthMs property
 
@@ -220,7 +220,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Panning property
 
@@ -248,7 +248,7 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### PlayingClip property
 
@@ -282,7 +282,7 @@ will display what is currently playing on audio channel 2.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Position property (audio channel)
 
@@ -323,7 +323,7 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### PositionMs property
 
@@ -356,7 +356,7 @@ display its position.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Volume property (audio channel)
 

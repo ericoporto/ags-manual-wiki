@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -21,7 +21,7 @@ Hotspot functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetAtScreenXY (hotspot)
 
@@ -56,7 +56,7 @@ will display a message depending on what the mouse is on.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetProperty (hotspot)
 
@@ -83,7 +83,7 @@ than 200.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetTextProperty (hotspot)
 
@@ -110,7 +110,7 @@ will retrieve hotspot 2's "description" property and display it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetProperty (hotspot)
 
@@ -138,7 +138,7 @@ will change Door hotspot's "LockDifficulty" custom property to 5.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetTextProperty (hotspot)
 
@@ -164,7 +164,7 @@ will change Door's "description" property.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsInteractionAvailable (hotspot)
 
@@ -190,7 +190,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RunInteraction (hotspot)
 
@@ -215,7 +215,7 @@ hDoor.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Enabled property (hotspot)
 
@@ -246,7 +246,7 @@ will disable the hBrownTree hotspot.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ID property (hotspot)
 
@@ -267,7 +267,7 @@ displays hDoor's hotspot number, and then displays hotspot 3's number
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Name property (hotspot)
 
@@ -291,7 +291,7 @@ will retrieve and then display hotspot 3's name.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### WalkToX property
 
@@ -313,7 +313,7 @@ will move the character to hotspot hTable's walk-to point.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### WalkToY property
 

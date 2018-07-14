@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -27,7 +27,7 @@ GUI Text Box functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Font property (text box)
 
@@ -50,7 +50,7 @@ will change the *txtUserInput* text box to use Font "Normal".
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Text property (text box)
 
@@ -77,7 +77,7 @@ will clear the txtUserInput text box.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TextColor property (text box)
 

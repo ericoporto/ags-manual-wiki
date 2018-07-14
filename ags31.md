@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -17,7 +17,7 @@ experience -- select one of the links below:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Pointers for programming newbies
 
@@ -110,7 +110,7 @@ can't work out, feel free to ask on the Technical forums.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Pointers for people who know Java or C`#`
 
@@ -156,7 +156,7 @@ the memory to be freed.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Pointers for people who know C or C++
 

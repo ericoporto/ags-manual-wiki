@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -29,7 +29,7 @@ Mouse functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ChangeModeGraphic
 
@@ -60,7 +60,7 @@ imported in the sprite's manager slot 120.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ChangeModeHotspot
 
@@ -85,7 +85,7 @@ will change the cursor's hotspot for walk mode to coordinates 10,10.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ChangeModeView
 
@@ -110,7 +110,7 @@ will change the Look cursor's view to ROLLEYES.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Click (mouse)
 
@@ -136,7 +136,7 @@ This will simulate user click at (100,100).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ControlEnabled property
 
@@ -162,7 +162,7 @@ game.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DisableMode
 
@@ -189,7 +189,7 @@ Mouse.IsModeEnabled (REF NOT FOUND)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### EnableMode
 
@@ -229,7 +229,7 @@ enabled.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetModeGraphic
 
@@ -250,7 +250,7 @@ will display the sprite slot number of the current mouse cursor.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsButtonDown
 
@@ -289,7 +289,7 @@ versions.\
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SaveCursorUntilItLeaves
 
@@ -319,7 +319,7 @@ current object
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SelectNextMode
 
@@ -336,7 +336,7 @@ Use Inventory mode if the player has an active inventory item.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SelectPreviousMode
 
@@ -351,7 +351,7 @@ the Use Inventory mode if the player has an active inventory item.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetBounds
 
@@ -380,7 +380,7 @@ screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetPosition (mouse)
 
@@ -406,7 +406,7 @@ will place the mouse cursor in the centre of the screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Speed property (mouse)
 
@@ -445,7 +445,7 @@ converts slider control's position into mouse speed.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Update
 
@@ -470,7 +470,7 @@ will display the mouse position just before each dialog box is displayed
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### UseDefaultGraphic
 
@@ -486,7 +486,7 @@ changed it with the UseModeGraphic function.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### UseModeGraphic
 
@@ -513,7 +513,7 @@ Cursors tab.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Mode property (mouse)
 
@@ -546,7 +546,7 @@ will execute the code only if the current cursor mode is MODE 0 (WALK).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Visible property (mouse)
 

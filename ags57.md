@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -38,7 +38,7 @@ GUI Button functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Click (button)
 
@@ -54,7 +54,7 @@ that event it will be run, otherwise nothing happens.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Animate (button)
 
@@ -99,7 +99,7 @@ delay of 4 cycles per frame, and repeat the animation continually.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Animating property (button)
 
@@ -128,7 +128,7 @@ will animate button and wait until the animation finishes.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Frame property (button)
 
@@ -150,7 +150,7 @@ This property is read-only. To change button's animation, use the
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Loop property (button)
 
@@ -172,7 +172,7 @@ This property is read-only. To change button's animation, use the
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### View property (button)
 
@@ -194,7 +194,7 @@ This property is read-only. To change button's animation, use the
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ClipImage property
 
@@ -223,7 +223,7 @@ button's clickable area.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Font property (button)
 
@@ -245,7 +245,7 @@ will change the *btnOK* button to use Font "Main".
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Graphic property (button)
 
@@ -274,7 +274,7 @@ will display btnPlay's current sprite number.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### MouseOverGraphic property (button)
 
@@ -298,7 +298,7 @@ will display btnPlay's mouse-over sprite number.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### NormalGraphic property (button)
 
@@ -327,7 +327,7 @@ will display btnPlay's normal sprite number.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### PushedGraphic property (button)
 
@@ -352,7 +352,7 @@ will display btnPlay's pushed sprite number.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Text property (button)
 
@@ -377,7 +377,7 @@ will display the old text, then change button btnController to read
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TextColor property (button)
 

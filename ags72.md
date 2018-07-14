@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -21,7 +21,7 @@ Region functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetAtRoomXY (region)
 
@@ -47,7 +47,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RunInteraction (region)
 
@@ -78,7 +78,7 @@ walks onto region" for region 4.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Tint (region)
 
@@ -116,7 +116,7 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Enabled property (region)
 
@@ -146,7 +146,7 @@ will disable region number 3.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ID property (region)
 
@@ -165,7 +165,7 @@ displays region 3's number (which will be 3).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### LightLevel property
 
@@ -212,7 +212,7 @@ will set region 2's level light to 100 if the Global Integer 10 is 1.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintEnabled property
 
@@ -238,7 +238,7 @@ will display a message if region 4 is tinted
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintBlue property
 
@@ -270,7 +270,7 @@ will display a message with the region's tints.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintGreen property
 
@@ -303,7 +303,7 @@ will display a message with the region's tints.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintRed property
 
@@ -336,7 +336,7 @@ will display a message with the region's tints.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintSaturation property
 
@@ -369,7 +369,7 @@ will display a message with the region's tints.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintLuminance property
 

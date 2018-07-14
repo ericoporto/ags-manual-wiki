@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -108,7 +108,7 @@ property](#Character.MovementLinkedToAnimation)\
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AddInventory
 
@@ -145,7 +145,7 @@ will give inventory item iKey to character EGO.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AddWaypoint
 
@@ -178,7 +178,7 @@ and then top left corner afterwards.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Animate (character)
 
@@ -229,7 +229,7 @@ and wait until the animation finishes before returning.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ChangeRoom
 
@@ -276,7 +276,7 @@ coordinates 100,50. This will also mean that the game moves into room 4.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ChangeRoomAutoPosition
 
@@ -318,7 +318,7 @@ into room 4.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ChangeView
 
@@ -346,7 +346,7 @@ will make the EGO character use view number 5 as his walking view.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### FaceCharacter
 
@@ -388,7 +388,7 @@ will make the character EGO face the character MAN
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### FaceDirection
 
@@ -429,7 +429,7 @@ will make the character EGO face up-right.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### FaceLocation
 
@@ -473,7 +473,7 @@ will make the character face to the east.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### FaceObject
 
@@ -511,7 +511,7 @@ will make the player character face object 2.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### FollowCharacter
 
@@ -569,7 +569,7 @@ near him and waiting for a while before he makes his move.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetAtScreenXY (character)
 
@@ -599,7 +599,7 @@ will display the message if the mouse cursor is over the EGO character
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetProperty (character)
 
@@ -628,7 +628,7 @@ will print the message if EGO has its "Value" property set to more than
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetTextProperty (character)
 
@@ -656,7 +656,7 @@ will retrieve EGO's "description" property and display it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetProperty (character)
 
@@ -685,7 +685,7 @@ will change EGO character's "XPLevel" custom property to 10.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetTextProperty (character)
 
@@ -711,7 +711,7 @@ will change EGO's "description" property.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HasExplicitLight property (character)
 
@@ -731,7 +731,7 @@ light.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HasInventory
 
@@ -760,7 +760,7 @@ will display a message if the player has the key.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsCollidingWithChar
 
@@ -789,7 +789,7 @@ colliding.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsCollidingWithObject (character)
 
@@ -819,7 +819,7 @@ number 3 are colliding.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### LightLevel property
 
@@ -841,7 +841,7 @@ Region.SetLightLevel (REF NOT FOUND)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### LockView
 
@@ -886,7 +886,7 @@ only by **AGS 3.4.1** and later versions.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### LockViewAligned
 
@@ -948,7 +948,7 @@ only by **AGS 3.4.1** and later versions.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### LockViewFrame
 
@@ -986,7 +986,7 @@ only by **AGS 3.4.1** and later versions.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### LockViewOffset
 
@@ -1042,7 +1042,7 @@ only by **AGS 3.4.1** and later versions.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### LoseInventory
 
@@ -1068,7 +1068,7 @@ inventory tab
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Move (character)
 
@@ -1104,7 +1104,7 @@ his destination.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### PlaceOnWalkableArea
 
@@ -1132,7 +1132,7 @@ a walkable area.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RemoveTint (character)
 
@@ -1156,7 +1156,7 @@ normal.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsInteractionAvailable (character)
 
@@ -1182,7 +1182,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RunInteraction (character)
 
@@ -1207,7 +1207,7 @@ will execute the code defined in the MAN's "TALK TO CHARACTER" event.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Say
 
@@ -1239,7 +1239,7 @@ games, whilst playing the character's talking animation.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SayAt
 
@@ -1268,7 +1268,7 @@ playing the character's talking animation.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SayBackground
 
@@ -1305,7 +1305,7 @@ game.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetAsPlayer
 
@@ -1334,7 +1334,7 @@ room.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetLightLevel (character)
 
@@ -1372,7 +1372,7 @@ This will give character EGO maximal individual brightness.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetIdleView
 
@@ -1407,7 +1407,7 @@ be played if the character is idle for 30 seconds.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetWalkSpeed
 
@@ -1443,7 +1443,7 @@ will change the character EGO's speed to 10.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### StopMoving (character)
 
@@ -1468,7 +1468,7 @@ will stop the character when he reaches the coordinate x=300.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Think
 
@@ -1524,7 +1524,7 @@ thinking animation.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Tint (character)
 
@@ -1562,7 +1562,7 @@ will tint the EGO character green.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintBlue property (character)
 
@@ -1587,7 +1587,7 @@ property is false, then this value is meaningless.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintGreen property (character)
 
@@ -1613,7 +1613,7 @@ Character.TintEnabled (REF NOT FOUND),
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintRed property (character)
 
@@ -1639,7 +1639,7 @@ Character.TintEnabled (REF NOT FOUND),
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintSaturation property (character)
 
@@ -1665,7 +1665,7 @@ Character.TintEnabled (REF NOT FOUND),
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintLuminance property (character)
 
@@ -1691,7 +1691,7 @@ Character.TintEnabled (REF NOT FOUND),
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### UnlockView
 
@@ -1724,7 +1724,7 @@ only by **AGS 3.4.1** and later versions.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Walk
 
@@ -1777,7 +1777,7 @@ until the character has reached his destination.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### WalkStraight
 
@@ -1808,7 +1808,7 @@ will move the character EGO in a straight line towards co ordinates
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ActiveInventory property
 
@@ -1835,7 +1835,7 @@ that the player has the inventory item)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Animating property (character)
 
@@ -1866,7 +1866,7 @@ you wouldn't need to do this.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AnimationSpeed property
 
@@ -1887,7 +1887,7 @@ will change the player character's animation speed to 4.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Baseline property (character)
 
@@ -1915,7 +1915,7 @@ collisions, or for walk-behinds) to a line positioned at y coordinate =
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BlinkInterval property
 
@@ -1944,7 +1944,7 @@ animation every 4 seconds.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BlinkView property
 
@@ -1972,7 +1972,7 @@ animation every 4 seconds.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BlinkWhileThinking property
 
@@ -1994,7 +1994,7 @@ will stop EGO from blinking while his thinking animation is playing.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BlockingHeight property (character)
 
@@ -2026,7 +2026,7 @@ will make EGO block 20 pixels high (10 above and 10 below his baseline)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BlockingWidth property (character)
 
@@ -2059,7 +2059,7 @@ co-ordinate, and 25 to the right)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Clickable property (character)
 
@@ -2089,7 +2089,7 @@ will make the game ignore clicks on the character MAN.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DestinationX property
 
@@ -2107,7 +2107,7 @@ character is not walking or moving it is equal to its current position.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DestinationY property
 
@@ -2125,7 +2125,7 @@ character is not walking or moving it is equal to its current position.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DiagonalLoops property
 
@@ -2146,7 +2146,7 @@ will enable diagonal walking loops for character EGO.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Frame property (character)
 
@@ -2169,7 +2169,7 @@ displays EGO's current frame number within his view.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HasExplicitTint property (character)
 
@@ -2198,7 +2198,7 @@ removes the player's tint if it currently has one.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ID property (character)
 
@@ -2216,7 +2216,7 @@ uses the obsolete MoveCharacter function to move EGO to (100, 50)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IdleView property
 
@@ -2238,7 +2238,7 @@ will display EGO's current idle view number.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IgnoreLighting property
 
@@ -2260,7 +2260,7 @@ with different light levels.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IgnoreWalkbehinds property (character)
 
@@ -2291,7 +2291,7 @@ will make the character EGO ignore walk-behinds.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### InventoryQuantity property
 
@@ -2329,7 +2329,7 @@ will display how many inventory items of type iCash the player has.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Loop property (character)
 
@@ -2352,7 +2352,7 @@ displays EGO's current loop number within his view.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ManualScaling property (character)
 
@@ -2384,7 +2384,7 @@ will tell EGO to ignore walkable area scaling levels and be fixed to
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### MovementLinkedToAnimation property
 
@@ -2419,7 +2419,7 @@ him to (50,100), then turn it back on again.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Moving property (character)
 
@@ -2450,7 +2450,7 @@ there.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Name property (character)
 
@@ -2472,7 +2472,7 @@ will display the name of the player character
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### NormalView property
 
@@ -2501,7 +2501,7 @@ view.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### PreviousRoom property
 
@@ -2525,7 +2525,7 @@ will display the EGO character's previous room.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Room property
 
@@ -2546,7 +2546,7 @@ will display the EGO character's current room.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ScaleMoveSpeed property
 
@@ -2573,7 +2573,7 @@ will mean that EGO's speed is adjusted in line with his scaling
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ScaleVolume property
 
@@ -2602,7 +2602,7 @@ scaling
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Scaling property (character)
 
@@ -2631,7 +2631,7 @@ will tell EGO to ignore walkable area scaling levels and be fixed to
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Solid property (character)
 
@@ -2659,7 +2659,7 @@ will mean that EGO blocks the path other characters.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Speaking property
 
@@ -2692,7 +2692,7 @@ useful with Sierra-style speech).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SpeakingFrame property
 
@@ -2727,7 +2727,7 @@ to Frame 0.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SpeechAnimationDelay property
 
@@ -2760,7 +2760,7 @@ will change the player character's speech animation speed to 4.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SpeechColor property
 
@@ -2785,7 +2785,7 @@ will change the character's EGO talking color to yellow.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SpeechView property
 
@@ -2813,7 +2813,7 @@ will change the character EGO's speech view to view 10.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Thinking property
 
@@ -2850,7 +2850,7 @@ this will keep character semi-transparent while he is thinking.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ThinkingFrame property
 
@@ -2887,7 +2887,7 @@ to Frame 0.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ThinkView property
 
@@ -2908,7 +2908,7 @@ will change the character EGO's thinking view to 14.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Transparency property (character)
 
@@ -2951,7 +2951,7 @@ level to being fully invisible.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TurnBeforeWalking property
 
@@ -2977,7 +2977,7 @@ whenever he walks.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### View property (character)
 
@@ -3002,7 +3002,7 @@ will display EGO's current view number.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### WalkSpeedX property
 
@@ -3025,7 +3025,7 @@ will display the player's X speed.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### WalkSpeedY property
 
@@ -3048,7 +3048,7 @@ will display the player's Y speed.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### x property (character)
 
@@ -3073,7 +3073,7 @@ displays the player character's current coordinates.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### y property (character)
 
@@ -3098,7 +3098,7 @@ displays the player character's current coordinates.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### z property (character)
 
@@ -3125,7 +3125,7 @@ gradually levitates the character up to 20 pixels.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetCharacterProperty
 

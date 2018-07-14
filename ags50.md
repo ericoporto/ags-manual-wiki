@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -34,7 +34,7 @@ property](#DialogOptionsRenderingInfo.ParserTextBoxWidth)\
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RunActiveOption
 
@@ -64,7 +64,7 @@ runs selected dialog option when player presses Enter/Return key.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Update
 
@@ -89,7 +89,7 @@ current script ends.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ActiveOptionID property
 
@@ -125,7 +125,7 @@ always selects the first option
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DialogToRender property
 
@@ -144,7 +144,7 @@ options](ags42#CustomDialogOptions) page.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HasAlphaChannel property (DialogOptionsRenderingInfo)
 
@@ -177,7 +177,7 @@ options in.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Height property (DialogOptionsRenderingInfo)
 
@@ -206,7 +206,7 @@ creates a 300x150 size area to draw the dialog options in
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ParserTextBoxWidth property
 
@@ -243,7 +243,7 @@ options area
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ParserTextBoxX property
 
@@ -283,7 +283,7 @@ options area
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ParserTextBoxY property
 
@@ -322,7 +322,7 @@ options area
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Surface property (DialogOptionsRenderingInfo)
 
@@ -356,7 +356,7 @@ functions](ags51#DrawingSurfaceFunctions)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Width property (DialogOptionsRenderingInfo)
 
@@ -385,7 +385,7 @@ creates a 300x150 size area to draw the dialog options in
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### X property (DialogOptionsRenderingInfo)
 
@@ -417,7 +417,7 @@ creates a 200x150 size area at (50, 20) to draw the dialog options in
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Y property (DialogOptionsRenderingInfo)
 

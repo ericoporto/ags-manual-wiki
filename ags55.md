@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -27,7 +27,7 @@ GUI functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Centre
 
@@ -49,7 +49,7 @@ will centre the CONTROLPANEL GUI in the middle of the screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Click (gui)
 
@@ -76,7 +76,7 @@ triggers OnClick event for gMainMenu.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetAtScreenXY (GUI)
 
@@ -117,7 +117,7 @@ will display the number of the GUI that the mouse is over.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ProcessClick (GUI)
 
@@ -148,7 +148,7 @@ Pointer mode, which will ignore anything but interface.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetPosition (GUI)
 
@@ -175,7 +175,7 @@ will move the VERBCOIN GUI to the position where the cursor is.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetSize (GUI)
 
@@ -205,7 +205,7 @@ changes the ICONBAR GUI to be the size of half the screen
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BackgroundGraphic property (GUI)
 
@@ -222,7 +222,7 @@ You can set this to 0 to remove the background image from the GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Clickable property (GUI)
 
@@ -251,7 +251,7 @@ sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ControlCount property
 
@@ -275,7 +275,7 @@ disables all controls on the INVENTORY GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Controls property (GUI)
 
@@ -312,7 +312,7 @@ it. If control 4 isn't a listbox, you will get a Null Reference error.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Height property (GUI)
 
@@ -334,7 +334,7 @@ displays the height of the ICONBAR GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ID property (GUI)
 
@@ -357,7 +357,7 @@ clickable.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Transparency property (GUI)
 
@@ -400,7 +400,7 @@ will gradually fade the INVENTORY GUI out until it is invisible.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Visible property (GUI)
 
@@ -438,7 +438,7 @@ will turn on the SETTINGS GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Width property (GUI)
 
@@ -460,7 +460,7 @@ makes the INVENTORY GUI 5 pixels wider.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### X property (GUI)
 
@@ -484,7 +484,7 @@ moves the VERBCOIN GUI right 5 pixels.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Y property (GUI)
 
@@ -509,7 +509,7 @@ moves the VERBCOIN GUI down 5 pixels.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ZOrder property (gui)
 

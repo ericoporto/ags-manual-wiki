@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -30,7 +30,7 @@ DynamicSprite functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Create (dynamic sprite)
 
@@ -78,7 +78,7 @@ the sprite.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CreateFromBackground
 
@@ -132,7 +132,7 @@ onto the top left corner of the background image.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CreateFromDrawingSurface
 
@@ -183,7 +183,7 @@ previously was.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CreateFromExistingSprite
 
@@ -235,7 +235,7 @@ and then draws the result onto the background.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CreateFromFile
 
@@ -288,7 +288,7 @@ Once the image is finished with, Delete should be called on it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CreateFromSaveGame
 
@@ -341,7 +341,7 @@ Once the GUI is disposed of, Delete should be called on the sprite.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CreateFromScreenShot
 
@@ -392,7 +392,7 @@ Once the GUI is disposed of, Delete should be called on the sprite.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ChangeCanvasSize
 
@@ -430,7 +430,7 @@ to the left and right, and draws a line in the new area to the left.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CopyTransparencyMask
 
@@ -472,7 +472,7 @@ transparency mask to use that of sprite 11, and displays it on object 0.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Crop (dynamic sprite)
 
@@ -506,7 +506,7 @@ pixels, and then draw it onto the room background at (100,100).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Delete (dynamic sprite)
 
@@ -543,7 +543,7 @@ and free the new image.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Flip (dynamic sprite)
 
@@ -573,7 +573,7 @@ it onto the room background at (100,100).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetDrawingSurface (dynamic sprite)
 
@@ -608,7 +608,7 @@ object for 1 second and then removes it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Resize (dynamic sprite)
 
@@ -644,7 +644,7 @@ size, and then draw it onto the room background at (100,100).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Rotate (dynamic sprite)
 
@@ -684,7 +684,7 @@ draw the result onto the screen, and then delete the image.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SaveToFile (dynamic sprite)
 
@@ -716,7 +716,7 @@ then save the result back to the disk.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Tint (dynamic sprite)
 
@@ -752,7 +752,7 @@ room background.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ColorDepth property (dynamic sprite)
 
@@ -777,7 +777,7 @@ displays the colour depth of the CustomAvatar.bmp image.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Graphic property (dynamic sprite)
 
@@ -804,7 +804,7 @@ takes a screen shot, and draws it onto the background scene at
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Height property (dynamic sprite)
 
@@ -828,7 +828,7 @@ displays the size of the CustomAvatar.bmp image.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Width property (dynamic sprite)
 

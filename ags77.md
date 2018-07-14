@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -30,7 +30,7 @@ System functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AudioChannelCount property
 
@@ -54,7 +54,7 @@ will display a message with the number of audio channels.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AudioChannels property
 
@@ -78,7 +78,7 @@ will display a message with Audio Channel 2's current volume.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CapsLock property
 
@@ -105,7 +105,7 @@ will display a message if Caps Lock is on.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ColorDepth property (system)
 
@@ -129,7 +129,7 @@ will display the current resolution and colour depth
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Gamma property
 
@@ -159,7 +159,7 @@ will turn the screen brightness up to `50%` higher than normal
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HardwareAcceleration property
 
@@ -190,7 +190,7 @@ See Also: [AGS Graphics Drivers](ags6#GraphicsDriver)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HasInputFocus property
 
@@ -228,7 +228,7 @@ switches back to game.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### NumLock property
 
@@ -255,7 +255,7 @@ will display a message if Num Lock is on.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### OperatingSystem property
 
@@ -285,7 +285,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RenderAtScreenResolution property
 
@@ -310,7 +310,7 @@ menu option for toggling it at runtime.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RuntimeInfo property
 
@@ -339,7 +339,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ScreenHeight property
 
@@ -371,7 +371,7 @@ will display the current resolution and colour depth
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ScreenWidth property
 
@@ -403,7 +403,7 @@ will display the current resolution and colour depth
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ScrollLock property
 
@@ -431,7 +431,7 @@ will display a message if Scroll Lock is on.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SupportsGammaControl property
 
@@ -463,7 +463,7 @@ will display a message if the system supports changing the gamma
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Version property
 
@@ -485,7 +485,7 @@ will display the AGS version number
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ViewportHeight property
 
@@ -508,7 +508,7 @@ will display the current viewport size
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ViewportWidth property
 
@@ -531,7 +531,7 @@ will display the current viewport size
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Volume property (system)
 
@@ -558,7 +558,7 @@ will set the overall output volume to 80.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### VSync property
 
@@ -586,7 +586,7 @@ will display a message if vsync is on
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Windowed property
 

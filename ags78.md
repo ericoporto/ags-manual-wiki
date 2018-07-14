@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -15,7 +15,7 @@ Text display / Speech functions
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Display
 
@@ -49,7 +49,7 @@ usually used for responses to the player LOOKing at things.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DisplayAt
 
@@ -82,7 +82,7 @@ will display the message at coordinates 50,50 in a box 100 pixels wide.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DisplayAtY
 
@@ -104,7 +104,7 @@ will display the message at y coordinate 50.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DisplayMessage
 
@@ -126,7 +126,7 @@ will display the message 220 of the Room message editor.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DisplayMessageAtY
 
@@ -150,7 +150,7 @@ will display global message 527, in the lower half of the screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DisplayTopBar
 

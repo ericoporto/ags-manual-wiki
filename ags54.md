@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -102,7 +102,7 @@ property](#Game.IgnoreUserInputAfterTextTimeoutMs)\
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AbortGame
 
@@ -135,7 +135,7 @@ SeeAlso: [QuitGame](ags54#QuitGame)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CallRoomScript
 
@@ -179,7 +179,7 @@ SeeAlso: [The text parser documentation](ags17#TextParser)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ChangeTranslation
 
@@ -218,7 +218,7 @@ will attempt to change the translation to Spanish
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ClaimEvent
 
@@ -259,7 +259,7 @@ SeeAlso: [Script events](ags40#TextScriptEvents)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Debug
 
@@ -297,7 +297,7 @@ with what they do:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DeleteSaveSlot
 
@@ -321,7 +321,7 @@ deletes save game slot 130 (which we should have saved earlier).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DisableInterface
 
@@ -349,7 +349,7 @@ will disable the user's interface.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DoOnceOnly
 
@@ -383,7 +383,7 @@ will give the player 5 points the first time this script is run.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### EnableInterface
 
@@ -404,7 +404,7 @@ will enable the user's interface.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### EndCutscene
 
@@ -420,7 +420,7 @@ watched the cutscene, or 1 if they skipped it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetColorFromRGB
 
@@ -452,7 +452,7 @@ will draw a bright green line onto the room background
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetFrameCountForLoop
 
@@ -478,7 +478,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetGameOption
 
@@ -502,7 +502,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetGameParameter
 
@@ -529,7 +529,7 @@ GP\_NUMINVITEMS)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetGameSpeed
 
@@ -550,7 +550,7 @@ user has raised it )
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetGlobalInt
 
@@ -575,7 +575,7 @@ will execute the code only if Global Integer 20 is 1.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetGraphicalVariable
 
@@ -601,7 +601,7 @@ will execute the code only if interaction variable "climbed rock" is 1.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetLocationName
 
@@ -638,7 +638,7 @@ variable.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetLocationType
 
@@ -672,7 +672,7 @@ will set the cursor mode to talk if the cursor is over a character.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetLoopCountForView
 
@@ -697,7 +697,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetRunNextSettingForLoop
 
@@ -727,7 +727,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetSaveSlotDescription
 
@@ -753,7 +753,7 @@ will get the description of save slot 10 into the variable.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetTextHeight
 
@@ -783,7 +783,7 @@ screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetTextWidth
 
@@ -813,7 +813,7 @@ will print "Hello!" onto the middle of the background scene.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetTranslation
 
@@ -839,7 +839,7 @@ unchanged, so it is always safe to use this function.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetViewFrame
 
@@ -870,7 +870,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GiveScore
 
@@ -893,7 +893,7 @@ will give 5 points to the player.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetFontHeight
 
@@ -914,7 +914,7 @@ will store the speech font's height in the variable.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetFontLineSpacing
 
@@ -947,7 +947,7 @@ speech font.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### InputBox
 
@@ -982,7 +982,7 @@ the user presses Cancel, the NAME string will be blank.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### InventoryScreen
 
@@ -997,7 +997,7 @@ Instead of using this command, you should create your own Inventory GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsGamePaused
 
@@ -1019,7 +1019,7 @@ will unpause the game if it's paused.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsInterfaceEnabled
 
@@ -1042,7 +1042,7 @@ will disable the user interface if it's enabled.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsInteractionAvailable
 
@@ -1073,7 +1073,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsKeyPressed
 
@@ -1109,7 +1109,7 @@ pressed.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsPluginLoaded
 
@@ -1134,7 +1134,7 @@ will display a message if plugin is present.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsTimerExpired
 
@@ -1159,7 +1159,7 @@ will display a message when timer 1 expires.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsTranslationAvailable
 
@@ -1175,7 +1175,7 @@ Returns 1 if a translation is in use, 0 if not.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### MoveCharacterToHotspot
 
@@ -1203,7 +1203,7 @@ will move the character EGO to the hotspot's 6 "walk to point".
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### MoveCharacterToObject
 
@@ -1229,7 +1229,7 @@ Will move the character EGO below object number 0, then turn off object
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### PauseGame
 
@@ -1257,7 +1257,7 @@ will pause the game if the player presses the space bar
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### QuitGame
 
@@ -1279,7 +1279,7 @@ will quit the game without asking the player to confirm.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Random
 
@@ -1307,7 +1307,7 @@ result.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RestartGame
 
@@ -1325,7 +1325,7 @@ will restart the game if the player presses the F7 key.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RestoreGameDialog
 
@@ -1348,7 +1348,7 @@ will bring up the restore game dialog if the player presses the F5 key.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RestoreGameSlot
 
@@ -1378,7 +1378,7 @@ will restore game slot 30 if this slot number exists.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RunAGSGame
 
@@ -1425,7 +1425,7 @@ will run the MyGame game, passing it the value 51.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SaveGameDialog
 
@@ -1449,7 +1449,7 @@ will bring up the save game dialog if the player presses the F3 key.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SaveGameSlot
 
@@ -1480,7 +1480,7 @@ will save the current game position to slot 30 with the description
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SaveScreenShot
 
@@ -1510,7 +1510,7 @@ the filename the player typed.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetAmbientLightLevel
 
@@ -1552,7 +1552,7 @@ do not have individual light levels).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetAmbientTint
 
@@ -1597,7 +1597,7 @@ will tint everything on the screen with a hint of blue.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetGameOption
 
@@ -1654,7 +1654,7 @@ will disable pixel-perfect click detection.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetGameSpeed
 
@@ -1690,7 +1690,7 @@ will set the game speed to 80.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetGlobalInt
 
@@ -1715,7 +1715,7 @@ will set the Global Integer 10 to 1.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetGraphicalVariable
 
@@ -1739,7 +1739,7 @@ will set the interaction editor "climbed rock" variable to 1.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetMultitaskingMode
 
@@ -1775,7 +1775,7 @@ will mean that the game continues to run in the background.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetRestartPoint
 
@@ -1797,7 +1797,7 @@ background.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetSaveGameDirectory
 
@@ -1844,7 +1844,7 @@ to do this in game\_start).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetTextWindowGUI
 
@@ -1865,7 +1865,7 @@ future.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetTimer
 
@@ -1892,7 +1892,7 @@ will set the timer 1 to expire after 1000 game cycles.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SkipUntilCharacterStops
 
@@ -1923,7 +1923,7 @@ blocking cutscene.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### StartCutscene
 
@@ -1962,7 +1962,7 @@ ESC the game could appear to hang.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### UpdateInventory
 
@@ -1984,7 +1984,7 @@ the editor.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### UnPauseGame
 
@@ -2003,7 +2003,7 @@ will unpause the game if it is paused.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Wait
 
@@ -2028,7 +2028,7 @@ wait for 2 seconds (80 game cycles) and then face right.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### WaitKey
 
@@ -2054,7 +2054,7 @@ presses a key.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### WaitMouseKey
 
@@ -2081,7 +2081,7 @@ presses a key or clicks the mouse.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AudioClipCount property
 
@@ -2098,7 +2098,7 @@ audio clips for some reason.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AudioClips property
 
@@ -2124,7 +2124,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CharacterCount property
 
@@ -2143,7 +2143,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DialogCount property
 
@@ -2163,7 +2163,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### FileName property
 
@@ -2183,7 +2183,7 @@ will display the game filename.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### FontCount property
 
@@ -2200,7 +2200,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GlobalMessages property
 
@@ -2227,7 +2227,7 @@ will display global message 997.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GlobalStrings property
 
@@ -2252,7 +2252,7 @@ will set global string 15 to contain "Joe".
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GUICount property
 
@@ -2272,7 +2272,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IgnoreUserInputAfterTextTimeoutMs property
 
@@ -2306,7 +2306,7 @@ text is automatically removed from the screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### InSkippableCutscene property
 
@@ -2344,7 +2344,7 @@ will display a message if we are within a cutscene
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### InventoryItemCount property
 
@@ -2362,7 +2362,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### MinimumTextDisplayTimeMs property
 
@@ -2398,7 +2398,7 @@ at least 2 seconds
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### MouseCursorCount property
 
@@ -2415,7 +2415,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Name property (game)
 
@@ -2435,7 +2435,7 @@ will display the game name.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### NormalFont property
 
@@ -2466,7 +2466,7 @@ will change the normal font to the font "Special".
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SkippingCutscene property
 
@@ -2505,7 +2505,7 @@ cutscene.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SpeechFont property
 
@@ -2529,7 +2529,7 @@ will change the speech font to "Standard".
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SpriteHeight property
 
@@ -2551,7 +2551,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SpriteWidth property
 
@@ -2573,7 +2573,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TextReadingSpeed property
 
@@ -2612,7 +2612,7 @@ on-screen for twice as long as usual.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TranslationFilename property
 
@@ -2637,7 +2637,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### UseNativeCoordinates property
 
@@ -2672,7 +2672,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ViewCount property
 

@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -21,7 +21,7 @@ Inventory item functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetAtScreenXY (inventory)
 
@@ -60,7 +60,7 @@ will display the number of the inv item that the mouse is over
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetProperty (inventory)
 
@@ -88,7 +88,7 @@ to more than 200.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetTextProperty (inventory)
 
@@ -117,7 +117,7 @@ will retrieve inv item 2's "description" property and display it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetProperty (inventory)
 
@@ -147,7 +147,7 @@ will change Stone's "weight" custom property to 120.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetTextProperty (inventory)
 
@@ -175,7 +175,7 @@ will change key's "description" property.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsInteractionAvailable (inventory)
 
@@ -205,7 +205,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RunInteraction (inventory)
 
@@ -232,7 +232,7 @@ this to work)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CursorGraphic property (inventory)
 
@@ -257,7 +257,7 @@ will display inventory item *iKey*'s cursor graphic.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Graphic property (inventory)
 
@@ -289,7 +289,7 @@ slot.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ID property (inventory)
 
@@ -311,7 +311,7 @@ inventory
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Name property (inventory)
 

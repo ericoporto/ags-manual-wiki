@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -17,7 +17,7 @@ rooms.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Character scaling
 
@@ -49,7 +49,7 @@ another as he walks towards the back or front of the screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Scrolling
 
@@ -70,7 +70,7 @@ character.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Importing a file as the walkable area mask
 
@@ -94,7 +94,7 @@ bitmap. Use only palette indexes 0 to 15.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Animating background scenes
 
@@ -137,7 +137,7 @@ such as CyclePalette or SetPalRGB on screens with animating backgrounds.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Lighting effects
 

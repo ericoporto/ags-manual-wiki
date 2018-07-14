@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -17,7 +17,7 @@ DateTime functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Now property
 
@@ -53,7 +53,7 @@ will display the current date and time in 24-hour format
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DayOfMonth property
 
@@ -68,7 +68,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Hour property
 
@@ -83,7 +83,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Minute property
 
@@ -98,7 +98,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Month property
 
@@ -113,7 +113,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RawTime property
 
@@ -148,7 +148,7 @@ should display that 3 seconds have elapsed.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Second property
 
@@ -163,7 +163,7 @@ Example: For an example, see [DateTime.Now](ags48#DateTime.Now).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Year property
 

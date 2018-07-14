@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -54,7 +54,7 @@ Object functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Animate (object)
 
@@ -108,7 +108,7 @@ speed 3. The function won't return until the animation is finished.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetAtScreenXY (object)
 
@@ -135,7 +135,7 @@ will execute the code only if object oRock is on the screen coordinates
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetProperty (object)
 
@@ -163,7 +163,7 @@ than 200.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetTextProperty (object)
 
@@ -191,7 +191,7 @@ will retrieve Object 0's "description" property then display it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetProperty (object)
 
@@ -219,7 +219,7 @@ will change Table's "ItemCapacity" custom property to 5.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetTextProperty (object)
 
@@ -245,7 +245,7 @@ will change table's "description" property.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsCollidingWithObject (object)
 
@@ -272,7 +272,7 @@ will display the message if the objects 2 and 3 are colliding.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### MergeIntoBackground
 
@@ -302,7 +302,7 @@ the object unusable.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Move (object)
 
@@ -342,7 +342,7 @@ object gets there.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RemoveTint (object)
 
@@ -365,7 +365,7 @@ will tint object 1 green for a second, then turn it back to normal.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IsInteractionAvailable (object)
 
@@ -391,7 +391,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RunInteraction (object)
 
@@ -416,7 +416,7 @@ handler.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetLightLevel (object)
 
@@ -454,7 +454,7 @@ This will give the lamp maximal individual brightness.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetPosition (object)
 
@@ -481,7 +481,7 @@ will change object's 2 position to 50,100.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetView
 
@@ -509,7 +509,7 @@ view 5, loop 2, frame 0.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### StopAnimating (object)
 
@@ -531,7 +531,7 @@ will stop object 2 animating if it currently is doing so.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### StopMoving (object)
 
@@ -556,7 +556,7 @@ will stop object 2 moving if it currently is doing so.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Tint (object)
 
@@ -593,7 +593,7 @@ will tint object 1 green.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Animating property (object)
 
@@ -624,7 +624,7 @@ you wouldn't need to do this.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Baseline property (object)
 
@@ -656,7 +656,7 @@ will change object's 4 baseline to a line positioned at y coordinate
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BlockingHeight property (object)
 
@@ -688,7 +688,7 @@ its baseline)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BlockingWidth property (object)
 
@@ -720,7 +720,7 @@ his centre, and 25 to the right)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Clickable property (object)
 
@@ -748,7 +748,7 @@ will make object 2 ignore clicks from the player.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Frame property (object)
 
@@ -773,7 +773,7 @@ will display the oDoor object's current frame number
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Graphic property (object)
 
@@ -798,7 +798,7 @@ manager's slot 100.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HasExplicitLight property (object)
 
@@ -818,7 +818,7 @@ light.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HasExplicitTint property (object)
 
@@ -837,7 +837,7 @@ tinted by [SetAmbientTint](ags54#SetAmbientTint) or a region tint.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ID property (object)
 
@@ -856,7 +856,7 @@ uses the obsolete MoveObject function to move the Rock object to (100,
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IgnoreScaling property (object)
 
@@ -881,7 +881,7 @@ will tell the Door object not to be scaled on walkable areas.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### IgnoreWalkbehinds property (object)
 
@@ -914,7 +914,7 @@ will make object 1 ignore walk behinds.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### LightLevel property
 
@@ -935,7 +935,7 @@ Region.SetLightLevel (REF NOT FOUND)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Loop property (object)
 
@@ -960,7 +960,7 @@ will display the oDoor object's current loop number
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Moving property (object)
 
@@ -987,7 +987,7 @@ object gets there.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Name property (object)
 
@@ -1011,7 +1011,7 @@ will retrieve and then display object 0's name.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Solid property (object)
 
@@ -1037,7 +1037,7 @@ will mean that the Smallrock object blocks the path of characters.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintBlue property (object)
 
@@ -1062,7 +1062,7 @@ false, then this value is meaningless.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintGreen property (object)
 
@@ -1087,7 +1087,7 @@ false, then this value is meaningless.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintRed property (object)
 
@@ -1112,7 +1112,7 @@ false, then this value is meaningless.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintSaturation property (object)
 
@@ -1137,7 +1137,7 @@ false, then this value is meaningless.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TintLuminance property (object)
 
@@ -1162,7 +1162,7 @@ false, then this value is meaningless.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Transparency property (object)
 
@@ -1207,7 +1207,7 @@ to being fully invisible.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### View property (object)
 
@@ -1233,7 +1233,7 @@ will display the oDoor object's current view number
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Visible property (object)
 
@@ -1255,7 +1255,7 @@ will make object number 5 in the current room disappear.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### X property (object)
 
@@ -1280,7 +1280,7 @@ will display the X co-ordinate of object 1.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Y property (object)
 

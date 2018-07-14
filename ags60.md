@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -43,7 +43,7 @@ GUI List Box functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AddItem
 
@@ -73,7 +73,7 @@ will take the input from the user and add it to the listbox.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Clear (list box)
 
@@ -93,7 +93,7 @@ will remove all the items from listbox *lstNoteBook*.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### FillDirList
 
@@ -129,7 +129,7 @@ actually for this task you would use FillSaveGameList instead.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### FillSaveGameList
 
@@ -165,7 +165,7 @@ will fill listbox *lstSaveGames* with the list of the saved games.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetItemAtLocation
 
@@ -196,7 +196,7 @@ will display the item text that the mouse is currently hovering over.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### InsertItemAt
 
@@ -225,7 +225,7 @@ will insert the Third Item in between the First and Second items.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RemoveItem
 
@@ -256,7 +256,7 @@ the list box will now just contain "Second item".
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ScrollDown (list box)
 
@@ -275,7 +275,7 @@ will scroll the *lstTest* list box down one row.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ScrollUp (list box)
 
@@ -294,7 +294,7 @@ will scroll the *lstTest* list box up one row.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Font property (list box)
 
@@ -313,7 +313,7 @@ will change the *lstSaveGames* list box to use Font "Speech".
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HideBorder property (list box)
 
@@ -335,7 +335,7 @@ will hide the border around the Save Games list box.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HideScrollArrows property (list box)
 
@@ -362,7 +362,7 @@ will hide the built-in scroll arrows on the list box.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ItemCount property (list box)
 
@@ -386,7 +386,7 @@ will pass the number of saved games to the int saves.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Items property
 
@@ -417,7 +417,7 @@ will get the text of the selected item in the list box.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### RowCount property (list box)
 
@@ -442,7 +442,7 @@ will display the number of rows that the listbox can display.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SaveGameSlots property
 
@@ -474,7 +474,7 @@ FillSaveGameList had been used previously.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SelectedIndex property
 
@@ -498,7 +498,7 @@ will get the text of the selected item in the listbox.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### TopItem property (list box)
 
@@ -521,7 +521,7 @@ list.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Translated property (list box)
 

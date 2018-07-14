@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -29,7 +29,7 @@ has its own specific section.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetAtScreenXY (GUI control)
 
@@ -61,7 +61,7 @@ will display what control the mouse is over.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### AsType properties (GUI controls)
 
@@ -93,7 +93,7 @@ that control is not a button, prints a message.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BringToFront (GUI controls)
 
@@ -118,7 +118,7 @@ on the GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Clickable property (GUI controls)
 
@@ -155,7 +155,7 @@ will make the *btnSaveGame* button non-clickable.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Enabled property (GUI controls)
 
@@ -196,7 +196,7 @@ will disable the *btnSaveGame* button.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Height property (GUI controls)
 
@@ -220,7 +220,7 @@ makes the *btnConfirm* button 20 pixels high.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ID property (GUI controls)
 
@@ -247,7 +247,7 @@ list box, and then uses the equivalent modern property to disable it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### OwningGUI property (GUI controls)
 
@@ -278,7 +278,7 @@ again using the niftier full pathing approach.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SendToBack (GUI controls)
 
@@ -304,7 +304,7 @@ the GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetPosition (GUI controls)
 
@@ -338,7 +338,7 @@ GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetSize (GUI controls)
 
@@ -370,7 +370,7 @@ will resize the *invMain* control to have a size of 160 x 100.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Visible property (GUI controls)
 
@@ -397,7 +397,7 @@ will make the *btnSaveGame* button invisible.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Width property (GUI controls)
 
@@ -421,7 +421,7 @@ makes the *btnConfirm* button 110 pixels wide.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### X property (GUI controls)
 
@@ -449,7 +449,7 @@ left of its GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Y property (GUI controls)
 
@@ -477,7 +477,7 @@ top of its GUI.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ZOrder property (GUI controls)
 

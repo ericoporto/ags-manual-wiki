@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -20,7 +20,7 @@ Dialog functions and properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DisplayOptions (dialog)
 
@@ -73,7 +73,7 @@ depending on what the player selected.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetOptionState (dialog)
 
@@ -115,7 +115,7 @@ currently switched on.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetOptionText (dialog)
 
@@ -140,7 +140,7 @@ will display the text for the third option of the dJoeBloggs dialog.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HasOptionBeenChosen
 
@@ -169,7 +169,7 @@ before.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ID property (dialog)
 
@@ -190,7 +190,7 @@ will display the ID number of the dFisherman dialog
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### OptionCount property (dialog)
 
@@ -214,7 +214,7 @@ will display the number of options in the dFisherman dialog.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetHasOptionBeenChosen (dialog)
 
@@ -243,7 +243,7 @@ will mark option 1 of dialog dDialog1 as "not chosen yet".
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SetOptionState (dialog)
 
@@ -286,7 +286,7 @@ will enable option 2 of topic number 4 if the Global Integer 10 is 1.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### ShowTextParser property (dialog)
 
@@ -310,7 +310,7 @@ will display a message if dFisherman has the option enabled
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Start (dialog)
 
@@ -338,7 +338,7 @@ will start the conversation topic named dMerchant.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### StopDialog
 

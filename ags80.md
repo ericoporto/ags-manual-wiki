@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -37,7 +37,7 @@ variable](#SCUMM_VERBCOIN_GUI.doubleclick)\
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI Deselect
 
@@ -55,7 +55,7 @@ available if you used this template to create your game.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI DisableVerbCoinGUI
 
@@ -75,7 +75,7 @@ will disable all verbcoin processing code.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI DoubleClickSpeed
 
@@ -100,7 +100,7 @@ default)
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI GoInventory
 
@@ -113,7 +113,7 @@ available if you used this template to create your game.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI Item\_Count
 
@@ -141,7 +141,7 @@ item 11, 21, 31, ...
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI InvScroll\_Left
 
@@ -159,7 +159,7 @@ available if you used this template to create your game.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI InvScroll\_Right
 
@@ -177,7 +177,7 @@ available if you used this template to create your game.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI Inv\_Border\_active
 
@@ -203,7 +203,7 @@ the top or the bottom of the screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI Inv\_Border\_SetPos
 
@@ -231,7 +231,7 @@ border to x-coordinate 295
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI Inventory\_GUI
 
@@ -264,7 +264,7 @@ underlay gui is GUI nr.3
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI RunInteraction
 
@@ -285,7 +285,7 @@ Example:
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI Select
 
@@ -303,7 +303,7 @@ available if you used this template to create your game.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI Verbcoin\_GUI
 
@@ -327,7 +327,7 @@ will tell the module your verbcoin gui is GUI nr.1
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI verbgraphic
 
@@ -350,7 +350,7 @@ will set the sprite for moving over the talk button to sprite 2
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### SCUMM\_VERBCOIN\_GUI doubleclick variable
 

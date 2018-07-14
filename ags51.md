@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -40,7 +40,7 @@ copies of the image and upload it to video memory if appropriate.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Clear (drawing surface)
 
@@ -71,7 +71,7 @@ in the middle of it.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### CreateCopy
 
@@ -110,7 +110,7 @@ for a while and then restore the original background.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawCircle
 
@@ -136,7 +136,7 @@ will draw a circle in the centre of the screen, of 50 pixels radius.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawImage
 
@@ -185,7 +185,7 @@ will draw the *oDoor* object's graphic onto the room background at (100,
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawLine
 
@@ -222,7 +222,7 @@ the screen (160,100);
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawMessageWrapped
 
@@ -258,7 +258,7 @@ will display message 10 in the centre of the screen, starting from Y =
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawPixel
 
@@ -289,7 +289,7 @@ draws a yellow pixel in the top left of the room background
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawRectangle
 
@@ -319,7 +319,7 @@ will draw a rectangle over the top left hand quarter of the screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawString
 
@@ -349,7 +349,7 @@ will write some text onto the middle-left of the room background
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawStringWrapped
 
@@ -383,7 +383,7 @@ will display the text in the centre of the screen, starting from Y = 40.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawSurface
 
@@ -424,7 +424,7 @@ this will draw background frame 1 onto frame 0 at 50`%` opacity.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawTriangle
 
@@ -453,7 +453,7 @@ will draw a triangle with corners at the points (0,0),(160,100),(0,200).
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Release (drawing surface)
 
@@ -481,7 +481,7 @@ background, then releases the image.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### DrawingColor property
 
@@ -519,7 +519,7 @@ the middle.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### GetPixel
 
@@ -555,7 +555,7 @@ displays the pixel colour of the centre pixel on the screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Height property (drawing surface)
 
@@ -577,7 +577,7 @@ displays the size of the surface to the player
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### UseHighResCoordinates property
 
@@ -617,7 +617,7 @@ draw a line from the top left to the bottom right of the screen.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Width property (drawing surface)
 

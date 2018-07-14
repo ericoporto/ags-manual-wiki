@@ -1,4 +1,4 @@
-[]()
+
 
 
 ------------------------------------------------------------------------
@@ -30,7 +30,7 @@ GUI Slider properties
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### BackgroundGraphic property (slider)
 
@@ -54,7 +54,7 @@ displays the *sldHealth* slider's background image
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HandleGraphic property
 
@@ -81,7 +81,7 @@ displays the *sldHealth* slider's handle image
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### HandleOffset property
 
@@ -103,7 +103,7 @@ the right.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Max property
 
@@ -127,7 +127,7 @@ sets the maximum value of the *sldHealth* slider to 200.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Min property
 
@@ -152,7 +152,7 @@ sets the minimum value of the *sldHealth* slider to 0.
 
 ------------------------------------------------------------------------
 
-[]()
+
 
 ### Value property
 
