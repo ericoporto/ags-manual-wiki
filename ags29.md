@@ -127,7 +127,7 @@ To perform a command on something, you type its Script Name followed by
 a dot, followed by the command name. When you type the dot, the AGS
 Editor will automatically pop up a list of the available commands:
 
-![](images/tut3.gif)
+![](images/tut3.gif)\
 *The script editor's auto-complete*
 
 You then choose the appropriate command, and place any parameters in

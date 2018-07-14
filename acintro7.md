@@ -14,7 +14,7 @@ more *loops*. A loop is a set of frames which, when played in sequence,
 give the illusion of movement. Expand the "Views" node in the project
 tree, and double-click the view 1:
 
-*![](images/intro7_1.jpg)
+*![](images/intro7_1.jpg)\
 The View Editor showing view 1*
 
 This is the View Editor where you will put together all your animations.
@@ -35,7 +35,7 @@ after it.
 Left-click a frame to select it. When you do so, the property grid will
 be updated with the frame's details:
 
-*![](images/intro7_2.jpg)
+*![](images/intro7_2.jpg)\
 Property Grid showing frame properties*
 
 -   **Delay** is the frame's **relative** speed. This number adds a
@@ -72,7 +72,7 @@ you only have one character in the list, labelled "0: cEgo". You can
 create a new character by right-clicking the "Characters" node. For now,
 double-click the "cEgo" character:
 
-*![](images/intro7_3.jpg)
+*![](images/intro7_3.jpg)\
 The Character Editor*
 
 The first thing you'll notice is the text "This character is the player
@@ -143,7 +143,7 @@ key object. Go back to the Events List for the key object (remember, you
 open the room, select the "Objects" mode, then click on the key to
 select it):
 
-*![](images/intro7_4.jpg)
+*![](images/intro7_4.jpg)\
 Remember this?*
 
 The main difference you'll notice now is that the "Interact object"
@@ -158,7 +158,7 @@ on the player character (ie. move him), so type "player." and
 auto-complete will pop up with the available commands. See if you can
 work out which one we need.
 
-*![](images/intro7_5.jpg)
+*![](images/intro7_5.jpg)\
 The Walk command needs X and Y co-ordinates*
 
 **Eeek!** It wants a destination X and Y location! We don't know that,

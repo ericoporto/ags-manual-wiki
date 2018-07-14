@@ -24,7 +24,7 @@ Notice that the property grid has changed to display the details of this
 new object -- one of which is a property called Image. Select this
 property, and a "..." button appears.
 
-![](images/intro4_1.jpg)
+![](images/intro4_1.jpg)\
 *Adding an object to the room*
 
 Click the "..." button, and you'll be presented with the *Sprite
@@ -45,7 +45,7 @@ and find the "Name" property, and set it to something sensible. The
 convention in AGS is to have object names start with an "o", for example
 *oKey*.
 
-![](images/intro4_2.jpg)
+![](images/intro4_2.jpg)\
 *I've placed the key cunningly in the middle of the walkway ;-)*
 
 Before we enable the key to be taken by the player, let me quickly go
@@ -93,7 +93,7 @@ number 5, and you should see that it's a much larger picture of a key.
 Let's use that as our inventory icon. Double-click the sprite to select
 it.
 
-![](images/intro4_3.jpg)
+![](images/intro4_3.jpg)\
 *Yay, we've got a big inventory icon for the key*
 
 Ok, there are a few other settings on this screen, but let's return to
@@ -106,7 +106,7 @@ Go back to the *Objects* pane of the Room Editor, and click on, yes
 you've guessed it, the *Events* button. The events here are very similar
 to the ones we had for the hotspot:
 
-![](images/intro4_4.jpg)
+![](images/intro4_4.jpg)\
 *The events list for the object*
 
 Notice there are two obvious possibilities here: "Interact object" and
@@ -125,7 +125,7 @@ Here's my script solution. As an added bonus, I've also given the player
 5 points for their trouble, but you don't need to have that third
 command:
 
-![](images/intro4_5.jpg)
+![](images/intro4_5.jpg)\
 *Script for taking the key\
 *
 
