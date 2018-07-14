@@ -14,14 +14,14 @@ Assuming that you've done the main AGS Tutorial, you should already have
 created a script that looks like this:
 
 ---
-| <div dir="ltr">                                                          |
-|                                                                          |
-|     function hDoor_Look()                                                |
-|     {                                                                    |
-|       Display("It's quite a large, ominous looking door.");              |
-|     }                                                                    |
-|                                                                          |
-| </div>                                                                   |
+| <div dir="ltr">                                                          
+                                                                       
+  function hDoor_Look()                                                
+  {                                                                    
+    Display("It's quite a large, ominous looking door.");              
+  }                                                                    
+                                                                       
+| </div>                                                                   
 ---
 
 Let's look at this in detail. "*function*" tells AGS that this is a
@@ -58,10 +58,10 @@ We want to display a message to the player, so we used the *Display*
 function. Looking this up in the manual gives us the definition:
 
 ---
-|     Display (string message, ...)                                        |
-|       Displays a message to the screen. It will be displayed in          |
-|       the standard message box, and centred in the middle of             |
-|       the screen. (description continues...)                             |
+  Display (string message, ...)                                        
+    Displays a message to the screen. It will be displayed in          
+    the standard message box, and centred in the middle of             
+    the screen. (description continues...)                             
 ---
 
 The key point here is the part of the first line inside the brackets.
@@ -103,7 +103,7 @@ that we DO NOT write the parameter type (eg. "string" or "int"). So, we
 can add this line to our script:
 
 ---
-|     Display("It's quite a large, ominous looking door.");                |
+  Display("It's quite a large, ominous looking door.");                
 ---
 
 This is what we already did in the main tutorial, but having examined it
@@ -133,8 +133,8 @@ You then choose the appropriate command, and place any parameters in
 brackets, like we did above with the Display command. For example:
 
 ---
-|                                                                          |
-|       cEgo.AddInventory(iKey);                                           |
+                                                                       
+    cEgo.AddInventory(iKey);                                           
 ---
 
 This will add the Key to the EGO character's inventory. If you look up
@@ -164,13 +164,13 @@ easily make this happen.\
 Our final script will look like this:
 
 ---
-| <div dir="ltr">                                                          |
-|                                                                          |
-|                                                                          |
-|       Display(It's quite a large, ominous looking door.");               |
-|       cEgo.AddInventory(iPoster);                                        |
-|                                                                          |
-| </div>                                                                   |
+| <div dir="ltr">                                                          
+                                                                       
+                                                                       
+    Display(It's quite a large, ominous looking door.");               
+    cEgo.AddInventory(iPoster);                                        
+                                                                       
+| </div>                                                                   
 ---
 
 Note that the script system is case sensitive, so writing for example
@@ -180,8 +180,8 @@ The script commands are processed from top to bottom in the order that
 you write them, so writing something like:
 
 ---
-|       Display("Why did the chicken cross the road?");                    |
-|       Display("Because he was bored.");                                  |
+    Display("Why did the chicken cross the road?");                    
+    Display("Because he was bored.");                                  
 ---
 
 will mean that the player gets the two messages in the order you
@@ -210,7 +210,7 @@ variable name, then a semicolon. The type is either "int", "String"
 it is what you will use to refer to it later. For example:
 
 ---
-|       int myCounter;                                                     |
+    int myCounter;                                                     
 ---
 
 The variable name can only contain letters A-Z, a-z and the underscore
@@ -224,7 +224,7 @@ Initially, your variable will have the value 0. Optionally, you can set
 the starting value within the declaration, like this:
 
 ---
-|       int myCounter = 5;                                                 |
+    int myCounter = 5;                                                 
 ---
 
 which would set it to contain the value 5 initially instead.
@@ -241,21 +241,21 @@ scripts, you need to place the definition **above** the main function
 body.  So, it should look something like this:\
 
 ---
-| <div dir="ltr">                                                          |
-|                                                                          |
-|     // room script file                                                  |
-|     int myCounter;                                                       |
-|                                                                          |
-|     (other event scripts)                                                |
-|                                                                          |
-|     function hDoor_Look()                                                |
-|     {                                                                    |
-|       Display("It's quite a large, ominous looking door.");              |
-|     }                                                                    |
-|                                                                          |
-|     (rest of file follows)                                               |
-|                                                                          |
-| </div>                                                                   |
+| <div dir="ltr">                                                          
+                                                                       
+  // room script file                                                  
+  int myCounter;                                                       
+                                                                       
+  (other event scripts)                                                
+                                                                       
+  function hDoor_Look()                                                
+  {                                                                    
+    Display("It's quite a large, ominous looking door.");              
+  }                                                                    
+                                                                       
+  (rest of file follows)                                               
+                                                                       
+| </div>                                                                   
 ---
 
 No script commands can be used outside functions (or AGS wouldn't know
@@ -268,7 +268,7 @@ simply write the variable name, the equals sign, then the new value,
 followed by the semicolon. So:
 
 ---
-|       myCounter = 10;                                                    |
+    myCounter = 10;                                                    
 ---
 
 will change the value of our variable to be 10.
@@ -278,7 +278,7 @@ operators. So, to add 3 to the current value of myCounter, do the
 following:
 
 ---
-|       myCounter += 3;                                                    |
+    myCounter += 3;                                                    
 ---
 
 **Checking variables**
@@ -288,10 +288,10 @@ otherwise it's useless. We do this using conditional statements, called
 *if* statements. An if statement looks like this:
 
 ---
-|       if (myCounter == 5)                                                |
-|       {                                                                  |
-|         myCounter = 0;                                                   |
-|       }                                                                  |
+    if (myCounter == 5)                                                
+    {                                                                  
+      myCounter = 0;                                                   
+    }                                                                  
 ---
 
 what this means is that if *myCounter* contains the value 5, then the
@@ -334,26 +334,26 @@ they get a different message describing something in more detail. Our
 code will want to look something like this:
 
 ---
-|       if (myCounter == 0)                                                |
-|       {                                                                  |
-|         Display("You see a bookshelf.");                                 |
-|       }                                                                  |
-|       if (myCounter == 1)                                                |
-|       {                                                                  |
-|         Display("Looking closer, you see a book called Hamlet.");        |
-|       }                                                                  |
-|       if (myCounter == 2)                                                |
-|       {                                                                  |
-|         Display("There is also a book called Harry Potter.");            |
-|       }                                                                  |
-|       if (myCounter == 3)                                                |
-|       {                                                                  |
-|         Display("There is nothing else of interest on the shelf.");      |
-|       }                                                                  |
-|       if (myCounter < 3)                                                 |
-|       {                                                                  |
-|         myCounter += 1;                                                  |
-|       }                                                                  |
+    if (myCounter == 0)                                                
+    {                                                                  
+      Display("You see a bookshelf.");                                 
+    }                                                                  
+    if (myCounter == 1)                                                
+    {                                                                  
+      Display("Looking closer, you see a book called Hamlet.");        
+    }                                                                  
+    if (myCounter == 2)                                                
+    {                                                                  
+      Display("There is also a book called Harry Potter.");            
+    }                                                                  
+    if (myCounter == 3)                                                
+    {                                                                  
+      Display("There is nothing else of interest on the shelf.");      
+    }                                                                  
+    if (myCounter < 3)                                                 
+    {                                                                  
+      myCounter += 1;                                                  
+    }                                                                  
 ---
 
 *myCounter* starts off set to 0, so the first time this script is called
@@ -380,24 +380,24 @@ When reading function descriptions in the manual, you will notice that
 some of them say they return a value. For example,
 
 ---
-|     IsGamePaused ()                                                      |
-|       Returns 1 if the game is currently paused, or 0 otherwise.         |
+  IsGamePaused ()                                                      
+    Returns 1 if the game is currently paused, or 0 otherwise.         
 ---
 
 You use these much as you would use a literal value such as "9". For
 example, you can do:
 
 ---
-|       // Put the return value into our variable                          |
-|       myCounter = IsGamePaused();                                        |
-|                                                                          |
-|     (OR)                                                                 |
-|                                                                          |
-|       // Test the return value directly                                  |
-|       if (IsGamePaused() == 0)                                           |
-|       {                                                                  |
-|         myCounter += 5;                                                  |
-|       }                                                                  |
+    // Put the return value into our variable                          
+    myCounter = IsGamePaused();                                        
+                                                                       
+  (OR)                                                                 
+                                                                       
+    // Test the return value directly                                  
+    if (IsGamePaused() == 0)                                           
+    {                                                                  
+      myCounter += 5;                                                  
+    }                                                                  
 ---
 
 Be sure to remember the parenthesis ().
@@ -412,10 +412,10 @@ Firstly, the ++ and -- operators increase and decrease the variable by
 been written:
 
 ---
-|       if (myCounter < 3)                                                 |
-|       {                                                                  |
-|         myCounter++;                                                     |
-|       }                                                                  |
+    if (myCounter < 3)                                                 
+    {                                                                  
+      myCounter++;                                                     
+    }                                                                  
 ---
 
 Also, the { } brackets are only needed if you are using more than one
@@ -424,8 +424,8 @@ command inside them. Since we have only one command, the
 with:
 
 ---
-|       if (myCounter < 3)                                                 |
-|         myCounter++;                                                     |
+    if (myCounter < 3)                                                 
+      myCounter++;                                                     
 ---
 
 However, this can lead to mistakes in scripts that are hard to spot, so
@@ -435,15 +435,15 @@ Finally, if you want to test whether a value is zero or not, you can
 just write it as follows:
 
 ---
-|       if (myCounter)                                                     |
-|         Display("counter is non-zero");                                  |
+    if (myCounter)                                                     
+      Display("counter is non-zero");                                  
 ---
 
 which is equivalent to:
 
 ---
-|       if (myCounter != 0)                                                |
-|         Display("counter is non-zero");                                  |
+    if (myCounter != 0)                                                
+      Display("counter is non-zero");                                  
 ---
 
 ### Summary
