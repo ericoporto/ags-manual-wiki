@@ -140,8 +140,8 @@ Settings called "Use old-style custom dialog options API". This will
 disable all the new stuff, but return `dialog_options_get_active` and
 make `dialog_options_mouse_click` behave as it did before.
 
-For detailed information see: Custom dialog options rendering (REF NOT
-FOUND).
+For detailed information see:
+[Custom dialog options rendering](ags42#CustomDialogOptions)
 
 **Some functions object-ised**
 
