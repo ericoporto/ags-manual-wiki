@@ -1,7 +1,7 @@
 **Getting Started with AGS - Part 8** {#getting-started-with-ags---part-8 align="center"}
 -------------------------------------
 
-###  
+### 
 
 ### Conversations
 
@@ -18,12 +18,12 @@ your topics to talk about.
 
 AGS lets you do it whichever way you want. We'll start off by looking at
 the complete dialog tree approach, and then see how easy it is to cut it
-down to get a Sierra-style system. 
+down to get a Sierra-style system.
 
 Now, before we go any further, let's consider for a moment what
 conversation structure we want. It's going to be a lot easier to
 implement if we have this planned in advance. For this tutorial, we'll
-go for a structure like this: 
+go for a structure like this:
 
 ![](images/intro8_1.jpg){width="537" height="259"}\
 *Our planned dialog tree*
@@ -60,7 +60,7 @@ Conversations in AGS are made up of **topics**. A topic consists of a
 set of options that the player can talk about - not all of which are
 necessarily available to the player at the start of the game. When the
 player selects an option from a topic, the topic's **dialog script** is
-run. 
+run.
 
 Each topic can contain some start-up text, which is displayed before the
 options are presented to the player. Our "Greetings" line qualifies for
@@ -119,7 +119,7 @@ player.
 
 The numbered entry points will be run when the player selects the
 appropriate option - for example, if the player clicks the "Who are
-you?" option, then entry point  @1  will run. 
+you?" option, then entry point  @1  will run.
 
 Here's a finished script for this topic:
 
@@ -137,7 +137,7 @@ Now, we're not quite done ... we've got to deal with our second dialog
 too! In the tab bar, click the "Dialog: dWares" tab to return to the
 main topic. Fill in the script however you like. You can use the
 *goto-previous* command to take the player back to the first list of
-options when they get bored of talking about his wares. 
+options when they get bored of talking about his wares.
 
 Here's my completed script for dWares:
 
@@ -184,7 +184,7 @@ found out all the vital information. See the manual reference for more.
 
 If there is only one option enabled for a topic, then the game selects
 it automatically. You can use this to make Sierra-style conversations,
-because the options will never be shown to the player in this case. 
+because the options will never be shown to the player in this case.
 
 **\
 Go to part 9:**  [Cursors and fonts](acintro9)

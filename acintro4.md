@@ -1,7 +1,7 @@
 **Getting Started with AGS - Part 4** {#getting-started-with-ags---part-4 align="center"}
 -------------------------------------
 
- 
+
 
 ### Objects
 
@@ -13,7 +13,7 @@ animate.
 So, let's revisit the age-old "key" inventory item. Let's say we've got
 a locked door, and the player can pick up a key from another room to
 open it with. Please don't use this puzzle when you're making a proper
-game, it's been done far too many times ;-) 
+game, it's been done far too many times ;-)
 
 From the same list as we chose "Walkable areas" and "Hotspots" earlier,
 let's return there and select "Objects". Now, to add an object to the
@@ -116,7 +116,7 @@ Notice there are two obvious possibilities here: "Interact object" and
 because we are using the default Sierra-style interface which doesn't
 have a specific Pick Up mode. The "Pick up", "Usermode1" and "Usermode2"
 events are useful if you go for a lucasarts-style interface which has
-more verb types available to the player. 
+more verb types available to the player.
 
 So, select "Interact object" and click the "..." button. When the player
 picks up the key we want two things to happen - firstly, the object
@@ -140,7 +140,7 @@ Okey, so we now have a fully-working first room. Test the game as
 before, and try it out. Once the player has taken the key, call up his
 inventory and you should see the large key picture there.
 
- 
+
 
 ### Room Settings
 
@@ -163,7 +163,7 @@ room itself (available when in Nothing mode):
 -   **MusicVolumeAdjustment** - this allows you to modify the background
     music volume for this screen.
 
- 
+
 
 **Go to part 5:**  [Managing Inventory](acintro5)
 

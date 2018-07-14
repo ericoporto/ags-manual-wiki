@@ -1,7 +1,7 @@
 **Getting Started with AGS - Part 5** {#getting-started-with-ags---part-5 align="center"}
 -------------------------------------
 
- 
+
 
 ### Managing Inventory
 
@@ -11,7 +11,7 @@ explicitly set up every item which the player can carry at some point in
 the game.
 
 Go to the "Inventory items" node in the project tree. We visited this
-briefly in part 4, but it's time to go into a bit more detail. 
+briefly in part 4, but it's time to go into a bit more detail.
 
 *![](images/intro4_3.jpg){width="469" height="387"}\
 The inventory editor, another look*
@@ -89,7 +89,7 @@ crosshair.
 -   To give the player an inventory item, use the
     `         player.AddInventory` command.
 
- 
+
 
 **Go to part 6:** [Using your own graphics](acintro6)
 

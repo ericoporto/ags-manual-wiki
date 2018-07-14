@@ -1,7 +1,7 @@
 **Getting Started with AGS - Part 7** {#getting-started-with-ags---part-7 align="center"}
 -------------------------------------
 
-###  
+### 
 
 ### Animations
 
@@ -41,7 +41,7 @@ Property Grid showing frame properties*
 -   **Delay** is the frame's **relative** speed. This number adds a
     delay to the amount of time which the frame is displayed for,
     therefore a larger number makes it stay longer. You can use negative
-    numbers to specifically shorten the frame's display time. 
+    numbers to specifically shorten the frame's display time.
 -   **Sound** allows you to assign a sound number that will get played
     when this frame comes around in the animation. This feature is
     designed for footstep sounds, but has many other uses as well. Using
@@ -97,11 +97,11 @@ you can find a full description of all the options in the manual.
     direction is chosen for display. With an 8-loop character, all 8
     directions are displayed depending on the character's direction.\
     Which loop represents which direction is shown in the Views editor
-    (eg. "Loop 0 (down)"). 
+    (eg. "Loop 0 (down)").
 -   **Clickable** - if this is not checked, then this character will be
     see-through to mouse clicks. This is similar to the way the player
     character worked in Lucasarts games - you cannot actually click on
-    Guybrush, it will always activate whatever is behind him.  
+    Guybrush, it will always activate whatever is behind him. 
 
 The character's "*RealName*" field simply gives you an easy way to
 identify the character in the editor, and can also be accessed from the
@@ -120,7 +120,7 @@ Characters section - the "*Starts in room*" setting of the player
 character is used to determine which room the game starts off in.
 
 ---
-  ![](images/icon_info.gif){width="32" height="32"}   **TIP:** This feature can be handy for testing various parts of your game. For example, when you're working on room 16, set the starting room to room 16 so that you can get to it instantly when you run the game to test it.  
+  ![](images/icon_info.gif){width="32" height="32"}   **TIP:** This feature can be handy for testing various parts of your game. For example, when you're working on room 16, set the starting room to room 16 so that you can get to it instantly when you run the game to test it. 
 ---
 
 ### Cutscenes
@@ -181,9 +181,9 @@ Our new command is run before the existing ones*
 Now, hit F5 and try it out!
 
 OK, I think we've had enough of animations and cutscenes for now. We'll
-return later to explore actual animations and more complex cutscenes.  
+return later to explore actual animations and more complex cutscenes. 
 
- 
+
 
 **Go to part 8:**  [Conversations](acintro8)
 

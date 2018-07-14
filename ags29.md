@@ -175,7 +175,7 @@ Our final script will look like this:
 | </div>                                                                   |
 ---
 
-Note that the script system is case sensitive, so writing for example 
+Note that the script system is case sensitive, so writing for example
 `addinventory(iposter); ` will not work.
 
 The script commands are processed from top to bottom in the order that
@@ -244,7 +244,7 @@ their values will keep getting reset.
 So, to declare a variable for use by one of the room interaction
 scripts, you need to place the definition **above** the main function
 body.  So, it should look something like this:\
- 
+
 
 ---
 | <div dir="ltr">                                                          |
@@ -265,7 +265,7 @@ body.  So, it should look something like this:\
 ---
 
 No script commands can be used outside functions (or AGS wouldn't know
-when to run them!) - only variable declarations are allowed there. 
+when to run them!) - only variable declarations are allowed there.
 
 **Changing variables**
 
@@ -378,7 +378,7 @@ this -- you can export the variable from the global script and then
 import it in the script header, but that's a bit advanced for this
 tutorial. A simpler way is to use one of the 300 GlobalInts, which use
 the script functions SetGlobalInt and GetGlobalInt to access them. See
-their manual descriptions for more information.  
+their manual descriptions for more information. 
 
 ### \
 Functions that return a value
@@ -459,7 +459,7 @@ Summary
 
 We've covered the basics, so that hopefully you can now write a script
 of your own. There are many more advanced features that the system can
-do, but this should be enough to get you started. 
+do, but this should be enough to get you started.
 
 When you're ready, feel free to proceed to the [Tutorial Chapter 2 - The
 Patronising Text Returns](ags30) which covers more advanced topics.

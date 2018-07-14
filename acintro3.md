@@ -1,7 +1,7 @@
 **Getting Started with AGS - Part 3** {#getting-started-with-ags---part-3 align="center"}
 -------------------------------------
 
- 
+
 
 ### Adding some interaction
 
@@ -149,7 +149,7 @@ better understanding of what your script code is doing. Alternatively,
 finish off this tutorial first and then check out the scripting
 tutorial.
 
- 
+
 
 **Go to part 4:** [Objects and inventory](acintro4)
 

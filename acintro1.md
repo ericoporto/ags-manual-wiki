@@ -66,7 +66,7 @@ presented with the main AGS Editor window:
 
 So, there's your new game, ready and waiting for you to create it!
 
-### Starting off 
+### Starting off
 
 The main way that you navigate around the editor is using the **project
 tree** in the top-right corner, which allows you to access all the
@@ -98,7 +98,7 @@ begin with:
     this before compiling the final version of the game when
     it's complete.
 -   **Enable 'anti-glide' mode** - without it, the character movement
-    can look somewhat silly. 
+    can look somewhat silly.
 -   **Pixel-perfect click detection** - improves the game playability by
     making sure that clicking transparent regions of objects won't
     trigger them.
@@ -134,7 +134,7 @@ alpha-channel image transparency, use 32-bit colour.
 will be set to the game's colour depth. Should you change your mind
 later, you would have to re-import all the graphics).*
 
-### Creating a 256-colour game 
+### Creating a 256-colour game
 
 Double-click the "Colours" node in the project tree. You should see
 this:

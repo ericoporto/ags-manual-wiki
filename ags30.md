@@ -1,7 +1,7 @@
 **Text Scripting Tutorial - Part 2** {#text-scripting-tutorial---part-2 align="center"}
 ------------------------------------
 
-###  
+### 
 
 ### Recap
 
@@ -27,7 +27,7 @@ is virtually identical to *if*:
 This means that the body of the *while* statement is repeatedly
 processed, as long as the condition is true. So, in this case, since
 counter starts as 1, the loop will be run 9 times, since on the tenth
-time counter will be 10 and therefore it will stop. 
+time counter will be 10 and therefore it will stop.
 
 ***NOTE***: be careful with while loops - it is possible to crash your
 game by using a badly written one. Consider this:
@@ -107,7 +107,7 @@ door if he has either the door key or a chainsaw.
 
 The operator here is the double-vertical-bar  **||**  operator. It works
 similarly to the && operator, but it will process the commands inside it
-if either one expression, or the other, or both, are true. 
+if either one expression, or the other, or both, are true.
 
 ### \
 Doing one thing or another
@@ -239,7 +239,7 @@ far the easiest way to do this would be to put it in a function:
 ---
 
 This function runs view 10, loop 2, as the character's animation, waits
-until it finishes and then reverts to the default view. 
+until it finishes and then reverts to the default view.
 
 *TIP*: if you're wondering where to place your custom functions, just
 open up the global script (Game menu, Edit Global Script) and write them
@@ -270,7 +270,7 @@ own functions, using the **return** keyword. So:
 This function adds the two numbers together and returns the result (a
 useless function in practice since the + operator does the same thing,
 but it demonstrates the point).\
-Another part of your script could then do: 
+Another part of your script could then do:
 
 ---
 |       total = add(5, 10);                                                |
@@ -291,7 +291,7 @@ Conclusions
 We've covered some of the more advanced topics of scripting. I'm sure
 there's a lot of stuff I've forgotten to mention, so feel free to
 comment on it on the forums. \
- 
+
 
 Page created 7 June 2002; updated 19 August 2007. Copyright (c)
 2002-2007 Chris Jones.
