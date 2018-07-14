@@ -112,24 +112,24 @@ variable is set, and another course of action if it isn't. Initially,
 you might think you would do this:
 
 ---
-   if (timer == 5) {                                                   
+    if (timer == 5) {                                                   
      // do something                                                   
-   }                                                                   
-   if (timer != 5) {                                                   
+    }                                                                   
+    if (timer != 5) {                                                   
      // do something else                                              
-   }                                                                   
+    }                                                                   
 ---
 
 That would work -- however, there is a neater way, using the **else**
 keyword:
 
 ---
-   if (timer == 5) {                                                   
+    if (timer == 5) {                                                   
      // do something                                                   
-   }                                                                   
-   else {                                                              
+    }                                                                   
+    else {                                                              
      // do something else                                              
-   }                                                                   
+    }                                                                   
 ---
 
 This also allows you to modify the variable inside the first block of
@@ -139,15 +139,15 @@ You can do as many tests as you like, using the **else if** keyword. So,
 a complete piece of code could look like this:
 
 ---
-   if (timer == 5) {                                                   
+    if (timer == 5) {                                                   
      // do something                                                   
-   }                                                                   
-   else if (timer == 6) {                                              
+    }                                                                   
+    else if (timer == 6) {                                              
      // do something different                                         
-   }                                                                   
-   else {                                                              
+    }                                                                   
+    else {                                                              
      // do this if it's not 5 or 6                                     
-   }                                                                   
+    }                                                                   
 ---
 
 ### Your Own Functions
@@ -162,10 +162,10 @@ they could be *int*, *string*, etc. Well, you write your own functions
 like this:
 
 ---
-   function dialog_request(int param)                                  
-   {                                                                   
+    function dialog_request(int param)                                  
+    {                                                                   
      // contents of function go here                                   
-   }                                                                   
+    }                                                                   
 ---
 
 You start with the keyword *function*, then follow it by the function
@@ -195,8 +195,8 @@ fixed function, on\_event:
 ---
 | <div dir="ltr">                                                          
                                                                        
-   function on_event (EventType event, int data)                       
-   {                                                                   
+    function on_event (EventType event, int data)                       
+    {                                                                   
      if (event == eEventGotScore)                                      
      {                                                                 
        if (data == 5)                                                  
@@ -205,7 +205,7 @@ fixed function, on\_event:
        }                                                               
        Display("You just got %d points!", data);                       
      }                                                                 
-   }                                                                   
+    }                                                                   
                                                                        
 | </div>                                                                   
 ---
@@ -224,12 +224,12 @@ and we want to be able to play it from various points in the script. By
 far the easiest way to do this would be to put it in a function:
 
 ---
-   function do_dance()                                                 
-   {                                                                   
+    function do_dance()                                                 
+    {                                                                   
      cEgo.LockView(10);                                                
      cEgo.Animate(2, 5);                                               
      cEgo.UnlockView();                                                
-   }                                                                   
+    }                                                                   
 ---
 
 This function runs view 10, loop 2, as the character's animation, waits
@@ -253,12 +253,12 @@ IsGamePaused, return a value to the script. You can do this from your
 own functions, using the **return** keyword. So:
 
 ---
-   function add(int a, int b)                                          
-   {                                                                   
+    function add(int a, int b)                                          
+    {                                                                   
      int result;                                                       
      result = a + b;                                                   
      return result;                                                    
-   }                                                                   
+    }                                                                   
 ---
 
 This function adds the two numbers together and returns the result (a
