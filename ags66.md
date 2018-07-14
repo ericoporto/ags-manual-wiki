@@ -10,6 +10,7 @@ Mouse functions and properties
 [EnableMode](#Mouse.EnableMode)\
 [GetModeGraphic](#Mouse.GetModeGraphic)\
 [IsButtonDown](#Mouse.IsButtonDown)\
+[IsModeEnabled](#Mouse.IsModeEnabled)\
 [SaveCursorUntilItLeaves](#Mouse.SaveCursorUntilItLeaves)\
 [SelectNextMode](#Mouse.SelectNextMode)\
 [SelectPreviousMode](#Mouse.SelectPreviousMode)\
@@ -180,7 +181,7 @@ Example:
 will make the walk mode unavailable until it's enabled again.
 
 *See Also:* [Mouse.EnableMode](ags66#Mouse.EnableMode),
-Mouse.IsModeEnabled (REF NOT FOUND)
+[Mouse.IsModeEnabled](ags66#Mouse.IsModeEnabled)
 
 ------------------------------------------------------------------------
 
@@ -202,9 +203,13 @@ Example:
 will enable cursor mode walk which was disabled before.
 
 *See Also:* [Mouse.DisableMode](ags66#Mouse.DisableMode),
-Mouse.IsModeEnabled (REF NOT FOUND)
+[Mouse.IsModeEnabled](ags66#Mouse.IsModeEnabled)
 
-subsectionIsModeEnabled
+------------------------------------------------------------------------
+
+
+
+### IsModeEnabled
 
     static bool Mouse.IsModeEnabled(int mode)
 
