@@ -223,8 +223,9 @@ removed, and *eMode* is added to the front.\
 [Mouse.ChangeModeGraphic](ags66#Mouse.ChangeModeGraphic),
 [Mouse.ChangeModeHotspot](ags66#Mouse.ChangeModeHotspot),
 [Mouse.DisableMode](ags66#Mouse.DisableMode),
-[Mouse.EnableMode](ags66#Mouse.EnableMode), Mouse.IsModeEnabled (REF
-NOT FOUND), [Mouse.UseModeGraphic](ags66#Mouse.UseModeGraphic),
+[Mouse.EnableMode](ags66#Mouse.EnableMode),
+[Mouse.IsModeEnabled](ags66#Mouse.IsModeEnabled),
+[Mouse.UseModeGraphic](ags66#Mouse.UseModeGraphic),
 [Mouse.Mode](ags66#Mouse.Mode),
 [InventoryItem.IsInteractionAvailable](ags64#InventoryItem.IsInteractionAvailable),
 [InventoryItem.RunInteraction](ags64#InventoryItem.RunInteraction),
