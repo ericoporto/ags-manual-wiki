@@ -12,7 +12,7 @@ called "Rooms". Right-click it, and choose "New room". You'll see a "1:"
 node appear underneath. This shows us that we've created room number 1,
 and we can give it a name in a moment.
 
-![](images/intro2_1.jpg){width="234" height="160"}\
+![](images/intro2_1.jpg)
 *The Rooms list in the project tree*
 
 Expand the "1:" node, and double-click the "Edit room" node underneath
@@ -20,7 +20,7 @@ to open the room. You'll see a new window open up, with a big black area
 in it. This is the room background, which is currently blank. The room
 editor looks like this:
 
-![](images/intro2_2.jpg){width="518" height="384"}\
+![](images/intro2_2.jpg)
 *The Rooms list in the project tree*
 
 There are four main parts to this window:
@@ -58,7 +58,7 @@ You should see the black area in the editor replaced by your image. For
 this tutorial, I'm going to shamelessly steal a background from Space
 Quest 4. Obviously, you should draw your own!
 
-![](images/intro2_3.jpg){width="491" height="343"}\
+![](images/intro2_3.jpg)
 *I've imported my background*
 
 **Edges**
@@ -70,7 +70,7 @@ to walk to be considered to have left the room. Click and drag them to
 position them appropriately. Bear in mind that it's the character's
 **feet** that are compared with these lines when positioning.
 
-![](images/intro2_4.jpg){width="573" height="400"}\
+![](images/intro2_4.jpg)
 *I've lined up the top and right edges correctly *
 
 At the moment, walking past the edge won't actually cause anything to
@@ -85,7 +85,7 @@ Next, we need to define the room's *walkable areas*, which define where
 characters are allowed to walk within the room. Open up the drop-down
 list again, and select "Walkable areas":
 
-![](images/intro2_5.jpg){width="573" height="400"}\
+![](images/intro2_5.jpg)
 *Walkable areas mode*
 
 In the toolbar you'll notice that some new buttons have appeared. These
@@ -110,7 +110,7 @@ properly connected up, and try again.
 You can use the right mouse button with the drawing tools to erase areas
 in the same way that you use the left button to add them.
 
-![](images/intro2_6.jpg){width="573" height="400"}\
+![](images/intro2_6.jpg)
 *I've drawn a walkable area where I want the player to be able to go.*
 
 **Walk-behind areas**
@@ -128,7 +128,7 @@ Now, we draw on the walk-behind area in the same way as we did the
 walkable area - in fact, all the same drawing tools are available. My
 result looks like this:
 
-![](images/intro2_7.jpg){width="573" height="400"}\
+![](images/intro2_7.jpg)
 *The walk-behind area painted over the pillar*
 
 Notice that I haven't bothered to make the whole of the pillar a
@@ -157,7 +157,7 @@ different areas on each screen. Above the property grid, there's a
 combobox that says "Walk-behind area ID 1". You can change this to draw
 in another colour, and each area has its own baseline.
 
-![](images/intro2_8.jpg){width="247" height="247"}\
+![](images/intro2_8.jpg)
 *Selecting a different walk-behind area*
 
 **Trying out the game**

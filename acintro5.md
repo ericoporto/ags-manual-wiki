@@ -11,7 +11,7 @@ the game.
 Go to the "Inventory items" node in the project tree. We visited this
 briefly in part 4, but it's time to go into a bit more detail.
 
-*![](images/intro4_3.jpg){width="469" height="387"}\
+*![](images/intro4_3.jpg)
 The inventory editor, another look*
 
 Every inventory item that the player can carry at some point during the
@@ -34,7 +34,7 @@ In order to give the inventory item some interactivity, we once again
 need to call on the Events List. Click the "Events" (lightning) button
 to bring it up:
 
-*![](images/intro5_1.jpg){width="544" height="394"}\
+*![](images/intro5_1.jpg)
 The events list... this time for inventory*
 
 Now, the important point to note here is that if you are using the
@@ -49,7 +49,7 @@ button. You'll be taken to the script editor once more, but this time
 you'll notice that there's already some existing script as well as our
 new method:
 
-*![](images/intro5_2.jpg){width="544" height="394"}\
+*![](images/intro5_2.jpg)
 Script for looking at the key*
 
 #### <span style="font-weight: 400">We are now editing the *global script*. This has all the script for handling events on game-wide things like inventory items and characters. Previously we were working with hotspots and objects, so they were confined to their own *room script*.</span> {#we-are-now-editing-the-global-script.-this-has-all-the-script-for-handling-events-on-game-wide-things-like-inventory-items-and-characters.-previously-we-were-working-with-hotspots-and-objects-so-they-were-confined-to-their-own-room-script. dir="ltr"}

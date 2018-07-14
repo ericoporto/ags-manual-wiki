@@ -25,7 +25,7 @@ conversation structure we want. It's going to be a lot easier to
 implement if we have this planned in advance. For this tutorial, we'll
 go for a structure like this:
 
-![](images/intro8_1.jpg){width="537" height="259"}\
+![](images/intro8_1.jpg)
 *Our planned dialog tree*
 
 In other words, when we first speak to the other character, we will say
@@ -53,7 +53,7 @@ double-click it. (If not, you can always right-click the Dialogs node
 and choose "New dialog" to make a new one). You'll see this rather empty
 window:
 
-![](images/intro8_2.jpg){width="600" height="384"}\
+![](images/intro8_2.jpg)
 *The dialog editor*
 
 Conversations in AGS are made up of **topics**. A topic consists of a
@@ -82,7 +82,7 @@ grid to set the name, as usual.
 
 Now, type in some text to the three new text boxes:
 
-*![](images/intro8_3.jpg){width="600" height="384"}\
+*![](images/intro8_3.jpg)
 We've inserted three options for topic 0*
 
 While we're at it, let's create the next set of options too. Right click
@@ -123,7 +123,7 @@ you?" option, then entry point  @1  will run.
 
 Here's a finished script for this topic:
 
-*![](images/intro8_5.jpg){width="586" height="361"}\
+*![](images/intro8_5.jpg)
 Our finished dialog script*
 
 The *goto-dialog* command takes the player to another dialog - in this
@@ -141,7 +141,7 @@ options when they get bored of talking about his wares.
 
 Here's my completed script for dWares:
 
-*![](images/intro8_6.jpg){width="554" height="288"}\
+*![](images/intro8_6.jpg)
 Dialog script for dWares*
 
 As you can see, it's done very similarly to the first one. Notice the
@@ -160,7 +160,7 @@ Now, still with the Merchant open, go to his Events list. Using your
 skills from earlier on in this tutorial, add a command to initiate the
 dialog when the player talks to the Merchant. Now, we're all set!
 
-*![](images/intro8_7.jpg){width="266" height="87"}\
+*![](images/intro8_7.jpg)
 Event script to launch the dialog*
 
 Test the game, talk to the Merchant, and try out the conversation.

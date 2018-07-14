@@ -14,19 +14,19 @@ of what's here should still apply).
 Start up the AGS Editor by double-clicking the *AGSEditor.exe* file, and
 you should be greeted by the following screen:
 
-![](images/intro1.jpg){width="422" height="334"}\
+![](images/intro1.jpg)
 *The "Welcome to AGS" dialog*
 
 Make sure that "Start a new game" is selected, and click Continue.
 You'll be presented with the Create New Game wizard:
 
-![](images/intro1a.jpg){width="437" height="294"}\
+![](images/intro1a.jpg)
 *Create New Game dialog*
 
 So, without further ado, click Next, and you'll see the Select Template
 screen:
 
-![](images/intro1b.jpg){width="437" height="294"}\
+![](images/intro1b.jpg)
 *Select Template dialog*
 
 Here, you need to choose which template you're going to use for your new
@@ -40,7 +40,7 @@ with AGS - it comes with no default graphics at all.
 
 So, select "Default Game" and click Next.
 
-![](images/intro1c.jpg){width="437" height="294"}\
+![](images/intro1c.jpg)
 *Game Name dialog*
 
 Finally, you need to decide on what to call your game. In the first box
@@ -61,7 +61,7 @@ that.
 Click the *Finish* button, and after a short wait you should be
 presented with the main AGS Editor window:
 
-![](images/intro2.jpg){width="633" height="449"}\
+![](images/intro2.jpg)
 *The main editor window*
 
 So, there's your new game, ready and waiting for you to create it!
@@ -73,7 +73,7 @@ tree** in the top-right corner, which allows you to access all the
 various parts of your game. Let's start by scrolling to the top of the
 tree, and double-clicking the "General Settings" node:
 
-![](images/intro3.jpg){width="633" height="449"}\
+![](images/intro3.jpg)
 *The General Settings pane*
 
 This screenshot demonstrates three of the main editor features. The
@@ -139,7 +139,7 @@ later, you would have to re-import all the graphics).*
 Double-click the "Colours" node in the project tree. You should see
 this:
 
-![](images/intro4.jpg){width="633" height="449"}\
+![](images/intro4.jpg)
 *The Palette Editor*
 
 The palette display has a grid with the 256 colour slots on it. The
@@ -160,7 +160,7 @@ So, let's swap some background colours for some game-wide ones. Select
 the first "X" slot, then hold shift and click on the last slot in the
 row marked "80". The screen should look as follows:
 
-![](images/intro5.jpg){width="633" height="449"}\
+![](images/intro5.jpg)
 *We have selected colours 42-95*
 
 We can now see the Property Grid in action. Change the "ColourType"

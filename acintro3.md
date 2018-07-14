@@ -36,7 +36,7 @@ the Selected Hotspot using the drop-down list above the property grid,
 and you can draw in a different colour. All the other hotspots will be
 greyed out.
 
-![](images/intro3_1.jpg){width="573" height="400"}\
+![](images/intro3_1.jpg)
 *I've drawn four types of hotspot onto my screen*
 
 Once you've drawn a hotspot, there are two other fields to set:
@@ -64,7 +64,7 @@ Once you've drawn a hotspot, there are two other fields to set:
 Right, now it's time to make something happen! Make sure the first
 hotspot is selected, and click the Events button:
 
-![](images/intro3_2.jpg){width="348" height="365"}\
+![](images/intro3_2.jpg)
 *The events list*
 
 You'll see that the property grid changes to list all the events for
@@ -77,7 +77,7 @@ Right, let's start with something simple. When the player looks at my
 hotspot, I want to display a message telling them what they can see.
 Click on the "Look at hotspot" row, and a "..." button will appear.
 
-![](images/intro3_3.jpg){width="256" height="142"}\
+![](images/intro3_3.jpg)
 *The "..." button*
 
 Click the "..." button. This will create an entry in the script for this
@@ -88,7 +88,7 @@ up for how to set a name for the hotspot, earlier in this article.
 So, you're now in the script editor. It all looks a bit bare and
 intimidating, but you should have something like this:
 
-![](images/intro3_4.jpg){width="544" height="394"}\
+![](images/intro3_4.jpg)
 *Script editor after adding a hotspot event*
 
 The "*function hDoor\_Look*" line defines that the script underneath
@@ -101,7 +101,7 @@ language, so I won't attempt to explain it here. But we can start with
 something very simple, using the *Display* command, which displays a
 message to the player. Type in something like this:
 
-![](images/intro3_5.jpg){width="408" height="136"}\
+![](images/intro3_5.jpg)
 *A simple script*
 
 #### <span style="font-weight: 400">Once you're done, click on the "Room 1" tab to return to the main room editor.</span> {#once-youre-done-click-on-the-room-1-tab-to-return-to-the-main-room-editor. dir="ltr"}
