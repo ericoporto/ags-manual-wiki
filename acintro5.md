@@ -1,4 +1,4 @@
-**Getting Started with AGS - Part 5** {#getting-started-with-ags---part-5 align="center"}
+**Getting Started with AGS - Part 5**
 -------------------------------------
 
 ### Managing Inventory
@@ -52,7 +52,7 @@ new method:
 *![](images/intro5_2.jpg)\
 Script for looking at the key*
 
-#### <span style="font-weight: 400">We are now editing the *global script*. This has all the script for handling events on game-wide things like inventory items and characters. Previously we were working with hotspots and objects, so they were confined to their own *room script*.</span> {#we-are-now-editing-the-global-script.-this-has-all-the-script-for-handling-events-on-game-wide-things-like-inventory-items-and-characters.-previously-we-were-working-with-hotspots-and-objects-so-they-were-confined-to-their-own-room-script. dir="ltr"}
+#### <span style="font-weight: 400">We are now editing the *global script*. This has all the script for handling events on game-wide things like inventory items and characters. Previously we were working with hotspots and objects, so they were confined to their own *room script*.</span>
 
 Anyway, for now I've just added a simple Display command to show the
 player a message when they look at the key. Feel free to do something

@@ -1,4 +1,4 @@
-**Getting Started with AGS - Part 4** {#getting-started-with-ags---part-4 align="center"}
+**Getting Started with AGS - Part 4**
 -------------------------------------
 
 ### Objects
@@ -100,7 +100,7 @@ Ok, there are a few other settings on this screen, but let's return to
 our objective - letting the player pick up the key. Remember that the
 script name is *iKey*, as we'll need it later.
 
-#### Back to the events {#back-to-the-events dir="ltr"}
+#### Back to the events
 
 Go back to the *Objects* pane of the Room Editor, and click on, yes
 you've guessed it, the *Events* button. The events here are very similar

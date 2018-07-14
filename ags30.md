@@ -1,4 +1,4 @@
-**Text Scripting Tutorial - Part 2** {#text-scripting-tutorial---part-2 align="center"}
+**Text Scripting Tutorial - Part 2**
 ------------------------------------
 
 ### 

@@ -1,4 +1,4 @@
-**Getting Started with AGS - Part 3** {#getting-started-with-ags---part-3 align="center"}
+**Getting Started with AGS - Part 3**
 -------------------------------------
 
 ### Adding some interaction
@@ -104,7 +104,7 @@ message to the player. Type in something like this:
 ![](images/intro3_5.jpg)\
 *A simple script*
 
-#### <span style="font-weight: 400">Once you're done, click on the "Room 1" tab to return to the main room editor.</span> {#once-youre-done-click-on-the-room-1-tab-to-return-to-the-main-room-editor. dir="ltr"}
+#### <span style="font-weight: 400">Once you're done, click on the "Room 1" tab to return to the main room editor.</span>
 
 #### Walk-to points
 

@@ -1,4 +1,4 @@
-**Getting Started with AGS - Part 6** {#getting-started-with-ags---part-6 align="center"}
+**Getting Started with AGS - Part 6**
 -------------------------------------
 
 ### Using your own graphics

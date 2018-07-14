@@ -1,4 +1,4 @@
-**Getting Started with AGS** {#getting-started-with-ags align="center"}
+**Getting Started with AGS**
 ----------------------------
 
 So, you've downloaded AGS. You want to make an adventure game. But where
