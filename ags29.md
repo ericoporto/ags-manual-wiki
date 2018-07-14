@@ -456,6 +456,3 @@ When you're ready, feel free to proceed to the [Tutorial Chapter 2 - The
 Patronising Text Returns](ags30) which covers more advanced topics.
 
 Enjoy AGS!
-
-Page created 6 June 2002; updated 19 August 2007. Copyright (c)
-2002-2007 Chris Jones.
