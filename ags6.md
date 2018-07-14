@@ -35,9 +35,9 @@ they are having problems on their PC.
 **DirectDraw**: any Windows-based PC with DirectX 5 or later installed\
 **Direct3D**: any Windows-based PC with DirectX 9.0 installed and a
 graphics card designed for DirectX 8.1 or later (most cards manufactured
-from 2003 onwards). **OpenGL**: your graphics card drivers should
-provide support for OpenGL 3.0 or higher for the game visuals to have
-full functionality.
+from 2003 onwards)\
+**OpenGL**: your graphics card drivers should provide support for
+OpenGL 3.0 or higher for the game visuals to have full functionality.
 
 If you are running with Direct3D 9 selected and get the error message
 "Graphics card does not support Pixel Shader 1.4" on startup, this
