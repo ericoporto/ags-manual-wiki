@@ -1,9 +1,7 @@
-[]()
-
-Adventure Game Studio 3.4.1 {#adventure-game-studio-3.4.1 align="CENTER"}
+Adventure Game Studio 3.4.1
 ---------------------------
 
-### by Chris Jones et al. {#by-chris-jones-et-al. align="CENTER"}
+### by Chris Jones et al. 
 
 ------------------------------------------------------------------------
 
