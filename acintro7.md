@@ -118,7 +118,8 @@ Characters section - the "*Starts in room*" setting of the player
 character is used to determine which room the game starts off in.
 
 ---
-  ![](images/icon_info.gif){width="32" height="32"}   **TIP:** This feature can be handy for testing various parts of your game. For example, when you're working on room 16, set the starting room to room 16 so that you can get to it instantly when you run the game to test it. 
+  ![](images/icon_info.gif)\
+  TIP: This feature can be handy for testing various parts of your game. For example, when you're working on room 16, set the starting room to room 16 so that you can get to it instantly when you run the game to test it. 
 ---
 
 ### Cutscenes
@@ -128,7 +129,8 @@ There is no specific feature to do this - you simply use the provided
 animation and movement commands to do whatever you like.
 
 ---
-  ![](images/icon_info.gif){width="32" height="32"}   A *cutscene* is simply the name given to a sequence of actions over which the player has no control. This usually applies to the entire introduction sequence, as well as far simpler in-game events. For example, if the player goes to pick up a rock from the ground, you may wish to use a bending-down animation to show him picking it up. During this bending down and standing back up, the player cannot control proceedings, so it is a cutscene.
+  ![](images/icon_info.gif)\
+  A cutscene is simply the name given to a sequence of actions over which the player has no control. This usually applies to the entire introduction sequence, as well as far simpler in-game events. For example, if the player goes to pick up a rock from the ground, you may wish to use a bending-down animation to show him picking it up. During this bending down and standing back up, the player cannot control proceedings, so it is a cutscene.
 ---
 
 Right, firstly let's do something very simple. When the player goes to
@@ -157,7 +159,7 @@ auto-complete will pop up with the available commands. See if you can
 work out which one we need.
 
 *![](images/intro7_5.jpg)\
-The Walk command needs X and Y co-ordinates*
+The Walk command needs X and Y co-ordinates
 
 **Eeek!** It wants a destination X and Y location! We don't know that,
 but we can find out! Click the "Room 1" tab on the tab bar at the top of
@@ -173,8 +175,8 @@ Roger to get to those co-ordinates before continuing the script. If we
 didn't do this, he would start to walk but the key would disappear
 before he got there! The final script should look like this:
 
-*![](images/intro7_6.jpg){width="331" height="143"} \
-Our new command is run before the existing ones*
+*![](images/intro7_6.jpg)\
+Our new command is run before the existing ones
 
 Now, hit F5 and try it out!
 
