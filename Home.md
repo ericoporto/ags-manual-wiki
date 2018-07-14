@@ -5,8 +5,7 @@ Adventure Game Studio 3.4.1
 
 ------------------------------------------------------------------------
 
-Welcome to Adventure Game Studio! This new Windows Help version of the
-manual should help you get even more out of AGS. Enjoy!
+Welcome to Adventure Game Studio!
 
 Contents
 --------
