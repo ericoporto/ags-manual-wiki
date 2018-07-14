@@ -85,6 +85,6 @@ crosshair.
     items. Usually, you'll use inventory commands to operate on the
     current player character.
 -   To give the player an inventory item, use the
-    `         player.AddInventory` command.
+    `player.AddInventory` command.
 
 **Go to part 6:** [Using your own graphics](acintro6)

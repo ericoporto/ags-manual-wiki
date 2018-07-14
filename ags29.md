@@ -5,24 +5,17 @@ In AGS, all the interactivity in the game is handled using scripts.
 They're an essential part of game-making, so it's important that we go
 through how to use them.
 
-### **\
-The Basics**
+### The Basics
 
 Right, we'll start off by doing something very simple - displaying a
 message to the player when they click the Look icon on a hotspot.
 Assuming that you've done the main AGS Tutorial, you should already have
 created a script that looks like this:
 
----
-| <div dir="ltr">                                                          
-                                                                       
-  function hDoor_Look()                                                
-  {                                                                    
-    Display("It's quite a large, ominous looking door.");              
-  }                                                                    
-                                                                       
-| </div>                                                                   
----
+    function hDoor_Look()
+    {
+      Display("It's quite a large, ominous looking door.");
+    }
 
 Let's look at this in detail. "*function*" tells AGS that this is a
 block of script code that will run when an event occurs. "*hDoor\_Look*"
@@ -102,9 +95,7 @@ important, as without the semicolon the script won't compile. Also, note
 that we DO NOT write the parameter type (eg. "string" or "int"). So, we
 can add this line to our script:
 
----
-  Display("It's quite a large, ominous looking door.");                
----
+    Display("It's quite a large, ominous looking door.");
 
 This is what we already did in the main tutorial, but having examined it
 in more detail it should now make more sense why we've done it this way.
@@ -130,11 +121,8 @@ Editor will automatically pop up a list of the available commands:
 
 You then choose the appropriate command, and place any parameters in
 brackets, like we did above with the Display command. For example:
-
----
-                                                                       
+                                                                 
     cEgo.AddInventory(iKey);                                           
----
 
 This will add the Key to the EGO character's inventory. If you look up
 *AddInventory* in the manual, you'll find it takes two parameters, an
@@ -162,15 +150,8 @@ inventory item set up to be the poster with the Script Name of *iPoster*
 easily make this happen.\
 Our final script will look like this:
 
----
-| <div dir="ltr">                                                          
-                                                                       
-                                                                       
-    Display(It's quite a large, ominous looking door.");               
-    cEgo.AddInventory(iPoster);                                        
-                                                                       
-| </div>                                                                   
----
+    Display(It's quite a large, ominous looking door.");
+    cEgo.AddInventory(iPoster);
 
 Note that the script system is case sensitive, so writing for example
 `addinventory(iposter);` will not work.
@@ -178,10 +159,8 @@ Note that the script system is case sensitive, so writing for example
 The script commands are processed from top to bottom in the order that
 you write them, so writing something like:
 
----
-    Display("Why did the chicken cross the road?");                    
-    Display("Because he was bored.");                                  
----
+    Display("Why did the chicken cross the road?");
+    Display("Because he was bored.");
 
 will mean that the player gets the two messages in the order you
 specified.
@@ -208,9 +187,7 @@ variable name, then a semicolon. The type is either "int", "String"
 (note the capital S) or "float", and the name can be anything you like -
 it is what you will use to refer to it later. For example:
 
----
-    int myCounter;                                                     
----
+    int myCounter;
 
 The variable name can only contain letters A-Z, a-z and the underscore
 \_ character.
@@ -222,9 +199,7 @@ store in it.
 Initially, your variable will have the value 0. Optionally, you can set
 the starting value within the declaration, like this:
 
----
-    int myCounter = 5;                                                 
----
+    int myCounter = 5;
 
 which would set it to contain the value 5 initially instead.
 
@@ -238,24 +213,18 @@ their values will keep getting reset.
 So, to declare a variable for use by one of the room interaction
 scripts, you need to place the definition **above** the main function
 body.  So, it should look something like this:
+                                                          
+    // room script file                                                  
+    int myCounter;
+    
+    (other event scripts)
+    
+    function hDoor_Look()                                                
+    {                                                                    
+      Display("It's quite a large, ominous looking door.");              
+    }
 
----
-| <div dir="ltr">                                                          
-                                                                       
-  // room script file                                                  
-  int myCounter;                                                       
-                                                                       
-  (other event scripts)                                                
-                                                                       
-  function hDoor_Look()                                                
-  {                                                                    
-    Display("It's quite a large, ominous looking door.");              
-  }                                                                    
-                                                                       
-  (rest of file follows)                                               
-                                                                       
-| </div>                                                                   
----
+    (rest of file follows)
 
 No script commands can be used outside functions (or AGS wouldn't know
 when to run them!) - only variable declarations are allowed there.
@@ -266,9 +235,7 @@ You can change the value of a variable very easily in the script -
 simply write the variable name, the equals sign, then the new value,
 followed by the semicolon. So:
 
----
     myCounter = 10;                                                    
----
 
 will change the value of our variable to be 10.
 
@@ -276,9 +243,7 @@ You can add to and subtract from a variable using the += and -=
 operators. So, to add 3 to the current value of myCounter, do the
 following:
 
----
-    myCounter += 3;                                                    
----
+    myCounter += 3;
 
 **Checking variables**
 
@@ -286,12 +251,10 @@ Obviously we need a way to find out what value our variable contains,
 otherwise it's useless. We do this using conditional statements, called
 *if* statements. An if statement looks like this:
 
----
     if (myCounter == 5)                                                
     {                                                                  
       myCounter = 0;                                                   
-    }                                                                  
----
+    }
 
 what this means is that if *myCounter* contains the value 5, then the
 script inside the { } brackets will be run (which in this case changes
@@ -332,7 +295,6 @@ the first time they look it will describe it, then if they look again
 they get a different message describing something in more detail. Our
 code will want to look something like this:
 
----
     if (myCounter == 0)                                                
     {                                                                  
       Display("You see a bookshelf.");                                 
@@ -353,7 +315,6 @@ code will want to look something like this:
     {                                                                  
       myCounter += 1;                                                  
     }                                                                  
----
 
 *myCounter* starts off set to 0, so the first time this script is called
 it will run the first Display command, but not the others. Then, since 0
@@ -386,18 +347,16 @@ some of them say they return a value. For example,
 You use these much as you would use a literal value such as "9". For
 example, you can do:
 
----
     // Put the return value into our variable                          
     myCounter = IsGamePaused();                                        
                                                                        
-  (OR)                                                                 
+(OR)                                                                 
                                                                        
     // Test the return value directly                                  
     if (IsGamePaused() == 0)                                           
     {                                                                  
-      myCounter += 5;                                                  
+      myCounter += 5;
     }                                                                  
----
 
 Be sure to remember the parenthesis ().
 
@@ -410,22 +369,18 @@ Firstly, the ++ and -- operators increase and decrease the variable by
 1, respectively. So, the last part of our previous script could have
 been written:
 
----
     if (myCounter < 3)                                                 
     {                                                                  
       myCounter++;                                                     
-    }                                                                  
----
+    }
 
 Also, the { } brackets are only needed if you are using more than one
 command inside them. Since we have only one command, the
 "my\_counter++;" line, we can remove the { } completely and just be left
 with:
 
----
     if (myCounter < 3)                                                 
       myCounter++;                                                     
----
 
 However, this can lead to mistakes in scripts that are hard to spot, so
 I would advise always using brackets just to be safe.
@@ -433,17 +388,13 @@ I would advise always using brackets just to be safe.
 Finally, if you want to test whether a value is zero or not, you can
 just write it as follows:
 
----
     if (myCounter)                                                     
       Display("counter is non-zero");                                  
----
 
 which is equivalent to:
 
----
     if (myCounter != 0)                                                
       Display("counter is non-zero");                                  
----
 
 ### Summary
 
