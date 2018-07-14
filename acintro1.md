@@ -198,6 +198,3 @@ Go back to the General Settings pane, and select your chosen resolution
 from the "Resolution" drop-down list.
 
 **Go to part 2:** [Creating your first room](acintro2)
-
-Tutorial created 26 August 2002; updated 11 August 2007. Copyright (c)
-2001-2007 Chris Jones.
