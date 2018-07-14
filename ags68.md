@@ -926,7 +926,6 @@ property returns the light level value. Otherwise it returns 0.
 
 *SeeAlso:* [Object.SetLightLevel](ags68#Object.SetLightLevel),
 [SetAmbientLightLevel](ags54#SetAmbientLightLevel),
-Region.SetLightLevel (REF NOT FOUND)
 
 ------------------------------------------------------------------------
 
@@ -1074,8 +1073,8 @@ false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Object.Tint](ags68#Object.Tint), Object.TintEnabled
-(REF NOT FOUND), [Object.TintBlue](ags68#Object.TintBlue),
+*See Also:* [Object.Tint](ags68#Object.Tint),
+[Object.TintBlue](ags68#Object.TintBlue),
 [Object.TintRed](ags68#Object.TintRed),
 [Object.TintSaturation](ags68#Object.TintSaturation),
 [Object.TintLuminance](ags68#Object.TintLuminance)
@@ -1099,8 +1098,8 @@ false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Object.Tint](ags68#Object.Tint), Object.TintEnabled
-(REF NOT FOUND), [Object.TintBlue](ags68#Object.TintBlue),
+*See Also:* [Object.Tint](ags68#Object.Tint),
+[Object.TintBlue](ags68#Object.TintBlue),
 [Object.TintGreen](ags68#Object.TintGreen),
 [Object.TintSaturation](ags68#Object.TintSaturation),
 [Object.TintLuminance](ags68#Object.TintLuminance)
@@ -1124,8 +1123,8 @@ false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Object.Tint](ags68#Object.Tint), Object.TintEnabled
-(REF NOT FOUND), [Object.TintBlue](ags68#Object.TintBlue),
+*See Also:* [Object.Tint](ags68#Object.Tint),
+[Object.TintBlue](ags68#Object.TintBlue),
 [Object.TintGreen](ags68#Object.TintGreen),
 [Object.TintRed](ags68#Object.TintRed),
 [Object.TintLuminance](ags68#Object.TintLuminance)
@@ -1149,8 +1148,8 @@ false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Object.Tint](ags68#Object.Tint), Object.TintEnabled
-(REF NOT FOUND), [Object.TintBlue](ags68#Object.TintBlue),
+*See Also:* [Object.Tint](ags68#Object.Tint),
+[Object.TintBlue](ags68#Object.TintBlue),
 [Object.TintGreen](ags68#Object.TintGreen),
 [Object.TintRed](ags68#Object.TintRed),
 [Object.TintSaturation](ags68#Object.TintSaturation)
