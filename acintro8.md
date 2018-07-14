@@ -1,8 +1,6 @@
 **Getting Started with AGS - Part 8**
 -------------------------------------
 
-### 
-
 ### Conversations
 
 What fun would an adventure be if there were no other characters to talk

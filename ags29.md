@@ -109,8 +109,7 @@ can add this line to our script:
 This is what we already did in the main tutorial, but having examined it
 in more detail it should now make more sense why we've done it this way.
 
-### \
-Instances
+### Instances
 
 The AGS script language is object-based. What this means is that many
 commands are operated **on** something in the game. You should not
@@ -155,8 +154,7 @@ the player character (especially useful in games where the player can
 control different characters) then you can use the *player* instance to
 do so.
 
-### \
-Command Sequences
+### Command Sequences
 
 Suppose we want the player to be given a pink poster when they look at
 the hotspot, as well as displaying the message. Assuming we have an
@@ -189,8 +187,7 @@ you write them, so writing something like:
 will mean that the player gets the two messages in the order you
 specified.
 
-### \
-Recap
+### Recap
 
 So, did you remember these vital points:
 
@@ -377,8 +374,7 @@ tutorial. A simpler way is to use one of the 300 GlobalInts, which use
 the script functions SetGlobalInt and GetGlobalInt to access them. See
 their manual descriptions for more information. 
 
-### \
-Functions that return a value
+### Functions that return a value
 
 When reading function descriptions in the manual, you will notice that
 some of them say they return a value. For example,
@@ -406,8 +402,7 @@ example, you can do:
 
 Be sure to remember the parenthesis ().
 
-### \
-Common Shortcuts
+### Common Shortcuts
 
 The script system has a few nice shortcuts for common tasks which you
 will find yourself using regularly.
@@ -451,8 +446,7 @@ which is equivalent to:
 |         Display("counter is non-zero");                                  |
 ---
 
-### \
-Summary
+### Summary
 
 We've covered the basics, so that hopefully you can now write a script
 of your own. There are many more advanced features that the system can

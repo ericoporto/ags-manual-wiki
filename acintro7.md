@@ -1,8 +1,6 @@
 **Getting Started with AGS - Part 7**
 -------------------------------------
 
-### 
-
 ### Animations
 
 A graphical adventure game would be no good without animations. These

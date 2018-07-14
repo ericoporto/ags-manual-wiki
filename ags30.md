@@ -1,8 +1,6 @@
 **Text Scripting Tutorial - Part 2**
 ------------------------------------
 
-### 
-
 ### Recap
 
 In the first tutorial, we covered the basics of scripting - how to write
@@ -10,8 +8,7 @@ a simple script, use variables and conditional statements. You now know
 how to call all the built-in functions and write a fairly decent script.
 So, what's next?
 
-### \
-Loops
+### Loops
 
 You may find it useful to have a sequence of commands that are executed
 more than once. AGS supports this, using the *while* keyword. Its format
@@ -44,8 +41,7 @@ increase to 2. Since it is still greater than 0, the loop will run
 again. This particular loop will run forever, since *counter* can never
 become less than 1, and your game will grind to a halt.
 
-### \
-Multiple conditions
+### Multiple conditions
 
 On several occasions, you don't just want to decide what to do based on
 one variable - there may be a combination of things you want to
@@ -109,8 +105,7 @@ The operator here is the double-vertical-bar  **||**  operator. It works
 similarly to the && operator, but it will process the commands inside it
 if either one expression, or the other, or both, are true.
 
-### \
-Doing one thing or another
+### Doing one thing or another
 
 Sometimes, you want the script to take one course of action if a
 variable is set, and another course of action if it isn't. Initially,
@@ -155,8 +150,7 @@ a complete piece of code could look like this:
 |      }                                                                   |
 ---
 
-### \
-Your Own Functions
+### Your Own Functions
 
 You've probably noticed in the manual, it mentioning functions such as
 *repeatedly\_execute*, and *on\_event*, and how you can add them to your
@@ -285,8 +279,7 @@ script, you can call it fine from other places in the global script but
 attempting to use it in a room script gives a parse error. The manual
 explains how to solve this using the script header.
 
-### \
-Conclusions
+### Conclusions
 
 We've covered some of the more advanced topics of scripting. I'm sure
 there's a lot of stuff I've forgotten to mention, so feel free to
