@@ -831,8 +831,7 @@ light.
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
 *SeeAlso:* [Character.SetLightLevel](ags47#Character.SetLightLevel),
-[SetAmbientLightLevel](ags54#SetAmbientLightLevel),
-Region.SetLightLevel (REF NOT FOUND)
+[SetAmbientLightLevel](ags54#SetAmbientLightLevel)
 
 ------------------------------------------------------------------------
 
@@ -1600,7 +1599,6 @@ property is false, then this value is meaningless.
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
 *See Also:* [Character.Tint](ags47#Character.Tint),
-Character.TintEnabled (REF NOT FOUND),
 [Character.TintBlue](ags47#Character.TintBlue),
 [Character.TintRed](ags47#Character.TintRed),
 [Character.TintSaturation](ags47#Character.TintSaturation),
@@ -1626,7 +1624,6 @@ property is false, then this value is meaningless.
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
 *See Also:* [Character.Tint](ags47#Character.Tint),
-Character.TintEnabled (REF NOT FOUND),
 [Character.TintBlue](ags47#Character.TintBlue),
 [Character.TintGreen](ags47#Character.TintGreen),
 [Character.TintSaturation](ags47#Character.TintSaturation),
@@ -1652,7 +1649,6 @@ property is false, then this value is meaningless.
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
 *See Also:* [Character.Tint](ags47#Character.Tint),
-Character.TintEnabled (REF NOT FOUND),
 [Character.TintBlue](ags47#Character.TintBlue),
 [Character.TintGreen](ags47#Character.TintGreen),
 [Character.TintRed](ags47#Character.TintRed),
@@ -1678,7 +1674,6 @@ property is false, then this value is meaningless.
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
 *See Also:* [Character.Tint](ags47#Character.Tint),
-Character.TintEnabled (REF NOT FOUND),
 [Character.TintBlue](ags47#Character.TintBlue),
 [Character.TintGreen](ags47#Character.TintGreen),
 [Character.TintRed](ags47#Character.TintRed),
