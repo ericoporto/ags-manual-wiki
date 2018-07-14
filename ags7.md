@@ -160,4 +160,4 @@ runtime data - in the default Windows folders:
 Players may enable this option and define their own location to store
 game files.
 
-See Also: Default setup (REF NOT FOUND)
+See Also: [Default setup](ags10#Default%20setup)
