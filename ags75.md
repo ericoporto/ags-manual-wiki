@@ -16,8 +16,6 @@ Speech functions and properties
 
 ---
 
-
-
 ### AnimationStopTimeMargin
 
 *(Formerly known as game.close\_mouth\_end\_speech\_time, which is now
@@ -44,8 +42,6 @@ game speed) before speech time ends.
 
 ---
 
-
-
 ### CustomPortraitPlacement
 
     static bool Speech.CustomPortraitPlacement
@@ -65,8 +61,6 @@ used.
 [Speech.PortraitY](ags75#Speech.PortraitY)
 
 ---
-
-
 
 ### DisplayPostTimeMs
 
@@ -88,8 +82,6 @@ and is set to zero by default.
 [Speech.AnimationStopTimeMargin](ags75#Speech.AnimationStopTimeMargin)
 
 ---
-
-
 
 ### GlobalSpeechAnimationDelay
 
@@ -115,8 +107,6 @@ used instead.
 
 ---
 
-
-
 ### PortraitXOffset
 
     static int Speech.PortraitXOffset
@@ -138,8 +128,6 @@ side and respected portrait's border.
 
 ---
 
-
-
 ### PortraitY
 
     static int Speech.PortraitY
@@ -156,8 +144,6 @@ Gets/sets the character's speech portrait **y** coordinate on screen.
 [Speech.PortraitXOffset](ags75#Speech.PortraitXOffset)
 
 ---
-
-
 
 ### SkipKey
 
@@ -182,8 +168,6 @@ will assign the "space" key to skip the speech.
 *See Also:* [Speech.SkipStyle](ags75#Speech.SkipStyle)
 
 ---
-
-
 
 ### SkipStyle
 
@@ -217,8 +201,6 @@ or a key.
 
 ---
 
-
-
 ### Style
 
 *(Formerly known as SetSpeechStyle, which is now obsolete)*
@@ -245,8 +227,6 @@ will change the speech style to a close up portrait of the character.
 
 ---
 
-
-
 ### TextAlignment
 
 *(Formerly known as game.speech\_text\_align, which is now obsolete)*
@@ -271,8 +251,6 @@ will align the speech text at the right side.
 
 ---
 
-
-
 ### UseGlobalSpeechAnimationDelay
 
     static bool Speech.UseGlobalSpeechAnimationDelay
@@ -294,8 +272,6 @@ will make the game use global speech animation delay.
 [Speech.GlobalSpeechAnimationDelay](ags75#Speech.GlobalSpeechAnimationDelay)
 
 ---
-
-
 
 ### VoiceMode
 
@@ -328,5 +304,4 @@ Example:
 
 will set the voice mode to voice and text if the voice pack is
 available.
-
 

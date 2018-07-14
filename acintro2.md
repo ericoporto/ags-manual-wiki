@@ -167,7 +167,6 @@ it a go. Press F5, or click "Run" on the Build menu. This will save your
 work and launch the game! Once loaded, you should see your room with the
 character in it.\
 
-
 ---
   ![](images/icon_info.gif){width="32" height="32"}   When you use the Run command, the game will always run in a window. If you want to test the game full-screen, use the Ctrl+F5 ("Run without debugger") option.
 ---
@@ -182,7 +181,6 @@ character to start, and reading the "Mouse co-ordinates" display.
 
 Once you've got that working, have a play walking the character around
 the screen, testing out the walkable and walk-behind areas.\
-
 
 ---
   ![](images/icon_info.gif){width="32" height="32"}   The normal way of exiting the game is to press Ctrl+Q. It's possible that during development of your game, you may create a script that causes the game to lock up - in this case, the emergency break key Alt+X will exit the game for you.

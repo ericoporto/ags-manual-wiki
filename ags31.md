@@ -12,8 +12,6 @@ experience -- select one of the links below:
 
 ---
 
-
-
 ### Pointers for programming newbies
 
 Pointers can be quite a daunting prospect, and in languages like C and
@@ -105,8 +103,6 @@ can't work out, feel free to ask on the Technical forums.
 
 ---
 
-
-
 ### Pointers for people who know Java or C`#`
 
 AGS pointers work in a very similar way to object variables in Java and
@@ -150,8 +146,6 @@ idea to set them to *null* when you're no longer using them, to allow
 the memory to be freed.
 
 ---
-
-
 
 ### Pointers for people who know C or C++
 

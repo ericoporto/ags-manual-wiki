@@ -16,8 +16,6 @@ Inventory item functions and properties
 
 ---
 
-
-
 ### GetAtScreenXY (inventory)
 
 *(Formerly known as global function GetInvAt, which is now obsolete)*
@@ -55,8 +53,6 @@ will display the number of the inv item that the mouse is over
 
 ---
 
-
-
 ### GetProperty (inventory)
 
 *(Formerly known as GetInvProperty, which is now obsolete)*
@@ -82,8 +78,6 @@ to more than 200.
 [InventoryItem.GetTextProperty](ags64#InventoryItem.GetTextProperty)
 
 ---
-
-
 
 ### GetTextProperty (inventory)
 
@@ -111,8 +105,6 @@ will retrieve inv item 2's "description" property and display it.
 [InventoryItem.GetProperty](ags64#InventoryItem.GetProperty)
 
 ---
-
-
 
 ### SetProperty (inventory)
 
@@ -142,8 +134,6 @@ will change Stone's "weight" custom property to 120.
 
 ---
 
-
-
 ### SetTextProperty (inventory)
 
     bool InventoryItem.SetTextProperty(const string property, const string value)
@@ -169,8 +159,6 @@ will change key's "description" property.
 [InventoryItem.SetProperty](ags64#InventoryItem.SetProperty)
 
 ---
-
-
 
 ### IsInteractionAvailable (inventory)
 
@@ -200,8 +188,6 @@ Example:
 
 ---
 
-
-
 ### RunInteraction (inventory)
 
 *(Formerly known as RunInventoryInteraction, which is now obsolete)*
@@ -227,8 +213,6 @@ this to work)
 
 ---
 
-
-
 ### CursorGraphic property (inventory)
 
     int InventoryItem.CursorGraphic
@@ -251,8 +235,6 @@ will display inventory item *iKey*'s cursor graphic.
 *See Also:* [InventoryItem.Graphic](ags64#InventoryItem.Graphic)
 
 ---
-
-
 
 ### Graphic property (inventory)
 
@@ -284,8 +266,6 @@ slot.
 
 ---
 
-
-
 ### ID property (inventory)
 
     readonly int InventoryItem.ID
@@ -305,8 +285,6 @@ inventory
 [Character.LoseInventory](ags47#Character.LoseInventory)
 
 ---
-
-
 
 ### Name property (inventory)
 
@@ -338,5 +316,4 @@ will display the name of the player's current inventory item.
 [InventoryItem.GetAtScreenXY](ags64#InventoryItem.GetAtScreenXY),
 [InventoryItem.Graphic](ags64#InventoryItem.Graphic),
 [Game.GetLocationName](ags54#Game.GetLocationName)
-
 

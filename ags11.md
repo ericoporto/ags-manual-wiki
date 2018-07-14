@@ -12,8 +12,6 @@ rooms.
 
 ---
 
-
-
 ### Character scaling
 
 AGS supports scaling of characters, where the character can appear to
@@ -44,8 +42,6 @@ another as he walks towards the back or front of the screen.
 
 ---
 
-
-
 ### Scrolling
 
 It's easy to create scrolling rooms like the ones used in Lucasarts
@@ -64,8 +60,6 @@ manually scroll the room around if you don't want it to follow the
 character.
 
 ---
-
-
 
 ### Importing a file as the walkable area mask
 
@@ -88,8 +82,6 @@ numbers.
 bitmap. Use only palette indexes 0 to 15.
 
 ---
-
-
 
 ### Animating background scenes
 
@@ -131,8 +123,6 @@ palette will get reset - therefore you can't use special palette effects
 such as CyclePalette or SetPalRGB on screens with animating backgrounds.
 
 ---
-
-
 
 ### Lighting effects
 

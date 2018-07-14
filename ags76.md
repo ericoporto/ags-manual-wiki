@@ -23,8 +23,6 @@ String functions
 
 ---
 
-
-
 ### Append
 
 *(Formerly known as global function StrCat, which is now obsolete)*
@@ -55,8 +53,6 @@ will display "HelloWorld".
 
 ---
 
-
-
 ### AppendChar
 
     String.AppendChar(char extraChar)
@@ -82,8 +78,6 @@ will display "Hello".
 *See Also:* [String.Append](ags76#String.Append)
 
 ---
-
-
 
 ### CompareTo
 
@@ -126,8 +120,6 @@ will display "Strings match with case sensitivity off!", and then
 
 ---
 
-
-
 ### Copy
 
 *(Formerly known as global function StrCopy, which is now obsolete)*
@@ -146,8 +138,6 @@ Example:
 will display "This is a test string".
 
 ---
-
-
 
 ### EndsWith
 
@@ -176,8 +166,6 @@ will display the "Ends with script!" message.
 
 ---
 
-
-
 ### Format
 
 *(Formerly known as global function StrFormat, which is now obsolete)*
@@ -205,8 +193,6 @@ will create a text string containing "10".
 *See Also:* [Display](ags78#Display)
 
 ---
-
-
 
 ### IndexOf
 
@@ -240,8 +226,6 @@ Example:
 
 ---
 
-
-
 ### IsNullOrEmpty
 
     static bool String.IsNullOrEmpty(String stringToCheck)
@@ -273,8 +257,6 @@ will set the myString variable to "Some text" if it is null or empty
 
 ---
 
-
-
 ### LowerCase
 
 *(Formerly known as global function StrToLowerCase, which is now
@@ -298,8 +280,6 @@ will display "Old: THIS is a test string, new: this is a test string".
 *See Also:* [String.UpperCase](ags76#String.UpperCase)
 
 ---
-
-
 
 ### Replace
 
@@ -330,8 +310,6 @@ script!".
 
 ---
 
-
-
 ### ReplaceCharAt
 
 *(Formerly known as global function StrSetCharAt, which is now
@@ -360,8 +338,6 @@ will display "Old: Hello, new: Hemlo".
 
 ---
 
-
-
 ### StartsWith
 
     bool String.StartsWith(string lookForText, optional bool caseSensitive)
@@ -389,8 +365,6 @@ will display the "Starts with hello!" message.
 
 ---
 
-
-
 ### Substring
 
     String.Substring(int index, int length)
@@ -415,8 +389,6 @@ will display "Original: Hello World!, Substring: lo Wo".
 
 ---
 
-
-
 ### Truncate
 
     String.Truncate(int length)
@@ -439,8 +411,6 @@ will display "Original: Hello World!, Truncated: Hell".
 [String.Substring](ags76#String.Substring)
 
 ---
-
-
 
 ### UpperCase
 
@@ -465,8 +435,6 @@ will display "Old: THIS is a test string, new: THIS IS A TEST STRING".
 *See Also:* [String.LowerCase](ags76#String.LowerCase)
 
 ---
-
-
 
 ### AsFloat property
 
@@ -495,8 +463,6 @@ is useful for processing strings input from the user.
 [String.Format](ags76#String.Format)
 
 ---
-
-
 
 ### AsInt property
 
@@ -533,8 +499,6 @@ useful for processing strings input from the user.
 
 ---
 
-
-
 ### Chars property
 
 *(Formerly known as global function StrGetCharAt, which is now
@@ -565,8 +529,6 @@ will display "The 4th character is: s".
 
 ---
 
-
-
 ### Length property
 
 *(Formerly known as global function StrLen, which is now obsolete)*
@@ -581,5 +543,4 @@ Example:
     Display("Length: %d", text.Length);
 
 will display "Length: 18".
-
 

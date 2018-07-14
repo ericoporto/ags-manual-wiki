@@ -33,8 +33,6 @@ GUI Button functions and properties
 
 ---
 
-
-
 ### Click (button)
 
     Button.Click()
@@ -48,8 +46,6 @@ that event it will be run, otherwise nothing happens.
 [GUI.ProcessClick](ags55#GUI.ProcessClick)
 
 ---
-
-
 
 ### Animate (button)
 
@@ -94,8 +90,6 @@ delay of 4 cycles per frame, and repeat the animation continually.
 
 ---
 
-
-
 ### Animating property (button)
 
     readonly bool Button.Animating
@@ -123,8 +117,6 @@ will animate button and wait until the animation finishes.
 
 ---
 
-
-
 ### Frame property (button)
 
     readonly int Button.Frame
@@ -144,8 +136,6 @@ This property is read-only. To change button's animation, use the
 [Button.Graphic](ags57#Button.Graphic)
 
 ---
-
-
 
 ### Loop property (button)
 
@@ -167,8 +157,6 @@ This property is read-only. To change button's animation, use the
 
 ---
 
-
-
 ### View property (button)
 
     readonly int Button.View
@@ -188,8 +176,6 @@ This property is read-only. To change button's animation, use the
 [Button.Graphic](ags57#Button.Graphic)
 
 ---
-
-
 
 ### ClipImage property
 
@@ -218,8 +204,6 @@ button's clickable area.
 
 ---
 
-
-
 ### Font property (button)
 
     FontType Button.Font
@@ -239,8 +223,6 @@ will change the *btnOK* button to use Font "Main".
 [TextBox.Font](ags62#TextBox.Font)
 
 ---
-
-
 
 ### Graphic property (button)
 
@@ -269,8 +251,6 @@ will display btnPlay's current sprite number.
 
 ---
 
-
-
 ### MouseOverGraphic property (button)
 
 *(Formerly part of GetButtonPic, which is now obsolete)*\
@@ -292,8 +272,6 @@ will display btnPlay's mouse-over sprite number.
 [Button.PushedGraphic](ags57#Button.PushedGraphic)
 
 ---
-
-
 
 ### NormalGraphic property (button)
 
@@ -322,8 +300,6 @@ will display btnPlay's normal sprite number.
 
 ---
 
-
-
 ### PushedGraphic property (button)
 
 *(Formerly part of GetButtonPic, which is now obsolete)*\
@@ -346,8 +322,6 @@ will display btnPlay's pushed sprite number.
 [Button.NormalGraphic](ags57#Button.NormalGraphic)
 
 ---
-
-
 
 ### Text property (button)
 
@@ -372,8 +346,6 @@ will display the old text, then change button btnController to read
 
 ---
 
-
-
 ### TextColor property (button)
 
     int Button.TextColor;
@@ -390,5 +362,4 @@ Example:
 will change button 'btnRestart' to have white text.
 
 *See Also:* [Button.NormalGraphic](ags57#Button.NormalGraphic)
-
 

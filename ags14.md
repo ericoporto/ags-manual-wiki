@@ -69,8 +69,6 @@ in the same way as character names. For example, if a GUI is called
 
 ---
 
-
-
 ### GUI buttons
 
 To provide interactivity with the interface, you use buttons.
@@ -91,8 +89,6 @@ in the "New mode number" property.
 To delete a GUI button, right-click it and choose Delete.
 
 ---
-
-
 
 ### Interface text
 
@@ -121,8 +117,6 @@ The Properties window also allows you to align the text to left, right
 or centre, as well as change its font and colour.
 
 ---
-
-
 
 ### Customized Text Windows
 
@@ -155,8 +149,6 @@ window's border and text inside of it.
 
 ---
 
-
-
 ### Custom inventory
 
 Another option you may have noticed in the GUI editor is the Add
@@ -173,8 +165,6 @@ To see a full list of commands available for inventory windows, see the
 section.
 
 ---
-
-
 
 ### Sliders
 
@@ -204,8 +194,6 @@ script property.
 
 ---
 
-
-
 ### Text Boxes
 
 A text box is a simple device that allows the player to type information
@@ -219,8 +207,6 @@ presses Return in the text box, the OnActivate event is called. You can
 then use the TextBox.Text property to retrieve what they typed in.
 
 ---
-
-
 
 ### List Boxes
 

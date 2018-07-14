@@ -19,8 +19,6 @@ palette setup and other things which do not depend on individual rooms.
 
 ---
 
-
-
 ### Palette setup
 
 The first thing you need to do when you create a new game is to decide
@@ -69,8 +67,6 @@ entries from the PAL or PCX file you choose. It can read standard
 and JASC PSP palette files.
 
 ---
-
-
 
 ### Inventory
 
@@ -127,8 +123,6 @@ hotspot is. You can enter the colour for the centre dot and also for the
 surrounding 4 pixels.
 
 ---
-
-
 
 ### Importing your own sprite graphics
 
@@ -235,8 +229,6 @@ be applied to alpha-blended characters.
 
 ---
 
-
-
 ### Introduction sequences
 
 You can easily add intro, outro and cutscene sequences to your game.
@@ -260,8 +252,6 @@ leave this until you are more comfortable with AGS, and have some
 experience of how to use these functions.
 
 ---
-
-
 
 ### Animations
 
@@ -313,8 +303,6 @@ Object.SetView script command), and then use the Object.Animate script
 command to actually start the animation.
 
 ---
-
-
 
 ### Characters
 
@@ -464,8 +452,6 @@ created and all the settings imported.
 overwrite an existing character.*
 
 ---
-
-
 
 ### Conversations
 
@@ -634,8 +620,6 @@ calls dialog\_request, so you can use Said() calls to respond. See the
 [text parser](ags17#TextParser) section for more info.
 
 ---
-
-
 
 ### General settings
 
@@ -957,8 +941,6 @@ Explorer](ags26#GameExplorer)
 
 ---
 
-
-
 ### Default setup
 
 The Default setup pane lets you create the default runtime configuration
@@ -1007,8 +989,6 @@ See also: [Run-time engine setup](ags7#Setup)
 
 ---
 
-
-
 ### Cursors
 
 The Cursors node of the editor shows you the current mouse cursor modes
@@ -1051,8 +1031,6 @@ For the standard modes,
     the cursor mode.
 
 ---
-
-
 
 ### Fonts
 

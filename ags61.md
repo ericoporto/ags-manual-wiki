@@ -25,8 +25,6 @@ GUI Slider properties
 
 ---
 
-
-
 ### BackgroundGraphic property (slider)
 
     int Slider.BackgroundGraphic;
@@ -48,8 +46,6 @@ displays the *sldHealth* slider's background image
 *See Also:* [Slider.HandleGraphic](ags61#Slider.HandleGraphic)
 
 ---
-
-
 
 ### HandleGraphic property
 
@@ -76,8 +72,6 @@ displays the *sldHealth* slider's handle image
 
 ---
 
-
-
 ### HandleOffset property
 
     int Slider.HandleOffset;
@@ -97,8 +91,6 @@ the right.
 *See Also:* [Slider.HandleGraphic](ags61#Slider.HandleGraphic)
 
 ---
-
-
 
 ### Max property
 
@@ -121,8 +113,6 @@ sets the maximum value of the *sldHealth* slider to 200.
 [Slider.Value](ags61#Slider.Value)
 
 ---
-
-
 
 ### Min property
 
@@ -147,8 +137,6 @@ sets the minimum value of the *sldHealth* slider to 0.
 
 ---
 
-
-
 ### Value property
 
 *(Formerly known as GetSliderValue, which is now obsolete)*\
@@ -170,5 +158,4 @@ Example:
 will set the audio volume to the value of the slider *sldVolume*.
 
 *See Also:* [Label.Text](ags59#Label.Text)
-
 

@@ -199,4 +199,3 @@ page.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-

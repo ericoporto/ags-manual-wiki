@@ -29,8 +29,6 @@ property](#DialogOptionsRenderingInfo.ParserTextBoxWidth)\
 
 ---
 
-
-
 ### RunActiveOption
 
     bool DialogOptionsRenderingInfo.RunActiveOption();
@@ -59,8 +57,6 @@ runs selected dialog option when player presses Enter/Return key.
 
 ---
 
-
-
 ### Update
 
     void DialogOptionsRenderingInfo.Update();
@@ -83,8 +79,6 @@ current script ends.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 ---
-
-
 
 ### ActiveOptionID property
 
@@ -120,8 +114,6 @@ always selects the first option
 
 ---
 
-
-
 ### DialogToRender property
 
     Dialog* DialogOptionsRenderingInfo.DialogToRender;
@@ -138,8 +130,6 @@ options](ags42#CustomDialogOptions) page.
 [DialogOptionsRenderingInfo.Surface](ags50#DialogOptionsRenderingInfo.Surface)
 
 ---
-
-
 
 ### HasAlphaChannel property (DialogOptionsRenderingInfo)
 
@@ -172,8 +162,6 @@ options in.
 
 ---
 
-
-
 ### Height property (DialogOptionsRenderingInfo)
 
     int DialogOptionsRenderingInfo.Height;
@@ -200,8 +188,6 @@ creates a 300x150 size area to draw the dialog options in
 [DialogOptionsRenderingInfo.Width](ags50#DialogOptionsRenderingInfo.Width)
 
 ---
-
-
 
 ### ParserTextBoxWidth property
 
@@ -237,8 +223,6 @@ options area
 [DialogOptionsRenderingInfo.ParserTextBoxY](ags50#DialogOptionsRenderingInfo.ParserTextBoxY)
 
 ---
-
-
 
 ### ParserTextBoxX property
 
@@ -278,8 +262,6 @@ options area
 
 ---
 
-
-
 ### ParserTextBoxY property
 
     int DialogOptionsRenderingInfo.ParserTextBoxY;
@@ -317,8 +299,6 @@ options area
 
 ---
 
-
-
 ### Surface property (DialogOptionsRenderingInfo)
 
     DrawingSurface* DialogOptionsRenderingInfo.Surface;
@@ -351,8 +331,6 @@ functions](ags51#DrawingSurfaceFunctions)
 
 ---
 
-
-
 ### Width property (DialogOptionsRenderingInfo)
 
     int DialogOptionsRenderingInfo.Width;
@@ -379,8 +357,6 @@ creates a 300x150 size area to draw the dialog options in
 [DialogOptionsRenderingInfo.Height](ags50#DialogOptionsRenderingInfo.Height)
 
 ---
-
-
 
 ### X property (DialogOptionsRenderingInfo)
 
@@ -412,8 +388,6 @@ creates a 200x150 size area at (50, 20) to draw the dialog options in
 
 ---
 
-
-
 ### Y property (DialogOptionsRenderingInfo)
 
     int DialogOptionsRenderingInfo.Y;
@@ -441,5 +415,4 @@ creates a 200x150 size area at (50, 20) to draw the dialog options in
 
 *See Also:*
 [DialogOptionsRenderingInfo.X](ags50#DialogOptionsRenderingInfo.X)
-
 

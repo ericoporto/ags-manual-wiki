@@ -35,8 +35,6 @@ copies of the image and upload it to video memory if appropriate.
 
 ---
 
-
-
 ### Clear (drawing surface)
 
 *(Formerly known as RawClearScreen, which is now obsolete)*
@@ -65,8 +63,6 @@ in the middle of it.
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
 
 ---
-
-
 
 ### CreateCopy
 
@@ -105,8 +101,6 @@ for a while and then restore the original background.
 
 ---
 
-
-
 ### DrawCircle
 
 *(Formerly known as RawDrawCircle, which is now obsolete)*
@@ -130,8 +124,6 @@ will draw a circle in the centre of the screen, of 50 pixels radius.
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
 
 ---
-
-
 
 ### DrawImage
 
@@ -180,8 +172,6 @@ will draw the *oDoor* object's graphic onto the room background at (100,
 
 ---
 
-
-
 ### DrawLine
 
 *(Formerly known as RawDrawLine, which is now obsolete)*
@@ -217,8 +207,6 @@ the screen (160,100);
 
 ---
 
-
-
 ### DrawMessageWrapped
 
 *(Formerly known as RawPrintMessageWrapped, which is now obsolete)*
@@ -253,8 +241,6 @@ will display message 10 in the centre of the screen, starting from Y =
 
 ---
 
-
-
 ### DrawPixel
 
     DrawingSurface.DrawPixel(int x, int y)
@@ -284,8 +270,6 @@ draws a yellow pixel in the top left of the room background
 
 ---
 
-
-
 ### DrawRectangle
 
 *(Formerly known as RawDrawRectangle, which is now obsolete)*
@@ -314,8 +298,6 @@ will draw a rectangle over the top left hand quarter of the screen.
 
 ---
 
-
-
 ### DrawString
 
 *(Formerly known as RawPrint, which is now obsolete)*
@@ -343,8 +325,6 @@ will write some text onto the middle-left of the room background
 [DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
 
 ---
-
-
 
 ### DrawStringWrapped
 
@@ -377,8 +357,6 @@ will display the text in the centre of the screen, starting from Y = 40.
 [DrawingSurface.DrawMessageWrapped](ags51#DrawingSurface.DrawMessageWrapped)
 
 ---
-
-
 
 ### DrawSurface
 
@@ -419,8 +397,6 @@ this will draw background frame 1 onto frame 0 at 50`%` opacity.
 
 ---
 
-
-
 ### DrawTriangle
 
 *(Formerly known as RawDrawTriangle, which is now obsolete)*
@@ -448,8 +424,6 @@ will draw a triangle with corners at the points (0,0),(160,100),(0,200).
 
 ---
 
-
-
 ### Release (drawing surface)
 
     DrawingSurface.Release()
@@ -475,8 +449,6 @@ background, then releases the image.
 [Room.GetDrawingSurfaceForBackground](ags73#Room.GetDrawingSurfaceForBackground)
 
 ---
-
-
 
 ### DrawingColor property
 
@@ -514,8 +486,6 @@ the middle.
 
 ---
 
-
-
 ### GetPixel
 
     int DrawingSurface.GetPixel(int x, int y)
@@ -550,8 +520,6 @@ displays the pixel colour of the centre pixel on the screen.
 
 ---
 
-
-
 ### Height property (drawing surface)
 
     readonly int DrawingSurface.Height
@@ -571,8 +539,6 @@ displays the size of the surface to the player
 [DrawingSurface.Width](ags51#DrawingSurface.Width)
 
 ---
-
-
 
 ### UseHighResCoordinates property
 
@@ -612,8 +578,6 @@ draw a line from the top left to the bottom right of the screen.
 
 ---
 
-
-
 ### Width property (drawing surface)
 
     readonly int DrawingSurface.Width
@@ -630,5 +594,4 @@ displays the size of the surface to the player
 
 *See Also:* [DrawingSurface.Height](ags51#DrawingSurface.Height),
 [DrawingSurface.UseHighResCoordinates](ags51#DrawingSurface.UseHighResCoordinates)
-
 

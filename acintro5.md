@@ -1,8 +1,6 @@
 **Getting Started with AGS - Part 5** {#getting-started-with-ags---part-5 align="center"}
 -------------------------------------
 
-
-
 ### Managing Inventory
 
 Each character in the game can carry their own set of inventory items.
@@ -88,8 +86,6 @@ crosshair.
     current player character.
 -   To give the player an inventory item, use the
     `         player.AddInventory` command.
-
-
 
 **Go to part 6:** [Using your own graphics](acintro6)
 

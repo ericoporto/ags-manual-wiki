@@ -22,8 +22,6 @@ GUI Text Box functions and properties
 
 ---
 
-
-
 ### Font property (text box)
 
 *(Formerly known as SetTextBoxFont, which is now obsolete)*
@@ -44,8 +42,6 @@ will change the *txtUserInput* text box to use Font "Normal".
 [TextBox.Text](ags62#TextBox.Text)
 
 ---
-
-
 
 ### Text property (text box)
 
@@ -72,8 +68,6 @@ will clear the txtUserInput text box.
 
 ---
 
-
-
 ### TextColor property (text box)
 
     int TextBox.TextColor;
@@ -90,5 +84,4 @@ will change text box 'txtInput' to have yellow text.
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:* [TextBox.Text](ags62#TextBox.Text)
-
 

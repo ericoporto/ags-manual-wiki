@@ -89,4 +89,3 @@ Thanks to all the AGS beta testers for all their suggestions and bug
 reports - Cornjob, AGC2, AGA, Relight, c\_leksutin, Spyros and the rest
 of the team.
 
-

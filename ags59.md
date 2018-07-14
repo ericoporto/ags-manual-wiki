@@ -22,8 +22,6 @@ GUI Label functions and properties
 
 ---
 
-
-
 ### Font property (label)
 
 *(Formerly known as SetLabelFont, which is now obsolete)*
@@ -48,8 +46,6 @@ translation is in use.
 [TextBox.Font](ags62#TextBox.Font)
 
 ---
-
-
 
 ### Text property (label)
 
@@ -77,8 +73,6 @@ will display the name of the location the cursor is over on label
 
 ---
 
-
-
 ### TextColor property (label)
 
 *(Formerly known as SetLabelColor, which is now obsolete)*
@@ -95,5 +89,4 @@ will change label 'lblStatus' to have yellow text.
 
 *See Also:* [Label.Font](ags59#Label.Font),
 [Label.Text](ags59#Label.Text)
-
 

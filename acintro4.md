@@ -1,8 +1,6 @@
 **Getting Started with AGS - Part 4** {#getting-started-with-ags---part-4 align="center"}
 -------------------------------------
 
-
-
 ### Objects
 
 Objects are items on the screen which, unlike hotspots, can move, change
@@ -140,8 +138,6 @@ Okey, so we now have a fully-working first room. Test the game as
 before, and try it out. Once the player has taken the key, call up his
 inventory and you should see the large key picture there.
 
-
-
 ### Room Settings
 
 Finally, let's just quickly go over the available properties for the
@@ -162,8 +158,6 @@ room itself (available when in Nothing mode):
     image of the character from an overhead perspective.
 -   **MusicVolumeAdjustment** - this allows you to modify the background
     music volume for this screen.
-
-
 
 **Go to part 5:**  [Managing Inventory](acintro5)
 

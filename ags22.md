@@ -21,8 +21,6 @@ editor.
 
 ---
 
-
-
 ### Text-based lip syncing
 
 In the Lip Sync Editor, you have 20 text boxes, one for each possible
@@ -45,8 +43,6 @@ encountered.
 
 ---
 
-
-
 ### Voice-based lip sync
 
 AGS supports lip syncing voice speech to the talking animation. If you
@@ -63,8 +59,6 @@ applications that produce lip sync data based on voice clips. AGS
 supports two such data formats: **PAMELA** and **Papagayo**.
 
 ---
-
-
 
 ### PAMELA
 
@@ -98,8 +92,6 @@ game.
 strongly recommended that you use OGG or WAV for speech.
 
 ---
-
-
 
 ### Papagayo
 

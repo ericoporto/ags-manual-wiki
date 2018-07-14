@@ -22,8 +22,6 @@ GUI functions and properties
 
 ---
 
-
-
 ### Centre
 
 *(Formerly known as CentreGUI, which is now obsolete)*
@@ -43,8 +41,6 @@ will centre the CONTROLPANEL GUI in the middle of the screen.
 *See Also:* [GUI.SetPosition](ags55#GUI.SetPosition)
 
 ---
-
-
 
 ### Click (gui)
 
@@ -70,8 +66,6 @@ triggers OnClick event for gMainMenu.
 [GUI.ProcessClick](ags55#GUI.ProcessClick)
 
 ---
-
-
 
 ### GetAtScreenXY (GUI)
 
@@ -112,8 +106,6 @@ will display the number of the GUI that the mouse is over.
 
 ---
 
-
-
 ### ProcessClick (GUI)
 
     static void GUI.ProcessClick(int x, int y, CursorMode)
@@ -143,8 +135,6 @@ Pointer mode, which will ignore anything but interface.
 
 ---
 
-
-
 ### SetPosition (GUI)
 
 *(Formerly known as SetGUIPosition, which is now obsolete)*
@@ -169,8 +159,6 @@ will move the VERBCOIN GUI to the position where the cursor is.
 [GUI.Y](ags55#GUI.Y)
 
 ---
-
-
 
 ### SetSize (GUI)
 
@@ -200,8 +188,6 @@ changes the ICONBAR GUI to be the size of half the screen
 
 ---
 
-
-
 ### BackgroundGraphic property (GUI)
 
 *(Formerly known as SetGUIBackgroundPic, which is now obsolete)*
@@ -216,8 +202,6 @@ You can set this to 0 to remove the background image from the GUI.
 [Button.NormalGraphic](ags57#Button.NormalGraphic)
 
 ---
-
-
 
 ### Clickable property (GUI)
 
@@ -246,8 +230,6 @@ sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
 ---
 
-
-
 ### ControlCount property
 
     readonly int GUI.ControlCount;
@@ -269,8 +251,6 @@ disables all controls on the INVENTORY GUI.
 *See Also:* [GUI.Controls](ags55#GUI.Controls)
 
 ---
-
-
 
 ### Controls property (GUI)
 
@@ -307,8 +287,6 @@ it. If control 4 isn't a listbox, you will get a Null Reference error.
 
 ---
 
-
-
 ### Height property (GUI)
 
     int GUI.Height
@@ -328,8 +306,6 @@ displays the height of the ICONBAR GUI.
 [GUI.Width](ags55#GUI.Width)
 
 ---
-
-
 
 ### ID property (GUI)
 
@@ -351,8 +327,6 @@ clickable.
 *See Also:* [GUIControl.ID](ags56#GUIControl.ID)
 
 ---
-
-
 
 ### Transparency property (GUI)
 
@@ -395,8 +369,6 @@ will gradually fade the INVENTORY GUI out until it is invisible.
 
 ---
 
-
-
 ### Visible property (GUI)
 
 *(Formerly known as GUIOff, which is now obsolete)*\
@@ -433,8 +405,6 @@ will turn on the SETTINGS GUI.
 
 ---
 
-
-
 ### Width property (GUI)
 
     int GUI.Width
@@ -454,8 +424,6 @@ makes the INVENTORY GUI 5 pixels wider.
 [GUI.SetSize](ags55#GUI.SetSize)
 
 ---
-
-
 
 ### X property (GUI)
 
@@ -478,8 +446,6 @@ moves the VERBCOIN GUI right 5 pixels.
 [GUI.Y](ags55#GUI.Y)
 
 ---
-
-
 
 ### Y property (GUI)
 
@@ -504,8 +470,6 @@ moves the VERBCOIN GUI down 5 pixels.
 
 ---
 
-
-
 ### ZOrder property (gui)
 
 *(Formerly known as SetGUIZOrder, which is now obsolete)*
@@ -526,5 +490,4 @@ Example:
 sets the STATUSLINE GUI to be behind all other GUIs.
 
 *See Also:* [GUI.GetAtScreenXY](ags55#GUI.GetAtScreenXY)
-
 

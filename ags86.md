@@ -53,4 +53,3 @@ you save a room in the Room Editor it will delete the exe file (because
 the room contained in the exe is out of date). To get it back, simply
 build the game again by using the "Build EXE" command on the Build menu.
 
-

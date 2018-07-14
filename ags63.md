@@ -16,8 +16,6 @@ Hotspot functions and properties
 
 ---
 
-
-
 ### GetAtScreenXY (hotspot)
 
 *(Formerly known as global function GetHotspotAt, which is now
@@ -51,8 +49,6 @@ will display a message depending on what the mouse is on.
 
 ---
 
-
-
 ### GetProperty (hotspot)
 
 *(Formerly known as GetHotspotProperty, which is now obsolete)*
@@ -78,8 +74,6 @@ than 200.
 
 ---
 
-
-
 ### GetTextProperty (hotspot)
 
 *(Formerly known as GetHotspotPropertyText, which is now obsolete)*\
@@ -104,8 +98,6 @@ will retrieve hotspot 2's "description" property and display it.
 *See Also:* [Hotspot.GetProperty](ags63#Hotspot.GetProperty)
 
 ---
-
-
 
 ### SetProperty (hotspot)
 
@@ -133,8 +125,6 @@ will change Door hotspot's "LockDifficulty" custom property to 5.
 
 ---
 
-
-
 ### SetTextProperty (hotspot)
 
     bool Hotspot.SetTextProperty(const string property, const string value)
@@ -158,8 +148,6 @@ will change Door's "description" property.
 *See Also:* [Hotspot.SetProperty](ags63#Hotspot.SetProperty)
 
 ---
-
-
 
 ### IsInteractionAvailable (hotspot)
 
@@ -185,8 +173,6 @@ Example:
 
 ---
 
-
-
 ### RunInteraction (hotspot)
 
 *(Formerly known as RunHotspotInteraction, which is now obsolete)*
@@ -209,8 +195,6 @@ hDoor.
 [Object.RunInteraction](ags68#Object.RunInteraction)
 
 ---
-
-
 
 ### Enabled property (hotspot)
 
@@ -241,8 +225,6 @@ will disable the hBrownTree hotspot.
 
 ---
 
-
-
 ### ID property (hotspot)
 
     readonly int Hotspot.ID
@@ -261,8 +243,6 @@ displays hDoor's hotspot number, and then displays hotspot 3's number
 *See Also:* [Hotspot.GetAtScreenXY](ags63#Hotspot.GetAtScreenXY)
 
 ---
-
-
 
 ### Name property (hotspot)
 
@@ -286,8 +266,6 @@ will retrieve and then display hotspot 3's name.
 
 ---
 
-
-
 ### WalkToX property
 
 *(Formerly known as GetHotspotPointX, which is now obsolete)*
@@ -308,8 +286,6 @@ will move the character to hotspot hTable's walk-to point.
 
 ---
 
-
-
 ### WalkToY property
 
 *(Formerly known as GetHotspotPointY, which is now obsolete)*
@@ -327,5 +303,4 @@ will move the character to hotspot hTable's walk-to point.
 
 *See Also:* [Hotspot.WalkToX](ags63#Hotspot.WalkToX),
 [MoveCharacterToHotspot](ags54#MoveCharacterToHotspot)
-
 

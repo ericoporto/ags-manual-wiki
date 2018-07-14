@@ -11,8 +11,6 @@ can integrate with the Game Explorer feature.
 
 ---
 
-
-
 ### Enhanced Save Games
 
 Optionally, AGS can set up Windows Explorer so that you can double-click
@@ -72,8 +70,6 @@ Linux: **No**\
 MacOS: **No**
 
 ---
-
-
 
 ### Windows Game Explorer
 

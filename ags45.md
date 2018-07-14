@@ -20,8 +20,6 @@ them.
 
 ---
 
-
-
 ### Seek (audio channel)
 
 *(Formerly known as SeekMIDIPosition, which is now obsolete)*\
@@ -55,8 +53,6 @@ seek it back to the start.
 *See Also:* [AudioChannel.Position](ags45#AudioChannel.Position)
 
 ---
-
-
 
 ### SetRoomLocation
 
@@ -92,8 +88,6 @@ of the *oMachine* room object.
 
 ---
 
-
-
 ### Speed property (audio channel)
 
     int AudioChannel.Speed
@@ -114,8 +108,6 @@ plays *aFunnyTalk* clip at the double speed.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 ---
-
-
 
 ### Stop (audio channel)
 
@@ -141,8 +133,6 @@ stop it.
 
 ---
 
-
-
 ### ID property (audio channel)
 
     readonly int AudioChannel.ID
@@ -162,8 +152,6 @@ channel it is playing on.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 ---
-
-
 
 ### IsPlaying property
 
@@ -189,8 +177,6 @@ finishes.
 
 ---
 
-
-
 ### LengthMs property
 
     readonly int AudioChannel.LengthMs
@@ -214,8 +200,6 @@ will start playing the *aExplosion* audio clip, then display its length.
 *See Also:* [AudioChannel.PositionMs](ags45#AudioChannel.PositionMs)
 
 ---
-
-
 
 ### Panning property
 
@@ -242,8 +226,6 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ---
-
-
 
 ### PlayingClip property
 
@@ -276,8 +258,6 @@ will display what is currently playing on audio channel 2.
 [System.AudioChannels](ags77#System.AudioChannels)
 
 ---
-
-
 
 ### Position property (audio channel)
 
@@ -318,8 +298,6 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 
 ---
 
-
-
 ### PositionMs property
 
     readonly int AudioChannel.PositionMs
@@ -350,8 +328,6 @@ display its position.
 [AudioChannel.Position](ags45#AudioChannel.Position)
 
 ---
-
-
 
 ### Volume property (audio channel)
 

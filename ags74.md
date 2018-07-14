@@ -13,8 +13,6 @@ Screen functions
 
 ---
 
-
-
 ### FadeIn
 
     FadeIn (int speed)
@@ -39,8 +37,6 @@ in again.
 
 ---
 
-
-
 ### FadeOut
 
     FadeOut (int speed)
@@ -63,8 +59,6 @@ in again.
 [FadeIn](ags74#FadeIn), [SetFadeColor](ags74#SetFadeColor)
 
 ---
-
-
 
 ### FlipScreen
 
@@ -93,8 +87,6 @@ will flip the screen upside down.
 
 ---
 
-
-
 ### SetFadeColor
 
     SetFadeColor(int red, int green, int blue)
@@ -119,8 +111,6 @@ SeeAlso: [FadeIn](ags74#FadeIn), [FadeOut](ags74#FadeOut),
 
 ---
 
-
-
 ### SetNextScreenTransition
 
     SetNextScreenTransition(TransitionStyle)
@@ -143,8 +133,6 @@ transition type from then on.
 SeeAlso: [SetScreenTransition](ags74#SetScreenTransition)
 
 ---
-
-
 
 ### SetScreenTransition
 
@@ -172,8 +160,6 @@ SeeAlso: [SetNextScreenTransition](ags74#SetNextScreenTransition)
 
 ---
 
-
-
 ### ShakeScreen
 
     ShakeScreen (int amount)
@@ -190,8 +176,6 @@ will shake the screen a little.
 *See Also:* [ShakeScreenBackground](ags74#ShakeScreenBackground)
 
 ---
-
-
 
 ### ShakeScreenBackground
 
@@ -222,8 +206,6 @@ will shake the screen a little for 2 seconds.
 *See Also:* [ShakeScreen](ags74#ShakeScreen)
 
 ---
-
-
 
 ### TintScreen
 

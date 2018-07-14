@@ -7,8 +7,6 @@ Palette functions
 
 ---
 
-
-
 ### CyclePalette
 
     CyclePalette (int start, int end)
@@ -35,8 +33,6 @@ give a color effect.
 [SetPalRGB](ags70#SetPalRGB)
 
 ---
-
-
 
 ### SetPalRGB
 
@@ -67,8 +63,6 @@ will change palette slot number 10 from light green to yellow
 [UpdatePalette](ags70#UpdatePalette)
 
 ---
-
-
 
 ### UpdatePalette
 

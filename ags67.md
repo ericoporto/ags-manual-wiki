@@ -14,8 +14,6 @@ Multimedia functions
 
 ---
 
-
-
 ### CDAudio
 
     CDAudio (eCDAudioFunction, int param)
@@ -74,8 +72,6 @@ will play track 3 of the CD that's in the CD ROM drive.
 
 ---
 
-
-
 ### IsAudioPlaying
 
 *(Formerly known as IsMusicPlaying, which is now obsolete)*\
@@ -105,8 +101,6 @@ waits for any currently playing music to finish.
 
 ---
 
-
-
 ### IsSpeechVoxAvailable
 
     IsSpeechVoxAvailable()
@@ -130,8 +124,6 @@ been renamed to avoid confusion.
 *See Also:* [AudioClip.IsAvailable](ags46#AudioClip.IsAvailable)
 
 ---
-
-
 
 ### PlayFlic
 
@@ -161,8 +153,6 @@ the ESC key.
 
 ---
 
-
-
 ### PlaySilentMIDI
 
     PlaySilentMIDI (int music_number)
@@ -176,8 +166,6 @@ simulate this effect.
 [AudioChannel.Volume](ags45#AudioChannel.Volume)
 
 ---
-
-
 
 ### PlayVideo
 
@@ -244,8 +232,6 @@ versions.
 
 ---
 
-
-
 ### SetAudioTypeSpeechVolumeDrop
 
 *(Formerly known as game.speech\_music\_drop, which is now obsolete)*
@@ -272,8 +258,6 @@ while speech is playing.
 *See Also:* [Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume)
 
 ---
-
-
 
 ### SetAudioTypeVolume
 
@@ -316,8 +300,6 @@ will change the volume of all currently playing and future music to
 
 ---
 
-
-
 ### SetSpeechVolume
 
     SetSpeechVolume (int volume)
@@ -335,8 +317,6 @@ will set the speech volume to 200.
 *See Also:* [Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume)
 
 ---
-
-
 
 ### StopAudio
 

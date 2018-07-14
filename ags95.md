@@ -66,4 +66,3 @@ levels to corresponding values.
 
 The maximal number of Dialogs is no longer limited.
 
-

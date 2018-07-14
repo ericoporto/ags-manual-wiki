@@ -64,8 +64,6 @@ the player to have to download them.
 
 ---
 
-
-
 ### Custom icon
 
 If you wish, you can use your own custom icon when you build a Windows
@@ -85,8 +83,6 @@ so, create your icon as above but name it **setup.ico** in the game
 folder.
 
 ---
-
-
 
 ### Splitting resource files
 

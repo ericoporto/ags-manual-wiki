@@ -38,8 +38,6 @@ GUI List Box functions and properties
 
 ---
 
-
-
 ### AddItem
 
 *(Formerly known as ListBoxAdd, which is now obsolete)*
@@ -68,8 +66,6 @@ will take the input from the user and add it to the listbox.
 
 ---
 
-
-
 ### Clear (list box)
 
 *(Formerly known as ListBoxClear, which is now obsolete)*
@@ -87,8 +83,6 @@ will remove all the items from listbox *lstNoteBook*.
 *See Also:* [ListBox.AddItem](ags60#ListBox.AddItem)
 
 ---
-
-
 
 ### FillDirList
 
@@ -124,8 +118,6 @@ actually for this task you would use FillSaveGameList instead.
 
 ---
 
-
-
 ### FillSaveGameList
 
 *(Formerly known as ListBoxSaveGameList, which is now obsolete)*
@@ -160,8 +152,6 @@ will fill listbox *lstSaveGames* with the list of the saved games.
 
 ---
 
-
-
 ### GetItemAtLocation
 
     ListBox.GetItemAtLocation(int x, int y)
@@ -191,8 +181,6 @@ will display the item text that the mouse is currently hovering over.
 
 ---
 
-
-
 ### InsertItemAt
 
     ListBox.InsertItemAt(int index, string newitem)
@@ -219,8 +207,6 @@ will insert the Third Item in between the First and Second items.
 [ListBox.RemoveItem](ags60#ListBox.RemoveItem)
 
 ---
-
-
 
 ### RemoveItem
 
@@ -251,8 +237,6 @@ the list box will now just contain "Second item".
 
 ---
 
-
-
 ### ScrollDown (list box)
 
     ListBox.ScrollDown()
@@ -269,8 +253,6 @@ will scroll the *lstTest* list box down one row.
 *See Also:* [ListBox.ScrollUp](ags60#ListBox.ScrollUp)
 
 ---
-
-
 
 ### ScrollUp (list box)
 
@@ -289,8 +271,6 @@ will scroll the *lstTest* list box up one row.
 
 ---
 
-
-
 ### Font property (list box)
 
     FontType ListBox.Font
@@ -307,8 +287,6 @@ will change the *lstSaveGames* list box to use Font "Speech".
 [TextBox.Text](ags62#TextBox.Text)
 
 ---
-
-
 
 ### HideBorder property (list box)
 
@@ -329,8 +307,6 @@ will hide the border around the Save Games list box.
 [ListBox.HideScrollArrows](ags60#ListBox.HideScrollArrows)
 
 ---
-
-
 
 ### HideScrollArrows property (list box)
 
@@ -357,8 +333,6 @@ will hide the built-in scroll arrows on the list box.
 
 ---
 
-
-
 ### ItemCount property (list box)
 
 *(Formerly known as ListBoxGetNumItems, which is now obsolete)*
@@ -380,8 +354,6 @@ will pass the number of saved games to the int saves.
 *See Also:* [ListBox.Items](ags60#ListBox.Items)
 
 ---
-
-
 
 ### Items property
 
@@ -412,8 +384,6 @@ will get the text of the selected item in the list box.
 
 ---
 
-
-
 ### RowCount property (list box)
 
     readonly int ListBox.RowCount
@@ -436,8 +406,6 @@ will display the number of rows that the listbox can display.
 [ListBox.ScrollUp](ags60#ListBox.ScrollUp)
 
 ---
-
-
 
 ### SaveGameSlots property
 
@@ -469,8 +437,6 @@ FillSaveGameList had been used previously.
 
 ---
 
-
-
 ### SelectedIndex property
 
 *(Formerly known as ListBoxGetSelected, which is now obsolete)*\
@@ -493,8 +459,6 @@ will get the text of the selected item in the listbox.
 
 ---
 
-
-
 ### TopItem property (list box)
 
 *(Formerly known as ListBoxSetTopItem, which is now obsolete)*
@@ -516,8 +480,6 @@ list.
 
 ---
 
-
-
 ### Translated property (list box)
 
     bool ListBox.Translated
@@ -526,5 +488,4 @@ Gets/sets whether the list box's items are translated to the selected
 game language at runtime.
 
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
-
 

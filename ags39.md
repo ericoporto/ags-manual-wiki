@@ -105,4 +105,3 @@ All the following variables are `int` variables.
   player.\[x,y,name,...\]                          Alias to the current player character.
 ---
 
-

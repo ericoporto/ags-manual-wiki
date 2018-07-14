@@ -49,8 +49,6 @@ Object functions and properties
 
 ---
 
-
-
 ### Animate (object)
 
 *(Formerly known as AnimateObject, which is now obsolete)*\
@@ -103,8 +101,6 @@ speed 3. The function won't return until the animation is finished.
 
 ---
 
-
-
 ### GetAtScreenXY (object)
 
 *(Formerly known as global function GetObjectAt, which is now obsolete)*
@@ -129,8 +125,6 @@ will execute the code only if object oRock is on the screen coordinates
 [Game.GetLocationName](ags54#Game.GetLocationName)
 
 ---
-
-
 
 ### GetProperty (object)
 
@@ -158,8 +152,6 @@ than 200.
 
 ---
 
-
-
 ### GetTextProperty (object)
 
 *(Formerly known as GetObjectPropertyText, which is now obsolete)*\
@@ -185,8 +177,6 @@ will retrieve Object 0's "description" property then display it.
 *See Also:* [Object.GetProperty](ags68#Object.GetProperty)
 
 ---
-
-
 
 ### SetProperty (object)
 
@@ -214,8 +204,6 @@ will change Table's "ItemCapacity" custom property to 5.
 
 ---
 
-
-
 ### SetTextProperty (object)
 
     void Object.SetTextProperty(const string property, const string value)
@@ -239,8 +227,6 @@ will change table's "description" property.
 *See Also:* [Object.SetProperty](ags68#Object.SetProperty)
 
 ---
-
-
 
 ### IsCollidingWithObject (object)
 
@@ -266,8 +252,6 @@ will display the message if the objects 2 and 3 are colliding.
 *See Also:* [AreThingsOverlapping](ags73#AreThingsOverlapping)
 
 ---
-
-
 
 ### MergeIntoBackground
 
@@ -296,8 +280,6 @@ will merge the object's image into the room's background image and make
 the object unusable.
 
 ---
-
-
 
 ### Move (object)
 
@@ -337,8 +319,6 @@ object gets there.
 
 ---
 
-
-
 ### RemoveTint (object)
 
 *(Formerly known as RemoveObjectTint, which is now obsolete)*
@@ -359,8 +339,6 @@ will tint object 1 green for a second, then turn it back to normal.
 *See Also:* [Object.Tint](ags68#Object.Tint)
 
 ---
-
-
 
 ### IsInteractionAvailable (object)
 
@@ -386,8 +364,6 @@ Example:
 
 ---
 
-
-
 ### RunInteraction (object)
 
 *(Formerly known as RunObjectInteraction, which is now obsolete)*
@@ -410,8 +386,6 @@ handler.
 [Hotspot.RunInteraction](ags63#Hotspot.RunInteraction)
 
 ---
-
-
 
 ### SetLightLevel (object)
 
@@ -449,8 +423,6 @@ This will give the lamp maximal individual brightness.
 
 ---
 
-
-
 ### SetPosition (object)
 
 *(Formerly known as SetObjectPosition, which is now obsolete)*
@@ -475,8 +447,6 @@ will change object's 2 position to 50,100.
 [Object.Y](ags68#Object.Y)
 
 ---
-
-
 
 ### SetView
 
@@ -504,8 +474,6 @@ view 5, loop 2, frame 0.
 
 ---
 
-
-
 ### StopAnimating (object)
 
     Object.StopAnimating()
@@ -525,8 +493,6 @@ will stop object 2 animating if it currently is doing so.
 [Object.Animating](ags68#Object.Animating)
 
 ---
-
-
 
 ### StopMoving (object)
 
@@ -550,8 +516,6 @@ will stop object 2 moving if it currently is doing so.
 [Character.StopMoving](ags47#Character.StopMoving)
 
 ---
-
-
 
 ### Tint (object)
 
@@ -588,8 +552,6 @@ will tint object 1 green.
 
 ---
 
-
-
 ### Animating property (object)
 
 *(Formerly known as IsObjectAnimating, which is now obsolete)*
@@ -618,8 +580,6 @@ you wouldn't need to do this.
 [Object.X](ags68#Object.X), [Object.Y](ags68#Object.Y)
 
 ---
-
-
 
 ### Baseline property (object)
 
@@ -651,8 +611,6 @@ will change object's 4 baseline to a line positioned at y coordinate
 
 ---
 
-
-
 ### BlockingHeight property (object)
 
     int Object.BlockingHeight
@@ -682,8 +640,6 @@ its baseline)
 [Object.Solid](ags68#Object.Solid)
 
 ---
-
-
 
 ### BlockingWidth property (object)
 
@@ -715,8 +671,6 @@ his centre, and 25 to the right)
 
 ---
 
-
-
 ### Clickable property (object)
 
 *(Formerly known as SetObjectClickable, which is now obsolete)*
@@ -743,8 +697,6 @@ will make object 2 ignore clicks from the player.
 
 ---
 
-
-
 ### Frame property (object)
 
     readonly int Object.Frame
@@ -767,8 +719,6 @@ will display the oDoor object's current frame number
 [Object.View](ags68#Object.View)
 
 ---
-
-
 
 ### Graphic property (object)
 
@@ -793,8 +743,6 @@ manager's slot 100.
 
 ---
 
-
-
 ### HasExplicitLight property (object)
 
     readonly bool Object.HasExplicitTint
@@ -813,8 +761,6 @@ light.
 
 ---
 
-
-
 ### HasExplicitTint property (object)
 
     readonly bool Object.HasExplicitTint
@@ -832,8 +778,6 @@ tinted by [SetAmbientTint](ags54#SetAmbientTint) or a region tint.
 
 ---
 
-
-
 ### ID property (object)
 
     readonly int Object.ID
@@ -850,8 +794,6 @@ uses the obsolete MoveObject function to move the Rock object to (100,
 50) at speed 5.
 
 ---
-
-
 
 ### IgnoreScaling property (object)
 
@@ -875,8 +817,6 @@ will tell the Door object not to be scaled on walkable areas.
 [Object.IgnoreWalkbehinds](ags68#Object.IgnoreWalkbehinds)
 
 ---
-
-
 
 ### IgnoreWalkbehinds property (object)
 
@@ -909,8 +849,6 @@ will make object 1 ignore walk behinds.
 
 ---
 
-
-
 ### LightLevel property
 
     readonly int Object.LightLevel
@@ -928,8 +866,6 @@ property returns the light level value. Otherwise it returns 0.
 [SetAmbientLightLevel](ags54#SetAmbientLightLevel),
 
 ---
-
-
 
 ### Loop property (object)
 
@@ -953,8 +889,6 @@ will display the oDoor object's current loop number
 [Object.View](ags68#Object.View)
 
 ---
-
-
 
 ### Moving property (object)
 
@@ -981,8 +915,6 @@ object gets there.
 
 ---
 
-
-
 ### Name property (object)
 
 *(Formerly known as GetObjectName, which is now obsolete)*\
@@ -1004,8 +936,6 @@ will retrieve and then display object 0's name.
 *See Also:* [Game.GetLocationName](ags54#Game.GetLocationName)
 
 ---
-
-
 
 ### Solid property (object)
 
@@ -1031,8 +961,6 @@ will mean that the Smallrock object blocks the path of characters.
 
 ---
 
-
-
 ### TintBlue property (object)
 
     readonly int Object.TintBlue
@@ -1055,8 +983,6 @@ false, then this value is meaningless.
 [Object.TintLuminance](ags68#Object.TintLuminance)
 
 ---
-
-
 
 ### TintGreen property (object)
 
@@ -1081,8 +1007,6 @@ false, then this value is meaningless.
 
 ---
 
-
-
 ### TintRed property (object)
 
     readonly int Object.TintRed
@@ -1105,8 +1029,6 @@ false, then this value is meaningless.
 [Object.TintLuminance](ags68#Object.TintLuminance)
 
 ---
-
-
 
 ### TintSaturation property (object)
 
@@ -1131,8 +1053,6 @@ false, then this value is meaningless.
 
 ---
 
-
-
 ### TintLuminance property (object)
 
     readonly int Object.TintLuminance
@@ -1155,8 +1075,6 @@ false, then this value is meaningless.
 [Object.TintSaturation](ags68#Object.TintSaturation)
 
 ---
-
-
 
 ### Transparency property (object)
 
@@ -1201,8 +1119,6 @@ to being fully invisible.
 
 ---
 
-
-
 ### View property (object)
 
     readonly int Object.View
@@ -1227,8 +1143,6 @@ will display the oDoor object's current view number
 
 ---
 
-
-
 ### Visible property (object)
 
 *(Formerly known as IsObjectOn, which is now obsolete)*\
@@ -1248,8 +1162,6 @@ Example:
 will make object number 5 in the current room disappear.
 
 ---
-
-
 
 ### X property (object)
 
@@ -1273,8 +1185,6 @@ will display the X co-ordinate of object 1.
 [Object.SetPosition](ags68#Object.SetPosition)
 
 ---
-
-
 
 ### Y property (object)
 
@@ -1302,5 +1212,4 @@ will display the Y co-ordinate of object 1.
 [Object.Baseline](ags68#Object.Baseline),
 [Object.X](ags68#Object.X),
 [Object.SetPosition](ags68#Object.SetPosition)
-
 

@@ -16,8 +16,6 @@ Region functions and properties
 
 ---
 
-
-
 ### GetAtRoomXY (region)
 
 *(Formerly known as global function GetRegionAt, which is now obsolete)*
@@ -41,8 +39,6 @@ Example:
 *See Also:* [GetWalkableAreaAt](ags73#GetWalkableAreaAt)
 
 ---
-
-
 
 ### RunInteraction (region)
 
@@ -72,8 +68,6 @@ walks onto region" for region 4.
 [Hotspot.RunInteraction](ags63#Hotspot.RunInteraction)
 
 ---
-
-
 
 ### Tint (region)
 
@@ -111,8 +105,6 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 
 ---
 
-
-
 ### Enabled property (region)
 
 *(Formerly known as DisableRegion, which is now obsolete)*\
@@ -141,8 +133,6 @@ will disable region number 3.
 
 ---
 
-
-
 ### ID property (region)
 
     readonly int Region.ID
@@ -159,8 +149,6 @@ displays region 3's number (which will be 3).
 *See Also:* [Region.GetAtRoomXY](ags72#Region.GetAtRoomXY)
 
 ---
-
-
 
 ### LightLevel property
 
@@ -207,8 +195,6 @@ will set region 2's level light to 100 if the Global Integer 10 is 1.
 
 ---
 
-
-
 ### TintEnabled property
 
     readonly bool Region.TintEnabled
@@ -232,8 +218,6 @@ will display a message if region 4 is tinted
 *See Also:* [Region.Tint](ags72#Region.Tint)
 
 ---
-
-
 
 ### TintBlue property
 
@@ -264,8 +248,6 @@ will display a message with the region's tints.
 [Region.TintLuminance](ags72#Region.TintLuminance)
 
 ---
-
-
 
 ### TintGreen property
 
@@ -298,8 +280,6 @@ will display a message with the region's tints.
 
 ---
 
-
-
 ### TintRed property
 
     readonly int Region.TintRed
@@ -330,8 +310,6 @@ will display a message with the region's tints.
 [Region.TintLuminance](ags72#Region.TintLuminance)
 
 ---
-
-
 
 ### TintSaturation property
 
@@ -364,8 +342,6 @@ will display a message with the region's tints.
 
 ---
 
-
-
 ### TintLuminance property
 
     readonly int Region.TintLuminance
@@ -384,5 +360,4 @@ property is false, then this value is meaningless.
 [Region.TintGreen](ags72#Region.TintGreen),
 [Region.TintRed](ags72#Region.TintRed),
 [Region.TintSaturation](ags72#Region.TintSaturation)
-
 

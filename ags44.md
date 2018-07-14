@@ -26,8 +26,6 @@ Script language keywords
 
 ---
 
-
-
 ### Arrays
 
 *data\_type* *name* `[` *size* `];`
@@ -65,8 +63,6 @@ corresponds to the player character's ID number to 10.
 See Also: [Dynamic arrays](ags37#DynamicArrays)
 
 ---
-
-
 
 ### Data types
 
@@ -114,8 +110,6 @@ point arithmetic.
 
 ---
 
-
-
 ### Operators
 
 The AGS scripting engine supports the following operators in
@@ -130,7 +124,6 @@ The "Left-to-right operator precedence" option on the General Settings
 pane allows you to control this behaviour.
 
 ****
-
 
     Operator  Description              Example
 
@@ -174,8 +167,6 @@ this:
 `if ((!a) && (b < 4))`
 
 ---
-
-
 
 ### Constants
 
@@ -232,8 +223,6 @@ limit, use the
 
 ---
 
-
-
 ### Version checking
 
 If you are writing a script module, you may need to check which version
@@ -253,8 +242,6 @@ Note that this ability was only added in 2.72, so you cannot use the
 than this.
 
 ---
-
-
 
 ### if, else statements
 
@@ -297,8 +284,6 @@ if it is not.
     }
 
 ---
-
-
 
 ### switch, case statements
 
@@ -359,8 +344,6 @@ mentioned in this switch, they would go straight to default line.
 
 ---
 
-
-
 ### while
 
 **while (** *expression* **)** `{`\
@@ -380,8 +363,6 @@ not zero. Once it is zero, the **while** statement will exit at the end
 of the loop.
 
 ---
-
-
 
 ### do..while
 
@@ -407,8 +388,6 @@ continue run it repeatedly, as long as the right arrow key is pressed by
 player.
 
 ---
-
-
 
 ### for
 
@@ -455,8 +434,6 @@ coordinate x = 100.
 
 ---
 
-
-
 ### break
 
 **break**;
@@ -479,8 +456,6 @@ not zero. If player presses Escape key, the loop is terminated
 immediately.
 
 ---
-
-
 
 ### continue
 
@@ -508,8 +483,6 @@ will run first part of the loop statements always, and second part only
 when `i <= 50`.
 
 ---
-
-
 
 ### function
 
@@ -556,8 +529,6 @@ cannot be specified in the actual function declaration itself.
 
 ---
 
-
-
 ### return
 
 **return**;
@@ -590,8 +561,6 @@ naturally:
     }
 
 ---
-
-
 
 ### struct
 
@@ -640,8 +609,6 @@ structs are essential if you have complex data that you need to store in
 your scripts.
 
 ---
-
-
 
 ### managed (struct)
 
@@ -737,8 +704,6 @@ AGS](ags31#Pointers)
 
 ---
 
-
-
 ### new
 
 *pointer\_variable* = **new** *managed\_type*;
@@ -768,8 +733,6 @@ See Also: [managed (struct)](ags44#managedmodifier), [Pointers in
 AGS](ags31#Pointers)
 
 ---
-
-
 
 ### enum
 
@@ -829,8 +792,6 @@ they're very handy.
 
 ---
 
-
-
 ### this
 
 There are two uses for the `this` keyword.
@@ -870,8 +831,6 @@ for details.
 
 ---
 
-
-
 ### import
 
 **import** *declaration* ;
@@ -902,8 +861,6 @@ apply to new-style `String` variables).
 
 ---
 
-
-
 ### export
 
 **export** *variable* \[, *variable* ... \] ;
@@ -920,8 +877,6 @@ For example:
 This exports three variables - my\_variable, counter and strength.
 
 ---
-
-
 
 ### noloopcheck
 

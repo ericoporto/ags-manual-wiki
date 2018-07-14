@@ -11,8 +11,6 @@ Overlay functions and properties
 
 ---
 
-
-
 ### CreateGraphical
 
 *(Formerly known as CreateGraphicOverlay, which is now obsolete)*
@@ -45,8 +43,6 @@ it.
 [Overlay.Remove](ags69#Overlay.Remove)
 
 ---
-
-
 
 ### CreateTextual
 
@@ -107,8 +103,6 @@ removed.
 
 ---
 
-
-
 ### Remove (overlay)
 
 *(Formerly known as RemoveOverlay, which is now obsolete)*
@@ -130,8 +124,6 @@ and then remove the overlay from the screen.
 *See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual)
 
 ---
-
-
 
 ### SetText (overlay)
 
@@ -160,8 +152,6 @@ and then replace the overlay with another one.
 
 ---
 
-
-
 ### Valid property (overlay)
 
 *(Formerly known as IsOverlayValid, which is now obsolete)*
@@ -185,8 +175,6 @@ Then, removes the overlay and prints Valid again (which will now be 0).
 [Overlay.Remove](ags69#Overlay.Remove)
 
 ---
-
-
 
 ### X property (overlay)
 
@@ -215,8 +203,6 @@ creates a text overlay, then gradually slides it across the screen.
 [Overlay.Remove](ags69#Overlay.Remove)
 
 ---
-
-
 
 ### Y property (overlay)
 

@@ -292,6 +292,5 @@ We've covered some of the more advanced topics of scripting. I'm sure
 there's a lot of stuff I've forgotten to mention, so feel free to
 comment on it on the forums. \
 
-
 Page created 7 June 2002; updated 19 August 2007. Copyright (c)
 2002-2007 Chris Jones.

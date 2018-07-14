@@ -24,8 +24,6 @@ has its own specific section.
 
 ---
 
-
-
 ### GetAtScreenXY (GUI control)
 
 *(Formerly known as GetGUIObjectAt, which is now obsolete)*
@@ -55,8 +53,6 @@ will display what control the mouse is over.
 *See Also:* [GUI.GetAtScreenXY](ags55#GUI.GetAtScreenXY)
 
 ---
-
-
 
 ### AsType properties (GUI controls)
 
@@ -88,8 +84,6 @@ that control is not a button, prints a message.
 
 ---
 
-
-
 ### BringToFront (GUI controls)
 
     GUIControl.BringToFront()
@@ -112,8 +106,6 @@ on the GUI.
 [GUIControl.ZOrder](ags56#GUIControl.ZOrder)
 
 ---
-
-
 
 ### Clickable property (GUI controls)
 
@@ -149,8 +141,6 @@ will make the *btnSaveGame* button non-clickable.
 *See Also:* [GUIControl.Enabled](ags56#GUIControl.Enabled)
 
 ---
-
-
 
 ### Enabled property (GUI controls)
 
@@ -191,8 +181,6 @@ will disable the *btnSaveGame* button.
 
 ---
 
-
-
 ### Height property (GUI controls)
 
     int GUIControl.Height;
@@ -214,8 +202,6 @@ makes the *btnConfirm* button 20 pixels high.
 [GUIControl.Width](ags56#GUIControl.Width)
 
 ---
-
-
 
 ### ID property (GUI controls)
 
@@ -241,8 +227,6 @@ list box, and then uses the equivalent modern property to disable it.
 [GUI.ID](ags55#GUI.ID)
 
 ---
-
-
 
 ### OwningGUI property (GUI controls)
 
@@ -273,8 +257,6 @@ again using the niftier full pathing approach.
 
 ---
 
-
-
 ### SendToBack (GUI controls)
 
     GUIControl.SendToBack()
@@ -298,8 +280,6 @@ the GUI.
 [GUIControl.ZOrder](ags56#GUIControl.ZOrder)
 
 ---
-
-
 
 ### SetPosition (GUI controls)
 
@@ -333,8 +313,6 @@ GUI.
 
 ---
 
-
-
 ### SetSize (GUI controls)
 
 *(Formerly known as SetGUIObjectSize, which is now obsolete)*
@@ -365,8 +343,6 @@ will resize the *invMain* control to have a size of 160 x 100.
 
 ---
 
-
-
 ### Visible property (GUI controls)
 
     bool GUIControl.Visible
@@ -392,8 +368,6 @@ will make the *btnSaveGame* button invisible.
 
 ---
 
-
-
 ### Width property (GUI controls)
 
     int GUIControl.Width;
@@ -415,8 +389,6 @@ makes the *btnConfirm* button 110 pixels wide.
 [GUIControl.SetSize](ags56#GUIControl.SetSize)
 
 ---
-
-
 
 ### X property (GUI controls)
 
@@ -444,8 +416,6 @@ left of its GUI.
 
 ---
 
-
-
 ### Y property (GUI controls)
 
     int GUIControl.Y;
@@ -471,8 +441,6 @@ top of its GUI.
 [GUIControl.X](ags56#GUIControl.X)
 
 ---
-
-
 
 ### ZOrder property (GUI controls)
 
@@ -505,5 +473,4 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 *See Also:*
 [GUIControl.BringToFront](ags56#GUIControl.BringToFront),
 [GUIControl.SendToBack](ags56#GUIControl.SendToBack)
-
 

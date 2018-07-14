@@ -21,8 +21,6 @@ File functions and properties
 
 ---
 
-
-
 ### Open
 
 *(Formerly known as FileOpen, which is now obsolete)*
@@ -96,8 +94,6 @@ it will write the string "test string" to the file and close it.
 
 ---
 
-
-
 ### Close
 
 *(Formerly known as FileClose, which is now obsolete)*
@@ -119,8 +115,6 @@ it.
 *See Also:* [File.Open](ags53#File.Open)
 
 ---
-
-
 
 ### Delete (file)
 
@@ -147,8 +141,6 @@ exists.
 [File.Open](ags53#File.Open)
 
 ---
-
-
 
 ### Exists
 
@@ -185,8 +177,6 @@ will create the file "temp.tmp" if it doesn't exist
 
 ---
 
-
-
 ### ReadInt
 
 *(Formerly known as FileReadInt, which is now obsolete)*
@@ -210,8 +200,6 @@ the file.
 [File.WriteInt](ags53#File.WriteInt)
 
 ---
-
-
 
 ### ReadRawChar
 
@@ -238,8 +226,6 @@ string 'buffer'.
 
 ---
 
-
-
 ### ReadRawInt
 
 *(Formerly known as FileReadRawInt, which is now obsolete)*
@@ -265,8 +251,6 @@ number.
 [File.ReadRawChar](ags53#File.ReadRawChar)
 
 ---
-
-
 
 ### ReadRawLineBack
 
@@ -299,8 +283,6 @@ will display the contents of the 'error.log' file, if it exists
 
 ---
 
-
-
 ### ReadStringBack
 
 *(Formerly known as FileRead, which is now obsolete)*\
@@ -327,8 +309,6 @@ file.
 [File.WriteString](ags53#File.WriteString)
 
 ---
-
-
 
 ### Seek (file)
 
@@ -375,8 +355,6 @@ will open the file test.dat, read `first_value`, skip 256 bytes, read
 
 ---
 
-
-
 ### WriteInt
 
 *(Formerly known as FileWriteInt, which is now obsolete)*
@@ -400,8 +378,6 @@ will open the file stats.dat and write the integer number in it.
 [File.WriteString](ags53#File.WriteString)
 
 ---
-
-
 
 ### WriteRawChar
 
@@ -434,8 +410,6 @@ the file.
 
 ---
 
-
-
 ### WriteRawLine
 
 *(Formerly known as FileWriteRawLine, which is now obsolete)*
@@ -461,8 +435,6 @@ will write an error line in the file error.log.
 [File.WriteString](ags53#File.WriteString)
 
 ---
-
-
 
 ### WriteString
 
@@ -493,8 +465,6 @@ it will display an error message. Otherwise, it will write the string
 
 ---
 
-
-
 ### EOF property
 
 *(Formerly known as FileIsEOF, which is now obsolete)*
@@ -522,8 +492,6 @@ screen.
 [File.ReadStringBack](ags53#File.ReadStringBack)
 
 ---
-
-
 
 ### Error property
 
@@ -561,8 +529,6 @@ there was a problem.
 
 ---
 
-
-
 ### Position property (file)
 
     readonly int File.Position
@@ -590,5 +556,4 @@ display amount of data that function wrote.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:* [File.Seek](ags53#File.Seek)
-
 

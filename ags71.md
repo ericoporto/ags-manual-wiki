@@ -8,8 +8,6 @@ Parser functions
 
 ---
 
-
-
 ### FindWordID
 
     static int Parser.FindWordID(string wordToFind)
@@ -45,8 +43,6 @@ will display a message if the game dictionary includes "machine"
 
 ---
 
-
-
 ### ParseText
 
     static Parser.ParseText(string text)
@@ -68,8 +64,6 @@ the said command.
 [Parser.Said](ags71#Parser.Said)
 
 ---
-
-
 
 ### Said
 
@@ -97,8 +91,6 @@ the text parser.
 [Parser.SaidUnknownWord](ags71#Parser.SaidUnknownWord)
 
 ---
-
-
 
 ### SaidUnknownWord
 

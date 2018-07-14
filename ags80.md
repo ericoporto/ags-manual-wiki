@@ -32,8 +32,6 @@ variable](#SCUMM_VERBCOIN_GUI.doubleclick)
 
 ---
 
-
-
 ### SCUMM\_VERBCOIN\_GUI Deselect
 
     static SCUMM_VERBCOIN_GUI.Deselect()
@@ -49,8 +47,6 @@ available if you used this template to create your game.
 [SCUMM\_VERBCOIN\_GUI.Select](ags80#SCUMM_VERBCOIN_GUI.Select)
 
 ---
-
-
 
 ### SCUMM\_VERBCOIN\_GUI DisableVerbCoinGUI
 
@@ -69,8 +65,6 @@ Example:
 will disable all verbcoin processing code.
 
 ---
-
-
 
 ### SCUMM\_VERBCOIN\_GUI DoubleClickSpeed
 
@@ -95,8 +89,6 @@ default)
 
 ---
 
-
-
 ### SCUMM\_VERBCOIN\_GUI GoInventory
 
     static SCUMM_VERBCOIN_GUI.GoInventory()
@@ -107,8 +99,6 @@ This function opens and closes your inventory.
 available if you used this template to create your game.
 
 ---
-
-
 
 ### SCUMM\_VERBCOIN\_GUI Item\_Count
 
@@ -136,8 +126,6 @@ item 11, 21, 31, ...
 
 ---
 
-
-
 ### SCUMM\_VERBCOIN\_GUI InvScroll\_Left
 
     static SCUMM_VERBCOIN_GUI.InvScroll_Left()
@@ -154,8 +142,6 @@ available if you used this template to create your game.
 
 ---
 
-
-
 ### SCUMM\_VERBCOIN\_GUI InvScroll\_Right
 
     static SCUMM_VERBCOIN_GUI.InvScroll_Right()
@@ -171,8 +157,6 @@ available if you used this template to create your game.
 [SCUMM\_VERBCOIN\_GUI.InvScroll\_Left](ags80#SCUMM_VERBCOIN_GUI.InvScroll_Left)
 
 ---
-
-
 
 ### SCUMM\_VERBCOIN\_GUI Inv\_Border\_active
 
@@ -197,8 +181,6 @@ the top or the bottom of the screen.
 [SCUMM\_VERBCOIN\_GUI.Inv\_Border\_SetPos](ags80#SCUMM_VERBCOIN_GUI.Inv_Border_SetPos)
 
 ---
-
-
 
 ### SCUMM\_VERBCOIN\_GUI Inv\_Border\_SetPos
 
@@ -225,8 +207,6 @@ border to x-coordinate 295
 [SCUMM\_VERBCOIN\_GUI.Inv\_Border\_active](ags80#SCUMM_VERBCOIN_GUI.Inv_Border_active)
 
 ---
-
-
 
 ### SCUMM\_VERBCOIN\_GUI Inventory\_GUI
 
@@ -259,8 +239,6 @@ underlay gui is GUI nr.3
 
 ---
 
-
-
 ### SCUMM\_VERBCOIN\_GUI RunInteraction
 
     static SCUMM_VERBCOIN_GUI.RunInteraction(CursorMode)
@@ -280,8 +258,6 @@ Example:
 
 ---
 
-
-
 ### SCUMM\_VERBCOIN\_GUI Select
 
     static SCUMM_VERBCOIN_GUI.Select()
@@ -297,8 +273,6 @@ available if you used this template to create your game.
 [SCUMM\_VERBCOIN\_GUI.RunInteraction](ags80#SCUMM_VERBCOIN_GUI.RunInteraction)
 
 ---
-
-
 
 ### SCUMM\_VERBCOIN\_GUI Verbcoin\_GUI
 
@@ -322,8 +296,6 @@ will tell the module your verbcoin gui is GUI nr.1
 
 ---
 
-
-
 ### SCUMM\_VERBCOIN\_GUI verbgraphic
 
     static SCUMM_VERBCOIN_GUI.verbgraphic(ButtonChoice, int sprite_number)
@@ -344,8 +316,6 @@ Example:
 will set the sprite for moving over the talk button to sprite 2
 
 ---
-
-
 
 ### SCUMM\_VERBCOIN\_GUI doubleclick variable
 
@@ -370,5 +340,4 @@ the object/hotspot/character/...
 
 *See Also:*
 [SCUMM\_VERBCOIN\_GUI.DoubleClickSpeed](ags80#SCUMM_VERBCOIN_GUI.DoubleClickSpeed)
-
 

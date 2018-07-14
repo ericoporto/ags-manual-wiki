@@ -35,7 +35,6 @@ which event has occurred. This allows you to perform checks or update
 things every time the player does something, regardless of which room it
 is in. The possible values of event are:
 
-
     eEventEnterRoomBeforeFadein
           called just before room Player Enters Room event is run.
           DATA = new room number
@@ -107,7 +106,6 @@ Called when an event occurs, but no handler is set up in the Events
 list. This could be used to display a default "I can't do that" type of
 message. The values of WHAT and TYPE tell you what the player did.\
 The possible values are listed below:
-
 
      WHAT TYPE Description
       1    1   Look at hotspot

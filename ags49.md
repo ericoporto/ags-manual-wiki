@@ -15,8 +15,6 @@ Dialog functions and properties
 
 ---
 
-
-
 ### DisplayOptions (dialog)
 
     int Dialog.DisplayOptions(optional DialogOptionSayStyle)
@@ -68,8 +66,6 @@ depending on what the player selected.
 
 ---
 
-
-
 ### GetOptionState (dialog)
 
 *(Formerly known as global function GetDialogOption, which is now
@@ -110,8 +106,6 @@ currently switched on.
 
 ---
 
-
-
 ### GetOptionText (dialog)
 
     String Dialog.GetOptionText(int option)
@@ -134,8 +128,6 @@ will display the text for the third option of the dJoeBloggs dialog.
 [Dialog.GetOptionState](ags49#Dialog.GetOptionState)
 
 ---
-
-
 
 ### HasOptionBeenChosen
 
@@ -164,8 +156,6 @@ before.
 
 ---
 
-
-
 ### ID property (dialog)
 
     readonly int Dialog.ID;
@@ -184,8 +174,6 @@ will display the ID number of the dFisherman dialog
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 ---
-
-
 
 ### OptionCount property (dialog)
 
@@ -208,8 +196,6 @@ will display the number of options in the dFisherman dialog.
 [Dialog.GetOptionState](ags49#Dialog.GetOptionState)
 
 ---
-
-
 
 ### SetHasOptionBeenChosen (dialog)
 
@@ -237,8 +223,6 @@ will mark option 1 of dialog dDialog1 as "not chosen yet".
 [Dialog.HasOptionBeenChosen](ags49#Dialog.HasOptionBeenChosen)
 
 ---
-
-
 
 ### SetOptionState (dialog)
 
@@ -281,8 +265,6 @@ will enable option 2 of topic number 4 if the Global Integer 10 is 1.
 
 ---
 
-
-
 ### ShowTextParser property (dialog)
 
     readonly bool Dialog.ShowTextParser;
@@ -304,8 +286,6 @@ will display a message if dFisherman has the option enabled
 *Compatibility:* Supported by **AGS 3.2.1** and later versions.
 
 ---
-
-
 
 ### Start (dialog)
 
@@ -333,8 +313,6 @@ will start the conversation topic named dMerchant.
 
 ---
 
-
-
 ### StopDialog
 
     StopDialog ()
@@ -357,5 +335,4 @@ Example:
 will give the player the inventory item 3 and then end the conversation.
 
 *See Also:* [Dialog.SetOptionState](ags49#Dialog.SetOptionState)
-
 

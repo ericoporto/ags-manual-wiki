@@ -29,8 +29,6 @@ GUI InvWindow functions and properties
 
 ---
 
-
-
 ### ScrollDown (inv window)
 
     InvWindow.ScrollDown()
@@ -52,8 +50,6 @@ will scroll the *invMain* inv window down one row.
 [InvWindow.TopItem](ags58#InvWindow.TopItem)
 
 ---
-
-
 
 ### ScrollUp (inv window)
 
@@ -77,8 +73,6 @@ will scroll the *invMain* inv window up one row.
 
 ---
 
-
-
 ### CharacterToUse property
 
     Character* InvWindow.CharacterToUse;
@@ -96,8 +90,6 @@ will change the *invMain* inventory window to display character JACK's
 inventory.
 
 ---
-
-
 
 ### ItemAtIndex property
 
@@ -121,8 +113,6 @@ inventory window.
 *See Also:* [InvWindow.ItemCount](ags58#InvWindow.ItemCount)
 
 ---
-
-
 
 ### ItemCount property (inv window)
 
@@ -151,8 +141,6 @@ more inventory items than will fit in the inventory window.
 
 ---
 
-
-
 ### ItemHeight property
 
 *(Formerly known as SetInvDimensions, which is now obsolete)*
@@ -174,8 +162,6 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 [InvWindow.RowCount](ags58#InvWindow.RowCount)
 
 ---
-
-
 
 ### ItemWidth property
 
@@ -199,8 +185,6 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 
 ---
 
-
-
 ### ItemsPerRow property
 
 *(Formerly known as game.items\_per\_line, which is now obsolete)*
@@ -222,8 +206,6 @@ displays how many items can be visible in the invMain window at once.
 
 ---
 
-
-
 ### RowCount property (inv window)
 
     readonly int InvWindow.RowCount;
@@ -242,8 +224,6 @@ displays how many items can be visible in the invMain window at once.
 [InvWindow.ItemsPerRow](ags58#InvWindow.ItemsPerRow)
 
 ---
-
-
 
 ### TopItem property (inv window)
 
@@ -270,5 +250,4 @@ makes the *btnScrollUp* button visible or invisible depending on whether
 the inventory list can be scrolled up.
 
 *See Also:* [InvWindow.ItemCount](ags58#InvWindow.ItemCount)
-
 

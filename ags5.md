@@ -13,4 +13,3 @@ versions).
 **NOTE:** The demo game is currently under development. It has various
 unfinished or unimplemented areas.
 
-

@@ -14,8 +14,6 @@ commands in this section allow to play them.
 
 ---
 
-
-
 ### Play
 
 *(Formerly known as PlayAmbientSound, which is now obsolete)*\
@@ -60,8 +58,6 @@ plays the *aExplosion* audio clip.
 
 ---
 
-
-
 ### PlayFrom
 
     AudioChannel* AudioClip.PlayFrom(int position, optional AudioPriority,
@@ -87,8 +83,6 @@ it is OGG/MP3).
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ---
-
-
 
 ### PlayQueued
 
@@ -126,8 +120,6 @@ be played afterwards.
 
 ---
 
-
-
 ### Stop (audio clip)
 
     AudioClip.Stop()
@@ -148,8 +140,6 @@ again.
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ---
-
-
 
 ### FileType property (audio clip)
 
@@ -175,8 +165,6 @@ displays a message if aExplosion is a MIDI file
 [AudioClip.PlayFrom](ags46#AudioClip.PlayFrom)
 
 ---
-
-
 
 ### IsAvailable property (audio clip)
 
@@ -207,8 +195,6 @@ checks if the aExplosion audio clip is available, and if so plays it.
 *See Also:* [AudioClip.Play](ags46#AudioClip.Play)
 
 ---
-
-
 
 ### Type property (audio clip)
 

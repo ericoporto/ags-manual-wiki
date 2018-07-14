@@ -25,8 +25,6 @@ System functions and properties
 
 ---
 
-
-
 ### AudioChannelCount property
 
     readonly static int System.AudioChannelCount;
@@ -49,8 +47,6 @@ will display a message with the number of audio channels.
 
 ---
 
-
-
 ### AudioChannels property
 
     readonly static AudioChannel* System.AudioChannels[];
@@ -72,8 +68,6 @@ will display a message with Audio Channel 2's current volume.
 [System.AudioChannelCount](ags77#System.AudioChannelCount)
 
 ---
-
-
 
 ### CapsLock property
 
@@ -100,8 +94,6 @@ will display a message if Caps Lock is on.
 
 ---
 
-
-
 ### ColorDepth property (system)
 
 *(Formerly known as system.color\_depth, which is now obsolete)*
@@ -123,8 +115,6 @@ will display the current resolution and colour depth
 [System.ScreenWidth](ags77#System.ScreenWidth)
 
 ---
-
-
 
 ### Gamma property
 
@@ -154,8 +144,6 @@ will turn the screen brightness up to `50%` higher than normal
 
 ---
 
-
-
 ### HardwareAcceleration property
 
     readonly static bool System.HardwareAcceleration;
@@ -184,8 +172,6 @@ acceleration
 See Also: [AGS Graphics Drivers](ags6#GraphicsDriver)
 
 ---
-
-
 
 ### HasInputFocus property
 
@@ -223,8 +209,6 @@ switches back to game.
 
 ---
 
-
-
 ### NumLock property
 
     readonly static bool System.NumLock;
@@ -249,8 +233,6 @@ will display a message if Num Lock is on.
 [System.ScrollLock](ags77#System.ScrollLock)
 
 ---
-
-
 
 ### OperatingSystem property
 
@@ -280,8 +262,6 @@ Example:
 
 ---
 
-
-
 ### RenderAtScreenResolution property
 
     static bool System.RenderAtScreenResolution;
@@ -304,8 +284,6 @@ menu option for toggling it at runtime.
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
 ---
-
-
 
 ### RuntimeInfo property
 
@@ -333,8 +311,6 @@ Example:
 *See Also:* [Debug](ags54#Debug)
 
 ---
-
-
 
 ### ScreenHeight property
 
@@ -366,8 +342,6 @@ will display the current resolution and colour depth
 
 ---
 
-
-
 ### ScreenWidth property
 
 *(Formerly known as system.screen\_width, which is now obsolete)*
@@ -398,8 +372,6 @@ will display the current resolution and colour depth
 
 ---
 
-
-
 ### ScrollLock property
 
     readonly static bool System.ScrollLock;
@@ -425,8 +397,6 @@ will display a message if Scroll Lock is on.
 [System.NumLock](ags77#System.NumLock)
 
 ---
-
-
 
 ### SupportsGammaControl property
 
@@ -458,8 +428,6 @@ will display a message if the system supports changing the gamma
 
 ---
 
-
-
 ### Version property
 
 *(Formerly known as system.version, which is now obsolete)*
@@ -479,8 +447,6 @@ Example:
 will display the AGS version number
 
 ---
-
-
 
 ### ViewportHeight property
 
@@ -503,8 +469,6 @@ will display the current viewport size
 
 ---
 
-
-
 ### ViewportWidth property
 
 *(Formerly known as system.viewport\_width, which is now obsolete)*
@@ -525,8 +489,6 @@ will display the current viewport size
 [System.ViewportHeight](ags77#System.ViewportHeight)
 
 ---
-
-
 
 ### Volume property (system)
 
@@ -553,8 +515,6 @@ will set the overall output volume to 80.
 
 ---
 
-
-
 ### VSync property
 
 *(Formerly known as system.vsync, which is now obsolete)*
@@ -580,8 +540,6 @@ Example:
 will display a message if vsync is on
 
 ---
-
-
 
 ### Windowed property
 

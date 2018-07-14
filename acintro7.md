@@ -183,8 +183,6 @@ Now, hit F5 and try it out!
 OK, I think we've had enough of animations and cutscenes for now. We'll
 return later to explore actual animations and more complex cutscenes. 
 
-
-
 **Go to part 8:**  [Conversations](acintro8)
 
 Tutorial last updated 18 August 2007. Copyright (c) 2003-2007 Chris

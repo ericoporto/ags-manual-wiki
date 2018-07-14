@@ -13,8 +13,6 @@ Properties Window (when clicking the lightning bolt icon).
 
 ---
 
-
-
 ### Hotspot events
 
 Player stands on hotspot
@@ -57,8 +55,6 @@ use this to highlight the cursor, and for other various effects.
 
 ---
 
-
-
 ### Object events
 
 Look at object
@@ -82,8 +78,6 @@ works like "Use inventory on hotspot" - see that description (above) for
 more information.
 
 ---
-
-
 
 ### Room events
 
@@ -140,8 +134,6 @@ out.
 
 ---
 
-
-
 ### Inventory item events
 
 Look at inventory
@@ -180,8 +172,6 @@ item.
 
 ---
 
-
-
 ### Character events
 
 Look at character
@@ -209,8 +199,6 @@ talk and use\_inv) on the character.
 
 ---
 
-
-
 ### Region events
 
 While player stands on region
@@ -227,5 +215,4 @@ Player walks off region
 
 occurs when the player leaves the current region. Does not occur if they
 go to a different room.
-
 

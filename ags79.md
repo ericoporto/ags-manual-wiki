@@ -11,8 +11,6 @@ ViewFrame functions and properties
 
 ---
 
-
-
 ### Flipped property
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
@@ -36,8 +34,6 @@ Example:
 
 ---
 
-
-
 ### Frame property (view frame)
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
@@ -58,8 +54,6 @@ Example:
 
 ---
 
-
-
 ### Graphic property (view frame)
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
@@ -76,8 +70,6 @@ Example:
 *See Also:* [Game.GetViewFrame](ags54#Game.GetViewFrame)
 
 ---
-
-
 
 ### LinkedAudio property (view frame)
 
@@ -113,8 +105,6 @@ if so, plays it.
 
 ---
 
-
-
 ### Loop property (view frame)
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
@@ -135,8 +125,6 @@ Example:
 
 ---
 
-
-
 ### Speed property (view frame)
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
@@ -155,8 +143,6 @@ Example:
 
 ---
 
-
-
 ### View property (view frame)
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
@@ -174,5 +160,4 @@ Example:
 *See Also:* [Game.GetViewFrame](ags54#Game.GetViewFrame),
 [ViewFrame.Loop](ags79#ViewFrame.Loop),
 [ViewFrame.Frame](ags79#ViewFrame.Frame)
-
 

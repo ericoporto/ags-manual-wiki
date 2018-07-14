@@ -38,8 +38,6 @@ Room functions
 
 ---
 
-
-
 ### AreThingsOverlapping
 
     AreThingsOverlapping(int thing1, int thing2)
@@ -75,8 +73,6 @@ if object 2 was a bullet, for instance.
 
 ---
 
-
-
 ### DisableGroundLevelAreas
 
     DisableGroundLevelAreas(int disableTints)
@@ -109,8 +105,6 @@ will disable all ground-level events, but leave light levels working
 
 ---
 
-
-
 ### EnableGroundLevelAreas
 
     EnableGroundLevelAreas()
@@ -131,8 +125,6 @@ will re-enable all ground-level events.
 
 ---
 
-
-
 ### GetBackgroundFrame
 
     GetBackgroundFrame()
@@ -151,8 +143,6 @@ will turn on object 2 if the background frame of the room is frame 4.
 *See Also:* [SetBackgroundFrame](ags73#SetBackgroundFrame)
 
 ---
-
-
 
 ### GetDrawingSurfaceForBackground
 
@@ -193,8 +183,6 @@ background, then releases the image.
 
 ---
 
-
-
 ### GetPlayerCharacter
 
     GetPlayerCharacter ()
@@ -210,8 +198,6 @@ Example:
 *See Also:* [Character.ID](ags47#Character.ID)
 
 ---
-
-
 
 ### GetProperty (room)
 
@@ -243,8 +229,6 @@ box ticked.
 
 ---
 
-
-
 ### GetTextProperty (room)
 
 *(Formerly known as global function GetRoomPropertyText, which is now
@@ -273,8 +257,6 @@ will retrieve the room's "description" property then display it.
 *See Also:* [Room.GetProperty](ags73#Room.GetProperty)
 
 ---
-
-
 
 ### SetProperty (room)
 
@@ -305,8 +287,6 @@ will change room's "Darkness" custom property to 10.
 
 ---
 
-
-
 ### SetTextProperty (room)
 
     bool Room.SetTextProperty(const string property, const string value)
@@ -334,8 +314,6 @@ will change room's "description" property.
 
 ---
 
-
-
 ### GetScalingAt
 
     GetScalingAt (int x, int y)
@@ -354,8 +332,6 @@ Example:
 [SetAreaScaling](ags73#SetAreaScaling)
 
 ---
-
-
 
 ### GetViewportX
 
@@ -383,8 +359,6 @@ to the right.
 
 ---
 
-
-
 ### GetViewportY
 
     GetViewportY ()
@@ -408,8 +382,6 @@ to the bottom.
 [SetViewport](ags73#SetViewport)
 
 ---
-
-
 
 ### GetWalkableAreaAt
 
@@ -435,8 +407,6 @@ Example:
 [GetScalingAt](ags73#GetScalingAt)
 
 ---
-
-
 
 ### HasPlayerBeenInRoom
 
@@ -465,8 +435,6 @@ will display a message if the player has been to room 14.
 *See Also:* [ResetRoom](ags73#ResetRoom)
 
 ---
-
-
 
 ### ProcessClick (Room)
 
@@ -501,8 +469,6 @@ will simulate a click in the Look mode on co-ordinates (100, 50).
 
 ---
 
-
-
 ### ReleaseViewport
 
     ReleaseViewport ()
@@ -527,8 +493,6 @@ to its original position and unlock the screen viewport.
 
 ---
 
-
-
 ### RemoveWalkableArea
 
     RemoveWalkableArea (int areanum)
@@ -550,8 +514,6 @@ will make the walking area 5 unwalkable.
 *See Also:* [RestoreWalkableArea](ags73#RestoreWalkableArea)
 
 ---
-
-
 
 ### ResetRoom
 
@@ -582,8 +544,6 @@ to.
 
 ---
 
-
-
 ### RestoreWalkableArea
 
     RestoreWalkableArea (int areanum)
@@ -599,8 +559,6 @@ will make the walking area 4 walkable again.
 *See Also:* [RemoveWalkableArea](ags73#RemoveWalkableArea)
 
 ---
-
-
 
 ### SetAreaScaling
 
@@ -632,8 +590,6 @@ percent.
 
 ---
 
-
-
 ### SetBackgroundFrame
 
     SetBackgroundFrame (int frame)
@@ -662,8 +618,6 @@ integer 20 is 1.
 *See Also:* [GetBackgroundFrame](ags73#GetBackgroundFrame)
 
 ---
-
-
 
 ### SetViewport
 
@@ -701,8 +655,6 @@ to follow the player around.
 
 ---
 
-
-
 ### SetWalkBehindBase
 
     SetWalkBehindBase (int area, int baseline)
@@ -729,8 +681,6 @@ will disable the walkbehind area number 3.
 
 ---
 
-
-
 ### BottomEdge property
 
     readonly static int Room.BottomEdge
@@ -747,8 +697,6 @@ Example:
 [Room.TopEdge](ags73#Room.TopEdge)
 
 ---
-
-
 
 ### ColorDepth property (room)
 
@@ -767,8 +715,6 @@ Example:
 
 ---
 
-
-
 ### Height property (room)
 
 *(Formerly known as game.room\_height, which is now obsolete)*
@@ -786,8 +732,6 @@ Example:
 
 ---
 
-
-
 ### LeftEdge property
 
     readonly static int Room.LeftEdge
@@ -804,8 +748,6 @@ Example:
 [Room.TopEdge](ags73#Room.TopEdge)
 
 ---
-
-
 
 ### Messages property
 
@@ -831,8 +773,6 @@ will print the contents of room message 1.
 
 ---
 
-
-
 ### MusicOnLoad property
 
     readonly static int Room.MusicOnLoad
@@ -850,8 +790,6 @@ Example:
 
 ---
 
-
-
 ### ObjectCount property
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
@@ -865,8 +803,6 @@ Example:
     Display("The current room contains %d objects.", Room.ObjectCount);
 
 ---
-
-
 
 ### RightEdge property
 
@@ -885,8 +821,6 @@ Example:
 
 ---
 
-
-
 ### TopEdge property
 
     readonly static int Room.TopEdge
@@ -904,8 +838,6 @@ Example:
 
 ---
 
-
-
 ### Width property (room)
 
 *(Formerly known as game.room\_width, which is now obsolete)*
@@ -920,5 +852,4 @@ Example:
     Display("The current room size is %d x %d.", Room.Width, Room.Height);
 
 *See Also:* [Room.Height](ags73#Room.Height)
-
 

@@ -162,8 +162,6 @@ reference](ags45#AudioChannelCommands)
 
 ---
 
-
-
 ### Voice speech
 
 With AGS you can link a line of dialog to a speech file, to enable
@@ -213,8 +211,6 @@ not present.
 *SeeAlso:* [Speech.VoiceMode](ags75#Speech.VoiceMode)
 
 ---
-
-
 
 ### The AudioCache folder
 

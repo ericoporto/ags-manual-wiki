@@ -48,4 +48,3 @@ details.
 
 No, only the editor does this.
 
-
