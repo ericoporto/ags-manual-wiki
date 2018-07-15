@@ -219,7 +219,7 @@ Example:
 
 will disable the hBrownTree hotspot.
 
-*See Also:* [Region.Enabled](Region#Region.Enabled),
+*See Also:* [Region.Enabled](Region#Enabled),
 [RemoveWalkableArea](Room#RemoveWalkableArea),
 [RestoreWalkableArea](Room#RestoreWalkableArea)
 

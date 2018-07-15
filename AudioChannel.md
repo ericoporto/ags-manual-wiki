@@ -255,7 +255,7 @@ will display what is currently playing on audio channel 2.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:* [AudioClip.Play](AudioClip#Play),
-[System.AudioChannels](System#System.AudioChannels)
+[System.AudioChannels](System#AudioChannels)
 
 ---
 
@@ -366,4 +366,4 @@ reduce its volume.
 *See Also:*
 [AudioChannel.SetRoomLocation](AudioChannel#SetRoomLocation),
 [Game.SetAudioTypeVolume](Game#SetAudioTypeVolume),
-[System.Volume](System#System.Volume)
+[System.Volume](System#Volume)

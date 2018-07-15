@@ -100,7 +100,7 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 *Compatibility:* Optional *luminance* parameter is supported only by
 **AGS 3.4.0** and later versions.
 
-*See Also:* [Region.LightLevel](Region#Region.LightLevel),
+*See Also:* [Region.LightLevel](Region#LightLevel),
 [SetAmbientTint](Game#SetAmbientTint)
 
 ---
@@ -146,7 +146,7 @@ Example:
 
 displays region 3's number (which will be 3).
 
-*See Also:* [Region.GetAtRoomXY](Region#Region.GetAtRoomXY)
+*See Also:* [Region.GetAtRoomXY](Region#GetAtRoomXY)
 
 ---
 
@@ -188,7 +188,7 @@ Example:
 
 will set region 2's level light to 100 if the Global Integer 10 is 1.
 
-*See Also:* [Region.Tint](Region#Region.Tint),
+*See Also:* [Region.Tint](Region#Tint),
 [SetAmbientLightLevel](Game#SetAmbientLightLevel),
 [Character.SetLightLevel](Character#SetLightLevel),
 [Object.SetLightLevel](Object#SetLightLevel)
@@ -215,7 +215,7 @@ Example:
 
 will display a message if region 4 is tinted
 
-*See Also:* [Region.Tint](Region#Region.Tint)
+*See Also:* [Region.Tint](Region#Tint)
 
 ---
 
@@ -226,9 +226,9 @@ will display a message if region 4 is tinted
 Gets the *Blue* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Region.Tint) command.
+[Region.Tint](Region#Tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#Region.TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
 property is false, then this value is meaningless.
 
 Example:
@@ -241,11 +241,11 @@ Example:
 
 will display a message with the region's tints.
 
-*See Also:* [Region.Tint](Region#Region.Tint),
-[Region.TintEnabled](Region#Region.TintEnabled),
-[Region.TintGreen](Region#Region.TintGreen),
-[Region.TintRed](Region#Region.TintRed),
-[Region.TintLuminance](Region#Region.TintLuminance)
+*See Also:* [Region.Tint](Region#Tint),
+[Region.TintEnabled](Region#TintEnabled),
+[Region.TintGreen](Region#TintGreen),
+[Region.TintRed](Region#TintRed),
+[Region.TintLuminance](Region#TintLuminance)
 
 ---
 
@@ -256,9 +256,9 @@ will display a message with the region's tints.
 Gets the *Green* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Region.Tint) command.
+[Region.Tint](Region#Tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#Region.TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
 property is false, then this value is meaningless.
 
 Example:
@@ -271,12 +271,12 @@ Example:
 
 will display a message with the region's tints.
 
-*See Also:* [Region.Tint](Region#Region.Tint),
-[Region.TintEnabled](Region#Region.TintEnabled),
-[Region.TintBlue](Region#Region.TintBlue),
-[Region.TintRed](Region#Region.TintRed),
-[Region.TintSaturation](Region#Region.TintSaturation),
-[Region.TintLuminance](Region#Region.TintLuminance)
+*See Also:* [Region.Tint](Region#Tint),
+[Region.TintEnabled](Region#TintEnabled),
+[Region.TintBlue](Region#TintBlue),
+[Region.TintRed](Region#TintRed),
+[Region.TintSaturation](Region#TintSaturation),
+[Region.TintLuminance](Region#TintLuminance)
 
 ---
 
@@ -287,9 +287,9 @@ will display a message with the region's tints.
 Gets the *Red* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Region.Tint) command.
+[Region.Tint](Region#Tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#Region.TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
 property is false, then this value is meaningless.
 
 Example:
@@ -302,12 +302,12 @@ Example:
 
 will display a message with the region's tints.
 
-*See Also:* [Region.Tint](Region#Region.Tint),
-[Region.TintEnabled](Region#Region.TintEnabled),
-[Region.TintBlue](Region#Region.TintBlue),
-[Region.TintGreen](Region#Region.TintGreen),
-[Region.TintSaturation](Region#Region.TintSaturation),
-[Region.TintLuminance](Region#Region.TintLuminance)
+*See Also:* [Region.Tint](Region#Tint),
+[Region.TintEnabled](Region#TintEnabled),
+[Region.TintBlue](Region#TintBlue),
+[Region.TintGreen](Region#TintGreen),
+[Region.TintSaturation](Region#TintSaturation),
+[Region.TintLuminance](Region#TintLuminance)
 
 ---
 
@@ -318,9 +318,9 @@ will display a message with the region's tints.
 Gets the *saturation* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Region.Tint) command.
+[Region.Tint](Region#Tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#Region.TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
 property is false, then this value is meaningless.
 
 Example:
@@ -333,12 +333,12 @@ Example:
 
 will display a message with the region's tints.
 
-*See Also:* [Region.Tint](Region#Region.Tint),
-[Region.TintEnabled](Region#Region.TintEnabled),
-[Region.TintBlue](Region#Region.TintBlue),
-[Region.TintGreen](Region#Region.TintGreen),
-[Region.TintRed](Region#Region.TintRed),
-[Region.TintLuminance](Region#Region.TintLuminance)
+*See Also:* [Region.Tint](Region#Tint),
+[Region.TintEnabled](Region#TintEnabled),
+[Region.TintBlue](Region#TintBlue),
+[Region.TintGreen](Region#TintGreen),
+[Region.TintRed](Region#TintRed),
+[Region.TintLuminance](Region#TintLuminance)
 
 ---
 
@@ -349,15 +349,15 @@ will display a message with the region's tints.
 Gets the *luminance* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Region.Tint) command.
+[Region.Tint](Region#Tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#Region.TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
 property is false, then this value is meaningless.
 
-*See Also:* [Region.Tint](Region#Region.Tint),
-[Region.TintEnabled](Region#Region.TintEnabled),
-[Region.TintBlue](Region#Region.TintBlue),
-[Region.TintGreen](Region#Region.TintGreen),
-[Region.TintRed](Region#Region.TintRed),
-[Region.TintSaturation](Region#Region.TintSaturation)
+*See Also:* [Region.Tint](Region#Tint),
+[Region.TintEnabled](Region#TintEnabled),
+[Region.TintBlue](Region#TintBlue),
+[Region.TintGreen](Region#TintGreen),
+[Region.TintRed](Region#TintRed),
+[Region.TintSaturation](Region#TintSaturation)
 

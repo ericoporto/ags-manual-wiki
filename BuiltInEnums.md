@@ -67,7 +67,7 @@ job, having a manual reference is invaluable:
       eRepeat
     };
 
-*Used by:* [Button.Animate](Button#Button.Animate),
+*Used by:* [Button.Animate](Button#Animate),
 [Character.Animate](Character#Animate),
 [Object.Animate](Object#Animate)
 
@@ -110,7 +110,7 @@ job, having a manual reference is invaluable:
       eMouseWheelSouth
     };
 
-*Used by:* [Mouse.IsButtonDown](Mouse#Mouse.IsButtonDown)\
+*Used by:* [Mouse.IsButtonDown](Mouse#IsButtonDown)\
 *Passed into:* on\_mouse\_click
 
     enum EventType {
@@ -169,8 +169,8 @@ job, having a manual reference is invaluable:
       eOptionOffForever
     };
 
-*Used by:* [Dialog.GetOptionState](Dialog#Dialog.GetOptionState),
-[Dialog.SetOptionState](Dialog#Dialog.SetOptionState)
+*Used by:* [Dialog.GetOptionState](Dialog#GetOptionState),
+[Dialog.SetOptionState](Dialog#SetOptionState)
 
     enum CutsceneSkipType {
       eSkipESCOnly,
@@ -192,7 +192,7 @@ job, having a manual reference is invaluable:
       eOSPSP
     };
 
-*Used by:* [System.OperatingSystem](System#System.OperatingSystem)
+*Used by:* [System.OperatingSystem](System#OperatingSystem)
 
     enum eCDAudioFunction {
       eCDIsDriverPresent,
@@ -220,13 +220,13 @@ mouse cursors. The cursor mode name is taken, all its spaces are
 removed, and *eMode* is added to the front.\
 *Used by:* [IsInteractionAvailable](Game#IsInteractionAvailable),
 [Room.ProcessClick](Room#ProcessClick),
-[Mouse.ChangeModeGraphic](Mouse#Mouse.ChangeModeGraphic),
-[Mouse.ChangeModeHotspot](Mouse#Mouse.ChangeModeHotspot),
-[Mouse.DisableMode](Mouse#Mouse.DisableMode),
-[Mouse.EnableMode](Mouse#Mouse.EnableMode),
-[Mouse.IsModeEnabled](Mouse#Mouse.IsModeEnabled),
-[Mouse.UseModeGraphic](Mouse#Mouse.UseModeGraphic),
-[Mouse.Mode](Mouse#Mouse.Mode),
+[Mouse.ChangeModeGraphic](Mouse#ChangeModeGraphic),
+[Mouse.ChangeModeHotspot](Mouse#ChangeModeHotspot),
+[Mouse.DisableMode](Mouse#DisableMode),
+[Mouse.EnableMode](Mouse#EnableMode),
+[Mouse.IsModeEnabled](Mouse#IsModeEnabled),
+[Mouse.UseModeGraphic](Mouse#UseModeGraphic),
+[Mouse.Mode](Mouse#Mode),
 [InventoryItem.IsInteractionAvailable](InventoryItem#IsInteractionAvailable),
 [InventoryItem.RunInteraction](InventoryItem#RunInteraction),
 [Hotspot.IsInteractionAvailable](Hotspot#IsInteractionAvailable),
@@ -245,7 +245,7 @@ removed, and *eMode* is added to the front.\
 The FontType enumeration is generated automatically based on your fonts.
 The font name is taken, all its spaces are removed, and *eFont* is added
 to the front.\
-*Used by:* [Button.Font](Button#Button.Font),
+*Used by:* [Button.Font](Button#Font),
 [DrawingSurface.DrawMessageWrapped](DrawingSurfaceFunctions#DrawingSurface.DrawMessageWrapped),
 [DrawingSurface.DrawString](DrawingSurfaceFunctions#DrawingSurface.DrawString),
 [DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#DrawingSurface.DrawStringWrapped),
@@ -253,11 +253,11 @@ to the front.\
 [Game.SpeechFont](Game#SpeechFont),
 [GetTextHeight](Game#GetTextHeight),
 [GetTextWidth](Game#GetTextWidth),
-[Label.Font](Label#Label.Font),
-[ListBox.Font](ListBox#ListBox.Font),
-[TextBox.Font](TextBox#TextBox.Font),
-[Overlay.CreateTextual](Overlay#Overlay.CreateTextual),
-[Overlay.SetText](Overlay#Overlay.SetText)
+[Label.Font](Label#Font),
+[ListBox.Font](ListBox#Font),
+[TextBox.Font](TextBox#Font),
+[Overlay.CreateTextual](Overlay#CreateTextual),
+[Overlay.SetText](Overlay#SetText)
 
     enum LocationType {
       eLocationNothing,
@@ -274,7 +274,7 @@ to the front.\
       eFileAppend
     };
 
-*Used by:* [File.Open](File#File.Open)
+*Used by:* [File.Open](File#Open)
 
     enum FileSeek {
       eSeekBegin = 0,
@@ -282,7 +282,7 @@ to the front.\
       eSeekEnd = 2
     };
 
-*Used by:* [File.Seek](File#File.Seek)
+*Used by:* [File.Seek](File#Seek)
 
     enum DialogOptionSayStyle {
       eSayUseOptionSetting,
@@ -290,7 +290,7 @@ to the front.\
       eSayNever
     };
 
-*Used by:* [Dialog.DisplayOptions](Dialog#Dialog.DisplayOptions)
+*Used by:* [Dialog.DisplayOptions](Dialog#DisplayOptions)
 
     enum VideoSkipStyle {
       eVideoSkipNotAllowed,

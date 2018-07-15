@@ -1290,7 +1290,7 @@ This will give character EGO maximal individual brightness.
 *See Also:* [Character.Tint](Character#Tint),
 [SetAmbientLightLevel](Game#SetAmbientLightLevel),
 [Object.SetLightLevel](Object#SetLightLevel),
-[Region.LightLevel](Region#Region.LightLevel)
+[Region.LightLevel](Region#LightLevel)
 
 ---
 

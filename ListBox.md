@@ -58,11 +58,11 @@ Example:
 
 will take the input from the user and add it to the listbox.
 
-*See Also:* [ListBox.Clear](ListBox#ListBox.Clear),
-[ListBox.FillDirList](ListBox#ListBox.FillDirList),
-[ListBox.InsertItemAt](ListBox#ListBox.InsertItemAt),
-[ListBox.Items](ListBox#ListBox.Items),
-[ListBox.RemoveItem](ListBox#ListBox.RemoveItem)
+*See Also:* [ListBox.Clear](ListBox#Clear),
+[ListBox.FillDirList](ListBox#FillDirList),
+[ListBox.InsertItemAt](ListBox#InsertItemAt),
+[ListBox.Items](ListBox#Items),
+[ListBox.RemoveItem](ListBox#RemoveItem)
 
 ---
 
@@ -80,7 +80,7 @@ Example:
 
 will remove all the items from listbox *lstNoteBook*.
 
-*See Also:* [ListBox.AddItem](ListBox#ListBox.AddItem)
+*See Also:* [ListBox.AddItem](ListBox#AddItem)
 
 ---
 
@@ -112,9 +112,9 @@ Example:
 will fill the listbox with the list of the saved games. Note that
 actually for this task you would use FillSaveGameList instead.
 
-*See Also:* [ListBox.AddItem](ListBox#ListBox.AddItem),
-[ListBox.Clear](ListBox#ListBox.Clear),
-[ListBox.FillSaveGameList](ListBox#ListBox.FillSaveGameList)
+*See Also:* [ListBox.AddItem](ListBox#AddItem),
+[ListBox.Clear](ListBox#Clear),
+[ListBox.FillSaveGameList](ListBox#FillSaveGameList)
 
 ---
 
@@ -127,7 +127,7 @@ actually for this task you would use FillSaveGameList instead.
 Fills the specified listbox with the save game list, sorted correctly
 with the most recent game at the top of the list.
 
-The [SaveGameSlots](ListBox#ListBox.SaveGameSlots) property is updated
+The [SaveGameSlots](ListBox#SaveGameSlots) property is updated
 to contain the save game slot number for each index in the list, so that
 you can do:
 
@@ -145,10 +145,10 @@ Example:
 
 will fill listbox *lstSaveGames* with the list of the saved games.
 
-*See Also:* [ListBox.FillDirList](ListBox#ListBox.FillDirList),
-[ListBox.ItemCount](ListBox#ListBox.ItemCount),
-[ListBox.SaveGameSlots](ListBox#ListBox.SaveGameSlots),
-[ListBox.SelectedIndex](ListBox#ListBox.SelectedIndex)
+*See Also:* [ListBox.FillDirList](ListBox#FillDirList),
+[ListBox.ItemCount](ListBox#ItemCount),
+[ListBox.SaveGameSlots](ListBox#SaveGameSlots),
+[ListBox.SelectedIndex](ListBox#SelectedIndex)
 
 ---
 
@@ -177,7 +177,7 @@ Example:
 
 will display the item text that the mouse is currently hovering over.
 
-*See Also:* [ListBox.SelectedIndex](ListBox#ListBox.SelectedIndex)
+*See Also:* [ListBox.SelectedIndex](ListBox#SelectedIndex)
 
 ---
 
@@ -203,8 +203,8 @@ Example:
 
 will insert the Third Item in between the First and Second items.
 
-*See Also:* [ListBox.AddItem](ListBox#ListBox.AddItem),
-[ListBox.RemoveItem](ListBox#ListBox.RemoveItem)
+*See Also:* [ListBox.AddItem](ListBox#AddItem),
+[ListBox.RemoveItem](ListBox#RemoveItem)
 
 ---
 
@@ -218,7 +218,7 @@ Removes ITEM from the specified list box. ITEM is the list index of the
 item to remove, starting with 0 for the top item.
 
 If you want to remove all items from the list, then use
-[ListBox.Clear](ListBox#ListBox.Clear) instead.
+[ListBox.Clear](ListBox#Clear) instead.
 
 **NOTE:** Calling this function causes other items in the list to get
 re-numbered, so make sure you don't keep around any references from
@@ -232,8 +232,8 @@ Example:
 
 the list box will now just contain "Second item".
 
-*See Also:* [ListBox.Clear](ListBox#ListBox.Clear),
-[ListBox.FillDirList](ListBox#ListBox.FillDirList)
+*See Also:* [ListBox.Clear](ListBox#Clear),
+[ListBox.FillDirList](ListBox#FillDirList)
 
 ---
 
@@ -250,7 +250,7 @@ Example:
 
 will scroll the *lstTest* list box down one row.
 
-*See Also:* [ListBox.ScrollUp](ListBox#ListBox.ScrollUp)
+*See Also:* [ListBox.ScrollUp](ListBox#ScrollUp)
 
 ---
 
@@ -267,7 +267,7 @@ Example:
 
 will scroll the *lstTest* list box up one row.
 
-*See Also:* [ListBox.ScrollDown](ListBox#ListBox.ScrollDown)
+*See Also:* [ListBox.ScrollDown](ListBox#ScrollDown)
 
 ---
 
@@ -283,8 +283,8 @@ Example:
 
 will change the *lstSaveGames* list box to use Font "Speech".
 
-*See Also:* [Label.Font](Label#Label.Font),
-[TextBox.Text](TextBox#TextBox.Text)
+*See Also:* [Label.Font](Label#Font),
+[TextBox.Text](TextBox#Text)
 
 ---
 
@@ -304,7 +304,7 @@ Example:
 will hide the border around the Save Games list box.
 
 *See Also:*
-[ListBox.HideScrollArrows](ListBox#ListBox.HideScrollArrows)
+[ListBox.HideScrollArrows](ListBox#HideScrollArrows)
 
 ---
 
@@ -329,7 +329,7 @@ Example:
 
 will hide the built-in scroll arrows on the list box.
 
-*See Also:* [ListBox.HideBorder](ListBox#ListBox.HideBorder)
+*See Also:* [ListBox.HideBorder](ListBox#HideBorder)
 
 ---
 
@@ -351,7 +351,7 @@ Example:
 
 will pass the number of saved games to the int saves.
 
-*See Also:* [ListBox.Items](ListBox#ListBox.Items)
+*See Also:* [ListBox.Items](ListBox#Items)
 
 ---
 
@@ -370,7 +370,7 @@ second is 1, and so on. The highest allowable index is ItemCount minus
 1.
 
 If you want to add a new item to the listbox, use the
-[ListBox.AddItem](ListBox#ListBox.AddItem) method.
+[ListBox.AddItem](ListBox#AddItem) method.
 
 Example:
 
@@ -378,9 +378,9 @@ Example:
 
 will get the text of the selected item in the list box.
 
-*See Also:* [ListBox.SelectedIndex](ListBox#ListBox.SelectedIndex),
-[ListBox.ItemCount](ListBox#ListBox.ItemCount),
-[ListBox.AddItem](ListBox#ListBox.AddItem)
+*See Also:* [ListBox.SelectedIndex](ListBox#SelectedIndex),
+[ListBox.ItemCount](ListBox#ItemCount),
+[ListBox.AddItem](ListBox#AddItem)
 
 ---
 
@@ -401,9 +401,9 @@ Example:
 
 will display the number of rows that the listbox can display.
 
-*See Also:* [ListBox.ItemCount](ListBox#ListBox.ItemCount),
-[ListBox.ScrollDown](ListBox#ListBox.ScrollDown),
-[ListBox.ScrollUp](ListBox#ListBox.ScrollUp)
+*See Also:* [ListBox.ItemCount](ListBox#ItemCount),
+[ListBox.ScrollDown](ListBox#ScrollDown),
+[ListBox.ScrollUp](ListBox#ScrollUp)
 
 ---
 
@@ -432,8 +432,8 @@ will restore the currently selected game in the list, assuming
 FillSaveGameList had been used previously.
 
 *See Also:*
-[ListBox.FillSaveGameList](ListBox#ListBox.FillSaveGameList),
-[ListBox.SelectedIndex](ListBox#ListBox.SelectedIndex)
+[ListBox.FillSaveGameList](ListBox#FillSaveGameList),
+[ListBox.SelectedIndex](ListBox#SelectedIndex)
 
 ---
 

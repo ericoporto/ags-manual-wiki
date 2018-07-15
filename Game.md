@@ -296,7 +296,7 @@ will change the volume of all currently playing and future music to
 
 *See Also:* [SetSpeechVolume](Game#SetSpeechVolume),
 [AudioClip.Play](AudioClip#Play),
-[System.Volume](System#System.Volume)
+[System.Volume](System#Volume)
 
 ---
 

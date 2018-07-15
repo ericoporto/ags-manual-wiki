@@ -110,7 +110,7 @@ always selects the first option
 
 *See Also:*
 [DialogOptionsRenderingInfo.RunActiveOption](DialogOptionsRenderingInfo#RunActiveOption),
-[Dialog.GetOptionState](Dialog#Dialog.GetOptionState)
+[Dialog.GetOptionState](Dialog#GetOptionState)
 
 ---
 
@@ -126,7 +126,7 @@ options](CustomDialogOptions) page.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Dialog.GetOptionState](Dialog#Dialog.GetOptionState),
+*See Also:* [Dialog.GetOptionState](Dialog#GetOptionState),
 [DialogOptionsRenderingInfo.Surface](DialogOptionsRenderingInfo#Surface)
 
 ---

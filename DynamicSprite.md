@@ -240,7 +240,7 @@ DynamicSprite to interface with other commands and to use the new sprite
 in the game.
 
 **NOTE:** Since AGS 3.4.1 you can use location tokens in filename, like
-with [File.Open](File#File.Open) and similar commands.
+with [File.Open](File#Open) and similar commands.
 
 **IMPORTANT:** This command loads an extra sprite into memory which is
 not controlled by the normal AGS sprite cache and will not be
@@ -661,7 +661,7 @@ only two file types that the engine supports.
 Returns 1 if the sprite was saved successfully, or 0 if it failed.
 
 **NOTE:** Since AGS 3.4.1 you can use location tokens in filename, like
-with [File.Open](File#File.Open) and similar commands.
+with [File.Open](File#Open) and similar commands.
 
 Example:
 
@@ -742,7 +742,7 @@ displays the colour depth of the CustomAvatar.bmp image.
 
 Gets the sprite slot number in which this dynamic sprite is stored. This
 value can then be passed to other functions and properties, such as
-[Button.NormalGraphic](Button#Button.NormalGraphic).
+[Button.NormalGraphic](Button#NormalGraphic).
 
 Example:
 

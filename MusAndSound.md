@@ -143,7 +143,7 @@ been started yet).
 
 **Overall system volume**
 
-There is a property called [System.Volume](System#System.Volume) that
+There is a property called [System.Volume](System#Volume) that
 controls the overall game volume, which you can use with some sort of
 volume control slider for the player. All individual sound volumes work
 within the overall system volume.

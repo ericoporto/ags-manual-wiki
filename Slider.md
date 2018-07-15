@@ -43,7 +43,7 @@ displays the *sldHealth* slider's background image
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](Slider#Slider.HandleGraphic)
+*See Also:* [Slider.HandleGraphic](Slider#HandleGraphic)
 
 ---
 
@@ -67,8 +67,8 @@ displays the *sldHealth* slider's handle image
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[Slider.BackgroundGraphic](Slider#Slider.BackgroundGraphic),
-[Slider.HandleOffset](Slider#Slider.HandleOffset)
+[Slider.BackgroundGraphic](Slider#BackgroundGraphic),
+[Slider.HandleOffset](Slider#HandleOffset)
 
 ---
 
@@ -88,7 +88,7 @@ the right.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](Slider#Slider.HandleGraphic)
+*See Also:* [Slider.HandleGraphic](Slider#HandleGraphic)
 
 ---
 
@@ -109,8 +109,8 @@ Example:
 
 sets the maximum value of the *sldHealth* slider to 200.
 
-*See Also:* [Slider.Min](Slider#Slider.Min),
-[Slider.Value](Slider#Slider.Value)
+*See Also:* [Slider.Min](Slider#Min),
+[Slider.Value](Slider#Value)
 
 ---
 
@@ -132,8 +132,8 @@ Example:
 
 sets the minimum value of the *sldHealth* slider to 0.
 
-*See Also:* [Slider.Max](Slider#Slider.Max),
-[Slider.Value](Slider#Slider.Value)
+*See Also:* [Slider.Max](Slider#Max),
+[Slider.Value](Slider#Value)
 
 ---
 
@@ -157,5 +157,5 @@ Example:
 
 will set the audio volume to the value of the slider *sldVolume*.
 
-*See Also:* [Label.Text](Label#Label.Text)
+*See Also:* [Label.Text](Label#Text)
 

@@ -38,7 +38,7 @@ usually used for responses to the player LOOKing at things.
 [DisplayMessage](topic73#DisplayMessage),
 [Character.Say](Character#Say),
 [DisplayTopBar](topic73#DisplayTopBar),
-[String.Format](String#String.Format)
+[String.Format](String#Format)
 
 ---
 
