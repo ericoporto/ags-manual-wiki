@@ -107,7 +107,7 @@ on the GUI.
 
 ---
 
-### Clickable property
+### Clickable
 
     bool GUIControl.Clickable
 
@@ -142,7 +142,7 @@ will make the *btnSaveGame* button non-clickable.
 
 ---
 
-### Enabled property
+### Enabled
 
 *(Formerly known as SetGUIObjectEnabled, which is now obsolete)*
 
@@ -181,7 +181,7 @@ will disable the *btnSaveGame* button.
 
 ---
 
-### Height property
+### Height
 
     int GUIControl.Height;
 
@@ -203,7 +203,7 @@ makes the *btnConfirm* button 20 pixels high.
 
 ---
 
-### ID property
+### ID
 
     readonly int GUIControl.ID
 
@@ -228,7 +228,7 @@ list box, and then uses the equivalent modern property to disable it.
 
 ---
 
-### OwningGUI property
+### OwningGUI
 
     readonly GUI* GUIControl.OwningGUI
 
@@ -343,7 +343,7 @@ will resize the *invMain* control to have a size of 160 x 100.
 
 ---
 
-### Visible property
+### Visible
 
     bool GUIControl.Visible
 
@@ -368,7 +368,7 @@ will make the *btnSaveGame* button invisible.
 
 ---
 
-### Width property
+### Width
 
     int GUIControl.Width;
 
@@ -390,7 +390,7 @@ makes the *btnConfirm* button 110 pixels wide.
 
 ---
 
-### X property
+### X
 
     int GUIControl.X;
 
@@ -416,7 +416,7 @@ left of its GUI.
 
 ---
 
-### Y property
+### Y
 
     int GUIControl.Y;
 
@@ -442,7 +442,7 @@ top of its GUI.
 
 ---
 
-### ZOrder property
+### ZOrder
 
     int GUIControl.ZOrder;
 

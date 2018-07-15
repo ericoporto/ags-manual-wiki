@@ -124,7 +124,7 @@ This will simulate user click at (100,100).
 
 ---
 
-### ControlEnabled property
+### ControlEnabled
 
     readonly static bool Mouse.ControlEnabled;
 
@@ -376,7 +376,7 @@ will place the mouse cursor in the centre of the screen.
 
 ---
 
-### Speed property
+### Speed
 
     static float Mouse.Speed;
 
@@ -475,7 +475,7 @@ Cursors tab.
 
 ---
 
-### Mode property
+### Mode
 
 *(Formerly known as GetCursorMode, which is now obsolete)*\
 *(Formerly known as SetCursorMode, which is now obsolete)*
@@ -506,7 +506,7 @@ will execute the code only if the current cursor mode is MODE 0 (WALK).
 
 ---
 
-### Visible property
+### Visible
 
 *(Formerly known as HideMouseCursor, which is now obsolete)*\
 *(Formerly known as ShowMouseCursor, which is now obsolete)*

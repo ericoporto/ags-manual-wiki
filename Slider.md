@@ -25,7 +25,7 @@ GUI Slider properties
 
 ---
 
-### BackgroundGraphic property
+### BackgroundGraphic
 
     int Slider.BackgroundGraphic;
 
@@ -47,7 +47,7 @@ displays the *sldHealth* slider's background image
 
 ---
 
-### HandleGraphic property
+### HandleGraphic
 
     int Slider.HandleGraphic;
 
@@ -72,7 +72,7 @@ displays the *sldHealth* slider's handle image
 
 ---
 
-### HandleOffset property
+### HandleOffset
 
     int Slider.HandleOffset;
 
@@ -92,7 +92,7 @@ the right.
 
 ---
 
-### Max property
+### Max
 
     int Slider.Max;
 
@@ -114,7 +114,7 @@ sets the maximum value of the *sldHealth* slider to 200.
 
 ---
 
-### Min property
+### Min
 
     int Slider.Min;
 
@@ -137,7 +137,7 @@ sets the minimum value of the *sldHealth* slider to 0.
 
 ---
 
-### Value property
+### Value
 
 *(Formerly known as GetSliderValue, which is now obsolete)*\
 *(Formerly known as SetSliderValue, which is now obsolete)*

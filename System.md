@@ -25,7 +25,7 @@ System functions and properties
 
 ---
 
-### AudioChannelCount property
+### AudioChannelCount
 
     readonly static int System.AudioChannelCount;
 
@@ -47,7 +47,7 @@ will display a message with the number of audio channels.
 
 ---
 
-### AudioChannels property
+### AudioChannels
 
     readonly static AudioChannel* System.AudioChannels[];
 
@@ -69,7 +69,7 @@ will display a message with Audio Channel 2's current volume.
 
 ---
 
-### CapsLock property
+### CapsLock
 
     readonly static bool System.CapsLock;
 
@@ -94,7 +94,7 @@ will display a message if Caps Lock is on.
 
 ---
 
-### ColorDepth property
+### ColorDepth
 
 *(Formerly known as system.color_depth, which is now obsolete)*
 
@@ -116,7 +116,7 @@ will display the current resolution and colour depth
 
 ---
 
-### Gamma property
+### Gamma
 
     static int System.Gamma;
 
@@ -144,7 +144,7 @@ will turn the screen brightness up to `50%` higher than normal
 
 ---
 
-### HardwareAcceleration property
+### HardwareAcceleration
 
     readonly static bool System.HardwareAcceleration;
 
@@ -173,7 +173,7 @@ See Also: [AGS Graphics Drivers](GraphicsDriver)
 
 ---
 
-### HasInputFocus property
+### HasInputFocus
 
     readonly static bool System.HasInputFocus;
 
@@ -209,7 +209,7 @@ switches back to game.
 
 ---
 
-### NumLock property
+### NumLock
 
     readonly static bool System.NumLock;
 
@@ -234,7 +234,7 @@ will display a message if Num Lock is on.
 
 ---
 
-### OperatingSystem property
+### OperatingSystem
 
 *(Formerly known as system.os, which is now obsolete)*
 
@@ -262,7 +262,7 @@ Example:
 
 ---
 
-### RenderAtScreenResolution property
+### RenderAtScreenResolution
 
     static bool System.RenderAtScreenResolution;
 
@@ -285,7 +285,7 @@ menu option for toggling it at runtime.
 
 ---
 
-### RuntimeInfo property
+### RuntimeInfo
 
     readonly static String System.RuntimeInfo;
 
@@ -312,7 +312,7 @@ Example:
 
 ---
 
-### ScreenHeight property
+### ScreenHeight
 
 *(Formerly known as system.screen_height, which is now obsolete)*
 
@@ -342,7 +342,7 @@ will display the current resolution and colour depth
 
 ---
 
-### ScreenWidth property
+### ScreenWidth
 
 *(Formerly known as system.screen_width, which is now obsolete)*
 
@@ -372,7 +372,7 @@ will display the current resolution and colour depth
 
 ---
 
-### ScrollLock property
+### ScrollLock
 
     readonly static bool System.ScrollLock;
 
@@ -398,7 +398,7 @@ will display a message if Scroll Lock is on.
 
 ---
 
-### SupportsGammaControl property
+### SupportsGammaControl
 
     readonly static bool System.SupportsGammaControl;
 
@@ -428,7 +428,7 @@ will display a message if the system supports changing the gamma
 
 ---
 
-### Version property
+### Version
 
 *(Formerly known as system.version, which is now obsolete)*
 
@@ -448,7 +448,7 @@ will display the AGS version number
 
 ---
 
-### ViewportHeight property
+### ViewportHeight
 
 *(Formerly known as system.viewport_height, which is now obsolete)*
 
@@ -469,7 +469,7 @@ will display the current viewport size
 
 ---
 
-### ViewportWidth property
+### ViewportWidth
 
 *(Formerly known as system.viewport_width, which is now obsolete)*
 
@@ -490,7 +490,7 @@ will display the current viewport size
 
 ---
 
-### Volume property
+### Volume
 
 *(Formerly known as SetDigitalMasterVolume, which is now obsolete)*\
 *(Formerly known as SetMusicMasterVolume, which is now obsolete)*
@@ -515,7 +515,7 @@ will set the overall output volume to 80.
 
 ---
 
-### VSync property
+### VSync
 
 *(Formerly known as system.vsync, which is now obsolete)*
 
@@ -541,7 +541,7 @@ will display a message if vsync is on
 
 ---
 
-### Windowed property
+### Windowed
 
 *(Formerly known as system.windowed, which is now obsolete)*
 

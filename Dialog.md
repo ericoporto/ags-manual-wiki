@@ -156,7 +156,7 @@ before.
 
 ---
 
-### ID property
+### ID
 
     readonly int Dialog.ID;
 
@@ -175,7 +175,7 @@ will display the ID number of the dFisherman dialog
 
 ---
 
-### OptionCount property
+### OptionCount
 
     readonly int Dialog.OptionCount;
 
@@ -265,7 +265,7 @@ will enable option 2 of topic number 4 if the Global Integer 10 is 1.
 
 ---
 
-### ShowTextParser property
+### ShowTextParser
 
     readonly bool Dialog.ShowTextParser;
 

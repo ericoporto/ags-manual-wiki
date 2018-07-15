@@ -450,7 +450,7 @@ background, then releases the image.
 
 ---
 
-### DrawingColor property
+### DrawingColor
 
 *(Formerly known as RawSetColor, which is now obsolete)*
 
@@ -520,7 +520,7 @@ displays the pixel colour of the centre pixel on the screen.
 
 ---
 
-### Height property
+### Height
 
     readonly int DrawingSurface.Height
 
@@ -540,7 +540,7 @@ displays the size of the surface to the player
 
 ---
 
-### UseHighResCoordinates property
+### UseHighResCoordinates
 
     bool DrawingSurface.UseHighResCoordinates
 
@@ -578,7 +578,7 @@ draw a line from the top left to the bottom right of the screen.
 
 ---
 
-### Width property
+### Width
 
     readonly int DrawingSurface.Width
 

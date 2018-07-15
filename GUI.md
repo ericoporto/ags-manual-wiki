@@ -188,7 +188,7 @@ changes the ICONBAR GUI to be the size of half the screen
 
 ---
 
-### BackgroundGraphic property
+### BackgroundGraphic
 
 *(Formerly known as SetGUIBackgroundPic, which is now obsolete)*
 
@@ -203,7 +203,7 @@ You can set this to 0 to remove the background image from the GUI.
 
 ---
 
-### Clickable property
+### Clickable
 
 *(Formerly known as SetGUIClickable, which is now obsolete)*
 
@@ -230,7 +230,7 @@ sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
 ---
 
-### ControlCount property
+### ControlCount
 
     readonly int GUI.ControlCount;
 
@@ -252,7 +252,7 @@ disables all controls on the INVENTORY GUI.
 
 ---
 
-### Controls property
+### Controls
 
     GUIControl* GUI.Controls[index]
 
@@ -287,7 +287,7 @@ it. If control 4 isn't a listbox, you will get a Null Reference error.
 
 ---
 
-### Height property
+### Height
 
     int GUI.Height
 
@@ -307,7 +307,7 @@ displays the height of the ICONBAR GUI.
 
 ---
 
-### ID property
+### ID
 
     readonly int GUI.ID
 
@@ -328,7 +328,7 @@ clickable.
 
 ---
 
-### Transparency property
+### Transparency
 
 *(Formerly known as SetGUITransparency, which is now obsolete)*
 
@@ -369,7 +369,7 @@ will gradually fade the INVENTORY GUI out until it is invisible.
 
 ---
 
-### Visible property
+### Visible
 
 *(Formerly known as GUIOff, which is now obsolete)*\
 *(Formerly known as GUIOn, which is now obsolete)*\
@@ -405,7 +405,7 @@ will turn on the SETTINGS GUI.
 
 ---
 
-### Width property
+### Width
 
     int GUI.Width
 
@@ -425,7 +425,7 @@ makes the INVENTORY GUI 5 pixels wider.
 
 ---
 
-### X property
+### X
 
     int GUI.X
 
@@ -447,7 +447,7 @@ moves the VERBCOIN GUI right 5 pixels.
 
 ---
 
-### Y property
+### Y
 
     int GUI.Y
 
@@ -470,7 +470,7 @@ moves the VERBCOIN GUI down 5 pixels.
 
 ---
 
-### ZOrder property
+### ZOrder
 
 *(Formerly known as SetGUIZOrder, which is now obsolete)*
 

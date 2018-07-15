@@ -465,7 +465,7 @@ it will display an error message. Otherwise, it will write the string
 
 ---
 
-### EOF property
+### EOF
 
 *(Formerly known as FileIsEOF, which is now obsolete)*
 
@@ -493,7 +493,7 @@ screen.
 
 ---
 
-### Error property
+### Error
 
 *(Formerly known as FileIsError, which is now obsolete)*
 
@@ -529,7 +529,7 @@ there was a problem.
 
 ---
 
-### Position property
+### Position
 
     readonly int File.Position
 

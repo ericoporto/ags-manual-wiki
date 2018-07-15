@@ -105,7 +105,7 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 
 ---
 
-### Enabled property
+### Enabled
 
 *(Formerly known as DisableRegion, which is now obsolete)*\
 *(Formerly known as EnableRegion, which is now obsolete)*
@@ -133,7 +133,7 @@ will disable region number 3.
 
 ---
 
-### ID property
+### ID
 
     readonly int Region.ID
 
@@ -150,7 +150,7 @@ displays region 3's number (which will be 3).
 
 ---
 
-### LightLevel property
+### LightLevel
 
 *(Formerly known as SetAreaLightLevel, which is now obsolete)*
 
@@ -195,7 +195,7 @@ will set region 2's level light to 100 if the Global Integer 10 is 1.
 
 ---
 
-### TintEnabled property
+### TintEnabled
 
     readonly bool Region.TintEnabled
 
@@ -219,7 +219,7 @@ will display a message if region 4 is tinted
 
 ---
 
-### TintBlue property
+### TintBlue
 
     readonly int Region.TintBlue
 
@@ -249,7 +249,7 @@ will display a message with the region's tints.
 
 ---
 
-### TintGreen property
+### TintGreen
 
     readonly int Region.TintGreen
 
@@ -280,7 +280,7 @@ will display a message with the region's tints.
 
 ---
 
-### TintRed property
+### TintRed
 
     readonly int Region.TintRed
 
@@ -311,7 +311,7 @@ will display a message with the region's tints.
 
 ---
 
-### TintSaturation property
+### TintSaturation
 
     readonly int Region.TintSaturation
 
@@ -342,7 +342,7 @@ will display a message with the region's tints.
 
 ---
 
-### TintLuminance property
+### TintLuminance
 
     readonly int Region.TintLuminance
 

@@ -141,7 +141,7 @@ again.
 
 ---
 
-### FileType property
+### FileType
 
     readonly AudioFileType AudioClip.FileType;
 
@@ -166,7 +166,7 @@ displays a message if aExplosion is a MIDI file
 
 ---
 
-### IsAvailable property
+### IsAvailable
 
 *(Formerly known as IsMusicVoxAvailable, which is now obsolete)*
 
@@ -196,7 +196,7 @@ checks if the aExplosion audio clip is available, and if so plays it.
 
 ---
 
-### Type property
+### Type
 
     readonly AudioType AudioClip.Type;
 

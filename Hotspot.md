@@ -196,7 +196,7 @@ hDoor.
 
 ---
 
-### Enabled property
+### Enabled
 
 *(Formerly known as DisableHotspot, which is now obsolete)*\
 *(Formerly known as EnableHotspot, which is now obsolete)*
@@ -225,7 +225,7 @@ will disable the hBrownTree hotspot.
 
 ---
 
-### ID property
+### ID
 
     readonly int Hotspot.ID
 
@@ -244,7 +244,7 @@ displays hDoor's hotspot number, and then displays hotspot 3's number
 
 ---
 
-### Name property
+### Name
 
 *(Formerly known as GetHotspotName, which is now obsolete)*\
 *(Formerly known as Hotspot.GetName, which is now obsolete)*
@@ -266,7 +266,7 @@ will retrieve and then display hotspot 3's name.
 
 ---
 
-### WalkToX property
+### WalkToX
 
 *(Formerly known as GetHotspotPointX, which is now obsolete)*
 
@@ -286,7 +286,7 @@ will move the character to hotspot hTable's walk-to point.
 
 ---
 
-### WalkToY property
+### WalkToY
 
 *(Formerly known as GetHotspotPointY, which is now obsolete)*
 

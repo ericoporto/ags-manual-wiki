@@ -213,7 +213,7 @@ this to work)
 
 ---
 
-### CursorGraphic property
+### CursorGraphic
 
     int InventoryItem.CursorGraphic
 
@@ -236,7 +236,7 @@ will display inventory item *iKey*'s cursor graphic.
 
 ---
 
-### Graphic property
+### Graphic
 
 *(Formerly known as GetInvGraphic, which is now obsolete)*\
 *(Formerly known as SetInvItemPic, which is now obsolete)*
@@ -266,7 +266,7 @@ slot.
 
 ---
 
-### ID property
+### ID
 
     readonly int InventoryItem.ID
 
@@ -286,7 +286,7 @@ inventory
 
 ---
 
-### Name property
+### Name
 
 *(Formerly known as GetInvName, which is now obsolete)*\
 *(Formerly known as SetInvItemName, which is now obsolete)*\

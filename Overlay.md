@@ -152,7 +152,7 @@ and then replace the overlay with another one.
 
 ---
 
-### Valid property
+### Valid
 
 *(Formerly known as IsOverlayValid, which is now obsolete)*
 
@@ -176,7 +176,7 @@ Then, removes the overlay and prints Valid again (which will now be 0).
 
 ---
 
-### X property
+### X
 
 *(Formerly known as MoveOverlay, which is now obsolete)*
 
@@ -204,7 +204,7 @@ creates a text overlay, then gradually slides it across the screen.
 
 ---
 
-### Y property
+### Y
 
 *(Formerly known as MoveOverlay, which is now obsolete)*
 

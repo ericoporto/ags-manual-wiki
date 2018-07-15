@@ -681,7 +681,7 @@ will disable the walkbehind area number 3.
 
 ---
 
-### BottomEdge property
+### BottomEdge
 
     readonly static int Room.BottomEdge
 
@@ -698,7 +698,7 @@ Example:
 
 ---
 
-### ColorDepth property
+### ColorDepth
 
     readonly static int Room.ColorDepth
 
@@ -715,7 +715,7 @@ Example:
 
 ---
 
-### Height property
+### Height
 
 *(Formerly known as game.room_height, which is now obsolete)*
 
@@ -732,7 +732,7 @@ Example:
 
 ---
 
-### LeftEdge property
+### LeftEdge
 
     readonly static int Room.LeftEdge
 
@@ -749,7 +749,7 @@ Example:
 
 ---
 
-### Messages property
+### Messages
 
 *(Formerly known as global function GetMessageText, which is now
 obsolete)*
@@ -773,7 +773,7 @@ will print the contents of room message 1.
 
 ---
 
-### MusicOnLoad property
+### MusicOnLoad
 
     readonly static int Room.MusicOnLoad
 
@@ -790,7 +790,7 @@ Example:
 
 ---
 
-### ObjectCount property
+### ObjectCount
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -804,7 +804,7 @@ Example:
 
 ---
 
-### RightEdge property
+### RightEdge
 
     readonly static int Room.RightEdge
 
@@ -821,7 +821,7 @@ Example:
 
 ---
 
-### TopEdge property
+### TopEdge
 
     readonly static int Room.TopEdge
 
@@ -838,7 +838,7 @@ Example:
 
 ---
 
-### Width property
+### Width
 
 *(Formerly known as game.room_width, which is now obsolete)*
 

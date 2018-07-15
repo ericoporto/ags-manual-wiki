@@ -12,7 +12,7 @@ DateTime functions and properties
 
 ---
 
-### Now property
+### Now
 
 *(Formerly known as GetTime, which is now obsolete)*
 
@@ -46,7 +46,7 @@ will display the current date and time in 24-hour format
 
 ---
 
-### DayOfMonth property
+### DayOfMonth
 
     readonly int DateTime.DayOfMonth;
 
@@ -59,7 +59,7 @@ Example: For an example, see [DateTime.Now](DateTime#now).
 
 ---
 
-### Hour property
+### Hour
 
     readonly int DateTime.Hour;
 
@@ -72,7 +72,7 @@ Example: For an example, see [DateTime.Now](DateTime#now).
 
 ---
 
-### Minute property
+### Minute
 
     readonly int DateTime.Minute;
 
@@ -85,7 +85,7 @@ Example: For an example, see [DateTime.Now](DateTime#now).
 
 ---
 
-### Month property
+### Month
 
     readonly int DateTime.Month;
 
@@ -98,7 +98,7 @@ Example: For an example, see [DateTime.Now](DateTime#now).
 
 ---
 
-### RawTime property
+### RawTime
 
 *(Formerly known as GetRawTime, which is now obsolete)*
 
@@ -131,7 +131,7 @@ should display that 3 seconds have elapsed.
 
 ---
 
-### Second property
+### Second
 
     readonly int DateTime.Second;
 
@@ -144,7 +144,7 @@ Example: For an example, see [DateTime.Now](DateTime#now).
 
 ---
 
-### Year property
+### Year
 
     readonly int DateTime.Year;
 

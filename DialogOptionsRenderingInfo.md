@@ -80,7 +80,7 @@ current script ends.
 
 ---
 
-### ActiveOptionID property
+### ActiveOptionID
 
     int DialogOptionsRenderingInfo.ActiveOptionID;
 
@@ -114,7 +114,7 @@ always selects the first option
 
 ---
 
-### DialogToRender property
+### DialogToRender
 
     Dialog* DialogOptionsRenderingInfo.DialogToRender;
 
@@ -131,7 +131,7 @@ options](CustomDialogOptions) page.
 
 ---
 
-### HasAlphaChannel property
+### HasAlphaChannel
 
     int DialogOptionsRenderingInfo.HasAlphaChannel;
 
@@ -162,7 +162,7 @@ options in.
 
 ---
 
-### Height property
+### Height
 
     int DialogOptionsRenderingInfo.Height;
 
@@ -189,7 +189,7 @@ creates a 300x150 size area to draw the dialog options in
 
 ---
 
-### ParserTextBoxWidth property
+### ParserTextBoxWidth
 
     int DialogOptionsRenderingInfo.ParserTextBoxWidth;
 
@@ -224,7 +224,7 @@ options area
 
 ---
 
-### ParserTextBoxX property
+### ParserTextBoxX
 
     int DialogOptionsRenderingInfo.ParserTextBoxX;
 
@@ -262,7 +262,7 @@ options area
 
 ---
 
-### ParserTextBoxY property
+### ParserTextBoxY
 
     int DialogOptionsRenderingInfo.ParserTextBoxY;
 
@@ -299,7 +299,7 @@ options area
 
 ---
 
-### Surface property
+### Surface
 
     DrawingSurface* DialogOptionsRenderingInfo.Surface;
 
@@ -331,7 +331,7 @@ functions](DrawingSurfaceFunctions)
 
 ---
 
-### Width property
+### Width
 
     int DialogOptionsRenderingInfo.Width;
 
@@ -358,7 +358,7 @@ creates a 300x150 size area to draw the dialog options in
 
 ---
 
-### X property
+### X
 
     int DialogOptionsRenderingInfo.X;
 
@@ -388,7 +388,7 @@ creates a 200x150 size area at (50, 20) to draw the dialog options in
 
 ---
 
-### Y property
+### Y
 
     int DialogOptionsRenderingInfo.Y;
 

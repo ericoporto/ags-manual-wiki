@@ -73,7 +73,7 @@ will scroll the *invMain* inv window up one row.
 
 ---
 
-### CharacterToUse property
+### CharacterToUse
 
     Character* InvWindow.CharacterToUse;
 
@@ -91,7 +91,7 @@ inventory.
 
 ---
 
-### ItemAtIndex property
+### ItemAtIndex
 
     readonly InventoryItem* InvWindow.ItemAtIndex[];
 
@@ -114,7 +114,7 @@ inventory window.
 
 ---
 
-### ItemCount property
+### ItemCount
 
 *(Formerly known as game.num_inv_items, which is now obsolete)*
 
@@ -141,7 +141,7 @@ more inventory items than will fit in the inventory window.
 
 ---
 
-### ItemHeight property
+### ItemHeight
 
 *(Formerly known as SetInvDimensions, which is now obsolete)*
 
@@ -163,7 +163,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 
 ---
 
-### ItemWidth property
+### ItemWidth
 
 *(Formerly known as SetInvDimensions, which is now obsolete)*
 
@@ -185,7 +185,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 
 ---
 
-### ItemsPerRow property
+### ItemsPerRow
 
 *(Formerly known as game.items_per_line, which is now obsolete)*
 
@@ -206,7 +206,7 @@ displays how many items can be visible in the invMain window at once.
 
 ---
 
-### RowCount property
+### RowCount
 
     readonly int InvWindow.RowCount;
 
@@ -225,7 +225,7 @@ displays how many items can be visible in the invMain window at once.
 
 ---
 
-### TopItem property
+### TopItem
 
 *(Formerly known as game.top_inv_item, which is now obsolete)*
 

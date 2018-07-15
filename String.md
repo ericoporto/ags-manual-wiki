@@ -436,7 +436,7 @@ will display "Old: THIS is a test string, new: THIS IS A TEST STRING".
 
 ---
 
-### AsFloat property
+### AsFloat
 
     readonly float String.AsFloat;
 
@@ -464,7 +464,7 @@ is useful for processing strings input from the user.
 
 ---
 
-### AsInt property
+### AsInt
 
 *(Formerly known as global function StringToInt, which is now obsolete)*
 
@@ -499,7 +499,7 @@ useful for processing strings input from the user.
 
 ---
 
-### Chars property
+### Chars
 
 *(Formerly known as global function StrGetCharAt, which is now
 obsolete)*
@@ -529,7 +529,7 @@ will display "The 4th character is: s".
 
 ---
 
-### Length property
+### Length
 
 *(Formerly known as global function StrLen, which is now obsolete)*
 

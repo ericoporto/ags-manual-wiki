@@ -90,7 +90,7 @@ delay of 4 cycles per frame, and repeat the animation continually.
 
 ---
 
-### Animating property
+### Animating
 
     readonly bool Button.Animating
 
@@ -117,7 +117,7 @@ will animate button and wait until the animation finishes.
 
 ---
 
-### Frame property
+### Frame
 
     readonly int Button.Frame
 
@@ -137,7 +137,7 @@ This property is read-only. To change button's animation, use the
 
 ---
 
-### Loop property
+### Loop
 
     readonly int Button.Loop
 
@@ -157,7 +157,7 @@ This property is read-only. To change button's animation, use the
 
 ---
 
-### View property
+### View
 
     readonly int Button.View
 
@@ -177,7 +177,7 @@ This property is read-only. To change button's animation, use the
 
 ---
 
-### ClipImage property
+### ClipImage
 
     bool Button.ClipImage;
 
@@ -204,7 +204,7 @@ button's clickable area.
 
 ---
 
-### Font property
+### Font
 
     FontType Button.Font
 
@@ -224,7 +224,7 @@ will change the *btnOK* button to use Font "Main".
 
 ---
 
-### Graphic property
+### Graphic
 
 *(Formerly part of GetButtonPic, which is now obsolete)*
 
@@ -251,7 +251,7 @@ will display btnPlay's current sprite number.
 
 ---
 
-### MouseOverGraphic property
+### MouseOverGraphic
 
 *(Formerly part of GetButtonPic, which is now obsolete)*\
 *(Formerly part of SetButtonPic, which is now obsolete)*
@@ -273,7 +273,7 @@ will display btnPlay's mouse-over sprite number.
 
 ---
 
-### NormalGraphic property
+### NormalGraphic
 
 *(Formerly part of GetButtonPic, which is now obsolete)*\
 *(Formerly part of SetButtonPic, which is now obsolete)*
@@ -300,7 +300,7 @@ will display btnPlay's normal sprite number.
 
 ---
 
-### PushedGraphic property
+### PushedGraphic
 
 *(Formerly part of GetButtonPic, which is now obsolete)*\
 *(Formerly part of SetButtonPic, which is now obsolete)*
@@ -323,7 +323,7 @@ will display btnPlay's pushed sprite number.
 
 ---
 
-### Text property
+### Text
 
 *(Formerly known as SetButtonText, which is now obsolete)*\
 *(Formerly known as Button.GetText, which is now obsolete)*\
@@ -346,7 +346,7 @@ will display the old text, then change button btnController to read
 
 ---
 
-### TextColor property
+### TextColor
 
     int Button.TextColor;
 

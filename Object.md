@@ -552,7 +552,7 @@ will tint object 1 green.
 
 ---
 
-### Animating property
+### Animating
 
 *(Formerly known as IsObjectAnimating, which is now obsolete)*
 
@@ -581,7 +581,7 @@ you wouldn't need to do this.
 
 ---
 
-### Baseline property
+### Baseline
 
 *(Formerly known as GetObjectBaseline, which is now obsolete)*\
 *(Formerly known as SetObjectBaseline, which is now obsolete)*
@@ -611,7 +611,7 @@ will change object's 4 baseline to a line positioned at y coordinate
 
 ---
 
-### BlockingHeight property
+### BlockingHeight
 
     int Object.BlockingHeight
 
@@ -641,7 +641,7 @@ its baseline)
 
 ---
 
-### BlockingWidth property
+### BlockingWidth
 
     int Character.BlockingWidth
 
@@ -671,7 +671,7 @@ his centre, and 25 to the right)
 
 ---
 
-### Clickable property
+### Clickable
 
 *(Formerly known as SetObjectClickable, which is now obsolete)*
 
@@ -697,7 +697,7 @@ will make object 2 ignore clicks from the player.
 
 ---
 
-### Frame property
+### Frame
 
     readonly int Object.Frame
 
@@ -720,7 +720,7 @@ will display the oDoor object's current frame number
 
 ---
 
-### Graphic property
+### Graphic
 
 *(Formerly known as GetObjectGraphic, which is now obsolete)*\
 *(Formerly known as SetObjectGraphic, which is now obsolete)*
@@ -743,7 +743,7 @@ manager's slot 100.
 
 ---
 
-### HasExplicitLight property
+### HasExplicitLight
 
     readonly bool Object.HasExplicitTint
 
@@ -761,7 +761,7 @@ light.
 
 ---
 
-### HasExplicitTint property
+### HasExplicitTint
 
     readonly bool Object.HasExplicitTint
 
@@ -778,7 +778,7 @@ tinted by [SetAmbientTint](Game#setambienttint) or a region tint.
 
 ---
 
-### ID property
+### ID
 
     readonly int Object.ID
 
@@ -795,7 +795,7 @@ uses the obsolete MoveObject function to move the Rock object to (100,
 
 ---
 
-### IgnoreScaling property
+### IgnoreScaling
 
     bool Object.IgnoreScaling
 
@@ -818,7 +818,7 @@ will tell the Door object not to be scaled on walkable areas.
 
 ---
 
-### IgnoreWalkbehinds property
+### IgnoreWalkbehinds
 
 *(Formerly known as SetObjectIgnoreWalkbehinds, which is now obsolete)*
 
@@ -849,7 +849,7 @@ will make object 1 ignore walk behinds.
 
 ---
 
-### LightLevel property
+### LightLevel
 
     readonly int Object.LightLevel
 
@@ -867,7 +867,7 @@ property returns the light level value. Otherwise it returns 0.
 
 ---
 
-### Loop property
+### Loop
 
     readonly int Object.Loop
 
@@ -890,7 +890,7 @@ will display the oDoor object's current loop number
 
 ---
 
-### Moving property
+### Moving
 
 *(Formerly known as IsObjectMoving, which is now obsolete)*
 
@@ -915,7 +915,7 @@ object gets there.
 
 ---
 
-### Name property
+### Name
 
 *(Formerly known as GetObjectName, which is now obsolete)*\
 *(Formerly known as Object.GetName, which is now obsolete)*
@@ -937,7 +937,7 @@ will retrieve and then display object 0's name.
 
 ---
 
-### Solid property
+### Solid
 
     bool Object.Solid
 
@@ -961,7 +961,7 @@ will mean that the Smallrock object blocks the path of characters.
 
 ---
 
-### TintBlue property
+### TintBlue
 
     readonly int Object.TintBlue
 
@@ -984,7 +984,7 @@ false, then this value is meaningless.
 
 ---
 
-### TintGreen property
+### TintGreen
 
     readonly int Object.TintGreen
 
@@ -1007,7 +1007,7 @@ false, then this value is meaningless.
 
 ---
 
-### TintRed property
+### TintRed
 
     readonly int Object.TintRed
 
@@ -1030,7 +1030,7 @@ false, then this value is meaningless.
 
 ---
 
-### TintSaturation property
+### TintSaturation
 
     readonly int Object.TintSaturation
 
@@ -1053,7 +1053,7 @@ false, then this value is meaningless.
 
 ---
 
-### TintLuminance property
+### TintLuminance
 
     readonly int Object.TintLuminance
 
@@ -1076,7 +1076,7 @@ false, then this value is meaningless.
 
 ---
 
-### Transparency property
+### Transparency
 
 *(Formerly known as SetObjectTransparency, which is now obsolete)*
 
@@ -1119,7 +1119,7 @@ to being fully invisible.
 
 ---
 
-### View property
+### View
 
     readonly int Object.View
 
@@ -1143,7 +1143,7 @@ will display the oDoor object's current view number
 
 ---
 
-### Visible property
+### Visible
 
 *(Formerly known as IsObjectOn, which is now obsolete)*\
 *(Formerly known as ObjectOff, which is now obsolete)*\
@@ -1163,7 +1163,7 @@ will make object number 5 in the current room disappear.
 
 ---
 
-### X property
+### X
 
 *(Formerly known as GetObjectX, which is now obsolete)*
 
@@ -1186,7 +1186,7 @@ will display the X co-ordinate of object 1.
 
 ---
 
-### Y property
+### Y
 
 *(Formerly known as GetObjectY, which is now obsolete)*
 

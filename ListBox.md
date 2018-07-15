@@ -271,7 +271,7 @@ will scroll the *lstTest* list box up one row.
 
 ---
 
-### Font property
+### Font
 
     FontType ListBox.Font
 
@@ -288,7 +288,7 @@ will change the *lstSaveGames* list box to use Font "Speech".
 
 ---
 
-### HideBorder property
+### HideBorder
 
     bool ListBox.HideBorder
 
@@ -308,7 +308,7 @@ will hide the border around the Save Games list box.
 
 ---
 
-### HideScrollArrows property
+### HideScrollArrows
 
     bool ListBox.HideScrollArrows
 
@@ -333,7 +333,7 @@ will hide the built-in scroll arrows on the list box.
 
 ---
 
-### ItemCount property
+### ItemCount
 
 *(Formerly known as ListBoxGetNumItems, which is now obsolete)*
 
@@ -355,7 +355,7 @@ will pass the number of saved games to the int saves.
 
 ---
 
-### Items property
+### Items
 
 *(Formerly known as ListBoxGetItemText, which is now obsolete)*\
 *(Formerly known as ListBox.GetItemText, which is now obsolete)*\
@@ -384,7 +384,7 @@ will get the text of the selected item in the list box.
 
 ---
 
-### RowCount property
+### RowCount
 
     readonly int ListBox.RowCount
 
@@ -407,7 +407,7 @@ will display the number of rows that the listbox can display.
 
 ---
 
-### SaveGameSlots property
+### SaveGameSlots
 
 *(Formerly known as global array savegameindex, which is now obsolete)*
 
@@ -437,7 +437,7 @@ FillSaveGameList had been used previously.
 
 ---
 
-### SelectedIndex property
+### SelectedIndex
 
 *(Formerly known as ListBoxGetSelected, which is now obsolete)*\
 *(Formerly known as ListBoxSetSelected, which is now obsolete)*
@@ -459,7 +459,7 @@ will get the text of the selected item in the listbox.
 
 ---
 
-### TopItem property
+### TopItem
 
 *(Formerly known as ListBoxSetTopItem, which is now obsolete)*
 
@@ -480,7 +480,7 @@ list.
 
 ---
 
-### Translated property
+### Translated
 
     bool ListBox.Translated
 

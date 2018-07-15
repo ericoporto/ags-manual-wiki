@@ -713,7 +713,7 @@ room background.
 
 ---
 
-### ColorDepth property
+### ColorDepth
 
     readonly int DynamicSprite.ColorDepth;
 
@@ -736,7 +736,7 @@ displays the colour depth of the CustomAvatar.bmp image.
 
 ---
 
-### Graphic property
+### Graphic
 
     readonly int DynamicSprite.Graphic;
 
@@ -761,7 +761,7 @@ takes a screen shot, and draws it onto the background scene at
 
 ---
 
-### Height property
+### Height
 
     readonly int DynamicSprite.Height;
 
@@ -783,7 +783,7 @@ displays the size of the CustomAvatar.bmp image.
 
 ---
 
-### Width property
+### Width
 
     readonly int DynamicSprite.Width;
 

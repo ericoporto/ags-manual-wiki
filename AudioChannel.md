@@ -88,7 +88,7 @@ of the *oMachine* room object.
 
 ---
 
-### Speed property
+### Speed
 
     int AudioChannel.Speed
 
@@ -133,7 +133,7 @@ stop it.
 
 ---
 
-### ID property
+### ID
 
     readonly int AudioChannel.ID
 
@@ -153,7 +153,7 @@ channel it is playing on.
 
 ---
 
-### IsPlaying property
+### IsPlaying
 
 *(Formerly known as IsChannelPlaying, which is now obsolete)*
 
@@ -177,7 +177,7 @@ finishes.
 
 ---
 
-### LengthMs property
+### LengthMs
 
     readonly int AudioChannel.LengthMs
 
@@ -201,7 +201,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 ---
 
-### Panning property
+### Panning
 
     int AudioChannel.Panning
 
@@ -227,7 +227,7 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 ---
 
-### PlayingClip property
+### PlayingClip
 
 *(Formerly known as GetCurrentMusic, which is now obsolete)*
 
@@ -259,7 +259,7 @@ will display what is currently playing on audio channel 2.
 
 ---
 
-### Position property
+### Position
 
 *(Formerly known as GetMIDIPosition, which is now obsolete)*\
 *(Formerly known as GetMODPattern, which is now obsolete)*\
@@ -298,7 +298,7 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 
 ---
 
-### PositionMs property
+### PositionMs
 
     readonly int AudioChannel.PositionMs
 
@@ -329,7 +329,7 @@ display its position.
 
 ---
 
-### Volume property
+### Volume
 
 *(Formerly known as SetChannelVolume, which is now obsolete)*\
 *(Formerly known as SetMusicVolume, which is now obsolete)*

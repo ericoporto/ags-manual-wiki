@@ -449,7 +449,7 @@ calculates the hyperbolic tan of 45 degrees and places it into variable
 
 ---
 
-### Pi property
+### Pi
 
     readonly float Maths.Pi
 
