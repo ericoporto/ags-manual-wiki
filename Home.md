@@ -23,8 +23,9 @@ Welcome to Adventure Game Studio!
 -   [Other Features](OtherFeatures)
 
 ## Engine
--   [Setup program](EngineWinsetup)
 -   [The run-time engine](RuntimeEngine)
+-   [Graphics driver selection](GraphicsDriver)
+-   [Engine Setup Program](Setup)
 
 ## Scripting
 -   [Scripting](Scripting)
