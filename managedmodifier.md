@@ -3,7 +3,7 @@ Script language keywords
 
 [Arrays](#Arrays)\
 [Data types](#Datatypes)\
-[Operators](#topic47)\
+[Operators](#operators)\
 [Constants](#Constants)\
 [Version checking](#VersionChecks)\
 [if, else statements](#ifelsestatements)\
