@@ -47,9 +47,9 @@ Example:
 
 will display "HelloWorld".
 
-*See Also:* [String.AppendChar](ags76#String.AppendChar),
-[String.Substring](ags76#String.Substring),
-[String.Truncate](ags76#String.Truncate)
+*See Also:* [String.AppendChar](topic71#String.AppendChar),
+[String.Substring](topic71#String.Substring),
+[String.Truncate](topic71#String.Truncate)
 
 ---
 
@@ -75,7 +75,7 @@ Example:
 
 will display "Hello".
 
-*See Also:* [String.Append](ags76#String.Append)
+*See Also:* [String.Append](topic71#String.Append)
 
 ---
 
@@ -161,8 +161,8 @@ will display the "Ends with script!" message.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [String.IndexOf](ags76#String.IndexOf),
-[String.StartsWith](ags76#String.StartsWith)
+*See Also:* [String.IndexOf](topic71#String.IndexOf),
+[String.StartsWith](topic71#String.StartsWith)
 
 ---
 
@@ -177,7 +177,7 @@ but instead of displaying it on the screen, returns the result as a new
 string.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](ags34#StringFormats)
+information, see the [string formatting](StringFormats#StringFormats)
 section.
 
 **NOTE:** This function is static, which means you do not call it on an
@@ -190,7 +190,7 @@ Example:
 
 will create a text string containing "10".
 
-*See Also:* [Display](ags78#Display)
+*See Also:* [Display](topic73#Display)
 
 ---
 
@@ -221,8 +221,8 @@ Example:
       Display("a needle was found starting at character %d in the string.", result);
     }
 
-*See Also:* [String.EndsWith](ags76#String.EndsWith),
-[String.StartsWith](ags76#String.StartsWith)
+*See Also:* [String.EndsWith](topic71#String.EndsWith),
+[String.StartsWith](topic71#String.StartsWith)
 
 ---
 
@@ -277,7 +277,7 @@ Example:
 
 will display "Old: THIS is a test string, new: this is a test string".
 
-*See Also:* [String.UpperCase](ags76#String.UpperCase)
+*See Also:* [String.UpperCase](topic71#String.UpperCase)
 
 ---
 
@@ -306,7 +306,7 @@ script!".
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [String.ReplaceCharAt](ags76#String.ReplaceCharAt)
+*See Also:* [String.ReplaceCharAt](topic71#String.ReplaceCharAt)
 
 ---
 
@@ -333,8 +333,8 @@ Example:
 
 will display "Old: Hello, new: Hemlo".
 
-*See Also:* [String.Chars](ags76#String.Chars),
-[String.Replace](ags76#String.Replace)
+*See Also:* [String.Chars](topic71#String.Chars),
+[String.Replace](topic71#String.Replace)
 
 ---
 
@@ -360,8 +360,8 @@ will display the "Starts with hello!" message.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [String.EndsWith](ags76#String.EndsWith),
-[String.IndexOf](ags76#String.IndexOf)
+*See Also:* [String.EndsWith](topic71#String.EndsWith),
+[String.IndexOf](topic71#String.IndexOf)
 
 ---
 
@@ -384,8 +384,8 @@ Example:
 
 will display "Original: Hello World!, Substring: lo Wo".
 
-*See Also:* [String.Append](ags76#String.Append),
-[String.Chars](ags76#String.Chars)
+*See Also:* [String.Append](topic71#String.Append),
+[String.Chars](topic71#String.Chars)
 
 ---
 
@@ -407,8 +407,8 @@ Example:
 
 will display "Original: Hello World!, Truncated: Hell".
 
-*See Also:* [String.Append](ags76#String.Append),
-[String.Substring](ags76#String.Substring)
+*See Also:* [String.Append](topic71#String.Append),
+[String.Substring](topic71#String.Substring)
 
 ---
 
@@ -432,7 +432,7 @@ Example:
 
 will display "Old: THIS is a test string, new: THIS IS A TEST STRING".
 
-*See Also:* [String.LowerCase](ags76#String.LowerCase)
+*See Also:* [String.LowerCase](topic71#String.LowerCase)
 
 ---
 
@@ -456,11 +456,11 @@ will set number1 value to 57.362 and number2 value to 0.0 This function
 is useful for processing strings input from the user.
 
 **NOTE:** To convert a float to a string, you can use the
-[String.Format](ags76#String.Format) command.
+[String.Format](topic71#String.Format) command.
 
-*See Also:* [Game.InputBox](ags54#Game.InputBox),
-[String.AsInt](ags76#String.AsInt),
-[String.Format](ags76#String.Format)
+*See Also:* [Game.InputBox](Game#Game.InputBox),
+[String.AsInt](topic71#String.AsInt),
+[String.Format](topic71#String.Format)
 
 ---
 
@@ -491,11 +491,11 @@ will set number1 value to 53 and number2 value to 0. This function is
 useful for processing strings input from the user.
 
 **NOTE:** To convert an integer to a string, you can use the
-[String.Format](ags76#String.Format) command.
+[String.Format](topic71#String.Format) command.
 
-*See Also:* [Game.InputBox](ags54#Game.InputBox),
-[String.AsFloat](ags76#String.AsFloat),
-[String.Format](ags76#String.Format)
+*See Also:* [Game.InputBox](Game#Game.InputBox),
+[String.AsFloat](topic71#String.AsFloat),
+[String.Format](topic71#String.Format)
 
 ---
 
@@ -515,7 +515,7 @@ If POSITION is outside the string, this function returns 0.
 
 **NOTE:** The *Chars* array is read-only. If you want to change one of
 the characters in the string, use
-[String.ReplaceCharAt](ags76#String.ReplaceCharAt).
+[String.ReplaceCharAt](topic71#String.ReplaceCharAt).
 
 Example:
 
@@ -524,8 +524,8 @@ Example:
 
 will display "The 4th character is: s".
 
-*See Also:* [String.Length](ags76#String.Length),
-[String.ReplaceCharAt](ags76#String.ReplaceCharAt)
+*See Also:* [String.Length](topic71#String.Length),
+[String.ReplaceCharAt](topic71#String.ReplaceCharAt)
 
 ---
 

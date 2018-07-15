@@ -29,8 +29,8 @@ Example:
 will cause the palette indexes from 10 to 200 cycle around one slot and
 give a color effect.
 
-*See Also:* [FadeIn](ags74#FadeIn), [FadeOut](ags74#FadeOut),
-[SetPalRGB](ags70#SetPalRGB)
+*See Also:* [FadeIn](topic70#FadeIn), [FadeOut](topic70#FadeOut),
+[SetPalRGB](topic66#SetPalRGB)
 
 ---
 
@@ -58,9 +58,9 @@ Example:
 
 will change palette slot number 10 from light green to yellow
 
-*See Also:* [CyclePalette](ags70#CyclePalette),
-[FadeIn](ags74#FadeIn), [FadeOut](ags74#FadeOut),
-[UpdatePalette](ags70#UpdatePalette)
+*See Also:* [CyclePalette](topic66#CyclePalette),
+[FadeIn](topic70#FadeIn), [FadeOut](topic70#FadeOut),
+[UpdatePalette](topic66#UpdatePalette)
 
 ---
 
@@ -81,4 +81,4 @@ Example:
 will make the black colour turn bright red. When you actually change the
 variable, nothing happens. Call this function to update the screen.
 
-*See Also:* [SetPalRGB](ags70#SetPalRGB)
+*See Also:* [SetPalRGB](topic66#SetPalRGB)

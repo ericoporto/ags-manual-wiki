@@ -54,7 +54,7 @@ All the following variables are `int` variables.
 
   game.read\_dialog\_option\_color                 By default, -1. You can set this to a colour number, in which case dialog options that the player has selected before will be displayed in this colour.
 
-  game.roomscript\_finished                        The on\_call function has completed executing. (See [CallRoomScript](ags54#CallRoomScript))
+  game.roomscript\_finished                        The on\_call function has completed executing. (See [CallRoomScript](Game#CallRoomScript))
 
   **game.score**                                   The player's score. To modify the score, use the GiveScore script function.
 
@@ -86,7 +86,7 @@ All the following variables are `int` variables.
 
   game.text\_shadow\_color                         Color used for speech text shadow (default 16).
 
-  game.top\_bar\_XXXX                              Customizations for [DisplayTopBar](ags78#DisplayTopBar), see link for details
+  game.top\_bar\_XXXX                              Customizations for [DisplayTopBar](topic73#DisplayTopBar), see link for details
 
   game.total\_score                                Maximum possible score, initially set in the editor.
 

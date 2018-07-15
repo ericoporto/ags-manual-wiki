@@ -1,20 +1,20 @@
 GUI List Box functions and properties
 -------------------------------------
 
-[BringToFront (inherited)](ags56#GUIControl.BringToFront)\
-[Clickable property (inherited)](ags56#GUIControl.Clickable)\
-[Enabled property (inherited)](ags56#GUIControl.Enabled)\
-[Height property (inherited)](ags56#GUIControl.Height)\
-[ID property (inherited)](ags56#GUIControl.ID)\
-[OwningGUI property (inherited)](ags56#GUIControl.OwningGUI)\
-[SendToBack (inherited)](ags56#GUIControl.SendToBack)\
-[SetPosition (inherited)](ags56#GUIControl.SetPosition)\
-[SetSize (inherited)](ags56#GUIControl.SetSize)\
-[Visible property (inherited)](ags56#GUIControl.Visible)\
-[Width property (inherited)](ags56#GUIControl.Width)\
-[X property (inherited)](ags56#GUIControl.X)\
-[Y property (inherited)](ags56#GUIControl.Y)\
-[ZOrder property (inherited)](ags56#GUIControl.ZOrder)
+[BringToFront (inherited)](topic53#GUIControl.BringToFront)\
+[Clickable property (inherited)](topic53#GUIControl.Clickable)\
+[Enabled property (inherited)](topic53#GUIControl.Enabled)\
+[Height property (inherited)](topic53#GUIControl.Height)\
+[ID property (inherited)](topic53#GUIControl.ID)\
+[OwningGUI property (inherited)](topic53#GUIControl.OwningGUI)\
+[SendToBack (inherited)](topic53#GUIControl.SendToBack)\
+[SetPosition (inherited)](topic53#GUIControl.SetPosition)\
+[SetSize (inherited)](topic53#GUIControl.SetSize)\
+[Visible property (inherited)](topic53#GUIControl.Visible)\
+[Width property (inherited)](topic53#GUIControl.Width)\
+[X property (inherited)](topic53#GUIControl.X)\
+[Y property (inherited)](topic53#GUIControl.Y)\
+[ZOrder property (inherited)](topic53#GUIControl.ZOrder)
 
 [AddItem](#ListBox.AddItem)\
 [Clear (list box)](#ListBox.Clear)\
@@ -58,11 +58,11 @@ Example:
 
 will take the input from the user and add it to the listbox.
 
-*See Also:* [ListBox.Clear](ags60#ListBox.Clear),
-[ListBox.FillDirList](ags60#ListBox.FillDirList),
-[ListBox.InsertItemAt](ags60#ListBox.InsertItemAt),
-[ListBox.Items](ags60#ListBox.Items),
-[ListBox.RemoveItem](ags60#ListBox.RemoveItem)
+*See Also:* [ListBox.Clear](topic56#ListBox.Clear),
+[ListBox.FillDirList](topic56#ListBox.FillDirList),
+[ListBox.InsertItemAt](topic56#ListBox.InsertItemAt),
+[ListBox.Items](topic56#ListBox.Items),
+[ListBox.RemoveItem](topic56#ListBox.RemoveItem)
 
 ---
 
@@ -80,7 +80,7 @@ Example:
 
 will remove all the items from listbox *lstNoteBook*.
 
-*See Also:* [ListBox.AddItem](ags60#ListBox.AddItem)
+*See Also:* [ListBox.AddItem](topic56#ListBox.AddItem)
 
 ---
 
@@ -112,9 +112,9 @@ Example:
 will fill the listbox with the list of the saved games. Note that
 actually for this task you would use FillSaveGameList instead.
 
-*See Also:* [ListBox.AddItem](ags60#ListBox.AddItem),
-[ListBox.Clear](ags60#ListBox.Clear),
-[ListBox.FillSaveGameList](ags60#ListBox.FillSaveGameList)
+*See Also:* [ListBox.AddItem](topic56#ListBox.AddItem),
+[ListBox.Clear](topic56#ListBox.Clear),
+[ListBox.FillSaveGameList](topic56#ListBox.FillSaveGameList)
 
 ---
 
@@ -127,7 +127,7 @@ actually for this task you would use FillSaveGameList instead.
 Fills the specified listbox with the save game list, sorted correctly
 with the most recent game at the top of the list.
 
-The [SaveGameSlots](ags60#ListBox.SaveGameSlots) property is updated
+The [SaveGameSlots](topic56#ListBox.SaveGameSlots) property is updated
 to contain the save game slot number for each index in the list, so that
 you can do:
 
@@ -145,10 +145,10 @@ Example:
 
 will fill listbox *lstSaveGames* with the list of the saved games.
 
-*See Also:* [ListBox.FillDirList](ags60#ListBox.FillDirList),
-[ListBox.ItemCount](ags60#ListBox.ItemCount),
-[ListBox.SaveGameSlots](ags60#ListBox.SaveGameSlots),
-[ListBox.SelectedIndex](ags60#ListBox.SelectedIndex)
+*See Also:* [ListBox.FillDirList](topic56#ListBox.FillDirList),
+[ListBox.ItemCount](topic56#ListBox.ItemCount),
+[ListBox.SaveGameSlots](topic56#ListBox.SaveGameSlots),
+[ListBox.SelectedIndex](topic56#ListBox.SelectedIndex)
 
 ---
 
@@ -177,7 +177,7 @@ Example:
 
 will display the item text that the mouse is currently hovering over.
 
-*See Also:* [ListBox.SelectedIndex](ags60#ListBox.SelectedIndex)
+*See Also:* [ListBox.SelectedIndex](topic56#ListBox.SelectedIndex)
 
 ---
 
@@ -203,8 +203,8 @@ Example:
 
 will insert the Third Item in between the First and Second items.
 
-*See Also:* [ListBox.AddItem](ags60#ListBox.AddItem),
-[ListBox.RemoveItem](ags60#ListBox.RemoveItem)
+*See Also:* [ListBox.AddItem](topic56#ListBox.AddItem),
+[ListBox.RemoveItem](topic56#ListBox.RemoveItem)
 
 ---
 
@@ -218,7 +218,7 @@ Removes ITEM from the specified list box. ITEM is the list index of the
 item to remove, starting with 0 for the top item.
 
 If you want to remove all items from the list, then use
-[ListBox.Clear](ags60#ListBox.Clear) instead.
+[ListBox.Clear](topic56#ListBox.Clear) instead.
 
 **NOTE:** Calling this function causes other items in the list to get
 re-numbered, so make sure you don't keep around any references from
@@ -232,8 +232,8 @@ Example:
 
 the list box will now just contain "Second item".
 
-*See Also:* [ListBox.Clear](ags60#ListBox.Clear),
-[ListBox.FillDirList](ags60#ListBox.FillDirList)
+*See Also:* [ListBox.Clear](topic56#ListBox.Clear),
+[ListBox.FillDirList](topic56#ListBox.FillDirList)
 
 ---
 
@@ -250,7 +250,7 @@ Example:
 
 will scroll the *lstTest* list box down one row.
 
-*See Also:* [ListBox.ScrollUp](ags60#ListBox.ScrollUp)
+*See Also:* [ListBox.ScrollUp](topic56#ListBox.ScrollUp)
 
 ---
 
@@ -267,7 +267,7 @@ Example:
 
 will scroll the *lstTest* list box up one row.
 
-*See Also:* [ListBox.ScrollDown](ags60#ListBox.ScrollDown)
+*See Also:* [ListBox.ScrollDown](topic56#ListBox.ScrollDown)
 
 ---
 
@@ -283,8 +283,8 @@ Example:
 
 will change the *lstSaveGames* list box to use Font "Speech".
 
-*See Also:* [Label.Font](ags59#Label.Font),
-[TextBox.Text](ags62#TextBox.Text)
+*See Also:* [Label.Font](topic55#Label.Font),
+[TextBox.Text](topic58#TextBox.Text)
 
 ---
 
@@ -304,7 +304,7 @@ Example:
 will hide the border around the Save Games list box.
 
 *See Also:*
-[ListBox.HideScrollArrows](ags60#ListBox.HideScrollArrows)
+[ListBox.HideScrollArrows](topic56#ListBox.HideScrollArrows)
 
 ---
 
@@ -329,7 +329,7 @@ Example:
 
 will hide the built-in scroll arrows on the list box.
 
-*See Also:* [ListBox.HideBorder](ags60#ListBox.HideBorder)
+*See Also:* [ListBox.HideBorder](topic56#ListBox.HideBorder)
 
 ---
 
@@ -351,7 +351,7 @@ Example:
 
 will pass the number of saved games to the int saves.
 
-*See Also:* [ListBox.Items](ags60#ListBox.Items)
+*See Also:* [ListBox.Items](topic56#ListBox.Items)
 
 ---
 
@@ -370,7 +370,7 @@ second is 1, and so on. The highest allowable index is ItemCount minus
 1.
 
 If you want to add a new item to the listbox, use the
-[ListBox.AddItem](ags60#ListBox.AddItem) method.
+[ListBox.AddItem](topic56#ListBox.AddItem) method.
 
 Example:
 
@@ -378,9 +378,9 @@ Example:
 
 will get the text of the selected item in the list box.
 
-*See Also:* [ListBox.SelectedIndex](ags60#ListBox.SelectedIndex),
-[ListBox.ItemCount](ags60#ListBox.ItemCount),
-[ListBox.AddItem](ags60#ListBox.AddItem)
+*See Also:* [ListBox.SelectedIndex](topic56#ListBox.SelectedIndex),
+[ListBox.ItemCount](topic56#ListBox.ItemCount),
+[ListBox.AddItem](topic56#ListBox.AddItem)
 
 ---
 
@@ -401,9 +401,9 @@ Example:
 
 will display the number of rows that the listbox can display.
 
-*See Also:* [ListBox.ItemCount](ags60#ListBox.ItemCount),
-[ListBox.ScrollDown](ags60#ListBox.ScrollDown),
-[ListBox.ScrollUp](ags60#ListBox.ScrollUp)
+*See Also:* [ListBox.ItemCount](topic56#ListBox.ItemCount),
+[ListBox.ScrollDown](topic56#ListBox.ScrollDown),
+[ListBox.ScrollUp](topic56#ListBox.ScrollUp)
 
 ---
 
@@ -432,8 +432,8 @@ will restore the currently selected game in the list, assuming
 FillSaveGameList had been used previously.
 
 *See Also:*
-[ListBox.FillSaveGameList](ags60#ListBox.FillSaveGameList),
-[ListBox.SelectedIndex](ags60#ListBox.SelectedIndex)
+[ListBox.FillSaveGameList](topic56#ListBox.FillSaveGameList),
+[ListBox.SelectedIndex](topic56#ListBox.SelectedIndex)
 
 ---
 

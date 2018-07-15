@@ -43,7 +43,7 @@ will display a message with the number of audio channels.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [System.AudioChannels](ags77#System.AudioChannels)
+*See Also:* [System.AudioChannels](topic72#System.AudioChannels)
 
 ---
 
@@ -64,8 +64,8 @@ will display a message with Audio Channel 2's current volume.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Audio Channel commands](ags45#AudioChannelCommands),
-[System.AudioChannelCount](ags77#System.AudioChannelCount)
+*See Also:* [Audio Channel commands](AudioChannel#AudioChannelCommands),
+[System.AudioChannelCount](topic72#System.AudioChannelCount)
 
 ---
 
@@ -89,8 +89,8 @@ will display a message if Caps Lock is on.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [System.NumLock](ags77#System.NumLock),
-[System.ScrollLock](ags77#System.ScrollLock)
+*See Also:* [System.NumLock](topic72#System.NumLock),
+[System.ScrollLock](topic72#System.ScrollLock)
 
 ---
 
@@ -111,8 +111,8 @@ Example:
 
 will display the current resolution and colour depth
 
-*See Also:* [System.ScreenHeight](ags77#System.ScreenHeight),
-[System.ScreenWidth](ags77#System.ScreenWidth)
+*See Also:* [System.ScreenHeight](topic72#System.ScreenHeight),
+[System.ScreenWidth](topic72#System.ScreenWidth)
 
 ---
 
@@ -124,7 +124,7 @@ Gets/sets the current screen Gamma level. This is 100 by default, and
 you can set it anywhere from 0 (pitch black) to 200 (double normal
 brightness).
 
-[System.SupportsGammaControl](ags77#System.SupportsGammaControl)
+[System.SupportsGammaControl](topic72#System.SupportsGammaControl)
 must return *true* in order for this property to have any effect.
 
 Because every player's monitor will be different, you should normally
@@ -140,7 +140,7 @@ Example:
 will turn the screen brightness up to `50%` higher than normal
 
 *See Also:*
-[System.SupportsGammaControl](ags77#System.SupportsGammaControl)
+[System.SupportsGammaControl](topic72#System.SupportsGammaControl)
 
 ---
 
@@ -169,7 +169,7 @@ Example:
 will display a message if the game is being run with hardware
 acceleration
 
-See Also: [AGS Graphics Drivers](ags6#GraphicsDriver)
+See Also: [AGS Graphics Drivers](GraphicsDriver#GraphicsDriver)
 
 ---
 
@@ -205,7 +205,7 @@ switches back to game.
 
 *Compatibility:* Supported by **AGS 3.3.5** and later versions.
 
-*See Also:* [SetMultitaskingMode](ags54#SetMultitaskingMode)
+*See Also:* [SetMultitaskingMode](Game#SetMultitaskingMode)
 
 ---
 
@@ -229,8 +229,8 @@ will display a message if Num Lock is on.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [System.CapsLock](ags77#System.CapsLock),
-[System.ScrollLock](ags77#System.ScrollLock)
+*See Also:* [System.CapsLock](topic72#System.CapsLock),
+[System.ScrollLock](topic72#System.ScrollLock)
 
 ---
 
@@ -308,7 +308,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Debug](ags54#Debug)
+*See Also:* [Debug](Game#Debug)
 
 ---
 
@@ -326,7 +326,7 @@ borders.
 
 **NOTE:** Do **NOT** use this to calculate the centre of the screen when
 working with co-ordinates. Co-ordinates are relative to the viewport, so
-you should use [System.ViewportHeight](ags77#System.ViewportHeight)
+you should use [System.ViewportHeight](topic72#System.ViewportHeight)
 instead. Use the ScreenHeight property only for reporting purposes.
 
 Example:
@@ -336,9 +336,9 @@ Example:
 
 will display the current resolution and colour depth
 
-*See Also:* [System.ColorDepth](ags77#System.ColorDepth),
-[System.ScreenWidth](ags77#System.ScreenWidth),
-[System.ViewportHeight](ags77#System.ViewportHeight)
+*See Also:* [System.ColorDepth](topic72#System.ColorDepth),
+[System.ScreenWidth](topic72#System.ScreenWidth),
+[System.ViewportHeight](topic72#System.ViewportHeight)
 
 ---
 
@@ -356,7 +356,7 @@ these borders.
 
 **NOTE:** Do **NOT** use this to calculate the centre of the screen when
 working with co-ordinates. Co-ordinates are relative to the viewport, so
-you should use [System.ViewportWidth](ags77#System.ViewportWidth)
+you should use [System.ViewportWidth](topic72#System.ViewportWidth)
 instead. Use the ScreenWidth property only for reporting purposes.
 
 Example:
@@ -366,9 +366,9 @@ Example:
 
 will display the current resolution and colour depth
 
-*See Also:* [System.ColorDepth](ags77#System.ColorDepth),
-[System.ScreenHeight](ags77#System.ScreenHeight)
-[System.ViewportWidth](ags77#System.ViewportWidth)
+*See Also:* [System.ColorDepth](topic72#System.ColorDepth),
+[System.ScreenHeight](topic72#System.ScreenHeight)
+[System.ViewportWidth](topic72#System.ViewportWidth)
 
 ---
 
@@ -393,8 +393,8 @@ will display a message if Scroll Lock is on.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [System.CapsLock](ags77#System.CapsLock),
-[System.NumLock](ags77#System.NumLock)
+*See Also:* [System.CapsLock](topic72#System.CapsLock),
+[System.NumLock](topic72#System.NumLock)
 
 ---
 
@@ -406,7 +406,7 @@ Gets whether the player's PC supports changing the screen's gamma
 control settings.
 
 This must return *true* before you try and change the
-[System.Gamma](ags77#System.Gamma) property. The situations in which
+[System.Gamma](topic72#System.Gamma) property. The situations in which
 this will be supported are listed below.
 
 **Cross-Platform Support**
@@ -424,7 +424,7 @@ Example:
 
 will display a message if the system supports changing the gamma
 
-*See Also:* [System.Gamma](ags77#System.Gamma)
+*See Also:* [System.Gamma](topic72#System.Gamma)
 
 ---
 
@@ -464,8 +464,8 @@ Example:
 
 will display the current viewport size
 
-*See Also:* [System.ScreenHeight](ags77#System.ScreenHeight),
-[System.ViewportWidth](ags77#System.ViewportWidth)
+*See Also:* [System.ScreenHeight](topic72#System.ScreenHeight),
+[System.ViewportWidth](topic72#System.ViewportWidth)
 
 ---
 
@@ -485,8 +485,8 @@ Example:
 
 will display the current viewport size
 
-*See Also:* [System.ScreenWidth](ags77#System.ScreenWidth),
-[System.ViewportHeight](ags77#System.ViewportHeight)
+*See Also:* [System.ScreenWidth](topic72#System.ScreenWidth),
+[System.ViewportHeight](topic72#System.ViewportHeight)
 
 ---
 
@@ -510,8 +510,8 @@ will set the overall output volume to 80.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](ags45#AudioChannel.Volume),
-[Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume)
+*See Also:* [AudioChannel.Volume](AudioChannel#AudioChannel.Volume),
+[Game.SetAudioTypeVolume](Game#Game.SetAudioTypeVolume)
 
 ---
 

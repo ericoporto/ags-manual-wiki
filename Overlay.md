@@ -26,7 +26,7 @@ as characters/objects, if it is false then a black rectangle will be
 painted behind the sprite.
 
 See the description of
-[Overlay.CreateTextual](ags69#Overlay.CreateTextual) for more on
+[Overlay.CreateTextual](topic65#Overlay.CreateTextual) for more on
 overlays.
 
 Example:
@@ -39,8 +39,8 @@ will create an overlay of the image stored in sprite manager's slot 300,
 at the coordinates 100,100. It will display for 1 second, then remove
 it.
 
-*See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual),
-[Overlay.Remove](ags69#Overlay.Remove)
+*See Also:* [Overlay.CreateTextual](topic65#Overlay.CreateTextual),
+[Overlay.Remove](topic65#Overlay.Remove)
 
 ---
 
@@ -68,7 +68,7 @@ The function returns the Overlay, which you use later to reposition and
 remove the overlay.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](ags34#StringFormats)
+information, see the [string formatting](StringFormats#StringFormats)
 section.
 
 **NOTE:** large overlays, in the same way as objects, can impact
@@ -97,9 +97,9 @@ the speech font and white color. It will be displayed for 1 second, then
 removed.
 
 *See Also:*
-[Overlay.CreateGraphical](ags69#Overlay.CreateGraphical),
-[Overlay.X](ags69#Overlay.X), [Overlay.Y](ags69#Overlay.Y),
-[Overlay.Remove](ags69#Overlay.Remove)
+[Overlay.CreateGraphical](topic65#Overlay.CreateGraphical),
+[Overlay.X](topic65#Overlay.X), [Overlay.Y](topic65#Overlay.Y),
+[Overlay.Remove](topic65#Overlay.Remove)
 
 ---
 
@@ -121,7 +121,7 @@ Example:
 will create a text overlay , wait for 200 game cycles (about 5 seconds)
 and then remove the overlay from the screen.
 
-*See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual)
+*See Also:* [Overlay.CreateTextual](topic65#Overlay.CreateTextual)
 
 ---
 
@@ -135,7 +135,7 @@ Replaces the specified overlay with a new one, at the same co-ordinates
 but with the new specified text, width, font and colour.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](ags34#StringFormats)
+information, see the [string formatting](StringFormats#StringFormats)
 section.
 
 Example:
@@ -147,8 +147,8 @@ Example:
 will create a text overlay , wait for 200 game cycles (about 5 seconds)
 and then replace the overlay with another one.
 
-*See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual),
-[Overlay.Remove](ags69#Overlay.Remove)
+*See Also:* [Overlay.CreateTextual](topic65#Overlay.CreateTextual),
+[Overlay.Remove](topic65#Overlay.Remove)
 
 ---
 
@@ -171,8 +171,8 @@ Example:
 creates an overlay, and prints out the Valid property (which will be 1).
 Then, removes the overlay and prints Valid again (which will now be 0).
 
-*See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual),
-[Overlay.Remove](ags69#Overlay.Remove)
+*See Also:* [Overlay.CreateTextual](topic65#Overlay.CreateTextual),
+[Overlay.Remove](topic65#Overlay.Remove)
 
 ---
 
@@ -198,9 +198,9 @@ Example:
 
 creates a text overlay, then gradually slides it across the screen.
 
-*See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual),
-[Overlay.Y](ags69#Overlay.Y),
-[Overlay.Remove](ags69#Overlay.Remove)
+*See Also:* [Overlay.CreateTextual](topic65#Overlay.CreateTextual),
+[Overlay.Y](topic65#Overlay.Y),
+[Overlay.Remove](topic65#Overlay.Remove)
 
 ---
 
@@ -226,6 +226,6 @@ Example:
 
 creates a text overlay, then gradually slides it down the screen.
 
-*See Also:* [Overlay.CreateTextual](ags69#Overlay.CreateTextual),
-[Overlay.X](ags69#Overlay.X),
-[Overlay.Remove](ags69#Overlay.Remove)
+*See Also:* [Overlay.CreateTextual](topic65#Overlay.CreateTextual),
+[Overlay.X](topic65#Overlay.X),
+[Overlay.Remove](topic65#Overlay.Remove)

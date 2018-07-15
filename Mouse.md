@@ -36,7 +36,7 @@ allows you to dynamically change what a mouse cursor looks like.
 
 **NOTE:** To change what the Use Inventory cursor looks like, you should
 change the active inventory item's
-[CursorGraphic](ags64#InventoryItem.CursorGraphic) property instead
+[CursorGraphic](InventoryItem#InventoryItem.CursorGraphic) property instead
 of using this function.
 
 Example:
@@ -47,10 +47,10 @@ will change the cursor's graphic for look mode to the image that's
 imported in the sprite's manager slot 120.
 
 *See Also:*
-[Mouse.ChangeModeHotspot](ags66#Mouse.ChangeModeHotspot),
-[Mouse.ChangeModeView](ags66#Mouse.ChangeModeView),
-[Mouse.GetModeGraphic](ags66#Mouse.GetModeGraphic),
-[Mouse.Mode](ags66#Mouse.Mode)
+[Mouse.ChangeModeHotspot](topic62#Mouse.ChangeModeHotspot),
+[Mouse.ChangeModeView](topic62#Mouse.ChangeModeView),
+[Mouse.GetModeGraphic](topic62#Mouse.GetModeGraphic),
+[Mouse.Mode](topic62#Mouse.Mode)
 
 ---
 
@@ -72,8 +72,8 @@ Example:
 will change the cursor's hotspot for walk mode to coordinates 10,10.
 
 *See Also:*
-[Mouse.ChangeModeGraphic](ags66#Mouse.ChangeModeGraphic),
-[Mouse.ChangeModeView](ags66#Mouse.ChangeModeView)
+[Mouse.ChangeModeGraphic](topic62#Mouse.ChangeModeGraphic),
+[Mouse.ChangeModeView](topic62#Mouse.ChangeModeView)
 
 ---
 
@@ -95,8 +95,8 @@ Example:
 will change the Look cursor's view to ROLLEYES.
 
 *See Also:*
-[Mouse.ChangeModeGraphic](ags66#Mouse.ChangeModeGraphic),
-[Mouse.ChangeModeHotspot](ags66#Mouse.ChangeModeHotspot)
+[Mouse.ChangeModeGraphic](topic62#Mouse.ChangeModeGraphic),
+[Mouse.ChangeModeHotspot](topic62#Mouse.ChangeModeHotspot)
 
 ---
 
@@ -119,8 +119,8 @@ This will simulate user click at (100,100).
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [GUI.ProcessClick](ags55#GUI.ProcessClick),
-[Room.ProcessClick](ags73#Room.ProcessClick)
+*See Also:* [GUI.ProcessClick](GUIFuncsAndProps#GUI.ProcessClick),
+[Room.ProcessClick](Room#Room.ProcessClick)
 
 ---
 
@@ -144,7 +144,7 @@ game.
 
 *Compatibility:* Supported by **AGS 3.3.5** and later versions.
 
-*See Also:* [Mouse.Speed](ags66#Mouse.Speed)
+*See Also:* [Mouse.Speed](topic62#Mouse.Speed)
 
 ---
 
@@ -168,8 +168,8 @@ Example:
 
 will make the walk mode unavailable until it's enabled again.
 
-*See Also:* [Mouse.EnableMode](ags66#Mouse.EnableMode),
-[Mouse.IsModeEnabled](ags66#Mouse.IsModeEnabled)
+*See Also:* [Mouse.EnableMode](topic62#Mouse.EnableMode),
+[Mouse.IsModeEnabled](topic62#Mouse.IsModeEnabled)
 
 ---
 
@@ -188,8 +188,8 @@ Example:
 
 will enable cursor mode walk which was disabled before.
 
-*See Also:* [Mouse.DisableMode](ags66#Mouse.DisableMode),
-[Mouse.IsModeEnabled](ags66#Mouse.IsModeEnabled)
+*See Also:* [Mouse.DisableMode](topic62#Mouse.DisableMode),
+[Mouse.IsModeEnabled](topic62#Mouse.IsModeEnabled)
 
 ---
 
@@ -208,8 +208,8 @@ Example:
 will change the the "WalkTo" cursor mode, but only if it's currently
 enabled.
 
-*See Also:* [Mouse.EnableMode](ags66#Mouse.EnableMode),
-[Mouse.DisableMode](ags66#Mouse.DisableMode)
+*See Also:* [Mouse.EnableMode](topic62#Mouse.EnableMode),
+[Mouse.DisableMode](topic62#Mouse.DisableMode)
 
 ---
 
@@ -228,7 +228,7 @@ Example:
 
 will display the sprite slot number of the current mouse cursor.
 
-*See Also:* [Mouse.ChangeModeGraphic](ags66#Mouse.ChangeModeGraphic)
+*See Also:* [Mouse.ChangeModeGraphic](topic62#Mouse.ChangeModeGraphic)
 
 ---
 
@@ -265,7 +265,7 @@ sec.
 versions.\
 *eMouseLeft* and *eMouseRight* supported by all versions.
 
-*See Also:* [IsKeyPressed](ags54#IsKeyPressed)
+*See Also:* [IsKeyPressed](Game#IsKeyPressed)
 
 ---
 
@@ -293,7 +293,7 @@ Example:
 will change the cursor mode to Talk for as long as the mouse is over the
 current object
 
-*See Also:* [Mouse.Mode](ags66#Mouse.Mode)
+*See Also:* [Mouse.Mode](topic62#Mouse.Mode)
 
 ---
 
@@ -308,7 +308,7 @@ Sierra-style right-click cycling through modes. This function will
 choose the next mode marked as a Standard Mode, and will also use the
 Use Inventory mode if the player has an active inventory item.
 
-*See Also:* [Mouse.Mode](ags66#Mouse.Mode)
+*See Also:* [Mouse.Mode](topic62#Mouse.Mode)
 
 ---
 
@@ -321,7 +321,7 @@ Sierra-style right-click cycling through modes. This function will
 choose the previous mode marked as a Standard Mode, and will also use
 the Use Inventory mode if the player has an active inventory item.
 
-*See Also:* [Mouse.Mode](ags66#Mouse.Mode)
+*See Also:* [Mouse.Mode](topic62#Mouse.Mode)
 
 ---
 
@@ -348,7 +348,7 @@ Example:
 will restrict the mouse cursor to the bottom-right quarter of the
 screen.
 
-*See Also:* [Mouse.SetPosition](ags66#Mouse.SetPosition)
+*See Also:* [Mouse.SetPosition](topic62#Mouse.SetPosition)
 
 ---
 
@@ -372,7 +372,7 @@ Example:
 
 will place the mouse cursor in the centre of the screen.
 
-*See Also:* [Mouse.SetBounds](ags66#Mouse.SetBounds)
+*See Also:* [Mouse.SetBounds](topic62#Mouse.SetBounds)
 
 ---
 
@@ -393,7 +393,7 @@ The custom mouse speed is only applied if mouse cursor movement is
 currently being controlled by the game, which is usually true only when
 game is run in fullscreen mode. Setting this property has no effect
 otherwise. You can use
-[Mouse.ControlEnabled](ags66#Mouse.ControlEnabled) to know if speed
+[Mouse.ControlEnabled](topic62#Mouse.ControlEnabled) to know if speed
 will be applied.
 
 **NOTE:** It is strongly advised to **NEVER** use this parameter to
@@ -408,8 +408,8 @@ converts slider control's position into mouse speed.
 
 *Compatibility:* Supported by **AGS 3.3.5** and later versions.
 
-*See Also:* [Mouse.ControlEnabled](ags66#Mouse.ControlEnabled),
-[Mouse.SetPosition](ags66#Mouse.SetPosition)
+*See Also:* [Mouse.ControlEnabled](topic62#Mouse.ControlEnabled),
+[Mouse.SetPosition](topic62#Mouse.SetPosition)
 
 ---
 
@@ -446,7 +446,7 @@ Changes the appearance of the mouse cursor to the default for the
 current cursor mode. Use this to restore the cursor picture after you
 changed it with the UseModeGraphic function.
 
-*See Also:* [Mouse.UseModeGraphic](ags66#Mouse.UseModeGraphic)
+*See Also:* [Mouse.UseModeGraphic](topic62#Mouse.UseModeGraphic)
 
 ---
 
@@ -469,9 +469,9 @@ will change the mouse cursor to the cursor 'Wait' specified in the
 Cursors tab.
 
 *See Also:*
-[Mouse.ChangeModeGraphic](ags66#Mouse.ChangeModeGraphic),
-[Mouse.Mode](ags66#Mouse.Mode),
-[Mouse.UseDefaultGraphic](ags66#Mouse.UseDefaultGraphic)
+[Mouse.ChangeModeGraphic](topic62#Mouse.ChangeModeGraphic),
+[Mouse.Mode](topic62#Mouse.Mode),
+[Mouse.UseDefaultGraphic](topic62#Mouse.UseDefaultGraphic)
 
 ---
 
@@ -500,9 +500,9 @@ Example:
 will execute the code only if the current cursor mode is MODE 0 (WALK).
 
 *See Also:*
-[Mouse.SaveCursorUntilItLeaves](ags66#Mouse.SaveCursorUntilItLeaves),
-[Mouse.UseModeGraphic](ags66#Mouse.UseModeGraphic),
-[Mouse.SelectNextMode](ags66#Mouse.SelectNextMode)
+[Mouse.SaveCursorUntilItLeaves](topic62#Mouse.SaveCursorUntilItLeaves),
+[Mouse.UseModeGraphic](topic62#Mouse.UseModeGraphic),
+[Mouse.SelectNextMode](topic62#Mouse.SelectNextMode)
 
 ---
 
@@ -530,4 +530,4 @@ Example:
 
 hides the mouse, waits for a second, then turns it back on again
 
-*See Also:* [Mouse.UseModeGraphic](ags66#Mouse.UseModeGraphic)
+*See Also:* [Mouse.UseModeGraphic](topic62#Mouse.UseModeGraphic)

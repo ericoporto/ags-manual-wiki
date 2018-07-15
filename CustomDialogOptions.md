@@ -24,7 +24,7 @@ To write your custom dialog options code, you need to do the following:
     is activated.
 -   Add a `dialog_options_render` function, which is called by AGS when
     it needs to draw the dialog options. A standard script
-    [DrawingSurface](ags51#DrawingSurfaceFunctions) is supplied,
+    [DrawingSurface](DrawingSurfaceFunctions#DrawingSurfaceFunctions) is supplied,
     which you can use to draw onto.
 -   Optionally, add a `dialog_options_mouse_click` function. This is
     called by AGS if the player clicks the mouse anywhere on dialog
@@ -56,7 +56,7 @@ dialog option scripts, then you should go to General Settings and enable
 
 **IMPORTANT:** When adding the functions to the script, they all take in
 a parameter of type
-[DialogOptionsRenderingInfo](ags50#DialogOptionsRenderingInfoFunctions).
+[DialogOptionsRenderingInfo](DialogOptionsRenderingInfo#DialogOptionsRenderingInfoFunctions).
 The dialog\_options\_mouse\_click function has an extra parameter for
 the mouse button, and dialog\_options\_key\_press has an extra parameter
 for the key code. See the example below.
@@ -194,7 +194,7 @@ to continually scan through all the options.
     }
 
 For more detail on the commands used here, see the
-[DialogOptionsRenderingInfo](ags50#DialogOptionsRenderingInfoFunctions)
+[DialogOptionsRenderingInfo](DialogOptionsRenderingInfo#DialogOptionsRenderingInfoFunctions)
 page.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.

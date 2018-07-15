@@ -18,7 +18,7 @@ another.
 
 The scripts for the game can be seen under the "Scripts" node in the
 project tree. Each script has its own header, which is where you place
-the [import](ags44#importkeyword) definitions for that script to
+the [import](enum#importkeyword) definitions for that script to
 allow the rest of your game to access its functionality.
 
 The order of the scripts is important. A script can only use
@@ -63,6 +63,6 @@ you need other scripts to handle any of this functionality, you can
 simply create a custom function in the script and then call it from the
 global script.
 
-The [ClaimEvent](ags54#ClaimEvent) command is supported for
+The [ClaimEvent](Game#ClaimEvent) command is supported for
 on\_key\_press, on\_mouse\_click and on\_event. Calling it prevents the
 rest of the scripts (including the global script) from being called.

@@ -43,8 +43,8 @@ keyboard support.
 available if you used this template to create your game.
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.RunInteraction](ags80#SCUMM_VERBCOIN_GUI.RunInteraction),
-[SCUMM\_VERBCOIN\_GUI.Select](ags80#SCUMM_VERBCOIN_GUI.Select)
+[SCUMM\_VERBCOIN\_GUI.RunInteraction](topic75#SCUMM_VERBCOIN_GUI.RunInteraction),
+[SCUMM\_VERBCOIN\_GUI.Select](topic75#SCUMM_VERBCOIN_GUI.Select)
 
 ---
 
@@ -85,7 +85,7 @@ will set the double-click speed to 1/4 of a second. (This is a good
 default)
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.doubleclick](ags80#SCUMM_VERBCOIN_GUI.doubleclick)
+[SCUMM\_VERBCOIN\_GUI.doubleclick](topic75#SCUMM_VERBCOIN_GUI.doubleclick)
 
 ---
 
@@ -121,8 +121,8 @@ will make sure that on the next inventory scroll you will start with
 item 11, 21, 31, ...
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.InvScroll\_Left](ags80#SCUMM_VERBCOIN_GUI.InvScroll_Left),
-[SCUMM\_VERBCOIN\_GUI.InvScroll\_Right](ags80#SCUMM_VERBCOIN_GUI.InvScroll_Right)
+[SCUMM\_VERBCOIN\_GUI.InvScroll\_Left](topic75#SCUMM_VERBCOIN_GUI.InvScroll_Left),
+[SCUMM\_VERBCOIN\_GUI.InvScroll\_Right](topic75#SCUMM_VERBCOIN_GUI.InvScroll_Right)
 
 ---
 
@@ -137,8 +137,8 @@ Item\_Count.
 available if you used this template to create your game.
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.Item\_Count](ags80#SCUMM_VERBCOIN_GUI.Item_Count),
-[SCUMM\_VERBCOIN\_GUI.InvScroll\_Right](ags80#SCUMM_VERBCOIN_GUI.InvScroll_Right)
+[SCUMM\_VERBCOIN\_GUI.Item\_Count](topic75#SCUMM_VERBCOIN_GUI.Item_Count),
+[SCUMM\_VERBCOIN\_GUI.InvScroll\_Right](topic75#SCUMM_VERBCOIN_GUI.InvScroll_Right)
 
 ---
 
@@ -153,8 +153,8 @@ Item\_Count.
 available if you used this template to create your game.
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.Item\_Count](ags80#SCUMM_VERBCOIN_GUI.Item_Count),
-[SCUMM\_VERBCOIN\_GUI.InvScroll\_Left](ags80#SCUMM_VERBCOIN_GUI.InvScroll_Left)
+[SCUMM\_VERBCOIN\_GUI.Item\_Count](topic75#SCUMM_VERBCOIN_GUI.Item_Count),
+[SCUMM\_VERBCOIN\_GUI.InvScroll\_Left](topic75#SCUMM_VERBCOIN_GUI.InvScroll_Left)
 
 ---
 
@@ -178,7 +178,7 @@ will make the game exit the inventory when moving the mouse over either
 the top or the bottom of the screen.
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.Inv\_Border\_SetPos](ags80#SCUMM_VERBCOIN_GUI.Inv_Border_SetPos)
+[SCUMM\_VERBCOIN\_GUI.Inv\_Border\_SetPos](topic75#SCUMM_VERBCOIN_GUI.Inv_Border_SetPos)
 
 ---
 
@@ -204,7 +204,7 @@ y-coordinate 220, the left border to x-coordinate 20 and the right
 border to x-coordinate 295
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.Inv\_Border\_active](ags80#SCUMM_VERBCOIN_GUI.Inv_Border_active)
+[SCUMM\_VERBCOIN\_GUI.Inv\_Border\_active](topic75#SCUMM_VERBCOIN_GUI.Inv_Border_active)
 
 ---
 
@@ -253,8 +253,8 @@ Example:
     SCUMM_VERBCOIN_GUI.RunInteraction(eModeTalkto);
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.Deselect](ags80#SCUMM_VERBCOIN_GUI.Deselect),
-[SCUMM\_VERBCOIN\_GUI.Select](ags80#SCUMM_VERBCOIN_GUI.Select)
+[SCUMM\_VERBCOIN\_GUI.Deselect](topic75#SCUMM_VERBCOIN_GUI.Deselect),
+[SCUMM\_VERBCOIN\_GUI.Select](topic75#SCUMM_VERBCOIN_GUI.Select)
 
 ---
 
@@ -269,8 +269,8 @@ keyboard support.
 available if you used this template to create your game.
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.Deselect](ags80#SCUMM_VERBCOIN_GUI.Deselect),
-[SCUMM\_VERBCOIN\_GUI.RunInteraction](ags80#SCUMM_VERBCOIN_GUI.RunInteraction)
+[SCUMM\_VERBCOIN\_GUI.Deselect](topic75#SCUMM_VERBCOIN_GUI.Deselect),
+[SCUMM\_VERBCOIN\_GUI.RunInteraction](topic75#SCUMM_VERBCOIN_GUI.RunInteraction)
 
 ---
 
@@ -339,5 +339,5 @@ will display "You made a single-click" when you made a single-click on
 the object/hotspot/character/...
 
 *See Also:*
-[SCUMM\_VERBCOIN\_GUI.DoubleClickSpeed](ags80#SCUMM_VERBCOIN_GUI.DoubleClickSpeed)
+[SCUMM\_VERBCOIN\_GUI.DoubleClickSpeed](topic75#SCUMM_VERBCOIN_GUI.DoubleClickSpeed)
 

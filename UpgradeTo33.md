@@ -29,10 +29,10 @@ that may alter the appearance of your game. New projects will have
 "proper blending" mode set by default.
 
 To support alpha blending a new
-[HasAlphaChannel](ags50#DialogOptionsRenderingInfo.HasAlphaChannel)
+[HasAlphaChannel](DialogOptionsRenderingInfo#DialogOptionsRenderingInfo.HasAlphaChannel)
 property has been added to DialogOptionsRenderingInfo class. This
 property must be set it in
-[dialog\_options\_get\_dimensions](ags42#CustomDialogOptions)
+[dialog\_options\_get\_dimensions](CustomDialogOptions#CustomDialogOptions)
 function, the one where you normally define size and position of the
 drawing surface.
 
@@ -44,21 +44,21 @@ The maximal number of Fonts has been increased from 15 to 30.
 
 There's now a new Speech script class that contains several
 speech-related properties. This renders a number of [global
-functions](ags54#GlobalCommands) obsolete, as well as some of the
-[game variables](ags39#Gamevariables). If you are using any of them
+functions](Game#GlobalCommands) obsolete, as well as some of the
+[game variables](Gamevariables#Gamevariables). If you are using any of them
 in your script you will likely get compilation errors. Simply replace
 them by the corresponding Speech properties, as shown in the table
 below:
 
 ---
   **obsolete function/variable**         **replace with**
-  SetVoiceMode                           [Speech.VoiceMode](ags75#Speech.VoiceMode)
-  SetSkipSpeech                          [Speech.SkipStyle](ags75#Speech.SkipStyle)
-  SetSpeechStyle                         [Speech.Style](ags75#Speech.Style)
-  game.close\_mouth\_end\_speech\_time   [Speech.AnimationStopTimeMargin](ags75#Speech.AnimationStopTimeMargin)
-  game.speech\_text\_align               [Speech.TextAlignment](ags75#Speech.TextAlignment)
-  game.skip\_speech\_specific\_key       [Speech.SkipKey](ags75#Speech.SkipKey)
-  game.talkanim\_speed                   [Speech.GlobalSpeechAnimationDelay](ags75#Speech.GlobalSpeechAnimationDelay)
+  SetVoiceMode                           [Speech.VoiceMode](Speech#Speech.VoiceMode)
+  SetSkipSpeech                          [Speech.SkipStyle](Speech#Speech.SkipStyle)
+  SetSpeechStyle                         [Speech.Style](Speech#Speech.Style)
+  game.close\_mouth\_end\_speech\_time   [Speech.AnimationStopTimeMargin](Speech#Speech.AnimationStopTimeMargin)
+  game.speech\_text\_align               [Speech.TextAlignment](Speech#Speech.TextAlignment)
+  game.skip\_speech\_specific\_key       [Speech.SkipKey](Speech#Speech.SkipKey)
+  game.talkanim\_speed                   [Speech.GlobalSpeechAnimationDelay](Speech#Speech.GlobalSpeechAnimationDelay)
 ---
 
 **Game-wide speech animation delay**

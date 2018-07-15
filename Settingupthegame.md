@@ -156,7 +156,7 @@ to import. Alternatively, you can import the entire image with the
 *NOTE (256-colour only): You may well find that the colours on your
 graphic look slightly strange in the AGS Editor. This is because the
 sprites are only allocated, by default, the first 41 of the palette
-colours (see the [palette section](ags10#PalSetup)), so your graphic
+colours (see the [palette section](Settingupthegame#PalSetup)), so your graphic
 will be remapped to this much smaller palette. If you find that many of
 your imported sprites look strange, you can increase the number of
 colours assigned to sprites, at the expense of background colours (again
@@ -345,7 +345,7 @@ want him to start at. These co-ordinates define where the middle of his
 feet will be placed.
 
 The "NormalView" is where you set what the character looks like. You
-must create a view in the [View Editor](ags10#Views), and this view
+must create a view in the [View Editor](Settingupthegame#Views), and this view
 must have either 4 or 8 loops. If you use 4 loops, then when walking
 diagonally the closest straight direction is used for the graphics. Each
 loop is used for the character walking in one direction, as follows:
@@ -617,7 +617,7 @@ number that the player was in.
 
 AGS automatically calls ParseText with the text they typed in before it
 calls dialog\_request, so you can use Said() calls to respond. See the
-[text parser](ags17#TextParser) section for more info.
+[text parser](TextParser#TextParser) section for more info.
 
 ---
 
@@ -638,11 +638,11 @@ SetGameOption. **Basic properties**
     devices support. 16-bit is rather a compatibility setting, that will
     reduce the size of your game resources at the cost of colour
     precision. 8-bit colour mode is a special feature for making
-    palette-based games. See Also: [Palette setup](ags10#PalSetup),
-    [Palette functions](ags70#topic66)
+    palette-based games. See Also: [Palette setup](Settingupthegame#PalSetup),
+    [Palette functions](topic66#topic66)
 -   **Developer name** - this will add the provided string to the game's
     executable properties, which will also be shown in [Windows Game
-    Explorer](ags26#GameExplorer), if you configure integration
+    Explorer](topic40#GameExplorer), if you configure integration
     with one.
 -   **Enable letterbox mode** - only available if your game's resolution
     is 320x200 or 640x400. If you enable it, your game will run as
@@ -655,12 +655,12 @@ SetGameOption. **Basic properties**
     the window title, and also added to the game's
     executable properties.
 -   **Maximum possible score** - the maximum score your game has, if you
-    are using score mechanics, such as [GiveScore](ags54#GiveScore)
+    are using score mechanics, such as [GiveScore](Game#GiveScore)
     script function.
 -   **Put sound and sprite files in source control** - whether game
     resources, such as sprites and audio, are put under source control.
     For more information see [Source Control
-    integration](ags27#SourceControl).
+    integration](SourceControl#SourceControl).
 -   **Render sprites at screen resolution** - whether characters and
     objects should be scaled in screen pixels rather than game pixels.
     What this means is that when low-resolution game is run in larger
@@ -726,7 +726,7 @@ SetGameOption. **Basic properties**
 -   **Use old-style custom dialog options API** - switch to using
     pre-AGS 3.4.0 custom dialog options callbacks. The differences
     between old and new APIs [are explained in this
-    topic](ags94#UpgradeTo34).
+    topic](UpgradeTo34#UpgradeTo34).
 
 **Character movement**
 
@@ -746,8 +746,8 @@ SetGameOption. **Basic properties**
     suddenly switching to face the right way.
 -   **Characters turn to face direction** - if set, then when a
     character turns round with the
-    [Character.FaceLocation](ags47#Character.FaceLocation) or
-    [Character.FaceCharacter](ags47#Character.FaceCharacter) script
+    [Character.FaceLocation](Character#Character.FaceLocation) or
+    [Character.FaceCharacter](Character#Character.FaceCharacter) script
     commands, they will visibly turn around using their available loops.
     If this option is not set, they will immediately appear facing their
     new direction.
@@ -763,9 +763,9 @@ SetGameOption. **Basic properties**
     Ctrl-S to give all inventory items, Ctrl-A to display walkable areas
     on the screen, and Ctrl-D to display statistics about the
     current room. When debug mode is off, these do nothing. See the
-    [Debugging features](ags24#Debuggingfeatures) section for more.
+    [Debugging features](Debuggingfeatures#Debuggingfeatures) section for more.
 -   **Split resource files into X MB-sized chunks** - see
-    [here](ags15#SplitRes) for information.
+    [here](DistGame#SplitRes) for information.
 
 **Dialog**
 
@@ -855,8 +855,8 @@ SetGameOption. **Basic properties**
 
 -   **Enhanced save games** - makes your game's saves compatible with
     Windows Game Explorer. For detailed information please refer to:
-    [Enhanced Saved Games](ags26#EnhancedSaveGames)\
-    [Windows Game Explorer](ags26#GameExplorer)
+    [Enhanced Saved Games](topic40#EnhancedSaveGames)\
+    [Windows Game Explorer](topic40#GameExplorer)
 -   **Save games extension** - determines the special extension for your
     save files.
 -   **Save games folder name** - determines the name of folder created
@@ -894,11 +894,11 @@ SetGameOption. **Basic properties**
     output will look blurred and unreadable).
 -   **Custom text-windows GUI** - allows you to customize the standard
     text window appearance in the game, using the specified
-    interface element. See [here](ags14#TextWin) for
+    interface element. See [here](topic21#TextWin) for
     more information.
 -   **Custom thought bubble GUI** - Determines which text window GUI is
     used for displaying thoughts with
-    [Think](ags47#Character.Think).
+    [Think](Character#Character.Think).
 -   **Fonts designed for high resolution** - normally, if the player
     chooses high resolution for their game, then the fonts will be
     scaled up to match. However, if you have drawn your fonts for the
@@ -929,7 +929,7 @@ SetGameOption. **Basic properties**
     behind the object will be activated instead.
 -   **Sprite alpha rendering style** - determines which rendering method
     to use in 32-bit games when an image is drawn over [drawing
-    surface](ags51#DrawingSurfaceFunctions). The "Proper alpha
+    surface](DrawingSurfaceFunctions#DrawingSurfaceFunctions). The "Proper alpha
     belnding" choice is meant for full alpha blending support, "Classic"
     style exists for compatibility with older versions of AGS only.
 -   **When player interface is disabled, GUI should** - determines what
@@ -937,7 +937,7 @@ SetGameOption. **Basic properties**
     disabled (eg. during a cutscene).
 
 **Windows Game Explorer** See: [Windows Game
-Explorer](ags26#GameExplorer)
+Explorer](topic40#GameExplorer)
 
 ---
 
@@ -951,7 +951,7 @@ reason you should be doing it from this Editor's page now.
 
 Most of the options here correspond to the ones you may find in the
 setup utility. For their meaning please refer to [related
-topic](ags7#Setup).
+topic](Setup#Setup).
 
 Additionally, following settings are available:
 
@@ -985,7 +985,7 @@ Additionally, following settings are available:
 game compilation, so if you change these settings you will need to
 rebuild your game one more time to apply them.
 
-See also: [Run-time engine setup](ags7#Setup)
+See also: [Run-time engine setup](Setup#Setup)
 
 ---
 

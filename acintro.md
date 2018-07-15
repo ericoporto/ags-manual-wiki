@@ -26,7 +26,7 @@ The "Getting Started with AGS" tutorials are here:
 
 Scripting is introduced in a separate tutorial:
 
-[Introduction to scripting](ags29)
+[Introduction to scripting](topic42)
 
 Further tutorials:
 

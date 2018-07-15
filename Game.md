@@ -97,7 +97,7 @@ waits for any currently playing music to finish.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](ags67#Game.StopAudio)
+*See Also:* [Game.StopAudio](Game#Game.StopAudio)
 
 ---
 
@@ -121,7 +121,7 @@ will display a message if the voice pack is not available.
 **NOTE:** This function used to be called IsVoxAvailable, but has now
 been renamed to avoid confusion.
 
-*See Also:* [AudioClip.IsAvailable](ags46#AudioClip.IsAvailable)
+*See Also:* [AudioClip.IsAvailable](AudioClip#AudioClip.IsAvailable)
 
 ---
 
@@ -149,7 +149,7 @@ Example:
 will play flic2 and the player will be able to skip the flic by pressing
 the ESC key.
 
-*See Also:* [PlayVideo](ags67#PlayVideo)
+*See Also:* [PlayVideo](Game#PlayVideo)
 
 ---
 
@@ -162,8 +162,8 @@ This command is obsolete.
 Use the AudioClip.Play command and set its Volume property to 0 to
 simulate this effect.
 
-*See Also:* [AudioClip.Play](ags46#AudioClip.Play),
-[AudioChannel.Volume](ags45#AudioChannel.Volume)
+*See Also:* [AudioClip.Play](AudioClip#AudioClip.Play),
+[AudioChannel.Volume](AudioChannel#AudioChannel.Volume)
 
 ---
 
@@ -209,7 +209,7 @@ you will have to place them separately in the Compiled folder for them
 to work.
 
 **NOTE:** In 256-colour games, PlayVideo is not supported. Please use a
-FLC/FLI video with the [PlayFlic](ags67#PlayFlic) command instead.
+FLC/FLI video with the [PlayFlic](Game#PlayFlic) command instead.
 
 **Cross-Platform Support**
 
@@ -228,7 +228,7 @@ they've seen it before.
 *Compatibility:* OGG Theora supported by **AGS 3.1.1** and later
 versions.
 
-*See Also:* [PlayFlic](ags67#PlayFlic)
+*See Also:* [PlayFlic](Game#PlayFlic)
 
 ---
 
@@ -255,7 +255,7 @@ while speech is playing.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume)
+*See Also:* [Game.SetAudioTypeVolume](Game#Game.SetAudioTypeVolume)
 
 ---
 
@@ -294,9 +294,9 @@ will change the volume of all currently playing and future music to
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [SetSpeechVolume](ags67#SetSpeechVolume),
-[AudioClip.Play](ags46#AudioClip.Play),
-[System.Volume](ags77#System.Volume)
+*See Also:* [SetSpeechVolume](Game#SetSpeechVolume),
+[AudioClip.Play](AudioClip#AudioClip.Play),
+[System.Volume](topic72#System.Volume)
 
 ---
 
@@ -314,7 +314,7 @@ Example:
 
 will set the speech volume to 200.
 
-*See Also:* [Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume)
+*See Also:* [Game.SetAudioTypeVolume](Game#Game.SetAudioTypeVolume)
 
 ---
 
@@ -340,6 +340,6 @@ will stop all currently playing audio.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.IsAudioPlaying](ags67#Game.IsAudioPlaying),
-[AudioClip.Play](ags46#AudioClip.Play),
-[AudioChannel.Stop](ags45#AudioChannel.Stop)
+*See Also:* [Game.IsAudioPlaying](Game#Game.IsAudioPlaying),
+[AudioClip.Play](AudioClip#AudioClip.Play),
+[AudioChannel.Stop](AudioChannel#AudioChannel.Stop)

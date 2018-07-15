@@ -32,8 +32,8 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](ags70#CyclePalette),
-[FadeOut](ags74#FadeOut), [SetFadeColor](ags74#SetFadeColor)
+*See Also:* [CyclePalette](topic66#CyclePalette),
+[FadeOut](topic70#FadeOut), [SetFadeColor](topic70#SetFadeColor)
 
 ---
 
@@ -55,8 +55,8 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](ags70#CyclePalette),
-[FadeIn](ags74#FadeIn), [SetFadeColor](ags74#SetFadeColor)
+*See Also:* [CyclePalette](topic66#CyclePalette),
+[FadeIn](topic70#FadeIn), [SetFadeColor](topic70#SetFadeColor)
 
 ---
 
@@ -106,8 +106,8 @@ Example:
 will mean that next time the screen fades out, it fades to red instead
 of black.
 
-SeeAlso: [FadeIn](ags74#FadeIn), [FadeOut](ags74#FadeOut),
-[SetScreenTransition](ags74#SetScreenTransition)
+SeeAlso: [FadeIn](topic70#FadeIn), [FadeOut](topic70#FadeOut),
+[SetScreenTransition](topic70#SetScreenTransition)
 
 ---
 
@@ -120,7 +120,7 @@ next room change. After that, it will revert back to the normal
 transition type specified in the editor or with SetScreenTransition.
 
 For the possible values for TransitionStyle, see
-[SetScreenTransition](ags74#SetScreenTransition).
+[SetScreenTransition](topic70#SetScreenTransition).
 
 Example:
 
@@ -130,7 +130,7 @@ Example:
 will go to room 10 with a box-out effect, but then return to the normal
 transition type from then on.
 
-SeeAlso: [SetScreenTransition](ags74#SetScreenTransition)
+SeeAlso: [SetScreenTransition](topic70#SetScreenTransition)
 
 ---
 
@@ -156,7 +156,7 @@ Example:
 
 will change the room transitions to Fade.
 
-SeeAlso: [SetNextScreenTransition](ags74#SetNextScreenTransition)
+SeeAlso: [SetNextScreenTransition](topic70#SetNextScreenTransition)
 
 ---
 
@@ -173,7 +173,7 @@ Example:
 
 will shake the screen a little.
 
-*See Also:* [ShakeScreenBackground](ags74#ShakeScreenBackground)
+*See Also:* [ShakeScreenBackground](topic70#ShakeScreenBackground)
 
 ---
 
@@ -203,7 +203,7 @@ Example:
 
 will shake the screen a little for 2 seconds.
 
-*See Also:* [ShakeScreen](ags74#ShakeScreen)
+*See Also:* [ShakeScreen](topic70#ShakeScreen)
 
 ---
 

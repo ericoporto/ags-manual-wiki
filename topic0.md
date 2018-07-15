@@ -54,7 +54,7 @@ uses the mpg123 MP3 decoder, and again is distributed under the terms of
 the GNU Lesser General Public License version 2.1.
 
 Copyright information on the various other modules AGS uses can be found
-in the [credits](ags98#Credits) section.
+in the [credits](Credits#Credits) section.
 
 Pentium is a trademark of Intel corporation. Windows is a trademark or
 registered trademark of Microsoft corp.

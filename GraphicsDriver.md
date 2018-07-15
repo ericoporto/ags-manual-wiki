@@ -45,4 +45,4 @@ indicates that your graphics card is too old to run with the Direct3D
 driver. You should try one of the other two drivers instead.
 
 See Also: [System.HardwareAcceleration
-property](ags77#System.HardwareAcceleration)
+property](topic72#System.HardwareAcceleration)

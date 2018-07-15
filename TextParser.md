@@ -91,7 +91,7 @@ Now this is all very well, but in different rooms you have different
 items to interact with - for example, in one room there might be a tree
 that the player should be able to type "look at tree" to look at, and so
 on. Putting all this in your global script would make a big mess. So,
-enter the [CallRoomScript](ags54#CallRoomScript) function. Using
+enter the [CallRoomScript](Game#CallRoomScript) function. Using
 this, you can do:
 
       Parser.ParseText(input);
@@ -106,5 +106,5 @@ this, you can do:
         CallRoomScript (1);
 
 Then, the room script can check for things that the player can do in the
-current room. See the [CallRoomScript](ags54#CallRoomScript)
+current room. See the [CallRoomScript](Game#CallRoomScript)
 description for more information.

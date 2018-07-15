@@ -4,13 +4,13 @@ DrawingSurface functions and properties
 The DrawingSurface family of functions allow you to directly draw onto
 dynamic sprites and room backgrounds in the game. You get a drawing
 surface by calling
-[DynamicSprite.GetDrawingSurface](ags52#DynamicSprite.GetDrawingSurface)
+[DynamicSprite.GetDrawingSurface](DynamicSprite#DynamicSprite.GetDrawingSurface)
 or
-[Room.GetDrawingSurfaceForBackground](ags73#Room.GetDrawingSurfaceForBackground),
+[Room.GetDrawingSurfaceForBackground](Room#Room.GetDrawingSurfaceForBackground),
 and you can then use the following methods to draw onto the surface.
 
 **IMPORTANT:** You **MUST** call the
-[Release](ags51#DrawingSurface.Release) method when you have
+[Release](DrawingSurfaceFunctions#DrawingSurface.Release) method when you have
 finished drawing onto the surface. This allows AGS to update its cached
 copies of the image and upload it to video memory if appropriate.
 
@@ -60,7 +60,7 @@ clears the room background to be fully yellow, then draws a pink circle
 in the middle of it.
 
 *See Also:*
-[DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#DrawingSurface.DrawingColor)
 
 ---
 
@@ -97,7 +97,7 @@ will save a copy of the room background, draw a triangle onto it, wait
 for a while and then restore the original background.
 
 *See Also:*
-[DrawingSurface.DrawSurface](ags51#DrawingSurface.DrawSurface)
+[DrawingSurface.DrawSurface](DrawingSurfaceFunctions#DrawingSurface.DrawSurface)
 
 ---
 
@@ -120,8 +120,8 @@ Example:
 will draw a circle in the centre of the screen, of 50 pixels radius.
 
 *See Also:*
-[DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
-[DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#DrawingSurface.DrawingColor)
 
 ---
 
@@ -165,10 +165,10 @@ will draw the *oDoor* object's graphic onto the room background at (100,
 100), at `40%` transparency.
 
 *See Also:*
-[DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
-[DrawingSurface.DrawString](ags51#DrawingSurface.DrawString),
-[DrawingSurface.DrawSurface](ags51#DrawingSurface.DrawSurface),
-[Room.ColorDepth](ags73#Room.ColorDepth)
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
+[DrawingSurface.DrawString](DrawingSurfaceFunctions#DrawingSurface.DrawString),
+[DrawingSurface.DrawSurface](DrawingSurfaceFunctions#DrawingSurface.DrawSurface),
+[Room.ColorDepth](Room#Room.ColorDepth)
 
 ---
 
@@ -200,10 +200,10 @@ will draw a line from the left top of the screen (0,0) to the middle of
 the screen (160,100);
 
 *See Also:*
-[DrawingSurface.DrawCircle](ags51#DrawingSurface.DrawCircle),
-[DrawingSurface.DrawRectangle](ags51#DrawingSurface.DrawRectangle),
-[DrawingSurface.DrawTriangle](ags51#DrawingSurface.DrawTriangle),
-[DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
+[DrawingSurface.DrawCircle](DrawingSurfaceFunctions#DrawingSurface.DrawCircle),
+[DrawingSurface.DrawRectangle](DrawingSurfaceFunctions#DrawingSurface.DrawRectangle),
+[DrawingSurface.DrawTriangle](DrawingSurfaceFunctions#DrawingSurface.DrawTriangle),
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#DrawingSurface.DrawingColor)
 
 ---
 
@@ -235,9 +235,9 @@ will display message 10 in the centre of the screen, starting from Y =
 40.
 
 *See Also:*
-[DrawingSurface.DrawString](ags51#DrawingSurface.DrawString),
-[DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor),
-[DrawingSurface.DrawStringWrapped](ags51#DrawingSurface.DrawStringWrapped)
+[DrawingSurface.DrawString](DrawingSurfaceFunctions#DrawingSurface.DrawString),
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#DrawingSurface.DrawingColor),
+[DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#DrawingSurface.DrawStringWrapped)
 
 ---
 
@@ -247,7 +247,7 @@ will display message 10 in the centre of the screen, starting from Y =
 
 Draws a single pixel onto the surface at (X,Y) in the current colour.
 The pixel thickness respects the
-[UseHighResCoordinates](ags51#DrawingSurface.UseHighResCoordinates)
+[UseHighResCoordinates](DrawingSurfaceFunctions#DrawingSurface.UseHighResCoordinates)
 property.
 
 **NOTE:** This command is not fast enough to use repeatedly to build up
@@ -263,10 +263,10 @@ Example:
 draws a yellow pixel in the top left of the room background
 
 *See Also:*
-[DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor),
-[DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
-[DrawingSurface.GetPixel](ags51#DrawingSurface.GetPixel),
-[DrawingSurface.UseHighResCoordinates](ags51#DrawingSurface.UseHighResCoordinates)
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#DrawingSurface.DrawingColor),
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
+[DrawingSurface.GetPixel](DrawingSurfaceFunctions#DrawingSurface.GetPixel),
+[DrawingSurface.UseHighResCoordinates](DrawingSurfaceFunctions#DrawingSurface.UseHighResCoordinates)
 
 ---
 
@@ -293,8 +293,8 @@ Example:
 will draw a rectangle over the top left hand quarter of the screen.
 
 *See Also:*
-[DrawingSurface.DrawImage](ags51#DrawingSurface.DrawImage),
-[DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine)
+[DrawingSurface.DrawImage](DrawingSurfaceFunctions#DrawingSurface.DrawImage),
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine)
 
 ---
 
@@ -308,7 +308,7 @@ Draws the *text* onto the surface at (x, y), using the supplied font
 number. The text will be drawn in the current drawing colour.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](ags34#StringFormats)
+information, see the [string formatting](StringFormats#StringFormats)
 section.
 
 Example:
@@ -320,9 +320,9 @@ Example:
 
 will write some text onto the middle-left of the room background
 
-*See Also:* [GetTextWidth](ags54#GetTextWidth),
-[DrawingSurface.DrawStringWrapped](ags51#DrawingSurface.DrawStringWrapped),
-[DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor)
+*See Also:* [GetTextWidth](Game#GetTextWidth),
+[DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#DrawingSurface.DrawStringWrapped),
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#DrawingSurface.DrawingColor)
 
 ---
 
@@ -352,9 +352,9 @@ will display the text in the centre of the screen, starting from Y = 40.
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
 *See Also:*
-[DrawingSurface.DrawString](ags51#DrawingSurface.DrawString),
-[DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor),
-[DrawingSurface.DrawMessageWrapped](ags51#DrawingSurface.DrawMessageWrapped)
+[DrawingSurface.DrawString](DrawingSurfaceFunctions#DrawingSurface.DrawString),
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#DrawingSurface.DrawingColor),
+[DrawingSurface.DrawMessageWrapped](DrawingSurfaceFunctions#DrawingSurface.DrawMessageWrapped)
 
 ---
 
@@ -392,8 +392,8 @@ Example:
 this will draw background frame 1 onto frame 0 at 50`%` opacity.
 
 *See Also:*
-[DrawingSurface.DrawImage](ags51#DrawingSurface.DrawImage),
-[SetAmbientTint](ags54#SetAmbientTint)
+[DrawingSurface.DrawImage](DrawingSurfaceFunctions#DrawingSurface.DrawImage),
+[SetAmbientTint](Game#SetAmbientTint)
 
 ---
 
@@ -418,9 +418,9 @@ Example:
 will draw a triangle with corners at the points (0,0),(160,100),(0,200).
 
 *See Also:*
-[DrawingSurface.DrawImage](ags51#DrawingSurface.DrawImage),
-[DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
-[DrawingSurface.DrawRectangle](ags51#DrawingSurface.DrawRectangle)
+[DrawingSurface.DrawImage](DrawingSurfaceFunctions#DrawingSurface.DrawImage),
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
+[DrawingSurface.DrawRectangle](DrawingSurfaceFunctions#DrawingSurface.DrawRectangle)
 
 ---
 
@@ -445,8 +445,8 @@ draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
 
 *See Also:*
-[DynamicSprite.GetDrawingSurface](ags52#DynamicSprite.GetDrawingSurface),
-[Room.GetDrawingSurfaceForBackground](ags73#Room.GetDrawingSurfaceForBackground)
+[DynamicSprite.GetDrawingSurface](DynamicSprite#DynamicSprite.GetDrawingSurface),
+[Room.GetDrawingSurfaceForBackground](Room#Room.GetDrawingSurfaceForBackground)
 
 ---
 
@@ -457,7 +457,7 @@ background, then releases the image.
     int DrawingSurface.DrawingColor
 
 Gets/sets the current drawing colour on this surface. Set this before
-using commands like [DrawLine](ags51#DrawingSurface.DrawLine), which
+using commands like [DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine), which
 use this colour for their drawing.
 
 You can set this either to an AGS Colour Number (as you'd get from the
@@ -479,10 +479,10 @@ middle of the screen (160,100), and a white line from the bottom left to
 the middle.
 
 *See Also:*
-[DrawingSurface.DrawCircle](ags51#DrawingSurface.DrawCircle),
-[DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
-[DrawingSurface.DrawRectangle](ags51#DrawingSurface.DrawRectangle),
-[Game.GetColorFromRGB](ags54#Game.GetColorFromRGB)
+[DrawingSurface.DrawCircle](DrawingSurfaceFunctions#DrawingSurface.DrawCircle),
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
+[DrawingSurface.DrawRectangle](DrawingSurfaceFunctions#DrawingSurface.DrawRectangle),
+[Game.GetColorFromRGB](Game#Game.GetColorFromRGB)
 
 ---
 
@@ -514,9 +514,9 @@ displays the pixel colour of the centre pixel on the screen.
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
 *See Also:*
-[DrawingSurface.DrawingColor](ags51#DrawingSurface.DrawingColor),
-[DrawingSurface.DrawPixel](ags51#DrawingSurface.DrawPixel),
-[DrawingSurface.UseHighResCoordinates](ags51#DrawingSurface.UseHighResCoordinates)
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#DrawingSurface.DrawingColor),
+[DrawingSurface.DrawPixel](DrawingSurfaceFunctions#DrawingSurface.DrawPixel),
+[DrawingSurface.UseHighResCoordinates](DrawingSurfaceFunctions#DrawingSurface.UseHighResCoordinates)
 
 ---
 
@@ -535,8 +535,8 @@ Example:
 displays the size of the surface to the player
 
 *See Also:*
-[DrawingSurface.UseHighResCoordinates](ags51#DrawingSurface.UseHighResCoordinates),
-[DrawingSurface.Width](ags51#DrawingSurface.Width)
+[DrawingSurface.UseHighResCoordinates](DrawingSurfaceFunctions#DrawingSurface.UseHighResCoordinates),
+[DrawingSurface.Width](DrawingSurfaceFunctions#DrawingSurface.Width)
 
 ---
 
@@ -555,8 +555,8 @@ surface uses native co-ordinates or the low-res 320x200 co-ordinates by
 changing this property.
 
 Setting this property affects **ALL** other commands performed on this
-drawing surface, including the [Width](ags51#DrawingSurface.Width)
-and [Height](ags51#DrawingSurface.Height) properties.
+drawing surface, including the [Width](DrawingSurfaceFunctions#DrawingSurface.Width)
+and [Height](DrawingSurfaceFunctions#DrawingSurface.Height) properties.
 
 Example:
 
@@ -571,10 +571,10 @@ screen. If we hadn't set *UseHighResCoordinates* to true, this would
 draw a line from the top left to the bottom right of the screen.
 
 *See Also:*
-[DrawingSurface.DrawCircle](ags51#DrawingSurface.DrawCircle),
-[DrawingSurface.DrawLine](ags51#DrawingSurface.DrawLine),
-[DrawingSurface.DrawRectangle](ags51#DrawingSurface.DrawRectangle),
-[DrawingSurface.DrawTriangle](ags51#DrawingSurface.DrawTriangle)
+[DrawingSurface.DrawCircle](DrawingSurfaceFunctions#DrawingSurface.DrawCircle),
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
+[DrawingSurface.DrawRectangle](DrawingSurfaceFunctions#DrawingSurface.DrawRectangle),
+[DrawingSurface.DrawTriangle](DrawingSurfaceFunctions#DrawingSurface.DrawTriangle)
 
 ---
 
@@ -592,6 +592,6 @@ Example:
 
 displays the size of the surface to the player
 
-*See Also:* [DrawingSurface.Height](ags51#DrawingSurface.Height),
-[DrawingSurface.UseHighResCoordinates](ags51#DrawingSurface.UseHighResCoordinates)
+*See Also:* [DrawingSurface.Height](DrawingSurfaceFunctions#DrawingSurface.Height),
+[DrawingSurface.UseHighResCoordinates](DrawingSurfaceFunctions#DrawingSurface.UseHighResCoordinates)
 

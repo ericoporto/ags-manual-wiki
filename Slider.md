@@ -1,20 +1,20 @@
 GUI Slider properties
 ---------------------
 
-[BringToFront (inherited)](ags56#GUIControl.BringToFront)\
-[Clickable property (inherited)](ags56#GUIControl.Clickable)\
-[Enabled property (inherited)](ags56#GUIControl.Enabled)\
-[Height property (inherited)](ags56#GUIControl.Height)\
-[ID property (inherited)](ags56#GUIControl.ID)\
-[OwningGUI property (inherited)](ags56#GUIControl.OwningGUI)\
-[SendToBack (inherited)](ags56#GUIControl.SendToBack)\
-[SetPosition (inherited)](ags56#GUIControl.SetPosition)\
-[SetSize (inherited)](ags56#GUIControl.SetSize)\
-[Visible property (inherited)](ags56#GUIControl.Visible)\
-[Width property (inherited)](ags56#GUIControl.Width)\
-[X property (inherited)](ags56#GUIControl.X)\
-[Y property (inherited)](ags56#GUIControl.Y)\
-[ZOrder property (inherited)](ags56#GUIControl.ZOrder)
+[BringToFront (inherited)](topic53#GUIControl.BringToFront)\
+[Clickable property (inherited)](topic53#GUIControl.Clickable)\
+[Enabled property (inherited)](topic53#GUIControl.Enabled)\
+[Height property (inherited)](topic53#GUIControl.Height)\
+[ID property (inherited)](topic53#GUIControl.ID)\
+[OwningGUI property (inherited)](topic53#GUIControl.OwningGUI)\
+[SendToBack (inherited)](topic53#GUIControl.SendToBack)\
+[SetPosition (inherited)](topic53#GUIControl.SetPosition)\
+[SetSize (inherited)](topic53#GUIControl.SetSize)\
+[Visible property (inherited)](topic53#GUIControl.Visible)\
+[Width property (inherited)](topic53#GUIControl.Width)\
+[X property (inherited)](topic53#GUIControl.X)\
+[Y property (inherited)](topic53#GUIControl.Y)\
+[ZOrder property (inherited)](topic53#GUIControl.ZOrder)
 
 [BackgroundGraphic property (slider)](#Slider.BackgroundGraphic)\
 [HandleGraphic property](#Slider.HandleGraphic)\
@@ -43,7 +43,7 @@ displays the *sldHealth* slider's background image
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](ags61#Slider.HandleGraphic)
+*See Also:* [Slider.HandleGraphic](topic57#Slider.HandleGraphic)
 
 ---
 
@@ -67,8 +67,8 @@ displays the *sldHealth* slider's handle image
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[Slider.BackgroundGraphic](ags61#Slider.BackgroundGraphic),
-[Slider.HandleOffset](ags61#Slider.HandleOffset)
+[Slider.BackgroundGraphic](topic57#Slider.BackgroundGraphic),
+[Slider.HandleOffset](topic57#Slider.HandleOffset)
 
 ---
 
@@ -88,7 +88,7 @@ the right.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](ags61#Slider.HandleGraphic)
+*See Also:* [Slider.HandleGraphic](topic57#Slider.HandleGraphic)
 
 ---
 
@@ -109,8 +109,8 @@ Example:
 
 sets the maximum value of the *sldHealth* slider to 200.
 
-*See Also:* [Slider.Min](ags61#Slider.Min),
-[Slider.Value](ags61#Slider.Value)
+*See Also:* [Slider.Min](topic57#Slider.Min),
+[Slider.Value](topic57#Slider.Value)
 
 ---
 
@@ -132,8 +132,8 @@ Example:
 
 sets the minimum value of the *sldHealth* slider to 0.
 
-*See Also:* [Slider.Max](ags61#Slider.Max),
-[Slider.Value](ags61#Slider.Value)
+*See Also:* [Slider.Max](topic57#Slider.Max),
+[Slider.Value](topic57#Slider.Value)
 
 ---
 
@@ -157,5 +157,5 @@ Example:
 
 will set the audio volume to the value of the slider *sldVolume*.
 
-*See Also:* [Label.Text](ags59#Label.Text)
+*See Also:* [Label.Text](topic55#Label.Text)
 

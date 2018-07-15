@@ -67,15 +67,15 @@ like.
 
 Glad you asked! Instead of all those old commands like SetMusicVolume,
 SetDigitalMasterVolume, etc, there is now simply one overall system
-volume ([System.Volume](ags77#System.Volume)), and then each sound
+volume ([System.Volume](topic72#System.Volume)), and then each sound
 that is playing has its own volume control as well. This is controlled
-by the [Volume property](ags45#AudioChannel.Volume) on the audio
-channel (see the [Audio page](ags13#MusAndSound) for details on
+by the [Volume property](AudioChannel#AudioChannel.Volume) on the audio
+channel (see the [Audio page](MusAndSound#MusAndSound) for details on
 this).
 
 Finally, you can update the volume of one particular type of audio (eg.
 sound, music) by using the
-[Game.SetAudioTypeVolume](ags67#Game.SetAudioTypeVolume) command.
+[Game.SetAudioTypeVolume](Game#Game.SetAudioTypeVolume) command.
 
 **Wait, what's an audio channel?**
 
@@ -84,24 +84,24 @@ sound file), and Audio Channels (which represent a currently playing
 piece of audio). The reason for this distinction is that you might have
 the same sound effect playing two or more times simultaneously, and
 having Audio Channels allows you to control each one individually. The
-[Audio page](ags13#MusAndSound) describes this further.
+[Audio page](MusAndSound#MusAndSound) describes this further.
 
 **PlayAmbientSound is obsolete! How do I do ambient sounds?**
 
 Ambient Sounds were a bit of an oddity in AGS, caused by the fact that
 you couldn't tell a PlaySound command to loop the sound. With the new
-audio system, the [Play command](ags46#AudioClip.Play) has an
+audio system, the [Play command](AudioClip#AudioClip.Play) has an
 optional Repeat parameter, allowing you to specify whether it loops or
 not.
 
 The X/Y directional aspect of PlayAmbientSound is supported by the
-[SetRoomLocation](ags45#AudioChannel.SetRoomLocation) command on the
+[SetRoomLocation](AudioChannel#AudioChannel.SetRoomLocation) command on the
 audio channel.
 
 **Is there any new cool stuff that I can do?**
 
 You can now adjust the left-right panning of audio, using the
-[AudioChannel.Panning](ags45#AudioChannel.Panning) property. You
+[AudioChannel.Panning](AudioChannel#AudioChannel.Panning) property. You
 also have finer control over syncing up different pieces of audio,
 through the ability to get and seek offsets more accurately.
 
@@ -114,4 +114,4 @@ done.
 
 **Where should I look for more info?**
 
-See the [Audio help](ags13#MusAndSound) for more information.
+See the [Audio help](MusAndSound#MusAndSound) for more information.

@@ -44,8 +44,8 @@ Example:
 
 will display a message depending on what the mouse is on.
 
-*See Also:* [Game.GetLocationName](ags54#Game.GetLocationName),
-[GetLocationType](ags54#GetLocationType)
+*See Also:* [Game.GetLocationName](Game#Game.GetLocationName),
+[GetLocationType](Game#GetLocationType)
 
 ---
 
@@ -70,7 +70,7 @@ Example:
 will print the message if hotspot 1 has its "Value" property set to more
 than 200.
 
-*See Also:* [Hotspot.GetTextProperty](ags63#Hotspot.GetTextProperty)
+*See Also:* [Hotspot.GetTextProperty](Hotspot#Hotspot.GetTextProperty)
 
 ---
 
@@ -95,7 +95,7 @@ Example:
 
 will retrieve hotspot 2's "description" property and display it.
 
-*See Also:* [Hotspot.GetProperty](ags63#Hotspot.GetProperty)
+*See Also:* [Hotspot.GetProperty](Hotspot#Hotspot.GetProperty)
 
 ---
 
@@ -121,7 +121,7 @@ will change Door hotspot's "LockDifficulty" custom property to 5.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Hotspot.SetTextProperty](ags63#Hotspot.SetTextProperty)
+*See Also:* [Hotspot.SetTextProperty](Hotspot#Hotspot.SetTextProperty)
 
 ---
 
@@ -145,7 +145,7 @@ will change Door's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Hotspot.SetProperty](ags63#Hotspot.SetProperty)
+*See Also:* [Hotspot.SetProperty](Hotspot#Hotspot.SetProperty)
 
 ---
 
@@ -168,8 +168,8 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [IsInteractionAvailable](ags54#IsInteractionAvailable),
-[Hotspot.RunInteraction](ags63#Hotspot.RunInteraction)
+*See Also:* [IsInteractionAvailable](Game#IsInteractionAvailable),
+[Hotspot.RunInteraction](Hotspot#Hotspot.RunInteraction)
 
 ---
 
@@ -189,10 +189,10 @@ Example:
 will run the code defined in the "LOOK AT HOTSPOT" event for hotspot
 hDoor.
 
-*See Also:* [Room.ProcessClick](ags73#Room.ProcessClick),
-[Hotspot.IsInteractionAvailable](ags63#Hotspot.IsInteractionAvailable),
-[Character.RunInteraction](ags47#Character.RunInteraction),
-[Object.RunInteraction](ags68#Object.RunInteraction)
+*See Also:* [Room.ProcessClick](Room#Room.ProcessClick),
+[Hotspot.IsInteractionAvailable](Hotspot#Hotspot.IsInteractionAvailable),
+[Character.RunInteraction](Character#Character.RunInteraction),
+[Object.RunInteraction](Object#Object.RunInteraction)
 
 ---
 
@@ -219,9 +219,9 @@ Example:
 
 will disable the hBrownTree hotspot.
 
-*See Also:* [Region.Enabled](ags72#Region.Enabled),
-[RemoveWalkableArea](ags73#RemoveWalkableArea),
-[RestoreWalkableArea](ags73#RestoreWalkableArea)
+*See Also:* [Region.Enabled](topic68#Region.Enabled),
+[RemoveWalkableArea](Room#RemoveWalkableArea),
+[RestoreWalkableArea](Room#RestoreWalkableArea)
 
 ---
 
@@ -240,7 +240,7 @@ Example:
 displays hDoor's hotspot number, and then displays hotspot 3's number
 (which will be 3).
 
-*See Also:* [Hotspot.GetAtScreenXY](ags63#Hotspot.GetAtScreenXY)
+*See Also:* [Hotspot.GetAtScreenXY](Hotspot#Hotspot.GetAtScreenXY)
 
 ---
 
@@ -262,7 +262,7 @@ Example:
 
 will retrieve and then display hotspot 3's name.
 
-*See Also:* [Game.GetLocationName](ags54#Game.GetLocationName)
+*See Also:* [Game.GetLocationName](Game#Game.GetLocationName)
 
 ---
 
@@ -281,8 +281,8 @@ Example:
 
 will move the character to hotspot hTable's walk-to point.
 
-*See Also:* [Hotspot.WalkToY](ags63#Hotspot.WalkToY),
-[MoveCharacterToHotspot](ags54#MoveCharacterToHotspot)
+*See Also:* [Hotspot.WalkToY](Hotspot#Hotspot.WalkToY),
+[MoveCharacterToHotspot](Game#MoveCharacterToHotspot)
 
 ---
 
@@ -301,6 +301,6 @@ Example:
 
 will move the character to hotspot hTable's walk-to point.
 
-*See Also:* [Hotspot.WalkToX](ags63#Hotspot.WalkToX),
-[MoveCharacterToHotspot](ags54#MoveCharacterToHotspot)
+*See Also:* [Hotspot.WalkToX](Hotspot#Hotspot.WalkToX),
+[MoveCharacterToHotspot](Game#MoveCharacterToHotspot)
 

@@ -1,20 +1,20 @@
 GUI Label functions and properties
 ----------------------------------
 
-[BringToFront (inherited)](ags56#GUIControl.BringToFront)\
-[Clickable property (inherited)](ags56#GUIControl.Clickable)\
-[Enabled property (inherited)](ags56#GUIControl.Enabled)\
-[Height property (inherited)](ags56#GUIControl.Height)\
-[ID property (inherited)](ags56#GUIControl.ID)\
-[OwningGUI property (inherited)](ags56#GUIControl.OwningGUI)\
-[SendToBack (inherited)](ags56#GUIControl.SendToBack)\
-[SetPosition (inherited)](ags56#GUIControl.SetPosition)\
-[SetSize (inherited)](ags56#GUIControl.SetSize)\
-[Visible property (inherited)](ags56#GUIControl.Visible)\
-[Width property (inherited)](ags56#GUIControl.Width)\
-[X property (inherited)](ags56#GUIControl.X)\
-[Y property (inherited)](ags56#GUIControl.Y)\
-[ZOrder property (inherited)](ags56#GUIControl.ZOrder)
+[BringToFront (inherited)](topic53#GUIControl.BringToFront)\
+[Clickable property (inherited)](topic53#GUIControl.Clickable)\
+[Enabled property (inherited)](topic53#GUIControl.Enabled)\
+[Height property (inherited)](topic53#GUIControl.Height)\
+[ID property (inherited)](topic53#GUIControl.ID)\
+[OwningGUI property (inherited)](topic53#GUIControl.OwningGUI)\
+[SendToBack (inherited)](topic53#GUIControl.SendToBack)\
+[SetPosition (inherited)](topic53#GUIControl.SetPosition)\
+[SetSize (inherited)](topic53#GUIControl.SetSize)\
+[Visible property (inherited)](topic53#GUIControl.Visible)\
+[Width property (inherited)](topic53#GUIControl.Width)\
+[X property (inherited)](topic53#GUIControl.X)\
+[Y property (inherited)](topic53#GUIControl.Y)\
+[ZOrder property (inherited)](topic53#GUIControl.ZOrder)
 
 [Font property (label)](#Label.Font)\
 [Text property (label)](#Label.Text)\
@@ -41,9 +41,9 @@ Example:
 will change label 'lblStatus' to use font "Foreign" if a game
 translation is in use.
 
-*See Also:* [IsTranslationAvailable](ags54#IsTranslationAvailable),
-[Label.Text](ags59#Label.Text),
-[TextBox.Font](ags62#TextBox.Font)
+*See Also:* [IsTranslationAvailable](Game#IsTranslationAvailable),
+[Label.Text](topic55#Label.Text),
+[TextBox.Font](topic58#TextBox.Font)
 
 ---
 
@@ -66,10 +66,10 @@ Example:
 will display the name of the location the cursor is over on label
 'lblStatus'
 
-*See Also:* [Button.NormalGraphic](ags57#Button.NormalGraphic),
-[Button.Text](ags57#Button.Text),
-[Label.TextColor](ags59#Label.TextColor),
-[Label.Font](ags59#Label.Font)
+*See Also:* [Button.NormalGraphic](topic54#Button.NormalGraphic),
+[Button.Text](topic54#Button.Text),
+[Label.TextColor](topic55#Label.TextColor),
+[Label.Font](topic55#Label.Font)
 
 ---
 
@@ -87,6 +87,6 @@ Example:
 
 will change label 'lblStatus' to have yellow text.
 
-*See Also:* [Label.Font](ags59#Label.Font),
-[Label.Text](ags59#Label.Text)
+*See Also:* [Label.Font](topic55#Label.Font),
+[Label.Text](topic55#Label.Text)
 

@@ -1,20 +1,20 @@
 GUI Text Box functions and properties
 -------------------------------------
 
-[BringToFront (inherited)](ags56#GUIControl.BringToFront)\
-[Clickable property (inherited)](ags56#GUIControl.Clickable)\
-[Enabled property (inherited)](ags56#GUIControl.Enabled)\
-[Height property (inherited)](ags56#GUIControl.Height)\
-[ID property (inherited)](ags56#GUIControl.ID)\
-[OwningGUI property (inherited)](ags56#GUIControl.OwningGUI)\
-[SendToBack (inherited)](ags56#GUIControl.SendToBack)\
-[SetPosition (inherited)](ags56#GUIControl.SetPosition)\
-[SetSize (inherited)](ags56#GUIControl.SetSize)\
-[Visible property (inherited)](ags56#GUIControl.Visible)\
-[Width property (inherited)](ags56#GUIControl.Width)\
-[X property (inherited)](ags56#GUIControl.X)\
-[Y property (inherited)](ags56#GUIControl.Y)\
-[ZOrder property (inherited)](ags56#GUIControl.ZOrder)
+[BringToFront (inherited)](topic53#GUIControl.BringToFront)\
+[Clickable property (inherited)](topic53#GUIControl.Clickable)\
+[Enabled property (inherited)](topic53#GUIControl.Enabled)\
+[Height property (inherited)](topic53#GUIControl.Height)\
+[ID property (inherited)](topic53#GUIControl.ID)\
+[OwningGUI property (inherited)](topic53#GUIControl.OwningGUI)\
+[SendToBack (inherited)](topic53#GUIControl.SendToBack)\
+[SetPosition (inherited)](topic53#GUIControl.SetPosition)\
+[SetSize (inherited)](topic53#GUIControl.SetSize)\
+[Visible property (inherited)](topic53#GUIControl.Visible)\
+[Width property (inherited)](topic53#GUIControl.Width)\
+[X property (inherited)](topic53#GUIControl.X)\
+[Y property (inherited)](topic53#GUIControl.Y)\
+[ZOrder property (inherited)](topic53#GUIControl.ZOrder)
 
 [Font property (text box)](#TextBox.Font)\
 [Text property (text box)](#TextBox.Text)\
@@ -38,8 +38,8 @@ Example:
 
 will change the *txtUserInput* text box to use Font "Normal".
 
-*See Also:* [Label.Font](ags59#Label.Font),
-[TextBox.Text](ags62#TextBox.Text)
+*See Also:* [Label.Font](topic55#Label.Font),
+[TextBox.Text](topic58#TextBox.Text)
 
 ---
 
@@ -62,9 +62,9 @@ Example:
 
 will clear the txtUserInput text box.
 
-*See Also:* [TextBox.Font](ags62#TextBox.Font),
-[String.CompareTo](ags76#String.CompareTo),
-[Label.Text](ags59#Label.Text)
+*See Also:* [TextBox.Font](topic58#TextBox.Font),
+[String.CompareTo](topic71#String.CompareTo),
+[Label.Text](topic55#Label.Text)
 
 ---
 
@@ -83,5 +83,5 @@ will change text box 'txtInput' to have yellow text.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [TextBox.Text](ags62#TextBox.Text)
+*See Also:* [TextBox.Text](topic58#TextBox.Text)
 
