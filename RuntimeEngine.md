@@ -15,6 +15,4 @@ The controls described above work with the default setup; however, you
 can customize your game to use a different interface and shortcut keys.
 
 [**The demo game**](TheDemoGame)\
-[**Graphics driver selection**](GraphicsDriver)\
-[**Run-time engine setup**](Setup)
 
