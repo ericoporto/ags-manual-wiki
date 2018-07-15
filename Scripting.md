@@ -58,5 +58,5 @@ properties**](DrawingSurfaceFunctions)\
 [**System functions and properties**](System)\
 [**Text display / Speech functions**](topic73)\
 [**ViewFrame functions and properties**](ViewFrame#topic74)\
-[**SCUMM\_VERBCOIN\_GUI functions**](topic75)
+[**SCUMM\_VERBCOIN\_GUI functions**](SCUMM_VERBCOIN_GUI)
 
