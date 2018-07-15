@@ -5,17 +5,17 @@ Now that you know how to create a room, it's time to set up the
 game-wide settings. These include inventory items, sprite graphics,
 palette setup and other things which do not depend on individual rooms.
 
-[Palette setup](#PalSetup)\
-[Inventory](#topic6)\
-[Importing your own sprite graphics](#topic7)\
-[Introduction sequences](#topic8)\
-[Animations](#Views)\
-[Characters](#topic9)\
-[Conversations](#topic10)\
-[General settings](#topic11)\
-[Default setup](#Default%20setup)\
-[Cursors](#topic12)\
-[Fonts](#topic13)
+[Palette setup](#palette-setup)\
+[Inventory](#inventory)\
+[Importing your own sprite graphics](#importing-your-own-sprite-graphics)\
+[Introduction sequences](#introduction-sequences)\
+[Animations](#animations)\
+[Characters](#characters)\
+[Conversations](#conversations)\
+[General settings](#general-settings)\
+[Default setup](#default-setup)\
+[Cursors](#cursors)\
+[Fonts](#fonts)
 
 ---
 
