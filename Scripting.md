@@ -4,11 +4,11 @@ Scripting
 The AGS scripting system allows you to write a mini-program, giving you
 great control over your game.
 
-[**Scripting tutorial part 1**](topic42#topic42)\
-[**Scripting tutorial part 2**](topic43#topic43)\
+[**Scripting tutorial part 1**](ScriptingTutorialPart1#ScriptingTutorialPart1)\
+[**Scripting tutorial part 2**](ScriptingTutorialPart2#ScriptingTutorialPart2)\
 [**Pointers in AGS**](Pointers#Pointers)\
-[**Calling global functions from local scripts**](topic44#topic44)\
-[**The script header**](topic45#topic45)\
+[**Calling global functions from local scripts**](CallingGlobalFunctions#CallingGlobalFunctions)\
+[**The script header**](TheScriptHeader#TheScriptHeader)\
 [**String formatting**](StringFormats#StringFormats)\
 [**Multiple Scripts**](ScriptModules#ScriptModules)\
 [**Understanding blocking scripts**](BlockingScripts#BlockingScripts)\

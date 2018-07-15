@@ -642,7 +642,7 @@ SetGameOption. **Basic properties**
     [Palette functions](topic66#topic66)
 -   **Developer name** - this will add the provided string to the game's
     executable properties, which will also be shown in [Windows Game
-    Explorer](topic40#GameExplorer), if you configure integration
+    Explorer](IntegrationWithWindows#GameExplorer), if you configure integration
     with one.
 -   **Enable letterbox mode** - only available if your game's resolution
     is 320x200 or 640x400. If you enable it, your game will run as
@@ -855,8 +855,8 @@ SetGameOption. **Basic properties**
 
 -   **Enhanced save games** - makes your game's saves compatible with
     Windows Game Explorer. For detailed information please refer to:
-    [Enhanced Saved Games](topic40#EnhancedSaveGames)\
-    [Windows Game Explorer](topic40#GameExplorer)
+    [Enhanced Saved Games](IntegrationWithWindows#EnhancedSaveGames)\
+    [Windows Game Explorer](IntegrationWithWindows#GameExplorer)
 -   **Save games extension** - determines the special extension for your
     save files.
 -   **Save games folder name** - determines the name of folder created
@@ -894,7 +894,7 @@ SetGameOption. **Basic properties**
     output will look blurred and unreadable).
 -   **Custom text-windows GUI** - allows you to customize the standard
     text window appearance in the game, using the specified
-    interface element. See [here](topic21#TextWin) for
+    interface element. See [here](EditingGUIs#TextWin) for
     more information.
 -   **Custom thought bubble GUI** - Determines which text window GUI is
     used for displaying thoughts with
@@ -937,7 +937,7 @@ SetGameOption. **Basic properties**
     disabled (eg. during a cutscene).
 
 **Windows Game Explorer** See: [Windows Game
-Explorer](topic40#GameExplorer)
+Explorer](IntegrationWithWindows#GameExplorer)
 
 ---
 

@@ -5,18 +5,18 @@ This section describes AGS features that were not covered in the
 tutorial.
 
 [**Music and sound**](MusAndSound#MusAndSound)\
-[**Editing the GUIs**](topic21#topic21)\
+[**Editing the GUIs**](EditingGUIs#EditingGUIs)\
 [**Distributing your game**](DistGame#DistGame)\
-[**Backing up your game**](topic29#topic29)\
+[**Backing up your game**](BackingUpYourGame#BackingUpYourGame)\
 [**The text parser**](TextParser#TextParser)\
-[**Translations**](topic30#topic30)\
+[**Translations**](Translations#Translations)\
 [**Global variables**](GlobalVariables#GlobalVariables)\
-[**Custom Properties**](topic31#topic31)\
-[**Plugins**](topic32#topic32)\
-[**Lip sync**](topic33#topic33)\
-[**New Game templates**](topic38#topic38)\
+[**Custom Properties**](CustomProperties#CustomProperties)\
+[**Plugins**](Plugins#Plugins)\
+[**Lip sync**](Lipsync#Lipsync)\
+[**New Game templates**](Templates#Templates)\
 [**Debugging features**](Debuggingfeatures#Debuggingfeatures)\
-[**Auto-number speech files**](topic39#topic39)\
-[**Integration with Windows**](topic40#topic40)\
+[**Auto-number speech files**](AutonumberSpeechFiles#AutonumberSpeechFiles)\
+[**Integration with Windows**](IntegrationWithWindows#IntegrationWithWindows)\
 [**Source Control integration**](SourceControl#SourceControl)
 

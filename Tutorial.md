@@ -6,5 +6,5 @@ create a simple game.
 
 [**Starting off**](StartingOff#StartingOff)\
 [**Setting up the game**](Settingupthegame#Settingupthegame)\
-[**Advanced room features**](topic14#topic14)
+[**Advanced room features**](AdvancedRoomFeatures#AdvancedRoomFeatures)
 

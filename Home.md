@@ -10,14 +10,14 @@ Welcome to Adventure Game Studio!
 Contents
 --------
 
--   [Copyright and terms of use](topic0#topic0)
--   [Introduction](topic1#topic1)
--   [The run-time engine](topic3#topic3)
--   [Tutorial](topic5#topic5)
--   [Other Features](topic20#topic20)
--   [Scripting](topic41#topic41)
--   [Reference](topic76#topic76)
--   [Frequently Asked Questions](topic85#topic85)
+-   [Copyright and terms of use](Copyright#Copyright)
+-   [Introduction](Introduction#Introduction)
+-   [The run-time engine](RuntimeEngine#RuntimeEngine)
+-   [Tutorial](Tutorial#Tutorial)
+-   [Other Features](OtherFeatures#OtherFeatures)
+-   [Scripting](Scripting#Scripting)
+-   [Reference](Reference#Reference)
+-   [Frequently Asked Questions](FAQ#FAQ)
 -   [Upgrading to AGS 2.7](UpgradingTo27#UpgradingTo27)
 -   [Upgrading to AGS 2.71](UpgradingTo271#UpgradingTo271)
 -   [Upgrading to AGS 3.0](UpgradeTo30#UpgradeTo30)
@@ -28,6 +28,6 @@ Contents
 -   [Upgrading to AGS 3.4](UpgradeTo34#UpgradeTo34)
 -   [Upgrading to AGS 3.4.1](UpgradeTo341#UpgradeTo341)
 -   [Anonymous usage information](AnonymousUsageInfo#AnonymousUsageInfo)
--   [Contacting the developers](topic86#topic86)
+-   [Contacting the developers](ContactingTheDevelopers#ContactingTheDevelopers)
 -   [Credits](Credits#Credits)
 
