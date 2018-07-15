@@ -639,7 +639,7 @@ SetGameOption. **Basic properties**
     reduce the size of your game resources at the cost of colour
     precision. 8-bit colour mode is a special feature for making
     palette-based games. See Also: [Palette setup](Settingupthegame#PalSetup),
-    [Palette functions](topic66)
+    [Palette functions](CyclePalette)
 -   **Developer name** - this will add the provided string to the game's
     executable properties, which will also be shown in [Windows Game
     Explorer](IntegrationWithWindows#GameExplorer), if you configure integration

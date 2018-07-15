@@ -32,8 +32,8 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](topic66#CyclePalette),
-[FadeOut](ShakeScreen#FadeOut), [SetFadeColor](ShakeScreen#SetFadeColor)
+*See Also:* [CyclePalette](CyclePalette#CyclePalette),
+[FadeOut](ShakeScreen#FadeOut), [SetFadeColor](#SetFadeColor)
 
 ---
 
@@ -55,8 +55,8 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](topic66#CyclePalette),
-[FadeIn](ShakeScreen#FadeIn), [SetFadeColor](ShakeScreen#SetFadeColor)
+*See Also:* [CyclePalette](CyclePalette#CyclePalette),
+[FadeIn](ShakeScreen#FadeIn), [SetFadeColor](#SetFadeColor)
 
 ---
 
@@ -106,7 +106,7 @@ Example:
 will mean that next time the screen fades out, it fades to red instead
 of black.
 
-SeeAlso: [FadeIn](ShakeScreen#FadeIn), [FadeOut](ShakeScreen#FadeOut),
+SeeAlso: [FadeIn](ShakeScreen#FadeIn), [FadeOut](#FadeOut),
 [SetScreenTransition](ShakeScreen#SetScreenTransition)
 
 ---
@@ -130,7 +130,7 @@ Example:
 will go to room 10 with a box-out effect, but then return to the normal
 transition type from then on.
 
-SeeAlso: [SetScreenTransition](ShakeScreen#SetScreenTransition)
+SeeAlso: [SetScreenTransition](#SetScreenTransition)
 
 ---
 

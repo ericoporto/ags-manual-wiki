@@ -48,7 +48,7 @@ properties**](DrawingSurfaceFunctions)\
 [**Multimedia functions**](Game#topic63)\
 [**Object functions and properties**](Object#topic64)\
 [**Overlay functions and properties**](Overlay)\
-[**Palette functions**](topic66)\
+[**Palette functions**](CyclePalette)\
 [**Parser functions**](Parser)\
 [**Region functions and properties**](Region)\
 [**Room functions**](Room#topic69)\
