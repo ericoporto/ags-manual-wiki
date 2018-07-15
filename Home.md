@@ -14,10 +14,9 @@ Welcome to Adventure Game Studio!
 
 
 ## Editor Reference
--   [Global Settings](EditorGlobalSettings)
 -   [Room Editor](EditorRoom)
 -   [Character Editor](EditorCharacter)
--   [GUI Editor](EditorGUI)
+-   [GUI Editor](EditingGUIs)
 -   [Sprite Manager](EditorSprite)
 -   [View Editor](EditorView)
 -   [Inventory Items Editor](EditorInventoryItems)
