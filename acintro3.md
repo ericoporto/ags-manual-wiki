@@ -146,4 +146,4 @@ better understanding of what your script code is doing. Alternatively,
 finish off this tutorial first and then check out the scripting
 tutorial.
 
-**Go to part 4:** [Objects and inventory](acintro4)
+Go to part 4: [Objects and inventory](acintro4)
