@@ -56,7 +56,7 @@ dialog option scripts, then you should go to General Settings and enable
 
 **IMPORTANT:** When adding the functions to the script, they all take in
 a parameter of type
-[DialogOptionsRenderingInfo](DialogOptionsRenderingInfo#DialogOptionsRenderingInfoFunctions).
+[DialogOptionsRenderingInfo](DialogOptionsRenderingInfo#dialogoptionsrenderinginfofunctions).
 The dialog_options_mouse_click function has an extra parameter for
 the mouse button, and dialog_options_key_press has an extra parameter
 for the key code. See the example below.
@@ -194,7 +194,7 @@ to continually scan through all the options.
     }
 
 For more detail on the commands used here, see the
-[DialogOptionsRenderingInfo](DialogOptionsRenderingInfo#DialogOptionsRenderingInfoFunctions)
+[DialogOptionsRenderingInfo](DialogOptionsRenderingInfo#dialogoptionsrenderinginfofunctions)
 page.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.

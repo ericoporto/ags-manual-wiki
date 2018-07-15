@@ -1,24 +1,24 @@
 GUI Label functions and properties
 ----------------------------------
 
-[BringToFront](GUIControl#BringToFront)\
-[Clickable property](GUIControl#Clickable)\
-[Enabled property](GUIControl#Enabled)\
-[Height property](GUIControl#Height)\
-[ID property](GUIControl#ID)\
-[OwningGUI property](GUIControl#OwningGUI)\
-[SendToBack](GUIControl#SendToBack)\
-[SetPosition](GUIControl#SetPosition)\
-[SetSize](GUIControl#SetSize)\
-[Visible property](GUIControl#Visible)\
-[Width property](GUIControl#Width)\
-[X property](GUIControl#X)\
-[Y property](GUIControl#Y)\
-[ZOrder property](GUIControl#ZOrder)
+[BringToFront](GUIControl#bringtofront)\
+[Clickable property](GUIControl#clickable)\
+[Enabled property](GUIControl#enabled)\
+[Height property](GUIControl#height)\
+[ID property](GUIControl#id)\
+[OwningGUI property](GUIControl#owninggui)\
+[SendToBack](GUIControl#sendtoback)\
+[SetPosition](GUIControl#setposition)\
+[SetSize](GUIControl#setsize)\
+[Visible property](GUIControl#visible)\
+[Width property](GUIControl#width)\
+[X property](GUIControl#x)\
+[Y property](GUIControl#y)\
+[ZOrder property](GUIControl#zorder)
 
-[Font property](#Font)\
-[Text property](#Text)\
-[TextColor property](#TextColor)
+[Font property](#font)\
+[Text property](#text)\
+[TextColor property](#textcolor)
 
 ---
 
@@ -41,9 +41,9 @@ Example:
 will change label 'lblStatus' to use font "Foreign" if a game
 translation is in use.
 
-*See Also:* [IsTranslationAvailable](Game#IsTranslationAvailable),
-[Label.Text](Label#Text),
-[TextBox.Font](TextBox#Font)
+*See Also:* [IsTranslationAvailable](Game#istranslationavailable),
+[Label.Text](Label#text),
+[TextBox.Font](TextBox#font)
 
 ---
 
@@ -66,10 +66,10 @@ Example:
 will display the name of the location the cursor is over on label
 'lblStatus'
 
-*See Also:* [Button.NormalGraphic](Button#NormalGraphic),
-[Button.Text](Button#Text),
-[Label.TextColor](Label#TextColor),
-[Label.Font](Label#Font)
+*See Also:* [Button.NormalGraphic](Button#normalgraphic),
+[Button.Text](Button#text),
+[Label.TextColor](Label#textcolor),
+[Label.Font](Label#font)
 
 ---
 
@@ -87,6 +87,6 @@ Example:
 
 will change label 'lblStatus' to have yellow text.
 
-*See Also:* [Label.Font](Label#Font),
-[Label.Text](Label#Text)
+*See Also:* [Label.Font](Label#font),
+[Label.Text](Label#text)
 

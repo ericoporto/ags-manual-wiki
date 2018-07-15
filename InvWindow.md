@@ -1,31 +1,31 @@
 GUI InvWindow functions and properties
 --------------------------------------
 
-[BringToFront](GUIControl#BringToFront)\
-[Clickable property](GUIControl#Clickable)\
-[Enabled property](GUIControl#Enabled)\
-[Height property](GUIControl#Height)\
-[ID property](GUIControl#ID)\
-[OwningGUI property](GUIControl#OwningGUI)\
-[SendToBack](GUIControl#SendToBack)\
-[SetPosition](GUIControl#SetPosition)\
-[SetSize](GUIControl#SetSize)\
-[Visible property](GUIControl#Visible)\
-[Width property](GUIControl#Width)\
-[X property](GUIControl#X)\
-[Y property](GUIControl#Y)\
-[ZOrder property](GUIControl#ZOrder)
+[BringToFront](GUIControl#bringtofront)\
+[Clickable property](GUIControl#clickable)\
+[Enabled property](GUIControl#enabled)\
+[Height property](GUIControl#height)\
+[ID property](GUIControl#id)\
+[OwningGUI property](GUIControl#owninggui)\
+[SendToBack](GUIControl#sendtoback)\
+[SetPosition](GUIControl#setposition)\
+[SetSize](GUIControl#setsize)\
+[Visible property](GUIControl#visible)\
+[Width property](GUIControl#width)\
+[X property](GUIControl#x)\
+[Y property](GUIControl#y)\
+[ZOrder property](GUIControl#zorder)
 
-[ScrollDown](#ScrollDown)\
-[ScrollUp](#ScrollUp)\
-[CharacterToUse property](#CharacterToUse)\
-[ItemAtIndex property](#ItemAtIndex)\
-[ItemCount property](#ItemCount)\
-[ItemHeight property](#ItemHeight)\
-[ItemWidth property](#ItemWidth)\
-[ItemsPerRow property](#ItemsPerRow)\
-[RowCount property](#RowCount)\
-[TopItem property](#TopItem)
+[ScrollDown](#scrolldown)\
+[ScrollUp](#scrollup)\
+[CharacterToUse property](#charactertouse)\
+[ItemAtIndex property](#itematindex)\
+[ItemCount property](#itemcount)\
+[ItemHeight property](#itemheight)\
+[ItemWidth property](#itemwidth)\
+[ItemsPerRow property](#itemsperrow)\
+[RowCount property](#rowcount)\
+[TopItem property](#topitem)
 
 ---
 
@@ -46,8 +46,8 @@ Example:
 
 will scroll the *invMain* inv window down one row.
 
-*See Also:* [InvWindow.ScrollUp](GUIInvFuncs#InvWindow.ScrollUp),
-[InvWindow.TopItem](GUIInvFuncs#InvWindow.TopItem)
+*See Also:* [InvWindow.ScrollUp](GUIInvFuncs#invwindow.scrollup),
+[InvWindow.TopItem](GUIInvFuncs#invwindow.topitem)
 
 ---
 
@@ -68,8 +68,8 @@ Example:
 
 will scroll the *invMain* inv window up one row.
 
-*See Also:* [InvWindow.ScrollDown](GUIInvFuncs#InvWindow.ScrollDown),
-[InvWindow.TopItem](GUIInvFuncs#InvWindow.TopItem)
+*See Also:* [InvWindow.ScrollDown](GUIInvFuncs#invwindow.scrolldown),
+[InvWindow.TopItem](GUIInvFuncs#invwindow.topitem)
 
 ---
 
@@ -97,7 +97,7 @@ inventory.
 
 Gets the inventory item that is currently displayed at the specified
 index in this inventory window. The number of items in the window can be
-retrieved with the [ItemCount](GUIInvFuncs#InvWindow.ItemCount) property.
+retrieved with the [ItemCount](GUIInvFuncs#invwindow.itemcount) property.
 Indexes range from 0 to ItemCount - 1.
 
 If an invalid index is supplied, *null* is returned.
@@ -110,7 +110,7 @@ Example:
 will display the name of the first item displayed in the *invMain*
 inventory window.
 
-*See Also:* [InvWindow.ItemCount](GUIInvFuncs#InvWindow.ItemCount)
+*See Also:* [InvWindow.ItemCount](GUIInvFuncs#invwindow.itemcount)
 
 ---
 
@@ -135,9 +135,9 @@ Example:
 will enable the GUI buttons *btnInvUp* and *btnInvDown* if there are
 more inventory items than will fit in the inventory window.
 
-*See Also:* [InvWindow.ItemAtIndex](GUIInvFuncs#InvWindow.ItemAtIndex),
-[InvWindow.ItemsPerRow](GUIInvFuncs#InvWindow.ItemsPerRow),
-[InvWindow.RowCount](GUIInvFuncs#InvWindow.RowCount)
+*See Also:* [InvWindow.ItemAtIndex](GUIInvFuncs#invwindow.itematindex),
+[InvWindow.ItemsPerRow](GUIInvFuncs#invwindow.itemsperrow),
+[InvWindow.RowCount](GUIInvFuncs#invwindow.rowcount)
 
 ---
 
@@ -158,8 +158,8 @@ Example:
 
 sets the *invMain* inventory window to use item cells 50x30 large.
 
-*See Also:* [InvWindow.ItemWidth](GUIInvFuncs#InvWindow.ItemWidth),
-[InvWindow.RowCount](GUIInvFuncs#InvWindow.RowCount)
+*See Also:* [InvWindow.ItemWidth](GUIInvFuncs#invwindow.itemwidth),
+[InvWindow.RowCount](GUIInvFuncs#invwindow.rowcount)
 
 ---
 
@@ -180,8 +180,8 @@ Example:
 
 sets the *invMain* inventory window to use item cells 50x30 large.
 
-*See Also:* [InvWindow.ItemHeight](GUIInvFuncs#InvWindow.ItemHeight),
-[InvWindow.ItemsPerRow](GUIInvFuncs#InvWindow.ItemsPerRow)
+*See Also:* [InvWindow.ItemHeight](GUIInvFuncs#invwindow.itemheight),
+[InvWindow.ItemsPerRow](GUIInvFuncs#invwindow.itemsperrow)
 
 ---
 
@@ -201,8 +201,8 @@ Example:
 
 displays how many items can be visible in the invMain window at once.
 
-*See Also:* [InvWindow.ItemWidth](GUIInvFuncs#InvWindow.ItemWidth),
-[InvWindow.RowCount](GUIInvFuncs#InvWindow.RowCount)
+*See Also:* [InvWindow.ItemWidth](GUIInvFuncs#invwindow.itemwidth),
+[InvWindow.RowCount](GUIInvFuncs#invwindow.rowcount)
 
 ---
 
@@ -220,8 +220,8 @@ Example:
 
 displays how many items can be visible in the invMain window at once.
 
-*See Also:* [InvWindow.ItemHeight](GUIInvFuncs#InvWindow.ItemHeight),
-[InvWindow.ItemsPerRow](GUIInvFuncs#InvWindow.ItemsPerRow)
+*See Also:* [InvWindow.ItemHeight](GUIInvFuncs#invwindow.itemheight),
+[InvWindow.ItemsPerRow](GUIInvFuncs#invwindow.itemsperrow)
 
 ---
 
@@ -233,7 +233,7 @@ displays how many items can be visible in the invMain window at once.
 
 Gets/sets the index of the first item currently displayed in the
 inventory window. The first item is represented by 0, and the last item
-is has an index of [ItemCount](GUIInvFuncs#InvWindow.ItemCount) - 1.
+is has an index of [ItemCount](GUIInvFuncs#invwindow.itemcount) - 1.
 
 You can use this to work out whether to display scroll arrows or not.
 
@@ -249,5 +249,5 @@ Example:
 makes the *btnScrollUp* button visible or invisible depending on whether
 the inventory list can be scrolled up.
 
-*See Also:* [InvWindow.ItemCount](GUIInvFuncs#InvWindow.ItemCount)
+*See Also:* [InvWindow.ItemCount](GUIInvFuncs#invwindow.itemcount)
 

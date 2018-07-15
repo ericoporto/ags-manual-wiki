@@ -1,9 +1,9 @@
 Palette functions
 -----------------
 
-[CyclePalette](#CyclePalette)\
-[SetPalRGB](#SetPalRGB)\
-[UpdatePalette](#UpdatePalette)
+[CyclePalette](#cyclepalette)\
+[SetPalRGB](#setpalrgb)\
+[UpdatePalette](#updatepalette)
 
 ---
 
@@ -29,8 +29,8 @@ Example:
 will cause the palette indexes from 10 to 200 cycle around one slot and
 give a color effect.
 
-*See Also:* [FadeIn](ShakeScreen#FadeIn), [FadeOut](ShakeScreen#FadeOut),
-[SetPalRGB](#SetPalRGB)
+*See Also:* [FadeIn](ShakeScreen#FadeIn), [FadeOut](ShakeScreen#fadeout),
+[SetPalRGB](#setpalrgb)
 
 ---
 
@@ -58,9 +58,9 @@ Example:
 
 will change palette slot number 10 from light green to yellow
 
-*See Also:* [CyclePalette](#CyclePalette),
-[FadeIn](ShakeScreen#FadeIn), [FadeOut](ShakeScreen#FadeOut),
-[UpdatePalette](#UpdatePalette)
+*See Also:* [CyclePalette](#cyclepalette),
+[FadeIn](ShakeScreen#FadeIn), [FadeOut](ShakeScreen#fadeout),
+[UpdatePalette](#updatepalette)
 
 ---
 
@@ -81,4 +81,4 @@ Example:
 will make the black colour turn bright red. When you actually change the
 variable, nothing happens. Call this function to update the screen.
 
-*See Also:* [SetPalRGB](#SetPalRGB)
+*See Also:* [SetPalRGB](#setpalrgb)

@@ -55,7 +55,7 @@ That's all you have to do. Draw on the walkable areas, hotspots and so
 on, as normal, and then save the room. The screen will scroll to follow
 the main character around.
 
-The script command [SetViewport](Room#SetViewport) allows you to
+The script command [SetViewport](Room#setviewport) allows you to
 manually scroll the room around if you don't want it to follow the
 character.
 

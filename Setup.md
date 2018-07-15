@@ -160,4 +160,4 @@ runtime data - in the default Windows folders:
 Players may enable this option and define their own location to store
 game files.
 
-See Also: [Default setup](Settingupthegame#Default%20setup)
+See Also: [Default setup](Settingupthegame#default%20setup)

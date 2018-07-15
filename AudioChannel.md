@@ -5,18 +5,18 @@ The AudioChannel instance represents a currently playing audio file. You
 can use this instance to check the status of playing sounds, and adjust
 them.
 
-[Seek](#Seek)\
-[SetRoomLocation](#SetRoomLocation)\
-[Speed property](#Speed)\
-[Stop](#Stop)\
-[ID property](#ID)\
-[IsPlaying property](#IsPlaying)\
-[LengthMs property](#LengthMs)\
-[Panning property](#Panning)\
-[PlayingClip property](#PlayingClip)\
-[Position property](#Position)\
-[PositionMs property](#PositionMs)\
-[Volume property](#Volume)
+[Seek](#seek)\
+[SetRoomLocation](#setroomlocation)\
+[Speed property](#speed)\
+[Stop](#stop)\
+[ID property](#id)\
+[IsPlaying property](#isplaying)\
+[LengthMs property](#lengthms)\
+[Panning property](#panning)\
+[PlayingClip property](#playingclip)\
+[Position property](#position)\
+[PositionMs property](#positionms)\
+[Volume property](#volume)
 
 ---
 
@@ -50,7 +50,7 @@ seek it back to the start.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Position](AudioChannel#Position)
+*See Also:* [AudioChannel.Position](AudioChannel#position)
 
 ---
 
@@ -84,7 +84,7 @@ of the *oMachine* room object.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](AudioChannel#Volume)
+*See Also:* [AudioChannel.Volume](AudioChannel#volume)
 
 ---
 
@@ -129,7 +129,7 @@ stop it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](Game#StopAudio)
+*See Also:* [Game.StopAudio](Game#stopaudio)
 
 ---
 
@@ -173,7 +173,7 @@ finishes.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#Play)
+*See Also:* [AudioClip.Play](AudioClip#play)
 
 ---
 
@@ -197,7 +197,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.PositionMs](AudioChannel#PositionMs)
+*See Also:* [AudioChannel.PositionMs](AudioChannel#positionms)
 
 ---
 
@@ -223,7 +223,7 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#Play)
+*See Also:* [AudioClip.Play](AudioClip#play)
 
 ---
 
@@ -254,8 +254,8 @@ will display what is currently playing on audio channel 2.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#Play),
-[System.AudioChannels](System#AudioChannels)
+*See Also:* [AudioClip.Play](AudioClip#play),
+[System.AudioChannels](System#audiochannels)
 
 ---
 
@@ -279,7 +279,7 @@ What *position* represents depends on the FileType of the audio clip:
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](AudioChannel#Seek) function.
+[AudioChannel.Seek](AudioChannel#seek) function.
 
 Example:
 
@@ -293,8 +293,8 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.PositionMs](AudioChannel#PositionMs),
-[AudioChannel.Seek](AudioChannel#Seek)
+[AudioChannel.PositionMs](AudioChannel#positionms),
+[AudioChannel.Seek](AudioChannel#seek)
 
 ---
 
@@ -310,7 +310,7 @@ offset into the sound in milliseconds. MIDI files will always return 0.
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](AudioChannel#Seek) function.
+[AudioChannel.Seek](AudioChannel#seek) function.
 
 Example:
 
@@ -324,8 +324,8 @@ display its position.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:* *See Also:*
-[AudioChannel.LengthMs](AudioChannel#LengthMs),
-[AudioChannel.Position](AudioChannel#Position)
+[AudioChannel.LengthMs](AudioChannel#lengthms),
+[AudioChannel.Position](AudioChannel#position)
 
 ---
 
@@ -364,6 +364,6 @@ reduce its volume.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.SetRoomLocation](AudioChannel#SetRoomLocation),
-[Game.SetAudioTypeVolume](Game#SetAudioTypeVolume),
-[System.Volume](System#Volume)
+[AudioChannel.SetRoomLocation](AudioChannel#setroomlocation),
+[Game.SetAudioTypeVolume](Game#setaudiotypevolume),
+[System.Volume](System#volume)

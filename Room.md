@@ -1,40 +1,40 @@
 Room functions
 --------------
 
-[AreThingsOverlapping](#AreThingsOverlapping)\
-[DisableGroundLevelAreas](#DisableGroundLevelAreas)\
-[EnableGroundLevelAreas](#EnableGroundLevelAreas)\
-[GetBackgroundFrame](#GetBackgroundFrame)\
-[GetDrawingSurfaceForBackground](#GetDrawingSurfaceForBackground)\
-[GetPlayerCharacter](#GetPlayerCharacter)\
-[GetProperty](#GetProperty)\
-[GetTextProperty](#GetTextProperty)\
-[SetProperty](#SetProperty)\
-[SetTextProperty](#SetTextProperty)\
-[GetScalingAt](#GetScalingAt)\
-[GetViewportX](#GetViewportX)\
-[GetViewportY](#GetViewportY)\
-[GetWalkableAreaAt](#GetWalkableAreaAt)\
-[HasPlayerBeenInRoom](#HasPlayerBeenInRoom)\
-[ProcessClick](#ProcessClick)\
-[ReleaseViewport](#ReleaseViewport)\
-[RemoveWalkableArea](#RemoveWalkableArea)\
-[ResetRoom](#ResetRoom)\
-[RestoreWalkableArea](#RestoreWalkableArea)\
-[SetAreaScaling](#SetAreaScaling)\
-[SetBackgroundFrame](#SetBackgroundFrame)\
-[SetViewport](#SetViewport)\
-[SetWalkBehindBase](#SetWalkBehindBase)\
-[BottomEdge property](#BottomEdge)\
-[ColorDepth property](#ColorDepth)\
-[Height property](#Height)\
-[LeftEdge property](#LeftEdge)\
-[Messages property](#Messages)\
-[MusicOnLoad property](#MusicOnLoad)\
-[ObjectCount property](#ObjectCount)\
-[RightEdge property](#RightEdge)\
-[TopEdge property](#TopEdge)\
-[Width property](#Width)
+[AreThingsOverlapping](#arethingsoverlapping)\
+[DisableGroundLevelAreas](#disablegroundlevelareas)\
+[EnableGroundLevelAreas](#enablegroundlevelareas)\
+[GetBackgroundFrame](#getbackgroundframe)\
+[GetDrawingSurfaceForBackground](#getdrawingsurfaceforbackground)\
+[GetPlayerCharacter](#getplayercharacter)\
+[GetProperty](#getproperty)\
+[GetTextProperty](#gettextproperty)\
+[SetProperty](#setproperty)\
+[SetTextProperty](#settextproperty)\
+[GetScalingAt](#getscalingat)\
+[GetViewportX](#getviewportx)\
+[GetViewportY](#getviewporty)\
+[GetWalkableAreaAt](#getwalkableareaat)\
+[HasPlayerBeenInRoom](#hasplayerbeeninroom)\
+[ProcessClick](#processclick)\
+[ReleaseViewport](#releaseviewport)\
+[RemoveWalkableArea](#removewalkablearea)\
+[ResetRoom](#resetroom)\
+[RestoreWalkableArea](#restorewalkablearea)\
+[SetAreaScaling](#setareascaling)\
+[SetBackgroundFrame](#setbackgroundframe)\
+[SetViewport](#setviewport)\
+[SetWalkBehindBase](#setwalkbehindbase)\
+[BottomEdge property](#bottomedge)\
+[ColorDepth property](#colordepth)\
+[Height property](#height)\
+[LeftEdge property](#leftedge)\
+[Messages property](#messages)\
+[MusicOnLoad property](#musiconload)\
+[ObjectCount property](#objectcount)\
+[RightEdge property](#rightedge)\
+[TopEdge property](#topedge)\
+[Width property](#width)
 
 ---
 
@@ -68,8 +68,8 @@ will run the code if object 2 is overlapping EGO. This could be useful
 if object 2 was a bullet, for instance.
 
 *See Also:*
-[Character.IsCollidingWithChar](Character#IsCollidingWithChar),
-[Object.IsCollidingWithObject](Object#IsCollidingWithObject)
+[Character.IsCollidingWithChar](Character#iscollidingwithchar),
+[Object.IsCollidingWithObject](Object#iscollidingwithobject)
 
 ---
 
@@ -99,9 +99,9 @@ Example:
 
 will disable all ground-level events, but leave light levels working
 
-*See Also:* [Hotspot.Enabled](Hotspot#Enabled),
-[Region.Enabled](Region#Enabled),
-[EnableGroundLevelAreas](Room#EnableGroundLevelAreas)
+*See Also:* [Hotspot.Enabled](Hotspot#enabled),
+[Region.Enabled](Region#enabled),
+[EnableGroundLevelAreas](Room#enablegroundlevelareas)
 
 ---
 
@@ -119,9 +119,9 @@ Example:
 
 will re-enable all ground-level events.
 
-*See Also:* [Hotspot.Enabled](Hotspot#Enabled),
-[Region.Enabled](Region#Enabled),
-[DisableGroundLevelAreas](Room#DisableGroundLevelAreas)
+*See Also:* [Hotspot.Enabled](Hotspot#enabled),
+[Region.Enabled](Region#enabled),
+[DisableGroundLevelAreas](Room#disablegroundlevelareas)
 
 ---
 
@@ -140,7 +140,7 @@ Example:
 
 will turn on object 2 if the background frame of the room is frame 4.
 
-*See Also:* [SetBackgroundFrame](Room#SetBackgroundFrame)
+*See Also:* [SetBackgroundFrame](Room#setbackgroundframe)
 
 ---
 
@@ -178,8 +178,8 @@ draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
 
 *See Also:*
-[DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
-[DrawingSurface.Release](DrawingSurfaceFunctions#DrawingSurface.Release)
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#drawingsurface.drawline),
+[DrawingSurface.Release](DrawingSurfaceFunctions#drawingsurface.release)
 
 ---
 
@@ -195,7 +195,7 @@ Example:
 
     Display("The player character number is %d", player.ID);
 
-*See Also:* [Character.ID](Character#ID)
+*See Also:* [Character.ID](Character#id)
 
 ---
 
@@ -225,7 +225,7 @@ Example:
 will print the message if the current room has its "CanBeAttackedHere"
 box ticked.
 
-*See Also:* [Room.GetTextProperty](Room#GetTextProperty)
+*See Also:* [Room.GetTextProperty](Room#gettextproperty)
 
 ---
 
@@ -254,7 +254,7 @@ Example:
 
 will retrieve the room's "description" property then display it.
 
-*See Also:* [Room.GetProperty](Room#GetProperty)
+*See Also:* [Room.GetProperty](Room#getproperty)
 
 ---
 
@@ -283,7 +283,7 @@ will change room's "Darkness" custom property to 10.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Room.SetTextProperty](Room#SetTextProperty)
+*See Also:* [Room.SetTextProperty](Room#settextproperty)
 
 ---
 
@@ -310,7 +310,7 @@ will change room's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Room.SetProperty](Room#SetProperty)
+*See Also:* [Room.SetProperty](Room#setproperty)
 
 ---
 
@@ -328,8 +328,8 @@ Example:
     if (GetScalingAt(player.x, player.y) == 100)
         Display ("The player is currently at normal size.");
 
-*See Also:* [GetWalkableAreaAt](Room#GetWalkableAreaAt),
-[SetAreaScaling](Room#SetAreaScaling)
+*See Also:* [GetWalkableAreaAt](Room#getwalkableareaat),
+[SetAreaScaling](Room#setareascaling)
 
 ---
 
@@ -354,8 +354,8 @@ Example:
 will turn object 2 on if the player has scrolled the room by 100 pixels
 to the right.
 
-*See Also:* [GetViewportY](Room#GetViewportY),
-[SetViewport](Room#SetViewport)
+*See Also:* [GetViewportY](Room#getviewporty),
+[SetViewport](Room#setviewport)
 
 ---
 
@@ -378,8 +378,8 @@ Example:
 will turn object 2 on if the player has scrolled the room by 20 pixels
 to the bottom.
 
-*See Also:* [GetViewportX](Room#GetViewportX),
-[SetViewport](Room#SetViewport)
+*See Also:* [GetViewportX](Room#getviewportx),
+[SetViewport](Room#setviewport)
 
 ---
 
@@ -402,9 +402,9 @@ Example:
     if (GetWalkableAreaAt(mouse.x,mouse.y) == 0)
         Display ("You can't walk there.");
 
-*See Also:* [Hotspot.GetAtScreenXY](Hotspot#GetAtScreenXY),
-[Region.GetAtRoomXY](Region#GetAtRoomXY),
-[GetScalingAt](Room#GetScalingAt)
+*See Also:* [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
+[Region.GetAtRoomXY](Region#getatroomxy),
+[GetScalingAt](Room#getscalingat)
 
 ---
 
@@ -432,7 +432,7 @@ Example:
 
 will display a message if the player has been to room 14.
 
-*See Also:* [ResetRoom](Room#ResetRoom)
+*See Also:* [ResetRoom](Room#resetroom)
 
 ---
 
@@ -462,10 +462,10 @@ Example:
 
 will simulate a click in the Look mode on co-ordinates (100, 50).
 
-*See Also:* [GUI.ProcessClick](GUIFuncsAndProps#GUI.ProcessClick),
-[Mouse.Click](Mouse#Click),
-[IsInteractionAvailable](Game#IsInteractionAvailable),
-[Hotspot.RunInteraction](Hotspot#RunInteraction)
+*See Also:* [GUI.ProcessClick](GUIFuncsAndProps#gui.processclick),
+[Mouse.Click](Mouse#click),
+[IsInteractionAvailable](Game#isinteractionavailable),
+[Hotspot.RunInteraction](Hotspot#runinteraction)
 
 ---
 
@@ -489,7 +489,7 @@ Example:
 will scroll the room 100 pixels to the right and then return the screen
 to its original position and unlock the screen viewport.
 
-*See Also:* [SetViewport](Room#SetViewport)
+*See Also:* [SetViewport](Room#setviewport)
 
 ---
 
@@ -511,7 +511,7 @@ Example:
 
 will make the walking area 5 unwalkable.
 
-*See Also:* [RestoreWalkableArea](Room#RestoreWalkableArea)
+*See Also:* [RestoreWalkableArea](Room#restorewalkablearea)
 
 ---
 
@@ -540,7 +540,7 @@ Example:
 will reset the intro room so it can be played again if the player wants
 to.
 
-*See Also:* [HasPlayerBeenInRoom](Room#HasPlayerBeenInRoom)
+*See Also:* [HasPlayerBeenInRoom](Room#hasplayerbeeninroom)
 
 ---
 
@@ -556,7 +556,7 @@ Example:
 
 will make the walking area 4 walkable again.
 
-*See Also:* [RemoveWalkableArea](Room#RemoveWalkableArea)
+*See Also:* [RemoveWalkableArea](Room#removewalkablearea)
 
 ---
 
@@ -585,8 +585,8 @@ Example:
 will set walkable area 5 to use continuous scaling from 120 to 170
 percent.
 
-*See Also:* [GetScalingAt](Room#GetScalingAt),
-[GetWalkableAreaAt](Room#GetWalkableAreaAt)
+*See Also:* [GetScalingAt](Room#getscalingat),
+[GetWalkableAreaAt](Room#getwalkableareaat)
 
 ---
 
@@ -615,7 +615,7 @@ Example:
 will change the current room's background frame to 4 if the global
 integer 20 is 1.
 
-*See Also:* [GetBackgroundFrame](Room#GetBackgroundFrame)
+*See Also:* [GetBackgroundFrame](Room#getbackgroundframe)
 
 ---
 
@@ -649,9 +649,9 @@ Example:
 will scroll the screen down from the top 60 pixels, then release it back
 to follow the player around.
 
-*See Also:* [GetViewportX](Room#GetViewportX),
-[GetViewportY](Room#GetViewportY),
-[ReleaseViewport](Room#ReleaseViewport)
+*See Also:* [GetViewportX](Room#getviewportx),
+[GetViewportY](Room#getviewporty),
+[ReleaseViewport](Room#releaseviewport)
 
 ---
 
@@ -677,7 +677,7 @@ Example:
 
 will disable the walkbehind area number 3.
 
-*See Also:* [Object.Baseline](Object#Baseline)
+*See Also:* [Object.Baseline](Object#baseline)
 
 ---
 
@@ -692,9 +692,9 @@ Example:
 
     Display("The current room's bottom edge is at %d.", Room.BottomEdge);
 
-*See Also:* [Room.LeftEdge](Room#LeftEdge),
-[Room.RightEdge](Room#RightEdge),
-[Room.TopEdge](Room#TopEdge)
+*See Also:* [Room.LeftEdge](Room#leftedge),
+[Room.RightEdge](Room#rightedge),
+[Room.TopEdge](Room#topedge)
 
 ---
 
@@ -711,7 +711,7 @@ Example:
     Display("The current room background is %d-bit colour.", Room.ColorDepth);
 
 *See Also:*
-[DrawingSurface.DrawImage](DrawingSurfaceFunctions#DrawingSurface.DrawImage)
+[DrawingSurface.DrawImage](DrawingSurfaceFunctions#drawingsurface.drawimage)
 
 ---
 
@@ -728,7 +728,7 @@ Example:
 
     Display("The current room size is %d x %d.", Room.Width, Room.Height);
 
-*See Also:* [Room.Width](Room#Width)
+*See Also:* [Room.Width](Room#width)
 
 ---
 
@@ -743,9 +743,9 @@ Example:
 
     Display("The current room's left edge is at %d.", Room.LeftEdge);
 
-*See Also:* [Room.BottomEdge](Room#BottomEdge),
-[Room.RightEdge](Room#RightEdge),
-[Room.TopEdge](Room#TopEdge)
+*See Also:* [Room.BottomEdge](Room#bottomedge),
+[Room.RightEdge](Room#rightedge),
+[Room.TopEdge](Room#topedge)
 
 ---
 
@@ -815,9 +815,9 @@ Example:
 
     Display("The current room's right edge is at %d.", Room.RightEdge);
 
-*See Also:* [Room.BottomEdge](Room#BottomEdge),
-[Room.LeftEdge](Room#LeftEdge),
-[Room.TopEdge](Room#TopEdge)
+*See Also:* [Room.BottomEdge](Room#bottomedge),
+[Room.LeftEdge](Room#leftedge),
+[Room.TopEdge](Room#topedge)
 
 ---
 
@@ -832,9 +832,9 @@ Example:
 
     Display("The current room's top edge is at %d.", Room.TopEdge);
 
-*See Also:* [Room.BottomEdge](Room#BottomEdge),
-[Room.LeftEdge](Room#LeftEdge),
-[Room.RightEdge](Room#RightEdge)
+*See Also:* [Room.BottomEdge](Room#bottomedge),
+[Room.LeftEdge](Room#leftedge),
+[Room.RightEdge](Room#rightedge)
 
 ---
 
@@ -851,5 +851,5 @@ Example:
 
     Display("The current room size is %d x %d.", Room.Width, Room.Height);
 
-*See Also:* [Room.Height](Room#Height)
+*See Also:* [Room.Height](Room#height)
 

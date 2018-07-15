@@ -21,18 +21,18 @@ great control over your game.
 [**Built-in enumerated types**](BuiltInEnums)\
 [**Script language keywords**](managedmodifier)\
 [**AudioChannel functions and
-properties**](AudioChannel#AudioChannelCommands)\
-[**AudioClip functions and properties**](AudioClip#AudioClipCommands)\
+properties**](AudioChannel#audiochannelcommands)\
+[**AudioClip functions and properties**](AudioClip#audioclipcommands)\
 [**Character functions and properties**](Character)\
 [**DateTime functions and properties**](DateTime)\
 [**Dialog functions and properties**](Dialog)\
 [**DialogOptionsRenderingInfo functions and
-properties**](DialogOptionsRenderingInfo#DialogOptionsRenderingInfoFunctions)\
+properties**](DialogOptionsRenderingInfo#dialogoptionsrenderinginfofunctions)\
 [**DrawingSurface functions and
 properties**](DrawingSurfaceFunctions)\
 [**DynamicSprite functions and properties**](DynamicSprite)\
 [**File functions and properties**](File)\
-[**Game / Global functions**](Game#GlobalCommands)\
+[**Game / Global functions**](Game#globalcommands)\
 [**GUI functions and properties**](GUIFuncsAndProps)\
 [**GUI control functions and properties**](GUIControl)\
 [**GUI Button functions and properties**](Button)\
@@ -53,7 +53,7 @@ properties**](DrawingSurfaceFunctions)\
 [**Region functions and properties**](Region)\
 [**Room functions**](Room)\
 [**Screen functions**](ShakeScreen)\
-[**Speech functions and properties**](Speech#SpeechCommands)\
+[**Speech functions and properties**](Speech#speechcommands)\
 [**String functions**](String)\
 [**System functions and properties**](System)\
 [**Text display / Speech functions**](DisplayAt)\

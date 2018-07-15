@@ -151,4 +151,4 @@ by individual room scripts. If you add their function definitions to
 your room script in a similar way to how they are in the global script,
 the room script can intercept the keypress/mouseclick first, and then
 decide whether to pass it on to the global script or not. See the
-[ClaimEvent](Game#ClaimEvent) function for more.
+[ClaimEvent](Game#claimevent) function for more.

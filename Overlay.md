@@ -1,13 +1,13 @@
 Overlay functions and properties
 --------------------------------
 
-[CreateGraphical](#CreateGraphical)\
-[CreateTextual](#CreateTextual)\
-[Remove](#Remove)\
-[SetText](#SetText)\
-[Valid property](#Valid)\
-[X property](#X)\
-[Y property](#Y)
+[CreateGraphical](#creategraphical)\
+[CreateTextual](#createtextual)\
+[Remove](#remove)\
+[SetText](#settext)\
+[Valid property](#valid)\
+[X property](#x)\
+[Y property](#y)
 
 ---
 
@@ -26,7 +26,7 @@ as characters/objects, if it is false then a black rectangle will be
 painted behind the sprite.
 
 See the description of
-[Overlay.CreateTextual](Overlay#CreateTextual) for more on
+[Overlay.CreateTextual](Overlay#createtextual) for more on
 overlays.
 
 Example:
@@ -39,8 +39,8 @@ will create an overlay of the image stored in sprite manager's slot 300,
 at the coordinates 100,100. It will display for 1 second, then remove
 it.
 
-*See Also:* [Overlay.CreateTextual](Overlay#CreateTextual),
-[Overlay.Remove](Overlay#Remove)
+*See Also:* [Overlay.CreateTextual](Overlay#createtextual),
+[Overlay.Remove](Overlay#remove)
 
 ---
 
@@ -97,9 +97,9 @@ the speech font and white color. It will be displayed for 1 second, then
 removed.
 
 *See Also:*
-[Overlay.CreateGraphical](Overlay#CreateGraphical),
-[Overlay.X](Overlay#X), [Overlay.Y](Overlay#Y),
-[Overlay.Remove](Overlay#Remove)
+[Overlay.CreateGraphical](Overlay#creategraphical),
+[Overlay.X](Overlay#X), [Overlay.Y](Overlay#y),
+[Overlay.Remove](Overlay#remove)
 
 ---
 
@@ -121,7 +121,7 @@ Example:
 will create a text overlay , wait for 200 game cycles (about 5 seconds)
 and then remove the overlay from the screen.
 
-*See Also:* [Overlay.CreateTextual](Overlay#CreateTextual)
+*See Also:* [Overlay.CreateTextual](Overlay#createtextual)
 
 ---
 
@@ -147,8 +147,8 @@ Example:
 will create a text overlay , wait for 200 game cycles (about 5 seconds)
 and then replace the overlay with another one.
 
-*See Also:* [Overlay.CreateTextual](Overlay#CreateTextual),
-[Overlay.Remove](Overlay#Remove)
+*See Also:* [Overlay.CreateTextual](Overlay#createtextual),
+[Overlay.Remove](Overlay#remove)
 
 ---
 
@@ -171,8 +171,8 @@ Example:
 creates an overlay, and prints out the Valid property (which will be 1).
 Then, removes the overlay and prints Valid again (which will now be 0).
 
-*See Also:* [Overlay.CreateTextual](Overlay#CreateTextual),
-[Overlay.Remove](Overlay#Remove)
+*See Also:* [Overlay.CreateTextual](Overlay#createtextual),
+[Overlay.Remove](Overlay#remove)
 
 ---
 
@@ -198,9 +198,9 @@ Example:
 
 creates a text overlay, then gradually slides it across the screen.
 
-*See Also:* [Overlay.CreateTextual](Overlay#CreateTextual),
-[Overlay.Y](Overlay#Y),
-[Overlay.Remove](Overlay#Remove)
+*See Also:* [Overlay.CreateTextual](Overlay#createtextual),
+[Overlay.Y](Overlay#y),
+[Overlay.Remove](Overlay#remove)
 
 ---
 
@@ -226,6 +226,6 @@ Example:
 
 creates a text overlay, then gradually slides it down the screen.
 
-*See Also:* [Overlay.CreateTextual](Overlay#CreateTextual),
-[Overlay.X](Overlay#X),
-[Overlay.Remove](Overlay#Remove)
+*See Also:* [Overlay.CreateTextual](Overlay#createtextual),
+[Overlay.X](Overlay#x),
+[Overlay.Remove](Overlay#remove)

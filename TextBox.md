@@ -1,24 +1,24 @@
 GUI Text Box functions and properties
 -------------------------------------
 
-[BringToFront](GUIControl#BringToFront)\
-[Clickable property](GUIControl#Clickable)\
-[Enabled property](GUIControl#Enabled)\
-[Height property](GUIControl#Height)\
-[ID property](GUIControl#ID)\
-[OwningGUI property](GUIControl#OwningGUI)\
-[SendToBack](GUIControl#SendToBack)\
-[SetPosition](GUIControl#SetPosition)\
-[SetSize](GUIControl#SetSize)\
-[Visible property](GUIControl#Visible)\
-[Width property](GUIControl#Width)\
-[X property](GUIControl#X)\
-[Y property](GUIControl#Y)\
-[ZOrder property](GUIControl#ZOrder)
+[BringToFront](GUIControl#bringtofront)\
+[Clickable property](GUIControl#clickable)\
+[Enabled property](GUIControl#enabled)\
+[Height property](GUIControl#height)\
+[ID property](GUIControl#id)\
+[OwningGUI property](GUIControl#owninggui)\
+[SendToBack](GUIControl#sendtoback)\
+[SetPosition](GUIControl#setposition)\
+[SetSize](GUIControl#setsize)\
+[Visible property](GUIControl#visible)\
+[Width property](GUIControl#width)\
+[X property](GUIControl#x)\
+[Y property](GUIControl#y)\
+[ZOrder property](GUIControl#zorder)
 
-[Font property](#Font)\
-[Text property](#Text)\
-[TextColor property](#TextColor)
+[Font property](#font)\
+[Text property](#text)\
+[TextColor property](#textcolor)
 
 ---
 
@@ -38,8 +38,8 @@ Example:
 
 will change the *txtUserInput* text box to use Font "Normal".
 
-*See Also:* [Label.Font](Label#Font),
-[TextBox.Text](TextBox#Text)
+*See Also:* [Label.Font](Label#font),
+[TextBox.Text](TextBox#text)
 
 ---
 
@@ -62,9 +62,9 @@ Example:
 
 will clear the txtUserInput text box.
 
-*See Also:* [TextBox.Font](TextBox#Font),
-[String.CompareTo](String#CompareTo),
-[Label.Text](Label#Text)
+*See Also:* [TextBox.Font](TextBox#font),
+[String.CompareTo](String#compareto),
+[Label.Text](Label#text)
 
 ---
 
@@ -83,5 +83,5 @@ will change text box 'txtInput' to have yellow text.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [TextBox.Text](TextBox#Text)
+*See Also:* [TextBox.Text](TextBox#text)
 

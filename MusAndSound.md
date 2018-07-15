@@ -29,7 +29,7 @@ sub-nodes called "Speech", "Types" and two default folders called
 **Speech**
 
 At the moment, voice speech files are not setup within the editor. See
-the [Speech](MusAndSound#VoiceSpeech) help page to find out more about
+the [Speech](MusAndSound#voicespeech) help page to find out more about
 adding speech to your game.
 
 **Audio Types**
@@ -143,7 +143,7 @@ been started yet).
 
 **Overall system volume**
 
-There is a property called [System.Volume](System#Volume) that
+There is a property called [System.Volume](System#volume) that
 controls the overall game volume, which you can use with some sort of
 volume control slider for the player. All individual sound volumes work
 within the overall system volume.
@@ -154,11 +154,11 @@ The new audio system in AGS gives you much more control over your game
 audio. Please see the following sections for a complete list of the
 supported commands:
 
-[AudioClip reference](AudioClip#AudioClipCommands), [AudioChannel
-reference](AudioChannel#AudioChannelCommands)
+[AudioClip reference](AudioClip#audioclipcommands), [AudioChannel
+reference](AudioChannel#audiochannelcommands)
 
-[Voice speech](#VoiceSpeech)\
-[The AudioCache folder](#AudioCache)
+[Voice speech](#voicespeech)\
+[The AudioCache folder](#audiocache)
 
 ---
 
@@ -208,7 +208,7 @@ the rest of your game data so that you can offer it as an optional extra
 download to the player. The game will function correctly if the file is
 not present.
 
-*SeeAlso:* [Speech.VoiceMode](Speech#VoiceMode)
+*SeeAlso:* [Speech.VoiceMode](Speech#voicemode)
 
 ---
 

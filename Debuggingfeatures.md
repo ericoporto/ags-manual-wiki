@@ -44,7 +44,7 @@ XP or higher to take advantage of this feature.
 
 **2. The Debug() command**
 
-There is a scripting command, [Debug](Game#Debug), which you can
+There is a scripting command, [Debug](Game#debug), which you can
 use in your script to help you find problems. The default setup enables
 some hotkeys for the various features - in particular, Ctrl+X allows you
 to teleport to another room, Ctrl+A shows the walkable areas on the

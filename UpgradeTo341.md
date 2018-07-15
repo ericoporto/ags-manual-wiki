@@ -47,7 +47,7 @@ directly create default config for your game using winsetup.exe.
 "Default Setup".
 
 For detailed information about Default Setup page refer to: [Default
-setup](Settingupthegame#Default%20setup).
+setup](Settingupthegame#default%20setup).
 
 **Script API selector**
 

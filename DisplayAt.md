@@ -1,12 +1,12 @@
 Text display / Speech functions
 -------------------------------
 
-[Display](#Display)\
-[DisplayAt](#DisplayAt)\
-[DisplayAtY](#DisplayAtY)\
-[DisplayMessage](#DisplayMessage)\
-[DisplayMessageAtY](#DisplayMessageAtY)\
-[DisplayTopBar](#DisplayTopBar)
+[Display](#display)\
+[DisplayAt](#displayat)\
+[DisplayAtY](#displayaty)\
+[DisplayMessage](#displaymessage)\
+[DisplayMessageAtY](#displaymessageaty)\
+[DisplayTopBar](#displaytopbar)
 
 ---
 
@@ -34,11 +34,11 @@ a key or clicking the mouse). While the window is displayed, all other
 processing, like animations and interface display, are disabled. This is
 usually used for responses to the player LOOKing at things.
 
-*See Also:* [DisplayAt](#DisplayAt),
-[DisplayMessage](#DisplayMessage),
-[Character.Say](Character#Say),
-[DisplayTopBar](#DisplayTopBar),
-[String.Format](String#Format)
+*See Also:* [DisplayAt](#displayat),
+[DisplayMessage](#displaymessage),
+[Character.Say](Character#say),
+[DisplayTopBar](#displaytopbar),
+[String.Format](String#format)
 
 ---
 
@@ -68,8 +68,8 @@ Example:
 
 will display the message at coordinates 50,50 in a box 100 pixels wide.
 
-*See Also:* [Display](#Display),
-[DisplayAtY](#DisplayAtY)
+*See Also:* [Display](#display),
+[DisplayAtY](#displayaty)
 
 ---
 
@@ -88,8 +88,8 @@ Example:
 
 will display the message at y coordinate 50.
 
-*See Also:* [Display](#Display),
-[DisplayAt](#DisplayAt)
+*See Also:* [Display](#display),
+[DisplayAt](#displayat)
 
 ---
 
@@ -108,8 +108,8 @@ Example:
 
 will display the message 220 of the Room message editor.
 
-*See Also:* [Display](#Display),
-[DisplayMessageAtY](#DisplayMessageAtY)
+*See Also:* [Display](#display),
+[DisplayMessageAtY](#displaymessageaty)
 
 ---
 
@@ -130,8 +130,8 @@ Example:
 
 will display global message 527, in the lower half of the screen.
 
-*See Also:* [DisplayAtY](#DisplayAtY),
-[DisplayMessage](#DisplayMessage)
+*See Also:* [DisplayAtY](#displayaty),
+[DisplayMessage](#displaymessage)
 
 ---
 
@@ -180,5 +180,5 @@ will display "Get out of my house and never return!" in the message box,
 with the caption bar reading "Evil wizard". The message box will have
 dark grey text on a light gray background.
 
-*See Also:* [Display](#Display),
-[DisplayAt](#DisplayAt)
+*See Also:* [Display](#display),
+[DisplayAt](#displayat)

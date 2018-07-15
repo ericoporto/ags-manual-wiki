@@ -1,11 +1,11 @@
 Script language keywords
 ------------------------
 
-[Arrays](#Arrays)\
-[Data types](#Datatypes)\
+[Arrays](#arrays)\
+[Data types](#datatypes)\
 [Operators](#operators)\
-[Constants](#Constants)\
-[Version checking](#VersionChecks)\
+[Constants](#constants)\
+[Version checking](#versionchecks)\
 [if, else statements](#ifelsestatements)\
 [switch, case statements](#switchstatement)\
 [while](#whilestatement)\
@@ -219,7 +219,7 @@ you could do:
 
 To get the actual number of things in the game rather than the AGS
 limit, use the
-[Game.CharacterCount](Game#CharacterCount)-style properties.
+[Game.CharacterCount](Game#charactercount)-style properties.
 
 ---
 
@@ -593,7 +593,7 @@ Now, you can declare a struct in one go, like so:
     sword.name = "Fine sword";
 
 Much neater and better organised. You can also combine structs with
-[arrays](enum#Arrays):
+[arrays](enum#arrays):
 
     // at top of script
     Weapon weapons[10];

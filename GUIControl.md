@@ -5,22 +5,22 @@ This section lists the functions and properties common to all types of
 GUI control. Each individual control type (Button, ListBox, etc) also
 has its own specific section.
 
-[GetAtScreenXY](#GetAtScreenXY)\
-[AsType properties](#AsType)\
-[BringToFront](#BringToFront)\
-[Clickable property](#Clickable)\
-[Enabled property](#Enabled)\
-[Height property](#Height)\
-[ID property](#ID)\
-[OwningGUI property](#OwningGUI)\
-[SendToBack](#SendToBack)\
-[SetPosition](#SetPosition)\
-[SetSize](#SetSize)\
-[Visible property](#Visible)\
-[Width property](#Width)\
-[X property](#X)\
-[Y property](#Y)\
-[ZOrder property](#ZOrder)
+[GetAtScreenXY](#getatscreenxy)\
+[AsType properties](#astype)\
+[BringToFront](#bringtofront)\
+[Clickable property](#clickable)\
+[Enabled property](#enabled)\
+[Height property](#height)\
+[ID property](#id)\
+[OwningGUI property](#owninggui)\
+[SendToBack](#sendtoback)\
+[SetPosition](#setposition)\
+[SetSize](#setsize)\
+[Visible property](#visible)\
+[Width property](#width)\
+[X property](#x)\
+[Y property](#y)\
+[ZOrder property](#zorder)
 
 ---
 
@@ -50,7 +50,7 @@ Example:
 
 will display what control the mouse is over.
 
-*See Also:* [GUI.GetAtScreenXY](GUIFuncsAndProps#GUI.GetAtScreenXY)
+*See Also:* [GUI.GetAtScreenXY](GUIFuncsAndProps#gui.getatscreenxy)
 
 ---
 
@@ -80,7 +80,7 @@ Example:
 attempts to set Button 2 on GUI ICONBAR to have NormalGraphic 44, but if
 that control is not a button, prints a message.
 
-*See Also:* [GUI.Controls](GUIFuncsAndProps#GUI.Controls)
+*See Also:* [GUI.Controls](GUIFuncsAndProps#gui.controls)
 
 ---
 
@@ -102,8 +102,8 @@ Example:
 will move the *btnBigButton* button to be in front of all other controls
 on the GUI.
 
-*See Also:* [GUIControl.SendToBack](GUIControl#SendToBack),
-[GUIControl.ZOrder](GUIControl#ZOrder)
+*See Also:* [GUIControl.SendToBack](GUIControl#sendtoback),
+[GUIControl.ZOrder](GUIControl#zorder)
 
 ---
 
@@ -138,7 +138,7 @@ Example:
 
 will make the *btnSaveGame* button non-clickable.
 
-*See Also:* [GUIControl.Enabled](GUIControl#Enabled)
+*See Also:* [GUIControl.Enabled](GUIControl#enabled)
 
 ---
 
@@ -176,8 +176,8 @@ Example:
 
 will disable the *btnSaveGame* button.
 
-*See Also:* [GUIControl.Clickable](GUIControl#Clickable),
-[GUIControl.Visible](GUIControl#Visible)
+*See Also:* [GUIControl.Clickable](GUIControl#clickable),
+[GUIControl.Visible](GUIControl#visible)
 
 ---
 
@@ -198,8 +198,8 @@ Example:
 
 makes the *btnConfirm* button 20 pixels high.
 
-*See Also:* [GUIControl.SetSize](GUIControl#SetSize),
-[GUIControl.Width](GUIControl#Width)
+*See Also:* [GUIControl.SetSize](GUIControl#setsize),
+[GUIControl.Width](GUIControl#width)
 
 ---
 
@@ -223,8 +223,8 @@ Example:
 uses the obsolete SetGUIObjectEnabled function to enable the lstSaves
 list box, and then uses the equivalent modern property to disable it.
 
-*See Also:* [GUIControl.OwningGUI](GUIControl#OwningGUI),
-[GUI.ID](GUIFuncsAndProps#GUI.ID)
+*See Also:* [GUIControl.OwningGUI](GUIControl#owninggui),
+[GUI.ID](GUIFuncsAndProps#gui.id)
 
 ---
 
@@ -252,8 +252,8 @@ Example:
 turns off the GUI that contains the lstSaves list box, then turns it on
 again using the niftier full pathing approach.
 
-*See Also:* [GUIControl.ID](GUIControl#ID),
-[GUI.ID](GUIFuncsAndProps#GUI.ID)
+*See Also:* [GUIControl.ID](GUIControl#id),
+[GUI.ID](GUIFuncsAndProps#gui.id)
 
 ---
 
@@ -276,8 +276,8 @@ will move the *btnBigButton* button to be behind all other controls on
 the GUI.
 
 *See Also:*
-[GUIControl.BringToFront](GUIControl#BringToFront),
-[GUIControl.ZOrder](GUIControl#ZOrder)
+[GUIControl.BringToFront](GUIControl#bringtofront),
+[GUIControl.ZOrder](GUIControl#zorder)
 
 ---
 
@@ -305,11 +305,11 @@ Example:
 will move the *btnConfirm* button to be positioned at (40,10) within the
 GUI.
 
-*See Also:* [GUIControl.Enabled](GUIControl#Enabled),
-[GUI.SetPosition](GUIFuncsAndProps#GUI.SetPosition),
-[GUIControl.SetSize](GUIControl#SetSize),
-[GUIControl.X](GUIControl#X),
-[GUIControl.Y](GUIControl#Y)
+*See Also:* [GUIControl.Enabled](GUIControl#enabled),
+[GUI.SetPosition](GUIFuncsAndProps#gui.setposition),
+[GUIControl.SetSize](GUIControl#setsize),
+[GUIControl.X](GUIControl#x),
+[GUIControl.Y](GUIControl#y)
 
 ---
 
@@ -336,10 +336,10 @@ Example:
 
 will resize the *invMain* control to have a size of 160 x 100.
 
-*See Also:* [GUIControl.Height](GUIControl#Height),
-[GUIControl.SetPosition](GUIControl#SetPosition),
-[GUI.SetSize](GUIFuncsAndProps#GUI.SetSize),
-[GUIControl.Width](GUIControl#Width),
+*See Also:* [GUIControl.Height](GUIControl#height),
+[GUIControl.SetPosition](GUIControl#setposition),
+[GUI.SetSize](GUIFuncsAndProps#gui.setsize),
+[GUIControl.Width](GUIControl#width),
 
 ---
 
@@ -364,7 +364,7 @@ Example:
 
 will make the *btnSaveGame* button invisible.
 
-*See Also:* [GUIControl.Enabled](GUIControl#Enabled)
+*See Also:* [GUIControl.Enabled](GUIControl#enabled)
 
 ---
 
@@ -385,8 +385,8 @@ Example:
 
 makes the *btnConfirm* button 110 pixels wide.
 
-*See Also:* [GUIControl.Height](GUIControl#Height),
-[GUIControl.SetSize](GUIControl#SetSize)
+*See Also:* [GUIControl.Height](GUIControl#height),
+[GUIControl.SetSize](GUIControl#setsize)
 
 ---
 
@@ -411,8 +411,8 @@ Example:
 will move the *btnConfirm* button to be positioned 10 pixels from the
 left of its GUI.
 
-*See Also:* [GUIControl.SetPosition](GUIControl#SetPosition),
-[GUIControl.Y](GUIControl#Y)
+*See Also:* [GUIControl.SetPosition](GUIControl#setposition),
+[GUIControl.Y](GUIControl#y)
 
 ---
 
@@ -437,8 +437,8 @@ Example:
 will move the *btnConfirm* button to be positioned 20 pixels from the
 top of its GUI.
 
-*See Also:* [GUIControl.SetPosition](GUIControl#SetPosition),
-[GUIControl.X](GUIControl#X)
+*See Also:* [GUIControl.SetPosition](GUIControl#setposition),
+[GUIControl.X](GUIControl#x)
 
 ---
 
@@ -471,6 +471,6 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[GUIControl.BringToFront](GUIControl#BringToFront),
-[GUIControl.SendToBack](GUIControl#SendToBack)
+[GUIControl.BringToFront](GUIControl#bringtofront),
+[GUIControl.SendToBack](GUIControl#sendtoback)
 

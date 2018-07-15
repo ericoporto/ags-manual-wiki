@@ -67,15 +67,15 @@ like.
 
 Glad you asked! Instead of all those old commands like SetMusicVolume,
 SetDigitalMasterVolume, etc, there is now simply one overall system
-volume ([System.Volume](System#Volume)), and then each sound
+volume ([System.Volume](System#volume)), and then each sound
 that is playing has its own volume control as well. This is controlled
-by the [Volume property](AudioChannel#Volume) on the audio
+by the [Volume property](AudioChannel#volume) on the audio
 channel (see the [Audio page](MusAndSound) for details on
 this).
 
 Finally, you can update the volume of one particular type of audio (eg.
 sound, music) by using the
-[Game.SetAudioTypeVolume](Game#SetAudioTypeVolume) command.
+[Game.SetAudioTypeVolume](Game#setaudiotypevolume) command.
 
 **Wait, what's an audio channel?**
 
@@ -90,18 +90,18 @@ having Audio Channels allows you to control each one individually. The
 
 Ambient Sounds were a bit of an oddity in AGS, caused by the fact that
 you couldn't tell a PlaySound command to loop the sound. With the new
-audio system, the [Play command](AudioClip#Play) has an
+audio system, the [Play command](AudioClip#play) has an
 optional Repeat parameter, allowing you to specify whether it loops or
 not.
 
 The X/Y directional aspect of PlayAmbientSound is supported by the
-[SetRoomLocation](AudioChannel#SetRoomLocation) command on the
+[SetRoomLocation](AudioChannel#setroomlocation) command on the
 audio channel.
 
 **Is there any new cool stuff that I can do?**
 
 You can now adjust the left-right panning of audio, using the
-[AudioChannel.Panning](AudioChannel#Panning) property. You
+[AudioChannel.Panning](AudioChannel#panning) property. You
 also have finer control over syncing up different pieces of audio,
 through the ability to get and seek offsets more accurately.
 

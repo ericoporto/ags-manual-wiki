@@ -1,24 +1,24 @@
 GUI functions and properties
 ----------------------------
 
-[Centre](#Centre)\
-[Click](#Click)\
-[GetAtScreenXY](#GetAtScreenXY)\
-[ProcessClick](#ProcessClick)\
-[SetPosition](#SetPosition)\
-[SetSize](#SetSize)\
-[BackgroundGraphic property](#BackgroundGraphic)\
-[Clickable property](#Clickable)\
-[ControlCount property](#ControlCount)\
-[Controls property](#Controls)\
-[Height property](#Height)\
-[ID property](#ID)\
-[Transparency property](#Transparency)\
-[Visible property](#Visible)\
-[Width property](#Width)\
-[X property](#X)\
-[Y property](#Y)\
-[ZOrder property](#ZOrder)
+[Centre](#centre)\
+[Click](#click)\
+[GetAtScreenXY](#getatscreenxy)\
+[ProcessClick](#processclick)\
+[SetPosition](#setposition)\
+[SetSize](#setsize)\
+[BackgroundGraphic property](#backgroundgraphic)\
+[Clickable property](#clickable)\
+[ControlCount property](#controlcount)\
+[Controls property](#controls)\
+[Height property](#height)\
+[ID property](#id)\
+[Transparency property](#transparency)\
+[Visible property](#visible)\
+[Width property](#width)\
+[X property](#x)\
+[Y property](#y)\
+[ZOrder property](#zorder)
 
 ---
 
@@ -38,7 +38,7 @@ Example:
 
 will centre the CONTROLPANEL GUI in the middle of the screen.
 
-*See Also:* [GUI.SetPosition](GUIFuncsAndProps#GUI.SetPosition)
+*See Also:* [GUI.SetPosition](GUIFuncsAndProps#gui.setposition)
 
 ---
 
@@ -62,8 +62,8 @@ triggers OnClick event for gMainMenu.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Button.Click](Button#Click),
-[GUI.ProcessClick](GUIFuncsAndProps#GUI.ProcessClick)
+*See Also:* [Button.Click](Button#click),
+[GUI.ProcessClick](GUIFuncsAndProps#gui.processclick)
 
 ---
 
@@ -101,8 +101,8 @@ Example:
 will display the number of the GUI that the mouse is over.
 
 *See Also:*
-[GUIControl.GetAtScreenXY](GUIControl#GetAtScreenXY),
-[GUI.ID](GUIFuncsAndProps#GUI.ID), [GUI.ZOrder](GUIFuncsAndProps#GUI.ZOrder)
+[GUIControl.GetAtScreenXY](GUIControl#getatscreenxy),
+[GUI.ID](GUIFuncsAndProps#GUI.ID), [GUI.ZOrder](GUIFuncsAndProps#gui.zorder)
 
 ---
 
@@ -130,8 +130,8 @@ Pointer mode, which will ignore anything but interface.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Mouse.Click](Mouse#Click),
-[Room.ProcessClick](Room#ProcessClick)
+*See Also:* [Mouse.Click](Mouse#click),
+[Room.ProcessClick](Room#processclick)
 
 ---
 
@@ -152,11 +152,11 @@ Example:
 
 will move the VERBCOIN GUI to the position where the cursor is.
 
-*See Also:* [GUI.Centre](GUIFuncsAndProps#GUI.Centre),
-[GUI.BackgroundGraphic](GUIFuncsAndProps#GUI.BackgroundGraphic),
-[GUIControl.SetPosition](GUIControl#SetPosition),
-[GUI.SetSize](GUIFuncsAndProps#GUI.SetSize), [GUI.X](GUIFuncsAndProps#GUI.X),
-[GUI.Y](GUIFuncsAndProps#GUI.Y)
+*See Also:* [GUI.Centre](GUIFuncsAndProps#gui.centre),
+[GUI.BackgroundGraphic](GUIFuncsAndProps#gui.backgroundgraphic),
+[GUIControl.SetPosition](GUIControl#setposition),
+[GUI.SetSize](GUIFuncsAndProps#GUI.SetSize), [GUI.X](GUIFuncsAndProps#gui.x),
+[GUI.Y](GUIFuncsAndProps#gui.y)
 
 ---
 
@@ -180,11 +180,11 @@ Example:
 
 changes the ICONBAR GUI to be the size of half the screen
 
-*See Also:* [GUI.Centre](GUIFuncsAndProps#GUI.Centre),
-[GUI.Height](GUIFuncsAndProps#GUI.Height),
-[GUIControl.SetPosition](GUIControl#SetPosition),
-[GUI.SetPosition](GUIFuncsAndProps#GUI.SetPosition),
-[GUI.Width](GUIFuncsAndProps#GUI.Width)
+*See Also:* [GUI.Centre](GUIFuncsAndProps#gui.centre),
+[GUI.Height](GUIFuncsAndProps#gui.height),
+[GUIControl.SetPosition](GUIControl#setposition),
+[GUI.SetPosition](GUIFuncsAndProps#gui.setposition),
+[GUI.Width](GUIFuncsAndProps#gui.width)
 
 ---
 
@@ -198,8 +198,8 @@ Gets/sets the background image of the GUI.
 
 You can set this to 0 to remove the background image from the GUI.
 
-*See Also:* [GUI.SetPosition](GUIFuncsAndProps#GUI.SetPosition),
-[Button.NormalGraphic](Button#NormalGraphic)
+*See Also:* [GUI.SetPosition](GUIFuncsAndProps#gui.setposition),
+[Button.NormalGraphic](Button#normalgraphic)
 
 ---
 
@@ -226,7 +226,7 @@ Example:
 
 sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
-*See Also:* [GUI.GetAtScreenXY](GUIFuncsAndProps#GUI.GetAtScreenXY)
+*See Also:* [GUI.GetAtScreenXY](GUIFuncsAndProps#gui.getatscreenxy)
 
 ---
 
@@ -248,7 +248,7 @@ Example:
 
 disables all controls on the INVENTORY GUI.
 
-*See Also:* [GUI.Controls](GUIFuncsAndProps#GUI.Controls)
+*See Also:* [GUI.Controls](GUIFuncsAndProps#gui.controls)
 
 ---
 
@@ -282,8 +282,8 @@ Example:
 gets list box number 4 from the INVENTORY GUI, and then adds an item to
 it. If control 4 isn't a listbox, you will get a Null Reference error.
 
-*See Also:* [GUIControl.As\*](GUIControl#AsType),
-[GUI.ControlCount](GUIFuncsAndProps#GUI.ControlCount)
+*See Also:* [GUIControl.As\*](GUIControl#astype),
+[GUI.ControlCount](GUIFuncsAndProps#gui.controlcount)
 
 ---
 
@@ -302,8 +302,8 @@ Example:
 
 displays the height of the ICONBAR GUI.
 
-*See Also:* [GUI.SetSize](GUIFuncsAndProps#GUI.SetSize),
-[GUI.Width](GUIFuncsAndProps#GUI.Width)
+*See Also:* [GUI.SetSize](GUIFuncsAndProps#gui.setsize),
+[GUI.Width](GUIFuncsAndProps#gui.width)
 
 ---
 
@@ -324,7 +324,7 @@ uses the obsolete SetGUIClickable function to make the ICONBAR GUI
 clickable, and then uses the equivalent modern property to stop it being
 clickable.
 
-*See Also:* [GUIControl.ID](GUIControl#ID)
+*See Also:* [GUIControl.ID](GUIControl#id)
 
 ---
 
@@ -365,7 +365,7 @@ Example:
 
 will gradually fade the INVENTORY GUI out until it is invisible.
 
-*See Also:* [Object.Transparency](Object#Transparency)
+*See Also:* [Object.Transparency](Object#transparency)
 
 ---
 
@@ -401,7 +401,7 @@ Example:
 
 will turn on the SETTINGS GUI.
 
-*See Also:* [IsGamePaused](Game#IsGamePaused)
+*See Also:* [IsGamePaused](Game#isgamepaused)
 
 ---
 
@@ -420,8 +420,8 @@ Example:
 
 makes the INVENTORY GUI 5 pixels wider.
 
-*See Also:* [GUI.Height](GUIFuncsAndProps#GUI.Height),
-[GUI.SetSize](GUIFuncsAndProps#GUI.SetSize)
+*See Also:* [GUI.Height](GUIFuncsAndProps#gui.height),
+[GUI.SetSize](GUIFuncsAndProps#gui.setsize)
 
 ---
 
@@ -442,8 +442,8 @@ Example:
 
 moves the VERBCOIN GUI right 5 pixels.
 
-*See Also:* [GUI.SetPosition](GUIFuncsAndProps#GUI.SetPosition),
-[GUI.Y](GUIFuncsAndProps#GUI.Y)
+*See Also:* [GUI.SetPosition](GUIFuncsAndProps#gui.setposition),
+[GUI.Y](GUIFuncsAndProps#gui.y)
 
 ---
 
@@ -465,8 +465,8 @@ Example:
 
 moves the VERBCOIN GUI down 5 pixels.
 
-*See Also:* [GUI.SetPosition](GUIFuncsAndProps#GUI.SetPosition),
-[GUI.X](GUIFuncsAndProps#GUI.X)
+*See Also:* [GUI.SetPosition](GUIFuncsAndProps#gui.setposition),
+[GUI.X](GUIFuncsAndProps#gui.x)
 
 ---
 
@@ -489,5 +489,5 @@ Example:
 
 sets the STATUSLINE GUI to be behind all other GUIs.
 
-*See Also:* [GUI.GetAtScreenXY](GUIFuncsAndProps#GUI.GetAtScreenXY)
+*See Also:* [GUI.GetAtScreenXY](GUIFuncsAndProps#gui.getatscreenxy)
 

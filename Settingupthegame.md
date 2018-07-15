@@ -156,7 +156,7 @@ to import. Alternatively, you can import the entire image with the
 *NOTE (256-colour only): You may well find that the colours on your
 graphic look slightly strange in the AGS Editor. This is because the
 sprites are only allocated, by default, the first 41 of the palette
-colours (see the [palette section](Settingupthegame#PalSetup)), so your graphic
+colours (see the [palette section](Settingupthegame#palsetup)), so your graphic
 will be remapped to this much smaller palette. If you find that many of
 your imported sprites look strange, you can increase the number of
 colours assigned to sprites, at the expense of background colours (again
@@ -345,7 +345,7 @@ want him to start at. These co-ordinates define where the middle of his
 feet will be placed.
 
 The "NormalView" is where you set what the character looks like. You
-must create a view in the [View Editor](Settingupthegame#Views), and this view
+must create a view in the [View Editor](Settingupthegame#views), and this view
 must have either 4 or 8 loops. If you use 4 loops, then when walking
 diagonally the closest straight direction is used for the graphics. Each
 loop is used for the character walking in one direction, as follows:
@@ -638,11 +638,11 @@ SetGameOption. **Basic properties**
     devices support. 16-bit is rather a compatibility setting, that will
     reduce the size of your game resources at the cost of colour
     precision. 8-bit colour mode is a special feature for making
-    palette-based games. See Also: [Palette setup](Settingupthegame#PalSetup),
+    palette-based games. See Also: [Palette setup](Settingupthegame#palsetup),
     [Palette functions](CyclePalette)
 -   **Developer name** - this will add the provided string to the game's
     executable properties, which will also be shown in [Windows Game
-    Explorer](IntegrationWithWindows#GameExplorer), if you configure integration
+    Explorer](IntegrationWithWindows#gameexplorer), if you configure integration
     with one.
 -   **Enable letterbox mode** - only available if your game's resolution
     is 320x200 or 640x400. If you enable it, your game will run as
@@ -655,7 +655,7 @@ SetGameOption. **Basic properties**
     the window title, and also added to the game's
     executable properties.
 -   **Maximum possible score** - the maximum score your game has, if you
-    are using score mechanics, such as [GiveScore](Game#GiveScore)
+    are using score mechanics, such as [GiveScore](Game#givescore)
     script function.
 -   **Put sound and sprite files in source control** - whether game
     resources, such as sprites and audio, are put under source control.
@@ -746,8 +746,8 @@ SetGameOption. **Basic properties**
     suddenly switching to face the right way.
 -   **Characters turn to face direction** - if set, then when a
     character turns round with the
-    [Character.FaceLocation](Character#FaceLocation) or
-    [Character.FaceCharacter](Character#FaceCharacter) script
+    [Character.FaceLocation](Character#facelocation) or
+    [Character.FaceCharacter](Character#facecharacter) script
     commands, they will visibly turn around using their available loops.
     If this option is not set, they will immediately appear facing their
     new direction.
@@ -765,7 +765,7 @@ SetGameOption. **Basic properties**
     current room. When debug mode is off, these do nothing. See the
     [Debugging features](Debuggingfeatures) section for more.
 -   **Split resource files into X MB-sized chunks** - see
-    [here](DistGame#SplitRes) for information.
+    [here](DistGame#splitres) for information.
 
 **Dialog**
 
@@ -855,8 +855,8 @@ SetGameOption. **Basic properties**
 
 -   **Enhanced save games** - makes your game's saves compatible with
     Windows Game Explorer. For detailed information please refer to:
-    [Enhanced Saved Games](IntegrationWithWindows#EnhancedSaveGames)\
-    [Windows Game Explorer](IntegrationWithWindows#GameExplorer)
+    [Enhanced Saved Games](IntegrationWithWindows#enhancedsavegames)\
+    [Windows Game Explorer](IntegrationWithWindows#gameexplorer)
 -   **Save games extension** - determines the special extension for your
     save files.
 -   **Save games folder name** - determines the name of folder created
@@ -894,11 +894,11 @@ SetGameOption. **Basic properties**
     output will look blurred and unreadable).
 -   **Custom text-windows GUI** - allows you to customize the standard
     text window appearance in the game, using the specified
-    interface element. See [here](EditingGUIs#TextWin) for
+    interface element. See [here](EditingGUIs#textwin) for
     more information.
 -   **Custom thought bubble GUI** - Determines which text window GUI is
     used for displaying thoughts with
-    [Think](Character#Think).
+    [Think](Character#think).
 -   **Fonts designed for high resolution** - normally, if the player
     chooses high resolution for their game, then the fonts will be
     scaled up to match. However, if you have drawn your fonts for the
@@ -937,7 +937,7 @@ SetGameOption. **Basic properties**
     disabled (eg. during a cutscene).
 
 **Windows Game Explorer** See: [Windows Game
-Explorer](IntegrationWithWindows#GameExplorer)
+Explorer](IntegrationWithWindows#gameexplorer)
 
 ---
 

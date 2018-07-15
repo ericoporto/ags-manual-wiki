@@ -11,15 +11,15 @@ job, having a manual reference is invaluable:
       eNoBlock
     };
 
-*Used by:* [Character.Animate](Character#Animate),
-[Character.FaceCharacter](Character#FaceCharacter),
-[Character.FaceLocation](Character#FaceLocation),
-[Character.FaceObject](Character#FaceObject),
-[Character.Move](Character#Move),
-[Character.Walk](Character#Walk),
-[Character.WalkStraight](Character#WalkStraight),
-[Object.Animate](Object#Animate),
-[Object.Move](Object#Move)
+*Used by:* [Character.Animate](Character#animate),
+[Character.FaceCharacter](Character#facecharacter),
+[Character.FaceLocation](Character#facelocation),
+[Character.FaceObject](Character#faceobject),
+[Character.Move](Character#move),
+[Character.Walk](Character#walk),
+[Character.WalkStraight](Character#walkstraight),
+[Object.Animate](Object#animate),
+[Object.Move](Object#move)
 
     enum CharacterDirection {
       eDirectionDown = 0,
@@ -33,25 +33,25 @@ job, having a manual reference is invaluable:
       eDirectionNone = SCR_NO_VALUE
     };
 
-*Used by:* [Character.ChangeRoom](Character#ChangeRoom),
-[Character.FaceDirection](Character#FaceDirection)
+*Used by:* [Character.ChangeRoom](Character#changeroom),
+[Character.FaceDirection](Character#facedirection)
 
     enum Direction {
       eForwards,
       eBackwards
     };
 
-*Used by:* [Character.Animate](Character#Animate),
-[Object.Animate](Object#Animate)
+*Used by:* [Character.Animate](Character#animate),
+[Object.Animate](Object#animate)
 
     enum WalkWhere {
       eAnywhere,
       eWalkableAreas
     };
 
-*Used by:* [Character.Move](Character#Move),
-[Character.Walk](Character#Walk),
-[Object.Move](Object#Move)
+*Used by:* [Character.Move](Character#move),
+[Character.Walk](Character#walk),
+[Object.Move](Object#move)
 
     enum StopMovementStyle
     {
@@ -59,17 +59,17 @@ job, having a manual reference is invaluable:
       eStopMoving = 1
     };
 
-*Used by:* [Character.LockView](Character#LockViewAligned),
-[Character.LockViewFrame](Character#LockViewOffset)
+*Used by:* [Character.LockView](Character#lockviewaligned),
+[Character.LockViewFrame](Character#lockviewoffset)
 
     enum RepeatStyle {
       eOnce,
       eRepeat
     };
 
-*Used by:* [Button.Animate](Button#Animate),
-[Character.Animate](Character#Animate),
-[Object.Animate](Object#Animate)
+*Used by:* [Button.Animate](Button#animate),
+[Character.Animate](Character#animate),
+[Object.Animate](Object#animate)
 
     enum Alignment {
       eAlignLeft,
@@ -78,7 +78,7 @@ job, having a manual reference is invaluable:
     };
 
 *Used by:*
-[Character.LockViewAligned](Character#LockViewAligned)
+[Character.LockViewAligned](Character#lockviewaligned)
 
     enum eFlipDirection {
       eFlipLeftToRight,
@@ -86,7 +86,7 @@ job, having a manual reference is invaluable:
       eFlipBoth
     };
 
-*Used by:* [DynamicSprite.Flip](DynamicSprite#Flip)
+*Used by:* [DynamicSprite.Flip](DynamicSprite#flip)
 
     enum TransitionStyle {
       eTransitionFade,
@@ -96,8 +96,8 @@ job, having a manual reference is invaluable:
       eTransitionCrossfade
     };
 
-*Used by:* [SetScreenTransition](ShakeScreen#SetScreenTransition),
-[SetNextScreenTransition](ShakeScreen#SetNextScreenTransition)
+*Used by:* [SetScreenTransition](ShakeScreen#setscreentransition),
+[SetNextScreenTransition](ShakeScreen#setnextscreentransition)
 
     enum MouseButton {
       eMouseLeft,
@@ -110,7 +110,7 @@ job, having a manual reference is invaluable:
       eMouseWheelSouth
     };
 
-*Used by:* [Mouse.IsButtonDown](Mouse#IsButtonDown)\
+*Used by:* [Mouse.IsButtonDown](Mouse#isbuttondown)\
 *Passed into:* on_mouse_click
 
     enum EventType {
@@ -132,7 +132,7 @@ job, having a manual reference is invaluable:
       eRoundUp
     };
 
-*Used by:* [FloatToInt](Maths#FloatToInt)
+*Used by:* [FloatToInt](Maths#floattoint)
 
     enum eSpeechStyle {
       eSpeechLucasarts,
@@ -141,7 +141,7 @@ job, having a manual reference is invaluable:
       eSpeechFullScreen
     };
 
-*Used by:* [Speech.Style](Speech#Style)
+*Used by:* [Speech.Style](Speech#style)
 
     enum SkipSpeechStyle {
       eSkipKeyMouseTime = 0,
@@ -153,7 +153,7 @@ job, having a manual reference is invaluable:
       eSkipMouse        = 6
     };
 
-*Used by:* [Speech.SkipStyle](Speech#SkipStyle)
+*Used by:* [Speech.SkipStyle](Speech#skipstyle)
 
     enum eVoiceMode {
       eSpeechTextOnly,
@@ -161,7 +161,7 @@ job, having a manual reference is invaluable:
       eSpeechVoiceOnly
     };
 
-*Used by:* [Speech.VoiceMode](Speech#VoiceMode)
+*Used by:* [Speech.VoiceMode](Speech#voicemode)
 
     enum DialogOptionState {
       eOptionOff,
@@ -169,8 +169,8 @@ job, having a manual reference is invaluable:
       eOptionOffForever
     };
 
-*Used by:* [Dialog.GetOptionState](Dialog#GetOptionState),
-[Dialog.SetOptionState](Dialog#SetOptionState)
+*Used by:* [Dialog.GetOptionState](Dialog#getoptionstate),
+[Dialog.SetOptionState](Dialog#setoptionstate)
 
     enum CutsceneSkipType {
       eSkipESCOnly,
@@ -180,7 +180,7 @@ job, having a manual reference is invaluable:
       eSkipESCOrRightButton
     };
 
-*Used by:* [StartCutscene](Game#StartCutscene)
+*Used by:* [StartCutscene](Game#startcutscene)
 
     enum eOperatingSystem {
       eOSDOS,
@@ -192,7 +192,7 @@ job, having a manual reference is invaluable:
       eOSPSP
     };
 
-*Used by:* [System.OperatingSystem](System#OperatingSystem)
+*Used by:* [System.OperatingSystem](System#operatingsystem)
 
     enum eCDAudioFunction {
       eCDIsDriverPresent,
@@ -207,7 +207,7 @@ job, having a manual reference is invaluable:
       eCDSelectActiveCDDrive
     };
 
-*Used by:* [CDAudio](Game#CDAudio)
+*Used by:* [CDAudio](Game#cdaudio)
 
     enum CursorMode {
       eModeXXXX,
@@ -218,23 +218,23 @@ job, having a manual reference is invaluable:
 The CursorMode enumeration is generated automatically based on your
 mouse cursors. The cursor mode name is taken, all its spaces are
 removed, and *eMode* is added to the front.\
-*Used by:* [IsInteractionAvailable](Game#IsInteractionAvailable),
-[Room.ProcessClick](Room#ProcessClick),
-[Mouse.ChangeModeGraphic](Mouse#ChangeModeGraphic),
-[Mouse.ChangeModeHotspot](Mouse#ChangeModeHotspot),
-[Mouse.DisableMode](Mouse#DisableMode),
-[Mouse.EnableMode](Mouse#EnableMode),
-[Mouse.IsModeEnabled](Mouse#IsModeEnabled),
-[Mouse.UseModeGraphic](Mouse#UseModeGraphic),
-[Mouse.Mode](Mouse#Mode),
-[InventoryItem.IsInteractionAvailable](InventoryItem#IsInteractionAvailable),
-[InventoryItem.RunInteraction](InventoryItem#RunInteraction),
-[Hotspot.IsInteractionAvailable](Hotspot#IsInteractionAvailable),
-[Hotspot.RunInteraction](Hotspot#RunInteraction),
-[Object.IsInteractionAvailable](Object#IsInteractionAvailable),
-[Object.RunInteraction](Object#RunInteraction),
-[Character.IsInteractionAvailable](Character#IsInteractionAvailable),
-[Character.RunInteraction](Character#RunInteraction)
+*Used by:* [IsInteractionAvailable](Game#isinteractionavailable),
+[Room.ProcessClick](Room#processclick),
+[Mouse.ChangeModeGraphic](Mouse#changemodegraphic),
+[Mouse.ChangeModeHotspot](Mouse#changemodehotspot),
+[Mouse.DisableMode](Mouse#disablemode),
+[Mouse.EnableMode](Mouse#enablemode),
+[Mouse.IsModeEnabled](Mouse#ismodeenabled),
+[Mouse.UseModeGraphic](Mouse#usemodegraphic),
+[Mouse.Mode](Mouse#mode),
+[InventoryItem.IsInteractionAvailable](InventoryItem#isinteractionavailable),
+[InventoryItem.RunInteraction](InventoryItem#runinteraction),
+[Hotspot.IsInteractionAvailable](Hotspot#isinteractionavailable),
+[Hotspot.RunInteraction](Hotspot#runinteraction),
+[Object.IsInteractionAvailable](Object#isinteractionavailable),
+[Object.RunInteraction](Object#runinteraction),
+[Character.IsInteractionAvailable](Character#isinteractionavailable),
+[Character.RunInteraction](Character#runinteraction)
 
     enum FontType {
       eFontXXXX,
@@ -245,19 +245,19 @@ removed, and *eMode* is added to the front.\
 The FontType enumeration is generated automatically based on your fonts.
 The font name is taken, all its spaces are removed, and *eFont* is added
 to the front.\
-*Used by:* [Button.Font](Button#Font),
-[DrawingSurface.DrawMessageWrapped](DrawingSurfaceFunctions#DrawingSurface.DrawMessageWrapped),
-[DrawingSurface.DrawString](DrawingSurfaceFunctions#DrawingSurface.DrawString),
-[DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#DrawingSurface.DrawStringWrapped),
-[Game.NormalFont](Game#NormalFont),
-[Game.SpeechFont](Game#SpeechFont),
-[GetTextHeight](Game#GetTextHeight),
-[GetTextWidth](Game#GetTextWidth),
-[Label.Font](Label#Font),
-[ListBox.Font](ListBox#Font),
-[TextBox.Font](TextBox#Font),
-[Overlay.CreateTextual](Overlay#CreateTextual),
-[Overlay.SetText](Overlay#SetText)
+*Used by:* [Button.Font](Button#font),
+[DrawingSurface.DrawMessageWrapped](DrawingSurfaceFunctions#drawingsurface.drawmessagewrapped),
+[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawingsurface.drawstring),
+[DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#drawingsurface.drawstringwrapped),
+[Game.NormalFont](Game#normalfont),
+[Game.SpeechFont](Game#speechfont),
+[GetTextHeight](Game#gettextheight),
+[GetTextWidth](Game#gettextwidth),
+[Label.Font](Label#font),
+[ListBox.Font](ListBox#font),
+[TextBox.Font](TextBox#font),
+[Overlay.CreateTextual](Overlay#createtextual),
+[Overlay.SetText](Overlay#settext)
 
     enum LocationType {
       eLocationNothing,
@@ -266,7 +266,7 @@ to the front.\
       eLocationObject
     };
 
-*Returned by:* [GetLocationType](Game#GetLocationType)
+*Returned by:* [GetLocationType](Game#getlocationtype)
 
     enum FileMode {
       eFileRead,
@@ -274,7 +274,7 @@ to the front.\
       eFileAppend
     };
 
-*Used by:* [File.Open](File#Open)
+*Used by:* [File.Open](File#open)
 
     enum FileSeek {
       eSeekBegin = 0,
@@ -282,7 +282,7 @@ to the front.\
       eSeekEnd = 2
     };
 
-*Used by:* [File.Seek](File#Seek)
+*Used by:* [File.Seek](File#seek)
 
     enum DialogOptionSayStyle {
       eSayUseOptionSetting,
@@ -290,7 +290,7 @@ to the front.\
       eSayNever
     };
 
-*Used by:* [Dialog.DisplayOptions](Dialog#DisplayOptions)
+*Used by:* [Dialog.DisplayOptions](Dialog#displayoptions)
 
     enum VideoSkipStyle {
       eVideoSkipNotAllowed,
@@ -299,7 +299,7 @@ to the front.\
       eVideoSkipAnyKeyOrMouse
     };
 
-*Used by:* [PlayVideo](Game#PlayVideo)
+*Used by:* [PlayVideo](Game#playvideo)
 
     enum AudioFileType {
       eAudioFileOGG,
@@ -310,7 +310,7 @@ to the front.\
       eAudioFileMOD
     };
 
-*Used by:* [AudioClip.FileType](AudioClip#FileType)
+*Used by:* [AudioClip.FileType](AudioClip#filetype)
 
     enum AudioPriority {
       eAudioPriorityVeryLow = 1,
@@ -320,6 +320,6 @@ to the front.\
       eAudioPriorityVeryHigh = 100
     };
 
-*Used by:* [AudioClip.Play](AudioClip#Play),
-[AudioClip.PlayFrom](AudioClip#PlayFrom),
-[AudioClip.PlayQueued](AudioClip#PlayQueued)
+*Used by:* [AudioClip.Play](AudioClip#play),
+[AudioClip.PlayFrom](AudioClip#playfrom),
+[AudioClip.PlayQueued](AudioClip#playqueued)

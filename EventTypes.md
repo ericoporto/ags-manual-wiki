@@ -33,7 +33,7 @@ Use inventory on hotspot
 
 occurs when the player clicks on the hotspot while in the "Use
 inventory" mode (cursor mode 4). You can use the
-[player.ActiveInventory](Character#ActiveInventory) property
+[player.ActiveInventory](Character#activeinventory) property
 to distinguish which item they used.
 
 Speak to hotspot
@@ -157,7 +157,7 @@ Use inventory on inv
 
 occurs when the player uses another inventory object on this one. You
 can use the
-[player.ActiveInventory](Character#ActiveInventory) property
+[player.ActiveInventory](Character#activeinventory) property
 to distinguish which item they used.\
 This event allows the player to combine items, and so on. For example,
 if they had picked up a laptop computer and a battery separately, then

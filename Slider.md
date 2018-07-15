@@ -1,27 +1,27 @@
 GUI Slider properties
 ---------------------
 
-[BringToFront](GUIControl#BringToFront)\
-[Clickable property](GUIControl#Clickable)\
-[Enabled property](GUIControl#Enabled)\
-[Height property](GUIControl#Height)\
-[ID property](GUIControl#ID)\
-[OwningGUI property](GUIControl#OwningGUI)\
-[SendToBack](GUIControl#SendToBack)\
-[SetPosition](GUIControl#SetPosition)\
-[SetSize](GUIControl#SetSize)\
-[Visible property](GUIControl#Visible)\
-[Width property](GUIControl#Width)\
-[X property](GUIControl#X)\
-[Y property](GUIControl#Y)\
-[ZOrder property](GUIControl#ZOrder)
+[BringToFront](GUIControl#bringtofront)\
+[Clickable property](GUIControl#clickable)\
+[Enabled property](GUIControl#enabled)\
+[Height property](GUIControl#height)\
+[ID property](GUIControl#id)\
+[OwningGUI property](GUIControl#owninggui)\
+[SendToBack](GUIControl#sendtoback)\
+[SetPosition](GUIControl#setposition)\
+[SetSize](GUIControl#setsize)\
+[Visible property](GUIControl#visible)\
+[Width property](GUIControl#width)\
+[X property](GUIControl#x)\
+[Y property](GUIControl#y)\
+[ZOrder property](GUIControl#zorder)
 
-[BackgroundGraphic property](#BackgroundGraphic)\
-[HandleGraphic property](#HandleGraphic)\
-[HandleOffset property](#HandleOffset)\
-[Max property](#Max)\
-[Min property](#Min)\
-[Value property](#Value)
+[BackgroundGraphic property](#backgroundgraphic)\
+[HandleGraphic property](#handlegraphic)\
+[HandleOffset property](#handleoffset)\
+[Max property](#max)\
+[Min property](#min)\
+[Value property](#value)
 
 ---
 
@@ -43,7 +43,7 @@ displays the *sldHealth* slider's background image
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](Slider#HandleGraphic)
+*See Also:* [Slider.HandleGraphic](Slider#handlegraphic)
 
 ---
 
@@ -67,8 +67,8 @@ displays the *sldHealth* slider's handle image
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[Slider.BackgroundGraphic](Slider#BackgroundGraphic),
-[Slider.HandleOffset](Slider#HandleOffset)
+[Slider.BackgroundGraphic](Slider#backgroundgraphic),
+[Slider.HandleOffset](Slider#handleoffset)
 
 ---
 
@@ -88,7 +88,7 @@ the right.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](Slider#HandleGraphic)
+*See Also:* [Slider.HandleGraphic](Slider#handlegraphic)
 
 ---
 
@@ -109,8 +109,8 @@ Example:
 
 sets the maximum value of the *sldHealth* slider to 200.
 
-*See Also:* [Slider.Min](Slider#Min),
-[Slider.Value](Slider#Value)
+*See Also:* [Slider.Min](Slider#min),
+[Slider.Value](Slider#value)
 
 ---
 
@@ -132,8 +132,8 @@ Example:
 
 sets the minimum value of the *sldHealth* slider to 0.
 
-*See Also:* [Slider.Max](Slider#Max),
-[Slider.Value](Slider#Value)
+*See Also:* [Slider.Max](Slider#max),
+[Slider.Value](Slider#value)
 
 ---
 
@@ -157,5 +157,5 @@ Example:
 
 will set the audio volume to the value of the slider *sldVolume*.
 
-*See Also:* [Label.Text](Label#Text)
+*See Also:* [Label.Text](Label#text)
 

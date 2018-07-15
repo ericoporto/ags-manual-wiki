@@ -1,35 +1,35 @@
 GUI Button functions and properties
 -----------------------------------
 
-[BringToFront](GUIControl#BringToFront)\
-[Clickable property](GUIControl#Clickable)\
-[Enabled property](GUIControl#Enabled)\
-[Height property](GUIControl#Height)\
-[ID property](GUIControl#ID)\
-[OwningGUI property](GUIControl#OwningGUI)\
-[SendToBack](GUIControl#SendToBack)\
-[SetPosition](GUIControl#SetPosition)\
-[SetSize](GUIControl#SetSize)\
-[Visible property](GUIControl#Visible)\
-[Width property](GUIControl#Width)\
-[X property](GUIControl#X)\
-[Y property](GUIControl#Y)\
-[ZOrder property](GUIControl#ZOrder)
+[BringToFront](GUIControl#bringtofront)\
+[Clickable property](GUIControl#clickable)\
+[Enabled property](GUIControl#enabled)\
+[Height property](GUIControl#height)\
+[ID property](GUIControl#id)\
+[OwningGUI property](GUIControl#owninggui)\
+[SendToBack](GUIControl#sendtoback)\
+[SetPosition](GUIControl#setposition)\
+[SetSize](GUIControl#setsize)\
+[Visible property](GUIControl#visible)\
+[Width property](GUIControl#width)\
+[X property](GUIControl#x)\
+[Y property](GUIControl#y)\
+[ZOrder property](GUIControl#zorder)
 
-[Click](#Click)\
-[Animate](#Animate)\
-[Animating property](#Animating)\
-[Frame property](#Frame)\
-[Loop property](#Loop)\
-[View property](#View)\
-[ClipImage property](#ClipImage)\
-[Font property](#Font)\
-[Graphic property](#Graphic)\
-[MouseOverGraphic property](#MouseOverGraphic)\
-[NormalGraphic property](#NormalGraphic)\
-[PushedGraphic property](#PushedGraphic)\
-[Text property](#Text)\
-[TextColor property](#TextColor)
+[Click](#click)\
+[Animate](#animate)\
+[Animating property](#animating)\
+[Frame property](#frame)\
+[Loop property](#loop)\
+[View property](#view)\
+[ClipImage property](#clipimage)\
+[Font property](#font)\
+[Graphic property](#graphic)\
+[MouseOverGraphic property](#mouseovergraphic)\
+[NormalGraphic property](#normalgraphic)\
+[PushedGraphic property](#pushedgraphic)\
+[Text property](#text)\
+[TextColor property](#textcolor)
 
 ---
 
@@ -42,8 +42,8 @@ that event it will be run, otherwise nothing happens.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [GUI.Click](GUIFuncsAndProps#GUI.Click),
-[GUI.ProcessClick](GUIFuncsAndProps#GUI.ProcessClick)
+*See Also:* [GUI.Click](GUIFuncsAndProps#gui.click),
+[GUI.ProcessClick](GUIFuncsAndProps#gui.processclick)
 
 ---
 
@@ -82,11 +82,11 @@ Example:
 will animate the 'btnDeathAnim' button using loop 2 of view 6, with a
 delay of 4 cycles per frame, and repeat the animation continually.
 
-*See Also:* [Button.Animating](Button#Animating),
-[Button.Frame](Button#Frame),
-[Button.Loop](Button#Loop),
-[Button.View](Button#View),
-[Button.NormalGraphic](Button#NormalGraphic)
+*See Also:* [Button.Animating](Button#animating),
+[Button.Frame](Button#frame),
+[Button.Loop](Button#loop),
+[Button.View](Button#view),
+[Button.NormalGraphic](Button#normalgraphic)
 
 ---
 
@@ -98,7 +98,7 @@ Returns true if the specified button is currently animating, or false
 otherwise.
 
 This property is read-only. To change button's animation, use the
-[Animate](Button#Animate) command.
+[Animate](Button#animate) command.
 
 Example:
 
@@ -109,11 +109,11 @@ will animate button and wait until the animation finishes.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Button.Animate](Button#Animate),
-[Button.Frame](Button#Frame),
-[Button.Loop](Button#Loop),
-[Button.View](Button#View),
-[Button.Graphic](Button#Graphic)
+*See Also:* [Button.Animate](Button#animate),
+[Button.Frame](Button#frame),
+[Button.Loop](Button#loop),
+[Button.View](Button#view),
+[Button.Graphic](Button#graphic)
 
 ---
 
@@ -126,14 +126,14 @@ the button is not currently animated, this will be 0 (in which case the
 Graphic property will hold its sprite number).
 
 This property is read-only. To change button's animation, use the
-[Animate](Button#Animate) command.
+[Animate](Button#animate) command.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Button.Animating](Button#Animating),
-[Button.Loop](Button#Loop),
-[Button.View](Button#View),
-[Button.Graphic](Button#Graphic)
+*See Also:* [Button.Animating](Button#animating),
+[Button.Loop](Button#loop),
+[Button.View](Button#view),
+[Button.Graphic](Button#graphic)
 
 ---
 
@@ -146,14 +146,14 @@ button is not currently animated, this will be 0 (in which case the
 Graphic property will hold its sprite number).
 
 This property is read-only. To change button's animation, use the
-[Animate](Button#Animate) command.
+[Animate](Button#animate) command.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Button.Animate](Button#Animate),
-[Button.Frame](Button#Frame),
-[Button.View](Button#View),
-[Button.Graphic](Button#Graphic)
+*See Also:* [Button.Animate](Button#animate),
+[Button.Frame](Button#frame),
+[Button.View](Button#view),
+[Button.Graphic](Button#graphic)
 
 ---
 
@@ -166,14 +166,14 @@ button is not currently animated, this will be 0 (in which case the
 Graphic property will hold its sprite number).
 
 This property is read-only. To change button's animation, use the
-[Animate](Button#Animate) command.
+[Animate](Button#animate) command.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Button.Animate](Button#Animate),
-[Button.Frame](Button#Frame),
-[Button.Loop](Button#Loop),
-[Button.Graphic](Button#Graphic)
+*See Also:* [Button.Animate](Button#animate),
+[Button.Frame](Button#frame),
+[Button.Loop](Button#loop),
+[Button.Graphic](Button#graphic)
 
 ---
 
@@ -200,7 +200,7 @@ Example:
 sets the *btnOK* button so that its image will be restrained to the
 button's clickable area.
 
-*See Also:* [Button.Graphic](Button#Graphic)
+*See Also:* [Button.Graphic](Button#graphic)
 
 ---
 
@@ -219,8 +219,8 @@ Example:
 
 will change the *btnOK* button to use Font "Main".
 
-*See Also:* [Label.Font](Label#Font),
-[TextBox.Font](TextBox#Font)
+*See Also:* [Label.Font](Label#font),
+[TextBox.Font](TextBox#font)
 
 ---
 
@@ -234,9 +234,9 @@ Gets the current image on a GUI button. If a value less than 1 is
 returned, then no image is currently displayed on the button.
 
 This property is read-only; in order to set the image, you must use one
-of the [NormalGraphic](Button#NormalGraphic),
-[MouseOverGraphic](Button#MouseOverGraphic) or
-[PushedGraphic](Button#PushedGraphic) properties.
+of the [NormalGraphic](Button#normalgraphic),
+[MouseOverGraphic](Button#mouseovergraphic) or
+[PushedGraphic](Button#pushedgraphic) properties.
 
 Example:
 
@@ -244,10 +244,10 @@ Example:
 
 will display btnPlay's current sprite number.
 
-*See Also:* [Button.ClipImage](Button#ClipImage),
-[Button.MouseOverGraphic](Button#MouseOverGraphic),
-[Button.NormalGraphic](Button#NormalGraphic),
-[Button.PushedGraphic](Button#PushedGraphic)
+*See Also:* [Button.ClipImage](Button#clipimage),
+[Button.MouseOverGraphic](Button#mouseovergraphic),
+[Button.NormalGraphic](Button#normalgraphic),
+[Button.PushedGraphic](Button#pushedgraphic)
 
 ---
 
@@ -267,9 +267,9 @@ Example:
 
 will display btnPlay's mouse-over sprite number.
 
-*See Also:* [Button.Graphic](Button#Graphic),
-[Button.NormalGraphic](Button#NormalGraphic),
-[Button.PushedGraphic](Button#PushedGraphic)
+*See Also:* [Button.Graphic](Button#graphic),
+[Button.NormalGraphic](Button#normalgraphic),
+[Button.PushedGraphic](Button#pushedgraphic)
 
 ---
 
@@ -292,11 +292,11 @@ Example:
 
 will display btnPlay's normal sprite number.
 
-*See Also:* [Button.ClipImage](Button#ClipImage)
-[Button.Graphic](Button#Graphic),
-[Button.MouseOverGraphic](Button#MouseOverGraphic),
-[Button.PushedGraphic](Button#PushedGraphic),
-[Button.TextColor](Button#TextColor)
+*See Also:* [Button.ClipImage](Button#clipimage)
+[Button.Graphic](Button#graphic),
+[Button.MouseOverGraphic](Button#mouseovergraphic),
+[Button.PushedGraphic](Button#pushedgraphic),
+[Button.TextColor](Button#textcolor)
 
 ---
 
@@ -317,9 +317,9 @@ Example:
 
 will display btnPlay's pushed sprite number.
 
-*See Also:* [Button.Graphic](Button#Graphic),
-[Button.MouseOverGraphic](Button#MouseOverGraphic),
-[Button.NormalGraphic](Button#NormalGraphic)
+*See Also:* [Button.Graphic](Button#graphic),
+[Button.MouseOverGraphic](Button#mouseovergraphic),
+[Button.NormalGraphic](Button#normalgraphic)
 
 ---
 
@@ -341,8 +341,8 @@ Example:
 will display the old text, then change button btnController to read
 'Enable jibble'.
 
-*See Also:* [Button.NormalGraphic](Button#NormalGraphic),
-[Label.Text](Label#Text)
+*See Also:* [Button.NormalGraphic](Button#normalgraphic),
+[Label.Text](Label#text)
 
 ---
 
@@ -361,5 +361,5 @@ Example:
 
 will change button 'btnRestart' to have white text.
 
-*See Also:* [Button.NormalGraphic](Button#NormalGraphic)
+*See Also:* [Button.NormalGraphic](Button#normalgraphic)
 

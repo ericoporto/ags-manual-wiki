@@ -85,13 +85,13 @@ the room background.
 Instead, there is a new
 [DrawingSurface](DrawingSurfaceFunctions) object which you do
 the drawing onto. You get one of these by calling
-[DynamicSprite.GetDrawingSurface](DynamicSprite#GetDrawingSurface)
+[DynamicSprite.GetDrawingSurface](DynamicSprite#getdrawingsurface)
 or
-[Room.GetDrawingSurfaceForBackground](Room#GetDrawingSurfaceForBackground),
+[Room.GetDrawingSurfaceForBackground](Room#getdrawingsurfaceforbackground),
 depending on what you want to draw onto; and you can then use the
 various drawing surface methods to do your drawing.
 
-You must call [Release](DrawingSurfaceFunctions#DrawingSurface.Release) on the surface
+You must call [Release](DrawingSurfaceFunctions#drawingsurface.release) on the surface
 once you have finished drawing onto it, which tells AGS to update the
 data in memory.
 

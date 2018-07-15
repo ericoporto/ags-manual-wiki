@@ -1,15 +1,15 @@
 Screen functions
 ----------------
 
-[FadeIn](#FadeIn)\
-[FadeOut](#FadeOut)\
-[FlipScreen](#FlipScreen)\
-[SetFadeColor](#SetFadeColor)\
-[SetNextScreenTransition](#SetNextScreenTransition)\
-[SetScreenTransition](#SetScreenTransition)\
-[ShakeScreen](#ShakeScreen)\
-[ShakeScreenBackground](#ShakeScreenBackground)\
-[TintScreen](#TintScreen)
+[FadeIn](#fadein)\
+[FadeOut](#fadeout)\
+[FlipScreen](#flipscreen)\
+[SetFadeColor](#setfadecolor)\
+[SetNextScreenTransition](#setnextscreentransition)\
+[SetScreenTransition](#setscreentransition)\
+[ShakeScreen](#shakescreen)\
+[ShakeScreenBackground](#shakescreenbackground)\
+[TintScreen](#tintscreen)
 
 ---
 
@@ -32,8 +32,8 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](CyclePalette#CyclePalette),
-[FadeOut](ShakeScreen#FadeOut), [SetFadeColor](#SetFadeColor)
+*See Also:* [CyclePalette](CyclePalette#cyclepalette),
+[FadeOut](ShakeScreen#FadeOut), [SetFadeColor](#setfadecolor)
 
 ---
 
@@ -55,8 +55,8 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](CyclePalette#CyclePalette),
-[FadeIn](ShakeScreen#FadeIn), [SetFadeColor](#SetFadeColor)
+*See Also:* [CyclePalette](CyclePalette#cyclepalette),
+[FadeIn](ShakeScreen#FadeIn), [SetFadeColor](#setfadecolor)
 
 ---
 
@@ -106,8 +106,8 @@ Example:
 will mean that next time the screen fades out, it fades to red instead
 of black.
 
-SeeAlso: [FadeIn](ShakeScreen#FadeIn), [FadeOut](#FadeOut),
-[SetScreenTransition](ShakeScreen#SetScreenTransition)
+SeeAlso: [FadeIn](ShakeScreen#FadeIn), [FadeOut](#fadeout),
+[SetScreenTransition](ShakeScreen#setscreentransition)
 
 ---
 
@@ -120,7 +120,7 @@ next room change. After that, it will revert back to the normal
 transition type specified in the editor or with SetScreenTransition.
 
 For the possible values for TransitionStyle, see
-[SetScreenTransition](ShakeScreen#SetScreenTransition).
+[SetScreenTransition](ShakeScreen#setscreentransition).
 
 Example:
 
@@ -130,7 +130,7 @@ Example:
 will go to room 10 with a box-out effect, but then return to the normal
 transition type from then on.
 
-SeeAlso: [SetScreenTransition](#SetScreenTransition)
+SeeAlso: [SetScreenTransition](#setscreentransition)
 
 ---
 
@@ -156,7 +156,7 @@ Example:
 
 will change the room transitions to Fade.
 
-SeeAlso: [SetNextScreenTransition](ShakeScreen#SetNextScreenTransition)
+SeeAlso: [SetNextScreenTransition](ShakeScreen#setnextscreentransition)
 
 ---
 
@@ -173,7 +173,7 @@ Example:
 
 will shake the screen a little.
 
-*See Also:* [ShakeScreenBackground](ShakeScreen#ShakeScreenBackground)
+*See Also:* [ShakeScreenBackground](ShakeScreen#shakescreenbackground)
 
 ---
 
@@ -203,7 +203,7 @@ Example:
 
 will shake the screen a little for 2 seconds.
 
-*See Also:* [ShakeScreen](ShakeScreen#ShakeScreen)
+*See Also:* [ShakeScreen](ShakeScreen#shakescreen)
 
 ---
 

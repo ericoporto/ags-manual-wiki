@@ -1,10 +1,10 @@
 Parser functions
 ----------------
 
-[FindWordID](#FindWordID)\
-[ParseText](#ParseText)\
-[Said](#Said)\
-[SaidUnknownWord](#SaidUnknownWord)
+[FindWordID](#findwordid)\
+[ParseText](#parsetext)\
+[Said](#said)\
+[SaidUnknownWord](#saidunknownword)
 
 ---
 
@@ -39,7 +39,7 @@ will display a message if the game dictionary includes "machine"
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Parser.ParseText](Parser#ParseText)
+*See Also:* [Parser.ParseText](Parser#parsetext)
 
 ---
 
@@ -60,8 +60,8 @@ Example:
 will get the players input and store it in string "command" for use with
 the said command.
 
-*See Also:* [Parser.FindWordID](Parser#FindWordID),
-[Parser.Said](Parser#Said)
+*See Also:* [Parser.FindWordID](Parser#findwordid),
+[Parser.Said](Parser#said)
 
 ---
 
@@ -87,8 +87,8 @@ Example:
 will bring up the restore game dialogue if the player types "load" in
 the text parser.
 
-*See Also:* [Parser.ParseText](Parser#ParseText),
-[Parser.SaidUnknownWord](Parser#SaidUnknownWord)
+*See Also:* [Parser.ParseText](Parser#parsetext),
+[Parser.SaidUnknownWord](Parser#saidunknownword)
 
 ---
 
@@ -111,5 +111,5 @@ Example:
 will display the message if the player types a word that's not in the
 vocabulary.
 
-*See Also:* [Parser.ParseText](Parser#ParseText),
-[Parser.Said](Parser#Said)
+*See Also:* [Parser.ParseText](Parser#parsetext),
+[Parser.Said](Parser#said)

@@ -4,13 +4,13 @@ AudioClip functions and properties
 AudioClips are created when you import files in the AGS Editor. The
 commands in this section allow to play them.
 
-[Play](#Play)\
-[PlayFrom](#PlayFrom)\
-[PlayQueued](#PlayQueued)\
-[Stop](#Stop)\
-[FileType property](#FileType)\
-[IsAvailable property](#IsAvailable)\
-[Type property](#Type)
+[Play](#play)\
+[PlayFrom](#playfrom)\
+[PlayQueued](#playqueued)\
+[Stop](#stop)\
+[FileType property](#filetype)\
+[IsAvailable property](#isavailable)\
+[Type property](#type)
 
 ---
 
@@ -52,9 +52,9 @@ plays the *aExplosion* audio clip.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.PlayFrom](AudioClip#PlayFrom),
-[AudioClip.PlayQueued](AudioClip#PlayQueued),
-[AudioClip.Stop](AudioClip#Stop)
+*See Also:* [AudioClip.PlayFrom](AudioClip#playfrom),
+[AudioClip.PlayQueued](AudioClip#playqueued),
+[AudioClip.Stop](AudioClip#stop)
 
 ---
 
@@ -64,11 +64,11 @@ plays the *aExplosion* audio clip.
                                      optional RepeatStyle)
 
 Plays the audio clip, starting from *position*. For the meaning of the
-position, see the [AudioChannel.Seek](AudioChannel#Seek) help
+position, see the [AudioChannel.Seek](AudioChannel#seek) help
 page.
 
 Otherwise, this command behaves identially to
-[AudioClip.Play](AudioClip#Play). Please see that help page
+[AudioClip.Play](AudioClip#play). Please see that help page
 for more information.
 
 Example:
@@ -80,7 +80,7 @@ it is OGG/MP3).
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#Play)
+*See Also:* [AudioClip.Play](AudioClip#play)
 
 ---
 
@@ -94,7 +94,7 @@ Plays the audio clip, or queues it to be played later if it cannot be
 played now.
 
 This command behaves identially to
-[AudioClip.Play](AudioClip#Play), except that if there are no
+[AudioClip.Play](AudioClip#play), except that if there are no
 available audio channels, it will queue this audio clip to be played
 when a channel becomes available.
 
@@ -116,7 +116,7 @@ be played afterwards.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#Play)
+*See Also:* [AudioClip.Play](AudioClip#play)
 
 ---
 
@@ -137,7 +137,7 @@ again.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#Play)
+*See Also:* [AudioClip.Play](AudioClip#play)
 
 ---
 
@@ -160,9 +160,9 @@ displays a message if aExplosion is a MIDI file
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Seek](AudioChannel#Seek),
-[AudioChannel.Position](AudioChannel#Position),
-[AudioClip.PlayFrom](AudioClip#PlayFrom)
+*See Also:* [AudioChannel.Seek](AudioChannel#seek),
+[AudioChannel.Position](AudioChannel#position),
+[AudioClip.PlayFrom](AudioClip#playfrom)
 
 ---
 
@@ -192,7 +192,7 @@ checks if the aExplosion audio clip is available, and if so plays it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#Play)
+*See Also:* [AudioClip.Play](AudioClip#play)
 
 ---
 
@@ -216,5 +216,5 @@ displays a message if the *aExplosion* clip is music.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#Play),
-[Game.IsAudioPlaying](Game#IsAudioPlaying)
+*See Also:* [AudioClip.Play](AudioClip#play),
+[Game.IsAudioPlaying](Game#isaudioplaying)

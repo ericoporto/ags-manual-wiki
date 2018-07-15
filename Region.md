@@ -1,18 +1,18 @@
 Region functions and properties
 -------------------------------
 
-[GetAtRoomXY](#GetAtRoomXY)\
-[RunInteraction](#RunInteraction)\
-[Tint](#Tint)\
-[Enabled property](#Enabled)\
-[ID property](#ID)\
-[LightLevel property](#LightLevel)\
-[TintEnabled property](#TintEnabled)\
-[TintBlue property](#TintBlue)\
-[TintGreen property](#TintGreen)\
-[TintRed property](#TintRed)\
-[TintSaturation property](#TintSaturation)\
-[TintLuminance property](#TintLuminance)
+[GetAtRoomXY](#getatroomxy)\
+[RunInteraction](#runinteraction)\
+[Tint](#tint)\
+[Enabled property](#enabled)\
+[ID property](#id)\
+[LightLevel property](#lightlevel)\
+[TintEnabled property](#tintenabled)\
+[TintBlue property](#tintblue)\
+[TintGreen property](#tintgreen)\
+[TintRed property](#tintred)\
+[TintSaturation property](#tintsaturation)\
+[TintLuminance property](#tintluminance)
 
 ---
 
@@ -36,7 +36,7 @@ Example:
     if (Region.GetAtRoomXY(player.x, player.y) == region[0])
       Display("The player is not currently standing on a region.");
 
-*See Also:* [GetWalkableAreaAt](Room#GetWalkableAreaAt)
+*See Also:* [GetWalkableAreaAt](Room#getwalkableareaat)
 
 ---
 
@@ -64,8 +64,8 @@ will run the actions defined in the event handler script for "Player
 walks onto region" for region 4.
 
 *See Also:*
-[Character.RunInteraction](Character#RunInteraction),
-[Hotspot.RunInteraction](Hotspot#RunInteraction)
+[Character.RunInteraction](Character#runinteraction),
+[Hotspot.RunInteraction](Hotspot#runinteraction)
 
 ---
 
@@ -82,7 +82,7 @@ The red, green and blue values are between 0 and 255, and you supply the
 same values that you would use in the editor.
 
 For the meaning of all the parameters, see
-[SetAmbientTint](Game#SetAmbientTint).
+[SetAmbientTint](Game#setambienttint).
 
 **NOTE**: The tint will be reset when the player leaves the room, so you
 need to use it in Player Enters Room if you want a permanent change.
@@ -100,8 +100,8 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 *Compatibility:* Optional *luminance* parameter is supported only by
 **AGS 3.4.0** and later versions.
 
-*See Also:* [Region.LightLevel](Region#LightLevel),
-[SetAmbientTint](Game#SetAmbientTint)
+*See Also:* [Region.LightLevel](Region#lightlevel),
+[SetAmbientTint](Game#setambienttint)
 
 ---
 
@@ -127,9 +127,9 @@ Example:
 
 will disable region number 3.
 
-*See Also:* [Hotspot.Enabled](Hotspot#Enabled),
-[RemoveWalkableArea](Room#RemoveWalkableArea),
-[RestoreWalkableArea](Room#RestoreWalkableArea)
+*See Also:* [Hotspot.Enabled](Hotspot#enabled),
+[RemoveWalkableArea](Room#removewalkablearea),
+[RestoreWalkableArea](Room#restorewalkablearea)
 
 ---
 
@@ -146,7 +146,7 @@ Example:
 
 displays region 3's number (which will be 3).
 
-*See Also:* [Region.GetAtRoomXY](Region#GetAtRoomXY)
+*See Also:* [Region.GetAtRoomXY](Region#getatroomxy)
 
 ---
 
@@ -188,10 +188,10 @@ Example:
 
 will set region 2's level light to 100 if the Global Integer 10 is 1.
 
-*See Also:* [Region.Tint](Region#Tint),
-[SetAmbientLightLevel](Game#SetAmbientLightLevel),
-[Character.SetLightLevel](Character#SetLightLevel),
-[Object.SetLightLevel](Object#SetLightLevel)
+*See Also:* [Region.Tint](Region#tint),
+[SetAmbientLightLevel](Game#setambientlightlevel),
+[Character.SetLightLevel](Character#setlightlevel),
+[Object.SetLightLevel](Object#setlightlevel)
 
 ---
 
@@ -215,7 +215,7 @@ Example:
 
 will display a message if region 4 is tinted
 
-*See Also:* [Region.Tint](Region#Tint)
+*See Also:* [Region.Tint](Region#tint)
 
 ---
 
@@ -226,9 +226,9 @@ will display a message if region 4 is tinted
 Gets the *Blue* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Tint) command.
+[Region.Tint](Region#tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#tintenabled)
 property is false, then this value is meaningless.
 
 Example:
@@ -241,11 +241,11 @@ Example:
 
 will display a message with the region's tints.
 
-*See Also:* [Region.Tint](Region#Tint),
-[Region.TintEnabled](Region#TintEnabled),
-[Region.TintGreen](Region#TintGreen),
-[Region.TintRed](Region#TintRed),
-[Region.TintLuminance](Region#TintLuminance)
+*See Also:* [Region.Tint](Region#tint),
+[Region.TintEnabled](Region#tintenabled),
+[Region.TintGreen](Region#tintgreen),
+[Region.TintRed](Region#tintred),
+[Region.TintLuminance](Region#tintluminance)
 
 ---
 
@@ -256,9 +256,9 @@ will display a message with the region's tints.
 Gets the *Green* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Tint) command.
+[Region.Tint](Region#tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#tintenabled)
 property is false, then this value is meaningless.
 
 Example:
@@ -271,12 +271,12 @@ Example:
 
 will display a message with the region's tints.
 
-*See Also:* [Region.Tint](Region#Tint),
-[Region.TintEnabled](Region#TintEnabled),
-[Region.TintBlue](Region#TintBlue),
-[Region.TintRed](Region#TintRed),
-[Region.TintSaturation](Region#TintSaturation),
-[Region.TintLuminance](Region#TintLuminance)
+*See Also:* [Region.Tint](Region#tint),
+[Region.TintEnabled](Region#tintenabled),
+[Region.TintBlue](Region#tintblue),
+[Region.TintRed](Region#tintred),
+[Region.TintSaturation](Region#tintsaturation),
+[Region.TintLuminance](Region#tintluminance)
 
 ---
 
@@ -287,9 +287,9 @@ will display a message with the region's tints.
 Gets the *Red* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Tint) command.
+[Region.Tint](Region#tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#tintenabled)
 property is false, then this value is meaningless.
 
 Example:
@@ -302,12 +302,12 @@ Example:
 
 will display a message with the region's tints.
 
-*See Also:* [Region.Tint](Region#Tint),
-[Region.TintEnabled](Region#TintEnabled),
-[Region.TintBlue](Region#TintBlue),
-[Region.TintGreen](Region#TintGreen),
-[Region.TintSaturation](Region#TintSaturation),
-[Region.TintLuminance](Region#TintLuminance)
+*See Also:* [Region.Tint](Region#tint),
+[Region.TintEnabled](Region#tintenabled),
+[Region.TintBlue](Region#tintblue),
+[Region.TintGreen](Region#tintgreen),
+[Region.TintSaturation](Region#tintsaturation),
+[Region.TintLuminance](Region#tintluminance)
 
 ---
 
@@ -318,9 +318,9 @@ will display a message with the region's tints.
 Gets the *saturation* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Tint) command.
+[Region.Tint](Region#tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#tintenabled)
 property is false, then this value is meaningless.
 
 Example:
@@ -333,12 +333,12 @@ Example:
 
 will display a message with the region's tints.
 
-*See Also:* [Region.Tint](Region#Tint),
-[Region.TintEnabled](Region#TintEnabled),
-[Region.TintBlue](Region#TintBlue),
-[Region.TintGreen](Region#TintGreen),
-[Region.TintRed](Region#TintRed),
-[Region.TintLuminance](Region#TintLuminance)
+*See Also:* [Region.Tint](Region#tint),
+[Region.TintEnabled](Region#tintenabled),
+[Region.TintBlue](Region#tintblue),
+[Region.TintGreen](Region#tintgreen),
+[Region.TintRed](Region#tintred),
+[Region.TintLuminance](Region#tintluminance)
 
 ---
 
@@ -349,15 +349,15 @@ will display a message with the region's tints.
 Gets the *luminance* setting for the region's current tint.
 
 This property is read-only; to change it, use the
-[Region.Tint](Region#Tint) command.
+[Region.Tint](Region#tint) command.
 
-**NOTE:** If the [Region.TintEnabled](Region#TintEnabled)
+**NOTE:** If the [Region.TintEnabled](Region#tintenabled)
 property is false, then this value is meaningless.
 
-*See Also:* [Region.Tint](Region#Tint),
-[Region.TintEnabled](Region#TintEnabled),
-[Region.TintBlue](Region#TintBlue),
-[Region.TintGreen](Region#TintGreen),
-[Region.TintRed](Region#TintRed),
-[Region.TintSaturation](Region#TintSaturation)
+*See Also:* [Region.Tint](Region#tint),
+[Region.TintEnabled](Region#tintenabled),
+[Region.TintBlue](Region#tintblue),
+[Region.TintGreen](Region#tintgreen),
+[Region.TintRed](Region#tintred),
+[Region.TintSaturation](Region#tintsaturation)
 
