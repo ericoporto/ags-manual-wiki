@@ -19,18 +19,18 @@ great control over your game.
 [**repeatedly_execute (_always)**](RepExec)\
 [**Custom dialog options rendering**](CustomDialogOptions)\
 [**Built-in enumerated types**](BuiltInEnums)\
-[**Script language keywords**](enum#topic46)\
+[**Script language keywords**](managedmodifier)\
 [**AudioChannel functions and
 properties**](AudioChannel#AudioChannelCommands)\
 [**AudioClip functions and properties**](AudioClip#AudioClipCommands)\
-[**Character functions and properties**](Character#topic48)\
+[**Character functions and properties**](Character)\
 [**DateTime functions and properties**](DateTime)\
 [**Dialog functions and properties**](Dialog)\
 [**DialogOptionsRenderingInfo functions and
 properties**](DialogOptionsRenderingInfo#DialogOptionsRenderingInfoFunctions)\
 [**DrawingSurface functions and
 properties**](DrawingSurfaceFunctions)\
-[**DynamicSprite functions and properties**](DynamicSprite#topic51)\
+[**DynamicSprite functions and properties**](DynamicSprite)\
 [**File functions and properties**](File)\
 [**Game / Global functions**](Game#GlobalCommands)\
 [**GUI functions and properties**](GUIFuncsAndProps)\
@@ -41,22 +41,22 @@ properties**](DrawingSurfaceFunctions)\
 [**GUI List Box functions and properties**](ListBox)\
 [**GUI Slider properties**](Slider)\
 [**GUI Text Box functions and properties**](TextBox)\
-[**Hotspot functions and properties**](Hotspot#topic59)\
-[**Inventory item functions and properties**](InventoryItem#topic60)\
+[**Hotspot functions and properties**](Hotspot)\
+[**Inventory item functions and properties**](InventoryItem)\
 [**Maths functions and properties**](Maths)\
 [**Mouse functions and properties**](Mouse)\
-[**Multimedia functions**](Game#topic63)\
-[**Object functions and properties**](Object#topic64)\
+[**Multimedia functions**](Game)\
+[**Object functions and properties**](Object)\
 [**Overlay functions and properties**](Overlay)\
 [**Palette functions**](CyclePalette)\
 [**Parser functions**](Parser)\
 [**Region functions and properties**](Region)\
-[**Room functions**](Room#topic69)\
+[**Room functions**](Room)\
 [**Screen functions**](ShakeScreen)\
 [**Speech functions and properties**](Speech#SpeechCommands)\
 [**String functions**](String)\
 [**System functions and properties**](System)\
 [**Text display / Speech functions**](DisplayAt)\
-[**ViewFrame functions and properties**](ViewFrame#topic74)\
+[**ViewFrame functions and properties**](ViewFrame)\
 [**SCUMM_VERBCOIN_GUI functions**](SCUMM_VERBCOIN_GUI)
 

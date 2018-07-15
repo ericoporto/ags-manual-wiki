@@ -59,8 +59,8 @@ as "InSeperateVOX" in the editor. This allows you to have an optional
 audio download, if your game uses lots of sound files but you don't want
 the player to have to download them.
 
-[Custom icon](#topic28)\
-[Splitting resource files](#SplitRes)
+[Custom icon](#custom-icon)\
+[Splitting resource files](#splitting-resource-files)
 
 ---
 

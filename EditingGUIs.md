@@ -59,13 +59,13 @@ in the same way as character names. For example, if a GUI is called
 
 `gIconBar.Visible = true;`
 
-[GUI buttons](#topic22)\
-[Interface text](#topic23)\
-[Customized Text Windows](#TextWin)\
-[Custom inventory](#topic24)\
-[Sliders](#topic25)\
-[Text Boxes](#topic26)\
-[List Boxes](#topic27)
+[GUI buttons](#gui-buttons)\
+[Interface text](#interface-text)\
+[Customized Text Windows](#customized-text-windows)\
+[Custom inventory](#custom-inventory)\
+[Sliders](#sliders)\
+[Text Boxes](#text-boxes)\
+[List Boxes](#list-boxes)
 
 ---
 

@@ -14,10 +14,10 @@ actually saying those words.
 Lip sync is being configured on corresponding 'Lip Sync' pane in the
 editor.
 
-[Text-based lip syncing](#topic34)\
-[Voice-based lip sync](#topic35)\
-[PAMELA](#topic36)\
-[Papagayo](#topic37)
+[Text-based lip syncing](#text-based-lip-syncing)\
+[Voice-based lip sync](#voice-based-lip-sync)\
+[PAMELA](#pamela)\
+[Papagayo](#papagayo)
 
 ---
 

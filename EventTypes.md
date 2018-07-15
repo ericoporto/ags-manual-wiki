@@ -4,12 +4,12 @@ Event Types
 The following events are available in the "Events" section of the
 Properties Window (when clicking the lightning bolt icon).
 
-[Hotspot events](#topic78)\
-[Object events](#topic79)\
-[Room events](#topic80)\
-[Inventory item events](#topic81)\
-[Character events](#topic82)\
-[Region events](#topic83)
+[Hotspot events](#hotspot-events)\
+[Object events](#object-events)\
+[Room events](#room-events)\
+[Inventory item events](#inventory-item-events)\
+[Character events](#character-events)\
+[Region events](#region-events)
 
 ---
 
