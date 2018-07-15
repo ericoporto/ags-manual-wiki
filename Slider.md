@@ -25,7 +25,7 @@ GUI Slider properties
 
 ---
 
-### BackgroundGraphic property (slider)
+### BackgroundGraphic property
 
     int Slider.BackgroundGraphic;
 

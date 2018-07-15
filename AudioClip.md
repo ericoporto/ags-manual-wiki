@@ -120,7 +120,7 @@ be played afterwards.
 
 ---
 
-### Stop (audio clip)
+### Stop
 
     AudioClip.Stop()
 
@@ -141,7 +141,7 @@ again.
 
 ---
 
-### FileType property (audio clip)
+### FileType property
 
     readonly AudioFileType AudioClip.FileType;
 
@@ -166,7 +166,7 @@ displays a message if aExplosion is a MIDI file
 
 ---
 
-### IsAvailable property (audio clip)
+### IsAvailable property
 
 *(Formerly known as IsMusicVoxAvailable, which is now obsolete)*
 
@@ -196,7 +196,7 @@ checks if the aExplosion audio clip is available, and if so plays it.
 
 ---
 
-### Type property (audio clip)
+### Type property
 
     readonly AudioType AudioClip.Type;
 

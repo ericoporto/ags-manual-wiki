@@ -103,7 +103,7 @@ removed.
 
 ---
 
-### Remove (overlay)
+### Remove
 
 *(Formerly known as RemoveOverlay, which is now obsolete)*
 
@@ -125,7 +125,7 @@ and then remove the overlay from the screen.
 
 ---
 
-### SetText (overlay)
+### SetText
 
 *(Formerly known as SetTextOverlay, which is now obsolete)*
 
@@ -152,7 +152,7 @@ and then replace the overlay with another one.
 
 ---
 
-### Valid property (overlay)
+### Valid property
 
 *(Formerly known as IsOverlayValid, which is now obsolete)*
 
@@ -176,7 +176,7 @@ Then, removes the overlay and prints Valid again (which will now be 0).
 
 ---
 
-### X property (overlay)
+### X property
 
 *(Formerly known as MoveOverlay, which is now obsolete)*
 
@@ -204,7 +204,7 @@ creates a text overlay, then gradually slides it across the screen.
 
 ---
 
-### Y property (overlay)
+### Y property
 
 *(Formerly known as MoveOverlay, which is now obsolete)*
 

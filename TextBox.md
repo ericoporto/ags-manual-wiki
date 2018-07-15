@@ -22,7 +22,7 @@ GUI Text Box functions and properties
 
 ---
 
-### Font property (text box)
+### Font property
 
 *(Formerly known as SetTextBoxFont, which is now obsolete)*
 
@@ -43,7 +43,7 @@ will change the *txtUserInput* text box to use Font "Normal".
 
 ---
 
-### Text property (text box)
+### Text property
 
 *(Formerly known as GetTextBoxText, which is now obsolete)*\
 *(Formerly known as SetTextBoxText, which is now obsolete)*\
@@ -68,7 +68,7 @@ will clear the txtUserInput text box.
 
 ---
 
-### TextColor property (text box)
+### TextColor property
 
     int TextBox.TextColor;
 

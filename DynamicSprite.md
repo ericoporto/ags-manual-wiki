@@ -25,7 +25,7 @@ DynamicSprite functions and properties
 
 ---
 
-### Create (dynamic sprite)
+### Create
 
     static DynamicSprite* DynamicSprite.Create(int width, int height,
                                                optional bool hasAlphaChannel)
@@ -449,7 +449,7 @@ transparency mask to use that of sprite 11, and displays it on object 0.
 
 ---
 
-### Crop (dynamic sprite)
+### Crop
 
     DynamicSprite.Crop(int x, int y, int width, int height);
 
@@ -481,7 +481,7 @@ pixels, and then draw it onto the room background at (100,100).
 
 ---
 
-### Delete (dynamic sprite)
+### Delete
 
 *(Formerly known as DeleteSprite, which is now obsolete)*
 
@@ -516,7 +516,7 @@ and free the new image.
 
 ---
 
-### Flip (dynamic sprite)
+### Flip
 
     DynamicSprite.Flip(eFlipDirection);
 
@@ -544,7 +544,7 @@ it onto the room background at (100,100).
 
 ---
 
-### GetDrawingSurface (dynamic sprite)
+### GetDrawingSurface
 
     DrawingSurface* DynamicSprite.GetDrawingSurface();
 
@@ -577,7 +577,7 @@ object for 1 second and then removes it.
 
 ---
 
-### Resize (dynamic sprite)
+### Resize
 
     DynamicSprite.Resize(int width, int height);
 
@@ -611,7 +611,7 @@ size, and then draw it onto the room background at (100,100).
 
 ---
 
-### Rotate (dynamic sprite)
+### Rotate
 
     DynamicSprite.Rotate(int angle, optional int width, optional int height)
 
@@ -649,7 +649,7 @@ draw the result onto the screen, and then delete the image.
 
 ---
 
-### SaveToFile (dynamic sprite)
+### SaveToFile
 
     DynamicSprite.SaveToFile(string filename)
 
@@ -679,7 +679,7 @@ then save the result back to the disk.
 
 ---
 
-### Tint (dynamic sprite)
+### Tint
 
     DynamicSprite.Tint(int red, int green, int blue, int saturation, int luminance)
 
@@ -713,7 +713,7 @@ room background.
 
 ---
 
-### ColorDepth property (dynamic sprite)
+### ColorDepth property
 
     readonly int DynamicSprite.ColorDepth;
 
@@ -736,7 +736,7 @@ displays the colour depth of the CustomAvatar.bmp image.
 
 ---
 
-### Graphic property (dynamic sprite)
+### Graphic property
 
     readonly int DynamicSprite.Graphic;
 
@@ -761,7 +761,7 @@ takes a screen shot, and draws it onto the background scene at
 
 ---
 
-### Height property (dynamic sprite)
+### Height property
 
     readonly int DynamicSprite.Height;
 
@@ -783,7 +783,7 @@ displays the size of the CustomAvatar.bmp image.
 
 ---
 
-### Width property (dynamic sprite)
+### Width property
 
     readonly int DynamicSprite.Width;
 

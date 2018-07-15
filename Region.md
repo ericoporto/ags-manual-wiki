@@ -16,7 +16,7 @@ Region functions and properties
 
 ---
 
-### GetAtRoomXY (region)
+### GetAtRoomXY
 
 *(Formerly known as global function GetRegionAt, which is now obsolete)*
 
@@ -40,7 +40,7 @@ Example:
 
 ---
 
-### RunInteraction (region)
+### RunInteraction
 
 *(Formerly known as RunRegionInteraction, which is now obsolete)*
 
@@ -69,7 +69,7 @@ walks onto region" for region 4.
 
 ---
 
-### Tint (region)
+### Tint
 
 *(Formerly known as SetRegionTint, which is now obsolete)*
 
@@ -105,7 +105,7 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 
 ---
 
-### Enabled property (region)
+### Enabled property
 
 *(Formerly known as DisableRegion, which is now obsolete)*\
 *(Formerly known as EnableRegion, which is now obsolete)*
@@ -133,7 +133,7 @@ will disable region number 3.
 
 ---
 
-### ID property (region)
+### ID property
 
     readonly int Region.ID
 

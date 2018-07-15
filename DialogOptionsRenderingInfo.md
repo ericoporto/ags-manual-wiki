@@ -131,7 +131,7 @@ options](CustomDialogOptions) page.
 
 ---
 
-### HasAlphaChannel property (DialogOptionsRenderingInfo)
+### HasAlphaChannel property
 
     int DialogOptionsRenderingInfo.HasAlphaChannel;
 
@@ -162,7 +162,7 @@ options in.
 
 ---
 
-### Height property (DialogOptionsRenderingInfo)
+### Height property
 
     int DialogOptionsRenderingInfo.Height;
 
@@ -299,7 +299,7 @@ options area
 
 ---
 
-### Surface property (DialogOptionsRenderingInfo)
+### Surface property
 
     DrawingSurface* DialogOptionsRenderingInfo.Surface;
 
@@ -331,7 +331,7 @@ functions](DrawingSurfaceFunctions)
 
 ---
 
-### Width property (DialogOptionsRenderingInfo)
+### Width property
 
     int DialogOptionsRenderingInfo.Width;
 
@@ -358,7 +358,7 @@ creates a 300x150 size area to draw the dialog options in
 
 ---
 
-### X property (DialogOptionsRenderingInfo)
+### X property
 
     int DialogOptionsRenderingInfo.X;
 
@@ -388,7 +388,7 @@ creates a 200x150 size area at (50, 20) to draw the dialog options in
 
 ---
 
-### Y property (DialogOptionsRenderingInfo)
+### Y property
 
     int DialogOptionsRenderingInfo.Y;
 

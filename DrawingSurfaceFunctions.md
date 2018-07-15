@@ -35,7 +35,7 @@ copies of the image and upload it to video memory if appropriate.
 
 ---
 
-### Clear (drawing surface)
+### Clear
 
 *(Formerly known as RawClearScreen, which is now obsolete)*
 
@@ -424,7 +424,7 @@ will draw a triangle with corners at the points (0,0),(160,100),(0,200).
 
 ---
 
-### Release (drawing surface)
+### Release
 
     DrawingSurface.Release()
 
@@ -520,7 +520,7 @@ displays the pixel colour of the centre pixel on the screen.
 
 ---
 
-### Height property (drawing surface)
+### Height property
 
     readonly int DrawingSurface.Height
 
@@ -578,7 +578,7 @@ draw a line from the top left to the bottom right of the screen.
 
 ---
 
-### Width property (drawing surface)
+### Width property
 
     readonly int DrawingSurface.Width
 

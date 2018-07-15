@@ -66,7 +66,7 @@ will take the input from the user and add it to the listbox.
 
 ---
 
-### Clear (list box)
+### Clear
 
 *(Formerly known as ListBoxClear, which is now obsolete)*
 
@@ -237,7 +237,7 @@ the list box will now just contain "Second item".
 
 ---
 
-### ScrollDown (list box)
+### ScrollDown
 
     ListBox.ScrollDown()
 
@@ -254,7 +254,7 @@ will scroll the *lstTest* list box down one row.
 
 ---
 
-### ScrollUp (list box)
+### ScrollUp
 
     ListBox.ScrollUp()
 
@@ -271,7 +271,7 @@ will scroll the *lstTest* list box up one row.
 
 ---
 
-### Font property (list box)
+### Font property
 
     FontType ListBox.Font
 
@@ -288,7 +288,7 @@ will change the *lstSaveGames* list box to use Font "Speech".
 
 ---
 
-### HideBorder property (list box)
+### HideBorder property
 
     bool ListBox.HideBorder
 
@@ -308,7 +308,7 @@ will hide the border around the Save Games list box.
 
 ---
 
-### HideScrollArrows property (list box)
+### HideScrollArrows property
 
     bool ListBox.HideScrollArrows
 
@@ -333,7 +333,7 @@ will hide the built-in scroll arrows on the list box.
 
 ---
 
-### ItemCount property (list box)
+### ItemCount property
 
 *(Formerly known as ListBoxGetNumItems, which is now obsolete)*
 
@@ -384,7 +384,7 @@ will get the text of the selected item in the list box.
 
 ---
 
-### RowCount property (list box)
+### RowCount property
 
     readonly int ListBox.RowCount
 
@@ -459,7 +459,7 @@ will get the text of the selected item in the listbox.
 
 ---
 
-### TopItem property (list box)
+### TopItem property
 
 *(Formerly known as ListBoxSetTopItem, which is now obsolete)*
 
@@ -480,7 +480,7 @@ list.
 
 ---
 
-### Translated property (list box)
+### Translated property
 
     bool ListBox.Translated
 

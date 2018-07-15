@@ -199,7 +199,7 @@ Example:
 
 ---
 
-### GetProperty (room)
+### GetProperty
 
 *(Formerly known as global function GetRoomProperty, which is now
 obsolete)*
@@ -229,7 +229,7 @@ box ticked.
 
 ---
 
-### GetTextProperty (room)
+### GetTextProperty
 
 *(Formerly known as global function GetRoomPropertyText, which is now
 obsolete)*
@@ -258,7 +258,7 @@ will retrieve the room's "description" property then display it.
 
 ---
 
-### SetProperty (room)
+### SetProperty
 
     static bool Room.SetProperty(const string property, int value)
 
@@ -287,7 +287,7 @@ will change room's "Darkness" custom property to 10.
 
 ---
 
-### SetTextProperty (room)
+### SetTextProperty
 
     bool Room.SetTextProperty(const string property, const string value)
 
@@ -436,7 +436,7 @@ will display a message if the player has been to room 14.
 
 ---
 
-### ProcessClick (Room)
+### ProcessClick
 
 *(Formerly known as global function ProcessClick, which is now
 obsolete)*
@@ -698,7 +698,7 @@ Example:
 
 ---
 
-### ColorDepth property (room)
+### ColorDepth property
 
     readonly static int Room.ColorDepth
 
@@ -715,7 +715,7 @@ Example:
 
 ---
 
-### Height property (room)
+### Height property
 
 *(Formerly known as game.room_height, which is now obsolete)*
 
@@ -838,7 +838,7 @@ Example:
 
 ---
 
-### Width property (room)
+### Width property
 
 *(Formerly known as game.room_width, which is now obsolete)*
 

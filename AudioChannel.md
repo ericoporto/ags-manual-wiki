@@ -20,7 +20,7 @@ them.
 
 ---
 
-### Seek (audio channel)
+### Seek
 
 *(Formerly known as SeekMIDIPosition, which is now obsolete)*\
 *(Formerly known as SeekMODPattern, which is now obsolete)*\
@@ -88,7 +88,7 @@ of the *oMachine* room object.
 
 ---
 
-### Speed property (audio channel)
+### Speed property
 
     int AudioChannel.Speed
 
@@ -109,7 +109,7 @@ plays *aFunnyTalk* clip at the double speed.
 
 ---
 
-### Stop (audio channel)
+### Stop
 
 *(Formerly known as StopAmbientSound, which is now obsolete)*\
 *(Formerly known as StopChannel, which is now obsolete)*
@@ -133,7 +133,7 @@ stop it.
 
 ---
 
-### ID property (audio channel)
+### ID property
 
     readonly int AudioChannel.ID
 
@@ -259,7 +259,7 @@ will display what is currently playing on audio channel 2.
 
 ---
 
-### Position property (audio channel)
+### Position property
 
 *(Formerly known as GetMIDIPosition, which is now obsolete)*\
 *(Formerly known as GetMODPattern, which is now obsolete)*\
@@ -329,7 +329,7 @@ display its position.
 
 ---
 
-### Volume property (audio channel)
+### Volume property
 
 *(Formerly known as SetChannelVolume, which is now obsolete)*\
 *(Formerly known as SetMusicVolume, which is now obsolete)*

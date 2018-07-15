@@ -42,7 +42,7 @@ will centre the CONTROLPANEL GUI in the middle of the screen.
 
 ---
 
-### Click (gui)
+### Click
 
     GUI.Click()
 
@@ -67,7 +67,7 @@ triggers OnClick event for gMainMenu.
 
 ---
 
-### GetAtScreenXY (GUI)
+### GetAtScreenXY
 
 *(Formerly known as GetGUIAt, which is now obsolete)*
 
@@ -106,7 +106,7 @@ will display the number of the GUI that the mouse is over.
 
 ---
 
-### ProcessClick (GUI)
+### ProcessClick
 
     static void GUI.ProcessClick(int x, int y, CursorMode)
 
@@ -135,7 +135,7 @@ Pointer mode, which will ignore anything but interface.
 
 ---
 
-### SetPosition (GUI)
+### SetPosition
 
 *(Formerly known as SetGUIPosition, which is now obsolete)*
 
@@ -160,7 +160,7 @@ will move the VERBCOIN GUI to the position where the cursor is.
 
 ---
 
-### SetSize (GUI)
+### SetSize
 
 *(Formerly known as SetGUISize, which is now obsolete)*
 
@@ -188,7 +188,7 @@ changes the ICONBAR GUI to be the size of half the screen
 
 ---
 
-### BackgroundGraphic property (GUI)
+### BackgroundGraphic property
 
 *(Formerly known as SetGUIBackgroundPic, which is now obsolete)*
 
@@ -203,7 +203,7 @@ You can set this to 0 to remove the background image from the GUI.
 
 ---
 
-### Clickable property (GUI)
+### Clickable property
 
 *(Formerly known as SetGUIClickable, which is now obsolete)*
 
@@ -252,7 +252,7 @@ disables all controls on the INVENTORY GUI.
 
 ---
 
-### Controls property (GUI)
+### Controls property
 
     GUIControl* GUI.Controls[index]
 
@@ -287,7 +287,7 @@ it. If control 4 isn't a listbox, you will get a Null Reference error.
 
 ---
 
-### Height property (GUI)
+### Height property
 
     int GUI.Height
 
@@ -307,7 +307,7 @@ displays the height of the ICONBAR GUI.
 
 ---
 
-### ID property (GUI)
+### ID property
 
     readonly int GUI.ID
 
@@ -328,7 +328,7 @@ clickable.
 
 ---
 
-### Transparency property (GUI)
+### Transparency property
 
 *(Formerly known as SetGUITransparency, which is now obsolete)*
 
@@ -369,7 +369,7 @@ will gradually fade the INVENTORY GUI out until it is invisible.
 
 ---
 
-### Visible property (GUI)
+### Visible property
 
 *(Formerly known as GUIOff, which is now obsolete)*\
 *(Formerly known as GUIOn, which is now obsolete)*\
@@ -405,7 +405,7 @@ will turn on the SETTINGS GUI.
 
 ---
 
-### Width property (GUI)
+### Width property
 
     int GUI.Width
 
@@ -425,7 +425,7 @@ makes the INVENTORY GUI 5 pixels wider.
 
 ---
 
-### X property (GUI)
+### X property
 
     int GUI.X
 
@@ -447,7 +447,7 @@ moves the VERBCOIN GUI right 5 pixels.
 
 ---
 
-### Y property (GUI)
+### Y property
 
     int GUI.Y
 
@@ -470,7 +470,7 @@ moves the VERBCOIN GUI down 5 pixels.
 
 ---
 
-### ZOrder property (gui)
+### ZOrder property
 
 *(Formerly known as SetGUIZOrder, which is now obsolete)*
 

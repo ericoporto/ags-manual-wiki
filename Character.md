@@ -169,7 +169,7 @@ and then top left corner afterwards.
 
 ---
 
-### Animate (character)
+### Animate
 
 *(Formerly known as AnimateCharacter, which is now obsolete)*\
 *(Formerly known as AnimateCharacterEx, which is now obsolete)*
@@ -542,7 +542,7 @@ near him and waiting for a while before he makes his move.
 
 ---
 
-### GetAtScreenXY (character)
+### GetAtScreenXY
 
 *(Formerly known as global function GetCharacterAt, which is now
 obsolete)*
@@ -570,7 +570,7 @@ will display the message if the mouse cursor is over the EGO character
 
 ---
 
-### GetProperty (character)
+### GetProperty
 
 *(Formerly known as GetCharacterProperty, which is now obsolete)*
 
@@ -597,7 +597,7 @@ will print the message if EGO has its "Value" property set to more than
 
 ---
 
-### GetTextProperty (character)
+### GetTextProperty
 
 *(Formerly known as GetCharacterPropertyText, which is now obsolete)*\
 *(Formerly known as Character.GetPropertyText, which is now obsolete)*
@@ -623,7 +623,7 @@ will retrieve EGO's "description" property and display it.
 
 ---
 
-### SetProperty (character)
+### SetProperty
 
     bool Character.SetProperty(const string property, int value)
 
@@ -650,7 +650,7 @@ will change EGO character's "XPLevel" custom property to 10.
 
 ---
 
-### SetTextProperty (character)
+### SetTextProperty
 
     bool Character.SetTextProperty(const string property, const string value)
 
@@ -674,7 +674,7 @@ will change EGO's "description" property.
 
 ---
 
-### HasExplicitLight property (character)
+### HasExplicitLight property
 
     readonly bool Character.HasExplicitTint
 
@@ -746,7 +746,7 @@ colliding.
 
 ---
 
-### IsCollidingWithObject (character)
+### IsCollidingWithObject
 
 *(Formerly known as AreCharObjColliding, which is now obsolete)*
 
@@ -1010,7 +1010,7 @@ inventory tab
 
 ---
 
-### Move (character)
+### Move
 
     Character.Move(int x, int y, optional BlockingStyle,
                                  optional WalkWhere);
@@ -1070,7 +1070,7 @@ a walkable area.
 
 ---
 
-### RemoveTint (character)
+### RemoveTint
 
     Character.RemoveTint()
 
@@ -1092,7 +1092,7 @@ normal.
 
 ---
 
-### IsInteractionAvailable (character)
+### IsInteractionAvailable
 
     Character.IsInteractionAvailable(CursorMode)
 
@@ -1116,7 +1116,7 @@ Example:
 
 ---
 
-### RunInteraction (character)
+### RunInteraction
 
 *(Formerly known as RunCharacterInteraction, which is now obsolete)*
 
@@ -1258,7 +1258,7 @@ room.
 
 ---
 
-### SetLightLevel (character)
+### SetLightLevel
 
     void Character.SetLightLevel(int light_level)
 
@@ -1361,7 +1361,7 @@ will change the character EGO's speed to 10.
 
 ---
 
-### StopMoving (character)
+### StopMoving
 
 *(Formerly known as global function StopMoving, which is now obsolete)*
 
@@ -1438,7 +1438,7 @@ thinking animation.
 
 ---
 
-### Tint (character)
+### Tint
 
     Character.Tint(int red, int green, int blue,
                    int saturation, int luminance)
@@ -1474,7 +1474,7 @@ will tint the EGO character green.
 
 ---
 
-### TintBlue property (character)
+### TintBlue property
 
     readonly int Character.TintBlue
 
@@ -1497,7 +1497,7 @@ property is false, then this value is meaningless.
 
 ---
 
-### TintGreen property (character)
+### TintGreen property
 
     readonly int Character.TintGreen
 
@@ -1520,7 +1520,7 @@ property is false, then this value is meaningless.
 
 ---
 
-### TintRed property (character)
+### TintRed property
 
     readonly int Character.TintRed
 
@@ -1543,7 +1543,7 @@ property is false, then this value is meaningless.
 
 ---
 
-### TintSaturation property (character)
+### TintSaturation property
 
     readonly int Character.TintSaturation
 
@@ -1566,7 +1566,7 @@ property is false, then this value is meaningless.
 
 ---
 
-### TintLuminance property (character)
+### TintLuminance property
 
     readonly int Character.TintLuminance
 
@@ -1725,7 +1725,7 @@ that the player has the inventory item)
 
 ---
 
-### Animating property (character)
+### Animating property
 
 *(Formerly known as character\[\].animating, which is now obsolete)*
 
@@ -1773,7 +1773,7 @@ will change the player character's animation speed to 4.
 
 ---
 
-### Baseline property (character)
+### Baseline property
 
 *(Formerly known as SetCharacterBaseline, which is now obsolete)*
 
@@ -1872,7 +1872,7 @@ will stop EGO from blinking while his thinking animation is playing.
 
 ---
 
-### BlockingHeight property (character)
+### BlockingHeight property
 
     int Character.BlockingHeight
 
@@ -1902,7 +1902,7 @@ will make EGO block 20 pixels high (10 above and 10 below his baseline)
 
 ---
 
-### BlockingWidth property (character)
+### BlockingWidth property
 
     int Character.BlockingWidth
 
@@ -1933,7 +1933,7 @@ co-ordinate, and 25 to the right)
 
 ---
 
-### Clickable property (character)
+### Clickable property
 
 *(Formerly known as SetCharacterClickable, which is now obsolete)*
 
@@ -2012,7 +2012,7 @@ will enable diagonal walking loops for character EGO.
 
 ---
 
-### Frame property (character)
+### Frame property
 
 *(Formerly known as character\[\].frame, which is now obsolete)*
 
@@ -2033,7 +2033,7 @@ displays EGO's current frame number within his view.
 
 ---
 
-### HasExplicitTint property (character)
+### HasExplicitTint property
 
     readonly bool Character.HasExplicitTint
 
@@ -2060,7 +2060,7 @@ removes the player's tint if it currently has one.
 
 ---
 
-### ID property (character)
+### ID property
 
     readonly int Character.ID
 
@@ -2116,7 +2116,7 @@ with different light levels.
 
 ---
 
-### IgnoreWalkbehinds property (character)
+### IgnoreWalkbehinds property
 
 *(Formerly known as SetCharacterIgnoreWalkbehinds, which is now
 obsolete)*
@@ -2181,7 +2181,7 @@ will display how many inventory items of type iCash the player has.
 
 ---
 
-### Loop property (character)
+### Loop property
 
 *(Formerly known as character\[\].loop, which is now obsolete)*
 
@@ -2202,7 +2202,7 @@ displays EGO's current loop number within his view.
 
 ---
 
-### ManualScaling property (character)
+### ManualScaling property
 
 *(Formerly known as Character.IgnoreScaling, which is now obsolete)*\
 *(Formerly part of SetCharacterProperty, which is now obsolete)*
@@ -2265,7 +2265,7 @@ him to (50,100), then turn it back on again.
 
 ---
 
-### Moving property (character)
+### Moving property
 
 *(Formerly known as character\[\].walking, which is now obsolete)*
 
@@ -2294,7 +2294,7 @@ there.
 
 ---
 
-### Name property (character)
+### Name property
 
 *(Formerly known as character\[\].name, which is now obsolete)*
 
@@ -2434,7 +2434,7 @@ scaling
 
 ---
 
-### Scaling property (character)
+### Scaling property
 
     int Character.Scaling
 
@@ -2461,7 +2461,7 @@ will tell EGO to ignore walkable area scaling levels and be fixed to
 
 ---
 
-### Solid property (character)
+### Solid property
 
 *(Formerly part of SetCharacterProperty, which is now obsolete)*
 
@@ -2720,7 +2720,7 @@ will change the character EGO's thinking view to 14.
 
 ---
 
-### Transparency property (character)
+### Transparency property
 
 *(Formerly known as SetCharacterTransparency, which is now obsolete)*
 
@@ -2785,7 +2785,7 @@ whenever he walks.
 
 ---
 
-### View property (character)
+### View property
 
     readonly int Character.View
 
@@ -2850,7 +2850,7 @@ will display the player's Y speed.
 
 ---
 
-### x property (character)
+### x property
 
     int Character.x;
 
@@ -2873,7 +2873,7 @@ displays the player character's current coordinates.
 
 ---
 
-### y property (character)
+### y property
 
     int Character.y;
 
@@ -2896,7 +2896,7 @@ displays the player character's current coordinates.
 
 ---
 
-### z property (character)
+### z property
 
     int Character.z;
 

@@ -16,7 +16,7 @@ Inventory item functions and properties
 
 ---
 
-### GetAtScreenXY (inventory)
+### GetAtScreenXY
 
 *(Formerly known as global function GetInvAt, which is now obsolete)*
 
@@ -53,7 +53,7 @@ will display the number of the inv item that the mouse is over
 
 ---
 
-### GetProperty (inventory)
+### GetProperty
 
 *(Formerly known as GetInvProperty, which is now obsolete)*
 
@@ -79,7 +79,7 @@ to more than 200.
 
 ---
 
-### GetTextProperty (inventory)
+### GetTextProperty
 
 *(Formerly known as GetInvPropertyText, which is now obsolete)*\
 *(Formerly known as InventoryItem.GetPropertyText, which is now
@@ -106,7 +106,7 @@ will retrieve inv item 2's "description" property and display it.
 
 ---
 
-### SetProperty (inventory)
+### SetProperty
 
     bool InventoryItem.SetProperty(const string property, int value)
 
@@ -134,7 +134,7 @@ will change Stone's "weight" custom property to 120.
 
 ---
 
-### SetTextProperty (inventory)
+### SetTextProperty
 
     bool InventoryItem.SetTextProperty(const string property, const string value)
 
@@ -160,7 +160,7 @@ will change key's "description" property.
 
 ---
 
-### IsInteractionAvailable (inventory)
+### IsInteractionAvailable
 
 *(Formerly known as IsInventoryInteractionAvailable, which is now
 obsolete)*
@@ -188,7 +188,7 @@ Example:
 
 ---
 
-### RunInteraction (inventory)
+### RunInteraction
 
 *(Formerly known as RunInventoryInteraction, which is now obsolete)*
 
@@ -213,7 +213,7 @@ this to work)
 
 ---
 
-### CursorGraphic property (inventory)
+### CursorGraphic property
 
     int InventoryItem.CursorGraphic
 
@@ -236,7 +236,7 @@ will display inventory item *iKey*'s cursor graphic.
 
 ---
 
-### Graphic property (inventory)
+### Graphic property
 
 *(Formerly known as GetInvGraphic, which is now obsolete)*\
 *(Formerly known as SetInvItemPic, which is now obsolete)*
@@ -266,7 +266,7 @@ slot.
 
 ---
 
-### ID property (inventory)
+### ID property
 
     readonly int InventoryItem.ID
 
@@ -286,7 +286,7 @@ inventory
 
 ---
 
-### Name property (inventory)
+### Name property
 
 *(Formerly known as GetInvName, which is now obsolete)*\
 *(Formerly known as SetInvItemName, which is now obsolete)*\

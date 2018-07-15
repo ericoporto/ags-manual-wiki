@@ -29,7 +29,7 @@ GUI InvWindow functions and properties
 
 ---
 
-### ScrollDown (inv window)
+### ScrollDown
 
     InvWindow.ScrollDown()
 
@@ -51,7 +51,7 @@ will scroll the *invMain* inv window down one row.
 
 ---
 
-### ScrollUp (inv window)
+### ScrollUp
 
     InvWindow.ScrollUp()
 
@@ -114,7 +114,7 @@ inventory window.
 
 ---
 
-### ItemCount property (inv window)
+### ItemCount property
 
 *(Formerly known as game.num_inv_items, which is now obsolete)*
 
@@ -206,7 +206,7 @@ displays how many items can be visible in the invMain window at once.
 
 ---
 
-### RowCount property (inv window)
+### RowCount property
 
     readonly int InvWindow.RowCount;
 
@@ -225,7 +225,7 @@ displays how many items can be visible in the invMain window at once.
 
 ---
 
-### TopItem property (inv window)
+### TopItem property
 
 *(Formerly known as game.top_inv_item, which is now obsolete)*
 

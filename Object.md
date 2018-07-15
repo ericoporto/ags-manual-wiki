@@ -49,7 +49,7 @@ Object functions and properties
 
 ---
 
-### Animate (object)
+### Animate
 
 *(Formerly known as AnimateObject, which is now obsolete)*\
 *(Formerly known as AnimateObjectEx, which is now obsolete)*
@@ -101,7 +101,7 @@ speed 3. The function won't return until the animation is finished.
 
 ---
 
-### GetAtScreenXY (object)
+### GetAtScreenXY
 
 *(Formerly known as global function GetObjectAt, which is now obsolete)*
 
@@ -126,7 +126,7 @@ will execute the code only if object oRock is on the screen coordinates
 
 ---
 
-### GetProperty (object)
+### GetProperty
 
 *(Formerly known as GetObjectProperty, which is now obsolete)*
 
@@ -152,7 +152,7 @@ than 200.
 
 ---
 
-### GetTextProperty (object)
+### GetTextProperty
 
 *(Formerly known as GetObjectPropertyText, which is now obsolete)*\
 *(Formerly known as Object.GetPropertyText, which is now obsolete)*
@@ -178,7 +178,7 @@ will retrieve Object 0's "description" property then display it.
 
 ---
 
-### SetProperty (object)
+### SetProperty
 
     bool Object.SetProperty(const string property, int value)
 
@@ -204,7 +204,7 @@ will change Table's "ItemCapacity" custom property to 5.
 
 ---
 
-### SetTextProperty (object)
+### SetTextProperty
 
     void Object.SetTextProperty(const string property, const string value)
 
@@ -228,7 +228,7 @@ will change table's "description" property.
 
 ---
 
-### IsCollidingWithObject (object)
+### IsCollidingWithObject
 
 *(Formerly known as AreObjectsColliding, which is now obsolete)*
 
@@ -281,7 +281,7 @@ the object unusable.
 
 ---
 
-### Move (object)
+### Move
 
 *(Formerly known as MoveObject, which is now obsolete)*\
 *(Formerly known as MoveObjectDirect, which is now obsolete)*
@@ -319,7 +319,7 @@ object gets there.
 
 ---
 
-### RemoveTint (object)
+### RemoveTint
 
 *(Formerly known as RemoveObjectTint, which is now obsolete)*
 
@@ -340,7 +340,7 @@ will tint object 1 green for a second, then turn it back to normal.
 
 ---
 
-### IsInteractionAvailable (object)
+### IsInteractionAvailable
 
     Object.IsInteractionAvailable(CursorMode)
 
@@ -364,7 +364,7 @@ Example:
 
 ---
 
-### RunInteraction (object)
+### RunInteraction
 
 *(Formerly known as RunObjectInteraction, which is now obsolete)*
 
@@ -387,7 +387,7 @@ handler.
 
 ---
 
-### SetLightLevel (object)
+### SetLightLevel
 
     void Object.SetLightLevel(int light_level)
 
@@ -423,7 +423,7 @@ This will give the lamp maximal individual brightness.
 
 ---
 
-### SetPosition (object)
+### SetPosition
 
 *(Formerly known as SetObjectPosition, which is now obsolete)*
 
@@ -474,7 +474,7 @@ view 5, loop 2, frame 0.
 
 ---
 
-### StopAnimating (object)
+### StopAnimating
 
     Object.StopAnimating()
 
@@ -494,7 +494,7 @@ will stop object 2 animating if it currently is doing so.
 
 ---
 
-### StopMoving (object)
+### StopMoving
 
 *(Formerly known as StopObjectMoving, which is now obsolete)*
 
@@ -517,7 +517,7 @@ will stop object 2 moving if it currently is doing so.
 
 ---
 
-### Tint (object)
+### Tint
 
 *(Formerly known as SetObjectTint, which is now obsolete)*
 
@@ -552,7 +552,7 @@ will tint object 1 green.
 
 ---
 
-### Animating property (object)
+### Animating property
 
 *(Formerly known as IsObjectAnimating, which is now obsolete)*
 
@@ -581,7 +581,7 @@ you wouldn't need to do this.
 
 ---
 
-### Baseline property (object)
+### Baseline property
 
 *(Formerly known as GetObjectBaseline, which is now obsolete)*\
 *(Formerly known as SetObjectBaseline, which is now obsolete)*
@@ -611,7 +611,7 @@ will change object's 4 baseline to a line positioned at y coordinate
 
 ---
 
-### BlockingHeight property (object)
+### BlockingHeight property
 
     int Object.BlockingHeight
 
@@ -641,7 +641,7 @@ its baseline)
 
 ---
 
-### BlockingWidth property (object)
+### BlockingWidth property
 
     int Character.BlockingWidth
 
@@ -671,7 +671,7 @@ his centre, and 25 to the right)
 
 ---
 
-### Clickable property (object)
+### Clickable property
 
 *(Formerly known as SetObjectClickable, which is now obsolete)*
 
@@ -697,7 +697,7 @@ will make object 2 ignore clicks from the player.
 
 ---
 
-### Frame property (object)
+### Frame property
 
     readonly int Object.Frame
 
@@ -720,7 +720,7 @@ will display the oDoor object's current frame number
 
 ---
 
-### Graphic property (object)
+### Graphic property
 
 *(Formerly known as GetObjectGraphic, which is now obsolete)*\
 *(Formerly known as SetObjectGraphic, which is now obsolete)*
@@ -743,7 +743,7 @@ manager's slot 100.
 
 ---
 
-### HasExplicitLight property (object)
+### HasExplicitLight property
 
     readonly bool Object.HasExplicitTint
 
@@ -761,7 +761,7 @@ light.
 
 ---
 
-### HasExplicitTint property (object)
+### HasExplicitTint property
 
     readonly bool Object.HasExplicitTint
 
@@ -778,7 +778,7 @@ tinted by [SetAmbientTint](Game#SetAmbientTint) or a region tint.
 
 ---
 
-### ID property (object)
+### ID property
 
     readonly int Object.ID
 
@@ -795,7 +795,7 @@ uses the obsolete MoveObject function to move the Rock object to (100,
 
 ---
 
-### IgnoreScaling property (object)
+### IgnoreScaling property
 
     bool Object.IgnoreScaling
 
@@ -818,7 +818,7 @@ will tell the Door object not to be scaled on walkable areas.
 
 ---
 
-### IgnoreWalkbehinds property (object)
+### IgnoreWalkbehinds property
 
 *(Formerly known as SetObjectIgnoreWalkbehinds, which is now obsolete)*
 
@@ -867,7 +867,7 @@ property returns the light level value. Otherwise it returns 0.
 
 ---
 
-### Loop property (object)
+### Loop property
 
     readonly int Object.Loop
 
@@ -890,7 +890,7 @@ will display the oDoor object's current loop number
 
 ---
 
-### Moving property (object)
+### Moving property
 
 *(Formerly known as IsObjectMoving, which is now obsolete)*
 
@@ -915,7 +915,7 @@ object gets there.
 
 ---
 
-### Name property (object)
+### Name property
 
 *(Formerly known as GetObjectName, which is now obsolete)*\
 *(Formerly known as Object.GetName, which is now obsolete)*
@@ -937,7 +937,7 @@ will retrieve and then display object 0's name.
 
 ---
 
-### Solid property (object)
+### Solid property
 
     bool Object.Solid
 
@@ -961,7 +961,7 @@ will mean that the Smallrock object blocks the path of characters.
 
 ---
 
-### TintBlue property (object)
+### TintBlue property
 
     readonly int Object.TintBlue
 
@@ -984,7 +984,7 @@ false, then this value is meaningless.
 
 ---
 
-### TintGreen property (object)
+### TintGreen property
 
     readonly int Object.TintGreen
 
@@ -1007,7 +1007,7 @@ false, then this value is meaningless.
 
 ---
 
-### TintRed property (object)
+### TintRed property
 
     readonly int Object.TintRed
 
@@ -1030,7 +1030,7 @@ false, then this value is meaningless.
 
 ---
 
-### TintSaturation property (object)
+### TintSaturation property
 
     readonly int Object.TintSaturation
 
@@ -1053,7 +1053,7 @@ false, then this value is meaningless.
 
 ---
 
-### TintLuminance property (object)
+### TintLuminance property
 
     readonly int Object.TintLuminance
 
@@ -1076,7 +1076,7 @@ false, then this value is meaningless.
 
 ---
 
-### Transparency property (object)
+### Transparency property
 
 *(Formerly known as SetObjectTransparency, which is now obsolete)*
 
@@ -1119,7 +1119,7 @@ to being fully invisible.
 
 ---
 
-### View property (object)
+### View property
 
     readonly int Object.View
 
@@ -1143,7 +1143,7 @@ will display the oDoor object's current view number
 
 ---
 
-### Visible property (object)
+### Visible property
 
 *(Formerly known as IsObjectOn, which is now obsolete)*\
 *(Formerly known as ObjectOff, which is now obsolete)*\
@@ -1163,7 +1163,7 @@ will make object number 5 in the current room disappear.
 
 ---
 
-### X property (object)
+### X property
 
 *(Formerly known as GetObjectX, which is now obsolete)*
 
@@ -1186,7 +1186,7 @@ will display the X co-ordinate of object 1.
 
 ---
 
-### Y property (object)
+### Y property
 
 *(Formerly known as GetObjectY, which is now obsolete)*
 

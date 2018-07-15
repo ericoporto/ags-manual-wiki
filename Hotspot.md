@@ -16,7 +16,7 @@ Hotspot functions and properties
 
 ---
 
-### GetAtScreenXY (hotspot)
+### GetAtScreenXY
 
 *(Formerly known as global function GetHotspotAt, which is now
 obsolete)*
@@ -49,7 +49,7 @@ will display a message depending on what the mouse is on.
 
 ---
 
-### GetProperty (hotspot)
+### GetProperty
 
 *(Formerly known as GetHotspotProperty, which is now obsolete)*
 
@@ -74,7 +74,7 @@ than 200.
 
 ---
 
-### GetTextProperty (hotspot)
+### GetTextProperty
 
 *(Formerly known as GetHotspotPropertyText, which is now obsolete)*\
 *(Formerly known as Hotspot.GetPropertyText, which is now obsolete)*
@@ -99,7 +99,7 @@ will retrieve hotspot 2's "description" property and display it.
 
 ---
 
-### SetProperty (hotspot)
+### SetProperty
 
     bool Hotspot.SetProperty(const string property, int value)
 
@@ -125,7 +125,7 @@ will change Door hotspot's "LockDifficulty" custom property to 5.
 
 ---
 
-### SetTextProperty (hotspot)
+### SetTextProperty
 
     bool Hotspot.SetTextProperty(const string property, const string value)
 
@@ -149,7 +149,7 @@ will change Door's "description" property.
 
 ---
 
-### IsInteractionAvailable (hotspot)
+### IsInteractionAvailable
 
     Hotspot.IsInteractionAvailable(CursorMode)
 
@@ -173,7 +173,7 @@ Example:
 
 ---
 
-### RunInteraction (hotspot)
+### RunInteraction
 
 *(Formerly known as RunHotspotInteraction, which is now obsolete)*
 
@@ -196,7 +196,7 @@ hDoor.
 
 ---
 
-### Enabled property (hotspot)
+### Enabled property
 
 *(Formerly known as DisableHotspot, which is now obsolete)*\
 *(Formerly known as EnableHotspot, which is now obsolete)*
@@ -225,7 +225,7 @@ will disable the hBrownTree hotspot.
 
 ---
 
-### ID property (hotspot)
+### ID property
 
     readonly int Hotspot.ID
 
@@ -244,7 +244,7 @@ displays hDoor's hotspot number, and then displays hotspot 3's number
 
 ---
 
-### Name property (hotspot)
+### Name property
 
 *(Formerly known as GetHotspotName, which is now obsolete)*\
 *(Formerly known as Hotspot.GetName, which is now obsolete)*

@@ -610,7 +610,7 @@ your scripts.
 
 ---
 
-### managed (struct)
+### managed
 
 **managed struct** *name* `{`
 

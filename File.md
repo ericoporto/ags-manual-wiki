@@ -116,7 +116,7 @@ it.
 
 ---
 
-### Delete (file)
+### Delete
 
     static File.Delete(string filename)
 
@@ -310,7 +310,7 @@ file.
 
 ---
 
-### Seek (file)
+### Seek
 
     int Seek(int offset, optional FileSeek origin);
 
@@ -529,7 +529,7 @@ there was a problem.
 
 ---
 
-### Position property (file)
+### Position property
 
     readonly int File.Position
 

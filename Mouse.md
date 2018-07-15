@@ -100,7 +100,7 @@ will change the Look cursor's view to ROLLEYES.
 
 ---
 
-### Click (mouse)
+### Click
 
     static void Click(MouseButton)
 
@@ -352,7 +352,7 @@ screen.
 
 ---
 
-### SetPosition (mouse)
+### SetPosition
 
 *(Formerly known as SetMousePosition, which is now obsolete)*
 
@@ -376,7 +376,7 @@ will place the mouse cursor in the centre of the screen.
 
 ---
 
-### Speed property (mouse)
+### Speed property
 
     static float Mouse.Speed;
 
@@ -475,7 +475,7 @@ Cursors tab.
 
 ---
 
-### Mode property (mouse)
+### Mode property
 
 *(Formerly known as GetCursorMode, which is now obsolete)*\
 *(Formerly known as SetCursorMode, which is now obsolete)*
@@ -506,7 +506,7 @@ will execute the code only if the current cursor mode is MODE 0 (WALK).
 
 ---
 
-### Visible property (mouse)
+### Visible property
 
 *(Formerly known as HideMouseCursor, which is now obsolete)*\
 *(Formerly known as ShowMouseCursor, which is now obsolete)*

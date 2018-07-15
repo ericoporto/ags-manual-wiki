@@ -15,7 +15,7 @@ Dialog functions and properties
 
 ---
 
-### DisplayOptions (dialog)
+### DisplayOptions
 
     int Dialog.DisplayOptions(optional DialogOptionSayStyle)
 
@@ -66,7 +66,7 @@ depending on what the player selected.
 
 ---
 
-### GetOptionState (dialog)
+### GetOptionState
 
 *(Formerly known as global function GetDialogOption, which is now
 obsolete)*
@@ -106,7 +106,7 @@ currently switched on.
 
 ---
 
-### GetOptionText (dialog)
+### GetOptionText
 
     String Dialog.GetOptionText(int option)
 
@@ -156,7 +156,7 @@ before.
 
 ---
 
-### ID property (dialog)
+### ID property
 
     readonly int Dialog.ID;
 
@@ -175,7 +175,7 @@ will display the ID number of the dFisherman dialog
 
 ---
 
-### OptionCount property (dialog)
+### OptionCount property
 
     readonly int Dialog.OptionCount;
 
@@ -197,7 +197,7 @@ will display the number of options in the dFisherman dialog.
 
 ---
 
-### SetHasOptionBeenChosen (dialog)
+### SetHasOptionBeenChosen
 
     Dialog.SetHasOptionBeenChosen(int option, bool chosen)
 
@@ -224,7 +224,7 @@ will mark option 1 of dialog dDialog1 as "not chosen yet".
 
 ---
 
-### SetOptionState (dialog)
+### SetOptionState
 
 *(Formerly known as global function SetDialogOption, which is now
 obsolete)*
@@ -265,7 +265,7 @@ will enable option 2 of topic number 4 if the Global Integer 10 is 1.
 
 ---
 
-### ShowTextParser property (dialog)
+### ShowTextParser property
 
     readonly bool Dialog.ShowTextParser;
 
@@ -287,7 +287,7 @@ will display a message if dFisherman has the option enabled
 
 ---
 
-### Start (dialog)
+### Start
 
 *(Formerly known as global function RunDialog, which is now obsolete)*
 

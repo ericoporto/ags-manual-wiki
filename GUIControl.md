@@ -24,7 +24,7 @@ has its own specific section.
 
 ---
 
-### GetAtScreenXY (GUI control)
+### GetAtScreenXY
 
 *(Formerly known as GetGUIObjectAt, which is now obsolete)*
 
@@ -54,7 +54,7 @@ will display what control the mouse is over.
 
 ---
 
-### AsType properties (GUI controls)
+### AsType properties
 
     Button*  GUIControl.AsButton;
     InvWindow* GUIControl.AsInvWindow;
@@ -84,7 +84,7 @@ that control is not a button, prints a message.
 
 ---
 
-### BringToFront (GUI controls)
+### BringToFront
 
     GUIControl.BringToFront()
 
@@ -107,7 +107,7 @@ on the GUI.
 
 ---
 
-### Clickable property (GUI controls)
+### Clickable property
 
     bool GUIControl.Clickable
 
@@ -142,7 +142,7 @@ will make the *btnSaveGame* button non-clickable.
 
 ---
 
-### Enabled property (GUI controls)
+### Enabled property
 
 *(Formerly known as SetGUIObjectEnabled, which is now obsolete)*
 
@@ -181,7 +181,7 @@ will disable the *btnSaveGame* button.
 
 ---
 
-### Height property (GUI controls)
+### Height property
 
     int GUIControl.Height;
 
@@ -203,7 +203,7 @@ makes the *btnConfirm* button 20 pixels high.
 
 ---
 
-### ID property (GUI controls)
+### ID property
 
     readonly int GUIControl.ID
 
@@ -228,7 +228,7 @@ list box, and then uses the equivalent modern property to disable it.
 
 ---
 
-### OwningGUI property (GUI controls)
+### OwningGUI property
 
     readonly GUI* GUIControl.OwningGUI
 
@@ -257,7 +257,7 @@ again using the niftier full pathing approach.
 
 ---
 
-### SendToBack (GUI controls)
+### SendToBack
 
     GUIControl.SendToBack()
 
@@ -281,7 +281,7 @@ the GUI.
 
 ---
 
-### SetPosition (GUI controls)
+### SetPosition
 
 *(Formerly known as SetGUIObjectPosition, which is now obsolete)*
 
@@ -313,7 +313,7 @@ GUI.
 
 ---
 
-### SetSize (GUI controls)
+### SetSize
 
 *(Formerly known as SetGUIObjectSize, which is now obsolete)*
 
@@ -343,7 +343,7 @@ will resize the *invMain* control to have a size of 160 x 100.
 
 ---
 
-### Visible property (GUI controls)
+### Visible property
 
     bool GUIControl.Visible
 
@@ -368,7 +368,7 @@ will make the *btnSaveGame* button invisible.
 
 ---
 
-### Width property (GUI controls)
+### Width property
 
     int GUIControl.Width;
 
@@ -390,7 +390,7 @@ makes the *btnConfirm* button 110 pixels wide.
 
 ---
 
-### X property (GUI controls)
+### X property
 
     int GUIControl.X;
 
@@ -416,7 +416,7 @@ left of its GUI.
 
 ---
 
-### Y property (GUI controls)
+### Y property
 
     int GUIControl.Y;
 
@@ -442,7 +442,7 @@ top of its GUI.
 
 ---
 
-### ZOrder property (GUI controls)
+### ZOrder property
 
     int GUIControl.ZOrder;
 

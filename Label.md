@@ -22,7 +22,7 @@ GUI Label functions and properties
 
 ---
 
-### Font property (label)
+### Font property
 
 *(Formerly known as SetLabelFont, which is now obsolete)*
 
@@ -47,7 +47,7 @@ translation is in use.
 
 ---
 
-### Text property (label)
+### Text property
 
 *(Formerly known as SetLabelText, which is now obsolete)*\
 *(Formerly known as Label.GetText, which is now obsolete)*\
@@ -73,7 +73,7 @@ will display the name of the location the cursor is over on label
 
 ---
 
-### TextColor property (label)
+### TextColor property
 
 *(Formerly known as SetLabelColor, which is now obsolete)*
 

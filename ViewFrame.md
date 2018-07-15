@@ -34,7 +34,7 @@ Example:
 
 ---
 
-### Frame property (view frame)
+### Frame property
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -54,7 +54,7 @@ Example:
 
 ---
 
-### Graphic property (view frame)
+### Graphic property
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -71,7 +71,7 @@ Example:
 
 ---
 
-### LinkedAudio property (view frame)
+### LinkedAudio property
 
 *(Formerly known as ViewFrame.Sound, which is now obsolete)*\
 *(Formerly known as SetFrameSound, which is now obsolete)*\
@@ -105,7 +105,7 @@ if so, plays it.
 
 ---
 
-### Loop property (view frame)
+### Loop property
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -125,7 +125,7 @@ Example:
 
 ---
 
-### Speed property (view frame)
+### Speed property
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -143,7 +143,7 @@ Example:
 
 ---
 
-### View property (view frame)
+### View property
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 

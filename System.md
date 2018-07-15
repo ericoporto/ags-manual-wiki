@@ -94,7 +94,7 @@ will display a message if Caps Lock is on.
 
 ---
 
-### ColorDepth property (system)
+### ColorDepth property
 
 *(Formerly known as system.color_depth, which is now obsolete)*
 
@@ -490,7 +490,7 @@ will display the current viewport size
 
 ---
 
-### Volume property (system)
+### Volume property
 
 *(Formerly known as SetDigitalMasterVolume, which is now obsolete)*\
 *(Formerly known as SetMusicMasterVolume, which is now obsolete)*
