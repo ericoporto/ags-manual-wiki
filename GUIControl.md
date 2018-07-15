@@ -236,7 +236,7 @@ Gets the GUI control's owning GUI, which is the GUI that contains the
 control.
 
 Returns a GUI, which allows you to use all the usual [GUI functions and
-properties](GUIFuncsAndProps#GUIFuncsAndProps).
+properties](GUIFuncsAndProps).
 
 **Applies To**
 

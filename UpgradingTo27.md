@@ -135,7 +135,7 @@ easy-to-remember word (such as *eBlock* and *eNoBlock*). Even better,
 when you call a function that uses an enum parameter, auto-complete
 automatically pops up the list of options for you to choose from.
 
-See the [enum keyword](enum#enum) description for information on
+See the [enum keyword](enum) description for information on
 how to create your own.
 
 **So do I have to pass all these things like eBlock every time I call
@@ -171,7 +171,7 @@ your script uses any variables with these names, it will no longer work.
 You'll need to change the variable name in order to compile.
 
 Also, the script language now supports *pointers*. Because they are a
-fairly complex topic, there's a [separate page](Pointers#Pointers)
+fairly complex topic, there's a [separate page](Pointers)
 devoted to explaining what they are.
 
 **Blimey, that's a lot to take in. Where do I start?**

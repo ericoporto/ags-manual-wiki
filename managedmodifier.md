@@ -60,7 +60,7 @@ Here's an example of using the array:
 this sets Health 3 to 50, Health 4 to 100, and the Health index that
 corresponds to the player character's ID number to 10.
 
-See Also: [Dynamic arrays](DynamicArrays#DynamicArrays)
+See Also: [Dynamic arrays](DynamicArrays)
 
 ---
 
@@ -700,7 +700,7 @@ or simply assigned `null`, then the dynamic object is removed from your
 game forever.
 
 See Also: [new](enum#newstatement), [Pointers in
-AGS](Pointers#Pointers)
+AGS](Pointers)
 
 ---
 
@@ -730,7 +730,7 @@ Example:
     }
 
 See Also: [managed (struct)](enum#managedmodifier), [Pointers in
-AGS](Pointers#Pointers)
+AGS](Pointers)
 
 ---
 
@@ -826,7 +826,7 @@ sets the `myValue` variable to 5.
 
 **2. Declaring extender functions**
 
-Please see the [Extender functions](ExtenderFunctions#ExtenderFunctions) page
+Please see the [Extender functions](ExtenderFunctions) page
 for details.
 
 ---

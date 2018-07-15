@@ -308,7 +308,7 @@ Draws the *text* onto the surface at (x, y), using the supplied font
 number. The text will be drawn in the current drawing colour.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats#StringFormats)
+information, see the [string formatting](StringFormats)
 section.
 
 Example:

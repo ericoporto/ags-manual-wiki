@@ -64,7 +64,7 @@ on\_key\_press (eKeyCode keycode)
 
 Called whenever a key is pressed on the keyboard. KEYCODE holds the
 ASCII value of the key. A list of these values is in [this
-section](ASCIIcodes#ASCIIcodes).
+section](ASCIIcodes).
 
 on\_mouse\_click (MouseButton button)
 
@@ -82,7 +82,7 @@ user moving the mouse wheel north or south, respectively.
 repeatedly\_execute()
 
 Called every game cycle (normally 40 times per second). See [this help
-page](RepExec#RepExec) for more information.
+page](RepExec) for more information.
 
 repeatedly\_execute\_always()
 
@@ -90,7 +90,7 @@ Called every game cycle, even when a blocking routine (eg.
 speech/cutscene) is in progress. You **cannot** call any blocking
 functions from this event handler. **repeatedly\_execute\_always** is
 called **BEFORE** the game objects (characters, rooms, etc) get updated.
-See [this help page](RepExec#RepExec) for more information.
+See [this help page](RepExec) for more information.
 
 late\_repeatedly\_execute\_always()
 

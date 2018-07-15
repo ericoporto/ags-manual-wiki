@@ -154,7 +154,7 @@ background frame number if you want to modify a specific frame;
 otherwise, the current background's surface will be returned.
 
 After calling this method, use the various [DrawingSurface
-functions](DrawingSurfaceFunctions#DrawingSurfaceFunctions) to modify the background,
+functions](DrawingSurfaceFunctions) to modify the background,
 then call Release on the surface when you are finished.
 
 Any changes you make will only last until the player leaves the room, at

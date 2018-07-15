@@ -32,7 +32,7 @@ To support alpha blending a new
 [HasAlphaChannel](DialogOptionsRenderingInfo#HasAlphaChannel)
 property has been added to DialogOptionsRenderingInfo class. This
 property must be set it in
-[dialog\_options\_get\_dimensions](CustomDialogOptions#CustomDialogOptions)
+[dialog\_options\_get\_dimensions](CustomDialogOptions)
 function, the one where you normally define size and position of the
 drawing surface.
 
@@ -45,7 +45,7 @@ The maximal number of Fonts has been increased from 15 to 30.
 There's now a new Speech script class that contains several
 speech-related properties. This renders a number of [global
 functions](Game#GlobalCommands) obsolete, as well as some of the
-[game variables](Gamevariables#Gamevariables). If you are using any of them
+[game variables](Gamevariables). If you are using any of them
 in your script you will likely get compilation errors. Simply replace
 them by the corresponding Speech properties, as shown in the table
 below:

@@ -18,7 +18,7 @@ Displays a message to the screen. It will be displayed in the standard
 message box, and centred in the middle of the screen.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats#StringFormats)
+information, see the [string formatting](StringFormats)
 section.
 
 Example:
@@ -56,7 +56,7 @@ is then automatically calculated so that the message fits into the
 window.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats#StringFormats)
+information, see the [string formatting](StringFormats)
 section.
 
 Note: This is a blocking call. See the "Display" help for more
@@ -148,7 +148,7 @@ was talking by having their name in the caption, and can be handy if you
 don't want to draw a talking view for a character.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats#StringFormats)
+information, see the [string formatting](StringFormats)
 section.
 
 The Y parameter specifies the Y location on the screen where the message

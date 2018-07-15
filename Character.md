@@ -1152,7 +1152,7 @@ speech text". The text displayed by this function looks identical to
 that used by the dialog system.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats#StringFormats)
+information, see the [string formatting](StringFormats)
 section.
 
 Example:
@@ -1218,7 +1218,7 @@ removed and replaced with the new MESSAGE.
 
 All background speech is automatically removed when a normal Say command
 is used (unless you set the global variable
-[game.bgspeech\_stay\_on\_display](Gamevariables#Gamevariables) to 1).
+[game.bgspeech\_stay\_on\_display](Gamevariables) to 1).
 
 Example:
 
@@ -1418,7 +1418,7 @@ If the character has a thinking animation, it will just loop through
 once (it won't repeat).
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats#StringFormats)
+information, see the [string formatting](StringFormats)
 section.
 
 Example:
@@ -1434,7 +1434,7 @@ thinking animation.
 [Character.Thinking](Character#Thinking),
 [Character.ThinkingFrame](Character#ThinkingFrame),
 [Character.ThinkView](Character#ThinkView),
-[game.speech\_bubble\_width](Gamevariables#Gamevariables)
+[game.speech\_bubble\_width](Gamevariables)
 
 ---
 

@@ -68,7 +68,7 @@ The function returns the Overlay, which you use later to reposition and
 remove the overlay.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats#StringFormats)
+information, see the [string formatting](StringFormats)
 section.
 
 **NOTE:** large overlays, in the same way as objects, can impact
@@ -135,7 +135,7 @@ Replaces the specified overlay with a new one, at the same co-ordinates
 but with the new specified text, width, font and colour.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats#StringFormats)
+information, see the [string formatting](StringFormats)
 section.
 
 Example:

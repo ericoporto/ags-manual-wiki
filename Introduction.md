@@ -17,7 +17,7 @@ AGS is based around an easy-to-use IDE, where you can set up all the
 parts of your game, and then add some script to process game events.
 Making a game has never been so productive!
 
-To get started, [read the tutorial](StartingOff#StartingOff).
+To get started, [read the tutorial](StartingOff).
 
-[**System Requirements**](SystemRequirements#SystemRequirements)
+[**System Requirements**](SystemRequirements)
 

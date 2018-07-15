@@ -124,7 +124,7 @@ explicit command:
 [RunActiveOption](DialogOptionsRenderingInfo#RunActiveOption).
 
 Along with RunActiveOption,
-[DialogOptionsRenderingInfo](DialogOptionsRenderingInfo#DialogOptionsRenderingInfo)
+[DialogOptionsRenderingInfo](DialogOptionsRenderingInfo)
 struct received another member function:
 [Update](DialogOptionsRenderingInfo#Update). It forces options
 GUI to redraw itself, hence may be used to implement custom animation,
@@ -141,7 +141,7 @@ disable all the new stuff, but return `dialog_options_get_active` and
 make `dialog_options_mouse_click` behave as it did before.
 
 For detailed information see:
-[Custom dialog options rendering](CustomDialogOptions#CustomDialogOptions)
+[Custom dialog options rendering](CustomDialogOptions)
 
 **Some functions object-ised**
 

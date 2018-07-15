@@ -2,7 +2,7 @@ DialogOptionsRenderingInfo functions and properties
 ---
 
 The DialogOptionsRenderingInfo instance is used by the [custom dialog
-options](CustomDialogOptions#CustomDialogOptions) system. You can never create one
+options](CustomDialogOptions) system. You can never create one
 yourself, it will be passed in to the dialog option functions as
 described in the linked page.
 
@@ -122,7 +122,7 @@ Gets the dialog that needs to be rendered. You can loop through all the
 options in the dialog in order to decide what to display on the screen.
 
 Example: For an example please see the [custom dialog
-options](CustomDialogOptions#CustomDialogOptions) page.
+options](CustomDialogOptions) page.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
@@ -327,7 +327,7 @@ clears the dialog options area to yellow.
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:* [DrawingSurface
-functions](DrawingSurfaceFunctions#DrawingSurfaceFunctions)
+functions](DrawingSurfaceFunctions)
 
 ---
 

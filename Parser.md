@@ -72,7 +72,7 @@ the said command.
 Checks whether the player typed in TEXT in their input passed to
 ParseText. Returns *true* if it matches, *false* otherwise.
 
-See [the text parser documentation](TextParser#TextParser) for a more
+See [the text parser documentation](TextParser) for a more
 detailed description.
 
 Example:

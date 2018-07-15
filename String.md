@@ -177,7 +177,7 @@ but instead of displaying it on the screen, returns the result as a new
 string.
 
 You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats#StringFormats)
+information, see the [string formatting](StringFormats)
 section.
 
 **NOTE:** This function is static, which means you do not call it on an

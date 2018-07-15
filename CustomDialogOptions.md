@@ -24,7 +24,7 @@ To write your custom dialog options code, you need to do the following:
     is activated.
 -   Add a `dialog_options_render` function, which is called by AGS when
     it needs to draw the dialog options. A standard script
-    [DrawingSurface](DrawingSurfaceFunctions#DrawingSurfaceFunctions) is supplied,
+    [DrawingSurface](DrawingSurfaceFunctions) is supplied,
     which you can use to draw onto.
 -   Optionally, add a `dialog_options_mouse_click` function. This is
     called by AGS if the player clicks the mouse anywhere on dialog

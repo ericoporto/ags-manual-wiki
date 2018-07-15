@@ -169,7 +169,7 @@ Example:
 will display a message if the game is being run with hardware
 acceleration
 
-See Also: [AGS Graphics Drivers](GraphicsDriver#GraphicsDriver)
+See Also: [AGS Graphics Drivers](GraphicsDriver)
 
 ---
 

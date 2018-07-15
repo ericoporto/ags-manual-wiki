@@ -617,7 +617,7 @@ number that the player was in.
 
 AGS automatically calls ParseText with the text they typed in before it
 calls dialog\_request, so you can use Said() calls to respond. See the
-[text parser](TextParser#TextParser) section for more info.
+[text parser](TextParser) section for more info.
 
 ---
 
@@ -639,7 +639,7 @@ SetGameOption. **Basic properties**
     reduce the size of your game resources at the cost of colour
     precision. 8-bit colour mode is a special feature for making
     palette-based games. See Also: [Palette setup](Settingupthegame#PalSetup),
-    [Palette functions](topic66#topic66)
+    [Palette functions](topic66)
 -   **Developer name** - this will add the provided string to the game's
     executable properties, which will also be shown in [Windows Game
     Explorer](IntegrationWithWindows#GameExplorer), if you configure integration
@@ -660,7 +660,7 @@ SetGameOption. **Basic properties**
 -   **Put sound and sprite files in source control** - whether game
     resources, such as sprites and audio, are put under source control.
     For more information see [Source Control
-    integration](SourceControl#SourceControl).
+    integration](SourceControl).
 -   **Render sprites at screen resolution** - whether characters and
     objects should be scaled in screen pixels rather than game pixels.
     What this means is that when low-resolution game is run in larger
@@ -726,7 +726,7 @@ SetGameOption. **Basic properties**
 -   **Use old-style custom dialog options API** - switch to using
     pre-AGS 3.4.0 custom dialog options callbacks. The differences
     between old and new APIs [are explained in this
-    topic](UpgradeTo34#UpgradeTo34).
+    topic](UpgradeTo34).
 
 **Character movement**
 
@@ -763,7 +763,7 @@ SetGameOption. **Basic properties**
     Ctrl-S to give all inventory items, Ctrl-A to display walkable areas
     on the screen, and Ctrl-D to display statistics about the
     current room. When debug mode is off, these do nothing. See the
-    [Debugging features](Debuggingfeatures#Debuggingfeatures) section for more.
+    [Debugging features](Debuggingfeatures) section for more.
 -   **Split resource files into X MB-sized chunks** - see
     [here](DistGame#SplitRes) for information.
 
@@ -929,7 +929,7 @@ SetGameOption. **Basic properties**
     behind the object will be activated instead.
 -   **Sprite alpha rendering style** - determines which rendering method
     to use in 32-bit games when an image is drawn over [drawing
-    surface](DrawingSurfaceFunctions#DrawingSurfaceFunctions). The "Proper alpha
+    surface](DrawingSurfaceFunctions). The "Proper alpha
     belnding" choice is meant for full alpha blending support, "Classic"
     style exists for compatibility with older versions of AGS only.
 -   **When player interface is disabled, GUI should** - determines what
@@ -951,7 +951,7 @@ reason you should be doing it from this Editor's page now.
 
 Most of the options here correspond to the ones you may find in the
 setup utility. For their meaning please refer to [related
-topic](Setup#Setup).
+topic](Setup).
 
 Additionally, following settings are available:
 
@@ -985,7 +985,7 @@ Additionally, following settings are available:
 game compilation, so if you change these settings you will need to
 rebuild your game one more time to apply them.
 
-See also: [Run-time engine setup](Setup#Setup)
+See also: [Run-time engine setup](Setup)
 
 ---
 

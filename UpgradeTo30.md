@@ -7,7 +7,7 @@ used to it I'm sure you'll agree that it's a massive improvement over
 the old one.
 
 The best place to start is probably to flick through [the
-tutorial](StartingOff#StartingOff), which has been updated for AGS 3 and by
+tutorial](StartingOff), which has been updated for AGS 3 and by
 following it through you should get a good feeling for how the editor
 works.
 
@@ -56,7 +56,7 @@ equivalent of the old "Quick Save" option -- it will save your changes,
 but not compile the EXE file.
 
 The "Test game" option has become "Run" on the Build menu. This runs
-your game with the new [Script Debugger](Debuggingfeatures#Debuggingfeatures),
+your game with the new [Script Debugger](Debuggingfeatures),
 which allows you to pause and step through the script in order to track
 down problems.
 
@@ -83,7 +83,7 @@ since you can no longer just do "RawDrawImage" to draw something onto
 the room background.
 
 Instead, there is a new
-[DrawingSurface](DrawingSurfaceFunctions#DrawingSurfaceFunctions) object which you do
+[DrawingSurface](DrawingSurfaceFunctions) object which you do
 the drawing onto. You get one of these by calling
 [DynamicSprite.GetDrawingSurface](DynamicSprite#GetDrawingSurface)
 or
@@ -96,7 +96,7 @@ once you have finished drawing onto it, which tells AGS to update the
 data in memory.
 
 For examples, see the
-[DrawingSurface](DrawingSurfaceFunctions#DrawingSurfaceFunctions) function help pages.
+[DrawingSurface](DrawingSurfaceFunctions) function help pages.
 
 **Other script changes**
 
