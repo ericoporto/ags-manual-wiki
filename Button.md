@@ -1,35 +1,35 @@
 GUI Button functions and properties
 -----------------------------------
 
-[BringToFront (inherited)](GUIControl#BringToFront)\
-[Clickable property (inherited)](GUIControl#Clickable)\
-[Enabled property (inherited)](GUIControl#Enabled)\
-[Height property (inherited)](GUIControl#Height)\
-[ID property (inherited)](GUIControl#ID)\
-[OwningGUI property (inherited)](GUIControl#OwningGUI)\
-[SendToBack (inherited)](GUIControl#SendToBack)\
-[SetPosition (inherited)](GUIControl#SetPosition)\
-[SetSize (inherited)](GUIControl#SetSize)\
-[Visible property (inherited)](GUIControl#Visible)\
-[Width property (inherited)](GUIControl#Width)\
-[X property (inherited)](GUIControl#X)\
-[Y property (inherited)](GUIControl#Y)\
-[ZOrder property (inherited)](GUIControl#ZOrder)
+[BringToFront](GUIControl#BringToFront)\
+[Clickable property](GUIControl#Clickable)\
+[Enabled property](GUIControl#Enabled)\
+[Height property](GUIControl#Height)\
+[ID property](GUIControl#ID)\
+[OwningGUI property](GUIControl#OwningGUI)\
+[SendToBack](GUIControl#SendToBack)\
+[SetPosition](GUIControl#SetPosition)\
+[SetSize](GUIControl#SetSize)\
+[Visible property](GUIControl#Visible)\
+[Width property](GUIControl#Width)\
+[X property](GUIControl#X)\
+[Y property](GUIControl#Y)\
+[ZOrder property](GUIControl#ZOrder)
 
-[Click (button)](#Click)\
-[Animate (button)](#Animate)\
-[Animating property (button)](#Animating)\
-[Frame property (button)](#Frame)\
-[Loop property (button)](#Loop)\
-[View property (button)](#View)\
+[Click](#Click)\
+[Animate](#Animate)\
+[Animating property](#Animating)\
+[Frame property](#Frame)\
+[Loop property](#Loop)\
+[View property](#View)\
 [ClipImage property](#ClipImage)\
-[Font property (button)](#Font)\
-[Graphic property (button)](#Graphic)\
-[MouseOverGraphic property (button)](#MouseOverGraphic)\
-[NormalGraphic property (button)](#NormalGraphic)\
-[PushedGraphic property (button)](#PushedGraphic)\
-[Text property (button)](#Text)\
-[TextColor property (button)](#TextColor)
+[Font property](#Font)\
+[Graphic property](#Graphic)\
+[MouseOverGraphic property](#MouseOverGraphic)\
+[NormalGraphic property](#NormalGraphic)\
+[PushedGraphic property](#PushedGraphic)\
+[Text property](#Text)\
+[TextColor property](#TextColor)
 
 ---
 

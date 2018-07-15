@@ -5,18 +5,18 @@ The AudioChannel instance represents a currently playing audio file. You
 can use this instance to check the status of playing sounds, and adjust
 them.
 
-[Seek (audio channel)](#Seek)\
+[Seek](#Seek)\
 [SetRoomLocation](#SetRoomLocation)\
-[Speed property (audio channel)](#Speed)\
-[Stop (audio channel)](#Stop)\
-[ID property (audio channel)](#ID)\
+[Speed property](#Speed)\
+[Stop](#Stop)\
+[ID property](#ID)\
 [IsPlaying property](#IsPlaying)\
 [LengthMs property](#LengthMs)\
 [Panning property](#Panning)\
 [PlayingClip property](#PlayingClip)\
-[Position property (audio channel)](#Position)\
+[Position property](#Position)\
 [PositionMs property](#PositionMs)\
-[Volume property (audio channel)](#Volume)
+[Volume property](#Volume)
 
 ---
 

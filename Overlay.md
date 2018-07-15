@@ -3,11 +3,11 @@ Overlay functions and properties
 
 [CreateGraphical](#CreateGraphical)\
 [CreateTextual](#CreateTextual)\
-[Remove (overlay)](#Remove)\
-[SetText (overlay)](#SetText)\
-[Valid property (overlay)](#Valid)\
-[X property (overlay)](#X)\
-[Y property (overlay)](#Y)
+[Remove](#Remove)\
+[SetText](#SetText)\
+[Valid property](#Valid)\
+[X property](#X)\
+[Y property](#Y)
 
 ---
 

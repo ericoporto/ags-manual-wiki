@@ -1,18 +1,18 @@
 Inventory item functions and properties
 ---------------------------------------
 
-[GetAtScreenXY (inventory)](#GetAtScreenXY)\
-[GetProperty (inventory)](#GetProperty)\
-[GetTextProperty (inventory)](#GetTextProperty)\
-[SetProperty (inventory)](#SetProperty)\
-[SetTextProperty (inventory)](#SetTextProperty)\
+[GetAtScreenXY](#GetAtScreenXY)\
+[GetProperty](#GetProperty)\
+[GetTextProperty](#GetTextProperty)\
+[SetProperty](#SetProperty)\
+[SetTextProperty](#SetTextProperty)\
 [IsInteractionAvailable
 (inventory)](#IsInteractionAvailable)\
-[RunInteraction (inventory)](#RunInteraction)\
-[CursorGraphic property (inventory)](#CursorGraphic)\
-[Graphic property (inventory)](#Graphic)\
-[ID property (inventory)](#ID)\
-[Name property (inventory)](#Name)
+[RunInteraction](#RunInteraction)\
+[CursorGraphic property](#CursorGraphic)\
+[Graphic property](#Graphic)\
+[ID property](#ID)\
+[Name property](#Name)
 
 ---
 

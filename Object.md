@@ -1,51 +1,51 @@
 Object functions and properties
 -------------------------------
 
-[Animate (object)](#Animate)\
-[GetAtScreenXY (object)](#GetAtScreenXY)\
-[GetProperty (object)](#GetProperty)\
-[GetTextProperty (object)](#GetTextProperty)\
-[SetProperty (object)](#SetProperty)\
-[SetTextProperty (object)](#SetTextProperty)\
-[IsCollidingWithObject (object)](#IsCollidingWithObject)\
+[Animate](#Animate)\
+[GetAtScreenXY](#GetAtScreenXY)\
+[GetProperty](#GetProperty)\
+[GetTextProperty](#GetTextProperty)\
+[SetProperty](#SetProperty)\
+[SetTextProperty](#SetTextProperty)\
+[IsCollidingWithObject](#IsCollidingWithObject)\
 [MergeIntoBackground](#MergeIntoBackground)\
-[Move (object)](#Move)\
-[RemoveTint (object)](#RemoveTint)\
-[IsInteractionAvailable (object)](#IsInteractionAvailable)\
-[RunInteraction (object)](#RunInteraction)\
-[SetLightLevel (object)](#SetLightLevel)\
-[SetPosition (object)](#SetPosition)\
+[Move](#Move)\
+[RemoveTint](#RemoveTint)\
+[IsInteractionAvailable](#IsInteractionAvailable)\
+[RunInteraction](#RunInteraction)\
+[SetLightLevel](#SetLightLevel)\
+[SetPosition](#SetPosition)\
 [SetView](#SetView)\
-[StopAnimating (object)](#StopAnimating)\
-[StopMoving (object)](#StopMoving)\
-[Tint (object)](#Tint)\
-[Animating property (object)](#Animating)\
-[Baseline property (object)](#Baseline)\
-[BlockingHeight property (object)](#BlockingHeight)\
-[BlockingWidth property (object)](#BlockingWidth)\
-[Clickable property (object)](#Clickable)\
-[Frame property (object)](#Frame)\
-[Graphic property (object)](#Graphic)\
-[HasExplicitLight property (object)](#HasExplicitLight)\
-[HasExplicitTint property (object)](#HasExplicitTint)\
-[ID property (object)](#ID)\
-[IgnoreScaling property (object)](#IgnoreScaling)\
-[IgnoreWalkbehinds property (object)](#IgnoreWalkbehinds)\
+[StopAnimating](#StopAnimating)\
+[StopMoving](#StopMoving)\
+[Tint](#Tint)\
+[Animating property](#Animating)\
+[Baseline property](#Baseline)\
+[BlockingHeight property](#BlockingHeight)\
+[BlockingWidth property](#BlockingWidth)\
+[Clickable property](#Clickable)\
+[Frame property](#Frame)\
+[Graphic property](#Graphic)\
+[HasExplicitLight property](#HasExplicitLight)\
+[HasExplicitTint property](#HasExplicitTint)\
+[ID property](#ID)\
+[IgnoreScaling property](#IgnoreScaling)\
+[IgnoreWalkbehinds property](#IgnoreWalkbehinds)\
 [LightLevel property](#LightLevel)\
-[Loop property (object)](#Loop)\
-[Moving property (object)](#Moving)\
-[Name property (object)](#Name)\
-[Solid property (object)](#Solid)\
-[TintBlue property (object)](#TintBlue)\
-[TintGreen property (object)](#TintGreen)\
-[TintRed property (object)](#TintRed)\
-[TintSaturation property (object)](#TintSaturation)\
-[TintLuminance property (object)](#TintLuminance)\
-[Transparency property (object)](#Transparency)\
-[View property (object)](#View)\
-[Visible property (object)](#Visible)\
-[X property (object)](#X)\
-[Y property (object)](#Y)
+[Loop property](#Loop)\
+[Moving property](#Moving)\
+[Name property](#Name)\
+[Solid property](#Solid)\
+[TintBlue property](#TintBlue)\
+[TintGreen property](#TintGreen)\
+[TintRed property](#TintRed)\
+[TintSaturation property](#TintSaturation)\
+[TintLuminance property](#TintLuminance)\
+[Transparency property](#Transparency)\
+[View property](#View)\
+[Visible property](#Visible)\
+[X property](#X)\
+[Y property](#Y)
 
 ---
 

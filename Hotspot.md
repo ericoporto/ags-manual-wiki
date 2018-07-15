@@ -1,16 +1,16 @@
 Hotspot functions and properties
 --------------------------------
 
-[GetAtScreenXY (hotspot)](#GetAtScreenXY)\
-[GetProperty (hotspot)](#GetProperty)\
-[GetTextProperty (hotspot)](#GetTextProperty)\
-[SetProperty (hotspot)](#SetProperty)\
-[SetTextProperty (hotspot)](#SetTextProperty)\
-[IsInteractionAvailable (hotspot)](#IsInteractionAvailable)\
-[RunInteraction (hotspot)](#RunInteraction)\
-[Enabled property (hotspot)](#Enabled)\
-[ID property (hotspot)](#ID)\
-[Name property (hotspot)](#Name)\
+[GetAtScreenXY](#GetAtScreenXY)\
+[GetProperty](#GetProperty)\
+[GetTextProperty](#GetTextProperty)\
+[SetProperty](#SetProperty)\
+[SetTextProperty](#SetTextProperty)\
+[IsInteractionAvailable](#IsInteractionAvailable)\
+[RunInteraction](#RunInteraction)\
+[Enabled property](#Enabled)\
+[ID property](#ID)\
+[Name property](#Name)\
 [WalkToX property](#WalkToX)\
 [WalkToY property](#WalkToY)
 

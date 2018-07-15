@@ -4,7 +4,7 @@ System functions and properties
 [AudioChannelCount property](#AudioChannelCount)\
 [AudioChannels property](#AudioChannels)\
 [CapsLock property](#CapsLock)\
-[ColorDepth property (system)](#ColorDepth)\
+[ColorDepth property](#ColorDepth)\
 [Gamma property](#Gamma)\
 [HardwareAcceleration property](#HardwareAcceleration)\
 [HasInputFocus property](#HasInputFocus)\
@@ -19,7 +19,7 @@ System functions and properties
 [Version property](#Version)\
 [ViewportHeight property](#ViewportHeight)\
 [ViewportWidth property](#ViewportWidth)\
-[Volume property (system)](#Volume)\
+[Volume property](#Volume)\
 [VSync property](#VSync)\
 [Windowed property](#Windowed)
 

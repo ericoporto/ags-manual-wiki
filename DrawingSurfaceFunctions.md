@@ -14,7 +14,7 @@ and you can then use the following methods to draw onto the surface.
 finished drawing onto the surface. This allows AGS to update its cached
 copies of the image and upload it to video memory if appropriate.
 
-[Clear (drawing surface)](#Clear)\
+[Clear](#Clear)\
 [CreateCopy](#CreateCopy)\
 [DrawCircle](#DrawCircle)\
 [DrawImage](#DrawImage)\
@@ -26,12 +26,12 @@ copies of the image and upload it to video memory if appropriate.
 [DrawStringWrapped](#DrawStringWrapped)\
 [DrawSurface](#DrawSurface)\
 [DrawTriangle](#DrawTriangle)\
-[Release (drawing surface)](#Release)\
+[Release](#Release)\
 [DrawingColor property](#DrawingColor)\
 [GetPixel](#GetPixel)\
-[Height property (drawing surface)](#Height)\
+[Height property](#Height)\
 [UseHighResCoordinates property](#UseHighResCoordinates)\
-[Width property (drawing surface)](#Width)
+[Width property](#Width)
 
 ---
 

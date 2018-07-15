@@ -1,31 +1,31 @@
 GUI InvWindow functions and properties
 --------------------------------------
 
-[BringToFront (inherited)](GUIControl#BringToFront)\
-[Clickable property (inherited)](GUIControl#Clickable)\
-[Enabled property (inherited)](GUIControl#Enabled)\
-[Height property (inherited)](GUIControl#Height)\
-[ID property (inherited)](GUIControl#ID)\
-[OwningGUI property (inherited)](GUIControl#OwningGUI)\
-[SendToBack (inherited)](GUIControl#SendToBack)\
-[SetPosition (inherited)](GUIControl#SetPosition)\
-[SetSize (inherited)](GUIControl#SetSize)\
-[Visible property (inherited)](GUIControl#Visible)\
-[Width property (inherited)](GUIControl#Width)\
-[X property (inherited)](GUIControl#X)\
-[Y property (inherited)](GUIControl#Y)\
-[ZOrder property (inherited)](GUIControl#ZOrder)
+[BringToFront](GUIControl#BringToFront)\
+[Clickable property](GUIControl#Clickable)\
+[Enabled property](GUIControl#Enabled)\
+[Height property](GUIControl#Height)\
+[ID property](GUIControl#ID)\
+[OwningGUI property](GUIControl#OwningGUI)\
+[SendToBack](GUIControl#SendToBack)\
+[SetPosition](GUIControl#SetPosition)\
+[SetSize](GUIControl#SetSize)\
+[Visible property](GUIControl#Visible)\
+[Width property](GUIControl#Width)\
+[X property](GUIControl#X)\
+[Y property](GUIControl#Y)\
+[ZOrder property](GUIControl#ZOrder)
 
-[ScrollDown (inv window)](#ScrollDown)\
-[ScrollUp (inv window)](#ScrollUp)\
+[ScrollDown](#ScrollDown)\
+[ScrollUp](#ScrollUp)\
 [CharacterToUse property](#CharacterToUse)\
 [ItemAtIndex property](#ItemAtIndex)\
-[ItemCount property (inv window)](#ItemCount)\
+[ItemCount property](#ItemCount)\
 [ItemHeight property](#ItemHeight)\
 [ItemWidth property](#ItemWidth)\
 [ItemsPerRow property](#ItemsPerRow)\
-[RowCount property (inv window)](#RowCount)\
-[TopItem property (inv window)](#TopItem)
+[RowCount property](#RowCount)\
+[TopItem property](#TopItem)
 
 ---
 

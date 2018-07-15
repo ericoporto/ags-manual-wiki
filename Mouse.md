@@ -4,7 +4,7 @@ Mouse functions and properties
 [ChangeModeGraphic](#ChangeModeGraphic)\
 [ChangeModeHotspot](#ChangeModeHotspot)\
 [ChangeModeView](#ChangeModeView)\
-[Click (mouse)](#Click)\
+[Click](#Click)\
 [ControlEnabled property](#ControlEnabled)\
 [DisableMode](#DisableMode)\
 [EnableMode](#EnableMode)\
@@ -15,13 +15,13 @@ Mouse functions and properties
 [SelectNextMode](#SelectNextMode)\
 [SelectPreviousMode](#SelectPreviousMode)\
 [SetBounds](#SetBounds)\
-[SetPosition (mouse)](#SetPosition)\
-[Speed property (mouse)](#Speed)\
+[SetPosition](#SetPosition)\
+[Speed property](#Speed)\
 [Update](#Update)\
 [UseDefaultGraphic](#UseDefaultGraphic)\
 [UseModeGraphic](#UseModeGraphic)\
-[Mode property (mouse)](#Mode)\
-[Visible property (mouse)](#Visible)
+[Mode property](#Mode)\
+[Visible property](#Visible)
 
 ---
 

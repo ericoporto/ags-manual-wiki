@@ -2,23 +2,23 @@ GUI functions and properties
 ----------------------------
 
 [Centre](#Centre)\
-[Click (gui)](#Click)\
-[GetAtScreenXY (GUI)](#GetAtScreenXY)\
-[ProcessClick (GUI)](#ProcessClick)\
-[SetPosition (GUI)](#SetPosition)\
-[SetSize (GUI)](#SetSize)\
-[BackgroundGraphic property (GUI)](#BackgroundGraphic)\
-[Clickable property (GUI)](#Clickable)\
+[Click](#Click)\
+[GetAtScreenXY](#GetAtScreenXY)\
+[ProcessClick](#ProcessClick)\
+[SetPosition](#SetPosition)\
+[SetSize](#SetSize)\
+[BackgroundGraphic property](#BackgroundGraphic)\
+[Clickable property](#Clickable)\
 [ControlCount property](#ControlCount)\
-[Controls property (GUI)](#Controls)\
-[Height property (GUI)](#Height)\
-[ID property (GUI)](#ID)\
-[Transparency property (GUI)](#Transparency)\
-[Visible property (GUI)](#Visible)\
-[Width property (GUI)](#Width)\
-[X property (GUI)](#X)\
-[Y property (GUI)](#Y)\
-[ZOrder property (gui)](#ZOrder)
+[Controls property](#Controls)\
+[Height property](#Height)\
+[ID property](#ID)\
+[Transparency property](#Transparency)\
+[Visible property](#Visible)\
+[Width property](#Width)\
+[X property](#X)\
+[Y property](#Y)\
+[ZOrder property](#ZOrder)
 
 ---
 

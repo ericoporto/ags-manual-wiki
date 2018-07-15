@@ -3,7 +3,7 @@ Character functions and properties
 
 [AddInventory](#AddInventory)\
 [AddWaypoint](#AddWaypoint)\
-[Animate (character)](#Animate)\
+[Animate](#Animate)\
 [ChangeRoom](#ChangeRoom)\
 [ChangeRoomAutoPosition](#ChangeRoomAutoPosition)\
 [ChangeView](#ChangeView)\
@@ -12,77 +12,77 @@ Character functions and properties
 [FaceLocation](#FaceLocation)\
 [FaceObject](#FaceObject)\
 [FollowCharacter](#FollowCharacter)\
-[GetAtScreenXY (character)](#GetAtScreenXY)\
-[GetProperty (character)](#GetProperty)\
-[GetTextProperty (character)](#GetTextProperty)\
-[SetProperty (character)](#SetProperty)\
-[SetTextProperty (character)](#SetTextProperty)\
-[HasExplicitLight property (character)](#HasExplicitLight)\
+[GetAtScreenXY](#GetAtScreenXY)\
+[GetProperty](#GetProperty)\
+[GetTextProperty](#GetTextProperty)\
+[SetProperty](#SetProperty)\
+[SetTextProperty](#SetTextProperty)\
+[HasExplicitLight property](#HasExplicitLight)\
 [HasInventory](#HasInventory)\
 [IsCollidingWithChar](#IsCollidingWithChar)\
-[IsCollidingWithObject (character)](#IsCollidingWithObject)\
+[IsCollidingWithObject](#IsCollidingWithObject)\
 [LightLevel property](#LightLevel)\
 [LockView](#LockView)\
 [LockViewAligned](#LockViewAligned)\
 [LockViewFrame](#LockViewFrame)\
 [LockViewOffset](#LockViewOffset)\
 [LoseInventory](#LoseInventory)\
-[Move (character)](#Move)\
+[Move](#Move)\
 [PlaceOnWalkableArea](#PlaceOnWalkableArea)\
-[RemoveTint (character)](#RemoveTint)\
-[IsInteractionAvailable (character)](#IsInteractionAvailable)\
-[RunInteraction (character)](#RunInteraction)\
+[RemoveTint](#RemoveTint)\
+[IsInteractionAvailable](#IsInteractionAvailable)\
+[RunInteraction](#RunInteraction)\
 [Say](#Say)\
 [SayAt](#SayAt)\
 [SayBackground](#SayBackground)\
 [SetAsPlayer](#SetAsPlayer)\
-[SetLightLevel (character)](#SetLightLevel)\
+[SetLightLevel](#SetLightLevel)\
 [SetIdleView](#SetIdleView)\
 [SetWalkSpeed](#SetWalkSpeed)\
-[StopMoving (character)](#StopMoving)\
+[StopMoving](#StopMoving)\
 [Think](#Think)\
-[Tint (character)](#Tint)\
-[TintBlue property (character)](#TintBlue)\
-[TintGreen property (character)](#TintGreen)\
-[TintRed property (character)](#TintRed)\
-[TintSaturation property (character)](#TintSaturation)\
-[TintLuminance property (character)](#TintLuminance)\
+[Tint](#Tint)\
+[TintBlue property](#TintBlue)\
+[TintGreen property](#TintGreen)\
+[TintRed property](#TintRed)\
+[TintSaturation property](#TintSaturation)\
+[TintLuminance property](#TintLuminance)\
 [UnlockView](#UnlockView)\
 [Walk](#Walk)\
 [WalkStraight](#WalkStraight)\
 [ActiveInventory property](#ActiveInventory)\
-[Animating property (character)](#Animating)\
+[Animating property](#Animating)\
 [AnimationSpeed property](#AnimationSpeed)\
-[Baseline property (character)](#Baseline)\
+[Baseline property](#Baseline)\
 [BlinkInterval property](#BlinkInterval)\
 [BlinkView property](#BlinkView)\
 [BlinkWhileThinking property](#BlinkWhileThinking)\
-[BlockingHeight property (character)](#BlockingHeight)\
-[BlockingWidth property (character)](#BlockingWidth)\
-[Clickable property (character)](#Clickable)\
+[BlockingHeight property](#BlockingHeight)\
+[BlockingWidth property](#BlockingWidth)\
+[Clickable property](#Clickable)\
 [DestinationX property](#DestinationX)\
 [DestinationY property](#DestinationY)\
 [DiagonalLoops property](#DiagonalLoops)\
-[Frame property (character)](#Frame)\
-[HasExplicitTint property (character)](#HasExplicitTint)\
-[ID property (character)](#ID)\
+[Frame property](#Frame)\
+[HasExplicitTint property](#HasExplicitTint)\
+[ID property](#ID)\
 [IdleView property](#IdleView)\
 [IgnoreLighting property](#IgnoreLighting)\
-[IgnoreWalkbehinds property (character)](#IgnoreWalkbehinds)\
+[IgnoreWalkbehinds property](#IgnoreWalkbehinds)\
 [InventoryQuantity property](#InventoryQuantity)\
-[Loop property (character)](#Loop)\
-[ManualScaling property (character)](#ManualScaling)\
+[Loop property](#Loop)\
+[ManualScaling property](#ManualScaling)\
 [MovementLinkedToAnimation
 property](#MovementLinkedToAnimation)\
-[Moving property (character)](#Moving)\
-[Name property (character)](#Name)\
+[Moving property](#Moving)\
+[Name property](#Name)\
 [NormalView property](#NormalView)\
 [PreviousRoom property](#PreviousRoom)\
 [Room property](#Room)\
 [ScaleMoveSpeed property](#ScaleMoveSpeed)\
 [ScaleVolume property](#ScaleVolume)\
-[Scaling property (character)](#Scaling)\
-[Solid property (character)](#Solid)\
+[Scaling property](#Scaling)\
+[Solid property](#Solid)\
 [Speaking property](#Speaking)\
 [SpeakingFrame property](#SpeakingFrame)\
 [SpeechAnimationDelay property](#SpeechAnimationDelay)\
@@ -91,14 +91,14 @@ property](#MovementLinkedToAnimation)\
 [Thinking property](#Thinking)\
 [ThinkingFrame property](#ThinkingFrame)\
 [ThinkView property](#ThinkView)\
-[Transparency property (character)](#Transparency)\
+[Transparency property](#Transparency)\
 [TurnBeforeWalking property](#TurnBeforeWalking)\
-[View property (character)](#View)\
+[View property](#View)\
 [WalkSpeedX property](#WalkSpeedX)\
 [WalkSpeedY property](#WalkSpeedY)\
-[x property (character)](#x)\
-[y property (character)](#y)\
-[z property (character)](#z)\
+[x property](#x)\
+[y property](#y)\
+[z property](#z)\
 [SetCharacterProperty](#SetCharacterProperty)
 
 ---

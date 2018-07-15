@@ -1,7 +1,7 @@
 DynamicSprite functions and properties
 --------------------------------------
 
-[Create (dynamic sprite)](#Create)\
+[Create](#Create)\
 [CreateFromBackground](#CreateFromBackground)\
 [CreateFromDrawingSurface](#CreateFromDrawingSurface)\
 [CreateFromExistingSprite](#CreateFromExistingSprite)\
@@ -10,18 +10,18 @@ DynamicSprite functions and properties
 [CreateFromScreenShot](#CreateFromScreenShot)\
 [ChangeCanvasSize](#ChangeCanvasSize)\
 [CopyTransparencyMask](#CopyTransparencyMask)\
-[Crop (dynamic sprite)](#Crop)\
-[Delete (dynamic sprite)](#Delete)\
-[Flip (dynamic sprite)](#Flip)\
-[GetDrawingSurface (dynamic sprite)](#GetDrawingSurface)\
-[Resize (dynamic sprite)](#Resize)\
-[Rotate (dynamic sprite)](#Rotate)\
-[SaveToFile (dynamic sprite)](#SaveToFile)\
-[Tint (dynamic sprite)](#Tint)\
-[ColorDepth property (dynamic sprite)](#ColorDepth)\
-[Graphic property (dynamic sprite)](#Graphic)\
-[Height property (dynamic sprite)](#Height)\
-[Width property (dynamic sprite)](#Width)
+[Crop](#Crop)\
+[Delete](#Delete)\
+[Flip](#Flip)\
+[GetDrawingSurface](#GetDrawingSurface)\
+[Resize](#Resize)\
+[Rotate](#Rotate)\
+[SaveToFile](#SaveToFile)\
+[Tint](#Tint)\
+[ColorDepth property](#ColorDepth)\
+[Graphic property](#Graphic)\
+[Height property](#Height)\
+[Width property](#Width)
 
 ---
 

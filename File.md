@@ -3,21 +3,21 @@ File functions and properties
 
 [Open](#Open)\
 [Close](#Close)\
-[Delete (file)](#Delete)\
+[Delete](#Delete)\
 [Exists](#Exists)\
 [ReadInt](#ReadInt)\
 [ReadRawChar](#ReadRawChar)\
 [ReadRawInt](#ReadRawInt)\
 [ReadRawLineBack](#ReadRawLineBack)\
 [ReadStringBack](#ReadStringBack)\
-[Seek (file)](#Seek)\
+[Seek](#Seek)\
 [WriteInt](#WriteInt)\
 [WriteRawChar](#WriteRawChar)\
 [WriteRawLine](#WriteRawLine)\
 [WriteString](#WriteString)\
 [EOF property](#EOF)\
 [Error property](#Error)\
-[Position property (file)](#Position)
+[Position property](#Position)
 
 ---
 

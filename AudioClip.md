@@ -7,10 +7,10 @@ commands in this section allow to play them.
 [Play](#Play)\
 [PlayFrom](#PlayFrom)\
 [PlayQueued](#PlayQueued)\
-[Stop (audio clip)](#Stop)\
-[FileType property (audio clip)](#FileType)\
-[IsAvailable property (audio clip)](#IsAvailable)\
-[Type property (audio clip)](#Type)
+[Stop](#Stop)\
+[FileType property](#FileType)\
+[IsAvailable property](#IsAvailable)\
+[Type property](#Type)
 
 ---
 

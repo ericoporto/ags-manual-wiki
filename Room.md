@@ -7,16 +7,16 @@ Room functions
 [GetBackgroundFrame](#GetBackgroundFrame)\
 [GetDrawingSurfaceForBackground](#GetDrawingSurfaceForBackground)\
 [GetPlayerCharacter](#GetPlayerCharacter)\
-[GetProperty (room)](#GetProperty)\
-[GetTextProperty (room)](#GetTextProperty)\
-[SetProperty (room)](#SetProperty)\
-[SetTextProperty (room)](#SetTextProperty)\
+[GetProperty](#GetProperty)\
+[GetTextProperty](#GetTextProperty)\
+[SetProperty](#SetProperty)\
+[SetTextProperty](#SetTextProperty)\
 [GetScalingAt](#GetScalingAt)\
 [GetViewportX](#GetViewportX)\
 [GetViewportY](#GetViewportY)\
 [GetWalkableAreaAt](#GetWalkableAreaAt)\
 [HasPlayerBeenInRoom](#HasPlayerBeenInRoom)\
-[ProcessClick (Room)](#ProcessClick)\
+[ProcessClick](#ProcessClick)\
 [ReleaseViewport](#ReleaseViewport)\
 [RemoveWalkableArea](#RemoveWalkableArea)\
 [ResetRoom](#ResetRoom)\
@@ -26,15 +26,15 @@ Room functions
 [SetViewport](#SetViewport)\
 [SetWalkBehindBase](#SetWalkBehindBase)\
 [BottomEdge property](#BottomEdge)\
-[ColorDepth property (room)](#ColorDepth)\
-[Height property (room)](#Height)\
+[ColorDepth property](#ColorDepth)\
+[Height property](#Height)\
 [LeftEdge property](#LeftEdge)\
 [Messages property](#Messages)\
 [MusicOnLoad property](#MusicOnLoad)\
 [ObjectCount property](#ObjectCount)\
 [RightEdge property](#RightEdge)\
 [TopEdge property](#TopEdge)\
-[Width property (room)](#Width)
+[Width property](#Width)
 
 ---
 

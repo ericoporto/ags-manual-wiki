@@ -5,22 +5,22 @@ This section lists the functions and properties common to all types of
 GUI control. Each individual control type (Button, ListBox, etc) also
 has its own specific section.
 
-[GetAtScreenXY (GUI control)](#GetAtScreenXY)\
-[AsType properties (GUI controls)](#AsType)\
-[BringToFront (GUI controls)](#BringToFront)\
-[Clickable property (GUI controls)](#Clickable)\
-[Enabled property (GUI controls)](#Enabled)\
-[Height property (GUI controls)](#Height)\
-[ID property (GUI controls)](#ID)\
-[OwningGUI property (GUI controls)](#OwningGUI)\
-[SendToBack (GUI controls)](#SendToBack)\
-[SetPosition (GUI controls)](#SetPosition)\
-[SetSize (GUI controls)](#SetSize)\
-[Visible property (GUI controls)](#Visible)\
-[Width property (GUI controls)](#Width)\
-[X property (GUI controls)](#X)\
-[Y property (GUI controls)](#Y)\
-[ZOrder property (GUI controls)](#ZOrder)
+[GetAtScreenXY](#GetAtScreenXY)\
+[AsType properties](#AsType)\
+[BringToFront](#BringToFront)\
+[Clickable property](#Clickable)\
+[Enabled property](#Enabled)\
+[Height property](#Height)\
+[ID property](#ID)\
+[OwningGUI property](#OwningGUI)\
+[SendToBack](#SendToBack)\
+[SetPosition](#SetPosition)\
+[SetSize](#SetSize)\
+[Visible property](#Visible)\
+[Width property](#Width)\
+[X property](#X)\
+[Y property](#Y)\
+[ZOrder property](#ZOrder)
 
 ---
 

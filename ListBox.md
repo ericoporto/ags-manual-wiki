@@ -1,40 +1,40 @@
 GUI List Box functions and properties
 -------------------------------------
 
-[BringToFront (inherited)](GUIControl#BringToFront)\
-[Clickable property (inherited)](GUIControl#Clickable)\
-[Enabled property (inherited)](GUIControl#Enabled)\
-[Height property (inherited)](GUIControl#Height)\
-[ID property (inherited)](GUIControl#ID)\
-[OwningGUI property (inherited)](GUIControl#OwningGUI)\
-[SendToBack (inherited)](GUIControl#SendToBack)\
-[SetPosition (inherited)](GUIControl#SetPosition)\
-[SetSize (inherited)](GUIControl#SetSize)\
-[Visible property (inherited)](GUIControl#Visible)\
-[Width property (inherited)](GUIControl#Width)\
-[X property (inherited)](GUIControl#X)\
-[Y property (inherited)](GUIControl#Y)\
-[ZOrder property (inherited)](GUIControl#ZOrder)
+[BringToFront](GUIControl#BringToFront)\
+[Clickable property](GUIControl#Clickable)\
+[Enabled property](GUIControl#Enabled)\
+[Height property](GUIControl#Height)\
+[ID property](GUIControl#ID)\
+[OwningGUI property](GUIControl#OwningGUI)\
+[SendToBack](GUIControl#SendToBack)\
+[SetPosition](GUIControl#SetPosition)\
+[SetSize](GUIControl#SetSize)\
+[Visible property](GUIControl#Visible)\
+[Width property](GUIControl#Width)\
+[X property](GUIControl#X)\
+[Y property](GUIControl#Y)\
+[ZOrder property](GUIControl#ZOrder)
 
 [AddItem](#AddItem)\
-[Clear (list box)](#Clear)\
+[Clear](#Clear)\
 [FillDirList](#FillDirList)\
 [FillSaveGameList](#FillSaveGameList)\
 [GetItemAtLocation](#GetItemAtLocation)\
 [InsertItemAt](#InsertItemAt)\
 [RemoveItem](#RemoveItem)\
-[ScrollDown (list box)](#ScrollDown)\
-[ScrollUp (list box)](#ScrollUp)\
-[Font property (list box)](#Font)\
-[HideBorder property (list box)](#HideBorder)\
-[HideScrollArrows property (list box)](#HideScrollArrows)\
-[ItemCount property (list box)](#ItemCount)\
+[ScrollDown](#ScrollDown)\
+[ScrollUp](#ScrollUp)\
+[Font property](#Font)\
+[HideBorder property](#HideBorder)\
+[HideScrollArrows property](#HideScrollArrows)\
+[ItemCount property](#ItemCount)\
 [Items property](#Items)\
-[RowCount property (list box)](#RowCount)\
+[RowCount property](#RowCount)\
 [SaveGameSlots property](#SaveGameSlots)\
 [SelectedIndex property](#SelectedIndex)\
-[TopItem property (list box)](#TopItem)\
-[Translated property (list box)](#Translated)
+[TopItem property](#TopItem)\
+[Translated property](#Translated)
 
 ---
 

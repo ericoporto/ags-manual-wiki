@@ -1,11 +1,11 @@
 Region functions and properties
 -------------------------------
 
-[GetAtRoomXY (region)](#GetAtRoomXY)\
-[RunInteraction (region)](#RunInteraction)\
-[Tint (region)](#Tint)\
-[Enabled property (region)](#Enabled)\
-[ID property (region)](#ID)\
+[GetAtRoomXY](#GetAtRoomXY)\
+[RunInteraction](#RunInteraction)\
+[Tint](#Tint)\
+[Enabled property](#Enabled)\
+[ID property](#ID)\
 [LightLevel property](#LightLevel)\
 [TintEnabled property](#TintEnabled)\
 [TintBlue property](#TintBlue)\

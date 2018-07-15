@@ -16,7 +16,7 @@ Script language keywords
 [function](#function)\
 [return](#returnstatement)\
 [struct](#struct)\
-[managed (struct)](#managedmodifier)\
+[managed](#managedmodifier)\
 [new](#newstatement)\
 [enum](#enum)\
 [this](#this)\
@@ -729,7 +729,7 @@ Example:
       SomeApple = new Apple;
     }
 
-See Also: [managed (struct)](enum#managedmodifier), [Pointers in
+See Also: [managed](enum#managedmodifier), [Pointers in
 AGS](Pointers)
 
 ---
