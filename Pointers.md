@@ -103,16 +103,16 @@ can't work out, feel free to ask on the Technical forums.
 
 ---
 
-### Pointers for people who know Java or C`#`
+### Pointers for people who know Java or C#
 
 AGS pointers work in a very similar way to object variables in Java and
-C`#`. The main difference is that AGS pointers are declared in the
+C#. The main difference is that AGS pointers are declared in the
 C-style manner with an asterisk t represent the pointer. So:
 
     Hotspot *hs;
 
 would declare a variable *hs* which points to a Hotspot. This would be
-equivalent to the following in Java or C`#`:
+equivalent to the following in Java or C#:
 
     Hotspot hs;
 
@@ -120,12 +120,12 @@ In AGS, pointers are used to point to various built-in types, such as
 Hotspots, Inventory Items, Characters and so on. Because AGS does not
 have a *new* keyword, you cannot create pointers to custom struct types.
 
-You use pointers in the same way as you would in Java and C`#`. Various
+You use pointers in the same way as you would in Java and C#. Various
 built-in AGS static methods return a pointer to an instance (for
 example, [File.Open](File#open),
 [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy), and so on).
 You can save this pointer into a pointer variable, and then call its
-methods as you would in Java or C`#`. The following examples are all
+methods as you would in Java or C#. The following examples are all
 valid:
 
     File *theFile = File.Open("test.dat", eFileWrite);
@@ -137,7 +137,7 @@ valid:
     file2.Close();
 
 If you attempt to call a method on a null pointer, an error will occur
-(just like you'd get an exception in Java or C`#`).
+(just like you'd get an exception in Java or C#).
 
 Pointer memory management in AGS is all automatic -- the memory is freed
 when there are no longer any variables pointing to the instance. Thus,
