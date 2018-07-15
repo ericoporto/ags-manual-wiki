@@ -1,13 +1,13 @@
 ViewFrame functions and properties
 ----------------------------------
 
-[Flipped property](#ViewFrame.Flipped)\
-[Frame property (view frame)](#ViewFrame.Frame)\
-[Graphic property (view frame)](#ViewFrame.Graphic)\
-[LinkedAudio property (view frame)](#ViewFrame.LinkedAudio)\
-[Loop property (view frame)](#ViewFrame.Loop)\
-[Speed property (view frame)](#ViewFrame.Speed)\
-[View property (view frame)](#ViewFrame.View)
+[Flipped property](#Flipped)\
+[Frame property (view frame)](#Frame)\
+[Graphic property (view frame)](#Graphic)\
+[LinkedAudio property (view frame)](#LinkedAudio)\
+[Loop property (view frame)](#Loop)\
+[Speed property (view frame)](#Speed)\
+[View property (view frame)](#View)
 
 ---
 

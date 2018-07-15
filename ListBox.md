@@ -1,40 +1,40 @@
 GUI List Box functions and properties
 -------------------------------------
 
-[BringToFront (inherited)](topic53#GUIControl.BringToFront)\
-[Clickable property (inherited)](topic53#GUIControl.Clickable)\
-[Enabled property (inherited)](topic53#GUIControl.Enabled)\
-[Height property (inherited)](topic53#GUIControl.Height)\
-[ID property (inherited)](topic53#GUIControl.ID)\
-[OwningGUI property (inherited)](topic53#GUIControl.OwningGUI)\
-[SendToBack (inherited)](topic53#GUIControl.SendToBack)\
-[SetPosition (inherited)](topic53#GUIControl.SetPosition)\
-[SetSize (inherited)](topic53#GUIControl.SetSize)\
-[Visible property (inherited)](topic53#GUIControl.Visible)\
-[Width property (inherited)](topic53#GUIControl.Width)\
-[X property (inherited)](topic53#GUIControl.X)\
-[Y property (inherited)](topic53#GUIControl.Y)\
-[ZOrder property (inherited)](topic53#GUIControl.ZOrder)
+[BringToFront (inherited)](GUIControl#BringToFront)\
+[Clickable property (inherited)](GUIControl#Clickable)\
+[Enabled property (inherited)](GUIControl#Enabled)\
+[Height property (inherited)](GUIControl#Height)\
+[ID property (inherited)](GUIControl#ID)\
+[OwningGUI property (inherited)](GUIControl#OwningGUI)\
+[SendToBack (inherited)](GUIControl#SendToBack)\
+[SetPosition (inherited)](GUIControl#SetPosition)\
+[SetSize (inherited)](GUIControl#SetSize)\
+[Visible property (inherited)](GUIControl#Visible)\
+[Width property (inherited)](GUIControl#Width)\
+[X property (inherited)](GUIControl#X)\
+[Y property (inherited)](GUIControl#Y)\
+[ZOrder property (inherited)](GUIControl#ZOrder)
 
-[AddItem](#ListBox.AddItem)\
-[Clear (list box)](#ListBox.Clear)\
-[FillDirList](#ListBox.FillDirList)\
-[FillSaveGameList](#ListBox.FillSaveGameList)\
-[GetItemAtLocation](#ListBox.GetItemAtLocation)\
-[InsertItemAt](#ListBox.InsertItemAt)\
-[RemoveItem](#ListBox.RemoveItem)\
-[ScrollDown (list box)](#ListBox.ScrollDown)\
-[ScrollUp (list box)](#ListBox.ScrollUp)\
-[Font property (list box)](#ListBox.Font)\
-[HideBorder property (list box)](#ListBox.HideBorder)\
-[HideScrollArrows property (list box)](#ListBox.HideScrollArrows)\
-[ItemCount property (list box)](#ListBox.ItemCount)\
-[Items property](#ListBox.Items)\
-[RowCount property (list box)](#ListBox.RowCount)\
-[SaveGameSlots property](#ListBox.SaveGameSlots)\
-[SelectedIndex property](#ListBox.SelectedIndex)\
-[TopItem property (list box)](#ListBox.TopItem)\
-[Translated property (list box)](#ListBox.Translated)
+[AddItem](#AddItem)\
+[Clear (list box)](#Clear)\
+[FillDirList](#FillDirList)\
+[FillSaveGameList](#FillSaveGameList)\
+[GetItemAtLocation](#GetItemAtLocation)\
+[InsertItemAt](#InsertItemAt)\
+[RemoveItem](#RemoveItem)\
+[ScrollDown (list box)](#ScrollDown)\
+[ScrollUp (list box)](#ScrollUp)\
+[Font property (list box)](#Font)\
+[HideBorder property (list box)](#HideBorder)\
+[HideScrollArrows property (list box)](#HideScrollArrows)\
+[ItemCount property (list box)](#ItemCount)\
+[Items property](#Items)\
+[RowCount property (list box)](#RowCount)\
+[SaveGameSlots property](#SaveGameSlots)\
+[SelectedIndex property](#SelectedIndex)\
+[TopItem property (list box)](#TopItem)\
+[Translated property (list box)](#Translated)
 
 ---
 

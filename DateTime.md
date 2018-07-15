@@ -1,14 +1,14 @@
 DateTime functions and properties
 ---------------------------------
 
-[Now property](#DateTime.Now)\
-[DayOfMonth property](#DateTime.DayOfMonth)\
-[Hour property](#DateTime.Hour)\
-[Minute property](#DateTime.Minute)\
-[Month property](#DateTime.Month)\
-[RawTime property](#DateTime.RawTime)\
-[Second property](#DateTime.Second)\
-[Year property](#DateTime.Year)
+[Now property](#Now)\
+[DayOfMonth property](#DayOfMonth)\
+[Hour property](#Hour)\
+[Minute property](#Minute)\
+[Month property](#Month)\
+[RawTime property](#RawTime)\
+[Second property](#Second)\
+[Year property](#Year)
 
 ---
 

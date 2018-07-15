@@ -4,13 +4,13 @@ AudioClip functions and properties
 AudioClips are created when you import files in the AGS Editor. The
 commands in this section allow to play them.
 
-[Play](#AudioClip.Play)\
-[PlayFrom](#AudioClip.PlayFrom)\
-[PlayQueued](#AudioClip.PlayQueued)\
-[Stop (audio clip)](#AudioClip.Stop)\
-[FileType property (audio clip)](#AudioClip.FileType)\
-[IsAvailable property (audio clip)](#AudioClip.IsAvailable)\
-[Type property (audio clip)](#AudioClip.Type)
+[Play](#Play)\
+[PlayFrom](#PlayFrom)\
+[PlayQueued](#PlayQueued)\
+[Stop (audio clip)](#Stop)\
+[FileType property (audio clip)](#FileType)\
+[IsAvailable property (audio clip)](#IsAvailable)\
+[Type property (audio clip)](#Type)
 
 ---
 

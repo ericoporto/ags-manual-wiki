@@ -1,27 +1,27 @@
 Mouse functions and properties
 ------------------------------
 
-[ChangeModeGraphic](#Mouse.ChangeModeGraphic)\
-[ChangeModeHotspot](#Mouse.ChangeModeHotspot)\
-[ChangeModeView](#Mouse.ChangeModeView)\
-[Click (mouse)](#Mouse.Click)\
-[ControlEnabled property](#Mouse.ControlEnabled)\
-[DisableMode](#Mouse.DisableMode)\
-[EnableMode](#Mouse.EnableMode)\
-[GetModeGraphic](#Mouse.GetModeGraphic)\
-[IsButtonDown](#Mouse.IsButtonDown)\
-[IsModeEnabled](#Mouse.IsModeEnabled)\
-[SaveCursorUntilItLeaves](#Mouse.SaveCursorUntilItLeaves)\
-[SelectNextMode](#Mouse.SelectNextMode)\
-[SelectPreviousMode](#Mouse.SelectPreviousMode)\
-[SetBounds](#Mouse.SetBounds)\
-[SetPosition (mouse)](#Mouse.SetPosition)\
-[Speed property (mouse)](#Mouse.Speed)\
-[Update](#Mouse.Update)\
-[UseDefaultGraphic](#Mouse.UseDefaultGraphic)\
-[UseModeGraphic](#Mouse.UseModeGraphic)\
-[Mode property (mouse)](#Mouse.Mode)\
-[Visible property (mouse)](#Mouse.Visible)
+[ChangeModeGraphic](#ChangeModeGraphic)\
+[ChangeModeHotspot](#ChangeModeHotspot)\
+[ChangeModeView](#ChangeModeView)\
+[Click (mouse)](#Click)\
+[ControlEnabled property](#ControlEnabled)\
+[DisableMode](#DisableMode)\
+[EnableMode](#EnableMode)\
+[GetModeGraphic](#GetModeGraphic)\
+[IsButtonDown](#IsButtonDown)\
+[IsModeEnabled](#IsModeEnabled)\
+[SaveCursorUntilItLeaves](#SaveCursorUntilItLeaves)\
+[SelectNextMode](#SelectNextMode)\
+[SelectPreviousMode](#SelectPreviousMode)\
+[SetBounds](#SetBounds)\
+[SetPosition (mouse)](#SetPosition)\
+[Speed property (mouse)](#Speed)\
+[Update](#Update)\
+[UseDefaultGraphic](#UseDefaultGraphic)\
+[UseModeGraphic](#UseModeGraphic)\
+[Mode property (mouse)](#Mode)\
+[Visible property (mouse)](#Visible)
 
 ---
 

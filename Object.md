@@ -1,51 +1,51 @@
 Object functions and properties
 -------------------------------
 
-[Animate (object)](#Object.Animate)\
-[GetAtScreenXY (object)](#Object.GetAtScreenXY)\
-[GetProperty (object)](#Object.GetProperty)\
-[GetTextProperty (object)](#Object.GetTextProperty)\
-[SetProperty (object)](#Object.SetProperty)\
-[SetTextProperty (object)](#Object.SetTextProperty)\
-[IsCollidingWithObject (object)](#Object.IsCollidingWithObject)\
-[MergeIntoBackground](#Object.MergeIntoBackground)\
-[Move (object)](#Object.Move)\
-[RemoveTint (object)](#Object.RemoveTint)\
-[IsInteractionAvailable (object)](#Object.IsInteractionAvailable)\
-[RunInteraction (object)](#Object.RunInteraction)\
-[SetLightLevel (object)](#Object.SetLightLevel)\
-[SetPosition (object)](#Object.SetPosition)\
-[SetView](#Object.SetView)\
-[StopAnimating (object)](#Object.StopAnimating)\
-[StopMoving (object)](#Object.StopMoving)\
-[Tint (object)](#Object.Tint)\
-[Animating property (object)](#Object.Animating)\
-[Baseline property (object)](#Object.Baseline)\
-[BlockingHeight property (object)](#Object.BlockingHeight)\
-[BlockingWidth property (object)](#Object.BlockingWidth)\
-[Clickable property (object)](#Object.Clickable)\
-[Frame property (object)](#Object.Frame)\
-[Graphic property (object)](#Object.Graphic)\
-[HasExplicitLight property (object)](#Object.HasExplicitLight)\
-[HasExplicitTint property (object)](#Object.HasExplicitTint)\
-[ID property (object)](#Object.ID)\
-[IgnoreScaling property (object)](#Object.IgnoreScaling)\
-[IgnoreWalkbehinds property (object)](#Object.IgnoreWalkbehinds)\
-[LightLevel property](#Object.LightLevel)\
-[Loop property (object)](#Object.Loop)\
-[Moving property (object)](#Object.Moving)\
-[Name property (object)](#Object.Name)\
-[Solid property (object)](#Object.Solid)\
-[TintBlue property (object)](#Object.TintBlue)\
-[TintGreen property (object)](#Object.TintGreen)\
-[TintRed property (object)](#Object.TintRed)\
-[TintSaturation property (object)](#Object.TintSaturation)\
-[TintLuminance property (object)](#Object.TintLuminance)\
-[Transparency property (object)](#Object.Transparency)\
-[View property (object)](#Object.View)\
-[Visible property (object)](#Object.Visible)\
-[X property (object)](#Object.X)\
-[Y property (object)](#Object.Y)
+[Animate (object)](#Animate)\
+[GetAtScreenXY (object)](#GetAtScreenXY)\
+[GetProperty (object)](#GetProperty)\
+[GetTextProperty (object)](#GetTextProperty)\
+[SetProperty (object)](#SetProperty)\
+[SetTextProperty (object)](#SetTextProperty)\
+[IsCollidingWithObject (object)](#IsCollidingWithObject)\
+[MergeIntoBackground](#MergeIntoBackground)\
+[Move (object)](#Move)\
+[RemoveTint (object)](#RemoveTint)\
+[IsInteractionAvailable (object)](#IsInteractionAvailable)\
+[RunInteraction (object)](#RunInteraction)\
+[SetLightLevel (object)](#SetLightLevel)\
+[SetPosition (object)](#SetPosition)\
+[SetView](#SetView)\
+[StopAnimating (object)](#StopAnimating)\
+[StopMoving (object)](#StopMoving)\
+[Tint (object)](#Tint)\
+[Animating property (object)](#Animating)\
+[Baseline property (object)](#Baseline)\
+[BlockingHeight property (object)](#BlockingHeight)\
+[BlockingWidth property (object)](#BlockingWidth)\
+[Clickable property (object)](#Clickable)\
+[Frame property (object)](#Frame)\
+[Graphic property (object)](#Graphic)\
+[HasExplicitLight property (object)](#HasExplicitLight)\
+[HasExplicitTint property (object)](#HasExplicitTint)\
+[ID property (object)](#ID)\
+[IgnoreScaling property (object)](#IgnoreScaling)\
+[IgnoreWalkbehinds property (object)](#IgnoreWalkbehinds)\
+[LightLevel property](#LightLevel)\
+[Loop property (object)](#Loop)\
+[Moving property (object)](#Moving)\
+[Name property (object)](#Name)\
+[Solid property (object)](#Solid)\
+[TintBlue property (object)](#TintBlue)\
+[TintGreen property (object)](#TintGreen)\
+[TintRed property (object)](#TintRed)\
+[TintSaturation property (object)](#TintSaturation)\
+[TintLuminance property (object)](#TintLuminance)\
+[Transparency property (object)](#Transparency)\
+[View property (object)](#View)\
+[Visible property (object)](#Visible)\
+[X property (object)](#X)\
+[Y property (object)](#Y)
 
 ---
 

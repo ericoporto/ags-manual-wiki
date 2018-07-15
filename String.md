@@ -1,25 +1,25 @@
 String functions
 ----------------
 
-[Append](#String.Append)\
-[AppendChar](#String.AppendChar)\
-[CompareTo](#String.CompareTo)\
-[Copy](#String.Copy)\
-[EndsWith](#String.EndsWith)\
-[Format](#String.Format)\
-[IndexOf](#String.IndexOf)\
-[IsNullOrEmpty](#String.IsNullOrEmpty)\
-[LowerCase](#String.LowerCase)\
-[Replace](#String.Replace)\
-[ReplaceCharAt](#String.ReplaceCharAt)\
-[StartsWith](#String.StartsWith)\
-[Substring](#String.Substring)\
-[Truncate](#String.Truncate)\
-[UpperCase](#String.UpperCase)\
-[AsFloat property](#String.AsFloat)\
-[AsInt property](#String.AsInt)\
-[Chars property](#String.Chars)\
-[Length property](#String.Length)
+[Append](#Append)\
+[AppendChar](#AppendChar)\
+[CompareTo](#CompareTo)\
+[Copy](#Copy)\
+[EndsWith](#EndsWith)\
+[Format](#Format)\
+[IndexOf](#IndexOf)\
+[IsNullOrEmpty](#IsNullOrEmpty)\
+[LowerCase](#LowerCase)\
+[Replace](#Replace)\
+[ReplaceCharAt](#ReplaceCharAt)\
+[StartsWith](#StartsWith)\
+[Substring](#Substring)\
+[Truncate](#Truncate)\
+[UpperCase](#UpperCase)\
+[AsFloat property](#AsFloat)\
+[AsInt property](#AsInt)\
+[Chars property](#Chars)\
+[Length property](#Length)
 
 ---
 

@@ -1,27 +1,27 @@
 DynamicSprite functions and properties
 --------------------------------------
 
-[Create (dynamic sprite)](#DynamicSprite.Create)\
-[CreateFromBackground](#DynamicSprite.CreateFromBackground)\
-[CreateFromDrawingSurface](#DynamicSprite.CreateFromDrawingSurface)\
-[CreateFromExistingSprite](#DynamicSprite.CreateFromExistingSprite)\
-[CreateFromFile](#DynamicSprite.CreateFromFile)\
-[CreateFromSaveGame](#DynamicSprite.CreateFromSaveGame)\
-[CreateFromScreenShot](#DynamicSprite.CreateFromScreenShot)\
-[ChangeCanvasSize](#DynamicSprite.ChangeCanvasSize)\
-[CopyTransparencyMask](#DynamicSprite.CopyTransparencyMask)\
-[Crop (dynamic sprite)](#DynamicSprite.Crop)\
-[Delete (dynamic sprite)](#DynamicSprite.Delete)\
-[Flip (dynamic sprite)](#DynamicSprite.Flip)\
-[GetDrawingSurface (dynamic sprite)](#DynamicSprite.GetDrawingSurface)\
-[Resize (dynamic sprite)](#DynamicSprite.Resize)\
-[Rotate (dynamic sprite)](#DynamicSprite.Rotate)\
-[SaveToFile (dynamic sprite)](#DynamicSprite.SaveToFile)\
-[Tint (dynamic sprite)](#DynamicSprite.Tint)\
-[ColorDepth property (dynamic sprite)](#DynamicSprite.ColorDepth)\
-[Graphic property (dynamic sprite)](#DynamicSprite.Graphic)\
-[Height property (dynamic sprite)](#DynamicSprite.Height)\
-[Width property (dynamic sprite)](#DynamicSprite.Width)
+[Create (dynamic sprite)](#Create)\
+[CreateFromBackground](#CreateFromBackground)\
+[CreateFromDrawingSurface](#CreateFromDrawingSurface)\
+[CreateFromExistingSprite](#CreateFromExistingSprite)\
+[CreateFromFile](#CreateFromFile)\
+[CreateFromSaveGame](#CreateFromSaveGame)\
+[CreateFromScreenShot](#CreateFromScreenShot)\
+[ChangeCanvasSize](#ChangeCanvasSize)\
+[CopyTransparencyMask](#CopyTransparencyMask)\
+[Crop (dynamic sprite)](#Crop)\
+[Delete (dynamic sprite)](#Delete)\
+[Flip (dynamic sprite)](#Flip)\
+[GetDrawingSurface (dynamic sprite)](#GetDrawingSurface)\
+[Resize (dynamic sprite)](#Resize)\
+[Rotate (dynamic sprite)](#Rotate)\
+[SaveToFile (dynamic sprite)](#SaveToFile)\
+[Tint (dynamic sprite)](#Tint)\
+[ColorDepth property (dynamic sprite)](#ColorDepth)\
+[Graphic property (dynamic sprite)](#Graphic)\
+[Height property (dynamic sprite)](#Height)\
+[Width property (dynamic sprite)](#Width)
 
 ---
 

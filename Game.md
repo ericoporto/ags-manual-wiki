@@ -2,15 +2,15 @@ Multimedia functions
 --------------------
 
 [CDAudio](#CDAudio)\
-[IsAudioPlaying](#Game.IsAudioPlaying)\
+[IsAudioPlaying](#IsAudioPlaying)\
 [IsSpeechVoxAvailable](#IsSpeechVoxAvailable)\
 [PlayFlic](#PlayFlic)\
 [PlaySilentMIDI](#PlaySilentMIDI)\
 [PlayVideo](#PlayVideo)\
-[SetAudioTypeSpeechVolumeDrop](#Game.SetAudioTypeSpeechVolumeDrop)\
-[SetAudioTypeVolume](#Game.SetAudioTypeVolume)\
+[SetAudioTypeSpeechVolumeDrop](#SetAudioTypeSpeechVolumeDrop)\
+[SetAudioTypeVolume](#SetAudioTypeVolume)\
 [SetSpeechVolume](#SetSpeechVolume)\
-[StopAudio](#Game.StopAudio)
+[StopAudio](#StopAudio)
 
 ---
 

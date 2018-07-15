@@ -5,18 +5,18 @@ Room functions
 [DisableGroundLevelAreas](#DisableGroundLevelAreas)\
 [EnableGroundLevelAreas](#EnableGroundLevelAreas)\
 [GetBackgroundFrame](#GetBackgroundFrame)\
-[GetDrawingSurfaceForBackground](#Room.GetDrawingSurfaceForBackground)\
+[GetDrawingSurfaceForBackground](#GetDrawingSurfaceForBackground)\
 [GetPlayerCharacter](#GetPlayerCharacter)\
-[GetProperty (room)](#Room.GetProperty)\
-[GetTextProperty (room)](#Room.GetTextProperty)\
-[SetProperty (room)](#Room.SetProperty)\
-[SetTextProperty (room)](#Room.SetTextProperty)\
+[GetProperty (room)](#GetProperty)\
+[GetTextProperty (room)](#GetTextProperty)\
+[SetProperty (room)](#SetProperty)\
+[SetTextProperty (room)](#SetTextProperty)\
 [GetScalingAt](#GetScalingAt)\
 [GetViewportX](#GetViewportX)\
 [GetViewportY](#GetViewportY)\
 [GetWalkableAreaAt](#GetWalkableAreaAt)\
 [HasPlayerBeenInRoom](#HasPlayerBeenInRoom)\
-[ProcessClick (Room)](#Room.ProcessClick)\
+[ProcessClick (Room)](#ProcessClick)\
 [ReleaseViewport](#ReleaseViewport)\
 [RemoveWalkableArea](#RemoveWalkableArea)\
 [ResetRoom](#ResetRoom)\
@@ -25,16 +25,16 @@ Room functions
 [SetBackgroundFrame](#SetBackgroundFrame)\
 [SetViewport](#SetViewport)\
 [SetWalkBehindBase](#SetWalkBehindBase)\
-[BottomEdge property](#Room.BottomEdge)\
-[ColorDepth property (room)](#Room.ColorDepth)\
-[Height property (room)](#Room.Height)\
-[LeftEdge property](#Room.LeftEdge)\
-[Messages property](#Room.Messages)\
-[MusicOnLoad property](#Room.MusicOnLoad)\
-[ObjectCount property](#Room.ObjectCount)\
-[RightEdge property](#Room.RightEdge)\
-[TopEdge property](#Room.TopEdge)\
-[Width property (room)](#Room.Width)
+[BottomEdge property](#BottomEdge)\
+[ColorDepth property (room)](#ColorDepth)\
+[Height property (room)](#Height)\
+[LeftEdge property](#LeftEdge)\
+[Messages property](#Messages)\
+[MusicOnLoad property](#MusicOnLoad)\
+[ObjectCount property](#ObjectCount)\
+[RightEdge property](#RightEdge)\
+[TopEdge property](#TopEdge)\
+[Width property (room)](#Width)
 
 ---
 

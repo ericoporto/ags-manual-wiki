@@ -1,13 +1,13 @@
 Overlay functions and properties
 --------------------------------
 
-[CreateGraphical](#Overlay.CreateGraphical)\
-[CreateTextual](#Overlay.CreateTextual)\
-[Remove (overlay)](#Overlay.Remove)\
-[SetText (overlay)](#Overlay.SetText)\
-[Valid property (overlay)](#Overlay.Valid)\
-[X property (overlay)](#Overlay.X)\
-[Y property (overlay)](#Overlay.Y)
+[CreateGraphical](#CreateGraphical)\
+[CreateTextual](#CreateTextual)\
+[Remove (overlay)](#Remove)\
+[SetText (overlay)](#SetText)\
+[Valid property (overlay)](#Valid)\
+[X property (overlay)](#X)\
+[Y property (overlay)](#Y)
 
 ---
 

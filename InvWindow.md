@@ -1,31 +1,31 @@
 GUI InvWindow functions and properties
 --------------------------------------
 
-[BringToFront (inherited)](topic53#GUIControl.BringToFront)\
-[Clickable property (inherited)](topic53#GUIControl.Clickable)\
-[Enabled property (inherited)](topic53#GUIControl.Enabled)\
-[Height property (inherited)](topic53#GUIControl.Height)\
-[ID property (inherited)](topic53#GUIControl.ID)\
-[OwningGUI property (inherited)](topic53#GUIControl.OwningGUI)\
-[SendToBack (inherited)](topic53#GUIControl.SendToBack)\
-[SetPosition (inherited)](topic53#GUIControl.SetPosition)\
-[SetSize (inherited)](topic53#GUIControl.SetSize)\
-[Visible property (inherited)](topic53#GUIControl.Visible)\
-[Width property (inherited)](topic53#GUIControl.Width)\
-[X property (inherited)](topic53#GUIControl.X)\
-[Y property (inherited)](topic53#GUIControl.Y)\
-[ZOrder property (inherited)](topic53#GUIControl.ZOrder)
+[BringToFront (inherited)](GUIControl#BringToFront)\
+[Clickable property (inherited)](GUIControl#Clickable)\
+[Enabled property (inherited)](GUIControl#Enabled)\
+[Height property (inherited)](GUIControl#Height)\
+[ID property (inherited)](GUIControl#ID)\
+[OwningGUI property (inherited)](GUIControl#OwningGUI)\
+[SendToBack (inherited)](GUIControl#SendToBack)\
+[SetPosition (inherited)](GUIControl#SetPosition)\
+[SetSize (inherited)](GUIControl#SetSize)\
+[Visible property (inherited)](GUIControl#Visible)\
+[Width property (inherited)](GUIControl#Width)\
+[X property (inherited)](GUIControl#X)\
+[Y property (inherited)](GUIControl#Y)\
+[ZOrder property (inherited)](GUIControl#ZOrder)
 
-[ScrollDown (inv window)](#InvWindow.ScrollDown)\
-[ScrollUp (inv window)](#InvWindow.ScrollUp)\
-[CharacterToUse property](#InvWindow.CharacterToUse)\
-[ItemAtIndex property](#InvWindow.ItemAtIndex)\
-[ItemCount property (inv window)](#InvWindow.ItemCount)\
-[ItemHeight property](#InvWindow.ItemHeight)\
-[ItemWidth property](#InvWindow.ItemWidth)\
-[ItemsPerRow property](#InvWindow.ItemsPerRow)\
-[RowCount property (inv window)](#InvWindow.RowCount)\
-[TopItem property (inv window)](#InvWindow.TopItem)
+[ScrollDown (inv window)](#ScrollDown)\
+[ScrollUp (inv window)](#ScrollUp)\
+[CharacterToUse property](#CharacterToUse)\
+[ItemAtIndex property](#ItemAtIndex)\
+[ItemCount property (inv window)](#ItemCount)\
+[ItemHeight property](#ItemHeight)\
+[ItemWidth property](#ItemWidth)\
+[ItemsPerRow property](#ItemsPerRow)\
+[RowCount property (inv window)](#RowCount)\
+[TopItem property (inv window)](#TopItem)
 
 ---
 

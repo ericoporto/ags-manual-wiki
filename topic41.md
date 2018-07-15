@@ -34,7 +34,7 @@ properties**](DrawingSurfaceFunctions#DrawingSurfaceFunctions)\
 [**File functions and properties**](topic52#topic52)\
 [**Game / Global functions**](Game#GlobalCommands)\
 [**GUI functions and properties**](GUIFuncsAndProps#GUIFuncsAndProps)\
-[**GUI control functions and properties**](topic53#topic53)\
+[**GUI control functions and properties**](GUIControl#GUIControl)\
 [**GUI Button functions and properties**](topic54#topic54)\
 [**GUI InvWindow functions and properties**](GUIInvFuncs#GUIInvFuncs)\
 [**GUI Label functions and properties**](topic55#topic55)\

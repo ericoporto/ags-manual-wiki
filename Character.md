@@ -1,104 +1,104 @@
 Character functions and properties
 ----------------------------------
 
-[AddInventory](#Character.AddInventory)\
-[AddWaypoint](#Character.AddWaypoint)\
-[Animate (character)](#Character.Animate)\
-[ChangeRoom](#Character.ChangeRoom)\
-[ChangeRoomAutoPosition](#Character.ChangeRoomAutoPosition)\
-[ChangeView](#Character.ChangeView)\
-[FaceCharacter](#Character.FaceCharacter)\
-[FaceDirection](#Character.FaceDirection)\
-[FaceLocation](#Character.FaceLocation)\
-[FaceObject](#Character.FaceObject)\
-[FollowCharacter](#Character.FollowCharacter)\
-[GetAtScreenXY (character)](#Character.GetAtScreenXY)\
-[GetProperty (character)](#Character.GetProperty)\
-[GetTextProperty (character)](#Character.GetTextProperty)\
-[SetProperty (character)](#Character.SetProperty)\
-[SetTextProperty (character)](#Character.SetTextProperty)\
-[HasExplicitLight property (character)](#Character.HasExplicitLight)\
-[HasInventory](#Character.HasInventory)\
-[IsCollidingWithChar](#Character.IsCollidingWithChar)\
-[IsCollidingWithObject (character)](#Character.IsCollidingWithObject)\
-[LightLevel property](#Character.LightLevel)\
-[LockView](#Character.LockView)\
-[LockViewAligned](#Character.LockViewAligned)\
-[LockViewFrame](#Character.LockViewFrame)\
-[LockViewOffset](#Character.LockViewOffset)\
-[LoseInventory](#Character.LoseInventory)\
-[Move (character)](#Character.Move)\
-[PlaceOnWalkableArea](#Character.PlaceOnWalkableArea)\
-[RemoveTint (character)](#Character.RemoveTint)\
-[IsInteractionAvailable (character)](#Character.IsInteractionAvailable)\
-[RunInteraction (character)](#Character.RunInteraction)\
-[Say](#Character.Say)\
-[SayAt](#Character.SayAt)\
-[SayBackground](#Character.SayBackground)\
-[SetAsPlayer](#Character.SetAsPlayer)\
-[SetLightLevel (character)](#Character.SetLightLevel)\
-[SetIdleView](#Character.SetIdleView)\
-[SetWalkSpeed](#Character.SetWalkSpeed)\
-[StopMoving (character)](#Character.StopMoving)\
-[Think](#Character.Think)\
-[Tint (character)](#Character.Tint)\
-[TintBlue property (character)](#Character.TintBlue)\
-[TintGreen property (character)](#Character.TintGreen)\
-[TintRed property (character)](#Character.TintRed)\
-[TintSaturation property (character)](#Character.TintSaturation)\
-[TintLuminance property (character)](#Character.TintLuminance)\
-[UnlockView](#Character.UnlockView)\
-[Walk](#Character.Walk)\
-[WalkStraight](#Character.WalkStraight)\
-[ActiveInventory property](#Character.ActiveInventory)\
-[Animating property (character)](#Character.Animating)\
-[AnimationSpeed property](#Character.AnimationSpeed)\
-[Baseline property (character)](#Character.Baseline)\
-[BlinkInterval property](#Character.BlinkInterval)\
-[BlinkView property](#Character.BlinkView)\
-[BlinkWhileThinking property](#Character.BlinkWhileThinking)\
-[BlockingHeight property (character)](#Character.BlockingHeight)\
-[BlockingWidth property (character)](#Character.BlockingWidth)\
-[Clickable property (character)](#Character.Clickable)\
-[DestinationX property](#Character.DestinationX)\
-[DestinationY property](#Character.DestinationY)\
-[DiagonalLoops property](#Character.DiagonalLoops)\
-[Frame property (character)](#Character.Frame)\
-[HasExplicitTint property (character)](#Character.HasExplicitTint)\
-[ID property (character)](#Character.ID)\
-[IdleView property](#Character.IdleView)\
-[IgnoreLighting property](#Character.IgnoreLighting)\
-[IgnoreWalkbehinds property (character)](#Character.IgnoreWalkbehinds)\
-[InventoryQuantity property](#Character.InventoryQuantity)\
-[Loop property (character)](#Character.Loop)\
-[ManualScaling property (character)](#Character.ManualScaling)\
+[AddInventory](#AddInventory)\
+[AddWaypoint](#AddWaypoint)\
+[Animate (character)](#Animate)\
+[ChangeRoom](#ChangeRoom)\
+[ChangeRoomAutoPosition](#ChangeRoomAutoPosition)\
+[ChangeView](#ChangeView)\
+[FaceCharacter](#FaceCharacter)\
+[FaceDirection](#FaceDirection)\
+[FaceLocation](#FaceLocation)\
+[FaceObject](#FaceObject)\
+[FollowCharacter](#FollowCharacter)\
+[GetAtScreenXY (character)](#GetAtScreenXY)\
+[GetProperty (character)](#GetProperty)\
+[GetTextProperty (character)](#GetTextProperty)\
+[SetProperty (character)](#SetProperty)\
+[SetTextProperty (character)](#SetTextProperty)\
+[HasExplicitLight property (character)](#HasExplicitLight)\
+[HasInventory](#HasInventory)\
+[IsCollidingWithChar](#IsCollidingWithChar)\
+[IsCollidingWithObject (character)](#IsCollidingWithObject)\
+[LightLevel property](#LightLevel)\
+[LockView](#LockView)\
+[LockViewAligned](#LockViewAligned)\
+[LockViewFrame](#LockViewFrame)\
+[LockViewOffset](#LockViewOffset)\
+[LoseInventory](#LoseInventory)\
+[Move (character)](#Move)\
+[PlaceOnWalkableArea](#PlaceOnWalkableArea)\
+[RemoveTint (character)](#RemoveTint)\
+[IsInteractionAvailable (character)](#IsInteractionAvailable)\
+[RunInteraction (character)](#RunInteraction)\
+[Say](#Say)\
+[SayAt](#SayAt)\
+[SayBackground](#SayBackground)\
+[SetAsPlayer](#SetAsPlayer)\
+[SetLightLevel (character)](#SetLightLevel)\
+[SetIdleView](#SetIdleView)\
+[SetWalkSpeed](#SetWalkSpeed)\
+[StopMoving (character)](#StopMoving)\
+[Think](#Think)\
+[Tint (character)](#Tint)\
+[TintBlue property (character)](#TintBlue)\
+[TintGreen property (character)](#TintGreen)\
+[TintRed property (character)](#TintRed)\
+[TintSaturation property (character)](#TintSaturation)\
+[TintLuminance property (character)](#TintLuminance)\
+[UnlockView](#UnlockView)\
+[Walk](#Walk)\
+[WalkStraight](#WalkStraight)\
+[ActiveInventory property](#ActiveInventory)\
+[Animating property (character)](#Animating)\
+[AnimationSpeed property](#AnimationSpeed)\
+[Baseline property (character)](#Baseline)\
+[BlinkInterval property](#BlinkInterval)\
+[BlinkView property](#BlinkView)\
+[BlinkWhileThinking property](#BlinkWhileThinking)\
+[BlockingHeight property (character)](#BlockingHeight)\
+[BlockingWidth property (character)](#BlockingWidth)\
+[Clickable property (character)](#Clickable)\
+[DestinationX property](#DestinationX)\
+[DestinationY property](#DestinationY)\
+[DiagonalLoops property](#DiagonalLoops)\
+[Frame property (character)](#Frame)\
+[HasExplicitTint property (character)](#HasExplicitTint)\
+[ID property (character)](#ID)\
+[IdleView property](#IdleView)\
+[IgnoreLighting property](#IgnoreLighting)\
+[IgnoreWalkbehinds property (character)](#IgnoreWalkbehinds)\
+[InventoryQuantity property](#InventoryQuantity)\
+[Loop property (character)](#Loop)\
+[ManualScaling property (character)](#ManualScaling)\
 [MovementLinkedToAnimation
-property](#Character.MovementLinkedToAnimation)\
-[Moving property (character)](#Character.Moving)\
-[Name property (character)](#Character.Name)\
-[NormalView property](#Character.NormalView)\
-[PreviousRoom property](#Character.PreviousRoom)\
-[Room property](#Character.Room)\
-[ScaleMoveSpeed property](#Character.ScaleMoveSpeed)\
-[ScaleVolume property](#Character.ScaleVolume)\
-[Scaling property (character)](#Character.Scaling)\
-[Solid property (character)](#Character.Solid)\
-[Speaking property](#Character.Speaking)\
-[SpeakingFrame property](#Character.SpeakingFrame)\
-[SpeechAnimationDelay property](#Character.SpeechAnimationDelay)\
-[SpeechColor property](#Character.SpeechColor)\
-[SpeechView property](#Character.SpeechView)\
-[Thinking property](#Character.Thinking)\
-[ThinkingFrame property](#Character.ThinkingFrame)\
-[ThinkView property](#Character.ThinkView)\
-[Transparency property (character)](#Character.Transparency)\
-[TurnBeforeWalking property](#Character.TurnBeforeWalking)\
-[View property (character)](#Character.View)\
-[WalkSpeedX property](#Character.WalkSpeedX)\
-[WalkSpeedY property](#Character.WalkSpeedY)\
-[x property (character)](#Character.x)\
-[y property (character)](#Character.y)\
-[z property (character)](#Character.z)\
+property](#MovementLinkedToAnimation)\
+[Moving property (character)](#Moving)\
+[Name property (character)](#Name)\
+[NormalView property](#NormalView)\
+[PreviousRoom property](#PreviousRoom)\
+[Room property](#Room)\
+[ScaleMoveSpeed property](#ScaleMoveSpeed)\
+[ScaleVolume property](#ScaleVolume)\
+[Scaling property (character)](#Scaling)\
+[Solid property (character)](#Solid)\
+[Speaking property](#Speaking)\
+[SpeakingFrame property](#SpeakingFrame)\
+[SpeechAnimationDelay property](#SpeechAnimationDelay)\
+[SpeechColor property](#SpeechColor)\
+[SpeechView property](#SpeechView)\
+[Thinking property](#Thinking)\
+[ThinkingFrame property](#ThinkingFrame)\
+[ThinkView property](#ThinkView)\
+[Transparency property (character)](#Transparency)\
+[TurnBeforeWalking property](#TurnBeforeWalking)\
+[View property (character)](#View)\
+[WalkSpeedX property](#WalkSpeedX)\
+[WalkSpeedY property](#WalkSpeedY)\
+[x property (character)](#x)\
+[y property (character)](#y)\
+[z property (character)](#z)\
 [SetCharacterProperty](#SetCharacterProperty)
 
 ---

@@ -1,18 +1,18 @@
 Speech functions and properties
 -------------------------------
 
-[AnimationStopTimeMargin](#Speech.AnimationStopTimeMargin)\
-[CustomPortraitPlacement](#Speech.CustomPortraitPlacement)\
-[DisplayPostTimeMs](#Speech.DisplayPostTimeMs)\
-[GlobalSpeechAnimationDelay](#Speech.GlobalSpeechAnimationDelay)\
-[PortraitXOffset](#Speech.PortraitXOffset)\
-[PortraitY](#Speech.PortraitY)\
-[SkipKey](#Speech.SkipKey)\
-[SkipStyle](#Speech.SkipStyle)\
-[Style](#Speech.Style)\
-[TextAlignment](#Speech.TextAlignment)\
-[UseGlobalSpeechAnimationDelay](#Speech.UseGlobalSpeechAnimationDelay)\
-[VoiceMode](#Speech.VoiceMode)
+[AnimationStopTimeMargin](#AnimationStopTimeMargin)\
+[CustomPortraitPlacement](#CustomPortraitPlacement)\
+[DisplayPostTimeMs](#DisplayPostTimeMs)\
+[GlobalSpeechAnimationDelay](#GlobalSpeechAnimationDelay)\
+[PortraitXOffset](#PortraitXOffset)\
+[PortraitY](#PortraitY)\
+[SkipKey](#SkipKey)\
+[SkipStyle](#SkipStyle)\
+[Style](#Style)\
+[TextAlignment](#TextAlignment)\
+[UseGlobalSpeechAnimationDelay](#UseGlobalSpeechAnimationDelay)\
+[VoiceMode](#VoiceMode)
 
 ---
 

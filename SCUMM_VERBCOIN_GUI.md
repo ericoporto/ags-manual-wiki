@@ -5,30 +5,30 @@ SCUMM\_VERBCOIN\_GUI is a script module that is included with the Verb
 Coin template. The functions in this section are only available if you
 have created your game using that template.
 
-[SCUMM\_VERBCOIN\_GUI Deselect](#SCUMM_VERBCOIN_GUI.Deselect)\
+[SCUMM\_VERBCOIN\_GUI Deselect](#Deselect)\
 [SCUMM\_VERBCOIN\_GUI
-DisableVerbCoinGUI](#SCUMM_VERBCOIN_GUI.DisableVerbCoinGUI)\
+DisableVerbCoinGUI](#DisableVerbCoinGUI)\
 [SCUMM\_VERBCOIN\_GUI
-DoubleClickSpeed](#SCUMM_VERBCOIN_GUI.DoubleClickSpeed)\
-[SCUMM\_VERBCOIN\_GUI GoInventory](#SCUMM_VERBCOIN_GUI.GoInventory)\
-[SCUMM\_VERBCOIN\_GUI Item\_Count](#SCUMM_VERBCOIN_GUI.Item_Count)\
+DoubleClickSpeed](#DoubleClickSpeed)\
+[SCUMM\_VERBCOIN\_GUI GoInventory](#GoInventory)\
+[SCUMM\_VERBCOIN\_GUI Item\_Count](#Item_Count)\
 [SCUMM\_VERBCOIN\_GUI
-InvScroll\_Left](#SCUMM_VERBCOIN_GUI.InvScroll_Left)\
+InvScroll\_Left](#InvScroll_Left)\
 [SCUMM\_VERBCOIN\_GUI
-InvScroll\_Right](#SCUMM_VERBCOIN_GUI.InvScroll_Right)\
+InvScroll\_Right](#InvScroll_Right)\
 [SCUMM\_VERBCOIN\_GUI
-Inv\_Border\_active](#SCUMM_VERBCOIN_GUI.Inv_Border_active)\
+Inv\_Border\_active](#Inv_Border_active)\
 [SCUMM\_VERBCOIN\_GUI
-Inv\_Border\_SetPos](#SCUMM_VERBCOIN_GUI.Inv_Border_SetPos)\
+Inv\_Border\_SetPos](#Inv_Border_SetPos)\
 [SCUMM\_VERBCOIN\_GUI
-Inventory\_GUI](#SCUMM_VERBCOIN_GUI.Inventory_GUI)\
+Inventory\_GUI](#Inventory_GUI)\
 [SCUMM\_VERBCOIN\_GUI
-RunInteraction](#SCUMM_VERBCOIN_GUI.RunInteraction)\
-[SCUMM\_VERBCOIN\_GUI Select](#SCUMM_VERBCOIN_GUI.Select)\
-[SCUMM\_VERBCOIN\_GUI Verbcoin\_GUI](#SCUMM_VERBCOIN_GUI.Verbcoin_GUI)\
-[SCUMM\_VERBCOIN\_GUI verbgraphic](#SCUMM_VERBCOIN_GUI.verbgraphic)\
+RunInteraction](#RunInteraction)\
+[SCUMM\_VERBCOIN\_GUI Select](#Select)\
+[SCUMM\_VERBCOIN\_GUI Verbcoin\_GUI](#Verbcoin_GUI)\
+[SCUMM\_VERBCOIN\_GUI verbgraphic](#verbgraphic)\
 [SCUMM\_VERBCOIN\_GUI doubleclick
-variable](#SCUMM_VERBCOIN_GUI.doubleclick)
+variable](#doubleclick)
 
 ---
 

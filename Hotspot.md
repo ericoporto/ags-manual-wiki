@@ -1,18 +1,18 @@
 Hotspot functions and properties
 --------------------------------
 
-[GetAtScreenXY (hotspot)](#Hotspot.GetAtScreenXY)\
-[GetProperty (hotspot)](#Hotspot.GetProperty)\
-[GetTextProperty (hotspot)](#Hotspot.GetTextProperty)\
-[SetProperty (hotspot)](#Hotspot.SetProperty)\
-[SetTextProperty (hotspot)](#Hotspot.SetTextProperty)\
-[IsInteractionAvailable (hotspot)](#Hotspot.IsInteractionAvailable)\
-[RunInteraction (hotspot)](#Hotspot.RunInteraction)\
-[Enabled property (hotspot)](#Hotspot.Enabled)\
-[ID property (hotspot)](#Hotspot.ID)\
-[Name property (hotspot)](#Hotspot.Name)\
-[WalkToX property](#Hotspot.WalkToX)\
-[WalkToY property](#Hotspot.WalkToY)
+[GetAtScreenXY (hotspot)](#GetAtScreenXY)\
+[GetProperty (hotspot)](#GetProperty)\
+[GetTextProperty (hotspot)](#GetTextProperty)\
+[SetProperty (hotspot)](#SetProperty)\
+[SetTextProperty (hotspot)](#SetTextProperty)\
+[IsInteractionAvailable (hotspot)](#IsInteractionAvailable)\
+[RunInteraction (hotspot)](#RunInteraction)\
+[Enabled property (hotspot)](#Enabled)\
+[ID property (hotspot)](#ID)\
+[Name property (hotspot)](#Name)\
+[WalkToX property](#WalkToX)\
+[WalkToY property](#WalkToY)
 
 ---
 

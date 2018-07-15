@@ -14,24 +14,24 @@ and you can then use the following methods to draw onto the surface.
 finished drawing onto the surface. This allows AGS to update its cached
 copies of the image and upload it to video memory if appropriate.
 
-[Clear (drawing surface)](#DrawingSurface.Clear)\
-[CreateCopy](#DrawingSurface.CreateCopy)\
-[DrawCircle](#DrawingSurface.DrawCircle)\
-[DrawImage](#DrawingSurface.DrawImage)\
-[DrawLine](#DrawingSurface.DrawLine)\
-[DrawMessageWrapped](#DrawingSurface.DrawMessageWrapped)\
-[DrawPixel](#DrawingSurface.DrawPixel)\
-[DrawRectangle](#DrawingSurface.DrawRectangle)\
-[DrawString](#DrawingSurface.DrawString)\
-[DrawStringWrapped](#DrawingSurface.DrawStringWrapped)\
-[DrawSurface](#DrawingSurface.DrawSurface)\
-[DrawTriangle](#DrawingSurface.DrawTriangle)\
-[Release (drawing surface)](#DrawingSurface.Release)\
-[DrawingColor property](#DrawingSurface.DrawingColor)\
-[GetPixel](#DrawingSurface.GetPixel)\
-[Height property (drawing surface)](#DrawingSurface.Height)\
-[UseHighResCoordinates property](#DrawingSurface.UseHighResCoordinates)\
-[Width property (drawing surface)](#DrawingSurface.Width)
+[Clear (drawing surface)](#Clear)\
+[CreateCopy](#CreateCopy)\
+[DrawCircle](#DrawCircle)\
+[DrawImage](#DrawImage)\
+[DrawLine](#DrawLine)\
+[DrawMessageWrapped](#DrawMessageWrapped)\
+[DrawPixel](#DrawPixel)\
+[DrawRectangle](#DrawRectangle)\
+[DrawString](#DrawString)\
+[DrawStringWrapped](#DrawStringWrapped)\
+[DrawSurface](#DrawSurface)\
+[DrawTriangle](#DrawTriangle)\
+[Release (drawing surface)](#Release)\
+[DrawingColor property](#DrawingColor)\
+[GetPixel](#GetPixel)\
+[Height property (drawing surface)](#Height)\
+[UseHighResCoordinates property](#UseHighResCoordinates)\
+[Width property (drawing surface)](#Width)
 
 ---
 

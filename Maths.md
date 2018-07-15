@@ -3,24 +3,24 @@ Maths functions and properties
 
 [FloatToInt](#FloatToInt)\
 [IntToFloat](#IntToFloat)\
-[ArcCos](#Maths.ArcCos)\
-[ArcSin](#Maths.ArcSin)\
-[ArcTan](#Maths.ArcTan)\
-[ArcTan2](#Maths.ArcTan2)\
-[Cos](#Maths.Cos)\
-[Cosh](#Maths.Cosh)\
-[DegreesToRadians](#Maths.DegreesToRadians)\
-[Exp](#Maths.Exp)\
-[Log](#Maths.Log)\
-[Log10](#Maths.Log10)\
-[RadiansToDegrees](#Maths.RadiansToDegrees)\
-[RaiseToPower](#Maths.RaiseToPower)\
-[Sin](#Maths.Sin)\
-[Sinh](#Maths.Sinh)\
-[Sqrt](#Maths.Sqrt)\
-[Tan](#Maths.Tan)\
-[Tanh](#Maths.Tanh)\
-[Pi property](#Maths.Pi)
+[ArcCos](#ArcCos)\
+[ArcSin](#ArcSin)\
+[ArcTan](#ArcTan)\
+[ArcTan2](#ArcTan2)\
+[Cos](#Cos)\
+[Cosh](#Cosh)\
+[DegreesToRadians](#DegreesToRadians)\
+[Exp](#Exp)\
+[Log](#Log)\
+[Log10](#Log10)\
+[RadiansToDegrees](#RadiansToDegrees)\
+[RaiseToPower](#RaiseToPower)\
+[Sin](#Sin)\
+[Sinh](#Sinh)\
+[Sqrt](#Sqrt)\
+[Tan](#Tan)\
+[Tanh](#Tanh)\
+[Pi property](#Pi)
 
 ---
 

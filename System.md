@@ -1,27 +1,27 @@
 System functions and properties
 -------------------------------
 
-[AudioChannelCount property](#System.AudioChannelCount)\
-[AudioChannels property](#System.AudioChannels)\
-[CapsLock property](#System.CapsLock)\
-[ColorDepth property (system)](#System.ColorDepth)\
-[Gamma property](#System.Gamma)\
-[HardwareAcceleration property](#System.HardwareAcceleration)\
-[HasInputFocus property](#System.HasInputFocus)\
-[NumLock property](#System.NumLock)\
-[OperatingSystem property](#System.OperatingSystem)\
-[RenderAtScreenResolution property](#System.RenderAtScreenResolution)\
-[RuntimeInfo property](#System.RuntimeInfo)\
-[ScreenHeight property](#System.ScreenHeight)\
-[ScreenWidth property](#System.ScreenWidth)\
-[ScrollLock property](#System.ScrollLock)\
-[SupportsGammaControl property](#System.SupportsGammaControl)\
-[Version property](#System.Version)\
-[ViewportHeight property](#System.ViewportHeight)\
-[ViewportWidth property](#System.ViewportWidth)\
-[Volume property (system)](#System.Volume)\
-[VSync property](#System.VSync)\
-[Windowed property](#System.Windowed)
+[AudioChannelCount property](#AudioChannelCount)\
+[AudioChannels property](#AudioChannels)\
+[CapsLock property](#CapsLock)\
+[ColorDepth property (system)](#ColorDepth)\
+[Gamma property](#Gamma)\
+[HardwareAcceleration property](#HardwareAcceleration)\
+[HasInputFocus property](#HasInputFocus)\
+[NumLock property](#NumLock)\
+[OperatingSystem property](#OperatingSystem)\
+[RenderAtScreenResolution property](#RenderAtScreenResolution)\
+[RuntimeInfo property](#RuntimeInfo)\
+[ScreenHeight property](#ScreenHeight)\
+[ScreenWidth property](#ScreenWidth)\
+[ScrollLock property](#ScrollLock)\
+[SupportsGammaControl property](#SupportsGammaControl)\
+[Version property](#Version)\
+[ViewportHeight property](#ViewportHeight)\
+[ViewportWidth property](#ViewportWidth)\
+[Volume property (system)](#Volume)\
+[VSync property](#VSync)\
+[Windowed property](#Windowed)
 
 ---
 

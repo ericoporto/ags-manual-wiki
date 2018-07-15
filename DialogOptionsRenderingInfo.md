@@ -6,26 +6,26 @@ options](CustomDialogOptions#CustomDialogOptions) system. You can never create o
 yourself, it will be passed in to the dialog option functions as
 described in the linked page.
 
-[RunActiveOption](#DialogOptionsRenderingInfo.RunActiveOption)\
-[Update](#DialogOptionsRenderingInfo.Update)\
-[ActiveOptionID property](#DialogOptionsRenderingInfo.ActiveOptionID)\
-[DialogToRender property](#DialogOptionsRenderingInfo.DialogToRender)\
+[RunActiveOption](#RunActiveOption)\
+[Update](#Update)\
+[ActiveOptionID property](#ActiveOptionID)\
+[DialogToRender property](#DialogToRender)\
 [HasAlphaChannel property
-(DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.HasAlphaChannel)\
+(DialogOptionsRenderingInfo)](#HasAlphaChannel)\
 [Height property
-(DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.Height)\
+(DialogOptionsRenderingInfo)](#Height)\
 [ParserTextBoxWidth
-property](#DialogOptionsRenderingInfo.ParserTextBoxWidth)\
-[ParserTextBoxX property](#DialogOptionsRenderingInfo.ParserTextBoxX)\
-[ParserTextBoxY property](#DialogOptionsRenderingInfo.ParserTextBoxY)\
+property](#ParserTextBoxWidth)\
+[ParserTextBoxX property](#ParserTextBoxX)\
+[ParserTextBoxY property](#ParserTextBoxY)\
 [Surface property
-(DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.Surface)\
+(DialogOptionsRenderingInfo)](#Surface)\
 [Width property
-(DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.Width)\
+(DialogOptionsRenderingInfo)](#Width)\
 [X property
-(DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.X)\
+(DialogOptionsRenderingInfo)](#X)\
 [Y property
-(DialogOptionsRenderingInfo)](#DialogOptionsRenderingInfo.Y)
+(DialogOptionsRenderingInfo)](#Y)
 
 ---
 

@@ -1,18 +1,18 @@
 Region functions and properties
 -------------------------------
 
-[GetAtRoomXY (region)](#Region.GetAtRoomXY)\
-[RunInteraction (region)](#Region.RunInteraction)\
-[Tint (region)](#Region.Tint)\
-[Enabled property (region)](#Region.Enabled)\
-[ID property (region)](#Region.ID)\
-[LightLevel property](#Region.LightLevel)\
-[TintEnabled property](#Region.TintEnabled)\
-[TintBlue property](#Region.TintBlue)\
-[TintGreen property](#Region.TintGreen)\
-[TintRed property](#Region.TintRed)\
-[TintSaturation property](#Region.TintSaturation)\
-[TintLuminance property](#Region.TintLuminance)
+[GetAtRoomXY (region)](#GetAtRoomXY)\
+[RunInteraction (region)](#RunInteraction)\
+[Tint (region)](#Tint)\
+[Enabled property (region)](#Enabled)\
+[ID property (region)](#ID)\
+[LightLevel property](#LightLevel)\
+[TintEnabled property](#TintEnabled)\
+[TintBlue property](#TintBlue)\
+[TintGreen property](#TintGreen)\
+[TintRed property](#TintRed)\
+[TintSaturation property](#TintSaturation)\
+[TintLuminance property](#TintLuminance)
 
 ---
 

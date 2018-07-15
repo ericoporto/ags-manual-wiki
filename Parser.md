@@ -1,10 +1,10 @@
 Parser functions
 ----------------
 
-[FindWordID](#Parser.FindWordID)\
-[ParseText](#Parser.ParseText)\
-[Said](#Parser.Said)\
-[SaidUnknownWord](#Parser.SaidUnknownWord)
+[FindWordID](#FindWordID)\
+[ParseText](#ParseText)\
+[Said](#Said)\
+[SaidUnknownWord](#SaidUnknownWord)
 
 ---
 

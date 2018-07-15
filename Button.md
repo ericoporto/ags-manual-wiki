@@ -1,35 +1,35 @@
 GUI Button functions and properties
 -----------------------------------
 
-[BringToFront (inherited)](topic53#GUIControl.BringToFront)\
-[Clickable property (inherited)](topic53#GUIControl.Clickable)\
-[Enabled property (inherited)](topic53#GUIControl.Enabled)\
-[Height property (inherited)](topic53#GUIControl.Height)\
-[ID property (inherited)](topic53#GUIControl.ID)\
-[OwningGUI property (inherited)](topic53#GUIControl.OwningGUI)\
-[SendToBack (inherited)](topic53#GUIControl.SendToBack)\
-[SetPosition (inherited)](topic53#GUIControl.SetPosition)\
-[SetSize (inherited)](topic53#GUIControl.SetSize)\
-[Visible property (inherited)](topic53#GUIControl.Visible)\
-[Width property (inherited)](topic53#GUIControl.Width)\
-[X property (inherited)](topic53#GUIControl.X)\
-[Y property (inherited)](topic53#GUIControl.Y)\
-[ZOrder property (inherited)](topic53#GUIControl.ZOrder)
+[BringToFront (inherited)](GUIControl#BringToFront)\
+[Clickable property (inherited)](GUIControl#Clickable)\
+[Enabled property (inherited)](GUIControl#Enabled)\
+[Height property (inherited)](GUIControl#Height)\
+[ID property (inherited)](GUIControl#ID)\
+[OwningGUI property (inherited)](GUIControl#OwningGUI)\
+[SendToBack (inherited)](GUIControl#SendToBack)\
+[SetPosition (inherited)](GUIControl#SetPosition)\
+[SetSize (inherited)](GUIControl#SetSize)\
+[Visible property (inherited)](GUIControl#Visible)\
+[Width property (inherited)](GUIControl#Width)\
+[X property (inherited)](GUIControl#X)\
+[Y property (inherited)](GUIControl#Y)\
+[ZOrder property (inherited)](GUIControl#ZOrder)
 
-[Click (button)](#Button.Click)\
-[Animate (button)](#Button.Animate)\
-[Animating property (button)](#Button.Animating)\
-[Frame property (button)](#Button.Frame)\
-[Loop property (button)](#Button.Loop)\
-[View property (button)](#Button.View)\
-[ClipImage property](#Button.ClipImage)\
-[Font property (button)](#Button.Font)\
-[Graphic property (button)](#Button.Graphic)\
-[MouseOverGraphic property (button)](#Button.MouseOverGraphic)\
-[NormalGraphic property (button)](#Button.NormalGraphic)\
-[PushedGraphic property (button)](#Button.PushedGraphic)\
-[Text property (button)](#Button.Text)\
-[TextColor property (button)](#Button.TextColor)
+[Click (button)](#Click)\
+[Animate (button)](#Animate)\
+[Animating property (button)](#Animating)\
+[Frame property (button)](#Frame)\
+[Loop property (button)](#Loop)\
+[View property (button)](#View)\
+[ClipImage property](#ClipImage)\
+[Font property (button)](#Font)\
+[Graphic property (button)](#Graphic)\
+[MouseOverGraphic property (button)](#MouseOverGraphic)\
+[NormalGraphic property (button)](#NormalGraphic)\
+[PushedGraphic property (button)](#PushedGraphic)\
+[Text property (button)](#Text)\
+[TextColor property (button)](#TextColor)
 
 ---
 

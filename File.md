@@ -1,23 +1,23 @@
 File functions and properties
 -----------------------------
 
-[Open](#File.Open)\
-[Close](#File.Close)\
-[Delete (file)](#File.Delete)\
-[Exists](#File.Exists)\
-[ReadInt](#File.ReadInt)\
-[ReadRawChar](#File.ReadRawChar)\
-[ReadRawInt](#File.ReadRawInt)\
-[ReadRawLineBack](#File.ReadRawLineBack)\
-[ReadStringBack](#File.ReadStringBack)\
-[Seek (file)](#File.Seek)\
-[WriteInt](#File.WriteInt)\
-[WriteRawChar](#File.WriteRawChar)\
-[WriteRawLine](#File.WriteRawLine)\
-[WriteString](#File.WriteString)\
-[EOF property](#File.EOF)\
-[Error property](#File.Error)\
-[Position property (file)](#File.Position)
+[Open](#Open)\
+[Close](#Close)\
+[Delete (file)](#Delete)\
+[Exists](#Exists)\
+[ReadInt](#ReadInt)\
+[ReadRawChar](#ReadRawChar)\
+[ReadRawInt](#ReadRawInt)\
+[ReadRawLineBack](#ReadRawLineBack)\
+[ReadStringBack](#ReadStringBack)\
+[Seek (file)](#Seek)\
+[WriteInt](#WriteInt)\
+[WriteRawChar](#WriteRawChar)\
+[WriteRawLine](#WriteRawLine)\
+[WriteString](#WriteString)\
+[EOF property](#EOF)\
+[Error property](#Error)\
+[Position property (file)](#Position)
 
 ---
 

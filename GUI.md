@@ -1,24 +1,24 @@
 GUI functions and properties
 ----------------------------
 
-[Centre](#GUI.Centre)\
-[Click (gui)](#GUI.Click)\
-[GetAtScreenXY (GUI)](#GUI.GetAtScreenXY)\
-[ProcessClick (GUI)](#GUI.ProcessClick)\
-[SetPosition (GUI)](#GUI.SetPosition)\
-[SetSize (GUI)](#GUI.SetSize)\
-[BackgroundGraphic property (GUI)](#GUI.BackgroundGraphic)\
-[Clickable property (GUI)](#GUI.Clickable)\
-[ControlCount property](#GUI.ControlCount)\
-[Controls property (GUI)](#GUI.Controls)\
-[Height property (GUI)](#GUI.Height)\
-[ID property (GUI)](#GUI.ID)\
-[Transparency property (GUI)](#GUI.Transparency)\
-[Visible property (GUI)](#GUI.Visible)\
-[Width property (GUI)](#GUI.Width)\
-[X property (GUI)](#GUI.X)\
-[Y property (GUI)](#GUI.Y)\
-[ZOrder property (gui)](#GUI.ZOrder)
+[Centre](#Centre)\
+[Click (gui)](#Click)\
+[GetAtScreenXY (GUI)](#GetAtScreenXY)\
+[ProcessClick (GUI)](#ProcessClick)\
+[SetPosition (GUI)](#SetPosition)\
+[SetSize (GUI)](#SetSize)\
+[BackgroundGraphic property (GUI)](#BackgroundGraphic)\
+[Clickable property (GUI)](#Clickable)\
+[ControlCount property](#ControlCount)\
+[Controls property (GUI)](#Controls)\
+[Height property (GUI)](#Height)\
+[ID property (GUI)](#ID)\
+[Transparency property (GUI)](#Transparency)\
+[Visible property (GUI)](#Visible)\
+[Width property (GUI)](#Width)\
+[X property (GUI)](#X)\
+[Y property (GUI)](#Y)\
+[ZOrder property (gui)](#ZOrder)
 
 ---
 
@@ -101,7 +101,7 @@ Example:
 will display the number of the GUI that the mouse is over.
 
 *See Also:*
-[GUIControl.GetAtScreenXY](topic53#GUIControl.GetAtScreenXY),
+[GUIControl.GetAtScreenXY](GUIControl#GetAtScreenXY),
 [GUI.ID](GUIFuncsAndProps#GUI.ID), [GUI.ZOrder](GUIFuncsAndProps#GUI.ZOrder)
 
 ---
@@ -154,7 +154,7 @@ will move the VERBCOIN GUI to the position where the cursor is.
 
 *See Also:* [GUI.Centre](GUIFuncsAndProps#GUI.Centre),
 [GUI.BackgroundGraphic](GUIFuncsAndProps#GUI.BackgroundGraphic),
-[GUIControl.SetPosition](topic53#GUIControl.SetPosition),
+[GUIControl.SetPosition](GUIControl#SetPosition),
 [GUI.SetSize](GUIFuncsAndProps#GUI.SetSize), [GUI.X](GUIFuncsAndProps#GUI.X),
 [GUI.Y](GUIFuncsAndProps#GUI.Y)
 
@@ -182,7 +182,7 @@ changes the ICONBAR GUI to be the size of half the screen
 
 *See Also:* [GUI.Centre](GUIFuncsAndProps#GUI.Centre),
 [GUI.Height](GUIFuncsAndProps#GUI.Height),
-[GUIControl.SetPosition](topic53#GUIControl.SetPosition),
+[GUIControl.SetPosition](GUIControl#SetPosition),
 [GUI.SetPosition](GUIFuncsAndProps#GUI.SetPosition),
 [GUI.Width](GUIFuncsAndProps#GUI.Width)
 
@@ -282,7 +282,7 @@ Example:
 gets list box number 4 from the INVENTORY GUI, and then adds an item to
 it. If control 4 isn't a listbox, you will get a Null Reference error.
 
-*See Also:* [GUIControl.As\*](topic53#GUIControl.AsType),
+*See Also:* [GUIControl.As\*](GUIControl#AsType),
 [GUI.ControlCount](GUIFuncsAndProps#GUI.ControlCount)
 
 ---
@@ -324,7 +324,7 @@ uses the obsolete SetGUIClickable function to make the ICONBAR GUI
 clickable, and then uses the equivalent modern property to stop it being
 clickable.
 
-*See Also:* [GUIControl.ID](topic53#GUIControl.ID)
+*See Also:* [GUIControl.ID](GUIControl#ID)
 
 ---
 
