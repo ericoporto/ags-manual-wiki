@@ -33,7 +33,7 @@ will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
 *See Also:* [CyclePalette](topic66#CyclePalette),
-[FadeOut](topic70#FadeOut), [SetFadeColor](topic70#SetFadeColor)
+[FadeOut](ShakeScreen#FadeOut), [SetFadeColor](ShakeScreen#SetFadeColor)
 
 ---
 
@@ -56,7 +56,7 @@ will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
 *See Also:* [CyclePalette](topic66#CyclePalette),
-[FadeIn](topic70#FadeIn), [SetFadeColor](topic70#SetFadeColor)
+[FadeIn](ShakeScreen#FadeIn), [SetFadeColor](ShakeScreen#SetFadeColor)
 
 ---
 
@@ -106,8 +106,8 @@ Example:
 will mean that next time the screen fades out, it fades to red instead
 of black.
 
-SeeAlso: [FadeIn](topic70#FadeIn), [FadeOut](topic70#FadeOut),
-[SetScreenTransition](topic70#SetScreenTransition)
+SeeAlso: [FadeIn](ShakeScreen#FadeIn), [FadeOut](ShakeScreen#FadeOut),
+[SetScreenTransition](ShakeScreen#SetScreenTransition)
 
 ---
 
@@ -120,7 +120,7 @@ next room change. After that, it will revert back to the normal
 transition type specified in the editor or with SetScreenTransition.
 
 For the possible values for TransitionStyle, see
-[SetScreenTransition](topic70#SetScreenTransition).
+[SetScreenTransition](ShakeScreen#SetScreenTransition).
 
 Example:
 
@@ -130,7 +130,7 @@ Example:
 will go to room 10 with a box-out effect, but then return to the normal
 transition type from then on.
 
-SeeAlso: [SetScreenTransition](topic70#SetScreenTransition)
+SeeAlso: [SetScreenTransition](ShakeScreen#SetScreenTransition)
 
 ---
 
@@ -156,7 +156,7 @@ Example:
 
 will change the room transitions to Fade.
 
-SeeAlso: [SetNextScreenTransition](topic70#SetNextScreenTransition)
+SeeAlso: [SetNextScreenTransition](ShakeScreen#SetNextScreenTransition)
 
 ---
 
@@ -173,7 +173,7 @@ Example:
 
 will shake the screen a little.
 
-*See Also:* [ShakeScreenBackground](topic70#ShakeScreenBackground)
+*See Also:* [ShakeScreenBackground](ShakeScreen#ShakeScreenBackground)
 
 ---
 
@@ -203,7 +203,7 @@ Example:
 
 will shake the screen a little for 2 seconds.
 
-*See Also:* [ShakeScreen](topic70#ShakeScreen)
+*See Also:* [ShakeScreen](ShakeScreen#ShakeScreen)
 
 ---
 

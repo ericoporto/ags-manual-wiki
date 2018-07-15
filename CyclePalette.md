@@ -29,7 +29,7 @@ Example:
 will cause the palette indexes from 10 to 200 cycle around one slot and
 give a color effect.
 
-*See Also:* [FadeIn](topic70#FadeIn), [FadeOut](topic70#FadeOut),
+*See Also:* [FadeIn](ShakeScreen#FadeIn), [FadeOut](ShakeScreen#FadeOut),
 [SetPalRGB](topic66#SetPalRGB)
 
 ---
@@ -59,7 +59,7 @@ Example:
 will change palette slot number 10 from light green to yellow
 
 *See Also:* [CyclePalette](topic66#CyclePalette),
-[FadeIn](topic70#FadeIn), [FadeOut](topic70#FadeOut),
+[FadeIn](ShakeScreen#FadeIn), [FadeOut](ShakeScreen#FadeOut),
 [UpdatePalette](topic66#UpdatePalette)
 
 ---

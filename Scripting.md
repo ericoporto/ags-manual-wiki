@@ -52,7 +52,7 @@ properties**](DrawingSurfaceFunctions)\
 [**Parser functions**](Parser)\
 [**Region functions and properties**](Region)\
 [**Room functions**](Room#topic69)\
-[**Screen functions**](topic70)\
+[**Screen functions**](ShakeScreen)\
 [**Speech functions and properties**](Speech#SpeechCommands)\
 [**String functions**](String)\
 [**System functions and properties**](System)\

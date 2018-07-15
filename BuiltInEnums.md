@@ -96,8 +96,8 @@ job, having a manual reference is invaluable:
       eTransitionCrossfade
     };
 
-*Used by:* [SetScreenTransition](topic70#SetScreenTransition),
-[SetNextScreenTransition](topic70#SetNextScreenTransition)
+*Used by:* [SetScreenTransition](ShakeScreen#SetScreenTransition),
+[SetNextScreenTransition](ShakeScreen#SetNextScreenTransition)
 
     enum MouseButton {
       eMouseLeft,
