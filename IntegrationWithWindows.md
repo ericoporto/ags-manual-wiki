@@ -6,8 +6,8 @@ can be set up to launch save games directly from explorer when the
 player double-clicks them; and secondly, in Windows Vista and later, AGS
 can integrate with the Game Explorer feature.
 
-[Enhanced Save Games](#enhancedsavegames)\
-[Windows Game Explorer](#gameexplorer)
+[Enhanced Save Games](#enhanced-save-games)\
+[Windows Game Explorer](#windows-game-explorer)
 
 ---
 

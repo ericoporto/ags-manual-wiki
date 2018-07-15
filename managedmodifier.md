@@ -2,12 +2,12 @@ Script language keywords
 ------------------------
 
 [Arrays](#arrays)\
-[Data types](#datatypes)\
+[Data types](#data-types)\
 [Operators](#operators)\
 [Constants](#constants)\
-[Version checking](#versionchecks)\
-[if, else statements](#ifelsestatements)\
-[switch, case statements](#switchstatement)\
+[Version checking](#version-checks)\
+[if, else statements](#if-else-statements)\
+[switch, case statements](#switch-case-statements)\
 [while](#whilestatement)\
 [do..while](#dowhilestatement)\
 [for](#forstatement)\

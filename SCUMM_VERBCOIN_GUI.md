@@ -5,34 +5,25 @@ SCUMM_VERBCOIN_GUI is a script module that is included with the Verb
 Coin template. The functions in this section are only available if you
 have created your game using that template.
 
-[SCUMM_VERBCOIN_GUI Deselect](#deselect)\
-[SCUMM_VERBCOIN_GUI
-DisableVerbCoinGUI](#disableverbcoingui)\
-[SCUMM_VERBCOIN_GUI
-DoubleClickSpeed](#doubleclickspeed)\
-[SCUMM_VERBCOIN_GUI GoInventory](#goinventory)\
-[SCUMM_VERBCOIN_GUI Item_Count](#item_count)\
-[SCUMM_VERBCOIN_GUI
-InvScroll_Left](#invscroll_left)\
-[SCUMM_VERBCOIN_GUI
-InvScroll_Right](#invscroll_right)\
-[SCUMM_VERBCOIN_GUI
-Inv_Border_active](#inv_border_active)\
-[SCUMM_VERBCOIN_GUI
-Inv_Border_SetPos](#inv_border_setpos)\
-[SCUMM_VERBCOIN_GUI
-Inventory_GUI](#inventory_gui)\
-[SCUMM_VERBCOIN_GUI
-RunInteraction](#runinteraction)\
-[SCUMM_VERBCOIN_GUI Select](#select)\
-[SCUMM_VERBCOIN_GUI Verbcoin_GUI](#verbcoin_gui)\
-[SCUMM_VERBCOIN_GUI verbgraphic](#verbgraphic)\
-[SCUMM_VERBCOIN_GUI doubleclick
-variable](#doubleclick)
+[Deselect](#deselect)\
+[DisableVerbCoinGUI](#disableverbcoingui)\
+[DoubleClickSpeed](#doubleclickspeed)\
+[GoInventory](#goinventory)\
+[Item_Count](#item_count)\
+[InvScroll_Left](#invscroll_left)\
+[InvScroll_Right](#invscroll_right)\
+[Inv_Border_active](#inv_border_active)\
+[Inv_Border_SetPos](#inv_border_setpos)\
+[Inventory_GUI](#inventory_gui)\
+[RunInteraction](#runinteraction)\
+[Select](#select)\
+[Verbcoin_GUI](#verbcoin_gui)\
+[verbgraphic](#verbgraphic)\
+[doubleclick (variable)](#doubleclick_variable)
 
 ---
 
-### SCUMM_VERBCOIN_GUI Deselect
+### Deselect
 
     static SCUMM_VERBCOIN_GUI.Deselect()
 
@@ -48,7 +39,7 @@ available if you used this template to create your game.
 
 ---
 
-### SCUMM_VERBCOIN_GUI DisableVerbCoinGUI
+### DisableVerbCoinGUI
 
     static SCUMM_VERBCOIN_GUI.DisableVerbCoinGUI(bool disabled)
 
@@ -66,7 +57,7 @@ will disable all verbcoin processing code.
 
 ---
 
-### SCUMM_VERBCOIN_GUI DoubleClickSpeed
+### DoubleClickSpeed
 
     static SCUMM_VERBCOIN_GUI.DoubleClickSpeed(int speed)
 
@@ -89,7 +80,7 @@ default)
 
 ---
 
-### SCUMM_VERBCOIN_GUI GoInventory
+### GoInventory
 
     static SCUMM_VERBCOIN_GUI.GoInventory()
 
@@ -100,7 +91,7 @@ available if you used this template to create your game.
 
 ---
 
-### SCUMM_VERBCOIN_GUI Item_Count
+### Item_Count
 
     static SCUMM_VERBCOIN_GUI.Item_Count(int count)
 
@@ -126,7 +117,7 @@ item 11, 21, 31, ...
 
 ---
 
-### SCUMM_VERBCOIN_GUI InvScroll_Left
+### InvScroll_Left
 
     static SCUMM_VERBCOIN_GUI.InvScroll_Left()
 
@@ -142,7 +133,7 @@ available if you used this template to create your game.
 
 ---
 
-### SCUMM_VERBCOIN_GUI InvScroll_Right
+### InvScroll_Right
 
     static SCUMM_VERBCOIN_GUI.InvScroll_Right()
 
@@ -158,7 +149,7 @@ available if you used this template to create your game.
 
 ---
 
-### SCUMM_VERBCOIN_GUI Inv_Border_active
+### Inv_Border_active
 
     static SCUMM_VERBCOIN_GUI.Inv_Border_active(bool x_borders, bool y_borders)
 
@@ -182,7 +173,7 @@ the top or the bottom of the screen.
 
 ---
 
-### SCUMM_VERBCOIN_GUI Inv_Border_SetPos
+### Inv_Border_SetPos
 
     static SCUMM_VERBCOIN_GUI.Inv_Border_SetPos(int top, int bottom,
                                                 int left, int right)
@@ -208,7 +199,7 @@ border to x-coordinate 295
 
 ---
 
-### SCUMM_VERBCOIN_GUI Inventory_GUI
+### Inventory_GUI
 
     static SCUMM_VERBCOIN_GUI.Inventory_GUI(int gInventory_ID,int gInvUnderlay_ID)
 
@@ -239,7 +230,7 @@ underlay gui is GUI nr.3
 
 ---
 
-### SCUMM_VERBCOIN_GUI RunInteraction
+### RunInteraction
 
     static SCUMM_VERBCOIN_GUI.RunInteraction(CursorMode)
 
@@ -258,7 +249,7 @@ Example:
 
 ---
 
-### SCUMM_VERBCOIN_GUI Select
+### Select
 
     static SCUMM_VERBCOIN_GUI.Select()
 
@@ -274,7 +265,7 @@ available if you used this template to create your game.
 
 ---
 
-### SCUMM_VERBCOIN_GUI Verbcoin_GUI
+### Verbcoin_GUI
 
     static SCUMM_VERBCOIN_GUI.Verbcoin_GUI(int gVerbcoin_ID)
 
@@ -296,7 +287,7 @@ will tell the module your verbcoin gui is GUI nr.1
 
 ---
 
-### SCUMM_VERBCOIN_GUI verbgraphic
+### verbgraphic
 
     static SCUMM_VERBCOIN_GUI.verbgraphic(ButtonChoice, int sprite_number)
 
@@ -317,7 +308,7 @@ will set the sprite for moving over the talk button to sprite 2
 
 ---
 
-### SCUMM_VERBCOIN_GUI doubleclick variable
+### doubleclick (variable)
 
     global bool doubleclick
 
@@ -340,4 +331,3 @@ the object/hotspot/character/...
 
 *See Also:*
 [SCUMM_VERBCOIN_GUI.DoubleClickSpeed](#doubleclickspeed)
-

@@ -6,9 +6,9 @@ pointers. This section has been split into three separate topics to
 introduce you to pointers depending on your previous programming
 experience -- select one of the links below:
 
-[Pointers for programming newbies](#pointersfornewbies)\
-[Pointers for people who know Java or C`#`](#pointersforjavacsharp)\
-[Pointers for people who know C or C++](#pointersforc)
+[Pointers for programming newbies](#pointers-for-programming-newbies)\
+[Pointers for people who know Java or C#](#pointers-for-people-who-know-java-or-c)\
+[Pointers for people who know C or C++](#pointers-for-people-who-know-c-or-c)
 
 ---
 

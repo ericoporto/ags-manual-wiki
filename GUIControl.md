@@ -54,7 +54,7 @@ will display what control the mouse is over.
 
 ---
 
-### AsType properties
+### AsType
 
     Button*  GUIControl.AsButton;
     InvWindow* GUIControl.AsInvWindow;
