@@ -62,7 +62,7 @@ triggers OnClick event for gMainMenu.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Button.Click](topic54#Button.Click),
+*See Also:* [Button.Click](Button#Button.Click),
 [GUI.ProcessClick](GUIFuncsAndProps#GUI.ProcessClick)
 
 ---
@@ -130,7 +130,7 @@ Pointer mode, which will ignore anything but interface.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Mouse.Click](topic62#Mouse.Click),
+*See Also:* [Mouse.Click](Mouse#Mouse.Click),
 [Room.ProcessClick](Room#ProcessClick)
 
 ---
@@ -199,7 +199,7 @@ Gets/sets the background image of the GUI.
 You can set this to 0 to remove the background image from the GUI.
 
 *See Also:* [GUI.SetPosition](GUIFuncsAndProps#GUI.SetPosition),
-[Button.NormalGraphic](topic54#Button.NormalGraphic)
+[Button.NormalGraphic](Button#Button.NormalGraphic)
 
 ---
 

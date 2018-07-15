@@ -67,7 +67,7 @@ job, having a manual reference is invaluable:
       eRepeat
     };
 
-*Used by:* [Button.Animate](topic54#Button.Animate),
+*Used by:* [Button.Animate](Button#Button.Animate),
 [Character.Animate](Character#Animate),
 [Object.Animate](Object#Animate)
 
@@ -110,7 +110,7 @@ job, having a manual reference is invaluable:
       eMouseWheelSouth
     };
 
-*Used by:* [Mouse.IsButtonDown](topic62#Mouse.IsButtonDown)\
+*Used by:* [Mouse.IsButtonDown](Mouse#Mouse.IsButtonDown)\
 *Passed into:* on\_mouse\_click
 
     enum EventType {
@@ -132,7 +132,7 @@ job, having a manual reference is invaluable:
       eRoundUp
     };
 
-*Used by:* [FloatToInt](topic61#FloatToInt)
+*Used by:* [FloatToInt](Maths#FloatToInt)
 
     enum eSpeechStyle {
       eSpeechLucasarts,
@@ -169,8 +169,8 @@ job, having a manual reference is invaluable:
       eOptionOffForever
     };
 
-*Used by:* [Dialog.GetOptionState](topic50#Dialog.GetOptionState),
-[Dialog.SetOptionState](topic50#Dialog.SetOptionState)
+*Used by:* [Dialog.GetOptionState](Dialog#Dialog.GetOptionState),
+[Dialog.SetOptionState](Dialog#Dialog.SetOptionState)
 
     enum CutsceneSkipType {
       eSkipESCOnly,
@@ -192,7 +192,7 @@ job, having a manual reference is invaluable:
       eOSPSP
     };
 
-*Used by:* [System.OperatingSystem](topic72#System.OperatingSystem)
+*Used by:* [System.OperatingSystem](System#System.OperatingSystem)
 
     enum eCDAudioFunction {
       eCDIsDriverPresent,
@@ -220,13 +220,13 @@ mouse cursors. The cursor mode name is taken, all its spaces are
 removed, and *eMode* is added to the front.\
 *Used by:* [IsInteractionAvailable](Game#IsInteractionAvailable),
 [Room.ProcessClick](Room#ProcessClick),
-[Mouse.ChangeModeGraphic](topic62#Mouse.ChangeModeGraphic),
-[Mouse.ChangeModeHotspot](topic62#Mouse.ChangeModeHotspot),
-[Mouse.DisableMode](topic62#Mouse.DisableMode),
-[Mouse.EnableMode](topic62#Mouse.EnableMode),
-[Mouse.IsModeEnabled](topic62#Mouse.IsModeEnabled),
-[Mouse.UseModeGraphic](topic62#Mouse.UseModeGraphic),
-[Mouse.Mode](topic62#Mouse.Mode),
+[Mouse.ChangeModeGraphic](Mouse#Mouse.ChangeModeGraphic),
+[Mouse.ChangeModeHotspot](Mouse#Mouse.ChangeModeHotspot),
+[Mouse.DisableMode](Mouse#Mouse.DisableMode),
+[Mouse.EnableMode](Mouse#Mouse.EnableMode),
+[Mouse.IsModeEnabled](Mouse#Mouse.IsModeEnabled),
+[Mouse.UseModeGraphic](Mouse#Mouse.UseModeGraphic),
+[Mouse.Mode](Mouse#Mouse.Mode),
 [InventoryItem.IsInteractionAvailable](InventoryItem#IsInteractionAvailable),
 [InventoryItem.RunInteraction](InventoryItem#RunInteraction),
 [Hotspot.IsInteractionAvailable](Hotspot#IsInteractionAvailable),
@@ -245,7 +245,7 @@ removed, and *eMode* is added to the front.\
 The FontType enumeration is generated automatically based on your fonts.
 The font name is taken, all its spaces are removed, and *eFont* is added
 to the front.\
-*Used by:* [Button.Font](topic54#Button.Font),
+*Used by:* [Button.Font](Button#Button.Font),
 [DrawingSurface.DrawMessageWrapped](DrawingSurfaceFunctions#DrawingSurface.DrawMessageWrapped),
 [DrawingSurface.DrawString](DrawingSurfaceFunctions#DrawingSurface.DrawString),
 [DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#DrawingSurface.DrawStringWrapped),
@@ -253,11 +253,11 @@ to the front.\
 [Game.SpeechFont](Game#SpeechFont),
 [GetTextHeight](Game#GetTextHeight),
 [GetTextWidth](Game#GetTextWidth),
-[Label.Font](topic55#Label.Font),
-[ListBox.Font](topic56#ListBox.Font),
-[TextBox.Font](topic58#TextBox.Font),
-[Overlay.CreateTextual](topic65#Overlay.CreateTextual),
-[Overlay.SetText](topic65#Overlay.SetText)
+[Label.Font](Label#Label.Font),
+[ListBox.Font](ListBox#ListBox.Font),
+[TextBox.Font](TextBox#TextBox.Font),
+[Overlay.CreateTextual](Overlay#Overlay.CreateTextual),
+[Overlay.SetText](Overlay#Overlay.SetText)
 
     enum LocationType {
       eLocationNothing,
@@ -274,7 +274,7 @@ to the front.\
       eFileAppend
     };
 
-*Used by:* [File.Open](topic52#File.Open)
+*Used by:* [File.Open](File#File.Open)
 
     enum FileSeek {
       eSeekBegin = 0,
@@ -282,7 +282,7 @@ to the front.\
       eSeekEnd = 2
     };
 
-*Used by:* [File.Seek](topic52#File.Seek)
+*Used by:* [File.Seek](File#File.Seek)
 
     enum DialogOptionSayStyle {
       eSayUseOptionSetting,
@@ -290,7 +290,7 @@ to the front.\
       eSayNever
     };
 
-*Used by:* [Dialog.DisplayOptions](topic50#Dialog.DisplayOptions)
+*Used by:* [Dialog.DisplayOptions](Dialog#Dialog.DisplayOptions)
 
     enum VideoSkipStyle {
       eVideoSkipNotAllowed,

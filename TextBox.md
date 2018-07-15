@@ -38,8 +38,8 @@ Example:
 
 will change the *txtUserInput* text box to use Font "Normal".
 
-*See Also:* [Label.Font](topic55#Label.Font),
-[TextBox.Text](topic58#TextBox.Text)
+*See Also:* [Label.Font](Label#Label.Font),
+[TextBox.Text](TextBox#TextBox.Text)
 
 ---
 
@@ -62,9 +62,9 @@ Example:
 
 will clear the txtUserInput text box.
 
-*See Also:* [TextBox.Font](topic58#TextBox.Font),
-[String.CompareTo](topic71#String.CompareTo),
-[Label.Text](topic55#Label.Text)
+*See Also:* [TextBox.Font](TextBox#TextBox.Font),
+[String.CompareTo](String#String.CompareTo),
+[Label.Text](Label#Label.Text)
 
 ---
 
@@ -83,5 +83,5 @@ will change text box 'txtInput' to have yellow text.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [TextBox.Text](topic58#TextBox.Text)
+*See Also:* [TextBox.Text](TextBox#TextBox.Text)
 

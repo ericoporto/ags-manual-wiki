@@ -100,7 +100,7 @@ Example:
 will disable all ground-level events, but leave light levels working
 
 *See Also:* [Hotspot.Enabled](Hotspot#Enabled),
-[Region.Enabled](topic68#Region.Enabled),
+[Region.Enabled](Region#Region.Enabled),
 [EnableGroundLevelAreas](Room#EnableGroundLevelAreas)
 
 ---
@@ -120,7 +120,7 @@ Example:
 will re-enable all ground-level events.
 
 *See Also:* [Hotspot.Enabled](Hotspot#Enabled),
-[Region.Enabled](topic68#Region.Enabled),
+[Region.Enabled](Region#Region.Enabled),
 [DisableGroundLevelAreas](Room#DisableGroundLevelAreas)
 
 ---
@@ -403,7 +403,7 @@ Example:
         Display ("You can't walk there.");
 
 *See Also:* [Hotspot.GetAtScreenXY](Hotspot#GetAtScreenXY),
-[Region.GetAtRoomXY](topic68#Region.GetAtRoomXY),
+[Region.GetAtRoomXY](Region#Region.GetAtRoomXY),
 [GetScalingAt](Room#GetScalingAt)
 
 ---
@@ -463,7 +463,7 @@ Example:
 will simulate a click in the Look mode on co-ordinates (100, 50).
 
 *See Also:* [GUI.ProcessClick](GUIFuncsAndProps#GUI.ProcessClick),
-[Mouse.Click](topic62#Mouse.Click),
+[Mouse.Click](Mouse#Mouse.Click),
 [IsInteractionAvailable](Game#IsInteractionAvailable),
 [Hotspot.RunInteraction](Hotspot#RunInteraction)
 

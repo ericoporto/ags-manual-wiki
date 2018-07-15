@@ -67,7 +67,7 @@ like.
 
 Glad you asked! Instead of all those old commands like SetMusicVolume,
 SetDigitalMasterVolume, etc, there is now simply one overall system
-volume ([System.Volume](topic72#System.Volume)), and then each sound
+volume ([System.Volume](System#System.Volume)), and then each sound
 that is playing has its own volume control as well. This is controlled
 by the [Volume property](AudioChannel#Volume) on the audio
 channel (see the [Audio page](MusAndSound) for details on

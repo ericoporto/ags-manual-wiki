@@ -4,7 +4,7 @@ String formatting
 You will find many times in your game when you need to create a string
 based on the values of variables, and functions like
 [Display](topic73#Display) and
-[String.Format](topic71#String.Format) allow you to do so.
+[String.Format](String#String.Format) allow you to do so.
 
 AGS uses printf-style argument formatting (used by the C language). This
 means that you intersperse your text with special codes to insert a

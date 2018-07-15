@@ -419,7 +419,7 @@ This will give the lamp maximal individual brightness.
 *See Also:* [Object.Tint](Object#Tint),
 [SetAmbientLightLevel](Game#SetAmbientLightLevel),
 [Character.SetLightLevel](Character#SetLightLevel),
-[Region.LightLevel](topic68#Region.LightLevel)
+[Region.LightLevel](Region#Region.LightLevel)
 
 ---
 

@@ -39,7 +39,7 @@ will display a message if the game dictionary includes "machine"
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Parser.ParseText](topic67#Parser.ParseText)
+*See Also:* [Parser.ParseText](Parser#Parser.ParseText)
 
 ---
 
@@ -60,8 +60,8 @@ Example:
 will get the players input and store it in string "command" for use with
 the said command.
 
-*See Also:* [Parser.FindWordID](topic67#Parser.FindWordID),
-[Parser.Said](topic67#Parser.Said)
+*See Also:* [Parser.FindWordID](Parser#Parser.FindWordID),
+[Parser.Said](Parser#Parser.Said)
 
 ---
 
@@ -87,8 +87,8 @@ Example:
 will bring up the restore game dialogue if the player types "load" in
 the text parser.
 
-*See Also:* [Parser.ParseText](topic67#Parser.ParseText),
-[Parser.SaidUnknownWord](topic67#Parser.SaidUnknownWord)
+*See Also:* [Parser.ParseText](Parser#Parser.ParseText),
+[Parser.SaidUnknownWord](Parser#Parser.SaidUnknownWord)
 
 ---
 
@@ -111,5 +111,5 @@ Example:
 will display the message if the player types a word that's not in the
 vocabulary.
 
-*See Also:* [Parser.ParseText](topic67#Parser.ParseText),
-[Parser.Said](topic67#Parser.Said)
+*See Also:* [Parser.ParseText](Parser#Parser.ParseText),
+[Parser.Said](Parser#Parser.Said)

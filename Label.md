@@ -42,8 +42,8 @@ will change label 'lblStatus' to use font "Foreign" if a game
 translation is in use.
 
 *See Also:* [IsTranslationAvailable](Game#IsTranslationAvailable),
-[Label.Text](topic55#Label.Text),
-[TextBox.Font](topic58#TextBox.Font)
+[Label.Text](Label#Label.Text),
+[TextBox.Font](TextBox#TextBox.Font)
 
 ---
 
@@ -66,10 +66,10 @@ Example:
 will display the name of the location the cursor is over on label
 'lblStatus'
 
-*See Also:* [Button.NormalGraphic](topic54#Button.NormalGraphic),
-[Button.Text](topic54#Button.Text),
-[Label.TextColor](topic55#Label.TextColor),
-[Label.Font](topic55#Label.Font)
+*See Also:* [Button.NormalGraphic](Button#Button.NormalGraphic),
+[Button.Text](Button#Button.Text),
+[Label.TextColor](Label#Label.TextColor),
+[Label.Font](Label#Label.Font)
 
 ---
 
@@ -87,6 +87,6 @@ Example:
 
 will change label 'lblStatus' to have yellow text.
 
-*See Also:* [Label.Font](topic55#Label.Font),
-[Label.Text](topic55#Label.Text)
+*See Also:* [Label.Font](Label#Label.Font),
+[Label.Text](Label#Label.Text)
 
