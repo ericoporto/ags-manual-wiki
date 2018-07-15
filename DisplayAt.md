@@ -34,10 +34,10 @@ a key or clicking the mouse). While the window is displayed, all other
 processing, like animations and interface display, are disabled. This is
 usually used for responses to the player LOOKing at things.
 
-*See Also:* [DisplayAt](topic73#DisplayAt),
-[DisplayMessage](topic73#DisplayMessage),
+*See Also:* [DisplayAt](DisplayAt#DisplayAt),
+[DisplayMessage](DisplayAt#DisplayMessage),
 [Character.Say](Character#Say),
-[DisplayTopBar](topic73#DisplayTopBar),
+[DisplayTopBar](DisplayAt#DisplayTopBar),
 [String.Format](String#Format)
 
 ---
@@ -68,8 +68,8 @@ Example:
 
 will display the message at coordinates 50,50 in a box 100 pixels wide.
 
-*See Also:* [Display](topic73#Display),
-[DisplayAtY](topic73#DisplayAtY)
+*See Also:* [Display](DisplayAt#Display),
+[DisplayAtY](DisplayAt#DisplayAtY)
 
 ---
 
@@ -88,8 +88,8 @@ Example:
 
 will display the message at y coordinate 50.
 
-*See Also:* [Display](topic73#Display),
-[DisplayAt](topic73#DisplayAt)
+*See Also:* [Display](DisplayAt#Display),
+[DisplayAt](DisplayAt#DisplayAt)
 
 ---
 
@@ -108,8 +108,8 @@ Example:
 
 will display the message 220 of the Room message editor.
 
-*See Also:* [Display](topic73#Display),
-[DisplayMessageAtY](topic73#DisplayMessageAtY)
+*See Also:* [Display](DisplayAt#Display),
+[DisplayMessageAtY](DisplayAt#DisplayMessageAtY)
 
 ---
 
@@ -130,8 +130,8 @@ Example:
 
 will display global message 527, in the lower half of the screen.
 
-*See Also:* [DisplayAtY](topic73#DisplayAtY),
-[DisplayMessage](topic73#DisplayMessage)
+*See Also:* [DisplayAtY](DisplayAt#DisplayAtY),
+[DisplayMessage](DisplayAt#DisplayMessage)
 
 ---
 
@@ -180,5 +180,5 @@ will display "Get out of my house and never return!" in the message box,
 with the caption bar reading "Evil wizard". The message box will have
 dark grey text on a light gray background.
 
-*See Also:* [Display](topic73#Display),
-[DisplayAt](topic73#DisplayAt)
+*See Also:* [Display](DisplayAt#Display),
+[DisplayAt](DisplayAt#DisplayAt)

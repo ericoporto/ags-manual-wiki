@@ -1162,7 +1162,7 @@ Example:
 will display the message above the character's EGO head like the LEC
 games, whilst playing the character's talking animation.
 
-*See Also:* [Display](topic73#Display),
+*See Also:* [Display](DisplayAt#Display),
 [Character.SayAt](Character#SayAt),
 [Character.SayBackground](Character#SayBackground),
 [Character.Think](Character#Think)

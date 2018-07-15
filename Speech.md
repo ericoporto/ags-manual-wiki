@@ -290,7 +290,7 @@ Valid values for VoiceMode are:
 The default is *eSpeechVoiceAndText* if in-game speech is enabled, and
 *eSpeechTextOnly* if it is not. Changing this setting changes the
 behaviour of all [Say](Character#Say) and
-[Display](topic73#Display) commands which have a speech file assigned
+[Display](DisplayAt#Display) commands which have a speech file assigned
 to them.
 
 **WARNING:** you should only ever use *eSpeechVoiceOnly* at the player's

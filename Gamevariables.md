@@ -86,7 +86,7 @@ All the following variables are `int` variables.
 
   game.text_shadow_color                         Color used for speech text shadow (default 16).
 
-  game.top_bar_XXXX                              Customizations for [DisplayTopBar](topic73#DisplayTopBar), see link for details
+  game.top_bar_XXXX                              Customizations for [DisplayTopBar](DisplayAt#DisplayTopBar), see link for details
 
   game.total_score                                Maximum possible score, initially set in the editor.
 

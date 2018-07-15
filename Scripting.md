@@ -56,7 +56,7 @@ properties**](DrawingSurfaceFunctions)\
 [**Speech functions and properties**](Speech#SpeechCommands)\
 [**String functions**](String)\
 [**System functions and properties**](System)\
-[**Text display / Speech functions**](topic73)\
+[**Text display / Speech functions**](DisplayAt)\
 [**ViewFrame functions and properties**](ViewFrame#topic74)\
 [**SCUMM_VERBCOIN_GUI functions**](SCUMM_VERBCOIN_GUI)
 
