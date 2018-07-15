@@ -36,7 +36,7 @@ allows you to dynamically change what a mouse cursor looks like.
 
 **NOTE:** To change what the Use Inventory cursor looks like, you should
 change the active inventory item's
-[CursorGraphic](InventoryItem#InventoryItem.CursorGraphic) property instead
+[CursorGraphic](InventoryItem#CursorGraphic) property instead
 of using this function.
 
 Example:
@@ -120,7 +120,7 @@ This will simulate user click at (100,100).
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:* [GUI.ProcessClick](GUIFuncsAndProps#GUI.ProcessClick),
-[Room.ProcessClick](Room#Room.ProcessClick)
+[Room.ProcessClick](Room#ProcessClick)
 
 ---
 

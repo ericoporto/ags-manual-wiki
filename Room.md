@@ -68,8 +68,8 @@ will run the code if object 2 is overlapping EGO. This could be useful
 if object 2 was a bullet, for instance.
 
 *See Also:*
-[Character.IsCollidingWithChar](Character#Character.IsCollidingWithChar),
-[Object.IsCollidingWithObject](Object#Object.IsCollidingWithObject)
+[Character.IsCollidingWithChar](Character#IsCollidingWithChar),
+[Object.IsCollidingWithObject](Object#IsCollidingWithObject)
 
 ---
 
@@ -99,7 +99,7 @@ Example:
 
 will disable all ground-level events, but leave light levels working
 
-*See Also:* [Hotspot.Enabled](Hotspot#Hotspot.Enabled),
+*See Also:* [Hotspot.Enabled](Hotspot#Enabled),
 [Region.Enabled](topic68#Region.Enabled),
 [EnableGroundLevelAreas](Room#EnableGroundLevelAreas)
 
@@ -119,7 +119,7 @@ Example:
 
 will re-enable all ground-level events.
 
-*See Also:* [Hotspot.Enabled](Hotspot#Hotspot.Enabled),
+*See Also:* [Hotspot.Enabled](Hotspot#Enabled),
 [Region.Enabled](topic68#Region.Enabled),
 [DisableGroundLevelAreas](Room#DisableGroundLevelAreas)
 
@@ -195,7 +195,7 @@ Example:
 
     Display("The player character number is %d", player.ID);
 
-*See Also:* [Character.ID](Character#Character.ID)
+*See Also:* [Character.ID](Character#ID)
 
 ---
 
@@ -225,7 +225,7 @@ Example:
 will print the message if the current room has its "CanBeAttackedHere"
 box ticked.
 
-*See Also:* [Room.GetTextProperty](Room#Room.GetTextProperty)
+*See Also:* [Room.GetTextProperty](Room#GetTextProperty)
 
 ---
 
@@ -254,7 +254,7 @@ Example:
 
 will retrieve the room's "description" property then display it.
 
-*See Also:* [Room.GetProperty](Room#Room.GetProperty)
+*See Also:* [Room.GetProperty](Room#GetProperty)
 
 ---
 
@@ -283,7 +283,7 @@ will change room's "Darkness" custom property to 10.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Room.SetTextProperty](Room#Room.SetTextProperty)
+*See Also:* [Room.SetTextProperty](Room#SetTextProperty)
 
 ---
 
@@ -310,7 +310,7 @@ will change room's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Room.SetProperty](Room#Room.SetProperty)
+*See Also:* [Room.SetProperty](Room#SetProperty)
 
 ---
 
@@ -402,7 +402,7 @@ Example:
     if (GetWalkableAreaAt(mouse.x,mouse.y) == 0)
         Display ("You can't walk there.");
 
-*See Also:* [Hotspot.GetAtScreenXY](Hotspot#Hotspot.GetAtScreenXY),
+*See Also:* [Hotspot.GetAtScreenXY](Hotspot#GetAtScreenXY),
 [Region.GetAtRoomXY](topic68#Region.GetAtRoomXY),
 [GetScalingAt](Room#GetScalingAt)
 
@@ -465,7 +465,7 @@ will simulate a click in the Look mode on co-ordinates (100, 50).
 *See Also:* [GUI.ProcessClick](GUIFuncsAndProps#GUI.ProcessClick),
 [Mouse.Click](topic62#Mouse.Click),
 [IsInteractionAvailable](Game#IsInteractionAvailable),
-[Hotspot.RunInteraction](Hotspot#Hotspot.RunInteraction)
+[Hotspot.RunInteraction](Hotspot#RunInteraction)
 
 ---
 
@@ -677,7 +677,7 @@ Example:
 
 will disable the walkbehind area number 3.
 
-*See Also:* [Object.Baseline](Object#Object.Baseline)
+*See Also:* [Object.Baseline](Object#Baseline)
 
 ---
 
@@ -692,9 +692,9 @@ Example:
 
     Display("The current room's bottom edge is at %d.", Room.BottomEdge);
 
-*See Also:* [Room.LeftEdge](Room#Room.LeftEdge),
-[Room.RightEdge](Room#Room.RightEdge),
-[Room.TopEdge](Room#Room.TopEdge)
+*See Also:* [Room.LeftEdge](Room#LeftEdge),
+[Room.RightEdge](Room#RightEdge),
+[Room.TopEdge](Room#TopEdge)
 
 ---
 
@@ -728,7 +728,7 @@ Example:
 
     Display("The current room size is %d x %d.", Room.Width, Room.Height);
 
-*See Also:* [Room.Width](Room#Room.Width)
+*See Also:* [Room.Width](Room#Width)
 
 ---
 
@@ -743,9 +743,9 @@ Example:
 
     Display("The current room's left edge is at %d.", Room.LeftEdge);
 
-*See Also:* [Room.BottomEdge](Room#Room.BottomEdge),
-[Room.RightEdge](Room#Room.RightEdge),
-[Room.TopEdge](Room#Room.TopEdge)
+*See Also:* [Room.BottomEdge](Room#BottomEdge),
+[Room.RightEdge](Room#RightEdge),
+[Room.TopEdge](Room#TopEdge)
 
 ---
 
@@ -815,9 +815,9 @@ Example:
 
     Display("The current room's right edge is at %d.", Room.RightEdge);
 
-*See Also:* [Room.BottomEdge](Room#Room.BottomEdge),
-[Room.LeftEdge](Room#Room.LeftEdge),
-[Room.TopEdge](Room#Room.TopEdge)
+*See Also:* [Room.BottomEdge](Room#BottomEdge),
+[Room.LeftEdge](Room#LeftEdge),
+[Room.TopEdge](Room#TopEdge)
 
 ---
 
@@ -832,9 +832,9 @@ Example:
 
     Display("The current room's top edge is at %d.", Room.TopEdge);
 
-*See Also:* [Room.BottomEdge](Room#Room.BottomEdge),
-[Room.LeftEdge](Room#Room.LeftEdge),
-[Room.RightEdge](Room#Room.RightEdge)
+*See Also:* [Room.BottomEdge](Room#BottomEdge),
+[Room.LeftEdge](Room#LeftEdge),
+[Room.RightEdge](Room#RightEdge)
 
 ---
 
@@ -851,5 +851,5 @@ Example:
 
     Display("The current room size is %d x %d.", Room.Width, Room.Height);
 
-*See Also:* [Room.Height](Room#Room.Height)
+*See Also:* [Room.Height](Room#Height)
 

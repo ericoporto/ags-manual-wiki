@@ -38,7 +38,7 @@ and then use the DrawingSurface commands to draw onto it.
 If the game colour depth is lower than 32-bit, then the
 *hasAlphaChannel* parameter will be ignored.
 
-Use the [Graphic](DynamicSprite#DynamicSprite.Graphic) property of the
+Use the [Graphic](DynamicSprite#Graphic) property of the
 DynamicSprite to interface with other commands and to use the new sprite
 in the game.
 
@@ -65,9 +65,9 @@ Example:
 creates a 50x30 sprite, draws a white dot in the middle, then deletes
 the sprite.
 
-*See Also:* [DynamicSprite.Delete](DynamicSprite#DynamicSprite.Delete),
-[DynamicSprite.Graphic](DynamicSprite#DynamicSprite.Graphic),
-[DynamicSprite.GetDrawingSurface](DynamicSprite#DynamicSprite.GetDrawingSurface)
+*See Also:* [DynamicSprite.Delete](DynamicSprite#Delete),
+[DynamicSprite.Graphic](DynamicSprite#Graphic),
+[DynamicSprite.GetDrawingSurface](DynamicSprite#GetDrawingSurface)
 
 ---
 
@@ -93,7 +93,7 @@ if you do supply them, this allows you to just get a small portion of
 the background image into the new sprite. All co-ordinates are in
 320x200-resolution room co-ordinates.
 
-Use the [Graphic](DynamicSprite#DynamicSprite.Graphic) property of the
+Use the [Graphic](DynamicSprite#Graphic) property of the
 DynamicSprite to interface with other commands and to use the new sprite
 in the game.
 
@@ -119,7 +119,7 @@ Example:
 creates a copy of the centre 60x60 area on the background, and draws it
 onto the top left corner of the background image.
 
-*See Also:* [DynamicSprite.Delete](DynamicSprite#DynamicSprite.Delete)
+*See Also:* [DynamicSprite.Delete](DynamicSprite#Delete)
 
 ---
 
@@ -139,7 +139,7 @@ DrawingSurface's
 setting, so make sure that the type of co-ordinates that you are using
 match up with what the drawing surface expects.
 
-Use the [Graphic](DynamicSprite#DynamicSprite.Graphic) property of the
+Use the [Graphic](DynamicSprite#Graphic) property of the
 DynamicSprite to interface with other commands and to use the new sprite
 in the game.
 
@@ -168,7 +168,7 @@ previously was.
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
-*See Also:* [DynamicSprite.Delete](DynamicSprite#DynamicSprite.Delete)
+*See Also:* [DynamicSprite.Delete](DynamicSprite#Delete)
 
 ---
 
@@ -184,7 +184,7 @@ Returns the DynamicSprite instance representing the new sprite. This
 function is useful as it effectively allows you to apply transformations
 such as resizing to any sprite in the game.
 
-Use the [Graphic](DynamicSprite#DynamicSprite.Graphic) property of the
+Use the [Graphic](DynamicSprite#Graphic) property of the
 DynamicSprite to interface with other commands and to use the new sprite
 in the game.
 
@@ -217,8 +217,8 @@ Example:
 creates a copy of object 0's current sprite, resizes it down to 20x20,
 and then draws the result onto the background.
 
-*See Also:* [DynamicSprite.Delete](DynamicSprite#DynamicSprite.Delete),
-[DynamicSprite.Resize](DynamicSprite#DynamicSprite.Resize)
+*See Also:* [DynamicSprite.Delete](DynamicSprite#Delete),
+[DynamicSprite.Resize](DynamicSprite#Resize)
 
 ---
 
@@ -235,7 +235,7 @@ the image could not be loaded (file not found or unsupported format).
 
 Only BMP and PCX files can be loaded with this command.
 
-Use the [Graphic](DynamicSprite#DynamicSprite.Graphic) property of the
+Use the [Graphic](DynamicSprite#Graphic) property of the
 DynamicSprite to interface with other commands and to use the new sprite
 in the game.
 
@@ -268,8 +268,8 @@ near the middle of the screen.
 
 Once the image is finished with, Delete should be called on it.
 
-*See Also:* [DynamicSprite.Delete](DynamicSprite#DynamicSprite.Delete),
-[DynamicSprite.CreateFromSaveGame](DynamicSprite#DynamicSprite.CreateFromSaveGame)
+*See Also:* [DynamicSprite.Delete](DynamicSprite#Delete),
+[DynamicSprite.CreateFromSaveGame](DynamicSprite#CreateFromSaveGame)
 
 ---
 
@@ -317,10 +317,10 @@ places it onto the btnScrnshot GUI button.
 
 Once the GUI is disposed of, Delete should be called on the sprite.
 
-*See Also:* [DynamicSprite.Delete](DynamicSprite#DynamicSprite.Delete),
-[Game.GetSaveSlotDescription](Game#Game.GetSaveSlotDescription),
-[DynamicSprite.CreateFromFile](DynamicSprite#DynamicSprite.CreateFromFile),
-[DynamicSprite.CreateFromScreenShot](DynamicSprite#DynamicSprite.CreateFromScreenShot)
+*See Also:* [DynamicSprite.Delete](DynamicSprite#Delete),
+[Game.GetSaveSlotDescription](Game#GetSaveSlotDescription),
+[DynamicSprite.CreateFromFile](DynamicSprite#CreateFromFile),
+[DynamicSprite.CreateFromScreenShot](DynamicSprite#CreateFromScreenShot)
 
 ---
 
@@ -366,10 +366,10 @@ places a screen grab of the current game session onto btnScrnshot.
 
 Once the GUI is disposed of, Delete should be called on the sprite.
 
-*See Also:* [DynamicSprite.Delete](DynamicSprite#DynamicSprite.Delete),
-[Game.GetSaveSlotDescription](Game#Game.GetSaveSlotDescription),
-[DynamicSprite.CreateFromFile](DynamicSprite#DynamicSprite.CreateFromFile),
-[DynamicSprite.CreateFromSaveGame](DynamicSprite#DynamicSprite.CreateFromSaveGame)
+*See Also:* [DynamicSprite.Delete](DynamicSprite#Delete),
+[Game.GetSaveSlotDescription](Game#GetSaveSlotDescription),
+[DynamicSprite.CreateFromFile](DynamicSprite#CreateFromFile),
+[DynamicSprite.CreateFromSaveGame](DynamicSprite#CreateFromSaveGame)
 
 ---
 
@@ -379,12 +379,12 @@ Once the GUI is disposed of, Delete should be called on the sprite.
 
 Changes the sprite size to *width* x *height*, placing the current image
 at offset (x, y) within the new canvas. Unlike the
-[Resize](DynamicSprite#DynamicSprite.Resize) command, the current image is
+[Resize](DynamicSprite#Resize) command, the current image is
 kept at its original size.
 
 This function allows you to enlarge the sprite background in order to
 draw more onto it than its current boundaries allow. It is effectively
-the opposite of [Crop](DynamicSprite#DynamicSprite.Crop). The additional
+the opposite of [Crop](DynamicSprite#Crop). The additional
 surface area will be transparent.
 
 The width and height are specified in 320x200-resolution units.
@@ -402,10 +402,10 @@ Example:
 creates a dynamic sprite as a copy of sprite 10, enlarges it by 5 pixels
 to the left and right, and draws a line in the new area to the left.
 
-*See Also:* [DynamicSprite.Crop](DynamicSprite#DynamicSprite.Crop),
-[DynamicSprite.Resize](DynamicSprite#DynamicSprite.Resize),
-[DynamicSprite.Height](DynamicSprite#DynamicSprite.Height),
-[DynamicSprite.Width](DynamicSprite#DynamicSprite.Width)
+*See Also:* [DynamicSprite.Crop](DynamicSprite#Crop),
+[DynamicSprite.Resize](DynamicSprite#Resize),
+[DynamicSprite.Height](DynamicSprite#Height),
+[DynamicSprite.Width](DynamicSprite#Width)
 
 ---
 
@@ -445,7 +445,7 @@ creates a dynamic sprite as a copy of sprite 10, changes its
 transparency mask to use that of sprite 11, and displays it on object 0.
 
 *See Also:*
-[DynamicSprite.CreateFromExistingSprite](DynamicSprite#DynamicSprite.CreateFromExistingSprite)
+[DynamicSprite.CreateFromExistingSprite](DynamicSprite#CreateFromExistingSprite)
 
 ---
 
@@ -474,10 +474,10 @@ will load the CustomAvatar.bmp image, cut off the left and top 10
 pixels, and then draw it onto the room background at (100,100).
 
 *See Also:*
-[DynamicSprite.ChangeCanvasSize](DynamicSprite#DynamicSprite.ChangeCanvasSize),
-[DynamicSprite.Flip](DynamicSprite#DynamicSprite.Flip),
-[DynamicSprite.Height](DynamicSprite#DynamicSprite.Height),
-[DynamicSprite.Width](DynamicSprite#DynamicSprite.Width)
+[DynamicSprite.ChangeCanvasSize](DynamicSprite#ChangeCanvasSize),
+[DynamicSprite.Flip](DynamicSprite#Flip),
+[DynamicSprite.Height](DynamicSprite#Height),
+[DynamicSprite.Width](DynamicSprite#Width)
 
 ---
 
@@ -511,8 +511,8 @@ graphic, wait 5 seconds, then change object 1 back to its old sprite 22
 and free the new image.
 
 *See Also:*
-[DynamicSprite.CreateFromScreenShot](DynamicSprite#DynamicSprite.CreateFromScreenShot),
-[DynamicSprite.Graphic](DynamicSprite#DynamicSprite.Graphic)
+[DynamicSprite.CreateFromScreenShot](DynamicSprite#CreateFromScreenShot),
+[DynamicSprite.Graphic](DynamicSprite#Graphic)
 
 ---
 
@@ -538,9 +538,9 @@ Example:
 will load the CustomAvatar.bmp image, flip it upside down, and then draw
 it onto the room background at (100,100).
 
-*See Also:* [DynamicSprite.Crop](DynamicSprite#DynamicSprite.Crop),
-[DynamicSprite.Resize](DynamicSprite#DynamicSprite.Resize),
-[DynamicSprite.Rotate](DynamicSprite#DynamicSprite.Rotate)
+*See Also:* [DynamicSprite.Crop](DynamicSprite#Crop),
+[DynamicSprite.Resize](DynamicSprite#Resize),
+[DynamicSprite.Rotate](DynamicSprite#Rotate)
 
 ---
 
@@ -571,7 +571,7 @@ draws a pink diagonal line across it, sets this new sprite onto the
 object for 1 second and then removes it.
 
 *See Also:*
-[DynamicSprite.CreateFromExistingSprite](DynamicSprite#DynamicSprite.CreateFromExistingSprite),
+[DynamicSprite.CreateFromExistingSprite](DynamicSprite#CreateFromExistingSprite),
 [DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
 [DrawingSurface.Release](DrawingSurfaceFunctions#DrawingSurface.Release)
 
@@ -602,12 +602,12 @@ will load the CustomAvatar.bmp image, stretch it to double its original
 size, and then draw it onto the room background at (100,100).
 
 *See Also:*
-[DynamicSprite.ChangeCanvasSize](DynamicSprite#DynamicSprite.ChangeCanvasSize),
-[DynamicSprite.Crop](DynamicSprite#DynamicSprite.Crop),
-[DynamicSprite.Flip](DynamicSprite#DynamicSprite.Flip),
-[DynamicSprite.Rotate](DynamicSprite#DynamicSprite.Rotate),
-[DynamicSprite.Height](DynamicSprite#DynamicSprite.Height),
-[DynamicSprite.Width](DynamicSprite#DynamicSprite.Width)
+[DynamicSprite.ChangeCanvasSize](DynamicSprite#ChangeCanvasSize),
+[DynamicSprite.Crop](DynamicSprite#Crop),
+[DynamicSprite.Flip](DynamicSprite#Flip),
+[DynamicSprite.Rotate](DynamicSprite#Rotate),
+[DynamicSprite.Height](DynamicSprite#Height),
+[DynamicSprite.Width](DynamicSprite#Width)
 
 ---
 
@@ -642,10 +642,10 @@ Example:
 will load the CustomAvatar.bmp image, rotate it 90 degrees clockwise,
 draw the result onto the screen, and then delete the image.
 
-*See Also:* [DynamicSprite.Flip](DynamicSprite#DynamicSprite.Flip),
-[DynamicSprite.Resize](DynamicSprite#DynamicSprite.Resize),
-[DynamicSprite.Height](DynamicSprite#DynamicSprite.Height),
-[DynamicSprite.Width](DynamicSprite#DynamicSprite.Width)
+*See Also:* [DynamicSprite.Flip](DynamicSprite#Flip),
+[DynamicSprite.Resize](DynamicSprite#Resize),
+[DynamicSprite.Height](DynamicSprite#Height),
+[DynamicSprite.Width](DynamicSprite#Width)
 
 ---
 
@@ -674,7 +674,7 @@ will load the CustomAvatar.bmp image, rotate it 90 degrees clockwise,
 then save the result back to the disk.
 
 *See Also:*
-[DynamicSprite.CreateFromFile](DynamicSprite#DynamicSprite.CreateFromFile),
+[DynamicSprite.CreateFromFile](DynamicSprite#CreateFromFile),
 [SaveScreenShot](Game#SaveScreenShot)
 
 ---
@@ -706,9 +706,9 @@ Example:
 creates a copy of object 0's sprite, tints it red, and draws it onto the
 room background.
 
-*See Also:* [DynamicSprite.Flip](DynamicSprite#DynamicSprite.Flip),
-[DynamicSprite.Height](DynamicSprite#DynamicSprite.Height),
-[DynamicSprite.Width](DynamicSprite#DynamicSprite.Width),
+*See Also:* [DynamicSprite.Flip](DynamicSprite#Flip),
+[DynamicSprite.Height](DynamicSprite#Height),
+[DynamicSprite.Width](DynamicSprite#Width),
 [SetAmbientTint](Game#SetAmbientTint)
 
 ---
@@ -731,8 +731,8 @@ Example:
 
 displays the colour depth of the CustomAvatar.bmp image.
 
-*See Also:* [DynamicSprite.Height](DynamicSprite#DynamicSprite.Height),
-[DynamicSprite.Width](DynamicSprite#DynamicSprite.Width)
+*See Also:* [DynamicSprite.Height](DynamicSprite#Height),
+[DynamicSprite.Width](DynamicSprite#Width)
 
 ---
 
@@ -756,8 +756,8 @@ takes a screen shot, and draws it onto the background scene at
 (100,100).
 
 *See Also:*
-[DynamicSprite.CreateFromScreenShot](DynamicSprite#DynamicSprite.CreateFromScreenShot),
-[DynamicSprite.Delete](DynamicSprite#DynamicSprite.Delete)
+[DynamicSprite.CreateFromScreenShot](DynamicSprite#CreateFromScreenShot),
+[DynamicSprite.Delete](DynamicSprite#Delete)
 
 ---
 
@@ -778,8 +778,8 @@ Example:
 
 displays the size of the CustomAvatar.bmp image.
 
-*See Also:* [DynamicSprite.Resize](DynamicSprite#DynamicSprite.Resize),
-[DynamicSprite.Width](DynamicSprite#DynamicSprite.Width)
+*See Also:* [DynamicSprite.Resize](DynamicSprite#Resize),
+[DynamicSprite.Width](DynamicSprite#Width)
 
 ---
 
@@ -800,6 +800,6 @@ Example:
 
 displays the size of the CustomAvatar.bmp image.
 
-*See Also:* [DynamicSprite.Height](DynamicSprite#DynamicSprite.Height),
-[DynamicSprite.Resize](DynamicSprite#DynamicSprite.Resize)
+*See Also:* [DynamicSprite.Height](DynamicSprite#Height),
+[DynamicSprite.Resize](DynamicSprite#Resize)
 

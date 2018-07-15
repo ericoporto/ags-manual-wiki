@@ -60,16 +60,16 @@ course of the game. Now this restriction was eliminated and you can
 change any existing custom property in game script, using appropriate
 SetProperty and SetTextProperty functions:
 
-[Character.SetProperty](Character#Character.SetProperty),
-[Character.SetTextProperty](Character#Character.SetTextProperty),
-[Hotspot.SetProperty](Hotspot#Hotspot.SetProperty),
-[Hotspot.SetTextProperty](Hotspot#Hotspot.SetTextProperty),
-[InventoryItem.SetProperty](InventoryItem#InventoryItem.SetProperty),
-[InventoryItem.SetTextProperty](InventoryItem#InventoryItem.SetTextProperty),
-[Object.SetProperty](Object#Object.SetProperty),
-[Object.SetTextProperty](Object#Object.SetTextProperty),
-[Room.SetProperty](Room#Room.SetProperty),
-[Room.SetTextProperty](Room#Room.SetTextProperty)
+[Character.SetProperty](Character#SetProperty),
+[Character.SetTextProperty](Character#SetTextProperty),
+[Hotspot.SetProperty](Hotspot#SetProperty),
+[Hotspot.SetTextProperty](Hotspot#SetTextProperty),
+[InventoryItem.SetProperty](InventoryItem#SetProperty),
+[InventoryItem.SetTextProperty](InventoryItem#SetTextProperty),
+[Object.SetProperty](Object#SetProperty),
+[Object.SetTextProperty](Object#SetTextProperty),
+[Room.SetProperty](Room#SetProperty),
+[Room.SetTextProperty](Room#SetTextProperty)
 
 Besides, the number of properties is no longer limited by 30, you may
 make as much of them as you need for your game.
@@ -121,12 +121,12 @@ screen.
 The `dialog_options_mouse_click` will now be called always, even if user
 clicks on the option, but on other hand option won't be run without
 explicit command:
-[RunActiveOption](DialogOptionsRenderingInfo#DialogOptionsRenderingInfo.RunActiveOption).
+[RunActiveOption](DialogOptionsRenderingInfo#RunActiveOption).
 
 Along with RunActiveOption,
 [DialogOptionsRenderingInfo](DialogOptionsRenderingInfo#DialogOptionsRenderingInfo)
 struct received another member function:
-[Update](DialogOptionsRenderingInfo#DialogOptionsRenderingInfo.Update). It forces options
+[Update](DialogOptionsRenderingInfo#Update). It forces options
 GUI to redraw itself, hence may be used to implement custom animation,
 or similar behavior.
 
@@ -147,8 +147,8 @@ For detailed information see:
 
 ---
   **obsolete function/variable**   **replace with**
-  GetRoomProperty                  [Room.GetProperty](Room#Room.GetProperty)
-  ProcessClick                     [Room.ProcessClick](Room#Room.ProcessClick)
+  GetRoomProperty                  [Room.GetProperty](Room#GetProperty)
+  ProcessClick                     [Room.ProcessClick](Room#ProcessClick)
 ---
 
 **REMINDER:** you can also use "Script Compatibility Level" switch to

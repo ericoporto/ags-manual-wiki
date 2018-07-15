@@ -131,7 +131,7 @@ Pointer mode, which will ignore anything but interface.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:* [Mouse.Click](topic62#Mouse.Click),
-[Room.ProcessClick](Room#Room.ProcessClick)
+[Room.ProcessClick](Room#ProcessClick)
 
 ---
 
@@ -365,7 +365,7 @@ Example:
 
 will gradually fade the INVENTORY GUI out until it is invisible.
 
-*See Also:* [Object.Transparency](Object#Object.Transparency)
+*See Also:* [Object.Transparency](Object#Transparency)
 
 ---
 

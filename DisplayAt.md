@@ -36,7 +36,7 @@ usually used for responses to the player LOOKing at things.
 
 *See Also:* [DisplayAt](topic73#DisplayAt),
 [DisplayMessage](topic73#DisplayMessage),
-[Character.Say](Character#Character.Say),
+[Character.Say](Character#Say),
 [DisplayTopBar](topic73#DisplayTopBar),
 [String.Format](topic71#String.Format)
 

@@ -4,9 +4,9 @@ DrawingSurface functions and properties
 The DrawingSurface family of functions allow you to directly draw onto
 dynamic sprites and room backgrounds in the game. You get a drawing
 surface by calling
-[DynamicSprite.GetDrawingSurface](DynamicSprite#DynamicSprite.GetDrawingSurface)
+[DynamicSprite.GetDrawingSurface](DynamicSprite#GetDrawingSurface)
 or
-[Room.GetDrawingSurfaceForBackground](Room#Room.GetDrawingSurfaceForBackground),
+[Room.GetDrawingSurfaceForBackground](Room#GetDrawingSurfaceForBackground),
 and you can then use the following methods to draw onto the surface.
 
 **IMPORTANT:** You **MUST** call the
@@ -168,7 +168,7 @@ will draw the *oDoor* object's graphic onto the room background at (100,
 [DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
 [DrawingSurface.DrawString](DrawingSurfaceFunctions#DrawingSurface.DrawString),
 [DrawingSurface.DrawSurface](DrawingSurfaceFunctions#DrawingSurface.DrawSurface),
-[Room.ColorDepth](Room#Room.ColorDepth)
+[Room.ColorDepth](Room#ColorDepth)
 
 ---
 
@@ -445,8 +445,8 @@ draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
 
 *See Also:*
-[DynamicSprite.GetDrawingSurface](DynamicSprite#DynamicSprite.GetDrawingSurface),
-[Room.GetDrawingSurfaceForBackground](Room#Room.GetDrawingSurfaceForBackground)
+[DynamicSprite.GetDrawingSurface](DynamicSprite#GetDrawingSurface),
+[Room.GetDrawingSurfaceForBackground](Room#GetDrawingSurfaceForBackground)
 
 ---
 
@@ -482,7 +482,7 @@ the middle.
 [DrawingSurface.DrawCircle](DrawingSurfaceFunctions#DrawingSurface.DrawCircle),
 [DrawingSurface.DrawLine](DrawingSurfaceFunctions#DrawingSurface.DrawLine),
 [DrawingSurface.DrawRectangle](DrawingSurfaceFunctions#DrawingSurface.DrawRectangle),
-[Game.GetColorFromRGB](Game#Game.GetColorFromRGB)
+[Game.GetColorFromRGB](Game#GetColorFromRGB)
 
 ---
 

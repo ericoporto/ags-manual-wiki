@@ -458,7 +458,7 @@ is useful for processing strings input from the user.
 **NOTE:** To convert a float to a string, you can use the
 [String.Format](topic71#String.Format) command.
 
-*See Also:* [Game.InputBox](Game#Game.InputBox),
+*See Also:* [Game.InputBox](Game#InputBox),
 [String.AsInt](topic71#String.AsInt),
 [String.Format](topic71#String.Format)
 
@@ -493,7 +493,7 @@ useful for processing strings input from the user.
 **NOTE:** To convert an integer to a string, you can use the
 [String.Format](topic71#String.Format) command.
 
-*See Also:* [Game.InputBox](Game#Game.InputBox),
+*See Also:* [Game.InputBox](Game#InputBox),
 [String.AsFloat](topic71#String.AsFloat),
 [String.Format](topic71#String.Format)
 

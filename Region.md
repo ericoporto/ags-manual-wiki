@@ -64,8 +64,8 @@ will run the actions defined in the event handler script for "Player
 walks onto region" for region 4.
 
 *See Also:*
-[Character.RunInteraction](Character#Character.RunInteraction),
-[Hotspot.RunInteraction](Hotspot#Hotspot.RunInteraction)
+[Character.RunInteraction](Character#RunInteraction),
+[Hotspot.RunInteraction](Hotspot#RunInteraction)
 
 ---
 
@@ -127,7 +127,7 @@ Example:
 
 will disable region number 3.
 
-*See Also:* [Hotspot.Enabled](Hotspot#Hotspot.Enabled),
+*See Also:* [Hotspot.Enabled](Hotspot#Enabled),
 [RemoveWalkableArea](Room#RemoveWalkableArea),
 [RestoreWalkableArea](Room#RestoreWalkableArea)
 
@@ -190,8 +190,8 @@ will set region 2's level light to 100 if the Global Integer 10 is 1.
 
 *See Also:* [Region.Tint](topic68#Region.Tint),
 [SetAmbientLightLevel](Game#SetAmbientLightLevel),
-[Character.SetLightLevel](Character#Character.SetLightLevel),
-[Object.SetLightLevel](Object#Object.SetLightLevel)
+[Character.SetLightLevel](Character#SetLightLevel),
+[Object.SetLightLevel](Object#SetLightLevel)
 
 ---
 

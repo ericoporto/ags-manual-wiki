@@ -85,9 +85,9 @@ the room background.
 Instead, there is a new
 [DrawingSurface](DrawingSurfaceFunctions#DrawingSurfaceFunctions) object which you do
 the drawing onto. You get one of these by calling
-[DynamicSprite.GetDrawingSurface](DynamicSprite#DynamicSprite.GetDrawingSurface)
+[DynamicSprite.GetDrawingSurface](DynamicSprite#GetDrawingSurface)
 or
-[Room.GetDrawingSurfaceForBackground](Room#Room.GetDrawingSurfaceForBackground),
+[Room.GetDrawingSurfaceForBackground](Room#GetDrawingSurfaceForBackground),
 depending on what you want to draw onto; and you can then use the
 various drawing surface methods to do your drawing.
 

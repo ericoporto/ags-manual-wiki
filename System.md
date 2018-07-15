@@ -510,8 +510,8 @@ will set the overall output volume to 80.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](AudioChannel#AudioChannel.Volume),
-[Game.SetAudioTypeVolume](Game#Game.SetAudioTypeVolume)
+*See Also:* [AudioChannel.Volume](AudioChannel#Volume),
+[Game.SetAudioTypeVolume](Game#SetAudioTypeVolume)
 
 ---
 

@@ -746,8 +746,8 @@ SetGameOption. **Basic properties**
     suddenly switching to face the right way.
 -   **Characters turn to face direction** - if set, then when a
     character turns round with the
-    [Character.FaceLocation](Character#Character.FaceLocation) or
-    [Character.FaceCharacter](Character#Character.FaceCharacter) script
+    [Character.FaceLocation](Character#FaceLocation) or
+    [Character.FaceCharacter](Character#FaceCharacter) script
     commands, they will visibly turn around using their available loops.
     If this option is not set, they will immediately appear facing their
     new direction.
@@ -898,7 +898,7 @@ SetGameOption. **Basic properties**
     more information.
 -   **Custom thought bubble GUI** - Determines which text window GUI is
     used for displaying thoughts with
-    [Think](Character#Character.Think).
+    [Think](Character#Think).
 -   **Fonts designed for high resolution** - normally, if the player
     chooses high resolution for their game, then the fonts will be
     scaled up to match. However, if you have drawn your fonts for the

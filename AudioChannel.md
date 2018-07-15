@@ -50,7 +50,7 @@ seek it back to the start.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Position](AudioChannel#AudioChannel.Position)
+*See Also:* [AudioChannel.Position](AudioChannel#Position)
 
 ---
 
@@ -84,7 +84,7 @@ of the *oMachine* room object.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](AudioChannel#AudioChannel.Volume)
+*See Also:* [AudioChannel.Volume](AudioChannel#Volume)
 
 ---
 
@@ -129,7 +129,7 @@ stop it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](Game#Game.StopAudio)
+*See Also:* [Game.StopAudio](Game#StopAudio)
 
 ---
 
@@ -173,7 +173,7 @@ finishes.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#AudioClip.Play)
+*See Also:* [AudioClip.Play](AudioClip#Play)
 
 ---
 
@@ -197,7 +197,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.PositionMs](AudioChannel#AudioChannel.PositionMs)
+*See Also:* [AudioChannel.PositionMs](AudioChannel#PositionMs)
 
 ---
 
@@ -223,7 +223,7 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#AudioClip.Play)
+*See Also:* [AudioClip.Play](AudioClip#Play)
 
 ---
 
@@ -254,7 +254,7 @@ will display what is currently playing on audio channel 2.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#AudioClip.Play),
+*See Also:* [AudioClip.Play](AudioClip#Play),
 [System.AudioChannels](topic72#System.AudioChannels)
 
 ---
@@ -279,7 +279,7 @@ What *position* represents depends on the FileType of the audio clip:
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](AudioChannel#AudioChannel.Seek) function.
+[AudioChannel.Seek](AudioChannel#Seek) function.
 
 Example:
 
@@ -293,8 +293,8 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.PositionMs](AudioChannel#AudioChannel.PositionMs),
-[AudioChannel.Seek](AudioChannel#AudioChannel.Seek)
+[AudioChannel.PositionMs](AudioChannel#PositionMs),
+[AudioChannel.Seek](AudioChannel#Seek)
 
 ---
 
@@ -310,7 +310,7 @@ offset into the sound in milliseconds. MIDI files will always return 0.
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](AudioChannel#AudioChannel.Seek) function.
+[AudioChannel.Seek](AudioChannel#Seek) function.
 
 Example:
 
@@ -324,8 +324,8 @@ display its position.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:* *See Also:*
-[AudioChannel.LengthMs](AudioChannel#AudioChannel.LengthMs),
-[AudioChannel.Position](AudioChannel#AudioChannel.Position)
+[AudioChannel.LengthMs](AudioChannel#LengthMs),
+[AudioChannel.Position](AudioChannel#Position)
 
 ---
 
@@ -364,6 +364,6 @@ reduce its volume.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.SetRoomLocation](AudioChannel#AudioChannel.SetRoomLocation),
-[Game.SetAudioTypeVolume](Game#Game.SetAudioTypeVolume),
+[AudioChannel.SetRoomLocation](AudioChannel#SetRoomLocation),
+[Game.SetAudioTypeVolume](Game#SetAudioTypeVolume),
 [System.Volume](topic72#System.Volume)

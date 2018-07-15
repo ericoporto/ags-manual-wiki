@@ -29,8 +29,8 @@ Example:
       Display("This frame is not flipped");
     }
 
-*See Also:* [Game.GetViewFrame](Game#Game.GetViewFrame),
-[ViewFrame.Graphic](ViewFrame#ViewFrame.Graphic)
+*See Also:* [Game.GetViewFrame](Game#GetViewFrame),
+[ViewFrame.Graphic](ViewFrame#Graphic)
 
 ---
 
@@ -48,9 +48,9 @@ Example:
     Display("This ViewFrame is view %d, loop %d, frame %d",
       frame.View, frame.Loop, frame.Frame);
 
-*See Also:* [Game.GetViewFrame](Game#Game.GetViewFrame),
-[ViewFrame.Loop](ViewFrame#ViewFrame.Loop),
-[ViewFrame.View](ViewFrame#ViewFrame.View)
+*See Also:* [Game.GetViewFrame](Game#GetViewFrame),
+[ViewFrame.Loop](ViewFrame#Loop),
+[ViewFrame.View](ViewFrame#View)
 
 ---
 
@@ -67,7 +67,7 @@ Example:
     ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
     Display("This frame uses sprite %d", frame.Graphic);
 
-*See Also:* [Game.GetViewFrame](Game#Game.GetViewFrame)
+*See Also:* [Game.GetViewFrame](Game#GetViewFrame)
 
 ---
 
@@ -101,7 +101,7 @@ if so, plays it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.GetViewFrame](Game#Game.GetViewFrame)
+*See Also:* [Game.GetViewFrame](Game#GetViewFrame)
 
 ---
 
@@ -119,9 +119,9 @@ Example:
     Display("This ViewFrame is view %d, loop %d, frame %d",
       frame.View, frame.Loop, frame.Frame);
 
-*See Also:* [Game.GetViewFrame](Game#Game.GetViewFrame),
-[ViewFrame.Frame](ViewFrame#ViewFrame.Frame),
-[ViewFrame.View](ViewFrame#ViewFrame.View)
+*See Also:* [Game.GetViewFrame](Game#GetViewFrame),
+[ViewFrame.Frame](ViewFrame#Frame),
+[ViewFrame.View](ViewFrame#View)
 
 ---
 
@@ -139,7 +139,7 @@ Example:
     ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
     Display("This frame has speed %d.", frame.Speed);
 
-*See Also:* [Game.GetViewFrame](Game#Game.GetViewFrame)
+*See Also:* [Game.GetViewFrame](Game#GetViewFrame)
 
 ---
 
@@ -157,7 +157,7 @@ Example:
     Display("This ViewFrame is view %d, loop %d, frame %d",
       frame.View, frame.Loop, frame.Frame);
 
-*See Also:* [Game.GetViewFrame](Game#Game.GetViewFrame),
-[ViewFrame.Loop](ViewFrame#ViewFrame.Loop),
-[ViewFrame.Frame](ViewFrame#ViewFrame.Frame)
+*See Also:* [Game.GetViewFrame](Game#GetViewFrame),
+[ViewFrame.Loop](ViewFrame#Loop),
+[ViewFrame.Frame](ViewFrame#Frame)
 

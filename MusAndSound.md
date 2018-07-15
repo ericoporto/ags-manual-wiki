@@ -208,7 +208,7 @@ the rest of your game data so that you can offer it as an optional extra
 download to the player. The game will function correctly if the file is
 not present.
 
-*SeeAlso:* [Speech.VoiceMode](Speech#Speech.VoiceMode)
+*SeeAlso:* [Speech.VoiceMode](Speech#VoiceMode)
 
 ---
 

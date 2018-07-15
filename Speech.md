@@ -38,7 +38,7 @@ will stop talking animation 40 game loops (1 second with the default
 game speed) before speech time ends.
 
 *See Also:*
-[Speech.DisplayPostTimeMs](Speech#Speech.DisplayPostTimeMs)
+[Speech.DisplayPostTimeMs](Speech#DisplayPostTimeMs)
 
 ---
 
@@ -48,8 +48,8 @@ game speed) before speech time ends.
 
 Enables/disables the custom speech portrait placement. When set to
 **true** the character portraits are positioned at screen coordinates
-defined by [Speech.PortraitXOffset](Speech#Speech.PortraitXOffset)
-and [Speech.PortraitY](Speech#Speech.PortraitY). When set to
+defined by [Speech.PortraitXOffset](Speech#PortraitXOffset)
+and [Speech.PortraitY](Speech#PortraitY). When set to
 **false** the portraits will be automatically aligned again.
 
 **NOTE:** This property has no effect if the Lucas-Arts speech style is
@@ -57,8 +57,8 @@ used.
 
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
-*See Also:* [Speech.PortraitXOffset](Speech#Speech.PortraitXOffset),
-[Speech.PortraitY](Speech#Speech.PortraitY)
+*See Also:* [Speech.PortraitXOffset](Speech#PortraitXOffset),
+[Speech.PortraitY](Speech#PortraitY)
 
 ---
 
@@ -79,7 +79,7 @@ and is set to zero by default.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Speech.AnimationStopTimeMargin](Speech#Speech.AnimationStopTimeMargin)
+[Speech.AnimationStopTimeMargin](Speech#AnimationStopTimeMargin)
 
 ---
 
@@ -102,8 +102,8 @@ disabled. In that case, the individual character's animation delay is
 used instead.
 
 *See Also:*
-[Character.SpeechAnimationDelay](Character#Character.SpeechAnimationDelay),
-[Speech.UseGlobalSpeechAnimationDelay](Speech#Speech.UseGlobalSpeechAnimationDelay)
+[Character.SpeechAnimationDelay](Character#SpeechAnimationDelay),
+[Speech.UseGlobalSpeechAnimationDelay](Speech#UseGlobalSpeechAnimationDelay)
 
 ---
 
@@ -123,8 +123,8 @@ side and respected portrait's border.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Speech.CustomPortraitPlacement](Speech#Speech.CustomPortraitPlacement),
-[Speech.PortraitY](Speech#Speech.PortraitY)
+[Speech.CustomPortraitPlacement](Speech#CustomPortraitPlacement),
+[Speech.PortraitY](Speech#PortraitY)
 
 ---
 
@@ -140,8 +140,8 @@ Gets/sets the character's speech portrait **y** coordinate on screen.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Speech.CustomPortraitPlacement](Speech#Speech.CustomPortraitPlacement),
-[Speech.PortraitXOffset](Speech#Speech.PortraitXOffset)
+[Speech.CustomPortraitPlacement](Speech#CustomPortraitPlacement),
+[Speech.PortraitXOffset](Speech#PortraitXOffset)
 
 ---
 
@@ -165,7 +165,7 @@ Example:
 
 will assign the "space" key to skip the speech.
 
-*See Also:* [Speech.SkipStyle](Speech#Speech.SkipStyle)
+*See Also:* [Speech.SkipStyle](Speech#SkipStyle)
 
 ---
 
@@ -195,9 +195,9 @@ will make the player unable to skip the text by pressing a mouse button
 or a key.
 
 *See Also:*
-[Game.IgnoreUserInputAfterTextTimeoutMs](Game#Game.IgnoreUserInputAfterTextTimeoutMs),
-[Game.TextReadingSpeed](Game#Game.TextReadingSpeed),
-[Game.Speech.SkipKey](Speech#Speech.SkipKey)
+[Game.IgnoreUserInputAfterTextTimeoutMs](Game#IgnoreUserInputAfterTextTimeoutMs),
+[Game.TextReadingSpeed](Game#TextReadingSpeed),
+[Game.Speech.SkipKey](Speech#SkipKey)
 
 ---
 
@@ -268,8 +268,8 @@ will make the game use global speech animation delay.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Character.SpeechAnimationDelay](Character#Character.SpeechAnimationDelay),
-[Speech.GlobalSpeechAnimationDelay](Speech#Speech.GlobalSpeechAnimationDelay)
+[Character.SpeechAnimationDelay](Character#SpeechAnimationDelay),
+[Speech.GlobalSpeechAnimationDelay](Speech#GlobalSpeechAnimationDelay)
 
 ---
 
@@ -289,7 +289,7 @@ Valid values for VoiceMode are:
 
 The default is *eSpeechVoiceAndText* if in-game speech is enabled, and
 *eSpeechTextOnly* if it is not. Changing this setting changes the
-behaviour of all [Say](Character#Character.Say) and
+behaviour of all [Say](Character#Say) and
 [Display](topic73#Display) commands which have a speech file assigned
 to them.
 

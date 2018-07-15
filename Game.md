@@ -97,7 +97,7 @@ waits for any currently playing music to finish.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](Game#Game.StopAudio)
+*See Also:* [Game.StopAudio](Game#StopAudio)
 
 ---
 
@@ -121,7 +121,7 @@ will display a message if the voice pack is not available.
 **NOTE:** This function used to be called IsVoxAvailable, but has now
 been renamed to avoid confusion.
 
-*See Also:* [AudioClip.IsAvailable](AudioClip#AudioClip.IsAvailable)
+*See Also:* [AudioClip.IsAvailable](AudioClip#IsAvailable)
 
 ---
 
@@ -162,8 +162,8 @@ This command is obsolete.
 Use the AudioClip.Play command and set its Volume property to 0 to
 simulate this effect.
 
-*See Also:* [AudioClip.Play](AudioClip#AudioClip.Play),
-[AudioChannel.Volume](AudioChannel#AudioChannel.Volume)
+*See Also:* [AudioClip.Play](AudioClip#Play),
+[AudioChannel.Volume](AudioChannel#Volume)
 
 ---
 
@@ -255,7 +255,7 @@ while speech is playing.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.SetAudioTypeVolume](Game#Game.SetAudioTypeVolume)
+*See Also:* [Game.SetAudioTypeVolume](Game#SetAudioTypeVolume)
 
 ---
 
@@ -295,7 +295,7 @@ will change the volume of all currently playing and future music to
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:* [SetSpeechVolume](Game#SetSpeechVolume),
-[AudioClip.Play](AudioClip#AudioClip.Play),
+[AudioClip.Play](AudioClip#Play),
 [System.Volume](topic72#System.Volume)
 
 ---
@@ -314,7 +314,7 @@ Example:
 
 will set the speech volume to 200.
 
-*See Also:* [Game.SetAudioTypeVolume](Game#Game.SetAudioTypeVolume)
+*See Also:* [Game.SetAudioTypeVolume](Game#SetAudioTypeVolume)
 
 ---
 
@@ -340,6 +340,6 @@ will stop all currently playing audio.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.IsAudioPlaying](Game#Game.IsAudioPlaying),
-[AudioClip.Play](AudioClip#AudioClip.Play),
-[AudioChannel.Stop](AudioChannel#AudioChannel.Stop)
+*See Also:* [Game.IsAudioPlaying](Game#IsAudioPlaying),
+[AudioClip.Play](AudioClip#Play),
+[AudioChannel.Stop](AudioChannel#Stop)
