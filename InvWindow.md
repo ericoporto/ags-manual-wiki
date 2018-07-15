@@ -116,7 +116,7 @@ inventory window.
 
 ### ItemCount property (inv window)
 
-*(Formerly known as game.num\_inv\_items, which is now obsolete)*
+*(Formerly known as game.num_inv_items, which is now obsolete)*
 
     readonly int InvWindow.ItemCount;
 
@@ -148,7 +148,7 @@ more inventory items than will fit in the inventory window.
     int InvWindow.ItemHeight;
 
 Gets/sets the height of the rows in the inventory window. You should
-generally set this up in game\_start to the height of your largest
+generally set this up in game_start to the height of your largest
 inventory item. The default is 22.
 
 Example:
@@ -170,7 +170,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
     int InvWindow.ItemWidth;
 
 Gets/sets the width of the items in the inventory window. You should
-generally set this up in game\_start to the width of your largest
+generally set this up in game_start to the width of your largest
 inventory item. The default is 40.
 
 Example:
@@ -187,7 +187,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 
 ### ItemsPerRow property
 
-*(Formerly known as game.items\_per\_line, which is now obsolete)*
+*(Formerly known as game.items_per_line, which is now obsolete)*
 
     readonly int InvWindow.ItemsPerRow;
 
@@ -227,7 +227,7 @@ displays how many items can be visible in the invMain window at once.
 
 ### TopItem property (inv window)
 
-*(Formerly known as game.top\_inv\_item, which is now obsolete)*
+*(Formerly known as game.top_inv_item, which is now obsolete)*
 
     int InvWindow.TopItem;
 

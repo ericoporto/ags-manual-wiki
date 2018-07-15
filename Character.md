@@ -524,12 +524,12 @@ they reach CHARTOFOLLOW, but instead to randomly wander around the
 character - useful perhaps for a very energetic dog or something.
 
 There is also another special use for this command. You can pass the
-special value FOLLOW\_EXACTLY as the DIST parameter rather than passing
+special value FOLLOW_EXACTLY as the DIST parameter rather than passing
 a number. If you do this, then CHARID will always remain at exactly the
 same X and Y co-ordinates as CHARTOFOLLOW. This might be useful for
 effects such as a temporary halo over the character and so forth.
 
-If you use FOLLOW\_EXACTLY, then EAGERNESS has another meaning. If you
+If you use FOLLOW_EXACTLY, then EAGERNESS has another meaning. If you
 pass 0, CHARID will be drawn in front of CHARTOFOLLOW; if you pass 1, it
 will be drawn behind.
 
@@ -1056,7 +1056,7 @@ happens.
 
 This is useful for example in the Player Enters Room event of a room, to
 make sure the character can move if a ChangeRoom with co-ordinates has
-been issued to get there. You could also use this in on\_event for
+been issued to get there. You could also use this in on_event for
 eEventEnterRoomBeforeFadein to use whenever a player enters a room.
 
 Example:
@@ -1101,7 +1101,7 @@ character in cursor mode MODE.
 
 This function is very similar to RunInteraction, except that rather than
 run the event handler script function, it simply returns *true* if
-something would have happened, or *false* if unhandled\_event would have
+something would have happened, or *false* if unhandled_event would have
 been run.
 
 Example:
@@ -1218,7 +1218,7 @@ removed and replaced with the new MESSAGE.
 
 All background speech is automatically removed when a normal Say command
 is used (unless you set the global variable
-[game.bgspeech\_stay\_on\_display](Gamevariables) to 1).
+[game.bgspeech_stay_on_display](Gamevariables) to 1).
 
 Example:
 
@@ -1334,12 +1334,12 @@ be played if the character is idle for 30 seconds.
 
     Character.SetWalkSpeed(int x_speed, int y_speed)
 
-Changes the character to have a walking speed of X\_SPEED in the
-horizontal direction and Y\_SPEED in the vertical direction. The values
-used for X\_SPEED and Y\_SPEED are identical to those set in the AGS
+Changes the character to have a walking speed of X_SPEED in the
+horizontal direction and Y_SPEED in the vertical direction. The values
+used for X_SPEED and Y_SPEED are identical to those set in the AGS
 Editor for walking speed.
 
-X\_SPEED and Y\_SPEED can be identical, in which case the character
+X_SPEED and Y_SPEED can be identical, in which case the character
 moves with the same speed in any direction. (the editor calls this
 "Uniform movement speed")
 
@@ -1434,7 +1434,7 @@ thinking animation.
 [Character.Thinking](Character#Thinking),
 [Character.ThinkingFrame](Character#ThinkingFrame),
 [Character.ThinkView](Character#ThinkView),
-[game.speech\_bubble\_width](Gamevariables)
+[game.speech_bubble_width](Gamevariables)
 
 ---
 
@@ -2499,7 +2499,7 @@ talking with the SayBackground command.
 
 Since this property will only be true while the character is speaking,
 and speaking is a blocking command, this property will probably only be
-useful to access from the (late\_)repeatedly\_execute\_always handler.
+useful to access from the (late_)repeatedly_execute_always handler.
 
 Example:
 
@@ -2533,7 +2533,7 @@ speaking; if you attempt to call it when
 will raise an error.
 
 Since speaking is a blocking command, this property will probably only
-be useful access from the (late\_)repeatedly\_execute\_always handler.
+be useful access from the (late_)repeatedly_execute_always handler.
 
 Example:
 
@@ -2642,7 +2642,7 @@ thinking character.
 
 Since this property will only be true while the character is thinking,
 and thinking is a blocking command, this property will probably only be
-useful to access from the (late\_)repeatedly\_execute\_always handler.
+useful to access from the (late_)repeatedly_execute_always handler.
 
 Example:
 
@@ -2681,7 +2681,7 @@ thinking; if you attempt to call it when
 will raise an error.
 
 Since thinking is a blocking command, this property will probably only
-be useful access from the (late\_)repeatedly\_execute\_always handler.
+be useful access from the (late_)repeatedly_execute_always handler.
 
 Example:
 

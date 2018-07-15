@@ -32,7 +32,7 @@ To support alpha blending a new
 [HasAlphaChannel](DialogOptionsRenderingInfo#HasAlphaChannel)
 property has been added to DialogOptionsRenderingInfo class. This
 property must be set it in
-[dialog\_options\_get\_dimensions](CustomDialogOptions)
+[dialog_options_get_dimensions](CustomDialogOptions)
 function, the one where you normally define size and position of the
 drawing surface.
 
@@ -55,10 +55,10 @@ below:
   SetVoiceMode                           [Speech.VoiceMode](Speech#VoiceMode)
   SetSkipSpeech                          [Speech.SkipStyle](Speech#SkipStyle)
   SetSpeechStyle                         [Speech.Style](Speech#Style)
-  game.close\_mouth\_end\_speech\_time   [Speech.AnimationStopTimeMargin](Speech#AnimationStopTimeMargin)
-  game.speech\_text\_align               [Speech.TextAlignment](Speech#TextAlignment)
-  game.skip\_speech\_specific\_key       [Speech.SkipKey](Speech#SkipKey)
-  game.talkanim\_speed                   [Speech.GlobalSpeechAnimationDelay](Speech#GlobalSpeechAnimationDelay)
+  game.close_mouth_end_speech_time   [Speech.AnimationStopTimeMargin](Speech#AnimationStopTimeMargin)
+  game.speech_text_align               [Speech.TextAlignment](Speech#TextAlignment)
+  game.skip_speech_specific_key       [Speech.SkipKey](Speech#SkipKey)
+  game.talkanim_speed                   [Speech.GlobalSpeechAnimationDelay](Speech#GlobalSpeechAnimationDelay)
 ---
 
 **Game-wide speech animation delay**

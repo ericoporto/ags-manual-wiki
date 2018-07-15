@@ -96,7 +96,7 @@ will display a message if Caps Lock is on.
 
 ### ColorDepth property (system)
 
-*(Formerly known as system.color\_depth, which is now obsolete)*
+*(Formerly known as system.color_depth, which is now obsolete)*
 
     readonly static int System.ColorDepth;
 
@@ -314,7 +314,7 @@ Example:
 
 ### ScreenHeight property
 
-*(Formerly known as system.screen\_height, which is now obsolete)*
+*(Formerly known as system.screen_height, which is now obsolete)*
 
     readonly static int System.ScreenHeight;
 
@@ -344,7 +344,7 @@ will display the current resolution and colour depth
 
 ### ScreenWidth property
 
-*(Formerly known as system.screen\_width, which is now obsolete)*
+*(Formerly known as system.screen_width, which is now obsolete)*
 
     readonly static int System.ScreenWidth;
 
@@ -450,7 +450,7 @@ will display the AGS version number
 
 ### ViewportHeight property
 
-*(Formerly known as system.viewport\_height, which is now obsolete)*
+*(Formerly known as system.viewport_height, which is now obsolete)*
 
     readonly static int System.ViewportHeight;
 
@@ -471,7 +471,7 @@ will display the current viewport size
 
 ### ViewportWidth property
 
-*(Formerly known as system.viewport\_width, which is now obsolete)*
+*(Formerly known as system.viewport_width, which is now obsolete)*
 
     readonly static int System.ViewportWidth;
 

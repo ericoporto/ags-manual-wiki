@@ -11,7 +11,7 @@ To use a global function, open up the main script header
 
     import function my_function_name (parameters);
 
-Where *my\_function\_name* is the name of the global script function,
+Where *my_function_name* is the name of the global script function,
 and *parameters* is a list of the TYPES ONLY of the parameters it takes.
 For example, if you had in your global script:
 

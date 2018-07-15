@@ -90,7 +90,7 @@ intimidating, but you should have something like this:
 ![](images/intro3_4.jpg)\
 *Script editor after adding a hotspot event*
 
-The "*function hDoor\_Look*" line defines that the script underneath
+The "*function hDoor_Look*" line defines that the script underneath
 will be run when this event occurs. In AGS, the curly brackets { and }
 are used to mark the start and end of a block of script. Anything that
 you type in between them will be run as part of this event.

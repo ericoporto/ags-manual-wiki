@@ -167,7 +167,7 @@ computer.
 Other click on inventory
 
 only applies to the Lucasarts-style inventory, occurs when the player
-clicks any other cursor mode (apart from look, talk and use\_inv) on the
+clicks any other cursor mode (apart from look, talk and use_inv) on the
 item.
 
 ---
@@ -195,7 +195,7 @@ event could be used to allow the player to give items to characters.
 Any click on character
 
 occurs when the player clicks any other cursor mode (apart from look,
-talk and use\_inv) on the character.
+talk and use_inv) on the character.
 
 ---
 

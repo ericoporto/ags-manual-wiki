@@ -16,7 +16,7 @@ great control over your game.
 [**Extender functions**](ExtenderFunctions)\
 [**Game variables**](Gamevariables)\
 [**Predefined global script functions**](TextScriptEvents)\
-[**repeatedly\_execute (\_always)**](RepExec)\
+[**repeatedly_execute (_always)**](RepExec)\
 [**Custom dialog options rendering**](CustomDialogOptions)\
 [**Built-in enumerated types**](BuiltInEnums)\
 [**Script language keywords**](enum#topic46)\
@@ -58,5 +58,5 @@ properties**](DrawingSurfaceFunctions)\
 [**System functions and properties**](System)\
 [**Text display / Speech functions**](topic73)\
 [**ViewFrame functions and properties**](ViewFrame#topic74)\
-[**SCUMM\_VERBCOIN\_GUI functions**](SCUMM_VERBCOIN_GUI)
+[**SCUMM_VERBCOIN_GUI functions**](SCUMM_VERBCOIN_GUI)
 

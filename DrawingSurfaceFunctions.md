@@ -45,7 +45,7 @@ Clears the surface to the specified COLOUR (this is a number you can
 find in the Colours pane of the editor). The current contents of the
 surface will be lost.
 
-If you do not supply the COLOUR parameter, or use COLOR\_TRANSPARENT,
+If you do not supply the COLOUR parameter, or use COLOR_TRANSPARENT,
 the surface will be cleared to be fully transparent.
 
 Example:
@@ -179,7 +179,7 @@ will draw the *oDoor* object's graphic onto the room background at (100,
     DrawingSurface.DrawLine(int from_x, int from_y, int to_x, int to_y,
                             optional int thickness)
 
-Draws a line from (FROM\_X, FROM\_Y) to (TO\_X, TO\_Y) in the surface's
+Draws a line from (FROM_X, FROM_Y) to (TO_X, TO_Y) in the surface's
 current drawing colour.
 
 The *thickness* parameter allows you to specify how thick the line is,
@@ -214,7 +214,7 @@ the screen (160,100);
     DrawingSurface.DrawMessageWrapped(int x, int y, int width,
                                       FontType font, int message_number)
 
-Draws the room message MESSAGE\_NUMBER onto the surface at (x,y), using
+Draws the room message MESSAGE_NUMBER onto the surface at (x,y), using
 the specified FONT.
 
 WIDTH is the width of the virtual textbox enclosing the text, and is the
@@ -375,7 +375,7 @@ effects.
 surfaces.
 
 **NOTE:** This command can be a bit on the slow side, so don't call it
-from repeatedly\_execute.
+from repeatedly_execute.
 
 **TIP:** If you want to gradually fade in a second background, create a
 copy of the original surface and then restore it after each iteration,
@@ -462,7 +462,7 @@ use this colour for their drawing.
 
 You can set this either to an AGS Colour Number (as you'd get from the
 Colours pane in the editor) or to the special constant
-COLOR\_TRANSPARENT, which allows you to draw transparent areas onto the
+COLOR_TRANSPARENT, which allows you to draw transparent areas onto the
 surface.
 
 Example:

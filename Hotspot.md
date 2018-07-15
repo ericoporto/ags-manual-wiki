@@ -158,7 +158,7 @@ hotspot in cursor mode MODE.
 
 This function is very similar to RunInteraction, except that rather than
 run the event handler script function, it simply returns *true* if
-something would have happened, or *false* if unhandled\_event would have
+something would have happened, or *false* if unhandled_event would have
 been run.
 
 Example:

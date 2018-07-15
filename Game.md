@@ -54,7 +54,7 @@ The tasks performed are as follows depending on the COMMAND parameter:
 
 NOTE: These CD Audio functions are slow compared to all the other script
 functions. This will not be noticeable if you call them from most
-scripts, but using CDAudio in a repeatedly\_execute script will
+scripts, but using CDAudio in a repeatedly_execute script will
 noticeably slow down the game.
 
 **Cross-Platform Support**
@@ -130,7 +130,7 @@ been renamed to avoid confusion.
     PlayFlic (int flic_number, int options)
 
 Plays a FLI or FLC animation. The game checks for FLICx.FLC and
-FLICx.FLI (where X is FLIC\_NUMBER) and if it finds one, plays it.
+FLICx.FLI (where X is FLIC_NUMBER) and if it finds one, plays it.
 
 OPTIONS has these meanings:
 
@@ -234,7 +234,7 @@ versions.
 
 ### SetAudioTypeSpeechVolumeDrop
 
-*(Formerly known as game.speech\_music\_drop, which is now obsolete)*
+*(Formerly known as game.speech_music_drop, which is now obsolete)*
 
     static Game.SetAudioTypeSpeechVolumeDrop(AudioType, int volumeReduction)
 

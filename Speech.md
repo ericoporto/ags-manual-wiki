@@ -18,7 +18,7 @@ Speech functions and properties
 
 ### AnimationStopTimeMargin
 
-*(Formerly known as game.close\_mouth\_end\_speech\_time, which is now
+*(Formerly known as game.close_mouth_end_speech_time, which is now
 obsolete)*
 
     static int Speech.AnimationStopTimeMargin
@@ -85,7 +85,7 @@ and is set to zero by default.
 
 ### GlobalSpeechAnimationDelay
 
-*(Formerly known as game.talkanim\_speed, which is now obsolete)*
+*(Formerly known as game.talkanim_speed, which is now obsolete)*
 
     static int Speech.GlobalSpeechAnimationDelay
 
@@ -147,7 +147,7 @@ Gets/sets the character's speech portrait **y** coordinate on screen.
 
 ### SkipKey
 
-*(Formerly known as game.skip\_speech\_specific\_key, which is now
+*(Formerly known as game.skip_speech_specific_key, which is now
 obsolete)*
 
     static eKeyCode Speech.SkipKey
@@ -229,7 +229,7 @@ will change the speech style to a close up portrait of the character.
 
 ### TextAlignment
 
-*(Formerly known as game.speech\_text\_align, which is now obsolete)*
+*(Formerly known as game.speech_text_align, which is now obsolete)*
 
     static Alignment Speech.TextAlignment
 

@@ -57,8 +57,8 @@ dialog option scripts, then you should go to General Settings and enable
 **IMPORTANT:** When adding the functions to the script, they all take in
 a parameter of type
 [DialogOptionsRenderingInfo](DialogOptionsRenderingInfo#DialogOptionsRenderingInfoFunctions).
-The dialog\_options\_mouse\_click function has an extra parameter for
-the mouse button, and dialog\_options\_key\_press has an extra parameter
+The dialog_options_mouse_click function has an extra parameter for
+the mouse button, and dialog_options_key_press has an extra parameter
 for the key code. See the example below.
 
 **IMPORTANT:** All of the Custom Dialog functions run on the

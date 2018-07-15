@@ -46,7 +46,7 @@ MP3 player is almp3, by Javier Gonzalez and the FreeAmp team. It uses
 the mpg123 MP3 decoder, and is distributed under the terms of the GNU
 Lesser General Public License version 2.1.
 
-You should also include all the license\_\* files from the DOCS
+You should also include all the license_\* files from the DOCS
 directory with your game.
 
 **IMPORTANT:** If you intend to make money for your game, be it

@@ -8,27 +8,27 @@ also some other events which you can add if you want to.
 
 The available event functions are:
 
-dialog\_request (int parameter)
+dialog_request (int parameter)
 
 Called when a dialog script line "run-script" is processed. PARAMETER is
 the value of the number following the "run-script" on that line of the
 dialog script.
 
-game\_start ()
+game_start ()
 
 Called at the start of the game, before the first room is loaded. You
 can use this to set up the initial positions of characters, and to turn
 GUIs on and off. **You cannot run animations or do anything else which
 relies on a room being loaded**.
 
-interface\_click (int interface, int button)
+interface_click (int interface, int button)
 
 **(Now Obsolete)** Called when the player clicks on a button on a GUI
 which has its action set as "Run script". INTERFACE is the number of the
 GUI which they clicked on. BUTTON is the object number of the button
 within this GUI.
 
-on\_event (EventType event, int data)
+on_event (EventType event, int data)
 
 Called whenever certain game events happen. The value of DATA depends on
 which event has occurred. This allows you to perform checks or update
@@ -60,13 +60,13 @@ is in. The possible values of event are:
           tells your game that it has just been restored from a save game
           DATA = save slot number
 
-on\_key\_press (eKeyCode keycode)
+on_key_press (eKeyCode keycode)
 
 Called whenever a key is pressed on the keyboard. KEYCODE holds the
 ASCII value of the key. A list of these values is in [this
 section](ASCIIcodes).
 
-on\_mouse\_click (MouseButton button)
+on_mouse_click (MouseButton button)
 
 Called when the player clicks a mouse button. BUTTON is either LEFT,
 RIGHT or MIDDLE, depending on which button was clicked. The "mouse.x"
@@ -79,28 +79,28 @@ If 'Enable mouse wheel support' is enabled, this function can also be
 called with eMouseWheelNorth or eMouseWheelSouth, which indicate the
 user moving the mouse wheel north or south, respectively.
 
-repeatedly\_execute()
+repeatedly_execute()
 
 Called every game cycle (normally 40 times per second). See [this help
 page](RepExec) for more information.
 
-repeatedly\_execute\_always()
+repeatedly_execute_always()
 
 Called every game cycle, even when a blocking routine (eg.
 speech/cutscene) is in progress. You **cannot** call any blocking
-functions from this event handler. **repeatedly\_execute\_always** is
+functions from this event handler. **repeatedly_execute_always** is
 called **BEFORE** the game objects (characters, rooms, etc) get updated.
 See [this help page](RepExec) for more information.
 
-late\_repeatedly\_execute\_always()
+late_repeatedly_execute_always()
 
 Called every game cycle, even when a blocking routine (eg.
 speech/cutscene) is in progress. You **cannot** call any blocking
-functions from this event handler. **late\_repeatedly\_execute\_always**
+functions from this event handler. **late_repeatedly_execute_always**
 is called **AFTER** the game objects (characters, rooms, etc) got
 updated, but before game is redrawn on screen.
 
-unhandled\_event (int what, int type)
+unhandled_event (int what, int type)
 
 Called when an event occurs, but no handler is set up in the Events
 list. This could be used to display a default "I can't do that" type of
@@ -146,7 +146,7 @@ defined.
 This function is **not** triggered if the player clicks on nothing
 (hotspot 0).
 
-The *on\_key\_press* and *on\_mouse\_click* events can also be handled
+The *on_key_press* and *on_mouse_click* events can also be handled
 by individual room scripts. If you add their function definitions to
 your room script in a similar way to how they are in the global script,
 the room script can intercept the keypress/mouseclick first, and then

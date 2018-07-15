@@ -14,7 +14,7 @@ Palette functions
 This is used for special effects, like the flowing colours on the Space
 Quest 4 title screen, and the Sierra logo of the later Sierra games. The
 palette indexes from START to END are cycled around one slot. Using this
-call in a repeatedly\_execute function gives the effect of animation.
+call in a repeatedly_execute function gives the effect of animation.
 
 By default, the colours rotate leftwards through the palette. If you
 pass the arguments the other way round (ie. START being larger than END)

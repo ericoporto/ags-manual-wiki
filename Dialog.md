@@ -298,7 +298,7 @@ Starts a conversation from the specified topic.
 NOTE: The conversation will not start immediately; instead, it will be
 run when the current script function finishes executing.
 
-If you use this command from within the dialog\_request function, it
+If you use this command from within the dialog_request function, it
 will specify that the game should return to this new topic when the
 script finishes.
 
@@ -317,8 +317,8 @@ will start the conversation topic named dMerchant.
 
     StopDialog ()
 
-This command can only be used from within the dialog\_request function.
-It tells AGS that when dialog\_request finishes, the whole conversation
+This command can only be used from within the dialog_request function.
+It tells AGS that when dialog_request finishes, the whole conversation
 should stop rather than continuing with the dialog script.
 
 You can use this function to end the conversation depending on whether

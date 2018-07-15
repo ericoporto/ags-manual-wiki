@@ -108,10 +108,10 @@ The only breaking changes are as follows:\
 1. `new` is now a reserved word. This means that if you had any
 variables called "new" then your script will fail to compile. Just
 rename the variable to something else.\
-2. Because of the removal of some system limits, some of the AGS\_MAX\_
+2. Because of the removal of some system limits, some of the AGS_MAX_
 constants have been removed (since there is no sensible value for them
 now that the limits have gone). This will probably only affect module
 authors and is unlikely to affect your game. Specifically, the following
-have been removed: AGS\_MAX\_GUIS, AGS\_MAX\_CHARACTERS,
-AGS\_MAX\_VIEWS, AGS\_MAX\_LOOPS\_PER\_VIEW,
-AGS\_MAX\_FRAMES\_PER\_LOOP.
+have been removed: AGS_MAX_GUIS, AGS_MAX_CHARACTERS,
+AGS_MAX_VIEWS, AGS_MAX_LOOPS_PER_VIEW,
+AGS_MAX_FRAMES_PER_LOOP.

@@ -1,7 +1,7 @@
 ASCII code table
 ----------------
 
-This section lists the key codes which can be passed to on\_key\_press
+This section lists the key codes which can be passed to on_key_press
 and which keys they represent:
 
     AGS KeyCode       Key         ASCII code
@@ -123,14 +123,14 @@ and which keys they represent:
     eKeyDownArrow         DownArrow   380
     eKeyPageDown          PageDown    381
 
-Use these key codes in your on\_key\_press function to process player
+Use these key codes in your on_key_press function to process player
 input. For example:
 
     if (keycode == eKeyA) Display("You pressed A");
     if (keycode == eKeyPlus) Display("You pressed the Plus key");
 
 The following extra codes can only be used with IsKeyPressed (ie.
-on\_key\_press is never called with these codes):
+on_key_press is never called with these codes):
 
      403       Left shift
      404       Right shift

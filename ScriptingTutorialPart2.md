@@ -135,7 +135,7 @@ a complete piece of code could look like this:
 ### Your Own Functions
 
 You've probably noticed in the manual, it mentioning functions such as
-*repeatedly\_execute*, and *on\_event*, and how you can add them to your
+*repeatedly_execute*, and *on_event*, and how you can add them to your
 global script to do cool stuff. But you may be wondering, how exactly to
 go about it.
 
@@ -154,8 +154,8 @@ each parameter that you want, you need to write its type (*int* or
 *string*), followed by the name it will be known by inside the function.
 This name can be anything you like - it is similar to naming a variable.
 
-There are some **fixed** functions, such as dialog\_request and
-on\_event, which are part of AGS and therefore you **MUST** use the
+There are some **fixed** functions, such as dialog_request and
+on_event, which are part of AGS and therefore you **MUST** use the
 correct number and type of parameters.  However, you may also add your
 own functions by naming them however you like, and having as many
 parameters as you need.
@@ -170,7 +170,7 @@ like you call a built-in function - ie. just write its name, parameters
 then a semicolon.
 
 I think a couple of examples are in order. First of all, let's show a
-fixed function, on\_event:
+fixed function, on_event:
 
     function on_event (EventType event, int data)
     {

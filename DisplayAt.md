@@ -26,7 +26,7 @@ Example:
     int my_counter;
     Display ("The counter is currently set to %d.", my_counter);
 
-will replace the '`%d`' with the value of the variable "my\_counter".
+will replace the '`%d`' with the value of the variable "my_counter".
 
 NOTE: Display is a blocking function - that is, control will not return
 to the script until the player has removed the text window (by pressing
@@ -99,7 +99,7 @@ will display the message at y coordinate 50.
 
 Identical to the Display function, but this uses a message text defined
 in the AGS Editor rather than in the script. It will either use a
-message from the current room, or a global message (if message\_number
+message from the current room, or a global message (if message_number
 &gt;= 500).
 
 Example:
@@ -154,21 +154,21 @@ section.
 The Y parameter specifies the Y location on the screen where the message
 box will appear. The default is 25.
 
-The TEXT\_COLOR parameter specifies the text colour of the top bar, and
-the BACK\_COLOR specifies the background colour of the top bar.
+The TEXT_COLOR parameter specifies the text colour of the top bar, and
+the BACK_COLOR specifies the background colour of the top bar.
 
-You can pass 0 for Y, TEXT\_COLOR or BACK\_COLOR - if you do, it will
+You can pass 0 for Y, TEXT_COLOR or BACK_COLOR - if you do, it will
 use the setting you used last time.
 
 There are a couple of game variables available which can further
 customize the look of the bar. You can change these before calling
 DisplayTopBar.
 
-**game.top\_bar\_bordercolor** sets the colour used for the bar's border
+**game.top_bar_bordercolor** sets the colour used for the bar's border
 (set to the same colour as the backcolor if you don't want a border)\
-**game.top\_bar\_borderwidth** sets the width of the bar's border, in
+**game.top_bar_borderwidth** sets the width of the bar's border, in
 pixels (default 1)\
-**game.top\_bar\_font** sets the font to use for the top bar. The
+**game.top_bar_font** sets the font to use for the top bar. The
 default is -1, which means that the current Normal font is used. Set it
 to a specific number to use that font instead.
 

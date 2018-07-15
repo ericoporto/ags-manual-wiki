@@ -25,12 +25,12 @@ picture, and set the location and width/height amongst other things.
 The "Visibility" property allows you to set when the GUI is displayed.
 The default is "Normal", which means that the GUI will initially be
 visible, though you can turn it off with a GUI.Visible=false command in
-game\_start if you need to.
+game_start if you need to.
 
 The "Popup modal" option means that the GUI will be initially off and
 must be turned on by a script command. With this option, the game will
 be paused while the GUI is displayed, during which time the
-on\_mouse\_click and on\_key\_press functions will not get run.
+on_mouse_click and on_key_press functions will not get run.
 
 The "Mouse YPos" option means that the GUI only appears when the mouse
 vertical position moves above the y-coordinate set with the "Popup-YP"
@@ -202,7 +202,7 @@ control.
 
 If a text box is on a currently displayed GUI, all standard keypresses
 (ie. letter keys, return and backspace) are diverted to the textbox
-instead of being passed to the on\_key\_press function. When the player
+instead of being passed to the on_key_press function. When the player
 presses Return in the text box, the OnActivate event is called. You can
 then use the TextBox.Text property to retrieve what they typed in.
 

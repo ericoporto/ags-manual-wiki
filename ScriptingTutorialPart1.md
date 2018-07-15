@@ -18,7 +18,7 @@ created a script that looks like this:
     }
 
 Let's look at this in detail. "*function*" tells AGS that this is a
-block of script code that will run when an event occurs. "*hDoor\_Look*"
+block of script code that will run when an event occurs. "*hDoor_Look*"
 is the name of that event. The empty parentheses *( )* tell AGS that
 this function takes no parameters (we'll come to them later). Finally,
 the curly brackets *{* and *}* define where this block of code starts
@@ -189,7 +189,7 @@ it is what you will use to refer to it later. For example:
     int myCounter;
 
 The variable name can only contain letters A-Z, a-z and the underscore
-\_ character.
+_ character.
 
 You need to declare a variable before you can use it, so that the
 compiler can spot any mistakes and knows what type of things you can
@@ -375,7 +375,7 @@ been written:
 
 Also, the { } brackets are only needed if you are using more than one
 command inside them. Since we have only one command, the
-"my\_counter++;" line, we can remove the { } completely and just be left
+"my_counter++;" line, we can remove the { } completely and just be left
 with:
 
     if (myCounter < 3)

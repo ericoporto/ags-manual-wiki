@@ -86,6 +86,6 @@ Credits
 -   Original backgrounds and main character were drawn by D281@aol.com.
 
 Thanks to all the AGS beta testers for all their suggestions and bug
-reports - Cornjob, AGC2, AGA, Relight, c\_leksutin, Spyros and the rest
+reports - Cornjob, AGC2, AGA, Relight, c_leksutin, Spyros and the rest
 of the team.
 

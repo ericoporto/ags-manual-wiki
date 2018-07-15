@@ -13,7 +13,7 @@ array like this:
 
 in your script file. This special notation tells AGS that you don't yet
 know how large you want the array to be. Now, before you use the array
-(so probably in game\_start), you can do this:
+(so probably in game_start), you can do this:
 
 `characterHealth = new int[Game.CharacterCount];`
 

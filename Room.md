@@ -164,7 +164,7 @@ consider using an alternate background frame for the changed image.
 
 **NOTE:** Drawing onto the room background can be slow, especially when
 using the Direct3D driver. Do not use this command in
-repeatedly\_execute; make sure you only use this command when absolutely
+repeatedly_execute; make sure you only use this command when absolutely
 necessary.
 
 Example:
@@ -412,7 +412,7 @@ Example:
 
     HasPlayerBeenInRoom(int room_number)
 
-Checks whether the player has ever been in ROOM\_NUMBER (ie. has the
+Checks whether the player has ever been in ROOM_NUMBER (ie. has the
 'First Time Player Enters Room' event there ever been run). Returns 1 if
 they have, and 0 if they haven't.
 
@@ -520,7 +520,7 @@ will make the walking area 5 unwalkable.
     ResetRoom (int room_number)
 
 Discards all the data that the engine has in memory about when the
-player last visited ROOM\_NUMBER, and resets it as if they'd never been
+player last visited ROOM_NUMBER, and resets it as if they'd never been
 there. The next time the player goes to that room, all the objects and
 scripts will be in their initial state (as set up in the editor), and
 not how they were when the player left the room. The "First time enters
@@ -717,7 +717,7 @@ Example:
 
 ### Height property (room)
 
-*(Formerly known as game.room\_height, which is now obsolete)*
+*(Formerly known as game.room_height, which is now obsolete)*
 
     readonly static int Room.Height
 
@@ -840,7 +840,7 @@ Example:
 
 ### Width property (room)
 
-*(Formerly known as game.room\_width, which is now obsolete)*
+*(Formerly known as game.room_width, which is now obsolete)*
 
     readonly static int Room.Width
 

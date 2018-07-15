@@ -28,7 +28,7 @@ Script language keywords
 
 ### Arrays
 
-*data\_type* *name* `[` *size* `];`
+*data_type* *name* `[` *size* `];`
 
 Arrays allow you to easily create several variables of the same type.
 For example, suppose you wanted to store a health variable for all the
@@ -85,7 +85,7 @@ then a semicolon. For example:
 
 `int my_variable;`
 
-declares a new 32-bit integer called my\_variable
+declares a new 32-bit integer called my_variable
 
 **WARNING:** When using the *float* data type, you may find that the ==
 and != operators don't seem to work properly. For example:
@@ -175,19 +175,19 @@ The following predefined macros are available in your scripts:
 ---
   **Name**               **Description**
   DEBUG                  Defined if the game is being compiled in debug mode, not defined otherwise
-  SCRIPT\_API\_vXXX      Defined if corresponding version of script API is enabled (e.g. SCRIPT\_API\_v340)
-  SCRIPT\_COMPAT\_vXXX   Defined if certain compatibility level is enabled (e.g. SCRIPT\_COMPAT\_v321)
+  SCRIPT_API_vXXX      Defined if corresponding version of script API is enabled (e.g. SCRIPT_API_v340)
+  SCRIPT_COMPAT_vXXX   Defined if certain compatibility level is enabled (e.g. SCRIPT_COMPAT_v321)
   STRICT                 Defined if "Enforce Object Based Scripting" is enabled, not defined otherwise
-  STRICT\_STRINGS        Defined if "Enforce new-style strings" is enabled, not defined otherwise
-  STRICT\_AUDIO          Defined if "Enforce new-style audio scripting" is enabled, not defined otherwise
+  STRICT_STRINGS        Defined if "Enforce new-style strings" is enabled, not defined otherwise
+  STRICT_AUDIO          Defined if "Enforce new-style audio scripting" is enabled, not defined otherwise
   LRPRECEDENCE           Defined if "Left-to-right operator precedence" is enabled, not defined otherwise
-  AGS\_NEW\_STRINGS      Defined if AGS 2.71 or later (with new-String support), not defined otherwise
-  NEW\_DIALOGOPTS\_API   Defined if "Use old-style dialog options rendering API" is disabled
-  AGS\_SUPPORTS\_IFVER   Defined if AGS 2.72 or later (with `#ifver` support), not defined otherwise
-  AGS\_MAX\_INV\_ITEMS   The maximum number of inventory items
-  AGS\_MAX\_OBJECTS      The maximum objects per room
-  AGS\_MAX\_HOTSPOTS     The maximum hotspots per room
-  AGS\_MAX\_REGIONS      The maximum regions per room
+  AGS_NEW_STRINGS      Defined if AGS 2.71 or later (with new-String support), not defined otherwise
+  NEW_DIALOGOPTS_API   Defined if "Use old-style dialog options rendering API" is disabled
+  AGS_SUPPORTS_IFVER   Defined if AGS 2.72 or later (with `#ifver` support), not defined otherwise
+  AGS_MAX_INV_ITEMS   The maximum number of inventory items
+  AGS_MAX_OBJECTS      The maximum objects per room
+  AGS_MAX_HOTSPOTS     The maximum hotspots per room
+  AGS_MAX_REGIONS      The maximum regions per room
 ---
 
 You can check for whether a macro is defined or not by using the
@@ -209,7 +209,7 @@ compiling:
     #error This script requires at least AGS 2.71
     #endif
 
-The other constants (AGS\_MAX\_\*) are useful if you are writing some
+The other constants (AGS_MAX_\*) are useful if you are writing some
 script code that you want to be portable to different versions of AGS,
 and to pick up the limits from the user's AGS version. For example, if
 you wanted to store some extra information on all the inventory items,
@@ -706,10 +706,10 @@ AGS](Pointers)
 
 ### new
 
-*pointer\_variable* = **new** *managed\_type*;
+*pointer_variable* = **new** *managed_type*;
 
-Creates a new dynamic (managed) object of *managed\_type* and assigns it
-to *pointer\_variable*.
+Creates a new dynamic (managed) object of *managed_type* and assigns it
+to *pointer_variable*.
 
 Example:
 
@@ -874,13 +874,13 @@ For example:
     export my_variable;
     export counter, strength;
 
-This exports three variables - my\_variable, counter and strength.
+This exports three variables - my_variable, counter and strength.
 
 ---
 
 ### noloopcheck
 
-function **noloopcheck** *function\_name* ( *parameters ...* ) `{`
+function **noloopcheck** *function_name* ( *parameters ...* ) `{`
 
 The noloopcheck keyword disables the script loop checking for the
 current function.

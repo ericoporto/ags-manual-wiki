@@ -143,7 +143,7 @@ select it):
 Remember this?*
 
 The main difference you'll notice now is that the "Interact object"
-event already has a name. This "oKey\_Interact" is the name of the
+event already has a name. This "oKey_Interact" is the name of the
 script function that we created earlier. So, just select it and click
 the "..." button to return to the script editor.
 

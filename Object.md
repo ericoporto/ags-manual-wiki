@@ -349,7 +349,7 @@ object in cursor mode MODE.
 
 This function is very similar to RunInteraction, except that rather than
 run the event handler script function, it simply returns *true* if
-something would have happened, or *false* if unhandled\_event would have
+something would have happened, or *false* if unhandled_event would have
 been run.
 
 Example:
@@ -400,7 +400,7 @@ effect, but you may still use negative values to produce darkening
 effect.
 
 To disable object lighting and tinting effects, call SetLightLevel with
-parameter *light\_level* 0.
+parameter *light_level* 0.
 
 **NOTE**: Setting a light level will disable any RGB tint set for the
 object.

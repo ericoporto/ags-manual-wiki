@@ -285,7 +285,7 @@ grid will update with information about the frame. One of these settings
 is called "Delay", which is the frame's **relative** speed. The larger
 the number, the longer the frame stays (ie. the slower it is). When the
 animation is run, an overall animation speed will be set, so the actual
-speed of the frame will be: overall\_speed + frame\_speed . Note that
+speed of the frame will be: overall_speed + frame_speed . Note that
 you can use negative numbers for the frame delay to make it particularly
 fast, for example setting it to -3 means that the frame will stay for
 hardly any time at all.\
@@ -611,12 +611,12 @@ called "ShowTextParser". If you enable this, a text box will be
 displayed below the predefined options in the game, which allows the
 player to type in their own input.
 
-If they type in something themselves, then the dialog\_request global
+If they type in something themselves, then the dialog_request global
 script function will be run, with its parameter being the dialog topic
 number that the player was in.
 
 AGS automatically calls ParseText with the text they typed in before it
-calls dialog\_request, so you can use Said() calls to respond. See the
+calls dialog_request, so you can use Said() calls to respond. See the
 [text parser](TextParser) section for more info.
 
 ---
@@ -680,7 +680,7 @@ SetGameOption. **Basic properties**
 
 **Backwards compatibility**
 
--   **Enable mouse wheel support** - if enabled, on\_mouse\_click can be
+-   **Enable mouse wheel support** - if enabled, on_mouse_click can be
     called with the values eMouseWheelNorth and eMouseWheelSouth, which
     signify the user scrolling their mouse wheel north or
     south, respectively.

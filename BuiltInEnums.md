@@ -111,7 +111,7 @@ job, having a manual reference is invaluable:
     };
 
 *Used by:* [Mouse.IsButtonDown](Mouse#IsButtonDown)\
-*Passed into:* on\_mouse\_click
+*Passed into:* on_mouse_click
 
     enum EventType {
       eEventLeaveRoom,
@@ -124,7 +124,7 @@ job, having a manual reference is invaluable:
       eEventRestoreGame
     };
 
-*Passed into:* on\_event
+*Passed into:* on_event
 
     enum RoundDirection {
       eRoundDown,
