@@ -125,7 +125,7 @@ Here's my script solution. As an added bonus, I've also given the player
 command:
 
 ![](images/intro4_5.jpg)\
-Script for taking the key
+*Script for taking the key*
 
 
 Note that our solution is not perfect - the player can click the hand
@@ -158,4 +158,4 @@ room itself (available when in Nothing mode):
 -   **MusicVolumeAdjustment** - this allows you to modify the background
     music volume for this screen.
 
-**Go to part 5:** [Managing Inventory](acintro5)
+Go to part 5: [Managing Inventory](acintro5)

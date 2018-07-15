@@ -29,16 +29,16 @@ Note that the sprite graphics you import must be the same colour depth
 as your backgrounds - ie. if you have a 256-colour game, you must import
 256-colour sprites.
 
-*![](images/intro6_1.jpg)\
-Right-clicking to replace existing sprite*
+![](images/intro6_1.jpg)\
+*Right-clicking to replace existing sprite*
 
 So, let's replace the default key image with something of our own.
 Right-click on it and choose "*Replace sprite from file*". Select the
 file that you want in the dialog, and then you'll be presented with
 this:
 
-*![](images/intro6_2.jpg)\
-The "Import Sprite" window*
+![](images/intro6_2.jpg)\
+*The "Import Sprite" window*
 
 This is the Import Sprite window. You'll see the image from the file
 that you chose, along with various options. The Zoom slider on the left
@@ -78,4 +78,4 @@ the cells will be imported as a separate sprite.
 ![](images/icon_info.gif)\
 NOTE: Tiled sprite import only works if you selected "Import new sprite from file". If you used the "Replace sprite" option, only the first tile will be imported.
 
-**Go to part 7:** [Animations](acintro7)
+Go to part 7: [Animations](acintro7)

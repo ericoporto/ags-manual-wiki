@@ -4,7 +4,7 @@
 So, you've downloaded AGS. You want to make an adventure game. But where
 do you start?
 
-(***NOTE***: before we start, this tutorial was made using v3.0 of AGS.
+(**NOTE**: before we start, this tutorial was made using v3.0 of AGS.
 If you have a newer version, there may be minor inconsistencies in the
 screenshots where extra options have been added and so forth, but most
 of what's here should still apply).
@@ -197,4 +197,4 @@ memory and run slower than lower resolutions.
 Go back to the General Settings pane, and select your chosen resolution
 from the "Resolution" drop-down list.
 
-**Go to part 2:** [Creating your first room](acintro2)
+Go to part 2: [Creating your first room](acintro2)

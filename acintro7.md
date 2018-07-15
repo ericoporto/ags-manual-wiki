@@ -12,8 +12,8 @@ more *loops*. A loop is a set of frames which, when played in sequence,
 give the illusion of movement. Expand the "Views" node in the project
 tree, and double-click the view 1:
 
-*![](images/intro7_1.jpg)\
-The View Editor showing view 1*
+![](images/intro7_1.jpg)\
+*The View Editor showing view 1*
 
 This is the View Editor where you will put together all your animations.
 You'll notice lots of frames of Roger's walking animation in this
@@ -33,8 +33,8 @@ after it.
 Left-click a frame to select it. When you do so, the property grid will
 be updated with the frame's details:
 
-*![](images/intro7_2.jpg)\
-Property Grid showing frame properties*
+![](images/intro7_2.jpg)\
+*Property Grid showing frame properties*
 
 -   **Delay** is the frame's **relative** speed. This number adds a
     delay to the amount of time which the frame is displayed for,
@@ -70,8 +70,8 @@ you only have one character in the list, labelled "0: cEgo". You can
 create a new character by right-clicking the "Characters" node. For now,
 double-click the "cEgo" character:
 
-*![](images/intro7_3.jpg)\
-The Character Editor*
+![](images/intro7_3.jpg)\
+*The Character Editor*
 
 The first thing you'll notice is the text "This character is the player
 character" at the top of the window. This shows that the currently
@@ -139,8 +139,8 @@ key object. Go back to the Events List for the key object (remember, you
 open the room, select the "Objects" mode, then click on the key to
 select it):
 
-*![](images/intro7_4.jpg)\
-Remember this?*
+![](images/intro7_4.jpg)\
+*Remember this?*
 
 The main difference you'll notice now is that the "Interact object"
 event already has a name. This "oKey_Interact" is the name of the
@@ -154,8 +154,8 @@ on the player character (ie. move him), so type "player." and
 auto-complete will pop up with the available commands. See if you can
 work out which one we need.
 
-*![](images/intro7_5.jpg)\
-The Walk command needs X and Y co-ordinates
+![](images/intro7_5.jpg)\
+*The Walk command needs X and Y co-ordinates*
 
 **Eeek!** It wants a destination X and Y location! We don't know that,
 but we can find out! Click the "Room 1" tab on the tab bar at the top of
@@ -171,12 +171,12 @@ Roger to get to those co-ordinates before continuing the script. If we
 didn't do this, he would start to walk but the key would disappear
 before he got there! The final script should look like this:
 
-*![](images/intro7_6.jpg)\
-Our new command is run before the existing ones
+![](images/intro7_6.jpg)\
+*Our new command is run before the existing ones*
 
 Now, hit F5 and try it out!
 
 OK, I think we've had enough of animations and cutscenes for now. We'll
 return later to explore actual animations and more complex cutscenes.
 
-**Go to part 8:** [Conversations](acintro8)
+Go to part 8: [Conversations](acintro8)

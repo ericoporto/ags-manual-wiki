@@ -80,8 +80,8 @@ grid to set the name, as usual.
 
 Now, type in some text to the three new text boxes:
 
-*![](images/intro8_3.jpg)\
-We've inserted three options for topic 0*
+![](images/intro8_3.jpg)\
+*We've inserted three options for topic 0*
 
 While we're at it, let's create the next set of options too. Right click
 the "Dialogs" node in the project tree, and select "New Dialog". A new
@@ -121,8 +121,8 @@ you?" option, then entry point @1 will run.
 
 Here's a finished script for this topic:
 
-*![](images/intro8_5.jpg)\
-Our finished dialog script*
+![](images/intro8_5.jpg)\
+*Our finished dialog script*
 
 The *goto-dialog* command takes the player to another dialog - in this
 case, the new "dWares" dialog we just created (with questions about the
@@ -139,8 +139,8 @@ options when they get bored of talking about his wares.
 
 Here's my completed script for dWares:
 
-*![](images/intro8_6.jpg)\
-Dialog script for dWares*
+![](images/intro8_6.jpg)\
+*Dialog script for dWares*
 
 As you can see, it's done very similarly to the first one. Notice the
 use of "return" in the startup entry point, to make sure that it doesn't
@@ -158,8 +158,8 @@ Now, still with the Merchant open, go to his Events list. Using your
 skills from earlier on in this tutorial, add a command to initiate the
 dialog when the player talks to the Merchant. Now, we're all set!
 
-*![](images/intro8_7.jpg)\
-Event script to launch the dialog*
+![](images/intro8_7.jpg)\
+*Event script to launch the dialog*
 
 Test the game, talk to the Merchant, and try out the conversation.
 
@@ -184,4 +184,4 @@ If there is only one option enabled for a topic, then the game selects
 it automatically. You can use this to make Sierra-style conversations,
 because the options will never be shown to the player in this case.
 
-Go to part 9:** [Cursors and fonts](acintro9)
+Go to part 9: [Cursors and fonts](acintro9)

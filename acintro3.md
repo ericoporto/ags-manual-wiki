@@ -103,7 +103,7 @@ message to the player. Type in something like this:
 ![](images/intro3_5.jpg)\
 *A simple script*
 
-#### <span style="font-weight: 400">Once you're done, click on the "Room 1" tab to return to the main room editor.</span>
+Once you're done, click on the "Room 1" tab to return to the main room editor
 
 #### Walk-to points
 
