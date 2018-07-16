@@ -19,7 +19,7 @@ have created your game using that template.
 [Select](#select)\
 [Verbcoin_GUI](#verbcoin_gui)\
 [verbgraphic](#verbgraphic)\
-[doubleclick (variable)](#doubleclick_variable)
+[doubleclick (variable)](#doubleclick-variable)
 
 ---
 
