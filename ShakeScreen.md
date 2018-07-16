@@ -68,12 +68,12 @@ Flips the screen round either the horizontal or vertical axis, or both.
 This function is for special effects only - all co-ordinates remain the
 same and it doesn't effect any other script functions.
 
-The value of WAY selects:
-
-    0  normal
-    1  horizontal-flip (upside-down)
-    2  vertical-flip  (left-to-right)
-    3  both (upside-down and backwards)
+way value | flip direction
+--- | ---
+0 | normal
+1 | horizontal-flip (upside-down)
+2 | vertical-flip (left-to-right)
+3 | both (upside-down and backwards)
 
 **NOTE**: This function is still a bit buggy - black parts of the screen
 may show up wrong, and and pop-up messages will flip the screen back to
