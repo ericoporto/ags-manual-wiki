@@ -53,9 +53,9 @@ index, your game will exit with an error.
 
 Here's an example of using the array:
 
-      health[3] = 50;
-      health[4] = 100;
-      health[player.ID] = 10;
+    health[3] = 50;
+    health[4] = 100;
+    health[player.ID] = 10;
 
 this sets Health 3 to 50, Health 4 to 100, and the Health index that
 corresponds to the player character's ID number to 10.
@@ -66,15 +66,14 @@ See Also: [Dynamic arrays](DynamicArrays)
 
 ### Data types
 
----
-  **Type**   **Description**
-  char       Single byte data type, can store a single character or number 0 to 255
-  short      16-bit integer, can store numbers from -32,768 to 32,767
-  int        32-bit integer, can store from -2,147,483,648 to 2,147,483,647
-  String     Stores a string of characters
-  float      A 32-bit floating point number. Accuracy normally about 6 decimal places, but varies depending on the size of the number being stored.
-  bool       a variable that stores either 'true' or 'false'
----
+Type | Description
+--- | ---
+char | Single byte data type, can store a single character or number 0 to 255
+short| 16-bit integer, can store numbers from -32,768 to 32,767
+int | 32-bit integer, can store from -2,147,483,648 to 2,147,483,647
+String | Stores a string of characters
+float | 32-bit floating point number. Accuracy normally about 6 decimal places, but varies depending on the size of the number being stored.
+bool | a variable that stores either 'true' or 'false'
 
 You will normally only need to use the **int** and **String** data
 types. The smaller types are only useful for conserving memory if you
@@ -123,34 +122,27 @@ Always use parenthesis to make it clear what you want.\
 The "Left-to-right operator precedence" option on the General Settings
 pane allows you to control this behaviour.
 
-****
-
-    Operator  Description              Example
-
-      !    NOT                        if (!a)
-      *    Multiply                   a = b * c;
-      /    Divide                     a = b / c;
-      %    Remainder                  a = b % c;
-      +    Add                        a = b + c;
-      -    Subtract                   a = b - c;
-      <<   Bitwise Left Shift         a = b << c;
-           (advanced users only)
-      >>   Bitwise Right Shift        a = b >> c;
-           (advanced users only)
-      &    Bitwise AND                a = b & c;
-           (advanced users only)
-      |    Bitwise OR                 a = b | c;
-           (advanced users only)
-      ^    Bitwise XOR                a = b ^ c;
-           (advanced users only)
-      ==   Is equal to                if (a == b)
-      !=   Is not equal to            if (a != b)
-      >    Is greater than            if (a > b)
-      <    Is less than               if (a < b)
-      >=   Is greater than or equal   if (a >= b)
-      <=   Is less than or equal      if (a <= b)
-      &&   Logical AND                if (a && b)
-      ||   Logical OR                 if (a || b)
+Operator | Description | Example
+--- | --- | ---
+! | NOT | if (!a)
+* | Multiply | a = b * c;
+/ | Divide | a = b / c;
+% | Remainder | a = b % c;
++ | Add | a = b + c;
+- | Subtract | a = b - c;
+<< | Bitwise Left Shift | a = b << c;
+>> | Bitwise Right Shift | a = b >> c;
+& | Bitwise AND | a = b & c;
+\| | Bitwise OR | a = b \| c;
+^ | Bitwise XOR | a = b ^ c;
+== | Is equal to | if (a == b)
+!= | Is not equal to | if (a != b)
+> | Is greater than | if (a > b)
+< | Is less than | if (a < b)
+>= | Is greater than or equal | if (a >= b)
+<= | Is less than or equal | if (a <= b)
+&& | Logical AND | if (a && b)
+\|\| | Logical OR | if (a \|\| b)
 
 This order of precedence allows expressions such as the following to
 evaluate as expected:
@@ -172,23 +164,22 @@ this:
 
 The following predefined macros are available in your scripts:
 
----
-  **Name**               **Description**
-  DEBUG                  Defined if the game is being compiled in debug mode, not defined otherwise
-  SCRIPT_API_vXXX      Defined if corresponding version of script API is enabled (e.g. SCRIPT_API_v340)
-  SCRIPT_COMPAT_vXXX   Defined if certain compatibility level is enabled (e.g. SCRIPT_COMPAT_v321)
-  STRICT                 Defined if "Enforce Object Based Scripting" is enabled, not defined otherwise
-  STRICT_STRINGS        Defined if "Enforce new-style strings" is enabled, not defined otherwise
-  STRICT_AUDIO          Defined if "Enforce new-style audio scripting" is enabled, not defined otherwise
-  LRPRECEDENCE           Defined if "Left-to-right operator precedence" is enabled, not defined otherwise
-  AGS_NEW_STRINGS      Defined if AGS 2.71 or later (with new-String support), not defined otherwise
-  NEW_DIALOGOPTS_API   Defined if "Use old-style dialog options rendering API" is disabled
-  AGS_SUPPORTS_IFVER   Defined if AGS 2.72 or later (with `#ifver` support), not defined otherwise
-  AGS_MAX_INV_ITEMS   The maximum number of inventory items
-  AGS_MAX_OBJECTS      The maximum objects per room
-  AGS_MAX_HOTSPOTS     The maximum hotspots per room
-  AGS_MAX_REGIONS      The maximum regions per room
----
+Name | Description
+--- | ---
+DEBUG | Defined if the game is being compiled in debug mode, not defined otherwise
+SCRIPT_API_vXXX | Defined if corresponding version of script API is enabled (e.g. SCRIPT_API_v340)
+SCRIPT_COMPAT_vXXX | Defined if certain compatibility level is enabled (e.g. SCRIPT_COMPAT_v321)
+STRICT | Defined if "Enforce Object Based Scripting" is enabled, not defined otherwise
+STRICT_STRINGS | Defined if "Enforce new-style strings" is enabled, not defined otherwise
+STRICT_AUDIO | Defined if "Enforce new-style audio scripting" is enabled, not defined otherwise
+LRPRECEDENCE | Defined if "Left-to-right operator precedence" is enabled, not defined otherwise
+AGS_NEW_STRINGS | Defined if AGS 2.71 or later (with new-String support), not defined otherwise
+NEW_DIALOGOPTS_API | Defined if "Use old-style dialog options rendering API" is disabled
+AGS_SUPPORTS_IFVER | Defined if AGS 2.72 or later (with `#ifver` support), not defined otherwise
+AGS_MAX_INV_ITEMS | The maximum number of inventory items
+AGS_MAX_OBJECTS | The maximum objects per room
+AGS_MAX_HOTSPOTS | The maximum hotspots per room
+AGS_MAX_REGIONS | The maximum regions per room
 
 You can check for whether a macro is defined or not by using the
 `#ifdef` and `#ifndef` keywords:
