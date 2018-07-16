@@ -3,10 +3,11 @@ Copyright and terms of use
 
 Copyright (c) 1999-2011 Chris Jones and 2011-2018 various contributors.
 
-The software is provided under Artistic License 2.0
-(http://www.opensource.org/licenses/artistic-license-2.0.php). Adventure
-Game Studio is an open source software, its source code is available at
-https://github.com/adventuregamestudio/ags.
+Adventure Game Studio is an open source software, its source code is available at:\
+https://github.com/adventuregamestudio/ags
+
+The software is provided under
+[Artistic License 2.0](http://www.opensource.org/licenses/artistic-license-2.0.php).
 
 THE SOFTWARE IS PROVIDED 'AS-IS' AND WITHOUT WARRANTY OF ANY KIND,
 EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY
