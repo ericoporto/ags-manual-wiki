@@ -19,48 +19,40 @@ speech libraries (AUDIO.VOX and SPEECH.VOX); and if you have selected to
 split resources files, you will also have several files named
 "game.001", "game.002", and so forth.
 
-*NOTE: It is not possible to load the exe file back into the AGS Editor.
+It is not possible to load the exe file back into the AGS Editor.
 This means two things when only the EXE file is available: (1) other
 people can't edit your game's data, and (2) you can't either. Always
 keep a backup of the other files produced (\*.CRM, GAME.AGF, etc) as
 they are what the Editor needs to be able to load your game for
-editing.*
+editing.
 
-*TIP:* You can make a "Loading..." style splash screen to be displayed
+You can make a "Loading..." style splash screen to be displayed
 while your game starts up. To do so, simply save the image as
 PRELOAD.PCX (must be the same resolution and colour depth as the game)
 in the game folder, and build the game. It should then display while the
 game is loading.
 
-*NOTE: Due to the licenses of code used by AGS, your documentation
-should acknowledge the following:*
-
-TrueType font display uses ALFont by Javier Gonzalez and the Freetype
-project. Distributed under the terms of the FreeType project license.
-
-OGG player is alogg by Javier Gonzalez, using the Ogg Vorbis decoder,
-which is available from http://www.xiph.org/ Copyright (c) 2002-2008,
-Xiph.org Foundation
-
-MP3 player is almp3, by Javier Gonzalez and the FreeAmp team. It uses
-the mpg123 MP3 decoder, and is distributed under the terms of the GNU
-Lesser General Public License version 2.1.
-
-You should also include all the license_\* files from the DOCS
-directory with your game.
-
-**IMPORTANT:** If you intend to make money for your game, be it
-shareware or commercial, it is imperative that you read the Legal
-Information page on the AGS website, currently at
-http://www.adventuregamestudio.co.uk/site/ags/legal
-
-**NOTE:** The AUDIO.VOX file contains audio clips that you have marked
+The AUDIO.VOX file contains audio clips that you have marked
 as "InSeperateVOX" in the editor. This allows you to have an optional
 audio download, if your game uses lots of sound files but you don't want
 the player to have to download them.
 
-[Custom icon](#custom-icon)\
-[Splitting resource files](#splitting-resource-files)
+### Licensing
+
+Due to the licenses of code used by AGS, your documentation
+should acknowledge the following:
+
+* TrueType font display uses ALFont by Javier Gonzalez and the Freetype
+project. Distributed under the terms of the FreeType project license.
+* OGG player is alogg by Javier Gonzalez, using the Ogg Vorbis decoder,
+which is available from http://www.xiph.org/ Copyright (c) 2002-2008,
+Xiph.org Foundation
+* MP3 player is almp3, by Javier Gonzalez and the FreeAmp team. It uses
+the mpg123 MP3 decoder, and is distributed under the terms of the GNU
+Lesser General Public License version 2.1.
+
+You must also comply with the licence for AGS:
+[Artistic License 2.0](http://www.opensource.org/licenses/artistic-license-2.0.php)
 
 ---
 
