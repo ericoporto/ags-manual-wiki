@@ -422,7 +422,7 @@ Example:
 will draw a bright green line onto the room background
 
 *See Also:*
-[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#drawingsurface.drawingcolor)
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#drawingcolor)
 
 ---
 
@@ -714,7 +714,7 @@ Calculates the height on the screen that drawing TEXT in FONT within an
 area of WIDTH would take up.
 
 This allows you to work out how tall a message displayed with a command
-like [DrawMessageWrapped](DrawingSurfaceFunctions#drawingsurface.drawmessagewrapped)
+like [DrawMessageWrapped](DrawingSurfaceFunctions#drawmessagewrapped)
 will be. WIDTH is the width of the area in which the text will be
 displayed.
 
@@ -730,7 +730,7 @@ will move the BOTTOMLINE GUI so that it can display the text within the
 screen.
 
 *See Also:* [GetTextWidth](#gettextwidth),
-[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawingsurface.drawstring)
+[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawstring)
 
 ---
 
@@ -758,7 +758,7 @@ Example:
 will print \"Hello!\" onto the middle of the background scene.
 
 *See Also:* [GetTextHeight](#gettextheight),
-[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawingsurface.drawstring)
+[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawstring)
 
 ---
 
