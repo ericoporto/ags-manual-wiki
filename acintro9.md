@@ -6,7 +6,7 @@ It's easy to overlook mouse cursors, but they provide the essential
 interface between the player and the game world. In AGS, each mouse
 cursor provides a different *mode* of interaction to the player.
 
-![](images/intro9_1.jpg)\
+![](images/intro9_1.jpg)
 
 #### The Cursors list
 
@@ -71,7 +71,7 @@ so you will have to handle their clicks using the "Any Click" events.
 The default blank game comes with a couple of basic fonts, but you don't have
 to use them - you can import your own.
 
-![](images/intro9_2.jpg)\
+![](images/intro9_2.jpg)
 
 #### The Font Editor
 
