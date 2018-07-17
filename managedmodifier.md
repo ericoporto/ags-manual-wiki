@@ -5,23 +5,23 @@ Script language keywords
 [Data types](#data-types)\
 [Operators](#operators)\
 [Constants](#constants)\
-[Version checking](#version-checks)\
+[Version checking](#version-checking)\
 [if, else statements](#if-else-statements)\
 [switch, case statements](#switch-case-statements)\
-[while](#whilestatement)\
-[do..while](#dowhilestatement)\
-[for](#forstatement)\
-[break](#breakstatement)\
-[continue](#continuestatement)\
+[while](#while)\
+[do..while](#dowhile)\
+[for](#for)\
+[break](#break)\
+[continue](#continue)\
 [function](#function)\
-[return](#returnstatement)\
+[return](#return)\
 [struct](#struct)\
-[managed](#managedmodifier)\
-[new](#newstatement)\
+[managed](#managed)\
+[new](#new)\
 [enum](#enum)\
 [this](#this)\
-[import](#importkeyword)\
-[export](#exportkeyword)\
+[import](#import)\
+[export](#export)\
 [noloopcheck](#noloopcheck)
 
 ---
