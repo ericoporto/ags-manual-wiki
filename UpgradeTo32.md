@@ -75,7 +75,7 @@ this).
 
 Finally, you can update the volume of one particular type of audio (eg.
 sound, music) by using the
-[Game.SetAudioTypeVolume](Game#setaudiotypevolume) command.
+[Game.SetAudioTypeVolume](Multimedia#setaudiotypevolume) command.
 
 **Wait, what's an audio channel?**
 

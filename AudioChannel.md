@@ -365,5 +365,5 @@ reduce its volume.
 
 *See Also:*
 [AudioChannel.SetRoomLocation](AudioChannel#setroomlocation),
-[Game.SetAudioTypeVolume](Game#setaudiotypevolume),
+[Game.SetAudioTypeVolume](Multimedia#setaudiotypevolume),
 [System.Volume](System#volume)
