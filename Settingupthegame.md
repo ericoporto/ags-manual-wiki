@@ -893,9 +893,9 @@ SetGameOption. **Basic properties**
     anti-aliasing only works in hi-color games (in 256-colour games, the
     output will look blurred and unreadable).
 -   **Custom text-windows GUI** - allows you to customize the standard
-    text window appearance in the game, using the specified
-    interface element. See [here](EditingGUIs#textwin) for
-    more information.
+    text window appearance in the game, using the specified interface
+    element. See [here](EditingGUIs#customized-text-windows) for more
+    information.
 -   **Custom thought bubble GUI** - Determines which text window GUI is
     used for displaying thoughts with
     [Think](Character#think).
