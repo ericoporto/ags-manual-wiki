@@ -1,7 +1,6 @@
 Game / Global functions
 ---
 
-
 [AbortGame](#abortgame)  
 [CallRoomScript](#callroomscript)  
 [ChangeTranslation](#changetranslation)  
@@ -1500,36 +1499,31 @@ Settings pane.
 OPTION specifies which option to change, and VALUE is its new value.
 Valid OPTIONs are listed below:
 
-  ---
- ---
-
-  **Option**                 **Values**
-  OPT_WALKONLOOK            Walk to hotspot in look mode (0 or 1)
-  OPT_DIALOGOPTIONSGUI      Dialog options on GUI (0=none, otherwise GUI name/number)
-  OPT_DIALOGOPTIONSGAP      Pixel gap between options (0=none, otherwise num pixels)
-  OPT_WHENGUIDISABLED       When GUI is disabled, 0=grey out, 1=go black, 2=unchanged, 3=turn off
-  OPT_ALWAYSSPEECH          Always display text as speech (0 or 1)
-  OPT_PIXELPERFECT          Pixel-perfect click detection (0 or 1)
-  OPT_NOWALKMODE            Don\'t automatically move character in Walk mode (0 or 1)
-  OPT_FIXEDINVCURSOR        Don\'t use inventory graphics as cursors (0 or 1)
-  OPT_DONTLOSEINV           Don\'t automatically lose inventory items (0 or 1)
-  OPT_TURNBEFOREWALK        Characters turn before walking (0 or 1)
-  OPT_HANDLEINVCLICKS       Handle inventory clicks in script (0 or 1)
-  OPT_MOUSEWHEEL            Enable mouse wheel support (0 or 1)
-  OPT_DIALOGNUMBERED        Number dialog options (-1=disabled, 0=shortcuts only, 1=drawn numbers)
-  OPT_DIALOGUPWARDS         Dialog options go upwards on GUI (0 or 1)
-  OPT_CROSSFADEMUSIC        Crossfade music tracks (0=no, 1=slow, 2=slowish, 3=medium, 4=fast)
-  OPT_ANTIALIASFONTS        Anti-alias rendering of TTF fonts (0 or 1)
-  OPT_THOUGHTGUI            Thought uses bubble GUI (GUI name/number)
-  OPT_TURNWHENFACING        Characters turn to face direction (0 or 1)
-  OPT_LIPSYNCTEXT           Whether lip-sync text reading is enabled (0 or 1)
-  OPT_RIGHTTOLEFT           Right-to-left text writing (0 or 1)
-  OPT_MULTIPLEINV           Display multiple inv items multiple times (0 or 1)
-  OPT_SAVEGAMESCREENSHOTS   Save screenshots into save games (0 or 1)
-  OPT_PORTRAITPOSITION      Speech portrait side (0=left, 1=right, 2=alternate, 3=xpos)
-  ---
- ---
-
+Option | Values
+--- | ---
+OPT_WALKONLOOK | Walk to hotspot in look mode (0 or 1)
+OPT_DIALOGOPTIONSGUI | Dialog options on GUI (0=none, otherwise GUI name/number)
+OPT_DIALOGOPTIONSGAP | Pixel gap between options (0=none, otherwise num pixels)
+OPT_WHENGUIDISABLED | When GUI is disabled, 0=grey out, 1=go black, 2=unchanged, 3=turn off
+OPT_ALWAYSSPEECH | Always display text as speech (0 or 1)
+OPT_PIXELPERFECT | Pixel-perfect click detection (0 or 1)
+OPT_NOWALKMODE | Don\'t automatically move character in Walk mode (0 or 1)
+OPT_FIXEDINVCURSOR | Don\'t use inventory graphics as cursors (0 or 1)
+OPT_DONTLOSEINV | Don\'t automatically lose inventory items (0 or 1)
+OPT_TURNBEFOREWALK | Characters turn before walking (0 or 1)
+OPT_HANDLEINVCLICKS | Handle inventory clicks in script (0 or 1)
+OPT_MOUSEWHEEL | Enable mouse wheel support (0 or 1)
+OPT_DIALOGNUMBERED | Number dialog options (-1=disabled, 0=shortcuts only, 1=drawn numbers)
+OPT_DIALOGUPWARDS | Dialog options go upwards on GUI (0 or 1)
+OPT_CROSSFADEMUSIC | Crossfade music tracks (0=no, 1=slow, 2=slowish, 3=medium, 4=fast)
+OPT_ANTIALIASFONTS | Anti-alias rendering of TTF fonts (0 or 1)
+OPT_THOUGHTGUI | Thought uses bubble GUI (GUI name/number)
+OPT_TURNWHENFACING | Characters turn to face direction (0 or 1)
+OPT_LIPSYNCTEXT | Whether lip-sync text reading is enabled (0 or 1)
+OPT_RIGHTTOLEFT | Right-to-left text writing (0 or 1)
+OPT_MULTIPLEINV | Display multiple inv items multiple times (0 or 1)
+OPT_SAVEGAMESCREENSHOTS | Save screenshots into save games (0 or 1)
+OPT_PORTRAITPOSITION | Speech portrait side (0=left, 1=right, 2=alternate, 3=xpos)
 
 The game settings which are not listed here either have a separate
 command to change them (such as Speech.Style), or simply cannot be
