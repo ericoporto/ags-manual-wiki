@@ -361,7 +361,7 @@ of the loop.
 *statements*\
 `}` **while (** *expression* **);**
 
-Similarily to [while](enum#whilestatement) runs *statements*
+Similarily to [while](#while) runs *statements*
 continuously, so long as *expression* is true, but unlike **while** it
 checks the expression AFTER executing statements, not before. This also
 means that the statements will be executed at least once.
@@ -401,8 +401,7 @@ by changing some variable value. Every part of the command header -
 *initialization*, *expression* and *iteration* - is optional: there may
 be **for** command without initialization, or without iteration, or even
 without conditional expression (in which case loop should be ended with
-either [break](enum#breakstatement) or
-[return](enum#returnstatement) statement).
+either [break](#break) or [return](#return).
 
 For example:
 
@@ -430,7 +429,7 @@ coordinate x = 100.
 **break**;
 
 `break` statement ends the execution of most inner loop or
-[switch](enum#switchstatement) immediately. After this script
+[switch](#switch-case-statements) immediately. After this script
 continues running from the next line after loop or switch.
 
 For example:
@@ -454,9 +453,8 @@ immediately.
 
 `continue` statement makes the loop skip remaining statements in current
 iteration and proceed to the next end-condition check, followed by the
-loop restart, if condition is still met, or loop end. If in
-[for](enum#forstatement) kind of loop, the *iteration* statement is
-executed right before that.
+loop restart, if condition is still met, or loop end. If in [for](#for)
+kind of loop, the *iteration* statement is executed right before that.
 
 For example:
 
@@ -499,8 +497,8 @@ then, elsewhere in your code you can simply call:
 to add inventory item *iKey* and play the sound.
 
 Generally, you place your functions in your global script. You then need
-to add an [import](enum#importkeyword) line to your script header
-to allow the function to be called from room scripts.
+to add an [import](#import) line to your script header to allow the
+function to be called from room scripts.
 
 **Optional parameters**
 
@@ -584,7 +582,7 @@ Now, you can declare a struct in one go, like so:
     sword.name = "Fine sword";
 
 Much neater and better organised. You can also combine structs with
-[arrays](enum#arrays):
+[arrays](#arrays):
 
     // at top of script
     Weapon weapons[10];
@@ -641,7 +639,7 @@ This creates a pointer variable `my_apple` of managed type `Apple`.
 However, this does **not** create an object itself yet, and `my_apple`
 is assigned **null** value now. If you try to access struct members
 using `my_apple` now, you will get errors. To create an actual object
-you need to use a [new](enum#newstatement) keyword:
+you need to use a [new](#new) keyword:
 
     my_apple = new Apple;
 
@@ -690,7 +688,7 @@ function variable, and function ended), or is assigned another object,
 or simply assigned `null`, then the dynamic object is removed from your
 game forever.
 
-See Also: [new](enum#newstatement), [Pointers in
+See Also: [new](#new), [Pointers in
 AGS](Pointers)
 
 ---
@@ -720,8 +718,7 @@ Example:
       SomeApple = new Apple;
     }
 
-See Also: [managed](enum#managedmodifier), [Pointers in
-AGS](Pointers)
+See Also: [managed](#managed), [Pointers in AGS](Pointers)
 
 ---
 
@@ -789,9 +786,8 @@ There are two uses for the `this` keyword.
 
 **1. Accessing members of the current struct**
 
-When you are creating custom [structs](enum#struct), you use the
-"this" keyword inside member functions to refer to the current struct.
-For example:
+When you are creating custom [structs](#struct), you use the "this" keyword
+inside member functions to refer to the current struct. For example:
 
 Suppose you had this in your script header:
 
@@ -841,7 +837,7 @@ call them. You normally place import statements into the script header
 so that all rooms can benefit from them.
 
 In order to import the variable, it must have been exported from the
-global script with the [export keyword](enum#exportkeyword).
+global script with the [export keyword](#export).
 
 **NOTE:** You **MUST** import external variables with the correct type.
 If `counter` was declared as a **short** in the global script, you MUST
@@ -876,7 +872,7 @@ function **noloopcheck** *function_name* ( *parameters ...* ) `{`
 The noloopcheck keyword disables the script loop checking for the
 current function.
 
-Normally, if a [while](enum#whilestatement) loop runs for more than
+Normally, if a [while](#dowhile) loop runs for more than
 150,000 loops, AGS will assume that the script has hung and abort the
 game. This is to assist scripting since otherwise the game would lock up
 if you scripted a loop wrongly.
