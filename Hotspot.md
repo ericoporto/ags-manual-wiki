@@ -1,17 +1,17 @@
 Hotspot functions and properties
 --------------------------------
 
-[GetAtScreenXY](#getatscreenxy)\
-[GetProperty](#getproperty)\
-[GetTextProperty](#gettextproperty)\
-[SetProperty](#setproperty)\
-[SetTextProperty](#settextproperty)\
-[IsInteractionAvailable](#isinteractionavailable)\
-[RunInteraction](#runinteraction)\
-[Enabled property](#enabled)\
-[ID property](#id)\
-[Name property](#name)\
-[WalkToX property](#walktox)\
+[GetAtScreenXY](#getatscreenxy)  
+[GetProperty](#getproperty)  
+[GetTextProperty](#gettextproperty)  
+[SetProperty](#setproperty)  
+[SetTextProperty](#settextproperty)  
+[IsInteractionAvailable](#isinteractionavailable)  
+[RunInteraction](#runinteraction)  
+[Enabled property](#enabled)  
+[ID property](#id)  
+[Name property](#name)  
+[WalkToX property](#walktox)  
 [WalkToY property](#walktoy)
 
 ---
@@ -76,7 +76,7 @@ than 200.
 
 ### GetTextProperty
 
-*(Formerly known as GetHotspotPropertyText, which is now obsolete)*\
+*(Formerly known as GetHotspotPropertyText, which is now obsolete)*  
 *(Formerly known as Hotspot.GetPropertyText, which is now obsolete)*
 
     String Hotspot.GetTextProperty(string property)
@@ -198,7 +198,7 @@ hDoor.
 
 ### Enabled
 
-*(Formerly known as DisableHotspot, which is now obsolete)*\
+*(Formerly known as DisableHotspot, which is now obsolete)*  
 *(Formerly known as EnableHotspot, which is now obsolete)*
 
     bool Hotspot.Enabled
@@ -246,7 +246,7 @@ displays hDoor's hotspot number, and then displays hotspot 3's number
 
 ### Name
 
-*(Formerly known as GetHotspotName, which is now obsolete)*\
+*(Formerly known as GetHotspotName, which is now obsolete)*  
 *(Formerly known as Hotspot.GetName, which is now obsolete)*
 
     readonly String Hotspot.Name;

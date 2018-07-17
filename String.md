@@ -1,24 +1,24 @@
 String functions
 ----------------
 
-[Append](#append)\
-[AppendChar](#appendchar)\
-[CompareTo](#compareto)\
-[Copy](#copy)\
-[EndsWith](#endswith)\
-[Format](#format)\
-[IndexOf](#indexof)\
-[IsNullOrEmpty](#isnullorempty)\
-[LowerCase](#lowercase)\
-[Replace](#replace)\
-[ReplaceCharAt](#replacecharat)\
-[StartsWith](#startswith)\
-[Substring](#substring)\
-[Truncate](#truncate)\
-[UpperCase](#uppercase)\
-[AsFloat property](#asfloat)\
-[AsInt property](#asint)\
-[Chars property](#chars)\
+[Append](#append)  
+[AppendChar](#appendchar)  
+[CompareTo](#compareto)  
+[Copy](#copy)  
+[EndsWith](#endswith)  
+[Format](#format)  
+[IndexOf](#indexof)  
+[IsNullOrEmpty](#isnullorempty)  
+[LowerCase](#lowercase)  
+[Replace](#replace)  
+[ReplaceCharAt](#replacecharat)  
+[StartsWith](#startswith)  
+[Substring](#substring)  
+[Truncate](#truncate)  
+[UpperCase](#uppercase)  
+[AsFloat property](#asfloat)  
+[AsInt property](#asint)  
+[Chars property](#chars)  
 [Length property](#length)
 
 ---
@@ -34,9 +34,9 @@ the result.
 
 **IMPORTANT:** The result of joining the strings together is returned as
 a new string from this command. The original string will **NOT** be
-changed. For example, the following script will not do anything:\
-`mytext.Append("World");`\
-what you probably want instead is:\
+changed. For example, the following script will not do anything:  
+`mytext.Append("World");`  
+what you probably want instead is:  
 `mytext = mytext.Append("World");`
 
 Example:
@@ -62,9 +62,9 @@ returns the result.
 
 **IMPORTANT:** The newly extended text is returned as a new string from
 this command. The original string will **NOT** be changed. For example,
-the following script will not do anything:\
-`mytext.AppendChar('o');`\
-what you probably want instead is:\
+the following script will not do anything:  
+`mytext.AppendChar('o');`  
+what you probably want instead is:  
 `mytext = mytext.AppendChar('o');`
 
 Example:
@@ -82,7 +82,7 @@ will display "Hello".
 ### CompareTo
 
 *(Formerly known as global function StrCaseComp, which is now
-obsolete)*\
+obsolete)*  
 *(Formerly known as global function StrComp, which is now obsolete)*
 
     String.CompareTo(string str2, optional bool caseSensitive)
@@ -197,7 +197,7 @@ will create a text string containing "10".
 ### IndexOf
 
 *(Formerly known as global function StrContains, which is now
-obsolete)*\
+obsolete)*  
 *(Formerly known as String.Contains, which is now obsolete)*
 
     String.IndexOf(string needle)

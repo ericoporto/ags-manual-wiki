@@ -1,30 +1,30 @@
 GUI InvWindow functions and properties
 --------------------------------------
 
-[BringToFront](GUIControl#bringtofront)\
-[Clickable property](GUIControl#clickable)\
-[Enabled property](GUIControl#enabled)\
-[Height property](GUIControl#height)\
-[ID property](GUIControl#id)\
-[OwningGUI property](GUIControl#owninggui)\
-[SendToBack](GUIControl#sendtoback)\
-[SetPosition](GUIControl#setposition)\
-[SetSize](GUIControl#setsize)\
-[Visible property](GUIControl#visible)\
-[Width property](GUIControl#width)\
-[X property](GUIControl#x)\
-[Y property](GUIControl#y)\
+[BringToFront](GUIControl#bringtofront)  
+[Clickable property](GUIControl#clickable)  
+[Enabled property](GUIControl#enabled)  
+[Height property](GUIControl#height)  
+[ID property](GUIControl#id)  
+[OwningGUI property](GUIControl#owninggui)  
+[SendToBack](GUIControl#sendtoback)  
+[SetPosition](GUIControl#setposition)  
+[SetSize](GUIControl#setsize)  
+[Visible property](GUIControl#visible)  
+[Width property](GUIControl#width)  
+[X property](GUIControl#x)  
+[Y property](GUIControl#y)  
 [ZOrder property](GUIControl#zorder)
 
-[ScrollDown](#scrolldown)\
-[ScrollUp](#scrollup)\
-[CharacterToUse property](#charactertouse)\
-[ItemAtIndex property](#itematindex)\
-[ItemCount property](#itemcount)\
-[ItemHeight property](#itemheight)\
-[ItemWidth property](#itemwidth)\
-[ItemsPerRow property](#itemsperrow)\
-[RowCount property](#rowcount)\
+[ScrollDown](#scrolldown)  
+[ScrollUp](#scrollup)  
+[CharacterToUse property](#charactertouse)  
+[ItemAtIndex property](#itematindex)  
+[ItemCount property](#itemcount)  
+[ItemHeight property](#itemheight)  
+[ItemWidth property](#itemwidth)  
+[ItemsPerRow property](#itemsperrow)  
+[RowCount property](#rowcount)  
 [TopItem property](#topitem)
 
 ---

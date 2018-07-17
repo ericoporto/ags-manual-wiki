@@ -1,22 +1,22 @@
 File functions and properties
 -----------------------------
 
-[Open](#open)\
-[Close](#close)\
-[Delete](#delete)\
-[Exists](#exists)\
-[ReadInt](#readint)\
-[ReadRawChar](#readrawchar)\
-[ReadRawInt](#readrawint)\
-[ReadRawLineBack](#readrawlineback)\
-[ReadStringBack](#readstringback)\
-[Seek](#seek)\
-[WriteInt](#writeint)\
-[WriteRawChar](#writerawchar)\
-[WriteRawLine](#writerawline)\
-[WriteString](#writestring)\
-[EOF property](#eof)\
-[Error property](#error)\
+[Open](#open)  
+[Close](#close)  
+[Delete](#delete)  
+[Exists](#exists)  
+[ReadInt](#readint)  
+[ReadRawChar](#readrawchar)  
+[ReadRawInt](#readrawint)  
+[ReadRawLineBack](#readrawlineback)  
+[ReadStringBack](#readstringback)  
+[Seek](#seek)  
+[WriteInt](#writeint)  
+[WriteRawChar](#writerawchar)  
+[WriteRawLine](#writerawline)  
+[WriteString](#writestring)  
+[EOF property](#eof)  
+[Error property](#error)  
 [Position property](#position)
 
 ---
@@ -43,11 +43,11 @@ This function returns a File object, which you use to perform operations
 on the file. *null* is returned if there was a problem (eg. file not
 existing when MODE is eFileRead).
 
-When specifying file path you may use special location tags:\
+When specifying file path you may use special location tags:  
 `$INSTALLDIR$`, which allows you to explicitly read files in the game
-installation directory.\
+installation directory.  
 `$SAVEGAMEDIR$`, which allows you to write/read files in the save game
-directory.\
+directory.  
 `$APPDATADIR$`, which allows you to write/read files to a folder on the
 system which is accessible by and shared by all users. The example of
 their use is below.
@@ -148,11 +148,11 @@ exists.
 
 Checks if the specified file exists on the file system.
 
-When specifying file path you may use special location tags:\
+When specifying file path you may use special location tags:  
 `$INSTALLDIR$`, which allows you to explicitly read files in the game
-installation directory.\
+installation directory.  
 `$SAVEGAMEDIR$`, which allows you to access files in the save game
-directory.\
+directory.  
 `$APPDATADIR$`, which allows you to write/read files to a folder on the
 system which is accessible by and shared by all users.
 
@@ -285,7 +285,7 @@ will display the contents of the 'error.log' file, if it exists
 
 ### ReadStringBack
 
-*(Formerly known as FileRead, which is now obsolete)*\
+*(Formerly known as FileRead, which is now obsolete)*  
 *(Formerly known as File.ReadString, which is now obsolete)*
 
     String File.ReadStringBack()
@@ -321,9 +321,9 @@ and overwrite a piece of data in the previous section for some reason.
 
 The *origin* is determined by one of the FileSeek types: eSeekBegin -
 counts *offset* bytes starting from the file's beginning; *offset* must
-be positive.\
+be positive.  
 eSeekCurrent - counts *offset* bytes starting from the current position;
-*offset* may be either positive or negative.\
+*offset* may be either positive or negative.  
 eSeekEnd - counts *offset* bytes starting from the file's end, going
 backwards; *offset* must be positive.
 

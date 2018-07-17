@@ -1,17 +1,17 @@
 Speech functions and properties
 -------------------------------
 
-[AnimationStopTimeMargin](#animationstoptimemargin)\
-[CustomPortraitPlacement](#customportraitplacement)\
-[DisplayPostTimeMs](#displayposttimems)\
-[GlobalSpeechAnimationDelay](#globalspeechanimationdelay)\
-[PortraitXOffset](#portraitxoffset)\
-[PortraitY](#portraity)\
-[SkipKey](#skipkey)\
-[SkipStyle](#skipstyle)\
-[Style](#style)\
-[TextAlignment](#textalignment)\
-[UseGlobalSpeechAnimationDelay](#useglobalspeechanimationdelay)\
+[AnimationStopTimeMargin](#animationstoptimemargin)  
+[CustomPortraitPlacement](#customportraitplacement)  
+[DisplayPostTimeMs](#displayposttimems)  
+[GlobalSpeechAnimationDelay](#globalspeechanimationdelay)  
+[PortraitXOffset](#portraitxoffset)  
+[PortraitY](#portraity)  
+[SkipKey](#skipkey)  
+[SkipStyle](#skipstyle)  
+[Style](#style)  
+[TextAlignment](#textalignment)  
+[UseGlobalSpeechAnimationDelay](#useglobalspeechanimationdelay)  
 [VoiceMode](#voicemode)
 
 ---

@@ -58,23 +58,23 @@ To access the properties from the script, there are various script
 functions. See their descriptions for how they work:
 
 [Character.GetProperty](Character#getproperty),
-[Character.GetTextProperty](Character#gettextproperty)\
+[Character.GetTextProperty](Character#gettextproperty)  
 [Character.SetProperty](Character#setproperty),
-[Character.SetTextProperty](Character#settextproperty)\
+[Character.SetTextProperty](Character#settextproperty)  
 [Hotspot.GetProperty](Hotspot#getproperty),
-[Hotspot.GetTextProperty](Hotspot#gettextproperty)\
+[Hotspot.GetTextProperty](Hotspot#gettextproperty)  
 [Hotspot.SetProperty](Hotspot#setproperty),
-[Hotspot.SetTextProperty](Hotspot#settextproperty)\
+[Hotspot.SetTextProperty](Hotspot#settextproperty)  
 [InventoryItem.GetProperty](InventoryItem#getproperty),
-[InventoryItem.GetTextProperty](InventoryItem#gettextproperty)\
+[InventoryItem.GetTextProperty](InventoryItem#gettextproperty)  
 [InventoryItem.SetProperty](InventoryItem#setproperty),
-[InventoryItem.SetTextProperty](InventoryItem#settextproperty)\
+[InventoryItem.SetTextProperty](InventoryItem#settextproperty)  
 [Object.GetProperty](Object#getproperty),
-[Object.GetTextProperty](Object#gettextproperty)\
+[Object.GetTextProperty](Object#gettextproperty)  
 [Object.SetProperty](Object#setproperty),
-[Object.SetTextProperty](Object#settextproperty)\
+[Object.SetTextProperty](Object#settextproperty)  
 [Room.GetProperty](Room#getproperty),
-[Room.GetTextProperty](Room#gettextproperty)\
+[Room.GetTextProperty](Room#gettextproperty)  
 [Room.SetProperty](Room#setproperty),
 [Room.SetTextProperty](Room#settextproperty)
 

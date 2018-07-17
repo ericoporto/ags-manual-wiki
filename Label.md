@@ -1,23 +1,23 @@
 GUI Label functions and properties
 ----------------------------------
 
-[BringToFront](GUIControl#bringtofront)\
-[Clickable property](GUIControl#clickable)\
-[Enabled property](GUIControl#enabled)\
-[Height property](GUIControl#height)\
-[ID property](GUIControl#id)\
-[OwningGUI property](GUIControl#owninggui)\
-[SendToBack](GUIControl#sendtoback)\
-[SetPosition](GUIControl#setposition)\
-[SetSize](GUIControl#setsize)\
-[Visible property](GUIControl#visible)\
-[Width property](GUIControl#width)\
-[X property](GUIControl#x)\
-[Y property](GUIControl#y)\
+[BringToFront](GUIControl#bringtofront)  
+[Clickable property](GUIControl#clickable)  
+[Enabled property](GUIControl#enabled)  
+[Height property](GUIControl#height)  
+[ID property](GUIControl#id)  
+[OwningGUI property](GUIControl#owninggui)  
+[SendToBack](GUIControl#sendtoback)  
+[SetPosition](GUIControl#setposition)  
+[SetSize](GUIControl#setsize)  
+[Visible property](GUIControl#visible)  
+[Width property](GUIControl#width)  
+[X property](GUIControl#x)  
+[Y property](GUIControl#y)  
 [ZOrder property](GUIControl#zorder)
 
-[Font property](#font)\
-[Text property](#text)\
+[Font property](#font)  
+[Text property](#text)  
 [TextColor property](#textcolor)
 
 ---
@@ -49,8 +49,8 @@ translation is in use.
 
 ### Text
 
-*(Formerly known as SetLabelText, which is now obsolete)*\
-*(Formerly known as Label.GetText, which is now obsolete)*\
+*(Formerly known as SetLabelText, which is now obsolete)*  
+*(Formerly known as Label.GetText, which is now obsolete)*  
 *(Formerly known as Label.SetText, which is now obsolete)*
 
     String Label.Text;

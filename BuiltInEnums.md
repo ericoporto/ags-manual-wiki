@@ -110,7 +110,7 @@ job, having a manual reference is invaluable:
       eMouseWheelSouth
     };
 
-*Used by:* [Mouse.IsButtonDown](Mouse#isbuttondown)\
+*Used by:* [Mouse.IsButtonDown](Mouse#isbuttondown)  
 *Passed into:* on_mouse_click
 
     enum EventType {
@@ -217,7 +217,7 @@ job, having a manual reference is invaluable:
 
 The CursorMode enumeration is generated automatically based on your
 mouse cursors. The cursor mode name is taken, all its spaces are
-removed, and *eMode* is added to the front.\
+removed, and *eMode* is added to the front.  
 *Used by:* [IsInteractionAvailable](Game#isinteractionavailable),
 [Room.ProcessClick](Room#processclick),
 [Mouse.ChangeModeGraphic](Mouse#changemodegraphic),
@@ -244,7 +244,7 @@ removed, and *eMode* is added to the front.\
 
 The FontType enumeration is generated automatically based on your fonts.
 The font name is taken, all its spaces are removed, and *eFont* is added
-to the front.\
+to the front.  
 *Used by:* [Button.Font](Button#font),
 [DrawingSurface.DrawMessageWrapped](DrawingSurfaceFunctions#drawmessagewrapped),
 [DrawingSurface.DrawString](DrawingSurfaceFunctions#drawstring),

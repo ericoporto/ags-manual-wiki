@@ -1,14 +1,14 @@
 Screen functions
 ----------------
 
-[FadeIn](#fadein)\
-[FadeOut](#fadeout)\
-[FlipScreen](#flipscreen)\
-[SetFadeColor](#setfadecolor)\
-[SetNextScreenTransition](#setnextscreentransition)\
-[SetScreenTransition](#setscreentransition)\
-[ShakeScreen](#shakescreen)\
-[ShakeScreenBackground](#shakescreenbackground)\
+[FadeIn](#fadein)  
+[FadeOut](#fadeout)  
+[FlipScreen](#flipscreen)  
+[SetFadeColor](#setfadecolor)  
+[SetNextScreenTransition](#setnextscreentransition)  
+[SetScreenTransition](#setscreentransition)  
+[ShakeScreen](#shakescreen)  
+[ShakeScreenBackground](#shakescreenbackground)  
 [TintScreen](#tintscreen)
 
 ---

@@ -4,10 +4,10 @@ Advanced room features
 This section describes slightly more advanced things you can do with the
 rooms.
 
-[Character scaling](#character-scaling)\
-[Scrolling](#scrolling)\
-[Importing a file as the walkable area mask](#importing-a-file-as-the-walkable-area-mask)\
-[Animating background scenes](#animating-background-scenes)\
+[Character scaling](#character-scaling)  
+[Scrolling](#scrolling)  
+[Importing a file as the walkable area mask](#importing-a-file-as-the-walkable-area-mask)  
+[Animating background scenes](#animating-background-scenes)  
 [Lighting effects](#lighting-effects)
 
 ---

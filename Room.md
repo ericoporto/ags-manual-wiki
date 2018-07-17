@@ -1,39 +1,39 @@
 Room functions
 --------------
 
-[AreThingsOverlapping](#arethingsoverlapping)\
-[DisableGroundLevelAreas](#disablegroundlevelareas)\
-[EnableGroundLevelAreas](#enablegroundlevelareas)\
-[GetBackgroundFrame](#getbackgroundframe)\
-[GetDrawingSurfaceForBackground](#getdrawingsurfaceforbackground)\
-[GetPlayerCharacter](#getplayercharacter)\
-[GetProperty](#getproperty)\
-[GetTextProperty](#gettextproperty)\
-[SetProperty](#setproperty)\
-[SetTextProperty](#settextproperty)\
-[GetScalingAt](#getscalingat)\
-[GetViewportX](#getviewportx)\
-[GetViewportY](#getviewporty)\
-[GetWalkableAreaAt](#getwalkableareaat)\
-[HasPlayerBeenInRoom](#hasplayerbeeninroom)\
-[ProcessClick](#processclick)\
-[ReleaseViewport](#releaseviewport)\
-[RemoveWalkableArea](#removewalkablearea)\
-[ResetRoom](#resetroom)\
-[RestoreWalkableArea](#restorewalkablearea)\
-[SetAreaScaling](#setareascaling)\
-[SetBackgroundFrame](#setbackgroundframe)\
-[SetViewport](#setviewport)\
-[SetWalkBehindBase](#setwalkbehindbase)\
-[BottomEdge property](#bottomedge)\
-[ColorDepth property](#colordepth)\
-[Height property](#height)\
-[LeftEdge property](#leftedge)\
-[Messages property](#messages)\
-[MusicOnLoad property](#musiconload)\
-[ObjectCount property](#objectcount)\
-[RightEdge property](#rightedge)\
-[TopEdge property](#topedge)\
+[AreThingsOverlapping](#arethingsoverlapping)  
+[DisableGroundLevelAreas](#disablegroundlevelareas)  
+[EnableGroundLevelAreas](#enablegroundlevelareas)  
+[GetBackgroundFrame](#getbackgroundframe)  
+[GetDrawingSurfaceForBackground](#getdrawingsurfaceforbackground)  
+[GetPlayerCharacter](#getplayercharacter)  
+[GetProperty](#getproperty)  
+[GetTextProperty](#gettextproperty)  
+[SetProperty](#setproperty)  
+[SetTextProperty](#settextproperty)  
+[GetScalingAt](#getscalingat)  
+[GetViewportX](#getviewportx)  
+[GetViewportY](#getviewporty)  
+[GetWalkableAreaAt](#getwalkableareaat)  
+[HasPlayerBeenInRoom](#hasplayerbeeninroom)  
+[ProcessClick](#processclick)  
+[ReleaseViewport](#releaseviewport)  
+[RemoveWalkableArea](#removewalkablearea)  
+[ResetRoom](#resetroom)  
+[RestoreWalkableArea](#restorewalkablearea)  
+[SetAreaScaling](#setareascaling)  
+[SetBackgroundFrame](#setbackgroundframe)  
+[SetViewport](#setviewport)  
+[SetWalkBehindBase](#setwalkbehindbase)  
+[BottomEdge property](#bottomedge)  
+[ColorDepth property](#colordepth)  
+[Height property](#height)  
+[LeftEdge property](#leftedge)  
+[Messages property](#messages)  
+[MusicOnLoad property](#musiconload)  
+[ObjectCount property](#objectcount)  
+[RightEdge property](#rightedge)  
+[TopEdge property](#topedge)  
 [Width property](#width)
 
 ---
@@ -187,7 +187,7 @@ background, then releases the image.
 
     GetPlayerCharacter ()
 
-**THIS COMMAND IS NOW OBSOLETE.**\
+**THIS COMMAND IS NOW OBSOLETE.**  
 The recommended replacement is to use the player character's ID
 property, as follows:
 
@@ -566,10 +566,10 @@ will make the walking area 4 walkable again.
 
 Changes walkable area number AREA's scaling.
 
-There are two ways to use this command:\
+There are two ways to use this command:  
 1. Pass the same value for MIN and MAX. This will give the walkable area
 fixed scaling (same as setting it in the editor with "Use continuous
-scaling" un-ticked).\
+scaling" un-ticked).  
 2. Pass different values for MIN and MAX. In this case, continuous
 scaling is enabled for the walkable area, and will go from MIN at the
 top to MAX at the bottom.

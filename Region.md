@@ -1,17 +1,17 @@
 Region functions and properties
 -------------------------------
 
-[GetAtRoomXY](#getatroomxy)\
-[RunInteraction](#runinteraction)\
-[Tint](#tint)\
-[Enabled property](#enabled)\
-[ID property](#id)\
-[LightLevel property](#lightlevel)\
-[TintEnabled property](#tintenabled)\
-[TintBlue property](#tintblue)\
-[TintGreen property](#tintgreen)\
-[TintRed property](#tintred)\
-[TintSaturation property](#tintsaturation)\
+[GetAtRoomXY](#getatroomxy)  
+[RunInteraction](#runinteraction)  
+[Tint](#tint)  
+[Enabled property](#enabled)  
+[ID property](#id)  
+[LightLevel property](#lightlevel)  
+[TintEnabled property](#tintenabled)  
+[TintBlue property](#tintblue)  
+[TintGreen property](#tintgreen)  
+[TintRed property](#tintred)  
+[TintSaturation property](#tintsaturation)  
 [TintLuminance property](#tintluminance)
 
 ---
@@ -52,8 +52,8 @@ activated.
 **NOTE:** Unlike the other RunInteraction commands, this one does not
 take a cursor mode. Instead, it uses an event type as follows:
 
-0 While player stands on region\
-1 Player walks onto region\
+0 While player stands on region  
+1 Player walks onto region  
 2 Player walks off region
 
 Example:
@@ -107,7 +107,7 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 
 ### Enabled
 
-*(Formerly known as DisableRegion, which is now obsolete)*\
+*(Formerly known as DisableRegion, which is now obsolete)*  
 *(Formerly known as EnableRegion, which is now obsolete)*
 
     bool Region.Enabled

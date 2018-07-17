@@ -1,26 +1,26 @@
 Mouse functions and properties
 ------------------------------
 
-[ChangeModeGraphic](#changemodegraphic)\
-[ChangeModeHotspot](#changemodehotspot)\
-[ChangeModeView](#changemodeview)\
-[Click](#click)\
-[ControlEnabled property](#controlenabled)\
-[DisableMode](#disablemode)\
-[EnableMode](#enablemode)\
-[GetModeGraphic](#getmodegraphic)\
-[IsButtonDown](#isbuttondown)\
-[IsModeEnabled](#ismodeenabled)\
-[SaveCursorUntilItLeaves](#savecursoruntilitleaves)\
-[SelectNextMode](#selectnextmode)\
-[SelectPreviousMode](#selectpreviousmode)\
-[SetBounds](#setbounds)\
-[SetPosition](#setposition)\
-[Speed property](#speed)\
-[Update](#update)\
-[UseDefaultGraphic](#usedefaultgraphic)\
-[UseModeGraphic](#usemodegraphic)\
-[Mode property](#mode)\
+[ChangeModeGraphic](#changemodegraphic)  
+[ChangeModeHotspot](#changemodehotspot)  
+[ChangeModeView](#changemodeview)  
+[Click](#click)  
+[ControlEnabled property](#controlenabled)  
+[DisableMode](#disablemode)  
+[EnableMode](#enablemode)  
+[GetModeGraphic](#getmodegraphic)  
+[IsButtonDown](#isbuttondown)  
+[IsModeEnabled](#ismodeenabled)  
+[SaveCursorUntilItLeaves](#savecursoruntilitleaves)  
+[SelectNextMode](#selectnextmode)  
+[SelectPreviousMode](#selectpreviousmode)  
+[SetBounds](#setbounds)  
+[SetPosition](#setposition)  
+[Speed property](#speed)  
+[Update](#update)  
+[UseDefaultGraphic](#usedefaultgraphic)  
+[UseModeGraphic](#usemodegraphic)  
+[Mode property](#mode)  
 [Visible property](#visible)
 
 ---
@@ -262,7 +262,7 @@ will display the message if the player presses the right button for 1
 sec.
 
 *Compatibility:* *eMouseMiddle* supported by **AGS 3.2.0** and later
-versions.\
+versions.  
 *eMouseLeft* and *eMouseRight* supported by all versions.
 
 *See Also:* [IsKeyPressed](Game#iskeypressed)
@@ -477,7 +477,7 @@ Cursors tab.
 
 ### Mode
 
-*(Formerly known as GetCursorMode, which is now obsolete)*\
+*(Formerly known as GetCursorMode, which is now obsolete)*  
 *(Formerly known as SetCursorMode, which is now obsolete)*
 
     int Mouse.Mode;
@@ -508,7 +508,7 @@ will execute the code only if the current cursor mode is MODE 0 (WALK).
 
 ### Visible
 
-*(Formerly known as HideMouseCursor, which is now obsolete)*\
+*(Formerly known as HideMouseCursor, which is now obsolete)*  
 *(Formerly known as ShowMouseCursor, which is now obsolete)*
 
     bool Mouse.Visible;

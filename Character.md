@@ -1,104 +1,104 @@
 Character functions and properties
 ----------------------------------
 
-[AddInventory](#addinventory)\
-[AddWaypoint](#addwaypoint)\
-[Animate](#animate)\
-[ChangeRoom](#changeroom)\
-[ChangeRoomAutoPosition](#changeroomautoposition)\
-[ChangeView](#changeview)\
-[FaceCharacter](#facecharacter)\
-[FaceDirection](#facedirection)\
-[FaceLocation](#facelocation)\
-[FaceObject](#faceobject)\
-[FollowCharacter](#followcharacter)\
-[GetAtScreenXY](#getatscreenxy)\
-[GetProperty](#getproperty)\
-[GetTextProperty](#gettextproperty)\
-[SetProperty](#setproperty)\
-[SetTextProperty](#settextproperty)\
-[HasExplicitLight property](#hasexplicitlight)\
-[HasInventory](#hasinventory)\
-[IsCollidingWithChar](#iscollidingwithchar)\
-[IsCollidingWithObject](#iscollidingwithobject)\
-[LightLevel property](#lightlevel)\
-[LockView](#lockview)\
-[LockViewAligned](#lockviewaligned)\
-[LockViewFrame](#lockviewframe)\
-[LockViewOffset](#lockviewoffset)\
-[LoseInventory](#loseinventory)\
-[Move](#move)\
-[PlaceOnWalkableArea](#placeonwalkablearea)\
-[RemoveTint](#removetint)\
-[IsInteractionAvailable](#isinteractionavailable)\
-[RunInteraction](#runinteraction)\
-[Say](#say)\
-[SayAt](#sayat)\
-[SayBackground](#saybackground)\
-[SetAsPlayer](#setasplayer)\
-[SetLightLevel](#setlightlevel)\
-[SetIdleView](#setidleview)\
-[SetWalkSpeed](#setwalkspeed)\
-[StopMoving](#stopmoving)\
-[Think](#think)\
-[Tint](#tint)\
-[TintBlue property](#tintblue)\
-[TintGreen property](#tintgreen)\
-[TintRed property](#tintred)\
-[TintSaturation property](#tintsaturation)\
-[TintLuminance property](#tintluminance)\
-[UnlockView](#unlockview)\
-[Walk](#walk)\
-[WalkStraight](#walkstraight)\
-[ActiveInventory property](#activeinventory)\
-[Animating property](#animating)\
-[AnimationSpeed property](#animationspeed)\
-[Baseline property](#baseline)\
-[BlinkInterval property](#blinkinterval)\
-[BlinkView property](#blinkview)\
-[BlinkWhileThinking property](#blinkwhilethinking)\
-[BlockingHeight property](#blockingheight)\
-[BlockingWidth property](#blockingwidth)\
-[Clickable property](#clickable)\
-[DestinationX property](#destinationx)\
-[DestinationY property](#destinationy)\
-[DiagonalLoops property](#diagonalloops)\
-[Frame property](#frame)\
-[HasExplicitTint property](#hasexplicittint)\
-[ID property](#id)\
-[IdleView property](#idleview)\
-[IgnoreLighting property](#ignorelighting)\
-[IgnoreWalkbehinds property](#ignorewalkbehinds)\
-[InventoryQuantity property](#inventoryquantity)\
-[Loop property](#loop)\
-[ManualScaling property](#manualscaling)\
+[AddInventory](#addinventory)  
+[AddWaypoint](#addwaypoint)  
+[Animate](#animate)  
+[ChangeRoom](#changeroom)  
+[ChangeRoomAutoPosition](#changeroomautoposition)  
+[ChangeView](#changeview)  
+[FaceCharacter](#facecharacter)  
+[FaceDirection](#facedirection)  
+[FaceLocation](#facelocation)  
+[FaceObject](#faceobject)  
+[FollowCharacter](#followcharacter)  
+[GetAtScreenXY](#getatscreenxy)  
+[GetProperty](#getproperty)  
+[GetTextProperty](#gettextproperty)  
+[SetProperty](#setproperty)  
+[SetTextProperty](#settextproperty)  
+[HasExplicitLight property](#hasexplicitlight)  
+[HasInventory](#hasinventory)  
+[IsCollidingWithChar](#iscollidingwithchar)  
+[IsCollidingWithObject](#iscollidingwithobject)  
+[LightLevel property](#lightlevel)  
+[LockView](#lockview)  
+[LockViewAligned](#lockviewaligned)  
+[LockViewFrame](#lockviewframe)  
+[LockViewOffset](#lockviewoffset)  
+[LoseInventory](#loseinventory)  
+[Move](#move)  
+[PlaceOnWalkableArea](#placeonwalkablearea)  
+[RemoveTint](#removetint)  
+[IsInteractionAvailable](#isinteractionavailable)  
+[RunInteraction](#runinteraction)  
+[Say](#say)  
+[SayAt](#sayat)  
+[SayBackground](#saybackground)  
+[SetAsPlayer](#setasplayer)  
+[SetLightLevel](#setlightlevel)  
+[SetIdleView](#setidleview)  
+[SetWalkSpeed](#setwalkspeed)  
+[StopMoving](#stopmoving)  
+[Think](#think)  
+[Tint](#tint)  
+[TintBlue property](#tintblue)  
+[TintGreen property](#tintgreen)  
+[TintRed property](#tintred)  
+[TintSaturation property](#tintsaturation)  
+[TintLuminance property](#tintluminance)  
+[UnlockView](#unlockview)  
+[Walk](#walk)  
+[WalkStraight](#walkstraight)  
+[ActiveInventory property](#activeinventory)  
+[Animating property](#animating)  
+[AnimationSpeed property](#animationspeed)  
+[Baseline property](#baseline)  
+[BlinkInterval property](#blinkinterval)  
+[BlinkView property](#blinkview)  
+[BlinkWhileThinking property](#blinkwhilethinking)  
+[BlockingHeight property](#blockingheight)  
+[BlockingWidth property](#blockingwidth)  
+[Clickable property](#clickable)  
+[DestinationX property](#destinationx)  
+[DestinationY property](#destinationy)  
+[DiagonalLoops property](#diagonalloops)  
+[Frame property](#frame)  
+[HasExplicitTint property](#hasexplicittint)  
+[ID property](#id)  
+[IdleView property](#idleview)  
+[IgnoreLighting property](#ignorelighting)  
+[IgnoreWalkbehinds property](#ignorewalkbehinds)  
+[InventoryQuantity property](#inventoryquantity)  
+[Loop property](#loop)  
+[ManualScaling property](#manualscaling)  
 [MovementLinkedToAnimation
-property](#movementlinkedtoanimation)\
-[Moving property](#moving)\
-[Name property](#name)\
-[NormalView property](#normalview)\
-[PreviousRoom property](#previousroom)\
-[Room property](#room)\
-[ScaleMoveSpeed property](#scalemovespeed)\
-[ScaleVolume property](#scalevolume)\
-[Scaling property](#scaling)\
-[Solid property](#solid)\
-[Speaking property](#speaking)\
-[SpeakingFrame property](#speakingframe)\
-[SpeechAnimationDelay property](#speechanimationdelay)\
-[SpeechColor property](#speechcolor)\
-[SpeechView property](#speechview)\
-[Thinking property](#thinking)\
-[ThinkingFrame property](#thinkingframe)\
-[ThinkView property](#thinkview)\
-[Transparency property](#transparency)\
-[TurnBeforeWalking property](#turnbeforewalking)\
-[View property](#view)\
-[WalkSpeedX property](#walkspeedx)\
-[WalkSpeedY property](#walkspeedy)\
-[x property](#x)\
-[y property](#y)\
-[z property](#z)\
+property](#movementlinkedtoanimation)  
+[Moving property](#moving)  
+[Name property](#name)  
+[NormalView property](#normalview)  
+[PreviousRoom property](#previousroom)  
+[Room property](#room)  
+[ScaleMoveSpeed property](#scalemovespeed)  
+[ScaleVolume property](#scalevolume)  
+[Scaling property](#scaling)  
+[Solid property](#solid)  
+[Speaking property](#speaking)  
+[SpeakingFrame property](#speakingframe)  
+[SpeechAnimationDelay property](#speechanimationdelay)  
+[SpeechColor property](#speechcolor)  
+[SpeechView property](#speechview)  
+[Thinking property](#thinking)  
+[ThinkingFrame property](#thinkingframe)  
+[ThinkView property](#thinkview)  
+[Transparency property](#transparency)  
+[TurnBeforeWalking property](#turnbeforewalking)  
+[View property](#view)  
+[WalkSpeedX property](#walkspeedx)  
+[WalkSpeedY property](#walkspeedy)  
+[x property](#x)  
+[y property](#y)  
+[z property](#z)  
 [SetCharacterProperty](#setcharacterproperty)
 
 ---
@@ -106,7 +106,7 @@ property](#movementlinkedtoanimation)\
 ### AddInventory
 
 *(Formerly known as global function AddInventory, which is now
-obsolete)*\
+obsolete)*  
 *(Formerly known as global function AddInventoryToCharacter, which is
 now obsolete)*
 
@@ -171,7 +171,7 @@ and then top left corner afterwards.
 
 ### Animate
 
-*(Formerly known as AnimateCharacter, which is now obsolete)*\
+*(Formerly known as AnimateCharacter, which is now obsolete)*  
 *(Formerly known as AnimateCharacterEx, which is now obsolete)*
 
     Character.Animate(int loop, int delay, optional RepeatStyle,
@@ -220,8 +220,8 @@ and wait until the animation finishes before returning.
 
 ### ChangeRoom
 
-*(Formerly known as NewRoom, which is now obsolete)*\
-*(Formerly known as NewRoomEx, which is now obsolete)*\
+*(Formerly known as NewRoom, which is now obsolete)*  
+*(Formerly known as NewRoomEx, which is now obsolete)*  
 *(Formerly known as NewRoomNPC, which is now obsolete)*
 
     Character.ChangeRoom(int room_number, optional int x, optional int y, optional CharacterDirection direction)
@@ -489,7 +489,7 @@ will make the player character face object 2.
 ### FollowCharacter
 
 *(Formerly known as global function FollowCharacter, which is now
-obsolete)*\
+obsolete)*  
 *(Formerly known as global function FollowCharacterEx, which is now
 obsolete)*
 
@@ -599,7 +599,7 @@ will print the message if EGO has its "Value" property set to more than
 
 ### GetTextProperty
 
-*(Formerly known as GetCharacterPropertyText, which is now obsolete)*\
+*(Formerly known as GetCharacterPropertyText, which is now obsolete)*  
 *(Formerly known as Character.GetPropertyText, which is now obsolete)*
 
     String Character.GetTextProperty(string property)
@@ -989,7 +989,7 @@ only by **AGS 3.4.1** and later versions.
 ### LoseInventory
 
 *(Formerly known as global function LoseInventory, which is now
-obsolete)*\
+obsolete)*  
 *(Formerly known as LoseInventoryFromCharacter, which is now obsolete)*
 
     Character.LoseInventory(InventoryItem *item)
@@ -1329,7 +1329,7 @@ be played if the character is idle for 30 seconds.
 
 ### SetWalkSpeed
 
-*(Formerly known as SetCharacterSpeed, which is now obsolete)*\
+*(Formerly known as SetCharacterSpeed, which is now obsolete)*  
 *(Formerly known as SetCharacterSpeedEx, which is now obsolete)*
 
     Character.SetWalkSpeed(int x_speed, int y_speed)
@@ -1622,8 +1622,8 @@ only by **AGS 3.4.1** and later versions.
 
 ### Walk
 
-*(Formerly known as MoveCharacter, which is now obsolete)*\
-*(Formerly known as MoveCharacterBlocking, which is now obsolete)*\
+*(Formerly known as MoveCharacter, which is now obsolete)*  
+*(Formerly known as MoveCharacterBlocking, which is now obsolete)*  
 *(Formerly known as MoveCharacterDirect, which is now obsolete)*
 
     Character.Walk(int x, int y, optional BlockingStyle,
@@ -1702,7 +1702,7 @@ will move the character EGO in a straight line towards co ordinates
 
 ### ActiveInventory
 
-*(Formerly known as SetActiveInventory, which is now obsolete)*\
+*(Formerly known as SetActiveInventory, which is now obsolete)*  
 *(Formerly known as character\[\].activeinv, which is now obsolete)*
 
     InventoryItem* Character.ActiveInventory
@@ -1731,7 +1731,7 @@ that the player has the inventory item)
 
     readonly bool Character.Animating
 
-Returns 1 if the character is currently animating.\
+Returns 1 if the character is currently animating.  
 Returns 0 if the character has finished its animation.
 
 This property is read-only. To change character animation, use the
@@ -2204,7 +2204,7 @@ displays EGO's current loop number within his view.
 
 ### ManualScaling
 
-*(Formerly known as Character.IgnoreScaling, which is now obsolete)*\
+*(Formerly known as Character.IgnoreScaling, which is now obsolete)*  
 *(Formerly part of SetCharacterProperty, which is now obsolete)*
 
     bool Character.ManualScaling
@@ -2607,7 +2607,7 @@ will change the character's EGO talking color to yellow.
 
 ### SpeechView
 
-*(Formerly known as SetCharacterSpeechView, which is now obsolete)*\
+*(Formerly known as SetCharacterSpeechView, which is now obsolete)*  
 *(Formerly known as character\[\].talkview, which is now obsolete)*
 
     int Character.SpeechView
@@ -2928,11 +2928,11 @@ gradually levitates the character up to 20 pixels.
 **This command is now obsolete. It has been replaced by the following
 properties:**
 
-[Clickable](Character#clickable)\
-[DiagonalLoops](Character#diagonalloops)\
-[IgnoreLighting](Character#ignorelighting)\
-[ManualScaling](Character#manualscaling)\
-[ScaleMoveSpeed](Character#scalemovespeed)\
-[Solid](Character#solid)\
+[Clickable](Character#clickable)  
+[DiagonalLoops](Character#diagonalloops)  
+[IgnoreLighting](Character#ignorelighting)  
+[ManualScaling](Character#manualscaling)  
+[ScaleMoveSpeed](Character#scalemovespeed)  
+[Solid](Character#solid)  
 [TurnBeforeWalking](Character#turnbeforewalking)
 

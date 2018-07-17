@@ -187,5 +187,5 @@ to enjoy the benefits of faster and more intuitive coding.
 As always, if there's something you really can't get your head round,
 post on the AGS Forums and we'll help you out as best we can!
 
-Have fun,\
+Have fun,  
 CJ

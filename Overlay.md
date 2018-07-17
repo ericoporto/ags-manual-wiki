@@ -1,12 +1,12 @@
 Overlay functions and properties
 --------------------------------
 
-[CreateGraphical](#creategraphical)\
-[CreateTextual](#createtextual)\
-[Remove](#remove)\
-[SetText](#settext)\
-[Valid property](#valid)\
-[X property](#x)\
+[CreateGraphical](#creategraphical)  
+[CreateTextual](#createtextual)  
+[Remove](#remove)  
+[SetText](#settext)  
+[Valid property](#valid)  
+[X property](#x)  
 [Y property](#y)
 
 ---

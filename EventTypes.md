@@ -4,11 +4,11 @@ Event Types
 The following events are available in the "Events" section of the
 Properties Window (when clicking the lightning bolt icon).
 
-[Hotspot events](#hotspot-events)\
-[Object events](#object-events)\
-[Room events](#room-events)\
-[Inventory item events](#inventory-item-events)\
-[Character events](#character-events)\
+[Hotspot events](#hotspot-events)  
+[Object events](#object-events)  
+[Room events](#room-events)  
+[Inventory item events](#inventory-item-events)  
+[Character events](#character-events)  
 [Region events](#region-events)
 
 ---
@@ -158,7 +158,7 @@ Use inventory on inv
 occurs when the player uses another inventory object on this one. You
 can use the
 [player.ActiveInventory](Character#activeinventory) property
-to distinguish which item they used.\
+to distinguish which item they used.  
 This event allows the player to combine items, and so on. For example,
 if they had picked up a laptop computer and a battery separately, then
 you could use this to allow them to insert the battery into the

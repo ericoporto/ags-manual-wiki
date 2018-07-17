@@ -1,26 +1,26 @@
 System functions and properties
 -------------------------------
 
-[AudioChannelCount property](#audiochannelcount)\
-[AudioChannels property](#audiochannels)\
-[CapsLock property](#capslock)\
-[ColorDepth property](#colordepth)\
-[Gamma property](#gamma)\
-[HardwareAcceleration property](#hardwareacceleration)\
-[HasInputFocus property](#hasinputfocus)\
-[NumLock property](#numlock)\
-[OperatingSystem property](#operatingsystem)\
-[RenderAtScreenResolution property](#renderatscreenresolution)\
-[RuntimeInfo property](#runtimeinfo)\
-[ScreenHeight property](#screenheight)\
-[ScreenWidth property](#screenwidth)\
-[ScrollLock property](#scrolllock)\
-[SupportsGammaControl property](#supportsgammacontrol)\
-[Version property](#version)\
-[ViewportHeight property](#viewportheight)\
-[ViewportWidth property](#viewportwidth)\
-[Volume property](#volume)\
-[VSync property](#vsync)\
+[AudioChannelCount property](#audiochannelcount)  
+[AudioChannels property](#audiochannels)  
+[CapsLock property](#capslock)  
+[ColorDepth property](#colordepth)  
+[Gamma property](#gamma)  
+[HardwareAcceleration property](#hardwareacceleration)  
+[HasInputFocus property](#hasinputfocus)  
+[NumLock property](#numlock)  
+[OperatingSystem property](#operatingsystem)  
+[RenderAtScreenResolution property](#renderatscreenresolution)  
+[RuntimeInfo property](#runtimeinfo)  
+[ScreenHeight property](#screenheight)  
+[ScreenWidth property](#screenwidth)  
+[ScrollLock property](#scrolllock)  
+[SupportsGammaControl property](#supportsgammacontrol)  
+[Version property](#version)  
+[ViewportHeight property](#viewportheight)  
+[ViewportWidth property](#viewportwidth)  
+[Volume property](#volume)  
+[VSync property](#vsync)  
 [Windowed property](#windowed)
 
 ---
@@ -155,9 +155,9 @@ the non-accelerated driver is used.
 
 **Cross-Platform Support**
 
-Windows: **Direct3D driver**\
-MS-DOS: **No**\
-Linux: **No**\
+Windows: **Direct3D driver**  
+MS-DOS: **No**  
+Linux: **No**  
 MacOS: **No**
 
 Example:
@@ -411,9 +411,9 @@ this will be supported are listed below.
 
 **Cross-Platform Support**
 
-Windows: **Full-screen only**\
-MS-DOS: **No**\
-Linux: **No**\
+Windows: **Full-screen only**  
+MS-DOS: **No**  
+Linux: **No**  
 MacOS: **No**
 
 Example:
@@ -492,7 +492,7 @@ will display the current viewport size
 
 ### Volume
 
-*(Formerly known as SetDigitalMasterVolume, which is now obsolete)*\
+*(Formerly known as SetDigitalMasterVolume, which is now obsolete)*  
 *(Formerly known as SetMusicMasterVolume, which is now obsolete)*
 
     static int System.Volume;

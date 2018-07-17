@@ -78,10 +78,10 @@ All the following variables are `int` variables.
 
   game.speech_text_gui                           The textwindow GUI number used for sierra-style speech.
 
-  game.text_align                                 Sets how text in message boxes and Sierra-style speech is aligned:\
-                                                   eAlignLeft: text aligned to left within message box (default)\
-                                                   eAlignCentre: text is centred within the message box\
-                                                   eAlignRight: text is right-aligned within the message box\
+  game.text_align                                 Sets how text in message boxes and Sierra-style speech is aligned:  
+                                                   eAlignLeft: text aligned to left within message box (default)  
+                                                   eAlignCentre: text is centred within the message box  
+                                                   eAlignRight: text is right-aligned within the message box  
                                                    These options do not affect Lucasarts-style speech, which is always centred.
 
   game.text_shadow_color                         Color used for speech text shadow (default 16).

@@ -14,9 +14,9 @@ actually saying those words.
 Lip sync is being configured on corresponding 'Lip Sync' pane in the
 editor.
 
-[Text-based lip syncing](#text-based-lip-syncing)\
-[Voice-based lip sync](#voice-based-lip-sync)\
-[PAMELA](#pamela)\
+[Text-based lip syncing](#text-based-lip-syncing)  
+[Voice-based lip sync](#voice-based-lip-sync)  
+[PAMELA](#pamela)  
 [Papagayo](#papagayo)
 
 ---

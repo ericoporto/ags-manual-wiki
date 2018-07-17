@@ -1,23 +1,23 @@
 GUI functions and properties
 ----------------------------
 
-[Centre](#centre)\
-[Click](#click)\
-[GetAtScreenXY](#getatscreenxy)\
-[ProcessClick](#processclick)\
-[SetPosition](#setposition)\
-[SetSize](#setsize)\
-[BackgroundGraphic property](#backgroundgraphic)\
-[Clickable property](#clickable)\
-[ControlCount property](#controlcount)\
-[Controls property](#controls)\
-[Height property](#height)\
-[ID property](#id)\
-[Transparency property](#transparency)\
-[Visible property](#visible)\
-[Width property](#width)\
-[X property](#x)\
-[Y property](#y)\
+[Centre](#centre)  
+[Click](#click)  
+[GetAtScreenXY](#getatscreenxy)  
+[ProcessClick](#processclick)  
+[SetPosition](#setposition)  
+[SetSize](#setsize)  
+[BackgroundGraphic property](#backgroundgraphic)  
+[Clickable property](#clickable)  
+[ControlCount property](#controlcount)  
+[Controls property](#controls)  
+[Height property](#height)  
+[ID property](#id)  
+[Transparency property](#transparency)  
+[Visible property](#visible)  
+[Width property](#width)  
+[X property](#x)  
+[Y property](#y)  
 [ZOrder property](#zorder)
 
 ---
@@ -371,10 +371,10 @@ will gradually fade the INVENTORY GUI out until it is invisible.
 
 ### Visible
 
-*(Formerly known as GUIOff, which is now obsolete)*\
-*(Formerly known as GUIOn, which is now obsolete)*\
-*(Formerly known as InterfaceOff, which is now obsolete)*\
-*(Formerly known as InterfaceOn, which is now obsolete)*\
+*(Formerly known as GUIOff, which is now obsolete)*  
+*(Formerly known as GUIOn, which is now obsolete)*  
+*(Formerly known as InterfaceOff, which is now obsolete)*  
+*(Formerly known as InterfaceOn, which is now obsolete)*  
 *(Formerly known as IsGUIOn, which is now obsolete)*
 
     bool GUI.Visible
