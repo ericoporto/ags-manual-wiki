@@ -207,7 +207,7 @@ job, having a manual reference is invaluable:
       eCDSelectActiveCDDrive
     };
 
-*Used by:* [CDAudio](Game#cdaudio)
+*Used by:* [CDAudio](Multimedia#cdaudio)
 
     enum CursorMode {
       eModeXXXX,
@@ -299,7 +299,7 @@ to the front.\
       eVideoSkipAnyKeyOrMouse
     };
 
-*Used by:* [PlayVideo](Game#playvideo)
+*Used by:* [PlayVideo](Multimedia#playvideo)
 
     enum AudioFileType {
       eAudioFileOGG,

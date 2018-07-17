@@ -217,4 +217,4 @@ displays a message if the *aExplosion* clip is music.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:* [AudioClip.Play](AudioClip#play),
-[Game.IsAudioPlaying](Game#isaudioplaying)
+[Game.IsAudioPlaying](Multimedia#isaudioplaying)

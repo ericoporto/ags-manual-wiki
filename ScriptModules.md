@@ -18,7 +18,7 @@ another.
 
 The scripts for the game can be seen under the "Scripts" node in the
 project tree. Each script has its own header, which is where you place
-the [import](enum#importkeyword) definitions for that script to
+the [import](managedmodifier#import) definitions for that script to
 allow the rest of your game to access its functionality.
 
 The order of the scripts is important. A script can only use

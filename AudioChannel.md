@@ -129,7 +129,7 @@ stop it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](Game#stopaudio)
+*See Also:* [Game.StopAudio](Multimedia#stopaudio)
 
 ---
 

@@ -7,7 +7,7 @@ Multimedia functions
 [PlayFlic](#playflic)\
 [PlaySilentMIDI](#playsilentmidi)\
 [PlayVideo](#playvideo)\
-[SetAudioTypeSpeechVolumeDrop](#setaudioyypespeechvolumedrop)\
+[SetAudioTypeSpeechVolumeDrop](#setaudiotypespeechvolumedrop)\
 [SetAudioTypeVolume](#setaudiotypevolume)\
 [SetSpeechVolume](#setspeechvolume)\
 [StopAudio](#stopaudio)

@@ -85,7 +85,7 @@ property](#ignoreuserinputaftertexttimeoutms)\
 [InventoryItemCount property](#inventoryitemcount)\
 [MinimumTextDisplayTimeMs property](#minimumtextdisplaytimems)\
 [MouseCursorCount property](#mousecursorcount)\
-[Name property (game)](#name)\
+[Name property](#name)\
 [NormalFont property](#normalfont)\
 [SkippingCutscene property](#skippingcutscene)\
 [SpeechFont property](#speechfont)\
@@ -2253,7 +2253,7 @@ Example:
 
 ---
 
-### name (game)
+### Name
 
     static String Game.Name
 
