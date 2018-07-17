@@ -28,7 +28,8 @@ Welcome to Adventure Game Studio!
 -   [Engine Setup Program](Setup)
 
 ## Scripting
--   [Scripting](Scripting)
+-   [Scripting Language](ScriptingLanguage)
+-   [Scripting Api](Scripting)
 -   [Reference](Reference)
 
 ## Working on Legacy games
