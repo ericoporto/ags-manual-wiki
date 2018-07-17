@@ -167,7 +167,7 @@ the game.roomscript\_finished variable will be set to 1, so you can
 check for that in your repeatedly\_execute script if you need to do
 something afterwards.
 
-SeeAlso: [The text parser documentation](ags17.htm#textparser)
+SeeAlso: [The text parser documentation](TextParser#textparser)
 
 ---
 
@@ -243,7 +243,7 @@ Example:
 prevents the global script on\_key\_press from running if the player
 pressed the space bar.
 
-SeeAlso: [Script events](ags40.htm#textscriptevents)
+SeeAlso: [Script events](TextScriptEvents#textscriptevents)
 
 ---
 
@@ -278,8 +278,8 @@ with what they do:
     4   Show FPS - toggles whether the current frames per second is displayed
         on the screen. Pass DATA as 1 to turn this on, 0 to turn it off.
 
-*See Also:* [Debugging features](ags24.htm#debuggingfeatures),
-[System.RuntimeInfo](ags77.htm#system.runtimeinfo)
+*See Also:* [Debugging features](Debuggingfeatures#debuggingfeatures),
+[System.RuntimeInfo](System#system.runtimeinfo)
 
 ---
 
@@ -422,7 +422,7 @@ Example:
 will draw a bright green line onto the room background
 
 *See Also:*
-[DrawingSurface.DrawingColor](ags51.htm#drawingsurface.drawingcolor)
+[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#drawingsurface.drawingcolor)
 
 ---
 
@@ -489,7 +489,7 @@ GP\_NUMFRAMES)\
 [Game.GetViewFrame](#getviewframe) (was GP\_FRAMExxx,
 GP\_ISFRAMEFLIPPED)\
 [Game.GUICount](#guicount) (was gp\_numguis)\
-[Room.ObjectCount](ags73.htm#room.objectcount) (was gp\_numobjects)\
+[Room.ObjectCount](Room#room.objectcount) (was gp\_numobjects)\
 [Game.CharacterCount](#charactercount) (was
 GP\_NUMCHARACTERS)\
 [Game.InventoryItemCount](#inventoryitemcount)(was
@@ -523,7 +523,7 @@ user has raised it )
 Returns the value of global int INDEX.
 
 **NOTE:** GlobalInts are now considered obsolete. Consider using [global
-variables](ags19.htm#globalvariables) instead, which allow you to name
+variables](GlobalVariables#globalvariables) instead, which allow you to name
 the variables.
 
 Example:
@@ -549,7 +549,7 @@ interaction editor.
 
 **NOTE:** This command is obsolete, and is only provided for backwards
 compatibility with AGS 2.x. When writing new code, use [global
-variables](ags19.htm#globalvariables) instead.
+variables](GlobalVariables#globalvariables) instead.
 
 Example:
 
@@ -592,10 +592,10 @@ Example:
 will get the name of whatever the mouse is over into the string
 variable.
 
-*See Also:* [Hotspot.Name](ags63.htm#hotspot.name),
-[InventoryItem.Name](ags64.htm#inventoryitem.name),
+*See Also:* [Hotspot.Name](Hotspot#hotspot.name),
+[InventoryItem.Name](InventoryItem#inventoryitem.name),
 [GetLocationType](#getlocationtype),
-[Object.Name](ags68.htm#object.name)
+[Object.Name](Object#object.name)
 
 ---
 
@@ -625,9 +625,9 @@ Example:
 
 will set the cursor mode to talk if the cursor is over a character.
 
-*See Also:* [Hotspot.GetAtScreenXY](ags63.htm#hotspot.getatscreenxy),
+*See Also:* [Hotspot.GetAtScreenXY](Hotspot#hotspot.getatscreenxy),
 [Game.GetLocationName](#getlocationname),
-[Object.GetAtScreenXY](ags68.htm#object.getatscreenxy)
+[Object.GetAtScreenXY](Object#object.getatscreenxy)
 
 ---
 
@@ -700,7 +700,7 @@ Example:
 will get the description of save slot 10 into the variable.
 
 *See Also:*
-[DynamicSprite.CreateFromSaveGame](ags52.htm#dynamicsprite.createfromsavegame),
+[DynamicSprite.CreateFromSaveGame](DrawingSprite#dynamicsprite.createfromsavegame),
 [RestoreGameSlot](#restoregameslot),
 [SaveGameSlot](#savegameslot)
 
@@ -714,7 +714,7 @@ Calculates the height on the screen that drawing TEXT in FONT within an
 area of WIDTH would take up.
 
 This allows you to work out how tall a message displayed with a command
-like [DrawMessageWrapped](ags51.htm#drawingsurface.drawmessagewrapped)
+like [DrawMessageWrapped](DrawingSurfaceFunctions#drawingsurface.drawmessagewrapped)
 will be. WIDTH is the width of the area in which the text will be
 displayed.
 
@@ -730,7 +730,7 @@ will move the BOTTOMLINE GUI so that it can display the text within the
 screen.
 
 *See Also:* [GetTextWidth](#gettextwidth),
-[DrawingSurface.DrawString](ags51.htm#drawingsurface.drawstring)
+[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawingsurface.drawstring)
 
 ---
 
@@ -758,7 +758,7 @@ Example:
 will print \"Hello!\" onto the middle of the background scene.
 
 *See Also:* [GetTextHeight](#gettextheight),
-[DrawingSurface.DrawString](ags51.htm#drawingsurface.drawstring)
+[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawingsurface.drawstring)
 
 ---
 
@@ -810,8 +810,8 @@ Example:
 [Game.GetLoopCountForView](#getloopcountforview),
 [Game.GetRunNextSettingForLoop](#getrunnextsettingforloop),
 [Game.GetFrameCountForLoop](#getframecountforloop),
-[ViewFrame.Graphic](ags79.htm#viewframe.graphic),
-[ViewFrame.Speed](ags79.htm#viewframe.speed)
+[ViewFrame.Graphic](ViewFrame#viewframe.graphic),
+[ViewFrame.Speed](ViewFrame#viewframe.speed)
 
 ---
 
@@ -915,7 +915,7 @@ Example:
 will prompt the user for his name and store it in the string NAME. If
 the user presses Cancel, the NAME string will be blank.
 
-*See Also:* [String.AsInt](ags76.htm#string.asint)
+*See Also:* [String.AsInt](String#string.asint)
 
 ---
 
@@ -948,7 +948,7 @@ Example:
 
 will unpause the game if it\'s paused.
 
-*See Also:* [GUI.Visible](ags55.htm#gui.visible)
+*See Also:* [GUI.Visible](GUI#gui.visible)
 
 ---
 
@@ -994,11 +994,11 @@ Example:
       Display("looking here would not do anything.");
 
 *See Also:*
-[InventoryItem.IsInteractionAvailable](ags64.htm#inventoryitem.isinteractionavailable),
-[Hotspot.IsInteractionAvailable](ags63.htm#hotspot.isinteractionavailable),
-[Object.IsInteractionAvailable](ags68.htm#object.isinteractionavailable),
-[Character.IsInteractionAvailable](ags47.htm#character.isinteractionavailable),
-[Room.ProcessClick](ags73.htm#room.processclick)
+[InventoryItem.IsInteractionAvailable](InventoryItem#inventoryitem.isinteractionavailable),
+[Hotspot.IsInteractionAvailable](Hotspot#hotspot.isinteractionavailable),
+[Object.IsInteractionAvailable](Object#object.isinteractionavailable),
+[Character.IsInteractionAvailable](Character#character.isinteractionavailable),
+[Room.ProcessClick](Room#room.processclick)
 
 ---
 
@@ -1010,7 +1010,7 @@ Tests whether the supplied key on the keyboard is currently pressed down
 or not. You could use this to move an object while the player holds an
 arrow key down, for instance.
 
-KEYCODE is one of the [ASCII codes](ags85.htm#asciicodes), with some
+KEYCODE is one of the [ASCII codes](ASCIIcodes#asciicodes), with some
 limitations: since it tests the raw state of the key, you CANNOT pass
 the Ctrl+(A-Z) or Alt+(A-Z) codes (since they are key combinations). You
 can, however, use some extra codes which are listed at the bottom of the
@@ -1032,7 +1032,7 @@ Example:
 will move the character EGO upwards 3 pixels when the up arrow is
 pressed.
 
-*See Also:* [Mouse.IsButtonDown](ags66.htm#mouse.isbuttondown)
+*See Also:* [Mouse.IsButtonDown](Mouse#mouse.isbuttondown)
 
 ---
 
@@ -1115,9 +1115,9 @@ Example:
 
 will move the character EGO to the hotspot\'s 6 \"walk to point\".
 
-*See Also:* [Hotspot.WalkToX](ags63.htm#hotspot.walktox),
-[Hotspot.WalkToY](ags63.htm#hotspot.walktoy),
-[Character.Walk](ags47.htm#character.walk),
+*See Also:* [Hotspot.WalkToX](Hotspot#hotspot.walktox),
+[Hotspot.WalkToY](Hotspot#hotspot.walktoy),
+[Character.Walk](Character#character.walk),
 [MoveCharacterToObject](#movecharactertoobject)
 
 ---
@@ -1141,7 +1141,7 @@ Example:
 Will move the character EGO below object number 0, then turn off object
 0.
 
-*See Also:* [Character.Walk](ags47.htm#character.walk),
+*See Also:* [Character.Walk](Character#character.walk),
 [MoveCharacterToHotspot](#movecharactertohotspot)
 
 ---
@@ -1403,7 +1403,7 @@ will prompt the player for a filename and then save the screenshot with
 the filename the player typed.
 
 *See Also:*
-[DynamicSprite.SaveToFile](ags52.htm#dynamicsprite.savetofile)
+[DynamicSprite.SaveToFile](DrawingSprite#dynamicsprite.savetofile)
 
 ---
 
@@ -1441,9 +1441,9 @@ do not have individual light levels).
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:* [SetAmbientTint](#setambienttint),
-[Character.SetLightLevel](ags47.htm#character.setlightlevel),
-[Object.SetLightLevel](ags68.htm#object.setlightlevel),
-[Region.LightLevel](ags72.htm#region.lightlevel)
+[Character.SetLightLevel](Character#character.setlightlevel),
+[Object.SetLightLevel](Object#object.setlightlevel),
+[Region.LightLevel](Region#region.lightlevel)
 
 ---
 
@@ -1484,9 +1484,9 @@ Example:
 will tint everything on the screen with a hint of blue.
 
 *See Also:* [SetAmbientLightLevel](#setambientlightlevel),
-[Character.Tint](ags47.htm#character.tint),
-[Object.Tint](ags68.htm#object.tint),
-[Region.Tint](ags72.htm#region.tint)
+[Character.Tint](Character#character.tint),
+[Object.Tint](Object#object.tint),
+[Region.Tint](Region#region.tint)
 
 ---
 
@@ -1544,7 +1544,7 @@ Example:
 will disable pixel-perfect click detection.
 
 *See Also:* [GetGameOption](#getgameoption),
-[Speech.Style](ags75.htm#speech.style),
+[Speech.Style](Speech#speech.style),
 [SetTextWindowGUI](#settextwindowgui)
 
 ---
@@ -1568,7 +1568,7 @@ NOTE: Because the mouse cursor is repainted at the game frame rate, at
 very low speeds, like 10 to 20 fps, the mouse will appear to be jumpy
 and not very responsive.
 
-NOTE: If you set the [System.VSync](ags77.htm#system.vsync) property to
+NOTE: If you set the [System.VSync](System#system.vsync) property to
 *true*, the game speed will be capped at the screen\'s refresh rate, so
 you will be unable to set it higher than 60-85 (depending on the
 player\'s screen refresh).
@@ -1593,7 +1593,7 @@ from any other script using GetGlobalInt.
 There are 500 available global variables, from index 0 to 499.
 
 **NOTE:** GlobalInts are now considered obsolete. Consider using [global
-variables](ags19.htm#globalvariables) instead, which allow you to name
+variables](GlobalVariables#globalvariables) instead, which allow you to name
 the variables.
 
 Example:
@@ -1616,7 +1616,7 @@ interaction editor.
 
 **NOTE:** This command is obsolete, and is only provided for backwards
 compatibility with AGS 2.x. When writing new code, use [global
-variables](ags19.htm#globalvariables) instead.
+variables](GlobalVariables#globalvariables) instead.
 
 Example:
 
@@ -1723,7 +1723,7 @@ Documents, and create the folder if it does not exist (might be useful
 to do this in game\_start).
 
 *See Also:*
-[ListBox.FillSaveGameList](ags60.htm#listbox.fillsavegamelist),
+[ListBox.FillSaveGameList](ListBox#listbox.fillsavegamelist),
 [RestoreGameDialog](#restoregamedialog)
 
 ---
@@ -1852,9 +1852,9 @@ Note that using this function will reset the order that items are
 displayed in the inventory window to the same order they were created in
 the editor.
 
-*See Also:* [Character.AddInventory](ags47.htm#character.addinventory),
-[Character.LoseInventory](ags47.htm#character.loseinventory),
-[Character.InventoryQuantity](ags47.htm#character.inventoryquantity)
+*See Also:* [Character.AddInventory](Character#character.addinventory),
+[Character.LoseInventory](Character#character.loseinventory),
+[Character.InventoryQuantity](Character#character.inventoryquantity)
 
 ---
 
@@ -2148,7 +2148,7 @@ text is automatically removed from the screen.
 *See Also:*
 [Game.MinimumTextDisplayTimeMs](#minimumtextdisplaytimems),
 [Game.TextReadingSpeed](#textreadingspeed),
-[Speech.SkipStyle](ags75.htm#speech.skipstyle)
+[Speech.SkipStyle](Speech#speech.skipstyle)
 
 ---
 
@@ -2232,7 +2232,7 @@ for at least 2 seconds
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
 *See Also:*
-[Character.SpeechAnimationDelay](ags47.htm#character.speechanimationdelay),
+[Character.SpeechAnimationDelay](Character#character.speechanimationdelay),
 [Game.IgnoreUserInputAfterTextTimeoutMs](#ignoreuserinputaftertexttimeoutms)
 [Game.TextReadingSpeed](#textreadingspeed)
 
@@ -2430,9 +2430,9 @@ on-screen for twice as long as usual.
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
 *See Also:*
-[Character.SpeechAnimationDelay](ags47.htm#character.speechanimationdelay),
+[Character.SpeechAnimationDelay](Character#character.speechanimationdelay),
 [Game.MinimumTextDisplayTimeMs](#minimumtextdisplaytimems),
-[Speech.SkipStyle](ags75.htm#speech.skipstyle)
+[Speech.SkipStyle](Speech#speech.skipstyle)
 
 ---
 
