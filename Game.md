@@ -138,16 +138,16 @@ for things like the text parser, where you want to check for general
 game sentences, and then ask the current room if the sentence was
 relevant to it.
 
-The on\_call function will be called in the current room script, with
+The on_call function will be called in the current room script, with
 its `value` parameter having the value you pass here. This allows it to
 distinguish between different tasks, and saves you having to use a
 GlobalInt to tell it what to do.
 
-If the current room has no on\_call function, nothing will happen. No
+If the current room has no on_call function, nothing will happen. No
 error will occur.
 
-You write the on\_call function into the room script (\"Edit script\"
-button on Room Settings pane), similar to the way you do dialog\_request
+You write the on_call function into the room script (\"Edit script\"
+button on Room Settings pane), similar to the way you do dialog_request
 in the global script:
 
     function on_call (int value) {
@@ -162,9 +162,9 @@ The function doesn\'t get called immediately; instead, the engine will
 run it in due course, probably during the next game loop, so you can\'t
 use any values set by it immediately.
 
-Once the on\_call function has executed (or not if there isn\'t one),
-the game.roomscript\_finished variable will be set to 1, so you can
-check for that in your repeatedly\_execute script if you need to do
+Once the on_call function has executed (or not if there isn\'t one),
+the game.roomscript_finished variable will be set to 1, so you can
+check for that in your repeatedly_execute script if you need to do
 something afterwards.
 
 SeeAlso: [The text parser documentation](TextParser)
@@ -213,18 +213,18 @@ will attempt to change the translation to Spanish
     ClaimEvent()
 
 This command is used in a room script or script module\'s
-*on\_key\_press* or *on\_mouse\_click* function, and it tells AGS not to
+*on_key_press* or *on_mouse_click* function, and it tells AGS not to
 run the global script afterwards.
 
 For example, if your room script responds to the player pressing the
-space bar, and you don\'t want the global script\'s on\_key\_press to
+space bar, and you don\'t want the global script\'s on_key_press to
 handle it as well, then use this command.
 
 This is useful if you have for example a mini-game in the room, and you
 want to use some keys for a different purpose to what they normally do.
 
-The normal order in which scripts are called for *on\_key\_press* and
-*on\_mouse\_click* is as follows:
+The normal order in which scripts are called for *on_key_press* and
+*on_mouse_click* is as follows:
 
 -   room script
 -   script modules, in order
@@ -240,7 +240,7 @@ Example:
       ClaimEvent();
     }
 
-prevents the global script on\_key\_press from running if the player
+prevents the global script on_key_press from running if the player
 pressed the space bar.
 
 SeeAlso: [Script events](TextScriptEvents)
@@ -312,7 +312,7 @@ deletes save game slot 130 (which we should have saved earlier).
 Disables the player interface. This works the same way as it is disabled
 while an animation is running: the mouse cursor is changed to the Wait
 cursor, and mouse clicks will not be sent through to the
-\"on\_mouse\_click\" function. Also, all interface buttons will be
+\"on_mouse_click\" function. Also, all interface buttons will be
 disabled.
 
 **NOTE:** AGS keeps a count of the number of times DisableInterface is
@@ -478,22 +478,22 @@ The *GetGameParameter* function is now obsolete.
 
 It has been replaced with the following functions and properties:
 
-[Game.SpriteWidth](#spritewidth) (was gp\_spritewidth)\
-[Game.SpriteHeight](#spriteheight) (was gp\_spriteheight)\
+[Game.SpriteWidth](#spritewidth) (was gp_spritewidth)\
+[Game.SpriteHeight](#spriteheight) (was gp_spriteheight)\
 [Game.GetLoopCountForView](#getloopcountforview) (was
-GP\_NUMLOOPS)\
+GP_NUMLOOPS)\
 [Game.GetFrameCountForLoop](#getframecountforloop) (was
-GP\_NUMFRAMES)\
+GP_NUMFRAMES)\
 [Game.GetRunNextSettingForLoop](#getrunnextsettingforloop)
-(was GP\_ISRUNNEXTLOOP)\
-[Game.GetViewFrame](#getviewframe) (was GP\_FRAMExxx,
-GP\_ISFRAMEFLIPPED)\
-[Game.GUICount](#guicount) (was gp\_numguis)\
-[Room.ObjectCount](Room#objectcount) (was gp\_numobjects)\
+(was GP_ISRUNNEXTLOOP)\
+[Game.GetViewFrame](#getviewframe) (was GP_FRAMExxx,
+GP_ISFRAMEFLIPPED)\
+[Game.GUICount](#guicount) (was gp_numguis)\
+[Room.ObjectCount](Room#objectcount) (was gp_numobjects)\
 [Game.CharacterCount](#charactercount) (was
-GP\_NUMCHARACTERS)\
+GP_NUMCHARACTERS)\
 [Game.InventoryItemCount](#inventoryitemcount)(was
-GP\_NUMINVITEMS)
+GP_NUMINVITEMS)
 
 ---
 
@@ -543,7 +543,7 @@ will execute the code only if Global Integer 20 is 1.
 
     GetGraphicalVariable (string variable_name);
 
-Returns the value of the interaction editor VARIABLE\_NAME variable.
+Returns the value of the interaction editor VARIABLE_NAME variable.
 This allows your script to access the values of variables set in the
 interaction editor.
 
@@ -821,7 +821,7 @@ Example:
 
 Adds SCORE to the player\'s score. This is preferable to directly
 modifying the variable since it will play the score sound, update any
-status lines and call the GOT\_SCORE on\_event function.
+status lines and call the GOT_SCORE on_event function.
 
 Note that SCORE can be negative, in which case the score sound is NOT
 played.
@@ -982,7 +982,7 @@ screen at (X,Y) in cursor mode MODE.
 
 This function is very similar to Room.ProcessClick, except that rather
 than carry out any interactions it encounters, it simply returns 1 if
-something would have happened, or 0 if unhandled\_event would have been
+something would have happened, or 0 if unhandled_event would have been
 run.
 
 This is useful for enabling options on a verb-coin style GUI, for
@@ -1019,8 +1019,8 @@ section.
 Returns 1 if the key is currently pressed, 0 if not.
 
 **NOTE:** The numeric keypad can have inconsistent keycodes between
-IsKeyPressed and on\_key\_press. With IsKeyPressed, the numeric keypad
-always uses keycodes in the 370-381 range. on\_key\_press, however,
+IsKeyPressed and on_key_press. With IsKeyPressed, the numeric keypad
+always uses keycodes in the 370-381 range. on_key_press, however,
 passes different values if Num Lock is on since the key presses are
 interpreted as the number key rather than the arrow key.
 
@@ -1063,7 +1063,7 @@ will display a message if plugin is present.
 
     bool IsTimerExpired(int timer_id)
 
-Checks whether the timer TIMER\_ID has expired. If the timeout set with
+Checks whether the timer TIMER_ID has expired. If the timeout set with
 SetTimer has elapsed, returns *true*. Otherwise, returns *false*.
 
 Note that this function will only return *true* once - after that, the
@@ -1178,7 +1178,7 @@ will pause the game if the player presses the space bar
 
 Exits the game and returns to the operating system.
 
-If ASK\_FIRST is zero, it will exit immediately. If ASK\_FIRST is not
+If ASK_FIRST is zero, it will exit immediately. If ASK_FIRST is not
 zero, it will first display a message box asking the user if they are
 sure they want to quit.
 
@@ -1299,7 +1299,7 @@ Currently the supported values are:
 
 DATA allows you to pass an integer through to the next game. The value
 you pass here will be accessible to the loaded game by it reading the
-game.previous\_game\_data variable.
+game.previous_game_data variable.
 
 The save game slots are shared between the two games, and if you load a
 save slot that was saved in the other game, it will automatically be
@@ -1422,7 +1422,7 @@ effect, but you may still use negative values to produce darkening
 effect.
 
 To turn light level off, call this command again but pass the
-*light\_level* as 0.
+*light_level* as 0.
 
 **NOTE:** This function overrides any specific region light levels or
 tints on the screen, but does NOT override individual character and
@@ -1504,29 +1504,29 @@ Valid OPTIONs are listed below:
  ---
 
   **Option**                 **Values**
-  OPT\_WALKONLOOK            Walk to hotspot in look mode (0 or 1)
-  OPT\_DIALOGOPTIONSGUI      Dialog options on GUI (0=none, otherwise GUI name/number)
-  OPT\_DIALOGOPTIONSGAP      Pixel gap between options (0=none, otherwise num pixels)
-  OPT\_WHENGUIDISABLED       When GUI is disabled, 0=grey out, 1=go black, 2=unchanged, 3=turn off
-  OPT\_ALWAYSSPEECH          Always display text as speech (0 or 1)
-  OPT\_PIXELPERFECT          Pixel-perfect click detection (0 or 1)
-  OPT\_NOWALKMODE            Don\'t automatically move character in Walk mode (0 or 1)
-  OPT\_FIXEDINVCURSOR        Don\'t use inventory graphics as cursors (0 or 1)
-  OPT\_DONTLOSEINV           Don\'t automatically lose inventory items (0 or 1)
-  OPT\_TURNBEFOREWALK        Characters turn before walking (0 or 1)
-  OPT\_HANDLEINVCLICKS       Handle inventory clicks in script (0 or 1)
-  OPT\_MOUSEWHEEL            Enable mouse wheel support (0 or 1)
-  OPT\_DIALOGNUMBERED        Number dialog options (-1=disabled, 0=shortcuts only, 1=drawn numbers)
-  OPT\_DIALOGUPWARDS         Dialog options go upwards on GUI (0 or 1)
-  OPT\_CROSSFADEMUSIC        Crossfade music tracks (0=no, 1=slow, 2=slowish, 3=medium, 4=fast)
-  OPT\_ANTIALIASFONTS        Anti-alias rendering of TTF fonts (0 or 1)
-  OPT\_THOUGHTGUI            Thought uses bubble GUI (GUI name/number)
-  OPT\_TURNWHENFACING        Characters turn to face direction (0 or 1)
-  OPT\_LIPSYNCTEXT           Whether lip-sync text reading is enabled (0 or 1)
-  OPT\_RIGHTTOLEFT           Right-to-left text writing (0 or 1)
-  OPT\_MULTIPLEINV           Display multiple inv items multiple times (0 or 1)
-  OPT\_SAVEGAMESCREENSHOTS   Save screenshots into save games (0 or 1)
-  OPT\_PORTRAITPOSITION      Speech portrait side (0=left, 1=right, 2=alternate, 3=xpos)
+  OPT_WALKONLOOK            Walk to hotspot in look mode (0 or 1)
+  OPT_DIALOGOPTIONSGUI      Dialog options on GUI (0=none, otherwise GUI name/number)
+  OPT_DIALOGOPTIONSGAP      Pixel gap between options (0=none, otherwise num pixels)
+  OPT_WHENGUIDISABLED       When GUI is disabled, 0=grey out, 1=go black, 2=unchanged, 3=turn off
+  OPT_ALWAYSSPEECH          Always display text as speech (0 or 1)
+  OPT_PIXELPERFECT          Pixel-perfect click detection (0 or 1)
+  OPT_NOWALKMODE            Don\'t automatically move character in Walk mode (0 or 1)
+  OPT_FIXEDINVCURSOR        Don\'t use inventory graphics as cursors (0 or 1)
+  OPT_DONTLOSEINV           Don\'t automatically lose inventory items (0 or 1)
+  OPT_TURNBEFOREWALK        Characters turn before walking (0 or 1)
+  OPT_HANDLEINVCLICKS       Handle inventory clicks in script (0 or 1)
+  OPT_MOUSEWHEEL            Enable mouse wheel support (0 or 1)
+  OPT_DIALOGNUMBERED        Number dialog options (-1=disabled, 0=shortcuts only, 1=drawn numbers)
+  OPT_DIALOGUPWARDS         Dialog options go upwards on GUI (0 or 1)
+  OPT_CROSSFADEMUSIC        Crossfade music tracks (0=no, 1=slow, 2=slowish, 3=medium, 4=fast)
+  OPT_ANTIALIASFONTS        Anti-alias rendering of TTF fonts (0 or 1)
+  OPT_THOUGHTGUI            Thought uses bubble GUI (GUI name/number)
+  OPT_TURNWHENFACING        Characters turn to face direction (0 or 1)
+  OPT_LIPSYNCTEXT           Whether lip-sync text reading is enabled (0 or 1)
+  OPT_RIGHTTOLEFT           Right-to-left text writing (0 or 1)
+  OPT_MULTIPLEINV           Display multiple inv items multiple times (0 or 1)
+  OPT_SAVEGAMESCREENSHOTS   Save screenshots into save games (0 or 1)
+  OPT_PORTRAITPOSITION      Speech portrait side (0=left, 1=right, 2=alternate, 3=xpos)
   ---
  ---
 
@@ -1553,13 +1553,13 @@ will disable pixel-perfect click detection.
 
     SetGameSpeed (int new_speed)
 
-Sets the maximum game frame rate to NEW\_SPEED frames per second, or as
+Sets the maximum game frame rate to NEW_SPEED frames per second, or as
 near as possible to that speed. The default frame rate is 40 fps, but
 you can speed up or slow down the game by using this function. Note that
-this speed is also the rate at which the Repeatedly\_Execute functions
+this speed is also the rate at which the Repeatedly_Execute functions
 are triggered.
 
-The NEW\_SPEED must lie between 10 and 1000. If it does not, it will be
+The NEW_SPEED must lie between 10 and 1000. If it does not, it will be
 rounded to 10 or 1000. Note that if you set a speed which the player\'s
 computer cannot handle (for example, a 486 will not be able to manage 80
 fps), then it will go as fast as possible.
@@ -1610,7 +1610,7 @@ will set the Global Integer 10 to 1.
 
     SetGraphicalVariable(string variable_name, int value);
 
-Sets the interaction editor VARIABLE\_NAME variable to VALUE. This
+Sets the interaction editor VARIABLE_NAME variable to VALUE. This
 allows your script to change the values of variables set in the
 interaction editor.
 
@@ -1720,7 +1720,7 @@ Example:
 
 will change the save game directory to \"My Cool Game Saves\" in My
 Documents, and create the folder if it does not exist (might be useful
-to do this in game\_start).
+to do this in game_start).
 
 *See Also:*
 [ListBox.FillSaveGameList](ListBox#fillsavegamelist),
@@ -1751,14 +1751,14 @@ future.
 
     SetTimer (int timer_id, int timeout)
 
-Starts timer TIMER\_ID ticking - it will tick once every game loop
+Starts timer TIMER_ID ticking - it will tick once every game loop
 (normally 40 times per second), until TIMEOUT loops, after which it will
 stop. You can check whether the timer has finished by calling the
 IsTimerExpired function.
 
 Pass TIMEOUT as 0 to disable a currently running timer.
 
-There are 20 available timers, with TIMER\_IDs from 1 to 20.
+There are 20 available timers, with TIMER_IDs from 1 to 20.
 
 **NOTE:** the timer will not tick while the game is paused.
 
@@ -1789,7 +1789,7 @@ to B.
 If the specified character is not moving when this function is called,
 nothing happens.
 
-Example: (in on\_key\_press)
+Example: (in on_key_press)
 
     if (keycode == eKeyEscape) SkipUntilCharacterStops(EGO);
 
@@ -2154,7 +2154,7 @@ text is automatically removed from the screen.
 
 ### InSkippableCutscene
 
-*(Formerly known as game.in\_cutscene, which is now obsolete)*
+*(Formerly known as game.in_cutscene, which is now obsolete)*
 
     static bool Game.InSkippableCutscene
 
@@ -2302,7 +2302,7 @@ will change the normal font to the font \"Special\".
 
 ### SkippingCutscene
 
-*(Formerly known as game.skipping\_cutscene, which is now obsolete)*
+*(Formerly known as game.skipping_cutscene, which is now obsolete)*
 
     static bool Game.SkippingCutscene
 
@@ -2401,7 +2401,7 @@ Example:
 
 ### TextReadingSpeed
 
-*(Formerly known as game.text\_speed, which is now obsolete)*
+*(Formerly known as game.text_speed, which is now obsolete)*
 
     static int Game.TextReadingSpeed;
 
