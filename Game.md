@@ -167,7 +167,7 @@ the game.roomscript\_finished variable will be set to 1, so you can
 check for that in your repeatedly\_execute script if you need to do
 something afterwards.
 
-SeeAlso: [The text parser documentation](TextParser#textparser)
+SeeAlso: [The text parser documentation](TextParser)
 
 ---
 
@@ -243,7 +243,7 @@ Example:
 prevents the global script on\_key\_press from running if the player
 pressed the space bar.
 
-SeeAlso: [Script events](TextScriptEvents#textscriptevents)
+SeeAlso: [Script events](TextScriptEvents)
 
 ---
 
@@ -1010,7 +1010,7 @@ Tests whether the supplied key on the keyboard is currently pressed down
 or not. You could use this to move an object while the player holds an
 arrow key down, for instance.
 
-KEYCODE is one of the [ASCII codes](ASCIIcodes#asciicodes), with some
+KEYCODE is one of the [ASCII codes](ASCIIcodes), with some
 limitations: since it tests the raw state of the key, you CANNOT pass
 the Ctrl+(A-Z) or Alt+(A-Z) codes (since they are key combinations). You
 can, however, use some extra codes which are listed at the bottom of the

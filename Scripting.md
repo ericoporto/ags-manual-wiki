@@ -42,7 +42,7 @@ properties**](DrawingSurfaceFunctions)\
 [**Region functions and properties**](Region)\
 [**Room functions**](Room)\
 [**Screen functions**](ShakeScreen)\
-[**Speech functions and properties**](Speech#speechcommands)\
+[**Speech functions and properties**](Speech)\
 [**String functions**](String)\
 [**System functions and properties**](System)\
 [**Text display / Speech functions**](DisplayAt)\
