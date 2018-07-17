@@ -29,7 +29,7 @@ sub-nodes called "Speech", "Types" and two default folders called
 **Speech**
 
 At the moment, voice speech files are not setup within the editor. See
-the [Speech](MusAndSound#voicespeech) help page to find out more about
+the [Speech](MusAndSound#voice-speech) help page to find out more about
 adding speech to your game.
 
 **Audio Types**
