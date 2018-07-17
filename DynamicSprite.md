@@ -135,7 +135,7 @@ from portions of other sprites.
 
 **NOTE:** The *x*, *y*, *width* and *height* parameters respect the
 DrawingSurface's
-[UseHighResCoordinates](DrawingSurfaceFunctions#drawingsurface.usehighrescoordinates)
+[UseHighResCoordinates](DrawingSurfaceFunctions#usehighrescoordinates)
 setting, so make sure that the type of co-ordinates that you are using
 match up with what the drawing surface expects.
 
@@ -572,8 +572,8 @@ object for 1 second and then removes it.
 
 *See Also:*
 [DynamicSprite.CreateFromExistingSprite](DynamicSprite#createfromexistingsprite),
-[DrawingSurface.DrawLine](DrawingSurfaceFunctions#drawingsurface.drawline),
-[DrawingSurface.Release](DrawingSurfaceFunctions#drawingsurface.release)
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#drawline),
+[DrawingSurface.Release](DrawingSurfaceFunctions#release)
 
 ---
 

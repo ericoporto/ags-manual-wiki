@@ -246,9 +246,9 @@ The FontType enumeration is generated automatically based on your fonts.
 The font name is taken, all its spaces are removed, and *eFont* is added
 to the front.\
 *Used by:* [Button.Font](Button#font),
-[DrawingSurface.DrawMessageWrapped](DrawingSurfaceFunctions#drawingsurface.drawmessagewrapped),
-[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawingsurface.drawstring),
-[DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#drawingsurface.drawstringwrapped),
+[DrawingSurface.DrawMessageWrapped](DrawingSurfaceFunctions#drawmessagewrapped),
+[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawstring),
+[DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#drawstringwrapped),
 [Game.NormalFont](Game#normalfont),
 [Game.SpeechFont](Game#speechfont),
 [GetTextHeight](Game#gettextheight),

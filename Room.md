@@ -178,8 +178,8 @@ draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
 
 *See Also:*
-[DrawingSurface.DrawLine](DrawingSurfaceFunctions#drawingsurface.drawline),
-[DrawingSurface.Release](DrawingSurfaceFunctions#drawingsurface.release)
+[DrawingSurface.DrawLine](DrawingSurfaceFunctions#drawline),
+[DrawingSurface.Release](DrawingSurfaceFunctions#release)
 
 ---
 
@@ -711,7 +711,7 @@ Example:
     Display("The current room background is %d-bit colour.", Room.ColorDepth);
 
 *See Also:*
-[DrawingSurface.DrawImage](DrawingSurfaceFunctions#drawingsurface.drawimage)
+[DrawingSurface.DrawImage](DrawingSurfaceFunctions#drawimage)
 
 ---
 

@@ -91,7 +91,7 @@ or
 depending on what you want to draw onto; and you can then use the
 various drawing surface methods to do your drawing.
 
-You must call [Release](DrawingSurfaceFunctions#drawingsurface.release) on the surface
+You must call [Release](DrawingSurfaceFunctions#release) on the surface
 once you have finished drawing onto it, which tells AGS to update the
 data in memory.
 
