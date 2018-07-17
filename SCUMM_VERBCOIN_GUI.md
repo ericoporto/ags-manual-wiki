@@ -76,7 +76,7 @@ will set the double-click speed to 1/4 of a second. (This is a good
 default)
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.doubleclick](#doubleclick)
+[SCUMM_VERBCOIN_GUI.doubleclick](#doubleclick-variable)
 
 ---
 
