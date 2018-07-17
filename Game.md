@@ -1947,7 +1947,7 @@ presses a key or clicks the mouse.
 
 ---
 
-### AudioClipCount property
+### AudioClipCount
 
     readonly static int Game.AudioClipCount
 
@@ -1962,7 +1962,7 @@ audio clips for some reason.
 
 ---
 
-### AudioClips property
+### AudioClips
 
     readonly static int Game.AudioClips[int slot]
 
@@ -1986,7 +1986,7 @@ Example:
 
 ---
 
-### CharacterCount property
+### CharacterCount
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -2003,7 +2003,7 @@ Example:
 
 ---
 
-### DialogCount property
+### DialogCount
 
     readonly static int Game.DialogCount
 
@@ -2021,7 +2021,7 @@ Example:
 
 ---
 
-### FileName property
+### FileName
 
     readonly static String Game.FileName
 
@@ -2039,7 +2039,7 @@ will display the game filename.
 
 ---
 
-### FontCount property
+### FontCount
 
     readonly static int Game.FontCount
 
@@ -2054,7 +2054,7 @@ Example:
 
 ---
 
-### GlobalMessages property
+### GlobalMessages
 
 *(Formerly known as global function GetMessageText, which is now
 obsolete)*
@@ -2079,7 +2079,7 @@ will display global message 997.
 
 ---
 
-### GlobalStrings property
+### GlobalStrings
 
 *(Formerly known as GetGlobalString, which is now obsolete)*\
 *(Formerly known as SetGlobalString, which is now obsolete)*
@@ -2102,7 +2102,7 @@ will set global string 15 to contain \"Joe\".
 
 ---
 
-### GUICount property
+### GUICount
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -2120,7 +2120,7 @@ Example:
 
 ---
 
-### IgnoreUserInputAfterTextTimeoutMs property
+### IgnoreUserInputAfterTextTimeoutMs
 
     static int Game.IgnoreUserInputAfterTextTimeoutMs;
 
@@ -2152,7 +2152,7 @@ text is automatically removed from the screen.
 
 ---
 
-### InSkippableCutscene property
+### InSkippableCutscene
 
 *(Formerly known as game.in\_cutscene, which is now obsolete)*
 
@@ -2188,7 +2188,7 @@ will display a message if we are within a cutscene
 
 ---
 
-### InventoryItemCount property
+### InventoryItemCount
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -2204,7 +2204,7 @@ Example:
 
 ---
 
-### MinimumTextDisplayTimeMs property
+### MinimumTextDisplayTimeMs
 
     static int Game.MinimumTextDisplayTimeMs;
 
@@ -2238,7 +2238,7 @@ for at least 2 seconds
 
 ---
 
-### MouseCursorCount property
+### MouseCursorCount
 
     readonly static int Game.MouseCursorCount
 
@@ -2253,7 +2253,7 @@ Example:
 
 ---
 
-### name property (game)
+### name (game)
 
     static String Game.Name
 
@@ -2271,7 +2271,7 @@ will display the game name.
 
 ---
 
-### NormalFont property
+### NormalFont
 
 *(Formerly known as global function SetNormalFont, which is now
 obsolete)*
@@ -2300,7 +2300,7 @@ will change the normal font to the font \"Special\".
 
 ---
 
-### SkippingCutscene property
+### SkippingCutscene
 
 *(Formerly known as game.skipping\_cutscene, which is now obsolete)*
 
@@ -2337,7 +2337,7 @@ cutscene.
 
 ---
 
-### SpeechFont property
+### SpeechFont
 
 *(Formerly known as global function SetSpeechFont, which is now
 obsolete)*
@@ -2359,7 +2359,7 @@ will change the speech font to \"Standard\".
 
 ---
 
-### SpriteHeight property
+### SpriteHeight
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -2379,7 +2379,7 @@ Example:
 
 ---
 
-### SpriteWidth property
+### SpriteWidth
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -2399,7 +2399,7 @@ Example:
 
 ---
 
-### TextReadingSpeed property
+### TextReadingSpeed
 
 *(Formerly known as game.text\_speed, which is now obsolete)*
 
@@ -2436,7 +2436,7 @@ on-screen for twice as long as usual.
 
 ---
 
-### TranslationFilename property
+### TranslationFilename
 
 *(Formerly known as GetTranslationName, which is now obsolete)*
 
@@ -2459,7 +2459,7 @@ Example:
 
 ---
 
-### UseNativeCoordinates property
+### UseNativeCoordinates
 
     readonly static bool Game.UseNativeCoordinates
 
@@ -2492,7 +2492,7 @@ Example:
 
 ---
 
-### ViewCount property
+### ViewCount
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
