@@ -64,7 +64,7 @@ will display a message with Audio Channel 2's current volume.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Audio Channel commands](AudioChannel#audiochannelcommands),
+*See Also:* [AudioChannel](AudioChannel),
 [System.AudioChannelCount](System#audiochannelcount)
 
 ---
