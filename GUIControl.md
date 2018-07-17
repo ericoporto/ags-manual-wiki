@@ -50,7 +50,7 @@ Example:
 
 will display what control the mouse is over.
 
-*See Also:* [GUI.GetAtScreenXY](GUIFuncsAndProps#gui.getatscreenxy)
+*See Also:* [GUI.GetAtScreenXY](GUI#getatscreenxy)
 
 ---
 
@@ -80,7 +80,7 @@ Example:
 attempts to set Button 2 on GUI ICONBAR to have NormalGraphic 44, but if
 that control is not a button, prints a message.
 
-*See Also:* [GUI.Controls](GUIFuncsAndProps#gui.controls)
+*See Also:* [GUI.Controls](GUI#controls)
 
 ---
 
@@ -224,7 +224,7 @@ uses the obsolete SetGUIObjectEnabled function to enable the lstSaves
 list box, and then uses the equivalent modern property to disable it.
 
 *See Also:* [GUIControl.OwningGUI](GUIControl#owninggui),
-[GUI.ID](GUIFuncsAndProps#gui.id)
+[GUI.ID](GUI#id)
 
 ---
 
@@ -236,7 +236,7 @@ Gets the GUI control's owning GUI, which is the GUI that contains the
 control.
 
 Returns a GUI, which allows you to use all the usual [GUI functions and
-properties](GUIFuncsAndProps).
+properties](GUI).
 
 **Applies To**
 
@@ -253,7 +253,7 @@ turns off the GUI that contains the lstSaves list box, then turns it on
 again using the niftier full pathing approach.
 
 *See Also:* [GUIControl.ID](GUIControl#id),
-[GUI.ID](GUIFuncsAndProps#gui.id)
+[GUI.ID](GUI#id)
 
 ---
 
@@ -306,7 +306,7 @@ will move the *btnConfirm* button to be positioned at (40,10) within the
 GUI.
 
 *See Also:* [GUIControl.Enabled](GUIControl#enabled),
-[GUI.SetPosition](GUIFuncsAndProps#gui.setposition),
+[GUI.SetPosition](GUI#setposition),
 [GUIControl.SetSize](GUIControl#setsize),
 [GUIControl.X](GUIControl#x),
 [GUIControl.Y](GUIControl#y)
@@ -338,7 +338,7 @@ will resize the *invMain* control to have a size of 160 x 100.
 
 *See Also:* [GUIControl.Height](GUIControl#height),
 [GUIControl.SetPosition](GUIControl#setposition),
-[GUI.SetSize](GUIFuncsAndProps#gui.setsize),
+[GUI.SetSize](GUI#setsize),
 [GUIControl.Width](GUIControl#width),
 
 ---

@@ -161,7 +161,7 @@ use the available functions such as
 [InvWindow.ScrollDown](GUIInvFuncs#invwindow.scrolldown).
 
 To see a full list of commands available for inventory windows, see the
-[GUI Inv Window Functions and Properties](GUIInvFuncs)
+[GUI Inv Window Functions and Properties](GUI)
 section.
 
 ---

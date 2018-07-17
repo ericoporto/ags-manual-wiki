@@ -42,8 +42,8 @@ that event it will be run, otherwise nothing happens.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [GUI.Click](GUIFuncsAndProps#gui.click),
-[GUI.ProcessClick](GUIFuncsAndProps#gui.processclick)
+*See Also:* [GUI.Click](GUI#click),
+[GUI.ProcessClick](GUI#processclick)
 
 ---
 

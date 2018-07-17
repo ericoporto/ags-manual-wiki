@@ -462,7 +462,7 @@ Example:
 
 will simulate a click in the Look mode on co-ordinates (100, 50).
 
-*See Also:* [GUI.ProcessClick](GUIFuncsAndProps#gui.processclick),
+*See Also:* [GUI.ProcessClick](GUI#processclick),
 [Mouse.Click](Mouse#click),
 [IsInteractionAvailable](Game#isinteractionavailable),
 [Hotspot.RunInteraction](Hotspot#runinteraction)

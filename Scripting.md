@@ -22,10 +22,10 @@ properties**](DrawingSurfaceFunctions)\
 [**DynamicSprite functions and properties**](DynamicSprite)\
 [**File functions and properties**](File)\
 [**Game / Global functions**](Game#globalcommands)\
-[**GUI functions and properties**](GUIFuncsAndProps)\
+[**GUI functions and properties**](GUI)\
 [**GUI control functions and properties**](GUIControl)\
 [**GUI Button functions and properties**](Button)\
-[**GUI InvWindow functions and properties**](GUIInvFuncs)\
+[**GUI InvWindow functions and properties**](GUI)\
 [**GUI Label functions and properties**](Label)\
 [**GUI List Box functions and properties**](ListBox)\
 [**GUI Slider properties**](Slider)\

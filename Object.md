@@ -1115,7 +1115,7 @@ will gradually fade out the object from its current transparency level
 to being fully invisible.
 
 *See Also:* [Character.Transparency](Character#transparency),
-[GUI.Transparency](GUIFuncsAndProps#gui.transparency)
+[GUI.Transparency](GUI#transparency)
 
 ---
 

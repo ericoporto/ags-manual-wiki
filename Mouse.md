@@ -119,7 +119,7 @@ This will simulate user click at (100,100).
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [GUI.ProcessClick](GUIFuncsAndProps#gui.processclick),
+*See Also:* [GUI.ProcessClick](GUI#processclick),
 [Room.ProcessClick](Room#processclick)
 
 ---
