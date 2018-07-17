@@ -157,11 +157,11 @@ in the global script:
       }
     }
 
-The function doesn\'t get called immediately; instead, the engine will
-run it in due course, probably during the next game loop, so you can\'t
+The function doesn't get called immediately; instead, the engine will
+run it in due course, probably during the next game loop, so you can't
 use any values set by it immediately.
 
-Once the on_call function has executed (or not if there isn\'t one),
+Once the on_call function has executed (or not if there isn't one),
 the game.roomscript_finished variable will be set to 1, so you can
 check for that in your repeatedly_execute script if you need to do
 something afterwards.
@@ -211,12 +211,12 @@ will attempt to change the translation to Spanish
 
     ClaimEvent()
 
-This command is used in a room script or script module\'s
+This command is used in a room script or script module's
 *on_key_press* or *on_mouse_click* function, and it tells AGS not to
 run the global script afterwards.
 
 For example, if your room script responds to the player pressing the
-space bar, and you don\'t want the global script\'s on_key_press to
+space bar, and you don't want the global script's on_key_press to
 handle it as well, then use this command.
 
 This is useful if you have for example a mini-game in the room, and you
@@ -323,7 +323,7 @@ Example:
 
     DisableInterface();
 
-will disable the user\'s interface.
+will disable the user's interface.
 
 *See Also:* [EnableInterface](#enableinterface),
 [IsInterfaceEnabled](#isinterfaceenabled)
@@ -374,7 +374,7 @@ Example:
 
     EnableInterface();
 
-will enable the user\'s interface.
+will enable the user's interface.
 
 *See Also:* [DisableInterface](#disableinterface),
 [IsInterfaceEnabled](#isinterfaceenabled)
@@ -580,7 +580,7 @@ a GUI, a blank string is returned.
 
 **NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM
 co-ordinates. This means that with a scrolling room, the co-ordinates
-you pass are relative to the screen\'s current position, and NOT
+you pass are relative to the screen's current position, and NOT
 absolute room co-ordinates. This means that this function is suitable
 for use with the mouse cursor position variables.
 
@@ -768,7 +768,7 @@ will print \"Hello!\" onto the middle of the background scene.
 Gets the translated equivalent of the supplied string. You do not
 normally need to use this since the game translates most things for you.
 However, if you have used an InputBox or other form of user input, and
-want to compare the user\'s input to a particular string, it cannot be
+want to compare the user's input to a particular string, it cannot be
 translated automatically. So, you can do this instead.
 
 Example:
@@ -818,7 +818,7 @@ Example:
 
     GiveScore (int score)
 
-Adds SCORE to the player\'s score. This is preferable to directly
+Adds SCORE to the player's score. This is preferable to directly
 modifying the variable since it will play the score sound, update any
 status lines and call the GOT_SCORE on_event function.
 
@@ -839,14 +839,14 @@ will give 5 points to the player.
 
     int GetFontHeight (int font)
 
-Returns the given font\'s height, in pixels. This value may be used, for
+Returns the given font's height, in pixels. This value may be used, for
 example, to calculate arrangement of text and GUI elements on screen.
 
 Example:
 
     int h = GetFontHeight(eFontSpeech);
 
-will store the speech font\'s height in the variable.
+will store the speech font's height in the variable.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
@@ -859,15 +859,15 @@ will store the speech font\'s height in the variable.
     int GetFontLineSpacing (int font)
 
 Returns the step between two lines of text for the specified font. If
-this value equals font\'s height, then each next line is rendered right
+this value equals font's height, then each next line is rendered right
 after previous one with no space in between. If the line spacing is
-lower than font\'s height, then the lines of text are partially
+lower than font's height, then the lines of text are partially
 overlapping.
 
 **NOTE:** this is the distance between the **top** of the first line and
 the **top** of the next line, and **not** distance between bottom of
 first line and top of next one. If you need to calculate the **gap**
-between the lines, then subtract [font\'s
+between the lines, then subtract [font's
 height](#getfontheight) from the line spacing value.
 
 Example:
@@ -903,7 +903,7 @@ The recommended way to obtain user input is to create your own GUI with
 a text box on it, which allows you full customization of the look of the
 window.
 
-**TIP:** If you add a \'!\' character to the start of the prompt, then a
+**TIP:** If you add a '!' character to the start of the prompt, then a
 Cancel button will be available in the input box. If the player presses
 this Cancel button (or the ESC key), a blank string is returned.
 
@@ -945,7 +945,7 @@ Example:
 
     if (IsGamePaused()) UnPauseGame();
 
-will unpause the game if it\'s paused.
+will unpause the game if it's paused.
 
 *See Also:* [GUI.Visible](GUI#visible)
 
@@ -965,7 +965,7 @@ Example:
     if (IsInterfaceEnabled())
         DisableInterface();
 
-will disable the user interface if it\'s enabled.
+will disable the user interface if it's enabled.
 
 *See Also:* [DisableInterface](#disableinterface),
 [EnableInterface](#enableinterface)
@@ -1044,7 +1044,7 @@ the game.
 
 **IMPORTANT:** If the plugin exports its own script functions that you
 used in your game script, and not found when the game is launched, then
-the game won\'t start up at all, exiting with error. IsPluginLoaded may
+the game won't start up at all, exiting with error. IsPluginLoaded may
 therefore be useful to check for plugins that are not interacted with
 from game script, but just run on their own.
 
@@ -1112,7 +1112,7 @@ Example:
 
     MoveCharacterToHotspot(EGO,6);
 
-will move the character EGO to the hotspot\'s 6 \"walk to point\".
+will move the character EGO to the hotspot's 6 \"walk to point\".
 
 *See Also:* [Hotspot.WalkToX](Hotspot#walktox),
 [Hotspot.WalkToY](Hotspot#walktoy),
@@ -1356,10 +1356,10 @@ will bring up the save game dialog if the player presses the F3 key.
 Saves the current game position to the save game number specified by
 SLOT, using DESCRIPTION as the textual description of the save position.
 Be careful using this function, because you could overwrite one of the
-player\'s save slots if you aren\'t careful.
+player's save slots if you aren't careful.
 
 The SaveGameDialog function uses slots numbered from 1 to 20, so if you
-don\'t want to interfere with the player\'s saves, I would recommend
+don't want to interfere with the player's saves, I would recommend
 saving to slot numbers of 100 and above.
 
 **NOTE:** The game will not be saved immediately; instead, it will be
@@ -1507,9 +1507,9 @@ OPT_DIALOGOPTIONSGAP | Pixel gap between options (0=none, otherwise num pixels)
 OPT_WHENGUIDISABLED | When GUI is disabled, 0=grey out, 1=go black, 2=unchanged, 3=turn off
 OPT_ALWAYSSPEECH | Always display text as speech (0 or 1)
 OPT_PIXELPERFECT | Pixel-perfect click detection (0 or 1)
-OPT_NOWALKMODE | Don\'t automatically move character in Walk mode (0 or 1)
-OPT_FIXEDINVCURSOR | Don\'t use inventory graphics as cursors (0 or 1)
-OPT_DONTLOSEINV | Don\'t automatically lose inventory items (0 or 1)
+OPT_NOWALKMODE | Don't automatically move character in Walk mode (0 or 1)
+OPT_FIXEDINVCURSOR | Don't use inventory graphics as cursors (0 or 1)
+OPT_DONTLOSEINV | Don't automatically lose inventory items (0 or 1)
 OPT_TURNBEFOREWALK | Characters turn before walking (0 or 1)
 OPT_HANDLEINVCLICKS | Handle inventory clicks in script (0 or 1)
 OPT_MOUSEWHEEL | Enable mouse wheel support (0 or 1)
@@ -1554,7 +1554,7 @@ this speed is also the rate at which the Repeatedly_Execute functions
 are triggered.
 
 The NEW_SPEED must lie between 10 and 1000. If it does not, it will be
-rounded to 10 or 1000. Note that if you set a speed which the player\'s
+rounded to 10 or 1000. Note that if you set a speed which the player's
 computer cannot handle (for example, a 486 will not be able to manage 80
 fps), then it will go as fast as possible.
 
@@ -1563,9 +1563,9 @@ very low speeds, like 10 to 20 fps, the mouse will appear to be jumpy
 and not very responsive.
 
 NOTE: If you set the [System.VSync](System#vsync) property to
-*true*, the game speed will be capped at the screen\'s refresh rate, so
+*true*, the game speed will be capped at the screen's refresh rate, so
 you will be unable to set it higher than 60-85 (depending on the
-player\'s screen refresh).
+player's screen refresh).
 
 Example:
 
@@ -1664,7 +1664,7 @@ Changes the game restart point to the current position. This means that
 from now on, if the player chooses the Restart Game option, it will
 return here.
 
-This function is useful if the default restart point doesn\'t work
+This function is useful if the default restart point doesn't work
 properly in your game - just use this function to move it.
 
 **NOTE:** The restart point cannot be set while a script is running \--
@@ -1692,7 +1692,7 @@ Therefore, only two types of path are supported:
 1. Relative paths (eg. \"Saves\"). This will create a subfolder inside
 **default game save folder**  
 2. The special tag `$MYDOCS$` which allows you to explicitly create a
-different folder for your save games inside the user\'s documents
+different folder for your save games inside the user's documents
 folder.
 
 The actual folder referenced with `$MYDOCS$` is different on every
@@ -1802,7 +1802,7 @@ blocking cutscene.
 Marks the start of a cutscene. Once your script passes this point, the
 player can choose to skip a portion by pressing a key or the mouse
 button. This is useful for things like introduction sequences, where you
-want the player to be able to skip over an intro that they\'ve seen
+want the player to be able to skip over an intro that they've seen
 before.
 
 The CutsceneSkipType determines how they can skip the cutscene:
@@ -2251,7 +2251,7 @@ Example:
 
     static String Game.Name
 
-Gets/sets the game\'s name. This is initially set in the General
+Gets/sets the game's name. This is initially set in the General
 Settings pane of the editor, but you can change it at run-time in order
 to change the window title of your game.
 
@@ -2306,7 +2306,7 @@ EndCutscene command, and the player has chosen to skip it.
 
 Although cutscene skipping is handled automatically by AGS, you can use
 this property to optimise the process by bypassing any lengthy blocks of
-code that don\'t need to be run if the cutscene is being skipped over.
+code that don't need to be run if the cutscene is being skipped over.
 
 **NOTE:** This is a static function, and thus need to be called with
 `Game.` in front of it. See the example below.

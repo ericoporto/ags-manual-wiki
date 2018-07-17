@@ -68,7 +68,7 @@ Example:
 
     CDAudio(eCDPlayTrack, 3);
 
-will play track 3 of the CD that\'s in the CD ROM drive.
+will play track 3 of the CD that's in the CD ROM drive.
 
 ---
 
@@ -80,7 +80,7 @@ will play track 3 of the CD that\'s in the CD ROM drive.
     static bool Game.IsAudioPlaying(optional AudioType)
 
 Returns *true* if there is currently audio playing of the specified
-type. If you don\'t supply an audio type, then *true* will be returned
+type. If you don't supply an audio type, then *true* will be returned
 if there is any audio at all playing in the game.
 
 If no audio of the specified type is playing, returns *false*. You can
@@ -201,7 +201,7 @@ folder).
 
 The second type of files that AGS can play is anything supported by
 Windows Media Player. This includes AVI, MPG and more. However, in order
-for these to work on the player\'s system, they will need to have the
+for these to work on the player's system, they will need to have the
 correct codecs installed. For example, if you create your video with the
 XVid codec, the player will need to have XVid installed to be able to
 view it. These types of video cannot be included into the game EXE, so
@@ -223,7 +223,7 @@ Example:
     PlayVideo("intro.mpg", eVideoSkipEscKey, 1);
 
 will play the video Intro.mpg, allowing the player to skip with ESC if
-they\'ve seen it before.
+they've seen it before.
 
 *Compatibility:* OGG Theora supported by **AGS 3.1.1** and later
 versions.
