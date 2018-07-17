@@ -279,7 +279,7 @@ with what they do:
         on the screen. Pass DATA as 1 to turn this on, 0 to turn it off.
 
 *See Also:* [Debugging features](Debuggingfeatures#debuggingfeatures),
-[System.RuntimeInfo](System#system.runtimeinfo)
+[System.RuntimeInfo](System#runtimeinfo)
 
 ---
 
@@ -489,7 +489,7 @@ GP\_NUMFRAMES)\
 [Game.GetViewFrame](#getviewframe) (was GP\_FRAMExxx,
 GP\_ISFRAMEFLIPPED)\
 [Game.GUICount](#guicount) (was gp\_numguis)\
-[Room.ObjectCount](Room#room.objectcount) (was gp\_numobjects)\
+[Room.ObjectCount](Room#objectcount) (was gp\_numobjects)\
 [Game.CharacterCount](#charactercount) (was
 GP\_NUMCHARACTERS)\
 [Game.InventoryItemCount](#inventoryitemcount)(was
@@ -592,10 +592,10 @@ Example:
 will get the name of whatever the mouse is over into the string
 variable.
 
-*See Also:* [Hotspot.Name](Hotspot#hotspot.name),
-[InventoryItem.Name](InventoryItem#inventoryitem.name),
+*See Also:* [Hotspot.Name](Hotspot#name),
+[InventoryItem.Name](InventoryItem#name),
 [GetLocationType](#getlocationtype),
-[Object.Name](Object#object.name)
+[Object.Name](Object#name)
 
 ---
 
@@ -625,9 +625,9 @@ Example:
 
 will set the cursor mode to talk if the cursor is over a character.
 
-*See Also:* [Hotspot.GetAtScreenXY](Hotspot#hotspot.getatscreenxy),
+*See Also:* [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
 [Game.GetLocationName](#getlocationname),
-[Object.GetAtScreenXY](Object#object.getatscreenxy)
+[Object.GetAtScreenXY](Object#getatscreenxy)
 
 ---
 
@@ -700,7 +700,7 @@ Example:
 will get the description of save slot 10 into the variable.
 
 *See Also:*
-[DynamicSprite.CreateFromSaveGame](DrawingSprite#dynamicsprite.createfromsavegame),
+[DynamicSprite.CreateFromSaveGame](DynamicSprite#createfromsavegame),
 [RestoreGameSlot](#restoregameslot),
 [SaveGameSlot](#savegameslot)
 
@@ -810,8 +810,8 @@ Example:
 [Game.GetLoopCountForView](#getloopcountforview),
 [Game.GetRunNextSettingForLoop](#getrunnextsettingforloop),
 [Game.GetFrameCountForLoop](#getframecountforloop),
-[ViewFrame.Graphic](ViewFrame#viewframe.graphic),
-[ViewFrame.Speed](ViewFrame#viewframe.speed)
+[ViewFrame.Graphic](ViewFrame#graphic),
+[ViewFrame.Speed](ViewFrame#speed)
 
 ---
 
@@ -915,7 +915,7 @@ Example:
 will prompt the user for his name and store it in the string NAME. If
 the user presses Cancel, the NAME string will be blank.
 
-*See Also:* [String.AsInt](String#string.asint)
+*See Also:* [String.AsInt](String#asint)
 
 ---
 
@@ -948,7 +948,7 @@ Example:
 
 will unpause the game if it\'s paused.
 
-*See Also:* [GUI.Visible](GUI#gui.visible)
+*See Also:* [GUI.Visible](GUI#visible)
 
 ---
 
@@ -994,11 +994,11 @@ Example:
       Display("looking here would not do anything.");
 
 *See Also:*
-[InventoryItem.IsInteractionAvailable](InventoryItem#inventoryitem.isinteractionavailable),
-[Hotspot.IsInteractionAvailable](Hotspot#hotspot.isinteractionavailable),
-[Object.IsInteractionAvailable](Object#object.isinteractionavailable),
-[Character.IsInteractionAvailable](Character#character.isinteractionavailable),
-[Room.ProcessClick](Room#room.processclick)
+[InventoryItem.IsInteractionAvailable](InventoryItem#isinteractionavailable),
+[Hotspot.IsInteractionAvailable](Hotspot#isinteractionavailable),
+[Object.IsInteractionAvailable](Object#isinteractionavailable),
+[Character.IsInteractionAvailable](Character#isinteractionavailable),
+[Room.ProcessClick](Room#processclick)
 
 ---
 
@@ -1032,7 +1032,7 @@ Example:
 will move the character EGO upwards 3 pixels when the up arrow is
 pressed.
 
-*See Also:* [Mouse.IsButtonDown](Mouse#mouse.isbuttondown)
+*See Also:* [Mouse.IsButtonDown](Mouse#isbuttondown)
 
 ---
 
@@ -1115,9 +1115,9 @@ Example:
 
 will move the character EGO to the hotspot\'s 6 \"walk to point\".
 
-*See Also:* [Hotspot.WalkToX](Hotspot#hotspot.walktox),
-[Hotspot.WalkToY](Hotspot#hotspot.walktoy),
-[Character.Walk](Character#character.walk),
+*See Also:* [Hotspot.WalkToX](Hotspot#walktox),
+[Hotspot.WalkToY](Hotspot#walktoy),
+[Character.Walk](Character#walk),
 [MoveCharacterToObject](#movecharactertoobject)
 
 ---
@@ -1141,7 +1141,7 @@ Example:
 Will move the character EGO below object number 0, then turn off object
 0.
 
-*See Also:* [Character.Walk](Character#character.walk),
+*See Also:* [Character.Walk](Character#walk),
 [MoveCharacterToHotspot](#movecharactertohotspot)
 
 ---
@@ -1403,7 +1403,7 @@ will prompt the player for a filename and then save the screenshot with
 the filename the player typed.
 
 *See Also:*
-[DynamicSprite.SaveToFile](DrawingSprite#dynamicsprite.savetofile)
+[DynamicSprite.SaveToFile](DynamicSprite#savetofile)
 
 ---
 
@@ -1441,9 +1441,9 @@ do not have individual light levels).
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:* [SetAmbientTint](#setambienttint),
-[Character.SetLightLevel](Character#character.setlightlevel),
-[Object.SetLightLevel](Object#object.setlightlevel),
-[Region.LightLevel](Region#region.lightlevel)
+[Character.SetLightLevel](Character#setlightlevel),
+[Object.SetLightLevel](Object#setlightlevel),
+[Region.LightLevel](Region#lightlevel)
 
 ---
 
@@ -1484,9 +1484,9 @@ Example:
 will tint everything on the screen with a hint of blue.
 
 *See Also:* [SetAmbientLightLevel](#setambientlightlevel),
-[Character.Tint](Character#character.tint),
-[Object.Tint](Object#object.tint),
-[Region.Tint](Region#region.tint)
+[Character.Tint](Character#tint),
+[Object.Tint](Object#tint),
+[Region.Tint](Region#tint)
 
 ---
 
@@ -1544,7 +1544,7 @@ Example:
 will disable pixel-perfect click detection.
 
 *See Also:* [GetGameOption](#getgameoption),
-[Speech.Style](Speech#speech.style),
+[Speech.Style](Speech#style),
 [SetTextWindowGUI](#settextwindowgui)
 
 ---
@@ -1568,7 +1568,7 @@ NOTE: Because the mouse cursor is repainted at the game frame rate, at
 very low speeds, like 10 to 20 fps, the mouse will appear to be jumpy
 and not very responsive.
 
-NOTE: If you set the [System.VSync](System#system.vsync) property to
+NOTE: If you set the [System.VSync](System#vsync) property to
 *true*, the game speed will be capped at the screen\'s refresh rate, so
 you will be unable to set it higher than 60-85 (depending on the
 player\'s screen refresh).
@@ -1723,7 +1723,7 @@ Documents, and create the folder if it does not exist (might be useful
 to do this in game\_start).
 
 *See Also:*
-[ListBox.FillSaveGameList](ListBox#listbox.fillsavegamelist),
+[ListBox.FillSaveGameList](ListBox#fillsavegamelist),
 [RestoreGameDialog](#restoregamedialog)
 
 ---
@@ -1852,9 +1852,9 @@ Note that using this function will reset the order that items are
 displayed in the inventory window to the same order they were created in
 the editor.
 
-*See Also:* [Character.AddInventory](Character#character.addinventory),
-[Character.LoseInventory](Character#character.loseinventory),
-[Character.InventoryQuantity](Character#character.inventoryquantity)
+*See Also:* [Character.AddInventory](Character#addinventory),
+[Character.LoseInventory](Character#loseinventory),
+[Character.InventoryQuantity](Character#inventoryquantity)
 
 ---
 
@@ -2148,7 +2148,7 @@ text is automatically removed from the screen.
 *See Also:*
 [Game.MinimumTextDisplayTimeMs](#minimumtextdisplaytimems),
 [Game.TextReadingSpeed](#textreadingspeed),
-[Speech.SkipStyle](Speech#speech.skipstyle)
+[Speech.SkipStyle](Speech#skipstyle)
 
 ---
 
@@ -2232,7 +2232,7 @@ for at least 2 seconds
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
 *See Also:*
-[Character.SpeechAnimationDelay](Character#character.speechanimationdelay),
+[Character.SpeechAnimationDelay](Character#speechanimationdelay),
 [Game.IgnoreUserInputAfterTextTimeoutMs](#ignoreuserinputaftertexttimeoutms)
 [Game.TextReadingSpeed](#textreadingspeed)
 
@@ -2430,9 +2430,9 @@ on-screen for twice as long as usual.
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
 *See Also:*
-[Character.SpeechAnimationDelay](Character#character.speechanimationdelay),
+[Character.SpeechAnimationDelay](Character#speechanimationdelay),
 [Game.MinimumTextDisplayTimeMs](#minimumtextdisplaytimems),
-[Speech.SkipStyle](Speech#speech.skipstyle)
+[Speech.SkipStyle](Speech#skipstyle)
 
 ---
 

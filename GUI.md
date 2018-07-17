@@ -102,7 +102,7 @@ will display the number of the GUI that the mouse is over.
 
 *See Also:*
 [GUIControl.GetAtScreenXY](GUIControl#getatscreenxy),
-[GUI.ID](GUIFuncsAndProps#GUI.ID), [GUI.ZOrder](GUI#zorder)
+[GUI.ID](GUI#ID), [GUI.ZOrder](GUI#zorder)
 
 ---
 
@@ -155,7 +155,7 @@ will move the VERBCOIN GUI to the position where the cursor is.
 *See Also:* [GUI.Centre](GUI#centre),
 [GUI.BackgroundGraphic](GUI#backgroundgraphic),
 [GUIControl.SetPosition](GUIControl#setposition),
-[GUI.SetSize](GUIFuncsAndProps#GUI.SetSize), [GUI.X](GUI#x),
+[GUI.SetSize](GUI#SetSize), [GUI.X](GUI#x),
 [GUI.Y](GUI#y)
 
 ---
