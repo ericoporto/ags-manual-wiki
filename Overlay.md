@@ -98,7 +98,7 @@ removed.
 
 *See Also:*
 [Overlay.CreateGraphical](Overlay#creategraphical),
-[Overlay.X](Overlay#X), [Overlay.Y](Overlay#y),
+[Overlay.X](Overlay#x), [Overlay.Y](Overlay#y),
 [Overlay.Remove](Overlay#remove)
 
 ---

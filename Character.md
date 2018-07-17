@@ -2274,7 +2274,7 @@ him to (50,100), then turn it back on again.
 Returns *true* if the character is currently moving, or *false* if not.
 
 This property is read-only; to change the character's movement, use the
-[Walk](Character#Walk), [Move](Character#move) and
+[Walk](Character#walk), [Move](Character#move) and
 [StopMoving](Character#stopmoving) commands.
 
 Example:

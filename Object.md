@@ -577,7 +577,7 @@ you wouldn't need to do this.
 *See Also:* [Object.Animate](Object#animate),
 [Object.Moving](Object#moving),
 [Object.StopAnimating](Object#stopanimating),
-[Object.X](Object#X), [Object.Y](Object#y)
+[Object.X](Object#x), [Object.Y](Object#y)
 
 ---
 
