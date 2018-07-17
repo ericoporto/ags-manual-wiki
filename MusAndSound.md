@@ -154,7 +154,7 @@ The new audio system in AGS gives you much more control over your game
 audio. Please see the following sections for a complete list of the
 supported commands:
 
-[AudioClip reference](AudioClip#audioclipcommands), [AudioChannel
+[AudioClip reference](AudioClip), [AudioChannel
 reference](AudioChannel#audiochannelcommands)
 
 [Voice speech](#voice-speech)\

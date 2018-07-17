@@ -11,7 +11,7 @@ great control over your game.
 [**Script language keywords**](managedmodifier)\
 [**AudioChannel functions and
 properties**](AudioChannel#audiochannelcommands)\
-[**AudioClip functions and properties**](AudioClip#audioclipcommands)\
+[**AudioClip functions and properties**](AudioClip)\
 [**Character functions and properties**](Character)\
 [**DateTime functions and properties**](DateTime)\
 [**Dialog functions and properties**](Dialog)\
@@ -21,7 +21,7 @@ properties**](DialogOptionsRenderingInfo#dialogoptionsrenderinginfofunctions)\
 properties**](DrawingSurfaceFunctions)\
 [**DynamicSprite functions and properties**](DynamicSprite)\
 [**File functions and properties**](File)\
-[**Game / Global functions**](Game#globalcommands)\
+[**Game / Global functions**](Game)\
 [**GUI functions and properties**](GUI)\
 [**GUI control functions and properties**](GUIControl)\
 [**GUI Button functions and properties**](Button)\
