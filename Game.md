@@ -278,7 +278,7 @@ with what they do:
     4   Show FPS - toggles whether the current frames per second is displayed
         on the screen. Pass DATA as 1 to turn this on, 0 to turn it off.
 
-*See Also:* [Debugging features](Debuggingfeatures#debuggingfeatures),
+*See Also:* [Debugging features](Debuggingfeatures),
 [System.RuntimeInfo](System#runtimeinfo)
 
 ---
