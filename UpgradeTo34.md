@@ -100,11 +100,13 @@ variable, define end condition and write iteration - all in its header.
 Another introduced command is `switch`. One `switch` can replace a long
 list of `if` and `else if` blocks.
 
-See: [switch](enum#switchstatement),
-[do..while](enum#dowhilestatement), [for](enum#forstatement),
-[break](enum#breakstatement),
-[continue](enum#continuestatement),
-[managed](enum#managedmodifier), [new](enum#newstatement)
+See: [switch](managedmodifier#switch-case-statements),
+[do..while](managedmodifier#dowhile),
+[for](managedmodifier#for),
+[break](managedmodifier#break),
+[continue](managedmodifier#continue),
+[managed](managedmodifier#managed),
+[new](managedmodifier#new)
 
 **Custom Dialog Options rendering extended**
 
