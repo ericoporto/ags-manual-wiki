@@ -765,7 +765,7 @@ SetGameOption. **Basic properties**
     current room. When debug mode is off, these do nothing. See the
     [Debugging features](Debuggingfeatures) section for more.
 -   **Split resource files into X MB-sized chunks** - see
-    [here](DistGame#splitres) for information.
+    [here](DistGame#splitting-resource-files) for information.
 
 **Dialog**
 
