@@ -4,8 +4,8 @@ Scripting API
 The AGS scripting system allows you to write a mini-program, giving you
 great control over your game.
 
-- [**Predefined global script functions**](TextScriptEvents)  
-- [**repeatedly_execute/_always**](RepExec) 
+- [**Predefined global script functions**](TextScriptEvents)
+- [**repeatedly_execute** / **_always**](RepExec) 
 - [**Custom dialog options rendering**](CustomDialogOptions)  
 - [**Built-in enumerated types**](BuiltInEnums)  
 - [**Script language keywords**](managedmodifier)  
