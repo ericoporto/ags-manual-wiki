@@ -59,26 +59,26 @@ function. Looking this up in the manual gives us the definition:
 The key point here is the part of the first line inside the brackets.
 This is called the **parameter list** and defines what parameters you
 give to the function.  A parameter is some information that the function
-uses to decide what to do.  
+uses to decide what to do.<br>
 Each parameter is listed, separated by commas. They can be one of the
 following:
 
--   string *name  
+-   string *name<br>
     *This parameter is a string, ie. a piece of text. This means that
     for this parameter you supply text, surrounded by double-quotes. For
-    example, `"My text"` .  
+    example, `"My text"` .<br>
     *name* is the name by which the parameter is referred to in the
     function description, it is not relevant for writing your script.
--   int *name*  
+-   int *name*<br>
     This parameter is an integer, ie. a numerical value. This means that
     for this parameter you supply a number, for example `65`.
--   CHARID  
+-   CHARID<br>
     This parameter is a character script name. You need to supply the
     script name of one of the game characters.
--   InventoryItem\*  
+-   InventoryItem\*<br>
     This parameter is an inventory item. You need to supply the
     inventory item you want to use.
--   ...  
+-   ...<br>
     This parameter is optional, and can be of any type. You do not have
     to supply it at all, but if you do the function description will
     tell you what type of value to use.
@@ -115,7 +115,7 @@ To perform a command on something, you type its Script Name followed by
 a dot, followed by the command name. When you type the dot, the AGS
 Editor will automatically pop up a list of the available commands:
 
-![](images/tut3.gif)  
+![](images/tut3.gif)<br>
 *The script editor's auto-complete*
 
 You then choose the appropriate command, and place any parameters in
@@ -127,7 +127,7 @@ This will add the Key to the EGO character's inventory. If you look up
 *AddInventory* in the manual, you'll find it takes two parameters, an
 InventoryItem \* and an *optional int*. The *InventoryItem\** means that
 you need to supply the Script Name of the inventory item; this is
-something you can set in the script editor.  
+something you can set in the script editor.<br>
 The *optional int* means that there is an extra parameter which you can
 supply if you want to, but you don't have to. In this case it allows you
 to specify where in the character's inventory list the new item should
@@ -146,7 +146,7 @@ Suppose we want the player to be given a pink poster when they look at
 the hotspot, as well as displaying the message. Assuming we have an
 inventory item set up to be the poster with the Script Name of *iPoster*
 (see the main tutorial for how to do this), the script enables us to
-easily make this happen.  
+easily make this happen.<br>
 Our final script will look like this:
 
     Display(It's quite a large, ominous looking door.");
@@ -257,7 +257,7 @@ otherwise it's useless. We do this using conditional statements, called
 
 what this means is that if *myCounter* contains the value 5, then the
 script inside the { } brackets will be run (which in this case changes
-the value of *myCounter* to zero).  
+the value of *myCounter* to zero).<br>
 If *myCounter* does not equal 5, the script inside the brackets is not
 run and execution carries on from after the } .
 
@@ -269,20 +269,20 @@ which will yield some strange results.
 The `==` is called an operator, because it performs an operation on the
 two values. The following basic operators are available:
 
--   ==  
+-   ==<br>
     compares the two values, and proceeds if they are the same.
--   !=  
+-   !=<br>
     compares the two values, and proceeds if they are **not** the same.
--   &lt;  
+-   &lt;<br>
     compares the two values, and proceeds if the left hand value is less
     than the right hand value
--   &gt;  
+-   &gt;<br>
     compares the two values, and proceeds if the left hand value is
     bigger than the right hand value.
--   &lt;=  
+-   &lt;=<br>
     proceeds if the left hand value is equal to or less than the right
     hand value
--   &gt;=  
+-   &gt;=<br>
     proceeds if the left hand value is equal to or bigger than the right
     hand value
 
@@ -318,7 +318,7 @@ code will want to look something like this:
 *myCounter* starts off set to 0, so the first time this script is called
 it will run the first Display command, but not the others. Then, since 0
 is less than 3, it will increase *myCounter* by 1, and since 0+1 = 1 it
-now holds the value 1.  
+now holds the value 1.<br>
 Once the player has seen all the messages (*myCounter* == 3), it no
 longer increases the value so if they click again they will keep getting
 the final message.

@@ -1,15 +1,15 @@
 Multimedia functions
 --------------------
 
-[CDAudio](#cdaudio)  
-[IsAudioPlaying](#isaudioplaying)  
-[IsSpeechVoxAvailable](#isspeechvoxavailable)  
-[PlayFlic](#playflic)  
-[PlaySilentMIDI](#playsilentmidi)  
-[PlayVideo](#playvideo)  
-[SetAudioTypeSpeechVolumeDrop](#setaudiotypespeechvolumedrop)  
-[SetAudioTypeVolume](#setaudiotypevolume)  
-[SetSpeechVolume](#setspeechvolume)  
+[CDAudio](#cdaudio)<br>
+[IsAudioPlaying](#isaudioplaying)<br>
+[IsSpeechVoxAvailable](#isspeechvoxavailable)<br>
+[PlayFlic](#playflic)<br>
+[PlaySilentMIDI](#playsilentmidi)<br>
+[PlayVideo](#playvideo)<br>
+[SetAudioTypeSpeechVolumeDrop](#setaudiotypespeechvolumedrop)<br>
+[SetAudioTypeVolume](#setaudiotypevolume)<br>
+[SetSpeechVolume](#setspeechvolume)<br>
 [StopAudio](#stopaudio)
 
 ---
@@ -59,9 +59,9 @@ noticeably slow down the game.
 
 **Cross-Platform Support**
 
-Windows: **Yes, but supports 1 CD-ROM drive only**  
-MS-DOS: **Yes, if CD-ROM device driver loaded**  
-Linux: **Yes, but supports 1 CD-ROM drive only**  
+Windows: **Yes, but supports 1 CD-ROM drive only**<br>
+MS-DOS: **Yes, if CD-ROM device driver loaded**<br>
+Linux: **Yes, but supports 1 CD-ROM drive only**<br>
 MacOS: **No**
 
 Example:
@@ -74,7 +74,7 @@ will play track 3 of the CD that's in the CD ROM drive.
 
 ### IsAudioPlaying
 
-*(Formerly known as IsMusicPlaying, which is now obsolete)*  
+*(Formerly known as IsMusicPlaying, which is now obsolete)*<br>
 *(Formerly known as IsSoundPlaying, which is now obsolete)*
 
     static bool Game.IsAudioPlaying(optional AudioType)
@@ -213,9 +213,9 @@ FLC/FLI video with the [PlayFlic](#playflic) command instead.
 
 **Cross-Platform Support**
 
-Windows: **Yes**  
-MS-DOS: **No**  
-Linux: **No**  
+Windows: **Yes**<br>
+MS-DOS: **No**<br>
+Linux: **No**<br>
 MacOS: **Yes**
 
 Example:
@@ -320,7 +320,7 @@ will set the speech volume to 200.
 
 ### StopAudio
 
-*(Formerly known as Game.StopSound, which is now obsolete)*  
+*(Formerly known as Game.StopSound, which is now obsolete)*<br>
 *(Formerly known as StopMusic, which is now obsolete)*
 
     static Game.StopAudio(optional AudioType)

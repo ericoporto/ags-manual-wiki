@@ -4,23 +4,23 @@ AudioClip functions and properties
 AudioClips are created when you import files in the AGS Editor. The
 commands in this section allow to play them.
 
-[Play](#play)  
-[PlayFrom](#playfrom)  
-[PlayQueued](#playqueued)  
-[Stop](#stop)  
-[FileType property](#filetype)  
-[IsAvailable property](#isavailable)  
+[Play](#play)<br>
+[PlayFrom](#playfrom)<br>
+[PlayQueued](#playqueued)<br>
+[Stop](#stop)<br>
+[FileType property](#filetype)<br>
+[IsAvailable property](#isavailable)<br>
 [Type property](#type)
 
 ---
 
 ### Play
 
-*(Formerly known as PlayAmbientSound, which is now obsolete)*  
-*(Formerly known as PlayMP3File, which is now obsolete)*  
-*(Formerly known as PlayMusic, which is now obsolete)*  
-*(Formerly known as PlaySound, which is now obsolete)*  
-*(Formerly known as PlaySoundEx, which is now obsolete)*  
+*(Formerly known as PlayAmbientSound, which is now obsolete)*<br>
+*(Formerly known as PlayMP3File, which is now obsolete)*<br>
+*(Formerly known as PlayMusic, which is now obsolete)*<br>
+*(Formerly known as PlaySound, which is now obsolete)*<br>
+*(Formerly known as PlaySoundEx, which is now obsolete)*<br>
 *(Formerly known as SetMusicRepeat, which is now obsolete)*
 
     AudioChannel* AudioClip.Play(optional AudioPriority, optional RepeatStyle)

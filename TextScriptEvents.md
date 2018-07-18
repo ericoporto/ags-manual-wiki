@@ -70,11 +70,11 @@ on_mouse_click (MouseButton button)
 
 Called when the player clicks a mouse button. BUTTON is either LEFT,
 RIGHT or MIDDLE, depending on which button was clicked. The "mouse.x"
-and "mouse.y" global variables contain the mouse's position.  
+and "mouse.y" global variables contain the mouse's position.<br>
 If 'Handle inventory clicks in script' is enabled in the game options,
 this function can also be called with eMouseLeftInv, eMouseMiddleInv or
 eMouseRightInv, which indicate a left, middle or right click on an
-inventory item, respectively.  
+inventory item, respectively.<br>
 If 'Enable mouse wheel support' is enabled, this function can also be
 called with eMouseWheelNorth or eMouseWheelSouth, which indicate the
 user moving the mouse wheel north or south, respectively.
@@ -104,7 +104,7 @@ unhandled_event (int what, int type)
 
 Called when an event occurs, but no handler is set up in the Events
 list. This could be used to display a default "I can't do that" type of
-message. The values of WHAT and TYPE tell you what the player did.  
+message. The values of WHAT and TYPE tell you what the player did.<br>
 The possible values are listed below:
 
 WHAT | TYPE | Description

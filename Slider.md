@@ -1,26 +1,26 @@
 GUI Slider properties
 ---------------------
 
-[BringToFront](GUIControl#bringtofront)  
-[Clickable property](GUIControl#clickable)  
-[Enabled property](GUIControl#enabled)  
-[Height property](GUIControl#height)  
-[ID property](GUIControl#id)  
-[OwningGUI property](GUIControl#owninggui)  
-[SendToBack](GUIControl#sendtoback)  
-[SetPosition](GUIControl#setposition)  
-[SetSize](GUIControl#setsize)  
-[Visible property](GUIControl#visible)  
-[Width property](GUIControl#width)  
-[X property](GUIControl#x)  
-[Y property](GUIControl#y)  
+[BringToFront](GUIControl#bringtofront)<br>
+[Clickable property](GUIControl#clickable)<br>
+[Enabled property](GUIControl#enabled)<br>
+[Height property](GUIControl#height)<br>
+[ID property](GUIControl#id)<br>
+[OwningGUI property](GUIControl#owninggui)<br>
+[SendToBack](GUIControl#sendtoback)<br>
+[SetPosition](GUIControl#setposition)<br>
+[SetSize](GUIControl#setsize)<br>
+[Visible property](GUIControl#visible)<br>
+[Width property](GUIControl#width)<br>
+[X property](GUIControl#x)<br>
+[Y property](GUIControl#y)<br>
 [ZOrder property](GUIControl#zorder)
 
-[BackgroundGraphic property](#backgroundgraphic)  
-[HandleGraphic property](#handlegraphic)  
-[HandleOffset property](#handleoffset)  
-[Max property](#max)  
-[Min property](#min)  
+[BackgroundGraphic property](#backgroundgraphic)<br>
+[HandleGraphic property](#handlegraphic)<br>
+[HandleOffset property](#handleoffset)<br>
+[Max property](#max)<br>
+[Min property](#min)<br>
 [Value property](#value)
 
 ---
@@ -139,7 +139,7 @@ sets the minimum value of the *sldHealth* slider to 0.
 
 ### Value
 
-*(Formerly known as GetSliderValue, which is now obsolete)*  
+*(Formerly known as GetSliderValue, which is now obsolete)*<br>
 *(Formerly known as SetSliderValue, which is now obsolete)*
 
     int Slider.Value;

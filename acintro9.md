@@ -31,7 +31,7 @@ list these ones briefly:
 All the other cursors are 'normal' cursors, in that you can use them
 for whatever purposes you want.
 
-![](images/icon_info.gif)  
+![](images/icon_info.gif)<br>
 If you want to create a Lucasarts-style game where the mouse
 cursor disappears during cutscenes, the easiest way to do it is
 simply to import a blank image over the Wait mouse cursor.
@@ -60,7 +60,7 @@ cover them briefly:
 	QFG4-style cursor which only animates while the player is moving it
 	around.
 
-![](images/icon_info.gif)  
+![](images/icon_info.gif)<br>
 You can right-click the "Mouse cursors" tree node and choose "New Cursor" to
 create additional cursors to the standard 10. If you do so however,
 any extra cursors you create will not have events created for them,
@@ -115,14 +115,14 @@ Where can you get a SCI font? Well, there are three ways:
 * You can get a Sierra SCI Font Pack on the
   [AGS website](http://www.adventuregamestudio.co.uk/fonts).
 
-![](images/icon_info.gif)  
+![](images/icon_info.gif)<br>
 If you go to your Windows Fonts folder to try and import a TTF font, you will
 not be able to do so (double-clicking them will open them up in the Windows Font
 Viewer). Unfortunately there is nothing I can do about this - you must either
 type the filename in manually, or copy the font to another folder and import it
 from there.
 
-![](images/icon_info.gif)  
+![](images/icon_info.gif)<br>
 By default, font 0 is used as the normal text font, and font 1 is used as the
 speech font. To use any additional fonts, the script properties
 *Game.NormalFont* and *Game.SpeechFont* can be used to change the active fonts.

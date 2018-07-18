@@ -41,7 +41,7 @@ become less than 1, and your game will grind to a halt.
 
 On several occasions, you don't just want to decide what to do based on
 one variable - there may be a combination of things you want to
-consider.  
+consider.<br>
 For example, suppose that you want to display a message if the player
 has **two** specific inventory items. You could do this, and put two **
 *if* statements inside each other:
@@ -231,7 +231,7 @@ own functions, using the **return** keyword. So:
 
 This function adds the two numbers together and returns the result (a
 useless function in practice since the + operator does the same thing,
-but it demonstrates the point).  
+but it demonstrates the point).<br>
 Another part of your script could then do:
 
     total = add(5, 10);

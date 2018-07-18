@@ -1,13 +1,13 @@
 DateTime functions and properties
 ---------------------------------
 
-[Now property](#now)  
-[DayOfMonth property](#dayofmonth)  
-[Hour property](#hour)  
-[Minute property](#minute)  
-[Month property](#month)  
-[RawTime property](#rawtime)  
-[Second property](#second)  
+[Now property](#now)<br>
+[DayOfMonth property](#dayofmonth)<br>
+[Hour property](#hour)<br>
+[Minute property](#minute)<br>
+[Month property](#month)<br>
+[RawTime property](#rawtime)<br>
+[Second property](#second)<br>
 [Year property](#year)
 
 ---

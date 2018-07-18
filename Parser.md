@@ -1,9 +1,9 @@
 Parser functions
 ----------------
 
-[FindWordID](#findwordid)  
-[ParseText](#parsetext)  
-[Said](#said)  
+[FindWordID](#findwordid)<br>
+[ParseText](#parsetext)<br>
+[Said](#said)<br>
 [SaidUnknownWord](#saidunknownword)
 
 ---
@@ -15,7 +15,7 @@ Parser functions
 Looks up *wordToFind* in the text parser dictionary, and returns the ID
 number.
 
-If the word is not found, returns -1.  
+If the word is not found, returns -1.<br>
 Otherwise, the Word Group number is returned, as seen in the Text Parser
 tab in the editor.
 

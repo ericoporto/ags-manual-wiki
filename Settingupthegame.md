@@ -5,16 +5,16 @@ Now that you know how to create a room, it's time to set up the
 game-wide settings. These include inventory items, sprite graphics,
 palette setup and other things which do not depend on individual rooms.
 
-[Palette setup](#palette-setup)  
-[Inventory](#inventory)  
-[Importing your own sprite graphics](#importing-your-own-sprite-graphics)  
-[Introduction sequences](#introduction-sequences)  
-[Animations](#animations)  
-[Characters](#characters)  
-[Conversations](#conversations)  
-[General settings](#general-settings)  
-[Default setup](#default-setup)  
-[Cursors](#cursors)  
+[Palette setup](#palette-setup)<br>
+[Inventory](#inventory)<br>
+[Importing your own sprite graphics](#importing-your-own-sprite-graphics)<br>
+[Introduction sequences](#introduction-sequences)<br>
+[Animations](#animations)<br>
+[Characters](#characters)<br>
+[Conversations](#conversations)<br>
+[General settings](#general-settings)<br>
+[Default setup](#default-setup)<br>
+[Cursors](#cursors)<br>
 [Fonts](#fonts)
 
 ---
@@ -288,7 +288,7 @@ animation is run, an overall animation speed will be set, so the actual
 speed of the frame will be: overall_speed + frame_speed . Note that
 you can use negative numbers for the frame delay to make it particularly
 fast, for example setting it to -3 means that the frame will stay for
-hardly any time at all.  
+hardly any time at all.<br>
 Animation speed is specified in Game Loops (ie. animation speed 4 will
 show the frame for 4 game loops - at 40fps, that would be 0.1 seconds).
 
@@ -410,7 +410,7 @@ want to use this for effects such as blinking (hence the name). If you
 set a view here, it will play intermittently while the character talks
 (it is drawn on top of the normal talking view). The default time
 between it playing is 3-4 seconds, but you can change this with the
-Character.BlinkInterval script property.  
+Character.BlinkInterval script property.<br>
 **NOTE**: the blinking view is currently only supported with
 sierra-style speech.
 
@@ -542,24 +542,24 @@ command rather than a dialog scripting command.
 
 The dialog commands available are:
 
--   **goto-dialog X**  
+-   **goto-dialog X**<br>
     Switches the current topic to Topic X, and displays the current list
     of choices for that topic.
--   **goto-previous**  
+-   **goto-previous**<br>
     Returns to the previous topic that this one was called from. If the
     dialog started on this topic, then the dialog will be stopped.
--   **option-off X**  
+-   **option-off X**<br>
     Turns option X for the current topic off, meaning it won't be
     displayed in the list of choices next time.
--   **option-off-forever X**  
+-   **option-off-forever X**<br>
     Turns option X off permanently. It will never again be displayed,
     not even if an "option-on" command is used.
--   **option-on X**  
+-   **option-on X**<br>
     Turns option X for the current topic on, including it in the list of
     choices to the player next time they are displayed.
--   **return**  
+-   **return**<br>
     Stops the script and returns to the list of choices.
--   **stop**  
+-   **stop**<br>
     Stops the conversation and returns the player to the game.
 
 For an example of a dialog script, load the demo game into the editor
@@ -806,14 +806,14 @@ SetGameOption. **Basic properties**
 -   **Speech style** - in the default Lucasarts-style speech, when a
     character talks, the speech text is displayed above their head in
     the game, and the character's talking view is used to animate the
-    actual character.  
+    actual character.<br>
     However, if you set this option to Sierra-style then the talking
     view is used to display an animating portrait separately in the
     top-left of the screen, with the text to the right of it. This is
     similar to the way that Space Quest 5, King's Quest 6 and other
     later Sierra games worked. You can also cycle to another option,
     "Sierra- style with background", which is the same except a text
-    window is drawn behind the speech text to make it easier to read.  
+    window is drawn behind the speech text to make it easier to read.<br>
     "Whole Screen" uses a full-screen character portrait, like the way
     that QFG4 worked.
 -   **Use game-wide speech animation delay** - defines whether to use
@@ -855,7 +855,7 @@ SetGameOption. **Basic properties**
 
 -   **Enhanced save games** - makes your game's saves compatible with
     Windows Game Explorer. For detailed information please refer to:
-    [Enhanced Saved Games](IntegrationWithWindows#enhanced-save-games)  
+    [Enhanced Saved Games](IntegrationWithWindows#enhanced-save-games)<br>
     [Windows Game Explorer](IntegrationWithWindows#windows-game-explorer)
 -   **Save games extension** - determines the special extension for your
     save files.

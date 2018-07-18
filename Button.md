@@ -1,34 +1,34 @@
 GUI Button functions and properties
 -----------------------------------
 
-[BringToFront](GUIControl#bringtofront)  
-[Clickable property](GUIControl#clickable)  
-[Enabled property](GUIControl#enabled)  
-[Height property](GUIControl#height)  
-[ID property](GUIControl#id)  
-[OwningGUI property](GUIControl#owninggui)  
-[SendToBack](GUIControl#sendtoback)  
-[SetPosition](GUIControl#setposition)  
-[SetSize](GUIControl#setsize)  
-[Visible property](GUIControl#visible)  
-[Width property](GUIControl#width)  
-[X property](GUIControl#x)  
-[Y property](GUIControl#y)  
+[BringToFront](GUIControl#bringtofront)<br>
+[Clickable property](GUIControl#clickable)<br>
+[Enabled property](GUIControl#enabled)<br>
+[Height property](GUIControl#height)<br>
+[ID property](GUIControl#id)<br>
+[OwningGUI property](GUIControl#owninggui)<br>
+[SendToBack](GUIControl#sendtoback)<br>
+[SetPosition](GUIControl#setposition)<br>
+[SetSize](GUIControl#setsize)<br>
+[Visible property](GUIControl#visible)<br>
+[Width property](GUIControl#width)<br>
+[X property](GUIControl#x)<br>
+[Y property](GUIControl#y)<br>
 [ZOrder property](GUIControl#zorder)
 
-[Click](#click)  
-[Animate](#animate)  
-[Animating property](#animating)  
-[Frame property](#frame)  
-[Loop property](#loop)  
-[View property](#view)  
-[ClipImage property](#clipimage)  
-[Font property](#font)  
-[Graphic property](#graphic)  
-[MouseOverGraphic property](#mouseovergraphic)  
-[NormalGraphic property](#normalgraphic)  
-[PushedGraphic property](#pushedgraphic)  
-[Text property](#text)  
+[Click](#click)<br>
+[Animate](#animate)<br>
+[Animating property](#animating)<br>
+[Frame property](#frame)<br>
+[Loop property](#loop)<br>
+[View property](#view)<br>
+[ClipImage property](#clipimage)<br>
+[Font property](#font)<br>
+[Graphic property](#graphic)<br>
+[MouseOverGraphic property](#mouseovergraphic)<br>
+[NormalGraphic property](#normalgraphic)<br>
+[PushedGraphic property](#pushedgraphic)<br>
+[Text property](#text)<br>
 [TextColor property](#textcolor)
 
 ---
@@ -253,7 +253,7 @@ will display btnPlay's current sprite number.
 
 ### MouseOverGraphic
 
-*(Formerly part of GetButtonPic, which is now obsolete)*  
+*(Formerly part of GetButtonPic, which is now obsolete)*<br>
 *(Formerly part of SetButtonPic, which is now obsolete)*
 
     int Button.MouseOverGraphic;
@@ -275,7 +275,7 @@ will display btnPlay's mouse-over sprite number.
 
 ### NormalGraphic
 
-*(Formerly part of GetButtonPic, which is now obsolete)*  
+*(Formerly part of GetButtonPic, which is now obsolete)*<br>
 *(Formerly part of SetButtonPic, which is now obsolete)*
 
     int Button.NormalGraphic;
@@ -302,7 +302,7 @@ will display btnPlay's normal sprite number.
 
 ### PushedGraphic
 
-*(Formerly part of GetButtonPic, which is now obsolete)*  
+*(Formerly part of GetButtonPic, which is now obsolete)*<br>
 *(Formerly part of SetButtonPic, which is now obsolete)*
 
     int Button.PushedGraphic;
@@ -325,8 +325,8 @@ will display btnPlay's pushed sprite number.
 
 ### Text
 
-*(Formerly known as SetButtonText, which is now obsolete)*  
-*(Formerly known as Button.GetText, which is now obsolete)*  
+*(Formerly known as SetButtonText, which is now obsolete)*<br>
+*(Formerly known as Button.GetText, which is now obsolete)*<br>
 *(Formerly known as Button.SetText, which is now obsolete)*
 
     String Button.Text;

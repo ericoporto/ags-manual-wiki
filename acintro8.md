@@ -9,7 +9,7 @@ to? Probably not much!
 How much you go into dialog depends of course on your game style.
 Generally, Sierra games used to just have one fixed line of dialog which
 the characters would talk about, possibly changing if you talked to the
-same person again.  
+same person again.<br>
 Lucasarts games (and some Sierra titles such as Quest for Glory) on the
 other hand, had complete dialog trees through which you could choose
 your topics to talk about.
@@ -23,12 +23,12 @@ conversation structure we want. It's going to be a lot easier to
 implement if we have this planned in advance. For this tutorial, we'll
 go for a structure like this:
 
-![](images/intro8_1.jpg)  
+![](images/intro8_1.jpg)<br>
 *Our planned dialog tree*
 
 In other words, when we first speak to the other character, we will say
 "Greetings!". After he replies, we will then be presented with three
-options to choose from.  
+options to choose from.<br>
 The "Tell me more about your wares" option will then lead us to be able
 to ask a different set of questions.
 
@@ -51,7 +51,7 @@ double-click it. (If not, you can always right-click the Dialogs node
 and choose "New dialog" to make a new one). You'll see this rather empty
 window:
 
-![](images/intro8_2.jpg)  
+![](images/intro8_2.jpg)<br>
 *The dialog editor*
 
 Conversations in AGS are made up of **topics**. A topic consists of a
@@ -80,7 +80,7 @@ grid to set the name, as usual.
 
 Now, type in some text to the three new text boxes:
 
-![](images/intro8_3.jpg)  
+![](images/intro8_3.jpg)<br>
 *We've inserted three options for topic 0*
 
 While we're at it, let's create the next set of options too. Right click
@@ -106,8 +106,8 @@ SCRIPTNAME: "Text to say"
 So, in between the "@S" and the "@1" lines, insert a couple of new
 lines, and type the following:
 
-EGO: "Greetings!"  
-MERCHANT: "Hello there!"  
+EGO: "Greetings!"<br>
+MERCHANT: "Hello there!"<br>
 return
 
 Remember, these are the **script names** of the characters (but without
@@ -121,12 +121,12 @@ you?" option, then entry point @1 will run.
 
 Here's a finished script for this topic:
 
-![](images/intro8_5.jpg)  
+![](images/intro8_5.jpg)<br>
 *Our finished dialog script*
 
 The *goto-dialog* command takes the player to another dialog - in this
 case, the new "dWares" dialog we just created (with questions about the
-merchant's wares).  
+merchant's wares).<br>
 The *stop* command tells AGS to end the conversation and return to the
 game (whereas *return* returns them to the list of options to talk
 about).
@@ -139,7 +139,7 @@ options when they get bored of talking about his wares.
 
 Here's my completed script for dWares:
 
-![](images/intro8_6.jpg)  
+![](images/intro8_6.jpg)<br>
 *Dialog script for dWares*
 
 As you can see, it's done very similarly to the first one. Notice the
@@ -158,7 +158,7 @@ Now, still with the Merchant open, go to his Events list. Using your
 skills from earlier on in this tutorial, add a command to initiate the
 dialog when the player talks to the Merchant. Now, we're all set!
 
-![](images/intro8_7.jpg)  
+![](images/intro8_7.jpg)<br>
 *Event script to launch the dialog*
 
 Test the game, talk to the Merchant, and try out the conversation.

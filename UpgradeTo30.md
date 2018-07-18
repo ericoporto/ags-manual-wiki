@@ -22,15 +22,15 @@ things you should be aware of:
 
 1\. Concurrency issues -- that is, while a blocking script was running in
 2.72 it was still possible for interactions to run at the same time if
-they didn't include any scripting. Now, that is no longer the case.  
+they didn't include any scripting. Now, that is no longer the case.<br>
 2. Blocking interactions -- in 2.72, a "Run Dialog" interaction, for
 example, waits until the dialog has finished before moving onto the next
 action. If you had a Run Dialog followed by a Change Room, then the
-dialog would finish before the room change happened.  
+dialog would finish before the room change happened.<br>
 With scripting, you need to be careful because the dialog\[x\].Start()
 command does not block; instead, it waits until the event script has
 finished running before the dialog runs. This would mean that the room
-change would not necessarily happen after the dialog.  
+change would not necessarily happen after the dialog.<br>
 To mitigate these types of problems, you can use an alternate solution
 such as a *run-script* command at the end of the dialog to run the room
 change.
@@ -104,10 +104,10 @@ Scripting hasn't really changed in AGS 3. Two new features (extender
 functions and dynamic arrays) have been added, but you shouldn't need to
 change any existing code.
 
-The only breaking changes are as follows:  
+The only breaking changes are as follows:<br>
 1. `new` is now a reserved word. This means that if you had any
 variables called "new" then your script will fail to compile. Just
-rename the variable to something else.  
+rename the variable to something else.<br>
 2. Because of the removal of some system limits, some of the AGS_MAX_
 constants have been removed (since there is no sensible value for them
 now that the limits have gone). This will probably only affect module

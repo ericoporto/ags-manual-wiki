@@ -1,11 +1,11 @@
 Text display / Speech functions
 -------------------------------
 
-[Display](#display)  
-[DisplayAt](#displayat)  
-[DisplayAtY](#displayaty)  
-[DisplayMessage](#displaymessage)  
-[DisplayMessageAtY](#displaymessageaty)  
+[Display](#display)<br>
+[DisplayAt](#displayat)<br>
+[DisplayAtY](#displayaty)<br>
+[DisplayMessage](#displaymessage)<br>
+[DisplayMessageAtY](#displaymessageaty)<br>
 [DisplayTopBar](#displaytopbar)
 
 ---
@@ -165,9 +165,9 @@ customize the look of the bar. You can change these before calling
 DisplayTopBar.
 
 **game.top_bar_bordercolor** sets the colour used for the bar's border
-(set to the same colour as the backcolor if you don't want a border)  
+(set to the same colour as the backcolor if you don't want a border)<br>
 **game.top_bar_borderwidth** sets the width of the bar's border, in
-pixels (default 1)  
+pixels (default 1)<br>
 **game.top_bar_font** sets the font to use for the top bar. The
 default is -1, which means that the current Normal font is used. Set it
 to a specific number to use that font instead.

@@ -14,19 +14,19 @@ of what's here should still apply).
 Start up the AGS Editor by double-clicking the *AGSEditor.exe* file, and
 you should be greeted by the following screen:
 
-![](images/intro1.jpg)  
+![](images/intro1.jpg)<br>
 *The "Welcome to AGS" dialog*
 
 Make sure that "Start a new game" is selected, and click Continue.
 You'll be presented with the Create New Game wizard:
 
-![](images/intro1a.jpg)  
+![](images/intro1a.jpg)<br>
 *Create New Game dialog*
 
 So, without further ado, click Next, and you'll see the Select Template
 screen:
 
-![](images/intro1b.jpg)  
+![](images/intro1b.jpg)<br>
 *Select Template dialog*
 
 Here, you need to choose which template you're going to use for your new
@@ -40,7 +40,7 @@ with AGS - it comes with no default graphics at all.
 
 So, select "Default Game" and click Next.
 
-![](images/intro1c.jpg)  
+![](images/intro1c.jpg)<br>
 *Game Name dialog*
 
 Finally, you need to decide on what to call your game. In the first box
@@ -61,7 +61,7 @@ that.
 Click the *Finish* button, and after a short wait you should be
 presented with the main AGS Editor window:
 
-![](images/intro2.jpg)  
+![](images/intro2.jpg)<br>
 *The main editor window*
 
 So, there's your new game, ready and waiting for you to create it!
@@ -73,7 +73,7 @@ tree** in the top-right corner, which allows you to access all the
 various parts of your game. Let's start by scrolling to the top of the
 tree, and double-clicking the "General Settings" node:
 
-![](images/intro3.jpg)  
+![](images/intro3.jpg)<br>
 *The General Settings pane*
 
 This screenshot demonstrates three of the main editor features. The
@@ -139,7 +139,7 @@ later, you would have to re-import all the graphics).*
 Double-click the "Colours" node in the project tree. You should see
 this:
 
-![](images/intro4.jpg)  
+![](images/intro4.jpg)<br>
 *The Palette Editor*
 
 The palette display has a grid with the 256 colour slots on it. The
@@ -160,7 +160,7 @@ So, let's swap some background colours for some game-wide ones. Select
 the first "X" slot, then hold shift and click on the last slot in the
 row marked "80". The screen should look as follows:
 
-![](images/intro5.jpg)  
+![](images/intro5.jpg)<br>
 *We have selected colours 42-95*
 
 We can now see the Property Grid in action. Change the "ColourType"
@@ -177,7 +177,7 @@ option.
 What colours you use is up to you, and depends on what sort of colour
 scheme you're going for with your graphics.
 
-![](images/icon_info.gif)  
+![](images/icon_info.gif)<br>
 You should set up the palette as well as you can now, because changing it later may require you to re-import some graphics.
 
 ### Creating a 16-bit or 32-bit colour game

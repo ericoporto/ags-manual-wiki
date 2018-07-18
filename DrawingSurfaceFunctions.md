@@ -14,23 +14,23 @@ and you can then use the following methods to draw onto the surface.
 finished drawing onto the surface. This allows AGS to update its cached
 copies of the image and upload it to video memory if appropriate.
 
-[Clear](#clear)  
-[CreateCopy](#createcopy)  
-[DrawCircle](#drawcircle)  
-[DrawImage](#drawimage)  
-[DrawLine](#drawline)  
-[DrawMessageWrapped](#drawmessagewrapped)  
-[DrawPixel](#drawpixel)  
-[DrawRectangle](#drawrectangle)  
-[DrawString](#drawstring)  
-[DrawStringWrapped](#drawstringwrapped)  
-[DrawSurface](#drawsurface)  
-[DrawTriangle](#drawtriangle)  
-[Release](#release)  
-[DrawingColor property](#drawingcolor)  
-[GetPixel](#getpixel)  
-[Height property](#height)  
-[UseHighResCoordinates property](#usehighrescoordinates)  
+[Clear](#clear)<br>
+[CreateCopy](#createcopy)<br>
+[DrawCircle](#drawcircle)<br>
+[DrawImage](#drawimage)<br>
+[DrawLine](#drawline)<br>
+[DrawMessageWrapped](#drawmessagewrapped)<br>
+[DrawPixel](#drawpixel)<br>
+[DrawRectangle](#drawrectangle)<br>
+[DrawString](#drawstring)<br>
+[DrawStringWrapped](#drawstringwrapped)<br>
+[DrawSurface](#drawsurface)<br>
+[DrawTriangle](#drawtriangle)<br>
+[Release](#release)<br>
+[DrawingColor property](#drawingcolor)<br>
+[GetPixel](#getpixel)<br>
+[Height property](#height)<br>
+[UseHighResCoordinates property](#usehighrescoordinates)<br>
 [Width property](#width)
 
 ---
@@ -127,8 +127,8 @@ will draw a circle in the centre of the screen, of 50 pixels radius.
 
 ### DrawImage
 
-*(Formerly known as RawDrawImage, which is now obsolete)*  
-*(Formerly known as RawDrawImageResized, which is now obsolete)*  
+*(Formerly known as RawDrawImage, which is now obsolete)*<br>
+*(Formerly known as RawDrawImageResized, which is now obsolete)*<br>
 *(Formerly known as RawDrawImageTransparent, which is now obsolete)*
 
     DrawingSurface.DrawImage(int x, int y, int slot, optional int transparency,
@@ -360,7 +360,7 @@ will display the text in the centre of the screen, starting from Y = 40.
 
 ### DrawSurface
 
-*(Formerly known as RawDrawFrameTransparent, which is now obsolete)*  
+*(Formerly known as RawDrawFrameTransparent, which is now obsolete)*<br>
 *(Formerly known as RawRestoreScreen, which is now obsolete)*
 
     DrawingSurface.DrawSurface(DrawingSurface *source, optional int transparency)

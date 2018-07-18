@@ -35,8 +35,8 @@ and so on.
 
 **NOTE:** Some of the new functions are provided on the Game object --
 for example, the new GetSaveSlotDescription function needs to be called
-like this:  
-`String description = Game.GetSaveSlotDescription(10);`  
+like this:<br>
+`String description = Game.GetSaveSlotDescription(10);`<br>
 This is part of a move towards all built-in functions being
 object-based, but watch out for it as it could well cause some
 confusion. The manual will show you which functions require this.
@@ -47,7 +47,7 @@ call the functions directly on the strings:
     String text = "Hello";
     text = text.Append("World");
 
-will mean that *text* now contains "HelloWorld".  
+will mean that *text* now contains "HelloWorld".<br>
 Note the **text =** in that expression. Functions like Append will
 return a modified version of the string, they won't actually change the
 original. Therefore, to update the *text* variable you need to assign

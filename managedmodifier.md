@@ -1,27 +1,27 @@
 Script language keywords
 ------------------------
 
-[Arrays](#arrays)  
-[Data types](#data-types)  
-[Operators](#operators)  
-[Constants](#constants)  
-[Version checking](#version-checking)  
-[if, else statements](#if-else-statements)  
-[switch, case statements](#switch-case-statements)  
-[while](#while)  
-[do..while](#dowhile)  
-[for](#for)  
-[break](#break)  
-[continue](#continue)  
-[function](#function)  
-[return](#return)  
-[struct](#struct)  
-[managed](#managed)  
-[new](#new)  
-[enum](#enum)  
-[this](#this)  
-[import](#import)  
-[export](#export)  
+[Arrays](#arrays)<br>
+[Data types](#data-types)<br>
+[Operators](#operators)<br>
+[Constants](#constants)<br>
+[Version checking](#version-checking)<br>
+[if, else statements](#if-else-statements)<br>
+[switch, case statements](#switch-case-statements)<br>
+[while](#while)<br>
+[do..while](#dowhile)<br>
+[for](#for)<br>
+[break](#break)<br>
+[continue](#continue)<br>
+[function](#function)<br>
+[return](#return)<br>
+[struct](#struct)<br>
+[managed](#managed)<br>
+[new](#new)<br>
+[enum](#enum)<br>
+[this](#this)<br>
+[import](#import)<br>
+[export](#export)<br>
 [noloopcheck](#noloopcheck)
 
 ---
@@ -45,7 +45,7 @@ can do this:
 
     int health[50];
 
-This example declares 50 int variables, all called *health*.  
+This example declares 50 int variables, all called *health*.<br>
 You access each seperate variable via its **index** (the number in the
 brackets). Indexes start from 0, so in this case the *health* array can
 be accessed by indexes 0 to 49. If you attempt to access an invalid
@@ -118,7 +118,7 @@ tightly bound at the top of the list.
 **WARNING:** When using operators of equal precedence, AGS by default
 evaluates them right-to-left. So, the expression `a = 5 - 4 - 2;`
 evaluates as `a = 5 - (4 - 2);` which is not what you might expect.
-Always use parenthesis to make it clear what you want.  
+Always use parenthesis to make it clear what you want.<br>
 The "Left-to-right operator precedence" option on the General Settings
 pane allows you to control this behaviour.
 
@@ -236,11 +236,11 @@ than this.
 
 ### if, else statements
 
-**if (** *expression* **)** `{`  
-*statements1*  
-`}`  
-\[ **else** `{`  
-*statements2*  
+**if (** *expression* **)** `{`<br>
+*statements1*<br>
+`}`<br>
+\[ **else** `{`<br>
+*statements2*<br>
 `}` \]
 
 If *expression* is true, then *statements1* are run.
@@ -278,13 +278,13 @@ if it is not.
 
 ### switch, case statements
 
-**switch (** *expression* **)** `{`  
-\[ **case** *expression*:  
-*statements*  
-\[ **break**; \] \]  
-\[ **default:**  
-*statements*  
-\[ **break**; \] \]  
+**switch (** *expression* **)** `{`<br>
+\[ **case** *expression*:<br>
+*statements*<br>
+\[ **break**; \] \]<br>
+\[ **default:**<br>
+*statements*<br>
+\[ **break**; \] \]<br>
 `}`
 
 Calculates first *expression* in the **switch** header, then finds a
@@ -337,8 +337,8 @@ mentioned in this switch, they would go straight to default line.
 
 ### while
 
-**while (** *expression* **)** `{`  
-*statements*  
+**while (** *expression* **)** `{`<br>
+*statements*<br>
 `}`
 
 Runs *statements* continuously, while *expression* is true.
@@ -357,8 +357,8 @@ of the loop.
 
 ### do..while
 
-**do** `{`  
-*statements*  
+**do** `{`<br>
+*statements*<br>
 `}` **while (** *expression* **);**
 
 Similarily to [while](#while) runs *statements*
@@ -383,8 +383,8 @@ player.
 ### for
 
 **for (** \[*initialization*\]**;** \[*expression*\]**;**
-\[*iteration*\] **)** `{`  
-*statements*  
+\[*iteration*\] **)** `{`<br>
+*statements*<br>
 `}`
 
 This loop command first performs *initialization* statements, then runs
@@ -555,7 +555,7 @@ naturally:
 
 **struct** *name* `{`
 
-Declares a custom struct type in your script.  
+Declares a custom struct type in your script.<br>
 Structs allow you to group together related variables in order to make
 your script more structured and readable. For example, suppose that
 wanted to store some information on weapons that the player could carry.
@@ -726,10 +726,10 @@ See Also: [managed](#managed), [Pointers in AGS](Pointers)
 
 **Recommended for advanced users only**
 
-**enum** *name* `{`  
-*option1* \[ = *value1* \],  
-*option2* \[ = *value2* \],  
-...  
+**enum** *name* `{`<br>
+*option1* \[ = *value1* \],<br>
+*option2* \[ = *value2* \],<br>
+...<br>
 `};`
 
 Declares an enumeration type. An enumeration allows you to group
@@ -768,8 +768,8 @@ in:
       // etc
     }
 
-and then the calling code looks like:  
-`doStuff(BakeCake);`  
+and then the calling code looks like:<br>
+`doStuff(BakeCake);`<br>
 thus making it perfectly clear what the command will do.
 
 Normally, you would put the enum definition into the script header.
@@ -883,7 +883,7 @@ array). In this case, the *noloopcheck* keyword can be used to stop AGS
 aborting your script.
 
 **NOTE:** The *noloopcheck* keyword must be placed between "function"
-and the function's name.  
+and the function's name.<br>
 If you import the function into the script header, you **do not**
 include the "noloopcheck" keyword in the import declaration -- it is
 only included in the actual function body.

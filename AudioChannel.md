@@ -5,25 +5,25 @@ The AudioChannel instance represents a currently playing audio file. You
 can use this instance to check the status of playing sounds, and adjust
 them.
 
-[Seek](#seek)  
-[SetRoomLocation](#setroomlocation)  
-[Speed property](#speed)  
-[Stop](#stop)  
-[ID property](#id)  
-[IsPlaying property](#isplaying)  
-[LengthMs property](#lengthms)  
-[Panning property](#panning)  
-[PlayingClip property](#playingclip)  
-[Position property](#position)  
-[PositionMs property](#positionms)  
+[Seek](#seek)<br>
+[SetRoomLocation](#setroomlocation)<br>
+[Speed property](#speed)<br>
+[Stop](#stop)<br>
+[ID property](#id)<br>
+[IsPlaying property](#isplaying)<br>
+[LengthMs property](#lengthms)<br>
+[Panning property](#panning)<br>
+[PlayingClip property](#playingclip)<br>
+[Position property](#position)<br>
+[PositionMs property](#positionms)<br>
 [Volume property](#volume)
 
 ---
 
 ### Seek
 
-*(Formerly known as SeekMIDIPosition, which is now obsolete)*  
-*(Formerly known as SeekMODPattern, which is now obsolete)*  
+*(Formerly known as SeekMIDIPosition, which is now obsolete)*<br>
+*(Formerly known as SeekMODPattern, which is now obsolete)*<br>
 *(Formerly known as SeekMP3PosMillis, which is now obsolete)*
 
     AudioChannel.Seek(int position)
@@ -111,7 +111,7 @@ plays *aFunnyTalk* clip at the double speed.
 
 ### Stop
 
-*(Formerly known as StopAmbientSound, which is now obsolete)*  
+*(Formerly known as StopAmbientSound, which is now obsolete)*<br>
 *(Formerly known as StopChannel, which is now obsolete)*
 
     AudioChannel.Stop()
@@ -261,8 +261,8 @@ will display what is currently playing on audio channel 2.
 
 ### Position
 
-*(Formerly known as GetMIDIPosition, which is now obsolete)*  
-*(Formerly known as GetMODPattern, which is now obsolete)*  
+*(Formerly known as GetMIDIPosition, which is now obsolete)*<br>
+*(Formerly known as GetMODPattern, which is now obsolete)*<br>
 *(Formerly known as GetMP3PosMillis, which is now obsolete)*
 
     readonly int AudioChannel.Position
@@ -331,7 +331,7 @@ display its position.
 
 ### Volume
 
-*(Formerly known as SetChannelVolume, which is now obsolete)*  
+*(Formerly known as SetChannelVolume, which is now obsolete)*<br>
 *(Formerly known as SetMusicVolume, which is now obsolete)*
 
     int AudioChannel.Volume

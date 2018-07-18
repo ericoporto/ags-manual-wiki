@@ -1,17 +1,17 @@
 Inventory item functions and properties
 ---------------------------------------
 
-[GetAtScreenXY](#getatscreenxy)  
-[GetProperty](#getproperty)  
-[GetTextProperty](#gettextproperty)  
-[SetProperty](#setproperty)  
-[SetTextProperty](#settextproperty)  
+[GetAtScreenXY](#getatscreenxy)<br>
+[GetProperty](#getproperty)<br>
+[GetTextProperty](#gettextproperty)<br>
+[SetProperty](#setproperty)<br>
+[SetTextProperty](#settextproperty)<br>
 [IsInteractionAvailable
-(inventory)](#isinteractionavailable)  
-[RunInteraction](#runinteraction)  
-[CursorGraphic property](#cursorgraphic)  
-[Graphic property](#graphic)  
-[ID property](#id)  
+(inventory)](#isinteractionavailable)<br>
+[RunInteraction](#runinteraction)<br>
+[CursorGraphic property](#cursorgraphic)<br>
+[Graphic property](#graphic)<br>
+[ID property](#id)<br>
 [Name property](#name)
 
 ---
@@ -81,7 +81,7 @@ to more than 200.
 
 ### GetTextProperty
 
-*(Formerly known as GetInvPropertyText, which is now obsolete)*  
+*(Formerly known as GetInvPropertyText, which is now obsolete)*<br>
 *(Formerly known as InventoryItem.GetPropertyText, which is now
 obsolete)*
 
@@ -238,7 +238,7 @@ will display inventory item *iKey*'s cursor graphic.
 
 ### Graphic
 
-*(Formerly known as GetInvGraphic, which is now obsolete)*  
+*(Formerly known as GetInvGraphic, which is now obsolete)*<br>
 *(Formerly known as SetInvItemPic, which is now obsolete)*
 
     int InventoryItem.Graphic
@@ -288,9 +288,9 @@ inventory
 
 ### Name
 
-*(Formerly known as GetInvName, which is now obsolete)*  
-*(Formerly known as SetInvItemName, which is now obsolete)*  
-*(Formerly known as InventoryItem.GetName, which is now obsolete)*  
+*(Formerly known as GetInvName, which is now obsolete)*<br>
+*(Formerly known as SetInvItemName, which is now obsolete)*<br>
+*(Formerly known as InventoryItem.GetName, which is now obsolete)*<br>
 *(Formerly known as InventoryItem.SetName, which is now obsolete)*
 
     String InventoryItem.Name;

@@ -1,26 +1,26 @@
 DynamicSprite functions and properties
 --------------------------------------
 
-[Create](#create)  
-[CreateFromBackground](#createfrombackground)  
-[CreateFromDrawingSurface](#createfromdrawingsurface)  
-[CreateFromExistingSprite](#createfromexistingsprite)  
-[CreateFromFile](#createfromfile)  
-[CreateFromSaveGame](#createfromsavegame)  
-[CreateFromScreenShot](#createfromscreenshot)  
-[ChangeCanvasSize](#changecanvassize)  
-[CopyTransparencyMask](#copytransparencymask)  
-[Crop](#crop)  
-[Delete](#delete)  
-[Flip](#flip)  
-[GetDrawingSurface](#getdrawingsurface)  
-[Resize](#resize)  
-[Rotate](#rotate)  
-[SaveToFile](#savetofile)  
-[Tint](#tint)  
-[ColorDepth property](#colordepth)  
-[Graphic property](#graphic)  
-[Height property](#height)  
+[Create](#create)<br>
+[CreateFromBackground](#createfrombackground)<br>
+[CreateFromDrawingSurface](#createfromdrawingsurface)<br>
+[CreateFromExistingSprite](#createfromexistingsprite)<br>
+[CreateFromFile](#createfromfile)<br>
+[CreateFromSaveGame](#createfromsavegame)<br>
+[CreateFromScreenShot](#createfromscreenshot)<br>
+[ChangeCanvasSize](#changecanvassize)<br>
+[CopyTransparencyMask](#copytransparencymask)<br>
+[Crop](#crop)<br>
+[Delete](#delete)<br>
+[Flip](#flip)<br>
+[GetDrawingSurface](#getdrawingsurface)<br>
+[Resize](#resize)<br>
+[Rotate](#rotate)<br>
+[SaveToFile](#savetofile)<br>
+[Tint](#tint)<br>
+[ColorDepth property](#colordepth)<br>
+[Graphic property](#graphic)<br>
+[Height property](#height)<br>
 [Width property](#width)
 
 ---
@@ -522,8 +522,8 @@ and free the new image.
 
 Flips the dynamic sprite according to the parameter:
 
-*eFlipLeftToRight* flips the image from left to right  
-*eFlipUpsideDown* flips the image from top to bottom  
+*eFlipLeftToRight* flips the image from left to right<br>
+*eFlipUpsideDown* flips the image from top to bottom<br>
 *eFlipBoth* flips the image from top to bottom and left to right
 
 Example:

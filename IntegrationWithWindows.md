@@ -6,7 +6,7 @@ can be set up to launch save games directly from explorer when the
 player double-clicks them; and secondly, in Windows Vista and later, AGS
 can integrate with the Game Explorer feature.
 
-[Enhanced Save Games](#enhanced-save-games)  
+[Enhanced Save Games](#enhanced-save-games)<br>
 [Windows Game Explorer](#windows-game-explorer)
 
 ---
@@ -39,7 +39,7 @@ If the player is running Windows Vista or later versions, then this
 feature will also allow them to see the save game description and
 screenshot (if enabled) in the Explorer preview window:
 
-![](images/GameExplorer3.jpg)  
+![](images/GameExplorer3.jpg)<br>
 *Save games with embedded screenshots on Vista and later versions*
 
 **Enabling the integration**
@@ -64,9 +64,9 @@ player's system.
 
 **Cross-Platform Support**
 
-Windows: **Yes**  
-MS-DOS: **No**  
-Linux: **No**  
+Windows: **Yes**<br>
+MS-DOS: **No**<br>
+Linux: **No**<br>
 MacOS: **No**
 
 ---
@@ -83,7 +83,7 @@ so you would need to distribute your game using an installer rather than
 just in a plain zip file, since you need to tell AGS to add the game to
 the list at install-time.
 
-![](images/GameExplorer1.jpg)  
+![](images/GameExplorer1.jpg)<br>
 *The "Games" option launches the Game Explorer*
 
 **Enabling Game Explorer support**
@@ -130,7 +130,7 @@ your game, rather than the standard game icon. To utilise this, place a
 file called `GameExplorer.png` in your game folder, and rebuild the game
 EXE. This must be a PNG image, no larger than 256 x 256 pixels:
 
-![](images/GameExplorer2.jpg)  
+![](images/GameExplorer2.jpg)<br>
 *My game ("Chris Kwest") in the Game Explorer*
 
 **Adding the game to the Game Explorer**
@@ -154,7 +154,7 @@ commands will register/unregister both.
 
 **Cross-Platform Support**
 
-Windows: **Vista and later**  
-MS-DOS: **No**  
-Linux: **No**  
+Windows: **Vista and later**<br>
+MS-DOS: **No**<br>
+Linux: **No**<br>
 MacOS: **No**

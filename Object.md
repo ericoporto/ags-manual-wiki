@@ -1,57 +1,57 @@
 Object functions and properties
 -------------------------------
 
-[Animate](#animate)  
-[GetAtScreenXY](#getatscreenxy)  
-[GetProperty](#getproperty)  
-[GetTextProperty](#gettextproperty)  
-[SetProperty](#setproperty)  
-[SetTextProperty](#settextproperty)  
-[IsCollidingWithObject](#iscollidingwithobject)  
-[MergeIntoBackground](#mergeintobackground)  
-[Move](#move)  
-[RemoveTint](#removetint)  
-[IsInteractionAvailable](#isinteractionavailable)  
-[RunInteraction](#runinteraction)  
-[SetLightLevel](#setlightlevel)  
-[SetPosition](#setposition)  
-[SetView](#setview)  
-[StopAnimating](#stopanimating)  
-[StopMoving](#stopmoving)  
-[Tint](#tint)  
-[Animating property](#animating)  
-[Baseline property](#baseline)  
-[BlockingHeight property](#blockingheight)  
-[BlockingWidth property](#blockingwidth)  
-[Clickable property](#clickable)  
-[Frame property](#frame)  
-[Graphic property](#graphic)  
-[HasExplicitLight property](#hasexplicitlight)  
-[HasExplicitTint property](#hasexplicittint)  
-[ID property](#id)  
-[IgnoreScaling property](#ignorescaling)  
-[IgnoreWalkbehinds property](#ignorewalkbehinds)  
-[LightLevel property](#lightlevel)  
-[Loop property](#loop)  
-[Moving property](#moving)  
-[Name property](#name)  
-[Solid property](#solid)  
-[TintBlue property](#tintblue)  
-[TintGreen property](#tintgreen)  
-[TintRed property](#tintred)  
-[TintSaturation property](#tintsaturation)  
-[TintLuminance property](#tintluminance)  
-[Transparency property](#transparency)  
-[View property](#view)  
-[Visible property](#visible)  
-[X property](#x)  
+[Animate](#animate)<br>
+[GetAtScreenXY](#getatscreenxy)<br>
+[GetProperty](#getproperty)<br>
+[GetTextProperty](#gettextproperty)<br>
+[SetProperty](#setproperty)<br>
+[SetTextProperty](#settextproperty)<br>
+[IsCollidingWithObject](#iscollidingwithobject)<br>
+[MergeIntoBackground](#mergeintobackground)<br>
+[Move](#move)<br>
+[RemoveTint](#removetint)<br>
+[IsInteractionAvailable](#isinteractionavailable)<br>
+[RunInteraction](#runinteraction)<br>
+[SetLightLevel](#setlightlevel)<br>
+[SetPosition](#setposition)<br>
+[SetView](#setview)<br>
+[StopAnimating](#stopanimating)<br>
+[StopMoving](#stopmoving)<br>
+[Tint](#tint)<br>
+[Animating property](#animating)<br>
+[Baseline property](#baseline)<br>
+[BlockingHeight property](#blockingheight)<br>
+[BlockingWidth property](#blockingwidth)<br>
+[Clickable property](#clickable)<br>
+[Frame property](#frame)<br>
+[Graphic property](#graphic)<br>
+[HasExplicitLight property](#hasexplicitlight)<br>
+[HasExplicitTint property](#hasexplicittint)<br>
+[ID property](#id)<br>
+[IgnoreScaling property](#ignorescaling)<br>
+[IgnoreWalkbehinds property](#ignorewalkbehinds)<br>
+[LightLevel property](#lightlevel)<br>
+[Loop property](#loop)<br>
+[Moving property](#moving)<br>
+[Name property](#name)<br>
+[Solid property](#solid)<br>
+[TintBlue property](#tintblue)<br>
+[TintGreen property](#tintgreen)<br>
+[TintRed property](#tintred)<br>
+[TintSaturation property](#tintsaturation)<br>
+[TintLuminance property](#tintluminance)<br>
+[Transparency property](#transparency)<br>
+[View property](#view)<br>
+[Visible property](#visible)<br>
+[X property](#x)<br>
 [Y property](#y)
 
 ---
 
 ### Animate
 
-*(Formerly known as AnimateObject, which is now obsolete)*  
+*(Formerly known as AnimateObject, which is now obsolete)*<br>
 *(Formerly known as AnimateObjectEx, which is now obsolete)*
 
     Object.Animate(int loop, int delay, optional RepeatStyle,
@@ -154,7 +154,7 @@ than 200.
 
 ### GetTextProperty
 
-*(Formerly known as GetObjectPropertyText, which is now obsolete)*  
+*(Formerly known as GetObjectPropertyText, which is now obsolete)*<br>
 *(Formerly known as Object.GetPropertyText, which is now obsolete)*
 
     String Object.GetTextProperty(string property)
@@ -283,7 +283,7 @@ the object unusable.
 
 ### Move
 
-*(Formerly known as MoveObject, which is now obsolete)*  
+*(Formerly known as MoveObject, which is now obsolete)*<br>
 *(Formerly known as MoveObjectDirect, which is now obsolete)*
 
     Object.Move(int x, int y, int speed, optional BlockingStyle,
@@ -450,7 +450,7 @@ will change object's 2 position to 50,100.
 
 ### SetView
 
-*(Formerly known as SetObjectFrame, which is now obsolete)*  
+*(Formerly known as SetObjectFrame, which is now obsolete)*<br>
 *(Formerly known as SetObjectView, which is now obsolete)*
 
     Object.SetView(int view, optional int loop, optional int frame)
@@ -558,7 +558,7 @@ will tint object 1 green.
 
     readonly bool Object.Animating
 
-Returns 1 if the specified object is currently animating.  
+Returns 1 if the specified object is currently animating.<br>
 Returns 0 if the object has finished its animation.
 
 This property is read-only. To change object animation, use the
@@ -583,7 +583,7 @@ you wouldn't need to do this.
 
 ### Baseline
 
-*(Formerly known as GetObjectBaseline, which is now obsolete)*  
+*(Formerly known as GetObjectBaseline, which is now obsolete)*<br>
 *(Formerly known as SetObjectBaseline, which is now obsolete)*
 
     int Object.Baseline
@@ -722,7 +722,7 @@ will display the oDoor object's current frame number
 
 ### Graphic
 
-*(Formerly known as GetObjectGraphic, which is now obsolete)*  
+*(Formerly known as GetObjectGraphic, which is now obsolete)*<br>
 *(Formerly known as SetObjectGraphic, which is now obsolete)*
 
     int Object.Graphic
@@ -917,7 +917,7 @@ object gets there.
 
 ### Name
 
-*(Formerly known as GetObjectName, which is now obsolete)*  
+*(Formerly known as GetObjectName, which is now obsolete)*<br>
 *(Formerly known as Object.GetName, which is now obsolete)*
 
     readonly String Object.Name;
@@ -1145,8 +1145,8 @@ will display the oDoor object's current view number
 
 ### Visible
 
-*(Formerly known as IsObjectOn, which is now obsolete)*  
-*(Formerly known as ObjectOff, which is now obsolete)*  
+*(Formerly known as IsObjectOn, which is now obsolete)*<br>
+*(Formerly known as ObjectOff, which is now obsolete)*<br>
 *(Formerly known as ObjectOn, which is now obsolete)*
 
     bool Object.Visible

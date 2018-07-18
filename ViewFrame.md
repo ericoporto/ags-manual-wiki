@@ -1,12 +1,12 @@
 ViewFrame functions and properties
 ----------------------------------
 
-[Flipped property](#flipped)  
-[Frame property](#frame)  
-[Graphic property](#graphic)  
-[LinkedAudio property](#linkedaudio)  
-[Loop property](#loop)  
-[Speed property](#speed)  
+[Flipped property](#flipped)<br>
+[Frame property](#frame)<br>
+[Graphic property](#graphic)<br>
+[LinkedAudio property](#linkedaudio)<br>
+[Loop property](#loop)<br>
+[Speed property](#speed)<br>
 [View property](#view)
 
 ---
@@ -73,8 +73,8 @@ Example:
 
 ### LinkedAudio
 
-*(Formerly known as ViewFrame.Sound, which is now obsolete)*  
-*(Formerly known as SetFrameSound, which is now obsolete)*  
+*(Formerly known as ViewFrame.Sound, which is now obsolete)*<br>
+*(Formerly known as SetFrameSound, which is now obsolete)*<br>
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
     AudioClip* ViewFrame.LinkedAudio

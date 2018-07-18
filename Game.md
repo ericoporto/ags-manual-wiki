@@ -1,98 +1,98 @@
 Game / Global functions
 ---
 
-[AbortGame](#abortgame)  
-[CallRoomScript](#callroomscript)  
-[ChangeTranslation](#changetranslation)  
-[ClaimEvent](#claimevent)  
-[Debug](#debug)  
-[DeleteSaveSlot](#deletesaveslot)  
-[DisableInterface](#disableinterface)  
-[DoOnceOnly](#doonceonly)  
-[EnableInterface](#enableinterface)  
-[EndCutscene](#endcutscene)  
-[GetColorFromRGB](#getcolorfromrgb)  
-[GetFrameCountForLoop](#getframecountforloop)  
-[GetGameOption](#getgameoption)  
-[GetGameParameter](#getgameparameter)  
-[GetGameSpeed](#getgamespeed)  
-[GetGlobalInt](#getglobalint)  
-[GetGraphicalVariable](#getgraphicalvariable)  
-[GetLocationName](#getlocationname)  
-[GetLocationType](#getlocationtype)  
-[GetLoopCountForView](#getloopcountforview)  
-[GetRunNextSettingForLoop](#getrunnextsettingforloop)  
-[GetSaveSlotDescription](#getsaveslotdescription)  
-[GetTextHeight](#gettextheight)  
-[GetTextWidth](#gettextwidth)  
-[GetTranslation](#gettranslation)  
-[GetViewFrame](#getviewframe)  
-[GiveScore](#givescore)  
-[GetFontHeight](#getfontheight)  
-[GetFontLineSpacing](#getfontlinespacing)  
-[InputBox](#inputbox)  
-[InventoryScreen](#inventoryscreen)  
-[IsGamePaused](#isgamepaused)  
-[IsInterfaceEnabled](#isinterfaceenabled)  
-[IsInteractionAvailable](#isinteractionavailable)  
-[IsKeyPressed](#iskeypressed)  
-[IsPluginLoaded](#ispluginloaded)  
-[IsTimerExpired](#istimerexpired)  
-[IsTranslationAvailable](#istranslationavailable)  
-[MoveCharacterToHotspot](#movecharactertohotspot)  
-[MoveCharacterToObject](#movecharactertoobject)  
-[PauseGame](#pausegame)  
-[QuitGame](#quitgame)  
-[Random](#random)  
-[RestartGame](#restartgame)  
-[RestoreGameDialog](#restoregamedialog)  
-[RestoreGameSlot](#restoregameslot)  
-[RunAGSGame](#runagsgame)  
-[SaveGameDialog](#savegamedialog)  
-[SaveGameSlot](#savegameslot)  
-[SaveScreenShot](#savescreenshot)  
-[SetAmbientLightLevel](#setambientlightlevel)  
-[SetAmbientTint](#setambienttint)  
-[SetGameOption](#setgameoption)  
-[SetGameSpeed](#setgamespeed)  
-[SetGlobalInt](#setglobalint)  
-[SetGraphicalVariable](#setgraphicalvariable)  
-[SetMultitaskingMode](#setmultitaskingmode)  
-[SetRestartPoint](#setrestartpoint)  
-[SetSaveGameDirectory](#setsavegamedirectory)  
-[SetTextWindowGUI](#settextwindowgui)  
-[SetTimer](#settimer)  
-[SkipUntilCharacterStops](#skipuntilcharacterstops)  
-[StartCutscene](#startcutscene)  
-[UpdateInventory](#updateinventory)  
-[UnPauseGame](#unpausegame)  
-[Wait](#wait)  
-[WaitKey](#waitkey)  
-[WaitMouseKey](#waitmousekey)  
-[AudioClipCount property](#audioclipcount)  
-[AudioClips property](#audioclips)  
-[CharacterCount property](#charactercount)  
-[DialogCount property](#dialogcount)  
-[FileName property](#filename)  
-[FontCount property](#fontcount)  
-[GlobalMessages property](#globalmessages)  
-[GlobalStrings property](#globalstrings)  
-[GUICount property](#guicount)  
+[AbortGame](#abortgame)<br>
+[CallRoomScript](#callroomscript)<br>
+[ChangeTranslation](#changetranslation)<br>
+[ClaimEvent](#claimevent)<br>
+[Debug](#debug)<br>
+[DeleteSaveSlot](#deletesaveslot)<br>
+[DisableInterface](#disableinterface)<br>
+[DoOnceOnly](#doonceonly)<br>
+[EnableInterface](#enableinterface)<br>
+[EndCutscene](#endcutscene)<br>
+[GetColorFromRGB](#getcolorfromrgb)<br>
+[GetFrameCountForLoop](#getframecountforloop)<br>
+[GetGameOption](#getgameoption)<br>
+[GetGameParameter](#getgameparameter)<br>
+[GetGameSpeed](#getgamespeed)<br>
+[GetGlobalInt](#getglobalint)<br>
+[GetGraphicalVariable](#getgraphicalvariable)<br>
+[GetLocationName](#getlocationname)<br>
+[GetLocationType](#getlocationtype)<br>
+[GetLoopCountForView](#getloopcountforview)<br>
+[GetRunNextSettingForLoop](#getrunnextsettingforloop)<br>
+[GetSaveSlotDescription](#getsaveslotdescription)<br>
+[GetTextHeight](#gettextheight)<br>
+[GetTextWidth](#gettextwidth)<br>
+[GetTranslation](#gettranslation)<br>
+[GetViewFrame](#getviewframe)<br>
+[GiveScore](#givescore)<br>
+[GetFontHeight](#getfontheight)<br>
+[GetFontLineSpacing](#getfontlinespacing)<br>
+[InputBox](#inputbox)<br>
+[InventoryScreen](#inventoryscreen)<br>
+[IsGamePaused](#isgamepaused)<br>
+[IsInterfaceEnabled](#isinterfaceenabled)<br>
+[IsInteractionAvailable](#isinteractionavailable)<br>
+[IsKeyPressed](#iskeypressed)<br>
+[IsPluginLoaded](#ispluginloaded)<br>
+[IsTimerExpired](#istimerexpired)<br>
+[IsTranslationAvailable](#istranslationavailable)<br>
+[MoveCharacterToHotspot](#movecharactertohotspot)<br>
+[MoveCharacterToObject](#movecharactertoobject)<br>
+[PauseGame](#pausegame)<br>
+[QuitGame](#quitgame)<br>
+[Random](#random)<br>
+[RestartGame](#restartgame)<br>
+[RestoreGameDialog](#restoregamedialog)<br>
+[RestoreGameSlot](#restoregameslot)<br>
+[RunAGSGame](#runagsgame)<br>
+[SaveGameDialog](#savegamedialog)<br>
+[SaveGameSlot](#savegameslot)<br>
+[SaveScreenShot](#savescreenshot)<br>
+[SetAmbientLightLevel](#setambientlightlevel)<br>
+[SetAmbientTint](#setambienttint)<br>
+[SetGameOption](#setgameoption)<br>
+[SetGameSpeed](#setgamespeed)<br>
+[SetGlobalInt](#setglobalint)<br>
+[SetGraphicalVariable](#setgraphicalvariable)<br>
+[SetMultitaskingMode](#setmultitaskingmode)<br>
+[SetRestartPoint](#setrestartpoint)<br>
+[SetSaveGameDirectory](#setsavegamedirectory)<br>
+[SetTextWindowGUI](#settextwindowgui)<br>
+[SetTimer](#settimer)<br>
+[SkipUntilCharacterStops](#skipuntilcharacterstops)<br>
+[StartCutscene](#startcutscene)<br>
+[UpdateInventory](#updateinventory)<br>
+[UnPauseGame](#unpausegame)<br>
+[Wait](#wait)<br>
+[WaitKey](#waitkey)<br>
+[WaitMouseKey](#waitmousekey)<br>
+[AudioClipCount property](#audioclipcount)<br>
+[AudioClips property](#audioclips)<br>
+[CharacterCount property](#charactercount)<br>
+[DialogCount property](#dialogcount)<br>
+[FileName property](#filename)<br>
+[FontCount property](#fontcount)<br>
+[GlobalMessages property](#globalmessages)<br>
+[GlobalStrings property](#globalstrings)<br>
+[GUICount property](#guicount)<br>
 [IgnoreUserInputAfterTextTimeoutMs
-property](#ignoreuserinputaftertexttimeoutms)  
-[InSkippableCutscene property](#inskippablecutscene)  
-[InventoryItemCount property](#inventoryitemcount)  
-[MinimumTextDisplayTimeMs property](#minimumtextdisplaytimems)  
-[MouseCursorCount property](#mousecursorcount)  
-[Name property](#name)  
-[NormalFont property](#normalfont)  
-[SkippingCutscene property](#skippingcutscene)  
-[SpeechFont property](#speechfont)  
-[SpriteHeight property](#spriteheight)  
-[SpriteWidth property](#spritewidth)  
-[TextReadingSpeed property](#textreadingspeed)  
-[TranslationFilename property](#translationfilename)  
-[UseNativeCoordinates property](#usenativecoordinates)  
+property](#ignoreuserinputaftertexttimeoutms)<br>
+[InSkippableCutscene property](#inskippablecutscene)<br>
+[InventoryItemCount property](#inventoryitemcount)<br>
+[MinimumTextDisplayTimeMs property](#minimumtextdisplaytimems)<br>
+[MouseCursorCount property](#mousecursorcount)<br>
+[Name property](#name)<br>
+[NormalFont property](#normalfont)<br>
+[SkippingCutscene property](#skippingcutscene)<br>
+[SpeechFont property](#speechfont)<br>
+[SpriteHeight property](#spriteheight)<br>
+[SpriteWidth property](#spritewidth)<br>
+[TextReadingSpeed property](#textreadingspeed)<br>
+[TranslationFilename property](#translationfilename)<br>
+[UseNativeCoordinates property](#usenativecoordinates)<br>
 [ViewCount property](#viewcount)
 
 ---
@@ -477,20 +477,20 @@ The *GetGameParameter* function is now obsolete.
 
 It has been replaced with the following functions and properties:
 
-[Game.SpriteWidth](#spritewidth) (was gp_spritewidth)  
-[Game.SpriteHeight](#spriteheight) (was gp_spriteheight)  
+[Game.SpriteWidth](#spritewidth) (was gp_spritewidth)<br>
+[Game.SpriteHeight](#spriteheight) (was gp_spriteheight)<br>
 [Game.GetLoopCountForView](#getloopcountforview) (was
-GP_NUMLOOPS)  
+GP_NUMLOOPS)<br>
 [Game.GetFrameCountForLoop](#getframecountforloop) (was
-GP_NUMFRAMES)  
+GP_NUMFRAMES)<br>
 [Game.GetRunNextSettingForLoop](#getrunnextsettingforloop)
-(was GP_ISRUNNEXTLOOP)  
+(was GP_ISRUNNEXTLOOP)<br>
 [Game.GetViewFrame](#getviewframe) (was GP_FRAMExxx,
-GP_ISFRAMEFLIPPED)  
-[Game.GUICount](#guicount) (was gp_numguis)  
-[Room.ObjectCount](Room#objectcount) (was gp_numobjects)  
+GP_ISFRAMEFLIPPED)<br>
+[Game.GUICount](#guicount) (was gp_numguis)<br>
+[Room.ObjectCount](Room#objectcount) (was gp_numobjects)<br>
 [Game.CharacterCount](#charactercount) (was
-GP_NUMCHARACTERS)  
+GP_NUMCHARACTERS)<br>
 [Game.InventoryItemCount](#inventoryitemcount)(was
 GP_NUMINVITEMS)
 
@@ -1643,9 +1643,9 @@ windowed mode.
 
 **Cross-Platform Support**
 
-Windows: **Yes**  
-MS-DOS: **No**  
-Linux: **Yes**  
+Windows: **Yes**<br>
+MS-DOS: **No**<br>
+Linux: **Yes**<br>
 MacOS: **Yes**
 
 Example:
@@ -1688,17 +1688,17 @@ You cannot use fully qualified directories with this command (eg.
 `C:\Games\Cool\Saves`), because the player might have installed your
 game to any folder, and they might not be running Windows.
 
-Therefore, only two types of path are supported:  
+Therefore, only two types of path are supported:<br>
 1. Relative paths (eg. \"Saves\"). This will create a subfolder inside
-**default game save folder**  
+**default game save folder**<br>
 2. The special tag `$MYDOCS$` which allows you to explicitly create a
 different folder for your save games inside the user's documents
 folder.
 
 The actual folder referenced with `$MYDOCS$` is different on every
-platform: Windows XP: \"My Documents\"  
-Windows Vista and later: \"Saved Games\"  
-Linux: `$XDG_DATA_HOME`/ags  
+platform: Windows XP: \"My Documents\"<br>
+Windows Vista and later: \"Saved Games\"<br>
+Linux: `$XDG_DATA_HOME`/ags<br>
 MacOS: game installation folder.
 
 Returns *true* if the save game directory has been changed successfully;
@@ -2075,7 +2075,7 @@ will display global message 997.
 
 ### GlobalStrings
 
-*(Formerly known as GetGlobalString, which is now obsolete)*  
+*(Formerly known as GetGlobalString, which is now obsolete)*<br>
 *(Formerly known as SetGlobalString, which is now obsolete)*
 
     static String Game.GlobalStrings[index]

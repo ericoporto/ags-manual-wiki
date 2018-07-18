@@ -1,39 +1,39 @@
 GUI List Box functions and properties
 -------------------------------------
 
-[BringToFront](GUIControl#bringtofront)  
-[Clickable property](GUIControl#clickable)  
-[Enabled property](GUIControl#enabled)  
-[Height property](GUIControl#height)  
-[ID property](GUIControl#id)  
-[OwningGUI property](GUIControl#owninggui)  
-[SendToBack](GUIControl#sendtoback)  
-[SetPosition](GUIControl#setposition)  
-[SetSize](GUIControl#setsize)  
-[Visible property](GUIControl#visible)  
-[Width property](GUIControl#width)  
-[X property](GUIControl#x)  
-[Y property](GUIControl#y)  
+[BringToFront](GUIControl#bringtofront)<br>
+[Clickable property](GUIControl#clickable)<br>
+[Enabled property](GUIControl#enabled)<br>
+[Height property](GUIControl#height)<br>
+[ID property](GUIControl#id)<br>
+[OwningGUI property](GUIControl#owninggui)<br>
+[SendToBack](GUIControl#sendtoback)<br>
+[SetPosition](GUIControl#setposition)<br>
+[SetSize](GUIControl#setsize)<br>
+[Visible property](GUIControl#visible)<br>
+[Width property](GUIControl#width)<br>
+[X property](GUIControl#x)<br>
+[Y property](GUIControl#y)<br>
 [ZOrder property](GUIControl#zorder)
 
-[AddItem](#additem)  
-[Clear](#clear)  
-[FillDirList](#filldirlist)  
-[FillSaveGameList](#fillsavegamelist)  
-[GetItemAtLocation](#getitematlocation)  
-[InsertItemAt](#insertitemat)  
-[RemoveItem](#removeitem)  
-[ScrollDown](#scrolldown)  
-[ScrollUp](#scrollup)  
-[Font property](#font)  
-[HideBorder property](#hideborder)  
-[HideScrollArrows property](#hidescrollarrows)  
-[ItemCount property](#itemcount)  
-[Items property](#items)  
-[RowCount property](#rowcount)  
-[SaveGameSlots property](#savegameslots)  
-[SelectedIndex property](#selectedindex)  
-[TopItem property](#topitem)  
+[AddItem](#additem)<br>
+[Clear](#clear)<br>
+[FillDirList](#filldirlist)<br>
+[FillSaveGameList](#fillsavegamelist)<br>
+[GetItemAtLocation](#getitematlocation)<br>
+[InsertItemAt](#insertitemat)<br>
+[RemoveItem](#removeitem)<br>
+[ScrollDown](#scrolldown)<br>
+[ScrollUp](#scrollup)<br>
+[Font property](#font)<br>
+[HideBorder property](#hideborder)<br>
+[HideScrollArrows property](#hidescrollarrows)<br>
+[ItemCount property](#itemcount)<br>
+[Items property](#items)<br>
+[RowCount property](#rowcount)<br>
+[SaveGameSlots property](#savegameslots)<br>
+[SelectedIndex property](#selectedindex)<br>
+[TopItem property](#topitem)<br>
 [Translated property](#translated)
 
 ---
@@ -97,11 +97,11 @@ and the player can choose which one to load.
 FILEMASK is a standard DOS/Windows search expression such as "\*.dat" or
 "data\*.\*"
 
-When specifying file path you may use special location tags:  
+When specifying file path you may use special location tags:<br>
 `$INSTALLDIR$`, which allows you to explicitly access files in the game
-installation directory.  
+installation directory.<br>
 `$SAVEGAMEDIR$`, which allows you to access files in the save game
-directory.  
+directory.<br>
 `$APPDATADIR$`, which allows you to access files to a folder on the
 system which is accessible by and shared by all users.
 
@@ -357,8 +357,8 @@ will pass the number of saved games to the int saves.
 
 ### Items
 
-*(Formerly known as ListBoxGetItemText, which is now obsolete)*  
-*(Formerly known as ListBox.GetItemText, which is now obsolete)*  
+*(Formerly known as ListBoxGetItemText, which is now obsolete)*<br>
+*(Formerly known as ListBox.GetItemText, which is now obsolete)*<br>
 *(Formerly known as ListBox.SetItemText, which is now obsolete)*
 
     String ListBox.Items[index]
@@ -439,7 +439,7 @@ FillSaveGameList had been used previously.
 
 ### SelectedIndex
 
-*(Formerly known as ListBoxGetSelected, which is now obsolete)*  
+*(Formerly known as ListBoxGetSelected, which is now obsolete)*<br>
 *(Formerly known as ListBoxSetSelected, which is now obsolete)*
 
     int ListBox.SelectedIndex

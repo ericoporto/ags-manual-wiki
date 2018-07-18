@@ -24,7 +24,7 @@ Notice that the property grid has changed to display the details of this
 new object -- one of which is a property called Image. Select this
 property, and a "..." button appears.
 
-![](images/intro4_1.jpg)  
+![](images/intro4_1.jpg)<br>
 *Adding an object to the room*
 
 Click the "..." button, and you'll be presented with the *Sprite
@@ -45,7 +45,7 @@ and find the "Name" property, and set it to something sensible. The
 convention in AGS is to have object names start with an "o", for example
 *oKey*.
 
-![](images/intro4_2.jpg)  
+![](images/intro4_2.jpg)<br>
 *I've placed the key cunningly in the middle of the walkway ;-)*
 
 Before we enable the key to be taken by the player, let me quickly go
@@ -54,7 +54,7 @@ over a couple of propertes in the property grid:
 -   **Baseline** - normally, the baseline for an object is set to the
     bottom of the object graphic (baselines are used to calculate which
     items on the screen are drawn in front and which are drawn at
-    the back). However, in some cases you might want to override this.  
+    the back). However, in some cases you might want to override this.<br>
     What you'll notice with our key is that if the player walks just
     behind it, the key will appear in front of his feet. This is not
     what we want, since the key is supposed to be lying flat on
@@ -67,7 +67,7 @@ over a couple of propertes in the property grid:
     sometimes you'll have objects which you don't want the player to see
     until they've done something else in the game.
 
-![](images/icon_info.gif)  
+![](images/icon_info.gif)<br>
 The game speed is directly related to the number and size of objects on-screen. AGS imposes a limit of 20 objects per room, but even if you use all of these and have them visible at the same time, the game speed could suffer.
 
 Right, now back to the pressing matter at hand - letting the player pick
@@ -92,7 +92,7 @@ number 5, and you should see that it's a much larger picture of a key.
 Let's use that as our inventory icon. Double-click the sprite to select
 it.
 
-![](images/intro4_3.jpg)  
+![](images/intro4_3.jpg)<br>
 *Yay, we've got a big inventory icon for the key*
 
 Ok, there are a few other settings on this screen, but let's return to
@@ -105,7 +105,7 @@ Go back to the *Objects* pane of the Room Editor, and click on, yes
 you've guessed it, the *Events* button. The events here are very similar
 to the ones we had for the hotspot:
 
-![](images/intro4_4.jpg)  
+![](images/intro4_4.jpg)<br>
 *The events list for the object*
 
 Notice there are two obvious possibilities here: "Interact object" and
@@ -124,7 +124,7 @@ Here's my script solution. As an added bonus, I've also given the player
 5 points for their trouble, but you don't need to have that third
 command:
 
-![](images/intro4_5.jpg)  
+![](images/intro4_5.jpg)<br>
 *Script for taking the key*
 
 
