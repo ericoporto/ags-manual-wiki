@@ -14,17 +14,16 @@ display are then listed afterwards.
 
 The special codes you can use are as follows:
 
----
-  **Code**   **Description**
-  `%d`       Integer (use to display value of int and short variables)
-  `%0Xd`     Integer left-padded with up to X zeros
-  `%s`       String (use to display string variables)
-  `%c`       Character (displays the ASCII character of the supplied value)
-  `%f`       Float (displays a float variable)
-  `%.Xf`     Float to X decimal places
-  `%%`       Display the percent character (ie. no variable)
-  `[`        Inserts a new line into the message
----
+Code | Description
+--- | ---
+%d | Integer (use to display value of int and short variables)
+%0Xd | Integer left-padded with up to X zeros
+%s | String (use to display string variables)
+%c | Character (displays the ASCII character of the supplied value)
+%f | Float (displays a float variable)
+%.Xf | Float to X decimal places
+%% | Display the percent character (ie. no variable)
+[ | Inserts a new line into the message
 
 Some examples:
 
