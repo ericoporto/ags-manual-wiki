@@ -91,15 +91,14 @@ can now be done like this:
 
 Currently, the following object-based things are available:
 
-  ------------------ --------------------
-  **Global array**   **O-Name example**
-  character\[\]      cEgo
-  object\[\]         oDoor
-  hotspot\[\]        hTree
-  gui\[\]            gInventory
-  inventory\[\]      iPinkPoster
-  region\[\]         (none)
-  ------------------ --------------------
+Global array | Object name example
+--- | ---
+character[] | cEgo
+object[] | oDoor
+hotspot[] | hTree
+gui[] | gInventory
+inventory[] | iPinkPoster
+region[]| (none)
 
 GUI controls are handled slightly differently. They all have a script
 name, and are directly accessed via that. For example, if you set the
