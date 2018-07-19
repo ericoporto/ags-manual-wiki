@@ -50,16 +50,15 @@ in your script you will likely get compilation errors. Simply replace
 them by the corresponding Speech properties, as shown in the table
 below:
 
----
-  **obsolete function/variable**         **replace with**
-  SetVoiceMode                           [Speech.VoiceMode](Speech#voicemode)
-  SetSkipSpeech                          [Speech.SkipStyle](Speech#skipstyle)
-  SetSpeechStyle                         [Speech.Style](Speech#style)
-  game.close_mouth_end_speech_time   [Speech.AnimationStopTimeMargin](Speech#animationstoptimemargin)
-  game.speech_text_align               [Speech.TextAlignment](Speech#textalignment)
-  game.skip_speech_specific_key       [Speech.SkipKey](Speech#skipkey)
-  game.talkanim_speed                   [Speech.GlobalSpeechAnimationDelay](Speech#globalspeechanimationdelay)
----
+obsolete function/variable | replace with
+--- | ---
+SetVoiceMode | [Speech.VoiceMode](Speech#voicemode)
+SetSkipSpeech | [Speech.SkipStyle](Speech#skipstyle)
+SetSpeechStyle | [Speech.Style](Speech#style)
+game.close_mouth_end_speech_time | [Speech.AnimationStopTimeMargin](Speech#animationstoptimemargin)
+game.speech_text_align | [Speech.TextAlignment](Speech#textalignment)
+game.skip_speech_specific_key | [Speech.SkipKey](Speech#skipkey)
+game.talkanim_speed | [Speech.GlobalSpeechAnimationDelay](Speech#globalspeechanimationdelay)
 
 **Game-wide speech animation delay**
 
