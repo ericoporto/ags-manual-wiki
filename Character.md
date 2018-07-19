@@ -854,12 +854,11 @@ effect when the animation starts.
 
 *Alignment* can have one of the following values:
 
----
-  **align**      **Description**
-  eAlignLeft     Moves the new frame so that the left hand side is at exactly the same X co-ordinate as the old one was.
-  eAlignCentre   Leaves the frames centred in the middle. This is the default and using this is equivalent to just calling LockView.
-  eAlignRight    Moves the new frame so that the right hand side is at exactly the same X co-ordinate as the old one was.
----
+align | description
+--- | ---
+eAlignLeft | Moves the new frame so that the left hand side is at exactly the same X co-ordinate as the old one was.
+eAlignCentre | Leaves the frames centred in the middle.<br>This is the default and using this is equivalent to just calling LockView.
+eAlignRight | Moves the new frame so that the right hand side is at exactly the same X co-ordinate as the old one was.
 
 Note that this only aligns the first frame of the animation, so to get
 the full benefit all your frames in the animation loop should be the
