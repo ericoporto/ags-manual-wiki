@@ -12,8 +12,7 @@ work, please check the following:
     been painstakingly documented, so PLEASE read this manual through
     before asking a question.
 -   Search the Adventure Game Studio Forums to see if someone already 
-    asked the question there.  You can use either the  
-    [built-in search](http://www.adventuregamestudio.co.uk/forums/index.php?action=search2)
+    asked the question there.  You can use either the  [built-in search](http://www.adventuregamestudio.co.uk/forums/index.php?action=search2)
     or [Google](https://www.google.com.br/search?q=site%3Ahttp%3A%2F%2Fwww.adventuregamestudio.co.uk%2Fforums).
 -   If it is not covered in the manual, check the CHANGES.TXT file. If a
     new feature has been added then it will be described there, if it
