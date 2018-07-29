@@ -9,12 +9,12 @@ great control over your game.
 - [Custom dialog options rendering](CustomDialogOptions)<br>
 - [Built-in enumerated types](BuiltInEnums)<br>
 - [Script language keywords](managedmodifier)<br>
-- [AudioChannel functions and properties](AudioChannel#audiochannelcommands)<br>
+- [AudioChannel functions and properties](AudioChannel)<br>
 - [AudioClip functions and properties](AudioClip)<br>
 - [Character functions and properties](Character)<br>
 - [DateTime functions and properties](DateTime)<br>
 - [Dialog functions and properties](Dialog)<br>
-- [DialogOptionsRenderingInfo functions and properties](DialogOptionsRenderingInfo#dialogoptionsrenderinginfofunctions)<br>
+- [DialogOptionsRenderingInfo functions and properties](DialogOptionsRenderingInfo)<br>
 - [DrawingSurface functions and properties](DrawingSurfaceFunctions)<br>
 - [DynamicSprite functions and properties](DynamicSprite)<br>
 - [File functions and properties](File)<br>

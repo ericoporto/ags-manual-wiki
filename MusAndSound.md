@@ -155,7 +155,7 @@ audio. Please see the following sections for a complete list of the
 supported commands:
 
 [AudioClip reference](AudioClip),
-[AudioChannel reference](AudioChannel#audiochannelcommands)
+[AudioChannel reference](AudioChannel)
 
 [Voice speech](#voice-speech)<br>
 [The AudioCache folder](#the-audiocache-folder)

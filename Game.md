@@ -521,8 +521,8 @@ user has raised it )
 Returns the value of global int INDEX.
 
 **NOTE:** GlobalInts are now considered obsolete. Consider using
-[global variables](GlobalVariables#globalvariables) instead, which allow
-you to name the variables.
+[global variables](GlobalVariables) instead, which allow you to
+name the variables.
 
 Example:
 
@@ -547,7 +547,7 @@ interaction editor.
 
 **NOTE:** This command is obsolete, and is only provided for backwards
 compatibility with AGS 2.x. When writing new code, use
-[global variables](GlobalVariables#globalvariables) instead.
+[global variables](GlobalVariables) instead.
 
 Example:
 
@@ -1586,8 +1586,8 @@ from any other script using GetGlobalInt.
 There are 500 available global variables, from index 0 to 499.
 
 **NOTE:** GlobalInts are now considered obsolete. Consider using
-[global variables](GlobalVariables#globalvariables) instead, which allow
-you to name the variables.
+[global variables](GlobalVariables) instead, which allow you to
+name the variables.
 
 Example:
 
@@ -1609,7 +1609,7 @@ interaction editor.
 
 **NOTE:** This command is obsolete, and is only provided for backwards
 compatibility with AGS 2.x. When writing new code, use
-[global variables](GlobalVariables#globalvariables) instead.
+[global variables](GlobalVariables) instead.
 
 Example:
 

@@ -642,8 +642,8 @@ SetGameOption. **Basic properties**
     [Palette functions](CyclePalette)
 -   **Developer name** - this will add the provided string to the game's
     executable properties, which will also be shown in
-    [Windows Game Explorer](IntegrationWithWindows#gameexplorer), if you
-    configure integration with one.
+    [Windows Game Explorer](IntegrationWithWindows#windows-game-explorer),
+    if you configure integration with one.
 -   **Enable letterbox mode** - only available if your game's resolution
     is 320x200 or 640x400. If you enable it, your game will run as
     320x240 and 640x480 game correspondingly, while keeping room
@@ -934,7 +934,8 @@ SetGameOption. **Basic properties**
     happens to buttons on your GUIs while the game interface is
     disabled (eg. during a cutscene).
 
-**Windows Game Explorer** See: [Windows Game Explorer](IntegrationWithWindows#gameexplorer)
+**Windows Game Explorer** See:
+[Windows Game Explorer](IntegrationWithWindows#windows-game-explorer)
 
 ---
 
