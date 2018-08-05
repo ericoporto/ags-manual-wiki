@@ -1,4 +1,7 @@
-**Stop press!**<br>
+## Editor Tutorial
+
+**Stop press!**
+
 Densming has created some excellent
 [Video Tutorials](https://www.youtube.com/view_play_list?p=21DB402CB4DAEAEF)
 on Youtube, which guide you through the process of creating a game. If
