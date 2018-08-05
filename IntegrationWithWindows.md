@@ -6,7 +6,8 @@ can be set up to launch save games directly from explorer when the
 player double-clicks them; and secondly, in Windows Vista and later, AGS
 can integrate with the Game Explorer feature.
 
-[Enhanced Save Games](#enhanced-save-games)<br>
+[Enhanced Save Games](#enhanced-save-games)
+
 [Windows Game Explorer](#windows-game-explorer)
 
 ---
@@ -99,7 +100,7 @@ on Windows XP and earlier versions).
 
 The rest of the settings here allow you to set up various fields that
 the Game Explorer can display. **Developer Website** must be a URL
-starting with "http://" if you fill it in, and **Version** must be a
+starting with `http://` if you fill it in, and **Version** must be a
 four-point version number (eg. 1.0.0.0).
 
 The **Windows Experience Index** is a score that Windows gives each
@@ -131,7 +132,7 @@ file called `GameExplorer.png` in your game folder, and rebuild the game
 EXE. This must be a PNG image, no larger than 256 x 256 pixels:
 
 ![](images/GameExplorer2.jpg)<br>
-*My game ("Chris Kwest") in the Game Explorer*
+*Game "Chris Kwest" in the Game Explorer*
 
 **Adding the game to the Game Explorer**
 
