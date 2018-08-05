@@ -124,25 +124,25 @@ pane allows you to control this behaviour.
 
 Operator | Description | Example
 --- | --- | ---
-! | NOT | if (!a)
-\* | Multiply | a = b \* c;
-/ | Divide | a = b / c;
-% | Remainder | a = b % c;
-\+ | Add | a = b \+ c;
-\- | Subtract | a = b \- c;
-<< | Bitwise Left Shift | a = b << c;
-\>\> | Bitwise Right Shift | a = b \>\> c;
-& | Bitwise AND | a = b & c;
-\| | Bitwise OR | a = b \| c;
-^ | Bitwise XOR | a = b ^ c;
-== | Is equal to | if (a == b)
-!= | Is not equal to | if (a != b)
-\> | Is greater than | if (a \> b)
-< | Is less than | if (a < b)
-\>= | Is greater than or equal | if (a \>= b)
-<= | Is less than or equal | if (a <= b)
-&& | Logical AND | if (a && b)
-\|\| | Logical OR | if (a \|\| b)
+`!` | NOT | `if (!a)`
+`*` | Multiply | `a = b * c;`
+`/` | Divide | `a = b / c;`
+`%` | Remainder | `a = b % c;`
+`+` | Add | `a = b + c;`
+`-` | Subtract | `a = b - c;`
+`<<` | Bitwise Left Shift | `a = b << c;`
+`>>` | Bitwise Right Shift | `a = b >> c;`
+`&` | Bitwise AND | `a = b & c;`
+&#124; | Bitwise OR | `a = b `&#124;` c;`
+`^` | Bitwise XOR | `a = b ^ c;`
+`==` | Is equal to | `if (a == b)`
+`!=` | Is not equal to | `if (a != b)`
+`>` | Is greater than | `if (a > b)`
+`<` | Is less than | `if (a < b)`
+`>=` | Is greater than or equal | `if (a >= b)`
+`<=` | Is less than or equal | `if (a <= b)`
+`&&` | Logical AND | `if (a && b)`
+&#124;&#124; | Logical OR | `if (a `&#124;&#124;` b)`
 
 This order of precedence allows expressions such as the following to
 evaluate as expected:
