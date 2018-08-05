@@ -133,7 +133,7 @@ Operator | Description | Example
 `<<` | Bitwise Left Shift | `a = b << c;`
 `>>` | Bitwise Right Shift | `a = b >> c;`
 `&` | Bitwise AND | `a = b & c;`
-&#124; | Bitwise OR | `a = b `&#124;` c;`
+<code>&#124;</code> | Bitwise OR | <code>a = b &#124; c;</code>
 `^` | Bitwise XOR | `a = b ^ c;`
 `==` | Is equal to | `if (a == b)`
 `!=` | Is not equal to | `if (a != b)`
@@ -142,7 +142,7 @@ Operator | Description | Example
 `>=` | Is greater than or equal | `if (a >= b)`
 `<=` | Is less than or equal | `if (a <= b)`
 `&&` | Logical AND | `if (a && b)`
-&#124;&#124; | Logical OR | `if (a `&#124;&#124;` b)`
+<code>&#124;&#124;</code> | Logical OR | <code>if (a &#124;&#124; b)</code>
 
 This order of precedence allows expressions such as the following to
 evaluate as expected:
