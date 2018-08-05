@@ -1,5 +1,4 @@
 ## The demo game
--------------
 
 The first thing you'll probably want to do is to run the demo game. This
 game will try to show you some of what AGS can do.

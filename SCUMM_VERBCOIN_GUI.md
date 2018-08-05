@@ -1,5 +1,4 @@
 ## SCUMM_VERBCOIN_GUI functions
-------------------------------
 
 SCUMM_VERBCOIN_GUI is a script module that is included with the Verb
 Coin template. The functions in this section are only available if you

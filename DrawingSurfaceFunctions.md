@@ -1,5 +1,4 @@
 ## DrawingSurface functions and properties
----------------------------------------
 
 The DrawingSurface family of functions allow you to directly draw onto
 dynamic sprites and room backgrounds in the game. You get a drawing

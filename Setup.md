@@ -1,5 +1,4 @@
 ## Run-time engine setup
----------------------
 
 The engine Setup program allows the player to customize certain game
 settings.

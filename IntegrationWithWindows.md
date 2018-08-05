@@ -1,5 +1,4 @@
 ## Integration with Windows
-------------------------
 
 AGS has the ability to integrate with Windows in two ways. Firstly, it
 can be set up to launch save games directly from explorer when the

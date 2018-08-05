@@ -1,5 +1,4 @@
 ## Keyboard Shortcuts
-------------------
 
 The AGS Editor provides various keyboard shortcuts to help you get your
 work done quickly. These are summarized below:

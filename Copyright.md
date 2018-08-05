@@ -1,5 +1,4 @@
 ## Copyright and terms of use
---------------------------
 
 Copyright (c) 1999-2011 Chris Jones and 2011-2018 various contributors.
 

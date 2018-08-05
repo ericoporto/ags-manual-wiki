@@ -1,5 +1,4 @@
 ## Lip sync
---------
 
 Lip sync is a way to animate character talking in connection with
 particular letters and their combinations (phonemes).

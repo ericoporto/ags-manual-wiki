@@ -1,5 +1,4 @@
 ## Custom Properties
------------------
 
 **What are custom properties?**
 

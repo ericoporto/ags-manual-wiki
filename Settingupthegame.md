@@ -1,5 +1,4 @@
 ## Setting up the game
--------------------
 
 Now that you know how to create a room, it's time to set up the
 game-wide settings. These include inventory items, sprite graphics,

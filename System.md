@@ -1,5 +1,4 @@
 ## System functions and properties
--------------------------------
 
 [AudioChannelCount property](#audiochannelcount)<br>
 [AudioChannels property](#audiochannels)<br>

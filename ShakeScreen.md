@@ -1,5 +1,4 @@
 ## Screen functions
-----------------
 
 [FadeIn](#fadein)<br>
 [FadeOut](#fadeout)<br>

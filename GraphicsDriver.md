@@ -1,5 +1,4 @@
 ## Graphics driver selection
--------------------------
 
 AGS has three available graphics drivers when run on Windows --
 DirectDraw, Direct3D and OpenGL.

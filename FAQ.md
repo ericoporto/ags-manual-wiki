@@ -1,5 +1,4 @@
 ## Frequently Asked Questions
---------------------------
 
 This section of the manual is very rarely updated. Please consult the
 AGS Forums on the website -- in particular, the Beginners Technical

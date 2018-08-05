@@ -1,5 +1,4 @@
 ## Credits
--------
 
 -   Adventure Game Studio was originally developed by Chris Jones.
 -   The latter versions and engine ports to various platforms are

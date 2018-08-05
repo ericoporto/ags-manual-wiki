@@ -1,5 +1,4 @@
 ## GUI functions and properties
-----------------------------
 
 [Centre](#centre)<br>
 [Click](#click)<br>

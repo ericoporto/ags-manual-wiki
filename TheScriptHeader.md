@@ -1,5 +1,4 @@
 ## The script header
------------------
 
 This allows you to include the same information into all your scripts.
 For example, if you have a global function you want all the room scripts

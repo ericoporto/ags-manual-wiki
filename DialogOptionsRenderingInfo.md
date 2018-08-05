@@ -1,5 +1,4 @@
 ## DialogOptionsRenderingInfo functions and properties
----
 
 The DialogOptionsRenderingInfo instance is used by the [custom dialog
 options](CustomDialogOptions) system. You can never create one

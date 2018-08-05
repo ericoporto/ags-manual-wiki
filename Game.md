@@ -1,5 +1,4 @@
 ## Game / Global functions
----
 
 [AbortGame](#abortgame)<br>
 [CallRoomScript](#callroomscript)<br>

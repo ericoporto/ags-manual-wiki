@@ -1,5 +1,4 @@
 ## Editing the GUIs
-----------------
 
 The game interface is split up into GUIs. Each GUI is a rectangular
 region on the screen which is drawn on top of the background scene. Each

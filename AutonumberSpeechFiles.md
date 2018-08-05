@@ -1,5 +1,4 @@
 ## Auto-number speech files
-------------------------
 
 If you've already made your game, and then you decide you want a voice
 pack to go with it, the thought of manually adding speech numbers to

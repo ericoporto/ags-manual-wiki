@@ -1,5 +1,4 @@
 ## String functions
-----------------
 
 [Append](#append)<br>
 [AppendChar](#appendchar)<br>

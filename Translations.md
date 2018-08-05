@@ -1,5 +1,4 @@
 ## Translations
-------------
 
 AGS now makes it easy for you to create translations of your games.
 Right-click the "Translations" node in the tree, and choose "New

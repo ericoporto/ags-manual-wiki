@@ -1,5 +1,4 @@
 ## Contacting the developers
--------------------------
 
 If you have any comments or suggestions, the first place to go is the
 AGS Forums. Linked off the main AGS website, it's where the AGS

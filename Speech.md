@@ -1,5 +1,4 @@
 ## Speech functions and properties
--------------------------------
 
 [AnimationStopTimeMargin](#animationstoptimemargin)<br>
 [CustomPortraitPlacement](#customportraitplacement)<br>

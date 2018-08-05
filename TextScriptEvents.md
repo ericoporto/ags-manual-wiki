@@ -1,5 +1,4 @@
 ## Predefined global script functions
-----------------------------------
 
 In your main global script file, there are some functions which are
 automatically added when you create the game. These are global events,

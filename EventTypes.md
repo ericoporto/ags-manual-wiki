@@ -1,5 +1,4 @@
 ## Event Types
------------
 
 The following events are available in the "Events" section of the
 Properties Window (when clicking the lightning bolt icon).

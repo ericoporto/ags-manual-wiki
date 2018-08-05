@@ -1,5 +1,4 @@
 ## Getting Started with AGS
-----------------------------
 
 So, you've downloaded AGS. You want to make an adventure game. But where
 do you start?

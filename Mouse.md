@@ -1,5 +1,4 @@
 ## Mouse functions and properties
-------------------------------
 
 [ChangeModeGraphic](#changemodegraphic)<br>
 [ChangeModeHotspot](#changemodehotspot)<br>

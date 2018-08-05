@@ -1,5 +1,4 @@
 ## Understanding blocking scripts
-------------------------------
 
 You will see some commands listed as "blocking", where control does not
 return to the script until the command finishes. But what does this

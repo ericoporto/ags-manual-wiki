@@ -1,5 +1,4 @@
 ## Upgrading to AGS 3.0
---------------------
 
 If you've used AGS before, you'll probably be a bit confused and perhaps
 even taken aback by this new editor. But don't worry, once you've got

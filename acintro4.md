@@ -1,5 +1,4 @@
 ## Getting Started with AGS - Part 4
--------------------------------------
 
 ### Objects
 
@@ -126,7 +125,6 @@ command:
 
 ![](images/intro4_5.jpg)<br>
 *Script for taking the key*
-
 
 Note that our solution is not perfect - the player can click the hand
 icon on the key from anywhere in the room and it will disappear. We are

@@ -1,5 +1,4 @@
 ## Character functions and properties
-----------------------------------
 
 [AddInventory](#addinventory)<br>
 [AddWaypoint](#addwaypoint)<br>

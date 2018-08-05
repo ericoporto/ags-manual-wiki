@@ -1,5 +1,4 @@
 ## Calling global functions from local scripts
----
 
 You can now call your global script functions directly from your rooms.
 This means that if you have a common script that you want to use in

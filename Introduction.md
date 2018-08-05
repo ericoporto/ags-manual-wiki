@@ -1,5 +1,4 @@
 ## Introduction
-------------
 
 Adventure Game Studio
 

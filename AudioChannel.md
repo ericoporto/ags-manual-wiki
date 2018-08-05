@@ -1,5 +1,4 @@
 ## AudioChannel functions and properties
--------------------------------------
 
 The AudioChannel instance represents a currently playing audio file. You
 can use this instance to check the status of playing sounds, and adjust

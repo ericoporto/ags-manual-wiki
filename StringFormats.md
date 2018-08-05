@@ -1,5 +1,4 @@
 ## String formatting
------------------
 
 You will find many times in your game when you need to create a string
 based on the values of variables, and functions like

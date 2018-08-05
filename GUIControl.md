@@ -1,5 +1,4 @@
 ## GUI control functions and properties
-------------------------------------
 
 This section lists the functions and properties common to all types of
 GUI control. Each individual control type (Button, ListBox, etc) also

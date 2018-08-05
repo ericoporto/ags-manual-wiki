@@ -1,5 +1,4 @@
 ## Multimedia functions
---------------------
 
 [CDAudio](#cdaudio)<br>
 [IsAudioPlaying](#isaudioplaying)<br>

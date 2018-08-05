@@ -1,5 +1,4 @@
 ## repeatedly_execute (_always)
-------------------------------
 
 One of the most common things you'll need to do when scripting is to
 check if something has happened in the game -- and if so, then make the

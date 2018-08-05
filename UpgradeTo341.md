@@ -1,5 +1,4 @@
 ## Upgrading to AGS 3.4.1
-----------------------
 
 There were no breaking changes in this update, but several notes should
 be made.

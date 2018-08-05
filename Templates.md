@@ -1,5 +1,4 @@
 ## New Game templates
-------------------
 
 When you choose "Start a new game" in the initial "Welcome to AGS"
 dialog box, a window appears with various templates that you can base

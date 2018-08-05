@@ -1,5 +1,4 @@
 ## Backing up your game
---------------------
 
 You will no doubt want to back up your game files, and should do so
 regularly during your game development. But which files should you back

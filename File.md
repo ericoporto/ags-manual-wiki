@@ -1,5 +1,4 @@
 ## File functions and properties
------------------------------
 
 [Open](#open)<br>
 [Close](#close)<br>

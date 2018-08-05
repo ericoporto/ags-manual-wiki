@@ -1,5 +1,4 @@
 ## Object functions and properties
--------------------------------
 
 [Animate](#animate)<br>
 [GetAtScreenXY](#getatscreenxy)<br>

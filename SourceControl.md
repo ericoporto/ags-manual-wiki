@@ -1,5 +1,4 @@
 ## Source Control integration
---------------------------
 
 The AGS Editor supports integration with source control systems like
 SourceSafe and Perforce.

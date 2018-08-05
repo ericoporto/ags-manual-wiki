@@ -12,7 +12,6 @@
 -   [Setting up the game](Settingupthegame)
 -   [Advanced room features](AdvancedRoomFeatures)
 
-
 ***Editor Reference***
 
 [Room Editor](EditorRoom)
@@ -128,7 +127,6 @@
 -   [Upgrading to AGS 3.3.5](UpgradeTo335)
 -   [Upgrading to AGS 3.4](UpgradeTo34)
 -   [Upgrading to AGS 3.4.1](UpgradeTo341)
-
 
 ***Legal Notice***
 

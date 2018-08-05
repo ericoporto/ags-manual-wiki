@@ -1,5 +1,4 @@
 ## Text display / Speech functions
--------------------------------
 
 [Display](#display)<br>
 [DisplayAt](#displayat)<br>

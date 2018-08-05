@@ -1,5 +1,4 @@
 ## Room functions
---------------
 
 [AreThingsOverlapping](#arethingsoverlapping)<br>
 [DisableGroundLevelAreas](#disablegroundlevelareas)<br>

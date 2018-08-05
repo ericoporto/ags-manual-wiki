@@ -1,5 +1,4 @@
 ## Region functions and properties
--------------------------------
 
 [GetAtRoomXY](#getatroomxy)<br>
 [RunInteraction](#runinteraction)<br>

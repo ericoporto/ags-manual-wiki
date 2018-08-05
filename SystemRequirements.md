@@ -1,5 +1,4 @@
 ## System Requirements
--------------------
 
 To work with the Editor, you need following:
 

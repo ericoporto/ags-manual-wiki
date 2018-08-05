@@ -1,5 +1,4 @@
 ## Scripting API
--------------
 
 The AGS scripting system allows you to write a mini-program, giving you
 great control over your game.

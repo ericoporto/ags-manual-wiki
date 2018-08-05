@@ -1,5 +1,4 @@
 ## Dynamic Arrays
---------------
 
 Suppose that you're writing a script that you want people to be able to
 use in their games. You need to store the Health for every character in

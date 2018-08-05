@@ -1,5 +1,4 @@
 ## DynamicSprite functions and properties
---------------------------------------
 
 [Create](#create)<br>
 [CreateFromBackground](#createfrombackground)<br>

@@ -1,5 +1,4 @@
 ## Pointers in AGS
----------------
 
 Various commands in the new scripting language will require you to use
 pointers. This section has been split into three separate topics to

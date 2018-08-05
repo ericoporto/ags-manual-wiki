@@ -1,5 +1,4 @@
 ## Script language keywords
-------------------------
 
 [Arrays](#arrays)<br>
 [Data types](#data-types)<br>

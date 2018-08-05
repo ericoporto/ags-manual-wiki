@@ -1,5 +1,4 @@
 ## Custom dialog options rendering
--------------------------------
 
 By default, AGS comes with two types of dialog options -- displaying
 them using the size and position of an existing GUI, or creating a text

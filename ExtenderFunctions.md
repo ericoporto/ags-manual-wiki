@@ -1,5 +1,4 @@
 ## Extender functions
-------------------
 
 Suppose that you wanted to add a new function, "Scream", to characters
 which would make them cry out "AARRRGGGHHH". Because the Character type

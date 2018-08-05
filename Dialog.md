@@ -1,5 +1,4 @@
 ## Dialog functions and properties
--------------------------------
 
 [DisplayOptions](#displayoptions)<br>
 [GetOptionState](#getoptionstate)<br>

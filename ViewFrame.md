@@ -1,5 +1,4 @@
 ## ViewFrame functions and properties
-----------------------------------
 
 [Flipped property](#flipped)<br>
 [Frame property](#frame)<br>

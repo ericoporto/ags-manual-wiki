@@ -1,5 +1,4 @@
 ## DateTime functions and properties
----------------------------------
 
 [Now property](#now)<br>
 [DayOfMonth property](#dayofmonth)<br>

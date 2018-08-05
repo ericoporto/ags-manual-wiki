@@ -1,5 +1,4 @@
 ## Game variables
---------------
 
 The following variables are available to your script. They allow you to
 do various tweaks to the engine at run-time.

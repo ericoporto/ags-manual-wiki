@@ -1,5 +1,4 @@
 ## Getting Started with AGS - Part 8
--------------------------------------
 
 ### Conversations
 

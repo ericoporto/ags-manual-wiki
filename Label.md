@@ -1,5 +1,4 @@
 ## GUI Label functions and properties
-----------------------------------
 
 [BringToFront](GUIControl#bringtofront)<br>
 [Clickable property](GUIControl#clickable)<br>

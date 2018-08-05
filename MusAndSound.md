@@ -1,5 +1,4 @@
 ## Music and sound
----------------
 
 Sound and music are an essential part of any gameplay experience, and
 AGS 3.2 and higher provides a re-written audio system giving you full

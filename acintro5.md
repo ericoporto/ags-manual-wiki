@@ -1,5 +1,4 @@
 ## Getting Started with AGS - Part 5
--------------------------------------
 
 ### Managing Inventory
 

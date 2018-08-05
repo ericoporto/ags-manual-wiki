@@ -1,5 +1,4 @@
 ## Debugging features
-------------------
 
 It happens to the best of us - you're merrily ploughing along making
 your game, when suddenly something just isn't working right. It's not

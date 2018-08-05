@@ -1,5 +1,4 @@
 ## Overlay functions and properties
---------------------------------
 
 [CreateGraphical](#creategraphical)<br>
 [CreateTextual](#createtextual)<br>

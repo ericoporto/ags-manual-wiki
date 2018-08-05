@@ -1,5 +1,4 @@
 ## Maths functions and properties
-------------------------------
 
 [FloatToInt](#floattoint)<br>
 [IntToFloat](#inttofloat)<br>
