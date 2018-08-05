@@ -1,4 +1,4 @@
-Upgrading to AGS 3.1
+## Upgrading to AGS 3.1
 --------------------
 
 AGS 3.1 contains some major changes over previous versions. The main

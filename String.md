@@ -1,4 +1,4 @@
-String functions
+## String functions
 ----------------
 
 [Append](#append)<br>

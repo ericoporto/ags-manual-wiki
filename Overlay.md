@@ -1,4 +1,4 @@
-Overlay functions and properties
+## Overlay functions and properties
 --------------------------------
 
 [CreateGraphical](#creategraphical)<br>

@@ -1,4 +1,4 @@
-Inventory item functions and properties
+## Inventory item functions and properties
 ---------------------------------------
 
 [GetAtScreenXY](#getatscreenxy)<br>

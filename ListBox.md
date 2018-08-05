@@ -1,4 +1,4 @@
-GUI List Box functions and properties
+## GUI List Box functions and properties
 -------------------------------------
 
 [BringToFront](GUIControl#bringtofront)<br>

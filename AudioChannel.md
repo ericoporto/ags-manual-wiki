@@ -1,4 +1,4 @@
-AudioChannel functions and properties
+## AudioChannel functions and properties
 -------------------------------------
 
 The AudioChannel instance represents a currently playing audio file. You

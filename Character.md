@@ -1,4 +1,4 @@
-Character functions and properties
+## Character functions and properties
 ----------------------------------
 
 [AddInventory](#addinventory)<br>

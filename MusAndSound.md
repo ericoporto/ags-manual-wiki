@@ -1,4 +1,4 @@
-Music and sound
+## Music and sound
 ---------------
 
 Sound and music are an essential part of any gameplay experience, and

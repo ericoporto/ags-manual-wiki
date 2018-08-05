@@ -1,4 +1,4 @@
-GUI Button functions and properties
+## GUI Button functions and properties
 -----------------------------------
 
 [BringToFront](GUIControl#bringtofront)<br>

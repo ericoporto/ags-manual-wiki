@@ -1,4 +1,4 @@
-The demo game
+## The demo game
 -------------
 
 The first thing you'll probably want to do is to run the demo game. This

@@ -1,4 +1,4 @@
-**Getting Started with AGS - Part 4**
+## Getting Started with AGS - Part 4
 -------------------------------------
 
 ### Objects

@@ -1,4 +1,4 @@
-Anonymous usage information
+## Anonymous usage information
 ---------------------------
 
 AGS contains an option to send anonymous usage information to the AGS

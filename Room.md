@@ -1,4 +1,4 @@
-Room functions
+## Room functions
 --------------
 
 [AreThingsOverlapping](#arethingsoverlapping)<br>

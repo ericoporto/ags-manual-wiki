@@ -1,4 +1,4 @@
-AudioClip functions and properties
+## AudioClip functions and properties
 ----------------------------------
 
 AudioClips are created when you import files in the AGS Editor. The

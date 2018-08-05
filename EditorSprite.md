@@ -1,3 +1,3 @@
-Sprite Manager
+## Sprite Manager
 --------------
 

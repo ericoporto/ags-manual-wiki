@@ -1,4 +1,4 @@
-GUI InvWindow functions and properties
+## GUI InvWindow functions and properties
 --------------------------------------
 
 [BringToFront](GUIControl#bringtofront)<br>

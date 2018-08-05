@@ -1,4 +1,4 @@
-**Getting Started with AGS - Part 2**
+## Getting Started with AGS - Part 2
 -------------------------------------
 
 In AGS, games are made up of several *rooms*, which the player moves

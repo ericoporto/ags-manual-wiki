@@ -1,4 +1,4 @@
-**Getting Started with AGS - Part 7**
+## Getting Started with AGS - Part 7
 -------------------------------------
 
 ### Animations

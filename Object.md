@@ -1,4 +1,4 @@
-Object functions and properties
+## Object functions and properties
 -------------------------------
 
 [Animate](#animate)<br>

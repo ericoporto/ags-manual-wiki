@@ -1,4 +1,4 @@
-Palette functions
+## Palette functions
 -----------------
 
 [CyclePalette](#cyclepalette)<br>

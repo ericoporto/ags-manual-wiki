@@ -1,4 +1,4 @@
-GUI Text Box functions and properties
+## GUI Text Box functions and properties
 -------------------------------------
 
 [BringToFront](GUIControl#bringtofront)<br>

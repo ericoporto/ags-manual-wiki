@@ -1,4 +1,4 @@
-Starting off
+## Starting off
 ------------
 
 The tutorial has now been updated for AGS 3.0. Follow the links below to

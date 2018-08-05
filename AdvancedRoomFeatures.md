@@ -1,4 +1,4 @@
-Advanced room features
+## Advanced room features
 ----------------------
 
 This section describes slightly more advanced things you can do with the

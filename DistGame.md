@@ -1,4 +1,4 @@
-Distributing your game
+## Distributing your game
 ----------------------
 
 When you choose the "Build EXE" option in the Editor, a "Compiled"

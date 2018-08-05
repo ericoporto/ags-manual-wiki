@@ -1,4 +1,4 @@
-GUI Label functions and properties
+## GUI Label functions and properties
 ----------------------------------
 
 [BringToFront](GUIControl#bringtofront)<br>

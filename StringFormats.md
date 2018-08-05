@@ -1,4 +1,4 @@
-String formatting
+## String formatting
 -----------------
 
 You will find many times in your game when you need to create a string

@@ -1,4 +1,4 @@
-Integration with Windows
+## Integration with Windows
 ------------------------
 
 AGS has the ability to integrate with Windows in two ways. Firstly, it

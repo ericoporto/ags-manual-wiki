@@ -1,4 +1,4 @@
-Editing the GUIs
+## Editing the GUIs
 ----------------
 
 The game interface is split up into GUIs. Each GUI is a rectangular

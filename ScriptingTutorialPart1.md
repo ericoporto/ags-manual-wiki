@@ -1,4 +1,4 @@
-**Scripting Tutorial**
+## Scripting Tutorial
 ----------------------
 
 In AGS, all the interactivity in the game is handled using scripts.

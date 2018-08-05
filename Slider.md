@@ -1,4 +1,4 @@
-GUI Slider properties
+## GUI Slider properties
 ---------------------
 
 [BringToFront](GUIControl#bringtofront)<br>

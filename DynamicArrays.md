@@ -1,4 +1,4 @@
-Dynamic Arrays
+## Dynamic Arrays
 --------------
 
 Suppose that you're writing a script that you want people to be able to

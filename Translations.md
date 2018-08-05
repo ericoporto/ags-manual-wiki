@@ -1,4 +1,4 @@
-Translations
+## Translations
 ------------
 
 AGS now makes it easy for you to create translations of your games.

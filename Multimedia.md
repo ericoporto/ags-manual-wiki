@@ -1,4 +1,4 @@
-Multimedia functions
+## Multimedia functions
 --------------------
 
 [CDAudio](#cdaudio)<br>

@@ -1,4 +1,4 @@
-Parser functions
+## Parser functions
 ----------------
 
 [FindWordID](#findwordid)<br>

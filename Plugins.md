@@ -1,4 +1,4 @@
-Plugins
+## Plugins
 -------
 
 AGS supports user-written plugins in order to provide functionality to

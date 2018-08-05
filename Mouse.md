@@ -1,4 +1,4 @@
-Mouse functions and properties
+## Mouse functions and properties
 ------------------------------
 
 [ChangeModeGraphic](#changemodegraphic)<br>

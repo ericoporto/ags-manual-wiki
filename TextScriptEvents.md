@@ -1,4 +1,4 @@
-Predefined global script functions
+## Predefined global script functions
 ----------------------------------
 
 In your main global script file, there are some functions which are

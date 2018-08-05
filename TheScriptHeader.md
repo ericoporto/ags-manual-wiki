@@ -1,4 +1,4 @@
-The script header
+## The script header
 -----------------
 
 This allows you to include the same information into all your scripts.

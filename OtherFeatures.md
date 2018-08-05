@@ -1,4 +1,4 @@
-Other Features
+## Other Features
 --------------
 
 This section describes AGS features that were not covered in the

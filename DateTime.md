@@ -1,4 +1,4 @@
-DateTime functions and properties
+## DateTime functions and properties
 ---------------------------------
 
 [Now property](#now)<br>

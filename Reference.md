@@ -1,4 +1,4 @@
-Reference
+## Reference
 ---------
 
 This section contains a reference for various parts of the system except

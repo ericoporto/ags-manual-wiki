@@ -1,4 +1,4 @@
-Extender functions
+## Extender functions
 ------------------
 
 Suppose that you wanted to add a new function, "Scream", to characters

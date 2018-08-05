@@ -1,4 +1,4 @@
-Maths functions and properties
+## Maths functions and properties
 ------------------------------
 
 [FloatToInt](#floattoint)<br>

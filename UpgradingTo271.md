@@ -1,4 +1,4 @@
-Upgrading to AGS 2.71
+## Upgrading to AGS 2.71
 ---------------------
 
 AGS 2.71 adds new simple string support to the scripting language.

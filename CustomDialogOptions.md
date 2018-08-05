@@ -1,4 +1,4 @@
-Custom dialog options rendering
+## Custom dialog options rendering
 -------------------------------
 
 By default, AGS comes with two types of dialog options -- displaying

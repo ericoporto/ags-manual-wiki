@@ -1,4 +1,4 @@
-Frequently Asked Questions
+## Frequently Asked Questions
 --------------------------
 
 This section of the manual is very rarely updated. Please consult the

@@ -1,4 +1,4 @@
-Game variables
+## Game variables
 --------------
 
 The following variables are available to your script. They allow you to

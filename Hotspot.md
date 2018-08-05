@@ -1,4 +1,4 @@
-Hotspot functions and properties
+## Hotspot functions and properties
 --------------------------------
 
 [GetAtScreenXY](#getatscreenxy)<br>

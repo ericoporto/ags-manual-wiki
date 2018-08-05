@@ -1,4 +1,4 @@
-Backing up your game
+## Backing up your game
 --------------------
 
 You will no doubt want to back up your game files, and should do so

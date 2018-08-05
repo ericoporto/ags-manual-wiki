@@ -1,4 +1,4 @@
-New Game templates
+## New Game templates
 ------------------
 
 When you choose "Start a new game" in the initial "Welcome to AGS"

@@ -1,4 +1,4 @@
-DrawingSurface functions and properties
+## DrawingSurface functions and properties
 ---------------------------------------
 
 The DrawingSurface family of functions allow you to directly draw onto

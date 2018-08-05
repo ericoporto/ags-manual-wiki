@@ -1,4 +1,4 @@
-Keyboard Shortcuts
+## Keyboard Shortcuts
 ------------------
 
 The AGS Editor provides various keyboard shortcuts to help you get your

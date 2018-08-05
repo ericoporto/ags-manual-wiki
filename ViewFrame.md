@@ -1,4 +1,4 @@
-ViewFrame functions and properties
+## ViewFrame functions and properties
 ----------------------------------
 
 [Flipped property](#flipped)<br>

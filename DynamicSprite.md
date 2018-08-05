@@ -1,4 +1,4 @@
-DynamicSprite functions and properties
+## DynamicSprite functions and properties
 --------------------------------------
 
 [Create](#create)<br>

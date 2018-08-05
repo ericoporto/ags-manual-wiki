@@ -1,4 +1,4 @@
-Global variables
+## Global variables
 ----------------
 
 The Global Variables pane allows you to easily add variables to your

@@ -1,4 +1,4 @@
-Debugging features
+## Debugging features
 ------------------
 
 It happens to the best of us - you're merrily ploughing along making

@@ -1,4 +1,4 @@
-GUI functions and properties
+## GUI functions and properties
 ----------------------------
 
 [Centre](#centre)<br>

@@ -1,4 +1,4 @@
-Source Control integration
+## Source Control integration
 --------------------------
 
 The AGS Editor supports integration with source control systems like

@@ -1,4 +1,4 @@
-Contacting the developers
+## Contacting the developers
 -------------------------
 
 If you have any comments or suggestions, the first place to go is the

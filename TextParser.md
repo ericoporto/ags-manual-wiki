@@ -1,4 +1,4 @@
-The text parser
+## The text parser
 ---------------
 
 You can now use a text parser in your games if you wish to, much as the

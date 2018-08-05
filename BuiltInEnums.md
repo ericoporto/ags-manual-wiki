@@ -1,4 +1,4 @@
-Built-in enumerated types
+## Built-in enumerated types
 -------------------------
 
 AGS has several [enumerated types](managedmodifier#enum) built in. These are

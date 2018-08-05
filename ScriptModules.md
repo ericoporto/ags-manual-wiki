@@ -1,4 +1,4 @@
-Multiple Scripts
+## Multiple Scripts
 ----------------
 
 If you're working on a fairly large game, you'll find that your global

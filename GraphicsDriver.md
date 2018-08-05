@@ -1,4 +1,4 @@
-Graphics driver selection
+## Graphics driver selection
 -------------------------
 
 AGS has three available graphics drivers when run on Windows --

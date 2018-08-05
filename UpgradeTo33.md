@@ -1,4 +1,4 @@
-Upgrading to AGS 3.3
+## Upgrading to AGS 3.3
 --------------------
 
 AGS 3.3 editor contains a major change to user interface that now lets

@@ -1,4 +1,4 @@
-Dialog functions and properties
+## Dialog functions and properties
 -------------------------------
 
 [DisplayOptions](#displayoptions)<br>

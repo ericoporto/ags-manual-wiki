@@ -1,4 +1,4 @@
-Screen functions
+## Screen functions
 ----------------
 
 [FadeIn](#fadein)<br>

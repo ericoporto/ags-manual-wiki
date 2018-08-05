@@ -1,4 +1,4 @@
-DialogOptionsRenderingInfo functions and properties
+## DialogOptionsRenderingInfo functions and properties
 ---
 
 The DialogOptionsRenderingInfo instance is used by the [custom dialog

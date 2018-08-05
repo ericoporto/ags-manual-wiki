@@ -1,4 +1,4 @@
-ASCII code table
+## ASCII code table
 ----------------
 
 This section lists the key codes which can be passed to on_key_press

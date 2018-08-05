@@ -1,4 +1,4 @@
-Pointers in AGS
+## Pointers in AGS
 ---------------
 
 Various commands in the new scripting language will require you to use

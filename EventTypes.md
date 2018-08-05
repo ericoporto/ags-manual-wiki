@@ -1,4 +1,4 @@
-Event Types
+## Event Types
 -----------
 
 The following events are available in the "Events" section of the

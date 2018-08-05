@@ -1,4 +1,4 @@
-Understanding blocking scripts
+## Understanding blocking scripts
 ------------------------------
 
 You will see some commands listed as "blocking", where control does not
