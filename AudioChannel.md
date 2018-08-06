@@ -93,8 +93,8 @@ of the *oMachine* room object.
 
 Gets/sets the playing audio clip's playback speed. The value is defined
 in clip's milliseconds per second: 1000 is default, meaning 1000 of
-clip's ms in 1 real second (scale 1:1). Set &lt; 1000 for slower play
-and &gt; 1000 for faster play. **NOTE:** currently works for MP3 and OGG
+clip's ms in 1 real second (scale 1:1). Set < 1000 for slower play
+and > 1000 for faster play. **NOTE:** currently works for MP3 and OGG
 audio clips only.
 
 Example:

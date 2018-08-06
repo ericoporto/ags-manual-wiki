@@ -146,7 +146,7 @@ is from 0-100.
 same colour depth as the background (ie. a 256-colour character in a
 hi-colour game won't get lightened).
 
-**NOTE:** In a 256-colour game, only darkening areas (light level &lt;
+**NOTE:** In a 256-colour game, only darkening areas (light level <
 `100%`) will work. Also, depending on the room palette the quality of
 the darkening will vary in 256-colour games.
 
