@@ -421,7 +421,7 @@ then this command will return 0 until they enter the room again.
 
 This command will always return 1 if you ask it about the current room;
 and it will always return 0 if you ask it about a non-state saving room
-(ie. rooms numbered &gt; 300).
+(ie. rooms numbered > 300).
 
 Example:
 
