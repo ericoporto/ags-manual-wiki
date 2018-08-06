@@ -2,6 +2,8 @@
 
 The Room Editor is where the user can define the Room name, set a background, create objects, add hotspots, define the walkable areas for the characters, mark areas as walkbehinds, change lighting using regions, and more, for a Room. Only one room can be edited at the same time.
 
+![Editor Room](images/EditorRoom_1.png)
+
 ## Background
 
 By selecting a background on the `Display Background` combo box, you can select which background of a room to display: Main Background, frame 2, 3, 4, 5. With one background selected, click `Change...` button to change the background. If a background of different size than the previous background is selected, all masks (hotspot, walkbehind, region and walkable) are erased. If a room has more than one background, by default, they are animated.
