@@ -97,9 +97,8 @@ will display the message at y coordinate 50.
     DisplayMessage (int message_number)
 
 Identical to the Display function, but this uses a message text defined
-in the AGS Editor rather than in the script. It will either use a
-message from the current room, or a global message (if message_number
-&gt;= 500).
+in the AGS Editor rather than in the script. It will either use a message
+from the current room, or a global message (if message_number >= 500).
 
 Example:
 
