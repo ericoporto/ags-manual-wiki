@@ -1,9 +1,5 @@
 ## Parser functions
 
-[FindWordID](#findwordid)<br>
-[ParseText](#parsetext)<br>
-[Said](#said)<br>
-[SaidUnknownWord](#saidunknownword)
 
 ---
 

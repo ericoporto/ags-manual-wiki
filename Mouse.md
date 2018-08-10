@@ -1,26 +1,5 @@
 ## Mouse functions and properties
 
-[ChangeModeGraphic](#changemodegraphic)<br>
-[ChangeModeHotspot](#changemodehotspot)<br>
-[ChangeModeView](#changemodeview)<br>
-[Click](#click)<br>
-[ControlEnabled property](#controlenabled)<br>
-[DisableMode](#disablemode)<br>
-[EnableMode](#enablemode)<br>
-[GetModeGraphic](#getmodegraphic)<br>
-[IsButtonDown](#isbuttondown)<br>
-[IsModeEnabled](#ismodeenabled)<br>
-[SaveCursorUntilItLeaves](#savecursoruntilitleaves)<br>
-[SelectNextMode](#selectnextmode)<br>
-[SelectPreviousMode](#selectpreviousmode)<br>
-[SetBounds](#setbounds)<br>
-[SetPosition](#setposition)<br>
-[Speed property](#speed)<br>
-[Update](#update)<br>
-[UseDefaultGraphic](#usedefaultgraphic)<br>
-[UseModeGraphic](#usemodegraphic)<br>
-[Mode property](#mode)<br>
-[Visible property](#visible)
 
 ---
 

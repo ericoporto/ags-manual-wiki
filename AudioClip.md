@@ -3,13 +3,6 @@
 AudioClips are created when you import files in the AGS Editor. The
 commands in this section allow to play them.
 
-[Play](#play)<br>
-[PlayFrom](#playfrom)<br>
-[PlayQueued](#playqueued)<br>
-[Stop](#stop)<br>
-[FileType property](#filetype)<br>
-[IsAvailable property](#isavailable)<br>
-[Type property](#type)
 
 ---
 

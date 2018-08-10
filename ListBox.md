@@ -1,39 +1,6 @@
 ## GUI List Box functions and properties
 
-[BringToFront](GUIControl#bringtofront)<br>
-[Clickable property](GUIControl#clickable)<br>
-[Enabled property](GUIControl#enabled)<br>
-[Height property](GUIControl#height)<br>
-[ID property](GUIControl#id)<br>
-[OwningGUI property](GUIControl#owninggui)<br>
-[SendToBack](GUIControl#sendtoback)<br>
-[SetPosition](GUIControl#setposition)<br>
-[SetSize](GUIControl#setsize)<br>
-[Visible property](GUIControl#visible)<br>
-[Width property](GUIControl#width)<br>
-[X property](GUIControl#x)<br>
-[Y property](GUIControl#y)<br>
-[ZOrder property](GUIControl#zorder)
 
-[AddItem](#additem)<br>
-[Clear](#clear)<br>
-[FillDirList](#filldirlist)<br>
-[FillSaveGameList](#fillsavegamelist)<br>
-[GetItemAtLocation](#getitematlocation)<br>
-[InsertItemAt](#insertitemat)<br>
-[RemoveItem](#removeitem)<br>
-[ScrollDown](#scrolldown)<br>
-[ScrollUp](#scrollup)<br>
-[Font property](#font)<br>
-[HideBorder property](#hideborder)<br>
-[HideScrollArrows property](#hidescrollarrows)<br>
-[ItemCount property](#itemcount)<br>
-[Items property](#items)<br>
-[RowCount property](#rowcount)<br>
-[SaveGameSlots property](#savegameslots)<br>
-[SelectedIndex property](#selectedindex)<br>
-[TopItem property](#topitem)<br>
-[Translated property](#translated)
 
 ---
 

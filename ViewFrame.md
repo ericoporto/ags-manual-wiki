@@ -1,12 +1,5 @@
 ## ViewFrame functions and properties
 
-[Flipped property](#flipped)<br>
-[Frame property](#frame)<br>
-[Graphic property](#graphic)<br>
-[LinkedAudio property](#linkedaudio)<br>
-[Loop property](#loop)<br>
-[Speed property](#speed)<br>
-[View property](#view)
 
 ---
 

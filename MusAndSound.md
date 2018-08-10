@@ -156,8 +156,6 @@ supported commands:
 [AudioClip reference](AudioClip),
 [AudioChannel reference](AudioChannel)
 
-[Voice speech](#voice-speech)<br>
-[The AudioCache folder](#the-audiocache-folder)
 
 ---
 

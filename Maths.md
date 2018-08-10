@@ -1,25 +1,5 @@
 ## Maths functions and properties
 
-[FloatToInt](#floattoint)<br>
-[IntToFloat](#inttofloat)<br>
-[ArcCos](#arccos)<br>
-[ArcSin](#arcsin)<br>
-[ArcTan](#arctan)<br>
-[ArcTan2](#arctan2)<br>
-[Cos](#cos)<br>
-[Cosh](#cosh)<br>
-[DegreesToRadians](#degreestoradians)<br>
-[Exp](#exp)<br>
-[Log](#log)<br>
-[Log10](#log10)<br>
-[RadiansToDegrees](#radianstodegrees)<br>
-[RaiseToPower](#raisetopower)<br>
-[Sin](#sin)<br>
-[Sinh](#sinh)<br>
-[Sqrt](#sqrt)<br>
-[Tan](#tan)<br>
-[Tanh](#tanh)<br>
-[Pi property](#pi)
 
 ---
 

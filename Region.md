@@ -1,17 +1,5 @@
 ## Region functions and properties
 
-[GetAtRoomXY](#getatroomxy)<br>
-[RunInteraction](#runinteraction)<br>
-[Tint](#tint)<br>
-[Enabled property](#enabled)<br>
-[ID property](#id)<br>
-[LightLevel property](#lightlevel)<br>
-[TintEnabled property](#tintenabled)<br>
-[TintBlue property](#tintblue)<br>
-[TintGreen property](#tintgreen)<br>
-[TintRed property](#tintred)<br>
-[TintSaturation property](#tintsaturation)<br>
-[TintLuminance property](#tintluminance)
 
 ---
 

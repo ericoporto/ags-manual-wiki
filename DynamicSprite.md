@@ -1,26 +1,5 @@
 ## DynamicSprite functions and properties
 
-[Create](#create)<br>
-[CreateFromBackground](#createfrombackground)<br>
-[CreateFromDrawingSurface](#createfromdrawingsurface)<br>
-[CreateFromExistingSprite](#createfromexistingsprite)<br>
-[CreateFromFile](#createfromfile)<br>
-[CreateFromSaveGame](#createfromsavegame)<br>
-[CreateFromScreenShot](#createfromscreenshot)<br>
-[ChangeCanvasSize](#changecanvassize)<br>
-[CopyTransparencyMask](#copytransparencymask)<br>
-[Crop](#crop)<br>
-[Delete](#delete)<br>
-[Flip](#flip)<br>
-[GetDrawingSurface](#getdrawingsurface)<br>
-[Resize](#resize)<br>
-[Rotate](#rotate)<br>
-[SaveToFile](#savetofile)<br>
-[Tint](#tint)<br>
-[ColorDepth property](#colordepth)<br>
-[Graphic property](#graphic)<br>
-[Height property](#height)<br>
-[Width property](#width)
 
 ---
 

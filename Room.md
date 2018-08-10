@@ -1,39 +1,5 @@
 ## Room functions
 
-[AreThingsOverlapping](#arethingsoverlapping)<br>
-[DisableGroundLevelAreas](#disablegroundlevelareas)<br>
-[EnableGroundLevelAreas](#enablegroundlevelareas)<br>
-[GetBackgroundFrame](#getbackgroundframe)<br>
-[GetDrawingSurfaceForBackground](#getdrawingsurfaceforbackground)<br>
-[GetPlayerCharacter](#getplayercharacter)<br>
-[GetProperty](#getproperty)<br>
-[GetTextProperty](#gettextproperty)<br>
-[SetProperty](#setproperty)<br>
-[SetTextProperty](#settextproperty)<br>
-[GetScalingAt](#getscalingat)<br>
-[GetViewportX](#getviewportx)<br>
-[GetViewportY](#getviewporty)<br>
-[GetWalkableAreaAt](#getwalkableareaat)<br>
-[HasPlayerBeenInRoom](#hasplayerbeeninroom)<br>
-[ProcessClick](#processclick)<br>
-[ReleaseViewport](#releaseviewport)<br>
-[RemoveWalkableArea](#removewalkablearea)<br>
-[ResetRoom](#resetroom)<br>
-[RestoreWalkableArea](#restorewalkablearea)<br>
-[SetAreaScaling](#setareascaling)<br>
-[SetBackgroundFrame](#setbackgroundframe)<br>
-[SetViewport](#setviewport)<br>
-[SetWalkBehindBase](#setwalkbehindbase)<br>
-[BottomEdge property](#bottomedge)<br>
-[ColorDepth property](#colordepth)<br>
-[Height property](#height)<br>
-[LeftEdge property](#leftedge)<br>
-[Messages property](#messages)<br>
-[MusicOnLoad property](#musiconload)<br>
-[ObjectCount property](#objectcount)<br>
-[RightEdge property](#rightedge)<br>
-[TopEdge property](#topedge)<br>
-[Width property](#width)
 
 ---
 

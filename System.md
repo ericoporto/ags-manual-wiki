@@ -1,26 +1,5 @@
 ## System functions and properties
 
-[AudioChannelCount property](#audiochannelcount)<br>
-[AudioChannels property](#audiochannels)<br>
-[CapsLock property](#capslock)<br>
-[ColorDepth property](#colordepth)<br>
-[Gamma property](#gamma)<br>
-[HardwareAcceleration property](#hardwareacceleration)<br>
-[HasInputFocus property](#hasinputfocus)<br>
-[NumLock property](#numlock)<br>
-[OperatingSystem property](#operatingsystem)<br>
-[RenderAtScreenResolution property](#renderatscreenresolution)<br>
-[RuntimeInfo property](#runtimeinfo)<br>
-[ScreenHeight property](#screenheight)<br>
-[ScreenWidth property](#screenwidth)<br>
-[ScrollLock property](#scrolllock)<br>
-[SupportsGammaControl property](#supportsgammacontrol)<br>
-[Version property](#version)<br>
-[ViewportHeight property](#viewportheight)<br>
-[ViewportWidth property](#viewportwidth)<br>
-[Volume property](#volume)<br>
-[VSync property](#vsync)<br>
-[Windowed property](#windowed)
 
 ---
 

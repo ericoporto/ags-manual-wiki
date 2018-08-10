@@ -1,26 +1,6 @@
 ## GUI Slider properties
 
-[BringToFront](GUIControl#bringtofront)<br>
-[Clickable property](GUIControl#clickable)<br>
-[Enabled property](GUIControl#enabled)<br>
-[Height property](GUIControl#height)<br>
-[ID property](GUIControl#id)<br>
-[OwningGUI property](GUIControl#owninggui)<br>
-[SendToBack](GUIControl#sendtoback)<br>
-[SetPosition](GUIControl#setposition)<br>
-[SetSize](GUIControl#setsize)<br>
-[Visible property](GUIControl#visible)<br>
-[Width property](GUIControl#width)<br>
-[X property](GUIControl#x)<br>
-[Y property](GUIControl#y)<br>
-[ZOrder property](GUIControl#zorder)
 
-[BackgroundGraphic property](#backgroundgraphic)<br>
-[HandleGraphic property](#handlegraphic)<br>
-[HandleOffset property](#handleoffset)<br>
-[Max property](#max)<br>
-[Min property](#min)<br>
-[Value property](#value)
 
 ---
 

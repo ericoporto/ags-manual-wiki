@@ -1,27 +1,5 @@
 ## Script language keywords
 
-[Arrays](#arrays)<br>
-[Data types](#data-types)<br>
-[Operators](#operators)<br>
-[Constants](#constants)<br>
-[Version checking](#version-checking)<br>
-[if, else statements](#if-else-statements)<br>
-[switch, case statements](#switch-case-statements)<br>
-[while](#while)<br>
-[do..while](#dowhile)<br>
-[for](#for)<br>
-[break](#break)<br>
-[continue](#continue)<br>
-[function](#function)<br>
-[return](#return)<br>
-[struct](#struct)<br>
-[managed](#managed)<br>
-[new](#new)<br>
-[enum](#enum)<br>
-[this](#this)<br>
-[import](#import)<br>
-[export](#export)<br>
-[noloopcheck](#noloopcheck)
 
 ---
 

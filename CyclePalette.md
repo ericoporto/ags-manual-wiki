@@ -1,8 +1,5 @@
 ## Palette functions
 
-[CyclePalette](#cyclepalette)<br>
-[SetPalRGB](#setpalrgb)<br>
-[UpdatePalette](#updatepalette)
 
 ---
 

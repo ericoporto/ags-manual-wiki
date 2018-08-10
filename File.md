@@ -1,22 +1,5 @@
 ## File functions and properties
 
-[Open](#open)<br>
-[Close](#close)<br>
-[Delete](#delete)<br>
-[Exists](#exists)<br>
-[ReadInt](#readint)<br>
-[ReadRawChar](#readrawchar)<br>
-[ReadRawInt](#readrawint)<br>
-[ReadRawLineBack](#readrawlineback)<br>
-[ReadStringBack](#readstringback)<br>
-[Seek](#seek)<br>
-[WriteInt](#writeint)<br>
-[WriteRawChar](#writerawchar)<br>
-[WriteRawLine](#writerawline)<br>
-[WriteString](#writestring)<br>
-[EOF property](#eof)<br>
-[Error property](#error)<br>
-[Position property](#position)
 
 ---
 

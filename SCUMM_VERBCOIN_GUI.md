@@ -4,21 +4,6 @@ SCUMM_VERBCOIN_GUI is a script module that is included with the Verb
 Coin template. The functions in this section are only available if you
 have created your game using that template.
 
-[Deselect](#deselect)<br>
-[DisableVerbCoinGUI](#disableverbcoingui)<br>
-[DoubleClickSpeed](#doubleclickspeed)<br>
-[GoInventory](#goinventory)<br>
-[Item_Count](#item_count)<br>
-[InvScroll_Left](#invscroll_left)<br>
-[InvScroll_Right](#invscroll_right)<br>
-[Inv_Border_active](#inv_border_active)<br>
-[Inv_Border_SetPos](#inv_border_setpos)<br>
-[Inventory_GUI](#inventory_gui)<br>
-[RunInteraction](#runinteraction)<br>
-[Select](#select)<br>
-[Verbcoin_GUI](#verbcoin_gui)<br>
-[verbgraphic](#verbgraphic)<br>
-[doubleclick (variable)](#doubleclick-variable)
 
 ---
 

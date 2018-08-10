@@ -1,24 +1,5 @@
 ## String functions
 
-[Append](#append)<br>
-[AppendChar](#appendchar)<br>
-[CompareTo](#compareto)<br>
-[Copy](#copy)<br>
-[EndsWith](#endswith)<br>
-[Format](#format)<br>
-[IndexOf](#indexof)<br>
-[IsNullOrEmpty](#isnullorempty)<br>
-[LowerCase](#lowercase)<br>
-[Replace](#replace)<br>
-[ReplaceCharAt](#replacecharat)<br>
-[StartsWith](#startswith)<br>
-[Substring](#substring)<br>
-[Truncate](#truncate)<br>
-[UpperCase](#uppercase)<br>
-[AsFloat property](#asfloat)<br>
-[AsInt property](#asint)<br>
-[Chars property](#chars)<br>
-[Length property](#length)
 
 ---
 

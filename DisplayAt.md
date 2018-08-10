@@ -1,11 +1,5 @@
 ## Text display / Speech functions
 
-[Display](#display)<br>
-[DisplayAt](#displayat)<br>
-[DisplayAtY](#displayaty)<br>
-[DisplayMessage](#displaymessage)<br>
-[DisplayMessageAtY](#displaymessageaty)<br>
-[DisplayTopBar](#displaytopbar)
 
 ---
 

@@ -5,19 +5,6 @@ options](CustomDialogOptions) system. You can never create one
 yourself, it will be passed in to the dialog option functions as
 described in the linked page.
 
-[RunActiveOption](#runactiveoption)<br>
-[Update](#update)<br>
-[ActiveOptionID property](#activeoptionid)<br>
-[DialogToRender property](#dialogtorender)<br>
-[HasAlphaChannel property (DialogOptionsRenderingInfo)](#hasalphachannel)<br>
-[Height property (DialogOptionsRenderingInfo)](#height)<br>
-[ParserTextBoxWidth property](#parsertextboxwidth)<br>
-[ParserTextBoxX property](#parsertextboxx)<br>
-[ParserTextBoxY property](#parsertextboxy)<br>
-[Surface property (DialogOptionsRenderingInfo)](#surface)<br>
-[Width property (DialogOptionsRenderingInfo)](#width)<br>
-[X property (DialogOptionsRenderingInfo)](#x)<br>
-[Y property (DialogOptionsRenderingInfo)](#y)
 
 ---
 

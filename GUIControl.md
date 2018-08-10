@@ -4,22 +4,6 @@ This section lists the functions and properties common to all types of
 GUI control. Each individual control type (Button, ListBox, etc) also
 has its own specific section.
 
-[GetAtScreenXY](#getatscreenxy)<br>
-[AsType properties](#astype)<br>
-[BringToFront](#bringtofront)<br>
-[Clickable property](#clickable)<br>
-[Enabled property](#enabled)<br>
-[Height property](#height)<br>
-[ID property](#id)<br>
-[OwningGUI property](#owninggui)<br>
-[SendToBack](#sendtoback)<br>
-[SetPosition](#setposition)<br>
-[SetSize](#setsize)<br>
-[Visible property](#visible)<br>
-[Width property](#width)<br>
-[X property](#x)<br>
-[Y property](#y)<br>
-[ZOrder property](#zorder)
 
 ---
 

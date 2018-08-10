@@ -3,12 +3,6 @@
 The following events are available in the "Events" section of the
 Properties Window (when clicking the lightning bolt icon).
 
-[Hotspot events](#hotspot-events)<br>
-[Object events](#object-events)<br>
-[Room events](#room-events)<br>
-[Inventory item events](#inventory-item-events)<br>
-[Character events](#character-events)<br>
-[Region events](#region-events)
 
 ---
 

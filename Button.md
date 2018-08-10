@@ -1,34 +1,6 @@
 ## GUI Button functions and properties
 
-[BringToFront](GUIControl#bringtofront)<br>
-[Clickable property](GUIControl#clickable)<br>
-[Enabled property](GUIControl#enabled)<br>
-[Height property](GUIControl#height)<br>
-[ID property](GUIControl#id)<br>
-[OwningGUI property](GUIControl#owninggui)<br>
-[SendToBack](GUIControl#sendtoback)<br>
-[SetPosition](GUIControl#setposition)<br>
-[SetSize](GUIControl#setsize)<br>
-[Visible property](GUIControl#visible)<br>
-[Width property](GUIControl#width)<br>
-[X property](GUIControl#x)<br>
-[Y property](GUIControl#y)<br>
-[ZOrder property](GUIControl#zorder)
 
-[Click](#click)<br>
-[Animate](#animate)<br>
-[Animating property](#animating)<br>
-[Frame property](#frame)<br>
-[Loop property](#loop)<br>
-[View property](#view)<br>
-[ClipImage property](#clipimage)<br>
-[Font property](#font)<br>
-[Graphic property](#graphic)<br>
-[MouseOverGraphic property](#mouseovergraphic)<br>
-[NormalGraphic property](#normalgraphic)<br>
-[PushedGraphic property](#pushedgraphic)<br>
-[Text property](#text)<br>
-[TextColor property](#textcolor)
 
 ---
 

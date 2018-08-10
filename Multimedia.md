@@ -1,15 +1,5 @@
 ## Multimedia functions
 
-[CDAudio](#cdaudio)<br>
-[IsAudioPlaying](#isaudioplaying)<br>
-[IsSpeechVoxAvailable](#isspeechvoxavailable)<br>
-[PlayFlic](#playflic)<br>
-[PlaySilentMIDI](#playsilentmidi)<br>
-[PlayVideo](#playvideo)<br>
-[SetAudioTypeSpeechVolumeDrop](#setaudiotypespeechvolumedrop)<br>
-[SetAudioTypeVolume](#setaudiotypevolume)<br>
-[SetSpeechVolume](#setspeechvolume)<br>
-[StopAudio](#stopaudio)
 
 ---
 

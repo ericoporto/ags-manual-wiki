@@ -1,16 +1,5 @@
 ## Dialog functions and properties
 
-[DisplayOptions](#displayoptions)<br>
-[GetOptionState](#getoptionstate)<br>
-[GetOptionText](#getoptiontext)<br>
-[HasOptionBeenChosen](#hasoptionbeenchosen)<br>
-[ID property](#id)<br>
-[OptionCount property](#optioncount)<br>
-[SetHasOptionBeenChosen](#sethasoptionbeenchosen)<br>
-[SetOptionState](#setoptionstate)<br>
-[ShowTextParser property](#showtextparser)<br>
-[Start](#start)<br>
-[StopDialog](#stopdialog)
 
 ---
 

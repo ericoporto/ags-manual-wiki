@@ -1,23 +1,5 @@
 ## GUI functions and properties
 
-[Centre](#centre)<br>
-[Click](#click)<br>
-[GetAtScreenXY](#getatscreenxy)<br>
-[ProcessClick](#processclick)<br>
-[SetPosition](#setposition)<br>
-[SetSize](#setsize)<br>
-[BackgroundGraphic property](#backgroundgraphic)<br>
-[Clickable property](#clickable)<br>
-[ControlCount property](#controlcount)<br>
-[Controls property](#controls)<br>
-[Height property](#height)<br>
-[ID property](#id)<br>
-[Transparency property](#transparency)<br>
-[Visible property](#visible)<br>
-[Width property](#width)<br>
-[X property](#x)<br>
-[Y property](#y)<br>
-[ZOrder property](#zorder)
 
 ---
 
