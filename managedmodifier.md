@@ -375,7 +375,7 @@ by changing some variable value. Every part of the command header -
 *initialization*, *expression* and *iteration* - is optional: there may
 be **for** command without initialization, or without iteration, or even
 without conditional expression (in which case loop should be ended with
-either [break](#break) or [return](managedmodifier#return).
+either [break](managedmodifier#break) or [return](managedmodifier#return).
 
 For example:
 

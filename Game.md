@@ -1840,7 +1840,7 @@ Example:
 will pause the script and wait until 5 seconds have passed or the player
 presses a key or clicks the mouse.
 
-*See Also:* [Wait](#wait), [WaitKey](Game#waitkey)
+*See Also:* [Wait](Game#wait), [WaitKey](Game#waitkey)
 
 ---
 

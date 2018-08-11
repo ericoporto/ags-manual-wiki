@@ -20,7 +20,7 @@ will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
 *See Also:* [CyclePalette](CyclePalette#cyclepalette),
-[FadeOut](#fadeout), [SetFadeColor](ShakeScreen#setfadecolor)
+[FadeOut](ShakeScreen#fadeout), [SetFadeColor](ShakeScreen#setfadecolor)
 
 ---
 
@@ -43,7 +43,7 @@ will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
 *See Also:* [CyclePalette](CyclePalette#cyclepalette),
-[FadeIn](#fadein), [SetFadeColor](ShakeScreen#setfadecolor)
+[FadeIn](ShakeScreen#fadein), [SetFadeColor](ShakeScreen#setfadecolor)
 
 ---
 
@@ -93,7 +93,7 @@ Example:
 will mean that next time the screen fades out, it fades to red instead
 of black.
 
-SeeAlso: [FadeIn](#fadein), [FadeOut](ShakeScreen#fadeout),
+SeeAlso: [FadeIn](ShakeScreen#fadein), [FadeOut](ShakeScreen#fadeout),
 [SetScreenTransition](ShakeScreen#setscreentransition)
 
 ---
