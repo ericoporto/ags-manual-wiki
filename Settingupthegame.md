@@ -172,7 +172,7 @@ You can delete a folder by right-clicking on it and selecting the
 "Delete" option; beware though that **this will also delete all the
 sprites in the folder**.
 
-\* *NOTE: A few people have experienced problems when importing from
+NOTE: A few people have experienced problems when importing from
 clipboard, in that the image colours get reversed (red becomes blue,
 blue becomes red, and so on) when they are running Windows at 24-bit or
 32-bit colour. If this happens to you, there are two solutions: (a) turn
@@ -211,7 +211,7 @@ Note that if you use alpha blending, any overall transparency that you
 set (such as Character.Transparency, Object.Transparency,
 GUI.Transparency) will be ignored.
 
-**NOTE:** Currently, alpha blended sprites cannot be antialiased, so if
+NOTE: Currently, alpha blended sprites cannot be antialiased, so if
 you have the Anti Alias Sprites option turned on in Setup, it will not
 be applied to alpha-blended characters.
 
@@ -229,10 +229,10 @@ room number of the player character. To change it, open up the player
 character's Character pane, and change the StartingRoom number in the
 property grid.
 
-*TIP: The starting room facility is also useful when testing your game -
-you can make the game start in any room, at the point where you are
+TIP: The starting room facility is also useful when testing your game.
+You can make the game start in any room, at the point where you are
 testing it, rather than having to keep playing the game through to get
-there.*
+there.
 
 Cutscenes are created using the normal animation script commands, such
 as Character.Walk, Object.SetView, and so forth. I would suggest you

@@ -174,7 +174,7 @@ compiling:
     #error This script requires at least AGS 2.71
     #endif
 
-The other constants (AGS_MAX_\*) are useful if you are writing some
+The other constants `AGS_MAX_*` are useful if you are writing some
 script code that you want to be portable to different versions of AGS,
 and to pick up the limits from the user's AGS version. For example, if
 you wanted to store some extra information on all the inventory items,

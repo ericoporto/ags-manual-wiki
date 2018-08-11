@@ -2395,7 +2395,8 @@ talking with the SayBackground command.
 
 Since this property will only be true while the character is speaking,
 and speaking is a blocking command, this property will probably only be
-useful to access from the (late_)repeatedly_execute_always handler.
+useful to access from the repeatedly_execute_always or
+late_repeatedly_execute_always handlers.
 
 Example:
 
@@ -2429,7 +2430,8 @@ speaking; if you attempt to call it when
 will raise an error.
 
 Since speaking is a blocking command, this property will probably only
-be useful access from the (late_)repeatedly_execute_always handler.
+be useful access from the repeatedly_execute_always or
+late_repeatedly_execute_always handlers.
 
 Example:
 
@@ -2538,7 +2540,8 @@ thinking character.
 
 Since this property will only be true while the character is thinking,
 and thinking is a blocking command, this property will probably only be
-useful to access from the (late_)repeatedly_execute_always handler.
+useful to access from the repeatedly_execute_always or
+late_repeatedly_execute_always handlers.
 
 Example:
 
@@ -2577,7 +2580,8 @@ thinking; if you attempt to call it when
 will raise an error.
 
 Since thinking is a blocking command, this property will probably only
-be useful access from the (late_)repeatedly_execute_always handler.
+be useful access from the repeatedly_execute_always or
+late_repeatedly_execute_always handlers.
 
 Example:
 
