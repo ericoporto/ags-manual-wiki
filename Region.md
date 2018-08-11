@@ -1,8 +1,5 @@
 ## Region functions and properties
 
-
----
-
 ### GetAtRoomXY
 
 *(Formerly known as global function GetRegionAt, which is now obsolete)*
