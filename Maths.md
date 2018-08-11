@@ -147,7 +147,7 @@ variable *cosine*.
 *See Also:* [Maths.ArcCos](Maths#arccos),
 [Maths.Cosh](Maths#cosh),
 [Maths.DegreesToRadians](Maths#degreestoradians),
-[Maths.Sin](#sin), [Maths.Tan](Maths#tan)
+[Maths.Sin](Maths#sin), [Maths.Tan](Maths#tan)
 
 ---
 
@@ -171,7 +171,7 @@ variable *hcos*.
 
 *See Also:* [Maths.Cos](Maths#cos),
 [Maths.DegreesToRadians](Maths#degreestoradians),
-[Maths.Sinh](#sinh), [Maths.Tanh](Maths#tanh)
+[Maths.Sinh](Maths#sinh), [Maths.Tanh](Maths#tanh)
 
 ---
 
@@ -195,7 +195,7 @@ variable *cosine*.
 
 *See Also:* [Maths.Cos](Maths#cos),
 [Maths.RadiansToDegrees](Maths#radianstodegrees),
-[Maths.Sin](#sin), [Maths.Tan](Maths#tan)
+[Maths.Sin](Maths#sin), [Maths.Tan](Maths#tan)
 
 ---
 
@@ -286,7 +286,7 @@ converts *PI* radians into degrees (which is 180).
 
 *See Also:* [Maths.Cos](Maths#cos),
 [Maths.DegreesToRadians](Maths#degreestoradians),
-[Maths.Sin](#sin), [Maths.Tan](Maths#tan)
+[Maths.Sin](Maths#sin), [Maths.Tan](Maths#tan)
 
 ---
 
@@ -327,7 +327,7 @@ variable *sine*.
 *See Also:* [Maths.ArcSin](Maths#arcsin),
 [Maths.Sinh](Maths#sinh),
 [Maths.DegreesToRadians](Maths#degreestoradians),
-[Maths.Cos](#cos), [Maths.Tan](Maths#tan)
+[Maths.Cos](Maths#cos), [Maths.Tan](Maths#tan)
 
 ---
 
@@ -352,7 +352,7 @@ variable *hsine*.
 *See Also:* [Maths.ArcSin](Maths#arcsin),
 [Maths.Sin](Maths#sin),
 [Maths.DegreesToRadians](Maths#degreestoradians),
-[Maths.Cosh](#cosh), [Maths.Tanh](Maths#tanh)
+[Maths.Cosh](Maths#cosh), [Maths.Tanh](Maths#tanh)
 
 ---
 
@@ -373,7 +373,7 @@ displays the square root of 4 (rounded down to the nearest integer).
 
 *See Also:* [Maths.Cos](Maths#cos),
 [Maths.RaiseToPower](Maths#raisetopower),
-[Maths.Sin](#sin), [Maths.Tan](Maths#tan)
+[Maths.Sin](Maths#sin), [Maths.Tan](Maths#tan)
 
 ---
 
@@ -396,7 +396,7 @@ variable *tan*.
 *See Also:* [Maths.ArcTan](Maths#arctan),
 [Maths.Tanh](Maths#tanh),
 [Maths.DegreesToRadians](Maths#degreestoradians),
-[Maths.Cos](#cos), [Maths.Sin](Maths#sin)
+[Maths.Cos](Maths#cos), [Maths.Sin](Maths#sin)
 
 ---
 
@@ -421,7 +421,7 @@ calculates the hyperbolic tan of 45 degrees and places it into variable
 *See Also:* [Maths.ArcTan](Maths#arctan),
 [Maths.Tan](Maths#tan),
 [Maths.DegreesToRadians](Maths#degreestoradians),
-[Maths.Cos](#cos), [Maths.Sin](Maths#sin)
+[Maths.Cos](Maths#cos), [Maths.Sin](Maths#sin)
 
 ---
 
@@ -438,5 +438,5 @@ Example:
 displays the value of Pi.
 
 *See Also:* [Maths.Cos](Maths#cos),
-[Maths.Sin](#sin), [Maths.Tan](Maths#tan)
+[Maths.Sin](Maths#sin), [Maths.Tan](Maths#tan)
 
