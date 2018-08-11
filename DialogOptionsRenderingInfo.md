@@ -5,7 +5,6 @@ options](CustomDialogOptions) system. You can never create one
 yourself, it will be passed in to the dialog option functions as
 described in the linked page.
 
-
 ---
 
 ### RunActiveOption

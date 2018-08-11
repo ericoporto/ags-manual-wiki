@@ -1,9 +1,5 @@
 ## GUI Text Box functions and properties
 
-
-
----
-
 ### Font
 
 *(Formerly known as SetTextBoxFont, which is now obsolete)*

@@ -1,8 +1,5 @@
 ## Screen functions
 
-
----
-
 ### FadeIn
 
     FadeIn (int speed)

@@ -1,8 +1,5 @@
 ## Object functions and properties
 
-
----
-
 ### Animate
 
 *(Formerly known as AnimateObject, which is now obsolete)*<br>

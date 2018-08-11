@@ -1,8 +1,5 @@
 ## Hotspot functions and properties
 
-
----
-
 ### GetAtScreenXY
 
 *(Formerly known as global function GetHotspotAt, which is now

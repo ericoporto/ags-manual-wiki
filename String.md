@@ -1,8 +1,5 @@
 ## String functions
 
-
----
-
 ### Append
 
 *(Formerly known as global function StrCat, which is now obsolete)*

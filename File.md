@@ -1,8 +1,5 @@
 ## File functions and properties
 
-
----
-
 ### Open
 
 *(Formerly known as FileOpen, which is now obsolete)*

@@ -1,8 +1,5 @@
 ## Character functions and properties
 
-
----
-
 ### AddInventory
 
 *(Formerly known as global function AddInventory, which is now

@@ -1,8 +1,5 @@
 ## Overlay functions and properties
 
-
----
-
 ### CreateGraphical
 
 *(Formerly known as CreateGraphicOverlay, which is now obsolete)*

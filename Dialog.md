@@ -1,8 +1,5 @@
 ## Dialog functions and properties
 
-
----
-
 ### DisplayOptions
 
     int Dialog.DisplayOptions(optional DialogOptionSayStyle)

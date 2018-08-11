@@ -1,9 +1,5 @@
 ## GUI InvWindow functions and properties
 
-
-
----
-
 ### ScrollDown
 
     InvWindow.ScrollDown()

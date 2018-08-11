@@ -1,8 +1,5 @@
 ## System functions and properties
 
-
----
-
 ### AudioChannelCount
 
     readonly static int System.AudioChannelCount;

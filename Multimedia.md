@@ -1,8 +1,5 @@
 ## Multimedia functions
 
-
----
-
 ### CDAudio
 
     CDAudio (eCDAudioFunction, int param)

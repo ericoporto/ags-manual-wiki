@@ -1,8 +1,5 @@
 ## DateTime functions and properties
 
-
----
-
 ### Now
 
 *(Formerly known as GetTime, which is now obsolete)*

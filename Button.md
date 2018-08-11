@@ -1,9 +1,5 @@
 ## GUI Button functions and properties
 
-
-
----
-
 ### Click
 
     Button.Click()

@@ -1,8 +1,5 @@
 ## Text display / Speech functions
 
-
----
-
 ### Display
 
     Display (string message, ...)

@@ -1,8 +1,5 @@
 ## Script language keywords
 
-
----
-
 ### Arrays
 
 *data_type* *name* `[` *size* `];`

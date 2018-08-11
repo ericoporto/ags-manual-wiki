@@ -1,9 +1,5 @@
 ## GUI Label functions and properties
 
-
-
----
-
 ### Font
 
 *(Formerly known as SetLabelFont, which is now obsolete)*

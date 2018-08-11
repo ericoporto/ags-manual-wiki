@@ -1,8 +1,5 @@
 ## Parser functions
 
-
----
-
 ### FindWordID
 
     static int Parser.FindWordID(string wordToFind)

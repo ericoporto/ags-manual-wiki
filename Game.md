@@ -1,8 +1,5 @@
 ## Game / Global functions
 
-
----
-
 ### AbortGame
 
     AbortGame(string message, ...)

@@ -1,8 +1,5 @@
 ## Mouse functions and properties
 
-
----
-
 ### ChangeModeGraphic
 
 *(Formerly known as ChangeCursorGraphic, which is now obsolete)*

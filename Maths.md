@@ -1,8 +1,5 @@
 ## Maths functions and properties
 
-
----
-
 ### FloatToInt
 
     int FloatToInt(float value, optional RoundDirection)

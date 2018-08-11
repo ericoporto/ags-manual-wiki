@@ -1,8 +1,5 @@
 ## Inventory item functions and properties
 
-
----
-
 ### GetAtScreenXY
 
 *(Formerly known as global function GetInvAt, which is now obsolete)*

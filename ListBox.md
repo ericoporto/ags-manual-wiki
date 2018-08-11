@@ -1,9 +1,5 @@
 ## GUI List Box functions and properties
 
-
-
----
-
 ### AddItem
 
 *(Formerly known as ListBoxAdd, which is now obsolete)*

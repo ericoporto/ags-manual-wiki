@@ -1,8 +1,5 @@
 ## DynamicSprite functions and properties
 
-
----
-
 ### Create
 
     static DynamicSprite* DynamicSprite.Create(int width, int height,

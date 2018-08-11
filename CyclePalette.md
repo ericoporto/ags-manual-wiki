@@ -1,8 +1,5 @@
 ## Palette functions
 
-
----
-
 ### CyclePalette
 
     CyclePalette (int start, int end)

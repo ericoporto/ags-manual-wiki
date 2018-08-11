@@ -1,8 +1,5 @@
 ## Speech functions and properties
 
-
----
-
 ### AnimationStopTimeMargin
 
 *(Formerly known as game.close_mouth_end_speech_time, which is now

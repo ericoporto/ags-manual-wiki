@@ -1,8 +1,5 @@
 ## ViewFrame functions and properties
 
-
----
-
 ### Flipped
 
 *(Formerly part of GetGameParameter, which is now obsolete)*

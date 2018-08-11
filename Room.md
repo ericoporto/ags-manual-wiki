@@ -1,8 +1,5 @@
 ## Room functions
 
-
----
-
 ### AreThingsOverlapping
 
     AreThingsOverlapping(int thing1, int thing2)

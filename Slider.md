@@ -1,9 +1,5 @@
 ## GUI Slider properties
 
-
-
----
-
 ### BackgroundGraphic
 
     int Slider.BackgroundGraphic;

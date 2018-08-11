@@ -1,8 +1,5 @@
 ## GUI functions and properties
 
-
----
-
 ### Centre
 
 *(Formerly known as CentreGUI, which is now obsolete)*
