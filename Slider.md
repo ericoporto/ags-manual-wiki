@@ -22,7 +22,7 @@ displays the *sldHealth* slider's background image
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](#handlegraphic)
+*See Also:* [Slider.HandleGraphic](Slider#handlegraphic)
 
 ---
 
@@ -46,8 +46,8 @@ displays the *sldHealth* slider's handle image
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[Slider.BackgroundGraphic](#backgroundgraphic),
-[Slider.HandleOffset](#handleoffset)
+[Slider.BackgroundGraphic](Slider#backgroundgraphic),
+[Slider.HandleOffset](Slider#handleoffset)
 
 ---
 
@@ -67,7 +67,7 @@ the right.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](#handlegraphic)
+*See Also:* [Slider.HandleGraphic](Slider#handlegraphic)
 
 ---
 
@@ -88,8 +88,8 @@ Example:
 
 sets the maximum value of the *sldHealth* slider to 200.
 
-*See Also:* [Slider.Min](#min),
-[Slider.Value](#value)
+*See Also:* [Slider.Min](Slider#min),
+[Slider.Value](Slider#value)
 
 ---
 
@@ -111,8 +111,8 @@ Example:
 
 sets the minimum value of the *sldHealth* slider to 0.
 
-*See Also:* [Slider.Max](#max),
-[Slider.Value](#value)
+*See Also:* [Slider.Max](Slider#max),
+[Slider.Value](Slider#value)
 
 ---
 

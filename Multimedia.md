@@ -86,7 +86,7 @@ waits for any currently playing music to finish.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](#stopaudio)
+*See Also:* [Game.StopAudio](Multimedia#stopaudio)
 
 ---
 
@@ -138,7 +138,7 @@ Example:
 will play flic2 and the player will be able to skip the flic by pressing
 the ESC key.
 
-*See Also:* [PlayVideo](#playvideo)
+*See Also:* [PlayVideo](Multimedia#playvideo)
 
 ---
 
@@ -198,7 +198,7 @@ you will have to place them separately in the Compiled folder for them
 to work.
 
 **NOTE:** In 256-colour games, PlayVideo is not supported. Please use a
-FLC/FLI video with the [PlayFlic](#playflic) command instead.
+FLC/FLI video with the [PlayFlic](Multimedia#playflic) command instead.
 
 **Cross-Platform Support**
 
@@ -217,7 +217,7 @@ they've seen it before.
 *Compatibility:* OGG Theora supported by **AGS 3.1.1** and later
 versions.
 
-*See Also:* [PlayFlic](#playflic)
+*See Also:* [PlayFlic](Multimedia#playflic)
 
 ---
 
@@ -244,7 +244,7 @@ while speech is playing.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.SetAudioTypeVolume](#setaudiotypevolume)
+*See Also:* [Game.SetAudioTypeVolume](Multimedia#setaudiotypevolume)
 
 ---
 
@@ -283,7 +283,7 @@ will change the volume of all currently playing and future music to
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [SetSpeechVolume](#setspeechvolume),
+*See Also:* [SetSpeechVolume](Multimedia#setspeechvolume),
 [AudioClip.Play](AudioClip#play),
 [System.Volume](System#volume)
 
@@ -303,7 +303,7 @@ Example:
 
 will set the speech volume to 200.
 
-*See Also:* [Game.SetAudioTypeVolume](#setaudiotypevolume)
+*See Also:* [Game.SetAudioTypeVolume](Multimedia#setaudiotypevolume)
 
 ---
 
@@ -329,6 +329,6 @@ will stop all currently playing audio.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.IsAudioPlaying](#isaudioplaying),
+*See Also:* [Game.IsAudioPlaying](Multimedia#isaudioplaying),
 [AudioClip.Play](AudioClip#play),
 [AudioChannel.Stop](AudioChannel#stop)

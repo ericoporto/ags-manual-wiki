@@ -18,8 +18,8 @@ keyboard support.
 available if you used this template to create your game.
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.RunInteraction](#runinteraction),
-[SCUMM_VERBCOIN_GUI.Select](#select)
+[SCUMM_VERBCOIN_GUI.RunInteraction](SCUMM_VERBCOIN_GUI#runinteraction),
+[SCUMM_VERBCOIN_GUI.Select](SCUMM_VERBCOIN_GUI#select)
 
 ---
 
@@ -60,7 +60,7 @@ will set the double-click speed to 1/4 of a second. (This is a good
 default)
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.doubleclick](#doubleclick-variable)
+[SCUMM_VERBCOIN_GUI.doubleclick](SCUMM_VERBCOIN_GUI#doubleclick-variable)
 
 ---
 
@@ -96,8 +96,8 @@ will make sure that on the next inventory scroll you will start with
 item 11, 21, 31, ...
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.InvScroll_Left](#invscroll_left),
-[SCUMM_VERBCOIN_GUI.InvScroll_Right](#invscroll_right)
+[SCUMM_VERBCOIN_GUI.InvScroll_Left](SCUMM_VERBCOIN_GUI#invscroll_left),
+[SCUMM_VERBCOIN_GUI.InvScroll_Right](SCUMM_VERBCOIN_GUI#invscroll_right)
 
 ---
 
@@ -112,8 +112,8 @@ Item_Count.
 available if you used this template to create your game.
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.Item_Count](#item_count),
-[SCUMM_VERBCOIN_GUI.InvScroll_Right](#invscroll_right)
+[SCUMM_VERBCOIN_GUI.Item_Count](SCUMM_VERBCOIN_GUI#item_count),
+[SCUMM_VERBCOIN_GUI.InvScroll_Right](SCUMM_VERBCOIN_GUI#invscroll_right)
 
 ---
 
@@ -128,8 +128,8 @@ Item_Count.
 available if you used this template to create your game.
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.Item_Count](#item_count),
-[SCUMM_VERBCOIN_GUI.InvScroll_Left](#invscroll_left)
+[SCUMM_VERBCOIN_GUI.Item_Count](SCUMM_VERBCOIN_GUI#item_count),
+[SCUMM_VERBCOIN_GUI.InvScroll_Left](SCUMM_VERBCOIN_GUI#invscroll_left)
 
 ---
 
@@ -153,7 +153,7 @@ will make the game exit the inventory when moving the mouse over either
 the top or the bottom of the screen.
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.Inv_Border_SetPos](#inv_border_setpos)
+[SCUMM_VERBCOIN_GUI.Inv_Border_SetPos](SCUMM_VERBCOIN_GUI#inv_border_setpos)
 
 ---
 
@@ -179,7 +179,7 @@ y-coordinate 220, the left border to x-coordinate 20 and the right
 border to x-coordinate 295
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.Inv_Border_active](#inv_border_active)
+[SCUMM_VERBCOIN_GUI.Inv_Border_active](SCUMM_VERBCOIN_GUI#inv_border_active)
 
 ---
 
@@ -228,8 +228,8 @@ Example:
     SCUMM_VERBCOIN_GUI.RunInteraction(eModeTalkto);
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.Deselect](#deselect),
-[SCUMM_VERBCOIN_GUI.Select](#select)
+[SCUMM_VERBCOIN_GUI.Deselect](SCUMM_VERBCOIN_GUI#deselect),
+[SCUMM_VERBCOIN_GUI.Select](SCUMM_VERBCOIN_GUI#select)
 
 ---
 
@@ -244,8 +244,8 @@ keyboard support.
 available if you used this template to create your game.
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.Deselect](#deselect),
-[SCUMM_VERBCOIN_GUI.RunInteraction](#runinteraction)
+[SCUMM_VERBCOIN_GUI.Deselect](SCUMM_VERBCOIN_GUI#deselect),
+[SCUMM_VERBCOIN_GUI.RunInteraction](SCUMM_VERBCOIN_GUI#runinteraction)
 
 ---
 
@@ -314,4 +314,4 @@ will display "You made a single-click" when you made a single-click on
 the object/hotspot/character/...
 
 *See Also:*
-[SCUMM_VERBCOIN_GUI.DoubleClickSpeed](#doubleclickspeed)
+[SCUMM_VERBCOIN_GUI.DoubleClickSpeed](SCUMM_VERBCOIN_GUI#doubleclickspeed)

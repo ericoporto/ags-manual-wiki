@@ -35,7 +35,7 @@ Example:
 
 will display the number of the inv item that the mouse is over
 
-*See Also:* [InventoryItem.Name](#name),
+*See Also:* [InventoryItem.Name](InventoryItem#name),
 [Game.GetLocationName](Game#getlocationname)
 
 ---
@@ -62,7 +62,7 @@ will print the message if inventory item 1 has its "Value" property set
 to more than 200.
 
 *See Also:*
-[InventoryItem.GetTextProperty](#gettextproperty)
+[InventoryItem.GetTextProperty](InventoryItem#gettextproperty)
 
 ---
 
@@ -89,7 +89,7 @@ Example:
 will retrieve inv item 2's "description" property and display it.
 
 *See Also:*
-[InventoryItem.GetProperty](#getproperty)
+[InventoryItem.GetProperty](InventoryItem#getproperty)
 
 ---
 
@@ -117,7 +117,7 @@ will change Stone's "weight" custom property to 120.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[InventoryItem.SetTextProperty](#settextproperty)
+[InventoryItem.SetTextProperty](InventoryItem#settextproperty)
 
 ---
 
@@ -143,7 +143,7 @@ will change key's "description" property.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[InventoryItem.SetProperty](#setproperty)
+[InventoryItem.SetProperty](InventoryItem#setproperty)
 
 ---
 
@@ -171,7 +171,7 @@ Example:
       Display("looking at this item would not do anything.");
 
 *See Also:* [IsInteractionAvailable](Game#isinteractionavailable),
-[InventoryItem.RunInteraction](#runinteraction)
+[InventoryItem.RunInteraction](InventoryItem#runinteraction)
 
 ---
 
@@ -194,7 +194,7 @@ the player clicks on the item (Handle Inv Clicks needs to be enabled for
 this to work)
 
 *See Also:*
-[InventoryItem.IsInteractionAvailable](#isinteractionavailable),
+[InventoryItem.IsInteractionAvailable](InventoryItem#isinteractionavailable),
 [Room.ProcessClick](Room#processclick),
 [Character.RunInteraction](Character#runinteraction)
 
@@ -219,7 +219,7 @@ will display inventory item *iKey*'s cursor graphic.
 
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
-*See Also:* [InventoryItem.Graphic](#graphic)
+*See Also:* [InventoryItem.Graphic](InventoryItem#graphic)
 
 ---
 
@@ -247,9 +247,9 @@ will place the sprite number of the player's current inventory item into
 slot.
 
 *See Also:*
-[InventoryItem.CursorGraphic](#cursorgraphic),
-[InventoryItem.GetAtScreenXY](#getatscreenxy),
-[InventoryItem.Name](#name)
+[InventoryItem.CursorGraphic](InventoryItem#cursorgraphic),
+[InventoryItem.GetAtScreenXY](InventoryItem#getatscreenxy),
+[InventoryItem.Name](InventoryItem#name)
 
 ---
 
@@ -300,7 +300,7 @@ Example:
 will display the name of the player's current inventory item.
 
 *See Also:*
-[InventoryItem.GetAtScreenXY](#getatscreenxy),
-[InventoryItem.Graphic](#graphic),
+[InventoryItem.GetAtScreenXY](InventoryItem#getatscreenxy),
+[InventoryItem.Graphic](InventoryItem#graphic),
 [Game.GetLocationName](Game#getlocationname)
 

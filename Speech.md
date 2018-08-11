@@ -25,7 +25,7 @@ will stop talking animation 40 game loops (1 second with the default
 game speed) before speech time ends.
 
 *See Also:*
-[Speech.DisplayPostTimeMs](#displayposttimems)
+[Speech.DisplayPostTimeMs](Speech#displayposttimems)
 
 ---
 
@@ -35,8 +35,8 @@ game speed) before speech time ends.
 
 Enables/disables the custom speech portrait placement. When set to
 **true** the character portraits are positioned at screen coordinates
-defined by [Speech.PortraitXOffset](#portraitxoffset)
-and [Speech.PortraitY](#portraity). When set to
+defined by [Speech.PortraitXOffset](Speech#portraitxoffset)
+and [Speech.PortraitY](Speech#portraity). When set to
 **false** the portraits will be automatically aligned again.
 
 **NOTE:** This property has no effect if the Lucas-Arts speech style is
@@ -44,8 +44,8 @@ used.
 
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
-*See Also:* [Speech.PortraitXOffset](#portraitxoffset),
-[Speech.PortraitY](#portraity)
+*See Also:* [Speech.PortraitXOffset](Speech#portraitxoffset),
+[Speech.PortraitY](Speech#portraity)
 
 ---
 
@@ -66,7 +66,7 @@ and is set to zero by default.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Speech.AnimationStopTimeMargin](#animationstoptimemargin)
+[Speech.AnimationStopTimeMargin](Speech#animationstoptimemargin)
 
 ---
 
@@ -90,7 +90,7 @@ used instead.
 
 *See Also:*
 [Character.SpeechAnimationDelay](Character#speechanimationdelay),
-[Speech.UseGlobalSpeechAnimationDelay](#useglobalspeechanimationdelay)
+[Speech.UseGlobalSpeechAnimationDelay](Speech#useglobalspeechanimationdelay)
 
 ---
 
@@ -110,8 +110,8 @@ side and respected portrait's border.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Speech.CustomPortraitPlacement](#customportraitplacement),
-[Speech.PortraitY](#portraity)
+[Speech.CustomPortraitPlacement](Speech#customportraitplacement),
+[Speech.PortraitY](Speech#portraity)
 
 ---
 
@@ -127,8 +127,8 @@ Gets/sets the character's speech portrait **y** coordinate on screen.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Speech.CustomPortraitPlacement](#customportraitplacement),
-[Speech.PortraitXOffset](#portraitxoffset)
+[Speech.CustomPortraitPlacement](Speech#customportraitplacement),
+[Speech.PortraitXOffset](Speech#portraitxoffset)
 
 ---
 
@@ -152,7 +152,7 @@ Example:
 
 will assign the "space" key to skip the speech.
 
-*See Also:* [Speech.SkipStyle](#skipstyle)
+*See Also:* [Speech.SkipStyle](Speech#skipstyle)
 
 ---
 
@@ -184,7 +184,7 @@ or a key.
 *See Also:*
 [Game.IgnoreUserInputAfterTextTimeoutMs](Game#ignoreuserinputaftertexttimeoutms),
 [Game.TextReadingSpeed](Game#textreadingspeed),
-[Game.Speech.SkipKey](#skipkey)
+[Game.Speech.SkipKey](Speech#skipkey)
 
 ---
 
@@ -256,7 +256,7 @@ will make the game use global speech animation delay.
 
 *See Also:*
 [Character.SpeechAnimationDelay](Character#speechanimationdelay),
-[Speech.GlobalSpeechAnimationDelay](#globalspeechanimationdelay)
+[Speech.GlobalSpeechAnimationDelay](Speech#globalspeechanimationdelay)
 
 ---
 

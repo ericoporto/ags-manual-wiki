@@ -19,7 +19,7 @@ Example:
 
 will centre the CONTROLPANEL GUI in the middle of the screen.
 
-*See Also:* [GUI.SetPosition](#setposition)
+*See Also:* [GUI.SetPosition](GUI#setposition)
 
 ---
 
@@ -44,7 +44,7 @@ triggers OnClick event for gMainMenu.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:* [Button.Click](Button#click),
-[GUI.ProcessClick](#processclick)
+[GUI.ProcessClick](GUI#processclick)
 
 ---
 
@@ -83,7 +83,7 @@ will display the number of the GUI that the mouse is over.
 
 *See Also:*
 [GUIControl.GetAtScreenXY](GUIControl#getatscreenxy),
-[GUI.ID](GUI#id), [GUI.ZOrder](#zorder)
+[GUI.ID](GUI#id), [GUI.ZOrder](GUI#zorder)
 
 ---
 
@@ -133,11 +133,11 @@ Example:
 
 will move the VERBCOIN GUI to the position where the cursor is.
 
-*See Also:* [GUI.Centre](#centre),
-[GUI.BackgroundGraphic](#backgroundgraphic),
+*See Also:* [GUI.Centre](GUI#centre),
+[GUI.BackgroundGraphic](GUI#backgroundgraphic),
 [GUIControl.SetPosition](GUIControl#setposition),
-[GUI.SetSize](GUI#setsize), [GUI.X](#x),
-[GUI.Y](#y)
+[GUI.SetSize](GUI#setsize), [GUI.X](GUI#x),
+[GUI.Y](GUI#y)
 
 ---
 
@@ -161,11 +161,11 @@ Example:
 
 changes the ICONBAR GUI to be the size of half the screen
 
-*See Also:* [GUI.Centre](#centre),
-[GUI.Height](#height),
+*See Also:* [GUI.Centre](GUI#centre),
+[GUI.Height](GUI#height),
 [GUIControl.SetPosition](GUIControl#setposition),
-[GUI.SetPosition](#setposition),
-[GUI.Width](#width)
+[GUI.SetPosition](GUI#setposition),
+[GUI.Width](GUI#width)
 
 ---
 
@@ -179,7 +179,7 @@ Gets/sets the background image of the GUI.
 
 You can set this to 0 to remove the background image from the GUI.
 
-*See Also:* [GUI.SetPosition](#setposition),
+*See Also:* [GUI.SetPosition](GUI#setposition),
 [Button.NormalGraphic](Button#normalgraphic)
 
 ---
@@ -207,7 +207,7 @@ Example:
 
 sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
-*See Also:* [GUI.GetAtScreenXY](#getatscreenxy)
+*See Also:* [GUI.GetAtScreenXY](GUI#getatscreenxy)
 
 ---
 
@@ -229,7 +229,7 @@ Example:
 
 disables all controls on the INVENTORY GUI.
 
-*See Also:* [GUI.Controls](#controls)
+*See Also:* [GUI.Controls](GUI#controls)
 
 ---
 
@@ -264,7 +264,7 @@ gets list box number 4 from the INVENTORY GUI, and then adds an item to
 it. If control 4 isn't a listbox, you will get a Null Reference error.
 
 *See Also:* [GUIControl.As\*](GUIControl#astype),
-[GUI.ControlCount](#controlcount)
+[GUI.ControlCount](GUI#controlcount)
 
 ---
 
@@ -283,8 +283,8 @@ Example:
 
 displays the height of the ICONBAR GUI.
 
-*See Also:* [GUI.SetSize](#setsize),
-[GUI.Width](#width)
+*See Also:* [GUI.SetSize](GUI#setsize),
+[GUI.Width](GUI#width)
 
 ---
 
@@ -401,8 +401,8 @@ Example:
 
 makes the INVENTORY GUI 5 pixels wider.
 
-*See Also:* [GUI.Height](#height),
-[GUI.SetSize](#setsize)
+*See Also:* [GUI.Height](GUI#height),
+[GUI.SetSize](GUI#setsize)
 
 ---
 
@@ -423,8 +423,8 @@ Example:
 
 moves the VERBCOIN GUI right 5 pixels.
 
-*See Also:* [GUI.SetPosition](#setposition),
-[GUI.Y](#y)
+*See Also:* [GUI.SetPosition](GUI#setposition),
+[GUI.Y](GUI#y)
 
 ---
 
@@ -446,8 +446,8 @@ Example:
 
 moves the VERBCOIN GUI down 5 pixels.
 
-*See Also:* [GUI.SetPosition](#setposition),
-[GUI.X](#x)
+*See Also:* [GUI.SetPosition](GUI#setposition),
+[GUI.X](GUI#x)
 
 ---
 
@@ -470,5 +470,5 @@ Example:
 
 sets the STATUSLINE GUI to be behind all other GUIs.
 
-*See Also:* [GUI.GetAtScreenXY](#getatscreenxy)
+*See Also:* [GUI.GetAtScreenXY](GUI#getatscreenxy)
 

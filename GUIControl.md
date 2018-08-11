@@ -85,8 +85,8 @@ Example:
 will move the *btnBigButton* button to be in front of all other controls
 on the GUI.
 
-*See Also:* [GUIControl.SendToBack](#sendtoback),
-[GUIControl.ZOrder](#zorder)
+*See Also:* [GUIControl.SendToBack](GUIControl#sendtoback),
+[GUIControl.ZOrder](GUIControl#zorder)
 
 ---
 
@@ -121,7 +121,7 @@ Example:
 
 will make the *btnSaveGame* button non-clickable.
 
-*See Also:* [GUIControl.Enabled](#enabled)
+*See Also:* [GUIControl.Enabled](GUIControl#enabled)
 
 ---
 
@@ -159,8 +159,8 @@ Example:
 
 will disable the *btnSaveGame* button.
 
-*See Also:* [GUIControl.Clickable](#clickable),
-[GUIControl.Visible](#visible)
+*See Also:* [GUIControl.Clickable](GUIControl#clickable),
+[GUIControl.Visible](GUIControl#visible)
 
 ---
 
@@ -181,8 +181,8 @@ Example:
 
 makes the *btnConfirm* button 20 pixels high.
 
-*See Also:* [GUIControl.SetSize](#setsize),
-[GUIControl.Width](#width)
+*See Also:* [GUIControl.SetSize](GUIControl#setsize),
+[GUIControl.Width](GUIControl#width)
 
 ---
 
@@ -206,7 +206,7 @@ Example:
 uses the obsolete SetGUIObjectEnabled function to enable the lstSaves
 list box, and then uses the equivalent modern property to disable it.
 
-*See Also:* [GUIControl.OwningGUI](#owninggui),
+*See Also:* [GUIControl.OwningGUI](GUIControl#owninggui),
 [GUI.ID](GUI#id)
 
 ---
@@ -235,7 +235,7 @@ Example:
 turns off the GUI that contains the lstSaves list box, then turns it on
 again using the niftier full pathing approach.
 
-*See Also:* [GUIControl.ID](#id),
+*See Also:* [GUIControl.ID](GUIControl#id),
 [GUI.ID](GUI#id)
 
 ---
@@ -259,8 +259,8 @@ will move the *btnBigButton* button to be behind all other controls on
 the GUI.
 
 *See Also:*
-[GUIControl.BringToFront](#bringtofront),
-[GUIControl.ZOrder](#zorder)
+[GUIControl.BringToFront](GUIControl#bringtofront),
+[GUIControl.ZOrder](GUIControl#zorder)
 
 ---
 
@@ -288,11 +288,11 @@ Example:
 will move the *btnConfirm* button to be positioned at (40,10) within the
 GUI.
 
-*See Also:* [GUIControl.Enabled](#enabled),
+*See Also:* [GUIControl.Enabled](GUIControl#enabled),
 [GUI.SetPosition](GUI#setposition),
-[GUIControl.SetSize](#setsize),
-[GUIControl.X](#x),
-[GUIControl.Y](#y)
+[GUIControl.SetSize](GUIControl#setsize),
+[GUIControl.X](GUIControl#x),
+[GUIControl.Y](GUIControl#y)
 
 ---
 
@@ -319,10 +319,10 @@ Example:
 
 will resize the *invMain* control to have a size of 160 x 100.
 
-*See Also:* [GUIControl.Height](#height),
-[GUIControl.SetPosition](#setposition),
+*See Also:* [GUIControl.Height](GUIControl#height),
+[GUIControl.SetPosition](GUIControl#setposition),
 [GUI.SetSize](GUI#setsize),
-[GUIControl.Width](#width),
+[GUIControl.Width](GUIControl#width),
 
 ---
 
@@ -347,7 +347,7 @@ Example:
 
 will make the *btnSaveGame* button invisible.
 
-*See Also:* [GUIControl.Enabled](#enabled)
+*See Also:* [GUIControl.Enabled](GUIControl#enabled)
 
 ---
 
@@ -368,8 +368,8 @@ Example:
 
 makes the *btnConfirm* button 110 pixels wide.
 
-*See Also:* [GUIControl.Height](#height),
-[GUIControl.SetSize](#setsize)
+*See Also:* [GUIControl.Height](GUIControl#height),
+[GUIControl.SetSize](GUIControl#setsize)
 
 ---
 
@@ -394,8 +394,8 @@ Example:
 will move the *btnConfirm* button to be positioned 10 pixels from the
 left of its GUI.
 
-*See Also:* [GUIControl.SetPosition](#setposition),
-[GUIControl.Y](#y)
+*See Also:* [GUIControl.SetPosition](GUIControl#setposition),
+[GUIControl.Y](GUIControl#y)
 
 ---
 
@@ -420,8 +420,8 @@ Example:
 will move the *btnConfirm* button to be positioned 20 pixels from the
 top of its GUI.
 
-*See Also:* [GUIControl.SetPosition](#setposition),
-[GUIControl.X](#x)
+*See Also:* [GUIControl.SetPosition](GUIControl#setposition),
+[GUIControl.X](GUIControl#x)
 
 ---
 
@@ -454,6 +454,6 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[GUIControl.BringToFront](#bringtofront),
-[GUIControl.SendToBack](#sendtoback)
+[GUIControl.BringToFront](GUIControl#bringtofront),
+[GUIControl.SendToBack](GUIControl#sendtoback)
 

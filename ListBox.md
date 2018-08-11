@@ -24,11 +24,11 @@ Example:
 
 will take the input from the user and add it to the listbox.
 
-*See Also:* [ListBox.Clear](#clear),
-[ListBox.FillDirList](#filldirlist),
-[ListBox.InsertItemAt](#insertitemat),
-[ListBox.Items](#items),
-[ListBox.RemoveItem](#removeitem)
+*See Also:* [ListBox.Clear](ListBox#clear),
+[ListBox.FillDirList](ListBox#filldirlist),
+[ListBox.InsertItemAt](ListBox#insertitemat),
+[ListBox.Items](ListBox#items),
+[ListBox.RemoveItem](ListBox#removeitem)
 
 ---
 
@@ -46,7 +46,7 @@ Example:
 
 will remove all the items from listbox *lstNoteBook*.
 
-*See Also:* [ListBox.AddItem](#additem)
+*See Also:* [ListBox.AddItem](ListBox#additem)
 
 ---
 
@@ -78,9 +78,9 @@ Example:
 will fill the listbox with the list of the saved games. Note that
 actually for this task you would use FillSaveGameList instead.
 
-*See Also:* [ListBox.AddItem](#additem),
-[ListBox.Clear](#clear),
-[ListBox.FillSaveGameList](#fillsavegamelist)
+*See Also:* [ListBox.AddItem](ListBox#additem),
+[ListBox.Clear](ListBox#clear),
+[ListBox.FillSaveGameList](ListBox#fillsavegamelist)
 
 ---
 
@@ -93,7 +93,7 @@ actually for this task you would use FillSaveGameList instead.
 Fills the specified listbox with the save game list, sorted correctly
 with the most recent game at the top of the list.
 
-The [SaveGameSlots](#savegameslots) property is updated
+The [SaveGameSlots](ListBox#savegameslots) property is updated
 to contain the save game slot number for each index in the list, so that
 you can do:
 
@@ -111,10 +111,10 @@ Example:
 
 will fill listbox *lstSaveGames* with the list of the saved games.
 
-*See Also:* [ListBox.FillDirList](#filldirlist),
-[ListBox.ItemCount](#itemcount),
-[ListBox.SaveGameSlots](#savegameslots),
-[ListBox.SelectedIndex](#selectedindex)
+*See Also:* [ListBox.FillDirList](ListBox#filldirlist),
+[ListBox.ItemCount](ListBox#itemcount),
+[ListBox.SaveGameSlots](ListBox#savegameslots),
+[ListBox.SelectedIndex](ListBox#selectedindex)
 
 ---
 
@@ -143,7 +143,7 @@ Example:
 
 will display the item text that the mouse is currently hovering over.
 
-*See Also:* [ListBox.SelectedIndex](#selectedindex)
+*See Also:* [ListBox.SelectedIndex](ListBox#selectedindex)
 
 ---
 
@@ -169,8 +169,8 @@ Example:
 
 will insert the Third Item in between the First and Second items.
 
-*See Also:* [ListBox.AddItem](#additem),
-[ListBox.RemoveItem](#removeitem)
+*See Also:* [ListBox.AddItem](ListBox#additem),
+[ListBox.RemoveItem](ListBox#removeitem)
 
 ---
 
@@ -184,7 +184,7 @@ Removes ITEM from the specified list box. ITEM is the list index of the
 item to remove, starting with 0 for the top item.
 
 If you want to remove all items from the list, then use
-[ListBox.Clear](#clear) instead.
+[ListBox.Clear](ListBox#clear) instead.
 
 **NOTE:** Calling this function causes other items in the list to get
 re-numbered, so make sure you don't keep around any references from
@@ -198,8 +198,8 @@ Example:
 
 the list box will now just contain "Second item".
 
-*See Also:* [ListBox.Clear](#clear),
-[ListBox.FillDirList](#filldirlist)
+*See Also:* [ListBox.Clear](ListBox#clear),
+[ListBox.FillDirList](ListBox#filldirlist)
 
 ---
 
@@ -216,7 +216,7 @@ Example:
 
 will scroll the *lstTest* list box down one row.
 
-*See Also:* [ListBox.ScrollUp](#scrollup)
+*See Also:* [ListBox.ScrollUp](ListBox#scrollup)
 
 ---
 
@@ -233,7 +233,7 @@ Example:
 
 will scroll the *lstTest* list box up one row.
 
-*See Also:* [ListBox.ScrollDown](#scrolldown)
+*See Also:* [ListBox.ScrollDown](ListBox#scrolldown)
 
 ---
 
@@ -270,7 +270,7 @@ Example:
 will hide the border around the Save Games list box.
 
 *See Also:*
-[ListBox.HideScrollArrows](#hidescrollarrows)
+[ListBox.HideScrollArrows](ListBox#hidescrollarrows)
 
 ---
 
@@ -295,7 +295,7 @@ Example:
 
 will hide the built-in scroll arrows on the list box.
 
-*See Also:* [ListBox.HideBorder](#hideborder)
+*See Also:* [ListBox.HideBorder](ListBox#hideborder)
 
 ---
 
@@ -317,7 +317,7 @@ Example:
 
 will pass the number of saved games to the int saves.
 
-*See Also:* [ListBox.Items](#items)
+*See Also:* [ListBox.Items](ListBox#items)
 
 ---
 
@@ -336,7 +336,7 @@ second is 1, and so on. The highest allowable index is ItemCount minus
 1.
 
 If you want to add a new item to the listbox, use the
-[ListBox.AddItem](#additem) method.
+[ListBox.AddItem](ListBox#additem) method.
 
 Example:
 
@@ -344,9 +344,9 @@ Example:
 
 will get the text of the selected item in the list box.
 
-*See Also:* [ListBox.SelectedIndex](#selectedindex),
-[ListBox.ItemCount](#itemcount),
-[ListBox.AddItem](#additem)
+*See Also:* [ListBox.SelectedIndex](ListBox#selectedindex),
+[ListBox.ItemCount](ListBox#itemcount),
+[ListBox.AddItem](ListBox#additem)
 
 ---
 
@@ -367,9 +367,9 @@ Example:
 
 will display the number of rows that the listbox can display.
 
-*See Also:* [ListBox.ItemCount](#itemcount),
-[ListBox.ScrollDown](#scrolldown),
-[ListBox.ScrollUp](#scrollup)
+*See Also:* [ListBox.ItemCount](ListBox#itemcount),
+[ListBox.ScrollDown](ListBox#scrolldown),
+[ListBox.ScrollUp](ListBox#scrollup)
 
 ---
 
@@ -398,8 +398,8 @@ will restore the currently selected game in the list, assuming
 FillSaveGameList had been used previously.
 
 *See Also:*
-[ListBox.FillSaveGameList](#fillsavegamelist),
-[ListBox.SelectedIndex](#selectedindex)
+[ListBox.FillSaveGameList](ListBox#fillsavegamelist),
+[ListBox.SelectedIndex](ListBox#selectedindex)
 
 ---
 

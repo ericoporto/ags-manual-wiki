@@ -37,7 +37,7 @@ seek it back to the start.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Position](#position)
+*See Also:* [AudioChannel.Position](AudioChannel#position)
 
 ---
 
@@ -71,7 +71,7 @@ of the *oMachine* room object.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](#volume)
+*See Also:* [AudioChannel.Volume](AudioChannel#volume)
 
 ---
 
@@ -184,7 +184,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.PositionMs](#positionms)
+*See Also:* [AudioChannel.PositionMs](AudioChannel#positionms)
 
 ---
 
@@ -266,7 +266,7 @@ What *position* represents depends on the FileType of the audio clip:
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](#seek) function.
+[AudioChannel.Seek](AudioChannel#seek) function.
 
 Example:
 
@@ -280,8 +280,8 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.PositionMs](#positionms),
-[AudioChannel.Seek](#seek)
+[AudioChannel.PositionMs](AudioChannel#positionms),
+[AudioChannel.Seek](AudioChannel#seek)
 
 ---
 
@@ -297,7 +297,7 @@ offset into the sound in milliseconds. MIDI files will always return 0.
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](#seek) function.
+[AudioChannel.Seek](AudioChannel#seek) function.
 
 Example:
 
@@ -311,8 +311,8 @@ display its position.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:* *See Also:*
-[AudioChannel.LengthMs](#lengthms),
-[AudioChannel.Position](#position)
+[AudioChannel.LengthMs](AudioChannel#lengthms),
+[AudioChannel.Position](AudioChannel#position)
 
 ---
 
@@ -351,6 +351,6 @@ reduce its volume.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.SetRoomLocation](#setroomlocation),
+[AudioChannel.SetRoomLocation](AudioChannel#setroomlocation),
 [Game.SetAudioTypeVolume](Multimedia#setaudiotypevolume),
 [System.Volume](System#volume)

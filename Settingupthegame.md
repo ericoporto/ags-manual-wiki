@@ -144,7 +144,7 @@ to import. Alternatively, you can import the entire image with the
 *NOTE (256-colour only): You may well find that the colours on your
 graphic look slightly strange in the AGS Editor. This is because the
 sprites are only allocated, by default, the first 41 of the palette
-colours (see the [palette section](#palette-setup)), so your graphic
+colours (see the [palette section](Settingupthegame#palette-setup)), so your graphic
 will be remapped to this much smaller palette. If you find that many of
 your imported sprites look strange, you can increase the number of
 colours assigned to sprites, at the expense of background colours (again
@@ -333,7 +333,7 @@ want him to start at. These co-ordinates define where the middle of his
 feet will be placed.
 
 The "NormalView" is where you set what the character looks like. You
-must create a view in the [View Editor](#animations), and this view
+must create a view in the [View Editor](Settingupthegame#animations), and this view
 must have either 4 or 8 loops. If you use 4 loops, then when walking
 diagonally the closest straight direction is used for the graphics. Each
 loop is used for the character walking in one direction, as follows:
@@ -626,7 +626,7 @@ SetGameOption. **Basic properties**
     devices support. 16-bit is rather a compatibility setting, that will
     reduce the size of your game resources at the cost of colour
     precision. 8-bit colour mode is a special feature for making
-    palette-based games. See Also: [Palette setup](#palette-setup),
+    palette-based games. See Also: [Palette setup](Settingupthegame#palette-setup),
     [Palette functions](CyclePalette)
 -   **Developer name** - this will add the provided string to the game's
     executable properties, which will also be shown in
