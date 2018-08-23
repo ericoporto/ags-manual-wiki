@@ -262,9 +262,10 @@ if it is not.
 `}`
 
 Compares the result of *control_expression* against the result of
-*match_expression* for each **case** label in order. When a match
-is found or the **default:** label is encountered, statements following
-that label are executed.
+*match_expression* for each **case** label in order. If a match is found,
+statements following that label are executed. If there is no matching
+label and a **default:** label is present, statements following the
+**default:** label are executed.
 
 If a **break** statement is encountered, any statements following it
 are skipped and execution continues after the **switch** block.
@@ -283,18 +284,24 @@ Example:
     switch (player)
     {
         case cEgo:
-            Display("Hello, my name is Ego, default player controlled character.");
+            Display("Hello, my name is Ego.");
             break;
         case cJohn:
-            Display("Greetings, I am John, the male character.");
+            Display("Greetings, I am John.");
             break;
         case cMary:
-            Display("Hi there, I am Mary, the female character.");
+            Display("Hi there, I am Mary.");
             break;
         default:
-            Display("I am not really sure what character the player is controlling, this might be a bug");
+            Display("This might be a bug!");
             break;
     }
+
+In the above example, if the player is cEgo, the game will display "Hello, my
+name is Ego." If the player is cJohn, the game will display "Greetings, I am
+John." If the player is cMary, the game will display "Hi there, I am Mary." If
+the player is none of these characters, the message "This might be a bug!" will
+be displayed.
 
 One of the features of a **switch** statement is fall-through. Labels are
 ignored once a match is found and indeed execution will continue until the
@@ -324,7 +331,7 @@ A *match_expression* can be any valid AGS expression, including a
 function call. The following construction can be useful when implementing
 responses to parser values:
 
-    switch(true)
+    switch (true)
     {
         case Parser.Said("take ball"):
             player.AddInventory(iBall);
@@ -332,7 +339,6 @@ responses to parser values:
         case Parser.Said("drop ball"):
             player.LoseInventory(iBall);
             break;
-        ...
     }
 
 In this situation, the *match_expression*s are the results of Parser.Said(). If
