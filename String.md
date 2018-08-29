@@ -167,7 +167,7 @@ Example:
 
 will create a text string containing "10".
 
-*See Also:* [Display](DisplayAt#display)
+*See Also:* [Display](DisplayFunctions#display)
 
 ---
 

@@ -19,8 +19,8 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](CyclePalette#cyclepalette),
-[FadeOut](ShakeScreen#fadeout), [SetFadeColor](ShakeScreen#setfadecolor)
+*See Also:* [CyclePalette](PaletteFunctions#cyclepalette),
+[FadeOut](ScreenFunctions#fadeout), [SetFadeColor](ScreenFunctions#setfadecolor)
 
 ---
 
@@ -42,8 +42,8 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](CyclePalette#cyclepalette),
-[FadeIn](ShakeScreen#fadein), [SetFadeColor](ShakeScreen#setfadecolor)
+*See Also:* [CyclePalette](PaletteFunctions#cyclepalette),
+[FadeIn](ScreenFunctions#fadein), [SetFadeColor](ScreenFunctions#setfadecolor)
 
 ---
 
@@ -93,8 +93,8 @@ Example:
 will mean that next time the screen fades out, it fades to red instead
 of black.
 
-SeeAlso: [FadeIn](ShakeScreen#fadein), [FadeOut](ShakeScreen#fadeout),
-[SetScreenTransition](ShakeScreen#setscreentransition)
+SeeAlso: [FadeIn](ScreenFunctions#fadein), [FadeOut](ScreenFunctions#fadeout),
+[SetScreenTransition](ScreenFunctions#setscreentransition)
 
 ---
 
@@ -107,7 +107,7 @@ next room change. After that, it will revert back to the normal
 transition type specified in the editor or with SetScreenTransition.
 
 For the possible values for TransitionStyle, see
-[SetScreenTransition](ShakeScreen#setscreentransition).
+[SetScreenTransition](ScreenFunctions#setscreentransition).
 
 Example:
 
@@ -117,7 +117,7 @@ Example:
 will go to room 10 with a box-out effect, but then return to the normal
 transition type from then on.
 
-SeeAlso: [SetScreenTransition](ShakeScreen#setscreentransition)
+SeeAlso: [SetScreenTransition](ScreenFunctions#setscreentransition)
 
 ---
 
@@ -143,7 +143,7 @@ Example:
 
 will change the room transitions to Fade.
 
-SeeAlso: [SetNextScreenTransition](ShakeScreen#setnextscreentransition)
+SeeAlso: [SetNextScreenTransition](ScreenFunctions#setnextscreentransition)
 
 ---
 
@@ -160,7 +160,7 @@ Example:
 
 will shake the screen a little.
 
-*See Also:* [ShakeScreenBackground](ShakeScreen#shakescreenbackground)
+*See Also:* [ShakeScreenBackground](ScreenFunctions#shakescreenbackground)
 
 ---
 
@@ -190,7 +190,7 @@ Example:
 
 will shake the screen a little for 2 seconds.
 
-*See Also:* [ShakeScreen](ShakeScreen#shakescreen)
+*See Also:* [ShakeScreen](ScreenFunctions#shakescreen)
 
 ---
 

@@ -24,10 +24,10 @@ a key or clicking the mouse). While the window is displayed, all other
 processing, like animations and interface display, are disabled. This is
 usually used for responses to the player LOOKing at things.
 
-*See Also:* [DisplayAt](DisplayAt#displayat),
-[DisplayMessage](DisplayAt#displaymessage),
+*See Also:* [DisplayAt](DisplayFunctions#displayat),
+[DisplayMessage](DisplayFunctions#displaymessage),
 [Character.Say](Character#say),
-[DisplayTopBar](DisplayAt#displaytopbar),
+[DisplayTopBar](DisplayFunctions#displaytopbar),
 [String.Format](String#format)
 
 ---
@@ -58,8 +58,8 @@ Example:
 
 will display the message at coordinates 50,50 in a box 100 pixels wide.
 
-*See Also:* [Display](DisplayAt#display),
-[DisplayAtY](DisplayAt#displayaty)
+*See Also:* [Display](DisplayFunctions#display),
+[DisplayAtY](DisplayFunctions#displayaty)
 
 ---
 
@@ -78,8 +78,8 @@ Example:
 
 will display the message at y coordinate 50.
 
-*See Also:* [Display](DisplayAt#display),
-[DisplayAt](DisplayAt#displayat)
+*See Also:* [Display](DisplayFunctions#display),
+[DisplayAt](DisplayFunctions#displayat)
 
 ---
 
@@ -97,8 +97,8 @@ Example:
 
 will display the message 220 of the Room message editor.
 
-*See Also:* [Display](DisplayAt#display),
-[DisplayMessageAtY](DisplayAt#displaymessageaty)
+*See Also:* [Display](DisplayFunctions#display),
+[DisplayMessageAtY](DisplayFunctions#displaymessageaty)
 
 ---
 
@@ -119,8 +119,8 @@ Example:
 
 will display global message 527, in the lower half of the screen.
 
-*See Also:* [DisplayAtY](DisplayAt#displayaty),
-[DisplayMessage](DisplayAt#displaymessage)
+*See Also:* [DisplayAtY](DisplayFunctions#displayaty),
+[DisplayMessage](DisplayFunctions#displaymessage)
 
 ---
 
@@ -169,5 +169,5 @@ will display "Get out of my house and never return!" in the message box,
 with the caption bar reading "Evil wizard". The message box will have
 dark grey text on a light gray background.
 
-*See Also:* [Display](DisplayAt#display),
-[DisplayAt](DisplayAt#displayat)
+*See Also:* [Display](DisplayFunctions#display),
+[DisplayAt](DisplayFunctions#displayat)

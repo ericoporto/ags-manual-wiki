@@ -1,6 +1,6 @@
 ## Built-in enumerated types
 
-AGS has several [enumerated types](managedmodifier#enum) built in. These are
+AGS has several [enumerated types](ScriptKeywords#enum) built in. These are
 used in calls to various commands, and will usually pop up automatically
 in autocomplete. However, for times where autocomplete doesn't do the
 job, having a manual reference is invaluable:
@@ -95,8 +95,8 @@ job, having a manual reference is invaluable:
       eTransitionCrossfade
     };
 
-*Used by:* [SetScreenTransition](ShakeScreen#setscreentransition),
-[SetNextScreenTransition](ShakeScreen#setnextscreentransition)
+*Used by:* [SetScreenTransition](ScreenFunctions#setscreentransition),
+[SetNextScreenTransition](ScreenFunctions#setnextscreentransition)
 
     enum MouseButton {
       eMouseLeft,
