@@ -42,4 +42,3 @@ great control over your game.
 - [System functions and properties](System)
 - [Text display / Speech functions](DisplayAt)
 - [ViewFrame functions and properties](ViewFrame)
-- [SCUMM_VERBCOIN_GUI functions](SCUMM_VERBCOIN_GUI)
