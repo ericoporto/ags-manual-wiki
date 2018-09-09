@@ -7,4 +7,3 @@ the scripting language, which has its own separate Scripting section.
 - [System limits](SystemLimits)
 - [Keyboard Shortcuts](KeyboardShortcuts)
 - [ASCII code table](ASCIIcodes)
-

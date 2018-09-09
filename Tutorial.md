@@ -6,4 +6,3 @@ create a simple game.
 - [Starting off](StartingOff)
 - [Setting up the game](Settingupthegame)
 - [Advanced room features](AdvancedRoomFeatures)
-
