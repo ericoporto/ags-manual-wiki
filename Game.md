@@ -1,4 +1,4 @@
-## Game / Global functions
+## Game functions
 
 ### AbortGame
 

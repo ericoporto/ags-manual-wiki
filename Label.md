@@ -1,4 +1,4 @@
-## GUI Label functions and properties
+## Label functions and properties
 
 ### Font
 

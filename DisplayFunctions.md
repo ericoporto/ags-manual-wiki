@@ -1,4 +1,4 @@
-## Text display / Speech functions
+## Display functions
 
 ### Display
 

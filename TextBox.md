@@ -1,4 +1,4 @@
-## GUI Text Box functions and properties
+## TextBox functions and properties
 
 ### Font
 

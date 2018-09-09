@@ -1,4 +1,4 @@
-## Room functions
+## Room functions and properties
 
 ### AreThingsOverlapping
 

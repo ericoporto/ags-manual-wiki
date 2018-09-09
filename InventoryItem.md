@@ -1,4 +1,4 @@
-## Inventory item functions and properties
+## InventoryItem functions and properties
 
 ### GetAtScreenXY
 

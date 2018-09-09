@@ -50,4 +50,3 @@ NOTE: Do not simply make a template out of a half-finished game. If
 you want to make a template, you should start a game from scratch and
 make your changes - the user probably doesn't want to already have a
 semi-completed game when they use your template.
-

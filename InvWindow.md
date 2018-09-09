@@ -1,4 +1,4 @@
-## GUI InvWindow functions and properties
+## InvWindow functions and properties
 
 ### ScrollDown
 

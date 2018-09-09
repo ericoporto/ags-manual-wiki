@@ -1,4 +1,4 @@
-## GUI List Box functions and properties
+## ListBox functions and properties
 
 ### AddItem
 

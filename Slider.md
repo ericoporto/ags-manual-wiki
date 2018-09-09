@@ -1,4 +1,4 @@
-## GUI Slider properties
+## Slider properties
 
 ### BackgroundGraphic
 

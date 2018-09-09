@@ -1,4 +1,4 @@
-## GUI Button functions and properties
+## Button functions and properties
 
 ### Click
 
