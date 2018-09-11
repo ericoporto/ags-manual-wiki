@@ -8,7 +8,7 @@ website. But what is it all about and why would you want to do so?
 The following is the information that AGS currently sends to the server.
 
 -   AGS version
--   Windows version (eg. XP, Vista)
+-   Windows version
 -   .NET Framework version
 -   Screen resolution
 
