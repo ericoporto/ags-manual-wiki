@@ -31,12 +31,15 @@
 - [Reference](Reference)
 
 ## Working on Legacy games
+
 - [Upgrading from a previous version](UpgradingFromPreviousVersion)
 
 ## Legal Notice
+
 - [Copyright and terms of use](Copyright)
 - [Anonymous usage information](AnonymousUsageInfo)
 - [Credits](Credits)
 
 ## Getting in touch
+
 - [Contacting the developers](ContactingTheDevelopers)
