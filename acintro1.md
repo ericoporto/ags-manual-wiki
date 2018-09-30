@@ -91,7 +91,7 @@ begin with:
     this before compiling the final version of the game when
     it's complete.
 -   **Enable 'anti-glide' mode** - without it, the character movement
-    can look somewhat silly.
+    can look somewhat silly. <--- not in current AGS versions anymore
 -   **Pixel-perfect click detection** - improves the game playability by
     making sure that clicking transparent regions of objects won't
     trigger them.
