@@ -20,6 +20,8 @@ game folder.
 
 Ex: `C:\Program Files\Adventure Game Studio 3.5.0\`
 
+![Right click Use plugin](images/Plugins_img1.png)
+
 2\. Start the AGS Editor up, and load your game. 
 Go to the Plugins node in the main tree. 
 Open it up, and you should see all available plugins  listed. 
@@ -27,3 +29,4 @@ To use one in your game, right-click it and choose "Use plugin".
 The plugin developer should provide instructions on what to do next.
 Save your game to make sure that AGS remembers that you want to use the
 plugin.
+
