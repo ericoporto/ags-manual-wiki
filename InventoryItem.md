@@ -12,7 +12,7 @@ switched on when this function is called), and is intended to allow you
 to do Verb Coin style GUIs and so on.
 
 If there is no inventory item there, or if invalid co-ordinates are
-specified, returns null.
+specified, the function returns null.
 
 **NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM
 co-ordinates. This means that with a scrolling room, the co-ordinates
