@@ -14,8 +14,8 @@ to do Verb Coin style GUIs and so on.
 If there is no inventory item there, or if invalid coordinates are
 specified, the function returns null.
 
-**NOTE:** The coordinates are SCREEN co-ordinates, NOT ROOM
-co-ordinates. This means that with a scrolling room, the coordinates
+**NOTE:** The coordinates are SCREEN coordinates, NOT ROOM
+coordinates. This means that with a scrolling room, the coordinates
 you pass are relative to the screen's current position, and NOT absolute
 room coordinates. This means that this function is suitable for use
 with the mouse cursor position variables.
