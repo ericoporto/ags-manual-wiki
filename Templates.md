@@ -6,8 +6,11 @@ your game off.
 
 AGS comes with a few standard templates:
 
+- 9-Verb Monkey Island Style
+- [Default Game]
+- [Empty Game] (...which is what it says and actually no template per se)
 - [Sierra-style](TemplateSierraStyle)
-- [BASS (two click handler)](TemplateBASS)
+- [BASS (two click handler)](LW_BASS_v2.0) (like **B**eneath **a** **S**teel **S**ky)
 - [Verbcoin](TemplateVerbcoin)
 
 ...but you can create your own too.
