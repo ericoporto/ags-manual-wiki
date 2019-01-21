@@ -52,9 +52,10 @@ do, then its contents will be displayed to the user in a messagebox
 after they create a new game based on the template. You could use this
 to explain briefly about any key aspects of the template, or it could
 tell them to read your README.TXT file. This file should be quite small
-- its entire contents need to fit into a standard message box.
+- its entire contents need to fit into a standard message box. **(PLEASE ADD CHARACTER COUNT!)**
 
 NOTE: Do not simply make a template out of a half-finished game. If
 you want to make a template, you should start a game from scratch and
 make your changes - the user probably doesn't want to already have a
-semi-completed game when they use your template.
+semi-completed game when they use your template. Gametemplates are rather about
+different types of game controls, gameplay mechanics you want to share.
