@@ -30,6 +30,8 @@ There are maximum...
 
 Some additional limits
 
+- You should be able to have up to 15 parameters to a function. 
+
 - To ensure the pathfinder always works, your walkable areas should always be at least 3 pixels wide.
 
 - You'll get an error if you define over 4 KB's worth of variables inside a function.
