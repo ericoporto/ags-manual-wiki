@@ -23,7 +23,7 @@ _Name:_ The script name of the inventory item. Usually the convention is to star
 
 _PlayerStartsWithItem:_ Is a boolean value that means what it says, if the player character starts with this inventory item in his inventory.
 
-Within the game the player can pick up and inventory items to his inventory by interacting with the scene or other characters. You add it to his inventory with the [cCHar.AddInventory(iInvItem)](Character#addinventory) function. When the player uses or gives away the item you remove it from the character's inventory with the [cCHar.LoseInventory(iInvItem)](Character#loseinventory) function. Make sure you should check the [mousemode] afterwards, especially when the active cursor is the inventory item the player just lost.
+Within the game the player can pick up and inventory items to his inventory by interacting with the scene or other characters. You add it to his inventory with the [cChar.AddInventory(iInvItem)](Character#addinventory) function. When the player uses or gives away the item you remove it from the character's inventory with the [cChar.LoseInventory(iInvItem)](Character#loseinventory) function. Make sure you should check the [mousemode] afterwards, especially when the active cursor is the inventory item the player just lost.
 
 
 See Also: [InventoryItem](InventoryItem)
