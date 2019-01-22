@@ -5,7 +5,7 @@ A place to edit Items that can be placed on the [inventory](Settingupthegame#inv
 ![Screenshot Inventory Item Editor](images/EditorInventoryItems_img1.png)
 
 
-_Cursor Image_: The image number from the Sprite Manager that is displayed as active cursor image when selecting this inventory item from the Inventory to use it on other Inventory Items or somewhere inside your scene. You set the active hotspot, there where the click from that mouse cursor is detected, by clicking on the right image in the inventory item settings. Or you set the hotspot value by hand with the HotspotX and HotspotY Value explained below.
+_Cursor Image_: The image number from the [Sprite Manager](EditorSprite) that is displayed as active cursor image when selecting this inventory item from the Inventory to use it on other Inventory Items or somewhere inside your scene. You set the active hotspot, there where the click from that mouse cursor is detected, by clicking on the right image in the inventory item settings. Or you set the hotspot value by hand with the HotspotX and HotspotY Value explained below.
 This image is usually a bit smaller than the normal image of the inventory item inside the inventory covered later.
 
 _Description:_ The name of the item that is displayed for example on [@OVERHOTSPOT@] when the mouse is over the inventory item still in the inventory.
