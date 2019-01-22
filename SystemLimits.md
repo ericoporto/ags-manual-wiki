@@ -17,6 +17,7 @@ There are maximum...
 - 8 audio channels
 - 100 local messages per room (excluding script)
 - 30 fonts
+- 150 lines of text in a listbox
 - unlimited words in the text parser dictionary
 - unlimited characters
 - unlimited dialog topics
@@ -26,6 +27,8 @@ There are maximum...
 - unlimited loops per view
 - unlimited frames per loop
 - unlimited custom properties
+
+To ensure the pathfinder always works, your walkable areas should always be at least 3 pixels wide.
 
 We are working on removing existing limitations in the AGS, so some of
 the remaining restrictions might be loosened or eliminated in the
