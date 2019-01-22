@@ -28,7 +28,15 @@ There are maximum...
 - unlimited frames per loop
 - unlimited custom properties
 
-To ensure the pathfinder always works, your walkable areas should always be at least 3 pixels wide.
+Some additional limits
+
+- To ensure the pathfinder always works, your walkable areas should always be at least 3 pixels wide.
+
+- You'll get an error if you define over 4 KB's worth of variables inside a function.
+
+- AGS currently allows the call stack to be 50 levels deep, so if you have a recursive function that calls itself more often you'll get the "call stack overflow" error. Additionally, the stack size is set at 4 KB so if the recursive function declares a lot of local variables you could reach the limit that way, too.
+
+- There is a total overall limit on the number of functions that can be exported by all plugins added together, which in theory it would be possible for a single plugin to exceed. It's in the region of a couple of hundred though, so it shouldn't be an issue. It wouldn't be too difficult to increase, if the need arose. 
 
 We are working on removing existing limitations in the AGS, so some of
 the remaining restrictions might be loosened or eliminated in the
