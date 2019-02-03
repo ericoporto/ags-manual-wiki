@@ -894,18 +894,36 @@ For example:
 
 **writeprotected** *data_type* *struct_member*;
 
-The *writeprotected* keyword is used to define a property within struct,
-which is read-only externally but may be updated by struct members.
+The *writeprotected* keyword is used to define a property within a struct,
+which can only be modified by struct members (including extender functions)
+using the [this](ScriptKeywords#this) keyword. Reading the value is not
+restricted.
 
 For example:
 
-    struct Weapon {
+    struct Weapon
+    {
         writeprotected int Damage;
         import bool SetDamage(int damage);
     };
 
-If struct member Damage had been declared using *readonly* instead of
-*writeprotected* it would also be read-only to struct member SetDamage.
+---
+
+### protected
+
+**protected** *data_type* *struct_member*;
+
+The *protected* keyword is used to define a property within a struct, which
+can only be accessed or modified by struct members (including extender
+functions) using the [this](ScriptKeywords#this) keyword.
+
+For example:
+
+    struct Weapon
+    {
+        protected int Damage;
+        import bool SetDamage(int damage);
+    };
 
 ---
 
