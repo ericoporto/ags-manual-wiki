@@ -832,7 +832,7 @@ for details.
 
 ### import
 
-**import** *declaration* ;
+**import** [attribute] *declaration* ;
 
 Declares *declaration* as a variable or function which is external to
 the current script, but that the script needs access to it. You use this
@@ -857,6 +857,21 @@ import it as a short, otherwise your game may crash.
 
 **NOTE:** You cannot import old-style `string` variables (this does not
 apply to new-style `String` variables).
+
+As a special case, specifying the optional keyword `attribute` within a struct
+definition will define a virtual property, which will also require matching
+getter and setter functions.
+
+For example:
+
+    struct Weapon
+    {
+        protected int damage;
+        import attribute int Damage;
+    };
+
+Please see the [Object Oriented programming](OOProgramming) page for more
+details.
 
 ---
 
