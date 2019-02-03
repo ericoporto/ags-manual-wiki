@@ -879,13 +879,14 @@ This exports three variables - my_variable, counter and strength.
 
 ### readonly
 
-**readonly** *data_type* *variable* = *value*;
+**readonly** *data_type* *variable* [ = *value* ];
 
-The *readonly* keyword is used when declaring a variable, to indicate
-that its value cannot be changed from the one supplied.
+The *readonly* keyword is used when declaring a variable, to indicate that
+its value cannot be changed.
 
 For example:
 
+    readonly int zero;
     readonly int months = 12;
 
 ---
