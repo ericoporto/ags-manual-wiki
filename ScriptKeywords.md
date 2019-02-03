@@ -877,6 +877,38 @@ This exports three variables - my_variable, counter and strength.
 
 ---
 
+### readonly
+
+**readonly** *data_type* *variable* = *value*;
+
+The *readonly* keyword is used when declaring a variable, to indicate
+that its value cannot be changed from the one supplied.
+
+For example:
+
+    readonly int months = 12;
+
+---
+
+### writeprotected
+
+**writeprotected** *data_type* *struct_member*;
+
+The *writeprotected* keyword is used to define a property within struct,
+which is read-only externally but may be updated by struct members.
+
+For example:
+
+    struct Weapon {
+        writeprotected int Damage;
+        import bool SetDamage(int damage);
+    };
+
+If struct member Damage had been declared using *readonly* instead of
+*writeprotected* it would also be read-only to struct member SetDamage.
+
+---
+
 ### noloopcheck
 
 function **noloopcheck** *function_name* ( *parameters ...* ) `{`
