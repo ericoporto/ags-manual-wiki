@@ -69,7 +69,7 @@
     decoder, which is available from https://www.xiph.org/
 -   OGG Theora player is APEG by Chris Robinson, using the Ogg Theora
     decoder, which is available from https://www.xiph.org/
--   Windows MOD/XM/S3M/IT player is DUMB, (C) 2001-2003 Ben Davis,
+-   DUMB MOD/XM/S3M/IT player, (C) 2001-2005 Ben Davis,
     Robert J Ohannessian and Julien Cugniere. You can get it from
     http://dumb.sourceforge.net/
 
