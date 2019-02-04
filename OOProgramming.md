@@ -54,7 +54,7 @@ modifiction scope of struct members.
 | `writeprotected` | Yes | Using `this` |
 | `protected` | Using `this`| Using `this` |
 
-### Defing attributes
+### Defining attributes
 
 **Note:** You cannot use an attribute in the same script where the getter
 and setter methods are defined. If you try, you'll get an error like this:
