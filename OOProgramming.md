@@ -50,7 +50,7 @@ modifiction scope of struct members.
 
 | Keyword | Get | Set |
 | --- | --- | --- |
-| `readonly` | No | No |
+| `readonly` | Yes | No |
 | `writeprotected` | Yes | Using `this` |
 | `protected` | Using `this`| Using `this` |
 
