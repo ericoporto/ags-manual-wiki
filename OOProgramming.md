@@ -72,10 +72,6 @@ and set_XXX respectively where XXX is the name of the attribute. The named
 attributes themselves are considered virtual, so there also needs to be a
 struct member used to store the data.
 
-An attribute is declared more like a method than a property. You must also
-supply two functions for each attribute, a getter and a setter, named get_XXX
-and set_XXX respectively where XXX is the name of the attribute.
-
 For example:
 
     struct Weapon
