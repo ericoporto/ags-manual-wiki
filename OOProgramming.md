@@ -54,6 +54,11 @@ modifiction scope of struct members.
 | `writeprotected` | Yes | Using `this` |
 | `protected` | Using `this`| Using `this` |
 
+To be consistent with Java and C#, the protection level is always specified
+first. For example:
+
+    protected import static function my_function();
+
 ### Defining attributes
 
 **Note:** You cannot use an attribute in the same script where the getter
