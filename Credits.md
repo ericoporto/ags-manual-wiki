@@ -59,7 +59,7 @@
     https://sourceforge.net/projects/alleg/
 -   Script editor component is scintilla by Neil Hodgson. You can get it
     from https://www.scintilla.org
--   Animated GIF loader by Kevin Weiner.
+-   GIF loading by Magick.Net (http://www.imagemagick.org/)
 -   TrueType font display uses ALFont by Javier Gonzalez and the
     Freetype project.
 -   Windows engine uses libcda CD player by Peter Wang.
