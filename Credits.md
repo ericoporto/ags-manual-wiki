@@ -72,10 +72,6 @@
 -   Windows MOD/XM/S3M/IT player is DUMB, (C) 2001-2003 Ben Davis,
     Robert J Ohannessian and Julien Cugniere. You can get it from
     http://dumb.sourceforge.net/
--   DOS/Linux engine use JGMOD mod player by Guan Foo Wah. You can find
-    it at http://surf.to/jgmod
--   Executables compressed with UPX v1.22w (c) 1996-2002 by Laszlo
-    Molnar&Markus F.X.J. Oberhumer
 
 **AGS Demo Game II Credits:**
 
