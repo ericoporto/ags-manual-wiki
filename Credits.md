@@ -37,14 +37,13 @@
           Tom Vandepoele
           Tzach Shabtay
 
--   Demo Quest III updated by RickJ.
 -   The default icon bar graphics were done by Teemu
     Eramaa (teemue@nic.fi)
 -   Windows editor original splash design by abstauber.
 -   Windows editor icons by Klaus.
 -   Blank Game template created by AGA.
--   Sierra-like game template originally worked on by Rui "Trovatore"
-    Pires, enhanced with the new art by ProgZmax, CaesarCub, Hobo,
+-   Sierra-style game template originally worked on by Rui "Trovatore" Pires,
+    enhanced with the new art by ProgZmax, CaesarCub, Hobo,
     Selmiak and Jim Reed.
 -   LEC 9-verb template by abstauber.
 -   Verb Coin template by Electroshokker, graphics by Misj.
@@ -72,13 +71,6 @@
 -   DUMB MOD/XM/S3M/IT player, (C) 2001-2005 Ben Davis,
     Robert J Ohannessian and Julien Cugniere. You can get it from
     http://dumb.sourceforge.net/
-
-**AGS Demo Game II Credits:**
-
--   Written by Relight, cornjob, Chrille, Spyros and Dark Stalkey.
--   Additional material by Kairus.
--   Intro music by Mods.
--   Original backgrounds and main character were drawn by D281@aol.com.
 
 Thanks to all the AGS beta testers for all their suggestions and bug
 reports - Cornjob, AGC2, AGA, Relight, c_leksutin, Spyros and the rest
