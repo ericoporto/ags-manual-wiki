@@ -33,7 +33,7 @@ Is a boolean value that means what it says, it sets whether the player character
 <br/>
 <br/>
 <br/>
-Within the game the player can pick up and store inventory items into his inventory by interacting with the scene or other characters. You add a new inventory item to his inventory with the [cChar.AddInventory(iInvItem)](Character#addinventory) function. When the player uses or gives away the item you remove it from the character's inventory with the [cChar.LoseInventory(iInvItem)](Character#loseinventory) function. Make sure you check the [Mouse.Mode](Mouse#Mode) afterwards, especially when the active cursor is the inventory item the player just lost.
+Within the game the player can pick up and store inventory items into his inventory by interacting with the scene or other characters. You add a new inventory item to his inventory with the [cChar.AddInventory(iInvItem)](Character#addinventory) function. When the player uses or gives away the item you remove it from the character's inventory with the [cChar.LoseInventory(iInvItem)](Character#loseinventory) function. Make sure you check the [Mouse.Mode](Mouse#mode) afterwards, especially when the active cursor is the inventory item the player just lost.
 <br/>
 <br/>
 <br/>
