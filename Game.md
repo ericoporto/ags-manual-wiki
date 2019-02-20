@@ -1215,9 +1215,6 @@ limitation of this command.
 colour depth as the current game; if you mismatch colour depths some
 nasty results will occur.
 
-**NOTE:** Make sure that the game you want to run has a filename of 8
-characters or less, or this command will fail in the DOS engine.
-
 **NOTE:** The game you want to launch must have been created with the
 same point-version of AGS as the one you are launching it from. (version
 2.xy - the X must be the same version between the two games).
