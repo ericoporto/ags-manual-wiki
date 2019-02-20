@@ -386,7 +386,6 @@ this will be supported are listed below.
 **Cross-Platform Support**
 
 Windows: **Full-screen only**<br>
-MS-DOS: **No**<br>
 Linux: **No**<br>
 MacOS: **No**
 
