@@ -200,7 +200,6 @@ FLC/FLI video with the [PlayFlic](Multimedia#playflic) command instead.
 **Cross-Platform Support**
 
 Windows: **Yes**<br>
-MS-DOS: **No**<br>
 Linux: **No**<br>
 MacOS: **Yes**
 
