@@ -11,11 +11,20 @@ Define is a Macro, you can think of a way to tell the processor that, whenever t
 
 ### `ifdef` Macro test 
 
-`#ifdef <macro>`
+```
+#ifdef <macro>
+  //content
+#endif
+```
 
-`#ifndef <macro>`
+```
+#ifndef <macro>
+  //content
+#endif
+```
 
-Test if macro is defined or undefined.
+
+Test if macro is defined or undefined and only pass the content for the compiler if the test is true.
 
 
 ### `ifver` Version Checking 
