@@ -32,9 +32,17 @@ Test if macro is defined or undefined and only pass the content for the compiler
 If you are writing a script module, you may need to check which version of AGS the user of your module is using.
 For this purpose there are two directives:
 
-`#ifver <version>`
+```
+#ifver <version>
+  // will be passed if above or equal version
+#endif
+```
 
-`#ifnver <version>`
+```
+#ifnver <version>
+  // will be passed if below version
+#endif
+```
 
 Note that this ability was only added in 2.72, so you cannot use the #ifver checks if you want your module to work with earlier versions than this. Example:
 
