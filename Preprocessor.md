@@ -2,13 +2,44 @@
 
 Before the AGS Script compiler is ran, an AGS Preprocessor runs, which will modify the script file before it's passed on for the compiler.
 
-### define
+### `define` Macro
 
-`#define DEFINED_NAME <value>`
+`#define <macro> <value>`
 
-Define is a way to tell the processor that, whenever the defined name is encountered, it should be replaced by the value that follows. It's similar to a variable with a set initial value, but this variable has no type.
+Define is a Macro, you can think of a way to tell the processor that, whenever the defined name is encountered, it should be replaced by the value or content that follows. It's similar to a variable with a set initial value, but this variable has no type and accepts anything. You can check if a Macro is defined using `#ifdef` preprocessor keyword.
 
-### region
+
+### `ifdef` Macro test 
+
+`#ifdef <macro>`
+`#ifndef <macro>`
+
+Test if macro is defined or undefined.
+
+
+### `ifver` Version Checking 
+
+If you are writing a script module, you may need to check which version of AGS the user of your module is using.
+For this purpose there are two directives:
+
+`#ifver <version>`
+`#ifnver <version>`
+
+Note that this ability was only added in 2.72, so you cannot use the #ifver checks if you want your module to work with earlier versions than this. Example:
+
+```
+#ifver 2.72
+// do stuff for 2.72 and above
+#endif
+#ifnver 2.72
+// do stuff for 2.71 and below
+#endif
+```
+
+_See also:_ [Version Checking Keyword](ScriptKeywords#version-checking)
+
+
+### `region` code folding
 
 ```
 #region
@@ -19,32 +50,9 @@ Define is a way to tell the processor that, whenever the defined name is encount
 You can wrap a code between lines containing `#region` and `#endregion` to create a section used for code folding. In the AGS Editor you can use this to hide sections of your code you don't need to see by using the `+` button at the left side of the script editor.
 
 
-
-### ifdef 
-```
-#ifdef
-```
-```
-#ifndef
-```
-Test if macro is defined
-
-
-### ifver
-```
-#ifver
-```
-```
-#ifnver
-```
-_See also:_ [Version Checking Keyword](ScriptKeywords#version-checking)
-
-
-### error
-```
-#error
-```
-User defined compile-time error (with message)
+### `error` throw compile error
+`#error`
+User defined compile-time error (with message).
 
 ### legacy commands
 ```
@@ -56,7 +64,5 @@ User defined compile-time error (with message)
 These two preprocessor commands do nothing, they are ignored legacy commands from pre-3 era. 
 They are valid keywords so there you have it.
 
- 
- 
  
 _See:_ [Scripting Languange](ScriptingLanguage)
