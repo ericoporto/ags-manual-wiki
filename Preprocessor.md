@@ -12,6 +12,7 @@ Define is a Macro, you can think of a way to tell the processor that, whenever t
 ### `ifdef` Macro test 
 
 `#ifdef <macro>`
+
 `#ifndef <macro>`
 
 Test if macro is defined or undefined.
@@ -23,6 +24,7 @@ If you are writing a script module, you may need to check which version of AGS t
 For this purpose there are two directives:
 
 `#ifver <version>`
+
 `#ifnver <version>`
 
 Note that this ability was only added in 2.72, so you cannot use the #ifver checks if you want your module to work with earlier versions than this. Example:
@@ -51,7 +53,9 @@ You can wrap a code between lines containing `#region` and `#endregion` to creat
 
 
 ### `error` throw compile error
+
 `#error`
+
 User defined compile-time error (with message).
 
 ### legacy commands
