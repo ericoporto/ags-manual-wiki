@@ -34,13 +34,13 @@ For this purpose there are two directives:
 
 ```
 #ifver <version>
-  // will be passed if above or equal version
+  // this code will be passed if user's AGS version is above or equal to <version>
 #endif
 ```
 
 ```
 #ifnver <version>
-  // will be passed if below version
+  // code will be passed if user's AGS version is below <version>
 #endif
 ```
 
