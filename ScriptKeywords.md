@@ -206,7 +206,7 @@ Note that this ability was only added in 2.72, so you cannot use the
 `#ifver` checks if you want your module to work with earlier versions
 than this.
 
-_See also_: [Preprocessor](Preprocessor)
+_See also_: [Preprocessor](Preprocessor#ifver-version-checking)
 
 ---
 
