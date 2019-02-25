@@ -53,7 +53,9 @@
 
 ***Scripting***
 
-[Scripting](Scripting)
+[Scripting Language](ScriptingLanguage)
+
+[Scripting API](Scripting)
 
 -   [Scripting tutorial part 1](ScriptingTutorialPart1)
 -   [Scripting tutorial part 2](ScriptingTutorialPart2)
