@@ -28,7 +28,7 @@
 
 [Other Features](OtherFeatures)
 
--   [Music and sound](MusAndSound)
+-   [Music and sound](MusicAndSound)
 -   [Distributing your game](DistGame)
 -   [Backing up your game](BackingUpYourGame)
 -   [The text parser](TextParser)
