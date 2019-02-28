@@ -1,4 +1,4 @@
-# Inventory Items Editor
+## Inventory Items Editor
 
 A place to edit Items that can be placed on the [inventory](Settingupthegame#inventory) by the player.
 
