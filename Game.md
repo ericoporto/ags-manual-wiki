@@ -1661,6 +1661,16 @@ Example:
 
 will set the timer 1 to expire after 1000 game cycles.
 
+Example 2:
+
+When you have a hard time keeping track of the timers only by number you can use [Marcos](Preprocessor#define-macros) to replace the descriptive name with the time number everywhere the descriptive name is use. To better keep track of these macros you could put them on top of the global script.
+
+    #define Delay_CustomAnimation 1
+
+    SetTimer(Delay_CustomAnimation, 2000); 
+
+this "names" timer 1 and sets it to expire after 2000 game cycles
+
 *See Also:* [IsTimerExpired](Game#istimerexpired)
 
 ---
