@@ -1053,8 +1053,18 @@ Will move the character EGO below object number 0, then turn off object
     PauseGame ()
 
 Stops AGS processing character movement and animations. This has the
-same effect on the game as happens when a modal GUI is popped up. Game
-processing will not resume until you call the UnPauseGame function.
+same effect on the game as happens when a modal GUI is popped up. `PauseGame()`
+works as a counter, so if you call it twice, you will need to 
+call `UnPauseGame()` game twice too to resume game.
+
+To avoid this behavior make sure to only pause once:
+
+
+    if (!IsGamePaused()) PauseGame();
+
+
+Game processing will not resume until you call the UnPauseGame function
+as needed.
 
 **NOTE:** When the game is paused, game cycles will continue to run but
 no animations or movement will be performed, and timers will not count
@@ -1765,14 +1775,20 @@ the editor.
 
     UnPauseGame ()
 
-Resumes the game.
+Resumes the game. 
 
 Example:
 
     if (IsGamePaused() == 1)
         UnPauseGame();
 
-will unpause the game if it is paused.
+will unpause the game if it is paused. 
+
+**NOTE:** Because PauseGame works as a counter, if you called it more
+than once, this won't work. To ignore this behavior, unpause as much
+as needed with the below snippet.
+
+    while (IsGamePaused()) UnPauseGame();
 
 *See Also:* [PauseGame](Game#pausegame)
 
