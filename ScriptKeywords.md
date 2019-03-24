@@ -89,13 +89,6 @@ The AGS scripting engine supports the following operators in
 expressions. They are listed in order of precedence, with the most
 tightly bound at the top of the list.
 
-**WARNING:** When using operators of equal precedence, AGS by default
-evaluates them right-to-left. So, the expression `a = 5 - 4 - 2;`
-evaluates as `a = 5 - (4 - 2);` which is not what you might expect.
-Always use parenthesis to make it clear what you want.<br>
-The "Left-to-right operator precedence" option on the General Settings
-pane allows you to control this behaviour.
-
 Operator | Description | Example
 --- | --- | ---
 `!` | NOT | `if (!a)`
@@ -131,6 +124,16 @@ expressions. It's much more readable to script the above expression like
 this:
 
 `if ((!a) && (b < 4))`
+
+**NOTE:** By default, when using operators of equal precedence AGS
+evaluates them left-to-right. For example, the expression `a = 5 - 4 - 2;`
+evaluates as `a = (5 - 4) - 2;`, which is what you'd commonly expect from
+a scripting language today.<br>
+For historical reasons AGS also supports right-to-left precedence
+mode which may be only useful if you import very old game and do not want to
+fix its scripts. To enable this mode find "Left-to-right operator precedence"
+option in "Backwards compatibility" section of the General Settings and set it
+to "false".
 
 ---
 
