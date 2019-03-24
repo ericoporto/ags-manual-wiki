@@ -7,7 +7,7 @@
 
   Benjamin Penney  
   Benoit Pierre  
-  Bernhard Rosenkraenzer   
+  Bernhard Rosenkraenzer  
   Cristian Morales Vega  
   Edward Rudd  
   Ferdinand Thiessen  
