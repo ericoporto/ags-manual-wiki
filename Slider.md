@@ -1,5 +1,7 @@
 ## Slider properties
 
+_See also:_ [Editing Gui Sliders](EditingGUIs#Sliders)
+
 ### BackgroundGraphic
 
     int Slider.BackgroundGraphic;
