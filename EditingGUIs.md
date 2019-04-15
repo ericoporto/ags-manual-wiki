@@ -200,7 +200,7 @@ handle up and down, the event will get called repeatedly.
 Your script can find out the value of the slider using the Slider.Value
 script property.
 
-_See also:_ [Sliders Scripting Commands](Slider)
+_See also:_ [Sliders Functions and Properties](Slider)
 
 ---
 
