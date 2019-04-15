@@ -121,7 +121,12 @@ Window GUI".
 
 The element will be resized to about 1/4 of the screen, and you will see
 8 pictures - one in each corner and one on each side. These are the
-border graphics. You change the graphic for a corner in the normal way.
+border graphics. You change the graphic for a corner in the normal way 
+by browsing through the 8 possible and needed graphics slots under the properties 
+panel and setting the image number according to the image number in the 
+[Sprite Manager](EditorSprite). You can give every corner and side a name to know 
+what is what but it is not neccessary as the selected corner or side is 
+indicated by bright red squares.
 
 In the game, the corner graphics will be placed in the respective
 corners of the text window, and the side graphics will be repeated along
@@ -140,6 +145,15 @@ of the GUI and that will be used to print the message text in.
 
 Additionally, you may configure padding - the distance kept between text
 window's border and text inside of it.
+
+For example editing the GUI Borders of the [Display] Command in the [New Sierra Style Template]
+looks like this:
+
+![Editing the GUI Borders](https://i.imgur.com/BGB1OQd.png)
+
+After compiling it looks like this in game (with x2 Scaling):
+
+![Ingame GUI Borders](https://i.imgur.com/LdJkWPj.png)
 
 ---
 
