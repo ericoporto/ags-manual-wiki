@@ -16,6 +16,12 @@ You can add a lot of object animations to one single view, but you could for exa
 
 ! ! ! Add limits of loops or view if there are any left in the engine ! ! !
 
+### Right Click Context Menu
+
+![](https://user-images.githubusercontent.com/22618469/56131071-cc56ae80-5f86-11e9-9416-beda664b028f.png)
+
+When you rightclick on a single frame in a loop you get some options someone has to explain now and some I wish someon told me about like Flip All Frames...
+
 ### Show Preview
 
 When you tick the checkbox above the Loops called **Show Preview** you get to see a preview of the animation of course. It is located to the left of the list of Loops and you can either manually browse through all the frames of the Loop or you check the **animate** checkbox to see it in motion.
