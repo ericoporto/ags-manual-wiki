@@ -9,12 +9,13 @@ In the view editor you add sprites from the [Sprite Manager](EditorSprite) to an
 ![](https://user-images.githubusercontent.com/22618469/56129422-4b95b380-5f82-11e9-9abc-bf84c391049f.png)
 
 You can have 4 or 8 Loops for different directions for walking views. This means your character can either walk left, right, up and down with 4 Loops or you add 4 additional directional walkcycles for diagonal movement. Usually 4 directions are more than enough to animate but noone is stopping you from going all the way.  
-Animation flipping is also possible but for that see the [Properties](EditorView#properties) entry.
+Animation flipping is also possible but for that see the [Right Click Context Menu](EditorView#right-click-context-menu) entry.
 
 It is good practise to use a new loop for every character and also for special character animations.  
 You can add a lot of object animations to one single view, but you could for example sort them by game chapters (one view for every chapter) to make it easier for you to find them again. You can **name the View** with a rightclick on the View in the game explorer.
 
-! ! ! Add limits of loops or view if there are any left in the engine ! ! !
+Don't worry about overloading AGS, with the newer versions you can have unlimited views, unlimited loops per view and 
+unlimited frames per loop.
 
 ### Right Click Context Menu
 
@@ -36,3 +37,20 @@ When you animate a [game object](Object#animate) or you want the [character to a
 
 ![](https://user-images.githubusercontent.com/22618469/56129421-4afd1d00-5f82-11e9-8e7a-e3254ff3062c.png)
 
+_Delay_  
+With the delay setting you delay the displaytime of the one selected _frame_ only by that amount. This delay is in game frames, so, how long the delay is in time depends on the frames per second your game is running on. You can check the gamespeed for easy debugging with [Game.GetGameSpeed](Game#GetGameSpeed). In your start function you can even set the FPS with [Game.SetGameSpeed](Game#SetGameSpeed). By default AGS games run at 40 FPS.  
+This delay value is specific to one frame only. And you can slow down the whole animation with the Delay value of the [Animate](Object#Animate) function. This frame delay is added to the overall loop delay.
+
+_Flipped_  
+You flip that one frame with that property. Very useful for mirrored animations like in walkcycles for left and right walk. Don't have a character with a cane then. Please note you can also flip the whole loop and not only a single frame within the [Right Click Context Menu](EditorView#right-click-context-menu).
+
+
+_Image_  
+The image number AGS gives your image imported into the [Sprite Manager](EditorSprite). This selected frame has exactly this image number.
+
+_ID_  
+Greyed out. Nobody cares.
+
+_Sound_  
+Play the sound set here every time the animation loop plays and reaches this frame.  
+Useful for footsteps and all other sounds needed for object animations.
