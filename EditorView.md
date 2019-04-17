@@ -8,7 +8,7 @@ In the view editor you add sprites from the [Sprite Manager](EditorSprite) to an
 
 ![](https://user-images.githubusercontent.com/22618469/56129422-4b95b380-5f82-11e9-9abc-bf84c391049f.png)
 
-You can have 4 or 8 Loops for different directions for walking views. This means your character can either walk left, right, up and down with 4 Loops or you add 4 additional directional walkcycles for diagonal movement. Usually 4 directions are more than enough to animate but noone is stopping you from going all the way.  
+You can have 4 or 8 Loops for different directions for walking views. This means your character can either walk left, right, up and down with 4 Loops or you add 4 additional directional walkcycles for diagonal movement. Usually 4 directions are more than enough to animate but noone is stopping you from going all the way. You set the 4/8 directions walking animation per character in the [Character Editor](EditorCharacter).
 Animation flipping is also possible but for that see the [Right Click Context Menu](EditorView#right-click-context-menu) entry.
 
 It is good practise to use a new loop for every character and also for special character animations.  
@@ -21,7 +21,28 @@ unlimited frames per loop.
 
 ![](https://user-images.githubusercontent.com/22618469/56131071-cc56ae80-5f86-11e9-9416-beda664b028f.png)
 
-When you rightclick on a single frame in a loop you get some options someone has to explain now and some I wish someon told me about like Flip All Frames...
+When you rightclick on a single frame in a loop you get the following options I wish someon told me about before like Flip All Frames...
+
+_Flip frame_
+
+_Delete frame_
+
+_Insert frame before this_
+
+_Insert frame after this_
+
+_Cut loop_
+
+_Copy loop_
+
+_Paste over this loop_
+
+_Paste over this loop flipped_
+
+_Flip all frames in loop_
+
+_Add all sprites from folder_
+
 
 ### Show Preview
 
