@@ -6,7 +6,7 @@ In the view editor you add sprites from the [Sprite Manager](EditorSprite) to an
 
 
 
-![](https://user-images.githubusercontent.com/22618469/56129422-4b95b380-5f82-11e9-9abc-bf84c391049f.png)
+![](images/EditorView_1.png)
 
 You can have 4 or 8 Loops for different directions for walking views. This means your character can either walk left, right, up and down with 4 Loops or you add 4 additional directional walkcycles for diagonal movement. Usually 4 directions are more than enough to animate but noone is stopping you from going all the way. You set the 4/8 directions walking animation per character in the [Character Editor](EditorCharacter).
 Animation flipping is also possible but for that see the [Right Click Context Menu](EditorView#right-click-context-menu) entry.
@@ -19,7 +19,7 @@ unlimited frames per loop.
 
 ### Right Click Context Menu
 
-![](https://user-images.githubusercontent.com/22618469/56131071-cc56ae80-5f86-11e9-9416-beda664b028f.png)
+![](images/EditorView_2.png)
 
 When you rightclick on a single frame in a loop you get the following options I wish someon told me about before like Flip All Frames...
 
@@ -51,12 +51,12 @@ When you tick the checkbox above the Loops called **Show Preview** you get to se
 The **Skip Frame 0 (standing Frame)** Checkbox does exactly that, it skips Frame 0 for the preview animation. This is only important for previews for views that are used as walking views for a character.  
 When you animate a [game object](Object#animate) or you want the [character to animate](Character#animate) different from walking (like picking up an [Inventory Item](EditorInventoryItems)) Frame 0 is always included in the animation. When the view is used as a walking view Frame 0 is skipped for the animation until the character reaches the endpoint of the walk and stops there. Then Frame 0 is displayed all the time in the direction the character is facing when he stopped walking.  
 
-![](https://user-images.githubusercontent.com/22618469/56129420-4afd1d00-5f82-11e9-8607-d9ad1ed5051d.png)
+![](images/EditorView_3.png)
 
 
 ### Properties
 
-![](https://user-images.githubusercontent.com/22618469/56129421-4afd1d00-5f82-11e9-8e7a-e3254ff3062c.png)
+![](images/EditorView_4.png)
 
 _Delay_  
 With the delay setting you delay the displaytime of the one selected _frame_ only by that amount. This delay is in game frames, so, how long the delay is in time depends on the frames per second your game is running on. You can check the gamespeed for easy debugging with [Game.GetGameSpeed](Game#GetGameSpeed). In your start function you can even set the FPS with [Game.SetGameSpeed](Game#SetGameSpeed). By default AGS games run at 40 FPS.  
