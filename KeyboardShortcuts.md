@@ -23,6 +23,7 @@ Ctrl+F | Find
 Ctrl+G | Open GlobalScript.asc
 Ctrl+H | Open GlobalScript.ash
 Ctrl+L | Open Game
+Ctrl+M | Toggle Between Script and Header
 Ctrl+Q | Quit
 Ctrl+R | Save Room
 Ctrl+S | Save Game
