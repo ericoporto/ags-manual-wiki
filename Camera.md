@@ -51,7 +51,7 @@ Gets/sets whether this camera will follow the player character automatically.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Camera.Height](Camera#height)
+
 
 
 ### Width
