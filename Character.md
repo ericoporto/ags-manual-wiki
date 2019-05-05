@@ -2825,14 +2825,3 @@ gradually levitates the character up to 20 pixels.
 
 *See Also:* [Character.x](Character#x),
 [Character.y](Character#y)
-
----
-
-### SetCharacterProperty
-
-    SetCharacterProperty (CHARID, PROPERTY, int new_value)
-
-**This command is now obsolete. It has been replaced by the following
-properties:**
-
-
