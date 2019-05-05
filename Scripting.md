@@ -9,6 +9,7 @@ great control over your game.
 - [Built-in enumerated types](BuiltInEnums)
 - [AudioChannel functions and properties](AudioChannel)
 - [AudioClip functions and properties](AudioClip)
+- [Camera functions and properties](Camera)
 - [Character functions and properties](Character)
 - [DateTime functions and properties](DateTime)
 - [Dialog functions and properties](Dialog)
