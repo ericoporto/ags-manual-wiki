@@ -1,6 +1,6 @@
 ## Slider properties
 
-_See also:_ [Editing Gui Sliders](EditingGUIs#Sliders)
+_See also:_ [Editing Gui Sliders](EditingGUIs#sliders)
 
 ### BackgroundGraphic
 

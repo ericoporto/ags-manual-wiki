@@ -59,8 +59,8 @@ When you animate a [game object](Object#animate) or you want the [character to a
 ![](images/EditorView_4.png)
 
 _Delay_  
-With the delay setting you delay the displaytime of the one selected _frame_ only by that amount. This delay is in game frames, so, how long the delay is in time depends on the frames per second your game is running on. You can check the gamespeed for easy debugging with [Game.GetGameSpeed](Game#GetGameSpeed). In your start function you can even set the FPS with [Game.SetGameSpeed](Game#SetGameSpeed). By default AGS games run at 40 FPS.  
-This delay value is specific to one frame only. And you can slow down the whole animation with the Delay value of the [Animate](Object#Animate) function. This frame delay is added to the overall loop delay.
+With the delay setting you delay the displaytime of the one selected _frame_ only by that amount. This delay is in game frames, so, how long the delay is in time depends on the frames per second your game is running on. You can check the gamespeed for easy debugging with [Game.GetGameSpeed](Game#getgamespeed). In your start function you can even set the FPS with [Game.SetGameSpeed](Game#setgamespeed). By default AGS games run at 40 FPS.  
+This delay value is specific to one frame only. And you can slow down the whole animation with the Delay value of the [Animate](Object#animate) function. This frame delay is added to the overall loop delay.
 
 _Flipped_  
 You flip that one frame with that property. Very useful for mirrored animations like in walkcycles for left and right walk. Don't have a character with a cane then. Please note you can also flip the whole loop and not only a single frame within the [Right Click Context Menu](EditorView#right-click-context-menu).
