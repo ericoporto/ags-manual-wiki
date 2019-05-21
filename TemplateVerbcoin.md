@@ -101,10 +101,10 @@ Registers a button for use with the VerbCoin. The design is currently
 `eVerbCoinPositionSouth`<br>
 `eVerbCoinPositionWest`
 
-The cursor mode relates to standard the standard AGS cursor mode, which
-is used to determine the action performaned. 'verbtext' is the text description
-of the action, so if the mode being used is eModeInteract, a suitable description
-could be 'use'.
+The cursor mode relates to the standard AGS cursor mode, which is used to
+determine the action performed. 'verbtext' is the text description of the
+action, e.g. if the mode being used is eModeInteract then a suitable
+description could be 'use'.
 
 ---
 
