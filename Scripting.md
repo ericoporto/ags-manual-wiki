@@ -42,6 +42,6 @@ great control over your game.
 - [Speech functions and properties](Speech)
 - [String functions](String)
 - [System functions and properties](System)
-- [Text display / Speech functions](DisplayFunctions)
+- [Message (text/speech display) functions](MessageFunctions)
 - [ViewFrame functions and properties](ViewFrame)
 - [Viewport functions and properties](Viewport)

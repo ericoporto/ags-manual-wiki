@@ -106,7 +106,7 @@
 -   [Speech functions and properties](Speech)
 -   [String functions](String)
 -   [System functions and properties](System)
--   [Text display / Speech functions](DisplayFunctions)
+-   [Text display / Speech functions](MessageFunctions)
 -   [ViewFrame functions and properties](ViewFrame)
 
 [Reference](Reference)
