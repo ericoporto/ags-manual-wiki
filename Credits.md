@@ -53,13 +53,13 @@
 * Hi-colour fade out/in routines by Matthew Leverton
 * Sprite anti-aliasing code by Michael Bukin
 * Editor uses irrKlang .NET audio
-  player (https://www.ambiera.com/irrklang)
+  player (https://www.ambiera.com/irrklang/)
 * Graphics and sound are courtesy of the Allegro graphics library by
   Shawn Hargreaves and many others. You can get it at
   https://sourceforge.net/projects/alleg/
 * Script editor component is scintilla by Neil Hodgson. You can get it
-  from https://www.scintilla.org
-* GIF loading by Magick.Net (http://www.imagemagick.org/)
+  from https://www.scintilla.org/
+* GIF loading by Magick.Net (https://www.imagemagick.org/)
 * TrueType font display uses ALFont by Javier Gonzalez and the
   Freetype project
 * Windows engine uses libcda CD player by Peter Wang.

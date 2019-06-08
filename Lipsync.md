@@ -57,8 +57,8 @@ supports two such data formats: **PAMELA** and **Papagayo**.
 
 ### PAMELA
 
-Download PAMELA application by the following link:
-`http://www-personal.monash.edu.au/~myless/catnap/pamela/`
+Download PAMELA application by the following link:  
+http://www-personal.monash.edu.au/~myless/catnap/pamela/
 
 Set up the phenomes in Pamela so that there are only 10 (or as many
 talking frames as you have) available choices. Then, in the Lip Sync
@@ -90,8 +90,8 @@ strongly recommended that you use OGG or WAV for speech.
 
 ### Papagayo
 
-Download Papagayo application by the following link:
-`http://www.lostmarble.com/papagayo/`
+Download Papagayo application by the following link:  
+https://www.lostmarble.com/papagayo/
 
 First you would need to set up your 10 or so phonemes associations (as
 described above for PAMELA).

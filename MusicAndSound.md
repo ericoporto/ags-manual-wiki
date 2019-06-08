@@ -17,7 +17,7 @@ If you haven't heard of OGG before, it's a digital music format, similar
 to MP3, but achieving better compression and higher quality. More
 importantly, it is a totally free format so no royalty payments or
 licenses are required to use it. For more information and programs to
-encode your music to OGG, see http://www.vorbis.org/
+encode your music to OGG, see https://www.vorbis.org/
 
 **Audio in the Editor**
 

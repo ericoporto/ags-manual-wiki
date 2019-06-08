@@ -63,7 +63,7 @@ name it USER.ICO. Then, load the editor and save the game.
 
 *NOTE: The icon **must** be a proper Windows .ICO file, **not** just a
 renamed BMP file. Icon editors, such as AX-Icons from
-https://www.axialis.com, will convert it for you.*
+https://www.axialis.com/, will convert it for you.*
 
 You can also have a custom icon for the Setup program generated. To do
 so, create your icon as above but name it **setup.ico** in the game

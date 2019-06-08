@@ -11,7 +11,7 @@ work, please check the following:
     been painstakingly documented, so PLEASE read this manual through
     before asking a question.
 -   Search the Adventure Game Studio Forums to see if someone already 
-    asked the question there.  You can use either the  [built-in search](http://www.adventuregamestudio.co.uk/forums/index.php?action=search2)
+    asked the question there.  You can use either the [built-in search](https://www.adventuregamestudio.co.uk/forums/index.php?action=search2)
     or Google.
 -   If it is not covered in the manual, check the CHANGES.TXT file. If a
     new feature has been added then it will be described there, if it
@@ -45,6 +45,6 @@ and send it as a zip file.
 24 hours before posting again asking "WHY IS NOBODY HELPING ME?!?!?". We
 don't all read the forums 24/7, good things come to those who wait.
 
-The AGS website: http://www.adventuregamestudio.co.uk
+The AGS website: https://www.adventuregamestudio.co.uk/
 
-The AGS forum: http://www.adventuregamestudio.co.uk/forums/
+The AGS forum: https://www.adventuregamestudio.co.uk/forums/

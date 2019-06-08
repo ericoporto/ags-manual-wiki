@@ -110,12 +110,12 @@ characters such as é, í and ñ to work.
 Where can you get a SCI font? Well, there are two ways:
 
 * Create your own font and save it in SCI Font format, using
-  [Radiant's FontEdit application](http://www.adventuregamestudio.co.uk/forums/index.php?topic=23521.0).
+  [Radiant's FontEdit application](https://www.adventuregamestudio.co.uk/forums/index.php?topic=23521.0).
 * Extract the font from a Sierra game, using the SCI Decoder program available
   on the internet (note however that this will have copyright implications for
   your game).
 * You can get a Sierra SCI Font Pack on the
-  [AGS website](http://www.adventuregamestudio.co.uk/site/ags/sci_fonts/).
+  [AGS website](https://www.adventuregamestudio.co.uk/site/ags/sci_fonts/).
 
 ![](images/icon_info.gif)
 
