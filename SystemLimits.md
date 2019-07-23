@@ -31,6 +31,8 @@ There are maximum...
 
 Some additional limits
 
+- In AGS integers and floats are 32-bit. Integers can be from -2147483648 to +2147483647, and floats are a bit more complicated, so it's better to test them.
+
 - You should be able to have up to 15 parameters to a function. 
 
 - To ensure the pathfinder always works, your walkable areas should always be at least 3 pixels wide.
