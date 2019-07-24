@@ -124,14 +124,14 @@ will turn the screen brightness up to `50%` higher than normal
     readonly static bool System.HardwareAcceleration;
 
 Returns whether the game is running with hardware acceleration (eg.
-Direct3D). If this is the case then RawDrawing is likely to be slower,
+Direct3D or OpenGL). If this is the case then RawDrawing is likely to be slower,
 but alpha blending and large sprites are likely to be faster, than when
 the non-accelerated driver is used.
 
 **Cross-Platform Support**
 
-Windows: **Direct3D driver**<br>
-Linux: **No**<br>
+Windows: **Direct3D, OpenGL driver**<br>
+Linux: **OpenGL driver**<br>
 MacOS: **No**
 
 Example:
