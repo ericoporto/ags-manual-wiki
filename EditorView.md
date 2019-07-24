@@ -84,7 +84,7 @@ _Image_
 The image number AGS gives your image imported into the [Sprite Manager](EditorSprite). This selected frame has exactly this image number.
 
 _ID_  
-Greyed out. Nobody cares.
+Greyed out. Should be the frame number for the selected frame.
 
 _Sound_  
 Play the sound set here every time the animation loop plays and reaches this frame.  
