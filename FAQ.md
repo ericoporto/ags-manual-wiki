@@ -45,6 +45,10 @@ has stopped on.
 A. You need to define the base line for the area, or he will always be
 drawn in front. See the tutorial for more information.
 
+**Q. Can I use script commands on my dialogues?**
+
+A. Yes, you can. The dialog lines that start with at least one space character are interpreted as plain script, and the ones that don't are treated as special dialog commands. All special dialog commands are actually converted into real AGS script before compiling into your game.
+
 **Q. My game EXE file seems to have disappeared.**
 
 A. Because this file is your entire game, including the room files, when
