@@ -16,6 +16,18 @@ A. If the main character isn't on a walkable area, he will not be able
 to move. Load the room in the editor, and check that the location where
 the character starts is on a walkable area.
 
+**Q. I am looking/interacting with an object but nothing happens, but I have it on the script file.**
+
+A. In the AGS Room Editor, under the object properties, in events, the field should be filled with the function to execute, wiring the room element to the script. If it's empty, clicking on the three dots button (...) the respective script will be open with the a new function for you to fill the details. If it has a value, clicking on the same button will direct you to it on the respective script file. This is true for all events, so for example a 'room_Load' script function won't trigger if it's not wired on the room events. It's usually easier to click on the three dots button of the event you want to develop in the Room Editor, which will generate the function on the script file for you to fill up.
+
+**Q. I click on a GUI button, but nothing happens. It doesn't seem to register clicks!**
+
+A. There are some different immediate suspects here. 
+- Is the button set to Run Script? Go to the GUI Editor, select the button, and make sure that in its properties window, "Left Click" is set to "Run Script".
+- Is the GUI clickable? While in the GUI Editor, make sure that the "Clickable" checkbox at the top is checked for the GUI that the button is on.
+- Alternatively, if you are creating many GUIs, check if you have created a transparent, clickable GUI that is on top of the GUI you are clicking.
+- Is your script in the right function? You need to put your script inside the `interfaceName_click` function in the global script, and the event must be wired on the GUI Editor.
+
 **Q. When I enter a certain room, I just get a black screen.**
 
 A. Make sure that you haven't used a Display Message command in the
