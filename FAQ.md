@@ -60,3 +60,6 @@ build the game again by using the "Build EXE" command on the Build menu.
 
 A. This is asked a lot on the forums and you can browse through it. AGS games are not different from any other games. Think on what resolution is best for your chosen game design and graphic style.
 
+**Q. How should I name my views, objects, ...**
+
+A. When you are looking into your objects in the Room Editor, they are obviously an object. When you are referencing them on script, you can get lost. It's a good and common practice when using AGS to precede the name of an element with a lower case letter of it's type, make it easier to find them in the Editor with auto complete (ctrl+space) and the consistency will make easier to remember. So for a view, something like `vRogerWalking` is a good name, and the `v` at start tells you it's a view; A character with real name Joe, is a good idea to have the script name be cJoe, now the `c` reminds of character; a GUI for a lever puzzle could be called `gLeverPuzzle`; An object that is a flower as `oFlower`; A hotspot of the exit door as hExitDoor.
