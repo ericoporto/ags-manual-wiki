@@ -15,7 +15,7 @@ different variables like this:
 
 but that quickly gets messy and difficult to keep up to date, since you
 need to use different script code to update each one. So instead, you
-can do this:
+can do this at the top of your script:
 
     int health[50];
 
@@ -32,9 +32,10 @@ Here's an example of using the array:
     health[player.ID] = 10;
 
 this sets Health 3 to 50, Health 4 to 100, and the Health index that
-corresponds to the player character's ID number to 10.
+corresponds to the player character's ID number to 10.  
+You need to do this inside a function.
 
-See Also: [Dynamic arrays](DynamicArrays)
+See Also: [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#structs)
 
 ---
 
