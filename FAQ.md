@@ -56,3 +56,7 @@ you save a room in the Room Editor it will delete the exe file (because
 the room contained in the exe is out of date). To get it back, simply
 build the game again by using the "Build EXE" command on the Build menu.
 
+**Q. What resolution should I make my game?**
+
+A. This is asked a lot on the forums and you can browse through it. AGS games are not different from any other games. Think on what resolution is best for your chosen game design and graphic style.
+
