@@ -25,3 +25,5 @@ Currently dynamic arrays are supported as global and local variables, or
 members of normal (not managed) structs. Also, at present you can create
 arrays of basic types (int, char, etc) and of built-in types (String,
 Character, etc) but not of custom structs.
+
+See Also: [Arrays](ScriptKeywords#arrays)
