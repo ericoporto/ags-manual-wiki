@@ -35,7 +35,7 @@ this sets Health 3 to 50, Health 4 to 100, and the Health index that
 corresponds to the player character's ID number to 10.  
 You need to do this inside a function.
 
-See Also: [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#structs)
+See Also: [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct)
 
 ---
 
