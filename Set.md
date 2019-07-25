@@ -80,7 +80,7 @@ Gets if this set is case-sensitive.
 
 ---
 
-### Remove
+### SortStyle
 
     SortStyle SortStyle
 
