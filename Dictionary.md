@@ -25,6 +25,14 @@ Removes all items from the dictionary.
 
 ---
 
+### Set
+
+    bool Set(String key)
+
+Assigns a value to the given key, adds this key if it did not exist yet.
+
+---
+
 ### Contains
 
     bool Contains(String key)
@@ -67,7 +75,7 @@ Example:
 
 Removes key/value pair from the dictionary, returns false if there was no such item.
 
-*See Also:* [Add](Dictionary#add)
+*See Also:* [Set](Dictionary#set)
 
 ---
 
