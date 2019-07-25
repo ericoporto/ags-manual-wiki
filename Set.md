@@ -13,7 +13,7 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [Dictionary](DictionaryFunctions#create)
+*See Also:* [Dictionary](Dictionary#create)
 
 ---
 
@@ -31,7 +31,7 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [Remove](SetFunctions#remove)
+*See Also:* [Remove](Set#remove)
 
 ---
 
@@ -66,7 +66,7 @@ Example:
 
 Removes item from the set, returns false if there was no such item.
 
-*See Also:* [Add](SetFunctions#add)
+*See Also:* [Add](Set#add)
 
 ---
 
@@ -76,7 +76,7 @@ Removes item from the set, returns false if there was no such item.
 
 Gets if this set is case-sensitive.
 
-*See Also:* [SortStyle](SetFunctions#sortstyle)
+*See Also:* [SortStyle](Set#sortstyle)
 
 ---
 
@@ -86,7 +86,7 @@ Gets if this set is case-sensitive.
 
 Gets the method items are arranged in this set.
 
-*See Also:* [CompareStyle](SetFunctions#comparestyle)
+*See Also:* [CompareStyle](Set#comparestyle)
 
 ---
 
