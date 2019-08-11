@@ -19,6 +19,7 @@ There are maximum...
 - 100 local messages per room (excluding script)
 - 30 fonts
 - 150 lines of text in a listbox
+- 126 different script modules due to bytecode format
 - unlimited words in the text parser dictionary
 - unlimited characters
 - unlimited dialog topics
