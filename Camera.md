@@ -1,4 +1,4 @@
-## Camera
+## Camera functions and properties
 
 ### Create
 

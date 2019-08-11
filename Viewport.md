@@ -1,4 +1,4 @@
-## Viewport
+## Viewport functions and properties
 
 ### Create
 
