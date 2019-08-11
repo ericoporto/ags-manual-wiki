@@ -23,7 +23,7 @@ great control over your game.
 - [GUI functions and properties](GUI)
 - [GUI control functions and properties](GUIControl)
 - [GUI Button functions and properties](Button)
-- [GUI InvWindow functions and properties](GUI)
+- [GUI InvWindow functions and properties](InvWindow)
 - [GUI Label functions and properties](Label)
 - [GUI List Box functions and properties](ListBox)
 - [GUI Slider properties](Slider)
