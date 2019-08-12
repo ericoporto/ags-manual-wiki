@@ -1,4 +1,4 @@
-## Dictionary functions
+## Dictionary Functions and Properties
 
 ### Create
 
