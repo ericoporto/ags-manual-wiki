@@ -154,8 +154,8 @@ Custom game saves path
 
 When unchecked, the game will store its files - saved games, and custom
 runtime data - in the default Windows folders:
-"C:/Users/<Username>/Saved Games/<Game Title>" and
-"C:/Program Data/Adventure Game Studio/<Game Title>" respectively.
+`C:/Users/<Username>/Saved Games/<Game Title>`" and
+`C:/Program Data/Adventure Game Studio/<Game Title>` respectively.
 Players may enable this option and define their own location to store
 game files.
 
