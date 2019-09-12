@@ -322,3 +322,27 @@ to the front.<br>
 *Used by:* [AudioClip.Play](AudioClip#play),
 [AudioClip.PlayFrom](AudioClip#playfrom),
 [AudioClip.PlayQueued](AudioClip#playqueued)
+
+    enum StringCompareStyle {
+      eCaseInsensitive = 0,
+      eCaseSensitive = 1
+    };
+
+*Supported by:* AGS 3.5.0 and higher.
+
+*Used by:* [Dictionary.Create](Dictionary#create),
+[Set.Create](Set#create),
+[String.CompareTo](String#compareto),
+[String.EndsWith](String#endswith),
+[String.Replace](String#replace),
+[String.StartsWith](String#startswith)
+
+    enum SortStyle {
+      eNonSorted = 0,
+      eSorted = 1
+    };
+
+*Supported by:* AGS 3.5.0 and higher.
+
+*Used by:* [Dictionary.Create](Dictionary#create),
+[Set.Create](Set#create)
