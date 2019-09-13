@@ -1,10 +1,10 @@
 ## Viewport functions and properties
 
-Viewport struct lets you manage room viewports. You may think of them as of "windows" through which player sees the current room. Viewport is defined by its position on the game screen, in screen coordinates, and has linked Camera which contents it displays.
+Viewport struct lets you manage screen viewports. You may think of them as of "windows" through which player sees the current room. Viewport is defined by its position on the game screen, in screen coordinates, and has linked Camera which contents it displays.
 
-There's always at least one room viewport called "primary viewport", and you may create more. Viewport has a link to room camera, and same camera may be linked to multiple viewports at once. If no camera is linked then viewport is not displayed at all. Viewports are allowed to go partially or fully offscreen, which may be useful to create transition effects, for instance. Viewports may overlap, in which case their order of display is defined by [ZOrder](Viewport#zorder) property.
+There's always at least one viewport called "primary viewport", and you may create more. Viewport has a link to camera, and same camera may be linked to multiple viewports at once. If no camera is linked then viewport is not displayed at all. Viewports are allowed to go partially or fully offscreen, which may be useful to create transition effects, for instance. Viewports may overlap, in which case their order of display is defined by [ZOrder](Viewport#zorder) property.
 
-By default room viewport covers whole game screen, but you may change that anytime. Camera's contents are stretched to fill viewport's rectangle, and because of that the difference between viewport's and camera's sizes create zoom effect (scaling). If the camera is larger than the viewport that would work as a zoom-out (scale down). If the camera is smaller than the viewport that would work as a zoom-in (scale up).
+By default viewport covers whole game screen, but you may change that anytime. Camera's contents are stretched to fill viewport's rectangle, and because of that the difference between viewport's and camera's sizes create zoom effect (scaling). If the camera is larger than the viewport that would work as a zoom-out (scale down). If the camera is smaller than the viewport that would work as a zoom-in (scale up).
 
 *Compatibility:* Viewport struct is supported by **AGS 3.5.0** and later versions.
 
@@ -14,7 +14,7 @@ By default room viewport covers whole game screen, but you may change that anyti
 
     static Viewport* Viewport.Create()
 
-Creates a new room viewport and returns a pointer which you may use to operate it. Any viewport created like this may be also accessed by [Screen.Viewports](Screen#viewports) by index.
+Creates a new viewport and returns a pointer which you may use to operate it. Any viewport created like this may be also accessed by [Screen.Viewports](Screen#viewports) by index.
 The new viewport will cover whole game screen by default and does not have any camera linked initially (this is something that you will have to do).
 
 *See Also:* [Viewport.Camera](Viewport#camera), [Viewport.Delete](Viewport#delete), [Screen.Viewport](Screen#viewport), [Screen.Viewports](Screen#viewports)
