@@ -14,6 +14,8 @@ At the moment a dictionary itself does not let you see access all of its interna
 
 To summarize, dictionaries make convenient storage for key/value pairs. If you do not need pairs but rather a sequence of unique values - then look for [Set](Set).
 
+*Compatibility:* Dictionary struct is supported by **AGS 3.5.0** and later versions.
+
 ### Create
 
     static Dictionary* Dictionary.Create(SortStyle sortStyle, StringCompareStyle compareStyle)
