@@ -8,9 +8,9 @@ Dictionary has two general properties: **sort style** and **compare style**.
 
 **Sort style** defines whether items are stored sorted or unsorted. The unsorted containers are commonly somewhat faster to search in, but the items will be stored in an undefined order.
 
-**Compare style** determines whether string keys are compared as case sensitive or case insensitive. For example, in case-sensitive dictionary strings "Parameter" and "parameter" will be seen as two different keys, but in case-insensitive they will be seen as identical. Compare style affects both key uniqueness and sorting.
+**Compare style** determines whether string keys are compared as case sensitive or case insensitive. For example, in case-sensitive dictionary strings "Parameter" and "parameter" will be seen as two different keys, but in case-insensitive they will be seen as identical. Compare style defines both key uniqueness and sorting.
 
-At the moment dictionary itself does not let you see access all of its internal data at once directly, but has [GetKeysAsArray](Dictionary#getkeysasarray) and [GetValuesAsArray](Dictionary#getvaluesasarray) functions that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in these arrays will be matching one inside the dictionary, hence if the dictionary was sorted the array will be sorted as well.
+At the moment a dictionary itself does not let you see access all of its internal data at once directly, but has [GetKeysAsArray](Dictionary#getkeysasarray) and [GetValuesAsArray](Dictionary#getvaluesasarray) functions that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in these arrays will be matching one inside the dictionary, hence if the dictionary was sorted the array will be sorted as well.
 
 To summarize, dictionaries make convenient storage for key/value pairs. If you do not need pairs but rather a sequence of unique values - then look for [Set](Set).
 
@@ -18,7 +18,7 @@ To summarize, dictionaries make convenient storage for key/value pairs. If you d
 
     static Dictionary* Dictionary.Create(SortStyle sortStyle, StringCompareStyle compareStyle)
 
-Creates a new empty Dictionary of the given properties. If you don't pass any options, the Dictionary is unsorted and case -insensitive. Note that you cannot change sorting style and case sensitivity later, you would have to create another Dictionary and move values there.
+Creates a new empty Dictionary of the given properties. If you don't pass any options the Dictionary is unsorted and case -insensitive. Note that you cannot change sorting style and case sensitivity later, you would have to create another Dictionary and move values there.
 
 Example:
 
@@ -86,9 +86,9 @@ Example:
     myDictionary.Set("my-key2","my-value2");
     String keys[] = myDictionary.GetKeysAsArray();
     for (int i = 0; i < myDictionary.ItemCount; i++)
-        Display("#%d: %s", i, keys[i]);
+      Display("#%d: %s", i, keys[i]);
 
-In above example the keys will be displayed on screen one by one, preceded by their index.
+In the above example the keys will be displayed on screen one by one, preceded by their index.
 
 *See Also:* [Dictionary.ItemCount](Dictionary#itemcount)
 
@@ -107,9 +107,9 @@ Example:
     myDictionary.Set("my-key2","my-value2");
     String values[] = myDictionary.GetValuesAsArray();
     for (int i = 0; i < myDictionary.ItemCount; i++)
-        Display("#%d: %s", i, values[i]);
+      Display("#%d: %s", i, values[i]);
 
-In above example the value will be displayed on screen one by one, preceded by their index.
+In the above example the values will be displayed on screen one by one, preceded by their index.
 
 *See Also:* [Dictionary.ItemCount](Dictionary#itemcount)
 
