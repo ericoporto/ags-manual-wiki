@@ -6,6 +6,8 @@ There's always at least one viewport called "primary viewport", and you may crea
 
 By default viewport covers whole game screen, but you may change that anytime. Camera's contents are stretched to fill viewport's rectangle, and because of that the difference between viewport's and camera's sizes create zoom effect (scaling). If the camera is larger than the viewport that would work as a zoom-out (scale down). If the camera is smaller than the viewport that would work as a zoom-in (scale up).
 
+**IMPORTANT:** The game starts in automatic viewport mode that snaps primary viewport to whole screen and adjusts the camera to the same size (or at least the size of room background) each time new room is loaded. This is convenient in case you want to rely on a common behavior. If you prefer to customize viewports yourself standard behavior may be disabled using (Screen.AutoSizeViewportOnRoomLoad)[Screen#autosizeviewportonroomload] property.
+
 *Compatibility:* Viewport struct is supported by **AGS 3.5.0** and later versions.
 
 *See Also:* [Camera](Camera), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload), [Screen.Viewport](Screen#viewport), [Screen.Viewports](Screen#viewports)
