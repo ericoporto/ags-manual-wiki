@@ -63,6 +63,8 @@ Example:
       Display("Test passed!");
     }
 
+*See Also:* [Add](Set#add), [Remove](Set#remove)
+
 ---
 
 ### GetItemsAsArray
@@ -92,7 +94,7 @@ In the above example the items will be displayed on screen one by one, preceded 
 
 Removes item from the set, returns false if there was no such item.
 
-*See Also:* [Add](Set#add)
+*See Also:* [Add](Set#add), [Contains](Set#contains)
 
 ---
 
