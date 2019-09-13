@@ -50,7 +50,7 @@ Example:
 
 This will add "my-key" key, assign "my-value" to that key and then test whether that key was added successfuly.
 
-*See Also:* [Get](Dictionary#get)
+*See Also:* [Get](Dictionary#get),
 [Set](Dictionary#set)
 
 ---
@@ -131,7 +131,7 @@ Removes key/value pair from the dictionary, returns true on success and false if
 
 Assigns a value to the given key. If the key did not exist then it will be created, if there was such key already then old assigned value will be overwritten with a new one.
 
-*See Also:* [Get](Dictionary#get)
+*See Also:* [Get](Dictionary#get),
 [Remove](Dictionary#remove)
 
 ---
