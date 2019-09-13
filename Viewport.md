@@ -23,14 +23,6 @@ The new viewport will cover whole game screen by default and does not have any c
 
 ---
 
-### GetAtScreenXY
-
-    static Viewport* Viewport.GetAtScreenXY(int x, int y)
-
-Finds if there's any viewport at the specified screen coordinates and returns the topmost one. Hidden viewports will not be tested, but those without camera will still be. If no viewport found returns null.
-
----
-
 ### Delete
 
     void Viewport.Delete();
@@ -40,6 +32,14 @@ Removes an existing viewport. Primary viewport can be never removed and this com
 **IMPORANT:** in **Screen.Viewports** array viewports are arranged in the order they were created. When you delete one in the middle all the following viewports will be shifted towards beginning of array.
 
 *See Also:* [Viewport.Create](Viewport#create), [Screen.Viewport](Screen#viewport), [Screen.Viewports](Screen#viewports)
+
+---
+
+### GetAtScreenXY
+
+    static Viewport* Viewport.GetAtScreenXY(int x, int y)
+
+Finds if there's any viewport at the specified screen coordinates and returns the topmost one. Hidden viewports will not be tested, but those without camera will still be. If no viewport found returns null.
 
 ---
 
