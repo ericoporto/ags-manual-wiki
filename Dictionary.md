@@ -1,19 +1,28 @@
 ## Dictionary Functions and Properties
 
+Dictionary allows you to store key/value string pairs and look values up by a string key. In the dictionary key must be unique, but value does not have to be. This means that you may have same value assigned for multiple keys, but not same key with multiple values.
+
+Because of how dictionaries work internally, searching for a key in dictionary is faster than you'd search for it in a plain array. Its advantage increases with the number of items. They are also fast in adding and removing items dynamically.
+
+Dictionary has two general properties: **sort style** and **compare style**.
+
+**Sort style** defines whether items are stored sorted or unsorted. The unsorted containers are commonly somewhat faster to search in, but the items will be stored in an undefined order.
+
+**Compare style** determines whether string keys are compared as case sensitive or case insensitive. For example, in case-sensitive dictionary strings "Parameter" and "parameter" will be seen as two different keys, but in case-insensitive they will be seen as identical. Compare style affects both key uniqueness and sorting.
+
+At the moment dictionary itself does not let you see access all of its internal data at once directly, but has [GetKeysAsArray](Dictionary#getkeysasarray) and [GetValuesAsArray](Dictionary#getvaluesasarray) functions that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in these arrays will be matching one inside the dictionary, hence if the dictionary was sorted the array will be sorted as well.
+
+To summarize, dictionaries make convenient storage for key/value pairs. If you do not need pairs but rather a sequence of unique values - then look for [Set](Set).
+
 ### Create
 
-    Dictionary* Create(SortStyle sortStyle, StringCompareStyle compareStyle)
+    static Dictionary* Create(SortStyle sortStyle, StringCompareStyle compareStyle)
 
-Creates a new empty Dictionary of the given properties. If you don't pass any options, the Dirctionary is non sorted and case insensitive.
+Creates a new empty Dictionary of the given properties. If you don't pass any options, the Dictionary is unsorted and case -insensitive. Note that you cannot change sorting style and case sensitivity later, you would have to create another Dictionary and move values there.
 
 Example:
 
     Dictionary* myDictionary = Dictionary.Create();
-
-will fade the screen to black, wait 1 sec (40 game cycles) and then fade
-in again.
-
-*See Also:* [Set](Set#create)
 
 ---
 
@@ -25,19 +34,11 @@ Removes all items from the dictionary.
 
 ---
 
-### Set
-
-    bool Set(String key)
-
-Assigns a value to the given key, adds this key if it did not exist yet.
-
----
-
 ### Contains
 
     bool Contains(String key)
 
-Returns true if the key is in the dictionary.
+Returns true if the key is in the dictionary, otherwise - false.
 
 Example:
 
@@ -47,10 +48,10 @@ Example:
       Display("has my key!");
     }
 
-will fade the screen to black, wait 1 sec (40 game cycles) and then fade
-in again.
+This will add "my-key" key, assign "my-value" to that key and then test whether that key was added successfuly.
 
-*See Also:* [Remove](Dictionary#remove)
+*See Also:* [Get](Dictionary#get)
+[Set](Dictionary#set)
 
 ---
 
@@ -66,44 +67,9 @@ Example:
     myDictionary.Set("a-key","a-value");
     String myValue = myDictionary.Get("a-key");
 
-
----
-
-### Remove
-
-    bool Remove(String key)
-
-Removes key/value pair from the dictionary, returns false if there was no such item.
+Here _myValue_ variable will be assigned "a-value" from the dictionary.
 
 *See Also:* [Set](Dictionary#set)
-
----
-
-### CompareStyle
-
-    StringCompareStyle CompareStyle
-
-Gets if this dictionary keys are case-sensitive.
-
-*See Also:* [SortStyle](Dictionary#sortstyle)
-
----
-
-### SortStyle
-
-    SortStyle SortStyle
-
-Gets the method keys are arranged in this dictionary.
-
-*See Also:* [CompareStyle](Dictionary#comparestyle)
-
----
-
-### ItemCount
-
-    int ItemCount
-
-Gets the number of key/value pairs currently in the dictionary.
 
 ---
 
@@ -118,8 +84,14 @@ Example:
     Dictionary* myDictionary = Dictionary.Create();
     myDictionary.Set("my-key1","my-value1");
     myDictionary.Set("my-key2","my-value2");
-    String* myDictionaryKeysAsArray = myDictionary.GetKeysAsArray();
-    
+    String keys[] = myDictionary.GetKeysAsArray();
+    for (int i = 0; i < myDictionary.ItemCount; i++)
+        Display("#%d: %s", i, keys[i]);
+
+In above example the keys will be displayed on screen one by one, preceded by their index.
+
+*See Also:* [ItemCount](Dictionary#itemcount)
+
 ---
 
 ### GetValuesAsArray
@@ -133,6 +105,59 @@ Example:
     Dictionary* myDictionary = Dictionary.Create();
     myDictionary.Set("my-key1","my-value1");
     myDictionary.Set("my-key2","my-value2");
-    String* myDictionaryValuesAsArray = myDictionary.GetValuesAsArray();
+    String values[] = myDictionary.GetValuesAsArray();
+    for (int i = 0; i < myDictionary.ItemCount; i++)
+        Display("#%d: %s", i, values[i]);
+
+In above example the value will be displayed on screen one by one, preceded by their index.
+
+*See Also:* [ItemCount](Dictionary#itemcount)
 
 ---
+
+### Remove
+
+    bool Remove(String key)
+
+Removes key/value pair from the dictionary, returns true on success and false if there was no such key.
+
+*See Also:* [Set](Dictionary#set)
+
+---
+
+### Set
+
+    bool Set(String key, String value)
+
+Assigns a value to the given key. If the key did not exist then it will be created, if there was such key already then old assigned value will be overwritten with a new one.
+
+*See Also:* [Get](Dictionary#get)
+[Remove](Dictionary#remove)
+
+---
+
+### CompareStyle
+
+    StringCompareStyle CompareStyle
+
+Gets if this dictionary keys are case-sensitive.
+
+*See Also:* [SortStyle](Dictionary#sortstyle)
+
+---
+
+### ItemCount
+
+    int ItemCount
+
+Gets the number of key/value pairs currently in the dictionary.
+
+---
+
+### SortStyle
+
+    SortStyle SortStyle
+
+Gets the method keys are arranged in this dictionary.
+
+*See Also:* [CompareStyle](Dictionary#comparestyle)
