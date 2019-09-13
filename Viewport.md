@@ -1,136 +1,164 @@
 ## Viewport functions and properties
 
+Viewport struct lets you manage room viewports. You may think of them as of "windows" through which player sees the current room. Viewport is defined by its position on the game screen, in screen coordinates, and has linked Camera which contents it displays.
+
+There's always at least one room viewport called "primary viewport", and you may create more. Viewport has a link to room camera, and same camera may be linked to multiple viewports at once. If no camera is linked then viewport is not displayed at all. Viewports are allowed to go partially or fully offscreen, which may be useful to create transition effects, for instance. Viewports may overlap, in which case their order of display is defined by [ZOrder](Viewport#zorder) property.
+
+By default room viewport covers whole game screen, but you may change that anytime. Camera's contents are stretched to fill viewport's rectangle, and because of that the difference between viewport's and camera's sizes create zoom effect (scaling). If the camera is larger than the viewport that would work as a zoom-out (scale down). If the camera is smaller than the viewport that would work as a zoom-in (scale up).
+
+*Compatibility:* Viewport struct is supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [Camera](Camera), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload), [Screen.Viewport](Screen#viewport), [Screen.Viewports](Screen#viewports)
+
 ### Create
 
-    static Viewport *Create();
+    static Viewport* Viewport.Create()
 
-Creates a new Viewport.
+Creates a new room viewport and returns a pointer which you may use to operate it. Any viewport created like this may be also accessed by [Screen.Viewports](Screen#viewports) by index.
+The new viewport will cover whole game screen by default and does not have any camera linked initially (this is something that you will have to do).
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+*See Also:* [Viewport.Camera](Viewport#camera), [Viewport.Delete](Viewport#delete), [Screen.Viewport](Screen#viewport), [Screen.Viewports](Screen#viewports)
 
-*See Also:* [Viewport.Delete](Viewport#delete)
-
-
-### Delete
-
-    void Delete();
-
-Removes an existing viewport; note that primary viewport will never be removed.
-
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-*See Also:* [Viewport.Create](Viewport#create)
-
+---
 
 ### GetAtScreenXY
 
-    static Viewport *GetAtScreenXY(int x, int y);
+    static Viewport* Viewport.GetAtScreenXY(int x, int y)
 
-Returns the viewport at the specified screen location.
+Finds if there's any viewport at the specified screen coordinates and returns the topmost one. Hidden viewports will not be tested, but those without camera will still be. If no viewport found returns null.
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+---
 
-*See Also:* [Viewport.Delete](Viewport#delete), [Viewport.Create](Viewport#create)
+### Delete
 
+    void Viewport.Delete();
 
-### SetPosition
+Removes an existing viewport. Primary viewport can be never removed and this command issued for the primary viewport will be ignored.
 
-    void SetPosition(int x, int y, int width, int height);
+**IMPORANT:** in **Screen.Viewports** array viewports are arranged in the order they were created. When you delete one in the middle all the following viewports will be shifted towards beginning of array.
 
-Changes viewport's position on the screen.
+*See Also:* [Viewport.Create](Viewport#create), [Screen.Viewport](Screen#viewport), [Screen.Viewports](Screen#viewports)
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-
-### ScreenToRoomPoint
-
-    Point *ScreenToRoomPoint(int scrx, int scry, bool clipViewport = true);
-
-Returns the point in room corresponding to the given screen coordinates if seen through this viewport.
-
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-*See Also:* [Viewport.RoomToScreenPoint](Viewport#roomtoscreenpoint)
-
+---
 
 ### RoomToScreenPoint
 
-    Point *RoomToScreenPoint(int roomx, int roomy, bool clipViewport = true);
+    Point* Viewport.RoomToScreenPoint(int roomx, int roomy, bool clipViewport = true);
 
-Returns the point on screen corresponding to the given room coordinates if seen through this viewport.
+Returns the point on screen corresponding to the given room coordinates if seen through this viewport. Resulting Point struct will contain screen x and y coordinates.
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+Function does the conversion from room to screen's coordinate system, correctly taking into account viewport's position on screen, camera's position in the room and its transformation (scaling etc).
 
-*See Also:* [Viewport.ScreenToRoomPoint](Viewport#screentoroompoint)
+If **clipViewport** is true then this function will only return a point if given room coordinates are currently seen inside viewport and return null otherwise. If **clipViewport** is false then viewport's bounds will be ignored.
 
+Example:
 
-### ZOrder
+    Point* pt = myViewport.RoomToScreenPoint(player.x, player.y);
+    if (pt != null) {
+      Display("Player character is displayed at (%d, %d) on screen.", pt.x, pt.y);
+    } else {
+      Display("Player character is currently offscreen.");
+    }
 
-    attribute int ZOrder;
+*See Also:* [Viewport.ScreenToRoomPoint](Viewport#screentoroompoint), [Screen.RoomToScreenPoint](Screen#roomtoscreenpoint), [Screen.ScreenToRoomPoint](Screen#screentoroompoint)
 
-Gets/sets the Viewport's z-order relative to other viewports.
+---
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+### SetPosition
 
+    void Viewport.SetPosition(int x, int y, int width, int height);
 
-### Visible
+Changes viewport's position on the screen.
 
-    attribute bool Visible;
+*See Also:* [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder)
 
-Gets/sets whether the viewport is drawn on screen.
+---
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+### ScreenToRoomPoint
 
+    Point* Viewport.ScreenToRoomPoint(int scrx, int scry, bool clipViewport = true);
 
+Returns the point in room corresponding to the given screen coordinates if seen through this viewport. Resulting Point struct will contain room x and y coordinates.
+
+Function does the conversion from screen to room's coordinate system, correctly taking into account viewport's location on screen, camera's position in the room and its transformation (scaling etc).
+
+If **clipViewport** is true then this function will only return a point if given screen coordinates are over viewport and return null otherwise. If **clipViewport** is false then viewport's bounds will be ignored.
+
+Example:
+
+    Point* pt = myViewport.ScreenToRoomPoint(mouse.x, mouse.y);
+    if (pt != null) {
+      Display("Mouse cursor is over room location: (%d, %d).", pt.x, pt.y);
+    } else {
+      Display("Mouse cursor is currently outside the viewport.");
+    }
+
+*See Also:* [Viewport.RoomToScreenPoint](Viewport#screentoroompoint), [Screen.RoomToScreenPoint](Screen#roomtoscreenpoint), [Screen.ScreenToRoomPoint](Screen#screentoroompoint)
+
+---
 
 ### Camera
 
-    attribute Camera *Camera;
+    Camera *Viewport.Camera;
 
-Gets/sets the room camera displayed in this viewport.
+Gets/sets the camera to be displayed in this viewport. Changing cameras is safe anytime, and the looks inside viewport will be changed during next drawing frame.
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+*See Also:* [Camera.Create](Camera#create), [Game.Camera](Game#camera), [Game.Cameras](Game#cameras)
 
-*See Also:* [Camera.Create](Camera#create)
-
-
-### Width
-
-    attribute int Viewport.Width;
-
-Gets/sets the viewport's width in screen coordinates.
-
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-*See Also:* [Viewport.Height](Viewport#height)
+---
 
 ### Height
 
-    attribute int Viewport.Height;
+    int Viewport.Height;
 
 Gets/sets the viewport's height in screen coordinates.
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.ZOrder](Viewport#zorder)
 
-*See Also:* [Viewport.Width](Viewport#width)
+---
+
+### ZOrder
+
+    int Viewport.ZOrder;
+
+Gets/sets the viewport's z-order relative to other viewports. This will be taken into account if multiple viewports overlap.
+
+*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height)
+
+---
+
+### Visible
+
+    bool Viewport.Visible;
+
+Gets/sets whether the viewport is enabled and drawn on screen.
+
+---
+
+### Width
+
+    int Viewport.Width;
+
+Gets/sets the viewport's width in screen coordinates.
+
+*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder)
+
+---
 
 ### X
 
-    static int Viewport.X;
+    int Viewport.X;
 
 Gets/sets the X position on the screen where this viewport is located.
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder)
 
-*See Also:* [Viewport.Y](Viewport#y)
-
+---
 
 ### Y
 
-    static int Viewport.Y;
+    int Viewport.Y;
 
 Gets/sets the Y position on the screen where this viewport is located.
 
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-*See Also:* [Viewport.X](Viewport#x)
+*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder)
