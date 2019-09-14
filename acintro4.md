@@ -46,7 +46,7 @@ convention in AGS is to have object names start with an "o", for example
 ![I've placed the key cunningly in the middle of the walkway ;-)](images/intro4_2.jpg)
 
 Before we enable the key to be taken by the player, let me quickly go
-over a couple of propertes in the property grid:
+over a couple of properties in the property grid:
 
 -   **Baseline** - normally, the baseline for an object is set to the
     bottom of the object graphic (baselines are used to calculate which
@@ -110,7 +110,7 @@ Notice there are two obvious possibilities here: "Interact object" and
 "Pick up object". We actually want to use the "Interact object" event,
 because we are using the default Sierra-style interface which doesn't
 have a specific Pick Up mode. The "Pick up", "Usermode1" and "Usermode2"
-events are useful if you go for a lucasarts-style interface which has
+events are useful if you go for a lucasArts-style interface which has
 more verb types available to the player.
 
 So, select "Interact object" and click the "..." button. When the player
