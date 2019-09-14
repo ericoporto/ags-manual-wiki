@@ -75,7 +75,7 @@ crosshair.
 
 #### Recap
 
--   Inventory items are **not** objects. The two are totally seperate,
+-   Inventory items are **not** objects. The two are totally separate,
     although often picking up an object will give the player an
     inventory item.
 -   Each character has their own inventory. If you are making a game
