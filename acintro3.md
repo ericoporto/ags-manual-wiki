@@ -41,7 +41,7 @@ Once you've drawn a hotspot, there are two other fields to set:
 
 -   *The hotspot's description*. This sets a player-friendly name for
     the hotspot, which is vital if you are going to use a
-    Lucasarts-style interface where the player can move the mouse over
+    LucasArts-style interface where the player can move the mouse over
     the screen to see what's where. If you're using a Sierra-style
     interface then this name will never be displayed to the player, but
     it's useful to fill it in anyway for your own benefit. By default
@@ -94,7 +94,7 @@ will be run when this event occurs. In AGS, the curly brackets { and }
 are used to mark the start and end of a block of script. Anything that
 you type in between them will be run as part of this event.
 
-There's a seperate tutorial giving you an introduction to the scripting
+There's a separate tutorial giving you an introduction to the scripting
 language, so I won't attempt to explain it here. But we can start with
 something very simple, using the *Display* command, which displays a
 message to the player. Type in something like this:
@@ -108,7 +108,7 @@ Once you're done, click on the "Room 1" tab to return to the main room editor
 Ok, since we're back editing hotspots, let me quickly explain the
 "Walk-to point" option in the property grid. This allows you to set a
 position for each hotspot that the character will walk to whenever the
-player interacts with the hotspot - just like the way the Lucasarts
+player interacts with the hotspot - just like the way the LucasArts
 games like Monkey Island worked.
 
 If you set a walk-to point, then whenever the player clicks interact or
