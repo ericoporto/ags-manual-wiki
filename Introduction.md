@@ -9,7 +9,7 @@ Copyright 1999-2011 Chris Jones and 2011-2019 various contributors
 Welcome to AGS!
 
 Adventure Game Studio allows you to create your own point-and-click
-adventure games like the old Sierra and Lucasarts classics, but with
+adventure games like the old Sierra and LucasArts classics, but with
 modern features such as digital music and alpha blending.
 
 AGS is based around an easy-to-use IDE, where you can set up all the
