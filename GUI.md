@@ -431,7 +431,7 @@ Example:
 
 will turn on the SETTINGS GUI.
 
-*See Also:* [IsGamePaused](Game#isgamepaused)
+*See Also:* [IsGamePaused](Globalfunctions_General#isgamepaused)
 
 ---
 
