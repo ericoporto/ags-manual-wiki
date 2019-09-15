@@ -19,7 +19,7 @@ Example:
 will change label 'lblStatus' to use font "Foreign" if a game
 translation is in use.
 
-*See Also:* [IsTranslationAvailable](Game#istranslationavailable),
+*See Also:* [IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
 [Label.Text](Label#text),
 [TextBox.Font](TextBox#font)
 
