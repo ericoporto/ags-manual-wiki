@@ -33,7 +33,7 @@ will attempt to change the translation to Spanish
 
 *See Also:*
 [Game.TranslationFilename](Game#translationfilename),
-[IsTranslationAvailable](Game#istranslationavailable)
+[IsTranslationAvailable](Globalfunctions_General#istranslationavailable)
 
 ---
 
@@ -65,7 +65,7 @@ Example:
 
 will give the player 5 points the first time this script is run.
 
-*See Also:* [GiveScore](Game#givescore)
+*See Also:* [GiveScore](Globalfunctions_General#givescore)
 
 ---
 
@@ -153,7 +153,7 @@ variable.
 
 *See Also:* [Hotspot.Name](Hotspot#name),
 [InventoryItem.Name](InventoryItem#name),
-[GetLocationType](Game#getlocationtype),
+[GetLocationType](Globalfunctions_General#getlocationtype),
 [Object.Name](Object#name)
 
 ---
@@ -228,8 +228,8 @@ will get the description of save slot 10 into the variable.
 
 *See Also:*
 [DynamicSprite.CreateFromSaveGame](DynamicSprite#createfromsavegame),
-[RestoreGameSlot](Game#restoregameslot),
-[SaveGameSlot](Game#savegameslot)
+[RestoreGameSlot](Globalfunctions_General#restoregameslot),
+[SaveGameSlot](Globalfunctions_General#savegameslot)
 
 ---
 
@@ -360,7 +360,7 @@ to do this in game_start).
 
 *See Also:*
 [ListBox.FillSaveGameList](ListBox#fillsavegamelist),
-[RestoreGameDialog](Game#restoregamedialog)
+[RestoreGameDialog](Globalfunctions_General#restoregamedialog)
 
 ---
 
@@ -514,8 +514,8 @@ Example:
 
 will set global string 15 to contain \"Joe\".
 
-*See Also:* [GetGlobalInt](Game#getglobalint),
-[SetGlobalInt](Game#setglobalint)
+*See Also:* [GetGlobalInt](Globalfunctions_General#getglobalint),
+[SetGlobalInt](Globalfunctions_General#setglobalint)
 
 ---
 
@@ -599,8 +599,8 @@ will display a message if we are within a cutscene
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [StartCutscene](Game#startcutscene),
-[EndCutscene](Game#endcutscene),
+*See Also:* [StartCutscene](Globalfunctions_General#startcutscene),
+[EndCutscene](Globalfunctions_General#endcutscene),
 [Game.SkippingCutscene](Game#skippingcutscene)
 
 ---
@@ -748,8 +748,8 @@ cutscene.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [StartCutscene](Game#startcutscene),
-[EndCutscene](Game#endcutscene),
+*See Also:* [StartCutscene](Globalfunctions_General#startcutscene),
+[EndCutscene](Globalfunctions_General#endcutscene),
 [Game.InSkippableCutscene](Game#inskippablecutscene)
 
 ---
@@ -872,7 +872,7 @@ Example:
     }
 
 *See Also:* [Game.ChangeTranslation](Game#changetranslation),
-[IsTranslationAvailable](Game#istranslationavailable)
+[IsTranslationAvailable](Globalfunctions_General#istranslationavailable)
 
 ---
 
