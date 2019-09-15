@@ -105,5 +105,5 @@ this, you can do:
         CallRoomScript (1);
 
 Then, the room script can check for things that the player can do in the
-current room. See the [CallRoomScript](Game#callroomscript)
+current room. See the [CallRoomScript](Globalfunctions_General#callroomscript)
 description for more information.
