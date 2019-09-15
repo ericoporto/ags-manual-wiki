@@ -368,7 +368,7 @@ This will give the lamp maximal individual brightness.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:* [Object.Tint](Object#tint),
-[SetAmbientLightLevel](Game#setambientlightlevel),
+[SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel),
 [Character.SetLightLevel](Character#setlightlevel),
 [Region.LightLevel](Region#lightlevel)
 
@@ -479,7 +479,7 @@ Tints the object on the screen to (RED, GREEN, BLUE) with SATURATION
 percent saturation.
 
 This function applies a tint to a specific object. For the meaning of
-all the parameters, see [SetAmbientTint](Game#setambienttint).
+all the parameters, see [SetAmbientTint](Globalfunctions_General#setambienttint).
 
 The tint set by this function overrides any ambient tint set for the
 room. For this reason, passing the SATURATION as 0 to this function does
@@ -499,7 +499,7 @@ Example:
 will tint object 1 green.
 
 *See Also:* [Object.RemoveTint](Object#removetint),
-[SetAmbientTint](Game#setambienttint)
+[SetAmbientTint](Globalfunctions_General#setambienttint)
 
 ---
 
@@ -703,7 +703,7 @@ Returns *true* if the object has a light set explicitly with the
 
 Returns *false* if the object has no explicit light level, but it may
 still be lighted by
-[SetAmbientLightLevel](Game#setambientlightlevel) or a region
+[SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel) or a region
 light.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
@@ -720,7 +720,7 @@ Returns *true* if the object has a tint set explicitly with the
 [Object.Tint](Object#tint) command.
 
 Returns *false* if the object has no explicit tint, but it may still be
-tinted by [SetAmbientTint](Game#setambienttint) or a region tint.
+tinted by [SetAmbientTint](Globalfunctions_General#setambienttint) or a region tint.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
@@ -814,7 +814,7 @@ property returns the light level value. Otherwise it returns 0.
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
 *SeeAlso:* [Object.SetLightLevel](Object#setlightlevel),
-[SetAmbientLightLevel](Game#setambientlightlevel),
+[SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel),
 
 ---
 
