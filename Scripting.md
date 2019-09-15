@@ -1,7 +1,8 @@
 ## Scripting API
 
-The AGS scripting system allows you to write a mini-program, giving you
-great control over your game.
+AGS provides a scripting system, where engine functionalities are exposed through the AGS Script API, allowing you to write a mini-program, giving you great control over your game. You can read and modify room elements by using the structs Room, Object, Hotspot, Region, and the Global functions for Room. If you need your character to say things, receive or lose an inventory item, or walk somewhere, you can find these in the Character struct. AGS camera system is available through the use of Viewport, Camera, and Screen.  You can also draw directly with Dynamic Sprites, Drawing Surface and use Overlays to have these sprites shown on screen.
+
+Some predefined callbacks are available for redefinition like repeatedly execute and other predefined script functions. Browse around the script listing below, as there's much more available to the script API. In the Editor General Settings, you can use **Script API level** to configure which is the latest API for the functions and structs available for usage. Additionally, **Script compatibility level** allows to enable previous Script API entries along to the latest defined ones. These switches are useful when upgrading from one version of AGS to another, allowing to build a game written in a previous version of AGS with a newer Editor, allowing you to upgrade the Script API version you are working with without having to do it in one go.
 
 - [Predefined global script functions](TextScriptEvents)
 - [repeatedly_execute / repeatedly_execute_always](RepExec) 
