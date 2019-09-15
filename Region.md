@@ -66,7 +66,7 @@ The red, green and blue values are between 0 and 255, and you supply the
 same values that you would use in the editor.
 
 For the meaning of all the parameters, see
-[SetAmbientTint](Game#setambienttint).
+[SetAmbientTint](Globalfunctions_General#setambienttint).
 
 **NOTE**: The tint will be reset when the player leaves the room, so you
 need to use it in Player Enters Room if you want a permanent change.
@@ -85,7 +85,7 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 **AGS 3.4.0** and later versions.
 
 *See Also:* [Region.LightLevel](Region#lightlevel),
-[SetAmbientTint](Game#setambienttint)
+[SetAmbientTint](Globalfunctions_General#setambienttint)
 
 ---
 
@@ -173,7 +173,7 @@ Example:
 will set region 2's level light to 100 if the Global Integer 10 is 1.
 
 *See Also:* [Region.Tint](Region#tint),
-[SetAmbientLightLevel](Game#setambientlightlevel),
+[SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel),
 [Character.SetLightLevel](Character#setlightlevel),
 [Object.SetLightLevel](Object#setlightlevel)
 
