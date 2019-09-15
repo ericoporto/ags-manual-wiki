@@ -34,7 +34,7 @@ To write your custom dialog options code, you need to do the following:
     options are shown on screen. You can use this to implement
     key-controlled selection of dialog option, for example.
 -   Optionally, add a `dialog_options_repexec` function. This works
-    similarily to general `repeatedly_execute` function, but is called
+    similarly to general `repeatedly_execute` function, but is called
     only if custom dialog options are shown on screen. You may use this
     to handle any other situations, such as determining which option the
     mouse is currently hovering over, or scripting time-related actions.

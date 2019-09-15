@@ -56,7 +56,7 @@ top&bottom sides of the screen.
 Scaling method
 
 Here player may choose a game scaling algorithm (nearest-neighbour is
-the simpliest one). Some of the methods (notably Hqx) are restricted to
+the simplest one). Some of the methods (notably Hqx) are restricted to
 which scaling multiplier they may use; if it is not enough to resize the
 game on its own, the nearest-neighbour method will be applied
 additionally. The list of available filters depend on graphics driver

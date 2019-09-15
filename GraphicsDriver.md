@@ -23,7 +23,7 @@ compatibility issues.
 OpenGL is another hardware accelerated graphics driver, and because it
 is not strictly linked to particular version of DirectX, it may work
 where Direct3D failed. Other than that, it should not have any
-significant perfomance differences from the former.
+significant performance differences from the former.
 
 No matter which you choose as your default graphics driver, the player
 can always run the Setup program and switch to using the other driver if

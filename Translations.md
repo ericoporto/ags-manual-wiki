@@ -24,7 +24,7 @@ drop-down box. Then, run the game, and all the text should be
 translated.
 
 *NOTE: With SCI fonts, only 128 characters are available, so many of the
-extended characters needed for non-english translations are not
+extended characters needed for non-English translations are not
 available. You may need to use substitute characters, or consider using
 TTF fonts for international applications. However, bear in mind that TTF
 rendering slows down the engine.*

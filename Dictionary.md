@@ -50,7 +50,7 @@ Example:
       Display("has my key!");
     }
 
-This will add "my-key" key, assign "my-value" to that key and then test whether that key was added successfuly.
+This will add "my-key" key, assign "my-value" to that key and then test whether that key was added successfully.
 
 *See Also:* [Dictionary.Get](Dictionary#get),
 [Dictionary.Set](Dictionary#set)

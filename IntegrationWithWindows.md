@@ -51,7 +51,7 @@ successful, it will not display any messages.
 
 You can manually test this by creating a shortcut to your game EXE file,
 and modifying it to add `-registergame` to the end of the command line.
-Then, run the shorcut and the associations should be created for you.
+Then, run the shortcut and the associations should be created for you.
 
 For un-installing, run the game EXE again but with the `-unregistergame`
 parameter. This will cause AGS to remove the associations from the

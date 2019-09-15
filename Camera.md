@@ -33,7 +33,7 @@ The new camera will by default be located at the room's (0, 0) and assigned a si
 
 Removes an existing camera. Primary camera can be never removed and this command issued for the primary camera will be ignored.
 
-**IMPORANT:** in **Game.Cameras** array cameras are arranged in the order they were created. When you delete one in the middle all the following cameras will be shifted towards beginning of array.
+**IMPORTANT:** in **Game.Cameras** array cameras are arranged in the order they were created. When you delete one in the middle all the following cameras will be shifted towards beginning of array.
 
 *See Also:* [Camera.Create](Camera#create), [Game.Camera](Game#camera), [Game.Cameras](Game#cameras)
 

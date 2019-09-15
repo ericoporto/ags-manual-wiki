@@ -278,7 +278,7 @@ hardly any time at all.<br>
 Animation speed is specified in Game Loops (ie. animation speed 4 will
 show the frame for 4 game loops - at 40fps, that would be 0.1 seconds).
 
-The "Sound" propery allows you to enter a sound number that will be
+The "Sound" property allows you to enter a sound number that will be
 played when this frame becomes visible on the screen. This is especially
 useful for footstep sounds.
 
@@ -656,7 +656,7 @@ SetGameOption. **Basic properties**
     also the minimal size that game rooms may have. The window your game
     runs in may still be larger or smaller, depending on choices player
     made in setup program, and in that case game's image will be
-    stretched or shrinked accordingly.
+    stretched or shrunk accordingly.
 
 **Backwards compatibility**
 
@@ -736,7 +736,7 @@ SetGameOption. **Basic properties**
 -   **Build target platforms** - a checklist of platforms for which the
     game will be compiled.
 -   **Compress the sprite file** - when enabled the sprites will be
-    compressed to reduce game size, at expense of perfomance.
+    compressed to reduce game size, at expense of performance.
 -   **Enabled Debug Mode** - whether the debug keys are active. When
     debug mode is on, you can press Ctrl-X to teleport to any room,
     Ctrl-S to give all inventory items, Ctrl-A to display walkable areas
@@ -766,7 +766,7 @@ SetGameOption. **Basic properties**
         2. Goodbye
 
     This allows you to visually show the player which option the
-    shortcut keys will choose, as well as seperating the options if you
+    shortcut keys will choose, as well as separating the options if you
     don't use a bullet point.
 
 -   **Print dialog options upwards** - Normally, if you select a
@@ -938,7 +938,7 @@ Additionally, following settings are available:
 -   **Title text** - the text that will appear on the title of the setup
     program window.
 
-**Enviroment**
+**Environment**
 
 -   **Custom game saves path** - defines where game will store its saves
     and individual user's files (e.g. achievements). This path will be

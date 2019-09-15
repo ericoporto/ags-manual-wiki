@@ -167,7 +167,7 @@ Example:
 
 will display "Get out of my house and never return!" in the message box,
 with the caption bar reading "Evil wizard". The message box will have
-dark grey text on a light gray background.
+dark grey text on a light grey background.
 
 *See Also:* [Display](Globalfunctions_Message#display),
 [DisplayAt](Globalfunctions_Message#displayat)

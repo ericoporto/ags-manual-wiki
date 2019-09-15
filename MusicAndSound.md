@@ -10,7 +10,7 @@ AGS is able to play the following types of audio file: OGG, MP3, MIDI,
 WAV (uncompressed), MOD, XM, IT, S3M and VOC.
 
 The only limitation to this is that AGS is only able to play one MIDI
-file at a time. If you attempt to play two simulataneous MIDI music
+file at a time. If you attempt to play two simultaneous MIDI music
 files, the first one will be cut off when the second one starts playing.
 
 If you haven't heard of OGG before, it's a digital music format, similar
@@ -100,7 +100,7 @@ from their containing folder).
 Sometimes you might not want the priority of the sound to be fixed in
 the editor -- you might want to decide it at run-time in the script. For
 this reason the *Play* command has an optional parameter which allows
-you to explicity specify the priority when you play it, for example:
+you to explicitly specify the priority when you play it, for example:
 
     aExplosion.Play(eAudioPriorityLow);
 

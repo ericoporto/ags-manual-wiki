@@ -72,7 +72,7 @@ Properties window is now displaying properties for your new button
 rather than the GUI.
 
 Using the Properties window, you can set a picture for the button
-instead, and you can also set various other self-explanitory attributes.
+instead, and you can also set various other self-explanatory attributes.
 You set what happens when the player clicks on the button by using the
 "Click Action" attribute. This can be set to "Run Script" (the default),
 and also "Set mode", which changes the cursor mode to the mode specified
@@ -125,7 +125,7 @@ border graphics. You change the graphic for a corner in the normal way
 by browsing through the 8 possible and needed graphics slots under the properties 
 panel and setting the image number according to the image number in the 
 [Sprite Manager](EditorSprite). You can give every corner and side a name to know 
-what is what but it is not neccessary as the selected corner or side is 
+what is what but it is not necessary as the selected corner or side is 
 indicated by bright red squares.
 
 In the game, the corner graphics will be placed in the respective

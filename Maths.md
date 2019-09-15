@@ -274,7 +274,7 @@ the variable.
 Converts the supplied angle in radians, to the equivalent angle in
 degrees.
 
-Since the trigonometic functions such as Sin, Cos and Tan work in
+Since the trigonometric functions such as Sin, Cos and Tan work in
 radians, this function is handy to convert the results of one of those
 functions back to degrees.
 

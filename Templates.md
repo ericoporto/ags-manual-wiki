@@ -23,7 +23,7 @@ The templates are normally located in "Templates" folder withing AGS Editor
 directory. If the folder is empty, that could happen if AGS Editor installation
 went wrong, or you have run from an incomplete package. What you may try:
 
-- Reinstall AGS (preferrebly downloading an official release),
+- Reinstall AGS (preferably downloading an official release),
 - Download templates (see below).
 - Copy "Templates" folder from any other versions of AGS if you have them on
   your computer, but make sure these versions are not newer than the one you're

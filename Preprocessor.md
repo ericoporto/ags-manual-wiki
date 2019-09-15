@@ -86,4 +86,4 @@ These two preprocessor commands do nothing, they are ignored legacy commands fro
 They are valid keywords so there you have it.
 
  
-_See:_ [Scripting Languange](ScriptingLanguage)
+_See:_ [Scripting Language](ScriptingLanguage)

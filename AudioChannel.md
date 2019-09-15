@@ -47,7 +47,7 @@ seek it back to the start.
 
     AudioChannel.SetRoomLocation(int x, int y)
 
-Sets the currently playing audio to be a directional sound, eminating
+Sets the currently playing audio to be a directional sound, emanating
 from (x,y).
 
 The volume of the channel will be dynamically adjusted depending on how

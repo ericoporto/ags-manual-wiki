@@ -68,7 +68,7 @@ pamela phenome code and the AGS frame number.
 
 For example, enter "AY0" into frame 0's box, "E" into frame 1, and so
 forth - corresponding to how it is set up in Pamela. For multiple
-phenomes to share the same frame, seperate them with forward slashes --
+phenomes to share the same frame, separate them with forward slashes --
 for example, "AY0/AY1" allows both of those phenomes to correspond to
 the specified frame.
 

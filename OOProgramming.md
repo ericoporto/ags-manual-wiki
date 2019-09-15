@@ -137,7 +137,7 @@ For example:
 ### Access with extender functions
 
 By default getter and setter methods will show in autocomplete data within the
-script editor, unless explicity disabled per definition:
+script editor, unless explicitly disabled per definition:
 
     struct Weapon
     {

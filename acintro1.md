@@ -140,7 +140,7 @@ different ranges of colours.
 The default palette setup is a little badly weighted. Your GUI and main
 character graphics will have to use just the game-wide colours, since
 they are shown in more than one room. Therefore, unless you want a
-greyscale main character, the colours displayed are probably not enough.
+grayscale main character, the colours displayed are probably not enough.
 
 So, let's swap some background colours for some game-wide ones. Select
 the first "X" slot, then hold shift and click on the last slot in the

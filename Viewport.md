@@ -29,7 +29,7 @@ The new viewport will cover whole game screen by default and does not have any c
 
 Removes an existing viewport. Primary viewport can be never removed and this command issued for the primary viewport will be ignored.
 
-**IMPORANT:** in **Screen.Viewports** array viewports are arranged in the order they were created. When you delete one in the middle all the following viewports will be shifted towards beginning of array.
+**IMPORTANT:** in **Screen.Viewports** array viewports are arranged in the order they were created. When you delete one in the middle all the following viewports will be shifted towards beginning of array.
 
 *See Also:* [Viewport.Create](Viewport#create), [Screen.Viewport](Screen#viewport), [Screen.Viewports](Screen#viewports)
 

@@ -20,7 +20,7 @@ AGS release.
 Your native game resolution can now be anything, not limited to
 predefined variants anymore.
 
-Similarily, the engine is now capable of running any game in any display
+Similarly, the engine is now capable of running any game in any display
 mode your system supports. To achieve this it uses scaling filter of
 player's choice, and additional simple image stretching when required.
 The setup program has been altered to reflect this feature.

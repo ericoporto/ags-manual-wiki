@@ -263,7 +263,7 @@ menu option for toggling it at runtime.
 
     readonly static String System.RuntimeInfo;
 
-Returns the string containing short description of the enviroment the
+Returns the string containing short description of the environment the
 game is currently running in, such as engine version, graphics mode, and
 available game resources.
 

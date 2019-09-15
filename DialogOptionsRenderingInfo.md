@@ -43,7 +43,7 @@ Forces dialog options to redraw, eventually leading to be
 `dialog_options_render` function run.
 
 Like other elements of interface, dialog options GUI does not redraw
-itself every game loop; in attempt to optimize perfomance it aims to do
+itself every game loop; in attempt to optimize performance it aims to do
 so only when there are changes to its look. But sometimes you may want
 to change GUI looks based on your own decision, and not automatic
 behavior. For example, you want to script animated text, or other

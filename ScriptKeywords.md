@@ -20,7 +20,7 @@ can do this at the top of your script:
     int health[50];
 
 This example declares 50 int variables, all called *health*.<br>
-You access each seperate variable via its **index** (the number in the
+You access each separate variable via its **index** (the number in the
 brackets). Indexes start from 0, so in this case the *health* array can
 be accessed by indexes 0 to 49. If you attempt to access an invalid
 index, your game will exit with an error.
@@ -380,7 +380,7 @@ of the loop.
 *statements*<br>
 `}` **while (** *expression* **);**
 
-Similarily to [while](ScriptKeywords#while) runs *statements*
+Similarly to [while](ScriptKeywords#while) runs *statements*
 continuously, so long as *expression* is true, but unlike **while** it
 checks the expression AFTER executing statements, not before. This also
 means that the statements will be executed at least once.

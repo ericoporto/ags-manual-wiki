@@ -29,7 +29,7 @@ instead.
 
 **How do I use global variables?**
 
-The Global Variables Editor is pretty self-explanitory. To add a
+The Global Variables Editor is pretty self-explanatory. To add a
 variable, right-click and choose "Add". You can name the variable, and
 choose its type and initial value. Most of the time you'll probably be
 using the *int* and *String* types. Optionally, you can also set a
