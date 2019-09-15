@@ -2,7 +2,7 @@
 
 You will find many times in your game when you need to create a string
 based on the values of variables, and functions like
-[Display](MessageFunctions#display) and
+[Display](Globalfunctions_Message#display) and
 [String.Format](String#format) allow you to do so.
 
 AGS uses printf-style argument formatting (used by the C language). This

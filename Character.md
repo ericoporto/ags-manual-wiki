@@ -1065,7 +1065,7 @@ Example:
 will display the message above the character's EGO head like the LEC
 games, whilst playing the character's talking animation.
 
-*See Also:* [Display](MessageFunctions#display),
+*See Also:* [Display](Globalfunctions_Message#display),
 [Character.SayAt](Character#sayat),
 [Character.SayBackground](Character#saybackground),
 [Character.Think](Character#think)

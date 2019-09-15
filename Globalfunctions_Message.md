@@ -24,10 +24,10 @@ a key or clicking the mouse). While the window is displayed, all other
 processing, like animations and interface display, are disabled. This is
 usually used for responses to the player LOOKing at things.
 
-*See Also:* [DisplayAt](MessageFunctions#displayat),
-[DisplayMessage](MessageFunctions#displaymessage),
+*See Also:* [DisplayAt](Globalfunctions_Message#displayat),
+[DisplayMessage](Globalfunctions_Message#displaymessage),
 [Character.Say](Character#say),
-[DisplayTopBar](MessageFunctions#displaytopbar),
+[DisplayTopBar](Globalfunctions_Message#displaytopbar),
 [String.Format](String#format)
 
 ---
@@ -58,8 +58,8 @@ Example:
 
 will display the message at coordinates 50,50 in a box 100 pixels wide.
 
-*See Also:* [Display](MessageFunctions#display),
-[DisplayAtY](MessageFunctions#displayaty)
+*See Also:* [Display](Globalfunctions_Message#display),
+[DisplayAtY](Globalfunctions_Message#displayaty)
 
 ---
 
@@ -78,8 +78,8 @@ Example:
 
 will display the message at y coordinate 50.
 
-*See Also:* [Display](MessageFunctions#display),
-[DisplayAt](MessageFunctions#displayat)
+*See Also:* [Display](Globalfunctions_Message#display),
+[DisplayAt](Globalfunctions_Message#displayat)
 
 ---
 
@@ -97,8 +97,8 @@ Example:
 
 will display the message 220 of the Room message editor.
 
-*See Also:* [Display](MessageFunctions#display),
-[DisplayMessageAtY](MessageFunctions#displaymessageaty)
+*See Also:* [Display](Globalfunctions_Message#display),
+[DisplayMessageAtY](Globalfunctions_Message#displaymessageaty)
 
 ---
 
@@ -119,8 +119,8 @@ Example:
 
 will display global message 527, in the lower half of the screen.
 
-*See Also:* [DisplayAtY](MessageFunctions#displayaty),
-[DisplayMessage](MessageFunctions#displaymessage)
+*See Also:* [DisplayAtY](Globalfunctions_Message#displayaty),
+[DisplayMessage](Globalfunctions_Message#displaymessage)
 
 ---
 
@@ -169,5 +169,5 @@ will display "Get out of my house and never return!" in the message box,
 with the caption bar reading "Evil wizard". The message box will have
 dark grey text on a light gray background.
 
-*See Also:* [Display](MessageFunctions#display),
-[DisplayAt](MessageFunctions#displayat)
+*See Also:* [Display](Globalfunctions_Message#display),
+[DisplayAt](Globalfunctions_Message#displayat)
