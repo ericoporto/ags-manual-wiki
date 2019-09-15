@@ -10,7 +10,7 @@ Similar to [Dictionary](Dictionary), Set has two general properties: **sort styl
 
 **Compare style** determines whether strings are compared as case sensitive or case insensitive. For example, in case-sensitive set strings "Parameter" and "parameter" will be seen as two different items, but in case-insensitive they will be seen as identical. Compare style defines both string uniqueness and sorting.
 
-At the moment a set itself does not let you see access all of its internal data at once directly, but has [GetItemsAsArray ](Set#getitemsasarray) function that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in this array will be matching one inside the set, hence if the set was sorted the array will be sorted as well.
+At the moment a set itself does not let you access all of its internal data at once directly, but has [GetItemsAsArray ](Set#getitemsasarray) function that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in this array will be matching one inside the set, hence if the set was sorted the array will be sorted as well.
 
 *Compatibility:* Set struct is supported by **AGS 3.5.0** and later versions.
 
