@@ -282,7 +282,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Debug](Game#debug)
+*See Also:* [Debug](Globalfunctions_General#debug)
 
 ---
 
