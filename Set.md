@@ -120,7 +120,7 @@ Gets the number of items currently in the set.
 
 ---
 
-### Set.SortStyle
+### SortStyle
 
     SortStyle Set.SortStyle
 
