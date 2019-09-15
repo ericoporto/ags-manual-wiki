@@ -167,7 +167,7 @@ Example:
     if (iKeyring.IsInteractionAvailable(eModeLookat) == 0)
       Display("looking at this item would not do anything.");
 
-*See Also:* [IsInteractionAvailable](Game#isinteractionavailable),
+*See Also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
 [InventoryItem.RunInteraction](InventoryItem#runinteraction)
 
 ---
