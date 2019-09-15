@@ -180,7 +180,7 @@ job, having a manual reference is invaluable:
       eSkipESCOrRightButton
     };
 
-*Used by:* [StartCutscene](Game#startcutscene)
+*Used by:* [StartCutscene](Globalfunctions_General#startcutscene)
 
     enum eOperatingSystem {
       eOSDOS,
@@ -218,7 +218,7 @@ job, having a manual reference is invaluable:
 The CursorMode enumeration is generated automatically based on your
 mouse cursors. The cursor mode name is taken, all its spaces are
 removed, and *eMode* is added to the front.<br>
-*Used by:* [IsInteractionAvailable](Game#isinteractionavailable),
+*Used by:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
 [Room.ProcessClick](Room#processclick),
 [Mouse.ChangeModeGraphic](Mouse#changemodegraphic),
 [Mouse.ChangeModeHotspot](Mouse#changemodehotspot),
@@ -251,8 +251,8 @@ to the front.<br>
 [DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#drawstringwrapped),
 [Game.NormalFont](Game#normalfont),
 [Game.SpeechFont](Game#speechfont),
-[GetTextHeight](Game#gettextheight),
-[GetTextWidth](Game#gettextwidth),
+[GetTextHeight](Globalfunctions_General#gettextheight),
+[GetTextWidth](Globalfunctions_General#gettextwidth),
 [Label.Font](Label#font),
 [ListBox.Font](ListBox#font),
 [TextBox.Font](TextBox#font),
@@ -266,7 +266,7 @@ to the front.<br>
       eLocationObject
     };
 
-*Returned by:* [GetLocationType](Game#getlocationtype)
+*Returned by:* [GetLocationType](Globalfunctions_General#getlocationtype)
 
     enum FileMode {
       eFileRead,
