@@ -33,7 +33,7 @@ While most in-game text is translated automatically, there are a few
 instances when this is not possible. These are when a script uses
 functions like Append to build up a string, or CompareTo to check some
 user input. In these cases, you can use the
-[GetTranslation](Game#gettranslation) function to make it work.
+[GetTranslation](Globalfunctions_General#gettranslation) function to make it work.
 
 You'll also have noticed a "Update" option when right-clicking a
 translation. This is useful if you've got a translated version of your
