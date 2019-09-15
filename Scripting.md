@@ -11,7 +11,7 @@ great control over your game.
 - [GameState variables](Gamevariables)
 - [Global functions: general](Globalfunctions_General)
 - [Global functions: multimedia actions](Multimedia)
-- [Global functions: palette operations](PaletteFunctions)
+- [Global functions: palette operations](Globalfunctions_Palette)
 - [Global functions: room actions](Globalfunctions_Room)
 - [Global functions: screen effects](ScreenFunctions)
 - [Global functions: message display](MessageFunctions)

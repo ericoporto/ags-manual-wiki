@@ -19,7 +19,7 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](PaletteFunctions#cyclepalette),
+*See Also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
 [FadeOut](ScreenFunctions#fadeout), [SetFadeColor](ScreenFunctions#setfadecolor)
 
 ---
@@ -42,7 +42,7 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](PaletteFunctions#cyclepalette),
+*See Also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
 [FadeIn](ScreenFunctions#fadein), [SetFadeColor](ScreenFunctions#setfadecolor)
 
 ---

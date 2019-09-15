@@ -1,4 +1,4 @@
-## Palette functions
+## Gloabal functions: Palette 
 
 ### CyclePalette
 
@@ -23,7 +23,7 @@ will cause the palette indexes from 10 to 200 cycle around one slot and
 give a color effect.
 
 *See Also:* [FadeIn](ScreenFunctions#fadein), [FadeOut](ScreenFunctions#fadeout),
-[SetPalRGB](PaletteFunctions#setpalrgb)
+[SetPalRGB](Globalfunctions_Palette#setpalrgb)
 
 ---
 
@@ -51,9 +51,9 @@ Example:
 
 will change palette slot number 10 from light green to yellow
 
-*See Also:* [CyclePalette](PaletteFunctions#cyclepalette),
+*See Also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
 [FadeIn](ScreenFunctions#fadein), [FadeOut](ScreenFunctions#fadeout),
-[UpdatePalette](PaletteFunctions#updatepalette)
+[UpdatePalette](Globalfunctions_Palette#updatepalette)
 
 ---
 
@@ -74,4 +74,4 @@ Example:
 will make the black colour turn bright red. When you actually change the
 variable, nothing happens. Call this function to update the screen.
 
-*See Also:* [SetPalRGB](PaletteFunctions#setpalrgb)
+*See Also:* [SetPalRGB](Globalfunctions_Palette#setpalrgb)

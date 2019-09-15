@@ -98,7 +98,7 @@
 -   [Multimedia functions](Game)
 -   [Object functions and properties](Object)
 -   [Overlay functions and properties](Overlay)
--   [Palette functions](PaletteFunctions)
+-   [Palette functions](Globalfunctions_Palette)
 -   [Parser functions](Parser)
 -   [Region functions and properties](Region)
 -   [Room functions](Room)
