@@ -301,7 +301,7 @@ Example:
 
 will write some text onto the middle-left of the room background
 
-*See Also:* [GetTextWidth](Game#gettextwidth),
+*See Also:* [GetTextWidth](Globalfunctions_General#gettextwidth),
 [DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#drawstringwrapped),
 [DrawingSurface.DrawingColor](DrawingSurfaceFunctions#drawingcolor)
 
@@ -374,7 +374,7 @@ this will draw background frame 1 onto frame 0 at 50`%` opacity.
 
 *See Also:*
 [DrawingSurface.DrawImage](DrawingSurfaceFunctions#drawimage),
-[SetAmbientTint](Game#setambienttint)
+[SetAmbientTint](Globalfunctions_General#setambienttint)
 
 ---
 
