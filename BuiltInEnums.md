@@ -1,6 +1,7 @@
-## Built-in enumerated types
+## Standard Enumerated Types
 
-AGS has several [enumerated types](ScriptKeywords#enum) built in. These are
+AGS has several [enumerated types](ScriptKeywords#enum) in it's standard header. 
+These are
 used in calls to various commands, and will usually pop up automatically
 in autocomplete. However, for times where autocomplete doesn't do the
 job, having a manual reference is invaluable:
