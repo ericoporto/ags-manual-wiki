@@ -22,7 +22,7 @@ By default camera follows player character, this is called "auto-tracking". You 
 
     static Camera* Camera.Create();
 
-Creates a new camera and returns a pointer which you may use to operate it. Any camera created like this may be also accessed by [Game.Cameras](Screen#cameras) by index.
+Creates a new camera and returns a pointer which you may use to operate it. Any camera created like this may be also accessed by [Game.Cameras](Game#cameras) by index.
 The new camera will by default be located at the room's (0, 0) and assigned a size of game screen or room background, whatever is *smaller*. It will also be autotracking. You may change any of its properties later.
 
 *See Also:* [Camera.Delete](Camera#delete), [Game.Camera](Game#camera), [Game.Cameras](Game#cameras), [Viewport.Camera](Viewport#camera)

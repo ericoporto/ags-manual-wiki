@@ -403,6 +403,36 @@ Example:
 
 ---
 
+### Camera
+
+    static readonly Camera* Camera
+
+Gets the primary camera. This camera cannot be deleted.
+
+*See Also:* [Camera.Create](Camera#create), [Camera.Delete](Camera#delete), [Viewport.Camera](Viewport#camera)
+
+---
+
+### Cameras
+
+    static readonly Camera* Cameras[]
+
+Gets a Camera by it's index.
+
+*See Also:* [Camera.Create](Camera#create), [Viewport.Camera](Viewport#camera), [Game.Camera](Game#camera)
+
+---
+
+### CameraCount
+
+    static readonly int CameraCount
+
+Gets the number of cameras.
+
+*See Also:* [Camera.Create](Camera#create), [Viewport.Camera](Viewport#camera), [Game.Camera](Game#camera)
+
+---
+
 ### CharacterCount
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
