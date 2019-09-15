@@ -660,7 +660,7 @@ then save the result back to the disk.
 
 Tints the dynamic sprite to (RED, GREEN, BLUE) with SATURATION percent
 saturation. For the meaning of all the parameters, see
-[SetAmbientTint](Game#setambienttint).
+[SetAmbientTint](Globalfunctions_General#setambienttint).
 
 The tint set by this function is permanent for the dynamic sprite --
 after the tint has been set, it is not possible to remove it. If you
@@ -684,7 +684,7 @@ room background.
 *See Also:* [DynamicSprite.Flip](DynamicSprite#flip),
 [DynamicSprite.Height](DynamicSprite#height),
 [DynamicSprite.Width](DynamicSprite#width),
-[SetAmbientTint](Game#setambienttint)
+[SetAmbientTint](Globalfunctions_General#setambienttint)
 
 ---
 
