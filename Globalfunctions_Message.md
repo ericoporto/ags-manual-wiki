@@ -1,4 +1,4 @@
-## Message functions
+## Global functions: Message Display
 
 ### Display
 
