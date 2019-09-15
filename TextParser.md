@@ -90,7 +90,7 @@ Now this is all very well, but in different rooms you have different
 items to interact with - for example, in one room there might be a tree
 that the player should be able to type "look at tree" to look at, and so
 on. Putting all this in your global script would make a big mess. So,
-enter the [CallRoomScript](Game#callroomscript) function. Using
+enter the [CallRoomScript](Globalfunctions_General#callroomscript) function. Using
 this, you can do:
 
       Parser.ParseText(input);
