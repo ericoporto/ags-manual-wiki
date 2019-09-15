@@ -16,6 +16,8 @@ At the moment a set itself does not let you access all of its internal data at o
 
 *See Also:* [Dictionary](Dictionary)
 
+---
+
 ### Create
 
     static Set* Set.Create(SortStyle sortStyle, StringCompareStyle compareStyle)
