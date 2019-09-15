@@ -10,7 +10,7 @@ Screen struct has properties where you can retrieve the current game resolution 
 
 Converts a point displayed in the screen to the corresponding room coordinates. This function returns null if there is no Viewport on screen under these coordinates. This is because if there will be multiple viewports supported in the future then engine simply won't know which to choose having none under these coords.
 
-*See Also:* [Viewport.RoomToScreenPoint](Viewport#roomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#screentoroompoint), [Screen.RoomToScreenPoint](Screen#toomtoscreenpoint)
+*See Also:* [Viewport.RoomToScreenPoint](Viewport#roomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#screentoroompoint), [Screen.RoomToScreenPoint](Screen#roomtoscreenpoint)
 
 ---
 
