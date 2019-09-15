@@ -14,7 +14,7 @@ great control over your game.
 - [Global functions: palette operations](PaletteFunctions)
 - [Global functions: room actions](Globalfunctions_Room)
 - [Global functions: screen effects](ScreenFunctions)
-- [Global functions: text display](MessageFunctions)
+- [Global functions: message display](MessageFunctions)
 - [AudioChannel functions and properties](AudioChannel)
 - [AudioClip functions and properties](AudioClip)
 - [Camera functions and properties](Camera)
