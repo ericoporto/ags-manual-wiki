@@ -29,7 +29,7 @@ Example:
 will display a message depending on what the mouse is on.
 
 *See Also:* [Game.GetLocationName](Game#getlocationname),
-[GetLocationType](Game#getlocationtype)
+[GetLocationType](Globalfunctions_General#getlocationtype)
 
 ---
 
@@ -266,7 +266,7 @@ Example:
 will move the character to hotspot hTable's walk-to point.
 
 *See Also:* [Hotspot.WalkToY](Hotspot#walktoy),
-[MoveCharacterToHotspot](Game#movecharactertohotspot)
+[MoveCharacterToHotspot](Globalfunctions_General#movecharactertohotspot)
 
 ---
 
@@ -286,5 +286,5 @@ Example:
 will move the character to hotspot hTable's walk-to point.
 
 *See Also:* [Hotspot.WalkToX](Hotspot#walktox),
-[MoveCharacterToHotspot](Game#movecharactertohotspot)
+[MoveCharacterToHotspot](Globalfunctions_General#movecharactertohotspot)
 
