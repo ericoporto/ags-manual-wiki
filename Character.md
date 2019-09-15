@@ -1014,7 +1014,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [IsInteractionAvailable](Game#isinteractionavailable),
+*See Also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
 [Character.RunInteraction](Character#runinteraction)
 
 ---
