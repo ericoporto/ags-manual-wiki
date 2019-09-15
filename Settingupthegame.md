@@ -636,7 +636,7 @@ SetGameOption. **Basic properties**
     the window title, and also added to the game's
     executable properties.
 -   **Maximum possible score** - the maximum score your game has, if you
-    are using score mechanics, such as [GiveScore](Game#givescore)
+    are using score mechanics, such as [GiveScore](Globalfunctions_General#givescore)
     script function.
 -   **Put sound and sprite files in source control** - whether game
     resources, such as sprites and audio, are put under source control.
