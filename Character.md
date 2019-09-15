@@ -587,7 +587,7 @@ Returns *true* if the character has a light set explicitly with the
 
 Returns *false* if the character has no explicit light level, but it may
 still be lighted by
-[SetAmbientLightLevel](Game#setambientlightlevel) or a region
+[SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel) or a region
 light.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
@@ -693,7 +693,7 @@ light.
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
 *SeeAlso:* [Character.SetLightLevel](Character#setlightlevel),
-[SetAmbientLightLevel](Game#setambientlightlevel)
+[SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel)
 
 ---
 
@@ -941,7 +941,7 @@ his destination.
 *See Also:* [Character.AddWaypoint](Character#addwaypoint),
 [Character.FaceCharacter](Character#facecharacter),
 [Character.Walk](Character#walk),
-[MoveCharacterToObject](Game#movecharactertoobject),
+[MoveCharacterToObject](Globalfunctions_General#movecharactertoobject),
 [Object.Move](Object#move),
 [Character.StopMoving](Character#stopmoving)
 
@@ -1191,7 +1191,7 @@ This will give character EGO maximal individual brightness.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:* [Character.Tint](Character#tint),
-[SetAmbientLightLevel](Game#setambientlightlevel),
+[SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel),
 [Object.SetLightLevel](Object#setlightlevel),
 [Region.LightLevel](Region#lightlevel)
 
@@ -1350,7 +1350,7 @@ Tints the character on the screen to (RED, GREEN, BLUE) with SATURATION
 percent saturation.
 
 This function applies a tint to a specific character. For the meaning of
-all the parameters, see [SetAmbientTint](Game#setambienttint).
+all the parameters, see [SetAmbientTint](Globalfunctions_General#setambienttint).
 
 The tint set by this function overrides any ambient tint set for the
 room. For this reason, passing the SATURATION as 0 to this function does
@@ -1373,7 +1373,7 @@ will tint the EGO character green.
 *See Also:*
 [Character.HasExplicitTint](Character#hasexplicittint),
 [Character.RemoveTint](Character#removetint),
-[SetAmbientTint](Game#setambienttint)
+[SetAmbientTint](Globalfunctions_General#setambienttint)
 
 ---
 
@@ -1568,7 +1568,7 @@ until the character has reached his destination.
 *See Also:* [Character.AddWaypoint](Character#addwaypoint),
 [Character.FaceCharacter](Character#facecharacter),
 [Character.Move](Character#move),
-[MoveCharacterToObject](Game#movecharactertoobject),
+[MoveCharacterToObject](Globalfunctions_General#movecharactertoobject),
 [Object.Move](Object#move),
 [Character.StopMoving](Character#stopmoving)
 
@@ -1944,7 +1944,7 @@ Returns *true* if the character has a tint set explicitly with the
 [Character.Tint](Character#tint) command.
 
 Returns *false* if the character has no explicit tint, but it may still
-be tinted by [SetAmbientTint](Game#setambienttint) or a region
+be tinted by [SetAmbientTint](Globalfunctions_General#setambienttint) or a region
 tint.
 
 Example:
