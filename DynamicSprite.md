@@ -650,7 +650,7 @@ then save the result back to the disk.
 
 *See Also:*
 [DynamicSprite.CreateFromFile](DynamicSprite#createfromfile),
-[SaveScreenShot](Game#savescreenshot)
+[SaveScreenShot](Globalfunctions_General#savescreenshot)
 
 ---
 
