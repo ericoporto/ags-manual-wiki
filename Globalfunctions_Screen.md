@@ -1,4 +1,4 @@
-## Global functions: Screen
+## Global functions: Screen Effects
 
 ### FadeIn
 
