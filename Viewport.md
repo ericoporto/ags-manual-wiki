@@ -12,6 +12,8 @@ By default viewport covers whole game screen, but you may change that anytime. C
 
 *See Also:* [Camera](Camera), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload), [Screen.Viewport](Screen#viewport), [Screen.Viewports](Screen#viewports)
 
+---
+
 ### Create
 
     static Viewport* Viewport.Create()
