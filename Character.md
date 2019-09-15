@@ -31,7 +31,7 @@ will give inventory item iKey to character EGO.
 
 *See Also:* [Character.HasInventory](Character#hasinventory),
 [Character.LoseInventory](Character#loseinventory),
-[UpdateInventory](Game#updateinventory)
+[UpdateInventory](Globalfunctions_General#updateinventory)
 
 ---
 
@@ -2077,7 +2077,7 @@ Example:
 
 will display how many inventory items of type iCash the player has.
 
-*See Also:* [UpdateInventory](Game#updateinventory),
+*See Also:* [UpdateInventory](Globalfunctions_General#updateinventory),
 [Character.AddInventory](Character#addinventory),
 [Character.HasInventory](Character#hasinventory),
 [Character.LoseInventory](Character#loseinventory)
