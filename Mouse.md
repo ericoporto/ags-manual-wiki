@@ -240,7 +240,7 @@ sec.
 versions.<br>
 *eMouseLeft* and *eMouseRight* supported by all versions.
 
-*See Also:* [IsKeyPressed](Game#iskeypressed)
+*See Also:* [IsKeyPressed](Globalfunctions_General#iskeypressed)
 
 ---
 
