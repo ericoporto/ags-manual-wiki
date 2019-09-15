@@ -62,6 +62,6 @@ you need other scripts to handle any of this functionality, you can
 simply create a custom function in the script and then call it from the
 global script.
 
-The [ClaimEvent](Game#claimevent) command is supported for
+The [ClaimEvent](Globalfunctions_General#claimevent) command is supported for
 on_key_press, on_mouse_click and on_event. Calling it prevents the
 rest of the scripts (including the global script) from being called.
