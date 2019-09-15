@@ -1,6 +1,6 @@
 ## Built-in Simple Structs
 
-Built-in simple structs can be used pass values to the script API, and return values. You can also use them in your scripts as standard managed structs. For now, AGS only has point available.
+Simple managed structs available that can be used pass values to the script API, and return values. You can also use them in your scripts. For now, AGS only has point available.
 
 ### Point
 
