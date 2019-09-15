@@ -179,7 +179,7 @@ switches back to game.
 
 *Compatibility:* Supported by **AGS 3.3.5** and later versions.
 
-*See Also:* [SetMultitaskingMode](Game#setmultitaskingmode)
+*See Also:* [SetMultitaskingMode](Globalfunctions_General#setmultitaskingmode)
 
 ---
 
