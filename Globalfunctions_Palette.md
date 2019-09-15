@@ -1,4 +1,4 @@
-## Gloabal functions: Palette 
+## Gloabal functions: Palette Operations
 
 ### CyclePalette
 
