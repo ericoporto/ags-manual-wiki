@@ -115,7 +115,7 @@ Example:
 should display that 3 seconds have elapsed.
 
 *See Also:* [DateTime.Now](DateTime#now),
-[SetTimer](Game#settimer)
+[SetTimer](Globalfunctions_General#settimer)
 
 ---
 
