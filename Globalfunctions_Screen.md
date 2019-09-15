@@ -20,7 +20,7 @@ will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
 *See Also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
-[FadeOut](ScreenFunctions#fadeout), [SetFadeColor](ScreenFunctions#setfadecolor)
+[FadeOut](Globalfunctions_Screen#fadeout), [SetFadeColor](Globalfunctions_Screen#setfadecolor)
 
 ---
 
@@ -43,7 +43,7 @@ will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
 *See Also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
-[FadeIn](ScreenFunctions#fadein), [SetFadeColor](ScreenFunctions#setfadecolor)
+[FadeIn](Globalfunctions_Screen#fadein), [SetFadeColor](Globalfunctions_Screen#setfadecolor)
 
 ---
 
@@ -93,8 +93,8 @@ Example:
 will mean that next time the screen fades out, it fades to red instead
 of black.
 
-SeeAlso: [FadeIn](ScreenFunctions#fadein), [FadeOut](ScreenFunctions#fadeout),
-[SetScreenTransition](ScreenFunctions#setscreentransition)
+SeeAlso: [FadeIn](Globalfunctions_Screen#fadein), [FadeOut](Globalfunctions_Screen#fadeout),
+[SetScreenTransition](Globalfunctions_Screen#setscreentransition)
 
 ---
 
@@ -107,7 +107,7 @@ next room change. After that, it will revert back to the normal
 transition type specified in the editor or with SetScreenTransition.
 
 For the possible values for TransitionStyle, see
-[SetScreenTransition](ScreenFunctions#setscreentransition).
+[SetScreenTransition](Globalfunctions_Screen#setscreentransition).
 
 Example:
 
@@ -117,7 +117,7 @@ Example:
 will go to room 10 with a box-out effect, but then return to the normal
 transition type from then on.
 
-SeeAlso: [SetScreenTransition](ScreenFunctions#setscreentransition)
+SeeAlso: [SetScreenTransition](Globalfunctions_Screen#setscreentransition)
 
 ---
 
@@ -143,7 +143,7 @@ Example:
 
 will change the room transitions to Fade.
 
-SeeAlso: [SetNextScreenTransition](ScreenFunctions#setnextscreentransition)
+SeeAlso: [SetNextScreenTransition](Globalfunctions_Screen#setnextscreentransition)
 
 ---
 
@@ -160,7 +160,7 @@ Example:
 
 will shake the screen a little.
 
-*See Also:* [ShakeScreenBackground](ScreenFunctions#shakescreenbackground)
+*See Also:* [ShakeScreenBackground](Globalfunctions_Screen#shakescreenbackground)
 
 ---
 
@@ -190,7 +190,7 @@ Example:
 
 will shake the screen a little for 2 seconds.
 
-*See Also:* [ShakeScreen](ScreenFunctions#shakescreen)
+*See Also:* [ShakeScreen](Globalfunctions_Screen#shakescreen)
 
 ---
 

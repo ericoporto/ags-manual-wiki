@@ -22,7 +22,7 @@ Example:
 will cause the palette indexes from 10 to 200 cycle around one slot and
 give a color effect.
 
-*See Also:* [FadeIn](ScreenFunctions#fadein), [FadeOut](ScreenFunctions#fadeout),
+*See Also:* [FadeIn](Globalfunctions_Screen#fadein), [FadeOut](Globalfunctions_Screen#fadeout),
 [SetPalRGB](Globalfunctions_Palette#setpalrgb)
 
 ---
@@ -52,7 +52,7 @@ Example:
 will change palette slot number 10 from light green to yellow
 
 *See Also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
-[FadeIn](ScreenFunctions#fadein), [FadeOut](ScreenFunctions#fadeout),
+[FadeIn](Globalfunctions_Screen#fadein), [FadeOut](Globalfunctions_Screen#fadeout),
 [UpdatePalette](Globalfunctions_Palette#updatepalette)
 
 ---

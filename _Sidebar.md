@@ -102,7 +102,7 @@
 -   [Parser functions](Parser)
 -   [Region functions and properties](Region)
 -   [Room functions](Room)
--   [Screen functions](ScreenFunctions)
+-   [Screen functions](Globalfunctions_Screen)
 -   [Speech functions and properties](Speech)
 -   [String functions](String)
 -   [System functions and properties](System)

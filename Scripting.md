@@ -13,7 +13,7 @@ great control over your game.
 - [Global functions: multimedia actions](Multimedia)
 - [Global functions: palette operations](Globalfunctions_Palette)
 - [Global functions: room actions](Globalfunctions_Room)
-- [Global functions: screen effects](ScreenFunctions)
+- [Global functions: screen effects](Globalfunctions_Screen)
 - [Global functions: message display](Globalfunctions_Message)
 - [AudioChannel functions and properties](AudioChannel)
 - [AudioClip functions and properties](AudioClip)
