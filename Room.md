@@ -424,7 +424,7 @@ will simulate a click in the Look mode on co-ordinates (100, 50).
 
 *See Also:* [GUI.ProcessClick](GUI#processclick),
 [Mouse.Click](Mouse#click),
-[IsInteractionAvailable](Game#isinteractionavailable),
+[IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
 [Hotspot.RunInteraction](Hotspot#runinteraction)
 
 ---
