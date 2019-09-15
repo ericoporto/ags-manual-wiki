@@ -18,7 +18,7 @@ Converts a point displayed in the screen to the corresponding room coordinates. 
 
     static Point *RoomToScreenPoint(int rx, int ry)
 
-Returns an object of Point type containing on scree (x,y) coordinates, corresponding to the given room coordinates relative to the main viewport.
+Returns an object of Point type containing on screen (x,y) coordinates, corresponding to the given room coordinates relative to the main viewport.
 
 *See Also:* [Viewport.RoomToScreenPoint](Viewport#roomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#screentoroompoint), [Screen.ScreenToRoomPoint](Screen#screentoroompoint)
 
