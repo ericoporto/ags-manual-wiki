@@ -7,7 +7,7 @@ great control over your game.
 - [repeatedly_execute / repeatedly_execute_always](RepExec) 
 - [Custom dialog options rendering](CustomDialogOptions)
 - [Built-in enumerated types](BuiltInEnums)
-- [Built-in simple structs](BuiltInStructs)
+- [Standard Types](StandardTypes)
 - [GameState variables](Gamevariables)
 - [Global functions: general](Globalfunctions_General)
 - [Global functions: multimedia actions](Multimedia)
