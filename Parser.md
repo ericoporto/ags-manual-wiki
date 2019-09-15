@@ -1,5 +1,7 @@
 ## Parser functions
 
+You can look into [TextParser](TextParser) for additional help on using the parser in your games.
+
 ### FindWordID
 
     static int Parser.FindWordID(string wordToFind)
