@@ -6,7 +6,7 @@ great control over your game.
 - [Predefined global script functions](TextScriptEvents)
 - [repeatedly_execute / repeatedly_execute_always](RepExec) 
 - [Custom dialog options rendering](CustomDialogOptions)
-- [Standard Enumerated Types](BuiltInEnums)
+- [Standard Enumerated Types](StandardEnums)
 - [Standard Types](StandardTypes)
 - [GameState variables](Gamevariables)
 - [Global functions: general](Globalfunctions_General)
