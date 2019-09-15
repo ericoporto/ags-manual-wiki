@@ -32,7 +32,7 @@ game.min_dialogoption_width | Minimum width of textwindow-based dialog options b
 game.narrator_speech | Which character ID to use for voice speech within Display() command. Default initial player character. You can also use NARRATOR which uses 'NARR' prefix - special narrator character.
 game.no_textbg_when_voice | Normally 0. If 1, and the Sierra-style With Background speech style is in use, will change to the Sierra-style (No Bg) if a voice speech line is present.
 game.read_dialog_option_color | By default, -1. You can set this to a colour number, in which case dialog options that the player has selected before will be displayed in this colour.
-game.roomscript_finished | The on_call function has completed executing. (See [CallRoomScript](Game#callroomscript))
+game.roomscript_finished | The on_call function has completed executing. (See [CallRoomScript](Globalfunctions_General#callroomscript))
 **game.score** | The player's score. To modify the score, use the GiveScore script function.
 game.score_sound | Sound effect to play when the player gets points, originally set in the editor.
 game.screenshot_height | The height of screenshot images when saved into save games. The largest you can have is the full screen size (game's native resolution), which gives the highest quality but the largest size for save game files. The default size for Screenshots is 160x100, so the default value for game.screenshot_height is 100. The minimal supported value for screenshot size is 16x16.
