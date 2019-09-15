@@ -16,6 +16,8 @@ By default camera follows player character, this is called "auto-tracking". You 
 
 *Compatibility:* Camera struct is supported by **AGS 3.5.0** and later versions.
 
+---
+
 ### Create
 
     static Camera* Camera.Create();
