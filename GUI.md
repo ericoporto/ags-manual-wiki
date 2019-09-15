@@ -166,6 +166,38 @@ changes the ICONBAR GUI to be the size of half the screen
 
 ---
 
+### AsTextWindow
+
+    readonly TextWindowGUI* AsTextWindow
+
+If this GUI is a TextWindow, returns the TextWindowGUI interface; otherwise null.
+
+---
+
+### BackgroundColor
+
+    int  BackgroundColor
+
+Gets/sets the background color. This property is ignored if the GUI has `BackgroundGraphic` different than 0. 
+
+You can set `BackgroundColor` to 0 to remove it from the GUI.
+
+*See Also:* [GUI.BackgroundGraphic](GUI#backgroundgraphic), [GUI.BorderColor](GUI#bordercolor)
+
+---
+
+### BorderColor
+
+    int  BorderColor
+
+Gets/sets the border color. Not applicable to TextWindow GUIs. This property is ignored if the GUI has `BackgroundGraphic` different than 0. 
+
+You can set `BorderColor` to 0 to remove it from the GUI.
+
+*See Also:* [GUI.BackgroundGraphic](GUI#backgroundgraphic), [GUI.BackgroundColor](GUI#backgroundcolor)
+
+---
+
 ### BackgroundGraphic
 
 *(Formerly known as SetGUIBackgroundPic, which is now obsolete)*
@@ -303,6 +335,26 @@ clickable, and then uses the equivalent modern property to stop it being
 clickable.
 
 *See Also:* [GUIControl.ID](GUIControl#id)
+
+---
+
+### PopupStyle
+
+    readonly GUIPopupStyle PopupStyle
+
+Gets the style of GUI behavior on screen.
+
+*See Also:* [Standard Enums](StandardEnums), [GUI.PopupYPos](GUI#popupypos)
+
+---
+
+### PopupYPos
+
+    int  PopupYPos
+
+Gets/sets the Y co-ordinate at which the GUI will appear when using MouseYPos popup style.
+
+*See Also:* [GUI.PopupStyle](GUI#popupstyle)
 
 ---
 
