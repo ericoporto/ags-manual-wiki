@@ -49,7 +49,7 @@ Removes an existing camera. Primary camera can be never removed and this command
 
 Changes camera position in the room and disables automatic tracking of the player character.
 
-*See Also:* [Camera.SetSize](Camera#setsize), [Camera.AutoTracking](Camera#autotracking), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Width](Camera#width), [Camera.Height](Camera#height), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
+*See Also:* [Camera.SetSize](Camera#setsize), [Camera.AutoTracking](Camera#autotracking), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Width](Camera#width), [Camera.Height](Camera#height)
 
 ---
 
