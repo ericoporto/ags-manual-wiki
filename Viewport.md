@@ -6,7 +6,7 @@ There's always at least one viewport called "primary viewport", and you may crea
 
 By default viewport covers whole game screen, but you may change that anytime. Camera's contents are stretched to fill viewport's rectangle, and because of that the difference between viewport's and camera's sizes create zoom effect (scaling). If the camera is larger than the viewport that would work as a zoom-out (scale down). If the camera is smaller than the viewport that would work as a zoom-in (scale up).
 
-**IMPORTANT:** The game starts in automatic viewport mode that snaps primary viewport to whole screen and adjusts the camera to the same size (or at least the size of room background) each time new room is loaded. This is convenient in case you want to rely on a common behavior. If you prefer to customize viewports yourself standard behavior may be disabled using [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload) property.
+**IMPORTANT:** The game starts in automatic viewport mode that snaps primary viewport and camera to the size of the game screen or size of a room background, whatever is *smaller*, each time new room is loaded. This is convenient in case you want to rely on a common behavior. If you prefer to customize viewports yourself standard behavior may be disabled using [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload) property.
 
 *Compatibility:* Viewport struct is supported by **AGS 3.5.0** and later versions.
 
@@ -74,7 +74,7 @@ Example:
 
 Changes viewport's position on the screen.
 
-*See Also:* [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder)
+*See Also:* [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
 
 ---
 
@@ -117,7 +117,7 @@ Gets/sets the camera to be displayed in this viewport. Changing cameras is safe 
 
 Gets/sets the viewport's height in screen coordinates.
 
-*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.ZOrder](Viewport#zorder)
+*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.ZOrder](Viewport#zorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
 
 ---
 
@@ -145,7 +145,7 @@ Gets/sets whether the viewport is enabled and drawn on screen.
 
 Gets/sets the viewport's width in screen coordinates.
 
-*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder)
+*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
 
 ---
 
@@ -155,7 +155,7 @@ Gets/sets the viewport's width in screen coordinates.
 
 Gets/sets the X position on the screen where this viewport is located.
 
-*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder)
+*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
 
 ---
 
@@ -165,4 +165,4 @@ Gets/sets the X position on the screen where this viewport is located.
 
 Gets/sets the Y position on the screen where this viewport is located.
 
-*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder)
+*See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height), [Viewport.ZOrder](Viewport#zorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
