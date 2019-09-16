@@ -1,4 +1,4 @@
-## Gloabal functions: Palette Operations
+## Global functions: Palette Operations
 
 ### CyclePalette
 
