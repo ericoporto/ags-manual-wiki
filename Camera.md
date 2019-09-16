@@ -12,9 +12,11 @@ By default camera's size is set equal to room background or game screen size, wh
 
 By default camera follows player character, this is called "auto-tracking". You may override this by disabling [Camera.AutoTracking](Camera#autotracking) property.
 
-**IMPORTANT:** The game starts in automatic viewport mode that snaps primary viewport to whole screen and adjusts the camera to the same size (or at least the size of room background) each time new room is loaded. This is convenient in case you want to rely on a common behavior. If you prefer to customize cameras yourself standard behavior may be disabled using [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload) property.
+**IMPORTANT:** The game starts in automatic viewport mode that snaps primary viewport and camera to the size of the game screen or size of a room background, whatever is *smaller*, each time new room is loaded. This is convenient in case you want to rely on a common behavior. If you prefer to customize cameras yourself standard behavior may be disabled using [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload) property.
 
 *Compatibility:* Camera struct is supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [Viewport](Viewport), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload), [Game.Camera](Game#camera), [Game.Cameras](Game#cameras)
 
 ---
 
@@ -47,7 +49,7 @@ Removes an existing camera. Primary camera can be never removed and this command
 
 Changes camera position in the room and disables automatic tracking of the player character.
 
-*See Also:* [Camera.SetSize](Camera#setsize), [Camera.AutoTracking](Camera#autotracking), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Width](Camera#width), [Camera.Height](Camera#height)
+*See Also:* [Camera.SetSize](Camera#setsize), [Camera.AutoTracking](Camera#autotracking), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Width](Camera#width), [Camera.Height](Camera#height), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
 
 ---
 
@@ -59,7 +61,7 @@ Changes camera's capture dimensions in room coordinates.
 
 If the camera's size is larger than the viewport it is drawn in then the room will be scaled down (zoom-out effect), if camera is smaller than the viewport then the room will be scaled up (zoom-in effect).
 
-*See Also:* [Camera.SetAt](Camera#setat), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Width](Camera#width), [Camera.Height](Camera#height)
+*See Also:* [Camera.SetAt](Camera#setat), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Width](Camera#width), [Camera.Height](Camera#height), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
 
 ---
 
@@ -79,7 +81,7 @@ Gets/sets whether this camera will follow the player character automatically. Ot
 
 Gets/sets the camera's capture height in room coordinates.
 
-*See Also:* [Camera.SetAt](Camera#setat), [Camera.SetSize](Camera#setsize), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Width](Camera#width)
+*See Also:* [Camera.SetAt](Camera#setat), [Camera.SetSize](Camera#setsize), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Width](Camera#width), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
 
 ---
 
@@ -89,7 +91,7 @@ Gets/sets the camera's capture height in room coordinates.
 
 Gets/sets the camera's capture width in room coordinates.
 
-*See Also:* [Camera.SetAt](Camera#setat), [Camera.SetSize](Camera#setsize), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Height](Camera#height)
+*See Also:* [Camera.SetAt](Camera#setat), [Camera.SetSize](Camera#setsize), [Camera.X](Camera#x), [Camera.Y](Camera#y), [Camera.Height](Camera#height), [Screen.AutoSizeViewportOnRoomLoad](Screen#autosizeviewportonroomload)
 
 ---
 
