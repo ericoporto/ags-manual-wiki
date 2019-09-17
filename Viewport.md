@@ -125,7 +125,9 @@ Gets/sets the viewport's height in screen coordinates.
 
     int Viewport.ZOrder;
 
-Gets/sets the viewport's z-order relative to other viewports. This will be taken into account if multiple viewports overlap.
+Gets/sets the viewport's z-order relative to other viewports. This will be taken into account if multiple viewports overlap to define which should be displayed above and which below.
+
+The z-order is an arbitrary number and only have meaning in comparison with other viewport's setting. Similarily to [GUI.ZOrder](GUI#zorder), the lower value puts viewport to the back and higher value to the top.
 
 *See Also:* [Viewport.SetPosition](Viewport#setposition), [Viewport.X](Viewport#x), [Viewport.Y](Viewport#y), [Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height)
 
