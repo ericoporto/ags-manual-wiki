@@ -345,15 +345,15 @@ will execute the code only if interaction variable \"climbed rock\" is
 
 ### GetLocationType
 
-    GetLocationType(int x, int y)
+    LocationType GetLocationType(int x, int y)
 
-Returns what type of thing is at location (X,Y); whether it is a
-character, object, hotspot or nothing at all. This may be useful if you
-want to process a mouse click differently depending on what the player
-clicks on.
+Returns what type of room thing is seen under the given screen coordinates (x, y): whether it is a character, object, hotspot or nothing at all. This may be useful, for example, if you want to process a mouse click differently depending on what the player clicks on.
 
-**NOTE:** The co-ordinates are screen co-ordinates, NOT room
-co-ordinates. See description of GetLocationName for more info.
+It's important to know that this will work only if there's a room viewport found on screen at that point, otherwise this function will fail and return "nothing".
+
+Also, this function is "blocked" by any interactable non-room object, such as GUI, and will return "nothing" as well if one is found under these screen coordinates.
+
+**NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM co-ordinates. This means that this function is suitable for use with the mouse cursor position variables.
 
 The value returned is one of the following:
 
