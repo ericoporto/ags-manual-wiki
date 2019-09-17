@@ -582,22 +582,20 @@ will disable the user interface if it's enabled.
 
 ### IsInteractionAvailable
 
-    IsInteractionAvailable (int x, int y, int mode)
+    int IsInteractionAvailable(int x, int y, int mode)
 
-Checks whether there is an interaction defined for clicking on the
-screen at (X,Y) in cursor mode MODE.
+Checks whether there is an interaction defined inside a room for clicking on the screen at (X, Y) in cursor mode MODE.
+Please note that x and y are *screen* coordinates, not room coordinates.
 
-This function is very similar to Room.ProcessClick, except that rather
-than carry out any interactions it encounters, it simply returns 1 if
-something would have happened, or 0 if unhandled_event would have been
-run.
+This function is very similar to Room.ProcessClick, except that rather than carry out any interactions it encounters, it simply returns 1 if something would have happened, or 0 if unhandled_event would have been run.
 
-This is useful for enabling options on a verb-coin style GUI, for
-example.
+Function will fail and return 0 if there's no room viewport on screen at the given coordinates. On the other hand it ignores any non-room objects such as GUI, and "click throughs" any GUI that covers room at this location.
+
+This function is useful for enabling options on a verb-coin style GUI, for example.
 
 Example:
 
-    if (IsInteractionAvailable(mouse.x,mouse.y, eModeLookat) == 0)
+    if (IsInteractionAvailable(mouse.x, mouse.y, eModeLookat) == 0)
       Display("looking here would not do anything.");
 
 *See Also:*
