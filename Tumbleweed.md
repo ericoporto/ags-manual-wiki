@@ -165,7 +165,7 @@ There are currently three ways of using an inventory item, you can choose from.
 
 You can add an exit extension to hotspots and objects. Clicking on such a hotspot
 will make the player walk to it and change the room afterwards.
-There are several advantages compared to the usual methods like ‘screen edges'
+There are several advantages compared to the usual methods like 'screen edges'
 or stand-on hotspot functions:
 
 
@@ -682,7 +682,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 int Verbs.GoToCharacterEx(Character*chwhogoes, Character*ch, eDirection dir, int xoffset, int yoffset, bool NPCfacesplayer, int blocking);
 ```
 
-Goes to a character staying at the side defined by ‘direction': 1 up, 2 right, 3 down, 4 left and it stays at xoffset or yofsset from the character.
+Goes to a character staying at the side defined by 'direction': 1 up, 2 right, 3 down, 4 left and it stays at xoffset or yofsset from the character.
 blocking: 0=non-blocking; 1=blocking; 2=semi-blocking
 Returns 1, if the character has reached it's goal and 0 if the movement has been cancelled before.
 
@@ -814,7 +814,7 @@ blocking: 0=non-blocking; 1=blocking; 2=semi-blocking (default)
 void Verbs.WalkOffScreen();
 ```
 
-Handles the action of hotspots or objects with the exit extension (‘>e'). Take a look at chapter about extensions to see what this function does.
+Handles the action of hotspots or objects with the exit extension ('>e'). Take a look at chapter about extensions to see what this function does.
 
 *See also:*
 [Extensions](Tumbleweed#extensions)
