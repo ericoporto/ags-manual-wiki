@@ -318,6 +318,23 @@ will display a message if plugin is present.
 
 ---
 
+### PlayVoiceClip
+
+    static AudioChannel* Game.PlayVoiceClip(Character*, int cue, bool as_speech)
+
+Plays a voice clip from `speech.vox` in a non-blocking manner. It returns an AudioChannel pointer which you may use to control playback same way you control other clips, or null if it could not be started.
+
+**Note:** due how audiochannels work internally right now, this is always same channel, and you may probably also get it as `System.AudioChannels[0]` (maybe not a very good idea to rely on though).
+
+Character and "cue" arguments are used to find actual clip, this works same way as when you do cEgo.Say("&10 blablabla"); <- in this case "10" is a cue number.
+
+The `as_speech` argument tells whether playback has same effect on game as regular speech. At the moment this means that music volume will drop and restore after playback is finished.
+This parameter `as_speech = true` by default, so it may be omited.
+
+This command will be ignored if a regular blocking voice is played.
+
+---
+
 ### SetSaveGameDirectory
 
     static bool Game.SetSaveGameDirectory(string directory)
