@@ -422,31 +422,41 @@ Example:
 
 ### Camera
 
-    static readonly Camera* Camera
+    static readonly Camera* Game.Camera;
 
-Gets the primary camera. This camera cannot be deleted.
+Gets the primary camera. This is the default camera that is created automatically at the start of the game and cannot be deleted.
 
-*See Also:* [Camera.Create](Camera#create), [Camera.Delete](Camera#delete), [Viewport.Camera](Viewport#camera)
-
----
-
-### Cameras
-
-    static readonly Camera* Cameras[]
-
-Gets a Camera by it's index.
-
-*See Also:* [Camera.Create](Camera#create), [Viewport.Camera](Viewport#camera), [Game.Camera](Game#camera)
+*See Also:* [Game.Cameras](Game#cameras), [Camera](Camera), [Camera.Create](Camera#create), [Camera.Delete](Camera#delete), [Viewport.Camera](Viewport#camera)
 
 ---
 
 ### CameraCount
 
-    static readonly int CameraCount
+    static readonly int Game.CameraCount
 
 Gets the number of cameras.
 
-*See Also:* [Camera.Create](Camera#create), [Viewport.Camera](Viewport#camera), [Game.Camera](Game#camera)
+*See Also:* [Game.Cameras](Game#cameras)
+
+---
+
+### Cameras
+
+    static readonly Camera* Game.Cameras[int index];
+
+Returns the Camera instance by its index. There's always at least primary camera at the index 0, more could be created in script using [Camera.Create](Camera#create).
+
+**IMPORTANT:** with the current implementation when you delete a custom camera in the middle all the following cameras will be shifted towards beginning of array, changing their indexes.
+
+Example:
+
+    for (int i = 0; i < Game.CameraCount; i++) {
+        Game.Cameras[i].SetAt(0, 0);
+    }
+
+This script positions all existing cameras at the room's top-left corner.
+
+*See Also:* [Game.Camera](Game#camera), [Game.CameraCount](Game#cameracount), [Camera.Create](Camera#create), [Camera.Delete](Camera#delete), [Viewport.Camera](Viewport#camera)
 
 ---
 
