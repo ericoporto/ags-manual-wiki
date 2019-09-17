@@ -16,7 +16,7 @@ concepts you use when creating a game with AGS.
 
 The two new concepts are: event handling and default actions, using extensions.
 
-Let’s take a look at the event handling, or in other words: stuff that happens
+Let's take a look at the event handling, or in other words: stuff that happens
 after you have clicked on something.
 Normally you create a function for each event of an object, a hotspot etc.
 Functions like cup_Interact() or cup_Look().
@@ -60,7 +60,7 @@ called to determine the event/action. The current defined actions are:
 eGA_LookAt, eGA_TalkTo, eGA_GiveTo, eGA_PickUp, eGA_Use, eGA_Open, eGA_Close, eGA_Push, eGA_Pull,eGA_UseInv, eGA_Default and eMG_WalkTo
 ```
 
-For inventory items, it’s a little bit different, because there is no any_click
+For inventory items, it's a little bit different, because there is no any_click
 event in the room editor. So you first start with "other click on inventory item",
 which creates the function `iCup_OtherClick` (in case you have an item, called `iCup`).
 Now copy this function name and paste it at other events, like interact, look,
@@ -70,7 +70,7 @@ You can also take a look at the sample items.
 The second main aspect of the GUI are the extensions. You add an extension to a
 location (Hotspots, Objects etc.) by editing its description.
 
-For example, let’s take an object. In the sample room, the object is called `oCup`
+For example, let's take an object. In the sample room, the object is called `oCup`
 and the description is simply "Cup". When move the cursor over this cup
 and no extension is defined, the default action will be "look at". Also the
 corresponding verb button in the gui starts to highlight.
@@ -91,7 +91,7 @@ of the following letters:
 * `v`: variable extension
 * `e`: exit
 
-Let’s give `oCup` the description "`Cup>p`". Now the right-click action has
+Let's give `oCup` the description "`Cup>p`". Now the right-click action has
 changed. If you now move the mouse on the cup, the verb button "Pick Up" is
 highlighted. If you right-click the object, the any_click function from above is
 called. It checks for the used action and will perform the chosen action.
@@ -118,7 +118,7 @@ if (Verbs.UsedAction(eGA_GiveTo))
 else Verbs.Unhandled();
 ```
 
-If you need to use "ItemGiven" in other scripts than the global one, you need to import it manually. It’s not defined via global variable pane inside the AGS editor.
+If you need to use "ItemGiven" in other scripts than the global one, you need to import it manually. It's not defined via global variable pane inside the AGS editor.
 
 ---
 
@@ -154,9 +154,9 @@ There are currently three ways of using an inventory item, you can choose from.
 
     For the last option, you need to remove the use-extension and remove the
     event function.
-    Yep, that’s right: on the right side of "Interact inventory item" is
+    Yep, that's right: on the right side of "Interact inventory item" is
     no function at all.
-    If you then use the item, whether it’s via the verb-button or a direct
+    If you then use the item, whether it's via the verb-button or a direct
     click, the action always stays "use with".
 
 ---
@@ -165,7 +165,7 @@ There are currently three ways of using an inventory item, you can choose from.
 
 You can add an exit extension to hotspots and objects. Clicking on such a hotspot
 will make the player walk to it and change the room afterwards.
-There are several advantages compared to the usual methods like ‘screen edges’
+There are several advantages compared to the usual methods like ‘screen edges'
 or stand-on hotspot functions:
 
 
@@ -178,7 +178,7 @@ This is how it works:
 
 First of all create your hotspot and let it have the "`>e`" extension.
 Now switch over to the events (that little flash) and add the `Usermode_1` hotspot event.
-Eventually you’ll end in the room script with a function called `hExit_Mode8`.
+Eventually you'll end in the room script with a function called `hExit_Mode8`.
 In that function, all you have to do is to script the room change. e.g.
 
 ```
@@ -213,7 +213,7 @@ Exit>e
 ```
 
 No additional walking will occur. This is useful for exits not being at the
-screen border. There’s also an example in the second room of the demo template.
+screen border. There's also an example in the second room of the demo template.
 
 ---
 
@@ -223,7 +223,7 @@ Currently the GUI supports German, French, Spanish, Italian, Portuguese and Dutc
  If you like to help translating this template, please drop me a PM at the AGS Forums.
 
 If you like to create your game in a different language than English, you need
-to setup a different default language. In the TemplateSettings.asc module you’ll
+to setup a different default language. In the TemplateSettings.asc module you'll
 find the line:
 
 ```
@@ -237,7 +237,7 @@ including all provided dialogs, unhandled events and verb actions.
 
 If you are providing a multilanguage game, which default language is English
 instead, you will probably create one or more AGS translation files. Sadly AGS
-won’t automatically change GUI graphics by the language preference set by
+won't automatically change GUI graphics by the language preference set by
 running the game setup, but we got you covered with this: after generating a new
 language, tell your translators to look out for the line.
 
@@ -355,7 +355,7 @@ Returns true, if the GUI is currently disabled, false otherwise
 int Verbs.GlobalCondition(int parameter);
 ```
 
-Used to check for conditions that are used many times in the script. For example, it’s used to check, if the mouse cursor is in the inventory and the mode walk or pickup are selected.
+Used to check for conditions that are used many times in the script. For example, it's used to check, if the mouse cursor is in the inventory and the mode walk or pickup are selected.
 Returns 1, if the condition is true and 0 otherwise.
 
 ---
@@ -395,7 +395,7 @@ Takes care of showing or hiding the inventory scroll sprites.
 In order to give a the player a feedback for actions the author hasn't thought
 of, unhandled events come into play.
 With a single function, you can achieve something like "That doesn't work" or
-"I can’t pull that", which makes a game much more authentic and alive.
+"I can't pull that", which makes a game much more authentic and alive.
 The messages itself are defined outside of this function, initially in TemplateSettings.asc
 
 ---
@@ -507,7 +507,7 @@ This function makes the right-click shortcuts work. If you use extensions like "
 void CheckDefaultAction();
 ```
 
-This function checks for a given extension in hotspots, objects and characters. If there isn’t an extension, a default action is given, e.g.
+This function checks for a given extension in hotspots, objects and characters. If there isn't an extension, a default action is given, e.g.
 "Talk to" if the mouse is over a character. In case of a given extension, the default actions are being overridden.
 It is also defined here, which letters are causing what default action. See the chapter Extensions for more details.
 
@@ -610,7 +610,7 @@ Using this function makes the character turn to the direction, mentioned above.
 
 ### Semi-blocking movement functions
 
-Semi-blocking means, that you can cancel the movement, but certain code is only executed, after the character has actually reached it’s goal.
+Semi-blocking means, that you can cancel the movement, but certain code is only executed, after the character has actually reached it's goal.
 To archive this, these functions are called inside an if-clause.
 
 Example:
@@ -619,8 +619,8 @@ Example:
 if(Verbs.MovePlayer(20,20)) Display("The player has reached the destination.");
 ```
 
-If the player’s character reaches the coordinates 20,20, the message "I’m there" is being displayed.
-If the movement is being cancelled by a mouseclick, the message doesn’t appear.
+If the player's character reaches the coordinates 20,20, the message "I'm there" is being displayed.
+If the movement is being cancelled by a mouseclick, the message doesn't appear.
 
 - [Verbs.MovePlayer](Tumbleweed#moveplayer)
 - [Verbs.MovePlayerEx](Tumbleweed#moveplayerex)
@@ -645,7 +645,7 @@ int Verbs.MovePlayer(int x, int y);
 ```
 
 Moves the player character around on walkable areas, a wrapper for MovePlayerEx.
-Returns 1, if the character has reached it’s goal and 0 if the movement has been cancelled before.
+Returns 1, if the character has reached it's goal and 0 if the movement has been cancelled before.
 
 *See also:*
 [Verbs.MovePlayerEx](Tumbleweed#moveplayerex)
@@ -657,8 +657,8 @@ int Verbs.MovePlayerEx(int x, int y, WalkWhere direct);
 ```
 
 Move the player character to x,y coords, waiting until he/she gets there, but allowing to cancel the action by pressing a mouse button.
-Returns 1, if the character hasn’t cancelled the movement and 0 if the movement has been cancelled before.
-2 is returned, if the characters has actually reached it’s goal: eg. if a walkable area is being removed while the player is still moving.
+Returns 1, if the character hasn't cancelled the movement and 0 if the movement has been cancelled before.
+2 is returned, if the characters has actually reached it's goal: eg. if a walkable area is being removed while the player is still moving.
 
 ---
 
@@ -669,7 +669,7 @@ int Verbs.GoToCharacter(Character*charid, eDirection dir, bool NPCfacesplayer, i
 ```
 
 The same as GoToCharacterEx, just with the one character being the player and a default offset of x=35px and y=20px.
-Returns 1, if the character has reached it’s goal and 0 if the movement has been cancelled before.
+Returns 1, if the character has reached it's goal and 0 if the movement has been cancelled before.
 
 *See also:*
 [Verbs.GoToCharacterEx](Tumbleweed#gotocharacterex)
@@ -682,9 +682,9 @@ Returns 1, if the character has reached it’s goal and 0 if the movement has be
 int Verbs.GoToCharacterEx(Character*chwhogoes, Character*ch, eDirection dir, int xoffset, int yoffset, bool NPCfacesplayer, int blocking);
 ```
 
-Goes to a character staying at the side defined by ‘direction’: 1 up, 2 right, 3 down, 4 left and it stays at xoffset or yofsset from the character.
+Goes to a character staying at the side defined by ‘direction': 1 up, 2 right, 3 down, 4 left and it stays at xoffset or yofsset from the character.
 blocking: 0=non-blocking; 1=blocking; 2=semi-blocking
-Returns 1, if the character has reached it’s goal and 0 if the movement has been cancelled before.
+Returns 1, if the character has reached it's goal and 0 if the movement has been cancelled before.
 
 *See also:*
 [Verbs.GoToCharacter](Tumbleweed#gotocharacter),
@@ -699,7 +699,7 @@ int Verbs.NPCGoToCharacter(Character*charidwhogoes, Character*charidtogoto, eDir
 ```
 
 The same as GoToCharacterEx, just with an default offset of x=35 and y=20
-Returns 1, if the character has reached it’s goal and 0 if the movement has been cancelled before.
+Returns 1, if the character has reached it's goal and 0 if the movement has been cancelled before.
 
 *See also:*
 [Verbs.GoToCharacterEx](Tumbleweed#gotocharacterex)
@@ -712,16 +712,16 @@ Returns 1, if the character has reached it’s goal and 0 if the movement has be
 int Verbs.AnyClickMove(int x, int y, eDirection dir);
 ```
 
-Moves the player character to the coordinates given in the parameters. If the player reaches the destination, it’s turns to the given direction.
-Returns 1, if the character has reached it’s goal and 0 if the movement has been cancelled before.
+Moves the player character to the coordinates given in the parameters. If the player reaches the destination, it's turns to the given direction.
+Returns 1, if the character has reached it's goal and 0 if the movement has been cancelled before.
 You can use this kind of functions (including the movePlayer function which is called by this function),
-to check if the player actually reached it’s destination. For example:
+to check if the player actually reached it's destination. For example:
 
 ```
 if (Verbs.AnyClickMove(130,110,eDir_Left) == 1 ) player.Say("I've reached the place.");
 ```
 
-So the Message is only displayed, if the movement hasn’t been cancelled.
+So the Message is only displayed, if the movement hasn't been cancelled.
 
 *See also:*
 [Verbs.MovePlayer](Tumbleweed#moveplayer),
@@ -735,7 +735,7 @@ So the Message is only displayed, if the movement hasn’t been cancelled.
 int Verbs.AnyClickWalk(int x, int y, eDirection dir);
 ```
 
-This function is almost similar to AnyClickMove. But it’s only called, if the current action is eGA_WalkTo.
+This function is almost similar to AnyClickMove. But it's only called, if the current action is eGA_WalkTo.
 
 *See also:*
 [Verbs.MovePlayer](Tumbleweed#moveplayer),
@@ -763,7 +763,7 @@ This function moves the player character to the given location, turns it to the 
 int Verbs.AnyClickWalkLookPick(int x, int y, eDirection dir, String lookat, int objectID, InventoryItem*item, AudioClip *sound);
 ```
 
-This function starts the same as any_click_walk_look. If an object ID > 0 has been given, this object is set invisible. Afterwards the inventory item is going to be added to the player’s inventory and if there’s an audioclip in the parameters, that one is played too.
+This function starts the same as any_click_walk_look. If an object ID > 0 has been given, this object is set invisible. Afterwards the inventory item is going to be added to the player's inventory and if there's an audioclip in the parameters, that one is played too.
 
 The function return 0 if the action has been cancelled, before the player has reached the coordinates. 1 is returned if the player has reached the given destination, but has not picked up the item. 2 is returned, if the item has been picked up.
 
@@ -798,7 +798,7 @@ if (Verbs.AnyClickUseInv(iWrench,100,130,eDir_Left) == 2 ) player.Say("I will no
 int Verbs.GoTo(int blocking);
 ```
 
-Go to whatever the player clicked on. This function is used to intercept a walk-to event and check if the player has reached it’s goal.
+Go to whatever the player clicked on. This function is used to intercept a walk-to event and check if the player has reached it's goal.
 E.g. this is used in the exit extension processing.
 blocking: 0=non-blocking; 1=blocking; 2=semi-blocking (default)
 
@@ -814,7 +814,7 @@ blocking: 0=non-blocking; 1=blocking; 2=semi-blocking (default)
 void Verbs.WalkOffScreen();
 ```
 
-Handles the action of hotspots or objects with the exit extension (‘>e’). Take a look at chapter about extensions to see what this function does.
+Handles the action of hotspots or objects with the exit extension (‘>e'). Take a look at chapter about extensions to see what this function does.
 
 *See also:*
 [Extensions](Tumbleweed#extensions)
@@ -853,7 +853,7 @@ function room_FirstLoad()
 ```
 
 This will set up a door with the id 20 to the state 2, locked. With "Doors.InitObject", you connect the object, displaying a sprite of an opened door, with the door ID.
-Now let’s take a look at your hotspot’s function:
+Now let's take a look at your hotspot's function:
 
 ```
 function hDoor_AnyClick()
@@ -875,7 +875,7 @@ Verbs.OpenCloseExtension (20);
 ```
 
 This tells the script, that Room 1 contains a hotspot with the id 1. This is connected to a door a door with the id 20.
-So now, the right-click should suggest open/close, depending on the door’s state.
+So now, the right-click should suggest open/close, depending on the door's state.
 
 To define the messages, the player character says, when approaching a door, you can access the array holding those messages anytime. Initially they are setup in the TemplateSettings.asc module.
 
@@ -943,14 +943,14 @@ Parameters:
 
 * door_id: The door id, you have defined
 * act_object: The object, containing the open sprite
-* x,y: the walk-to point of the door (please don’t use the built in "walk-to coordinates" feature of the room editor.
-* dir: the direction, the player’s character should face, after it reached x,y
+* x,y: the walk-to point of the door (please don't use the built in "walk-to coordinates" feature of the room editor.
+* dir: the direction, the player's character should face, after it reached x,y
 * nr_room: if the door is opened and walking through it, the player is being send to this room
 * nr_x,nr_y: the x,y coordinates of inside of the new room
 * nr_dir: after the room change, the player faces this direction
 
-This is the main function of the door scripts. With this you connect the hotspot with the door and the player’s action.
-If you have defined default door sounds, these are also being called in this function. Also you can’t unlock a door with this function.
+This is the main function of the door scripts. With this you connect the hotspot with the door and the player's action.
+If you have defined default door sounds, these are also being called in this function. Also you can't unlock a door with this function.
 You need Doors.AnyClickSpecial for that.
 
 *See also:*
@@ -1003,7 +1003,7 @@ This function defines the text for the verb buttons, e.g. if you click on the ta
 void Verbs.AdjustLanguage();
 ```
 
-This function has to be called from inside the template’s game_start() function.
+This function has to be called from inside the template's game_start() function.
 It sets up everything related to the verb buttons, so you need to take a look at this, if you want to customize your GUI.
 It is also import to understand, how this function works, if you want to get you game translated.
 If you take a closer look at this function, you will notice the following lines:
@@ -1039,7 +1039,7 @@ tells the AGS:
   can see several buttons. The one with the ID 2 will be used for the action 
   you define here.
 * The button will use the spriteslot 63 as the default graphic and spriteslot 64, 
-  if it’s highlighted. 
+  if it's highlighted. 
   This can be a little bit confusing, since if you look at `gMaingui`, those 
   graphics have already been assigned. But you also need to define the graphics 
   slots in this function, because eventually these are the ones being used.
@@ -1065,7 +1065,7 @@ in AdjustGUIText().
 void Verbs.AdjustGUIText();
 ```
 
-This function will also be called inside the template’s game_start() function.
+This function will also be called inside the template's game_start() function.
 Here you can modify the labels of your GUI buttons for the options GUI. In case you need it, you can also define alternative fonts for different languages.
 
 *See also:*
@@ -1108,10 +1108,10 @@ The bracket acts as a seperator for the extension, the letter tells the script, 
 
 If you like to customize or add these extensions, take a look at the function CheckDefaultAction.
 
-You don’t have to add an extension for every object and hotspot. The template also adds some default actions on it’s own.
-The default action for Characters is "talk to", for Hotspots and Objects, it’s look at.
+You don't have to add an extension for every object and hotspot. The template also adds some default actions on it's own.
+The default action for Characters is "talk to", for Hotspots and Objects, it's look at.
 Inventory items are handled a little differently, the right-click always causes "look at", no matter what. If you left-click an
-item, it’s usually "use with". But if you have added the extension "u", the action will be simply "use".
+item, it's usually "use with". But if you have added the extension "u", the action will be simply "use".
 Clicking the verb button "use" and the item afterwards would cause the same action. But it could seem a little bit unpredictable,
 whether an item can used by a verb button or not. With this shortcut you can make things a little bit easier.
 You can see this behaviour in the sample room, when opening the letter. Otherwise you would have needed something else to interact with it.
@@ -1128,7 +1128,7 @@ But with the use-extension, it is getting opened by a single left-click. The exi
 void Verbs.RemoveExtension();
 ```
 
-Used to remove the extension from a location (Hotspots, Objects etc.), so it doesn’t get displayed in the status bar.
+Used to remove the extension from a location (Hotspots, Objects etc.), so it doesn't get displayed in the status bar.
 
 ---
 
@@ -1138,7 +1138,7 @@ Used to remove the extension from a location (Hotspots, Objects etc.), so it doe
 void Verbs.AddExtension(char extension);
 ```
 
-Used to add a default extension in case the location doesn’t have one.
+Used to add a default extension in case the location doesn't have one.
 
 ---
 
