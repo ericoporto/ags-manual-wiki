@@ -288,61 +288,31 @@ Example:
 
 ### ScreenHeight
 
+**This property is obsolete since AGS 3.5.0. Use [Screen.Height](Screen#height) instead.**
+
 *(Formerly known as system.screen_height, which is now obsolete)*
 
     readonly static int System.ScreenHeight;
 
-Returns the actual screen height that the game is running at. If a
-graphic filter is in use, the resolution returned will be that before
-any stretching by the filter has been applied. If letterbox borders are
-enabled, the screen size reported will include the size of these
-borders.
+Returns the game's screen height in native coordinates, **not** accounting for the scaling applied by graphic renderer. Historically it also included a size of the black letterbox borders, making it a confusing parameter.
 
-**NOTE:** Do **NOT** use this to calculate the centre of the screen when
-working with co-ordinates. Co-ordinates are relative to the viewport, so
-you should use [System.ViewportHeight](System#viewportheight)
-instead. Use the ScreenHeight property only for reporting purposes.
-
-Example:
-
-    Display("Game is running at: %d x %d, %d-bit colour", System.ScreenWidth,
-                                      System.ScreenHeight, System.ColorDepth);
-
-will display the current resolution and colour depth
-
-*See Also:* [System.ColorDepth](System#colordepth),
-[System.ScreenWidth](System#screenwidth),
-[System.ViewportHeight](System#viewportheight)
+*See Also:* [System.ColorDepth](System#colordepth), [Screen.Width](Screen#width), [Screen.Height](Screen#height),
+[Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height)
 
 ---
 
 ### ScreenWidth
 
+**This property is obsolete since AGS 3.5.0. Use [Screen.Width](Screen#width) instead.**
+
 *(Formerly known as system.screen_width, which is now obsolete)*
 
     readonly static int System.ScreenWidth;
 
-Returns the actual screen width that the game is running at. If a
-graphic filter is in use, the resolution returned will be that before
-any stretching by the filter has been applied. If widescreen side
-borders are enabled, the screen width reported will include the size of
-these borders.
+Returns the game's screen width in native coordinates, **not** accounting for the scaling applied by graphic renderer. Historically it also included a size of the black widescreen side borders, making it a confusing parameter.
 
-**NOTE:** Do **NOT** use this to calculate the centre of the screen when
-working with co-ordinates. Co-ordinates are relative to the viewport, so
-you should use [System.ViewportWidth](System#viewportwidth)
-instead. Use the ScreenWidth property only for reporting purposes.
-
-Example:
-
-    Display("Game is running at: %d x %d, %d-bit colour", System.ScreenWidth,
-                                      System.ScreenHeight, System.ColorDepth);
-
-will display the current resolution and colour depth
-
-*See Also:* [System.ColorDepth](System#colordepth),
-[System.ScreenHeight](System#screenheight)
-[System.ViewportWidth](System#viewportwidth)
+*See Also:* [System.ColorDepth](System#colordepth), [Screen.Width](Screen#width), [Screen.Height](Screen#height),
+[Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height)
 
 ---
 
@@ -423,43 +393,33 @@ will display the AGS version number
 
 ### ViewportHeight
 
+**This property is obsolete since AGS 3.5.0. Use [Screen.Height](Screen#height) instead.**
+
 *(Formerly known as system.viewport_height, which is now obsolete)*
 
     readonly static int System.ViewportHeight;
 
-Returns the height of the current viewport. This is reported in the same
-co-ordinate system that the game is using, so you can use this to find
-out what the maximum possible Y co-ordinate is within the screen.
+Returns the game's screen height in native coordinates, **not** accounting for the scaling applied by graphic renderer.
+Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [Viewport.Height](Viewport#height) is **not** a direct equivalent.
 
-Example:
-
-    Display("Game viewport: %d x %d", System.ViewportWidth, System.ViewportHeight);
-
-will display the current viewport size
-
-*See Also:* [System.ScreenHeight](System#screenheight),
-[System.ViewportWidth](System#viewportwidth)
+*See Also:* [Screen.Width](Screen#width), [Screen.Height](Screen#height),
+[Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height)
 
 ---
 
 ### ViewportWidth
 
+**This property is obsolete since AGS 3.5.0. Use [Screen.Width](Screen#width) instead.**
+
 *(Formerly known as system.viewport_width, which is now obsolete)*
 
     readonly static int System.ViewportWidth;
 
-Returns the width of the current viewport. This is reported in the same
-co-ordinate system that the game is using, so you can use this to find
-out what the maximum possible X co-ordinate is within the screen.
+Returns the game's screen width in native coordinates, **not** accounting for the scaling applied by graphic renderer.
+Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [Viewport.Width](Viewport#width) is **not** a direct equivalent.
 
-Example:
-
-    Display("Game viewport: %d x %d", System.ViewportWidth, System.ViewportHeight);
-
-will display the current viewport size
-
-*See Also:* [System.ScreenWidth](System#screenwidth),
-[System.ViewportHeight](System#viewportheight)
+*See Also:* [Screen.Width](Screen#width), [Screen.Height](Screen#height),
+[Viewport.Width](Viewport#width), [Viewport.Height](Viewport#height)
 
 ---
 
