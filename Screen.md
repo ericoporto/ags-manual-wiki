@@ -52,6 +52,9 @@ If game is 320x200 and room is 400x200, then both viewport and camera will be re
 
 ### Height
 
+*(Replaces System.ScreenHeight, which is now obsolete)*
+*(Replaces System.ViewportHeight, which is now obsolete)*
+
     static readonly int Screen.Height;
 
 Gets the native height of the game screen in pixels, which matches game resolution you set in the Editor.
@@ -61,6 +64,9 @@ Gets the native height of the game screen in pixels, which matches game resoluti
 ---
 
 ### Width
+
+*(Replaces System.ScreenWidth, which is now obsolete)*
+*(Replaces System.ViewportWidth, which is now obsolete)*
 
     static readonly int Screen.Width;
 
