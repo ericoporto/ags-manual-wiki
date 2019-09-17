@@ -130,26 +130,24 @@ obsolete)*
 
     static String Game.GetLocationName(int x, int y)
 
-Returns the name of whatever is on the screen at (X,Y). This allows you
-to create the Lucasarts-style status lines reading \"Look at xxx\" as
-the player moves the cursor over them.
+Returns the name of whatever is seen in the room under the given screen coordinates (x, y).
 
-**NOTE:** Unlike Room.ProcessClick, this function actually works on what
-the player can see on the screen - therefore, if the co-ordinates are on
-a GUI, a blank string is returned.
+It's important to know that this will work only if there's a room viewport found on screen at that point, otherwise this function will fail and return a blank string.
 
-**NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM
-co-ordinates. This means that with a scrolling room, the co-ordinates
-you pass are relative to the screen's current position, and NOT
-absolute room co-ordinates. This means that this function is suitable
+Also, this function is "blocked" by any interactable non-room object, such as GUI, and will return blank string if one is found under these screen coordinates.
+
+**NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM co-ordinates. This means that this function is suitable
 for use with the mouse cursor position variables.
+
+This function may allow you, for instance, to create the Lucasarts-style status lines reading \"Look at xxx\" as
+the player moves the cursor over them.
 
 Example:
 
     String location = Game.GetLocationName(mouse.x, mouse.y);
+    lblDescription.Text = location;
 
-will get the name of whatever the mouse is over into the string
-variable.
+will get the name of whatever the mouse is over into the string variable and then assign to a label lblDescription.
 
 *See Also:* [Hotspot.Name](Hotspot#name),
 [InventoryItem.Name](InventoryItem#name),
