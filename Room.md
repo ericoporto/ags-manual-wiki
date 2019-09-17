@@ -403,24 +403,18 @@ obsolete)*
 
     static void Room.ProcessClick(int x, int y, CursorMode)
 
-Simulates clicking the mouse on the location (X,Y) on the screen, in the
-specified cursor mode. This "click" has special behavior in that it
-**only affects Room elements and characters** under given coordinates.
-Any conditions attached to the first object found on given coordinates
-will be executed. Game interface (buttons, sliders, and so on) will be
-**ignored**. Even if the coordinates happen to lie on a button, the
-simulated click will "pass through" that button as if it was not
-present.
+Simulates clicking the mouse on the location (X,Y) on the screen, in the specified cursor mode. This "click" has special behavior in that it **only affects Room elements and characters** under given coordinates.
+Any interactions attached to the first object found on given coordinates and matching the given cursor mode will be executed. Any non-room objects (GUI) will be **ignored**. Even if the coordinates happen to lie on a button, the simulated click will "pass through" that button as if it was not present.
 
-The available cursor modes are the ones you define on your Cursors tab
-(but with eMode prepended to them). Usually these are eModeWalkto,
-eModeLookat, etc.
+Please note that this function accepts *screen* coordinates and not *room* coordinates. If there's no room viewport on screen at this location the function will fail.
+
+The available cursor modes are the ones you define on your Cursors tab (but with eMode prepended to them). Usually these are eModeWalkto, eModeLookat, etc.
 
 Example:
 
     Room.ProcessClick(100, 50, eModeLookat);
 
-will simulate a click in the Look mode on co-ordinates (100, 50).
+will simulate a click in the Look mode on screen co-ordinates (100, 50).
 
 *See Also:* [GUI.ProcessClick](GUI#processclick),
 [Mouse.Click](Mouse#click),
