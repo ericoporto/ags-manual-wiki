@@ -63,7 +63,7 @@ will disable all ground-level events, but leave light levels working
 
 *See Also:* [Hotspot.Enabled](Hotspot#enabled),
 [Region.Enabled](Region#enabled),
-[EnableGroundLevelAreas](Room#enablegroundlevelareas)
+[EnableGroundLevelAreas](Globalfunctions_Room#enablegroundlevelareas)
 
 ---
 
@@ -83,7 +83,7 @@ will re-enable all ground-level events.
 
 *See Also:* [Hotspot.Enabled](Hotspot#enabled),
 [Region.Enabled](Region#enabled),
-[DisableGroundLevelAreas](Room#disablegroundlevelareas)
+[DisableGroundLevelAreas](Globalfunctions_Room#disablegroundlevelareas)
 
 ---
 
@@ -102,7 +102,7 @@ Example:
 
 will turn on object 2 if the background frame of the room is frame 4.
 
-*See Also:* [SetBackgroundFrame](Room#setbackgroundframe)
+*See Also:* [SetBackgroundFrame](Globalfunctions_Room#setbackgroundframe)
 
 ---
 
@@ -120,8 +120,8 @@ Example:
     if (GetScalingAt(player.x, player.y) == 100)
         Display ("The player is currently at normal size.");
 
-*See Also:* [GetWalkableAreaAt](Room#getwalkableareaat),
-[SetAreaScaling](Room#setareascaling)
+*See Also:* [GetWalkableAreaAt](Globalfunctions_Room#getwalkableareaat),
+[SetAreaScaling](Globalfunctions_Room#setareascaling)
 
 ---
 
@@ -145,8 +145,8 @@ Example:
 will turn object 2 on if the player has scrolled the room by 100 pixels
 to the right.
 
-*See Also:* [GetViewportY](Room#getviewporty),
-[SetViewport](Room#setviewport)
+*See Also:* [GetViewportY](Globalfunctions_Room#getviewporty),
+[SetViewport](Globalfunctions_Room#setviewport)
 
 ---
 
@@ -168,8 +168,8 @@ Example:
 will turn object 2 on if the player has scrolled the room by 20 pixels
 to the bottom.
 
-*See Also:* [GetViewportX](Room#getviewportx),
-[SetViewport](Room#setviewport)
+*See Also:* [GetViewportX](Globalfunctions_Room#getviewportx),
+[SetViewport](Globalfunctions_Room#setviewport)
 
 ---
 
@@ -194,7 +194,7 @@ Example:
 
 *See Also:* [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
 [Region.GetAtRoomXY](Region#getatroomxy),
-[GetScalingAt](Room#getscalingat)
+[GetScalingAt](Globalfunctions_Room#getscalingat)
 
 ---
 
@@ -222,7 +222,7 @@ Example:
 
 will display a message if the player has been to room 14.
 
-*See Also:* [ResetRoom](Room#resetroom)
+*See Also:* [ResetRoom](Globalfunctions_Room#resetroom)
 
 ---
 
@@ -246,7 +246,7 @@ Example:
 will scroll the room 100 pixels to the right and then return the screen
 to its original position and unlock the screen viewport.
 
-*See Also:* [SetViewport](Room#setviewport)
+*See Also:* [SetViewport](Globalfunctions_Room#setviewport)
 
 ---
 
@@ -268,7 +268,7 @@ Example:
 
 will make the walking area 5 unwalkable.
 
-*See Also:* [RestoreWalkableArea](Room#restorewalkablearea)
+*See Also:* [RestoreWalkableArea](Globalfunctions_Room#restorewalkablearea)
 
 ---
 
@@ -297,7 +297,7 @@ Example:
 will reset the intro room so it can be played again if the player wants
 to.
 
-*See Also:* [HasPlayerBeenInRoom](Room#hasplayerbeeninroom)
+*See Also:* [HasPlayerBeenInRoom](Globalfunctions_Room#hasplayerbeeninroom)
 
 ---
 
@@ -313,7 +313,7 @@ Example:
 
 will make the walking area 4 walkable again.
 
-*See Also:* [RemoveWalkableArea](Room#removewalkablearea)
+*See Also:* [RemoveWalkableArea](Globalfunctions_Room#removewalkablearea)
 
 ---
 
@@ -342,8 +342,8 @@ Example:
 will set walkable area 5 to use continuous scaling from 120 to 170
 percent.
 
-*See Also:* [GetScalingAt](Room#getscalingat),
-[GetWalkableAreaAt](Room#getwalkableareaat)
+*See Also:* [GetScalingAt](Globalfunctions_Room#getscalingat),
+[GetWalkableAreaAt](Globalfunctions_Room#getwalkableareaat)
 
 ---
 
@@ -372,7 +372,7 @@ Example:
 will change the current room's background frame to 4 if the global
 integer 20 is 1.
 
-*See Also:* [GetBackgroundFrame](Room#getbackgroundframe)
+*See Also:* [GetBackgroundFrame](Globalfunctions_Room#getbackgroundframe)
 
 ---
 
@@ -403,9 +403,9 @@ Example:
 will scroll the screen down from the top 60 pixels, then release it back
 to follow the player around.
 
-*See Also:* [GetViewportX](Room#getviewportx),
-[GetViewportY](Room#getviewporty),
-[ReleaseViewport](Room#releaseviewport)
+*See Also:* [GetViewportX](Globalfunctions_Room#getviewportx),
+[GetViewportY](Globalfunctions_Room#getviewporty),
+[ReleaseViewport](Globalfunctions_Room#releaseviewport)
 
 ---
 
