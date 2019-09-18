@@ -175,25 +175,54 @@ to the bottom.
 
 ### GetWalkableAreaAt
 
-    GetWalkableAreaAt (int x, int y)
+**This function is obsolete since AGS 3.5.0. Use equivalent [GetWalkableAreaAtScreen](Globalfunctions_Room#getwalkableareaatscreen) instead.**
 
-Returns the number of the walkable area at SCREEN co-ordinates (X,Y). If
-there is no walkable area there, or if invalid co-ordinates are
-specified, returns 0.
+    int GetWalkableAreaAt(int x, int y)
 
-NOTE: The co-ordinates are SCREEN co-ordinates, NOT ROOM co-ordinates.
-This means that with a scrolling room, the co-ordinates you pass are
-relative to the screen's current position, and NOT absolute room
-co-ordinates. This means that this function is suitable for use with the
-mouse cursor position variables.
+Returns the ID of the walkable area at *screen* co-ordinates (X, Y). If there is no walkable area there, or if invalid co-ordinates are specified, returns 0.
+
+---
+
+### GetWalkableAreaAtRoom
+
+    int GetWalkableAreaAtRoom(int x, int y)
+
+Returns the ID of the walkable area at *room* co-ordinates (X, Y). If there is no walkable area there, or if invalid co-ordinates are specified, returns 0.
+
+This function may be useful when you need to find a walkable area relative to some other point in room, a room object or character.
 
 Example:
 
-    if (GetWalkableAreaAt(mouse.x,mouse.y) == 0)
+    if (GetWalkableAreaAtRoom(player.x, player.y) == 0)
+        Display ("Player is standing on the walkable area.");
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [GetWalkableAreaAtScreen](Globalfunctions_Room#getwalkableareaatscreen), [Hotspot.GetAtRoomXY](Hotspot#getatroomxy),
+[Region.GetAtRoomXY](Region#getatroomxy),
+[GetScalingAt](Globalfunctions_Room#getscalingat)
+
+---
+
+### GetWalkableAreaAtScreen
+
+    int GetWalkableAreaAtScreen(int x, int y)
+
+Returns the ID of the walkable area at *screen* co-ordinates (X, Y). If there is no walkable area there, or if invalid co-ordinates are specified, returns 0.
+
+There has to be an active room viewport at the specified screen location for this function to succeed, otherwise it also returns 0.
+
+This function is convenient when you need to find a walkable area relative to some screen point, such as mouse cursor's position.
+
+Example:
+
+    if (GetWalkableAreaAtScreen(mouse.x, mouse.y) == 0)
         Display ("You can't walk there.");
 
-*See Also:* [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
-[Region.GetAtRoomXY](Region#getatroomxy),
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [GetWalkableAreaAtRoom](Globalfunctions_Room#getwalkableareaatroom), [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
+[Region.GetAtScreenXY](Region#getatscreenxy),
 [GetScalingAt](Globalfunctions_Room#getscalingat)
 
 ---
