@@ -1,5 +1,32 @@
 ## Hotspot functions and properties
 
+### GetAtRoomXY
+
+    static Hotspot* Hotspot.GetAtRoomXY(int x, int y)
+
+Returns the hotspot at ROOM co-ordinates (X,Y). If there is no hotspot
+there, or if invalid co-ordinates are specified, the Hotspot\*
+representing hotspot 0 will be returned.
+
+Example:
+
+    Hotspot* h = Hotspot.GetAtRoomXY(player.x, player.y);
+    if (h != null) {
+      Display("Player stands on a hotspot %d", h.ID);
+    }
+
+will display the message if the room object oBullet is over any character.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
+[Character.GetAtRoomXY](Character#getatroomxy),
+[Object.GetAtRoomXY](Object#getatroomxy),
+[Region.GetAtRoomXY](Region#getatroomxy),
+[Game.GetLocationName](Game#getlocationname)
+
+---
+
 ### GetAtScreenXY
 
 *(Formerly known as global function GetHotspotAt, which is now
@@ -10,12 +37,6 @@ obsolete)*
 Returns the hotspot at SCREEN co-ordinates (X,Y). If there is no hotspot
 there, or if invalid co-ordinates are specified, the Hotspot\*
 representing hotspot 0 will be returned.
-
-**NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM
-co-ordinates. This means that with a scrolling room, the co-ordinates
-you pass are relative to the screen's current position, and NOT absolute
-room co-ordinates. This means that this function is suitable for use
-with the mouse cursor position variables.
 
 Example:
 
