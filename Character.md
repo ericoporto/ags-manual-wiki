@@ -446,6 +446,31 @@ near him and waiting for a while before he makes his move.
 
 ---
 
+### GetAtRoomXY
+
+    static Character* Character.GetAtRoomXY(int x, int y)
+
+Checks if there is a character at ROOM co-ordinates (X,Y). Returns the character if there is, or null if there is not.
+
+NOTE: Any characters with the "Clickable" property set to false will not be seen by this function.
+
+Example:
+
+    Character* target = Character.GetAtRoomXY(oBullet.x, oBullet.y);
+    if (target != null) {
+      Display("Character %s is hit by a bullet", target.Name);
+    }
+
+will display the message if the room object oBullet is over any character.
+
+*See Also:* [Character.GetAtScreenXY](Character#getatscreenxy),
+[Hotspot.GetAtRoomXY](Hotspot#getatroomxy),
+[Object.GetAtRoomXY](Object#getatroomxy),
+[Region.GetAtRoomXY](Region#getatroomxy),
+[Game.GetLocationName](Game#getlocationname)
+
+---
+
 ### GetAtScreenXY
 
 *(Formerly known as global function GetCharacterAt, which is now
@@ -468,8 +493,10 @@ Example:
 
 will display the message if the mouse cursor is over the EGO character
 
-*See Also:* [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
+*See Also:* [Character.GetAtRoomXY](Character#getatroomxy),
+[Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
 [Object.GetAtScreenXY](Object#getatscreenxy),
+[Region.GetAtScreenXY](Region#getatscreenxy),
 [Game.GetLocationName](Game#getlocationname)
 
 ---
