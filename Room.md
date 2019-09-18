@@ -39,22 +39,6 @@ background, then releases the image.
 
 ---
 
-### GetPlayerCharacter
-
-    GetPlayerCharacter ()
-
-**THIS COMMAND IS NOW OBSOLETE.**<br>
-The recommended replacement is to use the player character's ID
-property, as follows:
-
-Example:
-
-    Display("The player character number is %d", player.ID);
-
-*See Also:* [Character.ID](Character#id)
-
----
-
 ### GetProperty
 
 *(Formerly known as global function GetRoomProperty, which is now
