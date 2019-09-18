@@ -463,6 +463,8 @@ Example:
 
 will display the message if the room object oBullet is over any character.
 
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
 *See Also:* [Character.GetAtScreenXY](Character#getatscreenxy),
 [Hotspot.GetAtRoomXY](Hotspot#getatroomxy),
 [Object.GetAtRoomXY](Object#getatroomxy),
