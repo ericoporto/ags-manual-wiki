@@ -30,3 +30,4 @@ The plugin developer should provide instructions on what to do next.
 Save your game to make sure that AGS remembers that you want to use the
 plugin.
 
+*note:* if you have a Linux version of an Engine plugin (ex: `libagsdrawcircle.so`), place it in the corresponding `Linux/lib64` and `Linux/lib32` directories in the folder containing AGS Editor.
