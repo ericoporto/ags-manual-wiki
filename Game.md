@@ -424,6 +424,8 @@ Example:
 
 Gets the primary camera. This is the default camera that is created automatically at the start of the game and cannot be deleted.
 
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
 *See Also:* [Game.Cameras](Game#cameras), [Camera](Camera), [Camera.Create](Camera#create), [Camera.Delete](Camera#delete), [Viewport.Camera](Viewport#camera)
 
 ---
@@ -433,6 +435,8 @@ Gets the primary camera. This is the default camera that is created automaticall
     static readonly int Game.CameraCount
 
 Gets the number of cameras.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
 *See Also:* [Game.Cameras](Game#cameras)
 
@@ -453,6 +457,8 @@ Example:
     }
 
 This script positions all existing cameras at the room's top-left corner.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
 *See Also:* [Game.Camera](Game#camera), [Game.CameraCount](Game#cameracount), [Camera.Create](Camera#create), [Camera.Delete](Camera#delete), [Viewport.Camera](Viewport#camera)
 
