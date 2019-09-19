@@ -72,13 +72,48 @@ job, having a manual reference is invaluable:
 [Object.Animate](Object#animate)
 
     enum Alignment {
-      eAlignLeft,
-      eAlignCentre,
-      eAlignRight
+      eAlignNone          = 0,
+      eAlignTopLeft       = 1,
+      eAlignTopCenter     = 2,
+      eAlignTopRight      = 4,
+      eAlignMiddleLeft    = 8,
+      eAlignMiddleCenter  = 16,
+      eAlignMiddleRight   = 32,
+      eAlignBottomLeft    = 64,
+      eAlignBottomCenter  = 128,
+      eAlignBottomRight   = 256,
+
+      eAlignHasLeft       = 73,
+      eAlignHasRight      = 292,
+      eAlignHasTop        = 7,
+      eAlignHasBottom     = 448,
+      eAlignHasHorCenter  = 146,
+      eAlignHasVerCenter  = 56
     };
 
+The Alignment enumeration consists of values that could be sumed up in one integer variable to form a more complex combination of alignments. Although that ability is not used anywhere in practice yet, but may be in future. Additionally, it provides a set of masks that could be applied bitwise to check if alignment variable contains one of the distinct directions, for example:
+
+    if (align & eAlignHasLeft)
+      // some code here
+
+will execute some code if *align* variable contains "Left" in any combination (eAlignTopLeft, eAlignMiddleLeft or eAlignBottomLeft).
+
+*Compatibility:* new version of Alignment enum was introduced in AGS 3.5.0. Previous Alignment was renamed into HorizontalAlignment.
+
+*Used by:* [Button.TextAlignment](Button#textalignment)
+
+    enum HorizontalAlignment {
+      eAlignLeft          = 1,
+      eAlignCenter        = 2,
+      eAlignRight         = 4
+    };
+
+Note that HorizontalAlignment's values match first values of Alignment enumeration (eAlignTopLeft, eAlignTopCenter, eAlignTopRight).
+
+*Compatibility:* replaced old Alignment enumeration in AGS 3.5.0.
+
 *Used by:*
-[Character.LockViewAligned](Character#lockviewaligned)
+[Character.LockViewAligned](Character#lockviewaligned), [DrawingSurface.DrawStringWrapped](DrawingSurface#drawstringwrapped), [Label.TextAlignment](Label#textalignment), [ListBox.TextAlignment](ListBox#textalignment), [Speech.TextAlignment](Speech#textalignment)
 
     enum eFlipDirection {
       eFlipLeftToRight,
