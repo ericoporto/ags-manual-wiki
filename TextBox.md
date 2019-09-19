@@ -25,6 +25,18 @@ will change the *txtUserInput* text box to use Font "Normal".
 
 ---
 
+### ShowBorder
+
+    bool TextBox.ShowBorder
+
+Gets/sets whether the text box's border is shown.
+
+Border is drawn using color from TextColor property.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+---
+
 ### Text
 
 *(Formerly known as GetTextBoxText, which is now obsolete)*<br>
@@ -65,5 +77,5 @@ will change text box 'txtInput' to have yellow text.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [TextBox.Text](TextBox#text)
+*See Also:* [TextBox.ShowBorder](TextBox#showborder), [TextBox.Text](TextBox#text)
 
