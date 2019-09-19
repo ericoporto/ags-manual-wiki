@@ -320,16 +320,19 @@ will display a message if plugin is present.
 
     static AudioChannel* Game.PlayVoiceClip(Character* c, int cue, bool as_speech)
 
-Plays a voice clip from `speech.vox` in a non-blocking manner. It returns an AudioChannel pointer which you may use to control playback same way you control other clips, or null if it could not be started.
+Plays a voice clip from the **speech.vox** in a non-blocking manner. It returns an AudioChannel pointer which you may use to control playback same way you control other clips, or null if it could not be started.
 
-**Note:** due how audiochannels work internally right now, this is always same channel, and you may probably also get it as `System.AudioChannels[0]` (maybe not a very good idea to rely on though).
+Character and "cue" arguments are used to find actual clip, this works the same way as when you do `cEgo.Say("&10 speech text");` in which case "10" is a cue number. For more information about this see: [Voice speech](MusicAndSound#voice-speech).
 
-Character and "cue" arguments are used to find actual clip, this works same way as when you do cEgo.Say("&10 blablabla"); <- in this case "10" is a cue number.
+The "as_speech" argument tells whether playback has same effect on game as regular speech. At the moment this means that music volume will drop and restore after playback is finished. This parameter "as_speech" is TRUE by default and may be omited.
 
-The `as_speech` argument tells whether playback has same effect on game as regular speech. At the moment this means that music volume will drop and restore after playback is finished.
-This parameter `as_speech = true` by default, so it may be omited.
+This command will be ignored if a regular blocking voice is currently playing. Also, both blocking and non-blocking voice will interrupt non-blocking voice-over if one was playing.
 
-This command will be ignored if a regular blocking voice is played.
+**NOTE:** because of how audiochannels work internally right now voice is always played on the same channel 0, therefore you could also get it as `System.AudioChannels[0]`, but it may not be a good idea to rely on this because channel behavior may change in future.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also*: [Voice speech](MusicAndSound#voice-speech), [AudioChannel](AudioChannel), [AudioClip.Play](AudioClip#play), [Character.Say](Character#say)
 
 ---
 
