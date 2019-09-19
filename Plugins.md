@@ -30,4 +30,6 @@ The plugin developer should provide instructions on what to do next.
 Save your game to make sure that AGS remembers that you want to use the
 plugin.
 
-*note:* if you have a Linux version of an Engine plugin (ex: `libagsdrawcircle.so`), place it in the corresponding `Linux/lib64` and `Linux/lib32` directories in the folder containing AGS Editor.
+If you have a Linux version of an Engine plugin (ex: `libagsdrawcircle.so`), place it in the corresponding `Linux/lib64` and `Linux/lib32` directories in the folder containing AGS Editor.
+
+***note:*** If you hit a "there was an error loading this plugin" message, there is a chance the problem is with the file Security Zone Identifier, check the [Troubleshooting Windows Zone Identifier](TroubleshootingWindowsZoneID) section. If this doesn't solve your problem, please post in the respective plugin page on the [Modules & Plugins board](https://www.adventuregamestudio.co.uk/forums/index.php?board=10.0) in the forums.
