@@ -359,6 +359,17 @@ to the front.<br>
 [AudioClip.PlayFrom](AudioClip#playfrom),
 [AudioClip.PlayQueued](AudioClip#playqueued)
 
+    enum GUIPopupStyle {
+      eGUIPopupNormal = 0,
+      eGUIPopupMouseYPos = 1,
+      eGUIPopupModal = 2,
+      eGUIPopupPersistent = 3
+    };
+
+*Supported by:* AGS 3.5.0 and higher.
+
+*Used by:* [GUI.PopupStyle](GUI#popupstyle)
+
     enum StringCompareStyle {
       eCaseInsensitive = 0,
       eCaseSensitive = 1
