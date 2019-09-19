@@ -666,8 +666,7 @@ Example:
 
 will make object 2 ignore clicks from the player.
 
-*See Also:* [Character.Clickable](Character#clickable),
-[Object.IgnoreWalkbehinds](Object#ignorewalkbehinds)
+*See Also:* [Character.Clickable](Character#clickable)
 
 ---
 
@@ -787,12 +786,11 @@ Example:
 
 will tell the Door object not to be scaled on walkable areas.
 
-*See Also:*
-[Object.IgnoreWalkbehinds](Object#ignorewalkbehinds)
-
 ---
 
 ### IgnoreWalkbehinds
+
+**This property is obsolete since AGS 3.5.0 and not recommended for use at all.**
 
 *(Formerly known as SetObjectIgnoreWalkbehinds, which is now obsolete)*
 
@@ -808,18 +806,7 @@ a picture on a wall, and the wall can be walked behind - but you also
 want it to act correctly in relation to characters, so changing its
 baseline wouldn't work.
 
-**NOTE:** enabling this property does not currently work properly when
-using the Direct3D driver.
-
-Example:
-
-    object[1].IgnoreWalkbehinds = true;
-
-will make object 1 ignore walk behinds.
-
-*See Also:* [Object.Baseline](Object#baseline),
-[Object.Clickable](Object#clickable),
-[Object.IgnoreScaling](Object#ignorescaling)
+**IMPORTANT:** This property is a "dirty hack" and not recommended for use at all. It breaks the logic of drawing order for room elements, and only works as intended if your game is run using Software graphics driver. We strongly suggest to design your rooms without it and rely on [Baseline](Object#baseline) property instead.
 
 ---
 
