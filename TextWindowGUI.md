@@ -2,6 +2,8 @@
 
 This struct extends the GUI struct, so it has all functions and properties from [GUI](GUI), in addition to the properties below.
 
+*Compatibility:* TextWindowGUI is supported by AGS 3.5.0 and later versions.
+
 ---
 
 ### TextColor
