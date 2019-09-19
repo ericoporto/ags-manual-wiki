@@ -52,6 +52,31 @@ speed 3. The function won't return until the animation is finished.
 
 ---
 
+### GetAtRoomXY
+
+    static Object* Object.GetAtRoomXY(int x, int y)
+
+Checks if there is a room object at ROOM co-ordinates (X,Y). Returns
+the object if there is, or *null* if there is not.
+
+Example:
+
+    if (Object.GetAtRoomXY(oBullet.x, oBullet.y) == oWall) {
+      Display("A bullet hits the wall.");
+    }
+
+will display the message if the object oBullet is over the object oWall.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [Object.GetAtScreenXY](Object#getatscreenxy),
+[Character.GetAtRoomXY](Character#getatroomxy),
+[Hotspot.GetAtRoomXY](Hotspot#getatroomxy),
+[Region.GetAtRoomXY](Region#getatroomxy),
+[Game.GetLocationName](Game#getlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
+
+---
+
 ### GetAtScreenXY
 
 *(Formerly known as global function GetObjectAt, which is now obsolete)*
@@ -65,15 +90,13 @@ See the description of GetLocationName for more on screen co-ordinates.
 
 Example:
 
-    if (Object.GetAtScreenXY(211,145) == oRock) {
-      // code here
+    if (Object.GetAtScreenXY(mouse.x, mouse.y) == oRock) {
+      Display("Clicked on the rock.");
     }
 
-will execute the code only if object oRock is on the screen coordinates
-211,145.
+will display the message if there is the object oRock under the mouse cursor.
 
-*See Also:* [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
-[Game.GetLocationName](Game#getlocationname)
+*See Also:* [Object.GetAtRoomXY](Object#getatroomxy), [Character.GetAtScreenXY](Character#getatscreenxy), [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy), [Region.GetAtScreenXY](Region#getatscreenxy), [Game.GetLocationName](Game#getlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
 
 ---
 
