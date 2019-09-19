@@ -101,13 +101,12 @@ This will simulate user click at (100,100).
 
 ### ControlEnabled
 
-    readonly static bool Mouse.ControlEnabled;
+    static bool Mouse.ControlEnabled;
 
-Tells if the mouse cursor movement is currently being controlled by AGS
-engine; otherwise it is controlled by operation system. This is usually
-true only when game is run in fullscreen mode.
+Gets/sets if the mouse cursor movement has to be controlled by AGS
+engine; otherwise it is controlled by operation system. Note that in practice mouse is only controlled when the game is run in fullscreen mode.
 
-This property may be useful to know if custom mouse speed setting is
+This setting may be useful to know if custom mouse speed setting is
 applied or not.
 
 Example:
@@ -117,7 +116,8 @@ Example:
 makes mouse speed slider visible only if the mouse is controlled by the
 game.
 
-*Compatibility:* Supported by **AGS 3.3.5** and later versions.
+*Compatibility:* Supported by **AGS 3.3.5** and later versions.<br>
+Settable since **AGS 3.5.0**.
 
 *See Also:* [Mouse.Speed](Mouse#speed)
 
