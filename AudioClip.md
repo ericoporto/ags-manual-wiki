@@ -133,6 +133,30 @@ again.
 
 ---
 
+### ID
+
+    readonly int AudioClip.ID
+
+Gets the ID of this audio clip. This could be used for diagnostic purposes as well to find same clip in the Game.AudioClips[] array.
+
+Example:
+
+    for (int i = 0; i < System.AudioChannelCount; i++) {
+      AudioClip *clip = System.AudioChannels[i].PlayingClip;
+      if (clip != null)
+        Display("Channel %d has clip %d playing", i, clip.ID);
+      else
+        Display("Channel %d has no clip on it at the moment", i);
+    }
+
+will display information about clips playing on each audio channel.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [Game.AudioClips](Game#audioclips)
+
+---
+
 ### FileType
 
     readonly AudioFileType AudioClip.FileType;
