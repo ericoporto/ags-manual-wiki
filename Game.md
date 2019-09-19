@@ -382,6 +382,26 @@ to do this in game_start).
 
 ---
 
+### SimulateKeyPress
+
+    static Game.SimulateKeyPress(eKeyCode key)
+
+Fires a keypress event. This is in all aspects identical to what would happen if a player pressed a key on keyboard. This function may be useful to simulate player actions in game, or create automatic demonstrations (like tutorials).
+
+**IMPORTANT:** because of how AGS engine and scripts work the game will react to this keypress not before current script function finishes. Any things that normally react to keys (such as skippable speech, cutscenes, and certain GUI controls) will be affected only at the following internal game update.
+
+Example:
+
+    Game.SimulateKeyPress(eKeySpace);
+
+This simulates a "space" key press.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [Mouse.Click](Mouse#click), [List of supported key codes](ASCIIcodes#ascii-code-table)
+
+---
+
 ### AudioClipCount
 
     readonly static int Game.AudioClipCount
