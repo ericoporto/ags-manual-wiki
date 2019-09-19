@@ -10,17 +10,38 @@ Returns the region at ROOM co-ordinates (X,Y). If there is no region
 there, or if invalid co-ordinates are specified, the Region\*
 representing region 0 will be returned.
 
-**NOTE:** Unlike GetHotspotAtLocation, the co-ordinates specified are
-ROOM co-ordinates. This means that if you want to use the mouse cursor
-location, you have to add the screen offset to make it work in scrolling
-rooms.
+Example:
+
+    if (Region.GetAtRoomXY(player.x, player.y) == region[0]) {
+      Display("The player is not currently standing on a region.");
+    }
+
+*See Also:* [Region.GetAtScreenXY](Region#getatscreenxy), [Character.GetAtRoomXY](Character#getatroomxy),
+[Hotspot.GetAtRoomXY](Hotspot#getatroomxy),
+[Object.GetAtRoomXY](Object#getatroomxy), [GetWalkableAreaAtRoom](Globalfunctions_room#getwalkableareaatroom)
+
+---
+
+### GetAtScreenXY
+
+    static Region* Region.GetAtScreenXY(int x, int y)
+
+Returns the region at SCREEN co-ordinates (X,Y). If there is no region
+there, or if invalid co-ordinates are specified, the Region\*
+representing region 0 will be returned.
 
 Example:
 
-    if (Region.GetAtRoomXY(player.x, player.y) == region[0])
-      Display("The player is not currently standing on a region.");
+    Region* r = Region.GetAtScreenXY(mouse.x, mouse.y);
+    if (r != region[0]) {
+      Display("The mouse is over region %d", r.ID);
+    }
 
-*See Also:* [GetWalkableAreaAt](Room#getwalkableareaat)
+will display the message if there is any region under the mouse cursor.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [Region.GetAtRoomXY](Region#getatroomxy), [Character.GetAtScreenXY](Character#getatscreenxy), [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy), [Object.GetAtScreenXY](Object#getatscreenxy), [Game.GetLocationName](Game#getlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
 
 ---
 
