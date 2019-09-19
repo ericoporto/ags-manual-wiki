@@ -434,7 +434,7 @@ Example:
 
 ### ShowBorder
 
-(Formerly known as ListBox.HideBorder, which is now obsolete)
+*(Formerly known as ListBox.HideBorder, which is now obsolete)*
 
     bool ListBox.ShowBorder
 
@@ -453,7 +453,7 @@ Note that hiding the border will also implicitly hide the up/down scroll arrows 
 
 ### ShowScrollArrows
 
-(Formerly known as ListBox.HideScrollArrows, which is now obsolete)
+*(Formerly known as ListBox.HideScrollArrows, which is now obsolete)*
 
     bool ListBox.ShowScrollArrows
 
