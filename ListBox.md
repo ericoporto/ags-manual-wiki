@@ -256,7 +256,7 @@ will change the *lstSaveGames* list box to use Font "Speech".
 
 ### HideBorder
 
-**This property is obsolete since AGS 3.5.0. Use ListBox.ShowBorder instead.**
+**This property is obsolete since AGS 3.5.0. Use [ListBox.ShowBorder](ListBox#showboder) instead.**
 
     bool ListBox.HideBorder
 
@@ -266,7 +266,7 @@ Gets/sets whether the list box's border is _hidden_.
 
 ### HideScrollArrows
 
-**This property is obsolete since AGS 3.5.0. Use ListBox.ShowScrollArrows instead.**
+**This property is obsolete since AGS 3.5.0. Use [ListBox.ShowScrollArrows](ListBox#showscrollarrows) instead.**
 
     bool ListBox.HideScrollArrows
 
