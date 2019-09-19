@@ -55,6 +55,19 @@ will display the name of the location the cursor is over on label
 
 ---
 
+### TextAlignment
+
+    HorizontalAlignment Label.TextAlignment;
+
+Gets/sets how the text is aligned relative to the label's rectangle. Note that currently label supports only horizontal alignment which could be eAlignLeft, eAlignRight and eAlignCenter.
+
+*See Also:* [Standard Enumerated Types](StandardEnums), [Label.Font](Label#font),
+[Label.Text](Label#text)
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+---
+
 ### TextColor
 
 *(Formerly known as SetLabelColor, which is now obsolete)*
