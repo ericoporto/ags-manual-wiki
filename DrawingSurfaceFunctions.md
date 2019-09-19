@@ -523,6 +523,8 @@ displays the size of the surface to the player
 
 ### UseHighResCoordinates
 
+**This property is obsolete since AGS 3.5.0 and not recommended for use at all.**
+
     bool DrawingSurface.UseHighResCoordinates
 
 Gets/sets whether you want to use high-resolution co-ordinates with this
@@ -539,23 +541,8 @@ Setting this property affects **ALL** other commands performed on this
 drawing surface, including the [Width](DrawingSurfaceFunctions#width)
 and [Height](DrawingSurfaceFunctions#height) properties.
 
-Example:
-
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.UseHighResCoordinates = true;
-    surface.DrawingColor = 14;
-    surface.DrawLine(0, 0, 320, 200);
-    surface.Release();
-
-draws a yellow line from the top left of the screen to the middle of the
-screen. If we hadn't set *UseHighResCoordinates* to true, this would
-draw a line from the top left to the bottom right of the screen.
-
-*See Also:*
-[DrawingSurface.DrawCircle](DrawingSurfaceFunctions#drawcircle),
-[DrawingSurface.DrawLine](DrawingSurfaceFunctions#drawline),
-[DrawingSurface.DrawRectangle](DrawingSurfaceFunctions#drawrectangle),
-[DrawingSurface.DrawTriangle](DrawingSurfaceFunctions#drawtriangle)
+**IMPORTANT:** This property is a remnant of the old and since deprecated feature in AGS which allowed to treat all coordinates in high-resolution games as if they were for low-resolution. For example: have 640x400 game but use 320x200 measurements in script, which would make each drawing operation to be performed x2 thicker on screen.<br>
+Since AGS 3.5.0 this property is ignored unless you have backwards-compatible "Allow relative asset resolutions" option enabled in General Settings.
 
 ---
 
