@@ -22,7 +22,7 @@ will display the message if the player character is over the hPressurePlate hots
 [Character.GetAtRoomXY](Character#getatroomxy),
 [Object.GetAtRoomXY](Object#getatroomxy),
 [Region.GetAtRoomXY](Region#getatroomxy),
-[Game.GetLocationName](Game#getlocationname)
+[Game.GetLocationName](Game#getlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
 
 ---
 
@@ -48,8 +48,7 @@ Example:
 
 will display a message depending on what the mouse is on.
 
-*See Also:* [Game.GetLocationName](Game#getlocationname),
-[GetLocationType](Globalfunctions_General#getlocationtype)
+*See Also:* [Hotspot.GetAtRoomXY](Hotspot#getatroomxy), [Character.GetAtScreenXY](Character#getatscreenxy), [Object.GetAtScreenXY](Object#getatscreenxy), [Region.GetAtScreenXY](Region#getatscreenxy), [Game.GetLocationName](Game#getlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
 
 ---
 
