@@ -212,7 +212,8 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
       eSkipAnyKey,
       eSkipMouseClick,
       eSkipAnyKeyOrMouseClick,
-      eSkipESCOrRightButton
+      eSkipESCOrRightButton,
+      eSkipScriptOnly
     };
 
 *Used by:* [StartCutscene](Globalfunctions_General#startcutscene)
