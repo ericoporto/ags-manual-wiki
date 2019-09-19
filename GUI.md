@@ -168,33 +168,34 @@ changes the ICONBAR GUI to be the size of half the screen
 
 ### AsTextWindow
 
-    readonly TextWindowGUI* AsTextWindow
+    readonly TextWindowGUI* GUI.AsTextWindow
 
-If this GUI is a TextWindow, returns the TextWindowGUI interface; otherwise null.
+If this GUI is of TextWindow type then returns the TextWindowGUI interface which could be used to access specific properties; otherwise returns null.
+
+Example:
+
+    TextWindowGUI *tw = gMyTextGui.AsTextWindow;
+    tw.TextColor = Game.GetColorFromRGB(255, 0, 0);
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [TextWindowGUI](TextWindowGUI)
 
 ---
 
 ### BackgroundColor
 
-    int  BackgroundColor
+    int GUI.BackgroundColor
 
-Gets/sets the background color. This property is ignored if the GUI has `BackgroundGraphic` different than 0. 
+Gets/sets the background color.
 
-You can set `BackgroundColor` to 0 to remove it from the GUI.
+Setting BackgroundColor to 0 will make GUI background fully transparent.
+
+This property is ignored if the GUI.BackgroundGraphic is assigned a sprite number (other than 0).
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
 *See Also:* [GUI.BackgroundGraphic](GUI#backgroundgraphic), [GUI.BorderColor](GUI#bordercolor)
-
----
-
-### BorderColor
-
-    int  BorderColor
-
-Gets/sets the border color. Not applicable to TextWindow GUIs. This property is ignored if the GUI has `BackgroundGraphic` different than 0. 
-
-You can set `BorderColor` to 0 to remove it from the GUI.
-
-*See Also:* [GUI.BackgroundGraphic](GUI#backgroundgraphic), [GUI.BackgroundColor](GUI#backgroundcolor)
 
 ---
 
@@ -208,8 +209,26 @@ Gets/sets the background image of the GUI.
 
 You can set this to 0 to remove the background image from the GUI.
 
+When this property is assigned a sprite number other than 0 GUI.BackgroundColor and GUI.BorderColor are ignored.
+
 *See Also:* [GUI.SetPosition](GUI#setposition),
 [Button.NormalGraphic](Button#normalgraphic)
+
+---
+
+### BorderColor
+
+    int GUI.BorderColor
+
+Gets/sets the border color.
+
+Setting BorderColor to 0 will make GUI border fully transparent.
+
+Not applicable to TextWindow GUIs. This property is ignored if the GUI.BackgroundGraphic is assigned a sprite number (other than 0).
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [GUI.BackgroundColor](GUI#backgroundcolor), [GUI.BackgroundGraphic](GUI#backgroundgraphic)
 
 ---
 
@@ -340,21 +359,36 @@ clickable.
 
 ### PopupStyle
 
-    readonly GUIPopupStyle PopupStyle
+    readonly GUIPopupStyle GUI.PopupStyle
 
-Gets the style of GUI behavior on screen.
+Gets the style of GUI behavior on screen. Possible values are:
 
-*See Also:* [Standard Enums](StandardEnums), [GUI.PopupYPos](GUI#popupypos)
+    eGUIPopupNormal       no special behavior
+    eGUIPopupMouseYPos    shown when the mouse cursor moves to the top of the screen, past GUI.PopupYPos, and hidden all other time.
+    eGUIPopupModal        like normal, but pauses game when shown
+    eGUIPopupPersistent   like normal, but not removed when all interface is disabled
+
+**NOTE:** for MouseYPos style GUI.Visible property does not control visibility directly. The GUI will become visible only when both conditions match:
+- GUI.Visible property set to TRUE;
+- mouse cursor is closer to the screen top than GUI.PopupYPos value.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [GUI.PopupYPos](GUI#popupypos), [GUI.Visible](GUI#visible)
 
 ---
 
 ### PopupYPos
 
-    int  PopupYPos
+    int GUI.PopupYPos
 
-Gets/sets the Y co-ordinate at which the GUI will appear when using MouseYPos popup style.
+Gets/sets the Y co-ordinate at which the GUI will appear when using MouseYPos popup style. The GUI will be automatically shown when the mouse cursor's Y coordinate is *equal or lower* than GUI.PopupYPos (closer to the screen top) and hidden when it is *greater*.
 
-*See Also:* [GUI.PopupStyle](GUI#popupstyle)
+This property is ignored if GUI has a different style.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [GUI.PopupStyle](GUI#popupstyle), [GUI.Visible](GUI#visible)
 
 ---
 
