@@ -325,7 +325,7 @@ Gets/sets how the text is aligned relative to the button's rectangle.
 
 If the button is displaying an image rather than text, then this property has no effect.
 
-*See Also:* [Button.NormalGraphic](Button#normalgraphic)
+*See Also:* [Standard Enumerated Types](StandardEnums), [Button.NormalGraphic](Button#normalgraphic)
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
