@@ -1,5 +1,9 @@
 ## ListBox functions and properties
 
+ListBox is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
+
+---
+
 ### AddItem
 
 *(Formerly known as ListBoxAdd, which is now obsolete)*
