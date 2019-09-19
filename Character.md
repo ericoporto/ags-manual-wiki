@@ -2050,6 +2050,8 @@ with different light levels.
 
 ### IgnoreWalkbehinds
 
+**This property is obsolete since AGS 3.5.0 and not recommended for use at all.**
+
 *(Formerly known as SetCharacterIgnoreWalkbehinds, which is now
 obsolete)*
 
@@ -2063,17 +2065,7 @@ Passing *true* means that the character will never be placed behind a
 walk-behind area. This is useful if for example you want to use the
 character as an overlay to display rain or snow onto a scene.
 
-**NOTE:** enabling this property does not currently work properly when
-using the Direct3D driver.
-
-Example:
-
-    cEgo.IgnoreWalkbehinds = true;
-
-will make the character EGO ignore walk-behinds.
-
-*See Also:* [Character.Baseline](Character#baseline),
-[Object.IgnoreWalkbehinds](Object#ignorewalkbehinds)
+**IMPORTANT:** This property is a "dirty hack" and not recommended for use at all. It breaks the logic of drawing order for room elements, and only works as intended if your game is run using Software graphics driver. We strongly suggest to design your rooms without it and rely on [Baseline](Character#baseline) property instead.
 
 ---
 
