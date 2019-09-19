@@ -6,36 +6,27 @@ This struct extends the GUI struct, so it has all functions and properties from 
 
 ### TextColor
 
-    attribute int TextWindowGUI.TextColor
+    int TextWindowGUI.TextColor
 
 Gets/sets the text color to be used when rendering text on this TextWindowGUI.
 
 Example:
 
-    // a say function with character text color
-    function MySay(this Character*, const string message,  ...) {
+    // a custom MySay function with character-specific text color;
+    // (assuming that gTextGui is assigned as a speech GUI)
+    function MySay(this Character*, const string message) {
       gTextGui.AsTextWindow.TextColor = this.SpeechColor;
-      this.Say(message,  ...);
+      this.Say(message);
     }
 
-    // later on, supposed gTextGui is our default TextGUI
-    cEgo.MySay("My text has my colors!");
+above function adjusts gTextGui's text color before calling a standard [Character.Say](Character#say) function. It assumes that gTextGui was assigned as a default textwindow for the character speech. Such custom function may then be used as:
 
-*See Also:* [TextWindowGUI.TextPadding](TextWindowGUI#textpadding)
+    cEgo.MySay("My text has my colors!");
 
 ---
 
 ### TextPadding
 
-    attribute int TextWindowGUI.TextPadding
+    int TextWindowGUI.TextPadding
 
 Gets/sets the amount of padding, in pixels, surrounding the text in the TextWindow.
-
-Example:
-
-    // gDisplayTextGui.ID is set in the Editor as the Display GUI in General Settings
-    gDisplayTextGui.AsTextWindow.TextPadding = 8;
-    Display("This text has more padding");
-
-
-*See Also:* [TextWindowGUI.TextColor](TextWindowGUI#textcolor)
