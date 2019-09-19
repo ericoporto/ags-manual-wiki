@@ -256,46 +256,21 @@ will change the *lstSaveGames* list box to use Font "Speech".
 
 ### HideBorder
 
+**This property is obsolete since AGS 3.5.0. Use ListBox.ShowBorder instead.**
+
     bool ListBox.HideBorder
 
-Gets/sets whether the list box's border is hidden.
-
-Note that hiding the border will also implicitly hide the up/down scroll
-arrows for the list box.
-
-Example:
-
-    lstSaveGames.HideBorder = true;
-
-will hide the border around the Save Games list box.
-
-*See Also:*
-[ListBox.HideScrollArrows](ListBox#hidescrollarrows)
+Gets/sets whether the list box's border is _hidden_.
 
 ---
 
 ### HideScrollArrows
 
+**This property is obsolete since AGS 3.5.0. Use ListBox.ShowScrollArrows instead.**
+
     bool ListBox.HideScrollArrows
 
-Gets/sets whether the built-in up/down scroll arrows are hidden.
-
-Because the appearance of the scroll arrows is not customizable, you may
-wish to use this to hide them and provide your own arrows using GUI
-Button controls.
-
-**NOTE:** If the list box's "Hide Border" setting is enabled, then the
-scroll arrows will also be hidden, since "Hide Border" supersedes "Hide
-Scroll Arrows". You only need to use this HideScrollArrows property if
-you want the border to be shown but the arrows hidden.
-
-Example:
-
-    lstSaveGames.HideScrollArrows = true;
-
-will hide the built-in scroll arrows on the list box.
-
-*See Also:* [ListBox.HideBorder](ListBox#hideborder)
+Gets/sets whether the built-in up/down scroll arrows are _hidden_.
 
 ---
 
@@ -403,6 +378,22 @@ FillSaveGameList had been used previously.
 
 ---
 
+### SelectedBackColor
+
+    int ListBox.SelectedBackColor
+
+Gets/sets the fill color of the selection rectangle drawn around the selected item.
+
+Example:
+
+    lstSaveGames.SelectedBackColor = Game.GetColorFromRGB(0, 148, 255);
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [ListBox.Font](ListBox#font), [ListBox.SelectedTextColor](ListBox#selectedtextcolor), [ListBox.TextColor](ListBox#textcolor)
+
+---
+
 ### SelectedIndex
 
 *(Formerly known as ListBoxGetSelected, which is now obsolete)*<br>
@@ -422,6 +413,94 @@ Example:
     String selectedText = lstOptions.Items[lstOptions.SelectedIndex];
 
 will get the text of the selected item in the listbox.
+
+---
+
+### SelectedTextColor
+
+    int ListBox.SelectedTextColor
+
+Gets/sets the text color used for the selected item.
+
+Example:
+
+    lstSaveGames.SelectedTextColor = Game.GetColorFromRGB(255, 255, 80);
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [ListBox.Font](ListBox#font), [ListBox.SelectedTextColor](ListBox#selectedtextcolor), [ListBox.TextColor](ListBox#textcolor)
+
+---
+
+### ShowBorder
+
+(Formerly known as ListBox.HideBorder, which is now obsolete)
+
+    bool ListBox.ShowBorder
+
+Gets/sets whether the list box's border is shown.
+
+Border is drawn using color from TextColor property.
+
+Note that hiding the border will also implicitly hide the up/down scroll arrows for the list box.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:*
+[ListBox.ShowScrollArrows](ListBox#showscrollarrows), [ListBox.TextColor](ListBox#textcolor)
+
+---
+
+### ShowScrollArrows
+
+(Formerly known as ListBox.HideScrollArrows, which is now obsolete)
+
+    bool ListBox.ShowScrollArrows
+
+Gets/sets whether the built-in up/down scroll arrows are shown.
+
+Arrows are drawn using color from TextColor property.
+
+Because the overall appearance of the scroll arrows is not customizable, you may
+wish to use this to hide them and provide your own arrows using GUI
+Button controls.
+
+**NOTE:** If the list box's "Show Border" setting is disabled, then the
+scroll arrows will also be hidden, since "Show Border" supersedes "Show
+Scroll Arrows". You only need to use this ShowScrollArrows property if
+you want the border to be shown but the arrows hidden.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [ListBox.ShowBorder](ListBox#showborder), [ListBox.TextColor](ListBox#textcolor)
+
+---
+
+### TextAlignment
+
+    HorizontalAlignment ListBox.TextAlignment
+
+Gets/sets the way a text is aligned inside an item's rectangle. Currently only horizontal alignment is supported, that is: eAlignLeft, eAlignCenter and eAlignRight.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [Standard Enumerated Types](StandardEnums), [ListBox.Font](ListBox#font), [ListBox.SelectedBackColor](ListBox#selectedbackcolor), [ListBox.SelectedTextColor](ListBox#selectedtextcolor)
+
+---
+
+### TextColor
+
+    int ListBox.TextColor
+
+Gets/sets the text color used by default, that is - for the non-selected items. Note that the same color is also used for the listbox's border and and scroll arrows.
+
+Example:
+
+    lstSaveGames.TextColor = Game.GetColorFromRGB(80, 80, 200);
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [ListBox.Font](ListBox#font), [ListBox.SelectedBackColor](ListBox#selectedbackcolor), [ListBox.SelectedTextColor](ListBox#selectedtextcolor), [ListBox.ShowBorder](ListBox#showborder), [ListBox.ShowScrollArrows](ListBox#showscrollarrows)
 
 ---
 
