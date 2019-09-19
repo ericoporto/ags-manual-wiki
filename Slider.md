@@ -1,6 +1,10 @@
 ## Slider properties
 
+Slider is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
+
 _See also:_ [Editing GUI Sliders](EditingGUIs#sliders)
+
+---
 
 ### BackgroundGraphic
 
