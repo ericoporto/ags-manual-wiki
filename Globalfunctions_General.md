@@ -223,7 +223,7 @@ Marks the end of a cutscene. If the player skips the cutscene, the game
 will fast-forward to this point. This function returns 0 if the player
 watched the cutscene, or 1 if they skipped it.
 
-*See Also:* [StartCutscene](Globalfunctions_General#startcutscene),
+*See Also:* [SkipCutscene](Globalfunctions_General#skipcutscene), [StartCutscene](Globalfunctions_General#startcutscene),
 [Game.InSkippableCutscene](Game#inskippablecutscene),
 [Game.SkippingCutscene](Game#skippingcutscene)
 
@@ -1335,6 +1335,29 @@ this "names" timer 1 and sets it to expire after 2000 game cycles
 
 ---
 
+### SkipCutscene
+
+    SkipCutscene()
+
+Explicitly commences skipping current cutscene. If game is not in a cutscene sequence or cutscene is already being skipped this function will do nothing.
+
+SkipCutscene will work regardless of the StartCutscene parameters, but is most useful when you do not want to rely on built-in skipping controls and are coding your own. In the latter case make sure to start cutscene in **eSkipScriptOnly** mode to prevent any standard input interference.
+
+Example:
+
+    if (Game.InSkippableCutscene && IsKeyPressed(eKeySpace)) {
+      SkipCutscene();
+    }
+
+will check if game is inside a cutscene, and if player has pressed a space bar then commands to skip it.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [EndCutscene](Globalfunctions_General#endcutscene), [SkipUntilCharacterStops](Globalfunctions_General#skipuntilcharacterstops), [StartCutscene](Globalfunctions_General#startcutscene), [Game.InSkippableCutscene](Game#inskippablecutscene),
+[Game.SkippingCutscene](Game#skippingcutscene)
+
+---
+
 ### SkipUntilCharacterStops
 
     SkipUntilCharacterStops(CHARID)
@@ -1386,6 +1409,10 @@ The CutsceneSkipType determines how they can skip the cutscene:
       by pressing any key or clicking a mouse button
     eSkipESCOrRightButton
       by pressing ESC or clicking the right mouse button
+    eSkipScriptOnly
+      only by calling SkipCutscene script function
+
+**NOTE:** eSkipScriptOnly may be useful if you are coding your own cutscene skipping method in script and would like to disable built-in ones.
 
 You need to mark the end of the cutscene with the EndCutscene command.
 
@@ -1394,8 +1421,9 @@ command. The script **must** pass through EndCutscene in its normal run
 in order for the skipping to work - otherwise, when the player presses
 ESC the game could appear to hang.
 
-*See Also:* [EndCutscene](Globalfunctions_General#endcutscene),
-[SkipUntilCharacterStops](Globalfunctions_General#skipuntilcharacterstops),
+*Compatibility:* eSkipScriptOnly cutscene mode is supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [EndCutscene](Globalfunctions_General#endcutscene), [SkipCutscene](Globalfunctions_General#skipcutscene), [SkipUntilCharacterStops](Globalfunctions_General#skipuntilcharacterstops),
 [Game.InSkippableCutscene](Game#inskippablecutscene),
 [Game.SkippingCutscene](Game#skippingcutscene)
 
