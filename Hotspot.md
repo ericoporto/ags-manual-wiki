@@ -10,12 +10,11 @@ representing hotspot 0 will be returned.
 
 Example:
 
-    Hotspot* h = Hotspot.GetAtRoomXY(player.x, player.y);
-    if (h != null) {
-      Display("Player stands on a hotspot %d", h.ID);
+    if (Hotspot.GetAtRoomXY(player.x, player.y) == hPressurePlate) {
+      Display("As soon as adventurer stands on the pressure plate the door opens.");
     }
 
-will display the message if the room object oBullet is over any character.
+will display the message if the player character is over the hPressurePlate hotspot.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
