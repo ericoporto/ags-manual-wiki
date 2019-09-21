@@ -59,7 +59,7 @@ In AGS 3.5.0 we are deprecating concept of resolution tags and disable these con
 
 3. "Fonts designed for high resolution" setting was removed because it no longer makes sense. Instead, each font has an individual ScalingMultiplier property. When importing older project each font will be scaled x2 if it was a "high-res" game and this setting was OFF.
 
-**new API cheat sheet**
+**New API cheat sheet**
 
 Some functions from previous Script API can be easily replaced, they are shown in the table below.
 
@@ -71,7 +71,7 @@ GetViewportX(); | Game.Camera.X;
 GetViewportY(); | Game.Camera.Y;
 GetWalkableAreaAt(x, y); | GetWalkableAreaAtScreen(x, y);
 
-**REMINDER:** you can also use "Script Compatibility Level" switch to enable old functions.
+You can also use "Script Compatibility Level" switch to enable old functions.
 
 **System limits update**
 
