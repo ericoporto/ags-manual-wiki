@@ -8,6 +8,7 @@
 - [Frequently Asked Questions](FAQ)
 - [Tutorial](Tutorial)
 - [Upgrading to 3.5.0](UpgradeTo350)
+- [Upgrading from a previous version](UpgradingFromPreviousVersion)
 
 ## Editor Reference
 
