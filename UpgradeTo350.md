@@ -31,7 +31,7 @@ The first viewport-camera pair is created automatically when the game starts, bu
 
 It's important to note that any cursor actions will only work on the room if the cursor is on a viewport.
 
-Only rooms and their contents (characters, objects) are affected by the viewport/camera system. GUI and Overlays, including speech and other on-screen text, still work outside of it.
+Only rooms and their contents (characters, objects) are affected by the viewport/camera system, and they got GetAtRoomXY and GetAtScreenXY functions to help scripting your game systems. GUI and Overlays, including speech and other on-screen text, still work outside of it.
 
 For more information see: [Camera](Camera), [Viewport](Viewport), [Game.Cameras](Game#cameras), [Screen.Viewports](Screen#viewports)
 
@@ -58,3 +58,17 @@ In AGS 3.5.0 we are deprecating concept of resolution tags and disable these con
 2. Sprites retain resolution tag for backward compatibility, but it is now set to "Real" by default and not recommended to change. When you import older project sprites get "promoted" to "real" resolution if their tag matches the game: for example if a sprite is tagged as "low-res" and your game is 320x200, or if a sprite is tagged as "high-res" and your game is 640x400 or higher.
 
 3. "Fonts designed for high resolution" setting was removed because it no longer makes sense. Instead, each font has an individual ScalingMultiplier property. When importing older project each font will be scaled x2 if it was a "high-res" game and this setting was OFF.
+
+**new API cheat sheet**
+
+Some functions from previous Script API can be easily replaced, they are shown in the table below.
+
+obsolete function | replace with
+-- | --
+SetViewport(x, y); | Game.Camera.SetAt(x, y);
+ReleaseViewport(); | Game.Camera.AutoTracking = true;
+GetViewportX(); | Game.Camera.X;
+GetViewportY(); | Game.Camera.Y;
+GetWalkableAreaAt(x, y); | GetWalkableAreaAtScreen(x, y);
+
+**REMINDER:** you can also use "Script Compatibility Level" switch to enable old functions.
