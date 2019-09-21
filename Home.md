@@ -6,8 +6,8 @@
 
 - [What's new in 3.5.0](WhatsNewIn350)
 - [Introduction](Introduction)
-- [Frequently Asked Questions](FAQ)
 - [Tutorial](Tutorial)
+- [Frequently Asked Questions](FAQ)
 - [Upgrading from a previous version](UpgradingFromPreviousVersion)
 
 ## Editor Reference
