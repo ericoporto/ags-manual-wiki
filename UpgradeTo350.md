@@ -72,3 +72,10 @@ GetViewportY(); | Game.Camera.Y;
 GetWalkableAreaAt(x, y); | GetWalkableAreaAtScreen(x, y);
 
 **REMINDER:** you can also use "Script Compatibility Level" switch to enable old functions.
+
+**System limits update**
+
+This version's compiled game, sprite set, and room files now may exceed 2 GB. 
+
+Additionally, imported sprites count limit were raised to 90000 and Dynamic Sprites count limit are removed. 
+ListBox item count limit, Button  length limit, TextBox length limit, and font count limit are also removed.
