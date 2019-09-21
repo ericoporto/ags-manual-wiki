@@ -3,4 +3,3 @@
 
 ---
 
-[Upgrading from a previous version](UpgradingFromPreviousVersion)
