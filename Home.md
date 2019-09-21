@@ -7,6 +7,7 @@
 - [Introduction](Introduction)
 - [Frequently Asked Questions](FAQ)
 - [Tutorial](Tutorial)
+- [Upgrading to 3.5.0](UpgradeTo350)
 
 ## Editor Reference
 
@@ -29,10 +30,6 @@
 - [Scripting Language](ScriptingLanguage)
 - [Scripting Api](Scripting)
 - [Reference](Reference)
-
-## Working on Legacy games
-
-- [Upgrading from a previous version](UpgradingFromPreviousVersion)
 
 ## Legal Notice
 
