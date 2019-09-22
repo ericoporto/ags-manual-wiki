@@ -223,8 +223,8 @@ Example:
 will disable the hBrownTree hotspot.
 
 *See Also:* [Region.Enabled](Region#enabled),
-[RemoveWalkableArea](Room#removewalkablearea),
-[RestoreWalkableArea](Room#restorewalkablearea)
+[RemoveWalkableArea](Globalfunctions_Room#removewalkablearea),
+[RestoreWalkableArea](Globalfunctions_Room#restorewalkablearea)
 
 ---
 
@@ -306,4 +306,3 @@ will move the character to hotspot hTable's walk-to point.
 
 *See Also:* [Hotspot.WalkToX](Hotspot#walktox),
 [MoveCharacterToHotspot](Globalfunctions_General#movecharactertohotspot)
-

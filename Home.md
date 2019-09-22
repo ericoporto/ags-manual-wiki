@@ -4,10 +4,10 @@
 
 ## Getting Started in AGS
 
-- [What's new in 3.5.0](WhatsNewIn350)
 - [Introduction](Introduction)
 - [Tutorial](Tutorial)
 - [Frequently Asked Questions](FAQ)
+- [Upgrade to 3.5.0](UpgradeTo350)
 - [Upgrading from a previous version](UpgradingFromPreviousVersion)
 
 ## Editor Reference

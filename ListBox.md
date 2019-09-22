@@ -256,7 +256,7 @@ will change the *lstSaveGames* list box to use Font "Speech".
 
 ### HideBorder
 
-**This property is obsolete since AGS 3.5.0. Use [ListBox.ShowBorder](ListBox#showboder) instead.**
+**This property is obsolete since AGS 3.5.0. Use [ListBox.ShowBorder](ListBox#showborder) instead.**
 
     bool ListBox.HideBorder
 
@@ -533,4 +533,3 @@ Gets/sets whether the list box's items are translated to the selected
 game language at runtime.
 
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
-

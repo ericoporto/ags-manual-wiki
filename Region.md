@@ -18,7 +18,7 @@ Example:
 
 *See Also:* [Region.GetAtScreenXY](Region#getatscreenxy), [Character.GetAtRoomXY](Character#getatroomxy),
 [Hotspot.GetAtRoomXY](Hotspot#getatroomxy),
-[Object.GetAtRoomXY](Object#getatroomxy), [GetWalkableAreaAtRoom](Globalfunctions_room#getwalkableareaatroom)
+[Object.GetAtRoomXY](Object#getatroomxy), [GetWalkableAreaAtRoom](Globalfunctions_Room#getwalkableareaatroom)
 
 ---
 
@@ -133,8 +133,8 @@ Example:
 will disable region number 3.
 
 *See Also:* [Hotspot.Enabled](Hotspot#enabled),
-[RemoveWalkableArea](Room#removewalkablearea),
-[RestoreWalkableArea](Room#restorewalkablearea)
+[RemoveWalkableArea](Globalfunctions_Room#removewalkablearea),
+[RestoreWalkableArea](Globalfunctions_Room#restorewalkablearea)
 
 ---
 
@@ -365,4 +365,3 @@ property is false, then this value is meaningless.
 [Region.TintGreen](Region#tintgreen),
 [Region.TintRed](Region#tintred),
 [Region.TintSaturation](Region#tintsaturation)
-

@@ -77,6 +77,6 @@ functions. See their descriptions for how they work:
 [Room.SetProperty](Room#setproperty)<br>
 [Room.SetTextProperty](Room#settextproperty)
 
-**NOTE:** Calling [ResetRoom](Room#resetroom) will reset that
+**NOTE:** Calling [ResetRoom](Globalfunctions_Room#resetroom) will reset that
 room's properties to default values, as well as that room's hotspot and
 object properties.

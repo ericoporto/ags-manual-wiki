@@ -430,7 +430,7 @@ If you use FOLLOW_EXACTLY, then EAGERNESS has another meaning. If you
 pass 0, CHARID will be drawn in front of CHARTOFOLLOW; if you pass 1, it
 will be drawn behind.
 
-When the character being followed changes room, the character following 
+When the character being followed changes room, the character following
 will change to the same room and position after a number of frames defined
 on `game.following_room_timer`.
 
@@ -441,7 +441,7 @@ Example:
 will make character MAN follow character EGO standing about 5 pixels
 near him and waiting for a while before he makes his move.
 
-*See Also:* 
+*See Also:*
 [game.following_room_timer](Gamevariables)
 
 ---
@@ -675,7 +675,7 @@ colliding.
 *See Also:*
 [Character.IsCollidingWithObject](Character#iscollidingwithobject),
 [Object.IsCollidingWithObject](Object#iscollidingwithobject),
-[AreThingsOverlapping](Room#arethingsoverlapping)
+[AreThingsOverlapping](Globalfunctions_Room#arethingsoverlapping)
 
 ---
 
@@ -703,7 +703,7 @@ number 3 are colliding.
 *See Also:*
 [Character.IsCollidingWithChar](Character#iscollidingwithchar),
 [Object.IsCollidingWithObject](Object#iscollidingwithobject),
-[AreThingsOverlapping](Room#arethingsoverlapping)
+[AreThingsOverlapping](Globalfunctions_Room#arethingsoverlapping)
 
 ---
 
@@ -1727,7 +1727,7 @@ collisions, or for walk-behinds) to a line positioned at y coordinate =
 120.
 
 *See Also:* [Object.Baseline](Object#baseline),
-[SetWalkBehindBase](Room#setwalkbehindbase)
+[SetWalkBehindBase](Globalfunctions_Room#setwalkbehindbase)
 
 ---
 

@@ -1,6 +1,6 @@
 ## Standard Enumerated Types
 
-AGS has several [enumerated types](ScriptKeywords#enum) in it's standard header. 
+AGS has several [enumerated types](ScriptKeywords#enum) in it's standard header.
 These are
 used in calls to various commands, and will usually pop up automatically
 in autocomplete. However, for times where autocomplete doesn't do the
@@ -113,7 +113,7 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
 *Compatibility:* replaced old Alignment enumeration in AGS 3.5.0.
 
 *Used by:*
-[Character.LockViewAligned](Character#lockviewaligned), [DrawingSurface.DrawStringWrapped](DrawingSurface#drawstringwrapped), [Label.TextAlignment](Label#textalignment), [ListBox.TextAlignment](ListBox#textalignment), [Speech.TextAlignment](Speech#textalignment)
+[Character.LockViewAligned](Character#lockviewaligned), [DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#drawstringwrapped), [Label.TextAlignment](Label#textalignment), [ListBox.TextAlignment](ListBox#textalignment), [Speech.TextAlignment](Speech#textalignment)
 
     enum eFlipDirection {
       eFlipLeftToRight,

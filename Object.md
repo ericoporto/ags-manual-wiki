@@ -223,7 +223,7 @@ Example:
 
 will display the message if the objects 2 and 3 are colliding.
 
-*See Also:* [AreThingsOverlapping](Room#arethingsoverlapping)
+*See Also:* [AreThingsOverlapping](Globalfunctions_Room#arethingsoverlapping)
 
 ---
 
@@ -581,7 +581,7 @@ will change object's 4 baseline to a line positioned at y coordinate
 
 *See Also:* [Character.Baseline](Character#baseline),
 [Object.Y](Object#y),
-[SetWalkBehindBase](Room#setwalkbehindbase)
+[SetWalkBehindBase](Globalfunctions_Room#setwalkbehindbase)
 
 ---
 
@@ -1173,4 +1173,3 @@ will display the Y co-ordinate of object 1.
 [Object.Baseline](Object#baseline),
 [Object.X](Object#x),
 [Object.SetPosition](Object#setposition)
-
