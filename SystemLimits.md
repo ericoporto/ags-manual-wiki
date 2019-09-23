@@ -9,7 +9,7 @@ There are maximum...
 - 40 objects per room
 - 299 state-saving rooms per game
 - 300 inventory items
-- 30000 imported sprites
+- 90000 imported sprites
 - 30 options per dialog topic
 - 20 timers
 - 20 screen overlays at a time
