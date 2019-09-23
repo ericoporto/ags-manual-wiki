@@ -127,49 +127,23 @@ Example:
 
 ### GetViewportX
 
-    GetViewportX ()
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#camera)[.Camera.X](Camera#x) instead.**
 
-Returns the X-offset of the current viewport in a scrolling room. This
+    GetViewportX()
+
+Returns the X-position of the main camera's rectangle in a room. This
 allows you to find out what part of the room the player is looking at.
-The co-ordinate returned is the left edge of the screen.
-
-If the room is a non-scrolling room, returns 0.
-
-See the SetViewport function description for more information.
-
-Example:
-
-    if (GetViewportX()>100)
-        object[2].Visible = true;
-
-will turn object 2 on if the player has scrolled the room by 100 pixels
-to the right.
-
-*See Also:* [GetViewportY](Globalfunctions_Room#getviewporty),
-[SetViewport](Globalfunctions_Room#setviewport)
 
 ---
 
 ### GetViewportY
 
-    GetViewportY ()
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#camera)[.Camera.Y](Camera#y) instead.**
 
-Returns the Y-offset of the current viewport in a scrolling room. This
+    GetViewportY()
+
+Returns the Y-position of the main camera's rectangle in a room. This
 allows you to find out what part of the room the player is looking at.
-The co-ordinate returned is the top edge of the screen.
-
-If the room is a non-scrolling room, returns 0.
-
-Example:
-
-    if (GetViewportY()>20)
-        object[2].Visible = true;
-
-will turn object 2 on if the player has scrolled the room by 20 pixels
-to the bottom.
-
-*See Also:* [GetViewportX](Globalfunctions_Room#getviewportx),
-[SetViewport](Globalfunctions_Room#setviewport)
 
 ---
 
@@ -257,25 +231,12 @@ will display a message if the player has been to room 14.
 
 ### ReleaseViewport
 
-    ReleaseViewport ()
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#camera)[.Camera.AutoTracking](Camera#autotracking) instead.**
 
-Releases the lock on the screen viewport, allowing it to automatically
+    ReleaseViewport()
+
+Releases the lock on the main camera, allowing it to automatically
 scroll around following the player character as normal.
-
-Example:
-
-    int x;
-    while (x<100) {
-       SetViewport(x,0);
-       x++;
-       Wait(1);
-    }
-    ReleaseViewport();
-
-will scroll the room 100 pixels to the right and then return the screen
-to its original position and unlock the screen viewport.
-
-*See Also:* [SetViewport](Globalfunctions_Room#setviewport)
 
 ---
 
@@ -407,34 +368,16 @@ integer 20 is 1.
 
 ### SetViewport
 
-    SetViewport (int x, int y)
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#camera)[.Camera.SetAt](Camera#setat) instead.**
 
-Locks the screen viewport to having the top-left hand corner at (X,Y) in
+    SetViewport(int x, int y)
+
+Locks the main camera to having the top-left hand corner at (X,Y) in
 a scrolling room. This allows you to manually pan across a scrolling
-room or to have the screen follow a non-player character.
+room or to have the camera follow a non-player character.
 
-The lock is released when you either call ReleaseViewport or the player
+The lock is released when you either call [ReleaseViewport](Globalfunctions_Room#releaseviewport) or the player
 changes rooms.
-
-**NOTE:** This function has no effect if the current room isn't a
-scrolling room.
-
-Example:
-
-    int ypos = 0;
-    while (ypos < 60) {
-      SetViewport(0, ypos);
-      Wait(1);
-      ypos++;
-    }
-    ReleaseViewport();
-
-will scroll the screen down from the top 60 pixels, then release it back
-to follow the player around.
-
-*See Also:* [GetViewportX](Globalfunctions_Room#getviewportx),
-[GetViewportY](Globalfunctions_Room#getviewporty),
-[ReleaseViewport](Globalfunctions_Room#releaseviewport)
 
 ---
 
