@@ -11,7 +11,9 @@ Room editor has got a new navigation bar on the top of the panel instead of the 
 * Toggle each group's and even each item's visibility in any combinations. This lets you display, for example, characters, objects and walkable areas at the same time. The only exception is that you may only display one type of area mask at the same time (that is - either walkable areas, regions, hotspots or walk-behinds).
 * Toggle each group's and each item's locked state. When locked the object cannot be moved or have its shape changed (as with mask areas which may be changed by painting).
 
-Note that you can still only select and edit objects of the chosen group, not all at once.
+**NOTE:** you can still only select and edit objects of the chosen group, not all at once.
+
+**NOTE:** in order to remember user preference on visible and locked items Editor saves a new file called **roomNNN.crm.user** per each room, where 'NNN' is a room's number. These files are not part of the game data and are safe to remove (but in that case all item visibility and lock states in the room will be reset).
 
 **New Viewport/Camera system**
 
@@ -27,10 +29,10 @@ Following is a table of conversion between old viewport functions and new camera
 
 obsolete function | replace with
 -- | --
-SetViewport(x, y); | Game.Camera.SetAt(x, y);
-ReleaseViewport(); | Game.Camera.AutoTracking = true;
-GetViewportX(); | Game.Camera.X;
-GetViewportY(); | Game.Camera.Y;
+SetViewport(x, y) | Game.Camera.SetAt(x, y)
+ReleaseViewport() | Game.Camera.AutoTracking = true
+GetViewportX() | Game.Camera.X
+GetViewportY() | Game.Camera.Y
 
 Introduction of new Viewport and Camera concepts allows a lot of new effects which were previously impossible or not easy to accomplish. For example, you no longer must display the room covering the whole screen, you may make a smaller "window" to see the room and position it in the middle of the screen.<br>
 By the way, this also means that you do not have to keep all your rooms same size, you may create very small rooms in your game now and adjust viewport and camera to display it on screen where and how you like.<br>
@@ -80,19 +82,27 @@ In AGS 3.5.0 we are deprecating concept of resolution tags and disable these con
 
 3. "Fonts designed for high resolution" setting was removed because it no longer makes sense. Instead, each font has an individual ScalingMultiplier property. When importing older project each font will be scaled x2 if it was a "high-res" game and this setting was OFF.
 
-**New API cheat sheet**
+**Some script functions replaced and/or deprecated**
 
-Some functions from previous Script API can be easily replaced, they are shown in the table below.
+Some functions from previous Script API were either replaced by new equivalents or deprecated. They are shown in the table below:
 
 obsolete function | replace with
 -- | --
-GetWalkableAreaAt(x, y); | GetWalkableAreaAtScreen(x, y);
+GetWalkableAreaAt(x, y) | GetWalkableAreaAtScreen(x, y)
+Character.IgnoreWalkbehinds | *Do not use*
+Object.IgnoreWalkbehinds | *Do not use*
+DrawingSurface.UseHighResCoordinates | *Do not use*
 
-You can also use "Script Compatibility Level" switch to enable old functions.
+Note that you can still use "Script Compatibility Level" switch in General Settings to enable old functions.
 
 **System limits update**
 
-This version's compiled game, sprite set, and room files now may exceed 2 GB. 
+Support for very large files was added to AGS, therefore now package file and every asset file is allowed to exceed 2 GB. One good example to mention is the packed sprites file (acsprset.spr) which 2 GB limit was causing most inconveniences.
 
-Additionally, imported sprites count limit were raised to 90000 and Dynamic Sprites count limit are removed. 
-ListBox item count limit, Button  length limit, TextBox length limit, and font count limit are also removed.
+Other limits:
+* Imported sprites count limit was raised to 90000;
+* Total number of sprites in game, which includes both imported and Dynamic Sprites is no longer limited by arbitrary number (in practice you may have around 2 billions of dynamic sprites);
+* Font count limit removed;
+* Removed length limit on the Button and TextBox text (was 50 and 200 respectively);
+* Removed ListBox item count limit (was 200).
+* Removed hidden limit for DoOnceOnly token length (was 200 characters).
