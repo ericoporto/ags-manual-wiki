@@ -2,7 +2,7 @@
 
 ### Adding some interaction
 
-Ok, so we now have a working room. The player can walk around it as much
+OK, so we now have a working room. The player can walk around it as much
 as they like. However, our game so far is pretty boring - the player
 can't actually do anything of value yet!
 
@@ -56,8 +56,8 @@ Once you've drawn a hotspot, there are two other fields to set:
 ![](images/icon_info.gif)
 
 In the Areas editor, all the hotspots except the currently selected one
-are drawn in grey. This is to emphasise which hotspot you have selected
-to edit. You can change this behaviour by toggling the "show non-selected
+are drawn in grey. This is to emphasize which hotspot you have selected
+to edit. You can change this behavior by toggling the "show non-selected
 masks greyed out" button at the right hand end of the toolbar.
 
 #### Interactions
@@ -105,7 +105,7 @@ Once you're done, click on the "Room 1" tab to return to the main room editor
 
 #### Walk-to points
 
-Ok, since we're back editing hotspots, let me quickly explain the
+OK, since we're back editing hotspots, let me quickly explain the
 "Walk-to point" option in the property grid. This allows you to set a
 position for each hotspot that the character will walk to whenever the
 player interacts with the hotspot - just like the way the LucasArts
@@ -121,7 +121,7 @@ To remove a walk-to point, simply set it to 0,0.
 
 #### Edges revisited
 
-Ok, so we've covered the basics of creating a room. However, there's one
+OK, so we've covered the basics of creating a room. However, there's one
 thing that we did a while back that we need to clear up - yes, the
 edges.
 

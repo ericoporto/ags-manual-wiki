@@ -97,7 +97,7 @@ occurs the first time the player enters the room. This event occurs
 AFTER the screen has faded in, so it allows you to display a message
 describing the scene.
 
-Player enters room (before fadein)
+Player enters room (before fade-in)
 
 occurs just after the room is loaded into memory. This event occurs
 every time the player enters the screen, and it happens BEFORE the
@@ -114,7 +114,7 @@ Repeatedly execute
 occurs repeatedly on every interpreter cycle. The normal game speed is
 40 cycles per second, so this event occurs about every 25 milliseconds.
 
-Player enters room (after fadein)
+Player enters room (after fade-in)
 
 occurs every time the player enters the room, AFTER the screen has
 faded-in. Suitable for displaying text descriptions and so on, that you
@@ -138,12 +138,12 @@ Interact with inventory
 
 currently, because the Interact mode selects the inventory item, this
 event can only be triggered by manually calling the
-InventoryItem.RunInteraction script function (ie. you have to use the
+InventoryItem.RunInteraction script function (i.e. you have to use the
 Handle Inv Clicks in Script option).
 
 Speak to inventory
 
-only applies to the Lucasarts-style inventory, occurs when the player
+only applies to the LucasArts-style inventory, occurs when the player
 clicks the Talk icon on the inventory item.
 
 Use inventory on inv
@@ -159,7 +159,7 @@ computer.
 
 Other click on inventory
 
-only applies to the Lucasarts-style inventory, occurs when the player
+only applies to the LucasArts-style inventory, occurs when the player
 clicks any other cursor mode (apart from look, talk and use_inv) on the
 item.
 

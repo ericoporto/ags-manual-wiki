@@ -7,7 +7,7 @@ Each word has a number beside it.
 
 Basically, you add words you want to use by right-clicking the list, and
 selecting "Add word". However, the real beauty of the parser is its
-ability to recognise synonyms - that is, two words that mean the same
+ability to recognize synonyms - that is, two words that mean the same
 thing. So, for example, if you wanted the player to type "look at
 fence", they might well type "look at wall" instead, if that's how they
 see the drawing. Or, a British person might type "colour" whereas an

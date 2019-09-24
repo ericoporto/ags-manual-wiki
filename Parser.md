@@ -92,9 +92,9 @@ the text parser.
 
 If a word not in the game dictionary was submitted to the last ParseText
 call, then the word is returned by this command. This allows you to
-display a message like "Sorry, this game doesn't recognise 'XXXX'."
+display a message like "Sorry, this game doesn't recognize 'XXXX'."
 
-If all the words were recognised, this returns null.
+If all the words were recognized, this returns null.
 
 Example:
 

@@ -80,7 +80,7 @@ will flip the screen upside down.
 
 Changes the colour which the screen fades out to, to have the specified
 RGB value. Each of the parameters can range from 0-255. The default is
-black, ie. (0, 0, 0)
+black, i.e. (0, 0, 0)
 
 The colour that you set here will be used in all future calls to
 FadeIn/FadeOut, and also for the screen transition if it is set to Fade
@@ -174,7 +174,7 @@ not paused while the screen shakes - it will continue in the background.
 DELAY specifies the 'shakiness' of the shake - 2 is the lowest you can
 pass for this, and will create the most shaky screen.
 
-AMOUNT specifies the ferociousness of the shake - ie. how much the
+AMOUNT specifies the ferociousness of the shake - i.e. how much the
 screen moves by when it does shake. Here, 1 is a very tiny shake, up to
 about 30 for a ferocious shake.
 

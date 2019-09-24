@@ -59,7 +59,7 @@ Plays the audio clip, starting from *position*. For the meaning of the
 position, see the [AudioChannel.Seek](AudioChannel#seek) help
 page.
 
-Otherwise, this command behaves identially to
+Otherwise, this command behaves identically to
 [AudioClip.Play](AudioClip#play). Please see that help page
 for more information.
 
@@ -85,7 +85,7 @@ it is OGG/MP3).
 Plays the audio clip, or queues it to be played later if it cannot be
 played now.
 
-This command behaves identially to
+This command behaves identically to
 [AudioClip.Play](AudioClip#play), except that if there are no
 available audio channels, it will queue this audio clip to be played
 when a channel becomes available.

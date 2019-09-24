@@ -178,7 +178,7 @@ SetGameOption. **Basic properties**
     swaps sides whenever a different person talks, and the "Based on X
     position" setting means that the side of the screen is chosen
     depending on where the characters are standing.
--   **Speech style** - in the default Lucasarts-style speech, when a
+-   **Speech style** - in the default LucasArts-style speech, when a
     character talks, the speech text is displayed above their head in
     the game, and the character's talking view is used to animate the
     actual character.<br>
@@ -222,7 +222,7 @@ SetGameOption. **Basic properties**
     clicked on.
 -   **Use selected inventory graphics for cursors** - normally, when you
     select an inventory item the mouse cursor is changed into that item.
-    However, if you want to create a Lucasarts-style game (where the
+    However, if you want to create a LucasArts-style game (where the
     inventory cursor is always a cross-hair), disable this option and it
     won't be changed.
 
@@ -256,7 +256,7 @@ SetGameOption. **Basic properties**
 
 -   **Always display text as speech** - if you select this option, then
     all normal text in the game will be displayed above the main
-    character's head as speech text, much like the way the Lucasarts
+    character's head as speech text, much like the way the LucasArts
     games worked. If this option is not checked, then normal text
     appears in a pop-up message box, like the way that the Sierra
     games worked.
@@ -280,7 +280,7 @@ SetGameOption. **Basic properties**
     high resolution display, use this option to stop them
     being stretched.
 -   **Write game text Right-to-Left** - in-game text will be written
-    right-to-left, ie. line breaks are worked out from the end of the
+    right-to-left, i.e. line breaks are worked out from the end of the
     sentence going backwards, and the last words are displayed first.
     This is used by languages such as Arabic and Hebrew.
 
@@ -291,7 +291,7 @@ SetGameOption. **Basic properties**
     Various options are available.
 -   **GUI alpha rendering style** - determines which rendering method to
     use in 32-bit games when a GUI Control is drawn over GUI. The
-    "Proper alpha belnding" choice is meant for full alpha blending
+    "Proper alpha blending" choice is meant for full alpha blending
     support, other options exist for compatibility with older versions
     of AGS only.
 -   **Pixel-perfect click detection** - normally, when the player clicks
@@ -305,7 +305,7 @@ SetGameOption. **Basic properties**
 -   **Sprite alpha rendering style** - determines which rendering method
     to use in 32-bit games when an image is drawn over
     [drawing surface](DrawingSurfaceFunctions). The "Proper alpha
-    belnding" choice is meant for full alpha blending support, "Classic"
+    blending" choice is meant for full alpha blending support, "Classic"
     style exists for compatibility with older versions of AGS only.
 -   **When player interface is disabled, GUI should** - determines what
     happens to buttons on your GUIs while the game interface is
@@ -348,7 +348,7 @@ Additionally, following settings are available:
     this path in setup program (where they are actually allowed to put
     absolute paths too).
 -   **Custom shared data path** - defines where game will store its
-    shared data files (e.g. hiscore tables). This path will be used to
+    shared data files (e.g. hi-score tables). This path will be used to
     substitute default value of `$APPDATADIR$` token in scripts. Note
     that this option only accepts relative paths, so typically you have
     to set this if you want to have data files created locally within

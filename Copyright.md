@@ -38,8 +38,8 @@ language is. Neither Chris Jones nor any of the contributors can be held
 responsible for any Plugins for AGS which you use in your game. Any
 problems with the Plugin should be addressed to its author.
 
-TrueType font display uses ALFont by Javier Gonzalez and the Freetype
-project. Distributed under the terms of the Freetype Project license.
+TrueType font display uses ALFont by Javier Gonzalez and the FreeType
+project. Distributed under the terms of the FreeType Project license.
 
 OGG Vorbis player is alogg by Javier Gonzalez, using the Ogg Vorbis
 decoder, which is available from https://www.xiph.org/ . Copyright (c)

@@ -167,13 +167,13 @@ coordinates 100,50. This will also mean that the game moves into room 4.
 Changes the room that the character is in, and positions him along one
 of the room edges.
 
-This command simulates the behaviour of the old "Go to room" interaction
+This command simulates the behavior of the old "Go to room" interaction
 command from AGS 2.72 and previous versions. If *newPosition* is not
 specified or is 0, the character will be placed on the opposite side of
 the new room, if he is within 10 pixels of a room edge in the current
 room.
 
-Altenatively, you can specify the position where he will get placed in
+Alternatively, you can specify the position where he will get placed in
 the new room. *newPosition* can be 1000 for the left edge, 2000 for the
 right edge, 3000 for the bottom edge and 4000 for the top edge. Then,
 add on the offset within that edge where you want to place the
@@ -237,7 +237,7 @@ Turns the graphic of the character so that it looks like he is facing
 character TOFACE. This involves changing the current loop to the
 appropriate loop number, and setting the frame number to 0 (standing).
 
-If the character has Turning enabled (ie. the "Characters turn to face
+If the character has Turning enabled (i.e. the "Characters turn to face
 direction" game option is turned on, and the character does not have the
 "Do not turn before walking" option checked), then the character will
 turn on the spot in order to face the new direction. In this case, the
@@ -274,7 +274,7 @@ Turns the graphic of the character so that it looks like he is facing
 direction *direction*. This involves changing the current loop to the
 appropriate loop number, and setting the frame number to 0 (standing).
 
-If the character has Turning enabled (ie. the "Characters turn to face
+If the character has Turning enabled (i.e. the "Characters turn to face
 direction" game option is turned on, and the character does not have the
 "Do not turn before walking" option checked), then the character will
 turn on the spot in order to face the new direction. In this case, the
@@ -318,7 +318,7 @@ other characters, but also hotspots or anything else as well (you can
 get co-ordinates by watching the co-ordinates displayed in the Room
 Settings mode as you move the mouse over the room background).
 
-If the character has Turning enabled (ie. the "Characters turn to face
+If the character has Turning enabled (i.e. the "Characters turn to face
 direction" game option is turned on, and the character does not have the
 "Do not turn before walking" option checked), then the character will
 turn on the spot in order to face the new direction. In this case, the
@@ -354,7 +354,7 @@ will make the character face to the east.
 Similar to the FaceCharacter function, except that this faces the
 character to object OBJECT in the current room.
 
-If the character has Turning enabled (ie. the "Characters turn to face
+If the character has Turning enabled (i.e. the "Characters turn to face
 direction" game option is turned on, and the character does not have the
 "Do not turn before walking" option checked), then the character will
 turn on the spot in order to face the new direction. In this case, the
@@ -685,7 +685,7 @@ colliding.
 
     Character.IsCollidingWithObject(Object* obj)
 
-Checks whether the character's feet (ie. the bottom third of the
+Checks whether the character's feet (i.e. the bottom third of the
 character) are touching OBJ. This can be used to determine if the
 character is standing on the object.
 
@@ -742,7 +742,7 @@ the walking character will stop), or eKeepMoving (in which case the
 character will keep moving). The default is eStopMoving.
 
 **NOTE:** This function locks the character's view to the specified
-view, so that it can only be changed by other script commands (ie. it
+view, so that it can only be changed by other script commands (i.e. it
 won't automatically be changed by AGS on walkable areas, screen changes,
 etc). When you are done with the animation, call UnlockView to allow AGS
 to take control back.
@@ -804,7 +804,7 @@ the walking character will stop), or eKeepMoving (in which case the
 character will keep moving). The default is eStopMoving.
 
 **NOTE:** This function locks the character's view to the specified
-view, so that it can only be changed by other script commands (ie. it
+view, so that it can only be changed by other script commands (i.e. it
 won't automatically be changed by the program on regions, screen
 changes, etc). When you are done with the animation, call UnlockView to
 allow the program to take control back.
@@ -895,7 +895,7 @@ walkable area he is in, and so forth. You should limit the use of this
 command to in-game cutscenes where the player has no control.
 
 **NOTE:** This function locks the character's view to the specified
-view, so that it can only be changed by other script commands (ie. it
+view, so that it can only be changed by other script commands (i.e. it
 won't automatically be changed by AGS on walkable areas, screen changes,
 etc). When you are done with the animation, call UnlockView to allow AGS
 to take control back.
@@ -1338,11 +1338,11 @@ no animation if they don't have one).
 
 If you are using Sierra-style speech and the character doesn't have a
 thinking animation, the thought bubble will be displayed in
-lucasarts-style.
+LucasArts-style.
 
 If the "Thought uses bubble GUI" setting has been set, then the thought
 will be displayed like normal speech, except that the bubble GUI will be
-used for the window background. In Lucasarts-style speech this means
+used for the window background. In LucasArts-style speech this means
 above the character's head, in Sierra-style it will be done along the
 top of the screen as normal.
 
@@ -1871,14 +1871,14 @@ co-ordinate, and 25 to the right)
 
     bool Character.Clickable
 
-Gets/sets whether the character is recognised as something which the
+Gets/sets whether the character is recognized as something which the
 player can interact with. This allows you to modify the "Clickable"
 property set initially in the Editor.
 
 If you set this to *true* then the player can look at, speak to, and so
 on the character (as with the old Sierra games). If you set this to
 *false*, then if the player clicks on the character it will activate
-whatever is behind them (as with the old Lucasarts games).
+whatever is behind them (as with the old LucasArts games).
 
 Example:
 
@@ -2655,7 +2655,7 @@ will change the character EGO's thinking view to 14.
     int Character.Transparency
 
 Gets/sets the character's transparency. This is specified as a
-percentage, from 0 to 100. 100 means fully transparent (ie. invisible),
+percentage, from 0 to 100. 100 means fully transparent (i.e. invisible),
 and 0 is totally opaque (fully visible). Numbers in between represent
 varying levels of transparency.
 

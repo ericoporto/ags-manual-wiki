@@ -94,7 +94,7 @@ it.
 
 ![Yay, we've got a big inventory icon for the key](images/intro4_3.jpg)
 
-Ok, there are a few other settings on this screen, but let's return to
+OK, there are a few other settings on this screen, but let's return to
 our objective - letting the player pick up the key. Remember that the
 script name is *iKey*, as we'll need it later.
 
@@ -110,7 +110,7 @@ Notice there are two obvious possibilities here: "Interact object" and
 "Pick up object". We actually want to use the "Interact object" event,
 because we are using the default Sierra-style interface which doesn't
 have a specific Pick Up mode. The "Pick up", "Usermode1" and "Usermode2"
-events are useful if you go for a lucasArts-style interface which has
+events are useful if you go for a LucasArts-style interface which has
 more verb types available to the player.
 
 So, select "Interact object" and click the "..." button. When the player
@@ -129,7 +129,7 @@ icon on the key from anywhere in the room and it will disappear. We are
 also not displaying a message informing the player of what happened.
 But, the functionality is there, and this will do fine for now.
 
-Okey, so we now have a fully-working first room. Test the game as
+OK, so we now have a fully-working first room. Test the game as
 before, and try it out. Once the player has taken the key, call up his
 inventory and you should see the large key picture there.
 

@@ -23,7 +23,7 @@ automatically disposed of. Therefore, when you are finished with the
 image you **MUST** call Delete on it to free its memory.
 
 **IMPORTANT:** If the DynamicSprite instance is released from memory
-(ie. there is no longer a DynamicSprite\* variable pointing to it), then
+(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
 the sprite will also be removed from memory. Make sure that you keep a
 global variable pointer to the sprite until you are finished with it,
 and at that point call Delete.
@@ -78,7 +78,7 @@ automatically disposed of. Therefore, when you are finished with the
 image you **MUST** call Delete on it to free its memory.
 
 **IMPORTANT:** If the DynamicSprite instance is released from memory
-(ie. there is no longer a DynamicSprite\* variable pointing to it), then
+(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
 the sprite will also be removed from memory. Make sure that you keep a
 global variable pointer to the sprite until you are finished with it,
 and at that point call Delete.
@@ -124,7 +124,7 @@ automatically disposed of. Therefore, when you are finished with the
 image you **MUST** call Delete on it to free its memory.
 
 **IMPORTANT:** If the DynamicSprite instance is released from memory
-(ie. there is no longer a DynamicSprite\* variable pointing to it), then
+(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
 the sprite will also be removed from memory. Make sure that you keep a
 global variable pointer to the sprite until you are finished with it,
 and at that point call Delete.
@@ -175,7 +175,7 @@ automatically disposed of. Therefore, when you are finished with the
 image you **MUST** call Delete on it to free its memory.
 
 **IMPORTANT:** If the DynamicSprite instance is released from memory
-(ie. there is no longer a DynamicSprite\* variable pointing to it), then
+(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
 the sprite will also be removed from memory. Make sure that you keep a
 global variable pointer to the sprite until you are finished with it,
 and at that point call Delete.
@@ -223,7 +223,7 @@ automatically disposed of. Therefore, when you are finished with the
 image you **MUST** call Delete on it to free its memory.
 
 **IMPORTANT:** If the DynamicSprite instance is released from memory
-(ie. there is no longer a DynamicSprite\* variable pointing to it), then
+(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
 the sprite will also be removed from memory. Make sure that you keep a
 global variable pointer to the sprite until you are finished with it,
 and at that point call Delete.
@@ -271,7 +271,7 @@ automatically disposed of. Therefore, when you are finished with the
 image you **MUST** call Delete on it to free its memory.
 
 **IMPORTANT:** If the DynamicSprite instance is released from memory
-(ie. there is no longer a DynamicSprite\* variable pointing to it), then
+(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
 the sprite will also be removed from memory. Make sure that you keep a
 global variable pointer to the sprite until you are finished with it,
 and at that point call Delete.
@@ -321,7 +321,7 @@ automatically disposed of. Therefore, when you are finished with the
 image you **MUST** call Delete on it to free its memory.
 
 **IMPORTANT:** If the DynamicSprite instance is released from memory
-(ie. there is no longer a DynamicSprite\* variable pointing to it), then
+(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
 the sprite will also be removed from memory. Make sure that you keep a
 global variable pointer to the sprite until you are finished with it,
 and at that point call Delete.

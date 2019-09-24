@@ -581,7 +581,7 @@ will unpause the game if it's paused.
 
 Returns 1 if the player interface is currently enabled, 0 if it is
 disabled. The user interface is disabled while the cursor is set to the
-Wait cursor - ie. while the character is performing a blocking Walk, or
+Wait cursor - i.e. while the character is performing a blocking Walk, or
 other blocking action.
 
 Example:
@@ -605,7 +605,7 @@ Please note that x and y are *screen* coordinates, not room coordinates.
 
 This function is very similar to Room.ProcessClick, except that rather than carry out any interactions it encounters, it simply returns 1 if something would have happened, or 0 if unhandled_event would have been run.
 
-Function will fail and return 0 if there's no room viewport on screen at the given coordinates. On the other hand it ignores any non-room objects such as GUI, and "click throughs" any GUI that covers room at this location.
+Function will fail and return 0 if there's no room viewport on screen at the given coordinates. On the other hand it ignores any non-room objects such as GUI, and "clicks through" any GUI that covers room at this location.
 
 This function is useful for enabling options on a verb-coin style GUI, for example.
 
@@ -811,7 +811,7 @@ various effects in your game. MAX must be a positive value in range
 **NOTE:** Because of the way Random is implemented in AGS, the return
 value will never be higher than 32767.
 
-**NOTE:** The range returned is inclusive - ie. if you do Random(3);
+**NOTE:** The range returned is inclusive - i.e. if you do Random(3);
 then it can return 0, 1, 2 or 3.
 
 Example:
@@ -1434,7 +1434,7 @@ ESC the game could appear to hang.
     UpdateInventory ()
 
 Updates the on-screen inventory display. If you add or remove inventory
-items manually (ie. by using the InventoryQuantity array rather than the
+items manually (i.e. by using the InventoryQuantity array rather than the
 AddInventory/LoseInventory functions), the display may not get updated.
 In this case call this function after making your changes, to update
 what is displayed to the player.

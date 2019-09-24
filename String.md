@@ -183,7 +183,7 @@ Checks to see if NEEDLE is contained within the specified string.
 Returns the character position of the match if it is, or -1 if it is
 not.
 
-This function is not case sensitive; ie. testing "test string" for
+This function is not case sensitive; i.e. testing "test string" for
 "sTRiN" would match.
 
 Example:

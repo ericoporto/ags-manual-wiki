@@ -2,7 +2,7 @@
 
 This template was previously listed as the 'default' template, with the majority
 of functions used being native to the engine itself. i.e. there is no separate
-script file to implement any additional behaviour for the mouse cursor. This
+script file to implement any additional behavior for the mouse cursor. This
 makes it a good choice for learning how AGS works, since it makes heavy use of
 the [mouse cursor functions](Mouse).
 

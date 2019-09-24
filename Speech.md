@@ -191,10 +191,10 @@ or a key.
 
     static eSpeechStyle Speech.Style
 
-Gets/sets theway in which speech text is displayed. This modifies the
+Gets/sets the way in which speech text is displayed. This modifies the
 setting originally set in the editor. SpeechStyle can be:
 
-    eSpeechLucasarts
+    eSpeechLucasArts
       speech text over character's head
     eSpeechSierra
       close-up portrait of character
@@ -217,7 +217,7 @@ will change the speech style to a close up portrait of the character.
 
     static Alignment Speech.TextAlignment
 
-Sets how text in Lucasarts-style speech is aligned.
+Sets how text in LucasArts-style speech is aligned.
 
 The accepted values are
 
@@ -273,7 +273,7 @@ Valid values for VoiceMode are:
 
 The default is *eSpeechVoiceAndText* if in-game speech is enabled, and
 *eSpeechTextOnly* if it is not. Changing this setting changes the
-behaviour of all [Say](Character#say) and
+behavior of all [Say](Character#say) and
 [Display](Globalfunctions_Message#display) commands which have a speech file assigned
 to them.
 

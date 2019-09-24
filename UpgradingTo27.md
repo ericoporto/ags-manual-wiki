@@ -37,7 +37,7 @@ your existing scripts will continue to work just fine. However, for any
 new scripts that you write, it's strongly recommended that you use the
 new object-based commands.
 
-**Ok, so uh... what's changed exactly?**
+**OK, so uh... what's changed exactly?**
 
 The script language syntax hasn't changed at all (that's the way you use
 semicolons, brackets, and so on). It's still just like it was before,
@@ -86,7 +86,7 @@ can now be done like this:
 
 `player.StopMoving();`
 
-**Hmm, I see... so what exactly has been object-ised?**
+**Hmm, I see... so what exactly has been object-ized?**
 
 Currently, the following object-based things are available:
 

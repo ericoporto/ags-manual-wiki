@@ -129,7 +129,7 @@ input. For example:
     if (keycode == eKeyA) Display("You pressed A");
     if (keycode == eKeyPlus) Display("You pressed the Plus key");
 
-The following extra codes can only be used with IsKeyPressed (ie.
+The following extra codes can only be used with IsKeyPressed (i.e.
 on_key_press is never called with these codes):
 
 Key | ASCII code

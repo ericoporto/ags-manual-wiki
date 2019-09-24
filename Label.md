@@ -38,7 +38,7 @@ translation is in use.
     String Label.Text;
 
 Gets/sets the text displayed in the specified label. This allows you to
-change the text during the game, for example to create a Lucasarts-style
+change the text during the game, for example to create a LucasArts-style
 status line.
 
 Example:

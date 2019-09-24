@@ -11,7 +11,7 @@ cursor provides a different *mode* of interaction to the player.
 #### The Cursors list
 
 Unlike most of AGS, mouse cursors modes are not generic - that is,
-AGS has special coded behaviour for some of the cursors. This means that
+AGS has special coded behavior for some of the cursors. This means that
 you are unable to customize what some of the cursor modes do - let's
 list these ones briefly:
 
@@ -25,7 +25,7 @@ list these ones briefly:
 	is prompted to select a dialog option; when a popup GUI is
 	displayed, and so forth.
 * **Mode 7 (Wait)** - this cursor is shown whenever the player
-	cannot interact with the game world (ie. during a cutscene). It is
+	cannot interact with the game world (i.e. during a cutscene). It is
 	automatically shown during blocking script functions.
 
 All the other cursors are 'normal' cursors, in that you can use them
@@ -33,7 +33,7 @@ for whatever purposes you want.
 
 ![](images/icon_info.gif)
 
-If you want to create a Lucasarts-style game where the mouse
+If you want to create a LucasArts-style game where the mouse
 cursor disappears during cutscenes, the easiest way to do it is
 simply to import a blank image over the Wait mouse cursor.
 
@@ -78,10 +78,10 @@ to use them - you can import your own.
 #### The Font Editor
 
 By default, you'll see three fonts are available. Font 0 is the standard font
-used in message boxes. Font 1 is the speech font, used with lucasarts-style
+used in message boxes. Font 1 is the speech font, used with LucasArts-style
 speech; and font 2 is an outline font for the speech font.
 
-Outlines are pretty much essential for lucasarts-style speech. Since the text
+Outlines are pretty much essential for LucasArts-style speech. Since the text
 is drawn directly onto the screen and not onto a message box, without an outline
 it could be very hard to read the text, depending on what colour the screen
 happened to be behind it.

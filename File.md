@@ -16,7 +16,7 @@ eFileWrite and a file called FILENAME already exists, it will be
 overwritten.
 
 eFileAppend opens an existing file for writing and starts adding
-information at the end (ie. the existing contents are not deleted).
+information at the end (i.e. the existing contents are not deleted).
 
 This function returns a File object, which you use to perform operations
 on the file. *null* is returned if there was a problem (eg. file not

@@ -405,7 +405,7 @@ Gets/sets the index into the list of the currently selected item. The
 first item is 0, second is 1, and so on. If no item is selected, this is
 set to -1.
 
-You can set this to -1 to remove the highlight (ie. un-select all
+You can set this to -1 to remove the highlight (i.e. un-select all
 items).
 
 Example:

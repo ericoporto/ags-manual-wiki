@@ -41,7 +41,7 @@ in the general settings. Useful if you want most of your GUIs to turn
 off, except a status line or whatever.
 
 The "Z-Order" setting allows you to set which order the GUIs are drawn
-in - ie. when there are two GUIs that overlap, which is drawn in front.
+in - i.e. when there are two GUIs that overlap, which is drawn in front.
 The Z-order setting is an arbitrary number between 0 and 1000. AGS draws
 the GUIs in order, from the lowest numbered at the back to the highest
 numbered at the front.
@@ -153,7 +153,7 @@ looks like this:
 
 After compiling it looks like this in game (with x2 Scaling):
 
-![Ingame GUI Borders](https://i.imgur.com/LdJkWPj.png)
+![In-game GUI Borders](https://i.imgur.com/LdJkWPj.png)
 
 ---
 
@@ -161,7 +161,7 @@ After compiling it looks like this in game (with x2 Scaling):
 
 Another option you may have noticed in the GUI editor is the Add
 Inventory button. This allows you to drag out a rectangle which will
-display the player's current inventory, in the same way as the Lucasarts
+display the player's current inventory, in the same way as the LucasArts
 games did. To make the inventory window scrollable, you will need to add
 Up and Down arrow buttons, and attach script code to those buttons to
 use the available functions such as
@@ -211,7 +211,7 @@ into your game. Adding a text box works like adding the other types of
 control.
 
 If a text box is on a currently displayed GUI, all standard keypresses
-(ie. letter keys, return and backspace) are diverted to the textbox
+(i.e. letter keys, return and backspace) are diverted to the textbox
 instead of being passed to the on_key_press function. When the player
 presses Return in the text box, the OnActivate event is called. You can
 then use the TextBox.Text property to retrieve what they typed in.

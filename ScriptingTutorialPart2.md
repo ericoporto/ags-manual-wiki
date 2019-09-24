@@ -139,7 +139,7 @@ You've probably noticed in the manual, it mentioning functions such as
 global script to do cool stuff. But you may be wondering, how exactly to
 go about it.
 
-Remember in tutorial 1, we learnt about function **parameters** and how
+Remember in tutorial 1, we learned about function **parameters** and how
 they could be *int*, *string*, etc. Well, you write your own functions
 like this:
 
@@ -166,7 +166,7 @@ don't have to copy & paste, and that if you modify it, all other script
 that relies on it gets updated too.
 
 To call your function from elsewhere in the script, just do it exactly
-like you call a built-in function - ie. just write its name, parameters
+like you call a built-in function - i.e. just write its name, parameters
 then a semicolon.
 
 I think a couple of examples are in order. First of all, let's show a

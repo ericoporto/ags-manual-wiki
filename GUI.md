@@ -52,7 +52,7 @@ triggers OnClick event for gMainMenu.
     static GUI* GUI.GetAtScreenXY(int x, int y)
 
 Checks whether there is currently a GUI at screen co-ordinates (X,Y). If
-there is, returns its GUI. If two GUIs overlap, the frontmost one will
+there is, returns its GUI. If two GUIs overlap, the front-most one will
 be returned - this can be changed with the GUI.ZOrder property.
 
 If there is not currently a displayed, clickable GUI at the location
@@ -61,7 +61,7 @@ methods or use any properties of the GUI (since it does not actually
 exist).
 
 **NOTE:** This command will not find any GUIs that are set as
-Non-Clickable (ie. the "Clickable" checkbox not checked).
+Non-Clickable (i.e. the "Clickable" checkbox not checked).
 
 Example:
 

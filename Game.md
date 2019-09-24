@@ -139,7 +139,7 @@ Also, this function is "blocked" by any interactable non-room object, such as GU
 **NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM co-ordinates. This means that this function is suitable
 for use with the mouse cursor position variables.
 
-This function may allow you, for instance, to create the Lucasarts-style status lines reading \"Look at xxx\" as
+This function may allow you, for instance, to create the LucasArts-style status lines reading \"Look at xxx\" as
 the player moves the cursor over them.
 
 Example:
@@ -324,7 +324,7 @@ Plays a voice clip from the **speech.vox** in a non-blocking manner. It returns 
 
 Character and "cue" arguments are used to find actual clip, this works the same way as when you do `cEgo.Say("&10 speech text");` in which case "10" is a cue number. For more information about this see: [Voice speech](MusicAndSound#voice-speech).
 
-The "as_speech" argument tells whether playback has same effect on game as regular speech. At the moment this means that music volume will drop and restore after playback is finished. This parameter "as_speech" is TRUE by default and may be omited.
+The "as_speech" argument tells whether playback has same effect on game as regular speech. At the moment this means that music volume will drop and restore after playback is finished. This parameter "as_speech" is TRUE by default and may be omitted.
 
 This command will be ignored if a regular blocking voice is currently playing. Also, both blocking and non-blocking voice will interrupt non-blocking voice-over if one was playing.
 
@@ -812,7 +812,7 @@ This will return true if the game is between a StartCutscene and
 EndCutscene command, and the player has chosen to skip it.
 
 Although cutscene skipping is handled automatically by AGS, you can use
-this property to optimise the process by bypassing any lengthy blocks of
+this property to optimize the process by bypassing any lengthy blocks of
 code that don't need to be run if the cutscene is being skipped over.
 
 **NOTE:** This is a static function, and thus need to be called with

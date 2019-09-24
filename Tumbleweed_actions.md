@@ -114,4 +114,4 @@ This function is used to show and update the status bar. It checks for an extens
 void ToogleGuiStyle(int enable_new);
 ```
 
-Switches between classic Scumm mode and new one.
+Switches between classic SCUMM mode and new one.

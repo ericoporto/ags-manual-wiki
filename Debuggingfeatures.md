@@ -1,6 +1,6 @@
 ## Debugging features
 
-It happens to the best of us - you're merrily ploughing along making
+It happens to the best of us - you're merrily plowing along making
 your game, when suddenly something just isn't working right. It's not
 always obvious where the problem is.
 

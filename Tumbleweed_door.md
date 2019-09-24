@@ -6,7 +6,7 @@
 - [Verbs.AnyClick](Tumbleweed_door#verbsanyclick)
 - [Verbs.AnyClickSpecial](Tumbleweed_door#verbsanyclickspecial)
 
-This template implements a clever door scripting system, which is a real timesaver if you use a lot of doors.
+This template implements a clever door scripting system, which is a real time-saver if you use a lot of doors.
 It uses a hotspot for the closed door and a non-clickable object, to show the opened door.
 If you enter a room the first time, you have to set up its containing doors:
 

@@ -158,7 +158,7 @@ For example, if the button is sized 30x30, but its Graphic is a 50x50
 image, then this property controls whether the image is allowed to spill
 over the edge of the button.
 
-The default is false, ie. the image is not clipped.
+The default is false, i.e. the image is not clipped.
 
 Setting this to true can be useful in that it ensures that the button's
 image is not larger than the button's clickable area, which can cause
@@ -251,7 +251,7 @@ will display btnPlay's mouse-over sprite number.
 
     int Button.NormalGraphic;
 
-Gets/sets the button's normal sprite (ie. the graphic used when the
+Gets/sets the button's normal sprite (i.e. the graphic used when the
 button is not pushed and the mouse is not over it).
 
 Note that setting this to a different sprite will change the button's
@@ -278,7 +278,7 @@ will display btnPlay's normal sprite number.
 
     int Button.PushedGraphic;
 
-Gets/sets the button's pushed sprite (ie. the graphic used when the
+Gets/sets the button's pushed sprite (i.e. the graphic used when the
 button is pushed in by the user). This can be -1, which indicates that
 the button does not have a pushed image.
 

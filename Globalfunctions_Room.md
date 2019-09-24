@@ -15,7 +15,7 @@ will compare the character EGO with Object 4 in the current room.
 
 Returns 0 if they are not overlapping, or the overlapping amount if they
 are. This amount is an arbitrary scale, but 1 means they are just about
-touching, all the way up to higher numbers for more overlappingness.
+touching, with higher numbers representing an increasing degree of overlap.
 
 Calling this function with both the parameters as objects is the same as
 calling Object.IsCollidingWithObject.
@@ -52,7 +52,7 @@ player to trigger events as they walk around the room while in the
 cutscene.
 
 The DISABLETINTS parameter specifies whether the visual effects of the
-regions (ie. light levels and tints) are also disabled. If you pass this
+regions (i.e. light levels and tints) are also disabled. If you pass this
 as 0, then just the events will be turned off.
 
 Example:
@@ -205,7 +205,7 @@ Example:
 
     HasPlayerBeenInRoom(int room_number)
 
-Checks whether the player has ever been in ROOM_NUMBER (ie. has the
+Checks whether the player has ever been in ROOM_NUMBER (i.e. has the
 'First Time Player Enters Room' event there ever been run). Returns 1 if
 they have, and 0 if they haven't.
 
@@ -215,7 +215,7 @@ then this command will return 0 until they enter the room again.
 
 This command will always return 1 if you ask it about the current room;
 and it will always return 0 if you ask it about a non-state saving room
-(ie. rooms numbered > 300).
+(i.e. rooms numbered > 300).
 
 Example:
 
@@ -277,7 +277,7 @@ This function is useful if you want to have a "View intro" option to
 allow the player to watch an intro again - this function can reset all
 the objects in the intro rooms to their starting positions.
 
-NOTE: You cannot reset the current room (ie. the room that the player is
+NOTE: You cannot reset the current room (i.e. the room that the player is
 in).
 
 Example:
@@ -349,7 +349,7 @@ it. Then, once the right event has happened, call SetBackgroundFrame in
 the Player Enters Room event to set the background before the screen
 fades in.
 
-Pass the *frame* as -1 to return to the default behaviour of
+Pass the *frame* as -1 to return to the default behavior of
 automatically cycling through all the background frames.
 
 The frame lock is released when the game changes rooms.

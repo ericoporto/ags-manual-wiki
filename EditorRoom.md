@@ -112,7 +112,7 @@ freehand tool, a rectangle tool, and a fill area.
 
 Also available is a way to both export the a mask layer as a bitmap and import
 a mask layer. These are offered in case you prefer to draw those in your
-preferred image editor, just make sure that you keep the exported 8bit indexed
+preferred image editor, just make sure that you keep the exported 8-bit indexed
 color palette.
 
 

@@ -22,7 +22,7 @@ NOTE: Display is a blocking function - that is, control will not return
 to the script until the player has removed the text window (by pressing
 a key or clicking the mouse). While the window is displayed, all other
 processing, like animations and interface display, are disabled. This is
-usually used for responses to the player LOOKing at things.
+usually used for responses to the player looking at things.
 
 *See Also:* [DisplayAt](Globalfunctions_Message#displayat),
 [DisplayMessage](Globalfunctions_Message#displaymessage),

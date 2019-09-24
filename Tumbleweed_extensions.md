@@ -15,7 +15,7 @@ In the sample room, we have an object, called Cup. In addition to the name we ha
 Cup>p
 ```
 
-The bracket acts as a seperator for the extension, the letter tells the script, which default action to use. By default, the template knows about the following extensions:
+The bracket acts as a separator for the extension, the letter tells the script, which default action to use. By default, the template knows about the following extensions:
 
 
 * `n`: nothing / default
@@ -39,7 +39,7 @@ Inventory items are handled a little differently, the right-click always causes 
 item, it's usually "use with". But if you have added the extension "u", the action will be simply "use".
 Clicking the verb button "use" and the item afterwards would cause the same action. But it could seem a little bit unpredictable,
 whether an item can used by a verb button or not. With this shortcut you can make things a little bit easier.
-You can see this behaviour in the sample room, when opening the letter. Otherwise you would have needed something else to interact with it.
+You can see this behavior in the sample room, when opening the letter. Otherwise you would have needed something else to interact with it.
 But with the use-extension, it is getting opened by a single left-click. The exit extension is covered in the following chapter.
 
 *See also:*
@@ -73,7 +73,7 @@ Used to add a default extension in case the location doesn't have one.
 char Verbs.Extension();
 ```
 
-Returns the first extention of a location.
+Returns the first extension of a location.
 
 ---
 

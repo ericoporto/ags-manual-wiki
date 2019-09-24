@@ -62,13 +62,13 @@ Each parameter is listed, separated by commas. They can be one of the
 following:
 
 - string *name*
-<br>This parameter is a string, ie. a piece of text. This means that for this
+<br>This parameter is a string, i.e. a piece of text. This means that for this
 parameter you supply text, surrounded by double-quotes. For example,
 `"My text"`. *name* is the name by which the parameter is referred to in the
 function description, it is not relevant for writing your script.
 
 - int *name*
-<br>This parameter is an integer, ie. a numerical value. This means that for
+<br>This parameter is an integer, i.e. a numerical value. This means that for
 this parameter you supply a number, for example `65`.
 
 - CHARID
@@ -394,7 +394,7 @@ of your own. There are many more advanced features that the system can
 do, but this should be enough to get you started.
 
 When you're ready, feel free to proceed to the
-[Tutorial Chapter 2 - The Patronising Text Returns](ScriptingTutorialPart2)
+[Tutorial Chapter 2 - The Patronizing Text Returns](ScriptingTutorialPart2)
 which covers more advanced topics.
 
 Enjoy AGS!

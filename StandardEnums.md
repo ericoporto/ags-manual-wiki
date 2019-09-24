@@ -91,7 +91,7 @@ job, having a manual reference is invaluable:
       eAlignHasVerCenter  = 56
     };
 
-The Alignment enumeration consists of values that could be sumed up in one integer variable to form a more complex combination of alignments. Although that ability is not used anywhere in practice yet, but may be in future. Additionally, it provides a set of masks that could be applied bitwise to check if alignment variable contains one of the distinct directions, for example:
+The Alignment enumeration consists of values that could be summed up in one integer variable to form a more complex combination of alignments. Although that ability is not used anywhere in practice yet, but may be in future. Additionally, it provides a set of masks that could be applied bitwise to check if alignment variable contains one of the distinct directions, for example:
 
     if (align & eAlignHasLeft)
       // some code here

@@ -153,7 +153,7 @@ in another colour, and each area has its own baseline.
 
 **Trying out the game**
 
-Ok, we've slogged away at making our room - now it's about time to give
+OK, we've slogged away at making our room - now it's about time to give
 it a go. Press F5, or click "Run" on the Build menu. This will save your
 work and launch the game! Once loaded, you should see your room with the
 character in it.

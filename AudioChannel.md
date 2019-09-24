@@ -335,7 +335,7 @@ the channel. When a new audio clip starts playing on this channel, the
 volume will be set to the DefaultVolume of the new audio clip.
 
 **NOTE:** The volume returned by this property is the channel's base
-volume, ie. it does not include the effects of any directional audio set
+volume, i.e. it does not include the effects of any directional audio set
 with SetRoomLocation, or any temporary volume drop while speech is
 playing.
 

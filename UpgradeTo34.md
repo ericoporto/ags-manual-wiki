@@ -144,7 +144,7 @@ make `dialog_options_mouse_click` behave as it did before.
 For detailed information see:
 [Custom dialog options rendering](CustomDialogOptions)
 
-**Some functions object-ised**
+**Some functions object-ized**
 
 obsolete function/variable | replace with
 --- | ---

@@ -46,9 +46,9 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 int Verbs.MovePlayerEx(int x, int y, WalkWhere direct);
 ```
 
-Move the player character to x,y coords, waiting until he/she gets there, but allowing to cancel the action by pressing a mouse button.
+Move the player character to x,y coordinates, waiting until he/she gets there, but allowing to cancel the action by pressing a mouse button.
 Returns 1, if the character hasn't cancelled the movement and 0 if the movement has been cancelled before.
-2 is returned, if the characters has actually reached it's goal: eg. if a walkable area is being removed while the player is still moving.
+2 is returned, if the characters has actually reached it's goal: e.g. if a walkable area is being removed while the player is still moving.
 
 ---
 
@@ -217,4 +217,4 @@ Handles the action of hotspots or objects with the exit extension ('>e'). Take a
 void Verbs.SetApproachingChar(bool enable);
 ```
 
-If set to true, the player walks to other chars before talking or giving items. This behaviour is initially defined in the guiscript, this function is used to change it during runtime.
+If set to true, the player walks to other chars before talking or giving items. This behavior is initially defined in the guiscript, this function is used to change it during runtime.

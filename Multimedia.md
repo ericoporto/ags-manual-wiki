@@ -122,7 +122,7 @@ OPTIONS has these meanings:
     0  player can't skip animation
     1  player can press ESC to skip animation
     2  player can press any key or click mouse to skip animation
-    +10 (ie.10,11,12) do not stretch to full-screen, just play at flc size
+    +10 (i.e.10,11,12) do not stretch to full-screen, just play at flc size
     +100 do not clear the screen before starting playback
 
 The game is paused while the animation plays.

@@ -61,7 +61,7 @@
   from https://www.scintilla.org/
 * GIF loading by Magick.Net (https://www.imagemagick.org/)
 * TrueType font display uses ALFont by Javier Gonzalez and the
-  Freetype project
+  FreeType project
 * Windows engine uses libcda CD player by Peter Wang.
 * MP3 player is almp3 by Javier Gonzalez and the FreeAmp team. It uses
   the mpg123 MP3 decoder

@@ -55,10 +55,10 @@ top&bottom sides of the screen.
 
 Scaling method
 
-Here player may choose a game scaling algorithm (nearest-neighbour is
+Here player may choose a game scaling algorithm (nearest-neighbor is
 the simplest one). Some of the methods (notably Hqx) are restricted to
 which scaling multiplier they may use; if it is not enough to resize the
-game on its own, the nearest-neighbour method will be applied
+game on its own, the nearest-neighbor method will be applied
 additionally. The list of available filters depend on graphics driver
 selection.
 
@@ -72,7 +72,7 @@ Here player may choose one of the available game translations.
 
 Vertical sync
 
-This option enables vertical synchronisation mode, which reduces
+This option enables vertical synchronization mode, which reduces
 "tearing" effect on game image, but may decrease the game running speed.
 
 Use 85 Hz display

@@ -31,7 +31,7 @@
 ## Scripting
 
 - [Scripting Language](ScriptingLanguage)
-- [Scripting Api](Scripting)
+- [Scripting API](Scripting)
 - [Reference](Reference)
 
 ## Legal Notice

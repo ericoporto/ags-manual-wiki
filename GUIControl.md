@@ -434,7 +434,7 @@ same owning GUI. This allows you to precisely arrange the display order
 of controls at runtime and to know which position the control had at
 certain moment in time.
 
-For AGS GUI Z-order means the order in wich controls are displayed from
+For AGS GUI Z-order means the order in which controls are displayed from
 bottom to top. That means that control at the bottom has Z-order equal
 to 0, and control at the top has highest Z-order, equal to (number of
 controls - 1).

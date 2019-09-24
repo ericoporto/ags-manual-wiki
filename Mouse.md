@@ -492,7 +492,7 @@ Gets/sets whether the mouse cursor is visible. This is initially true by
 default, but setting this to false is useful for briefly hiding the
 cursor on occasions when you don't want it around.
 
-If you want the Lucasarts-style where the mouse cursor is never visible
+If you want the LucasArts-style where the mouse cursor is never visible
 during cutscenes then a much easier solution is simply to import a
 transparent graphic over the default wait cursor, so that the Wait
 cursor becomes invisible.

@@ -2,9 +2,9 @@
 
 This template is a modified version of what was previously known as the
 'Lightweight BASS stub', although the script module within retains its
-previous name of TwoClickHandler. The behaviour of the script module aims to
+previous name of TwoClickHandler. The behavior of the script module aims to
 simplify and mask the cursor modes, removing the need for the player
-to manually set them. It also implements default behaviours where none are
+to manually set them. It also implements default behaviors where none are
 explicitly implemented, through the use of [unhandled_event](TextScriptEvents)
 in the global script.
 

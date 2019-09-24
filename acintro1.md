@@ -95,7 +95,7 @@ begin with:
     trigger them.
 -   **Characters turn before walking** - if the character is facing
     right, and you click to move him left, he'll rotate round before
-    starting to move. This is what the Sierra and Lucasarts
+    starting to move. This is what the Sierra and LucasArts
     point-and-click games did, and looks a bit more professional.
 
 Personally, I would always enable these four options when starting a new
@@ -116,7 +116,7 @@ effects, it's recommended that you stay away from making new 256-colour
 games.
 
 - It's **highly recommended** that you go with 32-bit colour since many modern
-computers don't support 8 or 16 bit screenmodes. Also 32-bit colour is required
+computers don't support 8 or 16 bit screen modes. Also 32-bit colour is required
 for the use of alpha transparency 
 - Imported graphics are set to the chosen colour depth. Should you change your mind
 later, you would have to re-import all the graphics.

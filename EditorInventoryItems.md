@@ -6,9 +6,9 @@ A place to edit Items that can be placed on the [inventory](Settingupthegame#inv
 
 
 _Cursor Image_:  
-The image number from the [Sprite Manager](EditorSprite) that is displayed as active cursor image when selecting this inventory item from the inventory to use it on other inventory items or somewhere inside your scene. You set the active hotspot of the mousecursor, there where the click from that mouse cursor is detected, by left-clicking on the right image in the inventory item settings. Alternatively you can set the hotspot position by hand with the HotspotX and HotspotY Value, this is explained 3 paragraphs below.  
+The image number from the [Sprite Manager](EditorSprite) that is displayed as active cursor image when selecting this inventory item from the inventory to use it on other inventory items or somewhere inside your scene. You set the active hotspot of the mouse-cursor, there where the click from that mouse cursor is detected, by left-clicking on the right image in the inventory item settings. Alternatively you can set the hotspot position by hand with the HotspotX and HotspotY Value, this is explained 3 paragraphs below.  
 This Cursor Image is usually a bit smaller than the normal image of the inventory item inside the inventory, this is covered 2 paragraphs below.  
-It is good practise to add a kind of crosshair or a single pixel in any color standing out from the rest of the image (maybe pure red?) and put the click hotspot there so the player knows where he is pointing exactly. Figuring out bad controls is no puzzle!
+It is good practice to add a kind of crosshair or a single pixel in any color standing out from the rest of the image (maybe pure red?) and put the click hotspot there so the player knows where he is pointing exactly. Figuring out bad controls is no puzzle!
 
 _Description:_  
 The name of the item that is displayed for example on [@OVERHOTSPOT@] when the mouse is over the inventory item still in the inventory.

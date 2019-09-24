@@ -651,7 +651,7 @@ his centre, and 25 to the right)
 
     bool Object.Clickable
 
-Gets/sets whether the object is recognised as something which the player
+Gets/sets whether the object is recognized as something which the player
 can interact with.
 
 If this is set to 1, then the player can look at, speak to, and so on

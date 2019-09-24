@@ -171,7 +171,7 @@ Then, removes the overlay and prints Valid again (which will now be 0).
 
     int Overlay.X;
 
-Gets/sets the X co-ordinate of the overlay (ie. the left hand side of
+Gets/sets the X co-ordinate of the overlay (i.e. the left hand side of
 the overlay).
 
 This allows you to dynamically move overlays around the screen.
@@ -199,7 +199,7 @@ creates a text overlay, then gradually slides it across the screen.
 
     int Overlay.Y;
 
-Gets/sets the Y co-ordinate of the overlay (ie. the top edge of the
+Gets/sets the Y co-ordinate of the overlay (i.e. the top edge of the
 overlay).
 
 This allows you to dynamically move overlays around the screen.

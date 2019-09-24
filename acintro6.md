@@ -25,7 +25,7 @@ your game is hi-colour, you'll also have options to paste from the
 clipboard.
 
 Note that the sprite graphics you import must be the same colour depth
-as your backgrounds - ie. if you have a 256-colour game, you must import
+as your backgrounds - i.e. if you have a 256-colour game, you must import
 256-colour sprites.
 
 ![Right-clicking to replace existing sprite](images/intro6_1.jpg)

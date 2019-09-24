@@ -21,7 +21,7 @@ Code | Description
 %c | Character (displays the ASCII character of the supplied value)
 %f | Float (displays a float variable)
 %.Xf | Float to X decimal places
-%% | Display the percent character (ie. no variable)
+%% | Display the percent character (i.e. no variable)
 [ | Inserts a new line into the message
 
 Some examples:

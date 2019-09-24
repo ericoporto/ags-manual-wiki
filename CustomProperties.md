@@ -2,7 +2,7 @@
 
 **What are custom properties?**
 
-Suppose you're making a Lucasarts-style game, and you want all your
+Suppose you're making a LucasArts-style game, and you want all your
 hotspots to have a default event (so if the player right-clicks a
 window, for example, "Open" will be the default, but if they click on a
 pen, "Pick up" will be the default).

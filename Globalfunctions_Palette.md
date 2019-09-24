@@ -10,7 +10,7 @@ palette indexes from START to END are cycled around one slot. Using this
 call in a repeatedly_execute function gives the effect of animation.
 
 By default, the colours rotate leftwards through the palette. If you
-pass the arguments the other way round (ie. START being larger than END)
+pass the arguments the other way round (i.e. START being larger than END)
 then the colours will rotate in the opposite direction.
 
 **NOTE:** This command only works in 256-colour games.

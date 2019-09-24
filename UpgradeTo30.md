@@ -74,7 +74,7 @@ EXE" command to do so.
 
 **RawDraw scripting changes**
 
-The RawDraw family of functions have finally been object-ised, and the
+The RawDraw family of functions have finally been object-ized, and the
 old versions are now obsolete. Support has been added to allow you to
 RawDraw onto dynamic sprites as well as room backgrounds. As a result,
 at first the new commands will seem more complicated than the old ones,

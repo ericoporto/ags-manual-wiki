@@ -128,7 +128,7 @@ WHAT | TYPE | Description
 3 | 5 | Pick up character
 3 | 6 | Cursor Mode 8 on character
 3 | 7 | Cursor Mode 9 on character
-4 | 1 | Look at nothing (ie. no hotspot)
+4 | 1 | Look at nothing (i.e. no hotspot)
 4 | 2 | Interact with nothing
 4 | 3 | Use inventory with nothing
 4 | 4 | Talk to nothing

@@ -10,7 +10,7 @@ Generally, Sierra games used to just have one fixed line of dialog which
 the characters would talk about, possibly changing if you talked to the
 same person again.
 
-Lucasarts games (and some Sierra titles such as Quest for Glory) on the
+LucasArts games (and some Sierra titles such as Quest for Glory) on the
 other hand, had complete dialog trees through which you could choose
 your topics to talk about.
 
@@ -45,7 +45,7 @@ I'd recommend you set it to something sensible like this, and don't just
 leave it as "cChar1" or else your dialog scripts will get very
 confusing!
 
-Ok, all done? Expand the "Dialogs" node in the editor, and you'll see
+OK, all done? Expand the "Dialogs" node in the editor, and you'll see
 one existing "0" entry. We'd may as well use it since it's there, so
 double-click it. (If not, you can always right-click the Dialogs node
 and choose "New dialog" to make a new one). You'll see this rather empty
@@ -147,7 +147,7 @@ We're almost done! All we've got to do now is add a way for the player
 to initiate the conversation.
 
 Open up the Character editor for the new *cMerchant* character. Change
-his StartingRoom to room 1 (ie. the same as the player character), and
+his StartingRoom to room 1 (i.e. the same as the player character), and
 position him at let's say X:260, Y:130. You can always change this
 later.
 

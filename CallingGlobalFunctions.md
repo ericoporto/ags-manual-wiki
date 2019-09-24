@@ -20,7 +20,7 @@ then you would write:
 
     import function do_animation (int);
 
-To use the function, you just call it normally in your script, eg:
+To use the function, you just call it normally in your script, e.g.:
 
     do_animation (3);
 

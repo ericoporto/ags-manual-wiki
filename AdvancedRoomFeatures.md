@@ -15,7 +15,7 @@ supported as part of the walkable areas in a room.
 The reason why you have multiple colours available for the walkable
 areas is because you can set a zoom level for each colour, which defines
 how large the character will be while he is in that area. The default
-for all walkable areas is `100%`, ie. full size. However, you can adjust
+for all walkable areas is `100%`, i.e. full size. However, you can adjust
 it using the "Walkable Areas" mode to anywhere from `10%` (one-tenth
 size) to `200%` (double size).
 
@@ -38,12 +38,12 @@ another as he walks towards the back or front of the screen.
 
 ### Scrolling
 
-It's easy to create scrolling rooms like the ones used in Lucasarts
-games like Monkey Island (tm) and Day of the Tentacle.
+It's easy to create scrolling rooms like the ones used in LucasArts
+games like Monkey Island (TM) and Day of the Tentacle.
 
 To do this, just import a background scene that is larger than your game
 resolution. For example, in a 320x200 game, 500x200 is a good size for
-Lucasarts-type rooms.
+LucasArts-type rooms.
 
 That's all you have to do. Draw on the walkable areas, hotspots and so
 on, as normal, and then save the room. The screen will scroll to follow
@@ -138,7 +138,7 @@ Amount setting determines to what extent characters will be tinted, and
 is from 0-100.
 
 **NOTE:** Light levels only work when the character's graphic is at the
-same colour depth as the background (ie. a 256-colour character in a
+same colour depth as the background (i.e. a 256-colour character in a
 hi-colour game won't get lightened).
 
 **NOTE:** In a 256-colour game, only darkening areas (light level <

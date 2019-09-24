@@ -46,7 +46,7 @@ with 0. This makes sure that the damage does not get set to a negative value.
 ### Protection
 
 Access modifiers can be applied to struct members to set the access and
-modifiction scope of struct members.
+modification scope of struct members.
 
 | Keyword | Get | Set |
 | --- | --- | --- |

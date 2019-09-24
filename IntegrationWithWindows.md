@@ -110,10 +110,10 @@ Digital signatures require you to buy a certificate from an authority
 such as Verisign, so at present they are not supported. Your game will
 be classed as "Unrated" by Windows.
 
-**Boxart image**
+**Box-art image**
 
 The Game Explorer can display a high-resolution alpha-blended image for
-your game, rather than the standard game icon. To utilise this, place a
+your game, rather than the standard game icon. To utilize this, place a
 file called `GameExplorer.png` in your game folder, and rebuild the game
 EXE. This must be a PNG image, no larger than 256 x 256 pixels:
 

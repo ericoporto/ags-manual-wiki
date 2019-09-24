@@ -6,7 +6,7 @@ game do something in response.
 
 For example, suppose that you want a bird to fly backwards and forwards
 across the screen in the background. You need a way of telling the bird
-to move in one direction, recognise when it has finished, and tell it to
+to move in one direction, recognize when it has finished, and tell it to
 move back again.
 
 This is where *repeatedly_execute*, *repeatedly_execute_always* and
@@ -17,7 +17,7 @@ This is where *repeatedly_execute*, *repeatedly_execute_always* and
 The *repeatedly_execute* event is run on every game loop (by default
 this is 40 times per second), but only when the game is not blocked.
 That means that it will run as long as there are no current blocking
-animations or moves going on (ie. a Walk or Animate command where
+animations or moves going on (i.e. a Walk or Animate command where
 *eBlock* has been specified as a parameter).
 
 On the other hand, *repeatedly_execute_always* and

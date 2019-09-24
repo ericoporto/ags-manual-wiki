@@ -18,7 +18,7 @@ When looking at a file's properties, if a restrictive zone number is present in 
 
 ### How do I clean my AGS editor files of "alternate data streams"?
 
-Usually it's just the single "Zone.Indentifier" alternate stream on the help file that causes a problem.
+Usually it's just the single "Zone.Identifier" alternate stream on the help file that causes a problem.
 
 
 - Right click the ags-help.chm file in Windows Explorer and press the unblock button.

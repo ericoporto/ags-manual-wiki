@@ -600,7 +600,7 @@ Now, you can declare a struct in one go, like so:
     sword.price = 50;
     sword.name = "Fine sword";
 
-Much neater and better organised. You can also combine structs with
+Much neater and better organized. You can also combine structs with
 [arrays](ScriptKeywords#arrays):
 
     // at top of script
@@ -962,7 +962,7 @@ game. This is to assist scripting since otherwise the game would lock up
 if you scripted a loop wrongly.
 
 However, there are some rare situations in which you need a loop to run
-several thousand times (for example, when initialising a very large
+several thousand times (for example, when initializing a very large
 array). In this case, the *noloopcheck* keyword can be used to stop AGS
 aborting your script.
 

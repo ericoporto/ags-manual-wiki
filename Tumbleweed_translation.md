@@ -60,7 +60,7 @@ tells the AGS:
 * The buttons has the GUI-ID 2. If you take a look at the GUI "gMaingui", you
   can see several buttons. The one with the ID 2 will be used for the action
   you define here.
-* The button will use the spriteslot 63 as the default graphic and spriteslot 64,
+* The button will use the sprite-slot 63 as the default graphic and sprite-slot 64,
   if it's highlighted.
   This can be a little bit confusing, since if you look at `gMaingui`, those
   graphics have already been assigned. But you also need to define the graphics

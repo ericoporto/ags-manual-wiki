@@ -64,7 +64,7 @@ between different rooms in the game, take part in conversations, carry
 its own inventory and more.
 
 Expand the "Characters" node in the project tree. You'll see that so far
-you only have one character in the list, labelled "0: cEgo". You can
+you only have one character in the list, labeled "0: cEgo". You can
 create a new character by right-clicking the "Characters" node. For now,
 double-click the "cEgo" character:
 
@@ -95,7 +95,7 @@ you can find a full description of all the options in the manual.
     (eg. "Loop 0 (down)").
 -   **Clickable** - if this is not checked, then this character will be
     see-through to mouse clicks. This is similar to the way the player
-    character worked in Lucasarts games - you cannot actually click on
+    character worked in LucasArts games - you cannot actually click on
     Guybrush, it will always activate whatever is behind him.
 
 The character's "*RealName*" field simply gives you an easy way to
@@ -157,7 +157,7 @@ the "..." button to return to the script editor.
 Now, we want the player to walk across to the key **before** it
 disappears, so we need to add a new line of script **before** the
 existing command that makes the key invisible. We want to do an action
-on the player character (ie. move him), so type "player." and
+on the player character (i.e. move him), so type "player." and
 auto-complete will pop up with the available commands. See if you can
 work out which one we need.
 

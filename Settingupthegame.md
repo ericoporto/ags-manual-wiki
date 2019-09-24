@@ -38,7 +38,7 @@ which must be displayed on more than one screen, to work.
 
 If you want, you can assign more or less colours to the backgrounds. To
 toggle the background assignment on/off, click on the slot, then check
-the "This colour is room-dependant" box to swap the slot's status.
+the "This colour is room-dependent" box to swap the slot's status.
 
 **IMPORTANT NOTE:** *You must set up the palette as you want it before
 you start making your game - if you change it later, you will have to
@@ -134,7 +134,7 @@ To overwrite an existing sprite, right-click the sprite and select
 background to the window and choose "Import new sprite".
 
 The graphic you choose to import must be at the same colour depth as
-your game (ie. if you are using hi-colour backgrounds, your sprites must
+your game (i.e. if you are using hi-colour backgrounds, your sprites must
 be hi-colour, and vice versa). AGS will attempt to convert the image if
 possible, but if your game is 256-colour then the results of downgrading
 a hi-colour image can be poor.
@@ -160,7 +160,7 @@ use the "use background palette" option, which will remap your graphic
 to the palette of the room currently loaded, giving much better results.
 Note, however, that if you do this, and then try and use the sprite on
 another screen, its colours will most likely be screwed up. To use the
-room palette, check the "use bkgrnd pal" check-box. Make sure to
+room palette, check the "Use room background" check-box. Make sure to
 un-check this box before you import any other sprites.
 
 NOTE: The transparent colour used by AGS is palette index 0 (for
@@ -269,14 +269,14 @@ through from the second frame onwards.
 You select a frame by left-clicking it -- when you do so, the property
 grid will update with information about the frame. One of these settings
 is called "Delay", which is the frame's **relative** speed. The larger
-the number, the longer the frame stays (ie. the slower it is). When the
+the number, the longer the frame stays (i.e. the slower it is). When the
 animation is run, an overall animation speed will be set, so the actual
 speed of the frame will be: overall_speed + frame_speed . Note that
 you can use negative numbers for the frame delay to make it particularly
 fast, for example setting it to -3 means that the frame will stay for
 hardly any time at all.<br>
-Animation speed is specified in Game Loops (ie. animation speed 4 will
-show the frame for 4 game loops - at 40fps, that would be 0.1 seconds).
+Animation speed is specified in Game Loops (i.e. animation speed 4 will
+show the frame for 4 game loops - at 40 FPS, that would be 0.1 seconds).
 
 The "Sound" property allows you to enter a sound number that will be
 played when this frame becomes visible on the screen. This is especially
@@ -320,7 +320,7 @@ The "Clickable" option tells AGS whether you want the player to be able
 to click on the character. If Clickable is enabled, then the character
 will be interactable, like the way things worked in Sierra games. If it
 is not enabled then the character works like the main character did in
-Lucasarts games - if you move the cursor over him or click to look,
+LucasArts games - if you move the cursor over him or click to look,
 speak, etc, then the game will ignore the character and respond to
 whatever is behind him.
 
@@ -442,7 +442,7 @@ overwrite an existing character.*
 ### Conversations
 
 While the old Sierra games were mainly based on action and not talking,
-the Lucasarts games took the opposite approach.
+the LucasArts games took the opposite approach.
 
 If you want to create a game with conversations where the player can
 choose from a list of optional topics to talk about, you can now with
@@ -817,7 +817,7 @@ SetGameOption. **Basic properties**
     swaps sides whenever a different person talks, and the "Based on X
     position" setting means that the side of the screen is chosen
     depending on where the characters are standing.
--   **Speech style** - in the default Lucasarts-style speech, when a
+-   **Speech style** - in the default LucasArts-style speech, when a
     character talks, the speech text is displayed above their head in
     the game, and the character's talking view is used to animate the
     actual character.<br>
@@ -861,7 +861,7 @@ SetGameOption. **Basic properties**
     clicked on.
 -   **Use selected inventory graphics for cursors** - normally, when you
     select an inventory item the mouse cursor is changed into that item.
-    However, if you want to create a Lucasarts-style game (where the
+    However, if you want to create a LucasArts-style game (where the
     inventory cursor is always a cross-hair), disable this option and it
     won't be changed.
 
@@ -899,7 +899,7 @@ SetGameOption. **Basic properties**
 
 -   **Always display text as speech** - if you select this option, then
     all normal text in the game will be displayed above the main
-    character's head as speech text, much like the way the Lucasarts
+    character's head as speech text, much like the way the LucasArts
     games worked. If this option is not checked, then normal text
     appears in a pop-up message box, like the way that the Sierra
     games worked.
@@ -918,7 +918,7 @@ SetGameOption. **Basic properties**
     used for displaying thoughts with
     [Think](Character#think).
 -   **Write game text Right-to-Left** - in-game text will be written
-    right-to-left, ie. line breaks are worked out from the end of the
+    right-to-left, i.e. line breaks are worked out from the end of the
     sentence going backwards, and the last words are displayed first.
     This is used by languages such as Arabic and Hebrew.
 
@@ -929,7 +929,7 @@ SetGameOption. **Basic properties**
     Various options are available.
 -   **GUI alpha rendering style** - determines which rendering method to
     use in 32-bit games when a GUI Control is drawn over GUI. The
-    "Proper alpha belnding" choice is meant for full alpha blending
+    "Proper alpha blending" choice is meant for full alpha blending
     support, other options exist for compatibility with older versions
     of AGS only.
 -   **Pixel-perfect click detection** - normally, when the player clicks
@@ -943,7 +943,7 @@ SetGameOption. **Basic properties**
 -   **Sprite alpha rendering style** - determines which rendering method
     to use in 32-bit games when an image is drawn over
     [drawing surface](DrawingSurfaceFunctions). The "Proper alpha
-    belnding" choice is meant for full alpha blending support, "Classic"
+    blending" choice is meant for full alpha blending support, "Classic"
     style exists for compatibility with older versions of AGS only.
 -   **When player interface is disabled, GUI should** - determines what
     happens to buttons on your GUIs while the game interface is
@@ -986,7 +986,7 @@ Additionally, following settings are available:
     this path in setup program (where they are actually allowed to put
     absolute paths too).
 -   **Custom shared data path** - defines where game will store its
-    shared data files (e.g. hiscore tables). This path will be used to
+    shared data files (e.g. hi-score tables). This path will be used to
     substitute default value of `$APPDATADIR$` token in scripts. Note
     that this option only accepts relative paths, so typically you have
     to set this if you want to have data files created locally within
@@ -1008,7 +1008,7 @@ available in the game. Each cursor mode performs a different action
 within the game. Double-click one to open it up.
 
 The "StandardMode" option in the property grid tells AGS that this is a
-'normal' cursor mode - ie. using this cursor will fire an event on
+'normal' cursor mode - i.e. using this cursor will fire an event on
 whatever is clicked on as usual. This mode applies to the standard Walk,
 Look, Interact and Talk modes, but you can create others too. Do not
 tick it for the Use Inventory mode, since this is a special mode.
@@ -1028,11 +1028,11 @@ Three of the cursor modes are hard-coded special meanings into AGS:
     whether to allow its use or not, depending on whether the player has
     an active inventory item selected.
 -   **Mode 6 (Pointer)**. This cursor is used whenever a modal dialog is
-    displayed (ie. a GUI that pauses the game). Normally this is a
+    displayed (i.e. a GUI that pauses the game). Normally this is a
     standard arrow pointer.
 -   **Mode 7 (Wait)**. This cursor is used whenever the player cannot
     control the action, for example during a scripted cutscene. For a
-    lucasarts-style game where the cursor disappears completely in this
+    LucasArts-style game where the cursor disappears completely in this
     state, simply import a blank graphic over the wait cursor.
 
 For the standard modes,
@@ -1079,7 +1079,7 @@ current fonts listed underneath. You can create a new font by
 right-clicking the "Fonts" node and choosing "New font". To overwrite an
 existing font, open it up and press the "Import over this font" button.
 
-Fonts can have outlines. For lucasarts-style speech, outlines are really
+Fonts can have outlines. For LucasArts-style speech, outlines are really
 a necessity since they stop the text blending into the background and
 becoming un-readable. To outline a font, either set the OutlineStyle to
 "Automatic" to have AGS do it for you, or you can use a specific font

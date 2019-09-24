@@ -19,7 +19,7 @@ Tumbleweed template and this manual page is created by Abstauber, and released w
 
 *Tumbleweed Verbs*
 is a template that allows you to recreate those classic SCUMM games,
-as well as the modern iteration Thimbleweed Park(tm) by Terrible Toybox, Inc. 
+as well as the modern iteration Thimbleweed Park (TM) by Terrible Toybox, Inc. 
 
 Setting up the template with all your custom graphics and colors has been
 simplified a lot. All settings are grouped in the submodule TemplateSettings.asc.
@@ -89,7 +89,7 @@ For example, let's take an object. In the sample room, the object is called `oCu
 and the description is simply "Cup". When move the cursor over this cup
 and no extension is defined, the default action will be "look at". Also the
 corresponding verb button in the gui starts to highlight.
-Now we can change this behaviour with adding an angled bracket, followed by one
+Now we can change this behavior with adding an angled bracket, followed by one
 of the following letters:
 
 
@@ -144,7 +144,7 @@ There are currently three ways of using an inventory item, you can choose from.
 
 1. "Use" only
 
-    For this, you need to add the use-extention ">u" to the description of the
+    For this, you need to add the use-extension ">u" to the description of the
     item and an event function for "Interact inventory item".
     If you have followed the instructions in this manual you probably already
     have it there. This option might come handy for a watch.
@@ -250,7 +250,7 @@ At the time of writing, valid values are:
 Setting this variable to one of these values will translate all your GUIs,
 including all provided dialogs, unhandled events and verb actions.
 
-If you are providing a multilanguage game, which default language is English
+If you are providing a multi-language game, which default language is English
 instead, you will probably create one or more AGS translation files. Sadly AGS
 won't automatically change GUI graphics by the language preference set by
 running the game setup, but we got you covered with this: after generating a new

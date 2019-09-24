@@ -11,7 +11,7 @@ The main changes are:
 - Inventory is still right-click to open, but now [BASS](TemplateBASS)
   style controls are used within the inventory window
 - No additional VerbCoin interfaces will be opened over the top of inventory items
-- Rather than customise the action description per object/hotspot/character
+- Rather than customize the action description per object/hotspot/character
   and allow actions to change based on context, the emphasis is on fixed
   actions with fallback to defaults (using [unhandled_event](TextScriptEvents))
 

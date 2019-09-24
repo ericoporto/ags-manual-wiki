@@ -41,7 +41,7 @@ the player to have to download them.
 Due to the licenses of code used by AGS, your documentation
 should acknowledge the following:
 
-* TrueType font display uses ALFont by Javier Gonzalez and the Freetype
+* TrueType font display uses ALFont by Javier Gonzalez and the FreeType
 project. Distributed under the terms of the FreeType project license.
 * OGG player is alogg by Javier Gonzalez, using the Ogg Vorbis decoder,
 which is available from https://www.xiph.org/ Copyright (c) 2002-2008,
@@ -50,7 +50,7 @@ Xiph.org Foundation
 the mpg123 MP3 decoder, and is distributed under the terms of the GNU
 Lesser General Public License version 2.1.
 
-You must also comply with the licence for AGS:
+You must also comply with the license for AGS:
 [Artistic License 2.0](https://opensource.org/licenses/artistic-license-2.0.php)
 
 ---

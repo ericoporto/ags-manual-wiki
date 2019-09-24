@@ -30,7 +30,7 @@ game.lipsync_speed | Similar to Game.TextReadingSpeed, but this determines how q
 game.max_dialogoption_width | Maximum width of textwindow-based dialog options box. Default 180.
 game.min_dialogoption_width | Minimum width of textwindow-based dialog options box. Default 0.
 game.narrator_speech | Which character ID to use for voice speech within Display() command. Default initial player character. You can also use NARRATOR which uses 'NARR' prefix - special narrator character.
-game.no_textbg_when_voice | Normally 0. If 1, and the Sierra-style With Background speech style is in use, will change to the Sierra-style (No Bg) if a voice speech line is present.
+game.no_textbg_when_voice | Normally 0. If 1, and the Sierra-style With Background speech style is in use, will change to the Sierra-style (no background) if a voice speech line is present.
 game.read_dialog_option_color | By default, -1. You can set this to a colour number, in which case dialog options that the player has selected before will be displayed in this colour.
 game.roomscript_finished | The on_call function has completed executing. (See [CallRoomScript](Globalfunctions_General#callroomscript))
 **game.score** | The player's score. To modify the score, use the GiveScore script function.
@@ -42,9 +42,9 @@ game.sierra_inv_color | The background color of the sierra-style inventory.
 game.skip_display | Setting for how Display() messages are skipped; valid values are same as for Speech.SkipStyle (default 3).
 game.skip_speech_specific_key | Default 0. You can set it to a keycode, in which case only that key can skip speech text.
 game.speech_bubble_width | Maximum width of the thought bubble text window (default 100)
-game.speech_text_align | Sets how text in Lucasarts-style speech is aligned. Same possible values as game.text_align, default eAlignCentre
+game.speech_text_align | Sets how text in LucasArts-style speech is aligned. Same possible values as game.text_align, default eAlignCentre
 game.speech_text_gui | The textwindow GUI number used for sierra-style speech.
-game.text_align | Sets how text in message boxes and Sierra-style speech is aligned:<br>eAlignLeft: text aligned to left within message box (default)<br>eAlignCentre: text is centred within the message box<br>eAlignRight: text is right-aligned within the message box<br>These options do not affect Lucasarts-style speech, which is always centred.
+game.text_align | Sets how text in message boxes and Sierra-style speech is aligned:<br>eAlignLeft: text aligned to left within message box (default)<br>eAlignCentre: text is centred within the message box<br>eAlignRight: text is right-aligned within the message box<br>These options do not affect LucasArts-style speech, which is always centred.
 game.text_shadow_color | Color used for speech text shadow (default 16).
 game.top_bar_XXXX | Customizations for [DisplayTopBar](Globalfunctions_Message#displaytopbar), see link for details
 game.total_score | Maximum possible score, initially set in the editor.
