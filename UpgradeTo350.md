@@ -23,6 +23,15 @@ The new Camera is almost what the old Viewport was: it is a rectangle *inside th
 The new Viewport is a different thing, now it defines a rectangle *on a game's screen* where the room will be drawn. Viewport has a link to Camera and displays what camera "sees" at this moment. Viewport's position and size are defined in *screen coordinates*, just like GUIs and Overlays. This means that if a camera is moving inside the room, the viewport will still stay at the same place on the screen, and vice-versa when a viewport is moved around the screen it will still display same part of the room. Of course, moving both viewport and camera will produce more complicated result.<br>
 You may think of Viewport as of a TV screen or computer monitor, which translates the image from the camera.
 
+Following is a table of conversion between old viewport functions and new camera functions:
+
+obsolete function | replace with
+-- | --
+SetViewport(x, y); | Game.Camera.SetAt(x, y);
+ReleaseViewport(); | Game.Camera.AutoTracking = true;
+GetViewportX(); | Game.Camera.X;
+GetViewportY(); | Game.Camera.Y;
+
 Introduction of new Viewport and Camera concepts allows a lot of new effects which were previously impossible or not easy to accomplish. For example, you no longer must display the room covering the whole screen, you may make a smaller "window" to see the room and position it in the middle of the screen.<br>
 By the way, this also means that you do not have to keep all your rooms same size, you may create very small rooms in your game now and adjust viewport and camera to display it on screen where and how you like.<br>
 By default Viewport and Camera has the same size, but you may make them have different sizes. If a camera is smaller than the viewport then its image will be stretched to fill it causing a "zoom-in" effect. If the camera is larger than the viewport then it will be shrunk to fit in causing a "zoom-out" effect.
@@ -31,7 +40,17 @@ The first viewport-camera pair is created automatically when the game starts, bu
 
 It's important to note that any cursor actions will only work on the room if the cursor is on a viewport.
 
-Only rooms and their contents (characters, objects) are affected by the viewport/camera system, and they got GetAtRoomXY and GetAtScreenXY functions to help scripting your game systems. GUI and Overlays, including speech and other on-screen text, still work outside of it.
+Only rooms and their contents (characters, objects) are affected by the viewport/camera system. GUI and Overlays, including speech and other on-screen text, still work outside of it.
+
+**IMPORANT:** Another thing which needs a different approach is a conversion between screen and room coordinates. Earlier, if you'd like to know where in the room the player has clicked with a mouse, you only had to apply camera's offset in room (previously known as viewport's offset):
+
+    int roomx = mouse.x + GetViewportX();
+    int roomy = mouse.y + GetViewportY();
+
+Since 3.5.0 this is no longer enough, because not only viewport itself may have offset on screen, but also camera's image may be scaled inside a viewport. For that reason there are now actual functions that help you do this conversion: [Screen.ScreenToRoomPoint](Screen#screentoroompoint), [Screen.RoomToScreenPoint](Screen#roomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#screentoroompoint), [Viewport.RoomToScreenPoint](Viewport#roomtoscreenpoint).<br>
+They are used like:
+
+    Point roompt = Screen.ScreenToRoomPoint(mouse.x, mouse.y);
 
 For more information see: [Camera](Camera), [Viewport](Viewport), [Game.Cameras](Game#cameras), [Screen.Viewports](Screen#viewports)
 
@@ -65,10 +84,6 @@ Some functions from previous Script API can be easily replaced, they are shown i
 
 obsolete function | replace with
 -- | --
-SetViewport(x, y); | Game.Camera.SetAt(x, y);
-ReleaseViewport(); | Game.Camera.AutoTracking = true;
-GetViewportX(); | Game.Camera.X;
-GetViewportY(); | Game.Camera.Y;
 GetWalkableAreaAt(x, y); | GetWalkableAreaAtScreen(x, y);
 
 You can also use "Script Compatibility Level" switch to enable old functions.
