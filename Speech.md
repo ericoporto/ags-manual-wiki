@@ -194,7 +194,7 @@ or a key.
 Gets/sets the way in which speech text is displayed. This modifies the
 setting originally set in the editor. SpeechStyle can be:
 
-    eSpeechLucasArts
+    eSpeechLucasarts
       speech text over character's head
     eSpeechSierra
       close-up portrait of character
