@@ -632,6 +632,7 @@ SetGameOption. **Basic properties**
     borders above and below. Today this is rather a compatibility option
     for importing old projects, because AGS does not have proper support
     for custom viewport size.
+-   **Game file name** - your game's executable and/or data filename. This string will be used when creating game package files on disk.
 -   **Game name** - your game's title. This string will be displayed at
     the window title, and also added to the game's
     executable properties.
@@ -660,6 +661,7 @@ SetGameOption. **Basic properties**
 
 **Backwards compatibility**
 
+-   **Allow relative asset resolutions** - if enabled then your game will scale sprites according to their resolution tags: sprites tagged as "low-res" will be scaled up in a "high-res" game (640x400 and higher), sprites tagged as "high-res" will be scaled down in a "low-res" game (less than 640x400). When disabled resolution tags will be ignored as all sprites displayed with their real size (this is default).
 -   **Enable mouse wheel support** - if enabled, on_mouse_click can be
     called with the values eMouseWheelNorth and eMouseWheelSouth, which
     signify the user scrolling their mouse wheel north or
@@ -751,6 +753,39 @@ SetGameOption. **Basic properties**
 -   **Allow speech to be skipped by which events** - determines how and
     whether the player can skip speech in-game. This can be set to allow
     the mouse and/or keyboard, or neither, to skip speech in the game.
+-   **Custom Narrate function in dialog scripts** - determines which function will be used to substitute standard narration in dialog scripts. For example, if you have
+
+        narrator: The man looks you in the eye.
+
+    in a dialog script, then normally this is replaced by
+
+        Display("The man looks you in the eye");
+
+    during compilation. With the above setting you can provide *the name* of your custom function that you've defined in your script. Such function must have one of the following prototype forms:
+
+        function CustomNarrate1(const string text);
+        function CustomNarrate2(String text);
+
+    The return value is actually not essential and may be any type.<br>
+    If the field is left empty then the standard Display function is used.
+-   **Custom Say function in dialog scripts** - determines which function will be used to substitute standard character cues in dialog scripts. For example, if you have something like
+
+        Roger: Hello, my name is Roger.
+
+    in a dialog script, then normally this is replaced by
+
+        cRoger.Say("Hello, my name is Roger.");
+
+    during compilation. With the above setting you can provide *the name* of your custom function that you've defined in your script. Such function must have one of the following prototype forms:
+
+        function CustomSay1(Character *c, const string text);
+        function CustomSay2(Character *c, String text);
+        function CustomSay3(this Character*, const string text);
+        function CustomSay4(this Character*, String text);
+
+    Last two variants are [extender functions](ExtenderFunctions) for Character struct.<br>
+    The return value is actually not essential and may be any type.<br>
+    If the field is left empty then the standard Character.Say function is used.
 -   **Dialog bullet point image** - defines the number of sprite to use
     as a bullet image before each dialog option.
 -   **Gap between dialog options** - defines the gap between the options
@@ -830,6 +865,10 @@ SetGameOption. **Basic properties**
     inventory cursor is always a cross-hair), disable this option and it
     won't be changed.
 
+**Rooms**
+
+-   **Default mask resolution** - sets default value for MaskResolution property which will be applied for each new room in your game. Mask resolution defines the factor between room masks' sizes and room background size. Common is 1:1, but you can choose other options for less precise masks, which may reduce data size and slightly improve perfomance in high-resolution games.
+
 **Saved Games**
 
 -   **Enhanced save games** - makes your game's saves compatible with
@@ -878,11 +917,6 @@ SetGameOption. **Basic properties**
 -   **Custom thought bubble GUI** - Determines which text window GUI is
     used for displaying thoughts with
     [Think](Character#think).
--   **Fonts designed for high resolution** - normally, if the player
-    chooses high resolution for their game, then the fonts will be
-    scaled up to match. However, if you have drawn your fonts for the
-    high resolution display, use this option to stop them
-    being stretched.
 -   **Write game text Right-to-Left** - in-game text will be written
     right-to-left, ie. line breaks are worked out from the end of the
     sentence going backwards, and the last words are displayed first.
