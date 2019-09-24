@@ -12,6 +12,7 @@
 
 ## Editor Reference
 
+- [General Settings](GeneralSettings)
 - [Room Editor](EditorRoom)
 - [Character Editor](EditorCharacter)
 - [GUI Editor](EditingGUIs)
