@@ -13,7 +13,6 @@ tutorial.
 - [Custom Properties](CustomProperties)
 - [Plugins](Plugins)
 - [Lip sync](Lipsync)
-- [New Game templates](Templates)
 - [Debugging features](Debuggingfeatures)
 - [Auto-number speech files](AutonumberSpeechFiles)
 - [Integration with Windows](IntegrationWithWindows)
