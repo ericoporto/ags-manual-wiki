@@ -42,7 +42,7 @@ It's important to note that any cursor actions will only work on the room if the
 
 Only rooms and their contents (characters, objects) are affected by the viewport/camera system. GUI and Overlays, including speech and other on-screen text, still work outside of it.
 
-**IMPORANT:** Another thing which needs a different approach is a conversion between screen and room coordinates. Earlier, if you'd like to know where in the room the player has clicked with a mouse, you only had to apply camera's offset in room (previously known as viewport's offset):
+**IMPORTANT:** Another thing which needs a different approach is a conversion between screen and room coordinates. Earlier, if you'd like to know where in the room the player has clicked with a mouse, you only had to apply camera's offset in room (previously known as viewport's offset):
 
     int roomx = mouse.x + GetViewportX();
     int roomy = mouse.y + GetViewportY();
