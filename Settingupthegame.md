@@ -546,6 +546,10 @@ The dialog commands available are:
 -   **stop**<br>
     Stops the conversation and returns the player to the game.
 
+**Substituting dialog speech with custom functions**
+
+By default all of the character dialog lines are executed using the standard function Character.Say. Since AGS 3.5.0 it is possible to define a custom script function as a substitute instead. This is done using "Custom Say function in dialog scripts" option in the General Settings. Similarily, narration (which is by default done using Display script function) may be substituted with a custom one using "Custom Narrate function in dialog scripts".
+
 **Using scripting commands in dialogs**
 
 Often the provided dialog scripting commands won't be enough for what
@@ -1092,6 +1096,7 @@ Every font have following optional properties:
     lines of wrapped text. Setting this to 0 will make font use its own
     height as a vertical spacing. Having line spacing lower than font's
     height will make lines partially overlap.
+-   **SizeMultiplier** - an integer scale multiplier applied to this font. Note that it is commonly makes sense to assign this for the bitmap fonts, as TTF fonts may be reimported with different font size. When set for a TTF font it will simply be initialized with a higher point-size in game.
 -   **VerticalOffset** - defines additional vertical offset applied to
     every drawn line of text (when using this font). This property is
     mainly meant to override particular font's misbehavior.
