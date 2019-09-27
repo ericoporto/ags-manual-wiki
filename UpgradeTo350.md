@@ -1,8 +1,15 @@
 ## Upgrading to 3.5.0
 
-3.5.0 is another big update and it has few serious changes to both editor UI and scripting.
+AGS version 3.5.0 is another big update and it has few serious changes to both editor UI and scripting.
 
-**Room editor and multilayer mode**
+* [Room editor and multilayer mode](UpgradeTo350#room-editor-and-multilayer-mode)  
+* [New Viewport/Camera system](UpgradeTo350#new-viewportcamera-system)  
+* [Room sizes and mask resolution](UpgradeTo350#room-sizes-and-mask-resolution)  
+* [Deprecated relative asset resolutions](UpgradeTo350#deprecated-relative-asset-resolutions)  
+* [Some script functions replaced and/or deprecated](UpgradeTo350#some-script-functions-replaced-andor-deprecated)  
+* [System limits update](UpgradeTo350#system-limits-update)  
+
+### Room editor and multilayer mode
 
 Room editor has got a new navigation bar on the top of the panel instead of the plain drop-down list where you used to select edit mode. This navigation bar lets you do the following:
 
@@ -15,7 +22,7 @@ Room editor has got a new navigation bar on the top of the panel instead of the 
 
 **NOTE:** in order to remember user preference on visible and locked items Editor saves a new file called **roomNNN.crm.user** per each room, where 'NNN' is a room's number. These files are not part of the game data and are safe to remove (but in that case all item visibility and lock states in the room will be reset).
 
-**New Viewport/Camera system**
+### New Viewport/Camera system
 
 In the past, AGS had a very simple concept of Viewport: a rectangular "eye" which selected a part of the room to display on the screen. If a room was larger than the game's screen it became a "scrolling room" and you could move a viewport around it, showing different parts of that room.
 
@@ -58,7 +65,7 @@ They are used like:
 
 For more information see: [Camera](Camera), [Viewport](Viewport), [Game.Cameras](Game#cameras), [Screen.Viewports](Screen#viewports)
 
-**Room sizes and mask resolution**
+### Room sizes and mask resolution
 
 Previously AGS had a restriction that a room background must be at least size of a game resolution. With 3.5.0 this restriction is gone and you can now make rooms any size. This became possible after the rewrite of the viewport system, as explained above.
 
@@ -68,7 +75,7 @@ Since 3.5.0 each room has a property called MaskResolution which currently range
 To make things more convenient there's also an option in General Settings called "Default mask resolution" which lets you choose a value that will be applied to every newly created room.<br>
 Note that when importing older projects the mask resolution is kept unchanged.
 
-**Deprecated relative asset resolutions**
+### Deprecated relative asset resolutions
 
 This is something users do not know much about now but may stumble upon sometimes. In the long past AGS divided all games into "low-resolution" and "high-resolution" games, "high-res" was defined roughly as 640x400 and higher while "low-res" was 320x200 or 320x240. Similarly AGS allowed certain assets, such as sprites, fonts, and rooms, be tagged as "low-res" or "high-res". The idea behind this was that if a "low-res" asset is used in a "high-res" game then it gets automatically scaled up x2, and vice-versa a "high-res" asset in a "low-res" game would be downscaled x2.
 
@@ -82,7 +89,7 @@ In AGS 3.5.0 we are deprecating concept of resolution tags and disable these con
 
 3. "Fonts designed for high resolution" setting was removed because it no longer makes sense. Instead, each font has an individual ScalingMultiplier property. When importing older project each font will be scaled x2 if it was a "high-res" game and this setting was OFF.
 
-**Some script functions replaced and/or deprecated**
+### Some script functions replaced and/or deprecated
 
 Some functions from previous Script API were either replaced by new equivalents or deprecated. They are shown in the table below:
 
@@ -95,7 +102,7 @@ DrawingSurface.UseHighResCoordinates | *Do not use*
 
 Note that you can still use "Script Compatibility Level" switch in General Settings to enable old functions.
 
-**System limits update**
+### System limits update
 
 Support for very large files was added to AGS, therefore now package file and every asset file is allowed to exceed 2 GB. One good example to mention is the packed sprites file (acsprset.spr) which 2 GB limit was causing most inconveniences.
 
