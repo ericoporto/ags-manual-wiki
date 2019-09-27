@@ -1,12 +1,5 @@
 ## Extensions
 
-- [Verbs.RemoveExtension](Tumbleweed_extensions#verbsremoveextension)
-- [Verbs.AddExtension](Tumbleweed_extensions#verbsaddextension)
-- [Verbs.Extension](Tumbleweed_extensions#verbsextension)
-- [Verbs.ExtensionEx](Tumbleweed_extensions#verbsextensionex)
-- [Verbs.OpenCloseExtension](Tumbleweed_extensions#verbsopencloseextension)
-- [Verbs.VariableExtensions](Tumbleweed_extensions#verbsvariableextensions)
-
 Extensions are used to define the default action for the right-click. You can add extensions to characters, hotspots, objects and inventory items.
 To add an extension, e.g. chose an object in the room editor and take a look at the description (not the name).
 In the sample room, we have an object, called Cup. In addition to the name we have an angle bracket and the letter p:

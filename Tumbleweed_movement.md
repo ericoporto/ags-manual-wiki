@@ -12,20 +12,6 @@ if(Verbs.MovePlayer(20,20)) Display("The player has reached the destination.");
 If the player's character reaches the coordinates 20,20, the message "I'm there" is being displayed.
 If the movement is being cancelled by a mouseclick, the message doesn't appear.
 
-- [Verbs.MovePlayer](Tumbleweed_movement#verbsmoveplayer)
-- [Verbs.MovePlayerEx](Tumbleweed_movement#verbsmoveplayerex)
-- [Verbs.GoToCharacter](Tumbleweed_movement#verbsgotocharacter)
-- [Verbs.GoToCharacterEx](Tumbleweed_movement#verbsgotocharacterex)
-- [Verbs.NPCGoToCharacter](Tumbleweed_movement#verbsnpcgotocharacter)
-- [Verbs.AnyClickMove](Tumbleweed_movement#verbsanyclickmove)
-- [Verbs.AnyClickWalk](Tumbleweed_movement#verbsanyclickwalk)
-- [Verbs.AnyClickWalkLook](Tumbleweed_movement#verbsanyclickwalklook)
-- [Verbs.AnyClickWalkLookPick](Tumbleweed_movement#verbsanyclickwalklookpick)
-- [Verbs.AnyClickUseInv](Tumbleweed_movement#verbsanyclickuseinv)
-- [Verbs.GoTo](Tumbleweed_movement#verbsgoto)
-- [Verbs.WalkOffScreen](Tumbleweed_movement#verbswalkoffscreen)
-- [Verbs.SetApproachingChar](Tumbleweed_movement#verbssetapproachingchar)
-
 ---
 
 ### Verbs.MovePlayer

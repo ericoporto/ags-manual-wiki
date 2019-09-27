@@ -1,16 +1,5 @@
 ## Math and Helper Functions
 
-- [Verbs.Distance](Tumbleweed_helper#verbsdistance)
-- [Verbs.Offset](Tumbleweed_helper#verbsoffset)
-- [Verbs.GetButtonAction](Tumbleweed_helper#verbsgetbuttonaction)
-- [Verbs.DisableGui](Tumbleweed_helper#verbsdisablegui)
-- [Verbs.EnableGui](Tumbleweed_helper#verbsenablegui)
-- [Verbs.IsGuiDisabled](Tumbleweed_helper#verbsisguidisabled)
-- [Verbs.GlobalCondition](Tumbleweed_helper#verbsglobalcondition)
-- [Verbs.InitGuiLanguage](Tumbleweed_helper#verbsinitguilanguage)
-- [Verbs.HandleInvArrows](Tumbleweed_helper#verbshandleinvarrows)
-- [Verbs.SetDoubleClickSpeed](Tumbleweed_helper#verbssetdoubleclickspeed)
-
 ---
 
 ### Verbs.Distance

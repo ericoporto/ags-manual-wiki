@@ -2,15 +2,6 @@
 
 These functions are mainly used to control the verb buttons.
 
-- [Verbs.UsedAction](Tumbleweed_actions#verbsusedaction)
-- [Verbs.IsAction](Tumbleweed_actions#verbsisaction)
-- [Verbs.SetActionButtons](Tumbleweed_actions#verbssetactionbuttons)
-- [Verbs.SetDefaultAction](Tumbleweed_actions#verbssetdefaultaction)
-- [Verbs.SetAction](Tumbleweed_actions#verbssetaction)
-- [Verbs.SetAlternativeAction](Tumbleweed_actions#verbssetalternativeaction)
-- [Verbs.CheckDefaultAction](Tumbleweed_actions#verbscheckdefaultaction)
-- [Verbs.UpdateActionBar](Tumbleweed_actions#verbsupdateactionbar)
-
 ---
 
 ### Verbs.UsedAction

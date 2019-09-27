@@ -1,9 +1,5 @@
 ## Translation
 
-[TranslateAction](Tumbleweed_translation#verbstranslateaction)
-[AdjustLanguage](Tumbleweed_translation#verbsadjustlanguage)
-[AdjustGUIText](Tumbleweed_translation#verbsadjustguitext)
-
 To make the verbs work with translations, strings are being used to define the button graphics, hotkeys and so on.
 If you like to customize your game or get it translated, you need to take a closer look at the function AdjustLanguage.
 

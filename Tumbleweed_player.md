@@ -1,10 +1,5 @@
 ## Player functions
 
-- [Verbs.FreezePlayer](Tumbleweed_player#verbsfreezeplayer)
-- [Verbs.UnfreezePlayer](Tumbleweed_player#verbsunfreezeplayer)
-- [Verbs.SetPlayer](Tumbleweed_player#verbssetplayer)
-- [Verbs.EnterRoom](Tumbleweed_player#verbsenterroom)
-
 ---
 
 ### Verbs.FreezePlayer
