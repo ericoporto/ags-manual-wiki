@@ -2,7 +2,7 @@
 
 ### Views
 
-In the view editor you add sprites from the [Sprite Manager](EditorSprite) to animation strips called _Loops_. This way you create the walkcycles for your [Character](EditorCharacter) as well as all other character animations. Also you define the animation for object on screen you want to animate with _Loops_ inside a _View_.
+In the view editor you add sprites from the [Sprite Manager](EditorSprite) to animation strips called _Loops_. This way you create the walkcycles for your [Character](EditorCharacter) as well as all other character animations. Also you define the animation for every object on screen you want to animate with _Loops_ inside a _View_.
 
 ![](images/EditorView_1.png)
 
@@ -12,7 +12,7 @@ Animation flipping is also possible but for that see the [Right Click Context Me
 It is good practice to use a new loop for every character and also for special character animations.  
 You can add a lot of object animations to one single view, but you could for example sort them by game chapters (one view for every chapter) to make it easier for you to find them again. You can **name the View** with a right-click on the View in the game explorer.
 
-Don't worry about overloading AGS, with the newer versions you can have unlimited views, unlimited loops per view and unlimited frames per loop.
+Don't worry about overloading AGS, with the newer versions you can have unlimited views, unlimited loops per view and unlimited frames per loop. Still, be reasonable, for example a 200 frames loop with 320x200 pixel sized frames makes the AGS editor slow while displaying (preloading) the big amount of pixel information, so when you have a lot of "fullscreen" frames you should consider using a new view for each one of them for your own sanity.
 
 ### Right Click Context Menu
 
@@ -30,7 +30,7 @@ When you right-click on a single frame in a loop you get the following options:
 
 - _Insert frame before this_
 
-  Useful when you added your animation and forgot first frame was the idle frame.
+  Useful when you added your animation and forgot that the first frame is the idle frame.
 
 - _Insert frame after this_
 
@@ -38,7 +38,7 @@ When you right-click on a single frame in a loop you get the following options:
 
 - _Cut loop_
 
-  Good for moving things around when you did everything right in the wrong loop.
+  Good for moving things around when you did everything right but in the wrong loop.
 
 - _Copy loop_
 
@@ -46,19 +46,19 @@ When you right-click on a single frame in a loop you get the following options:
 
 - _Paste over this loop_
 
-  You need this to place the loop after you copied it.
+  You need this to place the loop after you cut or copied it.
 
 - _Paste over this loop flipped_
 
-  If you have copied the loop with the character going right, make him go to left!
+  If you have copied the loop with the character going right, this will make him go to left!
 
 - _Flip all frames in loop_
 
-  You already did the character going right and pasted on this loop, then use this option!
+  You already did the character going right and copied this loop and want to flip the sprites in the whole loop, then use this option! This is a good timesafer.
 
 - _Add all sprites from folder_
 
-  On the sprite manager, if you have all the sprites to be used in a loop, ordered, in a folder, you can use this option to quickly added them. This is useful when you have many frames.
+  Put all the sprites to be used in a loop, in a folder in the sprite manager, ordered (probably with a consecutive number sequence at the end), then you can use this option to quickly add all image files from that folder to the loop in the order they are in the folder. This is useful when you have many frames for a loop.
 
 ### Show Preview
 
@@ -84,7 +84,7 @@ _Image_
 The image number AGS gives your image imported into the [Sprite Manager](EditorSprite). This selected frame has exactly this image number.
 
 _ID_  
-Greyed out. Should be the frame number for the selected frame.
+Greyed out. Should be the frame number within the loop for the selected frame.
 
 _Sound_  
 Play the sound set here every time the animation loop plays and reaches this frame.  
