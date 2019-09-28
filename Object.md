@@ -45,7 +45,8 @@ play the animation once only. This happens in the background. Then,
 object 1 will animate backwards using loop 1 of its current view, at
 speed 3. The function won't return until the animation is finished.
 
-*See Also:* [Character.Animate](Character#animate),
+*See Also:* [Button.Animate](Button#animate),
+[Character.Animate](Character#animate),
 [Object.Animating](Object#animating),
 [Object.SetView](Object#setview),
 [Object.StopAnimating](Object#stopanimating)
