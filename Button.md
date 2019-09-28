@@ -57,7 +57,9 @@ delay of 4 cycles per frame, and repeat the animation continually.
 [Button.Frame](Button#frame),
 [Button.Loop](Button#loop),
 [Button.View](Button#view),
-[Button.NormalGraphic](Button#normalgraphic)
+[Button.NormalGraphic](Button#normalgraphic),  
+[Character.Animate](Character#animate),
+[Object.Animate](Object#animate),
 
 ---
 
