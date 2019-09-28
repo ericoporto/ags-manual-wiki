@@ -29,14 +29,14 @@ could be useful for Sierra-style death animations and other effects.
 
 LOOP from VIEW will be played on the button. The DELAY specifies the
 speed of the animation - larger numbers are slower. This has the same
-values you use with the Character.Animate and Object.Animate commands.
+values you use with the [Character.Animate](Character#Animate) and [Object.Animate](Object#Animate) commands.
 
 REPEAT determines whether the animation will loop repeatedly, or just
 play once and stop with the last frame showing (eOnce or eRepeat are the
 possible values).
 
 You can abort an animation at any time by setting the button's
-NormalGraphic property, or starting a new animation on the same button.
+[NormalGraphic property](Button#normalgraphic), or starting a new animation on the same button.
 
 **NOTE:** This command destroys the button's normal, pushed and
 mouseover images. If you want to return the button to normal usage after
