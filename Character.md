@@ -111,7 +111,8 @@ Example:
 will animate the character once using loop number 3 of view 5 backwards,
 and wait until the animation finishes before returning.
 
-*See Also:* [Object.Animate](Object#animate)
+*See Also:* [Button.Animate](Button#animate),
+[Object.Animate](Object#animate)
 
 ---
 
