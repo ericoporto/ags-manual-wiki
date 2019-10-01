@@ -6,7 +6,7 @@ your game off.
 
 AGS comes with a few standard templates:
 
-- [Empty Game] (...which is what it sais)
+- Empty Game (...which is what it says)
 - [Tumbleweed](Tumbleweed) (9-Verb) 
 - [Sierra-style](TemplateSierraStyle)
 - [BASS (two click handler)](TemplateBASS) (like **B**eneath **a** **S**teel **S**ky)
