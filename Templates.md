@@ -6,10 +6,10 @@ your game off.
 
 AGS comes with a few standard templates:
 
-- [Empty Game] (...which is what it says and actually no template per se)
+- [Empty Game] (...which is what it sais)
 - [Tumbleweed](Tumbleweed) (9-Verb) 
 - [Sierra-style](TemplateSierraStyle)
-- [LW_BASS_v2.0 (two click handler)](TemplateBASS) (like **B**eneath **a** **S**teel **S**ky)
+- [BASS (two click handler)](TemplateBASS) (like **B**eneath **a** **S**teel **S**ky)
 - [Verbcoin](TemplateVerbcoin)
 
 ...but you can create your own too.
