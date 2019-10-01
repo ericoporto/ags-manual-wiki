@@ -72,10 +72,10 @@ and then top left corner afterwards.
 *(Formerly known as AnimateCharacterEx, which is now obsolete)*
 
     Character.Animate(int loop, int delay, optional RepeatStyle,
-                      optional BlockingStyle, optional Direction)
+                      optional BlockingStyle, optional Direction, optional int frame)
 
 Starts the character animating, using loop number LOOP of his current
-view. The overall speed of the animation is set with DELAY, where 0 is
+view and optionally starting at FRAME. The overall speed of the animation is set with DELAY, where 0 is
 the fastest, and increasing numbers mean slower. The delay for each
 frame is worked out as DELAY + FRAME SPD, so the individual frame speeds
 are relative to this overall speed.
@@ -92,13 +92,16 @@ through each frame in turn until the last frame, where it will stop. If
 RepeatStyle is *eRepeat* (or 1), then when the last frame is reached, it
 will go back to the first frame and start over again with the animation.
 
-*direction* specifies which way the animation plays. You can either pass
-eForwards (the default) or eBackwards.
-
 For *blocking* you can pass either eBlock (in which case the function
 will wait for the animation to finish before returning), or eNoBlock (in
 which case the animation will start to play, but your script will
 continue). The default is eBlock.
+
+*Direction* specifies which way the animation plays. You can either pass
+eForwards (the default) or eBackwards.
+
+*Frame* lets you specify the starting frame, which should be one of the chosen loop's frame.<br>
+Note that for compatibility reasons if direction is eBackwards the animation actually begins with the *previous frame*. If you pass frame 0 (the default) then it will begin with the last frame in the loop.
 
 If the character is currently moving, it will be stopped.
 
@@ -110,6 +113,8 @@ Example:
 
 will animate the character once using loop number 3 of view 5 backwards,
 and wait until the animation finishes before returning.
+
+*Compatibility:* Optional *frame* parameter is supported only by **AGS 3.5.0** and later versions.
 
 *See Also:* [Button.Animate](Button#animate),
 [Object.Animate](Object#animate)
