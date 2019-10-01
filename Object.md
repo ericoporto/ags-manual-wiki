@@ -6,9 +6,9 @@
 *(Formerly known as AnimateObjectEx, which is now obsolete)*
 
     Object.Animate(int loop, int delay, optional RepeatStyle,
-                   optional BlockingStyle, optional Direction)
+                   optional BlockingStyle, optional Direction, optional int frame)
 
-Starts the object animating, using loop number LOOP of its current view.
+Starts the object animating, using loop number LOOP of its current view, and optionally starting at FRAME.
 The overall speed of the animation is set with DELAY, where 0 is the
 fastest, and increasing numbers mean slower. The delay for each frame is
 worked out as DELAY + FRAME SPD, so the individual frame speeds are
@@ -29,8 +29,11 @@ will wait for the animation to finish before returning), or eNoBlock (in
 which case the animation will start to play, but your script will
 continue). The default is eBlock.
 
-*direction* specifies which way the animation plays. You can either pass
+*Direction* specifies which way the animation plays. You can either pass
 eForwards (the default) or eBackwards.
+
+*Frame* lets you specify the starting frame, which should be one of the chosen loop's frame.<br>
+Note that for compatibility reasons if direction is eBackwards the animation actually begins with the *previous frame*. If you pass frame 0 (the default) then it will begin with the last frame in the loop.
 
 You need to use SetView at some stage before this command, in order to
 set up the object's current view.
@@ -44,6 +47,8 @@ will animate object 0 using loop 2 of its current view, at speed 5, and
 play the animation once only. This happens in the background. Then,
 object 1 will animate backwards using loop 1 of its current view, at
 speed 3. The function won't return until the animation is finished.
+
+*Compatibility:* Optional *frame* parameter is supported only by **AGS 3.5.0** and later versions.
 
 *See Also:* [Button.Animate](Button#animate),
 [Character.Animate](Character#animate),
