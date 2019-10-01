@@ -29,7 +29,7 @@ could be useful for Sierra-style death animations and other effects.
 
 LOOP from VIEW will be played on the button. The DELAY specifies the
 speed of the animation - larger numbers are slower. This has the same
-values you use with the [Character.Animate](Character#Animate) and [Object.Animate](Object#Animate) commands.
+values you use with the [Character.Animate](Character#animate) and [Object.Animate](Object#animate) commands.
 
 REPEAT determines whether the animation will loop repeatedly, or just
 play once and stop with the last frame showing (eOnce or eRepeat are the
