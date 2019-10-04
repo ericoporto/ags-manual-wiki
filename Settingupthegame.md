@@ -548,7 +548,7 @@ The dialog commands available are:
 
 **Substituting dialog speech with custom functions**
 
-By default all of the character dialog lines are executed using the standard function Character.Say. Since AGS 3.5.0 it is possible to define a custom script function as a substitute instead. This is done using "Custom Say function in dialog scripts" option in the General Settings. Similarily, narration (which is by default done using Display script function) may be substituted with a custom one using "Custom Narrate function in dialog scripts".
+By default all of the character dialog lines are executed using the standard function Character.Say. Since AGS 3.5.0 it is possible to define a custom script function as a substitute instead. This is done using "Custom Say function in dialog scripts" option in the General Settings. Similarly, narration (which is by default done using Display script function) may be substituted with a custom one using "Custom Narrate function in dialog scripts".
 
 **Using scripting commands in dialogs**
 
@@ -871,7 +871,7 @@ SetGameOption. **Basic properties**
 
 **Rooms**
 
--   **Default mask resolution** - sets default value for MaskResolution property which will be applied for each new room in your game. Mask resolution defines the factor between room masks' sizes and room background size. Common is 1:1, but you can choose other options for less precise masks, which may reduce data size and slightly improve perfomance in high-resolution games.
+-   **Default mask resolution** - sets default value for MaskResolution property which will be applied for each new room in your game. Mask resolution defines the factor between room masks' sizes and room background size. Common is 1:1, but you can choose other options for less precise masks, which may reduce data size and slightly improve performance in high-resolution games.
 
 **Saved Games**
 
