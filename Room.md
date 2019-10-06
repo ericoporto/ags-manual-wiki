@@ -10,7 +10,7 @@ background frame number if you want to modify a specific frame;
 otherwise, the current background's surface will be returned.
 
 After calling this method, use the various
-[DrawingSurface functions](DrawingSurfaceFunctions) to modify the background,
+[DrawingSurface functions](DrawingSurface) to modify the background,
 then call Release on the surface when you are finished.
 
 Any changes you make will only last until the player leaves the room, at
@@ -34,8 +34,8 @@ draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
 
 *See Also:*
-[DrawingSurface.DrawLine](DrawingSurfaceFunctions#drawline),
-[DrawingSurface.Release](DrawingSurfaceFunctions#release)
+[DrawingSurface.DrawLine](DrawingSurface#drawline),
+[DrawingSurface.Release](DrawingSurface#release)
 
 ---
 
@@ -211,7 +211,7 @@ Example:
     Display("The current room background is %d-bit colour.", Room.ColorDepth);
 
 *See Also:*
-[DrawingSurface.DrawImage](DrawingSurfaceFunctions#drawimage)
+[DrawingSurface.DrawImage](DrawingSurface#drawimage)
 
 ---
 

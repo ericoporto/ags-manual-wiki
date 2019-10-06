@@ -95,7 +95,7 @@ Example:
 will draw a bright green line onto the room background
 
 *See Also:*
-[DrawingSurface.DrawingColor](DrawingSurfaceFunctions#drawingcolor)
+[DrawingSurface.DrawingColor](DrawingSurface#drawingcolor)
 
 ---
 

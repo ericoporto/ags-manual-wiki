@@ -399,7 +399,7 @@ Calculates the height on the screen that drawing TEXT in FONT within an
 area of WIDTH would take up.
 
 This allows you to work out how tall a message displayed with a command
-like [DrawMessageWrapped](DrawingSurfaceFunctions#drawmessagewrapped)
+like [DrawMessageWrapped](DrawingSurface#drawmessagewrapped)
 will be. WIDTH is the width of the area in which the text will be
 displayed.
 
@@ -415,7 +415,7 @@ will move the BOTTOMLINE GUI so that it can display the text within the
 screen.
 
 *See Also:* [GetTextWidth](Globalfunctions_General#gettextwidth),
-[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawstring)
+[DrawingSurface.DrawString](DrawingSurface#drawstring)
 
 ---
 
@@ -443,7 +443,7 @@ Example:
 will print \"Hello!\" onto the middle of the background scene.
 
 *See Also:* [GetTextHeight](Globalfunctions_General#gettextheight),
-[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawstring)
+[DrawingSurface.DrawString](DrawingSurface#drawstring)
 
 ---
 

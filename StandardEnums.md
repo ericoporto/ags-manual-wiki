@@ -113,7 +113,7 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
 *Compatibility:* replaced old Alignment enumeration in AGS 3.5.0.
 
 *Used by:*
-[Character.LockViewAligned](Character#lockviewaligned), [DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#drawstringwrapped), [Label.TextAlignment](Label#textalignment), [ListBox.TextAlignment](ListBox#textalignment), [Speech.TextAlignment](Speech#textalignment)
+[Character.LockViewAligned](Character#lockviewaligned), [DrawingSurface.DrawStringWrapped](DrawingSurface#drawstringwrapped), [Label.TextAlignment](Label#textalignment), [ListBox.TextAlignment](ListBox#textalignment), [Speech.TextAlignment](Speech#textalignment)
 
     enum eFlipDirection {
       eFlipLeftToRight,
@@ -282,9 +282,9 @@ The FontType enumeration is generated automatically based on your fonts.
 The font name is taken, all its spaces are removed, and *eFont* is added
 to the front.<br>
 *Used by:* [Button.Font](Button#font),
-[DrawingSurface.DrawMessageWrapped](DrawingSurfaceFunctions#drawmessagewrapped),
-[DrawingSurface.DrawString](DrawingSurfaceFunctions#drawstring),
-[DrawingSurface.DrawStringWrapped](DrawingSurfaceFunctions#drawstringwrapped),
+[DrawingSurface.DrawMessageWrapped](DrawingSurface#drawmessagewrapped),
+[DrawingSurface.DrawString](DrawingSurface#drawstring),
+[DrawingSurface.DrawStringWrapped](DrawingSurface#drawstringwrapped),
 [Game.NormalFont](Game#normalfont),
 [Game.SpeechFont](Game#speechfont),
 [GetTextHeight](Globalfunctions_General#gettextheight),

@@ -304,7 +304,7 @@ clears the dialog options area to yellow.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [DrawingSurface functions](DrawingSurfaceFunctions)
+*See Also:* [DrawingSurface functions](DrawingSurface)
 
 ---
 

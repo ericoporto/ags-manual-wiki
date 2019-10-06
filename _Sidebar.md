@@ -79,7 +79,7 @@
 -   [DateTime functions and properties](DateTime)
 -   [Dialog functions and properties](Dialog)
 -   [DialogOptionsRenderingInfo functions and properties](DialogOptionsRenderingInfo)
--   [DrawingSurface functions and properties](DrawingSurfaceFunctions)
+-   [DrawingSurface functions and properties](DrawingSurface)
 -   [DynamicSprite functions and properties](DynamicSprite)
 -   [File functions and properties](File)
 -   [Game / Global functions](Game)

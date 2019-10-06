@@ -82,7 +82,7 @@ since you can no longer just do "RawDrawImage" to draw something onto
 the room background.
 
 Instead, there is a new
-[DrawingSurface](DrawingSurfaceFunctions) object which you do
+[DrawingSurface](DrawingSurface) object which you do
 the drawing onto. You get one of these by calling
 [DynamicSprite.GetDrawingSurface](DynamicSprite#getdrawingsurface)
 or
@@ -90,12 +90,12 @@ or
 depending on what you want to draw onto; and you can then use the
 various drawing surface methods to do your drawing.
 
-You must call [Release](DrawingSurfaceFunctions#release) on the surface
+You must call [Release](DrawingSurface#release) on the surface
 once you have finished drawing onto it, which tells AGS to update the
 data in memory.
 
 For examples, see the
-[DrawingSurface](DrawingSurfaceFunctions) function help pages.
+[DrawingSurface](DrawingSurface) function help pages.
 
 **Other script changes**
 

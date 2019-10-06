@@ -946,7 +946,7 @@ SetGameOption. **Basic properties**
     behind the object will be activated instead.
 -   **Sprite alpha rendering style** - determines which rendering method
     to use in 32-bit games when an image is drawn over
-    [drawing surface](DrawingSurfaceFunctions). The "Proper alpha
+    [drawing surface](DrawingSurface). The "Proper alpha
     blending" choice is meant for full alpha blending support, "Classic"
     style exists for compatibility with older versions of AGS only.
 -   **When player interface is disabled, GUI should** - determines what

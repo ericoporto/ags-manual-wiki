@@ -110,7 +110,7 @@ from portions of other sprites.
 
 **NOTE:** The *x*, *y*, *width* and *height* parameters respect the
 DrawingSurface's
-[UseHighResCoordinates](DrawingSurfaceFunctions#usehighrescoordinates)
+[UseHighResCoordinates](DrawingSurface#usehighrescoordinates)
 setting, so make sure that the type of co-ordinates that you are using
 match up with what the drawing surface expects.
 
@@ -527,7 +527,7 @@ Gets the drawing surface for this dynamic sprite, which allows you to
 modify the sprite by drawing onto it in various ways.
 
 After calling this method, use the various
-[DrawingSurface functions](DrawingSurfaceFunctions) to modify the sprite, then
+[DrawingSurface functions](DrawingSurface) to modify the sprite, then
 call Release on the surface when you are finished.
 
 Example:
@@ -547,8 +547,8 @@ object for 1 second and then removes it.
 
 *See Also:*
 [DynamicSprite.CreateFromExistingSprite](DynamicSprite#createfromexistingsprite),
-[DrawingSurface.DrawLine](DrawingSurfaceFunctions#drawline),
-[DrawingSurface.Release](DrawingSurfaceFunctions#release)
+[DrawingSurface.DrawLine](DrawingSurface#drawline),
+[DrawingSurface.Release](DrawingSurface#release)
 
 ---
 

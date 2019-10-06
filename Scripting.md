@@ -24,7 +24,7 @@ Browse around the script listing below, as there's much more available to the sc
 - [Dialog functions and properties](Dialog)
 - [DialogOptionsRenderingInfo functions and properties](DialogOptionsRenderingInfo)
 - [Dictionary functions and properties](Dictionary)
-- [DrawingSurface functions and properties](DrawingSurfaceFunctions)
+- [DrawingSurface functions and properties](DrawingSurface)
 - [DynamicSprite functions and properties](DynamicSprite)
 - [File functions and properties](File)
 - [Game functions and properties](Game)
