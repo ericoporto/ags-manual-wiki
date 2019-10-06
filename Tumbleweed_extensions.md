@@ -1,4 +1,4 @@
-## Extensions
+## Tumbleweed Extensions
 
 Extensions are used to define the default action for the right-click. You can add extensions to characters, hotspots, objects and inventory items.
 To add an extension, e.g. chose an object in the room editor and take a look at the description (not the name).

@@ -1,6 +1,6 @@
-## Game functions
+## `Game` functions
 
-### ChangeTranslation
+### `Game.ChangeTranslation`
 
     static bool Game.ChangeTranslation(string newTranslationName)
 
@@ -32,12 +32,12 @@ will attempt to change the translation to Spanish
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[Game.TranslationFilename](Game#translationfilename),
+[Game.TranslationFilename](Game#gametranslationfilename),
 [IsTranslationAvailable](Globalfunctions_General#istranslationavailable)
 
 ---
 
-### DoOnceOnly
+### `Game.DoOnceOnly`
 
     static bool Game.DoOnceOnly(const string token)
 
@@ -69,7 +69,7 @@ will give the player 5 points the first time this script is run.
 
 ---
 
-### GetColorFromRGB
+### `Game.GetColorFromRGB`
 
 *(Formerly known as RawSetColorRGB, which is now obsolete)*
 
@@ -95,11 +95,11 @@ Example:
 will draw a bright green line onto the room background
 
 *See Also:*
-[DrawingSurface.DrawingColor](DrawingSurface#drawingcolor)
+[DrawingSurface.DrawingColor](DrawingSurface#drawingsurfacedrawingcolor)
 
 ---
 
-### GetFrameCountForLoop
+### `Game.GetFrameCountForLoop`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -117,13 +117,13 @@ Example:
     Display("Loop 2 in SWIMMING view has %d frames.", frameCount);
 
 *See Also:*
-[Game.GetLoopCountForView](Game#getloopcountforview),
-[Game.GetRunNextSettingForLoop](Game#getrunnextsettingforloop),
-[Game.GetViewFrame](Game#getviewframe)
+[Game.GetLoopCountForView](Game#gamegetloopcountforview),
+[Game.GetRunNextSettingForLoop](Game#gamegetrunnextsettingforloop),
+[Game.GetViewFrame](Game#gamegetviewframe)
 
 ---
 
-### GetLocationName
+### `Game.GetLocationName`
 
 *(Formerly known as global function GetLocationName, which is now
 obsolete)*
@@ -149,14 +149,14 @@ Example:
 
 will get the name of whatever the mouse is over into the string variable and then assign to a label lblDescription.
 
-*See Also:* [Hotspot.Name](Hotspot#name),
-[InventoryItem.Name](InventoryItem#name),
+*See Also:* [Hotspot.Name](Hotspot#hotspotname),
+[InventoryItem.Name](InventoryItem#inventoryitemname),
 [GetLocationType](Globalfunctions_General#getlocationtype),
-[Object.Name](Object#name)
+[Object.Name](Object#objectname)
 
 ---
 
-### GetLoopCountForView
+### `Game.GetLoopCountForView`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -173,13 +173,13 @@ Example:
     Display("The SWIMMING view (view %d) has %d loops.", SWIMMING, loops);
 
 *See Also:*
-[Game.GetRunNextSettingForLoop](Game#getrunnextsettingforloop),
-[Game.GetFrameCountForLoop](Game#getframecountforloop),
-[Game.GetViewFrame](Game#getviewframe)
+[Game.GetRunNextSettingForLoop](Game#gamegetrunnextsettingforloop),
+[Game.GetFrameCountForLoop](Game#gamegetframecountforloop),
+[Game.GetViewFrame](Game#gamegetviewframe)
 
 ---
 
-### GetRunNextSettingForLoop
+### `Game.GetRunNextSettingForLoop`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -201,13 +201,13 @@ Example:
     }
 
 *See Also:*
-[Game.GetLoopCountForView](Game#getloopcountforview),
-[Game.GetFrameCountForLoop](Game#getframecountforloop),
-[Game.GetViewFrame](Game#getviewframe)
+[Game.GetLoopCountForView](Game#gamegetloopcountforview),
+[Game.GetFrameCountForLoop](Game#gamegetframecountforloop),
+[Game.GetViewFrame](Game#gamegetviewframe)
 
 ---
 
-### GetSaveSlotDescription
+### `Game.GetSaveSlotDescription`
 
 *(Formerly known as global function GetSaveSlotDescription, which is now
 obsolete)*
@@ -225,13 +225,13 @@ Example:
 will get the description of save slot 10 into the variable.
 
 *See Also:*
-[DynamicSprite.CreateFromSaveGame](DynamicSprite#createfromsavegame),
+[DynamicSprite.CreateFromSaveGame](DynamicSprite#dynamicspritecreatefromsavegame),
 [RestoreGameSlot](Globalfunctions_General#restoregameslot),
 [SaveGameSlot](Globalfunctions_General#savegameslot)
 
 ---
 
-### GetViewFrame
+### `Game.GetViewFrame`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -252,15 +252,15 @@ Example:
     Display("Frame 3 in loop 2 of view SWIMMING has sprite slot %d.", frame.Graphic);
 
 *See Also:*
-[Game.GetLoopCountForView](Game#getloopcountforview),
-[Game.GetRunNextSettingForLoop](Game#getrunnextsettingforloop),
-[Game.GetFrameCountForLoop](Game#getframecountforloop),
-[ViewFrame.Graphic](ViewFrame#graphic),
-[ViewFrame.Speed](ViewFrame#speed)
+[Game.GetLoopCountForView](Game#gamegetloopcountforview),
+[Game.GetRunNextSettingForLoop](Game#gamegetrunnextsettingforloop),
+[Game.GetFrameCountForLoop](Game#gamegetframecountforloop),
+[ViewFrame.Graphic](ViewFrame#viewframegraphic),
+[ViewFrame.Speed](ViewFrame#viewframespeed)
 
 ---
 
-### InputBox
+### `Game.InputBox`
 
 *(Formerly known as global function InputBox, which is now obsolete)*
 
@@ -289,11 +289,11 @@ Example:
 will prompt the user for his name and store it in the string NAME. If
 the user presses Cancel, the NAME string will be blank.
 
-*See Also:* [String.AsInt](String#asint)
+*See Also:* [String.AsInt](String#stringasint)
 
 ---
 
-### IsPluginLoaded
+### `Game.IsPluginLoaded`
 
     static bool Game.IsPluginLoaded(const string name)
 
@@ -316,7 +316,7 @@ will display a message if plugin is present.
 
 ---
 
-### PlayVoiceClip
+### `Game.PlayVoiceClip`
 
     static AudioChannel* Game.PlayVoiceClip(Character* c, int cue, bool as_speech)
 
@@ -332,11 +332,11 @@ This command will be ignored if a regular blocking voice is currently playing. A
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also*: [Voice speech](MusicAndSound#voice-speech), [AudioChannel](AudioChannel), [AudioClip.Play](AudioClip#play), [Character.Say](Character#say)
+*See Also*: [Voice speech](MusicAndSound#voice-speech), [AudioChannel](AudioChannel), [AudioClip.Play](AudioClip#audioclipplay), [Character.Say](Character#charactersay)
 
 ---
 
-### SetSaveGameDirectory
+### `Game.SetSaveGameDirectory`
 
     static bool Game.SetSaveGameDirectory(string directory)
 
@@ -377,12 +377,12 @@ Documents, and create the folder if it does not exist (might be useful
 to do this in game_start).
 
 *See Also:*
-[ListBox.FillSaveGameList](ListBox#fillsavegamelist),
+[ListBox.FillSaveGameList](ListBox#listboxfillsavegamelist),
 [RestoreGameDialog](Globalfunctions_General#restoregamedialog)
 
 ---
 
-### SimulateKeyPress
+### `Game.SimulateKeyPress`
 
     static Game.SimulateKeyPress(eKeyCode key)
 
@@ -398,11 +398,11 @@ This simulates a "space" key press.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Mouse.Click](Mouse#click), [List of supported key codes](ASCIIcodes#ascii-code-table)
+*See Also:* [Mouse.Click](Mouse#mouseclick), [List of supported key codes](ASCIIcodes#ascii-code-table)
 
 ---
 
-### AudioClipCount
+### `Game.AudioClipCount`
 
     readonly static int Game.AudioClipCount
 
@@ -413,11 +413,11 @@ audio clips for some reason.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Game.AudioClips](Game#audioclips)
+*See Also:* [Game.AudioClips](Game#gameaudioclips)
 
 ---
 
-### AudioClips
+### `Game.AudioClips`
 
     readonly static int Game.AudioClips[int slot]
 
@@ -437,11 +437,11 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Game.AudioClipCount](Game#audioclipcount)
+*See Also:* [Game.AudioClipCount](Game#gameaudioclipcount)
 
 ---
 
-### Camera
+### `Game.Camera`
 
     static readonly Camera* Game.Camera;
 
@@ -449,11 +449,11 @@ Gets the primary camera. This is the default camera that is created automaticall
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Game.Cameras](Game#cameras), [Camera](Camera), [Camera.Create](Camera#create), [Camera.Delete](Camera#delete), [Viewport.Camera](Viewport#camera)
+*See Also:* [Game.Cameras](Game#gamecameras), [Camera](Camera), [Camera.Create](Camera#cameracreate), [Camera.Delete](Camera#cameradelete), [Viewport.Camera](Viewport#viewportcamera)
 
 ---
 
-### CameraCount
+### `Game.CameraCount`
 
     static readonly int Game.CameraCount
 
@@ -461,15 +461,15 @@ Gets the number of cameras.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Game.Cameras](Game#cameras)
+*See Also:* [Game.Cameras](Game#gamecameras)
 
 ---
 
-### Cameras
+### `Game.Cameras`
 
     static readonly Camera* Game.Cameras[int index];
 
-Returns the Camera instance by its index. There's always at least primary camera at the index 0, more could be created in script using [Camera.Create](Camera#create).
+Returns the Camera instance by its index. There's always at least primary camera at the index 0, more could be created in script using [Camera.Create](Camera#cameracreate).
 
 **IMPORTANT:** with the current implementation when you delete a custom camera in the middle all the following cameras will be shifted towards beginning of array, changing their indexes.
 
@@ -483,11 +483,11 @@ This script positions all existing cameras at the room's top-left corner.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Game.Camera](Game#camera), [Game.CameraCount](Game#cameracount), [Camera.Create](Camera#create), [Camera.Delete](Camera#delete), [Viewport.Camera](Viewport#camera)
+*See Also:* [Game.Camera](Game#gamecamera), [Game.CameraCount](Game#gamecameracount), [Camera.Create](Camera#cameracreate), [Camera.Delete](Camera#cameradelete), [Viewport.Camera](Viewport#viewportcamera)
 
 ---
 
-### CharacterCount
+### `Game.CharacterCount`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -504,7 +504,7 @@ Example:
 
 ---
 
-### DialogCount
+### `Game.DialogCount`
 
     readonly static int Game.DialogCount
 
@@ -522,7 +522,7 @@ Example:
 
 ---
 
-### FileName
+### `Game.FileName`
 
     readonly static String Game.FileName
 
@@ -536,11 +536,11 @@ Example:
 
 will display the game filename.
 
-*See Also:* [Game.Name](Game#name)
+*See Also:* [Game.Name](Game#gamename)
 
 ---
 
-### FontCount
+### `Game.FontCount`
 
     readonly static int Game.FontCount
 
@@ -555,7 +555,7 @@ Example:
 
 ---
 
-### GlobalMessages
+### `Game.GlobalMessages`
 
 *(Formerly known as global function GetMessageText, which is now
 obsolete)*
@@ -580,7 +580,7 @@ will display global message 997.
 
 ---
 
-### GlobalStrings
+### `Game.GlobalStrings`
 
 *(Formerly known as GetGlobalString, which is now obsolete)*<br>
 *(Formerly known as SetGlobalString, which is now obsolete)*
@@ -603,7 +603,7 @@ will set global string 15 to contain \"Joe\".
 
 ---
 
-### GUICount
+### `Game.GUICount`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -621,7 +621,7 @@ Example:
 
 ---
 
-### IgnoreUserInputAfterTextTimeoutMs
+### `Game.IgnoreUserInputAfterTextTimeoutMs`
 
     static int Game.IgnoreUserInputAfterTextTimeoutMs;
 
@@ -647,13 +647,13 @@ text is automatically removed from the screen.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[Game.MinimumTextDisplayTimeMs](Game#minimumtextdisplaytimems),
-[Game.TextReadingSpeed](Game#textreadingspeed),
-[Speech.SkipStyle](Speech#skipstyle)
+[Game.MinimumTextDisplayTimeMs](Game#gameminimumtextdisplaytimems),
+[Game.TextReadingSpeed](Game#gametextreadingspeed),
+[Speech.SkipStyle](Speech#speechskipstyle)
 
 ---
 
-### InSkippableCutscene
+### `Game.InSkippableCutscene`
 
 *(Formerly known as game.in_cutscene, which is now obsolete)*
 
@@ -685,11 +685,11 @@ will display a message if we are within a cutscene
 
 *See Also:* [StartCutscene](Globalfunctions_General#startcutscene),
 [EndCutscene](Globalfunctions_General#endcutscene),
-[Game.SkippingCutscene](Game#skippingcutscene)
+[Game.SkippingCutscene](Game#gameskippingcutscene)
 
 ---
 
-### InventoryItemCount
+### `Game.InventoryItemCount`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -705,7 +705,7 @@ Example:
 
 ---
 
-### MinimumTextDisplayTimeMs
+### `Game.MinimumTextDisplayTimeMs`
 
     static int Game.MinimumTextDisplayTimeMs;
 
@@ -713,7 +713,7 @@ Gets/sets the minimum length of time that text is displayed on the
 screen. AGS automatically adjusts the length of time that text is
 displayed for depending on the length of the text (and you can customize
 this calculation with
-[Game.TextReadingSpeed](Game#textreadingspeed)), but for very
+[Game.TextReadingSpeed](Game#gametextreadingspeed)), but for very
 short statements like \"Hi!\", you might want the text to remain for
 longer.
 
@@ -733,13 +733,13 @@ for at least 2 seconds
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
 *See Also:*
-[Character.SpeechAnimationDelay](Character#speechanimationdelay),
-[Game.IgnoreUserInputAfterTextTimeoutMs](Game#ignoreuserinputaftertexttimeoutms)
-[Game.TextReadingSpeed](Game#textreadingspeed)
+[Character.SpeechAnimationDelay](Character#characterspeechanimationdelay),
+[Game.IgnoreUserInputAfterTextTimeoutMs](Game#gameignoreuserinputaftertexttimeoutms)
+[Game.TextReadingSpeed](Game#gametextreadingspeed)
 
 ---
 
-### MouseCursorCount
+### `Game.MouseCursorCount`
 
     readonly static int Game.MouseCursorCount
 
@@ -754,7 +754,7 @@ Example:
 
 ---
 
-### Name
+### `Game.Name`
 
     static String Game.Name
 
@@ -768,11 +768,11 @@ Example:
 
 will display the game name.
 
-*See Also:* [Game.FileName](Game#filename)
+*See Also:* [Game.FileName](Game#gamefilename)
 
 ---
 
-### NormalFont
+### `Game.NormalFont`
 
 *(Formerly known as global function SetNormalFont, which is now
 obsolete)*
@@ -797,11 +797,11 @@ Example:
 
 will change the normal font to the font \"Special\".
 
-*See Also:* [Game.SpeechFont](Game#speechfont)
+*See Also:* [Game.SpeechFont](Game#gamespeechfont)
 
 ---
 
-### SkippingCutscene
+### `Game.SkippingCutscene`
 
 *(Formerly known as game.skipping_cutscene, which is now obsolete)*
 
@@ -834,11 +834,11 @@ cutscene.
 
 *See Also:* [StartCutscene](Globalfunctions_General#startcutscene),
 [EndCutscene](Globalfunctions_General#endcutscene),
-[Game.InSkippableCutscene](Game#inskippablecutscene)
+[Game.InSkippableCutscene](Game#gameinskippablecutscene)
 
 ---
 
-### SpeechFont
+### `Game.SpeechFont`
 
 *(Formerly known as global function SetSpeechFont, which is now
 obsolete)*
@@ -856,11 +856,11 @@ Example:
 
 will change the speech font to \"Standard\".
 
-*See Also:* [Game.NormalFont](Game#normalfont)
+*See Also:* [Game.NormalFont](Game#gamenormalfont)
 
 ---
 
-### SpriteHeight
+### `Game.SpriteHeight`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -876,11 +876,11 @@ Example:
     Display("Object 0's sprite is sized %d x %d.", Game.SpriteWidth[object[0].Graphic],
                                                    Game.SpriteHeight[object[0].Graphic]);
 
-*See Also:* [Game.SpriteWidth](Game#spritewidth)
+*See Also:* [Game.SpriteWidth](Game#gamespritewidth)
 
 ---
 
-### SpriteWidth
+### `Game.SpriteWidth`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -896,11 +896,11 @@ Example:
     Display("Object 0's sprite is sized %d x %d.", Game.SpriteWidth[object[0].Graphic],
                                                    Game.SpriteHeight[object[0].Graphic]);
 
-*See Also:* [Game.SpriteHeight](Game#spriteheight)
+*See Also:* [Game.SpriteHeight](Game#gamespriteheight)
 
 ---
 
-### TextReadingSpeed
+### `Game.TextReadingSpeed`
 
 *(Formerly known as game.text_speed, which is now obsolete)*
 
@@ -931,13 +931,13 @@ on-screen for twice as long as usual.
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
 *See Also:*
-[Character.SpeechAnimationDelay](Character#speechanimationdelay),
-[Game.MinimumTextDisplayTimeMs](Game#minimumtextdisplaytimems),
-[Speech.SkipStyle](Speech#skipstyle)
+[Character.SpeechAnimationDelay](Character#characterspeechanimationdelay),
+[Game.MinimumTextDisplayTimeMs](Game#gameminimumtextdisplaytimems),
+[Speech.SkipStyle](Speech#speechskipstyle)
 
 ---
 
-### TranslationFilename
+### `Game.TranslationFilename`
 
 *(Formerly known as GetTranslationName, which is now obsolete)*
 
@@ -955,12 +955,12 @@ Example:
       Display("You are using the German translation.");
     }
 
-*See Also:* [Game.ChangeTranslation](Game#changetranslation),
+*See Also:* [Game.ChangeTranslation](Game#gamechangetranslation),
 [IsTranslationAvailable](Globalfunctions_General#istranslationavailable)
 
 ---
 
-### UseNativeCoordinates
+### `Game.UseNativeCoordinates`
 
     readonly static bool Game.UseNativeCoordinates
 
@@ -993,7 +993,7 @@ Example:
 
 ---
 
-### ViewCount
+### `Game.ViewCount`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 

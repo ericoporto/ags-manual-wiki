@@ -1,4 +1,4 @@
-## DialogOptionsRenderingInfo functions and properties
+## `DialogOptionsRenderingInfo` functions and properties
 
 The DialogOptionsRenderingInfo instance is used by the [custom dialog
 options](CustomDialogOptions) system. You can never create one
@@ -7,7 +7,7 @@ described in the linked page.
 
 ---
 
-### RunActiveOption
+### `DialogOptionsRenderingInfo.RunActiveOption`
 
     bool DialogOptionsRenderingInfo.RunActiveOption();
 
@@ -31,11 +31,11 @@ runs selected dialog option when player presses Enter/Return key.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.ActiveOptionID](DialogOptionsRenderingInfo#activeoptionid)
+[DialogOptionsRenderingInfo.ActiveOptionID](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoactiveoptionid)
 
 ---
 
-### Update
+### `DialogOptionsRenderingInfo.Update`
 
     void DialogOptionsRenderingInfo.Update();
 
@@ -58,7 +58,7 @@ current script ends.
 
 ---
 
-### ActiveOptionID
+### `DialogOptionsRenderingInfo.ActiveOptionID`
 
     int DialogOptionsRenderingInfo.ActiveOptionID;
 
@@ -87,12 +87,12 @@ always selects the first option
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.RunActiveOption](DialogOptionsRenderingInfo#runactiveoption),
-[Dialog.GetOptionState](Dialog#getoptionstate)
+[DialogOptionsRenderingInfo.RunActiveOption](DialogOptionsRenderingInfo#dialogoptionsrenderinginforunactiveoption),
+[Dialog.GetOptionState](Dialog#dialoggetoptionstate)
 
 ---
 
-### DialogToRender
+### `DialogOptionsRenderingInfo.DialogToRender`
 
     Dialog* DialogOptionsRenderingInfo.DialogToRender;
 
@@ -104,12 +104,12 @@ Example: For an example please see the
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Dialog.GetOptionState](Dialog#getoptionstate),
-[DialogOptionsRenderingInfo.Surface](DialogOptionsRenderingInfo#surface)
+*See Also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
+[DialogOptionsRenderingInfo.Surface](DialogOptionsRenderingInfo#dialogoptionsrenderinginfosurface)
 
 ---
 
-### HasAlphaChannel
+### `DialogOptionsRenderingInfo.HasAlphaChannel`
 
     int DialogOptionsRenderingInfo.HasAlphaChannel;
 
@@ -135,12 +135,12 @@ options in.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.Height](DialogOptionsRenderingInfo#height),
-[DialogOptionsRenderingInfo.Width](DialogOptionsRenderingInfo#width)
+[DialogOptionsRenderingInfo.Height](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoheight),
+[DialogOptionsRenderingInfo.Width](DialogOptionsRenderingInfo#dialogoptionsrenderinginfowidth)
 
 ---
 
-### Height
+### `DialogOptionsRenderingInfo.Height`
 
     int DialogOptionsRenderingInfo.Height;
 
@@ -163,11 +163,11 @@ creates a 300x150 size area to draw the dialog options in
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.Width](DialogOptionsRenderingInfo#width)
+[DialogOptionsRenderingInfo.Width](DialogOptionsRenderingInfo#dialogoptionsrenderinginfowidth)
 
 ---
 
-### ParserTextBoxWidth
+### `DialogOptionsRenderingInfo.ParserTextBoxWidth`
 
     int DialogOptionsRenderingInfo.ParserTextBoxWidth;
 
@@ -196,13 +196,13 @@ options area
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.Width](DialogOptionsRenderingInfo#width),
-[DialogOptionsRenderingInfo.ParserTextBoxX](DialogOptionsRenderingInfo#parsertextboxx),
-[DialogOptionsRenderingInfo.ParserTextBoxY](DialogOptionsRenderingInfo#parsertextboxy)
+[DialogOptionsRenderingInfo.Width](DialogOptionsRenderingInfo#dialogoptionsrenderinginfowidth),
+[DialogOptionsRenderingInfo.ParserTextBoxX](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoparsertextboxx),
+[DialogOptionsRenderingInfo.ParserTextBoxY](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoparsertextboxy)
 
 ---
 
-### ParserTextBoxX
+### `DialogOptionsRenderingInfo.ParserTextBoxX`
 
     int DialogOptionsRenderingInfo.ParserTextBoxX;
 
@@ -235,12 +235,12 @@ options area
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.ParserTextBoxWidth](DialogOptionsRenderingInfo#parsertextboxwidth),
-[DialogOptionsRenderingInfo.ParserTextBoxY](DialogOptionsRenderingInfo#parsertextboxy)
+[DialogOptionsRenderingInfo.ParserTextBoxWidth](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoparsertextboxwidth),
+[DialogOptionsRenderingInfo.ParserTextBoxY](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoparsertextboxy)
 
 ---
 
-### ParserTextBoxY
+### `DialogOptionsRenderingInfo.ParserTextBoxY`
 
     int DialogOptionsRenderingInfo.ParserTextBoxY;
 
@@ -273,11 +273,11 @@ options area
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.ParserTextBoxX](DialogOptionsRenderingInfo#parsertextboxx)
+[DialogOptionsRenderingInfo.ParserTextBoxX](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoparsertextboxx)
 
 ---
 
-### Surface
+### `DialogOptionsRenderingInfo.Surface`
 
     DrawingSurface* DialogOptionsRenderingInfo.Surface;
 
@@ -308,7 +308,7 @@ clears the dialog options area to yellow.
 
 ---
 
-### Width
+### `DialogOptionsRenderingInfo.Width`
 
     int DialogOptionsRenderingInfo.Width;
 
@@ -331,11 +331,11 @@ creates a 300x150 size area to draw the dialog options in
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.Height](DialogOptionsRenderingInfo#height)
+[DialogOptionsRenderingInfo.Height](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoheight)
 
 ---
 
-### X
+### `DialogOptionsRenderingInfo.X`
 
     int DialogOptionsRenderingInfo.X;
 
@@ -361,11 +361,11 @@ creates a 200x150 size area at (50, 20) to draw the dialog options in
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.Y](DialogOptionsRenderingInfo#y)
+[DialogOptionsRenderingInfo.Y](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoy)
 
 ---
 
-### Y
+### `DialogOptionsRenderingInfo.Y`
 
     int DialogOptionsRenderingInfo.Y;
 
@@ -391,5 +391,5 @@ creates a 200x150 size area at (50, 20) to draw the dialog options in
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[DialogOptionsRenderingInfo.X](DialogOptionsRenderingInfo#x)
+[DialogOptionsRenderingInfo.X](DialogOptionsRenderingInfo#dialogoptionsrenderinginfox)
 

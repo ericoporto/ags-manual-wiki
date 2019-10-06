@@ -1,4 +1,4 @@
-## Dictionary Functions and Properties
+## `Dictionary` Functions and Properties
 
 Dictionary allows you to store key/value string pairs and look values up by a string key. In the dictionary key must be unique, but value does not have to be. This means that you may have same value assigned for multiple keys, but not same key with multiple values.
 
@@ -10,7 +10,7 @@ Dictionary has two general properties: **sort style** and **compare style**.
 
 **Compare style** determines whether string keys are compared as case sensitive or case insensitive. For example, in case-sensitive dictionary strings "Parameter" and "parameter" will be seen as two different keys, but in case-insensitive they will be seen as identical. Compare style defines both key uniqueness and sorting.
 
-At the moment a dictionary itself does not let you see access all of its internal data at once directly, but has [GetKeysAsArray](Dictionary#getkeysasarray) and [GetValuesAsArray](Dictionary#getvaluesasarray) functions that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in these arrays will be matching one inside the dictionary, hence if the dictionary was sorted the array will be sorted as well.
+At the moment a dictionary itself does not let you see access all of its internal data at once directly, but has [GetKeysAsArray](Dictionary#dictionarygetkeysasarray) and [GetValuesAsArray](Dictionary#dictionarygetvaluesasarray) functions that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in these arrays will be matching one inside the dictionary, hence if the dictionary was sorted the array will be sorted as well.
 
 To summarize, dictionaries make convenient storage for key/value pairs. If you do not need pairs but rather a sequence of unique values - then look for [Set](Set).
 
@@ -18,7 +18,7 @@ To summarize, dictionaries make convenient storage for key/value pairs. If you d
 
 ---
 
-### Create
+### `Dictionary.Create`
 
     static Dictionary* Dictionary.Create(SortStyle sortStyle, StringCompareStyle compareStyle)
 
@@ -30,7 +30,7 @@ Example:
 
 ---
 
-### Clear
+### `Dictionary.Clear`
 
     void Dictionary.Clear()
 
@@ -38,7 +38,7 @@ Removes all items from the dictionary.
 
 ---
 
-### Contains
+### `Dictionary.Contains`
 
     bool Dictionary.Contains(String key)
 
@@ -54,12 +54,12 @@ Example:
 
 This will add "my-key" key, assign "my-value" to that key and then test whether that key was added successfully.
 
-*See Also:* [Dictionary.Get](Dictionary#get),
-[Dictionary.Set](Dictionary#set)
+*See Also:* [Dictionary.Get](Dictionary#dictionaryget),
+[Dictionary.Set](Dictionary#dictionaryset)
 
 ---
 
-### Get
+### `Dictionary.Get`
 
     String Dictionary.Get(String key)
 
@@ -73,11 +73,11 @@ Example:
 
 Here _myValue_ variable will be assigned "a-value" from the dictionary.
 
-*See Also:* [Dictionary.Set](Dictionary#set)
+*See Also:* [Dictionary.Set](Dictionary#dictionaryset)
 
 ---
 
-### GetKeysAsArray
+### `Dictionary.GetKeysAsArray`
 
     String[] Dictionary.GetKeysAsArray()
 
@@ -94,11 +94,11 @@ Example:
 
 In the above example the keys will be displayed on screen one by one, preceded by their index.
 
-*See Also:* [Dictionary.ItemCount](Dictionary#itemcount)
+*See Also:* [Dictionary.ItemCount](Dictionary#dictionaryitemcount)
 
 ---
 
-### GetValuesAsArray
+### `Dictionary.GetValuesAsArray`
 
     String[] Dictionary.GetValuesAsArray()
 
@@ -115,42 +115,42 @@ Example:
 
 In the above example the values will be displayed on screen one by one, preceded by their index.
 
-*See Also:* [Dictionary.ItemCount](Dictionary#itemcount)
+*See Also:* [Dictionary.ItemCount](Dictionary#dictionaryitemcount)
 
 ---
 
-### Remove
+### `Dictionary.Remove`
 
     bool Dictionary.Remove(String key)
 
 Removes key/value pair from the dictionary, returns true on success and false if there was no such key.
 
-*See Also:* [Dictionary.Set](Dictionary#set)
+*See Also:* [Dictionary.Set](Dictionary#dictionaryset)
 
 ---
 
-### Set
+### `Dictionary.Set`
 
     bool Dictionary.Set(String key, String value)
 
 Assigns a value to the given key. If the key did not exist then it will be created, if there was such key already then old assigned value will be overwritten with a new one.
 
-*See Also:* [Dictionary.Get](Dictionary#get),
-[Dictionary.Remove](Dictionary#remove)
+*See Also:* [Dictionary.Get](Dictionary#dictionaryget),
+[Dictionary.Remove](Dictionary#dictionaryremove)
 
 ---
 
-### CompareStyle
+### `Dictionary.CompareStyle`
 
     StringCompareStyle Dictionary.CompareStyle
 
 Gets if this dictionary keys are case-sensitive.
 
-*See Also:* [Dictionary.SortStyle](Dictionary#sortstyle)
+*See Also:* [Dictionary.SortStyle](Dictionary#dictionarysortstyle)
 
 ---
 
-### ItemCount
+### `Dictionary.ItemCount`
 
     int Dictionary.ItemCount
 
@@ -158,10 +158,10 @@ Gets the number of key/value pairs currently in the dictionary.
 
 ---
 
-### SortStyle
+### `Dictionary.SortStyle`
 
     SortStyle Dictionary.SortStyle
 
 Gets the method keys are arranged in this dictionary.
 
-*See Also:* [Dictionary.CompareStyle](Dictionary#comparestyle)
+*See Also:* [Dictionary.CompareStyle](Dictionary#dictionarycomparestyle)

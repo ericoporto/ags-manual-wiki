@@ -1,6 +1,6 @@
-## Global functions: Message Display
+## Global functions (Message Display)
 
-### Display
+### `Display`
 
     Display (string message, ...)
 
@@ -26,13 +26,13 @@ usually used for responses to the player looking at things.
 
 *See Also:* [DisplayAt](Globalfunctions_Message#displayat),
 [DisplayMessage](Globalfunctions_Message#displaymessage),
-[Character.Say](Character#say),
+[Character.Say](Character#charactersay),
 [DisplayTopBar](Globalfunctions_Message#displaytopbar),
-[String.Format](String#format)
+[String.Format](String#stringformat)
 
 ---
 
-### DisplayAt
+### `DisplayAt`
 
     DisplayAt(int x, int y, int width, string message, ...)
 
@@ -63,7 +63,7 @@ will display the message at coordinates 50,50 in a box 100 pixels wide.
 
 ---
 
-### DisplayAtY
+### `DisplayAtY`
 
     DisplayAtY (int y, string message)
 
@@ -83,7 +83,7 @@ will display the message at y coordinate 50.
 
 ---
 
-### DisplayMessage
+### `DisplayMessage`
 
     DisplayMessage (int message_number)
 
@@ -102,7 +102,7 @@ will display the message 220 of the Room message editor.
 
 ---
 
-### DisplayMessageAtY
+### `DisplayMessageAtY`
 
     DisplayMessageAtY (int message_number, int yposition)
 
@@ -124,7 +124,7 @@ will display global message 527, in the lower half of the screen.
 
 ---
 
-### DisplayTopBar
+### `DisplayTopBar`
 
     DisplayTopBar(int y, int text_color, int back_color, string titleText, string message, ...)
 

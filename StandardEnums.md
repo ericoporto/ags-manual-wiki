@@ -11,15 +11,15 @@ job, having a manual reference is invaluable:
       eNoBlock
     };
 
-*Used by:* [Character.Animate](Character#animate),
-[Character.FaceCharacter](Character#facecharacter),
-[Character.FaceLocation](Character#facelocation),
-[Character.FaceObject](Character#faceobject),
-[Character.Move](Character#move),
-[Character.Walk](Character#walk),
-[Character.WalkStraight](Character#walkstraight),
-[Object.Animate](Object#animate),
-[Object.Move](Object#move)
+*Used by:* [Character.Animate](Character#characteranimate),
+[Character.FaceCharacter](Character#characterfacecharacter),
+[Character.FaceLocation](Character#characterfacelocation),
+[Character.FaceObject](Character#characterfaceobject),
+[Character.Move](Character#charactermove),
+[Character.Walk](Character#characterwalk),
+[Character.WalkStraight](Character#characterwalkstraight),
+[Object.Animate](Object#objectanimate),
+[Object.Move](Object#objectmove)
 
     enum CharacterDirection {
       eDirectionDown = 0,
@@ -33,25 +33,25 @@ job, having a manual reference is invaluable:
       eDirectionNone = SCR_NO_VALUE
     };
 
-*Used by:* [Character.ChangeRoom](Character#changeroom),
-[Character.FaceDirection](Character#facedirection)
+*Used by:* [Character.ChangeRoom](Character#characterchangeroom),
+[Character.FaceDirection](Character#characterfacedirection)
 
     enum Direction {
       eForwards,
       eBackwards
     };
 
-*Used by:* [Character.Animate](Character#animate),
-[Object.Animate](Object#animate)
+*Used by:* [Character.Animate](Character#characteranimate),
+[Object.Animate](Object#objectanimate)
 
     enum WalkWhere {
       eAnywhere,
       eWalkableAreas
     };
 
-*Used by:* [Character.Move](Character#move),
-[Character.Walk](Character#walk),
-[Object.Move](Object#move)
+*Used by:* [Character.Move](Character#charactermove),
+[Character.Walk](Character#characterwalk),
+[Object.Move](Object#objectmove)
 
     enum StopMovementStyle
     {
@@ -59,17 +59,17 @@ job, having a manual reference is invaluable:
       eStopMoving = 1
     };
 
-*Used by:* [Character.LockView](Character#lockviewaligned),
-[Character.LockViewFrame](Character#lockviewoffset)
+*Used by:* [Character.LockView](Character#characterlockviewaligned),
+[Character.LockViewFrame](Character#characterlockviewoffset)
 
     enum RepeatStyle {
       eOnce,
       eRepeat
     };
 
-*Used by:* [Button.Animate](Button#animate),
-[Character.Animate](Character#animate),
-[Object.Animate](Object#animate)
+*Used by:* [Button.Animate](Button#buttonanimate),
+[Character.Animate](Character#characteranimate),
+[Object.Animate](Object#objectanimate)
 
     enum Alignment {
       eAlignNone          = 0,
@@ -100,7 +100,7 @@ will execute some code if *align* variable contains "Left" in any combination (e
 
 *Compatibility:* new version of Alignment enum was introduced in AGS 3.5.0. Previous Alignment was renamed into HorizontalAlignment.
 
-*Used by:* [Button.TextAlignment](Button#textalignment)
+*Used by:* [Button.TextAlignment](Button#buttontextalignment)
 
     enum HorizontalAlignment {
       eAlignLeft          = 1,
@@ -113,7 +113,7 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
 *Compatibility:* replaced old Alignment enumeration in AGS 3.5.0.
 
 *Used by:*
-[Character.LockViewAligned](Character#lockviewaligned), [DrawingSurface.DrawStringWrapped](DrawingSurface#drawstringwrapped), [Label.TextAlignment](Label#textalignment), [ListBox.TextAlignment](ListBox#textalignment), [Speech.TextAlignment](Speech#textalignment)
+[Character.LockViewAligned](Character#characterlockviewaligned), [DrawingSurface.DrawStringWrapped](DrawingSurface#drawingsurfacedrawstringwrapped), [Label.TextAlignment](Label#labeltextalignment), [ListBox.TextAlignment](ListBox#listboxtextalignment), [Speech.TextAlignment](Speech#speechtextalignment)
 
     enum eFlipDirection {
       eFlipLeftToRight,
@@ -121,7 +121,7 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
       eFlipBoth
     };
 
-*Used by:* [DynamicSprite.Flip](DynamicSprite#flip)
+*Used by:* [DynamicSprite.Flip](DynamicSprite#dynamicspriteflip)
 
     enum TransitionStyle {
       eTransitionFade,
@@ -145,7 +145,7 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
       eMouseWheelSouth
     };
 
-*Used by:* [Mouse.IsButtonDown](Mouse#isbuttondown)<br>
+*Used by:* [Mouse.IsButtonDown](Mouse#mouseisbuttondown)<br>
 *Passed into:* on_mouse_click
 
     enum EventType {
@@ -176,7 +176,7 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
       eSpeechFullScreen
     };
 
-*Used by:* [Speech.Style](Speech#style)
+*Used by:* [Speech.Style](Speech#speechstyle)
 
     enum SkipSpeechStyle {
       eSkipKeyMouseTime = 0,
@@ -188,7 +188,7 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
       eSkipMouse        = 6
     };
 
-*Used by:* [Speech.SkipStyle](Speech#skipstyle)
+*Used by:* [Speech.SkipStyle](Speech#speechskipstyle)
 
     enum eVoiceMode {
       eSpeechTextOnly,
@@ -196,7 +196,7 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
       eSpeechVoiceOnly
     };
 
-*Used by:* [Speech.VoiceMode](Speech#voicemode)
+*Used by:* [Speech.VoiceMode](Speech#speechvoicemode)
 
     enum DialogOptionState {
       eOptionOff,
@@ -204,8 +204,8 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
       eOptionOffForever
     };
 
-*Used by:* [Dialog.GetOptionState](Dialog#getoptionstate),
-[Dialog.SetOptionState](Dialog#setoptionstate)
+*Used by:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
+[Dialog.SetOptionState](Dialog#dialogsetoptionstate)
 
     enum CutsceneSkipType {
       eSkipESCOnly,
@@ -228,7 +228,7 @@ Note that HorizontalAlignment's values match first values of Alignment enumerati
       eOSPSP
     };
 
-*Used by:* [System.OperatingSystem](System#operatingsystem)
+*Used by:* [System.OperatingSystem](System#systemoperatingsystem)
 
     enum eCDAudioFunction {
       eCDIsDriverPresent,
@@ -255,22 +255,22 @@ The CursorMode enumeration is generated automatically based on your
 mouse cursors. The cursor mode name is taken, all its spaces are
 removed, and *eMode* is added to the front.<br>
 *Used by:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
-[Room.ProcessClick](Room#processclick),
-[Mouse.ChangeModeGraphic](Mouse#changemodegraphic),
-[Mouse.ChangeModeHotspot](Mouse#changemodehotspot),
-[Mouse.DisableMode](Mouse#disablemode),
-[Mouse.EnableMode](Mouse#enablemode),
-[Mouse.IsModeEnabled](Mouse#ismodeenabled),
-[Mouse.UseModeGraphic](Mouse#usemodegraphic),
-[Mouse.Mode](Mouse#mode),
-[InventoryItem.IsInteractionAvailable](InventoryItem#isinteractionavailable),
-[InventoryItem.RunInteraction](InventoryItem#runinteraction),
-[Hotspot.IsInteractionAvailable](Hotspot#isinteractionavailable),
-[Hotspot.RunInteraction](Hotspot#runinteraction),
-[Object.IsInteractionAvailable](Object#isinteractionavailable),
-[Object.RunInteraction](Object#runinteraction),
-[Character.IsInteractionAvailable](Character#isinteractionavailable),
-[Character.RunInteraction](Character#runinteraction)
+[Room.ProcessClick](Room#roomprocessclick),
+[Mouse.ChangeModeGraphic](Mouse#mousechangemodegraphic),
+[Mouse.ChangeModeHotspot](Mouse#mousechangemodehotspot),
+[Mouse.DisableMode](Mouse#mousedisablemode),
+[Mouse.EnableMode](Mouse#mouseenablemode),
+[Mouse.IsModeEnabled](Mouse#mouseismodeenabled),
+[Mouse.UseModeGraphic](Mouse#mouseusemodegraphic),
+[Mouse.Mode](Mouse#mousemode),
+[InventoryItem.IsInteractionAvailable](InventoryItem#inventoryitemisinteractionavailable),
+[InventoryItem.RunInteraction](InventoryItem#inventoryitemruninteraction),
+[Hotspot.IsInteractionAvailable](Hotspot#hotspotisinteractionavailable),
+[Hotspot.RunInteraction](Hotspot#hotspotruninteraction),
+[Object.IsInteractionAvailable](Object#objectisinteractionavailable),
+[Object.RunInteraction](Object#objectruninteraction),
+[Character.IsInteractionAvailable](Character#characterisinteractionavailable),
+[Character.RunInteraction](Character#characterruninteraction)
 
     enum FontType {
       eFontXXXX,
@@ -281,19 +281,19 @@ removed, and *eMode* is added to the front.<br>
 The FontType enumeration is generated automatically based on your fonts.
 The font name is taken, all its spaces are removed, and *eFont* is added
 to the front.<br>
-*Used by:* [Button.Font](Button#font),
-[DrawingSurface.DrawMessageWrapped](DrawingSurface#drawmessagewrapped),
-[DrawingSurface.DrawString](DrawingSurface#drawstring),
-[DrawingSurface.DrawStringWrapped](DrawingSurface#drawstringwrapped),
-[Game.NormalFont](Game#normalfont),
-[Game.SpeechFont](Game#speechfont),
+*Used by:* [Button.Font](Button#buttonfont),
+[DrawingSurface.DrawMessageWrapped](DrawingSurface#drawingsurfacedrawmessagewrapped),
+[DrawingSurface.DrawString](DrawingSurface#drawingsurfacedrawstring),
+[DrawingSurface.DrawStringWrapped](DrawingSurface#drawingsurfacedrawstringwrapped),
+[Game.NormalFont](Game#gamenormalfont),
+[Game.SpeechFont](Game#gamespeechfont),
 [GetTextHeight](Globalfunctions_General#gettextheight),
 [GetTextWidth](Globalfunctions_General#gettextwidth),
-[Label.Font](Label#font),
-[ListBox.Font](ListBox#font),
-[TextBox.Font](TextBox#font),
-[Overlay.CreateTextual](Overlay#createtextual),
-[Overlay.SetText](Overlay#settext)
+[Label.Font](Label#labelfont),
+[ListBox.Font](ListBox#listboxfont),
+[TextBox.Font](TextBox#textboxfont),
+[Overlay.CreateTextual](Overlay#overlaycreatetextual),
+[Overlay.SetText](Overlay#overlaysettext)
 
     enum LocationType {
       eLocationNothing,
@@ -310,7 +310,7 @@ to the front.<br>
       eFileAppend
     };
 
-*Used by:* [File.Open](File#open)
+*Used by:* [File.Open](File#fileopen)
 
     enum FileSeek {
       eSeekBegin = 0,
@@ -318,7 +318,7 @@ to the front.<br>
       eSeekEnd = 2
     };
 
-*Used by:* [File.Seek](File#seek)
+*Used by:* [File.Seek](File#fileseek)
 
     enum DialogOptionSayStyle {
       eSayUseOptionSetting,
@@ -326,7 +326,7 @@ to the front.<br>
       eSayNever
     };
 
-*Used by:* [Dialog.DisplayOptions](Dialog#displayoptions)
+*Used by:* [Dialog.DisplayOptions](Dialog#dialogdisplayoptions)
 
     enum VideoSkipStyle {
       eVideoSkipNotAllowed,
@@ -346,7 +346,7 @@ to the front.<br>
       eAudioFileMOD
     };
 
-*Used by:* [AudioClip.FileType](AudioClip#filetype)
+*Used by:* [AudioClip.FileType](AudioClip#audioclipfiletype)
 
     enum AudioPriority {
       eAudioPriorityVeryLow = 1,
@@ -356,9 +356,9 @@ to the front.<br>
       eAudioPriorityVeryHigh = 100
     };
 
-*Used by:* [AudioClip.Play](AudioClip#play),
-[AudioClip.PlayFrom](AudioClip#playfrom),
-[AudioClip.PlayQueued](AudioClip#playqueued)
+*Used by:* [AudioClip.Play](AudioClip#audioclipplay),
+[AudioClip.PlayFrom](AudioClip#audioclipplayfrom),
+[AudioClip.PlayQueued](AudioClip#audioclipplayqueued)
 
     enum GUIPopupStyle {
       eGUIPopupNormal = 0,
@@ -369,7 +369,7 @@ to the front.<br>
 
 *Supported by:* AGS 3.5.0 and higher.
 
-*Used by:* [GUI.PopupStyle](GUI#popupstyle)
+*Used by:* [GUI.PopupStyle](GUI#guipopupstyle)
 
     enum StringCompareStyle {
       eCaseInsensitive = 0,
@@ -378,12 +378,12 @@ to the front.<br>
 
 *Supported by:* AGS 3.5.0 and higher.
 
-*Used by:* [Dictionary.Create](Dictionary#create),
-[Set.Create](Set#create),
-[String.CompareTo](String#compareto),
-[String.EndsWith](String#endswith),
-[String.Replace](String#replace),
-[String.StartsWith](String#startswith)
+*Used by:* [Dictionary.Create](Dictionary#dictionarycreate),
+[Set.Create](Set#setcreate),
+[String.CompareTo](String#stringcompareto),
+[String.EndsWith](String#stringendswith),
+[String.Replace](String#stringreplace),
+[String.StartsWith](String#stringstartswith)
 
     enum SortStyle {
       eNonSorted = 0,
@@ -392,5 +392,5 @@ to the front.<br>
 
 *Supported by:* AGS 3.5.0 and higher.
 
-*Used by:* [Dictionary.Create](Dictionary#create),
-[Set.Create](Set#create)
+*Used by:* [Dictionary.Create](Dictionary#dictionarycreate),
+[Set.Create](Set#setcreate)

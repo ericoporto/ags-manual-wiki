@@ -1,6 +1,6 @@
-## Room functions and properties
+## `Room` functions and properties
 
-### GetDrawingSurfaceForBackground
+### `Room.GetDrawingSurfaceForBackground`
 
     static DrawingSurface* Room.GetDrawingSurfaceForBackground(optional int backgroundNumber)
 
@@ -34,12 +34,12 @@ draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
 
 *See Also:*
-[DrawingSurface.DrawLine](DrawingSurface#drawline),
-[DrawingSurface.Release](DrawingSurface#release)
+[DrawingSurface.DrawLine](DrawingSurface#drawingsurfacedrawline),
+[DrawingSurface.Release](DrawingSurface#drawingsurfacerelease)
 
 ---
 
-### GetProperty
+### `Room.GetProperty`
 
 *(Formerly known as global function GetRoomProperty, which is now
 obsolete)*
@@ -65,11 +65,11 @@ Example:
 will print the message if the current room has its "CanBeAttackedHere"
 box ticked.
 
-*See Also:* [Room.GetTextProperty](Room#gettextproperty)
+*See Also:* [Room.GetTextProperty](Room#roomgettextproperty)
 
 ---
 
-### GetTextProperty
+### `Room.GetTextProperty`
 
 *(Formerly known as global function GetRoomPropertyText, which is now
 obsolete)*
@@ -94,11 +94,11 @@ Example:
 
 will retrieve the room's "description" property then display it.
 
-*See Also:* [Room.GetProperty](Room#getproperty)
+*See Also:* [Room.GetProperty](Room#roomgetproperty)
 
 ---
 
-### SetProperty
+### `Room.SetProperty`
 
     static bool Room.SetProperty(const string property, int value)
 
@@ -123,11 +123,11 @@ will change room's "Darkness" custom property to 10.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Room.SetTextProperty](Room#settextproperty)
+*See Also:* [Room.SetTextProperty](Room#roomsettextproperty)
 
 ---
 
-### SetTextProperty
+### `Room.SetTextProperty`
 
     bool Room.SetTextProperty(const string property, const string value)
 
@@ -150,11 +150,11 @@ will change room's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Room.SetProperty](Room#setproperty)
+*See Also:* [Room.SetProperty](Room#roomsetproperty)
 
 ---
 
-### ProcessClick
+### `Room.ProcessClick`
 
 *(Formerly known as global function ProcessClick, which is now
 obsolete)*
@@ -174,14 +174,14 @@ Example:
 
 will simulate a click in the Look mode on screen co-ordinates (100, 50).
 
-*See Also:* [GUI.ProcessClick](GUI#processclick),
-[Mouse.Click](Mouse#click),
+*See Also:* [GUI.ProcessClick](GUI#guiprocessclick),
+[Mouse.Click](Mouse#mouseclick),
 [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
-[Hotspot.RunInteraction](Hotspot#runinteraction)
+[Hotspot.RunInteraction](Hotspot#hotspotruninteraction)
 
 ---
 
-### BottomEdge
+### `Room.BottomEdge`
 
     readonly static int Room.BottomEdge
 
@@ -192,13 +192,13 @@ Example:
 
     Display("The current room's bottom edge is at %d.", Room.BottomEdge);
 
-*See Also:* [Room.LeftEdge](Room#leftedge),
-[Room.RightEdge](Room#rightedge),
-[Room.TopEdge](Room#topedge)
+*See Also:* [Room.LeftEdge](Room#roomleftedge),
+[Room.RightEdge](Room#roomrightedge),
+[Room.TopEdge](Room#roomtopedge)
 
 ---
 
-### ColorDepth
+### `Room.ColorDepth`
 
     readonly static int Room.ColorDepth
 
@@ -211,11 +211,11 @@ Example:
     Display("The current room background is %d-bit colour.", Room.ColorDepth);
 
 *See Also:*
-[DrawingSurface.DrawImage](DrawingSurface#drawimage)
+[DrawingSurface.DrawImage](DrawingSurface#drawingsurfacedrawimage)
 
 ---
 
-### Height
+### `Room.Height`
 
 *(Formerly known as game.room_height, which is now obsolete)*
 
@@ -227,11 +227,11 @@ Example:
 
     Display("The current room size is %d x %d.", Room.Width, Room.Height);
 
-*See Also:* [Room.Width](Room#width)
+*See Also:* [Room.Width](Room#roomwidth)
 
 ---
 
-### LeftEdge
+### `Room.LeftEdge`
 
     readonly static int Room.LeftEdge
 
@@ -242,13 +242,13 @@ Example:
 
     Display("The current room's left edge is at %d.", Room.LeftEdge);
 
-*See Also:* [Room.BottomEdge](Room#bottomedge),
-[Room.RightEdge](Room#rightedge),
-[Room.TopEdge](Room#topedge)
+*See Also:* [Room.BottomEdge](Room#roombottomedge),
+[Room.RightEdge](Room#roomrightedge),
+[Room.TopEdge](Room#roomtopedge)
 
 ---
 
-### Messages
+### `Room.Messages`
 
 *(Formerly known as global function GetMessageText, which is now
 obsolete)*
@@ -272,7 +272,7 @@ will print the contents of room message 1.
 
 ---
 
-### MusicOnLoad
+### `Room.MusicOnLoad`
 
     readonly static int Room.MusicOnLoad
 
@@ -289,7 +289,7 @@ Example:
 
 ---
 
-### ObjectCount
+### `Room.ObjectCount`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -303,7 +303,7 @@ Example:
 
 ---
 
-### RightEdge
+### `Room.RightEdge`
 
     readonly static int Room.RightEdge
 
@@ -314,13 +314,13 @@ Example:
 
     Display("The current room's right edge is at %d.", Room.RightEdge);
 
-*See Also:* [Room.BottomEdge](Room#bottomedge),
-[Room.LeftEdge](Room#leftedge),
-[Room.TopEdge](Room#topedge)
+*See Also:* [Room.BottomEdge](Room#roombottomedge),
+[Room.LeftEdge](Room#roomleftedge),
+[Room.TopEdge](Room#roomtopedge)
 
 ---
 
-### TopEdge
+### `Room.TopEdge`
 
     readonly static int Room.TopEdge
 
@@ -331,13 +331,13 @@ Example:
 
     Display("The current room's top edge is at %d.", Room.TopEdge);
 
-*See Also:* [Room.BottomEdge](Room#bottomedge),
-[Room.LeftEdge](Room#leftedge),
-[Room.RightEdge](Room#rightedge)
+*See Also:* [Room.BottomEdge](Room#roombottomedge),
+[Room.LeftEdge](Room#roomleftedge),
+[Room.RightEdge](Room#roomrightedge)
 
 ---
 
-### Width
+### `Room.Width`
 
 *(Formerly known as game.room_width, which is now obsolete)*
 
@@ -349,5 +349,5 @@ Example:
 
     Display("The current room size is %d x %d.", Room.Width, Room.Height);
 
-*See Also:* [Room.Height](Room#height)
+*See Also:* [Room.Height](Room#roomheight)
 

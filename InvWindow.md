@@ -1,10 +1,10 @@
-## InvWindow functions and properties
+## `InvWindow` functions and properties
 
 InvWindow is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
 ---
 
-### ScrollDown
+### `InvWindow.ScrollDown`
 
     InvWindow.ScrollDown()
 
@@ -21,12 +21,12 @@ Example:
 
 will scroll the *invMain* inv window down one row.
 
-*See Also:* [InvWindow.ScrollUp](InvWindow#scrollup),
-[InvWindow.TopItem](InvWindow#topitem)
+*See Also:* [InvWindow.ScrollUp](InvWindow#invwindowscrollup),
+[InvWindow.TopItem](InvWindow#invwindowtopitem)
 
 ---
 
-### ScrollUp
+### `InvWindow.ScrollUp`
 
     InvWindow.ScrollUp()
 
@@ -43,12 +43,12 @@ Example:
 
 will scroll the *invMain* inv window up one row.
 
-*See Also:* [InvWindow.ScrollDown](InvWindow#scrolldown),
-[InvWindow.TopItem](InvWindow#topitem)
+*See Also:* [InvWindow.ScrollDown](InvWindow#invwindowscrolldown),
+[InvWindow.TopItem](InvWindow#invwindowtopitem)
 
 ---
 
-### CharacterToUse
+### `InvWindow.CharacterToUse`
 
     Character* InvWindow.CharacterToUse;
 
@@ -66,13 +66,13 @@ inventory.
 
 ---
 
-### ItemAtIndex
+### `InvWindow.ItemAtIndex`
 
     readonly InventoryItem* InvWindow.ItemAtIndex[];
 
 Gets the inventory item that is currently displayed at the specified
 index in this inventory window. The number of items in the window can be
-retrieved with the [ItemCount](InvWindow#itemcount) property.
+retrieved with the [ItemCount](InvWindow#invwindowitemcount) property.
 Indexes range from 0 to ItemCount - 1.
 
 If an invalid index is supplied, *null* is returned.
@@ -85,11 +85,11 @@ Example:
 will display the name of the first item displayed in the *invMain*
 inventory window.
 
-*See Also:* [InvWindow.ItemCount](InvWindow#itemcount)
+*See Also:* [InvWindow.ItemCount](InvWindow#invwindowitemcount)
 
 ---
 
-### ItemCount
+### `InvWindow.ItemCount`
 
 *(Formerly known as game.num_inv_items, which is now obsolete)*
 
@@ -110,13 +110,13 @@ Example:
 will enable the GUI buttons *btnInvUp* and *btnInvDown* if there are
 more inventory items than will fit in the inventory window.
 
-*See Also:* [InvWindow.ItemAtIndex](InvWindow#itematindex),
-[InvWindow.ItemsPerRow](InvWindow#itemsperrow),
-[InvWindow.RowCount](InvWindow#rowcount)
+*See Also:* [InvWindow.ItemAtIndex](InvWindow#invwindowitematindex),
+[InvWindow.ItemsPerRow](InvWindow#invwindowitemsperrow),
+[InvWindow.RowCount](InvWindow#invwindowrowcount)
 
 ---
 
-### ItemHeight
+### `InvWindow.ItemHeight`
 
 *(Formerly known as SetInvDimensions, which is now obsolete)*
 
@@ -133,12 +133,12 @@ Example:
 
 sets the *invMain* inventory window to use item cells 50x30 large.
 
-*See Also:* [InvWindow.ItemWidth](InvWindow#itemwidth),
-[InvWindow.RowCount](InvWindow#rowcount)
+*See Also:* [InvWindow.ItemWidth](InvWindow#invwindowitemwidth),
+[InvWindow.RowCount](InvWindow#invwindowrowcount)
 
 ---
 
-### ItemWidth
+### `InvWindow.ItemWidth`
 
 *(Formerly known as SetInvDimensions, which is now obsolete)*
 
@@ -155,12 +155,12 @@ Example:
 
 sets the *invMain* inventory window to use item cells 50x30 large.
 
-*See Also:* [InvWindow.ItemHeight](InvWindow#itemheight),
-[InvWindow.ItemsPerRow](InvWindow#itemsperrow)
+*See Also:* [InvWindow.ItemHeight](InvWindow#invwindowitemheight),
+[InvWindow.ItemsPerRow](InvWindow#invwindowitemsperrow)
 
 ---
 
-### ItemsPerRow
+### `InvWindow.ItemsPerRow`
 
 *(Formerly known as game.items_per_line, which is now obsolete)*
 
@@ -176,12 +176,12 @@ Example:
 
 displays how many items can be visible in the invMain window at once.
 
-*See Also:* [InvWindow.ItemWidth](InvWindow#itemwidth),
-[InvWindow.RowCount](InvWindow#rowcount)
+*See Also:* [InvWindow.ItemWidth](InvWindow#invwindowitemwidth),
+[InvWindow.RowCount](InvWindow#invwindowrowcount)
 
 ---
 
-### RowCount
+### `InvWindow.RowCount`
 
     readonly int InvWindow.RowCount;
 
@@ -195,12 +195,12 @@ Example:
 
 displays how many items can be visible in the invMain window at once.
 
-*See Also:* [InvWindow.ItemHeight](InvWindow#itemheight),
-[InvWindow.ItemsPerRow](InvWindow#itemsperrow)
+*See Also:* [InvWindow.ItemHeight](InvWindow#invwindowitemheight),
+[InvWindow.ItemsPerRow](InvWindow#invwindowitemsperrow)
 
 ---
 
-### TopItem
+### `InvWindow.TopItem`
 
 *(Formerly known as game.top_inv_item, which is now obsolete)*
 
@@ -208,7 +208,7 @@ displays how many items can be visible in the invMain window at once.
 
 Gets/sets the index of the first item currently displayed in the
 inventory window. The first item is represented by 0, and the last item
-is has an index of [ItemCount](InvWindow#itemcount) - 1.
+is has an index of [ItemCount](InvWindow#invwindowitemcount) - 1.
 
 You can use this to work out whether to display scroll arrows or not.
 
@@ -224,5 +224,5 @@ Example:
 makes the *btnScrollUp* button visible or invisible depending on whether
 the inventory list can be scrolled up.
 
-*See Also:* [InvWindow.ItemCount](InvWindow#itemcount)
+*See Also:* [InvWindow.ItemCount](InvWindow#invwindowitemcount)
 

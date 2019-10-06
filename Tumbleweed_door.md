@@ -1,4 +1,4 @@
-## Door functions
+## Tumbleweed Door functions
 
 This template implements a clever door scripting system, which is a real time-saver if you use a lot of doors.
 It uses a hotspot for the closed door and a non-clickable object, to show the opened door.

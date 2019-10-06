@@ -1,6 +1,6 @@
-## Global functions: Screen Effects
+## Global functions (Screen Effects)
 
-### FadeIn
+### `FadeIn`
 
     FadeIn (int speed)
 
@@ -24,7 +24,7 @@ in again.
 
 ---
 
-### FadeOut
+### `FadeOut`
 
     FadeOut (int speed)
 
@@ -47,7 +47,7 @@ in again.
 
 ---
 
-### FlipScreen
+### `FlipScreen`
 
     FlipScreen (int way)
 
@@ -74,7 +74,7 @@ will flip the screen upside down.
 
 ---
 
-### SetFadeColor
+### `SetFadeColor`
 
     SetFadeColor(int red, int green, int blue)
 
@@ -98,7 +98,7 @@ SeeAlso: [FadeIn](Globalfunctions_Screen#fadein), [FadeOut](Globalfunctions_Scre
 
 ---
 
-### SetNextScreenTransition
+### `SetNextScreenTransition`
 
     SetNextScreenTransition(TransitionStyle)
 
@@ -121,7 +121,7 @@ SeeAlso: [SetScreenTransition](Globalfunctions_Screen#setscreentransition)
 
 ---
 
-### SetScreenTransition
+### `SetScreenTransition`
 
     SetScreenTransition(TransitionStyle)
 
@@ -147,7 +147,7 @@ SeeAlso: [SetNextScreenTransition](Globalfunctions_Screen#setnextscreentransitio
 
 ---
 
-### ShakeScreen
+### `ShakeScreen`
 
     ShakeScreen (int amount)
 
@@ -164,7 +164,7 @@ will shake the screen a little.
 
 ---
 
-### ShakeScreenBackground
+### `ShakeScreenBackground`
 
     ShakeScreenBackground (int delay, int amount, int length)
 
@@ -194,7 +194,7 @@ will shake the screen a little for 2 seconds.
 
 ---
 
-### TintScreen
+### `TintScreen`
 
     TintScreen (int red, int green, int blue)
 

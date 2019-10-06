@@ -1,6 +1,6 @@
-## File functions and properties
+## `File` functions and properties
 
-### Open
+### `File.Open`
 
 *(Formerly known as FileOpen, which is now obsolete)*
 
@@ -66,14 +66,14 @@ will open the file temp.tmp in the save game folder for writing. An
 error message is displayed if the file could not be created. Otherwise,
 it will write the string "test string" to the file and close it.
 
-*See Also:* [File.Close](File#close),
-[File.Exists](File#exists),
-[File.ReadStringBack](File#readstringback),
-[File.WriteString](File#writestring)
+*See Also:* [File.Close](File#fileclose),
+[File.Exists](File#fileexists),
+[File.ReadStringBack](File#filereadstringback),
+[File.WriteString](File#filewritestring)
 
 ---
 
-### Close
+### `File.Close`
 
 *(Formerly known as FileClose, which is now obsolete)*
 
@@ -91,11 +91,11 @@ Example:
 will open the file test.dat, write the string "test string", and close
 it.
 
-*See Also:* [File.Open](File#open)
+*See Also:* [File.Open](File#fileopen)
 
 ---
 
-### Delete
+### `File.Delete`
 
     static File.Delete(string filename)
 
@@ -116,12 +116,12 @@ exists.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [File.Exists](File#exists),
-[File.Open](File#open)
+*See Also:* [File.Exists](File#fileexists),
+[File.Open](File#fileopen)
 
 ---
 
-### Exists
+### `File.Exists`
 
     static bool File.Exists(string filename)
 
@@ -151,12 +151,12 @@ will create the file "temp.tmp" if it doesn't exist
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [File.Delete](File#delete),
-[File.Open](File#open)
+*See Also:* [File.Delete](File#filedelete),
+[File.Open](File#fileopen)
 
 ---
 
-### ReadInt
+### `File.ReadInt`
 
 *(Formerly known as FileReadInt, which is now obsolete)*
 
@@ -175,12 +175,12 @@ Example:
 will open the file stats.dat, read an integer into number and then close
 the file.
 
-*See Also:* [File.ReadStringBack](File#readstringback),
-[File.WriteInt](File#writeint)
+*See Also:* [File.ReadStringBack](File#filereadstringback),
+[File.WriteInt](File#filewriteint)
 
 ---
 
-### ReadRawChar
+### `File.ReadRawChar`
 
 *(Formerly known as FileReadRawChar, which is now obsolete)*
 
@@ -199,13 +199,13 @@ Example:
 will read a raw character from file stats.txt and writes it to the
 string 'buffer'.
 
-*See Also:* [File.ReadStringBack](File#readstringback),
-[File.ReadRawInt](File#readrawint),
-[File.WriteRawChar](File#writerawchar)
+*See Also:* [File.ReadStringBack](File#filereadstringback),
+[File.ReadRawInt](File#filereadrawint),
+[File.WriteRawChar](File#filewriterawchar)
 
 ---
 
-### ReadRawInt
+### `File.ReadRawInt`
 
 *(Formerly known as FileReadRawInt, which is now obsolete)*
 
@@ -226,12 +226,12 @@ Example:
 will read a raw integer from file stats.txt and put it into the integer
 number.
 
-*See Also:* [File.ReadStringBack](File#readstringback),
-[File.ReadRawChar](File#readrawchar)
+*See Also:* [File.ReadStringBack](File#filereadstringback),
+[File.ReadRawChar](File#filereadrawchar)
 
 ---
 
-### ReadRawLineBack
+### `File.ReadRawLineBack`
 
 *(Formerly known as File.ReadRawLine, which is now obsolete)*
 
@@ -258,11 +258,11 @@ Example:
 
 will display the contents of the 'error.log' file, if it exists
 
-*See Also:* [File.WriteRawLine](File#writerawline)
+*See Also:* [File.WriteRawLine](File#filewriterawline)
 
 ---
 
-### ReadStringBack
+### `File.ReadStringBack`
 
 *(Formerly known as FileRead, which is now obsolete)*<br>
 *(Formerly known as File.ReadString, which is now obsolete)*
@@ -284,12 +284,12 @@ will open the file test.dat (which you have previously written with
 File.WriteString) and read a string into the buffer. Then close the
 file.
 
-*See Also:* [File.Open](File#open),
-[File.WriteString](File#writestring)
+*See Also:* [File.Open](File#fileopen),
+[File.WriteString](File#filewritestring)
 
 ---
 
-### Seek
+### `File.Seek`
 
     int Seek(int offset, optional FileSeek origin);
 
@@ -330,11 +330,11 @@ will open the file test.dat, read `first_value`, skip 256 bytes, read
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [File.Position](File#position)
+*See Also:* [File.Position](File#fileposition)
 
 ---
 
-### WriteInt
+### `File.WriteInt`
 
 *(Formerly known as FileWriteInt, which is now obsolete)*
 
@@ -353,12 +353,12 @@ Example:
 
 will open the file stats.dat and write the integer number in it.
 
-*See Also:* [File.ReadInt](File#readint),
-[File.WriteString](File#writestring)
+*See Also:* [File.ReadInt](File#filereadint),
+[File.WriteString](File#filewritestring)
 
 ---
 
-### WriteRawChar
+### `File.WriteRawChar`
 
 *(Formerly known as FileWriteRawChar, which is now obsolete)*
 
@@ -384,12 +384,12 @@ Example:
 will write the text "AB", followed by a carriage return character, to
 the file.
 
-*See Also:* [File.ReadRawChar](File#readrawchar),
-[File.WriteInt](File#writeint)
+*See Also:* [File.ReadRawChar](File#filereadrawchar),
+[File.WriteInt](File#filewriteint)
 
 ---
 
-### WriteRawLine
+### `File.WriteRawLine`
 
 *(Formerly known as FileWriteRawLine, which is now obsolete)*
 
@@ -410,12 +410,12 @@ Example:
 
 will write an error line in the file error.log.
 
-*See Also:* [File.ReadRawLineBack](File#readrawlineback),
-[File.WriteString](File#writestring)
+*See Also:* [File.ReadRawLineBack](File#filereadrawlineback),
+[File.WriteString](File#filewritestring)
 
 ---
 
-### WriteString
+### `File.WriteString`
 
 *(Formerly known as FileWrite, which is now obsolete)*
 
@@ -438,13 +438,13 @@ will open the file temp.tmp for writing. If it cannot create the file,
 it will display an error message. Otherwise, it will write the string
 "test string" and close it.
 
-*See Also:* [File.ReadStringBack](File#readstringback),
-[File.Open](File#open),
-[File.WriteRawLine](File#writerawline)
+*See Also:* [File.ReadStringBack](File#filereadstringback),
+[File.Open](File#fileopen),
+[File.WriteRawLine](File#filewriterawline)
 
 ---
 
-### EOF
+### `File.EOF`
 
 *(Formerly known as FileIsEOF, which is now obsolete)*
 
@@ -466,13 +466,13 @@ Example:
 will display every character in the file test.dat, one by one, to the
 screen.
 
-*See Also:* [File.Error](File#error),
-[File.Open](File#open),
-[File.ReadStringBack](File#readstringback)
+*See Also:* [File.Error](File#fileerror),
+[File.Open](File#fileopen),
+[File.ReadStringBack](File#filereadstringback)
 
 ---
 
-### Error
+### `File.Error`
 
 *(Formerly known as FileIsError, which is now obsolete)*
 
@@ -489,7 +489,7 @@ data. The File.Open function will return null if there was an error
 actually opening or creating the file.
 
 To find out whether all data has been read from a file, use
-[EOF](File#eof) instead.
+[EOF](File#fileeof) instead.
 
 Example:
 
@@ -503,12 +503,12 @@ Example:
 will write a number to the file 'test.dat', and display a message if
 there was a problem.
 
-*See Also:* [File.EOF](File#eof),
-[File.ReadStringBack](File#readstringback)
+*See Also:* [File.EOF](File#fileeof),
+[File.ReadStringBack](File#filereadstringback)
 
 ---
 
-### Position
+### `File.Position`
 
     readonly int File.Position
 
@@ -534,5 +534,5 @@ display amount of data that function wrote.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [File.Seek](File#seek)
+*See Also:* [File.Seek](File#fileseek)
 

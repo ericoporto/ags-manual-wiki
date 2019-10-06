@@ -188,7 +188,7 @@ you could do:
 
 To get the actual number of things in the game rather than the AGS
 limit, use the
-[Game.CharacterCount](Game#charactercount)-style properties.
+[Game.CharacterCount](Game#gamecharactercount)-style properties.
 
 ---
 

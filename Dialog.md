@@ -1,6 +1,6 @@
-## Dialog functions and properties
+## `Dialog` functions and properties
 
-### DisplayOptions
+### `Dialog.DisplayOptions`
 
     int Dialog.DisplayOptions(optional DialogOptionSayStyle)
 
@@ -9,7 +9,7 @@ select one of them. The selected option number is returned.
 
 **NOTE:** This command does not run any dialog scripts, it simply
 displays the options and waits for the player to choose one. To run the
-dialog normally, use the [Dialog.Start](Dialog#start) command
+dialog normally, use the [Dialog.Start](Dialog#dialogstart) command
 instead.
 
 This command is useful if you want to implement your own dialog system,
@@ -25,9 +25,9 @@ editor; or *eSayNever*, which will not speak the chosen option.
 If the text parser is enabled for this dialog and the player types
 something into it rather than selecting an option, the special value
 `DIALOG_PARSER_SELECTED` will be returned, and AGS will have
-automatically called [Parser.ParseText](Parser#parsetext) with
+automatically called [Parser.ParseText](Parser#parserparsetext) with
 the player's text. Therefore, you can call
-[Parser.Said](Parser#said) to process it.
+[Parser.Said](Parser#parsersaid) to process it.
 
 Example:
 
@@ -46,12 +46,12 @@ depending on what the player selected.
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
-*See Also:* [Dialog.Start](Dialog#start),
-[Parser.ParseText](Parser#parsetext)
+*See Also:* [Dialog.Start](Dialog#dialogstart),
+[Parser.ParseText](Parser#parserparsetext)
 
 ---
 
-### GetOptionState
+### `Dialog.GetOptionState`
 
 *(Formerly known as global function GetDialogOption, which is now
 obsolete)*
@@ -85,13 +85,13 @@ Will display a message if option 2 of dialog dJoeExcited is not
 currently switched on.
 
 *See Also:*
-[Dialog.HasOptionBeenChosen](Dialog#hasoptionbeenchosen),
-[Dialog.SetHasOptionBeenChosen](Dialog#sethasoptionbeenchosen),
-[Dialog.SetOptionState](Dialog#setoptionstate)
+[Dialog.HasOptionBeenChosen](Dialog#dialoghasoptionbeenchosen),
+[Dialog.SetHasOptionBeenChosen](Dialog#dialogsethasoptionbeenchosen),
+[Dialog.SetOptionState](Dialog#dialogsetoptionstate)
 
 ---
 
-### GetOptionText
+### `Dialog.GetOptionText`
 
     String Dialog.GetOptionText(int option)
 
@@ -109,12 +109,12 @@ will display the text for the third option of the dJoeBloggs dialog.
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
-*See Also:* [Dialog.OptionCount](Dialog#optioncount),
-[Dialog.GetOptionState](Dialog#getoptionstate)
+*See Also:* [Dialog.OptionCount](Dialog#dialogoptioncount),
+[Dialog.GetOptionState](Dialog#dialoggetoptionstate)
 
 ---
 
-### HasOptionBeenChosen
+### `Dialog.HasOptionBeenChosen`
 
     bool Dialog.HasOptionBeenChosen(int option)
 
@@ -136,12 +136,12 @@ before.
 
 *Compatibility:* Supported by **AGS 3.1.1** and later versions.
 
-*See Also:* [Dialog.GetOptionState](Dialog#getoptionstate),
-[Dialog.SetHasOptionBeenChosen](Dialog#sethasoptionbeenchosen),
+*See Also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
+[Dialog.SetHasOptionBeenChosen](Dialog#dialogsethasoptionbeenchosen),
 
 ---
 
-### ID
+### `Dialog.ID`
 
     readonly int Dialog.ID;
 
@@ -160,7 +160,7 @@ will display the ID number of the dFisherman dialog
 
 ---
 
-### OptionCount
+### `Dialog.OptionCount`
 
     readonly int Dialog.OptionCount;
 
@@ -177,12 +177,12 @@ will display the number of options in the dFisherman dialog.
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
-*See Also:* [Dialog.GetOptionText](Dialog#getoptiontext),
-[Dialog.GetOptionState](Dialog#getoptionstate)
+*See Also:* [Dialog.GetOptionText](Dialog#dialoggetoptiontext),
+[Dialog.GetOptionState](Dialog#dialoggetoptionstate)
 
 ---
 
-### SetHasOptionBeenChosen
+### `Dialog.SetHasOptionBeenChosen`
 
     Dialog.SetHasOptionBeenChosen(int option, bool chosen)
 
@@ -204,12 +204,12 @@ will mark option 1 of dialog dDialog1 as "not chosen yet".
 
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
-*See Also:* [Dialog.GetOptionState](Dialog#getoptionstate),
-[Dialog.HasOptionBeenChosen](Dialog#hasoptionbeenchosen)
+*See Also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
+[Dialog.HasOptionBeenChosen](Dialog#dialoghasoptionbeenchosen)
 
 ---
 
-### SetOptionState
+### `Dialog.SetOptionState`
 
 *(Formerly known as global function SetDialogOption, which is now
 obsolete)*
@@ -244,13 +244,13 @@ Example:
 
 will enable option 2 of topic number 4 if the Global Integer 10 is 1.
 
-*See Also:* [Dialog.GetOptionState](Dialog#getoptionstate),
-[Dialog.Start](Dialog#start),
+*See Also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
+[Dialog.Start](Dialog#dialogstart),
 [StopDialog](Dialog#stopdialog)
 
 ---
 
-### ShowTextParser
+### `Dialog.ShowTextParser`
 
     readonly bool Dialog.ShowTextParser;
 
@@ -272,7 +272,7 @@ will display a message if dFisherman has the option enabled
 
 ---
 
-### Start
+### `Dialog.Start`
 
 *(Formerly known as global function RunDialog, which is now obsolete)*
 
@@ -293,12 +293,12 @@ Example:
 
 will start the conversation topic named dMerchant.
 
-*See Also:* [Dialog.DisplayOptions](Dialog#displayoptions),
-[Dialog.SetOptionState](Dialog#setoptionstate)
+*See Also:* [Dialog.DisplayOptions](Dialog#dialogdisplayoptions),
+[Dialog.SetOptionState](Dialog#dialogsetoptionstate)
 
 ---
 
-### StopDialog
+### `StopDialog`
 
     StopDialog ()
 
@@ -319,5 +319,5 @@ Example:
 
 will give the player the inventory item 3 and then end the conversation.
 
-*See Also:* [Dialog.SetOptionState](Dialog#setoptionstate)
+*See Also:* [Dialog.SetOptionState](Dialog#dialogsetoptionstate)
 

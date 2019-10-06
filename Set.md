@@ -1,4 +1,4 @@
-## Set Functions and Properties
+## `Set` Functions and Properties
 
 Set allows you to store a sequence of unique strings and efficiently look them up. When adding a string Set will automatically test whether such string is already contained and won't make a duplicate.
 
@@ -10,7 +10,7 @@ Similar to [Dictionary](Dictionary), Set has two general properties: **sort styl
 
 **Compare style** determines whether strings are compared as case sensitive or case insensitive. For example, in case-sensitive set strings "Parameter" and "parameter" will be seen as two different items, but in case-insensitive they will be seen as identical. Compare style defines both string uniqueness and sorting.
 
-At the moment a set itself does not let you access all of its internal data at once directly, but has [GetItemsAsArray ](Set#getitemsasarray) function that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in this array will be matching one inside the set, hence if the set was sorted the array will be sorted as well.
+At the moment a set itself does not let you access all of its internal data at once directly, but has [GetItemsAsArray ](Set#setgetitemsasarray) function that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in this array will be matching one inside the set, hence if the set was sorted the array will be sorted as well.
 
 *Compatibility:* Set struct is supported by **AGS 3.5.0** and later versions.
 
@@ -18,7 +18,7 @@ At the moment a set itself does not let you access all of its internal data at o
 
 ---
 
-### Create
+### `Set.Create`
 
     static Set* Set.Create(SortStyle sortStyle, StringCompareStyle compareStyle)
 
@@ -30,7 +30,7 @@ Example:
 
 ---
 
-### Add
+### `Set.Add`
 
     bool Set.Add(String item)
 
@@ -41,11 +41,11 @@ Example:
     mySet.Add("item1");
     bool wasAdded = mySet.Add("item1"); // wasAdded will be false
 
-*See Also:* [Contains](Set#contains), [Remove](Set#remove)
+*See Also:* [Contains](Set#setcontains), [Remove](Set#setremove)
 
 ---
 
-### Clear
+### `Set.Clear`
 
     void Set.Clear()
 
@@ -53,7 +53,7 @@ Removes all items from the set.
 
 ---
 
-### Contains
+### `Set.Contains`
 
     bool Set.Contains(String item)
 
@@ -67,11 +67,11 @@ Example:
       Display("Test passed!");
     }
 
-*See Also:* [Add](Set#add), [Remove](Set#remove)
+*See Also:* [Add](Set#setadd), [Remove](Set#setremove)
 
 ---
 
-### GetItemsAsArray
+### `Set.GetItemsAsArray`
 
     String[] GetItemsAsArray()
 
@@ -88,31 +88,31 @@ Example:
 
 In the above example the items will be displayed on screen one by one, preceded by their index.
 
-*See Also:* [Set.ItemCount](Set#itemcount)
+*See Also:* [Set.ItemCount](Set#setitemcount)
 
 ---
 
-### Remove
+### `Set.Remove`
 
     bool Set.Remove(String item)
 
 Removes item from the set, returns false if there was no such item.
 
-*See Also:* [Add](Set#add), [Contains](Set#contains)
+*See Also:* [Add](Set#setadd), [Contains](Set#setcontains)
 
 ---
 
-### CompareStyle
+### `Set.CompareStyle`
 
     StringCompareStyle Set.CompareStyle
 
 Gets if this set is case-sensitive.
 
-*See Also:* [SortStyle](Set#sortstyle)
+*See Also:* [SortStyle](Set#setsortstyle)
 
 ---
 
-### ItemCount
+### `Set.ItemCount`
 
     int Set.ItemCount
 
@@ -120,10 +120,10 @@ Gets the number of items currently in the set.
 
 ---
 
-### SortStyle
+### `Set.SortStyle`
 
     SortStyle Set.SortStyle
 
 Gets the method items are arranged in this set.
 
-*See Also:* [CompareStyle](Set#comparestyle)
+*See Also:* [CompareStyle](Set#setcomparestyle)

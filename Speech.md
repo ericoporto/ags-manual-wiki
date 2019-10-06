@@ -1,6 +1,6 @@
-## Speech functions and properties
+## `Speech` functions and properties
 
-### AnimationStopTimeMargin
+### `Speech.AnimationStopTimeMargin`
 
 *(Formerly known as game.close_mouth_end_speech_time, which is now
 obsolete)*
@@ -22,18 +22,18 @@ will stop talking animation 40 game loops (1 second with the default
 game speed) before speech time ends.
 
 *See Also:*
-[Speech.DisplayPostTimeMs](Speech#displayposttimems)
+[Speech.DisplayPostTimeMs](Speech#speechdisplayposttimems)
 
 ---
 
-### CustomPortraitPlacement
+### `Speech.CustomPortraitPlacement`
 
     static bool Speech.CustomPortraitPlacement
 
 Enables/disables the custom speech portrait placement. When set to
 **true** the character portraits are positioned at screen coordinates
-defined by [Speech.PortraitXOffset](Speech#portraitxoffset)
-and [Speech.PortraitY](Speech#portraity). When set to
+defined by [Speech.PortraitXOffset](Speech#speechportraitxoffset)
+and [Speech.PortraitY](Speech#speechportraity). When set to
 **false** the portraits will be automatically aligned again.
 
 **NOTE:** This property has no effect if the Lucas-Arts speech style is
@@ -41,12 +41,12 @@ used.
 
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
-*See Also:* [Speech.PortraitXOffset](Speech#portraitxoffset),
-[Speech.PortraitY](Speech#portraity)
+*See Also:* [Speech.PortraitXOffset](Speech#speechportraitxoffset),
+[Speech.PortraitY](Speech#speechportraity)
 
 ---
 
-### DisplayPostTimeMs
+### `Speech.DisplayPostTimeMs`
 
     static int Speech.DisplayPostTimeMs
 
@@ -63,11 +63,11 @@ and is set to zero by default.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Speech.AnimationStopTimeMargin](Speech#animationstoptimemargin)
+[Speech.AnimationStopTimeMargin](Speech#speechanimationstoptimemargin)
 
 ---
 
-### GlobalSpeechAnimationDelay
+### `Speech.GlobalSpeechAnimationDelay`
 
 *(Formerly known as game.talkanim_speed, which is now obsolete)*
 
@@ -86,12 +86,12 @@ disabled. In that case, the individual character's animation delay is
 used instead.
 
 *See Also:*
-[Character.SpeechAnimationDelay](Character#speechanimationdelay),
-[Speech.UseGlobalSpeechAnimationDelay](Speech#useglobalspeechanimationdelay)
+[Character.SpeechAnimationDelay](Character#characterspeechanimationdelay),
+[Speech.UseGlobalSpeechAnimationDelay](Speech#speechuseglobalspeechanimationdelay)
 
 ---
 
-### PortraitXOffset
+### `Speech.PortraitXOffset`
 
     static int Speech.PortraitXOffset
 
@@ -107,12 +107,12 @@ side and respected portrait's border.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Speech.CustomPortraitPlacement](Speech#customportraitplacement),
-[Speech.PortraitY](Speech#portraity)
+[Speech.CustomPortraitPlacement](Speech#speechcustomportraitplacement),
+[Speech.PortraitY](Speech#speechportraity)
 
 ---
 
-### PortraitY
+### `Speech.PortraitY`
 
     static int Speech.PortraitY
 
@@ -124,12 +124,12 @@ Gets/sets the character's speech portrait **y** coordinate on screen.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Speech.CustomPortraitPlacement](Speech#customportraitplacement),
-[Speech.PortraitXOffset](Speech#portraitxoffset)
+[Speech.CustomPortraitPlacement](Speech#speechcustomportraitplacement),
+[Speech.PortraitXOffset](Speech#speechportraitxoffset)
 
 ---
 
-### SkipKey
+### `Speech.SkipKey`
 
 *(Formerly known as game.skip_speech_specific_key, which is now
 obsolete)*
@@ -149,11 +149,11 @@ Example:
 
 will assign the "space" key to skip the speech.
 
-*See Also:* [Speech.SkipStyle](Speech#skipstyle)
+*See Also:* [Speech.SkipStyle](Speech#speechskipstyle)
 
 ---
 
-### SkipStyle
+### `Speech.SkipStyle`
 
 *(Formerly known as SetSkipSpeech, which is now obsolete)*
 
@@ -179,13 +179,13 @@ will make the player unable to skip the text by pressing a mouse button
 or a key.
 
 *See Also:*
-[Game.IgnoreUserInputAfterTextTimeoutMs](Game#ignoreuserinputaftertexttimeoutms),
-[Game.TextReadingSpeed](Game#textreadingspeed),
-[Game.Speech.SkipKey](Speech#skipkey)
+[Game.IgnoreUserInputAfterTextTimeoutMs](Game#gameignoreuserinputaftertexttimeoutms),
+[Game.TextReadingSpeed](Game#gametextreadingspeed),
+[Game.Speech.SkipKey](Speech#speechskipkey)
 
 ---
 
-### Style
+### `Speech.Style`
 
 *(Formerly known as SetSpeechStyle, which is now obsolete)*
 
@@ -211,7 +211,7 @@ will change the speech style to a close up portrait of the character.
 
 ---
 
-### TextAlignment
+### `Speech.TextAlignment`
 
 *(Formerly known as game.speech_text_align, which is now obsolete)*
 
@@ -235,7 +235,7 @@ will align the speech text at the right side.
 
 ---
 
-### UseGlobalSpeechAnimationDelay
+### `Speech.UseGlobalSpeechAnimationDelay`
 
     static bool Speech.UseGlobalSpeechAnimationDelay
 
@@ -252,12 +252,12 @@ will make the game use global speech animation delay.
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
 *See Also:*
-[Character.SpeechAnimationDelay](Character#speechanimationdelay),
-[Speech.GlobalSpeechAnimationDelay](Speech#globalspeechanimationdelay)
+[Character.SpeechAnimationDelay](Character#characterspeechanimationdelay),
+[Speech.GlobalSpeechAnimationDelay](Speech#speechglobalspeechanimationdelay)
 
 ---
 
-### VoiceMode
+### `Speech.VoiceMode`
 
 *(Formerly known as SetVoiceMode, which is now obsolete)*
 
@@ -273,7 +273,7 @@ Valid values for VoiceMode are:
 
 The default is *eSpeechVoiceAndText* if in-game speech is enabled, and
 *eSpeechTextOnly* if it is not. Changing this setting changes the
-behavior of all [Say](Character#say) and
+behavior of all [Say](Character#charactersay) and
 [Display](Globalfunctions_Message#display) commands which have a speech file assigned
 to them.
 

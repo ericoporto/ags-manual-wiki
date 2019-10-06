@@ -141,7 +141,7 @@ the function?**
 
 Nope! Many functions now support **optional parameters**, where the most
 common options are selected automatically. If you look at the help for a
-function such as the [Animate character command](Character#animate),
+function such as the [Animate character command](Character#characteranimate),
 you'll see some of the parameters are defined as "optional". This means
 that you don't have to supply them; if you don't, the default option that
 will be chosen is described in the help for that command.

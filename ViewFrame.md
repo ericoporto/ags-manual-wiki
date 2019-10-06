@@ -1,6 +1,6 @@
-## ViewFrame functions and properties
+## `ViewFrame` functions and properties
 
-### Flipped
+### `ViewFrame.Flipped`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -18,12 +18,12 @@ Example:
       Display("This frame is not flipped");
     }
 
-*See Also:* [Game.GetViewFrame](Game#getviewframe),
-[ViewFrame.Graphic](ViewFrame#graphic)
+*See Also:* [Game.GetViewFrame](Game#gamegetviewframe),
+[ViewFrame.Graphic](ViewFrame#viewframegraphic)
 
 ---
 
-### Frame
+### `ViewFrame.Frame`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -37,13 +37,13 @@ Example:
     Display("This ViewFrame is view %d, loop %d, frame %d",
       frame.View, frame.Loop, frame.Frame);
 
-*See Also:* [Game.GetViewFrame](Game#getviewframe),
-[ViewFrame.Loop](ViewFrame#loop),
-[ViewFrame.View](ViewFrame#view)
+*See Also:* [Game.GetViewFrame](Game#gamegetviewframe),
+[ViewFrame.Loop](ViewFrame#viewframeloop),
+[ViewFrame.View](ViewFrame#viewframeview)
 
 ---
 
-### Graphic
+### `ViewFrame.Graphic`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -56,11 +56,11 @@ Example:
     ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
     Display("This frame uses sprite %d", frame.Graphic);
 
-*See Also:* [Game.GetViewFrame](Game#getviewframe)
+*See Also:* [Game.GetViewFrame](Game#gamegetviewframe)
 
 ---
 
-### LinkedAudio
+### `ViewFrame.LinkedAudio`
 
 *(Formerly known as ViewFrame.Sound, which is now obsolete)*<br>
 *(Formerly known as SetFrameSound, which is now obsolete)*<br>
@@ -90,11 +90,11 @@ if so, plays it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.GetViewFrame](Game#getviewframe)
+*See Also:* [Game.GetViewFrame](Game#gamegetviewframe)
 
 ---
 
-### Loop
+### `ViewFrame.Loop`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -108,13 +108,13 @@ Example:
     Display("This ViewFrame is view %d, loop %d, frame %d",
       frame.View, frame.Loop, frame.Frame);
 
-*See Also:* [Game.GetViewFrame](Game#getviewframe),
-[ViewFrame.Frame](ViewFrame#frame),
-[ViewFrame.View](ViewFrame#view)
+*See Also:* [Game.GetViewFrame](Game#gamegetviewframe),
+[ViewFrame.Frame](ViewFrame#viewframeframe),
+[ViewFrame.View](ViewFrame#viewframeview)
 
 ---
 
-### Speed
+### `ViewFrame.Speed`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -128,11 +128,11 @@ Example:
     ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
     Display("This frame has speed %d.", frame.Speed);
 
-*See Also:* [Game.GetViewFrame](Game#getviewframe)
+*See Also:* [Game.GetViewFrame](Game#gamegetviewframe)
 
 ---
 
-### View
+### `ViewFrame.View`
 
 *(Formerly part of GetGameParameter, which is now obsolete)*
 
@@ -146,7 +146,7 @@ Example:
     Display("This ViewFrame is view %d, loop %d, frame %d",
       frame.View, frame.Loop, frame.Frame);
 
-*See Also:* [Game.GetViewFrame](Game#getviewframe),
-[ViewFrame.Loop](ViewFrame#loop),
-[ViewFrame.Frame](ViewFrame#frame)
+*See Also:* [Game.GetViewFrame](Game#gamegetviewframe),
+[ViewFrame.Loop](ViewFrame#viewframeloop),
+[ViewFrame.Frame](ViewFrame#viewframeframe)
 

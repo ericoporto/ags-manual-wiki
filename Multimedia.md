@@ -1,6 +1,6 @@
 ## Multimedia functions
 
-### CDAudio
+### `CDAudio`
 
     CDAudio (eCDAudioFunction, int param)
 
@@ -57,7 +57,7 @@ will play track 3 of the CD that's in the CD ROM drive.
 
 ---
 
-### IsAudioPlaying
+### `Game.IsAudioPlaying`
 
 *(Formerly known as IsMusicPlaying, which is now obsolete)*<br>
 *(Formerly known as IsSoundPlaying, which is now obsolete)*
@@ -82,11 +82,11 @@ waits for any currently playing music to finish.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](Multimedia#stopaudio)
+*See Also:* [Game.StopAudio](Multimedia#gamestopaudio)
 
 ---
 
-### IsSpeechVoxAvailable
+### `IsSpeechVoxAvailable`
 
     IsSpeechVoxAvailable()
 
@@ -106,11 +106,11 @@ will display a message if the voice pack is not available.
 **NOTE:** This function used to be called IsVoxAvailable, but has now
 been renamed to avoid confusion.
 
-*See Also:* [AudioClip.IsAvailable](AudioClip#isavailable)
+*See Also:* [AudioClip.IsAvailable](AudioClip#audioclipisavailable)
 
 ---
 
-### PlayFlic
+### `PlayFlic`
 
     PlayFlic (int flic_number, int options)
 
@@ -138,7 +138,7 @@ the ESC key.
 
 ---
 
-### PlaySilentMIDI
+### `PlaySilentMIDI`
 
     PlaySilentMIDI (int music_number)
 
@@ -147,12 +147,12 @@ This command is obsolete.
 Use the AudioClip.Play command and set its Volume property to 0 to
 simulate this effect.
 
-*See Also:* [AudioClip.Play](AudioClip#play),
-[AudioChannel.Volume](AudioChannel#volume)
+*See Also:* [AudioClip.Play](AudioClip#audioclipplay),
+[AudioChannel.Volume](AudioChannel#audiochannelvolume)
 
 ---
 
-### PlayVideo
+### `PlayVideo`
 
     PlayVideo (string filename, VideoSkipStyle, int flags)
 
@@ -216,7 +216,7 @@ versions.
 
 ---
 
-### SetAudioTypeSpeechVolumeDrop
+### `Game.SetAudioTypeSpeechVolumeDrop`
 
 *(Formerly known as game.speech_music_drop, which is now obsolete)*
 
@@ -239,11 +239,11 @@ while speech is playing.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.SetAudioTypeVolume](Multimedia#setaudiotypevolume)
+*See Also:* [Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume)
 
 ---
 
-### SetAudioTypeVolume
+### `Game.SetAudioTypeVolume`
 
 *(Formerly known as SetSoundVolume, which is now obsolete)*
 
@@ -279,12 +279,12 @@ will change the volume of all currently playing and future music to
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:* [SetSpeechVolume](Multimedia#setspeechvolume),
-[AudioClip.Play](AudioClip#play),
-[System.Volume](System#volume)
+[AudioClip.Play](AudioClip#audioclipplay),
+[System.Volume](System#systemvolume)
 
 ---
 
-### SetSpeechVolume
+### `SetSpeechVolume`
 
     SetSpeechVolume (int volume)
 
@@ -298,11 +298,11 @@ Example:
 
 will set the speech volume to 200.
 
-*See Also:* [Game.SetAudioTypeVolume](Multimedia#setaudiotypevolume)
+*See Also:* [Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume)
 
 ---
 
-### StopAudio
+### `Game.StopAudio`
 
 *(Formerly known as Game.StopSound, which is now obsolete)*<br>
 *(Formerly known as StopMusic, which is now obsolete)*
@@ -324,6 +324,6 @@ will stop all currently playing audio.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.IsAudioPlaying](Multimedia#isaudioplaying),
-[AudioClip.Play](AudioClip#play),
-[AudioChannel.Stop](AudioChannel#stop)
+*See Also:* [Game.IsAudioPlaying](Multimedia#gameisaudioplaying),
+[AudioClip.Play](AudioClip#audioclipplay),
+[AudioChannel.Stop](AudioChannel#audiochannelstop)

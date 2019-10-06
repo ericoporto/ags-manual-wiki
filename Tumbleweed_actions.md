@@ -1,4 +1,4 @@
-## Action Functions
+## Tumbleweed Action Functions
 
 These functions are mainly used to control the verb buttons.
 
@@ -81,7 +81,7 @@ This function checks for a given extension in hotspots, objects and characters. 
 It is also defined here, which letters are causing what default action. See the chapter Extensions for more details.
 
 *See also:*
-[Extensions](Tumbleweed_extensions#extensions)
+[Extensions](Tumbleweed_extensions#tumbleweed-extensions)
 
 ---
 

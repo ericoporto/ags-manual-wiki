@@ -28,7 +28,7 @@ that may alter the appearance of your game. New projects will have
 "proper blending" mode set by default.
 
 To support alpha blending a new
-[HasAlphaChannel](DialogOptionsRenderingInfo#hasalphachannel)
+[HasAlphaChannel](DialogOptionsRenderingInfo#dialogoptionsrenderinginfohasalphachannel)
 property has been added to DialogOptionsRenderingInfo class. This
 property must be set it in
 [dialog_options_get_dimensions](CustomDialogOptions)
@@ -51,13 +51,13 @@ below:
 
 obsolete function/variable | replace with
 --- | ---
-SetVoiceMode | [Speech.VoiceMode](Speech#voicemode)
-SetSkipSpeech | [Speech.SkipStyle](Speech#skipstyle)
-SetSpeechStyle | [Speech.Style](Speech#style)
-game.close_mouth_end_speech_time | [Speech.AnimationStopTimeMargin](Speech#animationstoptimemargin)
-game.speech_text_align | [Speech.TextAlignment](Speech#textalignment)
-game.skip_speech_specific_key | [Speech.SkipKey](Speech#skipkey)
-game.talkanim_speed | [Speech.GlobalSpeechAnimationDelay](Speech#globalspeechanimationdelay)
+SetVoiceMode | [Speech.VoiceMode](Speech#speechvoicemode)
+SetSkipSpeech | [Speech.SkipStyle](Speech#speechskipstyle)
+SetSpeechStyle | [Speech.Style](Speech#speechstyle)
+game.close_mouth_end_speech_time | [Speech.AnimationStopTimeMargin](Speech#speechanimationstoptimemargin)
+game.speech_text_align | [Speech.TextAlignment](Speech#speechtextalignment)
+game.skip_speech_specific_key | [Speech.SkipKey](Speech#speechskipkey)
+game.talkanim_speed | [Speech.GlobalSpeechAnimationDelay](Speech#speechglobalspeechanimationdelay)
 
 **Game-wide speech animation delay**
 

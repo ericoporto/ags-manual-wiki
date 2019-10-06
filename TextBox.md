@@ -1,10 +1,10 @@
-## TextBox functions and properties
+## `TextBox` functions and properties
 
 TextBox is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
 ---
 
-### Font
+### `TextBox.Font`
 
 *(Formerly known as SetTextBoxFont, which is now obsolete)*
 
@@ -20,12 +20,12 @@ Example:
 
 will change the *txtUserInput* text box to use Font "Normal".
 
-*See Also:* [Label.Font](Label#font),
-[TextBox.Text](TextBox#text)
+*See Also:* [Label.Font](Label#labelfont),
+[TextBox.Text](TextBox#textboxtext)
 
 ---
 
-### ShowBorder
+### `TextBox.ShowBorder`
 
     bool TextBox.ShowBorder
 
@@ -37,7 +37,7 @@ Border is drawn using color from TextColor property.
 
 ---
 
-### Text
+### `TextBox.Text`
 
 *(Formerly known as GetTextBoxText, which is now obsolete)*<br>
 *(Formerly known as SetTextBoxText, which is now obsolete)*<br>
@@ -56,13 +56,13 @@ Example:
 
 will clear the txtUserInput text box.
 
-*See Also:* [TextBox.Font](TextBox#font),
-[String.CompareTo](String#compareto),
-[Label.Text](Label#text)
+*See Also:* [TextBox.Font](TextBox#textboxfont),
+[String.CompareTo](String#stringcompareto),
+[Label.Text](Label#labeltext)
 
 ---
 
-### TextColor
+### `TextBox.TextColor`
 
     int TextBox.TextColor;
 
@@ -77,5 +77,5 @@ will change text box 'txtInput' to have yellow text.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [TextBox.ShowBorder](TextBox#showborder), [TextBox.Text](TextBox#text)
+*See Also:* [TextBox.ShowBorder](TextBox#textboxshowborder), [TextBox.Text](TextBox#textboxtext)
 

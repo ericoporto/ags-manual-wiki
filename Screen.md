@@ -1,4 +1,4 @@
-## Screen Functions and Properties
+## `Screen` Functions and Properties
 
 Screen is a new small struct that provides access to viewports and conversion between screen and room coordinates. 
 
@@ -6,7 +6,7 @@ Screen is a new small struct that provides access to viewports and conversion be
 
 ---
 
-### RoomToScreenPoint
+### `Screen.RoomToScreenPoint`
 
     static Point* Screen.RoomToScreenPoint(int rx, int ry);
 
@@ -14,13 +14,13 @@ Returns the point on screen corresponding to the given room coordinates if seen 
 
 Function does the conversion from room to screen's coordinate system, correctly taking into account viewport's position on screen, camera's position in the room and its transformation (scaling etc).
 
-This is a convenience function which is used when you do not manage viewports yourself but just using default one. If you have more than one custom viewport in your room consider [Viewport.RoomToScreenPoint](Viewport#roomtoscreenpoint) instead.
+This is a convenience function which is used when you do not manage viewports yourself but just using default one. If you have more than one custom viewport in your room consider [Viewport.RoomToScreenPoint](Viewport#viewportroomtoscreenpoint) instead.
 
-*See Also:* [Screen.ScreenToRoomPoint](Screen#screentoroompoint), [Viewport.RoomToScreenPoint](Viewport#roomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#screentoroompoint)
+*See Also:* [Screen.ScreenToRoomPoint](Screen#screenscreentoroompoint), [Viewport.RoomToScreenPoint](Viewport#viewportroomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#viewportscreentoroompoint)
 
 ---
 
-### ScreenToRoomPoint
+### `Screen.ScreenToRoomPoint`
 
     static Point* Screen.ScreenToRoomPoint(int sx, int sy);
 
@@ -30,11 +30,11 @@ If there are no viewports found there then this function returns null.
 
 Function does the conversion from screen to room's coordinate system, correctly taking into account viewport's location on screen, camera's position in the room and its transformation (scaling etc).
 
-*See Also:* [Screen.RoomToScreenPoint](Screen#roomtoscreenpoint), [Viewport.RoomToScreenPoint](Viewport#roomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#screentoroompoint), [Viewport.Visible](Viewport#visible), [Viewport.ZOrder](Viewport#zorder)
+*See Also:* [Screen.RoomToScreenPoint](Screen#screenroomtoscreenpoint), [Viewport.RoomToScreenPoint](Viewport#viewportroomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#viewportscreentoroompoint), [Viewport.Visible](Viewport#viewportvisible), [Viewport.ZOrder](Viewport#viewportzorder)
 
 ---
 
-### AutoSizeViewportOnRoomLoad
+### `Screen.AutoSizeViewportOnRoomLoad`
 
     static bool Screen.AutoSizeViewportOnRoomLoad;
 
@@ -46,11 +46,11 @@ For example, if game is 320x200 and room is also 320x200, then both viewport and
 If game is 320x200 and room is 160x160, then both viewport and camera will be resized to 160x160 and viewport positioned in the center of screen (at 80, 20).
 If game is 320x200 and room is 400x200, then both viewport and camera will be resized to 320x200 again, and you'll have a scrolling room (one that is only partially seen at any time).
 
-*See Also:* [Viewport.SetPosition](Viewport#setposition), [Camera.SetSize](Camera#setsize)
+*See Also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Camera.SetSize](Camera#camerasetsize)
 
 ---
 
-### Height
+### `Screen.Height`
 
 *(Replaces System.ScreenHeight, which is now obsolete)*<br>
 *(Replaces System.ViewportHeight, which is now obsolete)*
@@ -63,7 +63,7 @@ Gets the native height of the game screen in pixels, which matches game resoluti
 
 ---
 
-### Width
+### `Screen.Width`
 
 *(Replaces System.ScreenWidth, which is now obsolete)*<br>
 *(Replaces System.ViewportWidth, which is now obsolete)*
@@ -76,31 +76,31 @@ Gets the native width of the game screen in pixels, which matches game resolutio
 
 ---
 
-### Viewport
+### `Screen.Viewport`
 
     static readonly Viewport *Screen.Viewport;
 
 Gets the primary room viewport. This is the default viewport that is created automatically at the start of the game and cannot be deleted.
 
-*See Also:* [Screen.Viewports](Screen#viewports), [Viewport](Viewport), [Viewport.Create](Viewport#create), [Viewport.Delete](Viewport#delete), [Game.Camera](Game#camera)
+*See Also:* [Screen.Viewports](Screen#screenviewports), [Viewport](Viewport), [Viewport.Create](Viewport#viewportcreate), [Viewport.Delete](Viewport#viewportdelete), [Game.Camera](Game#gamecamera)
 
 ---
 
-### ViewportCount
+### `Screen.ViewportCount`
 
     static readonly int Screen.ViewportCount;
 
 Gets the number of viewports.
 
-*See Also:* [Screen.Viewports](Screen#viewports)
+*See Also:* [Screen.Viewports](Screen#screenviewports)
 
 ---
 
-### Viewports
+### `Screen.Viewports`
 
     static readonly Viewport* Screen.Viewports[int index];
 
-Returns the Viewport instance by its index. There's always at least primary viewport at the index 0, more could be created in script using [Viewport.Create](Viewport#create).
+Returns the Viewport instance by its index. There's always at least primary viewport at the index 0, more could be created in script using [Viewport.Create](Viewport#viewportcreate).
 
 **IMPORTANT:** with the current implementation when you delete a custom viewport in the middle all the following viewports will be shifted towards beginning of array, changing their indexes.
 
@@ -112,4 +112,4 @@ Example:
 
 Above disables (hides) all of the existing viewports.
 
-*See Also:* [Screen.Viewport](Screen#viewport), [Screen.ViewportCount](Screen#viewportcount), [Viewport.Create](Viewport#create), [Viewport.Delete](Viewport#delete), [Game.Cameras](Game#cameras)
+*See Also:* [Screen.Viewport](Screen#screenviewport), [Screen.ViewportCount](Screen#screenviewportcount), [Viewport.Create](Viewport#viewportcreate), [Viewport.Delete](Viewport#viewportdelete), [Game.Cameras](Game#gamecameras)

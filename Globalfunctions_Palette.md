@@ -1,6 +1,6 @@
-## Global functions: Palette Operations
+## Global functions (Palette Operations)
 
-### CyclePalette
+### `CyclePalette`
 
     CyclePalette (int start, int end)
 
@@ -27,7 +27,7 @@ give a color effect.
 
 ---
 
-### SetPalRGB
+### `SetPalRGB`
 
     SetPalRGB (int slot, int red, int green, int blue)
 
@@ -57,7 +57,7 @@ will change palette slot number 10 from light green to yellow
 
 ---
 
-### UpdatePalette
+### `UpdatePalette`
 
     UpdatePalette()
 

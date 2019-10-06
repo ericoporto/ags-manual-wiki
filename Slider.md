@@ -1,4 +1,4 @@
-## Slider properties
+## `Slider` properties
 
 Slider is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
@@ -6,7 +6,7 @@ _See also:_ [Editing GUI Sliders](EditingGUIs#sliders)
 
 ---
 
-### BackgroundGraphic
+### `Slider.BackgroundGraphic`
 
     int Slider.BackgroundGraphic;
 
@@ -24,11 +24,11 @@ displays the *sldHealth* slider's background image
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](Slider#handlegraphic)
+*See Also:* [Slider.HandleGraphic](Slider#sliderhandlegraphic)
 
 ---
 
-### HandleGraphic
+### `Slider.HandleGraphic`
 
     int Slider.HandleGraphic;
 
@@ -48,12 +48,12 @@ displays the *sldHealth* slider's handle image
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See Also:*
-[Slider.BackgroundGraphic](Slider#backgroundgraphic),
-[Slider.HandleOffset](Slider#handleoffset)
+[Slider.BackgroundGraphic](Slider#sliderbackgroundgraphic),
+[Slider.HandleOffset](Slider#sliderhandleoffset)
 
 ---
 
-### HandleOffset
+### `Slider.HandleOffset`
 
     int Slider.HandleOffset;
 
@@ -69,11 +69,11 @@ the right.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](Slider#handlegraphic)
+*See Also:* [Slider.HandleGraphic](Slider#sliderhandlegraphic)
 
 ---
 
-### Max
+### `Slider.Max`
 
     int Slider.Max;
 
@@ -90,12 +90,12 @@ Example:
 
 sets the maximum value of the *sldHealth* slider to 200.
 
-*See Also:* [Slider.Min](Slider#min),
-[Slider.Value](Slider#value)
+*See Also:* [Slider.Min](Slider#slidermin),
+[Slider.Value](Slider#slidervalue)
 
 ---
 
-### Min
+### `Slider.Min`
 
     int Slider.Min;
 
@@ -113,12 +113,12 @@ Example:
 
 sets the minimum value of the *sldHealth* slider to 0.
 
-*See Also:* [Slider.Max](Slider#max),
-[Slider.Value](Slider#value)
+*See Also:* [Slider.Max](Slider#slidermax),
+[Slider.Value](Slider#slidervalue)
 
 ---
 
-### Value
+### `Slider.Value`
 
 *(Formerly known as GetSliderValue, which is now obsolete)*<br>
 *(Formerly known as SetSliderValue, which is now obsolete)*
@@ -138,5 +138,5 @@ Example:
 
 will set the audio volume to the value of the slider *sldVolume*.
 
-*See Also:* [Label.Text](Label#text)
+*See Also:* [Label.Text](Label#labeltext)
 

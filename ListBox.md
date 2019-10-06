@@ -1,10 +1,10 @@
-## ListBox functions and properties
+## `ListBox` functions and properties
 
 ListBox is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
 ---
 
-### AddItem
+### `ListBox.AddItem`
 
 *(Formerly known as ListBoxAdd, which is now obsolete)*
 
@@ -24,15 +24,15 @@ Example:
 
 will take the input from the user and add it to the listbox.
 
-*See Also:* [ListBox.Clear](ListBox#clear),
-[ListBox.FillDirList](ListBox#filldirlist),
-[ListBox.InsertItemAt](ListBox#insertitemat),
-[ListBox.Items](ListBox#items),
-[ListBox.RemoveItem](ListBox#removeitem)
+*See Also:* [ListBox.Clear](ListBox#listboxclear),
+[ListBox.FillDirList](ListBox#listboxfilldirlist),
+[ListBox.InsertItemAt](ListBox#listboxinsertitemat),
+[ListBox.Items](ListBox#listboxitems),
+[ListBox.RemoveItem](ListBox#listboxremoveitem)
 
 ---
 
-### Clear
+### `ListBox.Clear`
 
 *(Formerly known as ListBoxClear, which is now obsolete)*
 
@@ -46,11 +46,11 @@ Example:
 
 will remove all the items from listbox *lstNoteBook*.
 
-*See Also:* [ListBox.AddItem](ListBox#additem)
+*See Also:* [ListBox.AddItem](ListBox#listboxadditem)
 
 ---
 
-### FillDirList
+### `ListBox.FillDirList`
 
 *(Formerly known as ListBoxDirList, which is now obsolete)*
 
@@ -78,13 +78,13 @@ Example:
 will fill the listbox with the list of the saved games. Note that
 actually for this task you would use FillSaveGameList instead.
 
-*See Also:* [ListBox.AddItem](ListBox#additem),
-[ListBox.Clear](ListBox#clear),
-[ListBox.FillSaveGameList](ListBox#fillsavegamelist)
+*See Also:* [ListBox.AddItem](ListBox#listboxadditem),
+[ListBox.Clear](ListBox#listboxclear),
+[ListBox.FillSaveGameList](ListBox#listboxfillsavegamelist)
 
 ---
 
-### FillSaveGameList
+### `ListBox.FillSaveGameList`
 
 *(Formerly known as ListBoxSaveGameList, which is now obsolete)*
 
@@ -93,7 +93,7 @@ actually for this task you would use FillSaveGameList instead.
 Fills the specified listbox with the save game list, sorted correctly
 with the most recent game at the top of the list.
 
-The [SaveGameSlots](ListBox#savegameslots) property is updated
+The [SaveGameSlots](ListBox#listboxsavegameslots) property is updated
 to contain the save game slot number for each index in the list, so that
 you can do:
 
@@ -111,14 +111,14 @@ Example:
 
 will fill listbox *lstSaveGames* with the list of the saved games.
 
-*See Also:* [ListBox.FillDirList](ListBox#filldirlist),
-[ListBox.ItemCount](ListBox#itemcount),
-[ListBox.SaveGameSlots](ListBox#savegameslots),
-[ListBox.SelectedIndex](ListBox#selectedindex)
+*See Also:* [ListBox.FillDirList](ListBox#listboxfilldirlist),
+[ListBox.ItemCount](ListBox#listboxitemcount),
+[ListBox.SaveGameSlots](ListBox#listboxsavegameslots),
+[ListBox.SelectedIndex](ListBox#listboxselectedindex)
 
 ---
 
-### GetItemAtLocation
+### `ListBox.GetItemAtLocation`
 
     ListBox.GetItemAtLocation(int x, int y)
 
@@ -143,11 +143,11 @@ Example:
 
 will display the item text that the mouse is currently hovering over.
 
-*See Also:* [ListBox.SelectedIndex](ListBox#selectedindex)
+*See Also:* [ListBox.SelectedIndex](ListBox#listboxselectedindex)
 
 ---
 
-### InsertItemAt
+### `ListBox.InsertItemAt`
 
     ListBox.InsertItemAt(int index, string newitem)
 
@@ -169,12 +169,12 @@ Example:
 
 will insert the Third Item in between the First and Second items.
 
-*See Also:* [ListBox.AddItem](ListBox#additem),
-[ListBox.RemoveItem](ListBox#removeitem)
+*See Also:* [ListBox.AddItem](ListBox#listboxadditem),
+[ListBox.RemoveItem](ListBox#listboxremoveitem)
 
 ---
 
-### RemoveItem
+### `ListBox.RemoveItem`
 
 *(Formerly known as ListBoxRemove, which is now obsolete)*
 
@@ -184,7 +184,7 @@ Removes ITEM from the specified list box. ITEM is the list index of the
 item to remove, starting with 0 for the top item.
 
 If you want to remove all items from the list, then use
-[ListBox.Clear](ListBox#clear) instead.
+[ListBox.Clear](ListBox#listboxclear) instead.
 
 **NOTE:** Calling this function causes other items in the list to get
 re-numbered, so make sure you don't keep around any references from
@@ -198,12 +198,12 @@ Example:
 
 the list box will now just contain "Second item".
 
-*See Also:* [ListBox.Clear](ListBox#clear),
-[ListBox.FillDirList](ListBox#filldirlist)
+*See Also:* [ListBox.Clear](ListBox#listboxclear),
+[ListBox.FillDirList](ListBox#listboxfilldirlist)
 
 ---
 
-### ScrollDown
+### `ListBox.ScrollDown`
 
     ListBox.ScrollDown()
 
@@ -216,11 +216,11 @@ Example:
 
 will scroll the *lstTest* list box down one row.
 
-*See Also:* [ListBox.ScrollUp](ListBox#scrollup)
+*See Also:* [ListBox.ScrollUp](ListBox#listboxscrollup)
 
 ---
 
-### ScrollUp
+### `ListBox.ScrollUp`
 
     ListBox.ScrollUp()
 
@@ -233,11 +233,11 @@ Example:
 
 will scroll the *lstTest* list box up one row.
 
-*See Also:* [ListBox.ScrollDown](ListBox#scrolldown)
+*See Also:* [ListBox.ScrollDown](ListBox#listboxscrolldown)
 
 ---
 
-### Font
+### `ListBox.Font`
 
     FontType ListBox.Font
 
@@ -249,14 +249,14 @@ Example:
 
 will change the *lstSaveGames* list box to use Font "Speech".
 
-*See Also:* [Label.Font](Label#font),
-[TextBox.Text](TextBox#text)
+*See Also:* [Label.Font](Label#labelfont),
+[TextBox.Text](TextBox#textboxtext)
 
 ---
 
-### HideBorder
+### `ListBox.HideBorder`
 
-**This property is obsolete since AGS 3.5.0. Use [ListBox.ShowBorder](ListBox#showborder) instead.**
+**This property is obsolete since AGS 3.5.0. Use [ListBox.ShowBorder](ListBox#listboxshowborder) instead.**
 
     bool ListBox.HideBorder
 
@@ -264,9 +264,9 @@ Gets/sets whether the list box's border is _hidden_.
 
 ---
 
-### HideScrollArrows
+### `ListBox.HideScrollArrows`
 
-**This property is obsolete since AGS 3.5.0. Use [ListBox.ShowScrollArrows](ListBox#showscrollarrows) instead.**
+**This property is obsolete since AGS 3.5.0. Use [ListBox.ShowScrollArrows](ListBox#listboxshowscrollarrows) instead.**
 
     bool ListBox.HideScrollArrows
 
@@ -274,7 +274,7 @@ Gets/sets whether the built-in up/down scroll arrows are _hidden_.
 
 ---
 
-### ItemCount
+### `ListBox.ItemCount`
 
 *(Formerly known as ListBoxGetNumItems, which is now obsolete)*
 
@@ -292,11 +292,11 @@ Example:
 
 will pass the number of saved games to the int saves.
 
-*See Also:* [ListBox.Items](ListBox#items)
+*See Also:* [ListBox.Items](ListBox#listboxitems)
 
 ---
 
-### Items
+### `ListBox.Items`
 
 *(Formerly known as ListBoxGetItemText, which is now obsolete)*<br>
 *(Formerly known as ListBox.GetItemText, which is now obsolete)*<br>
@@ -311,7 +311,7 @@ second is 1, and so on. The highest allowable index is ItemCount minus
 1.
 
 If you want to add a new item to the listbox, use the
-[ListBox.AddItem](ListBox#additem) method.
+[ListBox.AddItem](ListBox#listboxadditem) method.
 
 Example:
 
@@ -319,13 +319,13 @@ Example:
 
 will get the text of the selected item in the list box.
 
-*See Also:* [ListBox.SelectedIndex](ListBox#selectedindex),
-[ListBox.ItemCount](ListBox#itemcount),
-[ListBox.AddItem](ListBox#additem)
+*See Also:* [ListBox.SelectedIndex](ListBox#listboxselectedindex),
+[ListBox.ItemCount](ListBox#listboxitemcount),
+[ListBox.AddItem](ListBox#listboxadditem)
 
 ---
 
-### RowCount
+### `ListBox.RowCount`
 
     readonly int ListBox.RowCount
 
@@ -342,13 +342,13 @@ Example:
 
 will display the number of rows that the listbox can display.
 
-*See Also:* [ListBox.ItemCount](ListBox#itemcount),
-[ListBox.ScrollDown](ListBox#scrolldown),
-[ListBox.ScrollUp](ListBox#scrollup)
+*See Also:* [ListBox.ItemCount](ListBox#listboxitemcount),
+[ListBox.ScrollDown](ListBox#listboxscrolldown),
+[ListBox.ScrollUp](ListBox#listboxscrollup)
 
 ---
 
-### SaveGameSlots
+### `ListBox.SaveGameSlots`
 
 *(Formerly known as global array savegameindex, which is now obsolete)*
 
@@ -373,12 +373,12 @@ will restore the currently selected game in the list, assuming
 FillSaveGameList had been used previously.
 
 *See Also:*
-[ListBox.FillSaveGameList](ListBox#fillsavegamelist),
-[ListBox.SelectedIndex](ListBox#selectedindex)
+[ListBox.FillSaveGameList](ListBox#listboxfillsavegamelist),
+[ListBox.SelectedIndex](ListBox#listboxselectedindex)
 
 ---
 
-### SelectedBackColor
+### `ListBox.SelectedBackColor`
 
     int ListBox.SelectedBackColor
 
@@ -390,11 +390,11 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [ListBox.Font](ListBox#font), [ListBox.SelectedTextColor](ListBox#selectedtextcolor), [ListBox.TextColor](ListBox#textcolor)
+*See Also:* [ListBox.Font](ListBox#listboxfont), [ListBox.SelectedTextColor](ListBox#listboxselectedtextcolor), [ListBox.TextColor](ListBox#listboxtextcolor)
 
 ---
 
-### SelectedIndex
+### `ListBox.SelectedIndex`
 
 *(Formerly known as ListBoxGetSelected, which is now obsolete)*<br>
 *(Formerly known as ListBoxSetSelected, which is now obsolete)*
@@ -416,7 +416,7 @@ will get the text of the selected item in the listbox.
 
 ---
 
-### SelectedTextColor
+### `ListBox.SelectedTextColor`
 
     int ListBox.SelectedTextColor
 
@@ -428,11 +428,11 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [ListBox.Font](ListBox#font), [ListBox.SelectedTextColor](ListBox#selectedtextcolor), [ListBox.TextColor](ListBox#textcolor)
+*See Also:* [ListBox.Font](ListBox#listboxfont), [ListBox.SelectedTextColor](ListBox#listboxselectedtextcolor), [ListBox.TextColor](ListBox#listboxtextcolor)
 
 ---
 
-### ShowBorder
+### `ListBox.ShowBorder`
 
 *(Formerly known as ListBox.HideBorder, which is now obsolete)*
 
@@ -447,11 +447,11 @@ Note that hiding the border will also implicitly hide the up/down scroll arrows 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
 *See Also:*
-[ListBox.ShowScrollArrows](ListBox#showscrollarrows), [ListBox.TextColor](ListBox#textcolor)
+[ListBox.ShowScrollArrows](ListBox#listboxshowscrollarrows), [ListBox.TextColor](ListBox#listboxtextcolor)
 
 ---
 
-### ShowScrollArrows
+### `ListBox.ShowScrollArrows`
 
 *(Formerly known as ListBox.HideScrollArrows, which is now obsolete)*
 
@@ -472,11 +472,11 @@ you want the border to be shown but the arrows hidden.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [ListBox.ShowBorder](ListBox#showborder), [ListBox.TextColor](ListBox#textcolor)
+*See Also:* [ListBox.ShowBorder](ListBox#listboxshowborder), [ListBox.TextColor](ListBox#listboxtextcolor)
 
 ---
 
-### TextAlignment
+### `ListBox.TextAlignment`
 
     HorizontalAlignment ListBox.TextAlignment
 
@@ -484,11 +484,11 @@ Gets/sets the way a text is aligned inside an item's rectangle. Currently only h
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Standard Enumerated Types](StandardEnums), [ListBox.Font](ListBox#font), [ListBox.SelectedBackColor](ListBox#selectedbackcolor), [ListBox.SelectedTextColor](ListBox#selectedtextcolor)
+*See Also:* [Standard Enumerated Types](StandardEnums), [ListBox.Font](ListBox#listboxfont), [ListBox.SelectedBackColor](ListBox#listboxselectedbackcolor), [ListBox.SelectedTextColor](ListBox#listboxselectedtextcolor)
 
 ---
 
-### TextColor
+### `ListBox.TextColor`
 
     int ListBox.TextColor
 
@@ -500,11 +500,11 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [ListBox.Font](ListBox#font), [ListBox.SelectedBackColor](ListBox#selectedbackcolor), [ListBox.SelectedTextColor](ListBox#selectedtextcolor), [ListBox.ShowBorder](ListBox#showborder), [ListBox.ShowScrollArrows](ListBox#showscrollarrows)
+*See Also:* [ListBox.Font](ListBox#listboxfont), [ListBox.SelectedBackColor](ListBox#listboxselectedbackcolor), [ListBox.SelectedTextColor](ListBox#listboxselectedtextcolor), [ListBox.ShowBorder](ListBox#listboxshowborder), [ListBox.ShowScrollArrows](ListBox#listboxshowscrollarrows)
 
 ---
 
-### TopItem
+### `ListBox.TopItem`
 
 *(Formerly known as ListBoxSetTopItem, which is now obsolete)*
 
@@ -525,7 +525,7 @@ list.
 
 ---
 
-### Translated
+### `ListBox.Translated`
 
     bool ListBox.Translated
 

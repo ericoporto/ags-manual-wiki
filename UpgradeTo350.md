@@ -56,14 +56,14 @@ Only rooms and their contents (characters, objects) are affected by the viewport
     int roomx = mouse.x + GetViewportX();
     int roomy = mouse.y + GetViewportY();
 
-Since 3.5.0 this is no longer enough, because not only viewport itself may have offset on screen, but also camera's image may be scaled inside a viewport. For that reason there are now actual functions that help you do this conversion: [Screen.ScreenToRoomPoint](Screen#screentoroompoint), [Screen.RoomToScreenPoint](Screen#roomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#screentoroompoint), [Viewport.RoomToScreenPoint](Viewport#roomtoscreenpoint).<br>
+Since 3.5.0 this is no longer enough, because not only viewport itself may have offset on screen, but also camera's image may be scaled inside a viewport. For that reason there are now actual functions that help you do this conversion: [Screen.ScreenToRoomPoint](Screen#screenscreentoroompoint), [Screen.RoomToScreenPoint](Screen#screenroomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#viewportscreentoroompoint), [Viewport.RoomToScreenPoint](Viewport#viewportroomtoscreenpoint).<br>
 They are used like:
 
     Point *roompt = Screen.ScreenToRoomPoint(mouse.x, mouse.y);
     int roomx = roompt.x;
     int roomy = roompt.y;
 
-For more information see: [Camera](Camera), [Viewport](Viewport), [Game.Cameras](Game#cameras), [Screen.Viewports](Screen#viewports)
+For more information see: [Camera](Camera), [Viewport](Viewport), [Game.Cameras](Game#gamecameras), [Screen.Viewports](Screen#screenviewports)
 
 ### Room sizes and mask resolution
 

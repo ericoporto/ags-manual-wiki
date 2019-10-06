@@ -1,4 +1,4 @@
-## AudioChannel functions and properties
+## `AudioChannel` functions and properties
 
 The AudioChannel instance represents a currently playing audio file. You
 can use this instance to check the status of playing sounds, and adjust
@@ -7,7 +7,7 @@ them.
 
 ---
 
-### Seek
+### `AudioChannel.Seek`
 
 *(Formerly known as SeekMIDIPosition, which is now obsolete)*<br>
 *(Formerly known as SeekMODPattern, which is now obsolete)*<br>
@@ -37,11 +37,11 @@ seek it back to the start.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Position](AudioChannel#position)
+*See Also:* [AudioChannel.Position](AudioChannel#audiochannelposition)
 
 ---
 
-### SetRoomLocation
+### `AudioChannel.SetRoomLocation`
 
 *(Formerly part of PlayAmbientSound, which is now obsolete)*
 
@@ -71,11 +71,11 @@ of the *oMachine* room object.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](AudioChannel#volume)
+*See Also:* [AudioChannel.Volume](AudioChannel#audiochannelvolume)
 
 ---
 
-### Speed
+### `AudioChannel.Speed`
 
     int AudioChannel.Speed
 
@@ -96,7 +96,7 @@ plays *aFunnyTalk* clip at the double speed.
 
 ---
 
-### Stop
+### `AudioChannel.Stop`
 
 *(Formerly known as StopAmbientSound, which is now obsolete)*<br>
 *(Formerly known as StopChannel, which is now obsolete)*
@@ -116,11 +116,11 @@ stop it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](Multimedia#stopaudio)
+*See Also:* [Game.StopAudio](Multimedia#gamestopaudio)
 
 ---
 
-### ID
+### `AudioChannel.ID`
 
     readonly int AudioChannel.ID
 
@@ -140,7 +140,7 @@ channel it is playing on.
 
 ---
 
-### IsPlaying
+### `AudioChannel.IsPlaying`
 
 *(Formerly known as IsChannelPlaying, which is now obsolete)*
 
@@ -160,11 +160,11 @@ finishes.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#play)
+*See Also:* [AudioClip.Play](AudioClip#audioclipplay)
 
 ---
 
-### LengthMs
+### `AudioChannel.LengthMs`
 
     readonly int AudioChannel.LengthMs
 
@@ -184,11 +184,11 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.PositionMs](AudioChannel#positionms)
+*See Also:* [AudioChannel.PositionMs](AudioChannel#audiochannelpositionms)
 
 ---
 
-### Panning
+### `AudioChannel.Panning`
 
     int AudioChannel.Panning
 
@@ -210,11 +210,11 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#play)
+*See Also:* [AudioClip.Play](AudioClip#audioclipplay)
 
 ---
 
-### PlayingClip
+### `AudioChannel.PlayingClip`
 
 *(Formerly known as GetCurrentMusic, which is now obsolete)*
 
@@ -241,12 +241,12 @@ will display what is currently playing on audio channel 2.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#play),
-[System.AudioChannels](System#audiochannels)
+*See Also:* [AudioClip.Play](AudioClip#audioclipplay),
+[System.AudioChannels](System#systemaudiochannels)
 
 ---
 
-### Position
+### `AudioChannel.Position`
 
 *(Formerly known as GetMIDIPosition, which is now obsolete)*<br>
 *(Formerly known as GetMODPattern, which is now obsolete)*<br>
@@ -266,7 +266,7 @@ What *position* represents depends on the FileType of the audio clip:
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](AudioChannel#seek) function.
+[AudioChannel.Seek](AudioChannel#audiochannelseek) function.
 
 Example:
 
@@ -280,12 +280,12 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.PositionMs](AudioChannel#positionms),
-[AudioChannel.Seek](AudioChannel#seek)
+[AudioChannel.PositionMs](AudioChannel#audiochannelpositionms),
+[AudioChannel.Seek](AudioChannel#audiochannelseek)
 
 ---
 
-### PositionMs
+### `AudioChannel.PositionMs`
 
     readonly int AudioChannel.PositionMs
 
@@ -297,7 +297,7 @@ offset into the sound in milliseconds. MIDI files will always return 0.
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](AudioChannel#seek) function.
+[AudioChannel.Seek](AudioChannel#audiochannelseek) function.
 
 Example:
 
@@ -311,12 +311,12 @@ display its position.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:* *See Also:*
-[AudioChannel.LengthMs](AudioChannel#lengthms),
-[AudioChannel.Position](AudioChannel#position)
+[AudioChannel.LengthMs](AudioChannel#audiochannellengthms),
+[AudioChannel.Position](AudioChannel#audiochannelposition)
 
 ---
 
-### Volume
+### `AudioChannel.Volume`
 
 *(Formerly known as SetChannelVolume, which is now obsolete)*<br>
 *(Formerly known as SetMusicVolume, which is now obsolete)*
@@ -351,6 +351,6 @@ reduce its volume.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See Also:*
-[AudioChannel.SetRoomLocation](AudioChannel#setroomlocation),
-[Game.SetAudioTypeVolume](Multimedia#setaudiotypevolume),
-[System.Volume](System#volume)
+[AudioChannel.SetRoomLocation](AudioChannel#audiochannelsetroomlocation),
+[Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume),
+[System.Volume](System#systemvolume)

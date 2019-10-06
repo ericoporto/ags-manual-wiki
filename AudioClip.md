@@ -1,4 +1,4 @@
-## AudioClip functions and properties
+## `AudioClip` functions and properties
 
 AudioClips are created when you import files in the AGS Editor. The
 commands in this section allow to play them.
@@ -6,7 +6,7 @@ commands in this section allow to play them.
 
 ---
 
-### Play
+### `AudioClip.Play`
 
 *(Formerly known as PlayAmbientSound, which is now obsolete)*<br>
 *(Formerly known as PlayMP3File, which is now obsolete)*<br>
@@ -44,23 +44,23 @@ plays the *aExplosion* audio clip.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.PlayFrom](AudioClip#playfrom),
-[AudioClip.PlayQueued](AudioClip#playqueued),
-[AudioClip.Stop](AudioClip#stop)
+*See Also:* [AudioClip.PlayFrom](AudioClip#audioclipplayfrom),
+[AudioClip.PlayQueued](AudioClip#audioclipplayqueued),
+[AudioClip.Stop](AudioClip#audioclipstop)
 
 ---
 
-### PlayFrom
+### `AudioClip.PlayFrom`
 
     AudioChannel* AudioClip.PlayFrom(int position, optional AudioPriority,
                                      optional RepeatStyle)
 
 Plays the audio clip, starting from *position*. For the meaning of the
-position, see the [AudioChannel.Seek](AudioChannel#seek) help
+position, see the [AudioChannel.Seek](AudioChannel#audiochannelseek) help
 page.
 
 Otherwise, this command behaves identically to
-[AudioClip.Play](AudioClip#play). Please see that help page
+[AudioClip.Play](AudioClip#audioclipplay). Please see that help page
 for more information.
 
 Example:
@@ -72,11 +72,11 @@ it is OGG/MP3).
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#play)
+*See Also:* [AudioClip.Play](AudioClip#audioclipplay)
 
 ---
 
-### PlayQueued
+### `AudioClip.PlayQueued`
 
 *(Formerly known as PlayMusicQueued, which is now obsolete)*
 
@@ -86,7 +86,7 @@ Plays the audio clip, or queues it to be played later if it cannot be
 played now.
 
 This command behaves identically to
-[AudioClip.Play](AudioClip#play), except that if there are no
+[AudioClip.Play](AudioClip#audioclipplay), except that if there are no
 available audio channels, it will queue this audio clip to be played
 when a channel becomes available.
 
@@ -108,11 +108,11 @@ be played afterwards.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#play)
+*See Also:* [AudioClip.Play](AudioClip#audioclipplay)
 
 ---
 
-### Stop
+### `AudioClip.Stop`
 
     AudioClip.Stop()
 
@@ -129,11 +129,11 @@ again.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#play)
+*See Also:* [AudioClip.Play](AudioClip#audioclipplay)
 
 ---
 
-### ID
+### `AudioClip.ID`
 
     readonly int AudioClip.ID
 
@@ -153,11 +153,11 @@ will display information about clips playing on each audio channel.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Game.AudioClips](Game#audioclips)
+*See Also:* [Game.AudioClips](Game#gameaudioclips)
 
 ---
 
-### FileType
+### `AudioClip.FileType`
 
     readonly AudioFileType AudioClip.FileType;
 
@@ -176,13 +176,13 @@ displays a message if aExplosion is a MIDI file
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Seek](AudioChannel#seek),
-[AudioChannel.Position](AudioChannel#position),
-[AudioClip.PlayFrom](AudioClip#playfrom)
+*See Also:* [AudioChannel.Seek](AudioChannel#audiochannelseek),
+[AudioChannel.Position](AudioChannel#audiochannelposition),
+[AudioClip.PlayFrom](AudioClip#audioclipplayfrom)
 
 ---
 
-### IsAvailable
+### `AudioClip.IsAvailable`
 
 *(Formerly known as IsMusicVoxAvailable, which is now obsolete)*
 
@@ -208,11 +208,11 @@ checks if the aExplosion audio clip is available, and if so plays it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#play)
+*See Also:* [AudioClip.Play](AudioClip#audioclipplay)
 
 ---
 
-### Type
+### `AudioClip.Type`
 
     readonly AudioType AudioClip.Type;
 
@@ -232,5 +232,5 @@ displays a message if the *aExplosion* clip is music.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#play),
-[Game.IsAudioPlaying](Multimedia#isaudioplaying)
+*See Also:* [AudioClip.Play](AudioClip#audioclipplay),
+[Game.IsAudioPlaying](Multimedia#gameisaudioplaying)

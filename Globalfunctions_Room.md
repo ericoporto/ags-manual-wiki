@@ -1,6 +1,6 @@
-## Global functions: room actions
+## Global functions (room actions)
 
-### AreThingsOverlapping
+### `AreThingsOverlapping`
 
     AreThingsOverlapping(int thing1, int thing2)
 
@@ -30,12 +30,12 @@ will run the code if object 2 is overlapping EGO. This could be useful
 if object 2 was a bullet, for instance.
 
 *See Also:*
-[Character.IsCollidingWithChar](Character#iscollidingwithchar),
-[Object.IsCollidingWithObject](Object#iscollidingwithobject)
+[Character.IsCollidingWithChar](Character#characteriscollidingwithchar),
+[Object.IsCollidingWithObject](Object#objectiscollidingwithobject)
 
 ---
 
-### DisableGroundLevelAreas
+### `DisableGroundLevelAreas`
 
     DisableGroundLevelAreas(int disableTints)
 
@@ -61,13 +61,13 @@ Example:
 
 will disable all ground-level events, but leave light levels working
 
-*See Also:* [Hotspot.Enabled](Hotspot#enabled),
-[Region.Enabled](Region#enabled),
+*See Also:* [Hotspot.Enabled](Hotspot#hotspotenabled),
+[Region.Enabled](Region#regionenabled),
 [EnableGroundLevelAreas](Globalfunctions_Room#enablegroundlevelareas)
 
 ---
 
-### EnableGroundLevelAreas
+### `EnableGroundLevelAreas`
 
     EnableGroundLevelAreas()
 
@@ -81,13 +81,13 @@ Example:
 
 will re-enable all ground-level events.
 
-*See Also:* [Hotspot.Enabled](Hotspot#enabled),
-[Region.Enabled](Region#enabled),
+*See Also:* [Hotspot.Enabled](Hotspot#hotspotenabled),
+[Region.Enabled](Region#regionenabled),
 [DisableGroundLevelAreas](Globalfunctions_Room#disablegroundlevelareas)
 
 ---
 
-### GetBackgroundFrame
+### `GetBackgroundFrame`
 
     GetBackgroundFrame()
 
@@ -106,7 +106,7 @@ will turn on object 2 if the background frame of the room is frame 4.
 
 ---
 
-### GetScalingAt
+### `GetScalingAt`
 
     GetScalingAt (int x, int y)
 
@@ -125,9 +125,9 @@ Example:
 
 ---
 
-### GetViewportX
+### `GetViewportX`
 
-**This function is obsolete since AGS 3.5.0. Use [Game](Game#camera)[.Camera.X](Camera#x) instead.**
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[.Camera.X](Camera#camerax) instead.**
 
     GetViewportX()
 
@@ -136,9 +136,9 @@ allows you to find out what part of the room the player is looking at.
 
 ---
 
-### GetViewportY
+### `GetViewportY`
 
-**This function is obsolete since AGS 3.5.0. Use [Game](Game#camera)[.Camera.Y](Camera#y) instead.**
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[.Camera.Y](Camera#cameray) instead.**
 
     GetViewportY()
 
@@ -147,7 +147,7 @@ allows you to find out what part of the room the player is looking at.
 
 ---
 
-### GetWalkableAreaAt
+### `GetWalkableAreaAt`
 
 **This function is obsolete since AGS 3.5.0. Use equivalent [GetWalkableAreaAtScreen](Globalfunctions_Room#getwalkableareaatscreen) instead.**
 
@@ -157,7 +157,7 @@ Returns the ID of the walkable area at *screen* co-ordinates (X, Y). If there is
 
 ---
 
-### GetWalkableAreaAtRoom
+### `GetWalkableAreaAtRoom`
 
     int GetWalkableAreaAtRoom(int x, int y)
 
@@ -172,13 +172,13 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [GetWalkableAreaAtScreen](Globalfunctions_Room#getwalkableareaatscreen), [Hotspot.GetAtRoomXY](Hotspot#getatroomxy),
-[Region.GetAtRoomXY](Region#getatroomxy),
+*See Also:* [GetWalkableAreaAtScreen](Globalfunctions_Room#getwalkableareaatscreen), [Hotspot.GetAtRoomXY](Hotspot#hotspotgetatroomxy),
+[Region.GetAtRoomXY](Region#regiongetatroomxy),
 [GetScalingAt](Globalfunctions_Room#getscalingat)
 
 ---
 
-### GetWalkableAreaAtScreen
+### `GetWalkableAreaAtScreen`
 
     int GetWalkableAreaAtScreen(int x, int y)
 
@@ -195,13 +195,13 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [GetWalkableAreaAtRoom](Globalfunctions_Room#getwalkableareaatroom), [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
-[Region.GetAtScreenXY](Region#getatscreenxy),
+*See Also:* [GetWalkableAreaAtRoom](Globalfunctions_Room#getwalkableareaatroom), [Hotspot.GetAtScreenXY](Hotspot#hotspotgetatscreenxy),
+[Region.GetAtScreenXY](Region#regiongetatscreenxy),
 [GetScalingAt](Globalfunctions_Room#getscalingat)
 
 ---
 
-### HasPlayerBeenInRoom
+### `HasPlayerBeenInRoom`
 
     HasPlayerBeenInRoom(int room_number)
 
@@ -229,9 +229,9 @@ will display a message if the player has been to room 14.
 
 ---
 
-### ReleaseViewport
+### `ReleaseViewport`
 
-**This function is obsolete since AGS 3.5.0. Use [Game](Game#camera)[.Camera.AutoTracking](Camera#autotracking) instead.**
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[.Camera.AutoTracking](Camera#cameraautotracking) instead.**
 
     ReleaseViewport()
 
@@ -240,7 +240,7 @@ scroll around following the player character as normal.
 
 ---
 
-### RemoveWalkableArea
+### `RemoveWalkableArea`
 
     RemoveWalkableArea (int areanum)
 
@@ -262,7 +262,7 @@ will make the walking area 5 unwalkable.
 
 ---
 
-### ResetRoom
+### `ResetRoom`
 
     ResetRoom (int room_number)
 
@@ -291,7 +291,7 @@ to.
 
 ---
 
-### RestoreWalkableArea
+### `RestoreWalkableArea`
 
     RestoreWalkableArea (int areanum)
 
@@ -307,7 +307,7 @@ will make the walking area 4 walkable again.
 
 ---
 
-### SetAreaScaling
+### `SetAreaScaling`
 
     SetAreaScaling(int area, int min, int max)
 
@@ -337,7 +337,7 @@ percent.
 
 ---
 
-### SetBackgroundFrame
+### `SetBackgroundFrame`
 
     SetBackgroundFrame (int frame)
 
@@ -366,9 +366,9 @@ integer 20 is 1.
 
 ---
 
-### SetViewport
+### `SetViewport`
 
-**This function is obsolete since AGS 3.5.0. Use [Game](Game#camera)[.Camera.SetAt](Camera#setat) instead.**
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[.Camera.SetAt](Camera#camerasetat) instead.**
 
     SetViewport(int x, int y)
 
@@ -381,7 +381,7 @@ changes rooms.
 
 ---
 
-### SetWalkBehindBase
+### `SetWalkBehindBase`
 
     SetWalkBehindBase (int area, int baseline)
 
@@ -403,4 +403,4 @@ Example:
 
 will disable the walkbehind area number 3.
 
-*See Also:* [Object.Baseline](Object#baseline)
+*See Also:* [Object.Baseline](Object#objectbaseline)

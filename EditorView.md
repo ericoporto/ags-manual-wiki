@@ -65,7 +65,7 @@ When you right-click on a single frame in a loop you get the following options:
 When you tick the checkbox above the Loops called **Show Preview** you get to see a preview of the animation of course. It is located to the left of the list of Loops and you can either manually browse through all the frames of the Loop or you check the **animate** checkbox to see it in motion.
 
 The **Skip Frame 0 (standing Frame)** Checkbox does exactly that, it skips Frame 0 for the preview animation. This is only important for previews for views that are used as walking views for a character.  
-When you animate a [game object](Object#animate) or you want the [character to animate](Character#animate) different from walking (like picking up an [Inventory Item](EditorInventoryItems)) Frame 0 is always included in the animation. When the view is used as a walking view Frame 0 is skipped for the animation until the character reaches the endpoint of the walk and stops there. Then Frame 0 is displayed all the time in the direction the character is facing when he stopped walking.  
+When you animate a [game object](Object#objectanimate) or you want the [character to animate](Character#characteranimate) different from walking (like picking up an [Inventory Item](EditorInventoryItems)) Frame 0 is always included in the animation. When the view is used as a walking view Frame 0 is skipped for the animation until the character reaches the endpoint of the walk and stops there. Then Frame 0 is displayed all the time in the direction the character is facing when he stopped walking.  
 
 ![](images/EditorView_3.png)
 
@@ -75,7 +75,7 @@ When you animate a [game object](Object#animate) or you want the [character to a
 ![](images/EditorView_4.png)
 
 _Delay_  
-With the delay setting you delay the displaytime of the one selected _frame_ only by that amount. This delay is in game frames, so, how long the delay is in time depends on the frames per second your game is running on. You can check the game-speed for easy debugging with [GetGameSpeed](Globalfunctions_General#getgamespeed). In your start function you can even set the FPS with [SetGameSpeed](Globalfunctions_General#setgamespeed). By default AGS games run at 40 FPS. This delay value is specific to one frame only. And you can slow down the whole animation with the Delay value of the [Animate](Object#animate) function. This frame delay is added to the overall loop delay.
+With the delay setting you delay the displaytime of the one selected _frame_ only by that amount. This delay is in game frames, so, how long the delay is in time depends on the frames per second your game is running on. You can check the game-speed for easy debugging with [GetGameSpeed](Globalfunctions_General#getgamespeed). In your start function you can even set the FPS with [SetGameSpeed](Globalfunctions_General#setgamespeed). By default AGS games run at 40 FPS. This delay value is specific to one frame only. And you can slow down the whole animation with the Delay value of the [Animate](Object#objectanimate) function. This frame delay is added to the overall loop delay.
 
 _Flipped_  
 You flip that one frame with that property. Very useful for mirrored animations like in walkcycles for left and right walk. Don't have a character with a cane then. Please note you can also flip the whole loop and not only a single frame within the [Right Click Context Menu](EditorView#right-click-context-menu).

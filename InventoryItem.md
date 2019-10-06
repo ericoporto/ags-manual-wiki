@@ -1,6 +1,6 @@
-## InventoryItem functions and properties
+## `InventoryItem` functions and properties
 
-### GetAtScreenXY
+### `InventoryItem.GetAtScreenXY`
 
 *(Formerly known as global function GetInvAt, which is now obsolete)*
 
@@ -32,12 +32,12 @@ Example:
 
 will display the number of the inv item that the mouse is over
 
-*See Also:* [InventoryItem.Name](InventoryItem#name),
-[Game.GetLocationName](Game#getlocationname)
+*See Also:* [InventoryItem.Name](InventoryItem#inventoryitemname),
+[Game.GetLocationName](Game#gamegetlocationname)
 
 ---
 
-### GetProperty
+### `InventoryItem.GetProperty`
 
 *(Formerly known as GetInvProperty, which is now obsolete)*
 
@@ -59,11 +59,11 @@ will print the message if inventory item 1 has its "Value" property set
 to more than 200.
 
 *See Also:*
-[InventoryItem.GetTextProperty](InventoryItem#gettextproperty)
+[InventoryItem.GetTextProperty](InventoryItem#inventoryitemgettextproperty)
 
 ---
 
-### GetTextProperty
+### `InventoryItem.GetTextProperty`
 
 *(Formerly known as GetInvPropertyText, which is now obsolete)*<br>
 *(Formerly known as InventoryItem.GetPropertyText, which is now
@@ -86,11 +86,11 @@ Example:
 will retrieve inv item 2's "description" property and display it.
 
 *See Also:*
-[InventoryItem.GetProperty](InventoryItem#getproperty)
+[InventoryItem.GetProperty](InventoryItem#inventoryitemgetproperty)
 
 ---
 
-### SetProperty
+### `InventoryItem.SetProperty`
 
     bool InventoryItem.SetProperty(const string property, int value)
 
@@ -114,11 +114,11 @@ will change Stone's "weight" custom property to 120.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[InventoryItem.SetTextProperty](InventoryItem#settextproperty)
+[InventoryItem.SetTextProperty](InventoryItem#inventoryitemsettextproperty)
 
 ---
 
-### SetTextProperty
+### `InventoryItem.SetTextProperty`
 
     bool InventoryItem.SetTextProperty(const string property, const string value)
 
@@ -140,11 +140,11 @@ will change key's "description" property.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:*
-[InventoryItem.SetProperty](InventoryItem#setproperty)
+[InventoryItem.SetProperty](InventoryItem#inventoryitemsetproperty)
 
 ---
 
-### IsInteractionAvailable
+### `InventoryItem.IsInteractionAvailable`
 
 *(Formerly known as IsInventoryInteractionAvailable, which is now
 obsolete)*
@@ -168,11 +168,11 @@ Example:
       Display("looking at this item would not do anything.");
 
 *See Also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
-[InventoryItem.RunInteraction](InventoryItem#runinteraction)
+[InventoryItem.RunInteraction](InventoryItem#inventoryitemruninteraction)
 
 ---
 
-### RunInteraction
+### `InventoryItem.RunInteraction`
 
 *(Formerly known as RunInventoryInteraction, which is now obsolete)*
 
@@ -191,13 +191,13 @@ the player clicks on the item (Handle Inv Clicks needs to be enabled for
 this to work)
 
 *See Also:*
-[InventoryItem.IsInteractionAvailable](InventoryItem#isinteractionavailable),
-[Room.ProcessClick](Room#processclick),
-[Character.RunInteraction](Character#runinteraction)
+[InventoryItem.IsInteractionAvailable](InventoryItem#inventoryitemisinteractionavailable),
+[Room.ProcessClick](Room#roomprocessclick),
+[Character.RunInteraction](Character#characterruninteraction)
 
 ---
 
-### CursorGraphic
+### `InventoryItem.CursorGraphic`
 
     int InventoryItem.CursorGraphic
 
@@ -216,11 +216,11 @@ will display inventory item *iKey*'s cursor graphic.
 
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
-*See Also:* [InventoryItem.Graphic](InventoryItem#graphic)
+*See Also:* [InventoryItem.Graphic](InventoryItem#inventoryitemgraphic)
 
 ---
 
-### Graphic
+### `InventoryItem.Graphic`
 
 *(Formerly known as GetInvGraphic, which is now obsolete)*<br>
 *(Formerly known as SetInvItemPic, which is now obsolete)*
@@ -244,13 +244,13 @@ will place the sprite number of the player's current inventory item into
 slot.
 
 *See Also:*
-[InventoryItem.CursorGraphic](InventoryItem#cursorgraphic),
-[InventoryItem.GetAtScreenXY](InventoryItem#getatscreenxy),
-[InventoryItem.Name](InventoryItem#name)
+[InventoryItem.CursorGraphic](InventoryItem#inventoryitemcursorgraphic),
+[InventoryItem.GetAtScreenXY](InventoryItem#inventoryitemgetatscreenxy),
+[InventoryItem.Name](InventoryItem#inventoryitemname)
 
 ---
 
-### ID
+### `InventoryItem.ID`
 
     readonly int InventoryItem.ID
 
@@ -265,12 +265,12 @@ Example:
 uses the obsolete AddInventory command to add the shovel to EGO's
 inventory
 
-*See Also:* [Character.AddInventory](Character#addinventory),
-[Character.LoseInventory](Character#loseinventory)
+*See Also:* [Character.AddInventory](Character#characteraddinventory),
+[Character.LoseInventory](Character#characterloseinventory)
 
 ---
 
-### Name
+### `InventoryItem.Name`
 
 *(Formerly known as GetInvName, which is now obsolete)*<br>
 *(Formerly known as SetInvItemName, which is now obsolete)*<br>
@@ -297,7 +297,7 @@ Example:
 will display the name of the player's current inventory item.
 
 *See Also:*
-[InventoryItem.GetAtScreenXY](InventoryItem#getatscreenxy),
-[InventoryItem.Graphic](InventoryItem#graphic),
-[Game.GetLocationName](Game#getlocationname)
+[InventoryItem.GetAtScreenXY](InventoryItem#inventoryitemgetatscreenxy),
+[InventoryItem.Graphic](InventoryItem#inventoryitemgraphic),
+[Game.GetLocationName](Game#gamegetlocationname)
 

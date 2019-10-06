@@ -1,4 +1,4 @@
-## Unhandled Events
+## Tumbleweed Unhandled Events
 
 In order to give a the player a feedback for actions the author hasn't thought
 of, unhandled events come into play.

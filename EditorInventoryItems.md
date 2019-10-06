@@ -23,7 +23,7 @@ _HotspotY:_
 Select the Y value of the active cursor image by hand. It's the distance from the top border in pixels. You can also set this value by clicking on the right image in the inventory item settings.
 
 _ID:_  
-The internal ID of this inventory Item. This value cannot be changed, it can be read only by script with the call [InventoryItem.ID](InventoryItem#id).
+The internal ID of this inventory Item. This value cannot be changed, it can be read only by script with the call [InventoryItem.ID](InventoryItem#inventoryitemid).
 
 _Name:_  
 The script name of the inventory item. Usually the convention is to start inventory item names with an i, like _iKey_. This convention sure gets tricky when you give your game characters apple products...
@@ -33,7 +33,7 @@ Is a boolean value that means what it says, it sets whether the player character
 <br/>
 <br/>
 <br/>
-Within the game the player can pick up and store inventory items into his inventory by interacting with the scene or other characters. You add a new inventory item to his inventory with the [cChar.AddInventory(iInvItem)](Character#addinventory) function. When the player uses or gives away the item you remove it from the character's inventory with the [cChar.LoseInventory(iInvItem)](Character#loseinventory) function. Make sure you check the [Mouse.Mode](Mouse#mode) afterwards, especially when the active cursor is the inventory item the player just lost.
+Within the game the player can pick up and store inventory items into his inventory by interacting with the scene or other characters. You add a new inventory item to his inventory with the [cChar.AddInventory(iInvItem)](Character#characteraddinventory) function. When the player uses or gives away the item you remove it from the character's inventory with the [cChar.LoseInventory(iInvItem)](Character#characterloseinventory) function. Make sure you check the [Mouse.Mode](Mouse#mousemode) afterwards, especially when the active cursor is the inventory item the player just lost.
 <br/>
 <br/>
 <br/>

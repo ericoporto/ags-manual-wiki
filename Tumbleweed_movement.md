@@ -1,4 +1,4 @@
-## Semi-blocking movement functions
+## Tumbleweed Semi-blocking movement functions
 
 Semi-blocking means, that you can cancel the movement, but certain code is only executed, after the character has actually reached it's goal.
 To archive this, these functions are called inside an if-clause.
@@ -193,7 +193,7 @@ void Verbs.WalkOffScreen();
 Handles the action of hotspots or objects with the exit extension ('>e'). Take a look at chapter about extensions to see what this function does.
 
 *See also:*
-[Extensions](Tumbleweed_extensions#extensions)
+[Extensions](Tumbleweed_extensions#tumbleweed-extensions)
 
 ---
 

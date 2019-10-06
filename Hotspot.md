@@ -1,6 +1,6 @@
-## Hotspot functions and properties
+## `Hotspot` functions and properties
 
-### GetAtRoomXY
+### `Hotspot.GetAtRoomXY`
 
     static Hotspot* Hotspot.GetAtRoomXY(int x, int y)
 
@@ -18,15 +18,15 @@ will display the message if the player character is over the hPressurePlate hots
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy),
-[Character.GetAtRoomXY](Character#getatroomxy),
-[Object.GetAtRoomXY](Object#getatroomxy),
-[Region.GetAtRoomXY](Region#getatroomxy),
-[Game.GetLocationName](Game#getlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
+*See Also:* [Hotspot.GetAtScreenXY](Hotspot#hotspotgetatscreenxy),
+[Character.GetAtRoomXY](Character#charactergetatroomxy),
+[Object.GetAtRoomXY](Object#objectgetatroomxy),
+[Region.GetAtRoomXY](Region#regiongetatroomxy),
+[Game.GetLocationName](Game#gamegetlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
 
 ---
 
-### GetAtScreenXY
+### `Hotspot.GetAtScreenXY`
 
 *(Formerly known as global function GetHotspotAt, which is now
 obsolete)*
@@ -48,11 +48,11 @@ Example:
 
 will display a message depending on what the mouse is on.
 
-*See Also:* [Hotspot.GetAtRoomXY](Hotspot#getatroomxy), [Character.GetAtScreenXY](Character#getatscreenxy), [Object.GetAtScreenXY](Object#getatscreenxy), [Region.GetAtScreenXY](Region#getatscreenxy), [Game.GetLocationName](Game#getlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
+*See Also:* [Hotspot.GetAtRoomXY](Hotspot#hotspotgetatroomxy), [Character.GetAtScreenXY](Character#charactergetatscreenxy), [Object.GetAtScreenXY](Object#objectgetatscreenxy), [Region.GetAtScreenXY](Region#regiongetatscreenxy), [Game.GetLocationName](Game#gamegetlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
 
 ---
 
-### GetProperty
+### `Hotspot.GetProperty`
 
 *(Formerly known as GetHotspotProperty, which is now obsolete)*
 
@@ -73,11 +73,11 @@ Example:
 will print the message if hotspot 1 has its "Value" property set to more
 than 200.
 
-*See Also:* [Hotspot.GetTextProperty](Hotspot#gettextproperty)
+*See Also:* [Hotspot.GetTextProperty](Hotspot#hotspotgettextproperty)
 
 ---
 
-### GetTextProperty
+### `Hotspot.GetTextProperty`
 
 *(Formerly known as GetHotspotPropertyText, which is now obsolete)*<br>
 *(Formerly known as Hotspot.GetPropertyText, which is now obsolete)*
@@ -98,11 +98,11 @@ Example:
 
 will retrieve hotspot 2's "description" property and display it.
 
-*See Also:* [Hotspot.GetProperty](Hotspot#getproperty)
+*See Also:* [Hotspot.GetProperty](Hotspot#hotspotgetproperty)
 
 ---
 
-### SetProperty
+### `Hotspot.SetProperty`
 
     bool Hotspot.SetProperty(const string property, int value)
 
@@ -124,11 +124,11 @@ will change Door hotspot's "LockDifficulty" custom property to 5.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Hotspot.SetTextProperty](Hotspot#settextproperty)
+*See Also:* [Hotspot.SetTextProperty](Hotspot#hotspotsettextproperty)
 
 ---
 
-### SetTextProperty
+### `Hotspot.SetTextProperty`
 
     bool Hotspot.SetTextProperty(const string property, const string value)
 
@@ -148,11 +148,11 @@ will change Door's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Hotspot.SetProperty](Hotspot#setproperty)
+*See Also:* [Hotspot.SetProperty](Hotspot#hotspotsetproperty)
 
 ---
 
-### IsInteractionAvailable
+### `Hotspot.IsInteractionAvailable`
 
     Hotspot.IsInteractionAvailable(CursorMode)
 
@@ -172,11 +172,11 @@ Example:
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See Also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
-[Hotspot.RunInteraction](Hotspot#runinteraction)
+[Hotspot.RunInteraction](Hotspot#hotspotruninteraction)
 
 ---
 
-### RunInteraction
+### `Hotspot.RunInteraction`
 
 *(Formerly known as RunHotspotInteraction, which is now obsolete)*
 
@@ -192,14 +192,14 @@ Example:
 will run the code defined in the "LOOK AT HOTSPOT" event for hotspot
 hDoor.
 
-*See Also:* [Room.ProcessClick](Room#processclick),
-[Hotspot.IsInteractionAvailable](Hotspot#isinteractionavailable),
-[Character.RunInteraction](Character#runinteraction),
-[Object.RunInteraction](Object#runinteraction)
+*See Also:* [Room.ProcessClick](Room#roomprocessclick),
+[Hotspot.IsInteractionAvailable](Hotspot#hotspotisinteractionavailable),
+[Character.RunInteraction](Character#characterruninteraction),
+[Object.RunInteraction](Object#objectruninteraction)
 
 ---
 
-### Enabled
+### `Hotspot.Enabled`
 
 *(Formerly known as DisableHotspot, which is now obsolete)*<br>
 *(Formerly known as EnableHotspot, which is now obsolete)*
@@ -222,13 +222,13 @@ Example:
 
 will disable the hBrownTree hotspot.
 
-*See Also:* [Region.Enabled](Region#enabled),
+*See Also:* [Region.Enabled](Region#regionenabled),
 [RemoveWalkableArea](Globalfunctions_Room#removewalkablearea),
 [RestoreWalkableArea](Globalfunctions_Room#restorewalkablearea)
 
 ---
 
-### ID
+### `Hotspot.ID`
 
     readonly int Hotspot.ID
 
@@ -243,11 +243,11 @@ Example:
 displays hDoor's hotspot number, and then displays hotspot 3's number
 (which will be 3).
 
-*See Also:* [Hotspot.GetAtScreenXY](Hotspot#getatscreenxy)
+*See Also:* [Hotspot.GetAtScreenXY](Hotspot#hotspotgetatscreenxy)
 
 ---
 
-### Name
+### `Hotspot.Name`
 
 *(Formerly known as GetHotspotName, which is now obsolete)*<br>
 *(Formerly known as Hotspot.GetName, which is now obsolete)*
@@ -265,11 +265,11 @@ Example:
 
 will retrieve and then display hotspot 3's name.
 
-*See Also:* [Game.GetLocationName](Game#getlocationname)
+*See Also:* [Game.GetLocationName](Game#gamegetlocationname)
 
 ---
 
-### WalkToX
+### `Hotspot.WalkToX`
 
 *(Formerly known as GetHotspotPointX, which is now obsolete)*
 
@@ -284,12 +284,12 @@ Example:
 
 will move the character to hotspot hTable's walk-to point.
 
-*See Also:* [Hotspot.WalkToY](Hotspot#walktoy),
+*See Also:* [Hotspot.WalkToY](Hotspot#hotspotwalktoy),
 [MoveCharacterToHotspot](Globalfunctions_General#movecharactertohotspot)
 
 ---
 
-### WalkToY
+### `Hotspot.WalkToY`
 
 *(Formerly known as GetHotspotPointY, which is now obsolete)*
 
@@ -304,5 +304,5 @@ Example:
 
 will move the character to hotspot hTable's walk-to point.
 
-*See Also:* [Hotspot.WalkToX](Hotspot#walktox),
+*See Also:* [Hotspot.WalkToX](Hotspot#hotspotwalktox),
 [MoveCharacterToHotspot](Globalfunctions_General#movecharactertohotspot)

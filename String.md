@@ -1,6 +1,6 @@
-## String functions
+## `String` functions
 
-### Append
+### `String.Append`
 
 *(Formerly known as global function StrCat, which is now obsolete)*
 
@@ -24,13 +24,13 @@ Example:
 
 will display "HelloWorld".
 
-*See Also:* [String.AppendChar](String#appendchar),
-[String.Substring](String#substring),
-[String.Truncate](String#truncate)
+*See Also:* [String.AppendChar](String#stringappendchar),
+[String.Substring](String#stringsubstring),
+[String.Truncate](String#stringtruncate)
 
 ---
 
-### AppendChar
+### `String.AppendChar`
 
     String.AppendChar(char extraChar)
 
@@ -52,11 +52,11 @@ Example:
 
 will display "Hello".
 
-*See Also:* [String.Append](String#append)
+*See Also:* [String.Append](String#stringappend)
 
 ---
 
-### CompareTo
+### `String.CompareTo`
 
 *(Formerly known as global function StrCaseComp, which is now
 obsolete)*<br>
@@ -97,7 +97,7 @@ will display "Strings match with case sensitivity off!", and then
 
 ---
 
-### Copy
+### `String.Copy`
 
 *(Formerly known as global function StrCopy, which is now obsolete)*
 
@@ -116,7 +116,7 @@ will display "This is a test string".
 
 ---
 
-### EndsWith
+### `String.EndsWith`
 
     bool String.EndsWith(string lookForText, optional bool caseSensitive)
 
@@ -138,12 +138,12 @@ will display the "Ends with script!" message.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [String.IndexOf](String#indexof),
-[String.StartsWith](String#startswith)
+*See Also:* [String.IndexOf](String#stringindexof),
+[String.StartsWith](String#stringstartswith)
 
 ---
 
-### Format
+### `String.Format`
 
 *(Formerly known as global function StrFormat, which is now obsolete)*
 
@@ -171,7 +171,7 @@ will create a text string containing "10".
 
 ---
 
-### IndexOf
+### `String.IndexOf`
 
 *(Formerly known as global function StrContains, which is now
 obsolete)*<br>
@@ -198,12 +198,12 @@ Example:
       Display("a needle was found starting at character %d in the string.", result);
     }
 
-*See Also:* [String.EndsWith](String#endswith),
-[String.StartsWith](String#startswith)
+*See Also:* [String.EndsWith](String#stringendswith),
+[String.StartsWith](String#stringstartswith)
 
 ---
 
-### IsNullOrEmpty
+### `String.IsNullOrEmpty`
 
     static bool String.IsNullOrEmpty(String stringToCheck)
 
@@ -234,7 +234,7 @@ will set the myString variable to "Some text" if it is null or empty
 
 ---
 
-### LowerCase
+### `String.LowerCase`
 
 *(Formerly known as global function StrToLowerCase, which is now
 obsolete)*
@@ -254,11 +254,11 @@ Example:
 
 will display "Old: THIS is a test string, new: this is a test string".
 
-*See Also:* [String.UpperCase](String#uppercase)
+*See Also:* [String.UpperCase](String#stringuppercase)
 
 ---
 
-### Replace
+### `String.Replace`
 
     String.Replace(string lookForText, string replaceWithText,
                    optional bool caseSensitive)
@@ -283,11 +283,11 @@ script!".
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [String.ReplaceCharAt](String#replacecharat)
+*See Also:* [String.ReplaceCharAt](String#stringreplacecharat)
 
 ---
 
-### ReplaceCharAt
+### `String.ReplaceCharAt`
 
 *(Formerly known as global function StrSetCharAt, which is now
 obsolete)*
@@ -310,12 +310,12 @@ Example:
 
 will display "Old: Hello, new: Hemlo".
 
-*See Also:* [String.Chars](String#chars),
-[String.Replace](String#replace)
+*See Also:* [String.Chars](String#stringchars),
+[String.Replace](String#stringreplace)
 
 ---
 
-### StartsWith
+### `String.StartsWith`
 
     bool String.StartsWith(string lookForText, optional bool caseSensitive)
 
@@ -337,12 +337,12 @@ will display the "Starts with hello!" message.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [String.EndsWith](String#endswith),
-[String.IndexOf](String#indexof)
+*See Also:* [String.EndsWith](String#stringendswith),
+[String.IndexOf](String#stringindexof)
 
 ---
 
-### Substring
+### `String.Substring`
 
     String.Substring(int index, int length)
 
@@ -361,12 +361,12 @@ Example:
 
 will display "Original: Hello World!, Substring: lo Wo".
 
-*See Also:* [String.Append](String#append),
-[String.Chars](String#chars)
+*See Also:* [String.Append](String#stringappend),
+[String.Chars](String#stringchars)
 
 ---
 
-### Truncate
+### `String.Truncate`
 
     String.Truncate(int length)
 
@@ -384,12 +384,12 @@ Example:
 
 will display "Original: Hello World!, Truncated: Hell".
 
-*See Also:* [String.Append](String#append),
-[String.Substring](String#substring)
+*See Also:* [String.Append](String#stringappend),
+[String.Substring](String#stringsubstring)
 
 ---
 
-### UpperCase
+### `String.UpperCase`
 
 *(Formerly known as global function StrToUpperCase, which is now
 obsolete)*
@@ -409,11 +409,11 @@ Example:
 
 will display "Old: THIS is a test string, new: THIS IS A TEST STRING".
 
-*See Also:* [String.LowerCase](String#lowercase)
+*See Also:* [String.LowerCase](String#stringlowercase)
 
 ---
 
-### AsFloat
+### `String.AsFloat`
 
     readonly float String.AsFloat;
 
@@ -433,15 +433,15 @@ will set number1 value to 57.362 and number2 value to 0.0 This function
 is useful for processing strings input from the user.
 
 **NOTE:** To convert a float to a string, you can use the
-[String.Format](String#format) command.
+[String.Format](String#stringformat) command.
 
-*See Also:* [Game.InputBox](Game#inputbox),
-[String.AsInt](String#asint),
-[String.Format](String#format)
+*See Also:* [Game.InputBox](Game#gameinputbox),
+[String.AsInt](String#stringasint),
+[String.Format](String#stringformat)
 
 ---
 
-### AsInt
+### `String.AsInt`
 
 *(Formerly known as global function StringToInt, which is now obsolete)*
 
@@ -468,15 +468,15 @@ will set number1 value to 53 and number2 value to 0. This function is
 useful for processing strings input from the user.
 
 **NOTE:** To convert an integer to a string, you can use the
-[String.Format](String#format) command.
+[String.Format](String#stringformat) command.
 
-*See Also:* [Game.InputBox](Game#inputbox),
-[String.AsFloat](String#asfloat),
-[String.Format](String#format)
+*See Also:* [Game.InputBox](Game#gameinputbox),
+[String.AsFloat](String#stringasfloat),
+[String.Format](String#stringformat)
 
 ---
 
-### Chars
+### `String.Chars`
 
 *(Formerly known as global function StrGetCharAt, which is now
 obsolete)*
@@ -492,7 +492,7 @@ If POSITION is outside the string, this function returns 0.
 
 **NOTE:** The *Chars* array is read-only. If you want to change one of
 the characters in the string, use
-[String.ReplaceCharAt](String#replacecharat).
+[String.ReplaceCharAt](String#stringreplacecharat).
 
 Example:
 
@@ -501,12 +501,12 @@ Example:
 
 will display "The 4th character is: s".
 
-*See Also:* [String.Length](String#length),
-[String.ReplaceCharAt](String#replacecharat)
+*See Also:* [String.Length](String#stringlength),
+[String.ReplaceCharAt](String#stringreplacecharat)
 
 ---
 
-### Length
+### `String.Length`
 
 *(Formerly known as global function StrLen, which is now obsolete)*
 
