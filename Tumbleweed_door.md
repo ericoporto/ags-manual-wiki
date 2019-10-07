@@ -42,7 +42,7 @@ To define the messages, the player character says, when approaching a door, you 
 
 ---
 
-### Verbs.SetDoorState
+### `Verbs.SetDoorState`
 
 ```
 void Doors.SetDoorState(int door_id, int value);
@@ -61,7 +61,7 @@ A door can have 3 different states:
 
 ---
 
-### Verbs.GetDoorState
+### `Verbs.GetDoorState`
 
 ```
 int Doors.GetDoorState(int door_id);
@@ -79,7 +79,7 @@ Returns the current state of a door.
 
 ---
 
-### Verbs.InitObject
+### `Verbs.InitObject`
 
 ```
 void Doors.InitObject(int door_id, int act_object);
@@ -93,7 +93,7 @@ Otherwise, the object will be shown. The object stays unclickable all the time.
 
 ---
 
-### Verbs.AnyClick
+### `Verbs.AnyClick`
 
 ```
 int Doors.AnyClick(int door_id, int act_object, int x, int y, eDirection dir, int nr_room, int nr_x, int nr_y, eDirection nr_dir);
@@ -119,7 +119,7 @@ You need Doors.AnyClickSpecial for that.
 
 ---
 
-### Verbs.AnyClickSpecial
+### `Verbs.AnyClickSpecial`
 
 ```
 int Doors.AnyClickSpecial(int door_id, int act_object, int x, int y, eDirection dir, int nr_room, int nr_x, int nr_y, eDirection nr_dir, AudioClip *opensound, AudioClip *closesound, int key, int closevalue);

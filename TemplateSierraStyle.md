@@ -28,7 +28,7 @@ Example:
 
 ---
 
-### KeyboardMovement.Mode
+### `KeyboardMovement.Mode`
 
     KeyboardMovementMode KeyboardMovement.Mode
 
@@ -40,7 +40,7 @@ Sets the keyboard movement mode. Possible values are:
 
 ---
 
-### KeyboardMovement.KeyUp
+### `KeyboardMovement.KeyUp`
 
     eKeyCode KeyboardMovement.KeyUp
 
@@ -48,7 +48,7 @@ Assigns the key used to move the player upwards.
 
 ---
 
-### KeyboardMovement.KeyDown
+### `KeyboardMovement.KeyDown`
 
     eKeyCode KeyboardMovement.KeyDown
 
@@ -56,7 +56,7 @@ Assigns the key used to move the player downwards.
 
 ---
 
-### KeyboardMovement.KeyLeft
+### `KeyboardMovement.KeyLeft`
 
     eKeyCode KeyboardMovement.KeyLeft
 
@@ -64,7 +64,7 @@ Assigns the key used to move the player to the left.
 
 ---
 
-### KeyboardMovement.KeyRight
+### `KeyboardMovement.KeyRight`
 
     eKeyCode KeyboardMovement.KeyRight
 

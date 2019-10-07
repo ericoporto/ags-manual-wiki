@@ -30,7 +30,7 @@ Example:
     TwoClickHandler.PopupDistance = 50;             // 50 pixels
 ---
 
-### TwoClickHandler.InventoryGui
+### `TwoClickHandler.InventoryGui`
 
     GUI* TwoClickHandler.InventoryGui
 
@@ -38,7 +38,7 @@ Assigns the [GUI](GUI) which will be used for the inventory.
 
 ---
 
-### TwoClickHandler.ActionLabel
+### `TwoClickHandler.ActionLabel`
 
     Label* TwoClickHandler.ActionLabel
 
@@ -46,7 +46,7 @@ Assigns the [Label](Label) which will be used to display text descriptions.
 
 ---
 
-### TwoClickHandler.ReversedClicks
+### `TwoClickHandler.ReversedClicks`
 
     bool TwoClickHandler.ReversedClicks
 
@@ -59,7 +59,7 @@ The default value is `false`.
 
 ---
 
-### TwoClickHandler.PopupProportional
+### `TwoClickHandler.PopupProportional`
 
     float TwoClickHandler.PopupProportional
 
@@ -72,7 +72,7 @@ The default value is `0.75`.
 
 ---
 
-### TwoClickHandler.PopupDistance
+### `TwoClickHandler.PopupDistance`
 
     int TwoClickHandler.PopupDistance
 

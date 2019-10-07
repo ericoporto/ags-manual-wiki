@@ -14,7 +14,7 @@ If the movement is being cancelled by a mouseclick, the message doesn't appear.
 
 ---
 
-### Verbs.MovePlayer
+### `Verbs.MovePlayer`
 
 ```
 int Verbs.MovePlayer(int x, int y);
@@ -26,7 +26,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 *See also:*
 [Verbs.MovePlayerEx](Tumbleweed_movement#verbsmoveplayerex)
 
-### Verbs.MovePlayerEx
+### `Verbs.MovePlayerEx`
 
 ```
 int Verbs.MovePlayerEx(int x, int y, WalkWhere direct);
@@ -38,7 +38,7 @@ Returns 1, if the character hasn't cancelled the movement and 0 if the movement 
 
 ---
 
-### Verbs.GoToCharacter
+### `Verbs.GoToCharacter`
 
 ```
 int Verbs.GoToCharacter(Character*charid, eDirection dir, bool NPCfacesplayer, int blocking);
@@ -52,7 +52,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 
 ---
 
-### Verbs.GoToCharacterEx
+### `Verbs.GoToCharacterEx`
 
 ```
 int Verbs.GoToCharacterEx(Character*chwhogoes, Character*ch, eDirection dir, int xoffset, int yoffset, bool NPCfacesplayer, int blocking);
@@ -68,7 +68,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 
 ---
 
-### Verbs.NPCGoToCharacter
+### `Verbs.NPCGoToCharacter`
 
 ```
 int Verbs.NPCGoToCharacter(Character*charidwhogoes, Character*charidtogoto, eDirection dir, bool NPCfacesplayer, int blocking);
@@ -82,7 +82,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 
 ---
 
-### Verbs.AnyClickMove
+### `Verbs.AnyClickMove`
 
 ```
 int Verbs.AnyClickMove(int x, int y, eDirection dir);
@@ -105,7 +105,7 @@ So the Message is only displayed, if the movement hasn't been cancelled.
 
 ---
 
-### Verbs.AnyClickWalk
+### `Verbs.AnyClickWalk`
 
 ```
 int Verbs.AnyClickWalk(int x, int y, eDirection dir);
@@ -120,7 +120,7 @@ This function is almost similar to AnyClickMove. But it's only called, if the cu
 
 ---
 
-### Verbs.AnyClickWalkLook
+### `Verbs.AnyClickWalkLook`
 
 ```
 int Verbs.AnyClickWalkLook(int x, int y, eDirection dir, String lookat);
@@ -133,7 +133,7 @@ This function moves the player character to the given location, turns it to the 
 
 ---
 
-### Verbs.AnyClickWalkLookPick
+### `Verbs.AnyClickWalkLookPick`
 
 ```
 int Verbs.AnyClickWalkLookPick(int x, int y, eDirection dir, String lookat, int objectID, InventoryItem*item, AudioClip *sound);
@@ -149,7 +149,7 @@ The function return 0 if the action has been cancelled, before the player has re
 
 ---
 
-### Verbs.AnyClickUseInv
+### `Verbs.AnyClickUseInv`
 
 ```
 int Verbs.AnyClickUseInv (InventoryItem*item, int x, int y, eDirection dir);
@@ -168,7 +168,7 @@ if (Verbs.AnyClickUseInv(iWrench,100,130,eDir_Left) == 2 ) player.Say("I will no
 
 ---
 
-### Verbs.GoTo
+### `Verbs.GoTo`
 
 ```
 int Verbs.GoTo(int blocking);
@@ -184,7 +184,7 @@ blocking: 0=non-blocking; 1=blocking; 2=semi-blocking (default)
 
 ---
 
-### Verbs.WalkOffScreen
+### `Verbs.WalkOffScreen`
 
 ```
 void Verbs.WalkOffScreen();
@@ -197,7 +197,7 @@ Handles the action of hotspots or objects with the exit extension ('>e'). Take a
 
 ---
 
-### Verbs.SetApproachingChar
+### `Verbs.SetApproachingChar`
 
 ```
 void Verbs.SetApproachingChar(bool enable);

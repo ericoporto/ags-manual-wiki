@@ -8,7 +8,7 @@ The messages itself are defined outside of this function, initially in TemplateS
 
 ---
 
-### Verbs.Unhandled
+### `Verbs.Unhandled`
 
 ```
 void Verbs.Unhandled(int door_script);

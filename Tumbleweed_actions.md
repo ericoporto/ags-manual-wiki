@@ -4,7 +4,7 @@ These functions are mainly used to control the verb buttons.
 
 ---
 
-### Verbs.UsedAction
+### `Verbs.UsedAction`
 
 ```
 void Verbs.UsedAction (Action test_action);
@@ -14,7 +14,7 @@ Used to determine, which action has been selected by the player. Instead of chec
 
 ---
 
-### Verbs.IsAction
+### `Verbs.IsAction`
 
 ```
 bool Verbs.IsAction(Action test_action);
@@ -24,7 +24,7 @@ Used to check, if the current action is the one, given in the parameter.
 
 ---
 
-### Verbs.SetActionButtons
+### `Verbs.SetActionButtons`
 
 ```
 void Verbs.SetActionButtons(Action action, int btn_ID, int sprite, int sprite_highlight, char key);
@@ -37,7 +37,7 @@ This functions connects the verb buttons with the action and is also used to ass
 
 ---
 
-### Verbs.SetDefaultAction
+### `Verbs.SetDefaultAction`
 
 ```
 void Verbs.SetDefaultAction(Action def_action);
@@ -47,7 +47,7 @@ Used to define, which action is being used, if no verb has been clicked. Usually
 
 ---
 
-### Verbs.SetAction
+### `Verbs.SetAction`
 
 ```
 void Verbs.SetAction(Action new_action);
@@ -57,7 +57,7 @@ Since the cursor modes are bypassed, this function defines the current action. A
 
 ---
 
-### Verbs.SetAlternativeAction
+### `Verbs.SetAlternativeAction`
 
 ```
 void Verbs.SetAlternativeAction(char extension, Action alt_action);
@@ -70,7 +70,7 @@ This function makes the right-click shortcuts work. If you use extensions like "
 
 ---
 
-### Verbs.CheckDefaultAction
+### `Verbs.CheckDefaultAction`
 
 ```
 void CheckDefaultAction();
@@ -85,7 +85,7 @@ It is also defined here, which letters are causing what default action. See the 
 
 ---
 
-### Verbs.UpdateActionBar
+### `Verbs.UpdateActionBar`
 
 ```
 void UpdateActionBar();
@@ -99,7 +99,7 @@ This function is used to show and update the status bar. It checks for an extens
 
 ---
 
-### Verbs.ToogleGuiStyle
+### `Verbs.ToogleGuiStyle`
 
 ```
 void ToogleGuiStyle(int enable_new);

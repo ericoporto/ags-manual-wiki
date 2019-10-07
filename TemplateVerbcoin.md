@@ -39,7 +39,7 @@ Example:
 
 ---
 
-### VerbCoin.Radius
+### `VerbCoin.Radius`
 
     int VerbCoin.Radius
 
@@ -47,7 +47,7 @@ Sets the radius used when drawing the circle that renders the VerbCoin.
 
 ---
 
-### VerbCoin.BackgroundTransparency
+### `VerbCoin.BackgroundTransparency`
 
     int VerbCoin.BackgroundTransparency
 
@@ -55,7 +55,7 @@ Sets the background transparency level (from 0 to 100) for the VerbCoin
 
 ---
 
-### VerbCoin.BackgroundColor
+### `VerbCoin.BackgroundColor`
 
     int VerbCoin.BackgroundColor
 
@@ -63,7 +63,7 @@ Sets the background color (0 to 65535) for the VerbCoin.
 
 ---
 
-### VerbCoin.BorderColor
+### `VerbCoin.BorderColor`
 
     int VerbCoin.BorderColor
 
@@ -71,7 +71,7 @@ Sets the border color (0 to 65535) for the VerbCoin
 
 ---
 
-### VerbCoin.BorderWidth
+### `VerbCoin.BorderWidth`
 
     int VerbCoin.BorderWidth;
 
@@ -79,7 +79,7 @@ Sets the border width for the VerbCoin.
 
 ---
 
-### VerbCoin.OnClick
+### `VerbCoin.OnClick`
 
     VerbCoin.OnClick(GUIControl* control, MouseButton button);
 
@@ -89,7 +89,7 @@ module.
 
 ---
 
-### VerbCoin.RegisterButton
+### `VerbCoin.RegisterButton`
 
     VerbCoin.RegisterButton(GUIControl* control, VerbCoinPosition position, CursorMode mode, String verbtext);
 
@@ -108,63 +108,63 @@ description could be 'use'.
 
 ---
 
-### VerbCoin.InterfaceGui
+### `VerbCoin.InterfaceGui`
 
     GUI* VerbCoin.InterfaceGui
 
 Registers the [GUI](GUI) used for the VerbCoin.
 
-### VerbCoin.InventoryGui
+### `VerbCoin.InventoryGui`
 
     GUI* VerbCoin.InventoryGui
 
 Registers the [GUI](GUI) used for the inventory window.
 
-### VerbCoin.ActionLabel
+### `VerbCoin.ActionLabel`
 
     Label* VerbCoin.ActionLabel
 
 Registers the [Label](Label) used to display text descriptions.
 
-### VerbCoin.Enable
+### `VerbCoin.Enable`
 
     VerbCoin.Enable();
 
 Enables the VerbCoin interface.
 
-### VerbCoin.Disable
+### `VerbCoin.Disable`
 
     VerbCoin.Disable();
 
 Disables the VerbCoin interface.
 
-### VerbCoin.IsEnabled
+### `VerbCoin.IsEnabled`
 
     VerbCoin.IsEnabled();
 
 Returns true if the VerbCoin interface is currently enabled, else
 returns false.
 
-### VerbCoin.Open
+### `VerbCoin.Open`
 
     VerbCoin.Open();
 
 Opens the VerbCoin interface (i.e. show its GUI).
 
-### VerbCoin.Close
+### `VerbCoin.Close`
 
     VerbCoin.Close();
 
 Closes the VerbCoin interface (i.e. hide its GUI)
 
-### VerbCoin.IsOpen
+### `VerbCoin.IsOpen`
 
     VerbCoin.IsOpen();
 
 Returns true if the VerbCoin interface is currently open, else
 returns false.
 
-### VerbCoin.ButtonAutoDisable
+### `VerbCoin.ButtonAutoDisable`
 
     bool VerbCoin.ButtonAutoDisable
 

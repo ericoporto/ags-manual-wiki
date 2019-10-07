@@ -2,7 +2,7 @@
 
 ---
 
-### Verbs.Distance
+### `Verbs.Distance`
 
 ```
 float Verbs.Distance(int x1, int y1, int x2, int y2);
@@ -12,7 +12,7 @@ Returns the distance between two coordinates
 
 ---
 
-### Verbs.Offset
+### `Verbs.Offset`
 
 ```
 int Verbs.Offset(int point1, int point2);
@@ -22,7 +22,7 @@ Returns the offset between to two given values.
 
 ---
 
-### Verbs.GetButtonAction
+### `Verbs.GetButtonAction`
 
 ```
 int Verbs.GetButtonAction(int action);
@@ -36,7 +36,7 @@ Returns the connected action of a verb button. The actions for the verb buttons 
 
 ---
 
-### Verbs.DisableGui
+### `Verbs.DisableGui`
 
 ```
 void Verbs.DisableGui();
@@ -50,7 +50,7 @@ This functions disables the GUI and hides it.
 
 ---
 
-### Verbs.EnableGui
+### `Verbs.EnableGui`
 
 ```
 void Verbs.EnableGui();
@@ -64,7 +64,7 @@ This function enables the GUI again.
 
 ---
 
-### Verbs.IsGuiDisabled
+### `Verbs.IsGuiDisabled`
 
 ```
 bool Verbs.IsGuiDisabled();
@@ -77,7 +77,7 @@ Returns true, if the GUI is currently disabled, false otherwise
 
 ---
 
-### Verbs.GlobalCondition
+### `Verbs.GlobalCondition`
 
 ```
 int Verbs.GlobalCondition(int parameter);
@@ -88,7 +88,7 @@ Returns 1, if the condition is true and 0 otherwise.
 
 ---
 
-### Verbs.InitGuiLanguage
+### `Verbs.InitGuiLanguage`
 
 ```
 void Verbs.InitGuiLanguage();
@@ -98,7 +98,7 @@ This is a helper function to set the correct sprites for the verb GUI.
 
 ---
 
-### Verbs.SetDoubleClickSpeed
+### `Verbs.SetDoubleClickSpeed`
 
 ```
 void Verbs.SetDoubleClickSpeed(int speed)
@@ -108,7 +108,7 @@ Defines the double click speed
 
 ---
 
-### Verbs.HandleInvArrows
+### `Verbs.HandleInvArrows`
 
 ```
 void Verbs.HandleInvArrows()

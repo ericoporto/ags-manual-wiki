@@ -5,7 +5,7 @@ If you like to customize your game or get it translated, you need to take a clos
 
 ---
 
-### Verbs.TranslateAction
+### `Verbs.TranslateAction`
 
 ```
 void Verbs.TranslateAction(int action, int tr_lang);
@@ -15,7 +15,7 @@ This function defines the text for the verb buttons, e.g. if you click on the ta
 
 ---
 
-### Verbs.AdjustLanguage
+### `Verbs.AdjustLanguage`
 
 ```
 void Verbs.AdjustLanguage();
@@ -77,7 +77,7 @@ in AdjustGUIText().
 
 ---
 
-### Verbs.AdjustGUIText
+### `Verbs.AdjustGUIText`
 
 ```
 void Verbs.AdjustGUIText();
