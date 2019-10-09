@@ -47,7 +47,7 @@ This needs to be an image of at least the same size as your game
 resolution (that we set earlier on the General Settings pane); if it's
 bigger than the game resolution then it'll become a scrolling room.
 
-Draw the image in your favourite paint package, and once done, save it
+Draw the image in your favorite paint package, and once done, save it
 as a BMP or PNG file. Then, return to the AGS Editor, and press the
 "Change" button. Find the file you just created, and click Open.
 

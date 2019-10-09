@@ -79,4 +79,4 @@ The default value is `0.75`.
 Show and hide the inventory when the mouse cursor y value is less than this
 value.
 
-The default value is `0` (effectively disabled in favour of PopupProportional).
+The default value is `0` (effectively disabled in favor of PopupProportional).
