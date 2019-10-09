@@ -102,64 +102,64 @@ Personally, I would always enable these four options when starting a new
 game. As you get a feel for AGS, you can decide what suits you best, and
 change these options again later.
 
-### Colour choices
+### Color choices
 
 Now, at this stage we really need to decide whether we want to create a
-palette-based (8-bit, 256-colour) game, or a hi-color (16- or 32-bit)
+palette-based (8-bit, 256-color) game, or a hi-color (16- or 32-bit)
 game.
 
-256-colour games are much more complicated to make due to having to deal
+256-color games are much more complicated to make due to having to deal
 with the palette, they are not supported by the Direct3D driver, and may
 not run well on some modern graphics cards. Although they can give you
 the authentic retro feel, unless you really need to use palette-cycling
-effects, it's recommended that you stay away from making new 256-colour
+effects, it's recommended that you stay away from making new 256-color
 games.
 
-- It's **highly recommended** that you go with 32-bit colour since many modern
-computers don't support 8 or 16 bit screen modes. Also 32-bit colour is required
+- It's **highly recommended** that you go with 32-bit color since many modern
+computers don't support 8 or 16 bit screen modes. Also 32-bit color is required
 for the use of alpha transparency 
-- Imported graphics are set to the chosen colour depth. Should you change your mind
+- Imported graphics are set to the chosen color depth. Should you change your mind
 later, you would have to re-import all the graphics.
 
-### Creating a 256-colour game
+### Creating a 256-color game
 
-Double-click the "Colours" node in the project tree. You should see
+Double-click the "Colors" node in the project tree. You should see
 this:
 
 ![The Palette Editor](images/intro4.jpg)
 
-The palette display has a grid with the 256 colour slots on it. The
-first 40 colours are **game-wide** colours, which means that those
-palette slots have a fixed colour throughout the game, in every single
+The palette display has a grid with the 256 color slots on it. The
+first 40 colors are **game-wide** colors, which means that those
+palette slots have a fixed color throughout the game, in every single
 room.
 
-The remaining slots, marked "X", are **background** colours and vary
+The remaining slots, marked "X", are **background** colors and vary
 from room to room. This allows for different types of background to use
-different ranges of colours.
+different ranges of colors.
 
 The default palette setup is a little badly weighted. Your GUI and main
-character graphics will have to use just the game-wide colours, since
+character graphics will have to use just the game-wide colors, since
 they are shown in more than one room. Therefore, unless you want a
-grayscale main character, the colours displayed are probably not enough.
+grayscale main character, the colors displayed are probably not enough.
 
-So, let's swap some background colours for some game-wide ones. Select
+So, let's swap some background colors for some game-wide ones. Select
 the first "X" slot, then hold shift and click on the last slot in the
 row marked "80". The screen should look as follows:
 
-![We have selected colours 42-95](images/intro5.jpg)
+![We have selected colors 42-95](images/intro5.jpg)
 
-We can now see the Property Grid in action. Change the "ColourType"
+We can now see the Property Grid in action. Change the "ColorType"
 setting from "Background" to "Gamewide", and you'll see the selected
-"X"s turn into various colours.
+"X"s turn into various colors.
 
-If you select one of these colours you'll see its RGB colour values in
-the property grid, where you can adjust the colour of that slot. If you
-don't want to do this manually for every colour, you can set up slots
+If you select one of these colors you'll see its RGB color values in
+the property grid, where you can adjust the color of that slot. If you
+don't want to do this manually for every color, you can set up slots
 42-95 in another paint package, save a BMP file, and then right-click on
 the selected slots and choose the "Replace selected slots from file"
 option.
 
-What colours you use is up to you, and depends on what sort of colour
+What colors you use is up to you, and depends on what sort of color
 scheme you're going for with your graphics.
 
 ![](images/icon_info.gif)
@@ -167,16 +167,16 @@ scheme you're going for with your graphics.
 You should set up the palette as well as you can now, because changing
 it later may require you to re-import some graphics.
 
-### Creating a 16-bit or 32-bit colour game
+### Creating a 16-bit or 32-bit color game
 
 Back on the Game Settings pane, check out the very top option in the
-list. It's called "Colour depth", and all you have to do is change it to
-your desired colour depth. A warning message will prompt you to make
+list. It's called "Color depth", and all you have to do is change it to
+your desired color depth. A warning message will prompt you to make
 sure. Confirm it, and you're done.
 
 ### Game Resolution
 
-Having decided on our colour depth, the other important decision to make
+Having decided on our color depth, the other important decision to make
 at this stage is what resolution we want the game to run at. Higher
 resolutions allow you to have more detailed graphics, but they need more
 memory and run slower than lower resolutions.

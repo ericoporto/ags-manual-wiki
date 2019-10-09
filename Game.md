@@ -75,12 +75,12 @@ will give the player 5 points the first time this script is run.
 
     static int Game.GetColorFromRGB(int red, int green, int blue)
 
-Gets the AGS Colour Number for the specified RGB colour. The red, green
+Gets the AGS Color Number for the specified RGB color. The red, green
 and blue components are values from 0 to 255. This function gives you a
-run-time equivalent to the Colour Finder in the editor.
+run-time equivalent to the Color Finder in the editor.
 
-This command is slow in 256-colour games, since the palette has to be
-scanned to find the nearest matching colour.
+This command is slow in 256-color games, since the palette has to be
+scanned to find the nearest matching color.
 
 **NOTE:** This is a static function, and thus need to be called with
 `Game.` in front of it. See the example below.

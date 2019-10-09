@@ -23,7 +23,7 @@ game.dialog_options_x | Offset into dialog options GUI to compensate for borders
 game.dialog_options_y | Offset into dialog options GUI to compensate for borders
 game.disable_antialiasing | Set to 1 to disable smoothing of scaled characters, overriding the user's choice in Setup. Default 0.
 game.following_room_timer | How long to wait before following char emerges in new room, default 150. (higher is longer).
-game.keep_screen_during_instant_transition | Normally the Instant transition blacks the screen in 8-bit colour modes, to avoid strange palette effects. However you can set this to 1 to prevent it doing so.
+game.keep_screen_during_instant_transition | Normally the Instant transition blacks the screen in 8-bit color modes, to avoid strange palette effects. However you can set this to 1 to prevent it doing so.
 **game.inv_activated** | Inventory item that the player last clicked on. Useful for unhandled_event.
 game.inventory_greys_out | Set to 1 to make inventory controls grey out when GUI disabled is set to "GUIs Grey Out"
 game.lipsync_speed | Similar to Game.TextReadingSpeed, but this determines how quickly the text is 'read' out by the mouth moving. You should normally only set this faster than text_speed, otherwise the reading will get cut off when the text times out. Default 15.
@@ -31,7 +31,7 @@ game.max_dialogoption_width | Maximum width of textwindow-based dialog options b
 game.min_dialogoption_width | Minimum width of textwindow-based dialog options box. Default 0.
 game.narrator_speech | Which character ID to use for voice speech within Display() command. Default initial player character. You can also use NARRATOR which uses 'NARR' prefix - special narrator character.
 game.no_textbg_when_voice | Normally 0. If 1, and the Sierra-style With Background speech style is in use, will change to the Sierra-style (no background) if a voice speech line is present.
-game.read_dialog_option_color | By default, -1. You can set this to a colour number, in which case dialog options that the player has selected before will be displayed in this colour.
+game.read_dialog_option_color | By default, -1. You can set this to a color number, in which case dialog options that the player has selected before will be displayed in this color.
 game.roomscript_finished | The on_call function has completed executing. (See [CallRoomScript](Globalfunctions_General#callroomscript))
 **game.score** | The player's score. To modify the score, use the GiveScore script function.
 game.score_sound | Sound effect to play when the player gets points, originally set in the editor.

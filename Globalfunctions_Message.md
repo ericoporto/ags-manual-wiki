@@ -143,8 +143,8 @@ section.
 The Y parameter specifies the Y location on the screen where the message
 box will appear. The default is 25.
 
-The TEXT_COLOR parameter specifies the text colour of the top bar, and
-the BACK_COLOR specifies the background colour of the top bar.
+The TEXT_COLOR parameter specifies the text color of the top bar, and
+the BACK_COLOR specifies the background color of the top bar.
 
 You can pass 0 for Y, TEXT_COLOR or BACK_COLOR - if you do, it will
 use the setting you used last time.
@@ -153,8 +153,8 @@ There are a couple of game variables available which can further
 customize the look of the bar. You can change these before calling
 DisplayTopBar.
 
-**game.top_bar_bordercolor** sets the colour used for the bar's border
-(set to the same colour as the backcolor if you don't want a border)<br>
+**game.top_bar_bordercolor** sets the color used for the bar's border
+(set to the same color as the backcolor if you don't want a border)<br>
 **game.top_bar_borderwidth** sets the width of the bar's border, in
 pixels (default 1)<br>
 **game.top_bar_font** sets the font to use for the top bar. The

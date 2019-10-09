@@ -21,12 +21,12 @@ existing sprite with your graphic, or create a new slot for it. To
 overwrite an existing sprite, right-click the sprite and select
 *"Replace sprite from file"*. To import a new slot, right-click on the
 background of the window and choose *"Import new sprite from file"*. If
-your game is hi-colour, you'll also have options to paste from the
+your game is hi-color, you'll also have options to paste from the
 clipboard.
 
-Note that the sprite graphics you import must be the same colour depth
-as your backgrounds - i.e. if you have a 256-colour game, you must import
-256-colour sprites.
+Note that the sprite graphics you import must be the same color depth
+as your backgrounds - i.e. if you have a 256-color game, you must import
+256-color sprites.
 
 ![Right-clicking to replace existing sprite](images/intro6_1.jpg)
 
@@ -40,8 +40,8 @@ this:
 This is the Import Sprite window. You'll see the image from the file
 that you chose, along with various options. The Zoom slider on the left
 allows you to zoom in on the image (very useful for 320x200-resolution
-graphics), and the "Transparent colour" option allows you to choose how
-AGS decides which colour is the image's transparent colour.
+graphics), and the "Transparent color" option allows you to choose how
+AGS decides which color is the image's transparent color.
 
 Now, you have two choices. If you want to import the whole image, just
 click the "Import Whole Image" button, and you're done. If on the other
@@ -59,12 +59,12 @@ resolution so it'll look much larger.
 
 ![](images/icon_info.gif)
 
-NOTE (256-colour only): You may well find that the colours on your graphic
+NOTE (256-color only): You may well find that the colors on your graphic
 look slightly strange once you've imported the image. This is because by
-default only the first 41 of the palette colours are allocated to sprites,
+default only the first 41 of the palette colors are allocated to sprites,
 so your graphic will be remapped to this much smaller palette. If you find
 that many of your imported sprites look strange, you can increase the
-number of colours assigned to sprites, at the expense of background colours
+number of colors assigned to sprites, at the expense of background colors
 (see the earlier part of the tutorial for palette setup).
 
 #### Tiled sprite import

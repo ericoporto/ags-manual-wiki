@@ -10,41 +10,41 @@ palette setup and other things which do not depend on individual rooms.
 ### Palette setup
 
 The first thing you need to do when you create a new game is to decide
-whether you want to use 8-bit (palette-based) colour or 32/16-bit
-(true-colour / hi-colour). If you want to use 32/16-bit colour, you can
-still use 256-colour backgrounds and sprites if you want to, but the
-engine will only run in a 32-bit colour resolution, thus slowing it
+whether you want to use 8-bit (palette-based) color or 32/16-bit
+(true-color / hi-color). If you want to use 32/16-bit color, you can
+still use 256-color backgrounds and sprites if you want to, but the
+engine will only run in a 32-bit color resolution, thus slowing it
 down.
 
 If you want to use 8-bit, you need to set up the palette. This is
 because all sprite and background scene imports rely on the palette
-setup to be the same. You **CANNOT** use hi-colour nor true-colour
-sprites or backgrounds in a 256-colour game.
+setup to be the same. You **CANNOT** use hi-color nor true-color
+sprites or backgrounds in a 256-color game.
 All this means, use 8-bit color only when you know what you are doing or when you intentionally want to punish yourself with lots of nerdy fumbling around on settings for colormodes that were not artist's decisions but actual hardware limitations of the time and every artist is glad these restrictions are no longer in place.
 But you can do really cool color cycling effects only in 8-bit games, 
 other than that this is really outdated technology, but it still works 
 of course, and how it works is explained in the next paragraphs.
 
 
-You set your chosen colour depth by opening the General Settings pane
-and adjusting the Colour Depth setting near the top of the list.
+You set your chosen color depth by opening the General Settings pane
+and adjusting the Color Depth setting near the top of the list.
 
-Now, choose the "Colours" pane. Here you will see the 256-colour palette
+Now, choose the "Colors" pane. Here you will see the 256-color palette
 displayed in a grid. Most of the slots are marked "X" - these are the
 slots reserved for the background pictures, and will be different in
-each room. The other colours will be as they look here for the entire
-game. These fixed colours allow things like the main character graphics,
+each room. The other colors will be as they look here for the entire
+game. These fixed colors allow things like the main character graphics,
 which must be displayed on more than one screen, to work.
 
-If you want, you can assign more or less colours to the backgrounds. To
+If you want, you can assign more or less colors to the backgrounds. To
 toggle the background assignment on/off, click on the slot, then check
-the "This colour is room-dependent" box to swap the slot's status.
+the "This color is room-dependent" box to swap the slot's status.
 
 **IMPORTANT NOTE:** *You must set up the palette as you want it before
 you start making your game - if you change it later, you will have to
 re-import all the sprites and background scenes.*
 
-You can select multiple colour slots by clicking on the first slot, then
+You can select multiple color slots by clicking on the first slot, then
 shift-clicking on the last slot in the range you want to select. You can
 then toggle the background status of all the selected slots at once.
 
@@ -52,7 +52,7 @@ You can right-click in the palette grid to export the entire palette to
 a .PAL or PCX file which you can then use to read back into the Editor
 in a different game. If you choose to export to a pcx file, then a
 screen shot of the Palette Editor will be saved as the picture. This way
-you can see all the game-wide colours in the file.
+you can see all the game-wide colors in the file.
 
 The "Replace palette" option replaces the palette entries with those
 entries from the PAL or PCX file you choose. It can read standard
@@ -112,7 +112,7 @@ Finally, you may have noticed a "Hotspot Marker Settings" frame at the
 top of the Inventory pane. This allows you to switch on an option so
 that when the selects an inventory item, the mouse cursor for it will
 have a dot and mini-crosshair drawn on it, to show the player where the
-hotspot is. You can enter the colour for the centre dot and also for the
+hotspot is. You can enter the color for the centre dot and also for the
 surrounding 4 pixels.
 
 ---
@@ -133,11 +133,11 @@ To overwrite an existing sprite, right-click the sprite and select
 "Replace sprite from file". To import a new slot, right-click on the
 background to the window and choose "Import new sprite".
 
-The graphic you choose to import must be at the same colour depth as
-your game (i.e. if you are using hi-colour backgrounds, your sprites must
-be hi-colour, and vice versa). AGS will attempt to convert the image if
-possible, but if your game is 256-colour then the results of downgrading
-a hi-colour image can be poor.
+The graphic you choose to import must be at the same color depth as
+your game (i.e. if you are using hi-color backgrounds, your sprites must
+be hi-color, and vice versa). AGS will attempt to convert the image if
+possible, but if your game is 256-color then the results of downgrading
+a hi-color image can be poor.
 
 Then, the Import Sprite window will appear. Here, you need to decide
 which portion of the image will be imported. You do this by
@@ -146,26 +146,26 @@ rectangle showing the selection. Once you are happy with it, left-click
 to import. Alternatively, you can import the entire image with the
 "Import whole image" button.
 
-*NOTE (256-colour only): You may well find that the colours on your
+*NOTE (256-color only): You may well find that the colors on your
 graphic look slightly strange in the AGS Editor. This is because the
 sprites are only allocated, by default, the first 41 of the palette
-colours (see the [palette section](Settingupthegame#palette-setup)), so your graphic
+colors (see the [palette section](Settingupthegame#palette-setup)), so your graphic
 will be remapped to this much smaller palette. If you find that many of
 your imported sprites look strange, you can increase the number of
-colours assigned to sprites, at the expense of background colours (again
+colors assigned to sprites, at the expense of background colors (again
 see the section above for information on how to do this).*
 
 If your sprite will only be used in one room then alternatively you can
 use the "use background palette" option, which will remap your graphic
 to the palette of the room currently loaded, giving much better results.
 Note, however, that if you do this, and then try and use the sprite on
-another screen, its colours will most likely be screwed up. To use the
+another screen, its colors will most likely be screwed up. To use the
 room palette, check the "Use room background" check-box. Make sure to
 un-check this box before you import any other sprites.
 
-NOTE: The transparent colour used by AGS is palette index 0 (for
-256-colour sprites) and RGB (255,0,255) for hi-color. Any pixels you
-draw on imported sprites in these colours will be transparent.
+NOTE: The transparent color used by AGS is palette index 0 (for
+256-color sprites) and RGB (255,0,255) for hi-color. Any pixels you
+draw on imported sprites in these colors will be transparent.
 
 You can group imported sprites into folders. This prevents the main
 sprite list from becoming too long. By default, the Sprite Manager
@@ -196,7 +196,7 @@ all be imported.
 
 **Alpha blended sprites**
 
-AGS supports alpha blended sprites if your game is 32-bit colour. In
+AGS supports alpha blended sprites if your game is 32-bit color. In
 this case, you need to import a PNG image with an alpha channel (you
 cannot paste alpha-blended images from the clipboard).
 
@@ -359,10 +359,10 @@ find that a movement speed of 1 is still too fast, you can use negative
 numbers (eg. -3) which will move even more slowly. The lower you go, the
 slower the movement speed.
 
-The "SpeechColor" option specifies which colour is used for the text
+The "SpeechColor" option specifies which color is used for the text
 when this character is talking. It effects all messages that are said by
-this character. You can find out the colour for each number by going to
-the "Colours" pane.
+this character. You can find out the color for each number by going to
+the "Colors" pane.
 
 The "IdleView" option allows you to set an idle animation for the
 character. To do this, create a new view, with one or more loops of the
@@ -488,7 +488,7 @@ EGO, I would write
 
     ego: "I am very happy today because it's my birthday."
 
-The character name is used by the system to choose the correct colour
+The character name is used by the system to choose the correct color
 for the text.
 
 **IMPORTANT:** Do **NOT** include the "c" at the start of the
@@ -618,11 +618,11 @@ come back to it later.
 Many of these options can be changed at runtime with the script command
 SetGameOption. **Basic properties**
 
--   **Colour Depth** - the number of colours your game will use. Default
-    is 32-bit, which lets you use all the range of colours contemporary
+-   **Color Depth** - the number of colors your game will use. Default
+    is 32-bit, which lets you use all the range of colors contemporary
     devices support. 16-bit is rather a compatibility setting, that will
-    reduce the size of your game resources at the cost of colour
-    precision. 8-bit colour mode is a special feature for making
+    reduce the size of your game resources at the cost of color
+    precision. 8-bit color mode is a special feature for making
     palette-based games. See Also: [Palette setup](Settingupthegame#palette-setup),
     [Palette functions](Globalfunctions_Palette)
 -   **Developer name** - this will add the provided string to the game's
@@ -656,7 +656,7 @@ SetGameOption. **Basic properties**
     let your players toggle it in game setup program to their
     own liking.
 -   **Resolution** - the native resolution of your game. This is the
-    most important option (on par with Colour Depth), which determines
+    most important option (on par with Color Depth), which determines
     the size of game area visible on screen at any given time. This is
     also the minimal size that game rooms may have. The window your game
     runs in may still be larger or smaller, depending on choices player
@@ -853,7 +853,7 @@ SetGameOption. **Basic properties**
 -   **Inventory item cursor hotspot marker** - whether AGS should
     automatically add a marker to inventory item cursors to help the
     player see where the active hotspot is on the cursor. May either
-    draw simple crosshair using told colours, or use specified sprite.
+    draw simple crosshair using told colors, or use specified sprite.
 -   **Override built-in inventory window click handling** - AGS has some
     built-in processing of Inventory Window GUI controls, whereby a
     right-click will Look at the item, and a left click will select it
@@ -912,7 +912,7 @@ SetGameOption. **Basic properties**
     them look a lot better, but it has two drawbacks - firstly,
     anti-aliasing is significantly slower than normal rendering, so you
     might want an option to allow the player to turn it off. Second,
-    anti-aliasing only works in hi-color games (in 256-colour games, the
+    anti-aliasing only works in hi-color games (in 256-color games, the
     output will look blurred and unreadable).
 -   **Custom text-windows GUI** - allows you to customize the standard
     text window appearance in the game, using the specified interface

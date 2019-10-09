@@ -50,7 +50,7 @@
 * Verb Coin template by Electroshokker, graphics by Misj
 * Lightweight BASS template by Bjorn Ludwig
 * Hq2x and Hq3x scalers by Maxim Stepin
-* Hi-colour fade out/in routines by Matthew Leverton
+* Hi-color fade out/in routines by Matthew Leverton
 * Sprite anti-aliasing code by Michael Bukin
 * Editor uses irrKlang .NET audio
   player (https://www.ambiera.com/irrklang/)

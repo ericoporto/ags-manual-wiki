@@ -147,7 +147,7 @@ we had two pillars, in different places? We wouldn't want the same
 baseline to apply to both. Never fear, AGS allows you to have several
 different areas on each screen. Above the property grid, there's a
 combobox that says "Walk-behind area ID 1". You can change this to draw
-in another colour, and each area has its own baseline.
+in another color, and each area has its own baseline.
 
 ![Selecting a different walk-behind area](images/intro2_8.jpg)
 

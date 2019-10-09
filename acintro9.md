@@ -83,7 +83,7 @@ speech; and font 2 is an outline font for the speech font.
 
 Outlines are pretty much essential for LucasArts-style speech. Since the text
 is drawn directly onto the screen and not onto a message box, without an outline
-it could be very hard to read the text, depending on what colour the screen
+it could be very hard to read the text, depending on what color the screen
 happened to be behind it.
 
 There are two ways to do outlines - AGS can do an automatic outline, or you can

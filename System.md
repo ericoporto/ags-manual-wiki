@@ -75,16 +75,16 @@ will display a message if Caps Lock is on.
 
     readonly static int System.ColorDepth;
 
-Returns the colour depth at which the game is running. This is the
-overall game colour depth setting, and it is possible for individual
+Returns the color depth at which the game is running. This is the
+overall game color depth setting, and it is possible for individual
 sprites or backgrounds to be different.
 
 Example:
 
-    Display("Game is running at: %d x %d, %d-bit colour", System.ScreenWidth,
+    Display("Game is running at: %d x %d, %d-bit color", System.ScreenWidth,
                                       System.ScreenHeight, System.ColorDepth);
 
-will display the current resolution and colour depth
+will display the current resolution and color depth
 
 *See Also:* [System.ScreenHeight](System#systemscreenheight),
 [System.ScreenWidth](System#systemscreenwidth)

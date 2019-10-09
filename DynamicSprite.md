@@ -10,7 +10,7 @@ initially be fully transparent, and can optionally have an alpha
 channel. This command is useful if you just want to create a new sprite
 and then use the DrawingSurface commands to draw onto it.
 
-If the game colour depth is lower than 32-bit, then the
+If the game color depth is lower than 32-bit, then the
 *hasAlphaChannel* parameter will be ignored.
 
 Use the [Graphic](DynamicSprite#dynamicspritegraphic) property of the
@@ -396,13 +396,13 @@ This command is designed for special effects. It is fairly slow since it
 involves inspecting each pixel of the image, so it's not recommended
 that you use it often.
 
-The source sprite must be the same size and colour depth as the dynamic
+The source sprite must be the same size and color depth as the dynamic
 sprite.
 
 **NOTE:** This command makes all pixels that are transparent in the
 source sprite also transparent in the dynamic sprite. It does not make
 opaque pixels from the source sprite into opaque pixels on the dynamic
-sprite (because it wouldn't know what colour to make them).
+sprite (because it wouldn't know what color to make them).
 
 If the source image has an alpha channel, then the dynamic sprite will
 have an alpha channel created as a copy of the one from the source
@@ -667,7 +667,7 @@ after the tint has been set, it is not possible to remove it. If you
 call Tint again with different parameters, it will apply the new tint to
 the already tinted sprite from the first call.
 
-**NOTE:** This function only works with hi-colour sprites.
+**NOTE:** This function only works with hi-color sprites.
 
 Example:
 
@@ -692,8 +692,8 @@ room background.
 
     readonly int DynamicSprite.ColorDepth;
 
-Gets the colour depth of this dynamic sprite. This can be 8, 16 or 32
-and is not necessarily the same as the game colour depth (though this
+Gets the color depth of this dynamic sprite. This can be 8, 16 or 32
+and is not necessarily the same as the game color depth (though this
 usually will be the case).
 
 Example:
@@ -704,7 +704,7 @@ Example:
       sprite.Delete();
     }
 
-displays the colour depth of the CustomAvatar.bmp image.
+displays the color depth of the CustomAvatar.bmp image.
 
 *See Also:* [DynamicSprite.Height](DynamicSprite#dynamicspriteheight),
 [DynamicSprite.Width](DynamicSprite#dynamicspritewidth)

@@ -70,7 +70,7 @@ You should see a crosshair appear where you clicked.
 
 The "Draw crosshair" option, if activated, will draw a spot on this part
 of the item in-game so that the player can easily tell which bit of the
-cursor is active. You can set the inner and outer colours for the
+cursor is active. You can set the inner and outer colors for the
 crosshair.
 
 #### Recap

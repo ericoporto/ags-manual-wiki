@@ -135,7 +135,7 @@ with what they do:
     2   Walkable from here - fills in the parts of the screen where the player
         can walk from their current location. This is useful if you think the
         path-finder is not working properly. All walkable areas are drawn in
-        their respective colours, but with blocking areas at characters feet
+        their respective colors, but with blocking areas at characters feet
         removed.
     3   Teleport - displays a dialog box asking for what room you want to go
         to, and then calls ChangeRoom to teleport you there. Useful for skipping
@@ -918,7 +918,7 @@ will also share the audio.vox, speech.vox and so forth. This is a
 limitation of this command.
 
 **NOTE:** The game you run will be loaded at the same resolution and
-colour depth as the current game; if you mismatch colour depths some
+color depth as the current game; if you mismatch color depths some
 nasty results will occur.
 
 **NOTE:** The game you want to launch must have been created with the
@@ -1060,13 +1060,13 @@ Tints all objects and characters on the screen to (RED, GREEN, BLUE)
 with SATURATION percent saturation.
 
 This allows you to apply a global tint to everything on the screen. The
-RED, GREEN and BLUE parameters are from 0-255, and specify the colour of
+RED, GREEN and BLUE parameters are from 0-255, and specify the color of
 the tint.
 
 The SATURATION parameter defines how much the tint is applied, and is
-from 0-100. A saturation of 100 will completely re-colourize the sprites
-to the supplied colour, and a saturation of 1 will give them a very
-minor tint towards the specified colour.
+from 0-100. A saturation of 100 will completely re-colorize the sprites
+to the supplied color, and a saturation of 1 will give them a very
+minor tint towards the specified color.
 
 The LUMINANCE parameter allows you to adjust the brightness of the
 sprites at the same time. It ranges from 0-100. Passing 100 will draw
@@ -1076,7 +1076,7 @@ accordingly, right down to 0 which will draw everything black.
 The tint applied by this function is global. To turn it off, call this
 command again but pass the saturation as 0.
 
-**NOTE:** This function only works in hi-colour games and with hi-colour
+**NOTE:** This function only works in hi-color games and with hi-color
 sprites.
 
 **NOTE:** This function overrides any specific region light levels or

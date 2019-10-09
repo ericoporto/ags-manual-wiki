@@ -337,7 +337,7 @@ If the button is displaying an image rather than text, then this property has no
 
     int Button.TextColor;
 
-Gets/sets the text colour used to display the button's text.
+Gets/sets the text color used to display the button's text.
 
 If the button is displaying an image rather than text, then this
 property has no effect.

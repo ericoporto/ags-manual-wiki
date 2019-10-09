@@ -18,7 +18,7 @@ right-click on the main "GUIs" node and choose "New GUI".
 
 Once you've opened up a GUI, you'll notice the GUI itself in the main
 window, and its settings can be edited in the Properties grid. This
-allows you to change the background colour of the GUI, set a background
+allows you to change the background color of the GUI, set a background
 picture, and set the location and width/height amongst other things.
 
 The "Visibility" property allows you to set when the GUI is displayed.
@@ -108,7 +108,7 @@ Token | Description
 Example: You have @SCORE@ out of @TOTALSCORE@ points.
 
 The Properties window also allows you to align the text to left, right
-or centre, as well as change its font and colour.
+or centre, as well as change its font and color.
 
 ---
 
@@ -140,7 +140,7 @@ you specify will not be tiled or stretched in the game; however, it will
 be clipped to fit the window. You should use a graphic of at least about
 250x80 pixels to make sure that it fills up the whole window.
 
-To set the text colour in the window, simply set the Foreground Colour
+To set the text color in the window, simply set the Foreground Color
 of the GUI and that will be used to print the message text in.
 
 Additionally, you may configure padding - the distance kept between text

@@ -1396,7 +1396,7 @@ To remove the tint set by this function and return to using the ambient
 tint for this character, call
 [RemoveTint](Character#characterremovetint).
 
-**NOTE:** This function only works in hi-colour games and with hi-colour
+**NOTE:** This function only works in hi-color games and with hi-color
 sprites.
 
 Example:
@@ -2523,8 +2523,8 @@ will change the player character's speech animation speed to 4.
 Gets/sets the character's speech text color. This is set by default in
 the editor.
 
-NEWCOLOR is the colour slot index from the Palette Editor. This can be
-0-255 for a 256-colour game, or one of the hi-colour indexes available
+NEWCOLOR is the color slot index from the Palette Editor. This can be
+0-255 for a 256-color game, or one of the hi-color indexes available
 from the Palette Editor.
 
 Example:
@@ -2665,7 +2665,7 @@ percentage, from 0 to 100. 100 means fully transparent (i.e. invisible),
 and 0 is totally opaque (fully visible). Numbers in between represent
 varying levels of transparency.
 
-**NOTE:** Transparency only works in 16-bit and 32-bit colour games.
+**NOTE:** Transparency only works in 16-bit and 32-bit color games.
 
 **NOTE:** When using the DirectX 5 driver, a large transparent character
 can significantly slow down AGS.

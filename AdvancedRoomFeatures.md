@@ -12,8 +12,8 @@ AGS supports scaling of characters, where the character can appear to
 get smaller as he walks away from the screen. Character scaling is
 supported as part of the walkable areas in a room.
 
-The reason why you have multiple colours available for the walkable
-areas is because you can set a zoom level for each colour, which defines
+The reason why you have multiple colors available for the walkable
+areas is because you can set a zoom level for each color, which defines
 how large the character will be while he is in that area. The default
 for all walkable areas is `100%`, i.e. full size. However, you can adjust
 it using the "Walkable Areas" mode to anywhere from `10%` (one-tenth
@@ -67,12 +67,12 @@ AGS.
 To use the feature, click the "Import Mask" button (in the toolbar) in
 the relevant mode of the Areas editor. There are some restrictions to
 how this file must be drawn: it must be the exact same size as the
-background scene, and it must be in 16-colour (4-bit) or 256-colour
-(8-bit). Then, colour 0 on the bitmap signifies transparency and colours
+background scene, and it must be in 16-color (4-bit) or 256-color
+(8-bit). Then, color 0 on the bitmap signifies transparency and colors
 1-15 are used as the respective hotspot/walk-behind/walkable area
 numbers.
 
-**IMPORTANT:** Do NOT use any colour numbers above 15 on the mask
+**IMPORTANT:** Do NOT use any color numbers above 15 on the mask
 bitmap. Use only palette indexes 0 to 15.
 
 ---
@@ -110,7 +110,7 @@ The default is 5, which cycles background every 5 frames.
 
 *NOTE: All the background scenes must be the same size.*
 
-NOTE: (256-colour only) The backgrounds frames each have their own
+NOTE: (256-color only) The backgrounds frames each have their own
 palette (unless you select "Share palette with main background" before
 importing). This means that when the current frame switches in-game, the
 palette will get reset - therefore you can't use special palette effects
@@ -131,19 +131,19 @@ This feature could be useful if, for example, you have a street lamp on
 your scene so when the character walks under it they get brighter, or if
 a wall is shading the character from the light they can get darker.
 
-You can alternatively use a colour tint for the region. If you select
+You can alternatively use a color tint for the region. If you select
 this, then you can enter Red, Green and Blue values as numbers from
-0-255, which reflect the colour you want the area to be tinted to. The
+0-255, which reflect the color you want the area to be tinted to. The
 Amount setting determines to what extent characters will be tinted, and
 is from 0-100.
 
 **NOTE:** Light levels only work when the character's graphic is at the
-same colour depth as the background (i.e. a 256-colour character in a
-hi-colour game won't get lightened).
+same color depth as the background (i.e. a 256-color character in a
+hi-color game won't get lightened).
 
-**NOTE:** In a 256-colour game, only darkening areas (light level <
+**NOTE:** In a 256-color game, only darkening areas (light level <
 `100%`) will work. Also, depending on the room palette the quality of
-the darkening will vary in 256-colour games.
+the darkening will vary in 256-color games.
 
 **NOTE:** Light levels affect characters and objects, depending on the
 "UseRoomAreaLighting" setting for each one. They do not affect overlays

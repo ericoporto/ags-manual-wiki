@@ -27,7 +27,7 @@ editing.
 
 You can make a "Loading..." style splash screen to be displayed
 while your game starts up. To do so, simply save the image as
-PRELOAD.PCX (must be the same resolution and colour depth as the game)
+PRELOAD.PCX (must be the same resolution and color depth as the game)
 in the game folder, and build the game. It should then display while the
 game is loading.
 

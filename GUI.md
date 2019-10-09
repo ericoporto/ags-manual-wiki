@@ -404,7 +404,7 @@ Setting this to 100 means the GUI is totally invisible, and lower values
 represent varying levels of translucency. Set it to 0 to stop the GUI
 being translucent.
 
-**NOTE:** Transparency only works in 16-bit and 32-bit colour games.
+**NOTE:** Transparency only works in 16-bit and 32-bit color games.
 
 **NOTE:** When using the DirectX 5 driver, a large transparent GUI can
 significantly slow down AGS.

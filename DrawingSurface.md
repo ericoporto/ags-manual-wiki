@@ -20,13 +20,13 @@ copies of the image and upload it to video memory if appropriate.
 
 *(Formerly known as RawClearScreen, which is now obsolete)*
 
-    DrawingSurface.Clear(optional int colour)
+    DrawingSurface.Clear(optional int color)
 
-Clears the surface to the specified COLOUR (this is a number you can
-find in the Colours pane of the editor). The current contents of the
+Clears the surface to the specified COLOR (this is a number you can
+find in the Colors pane of the editor). The current contents of the
 surface will be lost.
 
-If you do not supply the COLOUR parameter, or use COLOR_TRANSPARENT,
+If you do not supply the COLOR parameter, or use COLOR_TRANSPARENT,
 the surface will be cleared to be fully transparent.
 
 Example:
@@ -89,7 +89,7 @@ for a while and then restore the original background.
     DrawingSurface.DrawCircle(int x, int y, int radius)
 
 Draws a filled circle of radius RADIUS with its centre at (X,Y) in the
-current drawing colour.
+current drawing color.
 
 Example:
 
@@ -127,10 +127,10 @@ simply specify a *width* and *height* that you wish to resize the image
 to when it is drawn.
 
 **NOTE:** This command only works if the image to be drawn is the same
-colour depth as the surface that you are drawing onto.
+color depth as the surface that you are drawing onto.
 
-**NOTE:** Transparency does not work in 256-colour games, or with
-256-colour sprites.
+**NOTE:** Transparency does not work in 256-color games, or with
+256-color sprites.
 
 **NOTE:** The X and Y co-ordinates given are ROOM co-ordinates, not
 SCREEN co-ordinates. This means that in a scrolling room you can draw
@@ -161,7 +161,7 @@ will draw the *oDoor* object's graphic onto the room background at (100,
                             optional int thickness)
 
 Draws a line from (FROM_X, FROM_Y) to (TO_X, TO_Y) in the surface's
-current drawing colour.
+current drawing color.
 
 The *thickness* parameter allows you to specify how thick the line is,
 the default being 1 pixel.
@@ -203,7 +203,7 @@ point that the text will wrap at. This command is designed for writing a
 long message to the screen with it wrapping normally like a standard
 label would do.
 
-The text will be printed using the current drawing colour.
+The text will be printed using the current drawing color.
 
 Example:
 
@@ -226,7 +226,7 @@ will display message 10 in the centre of the screen, starting from Y =
 
     DrawingSurface.DrawPixel(int x, int y)
 
-Draws a single pixel onto the surface at (X,Y) in the current colour.
+Draws a single pixel onto the surface at (X,Y) in the current color.
 The pixel thickness respects the
 [UseHighResCoordinates](DrawingSurface#drawingsurfaceusehighrescoordinates)
 property.
@@ -257,7 +257,7 @@ draws a yellow pixel in the top left of the room background
 
     DrawingSurface.DrawRectangle(int x1, int y1, int x2, int y2)
 
-Draws a filled rectangle in the current colour with its top-left corner
+Draws a filled rectangle in the current color with its top-left corner
 at (x1,y1) and its bottom right corner at (x2, y2)
 
 **NOTE:** The X and Y co-ordinates given are ROOM co-ordinates, not
@@ -286,7 +286,7 @@ will draw a rectangle over the top left hand quarter of the screen.
     DrawingSurface.DrawString(int x, int y, FontType font, string text, ...)
 
 Draws the *text* onto the surface at (x, y), using the supplied font
-number. The text will be drawn in the current drawing colour.
+number. The text will be drawn in the current drawing color.
 
 You can insert the value of variables into the message. For more
 information, see the [string formatting](StringFormats)
@@ -319,7 +319,7 @@ Draws the *text* onto the surface at (x,y), using the specified FONT.
 the point that the text will wrap at. You can use the *alignment*
 parameter to determine how the text is horizontally aligned.
 
-The text will be printed using the current drawing colour.
+The text will be printed using the current drawing color.
 
 Example:
 
@@ -352,7 +352,7 @@ Draws the specified surface on top of this surface, optionally using
 This allows you to perform day-to-night fading and other special
 effects.
 
-**NOTE:** You cannot use the *transparency* parameter with 256-colour
+**NOTE:** You cannot use the *transparency* parameter with 256-color
 surfaces.
 
 **NOTE:** This command can be a bit on the slow side, so don't call it
@@ -384,7 +384,7 @@ this will draw background frame 1 onto frame 0 at 50`%` opacity.
 
     DrawingSurface.DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3)
 
-Draws a filled triangle in the current colour with corners at the points
+Draws a filled triangle in the current color with corners at the points
 (x1,y1), (x2,y2) and (x3,y3).
 
 Well, don't look at me, you might find it useful for something :-)
@@ -437,12 +437,12 @@ background, then releases the image.
 
     int DrawingSurface.DrawingColor
 
-Gets/sets the current drawing colour on this surface. Set this before
+Gets/sets the current drawing color on this surface. Set this before
 using commands like [DrawLine](DrawingSurface#drawingsurfacedrawline), which
-use this colour for their drawing.
+use this color for their drawing.
 
-You can set this either to an AGS Colour Number (as you'd get from the
-Colours pane in the editor) or to the special constant
+You can set this either to an AGS Color Number (as you'd get from the
+Colors pane in the editor) or to the special constant
 COLOR_TRANSPARENT, which allows you to draw transparent areas onto the
 surface.
 
@@ -471,14 +471,14 @@ the middle.
 
     int DrawingSurface.GetPixel(int x, int y)
 
-Returns the AGS Colour Number of the pixel at (X,Y) on the surface.
+Returns the AGS Color Number of the pixel at (X,Y) on the surface.
 
-**NOTE:** In high-colour games, the first 32 colour numbers have a
+**NOTE:** In high-color games, the first 32 color numbers have a
 special meaning due to an AGS feature which maintains compatibility with
-8-bit games. Therefore, if you draw onto the surface using a blue colour
+8-bit games. Therefore, if you draw onto the surface using a blue color
 number 0-31 you will get a different number when you GetPixel -- and in
-fact the colour drawn may not be what you expect. To get around this,
-add 1 Red or Green component to adjust the colour number out of this
+fact the color drawn may not be what you expect. To get around this,
+add 1 Red or Green component to adjust the color number out of this
 range.
 
 **NOTE:** This command is relatively slow. Don't use it to try and
@@ -487,10 +487,10 @@ process an entire image.
 Example:
 
     DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    Display("The colour of the middle pixel is %d.", surface.GetPixel(160, 100));
+    Display("The color of the middle pixel is %d.", surface.GetPixel(160, 100));
     surface.Release();
 
-displays the pixel colour of the centre pixel on the screen.
+displays the pixel color of the centre pixel on the screen.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 

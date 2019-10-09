@@ -66,7 +66,7 @@ will clear the txtUserInput text box.
 
     int TextBox.TextColor;
 
-Gets/sets the text colour used to draw the text box. This affects both
+Gets/sets the text color used to draw the text box. This affects both
 the text in the text box, and also the text box's border.
 
 Example:

@@ -32,7 +32,7 @@ Hotspots are drawn in exactly the same way as walk-behind and walkable
 areas. You'll probably want to use several different Hotspots for
 different areas of the screen. After drawing your first hotspot, change
 the Selected Hotspot using the drop-down list above the property grid,
-and you can draw in a different colour. All the other hotspots will be
+and you can draw in a different color. All the other hotspots will be
 greyed out.
 
 ![I've drawn four types of hotspot onto my screen](images/intro3_1.jpg)

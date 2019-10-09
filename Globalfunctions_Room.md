@@ -244,7 +244,7 @@ scroll around following the player character as normal.
 
     RemoveWalkableArea (int areanum)
 
-Removes the walkable areas in colour AREANUM from the current room. You
+Removes the walkable areas in color AREANUM from the current room. You
 can put the area back with RestoreWalkableArea.
 
 NOTE: When the player leaves the screen, all the walkable areas are

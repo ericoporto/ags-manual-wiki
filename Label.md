@@ -74,7 +74,7 @@ Gets/sets how the text is aligned relative to the label's rectangle. Note that c
 
     int Label.TextColor;
 
-Gets/sets the text colour used to display the label's text.
+Gets/sets the text color used to display the label's text.
 
 Example:
 

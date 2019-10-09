@@ -193,7 +193,7 @@ view it. These types of video cannot be included into the game EXE, so
 you will have to place them separately in the Compiled folder for them
 to work.
 
-**NOTE:** In 256-colour games, PlayVideo is not supported. Please use a
+**NOTE:** In 256-color games, PlayVideo is not supported. Please use a
 FLC/FLI video with the [PlayFlic](Multimedia#playflic) command instead.
 
 **Cross-Platform Support**

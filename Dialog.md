@@ -189,7 +189,7 @@ will display the number of options in the dFisherman dialog.
 Changes whether an option in a conversation is marked as previously
 chosen by the player. The option is marked as chosen whenever player
 selects it during the conversation, and is usually highlighted with
-different text colour. This function lets you to reset the option state,
+different text color. This function lets you to reset the option state,
 or force it change at any random moment.
 
 OPTION is the option number within the dialog, from 1 to whatever the

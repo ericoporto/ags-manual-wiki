@@ -250,7 +250,7 @@ occurred that means the room is permanently changed.
 more and it is permanently removed from the game.
 
 **NOTE:** objects can only be merged if the object graphic was imported
-at the same colour depth as the background graphic.
+at the same color depth as the background graphic.
 
 Example:
 
@@ -518,7 +518,7 @@ object (even if an ambient tint is set).
 To remove the tint set by this function and return to using the ambient
 tint for this object, call [RemoveTint](Object#objectremovetint).
 
-**NOTE:** This function only works in hi-colour games and with hi-colour
+**NOTE:** This function only works in hi-color games and with hi-color
 sprites.
 
 Example:
@@ -1055,7 +1055,7 @@ If this is set to 100, it means that the object is totally invisible,
 and lower values represent varying levels of transparency. Set this to 0
 to stop the object being transparent.
 
-**NOTE:** Transparency only works in 16-bit and 32-bit colour games.
+**NOTE:** Transparency only works in 16-bit and 32-bit color games.
 
 **NOTE:** When using the DirectX 5 driver, a large transparent object
 can significantly slow down AGS.

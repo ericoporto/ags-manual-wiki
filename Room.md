@@ -202,13 +202,13 @@ Example:
 
     readonly static int Room.ColorDepth
 
-Returns the colour depth of the room's background scene. This is
+Returns the color depth of the room's background scene. This is
 important if you want to use DrawImage, since any sprites that you draw
-must be the same colour depth as the room itself.
+must be the same color depth as the room itself.
 
 Example:
 
-    Display("The current room background is %d-bit colour.", Room.ColorDepth);
+    Display("The current room background is %d-bit color.", Room.ColorDepth);
 
 *See Also:*
 [DrawingSurface.DrawImage](DrawingSurface#drawingsurfacedrawimage)

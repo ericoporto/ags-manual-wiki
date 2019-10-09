@@ -78,11 +78,11 @@ will flip the screen upside down.
 
     SetFadeColor(int red, int green, int blue)
 
-Changes the colour which the screen fades out to, to have the specified
+Changes the color which the screen fades out to, to have the specified
 RGB value. Each of the parameters can range from 0-255. The default is
 black, i.e. (0, 0, 0)
 
-The colour that you set here will be used in all future calls to
+The color that you set here will be used in all future calls to
 FadeIn/FadeOut, and also for the screen transition if it is set to Fade
 In/Out.
 
@@ -205,7 +205,7 @@ Pass (0, 0, 0) to turn off the tinting and go back to how the screen
 normally looks.
 
 For historical reasons, the tint works by applying a 50`%`-transparent
-layer of the specified colour to the screen after everything else has
+layer of the specified color to the screen after everything else has
 been drawn. Therefore, it may not lead to the sort of results you might
 expect.
 
@@ -213,7 +213,7 @@ expect.
 massive slowdown in the engine, especially at high resolutions. If you
 use it, you should provide an option for the player to turn it off.
 
-**NOTE:** This feature does not work in 256-colour games.
+**NOTE:** This feature does not work in 256-color games.
 
 Example:
 
