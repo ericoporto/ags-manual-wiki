@@ -314,7 +314,7 @@ audio will be stopped. Alternatively, you can pass one of the AudioTypes
 which will only stop audio clips of that type.
 
 If there are any audio clips queued up with PlayQueued, they will also
-be cancelled.
+be canceled.
 
 Example:
 
