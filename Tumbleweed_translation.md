@@ -66,7 +66,7 @@ tells the AGS:
 You might wonder, why this function overrides the values of gMaingui.
 But in some other languages the translation for use could be a very long word,
 so you might want to swap it with something else.
-E.g. in german "use" means "Benutze", so you need more space for the verb.
+E.g. in German "use" means "Benutze", so you need more space for the verb.
 But "pick up" can be translated to "nimm", so you save some space here.
 
 Unlike the 9Verb MI-Style template, the fonts can be customized and overwritten
