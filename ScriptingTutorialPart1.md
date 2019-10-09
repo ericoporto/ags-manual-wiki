@@ -50,7 +50,7 @@ function. Looking this up in the manual gives us the definition:
 
     Display (string message, ...)
       Displays a message to the screen. It will be displayed in
-      the standard message box, and centred in the middle of
+      the standard message box, and centered in the middle of
       the screen. (description continues...)
 
 The key point here is the part of the first line inside the brackets.

@@ -108,7 +108,7 @@ Token | Description
 Example: You have @SCORE@ out of @TOTALSCORE@ points.
 
 The Properties window also allows you to align the text to left, right
-or centre, as well as change its font and color.
+or center, as well as change its font and color.
 
 ---
 

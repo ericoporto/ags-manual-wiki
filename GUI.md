@@ -6,15 +6,15 @@
 
     GUI.Centre()
 
-Centres the specified GUI in the middle of the screen. Useful if you've
+Centers the specified GUI in the middle of the screen. Useful if you've
 been moving it around with SetPosition and just want to return it to the
-centre.
+center.
 
 Example:
 
     gControlpanel.Centre();
 
-will centre the CONTROLPANEL GUI in the middle of the screen.
+will center the CONTROLPANEL GUI in the middle of the screen.
 
 *See Also:* [GUI.SetPosition](GUI#guisetposition)
 

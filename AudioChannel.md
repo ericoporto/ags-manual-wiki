@@ -195,7 +195,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 Gets/sets the panning of this audio channel.
 
 Panning allows you to adjust the stereo balance of the audio. The
-default is 0, which is centred and will play at the same volume on both
+default is 0, which is centered and will play at the same volume on both
 speakers. However you can adjust this between -100 (fully left) to 100
 (fully right) to adjust the balance between the speakers.
 

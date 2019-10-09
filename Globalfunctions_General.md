@@ -426,7 +426,7 @@ screen.
 Returns the width on the screen that drawing TEXT in FONT on one line
 would take up.
 
-This could be useful if you manually need to centre or right-align some
+This could be useful if you manually need to center or right-align some
 text, for example with the raw drawing routines.
 
 The width is returned in normal 320-resolution pixels, so it can be used

@@ -44,7 +44,7 @@ game.skip_speech_specific_key | Default 0. You can set it to a keycode, in which
 game.speech_bubble_width | Maximum width of the thought bubble text window (default 100)
 game.speech_text_align | Sets how text in LucasArts-style speech is aligned. Same possible values as game.text_align, default eAlignCentre
 game.speech_text_gui | The textwindow GUI number used for sierra-style speech.
-game.text_align | Sets how text in message boxes and Sierra-style speech is aligned:<br>eAlignLeft: text aligned to left within message box (default)<br>eAlignCentre: text is centred within the message box<br>eAlignRight: text is right-aligned within the message box<br>These options do not affect LucasArts-style speech, which is always centred.
+game.text_align | Sets how text in message boxes and Sierra-style speech is aligned:<br>eAlignLeft: text aligned to left within message box (default)<br>eAlignCentre: text is centered within the message box<br>eAlignRight: text is right-aligned within the message box<br>These options do not affect LucasArts-style speech, which is always centered.
 game.text_shadow_color | Color used for speech text shadow (default 16).
 game.top_bar_XXXX | Customizations for [DisplayTopBar](Globalfunctions_Message#displaytopbar), see link for details
 game.total_score | Maximum possible score, initially set in the editor.

@@ -644,7 +644,7 @@ Example:
     oRock.BlockingWidth = 50;
 
 will make the Rock object block 50 pixels wide (25 pixels to the left of
-his centre, and 25 to the right)
+its center, and 25 to the right)
 
 *See Also:* [Object.BlockingHeight](Object#objectblockingheight),
 [Object.Solid](Object#objectsolid)

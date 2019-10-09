@@ -57,7 +57,7 @@ Example:
     cSomeguy.AddWaypoint(50, 150);
     cSomeguy.AddWaypoint(50, 50);
 
-tells character SOMEGUY to first of all walk to the centre of the screen
+tells character SOMEGUY to first of all walk to the center of the screen
 normally (obeying walkable areas), then move to the bottom left corner
 and then top left corner afterwards.
 
@@ -796,7 +796,7 @@ effect when the animation starts.
 align | description
 --- | ---
 eAlignLeft | Moves the new frame so that the left hand side is at exactly the same X co-ordinate as the old one was.
-eAlignCentre | Leaves the frames centred in the middle.<br>This is the default and using this is equivalent to just calling LockView.
+eAlignCentre | Leaves the frames centered in the middle.<br>This is the default and using this is equivalent to just calling LockView.
 eAlignRight | Moves the new frame so that the right hand side is at exactly the same X co-ordinate as the old one was.
 
 Note that this only aligns the first frame of the animation, so to get
@@ -2789,7 +2789,7 @@ will display the player's Y speed.
     int Character.x;
 
 Gets/sets the character's current X co-ordinate. This is expressed in
-normal room co-ordinates, and specifies the centre-bottom of the
+normal room co-ordinates, and specifies the bottom-center of the
 character's sprite.
 
 **NOTE:** Do **NOT** change this property while the character is moving.
@@ -2812,7 +2812,7 @@ displays the player character's current coordinates.
     int Character.y;
 
 Gets/sets the character's current Y co-ordinate. This is expressed in
-normal room co-ordinates, and specifies the centre-bottom of the
+normal room co-ordinates, and specifies the bottom-center of the
 character's sprite.
 
 **NOTE:** Do **NOT** change this property while the character is moving.

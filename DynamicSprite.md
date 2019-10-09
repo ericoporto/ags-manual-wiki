@@ -91,7 +91,7 @@ Example:
     surface.Release();
     sprite.Delete();
 
-creates a copy of the centre 60x60 area on the background, and draws it
+creates a copy of the center 60x60 area on the background, and draws it
 onto the top left corner of the background image.
 
 *See Also:* [DynamicSprite.Delete](DynamicSprite#dynamicspritedelete)

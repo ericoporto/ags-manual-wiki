@@ -60,7 +60,7 @@ similar.
 #### Inventory item hotspots
 
 By default, when the player selects an inventory item as their mouse
-cursor and clicks on the screen with it, the centre of the item will be
+cursor and clicks on the screen with it, the center of the item will be
 used to decide what to activate. However, with some items you may well
 not want this behavior - for example, we might want the end of our key
 to be the activation spot.

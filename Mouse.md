@@ -345,7 +345,7 @@ Example:
 
     mouse.SetPosition(160, 100);
 
-will place the mouse cursor in the centre of the screen.
+will place the mouse cursor in the center of the screen.
 
 *See Also:* [Mouse.SetBounds](Mouse#mousesetbounds)
 

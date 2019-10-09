@@ -5,7 +5,7 @@
     Display (string message, ...)
 
 Displays a message to the screen. It will be displayed in the standard
-message box, and centred in the middle of the screen.
+message box, and centered in the middle of the screen.
 
 You can insert the value of variables into the message. For more
 information, see the [string formatting](StringFormats)

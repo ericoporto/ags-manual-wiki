@@ -88,7 +88,7 @@ for a while and then restore the original background.
 
     DrawingSurface.DrawCircle(int x, int y, int radius)
 
-Draws a filled circle of radius RADIUS with its centre at (X,Y) in the
+Draws a filled circle of radius RADIUS with its center at (X,Y) in the
 current drawing color.
 
 Example:
@@ -98,7 +98,7 @@ Example:
     surface.DrawCircle(160,100,50);
     surface.Release();
 
-will draw a circle in the centre of the screen, of 50 pixels radius.
+will draw a circle in the center of the screen, of 50 pixels radius.
 
 *See Also:*
 [DrawingSurface.DrawLine](DrawingSurface#drawingsurfacedrawline),
@@ -212,7 +212,7 @@ Example:
     surface.DrawMessageWrapped(80, 40, 160, Game.NormalFont, 10);
     surface.Release();
 
-will display message 10 in the centre of the screen, starting from Y =
+will display message 10 in the center of the screen, starting from Y =
 40.
 
 *See Also:*
@@ -328,7 +328,7 @@ Example:
     surface.DrawStringWrapped(80, 40, 160, Game.NormalFont, eAlignCentre, "Hello, my name is Bob.");
     surface.Release();
 
-will display the text in the centre of the screen, starting from Y = 40.
+will display the text in the center of the screen, starting from Y = 40.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
@@ -490,7 +490,7 @@ Example:
     Display("The color of the middle pixel is %d.", surface.GetPixel(160, 100));
     surface.Release();
 
-displays the pixel color of the centre pixel on the screen.
+displays the pixel color of the center pixel on the screen.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 

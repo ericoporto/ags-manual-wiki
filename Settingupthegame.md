@@ -112,7 +112,7 @@ Finally, you may have noticed a "Hotspot Marker Settings" frame at the
 top of the Inventory pane. This allows you to switch on an option so
 that when the selects an inventory item, the mouse cursor for it will
 have a dot and mini-crosshair drawn on it, to show the player where the
-hotspot is. You can enter the color for the centre dot and also for the
+hotspot is. You can enter the color for the center dot and also for the
 surrounding 4 pixels.
 
 ---
