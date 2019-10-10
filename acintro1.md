@@ -98,7 +98,7 @@ begin with:
     starting to move. This is what the Sierra and LucasArts
     point-and-click games did, and looks a bit more professional.
 
-Personally, I would always enable these four options when starting a new
+Personally, I would always enable these three options when starting a new
 game. As you get a feel for AGS, you can decide what suits you best, and
 change these options again later.
 
