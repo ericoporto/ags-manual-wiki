@@ -462,7 +462,7 @@ you can get when the screen scrolls. However, doing so will lock the
 game frame rate to the monitor's refresh rate, which will mean you
 cannot reliably set a game speed higher than 60 fps.
 
-**NOTE:** This property has no effect with the Direct3D driver.
+**NOTE:** This property has no effect with the Direct3D or OpenGL driver.
 
 Example:
 
