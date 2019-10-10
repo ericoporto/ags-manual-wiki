@@ -121,9 +121,9 @@ Where can you get a SCI font? Well, there are two ways:
 
 If you go to your Windows Fonts folder to try and import a TTF font, you will
 not be able to do so (double-clicking them will open them up in the Windows Font
-Viewer). Unfortunately there is nothing I can do about this - you must either
-type the filename in manually, or copy the font to another folder and import it
-from there.
+Viewer). Unfortunately this is down to how the Fonts folder is configured to act
+within Windows Explorer - you must either type the filename in manually, or copy
+the font to another folder and import it from there.
 
 ![](images/icon_info.gif)
 
