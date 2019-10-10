@@ -24,9 +24,9 @@ background of the window and choose *"Import new sprite from file"*. If
 your game is hi-color, you'll also have options to paste from the
 clipboard.
 
-Note that the sprite graphics you import must be the same color depth
-as your backgrounds - i.e. if you have a 256-color game, you must import
-256-color sprites.
+Note that the sprite graphics you import shouldn't exceed the maximum
+number of colors that the game supports - i.e. if you have a 256-color
+game, you must import 256-color sprites.
 
 ![Right-clicking to replace existing sprite](images/intro6_1.jpg)
 
