@@ -66,9 +66,8 @@ over a couple of properties in the property grid:
 
 ![](images/icon_info.gif)
 
-The game speed is directly related to the number and size of objects on-screen.
-AGS imposes a limit of 20 objects per room, but even if you use all of these
-and have them visible at the same time, the game speed could suffer.
+Having a large number of large objects on-screen can potentially cause the
+game to slow down. AGS imposes a limit of 40 objects per room.
 
 Right, now back to the pressing matter at hand - letting the player pick
 up the key.
