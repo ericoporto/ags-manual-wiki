@@ -105,15 +105,15 @@ change these options again later.
 ### Color choices
 
 Now, at this stage we really need to decide whether we want to create a
-palette-based (8-bit, 256-color) game, or a hi-color (16- or 32-bit)
+palette-based (8-bit, 256-color) game, or a hi-color (16-bit or 32-bit)
 game.
 
 256-color games are much more complicated to make due to having to deal
-with the palette, they are not supported by the Direct3D driver, and may
-not run well on some modern graphics cards. Although they can give you
-the authentic retro feel, unless you really need to use palette-cycling
-effects, it's recommended that you stay away from making new 256-color
-games.
+with the palette, they are not supported by the Direct3D or OpenGL graphics
+drivers, and may not run well on some modern graphics cards. Although they
+can give you the authentic retro feel, unless you really need to use
+palette-cycling effects it's recommended that you stay away from making
+new 256-color games.
 
 - It's **highly recommended** that you go with 32-bit color since many modern
 computers don't support 8 or 16 bit screen modes. Also 32-bit color is required
@@ -159,8 +159,8 @@ don't want to do this manually for every color, you can set up slots
 the selected slots and choose the "Replace selected slots from file"
 option.
 
-What colors you use is up to you, and depends on what sort of color
-scheme you're going for with your graphics.
+Which colors you use is up to you, and your choice will likely depend
+on the color scheme you're going for with your graphics.
 
 ![](images/icon_info.gif)
 
@@ -179,7 +179,7 @@ sure. Confirm it, and you're done.
 Having decided on our color depth, the other important decision to make
 at this stage is what resolution we want the game to run at. Higher
 resolutions allow you to have more detailed graphics, but they need more
-memory and run slower than lower resolutions.
+memory and some operations may run more slowly.
 
 Go back to the General Settings pane, and select your chosen resolution
 from the "Resolution" drop-down list.
