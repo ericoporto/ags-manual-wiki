@@ -132,25 +132,4 @@ OK, so we now have a fully-working first room. Test the game as
 before, and try it out. Once the player has taken the key, call up his
 inventory and you should see the large key picture there.
 
-### Room Settings
-
-Finally, let's just quickly go over the available properties for the
-room itself (available when in Nothing mode):
-
--   **PlayMusicOnRoomLoad** - you can type a music number in the box and
-    that background music will start playing when the player enters
-    the room. For more about music and sound, see later in the manual.
--   **SaveLoadEnabled** - if disabled, then if the player tries to save
-    or load the game while in this room, a message ("Sorry, not now") is
-    displayed instead. .
--   **ShowPlayerCharacter** - if checked, the player character will not
-    be visible in this room, and the Walk mode will be disabled. Useful
-    for close-up displays of control panels and so forth.
--   **PlayerCharacterView** - you can type a number in here to override
-    the player character's graphic for this room. For example, if you
-    have an overhead map screen, you will probably want a different
-    image of the character from an overhead perspective.
--   **MusicVolumeAdjustment** - this allows you to modify the background
-    music volume for this screen.
-
 Go to part 5: [Managing Inventory](acintro5)
