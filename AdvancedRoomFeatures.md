@@ -3,7 +3,6 @@
 This section describes slightly more advanced things you can do with the
 rooms.
 
-
 ---
 
 ### Character scaling
@@ -19,7 +18,7 @@ for all walkable areas is `100%`, i.e. full size. However, you can adjust
 it using the "Walkable Areas" mode to anywhere from `10%` (one-tenth
 size) to `200%` (double size).
 
-The scaling settings can effect all characters and objects in the game.
+The scaling settings can affect all characters and objects in the game.
 For characters, it is on by default but you can disable the scaling for
 an individual character by setting the "UseRoomAreaScaling" option in
 that character's properties.
