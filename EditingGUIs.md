@@ -99,13 +99,13 @@ tokens will be replaced with the relevant values in the game:
 
 Token | Description
 --- | ---
-@GAMENAME@ | The game's name, specified on the Game Settings pane
-@OVERHOTSPOT@ | Name of the hotspot which the cursor is over
-@SCORE@ | The player's current score
-@SCORETEXT@ | The text "Score: X of XX" with the relevant numbers filled in
-@TOTALSCORE@ | The maximum possible score, specified on the Game Settings pane
+`@GAMENAME@` | The game's name, specified on the Game Settings pane
+`@OVERHOTSPOT@` | The name of the hotspot which the cursor is over
+`@SCORE@` | The player's current score
+`@SCORETEXT@` | The text "Score: X of XX" with the relevant numbers filled in
+`@TOTALSCORE@` | The maximum possible score, specified on the Game Settings pane
 
-Example: You have @SCORE@ out of @TOTALSCORE@ points.
+Example: `"You have @SCORE@ out of @TOTALSCORE@ points."`
 
 The Properties window also allows you to align the text to left, right
 or center, as well as change its font and color.
