@@ -2,17 +2,21 @@
 
 On the Explore Project panel, you can expand the Characters tree to show the
 characters in your game. Right clicking on "Characters" entry, you can create a
-New character, Import a character previously exported from other project, or
-create a folder to help you organize your characters.
+new character, import a character previously exported from another project, or
+create a folder to help you organize things.
 
-By double-clicking on a character from the tree, it will load a panel for the
-character, allowing you to view the `NormalView` and `SpechView` for the
-selected character, and also to alternatively, mark the character as the player
-character if desired. Only one character can be the player.
+By double-clicking on a character within the tree, a new editor panel will open
+which allows you to inspect the `NormalView` and `SpeechView` for this character.
+This is also where you select whether this particular character will be used as
+the player character.
+
+**Note**: Only one character can be the designated as the player character within
+this panel since this will also determine which room the game starts in. Changing
+the player character during the game is possible by using the script function
+[Character.SetAsPlayer](Character#charactersetasplayer).
 
 ![](images/EditorCharacter_1.png)
 
 The properties panel shown will allow you to configure the initial properties of
-the character. The lighting bolt icon will switch for the interactions available
-for the character, which will allow you to map a function from Global Script to
-each interaction from the character.
+the character. The lighting bolt icon will switch to displaying the character's
+events, which may be mapped to functions within the game's Global Script.
