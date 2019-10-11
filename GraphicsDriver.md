@@ -6,7 +6,8 @@ DirectDraw, Direct3D and OpenGL.
 DirectDraw is the 'classic' software graphics driver, that AGS has used
 ever since the initial Windows version was released. It's perfectly fine
 for simple games that don't use many large sprites, tinting or alpha
-blending. It's also quite fast at doing RawDrawing to the screen.
+blending. It's also quite fast at performing drawing operations issued
+through a [DrawingSurface](DrawingSurface).
 
 Direct3D is a newer, hardware accelerated graphics driver. It uses the
 Direct3D 9.0 to render the game in a fully hardware-accelerated
@@ -29,14 +30,19 @@ No matter which you choose as your default graphics driver, the player
 can always run the Setup program and switch to using the other driver if
 they are having problems on their PC.
 
-**System Requirements**
+### System Requirements
 
-**DirectDraw**: any Windows-based PC with DirectX 5 or later installed<br>
-**Direct3D**: any Windows-based PC with DirectX 9.0 installed and a
-graphics card designed for DirectX 8.1 or later (most cards manufactured
-from 2003 onwards)<br>
-**OpenGL**: your graphics card drivers should provide support for
-OpenGL 3.0 or higher for the game visuals to have full functionality.
+**DirectDraw**<br>
+Any Windows-based PC with DirectX 5 or later installed.
+
+**Direct3D**<br>
+Any Windows-based PC with DirectX 9.0 installed and a graphics card
+designed for DirectX 8.1 or later (most cards manufactured from 2003
+onwards).
+
+**OpenGL**<br>
+Your graphics card drivers should provide support for OpenGL 3.0 or
+higher for the game visuals to have full functionality.
 
 If you are running with Direct3D 9 selected and get the error message
 "Graphics card does not support Pixel Shader 1.4" on startup, this
