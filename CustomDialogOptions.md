@@ -193,5 +193,6 @@ to continually scan through all the options.
 
 For more detail on the commands used here, see the [DialogOptionsRenderingInfo](DialogOptionsRenderingInfo) page.
 
-*Compatibility:* Supported by **AGS 3.1.0** and later versions.
+*Compatibility:* Supported by **AGS 3.1.0** and later versions.<br>
+dialog_options_repexec and dialog_options_key_press callbacks are supported since **AGS 3.4.0**.
 
