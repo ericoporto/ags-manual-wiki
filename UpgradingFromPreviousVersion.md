@@ -1,5 +1,5 @@
 ## Upgrading from a previous version
--   [Upgrading to AGS 3.5.0](UpgradeTo350)
+-   [Upgrading to AGS 3.5](UpgradeTo35)
 -   [Upgrading to AGS 3.4.1](UpgradeTo341)
 -   [Upgrading to AGS 3.4](UpgradeTo34)
 -   [Upgrading to AGS 3.3.5](UpgradeTo335)
