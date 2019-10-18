@@ -198,18 +198,17 @@ to work.
 **NOTE:** In 256-color games, PlayVideo is not supported. Please use a
 FLC/FLI video with the [PlayFlic](Multimedia#playflic) command instead.
 
-**Cross-Platform Support**
-
-Windows: **Yes**<br>
-Linux: **No**<br>
-MacOS: **Yes**
-
 Example:
 
-    PlayVideo("intro.mpg", eVideoSkipEscKey, 1);
+    PlayVideo("Intro.ogv", eVideoSkipEscKey, 1);
 
-will play the video Intro.mpg, allowing the player to skip with ESC if
+will play the video Intro.ogv, allowing the player to skip with ESC if
 they've seen it before.
+
+**Cross-Platform Support**
+
+OOG Theora: supported everywhere.
+AVI / MPG: Windows only.
 
 *Compatibility:* OGG Theora supported by **AGS 3.1.1** and later
 versions.
