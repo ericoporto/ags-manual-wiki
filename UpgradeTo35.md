@@ -2,12 +2,12 @@
 
 AGS version 3.5.0 is another big update and it has few serious changes to both editor UI and scripting.
 
-* [Room editor and multilayer mode](UpgradeTo350#room-editor-and-multilayer-mode)  
-* [New Viewport/Camera system](UpgradeTo350#new-viewportcamera-system)  
-* [Room sizes and mask resolution](UpgradeTo350#room-sizes-and-mask-resolution)  
-* [Deprecated relative asset resolutions](UpgradeTo350#deprecated-relative-asset-resolutions)  
-* [Some script functions replaced and/or deprecated](UpgradeTo350#some-script-functions-replaced-andor-deprecated)  
-* [System limits update](UpgradeTo350#system-limits-update)  
+* [Room editor and multilayer mode](UpgradeTo35#room-editor-and-multilayer-mode)  
+* [New Viewport/Camera system](UpgradeTo35#new-viewportcamera-system)  
+* [Room sizes and mask resolution](UpgradeTo35#room-sizes-and-mask-resolution)  
+* [Deprecated relative asset resolutions](UpgradeTo35#deprecated-relative-asset-resolutions)  
+* [Some script functions replaced and/or deprecated](UpgradeTo35#some-script-functions-replaced-andor-deprecated)  
+* [System limits update](UpgradeTo35#system-limits-update)  
 
 ### Room editor and multilayer mode
 
