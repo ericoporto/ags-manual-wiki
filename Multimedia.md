@@ -207,7 +207,7 @@ they've seen it before.
 
 **Cross-Platform Support**
 
-OOG Theora: supported everywhere.
+OGG Theora: supported everywhere.
 AVI / MPG: Windows only.
 
 *Compatibility:* OGG Theora supported by **AGS 3.1.1** and later
