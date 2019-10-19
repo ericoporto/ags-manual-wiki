@@ -1,6 +1,6 @@
-## Upgrading to 3.5.0
+## Upgrading to 3.5
 
-AGS version 3.5.0 is another big update and it has few serious changes to both editor UI and scripting.
+AGS version 3.5 is another big update and it has few serious changes to both editor UI and scripting.
 
 * [Room editor and multilayer mode](UpgradeTo35#room-editor-and-multilayer-mode)  
 * [New Viewport/Camera system](UpgradeTo35#new-viewportcamera-system)  
@@ -26,7 +26,7 @@ Room editor has got a new navigation bar on the top of the panel instead of the 
 
 In the past, AGS had a very simple concept of Viewport: a rectangular "eye" which selected a part of the room to display on the screen. If a room was larger than the game's screen it became a "scrolling room" and you could move a viewport around it, showing different parts of that room.
 
-In 3.5.0 the concept of viewport has changed a lot to provide more options. First of all, it's now split into two parts: Viewport and Camera.
+In 3.5 the concept of viewport has changed a lot to provide more options. First of all, it's now split into two parts: Viewport and Camera.
 
 The new Camera is almost what the old Viewport was: it is a rectangle *inside the room* that acts like an "eye" and tells which part of this room can be seen. Camera's position and size are defined in *room coordinates*. If Camera is smaller than the room, then it can be moved around it to see different parts.<br>
 The new Viewport is a different thing, now it defines a rectangle *on a game's screen* where the room will be drawn. Viewport has a link to Camera and displays what camera "sees" at this moment. Viewport's position and size are defined in *screen coordinates*, just like GUIs and Overlays. This means that if a camera is moving inside the room, the viewport will still stay at the same place on the screen, and vice-versa when a viewport is moved around the screen it will still display same part of the room. Of course, moving both viewport and camera will produce more complicated result.<br>
@@ -56,7 +56,7 @@ Only rooms and their contents (characters, objects) are affected by the viewport
     int roomx = mouse.x + GetViewportX();
     int roomy = mouse.y + GetViewportY();
 
-Since 3.5.0 this is no longer enough, because not only viewport itself may have offset on screen, but also camera's image may be scaled inside a viewport. For that reason there are now actual functions that help you do this conversion: [Screen.ScreenToRoomPoint](Screen#screenscreentoroompoint), [Screen.RoomToScreenPoint](Screen#screenroomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#viewportscreentoroompoint), [Viewport.RoomToScreenPoint](Viewport#viewportroomtoscreenpoint).<br>
+Since 3.5 this is no longer enough, because not only viewport itself may have offset on screen, but also camera's image may be scaled inside a viewport. For that reason there are now actual functions that help you do this conversion: [Screen.ScreenToRoomPoint](Screen#screenscreentoroompoint), [Screen.RoomToScreenPoint](Screen#screenroomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#viewportscreentoroompoint), [Viewport.RoomToScreenPoint](Viewport#viewportroomtoscreenpoint).<br>
 They are used like:
 
     Point *roompt = Screen.ScreenToRoomPoint(mouse.x, mouse.y);
@@ -67,11 +67,11 @@ For more information see: [Camera](Camera), [Viewport](Viewport), [Game.Cameras]
 
 ### Room sizes and mask resolution
 
-Previously AGS had a restriction that a room background must be at least size of a game resolution. With 3.5.0 this restriction is gone and you can now make rooms any size. This became possible after the rewrite of the viewport system, as explained above.
+Previously AGS had a restriction that a room background must be at least size of a game resolution. With 3.5 this restriction is gone and you can now make rooms any size. This became possible after the rewrite of the viewport system, as explained above.
 
 Another change is related to the room masks that define walkable areas, hotspots and so forth. Historically only walk-behinds mask was always made equal to the size of room background. Other masks were 1:1 to room background's size only in "low-res" games (below 640x400). In "high-res" games (640x400 and above) hotspots, regions and walkable masks were made x2 smaller resolution than the room, which means that for 4 room pixels (2x2 square) there was 1 mask pixel. That, in turn, caused these masks to be less precise. Originally this was done to reduce both memory size of a room and speed up any operations run against these masks, such as path-finding, but sometimes annoyed users who were unable to draw exactly a region they want.
 
-Since 3.5.0 each room has a property called MaskResolution which currently ranges from 1:1 to 1:4. This resolution determines the resolution factor for hotspots, regions and walkable masks (but not walk-behinds which is still fixed at 1:1). Default is 1:1, but you may change it anytime for any individual room if you prefer your room to have *less precise* area masks.<br>
+Since 3.5 each room has a property called MaskResolution which currently ranges from 1:1 to 1:4. This resolution determines the resolution factor for hotspots, regions and walkable masks (but not walk-behinds which is still fixed at 1:1). Default is 1:1, but you may change it anytime for any individual room if you prefer your room to have *less precise* area masks.<br>
 To make things more convenient there's also an option in General Settings called "Default mask resolution" which lets you choose a value that will be applied to every newly created room.<br>
 Note that when importing older projects the mask resolution is kept unchanged.
 
@@ -81,9 +81,9 @@ This is something users do not know much about now but may stumble upon sometime
 
 Although such practice is not commonly used for a while, you could still experience this effect if you, for example, take game template or project made in low resolution and convert it to high resolution. Some sprites from the original game which were marked as "low-res" will be scaled up. Sometimes this behavior may be useful - in case you are using these sprites as placeholders but may confuse inexperienced users.
 
-In AGS 3.5.0 we are deprecating concept of resolution tags and disable these conversions *by default*. We also make asset scaling more explicit in an attempt to prevent its misuse.
+In AGS 3.5 we are deprecating concept of resolution tags and disable these conversions *by default*. We also make asset scaling more explicit in an attempt to prevent its misuse.
 
-1. Rooms no longer have a resolution tag and are always considered having "real" resolution. This is only relevant if you are upgrading from pre-AGS 3.0 era. If you import 2.72 games into AGS 3.5.0 your rooms will get resized to match game resolution (unless they already do).
+1. Rooms no longer have a resolution tag and are always considered having "real" resolution. This is only relevant if you are upgrading from pre-AGS 3.0 era. If you import 2.72 games into AGS 3.5 your rooms will get resized to match game resolution (unless they already do).
 
 2. Sprites retain resolution tag for backward compatibility, but it is now set to "Real" by default and not recommended to change. When you import older project sprites get "promoted" to "real" resolution if their tag matches the game: for example if a sprite is tagged as "low-res" and your game is 320x200, or if a sprite is tagged as "high-res" and your game is 640x400 or higher.
 
