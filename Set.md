@@ -1,16 +1,16 @@
 ## `Set` Functions and Properties
 
-Set allows you to store a sequence of unique strings and efficiently look them up. When adding a string Set will automatically test whether such string is already contained and won't make a duplicate.
+A Set allows you to store a sequence of unique strings and look them up efficiently. When adding a string a Set will automatically test whether such string is already contained and won't make a duplicate.
 
-Because of how sets work internally, searching for a string in a set is faster than you'd search for it in a plain array. Its advantage increases with the number of items. They are also fast in adding and removing items dynamically.
+Because of how a Set work internally, searching for a string in a Set is faster than searching for it in a plain array. Its advantage increases with the number of items. They are also fast in adding and removing items dynamically.
 
 Similar to [Dictionary](Dictionary), Set has two general properties: **sort style** and **compare style**.
 
-**Sort style** defines whether items are stored sorted or unsorted. The unsorted containers are commonly somewhat faster to search in, but the items will be stored in an undefined order.
+**Sort style** defines whether items are stored sorted or unsorted. The unsorted containers are typically faster to search in, but the items will be stored in an undefined order.
 
-**Compare style** determines whether strings are compared as case sensitive or case insensitive. For example, in case-sensitive set strings "Parameter" and "parameter" will be seen as two different items, but in case-insensitive they will be seen as identical. Compare style defines both string uniqueness and sorting.
+**Compare style** determines whether strings are compared as case sensitive or case insensitive. For example, in a case-sensitive Set the strings "Parameter" and "parameter" will be seen as two different items, but in a case-insensitive Set they will be seen as identical. Compare style defines both string uniqueness and sorting.
 
-At the moment a set itself does not let you access all of its internal data at once directly, but has [GetItemsAsArray ](Set#setgetitemsasarray) function that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in this array will be matching one inside the set, hence if the set was sorted the array will be sorted as well.
+At the moment a Set does not let you directly access all of its internal data at once, but it does have the [GetItemsAsArray](Set#setgetitemsasarray) function that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in this array will be match the order within the Set, hence if the Set was sorted the array will be sorted as well.
 
 *Compatibility:* Set struct is supported by **AGS 3.5.0** and later versions.
 
@@ -34,7 +34,7 @@ Example:
 
     bool Set.Add(String item)
 
-Adds item to the set, fails if such item was already contained, returning false.
+Adds an item to the Set. Returns false if the Set already contained the item, otherwise returns true.
 
 Example:
 
@@ -49,7 +49,7 @@ Example:
 
     void Set.Clear()
 
-Removes all items from the set.
+Removes all items from the Set.
 
 ---
 
@@ -57,7 +57,7 @@ Removes all items from the set.
 
     bool Set.Contains(String item)
 
-Gets if the given item is in the set.
+Returns whether an item is already in a Set.
 
 Example:
 
@@ -96,7 +96,7 @@ In the above example the items will be displayed on screen one by one, preceded 
 
     bool Set.Remove(String item)
 
-Removes item from the set, returns false if there was no such item.
+Removes an item from the Set. Returns false if there was no such item, otherwise returns true.
 
 *See Also:* [Add](Set#setadd), [Contains](Set#setcontains)
 
@@ -106,7 +106,7 @@ Removes item from the set, returns false if there was no such item.
 
     StringCompareStyle Set.CompareStyle
 
-Gets if this set is case-sensitive.
+Returns the string comparison method for this Set.
 
 *See Also:* [SortStyle](Set#setsortstyle)
 
@@ -116,7 +116,7 @@ Gets if this set is case-sensitive.
 
     int Set.ItemCount
 
-Gets the number of items currently in the set.
+Returns the number of items currently in the Set.
 
 ---
 
@@ -124,6 +124,6 @@ Gets the number of items currently in the set.
 
     SortStyle Set.SortStyle
 
-Gets the method items are arranged in this set.
+Returns the sorting method for this Set.
 
 *See Also:* [CompareStyle](Set#setcomparestyle)
