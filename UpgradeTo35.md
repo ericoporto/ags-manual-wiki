@@ -2,13 +2,6 @@
 
 AGS version 3.5 is another big update and it has few serious changes to both editor UI and scripting.
 
-* [Room editor and multilayer mode](UpgradeTo35#room-editor-and-multilayer-mode)  
-* [New Viewport/Camera system](UpgradeTo35#new-viewportcamera-system)  
-* [Room sizes and mask resolution](UpgradeTo35#room-sizes-and-mask-resolution)  
-* [Deprecated relative asset resolutions](UpgradeTo35#deprecated-relative-asset-resolutions)  
-* [Some script functions replaced and/or deprecated](UpgradeTo35#some-script-functions-replaced-andor-deprecated)  
-* [System limits update](UpgradeTo35#system-limits-update)  
-
 ### Room editor and multilayer mode
 
 Room editor has got a new navigation bar on the top of the panel instead of the plain drop-down list where you used to select edit mode. This navigation bar lets you do the following:
