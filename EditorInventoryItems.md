@@ -35,7 +35,12 @@ The internal ID of this inventory Item. This value cannot be changed, it can be 
 The script name of the inventory item. Usually the convention is to start inventory item names with an 'i', so a key might be named `iKey`. This convention sure gets tricky when you give your game characters some Apple products...
 
 ### PlayerStartsWithItem
+
 This is a boolean value which sets whether the player character starts with this inventory item in their inventory or not. In the majority of cases, where items are collected during gameplay, the default setting of no is probably the one to use.
+
+### Properties
+
+Configure any [custom properties](CustomProperties) for this inventory item. A common use is to use an additional boolean flag to indicate that an inventory item should be 'used' by itself, without needing to combine it with another inventory item.
 
 <hr>
 
