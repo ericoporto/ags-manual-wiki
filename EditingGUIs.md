@@ -1,4 +1,4 @@
-## Editing the GUIs
+## Editing GUIs
 
 A game's user interface is typically split up into multiple GUIs. Each GUI is a
 rectangular region on the screen which is drawn on top of the background scene,
