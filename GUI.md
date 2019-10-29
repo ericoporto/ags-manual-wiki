@@ -364,13 +364,17 @@ clickable.
 Gets the style of GUI behavior on screen. Possible values are:
 
     eGUIPopupNormal       no special behavior
-    eGUIPopupMouseYPos    shown when the mouse cursor moves to the top of the screen, past GUI.PopupYPos, and hidden all other time.
+    eGUIPopupMouseYPos    shown when the mouse cursor moves to the top of the screen, past GUI.PopupYPos, and hidden at all other times
     eGUIPopupModal        like normal, but pauses game when shown
-    eGUIPopupPersistent   like normal, but not removed when all interface is disabled
+    eGUIPopupPersistent   like normal, but not removed when the game's user interface is disabled
 
 **NOTE:** for MouseYPos style GUI.Visible property does not control visibility directly. The GUI will become visible only when both conditions match:
 - GUI.Visible property set to TRUE;
 - mouse cursor is closer to the screen top than GUI.PopupYPos value.
+
+**NOTE:** To automatically hide a GUI when the user interface is disabled, the
+General Settings option `When player interface is disabled, GUIs should` needs
+to be set as `Be hidden`.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
