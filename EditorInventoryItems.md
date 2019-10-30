@@ -6,17 +6,17 @@ A place to edit Items that can be added to a character's [inventory](Settingupth
 
 ### Cursor Image
 
-The image number from the [Sprite Manager](EditorSprite) that is displayed as the active cursor image when selecting this inventory item from the inventory. This could be to use it on another inventory item or to use it somewhere inside your room. You can also set the active hotspot of the mouse-cursor image, which is where the click from the mouse cursor will be registered when usinng this image. This can be done by left clicking on the mouse-cursor image itself, or by entering the appropriate into the HotspotX and HotspotY properties (this is explained 3 paragraphs below).
+The image number from the [Sprite Manager](EditorSprite) that is displayed as the active cursor image when selecting this inventory item from the inventory. This could be to use it on another inventory item or to use it somewhere inside your room. You can also set the active hotspot of the mouse-cursor image, which is where the click from the mouse cursor will be registered when using this image. This can be done by left clicking on the mouse-cursor image itself, or by entering the appropriate into the HotspotX and HotspotY properties (see below).
 
 It is generally good practice to add some kind of crosshair or a single pixel marker in an easy to spot color to the image and align the click hotspot to this. This way the player should be able to tell exactly where they are pointing. Figuring out bad controls is no puzzle!
 
 ### Description
 
-The name of the item. This is also the value used by the `@OVERHOTSPOT@` token when the mouse cursoe is hovering over this item, whilst still in the inventory.
+The name of the item. This is also the value used by the `@OVERHOTSPOT@` token when the mouse cursor is hovering over this item, whilst still in the inventory.
 
 ### Image
 
-The image displayed for the inventory item within the character's inventory. This is usually a bit bigger than the mouse cursor image of the inventory item.
+The image displayed for the inventory item within the character's inventory. This is typically larger than the mouse cursor image of the inventory item, depending on how the GUI that is used for the inventory window has been configured.
 
 ### HotspotX
 
