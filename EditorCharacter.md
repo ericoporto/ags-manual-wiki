@@ -1,9 +1,9 @@
 ## Character Editor
 
-On the Explore Project panel, you can expand the Characters tree to show the
-characters in your game. Right clicking on "Characters" entry, you can create a
-new character, import a character previously exported from another project, or
-create a folder to help you organize things.
+On the Explore Project panel, you can expand the Characters node to show the
+characters which are defined in your game. Right clicking on the "Characters"
+node itself allows you to create a new character, import a character previously
+exported from another project, or create a folder to help you organize things.
 
 By double-clicking on a character within the tree, a new editor panel will open
 which allows you to inspect the `NormalView` and `SpeechView` for this character.
