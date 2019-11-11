@@ -58,6 +58,21 @@ They are used like:
 
 For more information see: [Camera](Camera), [Viewport](Viewport), [Game.Cameras](Game#gamecameras), [Screen.Viewports](Screen#screenviewports)
 
+### New Screen struct
+
+There's now a new Screen struct that contains several game screen related functions and properties. Its addition renders some of the older properties from System struct obsolete. Following is a table of conversion between old and new properties:
+
+obsolete property | replace with
+-- | --
+System.ScreenWidth | Screen.Width
+System.ScreenHeight | Screen.Height
+System.ViewportWidth | Screen.Width
+System.ViewportHeight | Screen.Height
+
+As you may notice, both deprecated ScreenWidth/Height and ViewportWidth/Height properties are corresponding to the single new pair. That is because in practice both System.ScreenWidth and System.ViewportWidth were representing almost same thing, except for specific cases which are no longer valid in modern AGS anyway.
+
+For more information see: [Screen](Screen)
+
 ### Room sizes and mask resolution
 
 Previously AGS had a restriction that a room background must be at least size of a game resolution. With 3.5 this restriction is gone and you can now make rooms any size. This became possible after the rewrite of the viewport system, as explained above.
