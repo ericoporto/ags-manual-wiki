@@ -5,7 +5,7 @@ what the end player will use.
 
 ### Configuration file locations
 
-For historical reasons configuration file should be called "`acsetup.cfg`".
+For historical reasons the configuration file should be called "`acsetup.cfg`".
 
 The engine supports three configuration files that are read in the following order, every next overriding values from the previous one:
 1. Default config file, found in the game's installation directory, applied for the game loaded from that directory;
