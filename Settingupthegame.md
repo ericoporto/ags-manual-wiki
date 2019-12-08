@@ -736,6 +736,7 @@ SetGameOption. **Basic properties**
     commands, they will visibly turn around using their available loops.
     If this option is not set, they will immediately appear facing their
     new direction.
+-   **Scale movement speed with room's mask resolution** - Character walking and object movement speeds will scale inversely in proportion to the current room's Mask Resolution. For example, having 1:2 mask resolution will multiply speed by 2. This is a backward compatible setting that should not be enabled without real need.
 
 **Compiler**
 
