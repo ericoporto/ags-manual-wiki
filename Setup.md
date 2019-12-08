@@ -8,29 +8,28 @@ settings.
 The options in setup are divided into two parts: common and advanced.
 Advanced options could be accessed by pressing "Advanced" button.
 
-**Graphics settings**
+### Graphics settings
 
-Driver
+**Driver**
 
 Lets player choose a graphics driver. Currently supported are Software
 renderer (old and slower one, but only driver that fully supports 8-bit
 games), Direct3D 9 and OpenGL (newer and faster drivers with hardware
-acceleration).
+acceleration, but without proper palette-based effects support).
 
-Run in the window instead of fullscreen
+**Start in a windowed mode**
 
 If checked, the game will be run in windowed mode, as opposed to
 fullscreen.
 
-Mode
+**Mode**
 
 Lets choose a fullscreen display mode (otherwise shows the approximate
 size of window the game will be running in). The list of modes depends
 on graphic card and system capabilities.
 
-Fullscreen scale
-
-Windowed scale
+**Fullscreen scale**
+**Windowed scale**
 
 These two options determine the way game will be scaled (when required)
 in fullscreen and windowed modes respectively:
@@ -53,7 +52,7 @@ stretched to screen borders while respecting game's native aspect ratio
 look correct, but may cause black borders appear at the left&right or
 top&bottom sides of the screen.
 
-Scaling method
+**Scaling method**
 
 Here player may choose a game scaling algorithm (nearest-neighbor is
 the simplest one). Some of the methods (notably Hqx) are restricted to
@@ -62,40 +61,33 @@ game on its own, the nearest-neighbor method will be applied
 additionally. The list of available filters depend on graphics driver
 selection.
 
-**Gameplay settings**
+### Gameplay settings
 
-Game language
+**Game language**
 
 Here player may choose one of the available game translations.
 
-**Advanced graphics options**
+### Advanced graphics options
 
-Vertical sync
+**Vertical sync**
 
 This option enables vertical synchronization mode, which reduces
 "tearing" effect on game image, but may decrease the game running speed.
 
-Use 85 Hz display
+**Use 85 Hz display**
 
 This option sets the monitor refresh rate to 85 Hz to run the game,
 which eliminates flicker. However, this does not work on all monitors,
 and not at all on flat panel displays, which is why it is disabled by
 default.
 
-Smooth scaled sprites
+**Smooth scaled sprites**
 
 This option will apply anti-aliasing to scaled characters, in order to
 give a smoother look to the resizing. This can slow down the game
 though, so it is off by default.
 
-Downgrade 32-bit graphics to 16-bit
-
-This option is only available for 32-bit games. It allows people with
-slower PCs to choose to play the game at 16-bit instead, in order to
-boost performance. If they use this, the graphical quality will reduce,
-but it should at least allow them to play the game at a decent speed.
-
-Render sprites at screen resolution
+**Render sprites at screen resolution**
 
 When enabled, characters and objects are scaled in screen pixels rather
 than game pixels. What this means is that when low-resolution game is
@@ -104,26 +96,30 @@ resolution and look less pixelated when scaled down. This option may be
 locked to certain state by the game itself (according to author's
 choice), in which case players will not be able to change it.
 
-**Sound options**
+### Sound options
 
-Digital sound
+**Digital sound**
 
 Here player may choose the digital audio driver, or disable digital
 sound completely.
 
-MIDI music
+**MIDI music**
 
 Here player may choose the MIDI music playback method, or disable MIDI
 music completely.
 
-Use voice pack is available
+**Enable threaded audio**
+
+When enabled, engine will process audio on a separate thread. This results in a much smoother playback, but may potentially break game's synchronization with the music (if it had one).
+
+**Use voice pack is available**
 
 When checked, this option enables voice speech in game (where
 available).
 
-**Mouse options**
+### Mouse options
 
-Auto lock to window
+**Auto lock to window**
 
 If this option is enabled, the mouse will be locked inside game window
 whenever player clicks on it or switches into game. The locked mouse
@@ -132,15 +128,15 @@ game by mistake (by clicking on desktop, for example). Naturally, this
 option only has importance if game is run in windowed mode; when in
 fullscreen the mouse is always locked.
 
-Mouse speed
+**Mouse speed**
 
 This slider allows player to set up mouse cursor speed in game. It
 should be noted that this parameter is only applied if the game is run
 in fullscreen mode.
 
-**Other advanced settings**
+### Other advanced settings
 
-Sprite cache max size
+**Sprite cache max size**
 
 This option limits the maximum amount of memory that the game will use
 for its sprite cache. Sprite cache is used to keep a partition of all
@@ -150,7 +146,7 @@ higher values make the game use more memory. Usually only
 high-resolution games with long animations need to have this value
 increased.
 
-Custom game saves path
+**Custom game saves path**
 
 When unchecked, the game will store its files - saved games, and custom
 runtime data - in the default Windows folders:
