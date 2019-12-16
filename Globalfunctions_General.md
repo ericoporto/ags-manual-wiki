@@ -647,7 +647,7 @@ interpreted as the number key rather than the arrow key.
 
 Example:
 
-    if (IsKeyPressed(eKeyUpArrow) == 1)
+    if (IsKeyPressed(eKeyUpArrow))
       cEgo.Walk(cEgo.x, cEgo.y+3);
 
 will move the character EGO upwards 3 pixels when the up arrow is
@@ -772,7 +772,7 @@ is paused.
 
 Example:
 
-    if (IsKeyPressed(32)==1) PauseGame();
+    if (IsKeyPressed(32)) PauseGame();
 
 will pause the game if the player presses the space bar
 
@@ -834,7 +834,7 @@ Restarts the game from the beginning.
 
 Example:
 
-    if (IsKeyPressed(365) == 1) RestartGame();
+    if (IsKeyPressed(365)) RestartGame();
 
 will restart the game if the player presses the F7 key.
 
@@ -854,7 +854,7 @@ when the script function finishes executing.
 
 Example:
 
-    if (IsKeyPressed(363) == 1) RestoreGameDialog();
+    if (IsKeyPressed(363)) RestoreGameDialog();
 
 will bring up the restore game dialog if the player presses the F5 key.
 
