@@ -308,7 +308,7 @@ the Use Inventory mode if the player has an active inventory item.
 
 Restricts the area where the mouse can move on screen. The four
 parameters are the relevant pixel co-ordinates of that edge of the
-bounding rectangle. They are in the usual range (0,0) - (320,200).
+bounding rectangle. They are in the usual range (0, 0) - (Screen.Width, Screen.Height).
 
 You can pass (0,0,0,0) to disable the bounding rectangle and allow the
 mouse to move everywhere, as usual.
@@ -321,7 +321,7 @@ Example:
     mouse.SetBounds(160, 100, 320, 200);
 
 will restrict the mouse cursor to the bottom-right quarter of the
-screen.
+screen of a game that has screen resolution of 320x200.
 
 *See Also:* [Mouse.SetPosition](Mouse#mousesetposition)
 
@@ -334,7 +334,7 @@ screen.
     Mouse.SetPosition(int x, int y)
 
 Moves the mouse pointer to screen co-ordinates (X,Y). They are in the
-usual range (0,0) - (320,200/240). The mouse.x and mouse.y variables
+usual range (0, 0) - (Screen.Width,Screen.Height). The mouse.x and mouse.y variables
 will be updated to reflect the new position.
 
 **NOTE:** Only use this command when absolutely necessary. Moving the
@@ -343,7 +343,7 @@ too often during the game.
 
 Example:
 
-    mouse.SetPosition(160, 100);
+    mouse.SetPosition(Screen.Width/2, Screen.Height/2);
 
 will place the mouse cursor in the center of the screen.
 
