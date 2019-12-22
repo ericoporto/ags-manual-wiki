@@ -49,8 +49,8 @@ game.text_shadow_color | Color used for speech text shadow (default 16).
 game.top_bar_XXXX | Customizations for [DisplayTopBar](Globalfunctions_Message#displaytopbar), see link for details
 game.total_score | Maximum possible score, initially set in the editor.
 game.used_mode | Cursor mode used with last click (use with "any click" events to find out which mode was used)
-**mouse.x** | Mouse X co-ordinate when the last game loop was run (320-res)
-**mouse.y** | Mouse Y co-ordinate when the last game loop was run (320-res)
+**mouse.x** | Mouse X co-ordinate when the last game loop was run
+**mouse.y** | Mouse Y co-ordinate when the last game loop was run
 palette[SLOT].r | The red component (0-63) of palette slot SLOT
 palette[SLOT].g | The green component (0-63) of palette slot SLOT
 palette[SLOT].b | The blue component (0-63) of palette slot SLOT
