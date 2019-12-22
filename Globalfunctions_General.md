@@ -403,7 +403,7 @@ like [DrawMessageWrapped](DrawingSurface#drawingsurfacedrawmessagewrapped)
 will be. WIDTH is the width of the area in which the text will be
 displayed.
 
-The height is returned in normal 320-resolution pixels, so it can be
+The height is returned in screen pixels, so it can be
 used with the screen display commands.
 
 Example:
@@ -429,7 +429,7 @@ would take up.
 This could be useful if you manually need to center or right-align some
 text, for example with the raw drawing routines.
 
-The width is returned in normal 320-resolution pixels, so it can be used
+The width is returned in screen pixels, so it can be used
 with the screen display commands.
 
 Example:
