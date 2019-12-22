@@ -868,8 +868,8 @@ will change the speech font to \"Standard\".
 
 Returns the height of the specified sprite.
 
-The height will be returned in the usual 320x200-resolution
-co-ordinates. If an invalid sprite slot is supplied, 0 will be returned.
+The height will be returned in the original sprite pixels (without any scaling).
+If an invalid sprite slot is supplied, 0 will be returned.
 
 Example:
 
@@ -888,7 +888,7 @@ Example:
 
 Returns the width of the specified sprite.
 
-The width will be returned in the usual 320x200-resolution co-ordinates.
+The width will be returned in the original sprite pixels (without any scaling).
 If an invalid sprite slot is supplied, 0 will be returned.
 
 Example:

@@ -65,8 +65,7 @@ a complete copy of that background frame number from the current room.
 Optionally, you can specify a portion of the background to grab. You
 must either supply all or none of the x, y, width and height parameters;
 if you do supply them, this allows you to just get a small portion of
-the background image into the new sprite. All co-ordinates are in
-320x200-resolution room co-ordinates.
+the background image into the new sprite. All co-ordinates are room co-ordinates.
 
 Use the [Graphic](DynamicSprite#dynamicspritegraphic) property of the
 DynamicSprite to interface with other commands and to use the new sprite
@@ -362,7 +361,7 @@ draw more onto it than its current boundaries allow. It is effectively
 the opposite of [Crop](DynamicSprite#dynamicspritecrop). The additional
 surface area will be transparent.
 
-The width and height are specified in 320x200-resolution units.
+The width and height are specified in pixels.
 
 Example:
 
@@ -429,8 +428,7 @@ transparency mask to use that of sprite 11, and displays it on object 0.
     DynamicSprite.Crop(int x, int y, int width, int height);
 
 Crops the sprite down to *width* x *height*, starting from (x,y) in the
-image. The width and height are specified in 320x200-resolution units,
-as usual.
+image. The width and height are specified in pixels.
 
 This allows you to trim the edges off a sprite, and perform related
 tasks. Only the area with its top-left corner as (x,y) and of WIDTH x
@@ -557,9 +555,6 @@ object for 1 second and then removes it.
     DynamicSprite.Resize(int width, int height);
 
 Resizes an existing dynamic sprite to WIDTH x HEIGHT pixels.
-
-The width and height are specified in 320x200-resolution units, as
-usual.
 
 **NOTE:** Resizing is a relatively slow operation, so do not attempt to
 resize sprites every game loop; only do it when necessary.
@@ -741,7 +736,7 @@ takes a screen shot, and draws it onto the background scene at
     readonly int DynamicSprite.Height;
 
 Gets the height of this dynamic sprite. The height is always returned in
-320x200-resolution units.
+pixels.
 
 Example:
 
@@ -763,7 +758,7 @@ displays the size of the CustomAvatar.bmp image.
     readonly int DynamicSprite.Width;
 
 Gets the width of this dynamic sprite. The width is always returned in
-320x200-resolution units.
+pixels.
 
 Example:
 
@@ -777,4 +772,3 @@ displays the size of the CustomAvatar.bmp image.
 
 *See Also:* [DynamicSprite.Height](DynamicSprite#dynamicspriteheight),
 [DynamicSprite.Resize](DynamicSprite#dynamicspriteresize)
-

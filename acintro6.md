@@ -35,11 +35,11 @@ Right-click on it and choose "*Replace sprite from file*". Select the
 file that you want in the dialog, and then you'll be presented with
 this:
 
-![The "Import Sprite" window](images/intro6_2.jpg)
+![The "Import Sprite" window](images/intro6_2.png)
 
 This is the Import Sprite window. You'll see the image from the file
 that you chose, along with various options. The Zoom slider on the left
-allows you to zoom in on the image (very useful for 320x200-resolution
+allows you to zoom in on the image (very useful for low resolution
 graphics), and the "Transparent color" option allows you to choose how
 AGS decides which color is the image's transparent color.
 
@@ -52,10 +52,9 @@ selected area of the image will be imported.
 
 **NOTE:** For character graphics, make sure you import graphics that are
 a suitable size for the game backgrounds. For example, don't import a
-320x200-sized image for your character, since it will take up the whole
-screen. A good size would be about 20x50 pixels. This will look really
-small in the Import window, but your game runs at a much lower
-resolution so it'll look much larger.
+320x200-sized image for your character if your game resolution is 320x200.
+A good size for games with this size of screen resolution would be about
+20x50 pixels.
 
 ![](images/icon_info.gif)
 
