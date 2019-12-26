@@ -97,6 +97,21 @@ In AGS 3.5 we are deprecating concept of resolution tags and disable these conve
 
 3. "Fonts designed for high resolution" setting was removed because it no longer makes sense. Instead, each font has an individual ScalingMultiplier property. When importing older project each font will be scaled x2 if it was a "high-res" game and this setting was OFF.
 
+### Custom Say function in Dialogs
+
+AGS 3.5.0 adds the possibility of using a custom script function as a substitute instead of regular `Character.Say` commands when building dialogs. This is done using "Custom Say function in dialog scripts" option in the General Settings. Similarly, narration (which is by default done using Display script function) may be substituted with a custom one using "Custom Narrate function in dialog scripts".
+
+These custom functions should be declared as imports in one of your script headers.
+"Custom Say" function must have one of the following two declaration forms:<br>
+`void MySay(Character* c, const string text); // use ex: MySay(player, "Hello");`<br>
+or<br>
+`void MySay(this Character*, const string text); // use ex: player.MySay("Hello");`
+
+"Custom Narrate" function must have following declaration form:<br>
+`void MyNarrate(const string text);`
+
+There's only a limitation that, if Say checkbox for dialog options is checked, it will use regular `Character.Say` despite defining a custom Say function.
+
 ### Some script functions replaced and/or deprecated
 
 Some functions from previous Script API were either replaced by new equivalents or deprecated. They are shown in the table below:
@@ -109,12 +124,6 @@ Object.IgnoreWalkbehinds | *Do not use*
 DrawingSurface.UseHighResCoordinates | *Do not use*
 
 Note that you can still use "Script Compatibility Level" switch in General Settings to enable old functions.
-
-### Custom Say function in Dialogs
-
-AGS 3.5.0 adds the possibility of using a custom script function as a substitute instead of regular `Character.Say` commands when building dialogs. This is done using "Custom Say function in dialog scripts" option in the General Settings. Similarly, narration (which is by default done using Display script function) may be substituted with a custom one using "Custom Narrate function in dialog scripts".
-
-There's only a limitation that, if Say checkbox for dialog options is checked, it will use regular `Character.Say` despite defining a custom Say function.
 
 ### System limits update
 
