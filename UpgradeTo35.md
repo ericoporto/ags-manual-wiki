@@ -101,7 +101,7 @@ In AGS 3.5 we are deprecating concept of resolution tags and disable these conve
 
 AGS 3.5.0 adds the possibility of using a custom script function as a substitute instead of regular `Character.Say` commands when building dialogs. This is done using "Custom Say function in dialog scripts" option in the General Settings. Similarly, narration (which is by default done using Display script function) may be substituted with a custom one using "Custom Narrate function in dialog scripts".
 
-These custom functions should be declared as imports in one of your script headers.
+These custom functions should be declared as imports in one of your script headers.<br>
 "Custom Say" function must have one of the following two declaration forms:<br>
 `void MySay(Character* c, const string text); // use ex: MySay(player, "Hello");`<br>
 or<br>
