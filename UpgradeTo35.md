@@ -110,6 +110,12 @@ DrawingSurface.UseHighResCoordinates | *Do not use*
 
 Note that you can still use "Script Compatibility Level" switch in General Settings to enable old functions.
 
+### Custom Say function in Dialogs
+
+AGS 3.5.0 adds the possibility of using a custom script function as a substitute instead of regular `Character.Say` commands when building dialogs. This is done using "Custom Say function in dialog scripts" option in the General Settings. Similarly, narration (which is by default done using Display script function) may be substituted with a custom one using "Custom Narrate function in dialog scripts".
+
+There's only a limitation that, if Say checkbox for dialog options is checked, it will use regular `Character.Say` despite defining a custom Say function.
+
 ### System limits update
 
 Support for very large files was added to AGS, therefore now package file and every asset file is allowed to exceed 2 GB. One good example to mention is the packed sprites file (acsprset.spr) which 2 GB limit was causing most inconveniences.
