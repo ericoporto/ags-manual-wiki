@@ -110,7 +110,7 @@ or<br>
 "Custom Narrate" function must have following declaration form:<br>
 `void MyNarrate(const string text);`
 
-There's only a limitation that, if Say checkbox for dialog options is checked, it will use regular `Character.Say` despite defining a custom Say function.
+**IMPORTANT:** There's currently a limitation that, if Say checkbox for dialog options is checked, it will use regular `Character.Say` despite defining a custom Say function.
 
 ### Some script functions replaced and/or deprecated
 
