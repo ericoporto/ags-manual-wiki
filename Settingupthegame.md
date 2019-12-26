@@ -550,6 +550,24 @@ The dialog commands available are:
 
 By default all of the character dialog lines are executed using the standard function Character.Say. Since AGS 3.5.0 it is possible to define a custom script function as a substitute instead. This is done using "Custom Say function in dialog scripts" option in the General Settings. Similarly, narration (which is by default done using Display script function) may be substituted with a custom one using "Custom Narrate function in dialog scripts".
 
+These custom functions should be declared as imports in one of your script headers.<br>
+"Custom Say" function must have one of the following two declaration forms:<br>
+`void MySay(Character* c, const string text); // use ex: MySay(player, "Hello");`<br>
+or<br>
+`void MySay(this Character*, const string text); // use ex: player.MySay("Hello");`
+
+"Custom Narrate" function must have following declaration form:<br>
+`void MyNarrate(const string text);`
+
+**IMPORTANT:** There's currently a limitation that, if Say checkbox for dialog options is checked, it will use regular `Character.Say` despite defining a custom Say function.<br>
+If you still want to have player pronounce dialog option text, one of the solutions is to add a call to your custom speech function as the first line in every dialog option script:
+
+    @X
+      player.MySay(this.GetOptionText( X )); \\ where X is the actual option index
+
+
+If you wonder how such function will work in dialogs, see the following topic below.
+
 **Using scripting commands in dialogs**
 
 Often the provided dialog scripting commands won't be enough for what
