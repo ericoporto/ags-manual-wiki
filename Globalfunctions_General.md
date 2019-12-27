@@ -1014,7 +1014,7 @@ the filename the player typed.
 
 ### `SetAmbientLightLevel`
 
-    void SetAmbientTint(int light_level);
+    void SetAmbientLightLevel(int light_level);
 
 Sets an ambient light level that affects all objects and characters in
 the room.
