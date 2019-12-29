@@ -20,15 +20,13 @@ Making a game has never been so productive!
 
 *Note:* AGS Editor is Windows only. 
 
-1. The latest stable release is always available from the [AGS Download site](https://www.adventuregamestudio.co.uk/site/ags/), and beta releases can be found at the top of [Editor Releases Forum](https://www.adventuregamestudio.co.uk/forums/index.php?board=28.0).
+*Download AGS*. The latest stable release is always available from the [AGS Download site](https://www.adventuregamestudio.co.uk/site/ags/), and beta releases can be found at the top of [Editor Releases Forum](https://www.adventuregamestudio.co.uk/forums/index.php?board=28.0).
 
-2. Select the Installer and double click on it, or if you downloaded from the forums, there's also an option to get as zip, which can be extracted to a folder you want to.
+*Install AGS*. Select the Installer and double click on it, or if you downloaded from the forums, there's also an option to get as zip, which can be extracted to a folder you want to.
 
-3. Double-click on `AGSEditor.exe` on the extracted or the installed folder.  If you used the installer, it should have also provided a shortcut on the start menu.
+*Run AGS*. Double-click on `AGSEditor.exe` on the extracted or the installed folder.  If you used the installer, it should have also provided a shortcut on the start menu.
 
-To help you proceed further you should check the manual provided with AGS, which is also [available online here](https://github.com/adventuregamestudio/ags-manual). 
-
-It's also recommended to participate in [the forums](https://www.adventuregamestudio.co.uk/forums/)  to get additional help when developing your game.
+To help you proceed further you should check the manual provided with AGS, which is also [available online here](https://github.com/adventuregamestudio/ags-manual). It's also recommended to participate in [the forums](https://www.adventuregamestudio.co.uk/forums/)  to get additional help when developing your game.
 
 To get started, [read the tutorial](StartingOff).
 
