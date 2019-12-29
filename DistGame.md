@@ -92,3 +92,27 @@ GAME.001, GAME.002 and so on.
 Some resources are still combined into the EXE file but all the rooms
 will be placed into the other files. If you use this option, you need to
 distribute your game's EXE file plus all the GAME.00? files.
+
+---
+
+### Managing Graphics Footprint
+
+Your game sprites are stored as bitmap files, and it's size will be proportional to the number of pixels stored, normally being packed along with your game executable. They are packed sequentially, so for distribution systems that supports binary patching, like Steam, when you add a new sprite and update your game, only that single sprite will be delivered through it - Steam also applies a compression when sending these patches. If your game is distributed as a single binary file, zipping will reduce it's download size, but you can also turn on RLE compression on your game settings, which can reduce their size on disk.
+
+You can generate some graphics programatically in your game using Dynamic Sprites, just remember if you don't unload and reload them between save and load, if you are using the savestate feature from AGS, this sprites will be serialized to the game savefiles, potentially making them of a significant size.
+
+### Managing Audio Footprint
+
+AGS stores audio files directly from their imported files, and can be globed as an external audio.vox file or be part of the main game executable. Speech is always packed as an external speech.vox file. The file doesn't compress the audio, but instead relies on the original compression from each individually imported audio file. Some distribution platforms don't provide binary patching, since audio files tend to be less volatile at middle to late parts of game development, it may be wise to have them as external files so that they are not downloaded again by your player.
+
+**Speech**
+
+Usually the ogg format can achieve good compression with voice files. If you use Audacity, a compression of 3 (of 10) provides good quality while providing very small files.
+
+**Sound Effects**
+
+For sound effect files, usually ogg provides a good compression, you may need to test individual compression levels.
+
+**Music**
+
+Music files will compress just fine with ogg. It's a good idea to experiment with different compression levels. If you have to, you can use mp3 files too, just be aware they may produce a small audible gap when looping, so avoid mp3 on short musics. Don't use wav files for music or it will make your game size too big without perceptual quality gains.
