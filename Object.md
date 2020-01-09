@@ -233,6 +233,30 @@ will display the message if the objects 2 and 3 are colliding.
 
 ---
 
+### `Object.IsInteractionAvailable`
+
+    Object.IsInteractionAvailable(CursorMode)
+
+Checks whether there is an event handler defined for activating the room
+object in cursor mode MODE.
+
+This function is very similar to RunInteraction, except that rather than
+run the event handler script function, it simply returns *true* if
+something would have happened, or *false* if unhandled_event would have
+been run.
+
+Example:
+
+    if (oDoor.IsInteractionAvailable(eModeInteract) == 0)
+      Display("interacting with this door would not do anything.");
+
+*Compatibility:* Supported by **AGS 3.4.0** and later versions.
+
+*See Also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
+[Object.RunInteraction](Object#objectruninteraction)
+
+---
+
 ### `Object.MergeIntoBackground`
 
 *(Formerly known as MergeObject, which is now obsolete)*
@@ -317,30 +341,6 @@ Example:
 will tint object 1 green for a second, then turn it back to normal.
 
 *See Also:* [Object.Tint](Object#objecttint)
-
----
-
-### `Object.IsInteractionAvailable`
-
-    Object.IsInteractionAvailable(CursorMode)
-
-Checks whether there is an event handler defined for activating the room
-object in cursor mode MODE.
-
-This function is very similar to RunInteraction, except that rather than
-run the event handler script function, it simply returns *true* if
-something would have happened, or *false* if unhandled_event would have
-been run.
-
-Example:
-
-    if (oDoor.IsInteractionAvailable(eModeInteract) == 0)
-      Display("interacting with this door would not do anything.");
-
-*Compatibility:* Supported by **AGS 3.4.0** and later versions.
-
-*See Also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
-[Object.RunInteraction](Object#objectruninteraction)
 
 ---
 
