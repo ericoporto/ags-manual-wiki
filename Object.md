@@ -437,9 +437,7 @@ will change object's 2 position to 50,100.
 
 Sets the object's view to VIEW, and changes the object's graphic to
 FRAME of LOOP in VIEW. If you do not supply the loop or frame, they will
-default to 0 from AGS version 3.5.0 on. In versions prior to AGS 3.5.0 these
-empty values will be left unchanged. But you can still use the current unchanged 
-value in AGS 3.5+ with the *Object.SetView(new_view, Object.Loop, Object.Frame);* command.
+be left unchanged.
 
 You must use this command before calling Animate, so that AGS knows
 which view to animate the object with.
