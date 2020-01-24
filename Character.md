@@ -9,7 +9,7 @@ now obsolete)*
 
     Character.AddInventory(InventoryItem *item, optional int addAtIndex)
 
-Adds the specified item to the character's inventory. This ensures that
+Adds one quantity of the specified item to the character's inventory. This ensures that
 the item gets added to the character's inventory list, and that any
 on-screen inventory display gets updated if appropriate.
 
@@ -23,6 +23,8 @@ the list by supplying the second parameter. The new item is inserted
 so to add the item at the start of the list, pass 0 as the second
 parameter.
 
+Calling the function multiple times will increase the InventoryQuantity for the item.
+
 Example:
 
     cEgo.AddInventory(iKey);
@@ -31,7 +33,8 @@ will give inventory item iKey to character EGO.
 
 *See Also:* [Character.HasInventory](Character#characterhasinventory),
 [Character.LoseInventory](Character#characterloseinventory),
-[UpdateInventory](Globalfunctions_General#updateinventory)
+[UpdateInventory](Globalfunctions_General#updateinventory),
+[Character.InventoryQuantity](Character#characterinventoryquantity)
 
 ---
 
@@ -932,8 +935,10 @@ obsolete)*<br>
 
     Character.LoseInventory(InventoryItem *item)
 
-Removes the specified inventory item from the character's inventory. If
+Removes one quantity of the specified inventory item from the character's inventory. If
 they do not have the item, nothing happens.
+
+To completely remove an item of quantity greater than one will require calling the function InventoryQuantity times.
 
 The parameter is the inventory item's Script O-Name from the editor.
 
@@ -944,7 +949,8 @@ Example:
 will make the character EGO lose the inventory item iKey from the
 inventory tab
 
-*See Also:* [Character.AddInventory](Character#characteraddinventory)
+*See Also:* [Character.AddInventory](Character#characteraddinventory),
+[Character.InventoryQuantity](Character#characterinventoryquantity)
 
 ---
 
