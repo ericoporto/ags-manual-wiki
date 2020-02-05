@@ -46,4 +46,4 @@ lines.
 *See Also:*
 [Game.ChangeTranslation](Game#gamechangetranslation),
 [Game.TranslationFilename](Game#gametranslationfilename),
-[GetTranslation](Globalfunctions_General#gettranslation), [IsTranslationAvailable]Globalfunctions_General#istranslationavailable)
+[GetTranslation](Globalfunctions_General#gettranslation), [IsTranslationAvailable](Globalfunctions_General#istranslationavailable)
