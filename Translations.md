@@ -42,3 +42,8 @@ updated your game, run the Update Translation option and the translation
 file you select will get any new bits of text added to it at the bottom
 -- then you can just ask your translator to additionally translate these
 lines.
+
+*See Also:*
+[Game.ChangeTranslation](Game#gamechangetranslation),
+[Game.TranslationFilename](Game#gametranslationfilename),
+[GetTranslation](Globalfunctions_General#gettranslation), [IsTranslationAvailable]Globalfunctions_General#istranslationavailable)
