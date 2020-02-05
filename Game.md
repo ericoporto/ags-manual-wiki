@@ -33,7 +33,9 @@ will attempt to change the translation to Spanish
 
 *See Also:*
 [Game.TranslationFilename](Game#gametranslationfilename),
-[IsTranslationAvailable](Globalfunctions_General#istranslationavailable)
+[IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
+[GetTranslation](Globalfunctions_General#gettranslation),
+[Translation Manual](Translations)
 
 ---
 
