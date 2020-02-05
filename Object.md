@@ -672,7 +672,13 @@ Example:
 
 will make object 2 ignore clicks from the player.
 
-*See Also:* [Character.Clickable](Character#characterclickable)
+*See Also:*
+[Object.Visible](Object#objectvisible),
+[Character.Clickable](Character#characterclickable),
+[Hotspot.Enabled](Hotspot#hotspotenabled),
+[Region.Enabled](Region#regionenabled),
+[RemoveWalkableArea](Globalfunctions_Room#removewalkablearea),
+[RestoreWalkableArea](Globalfunctions_Room#restorewalkablearea)
 
 ---
 
@@ -1127,6 +1133,9 @@ Example:
     object[5].Visible = false;
 
 will make object number 5 in the current room disappear.
+
+*See also: 
+[Object.Clickable](Object#objectclickable),
 
 ---
 
