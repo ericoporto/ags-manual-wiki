@@ -33,8 +33,8 @@ will attempt to change the translation to Spanish
 
 *See Also:*
 [Game.TranslationFilename](Game#gametranslationfilename),
-[IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
 [GetTranslation](Globalfunctions_General#gettranslation),
+[IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
 [Translation Manual](Translations)
 
 ---
@@ -957,9 +957,10 @@ Example:
       Display("You are using the German translation.");
     }
 
-*See Also:* [Game.ChangeTranslation](Game#gamechangetranslation),
-[IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
+*See Also:* 
+[Game.ChangeTranslation](Game#gamechangetranslation),
 [GetTranslation](Globalfunctions_General#gettranslation),
+[IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
 [Translation Manual](Translations)
 
 ---
