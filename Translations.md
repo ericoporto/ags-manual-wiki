@@ -60,9 +60,10 @@ of the .trs files uses 2 bytes for each character, so make sure you save and enc
 special characters to something even more unrecognisable like Ã¤, so you might have to run a 
 search and replace function over the whole document for every special character that 
 is used in that language (make sure to check for capitalized special characters too) 
-after changing the encoding to ANSI.*
+after changing the encoding to ANSI. A lot of wordprocessors use Ctrl+H as hotkey for the 
+search and replace function.*
 
-
+  .
 
 *See Also:*
 [Game.ChangeTranslation](Game#gamechangetranslation),
