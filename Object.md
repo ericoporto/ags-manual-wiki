@@ -1134,7 +1134,7 @@ Example:
 
 will make object number 5 in the current room disappear.
 
-*See also: 
+*See also:* 
 [Object.Clickable](Object#objectclickable),
 
 ---
