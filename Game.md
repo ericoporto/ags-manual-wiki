@@ -958,7 +958,9 @@ Example:
     }
 
 *See Also:* [Game.ChangeTranslation](Game#gamechangetranslation),
-[IsTranslationAvailable](Globalfunctions_General#istranslationavailable)
+[IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
+[GetTranslation](Globalfunctions_General#gettranslation),
+[Translation Manual](Translations)
 
 ---
 
