@@ -467,7 +467,11 @@ Example:
 If there is no translation for the supplied string, it will be returned
 unchanged, so it is always safe to use this function.
 
-*See Also:* [IsTranslationAvailable](Globalfunctions_General#istranslationavailable)
+*See Also:* 
+[Game.ChangeTranslation](Game#gamechangetranslation),
+[Game.TranslationFilename](Game#gametranslationfilename),
+[IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
+[Translation Manual](Translations)
 
 ---
 
@@ -688,9 +692,11 @@ Finds out whether the player is using a game translation or not.
 
 Returns 1 if a translation is in use, 0 if not.
 
-*See Also:* [GetTranslation](Globalfunctions_General#gettranslation),
+*See Also:* 
 [Game.ChangeTranslation](Game#gamechangetranslation),
-[Game.TranslationFilename](Game#gametranslationfilename)
+[Game.TranslationFilename](Game#gametranslationfilename),
+[GetTranslation](Globalfunctions_General#gettranslation),
+[Translation Manual](Translations)
 
 ---
 
