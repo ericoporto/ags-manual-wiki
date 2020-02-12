@@ -103,7 +103,9 @@ You can generate some graphics programatically in your game using Dynamic Sprite
 
 ### Managing Audio Footprint
 
-AGS stores audio files directly from their imported files, and can be globed as an external audio.vox file or be part of the main game executable. Speech is always packed as an external speech.vox file. The file doesn't compress the audio, but instead relies on the original compression from each individually imported audio file. Some distribution platforms don't provide binary patching, since audio files tend to be less volatile at middle to late parts of game development, it may be wise to have them as external files so that they are not downloaded again by your player.
+AGS stores audio files directly from their imported files, and can be globed as an external audio.vox file or be part of the main game executable. Speech is always packed as an external speech.vox file. AGS doesn't compress the audio, but instead relies on the original compression from each individually imported audio file when generating audio packs (`.vox`) or when embedding them in the game file. 
+
+Since audio files tend to be less volatile at middle to late parts of game development, and some distribution platforms don't provide binary patching, it may be wise to have them as external files so that they are not downloaded again by your player when your game has an update.
 
 **Speech**
 
