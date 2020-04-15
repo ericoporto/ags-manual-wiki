@@ -38,9 +38,9 @@ There are four main parts to this window:
 
 As a first step, let's give the room a description. This is just to help
 us easily remember which room it is, and this description isn't used at
-all by the game engine. Click in the "Description" property in the
-Properties grid, and type in something appropriate. You'll notice that the
-project tree updates to include this description.
+all by the game engine. Click in the **"Description"** property in the
+Properties Grid, and type in something appropriate. I chose "SpaceHub" You'll notice that the
+Project Tree updates to include this description.
 
 **The Background**
 
