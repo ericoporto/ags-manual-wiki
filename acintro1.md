@@ -65,15 +65,14 @@ Project Tree, and double-clicking the **"General Settings"** node:
 
 ![The General Settings pane](https://user-images.githubusercontent.com/31778541/79386140-b4b65b00-7f37-11ea-9188-f663c3768509.png)
 
-This screenshot above demonstrates three of the main editor features. The
-**Project Tree** (#1), as we've already discussed, gives you access to the
-various parts of your game. The **Properties Grid** (#2), in the bottom-right,
+This screenshot above demonstrates three of the main editor features.
+1. The **Project Tree**, as we've already discussed, gives you access to the
+various parts of your game.
+2. The **Properties Grid**, in the bottom-right,
 is where item-specific properties are accessed. It's not used in the
 Game Settings window, but we'll see it in action soon!
-
-Finally, the AGS Editor allows you to have several windows open at once,
-and they are "tabbed" across the **Open Windows** (#3) tab bar at the top so that
-you can easily switch between them. (**NOTE**: You may use the Close button (X) at the end of the Open Windows tab bar to close a window once you're finished with it.)
+3. Finally, the **Open Windows** tab bar at the top the AGS Editor allows you to have several windows open at once,
+and they are shown as tabs so that you can easily switch between them. (**NOTE**: You may use the Close button (X) at the end of the Open Windows tab bar to close a window once you're finished with it.)
 
 Now, since we're on the Game Settings pane, let's briefly examine the various
 options we have in front of us. Make sure these options are enabled to
