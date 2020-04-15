@@ -1,7 +1,6 @@
 ## Starting off
 
-The tutorial has now been updated for AGS 3.0. Follow the links below to
-run through it.
+The tutorial is currently being updated for AGS 3.5 but should be sufficient to be followed as-is. Please be patient as all parts are updated. Follow the links below to run through it.
 
 - [Tutorial Part 1 - Creating the game](acintro1)
 - [Tutorial Part 2 - Creating your first room](acintro2)
