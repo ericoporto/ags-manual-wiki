@@ -63,11 +63,11 @@ Tree** in the top-right corner, which allows you to access all the
 various parts of your game. Let's start by scrolling to the top of the
 Project Tree, and double-clicking the **"General Settings"** node:
 
-![The General Settings pane](https://user-images.githubusercontent.com/31778541/79378453-5a170200-7f2b-11ea-97de-69775b42030e.png)
+![The General Settings pane](https://user-images.githubusercontent.com/31778541/79386140-b4b65b00-7f37-11ea-9188-f663c3768509.png)
 
 This screenshot above demonstrates three of the main editor features. The
 **Project Tree** (#1), as we've already discussed, gives you access to the
-various parts of your game. The **Property Grid** (#2), in the bottom-right,
+various parts of your game. The **Properties Grid** (#2), in the bottom-right,
 is where item-specific properties are accessed. It's not used in the
 Game Settings window, but we'll see it in action soon!
 
@@ -160,12 +160,12 @@ row marked "80". The screen should look as follows:
 
 ![We have selected colors 42-95](https://user-images.githubusercontent.com/31778541/79381973-c8aa8e80-7f30-11ea-8a96-d700f188b6e0.png)
 
-We can now see the **Property Grid** of the AGS Editor in action. Change the **"ColorType"**
+We can now see the **Properties Grid** of the AGS Editor in action. Change the **"ColorType"**
 setting from **"Background"** to **"Gamewide"**, and you'll see the selected
 "X"s turn into various colors.
 
 If you select one of these colors you'll see its RGB color values in
-the Property Grid, where you can adjust the color of that slot. If you
+the Properties Grid, where you can adjust the color of that slot. If you
 don't want to do this manually for every color, you can set up slots
 42-95 in another paint package, save a BMP file, and then right-click on
 the selected slots and choose the **"Replace selected slots from file..."**
