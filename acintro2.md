@@ -95,7 +95,7 @@ In the AGS Editor top toolbar you'll notice that some new buttons have appeared.
 are the drawing tools, and work in a similar way to most paint packages.
 AGS Editor provides Line, Freehand, Rectangle and Fill tools. Alternatively,
 you can draw your walkable area mask in a paint package and import it
-(we'll cover that later).
+[we'll cover that later in Advanced Room Features](https://github.com/adventuregamestudio/ags-manual/wiki/AdvancedRoomFeatures#importing-a-file-as-the-walkable-area-mask).
 
 What we need to do is to fill in the areas of the room where the player
 is allowed to walk. In the game, the bottom middle of the character is
