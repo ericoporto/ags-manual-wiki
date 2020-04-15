@@ -139,7 +139,7 @@ script.
 
 **Scripting tutorial**
 
-Now might be a good time to check out the scripting tutorial to get a
+Now might be a good time to check out the [Scripting Tutorial](ScriptingTutorialPart1) to get a
 better understanding of what your script code is doing. Alternatively,
 finish off this tutorial first and then check out the scripting
 tutorial.
