@@ -673,7 +673,7 @@ You may copy pointer to another variable of same type:
     Apple* apple2 = my_apple;
 
 This does **not** copy object itself, only its address in dynamic pool,
-meaning both variables - `my_apple` and `appl2` - point to same object!
+meaning both variables - `my_apple` and `apple2` - point to same object!
 
 You may write a function that take such pointer as parameter:
 
