@@ -7,32 +7,32 @@ Inventory items are totally separate from room objects, and you must
 explicitly set up every item which the player can carry at some point in
 the game.
 
-Go to the "Inventory items" node in the project tree. We visited this
+Go to the **"Inventory items"** node in the Project Tree. We visited this
 briefly in part 4, but it's time to go into a bit more detail.
 
-![The inventory editor, another look](images/intro4_3.jpg)
+![The inventory editor, another look](https://user-images.githubusercontent.com/31778541/79494549-33230380-7ff1-11ea-978e-ed47fa886b0a.png)
 
 Every inventory item that the player can carry at some point during the
-game is listed in the project tree. All the items there also have a
-number beside them - this is the inventory item ID, which is largely for
+game is listed in the Project Tree. All the items there also have a
+number beside them - this is the _Inventory Item ID_, which is largely for
 backwards compatibility with older versions of AGS.
 
-To edit an inventory item, double-click it in the project tree, and a
-new window will open up with the item's properties in the property grid.
+To edit an inventory item, double-click it in the Project Tree, and a
+new window will open up with the item's properties in the Properties Grid.
 If you want the player character to start off carrying the selected
 item, set the "PlayerStartsWithItem" option to True. Remember, if you
 want to change which image is used for the item, select the "Image"
-property and click the "..." button.
+property and click the "..." button. There is also a representation of the inventory item as a cursor, as in Sierra-style games. You will read more about that below in the section [Inventory item hotspots](acintro5#inventory-item-hotspots).
 
 Now, you may have noticed that once the player had picked up the key in
 our game, they could see it in their inventory window but not actually
-do anything to it - clicking Look or Use on the item did nothing.
+do anything to it - clicking "Look" or "Use" on the item did nothing.
 
 In order to give the inventory item some interactivity, we once again
-need to call on the Events List. Click the "Events" (lightning) button
+need to call on the Events List. Click the **"Events"** (lightning) button
 to bring it up:
 
-![The events list... this time for inventory](images/intro5_1.jpg)
+![The events list... this time for inventory](https://user-images.githubusercontent.com/31778541/79505093-e136a980-8001-11ea-89ff-4836c1d9ebc8.png)
 
 Now, the important point to note here is that if you are using the
 built-in inventory window (which we are), the only events which can
@@ -46,14 +46,14 @@ button. You'll be taken to the script editor once more, but this time
 you'll notice that there's already some existing script as well as our
 new method:
 
-![Script for looking at the key](images/intro5_2.jpg)
+![Script for looking at the key](https://user-images.githubusercontent.com/31778541/79505408-54d8b680-8002-11ea-915a-8cf241c740c2.png)
 
 We are now editing the *global script*. This has all the script for
 handling events on game-wide things like inventory items and characters.
 Previously we were working with hotspots and objects, so they were
 confined to their own *room script*.
 
-Anyway, for now I've just added a simple Display command to show the
+Anyway, for now I've just added a simple _Display_ command to show the
 player a message when they look at the key. Feel free to do something
 similar.
 
@@ -65,13 +65,15 @@ used to decide what to activate. However, with some items you may well
 not want this behavior - for example, we might want the end of our key
 to be the activation spot.
 
-To set the cursor hotspot, simply click on the spot within the image.
-You should see a crosshair appear where you clicked.
+Back on the selected inventory item tab, To set the cursor hotspot, either click within the "Mouse cursor image" section, or by identifying the "Hotspot X" and "Hotspot Y" within the Properties Grid. (LucasArts-style games rarely used inventory items as cursors.)
 
-The "Draw crosshair" option, if activated, will draw a spot on this part
-of the item in-game so that the player can easily tell which bit of the
-cursor is active. You can set the inner and outer colors for the
-crosshair.
+##### Mouse Cursor on Inventory Item
+
+Within the games' "General Settings", under "Inventory", there are choices related to using these inventory items as a cursor (usually in Sierra-style games):
+
+1. Inventory item cursor hotspot marker - AGS can automatically add a marker to inventory item cursors to help the player see where the active hotspot is on the cursor. A custom sprite can be chosen, a default crosshair, or none may be selected.
+2. Inventory item cursor hotspot marker sprite - If you choose a custom sprite in the choice above, you can define which Sprite # to use here.
+3. Use selected inventory graphic for cursor - When true, this will allow the mouse cursor to become the selected inventory item.
 
 #### Recap
 
@@ -85,5 +87,6 @@ crosshair.
     current player character.
 -   To give the player an inventory item, use the
     `player.AddInventory` command.
+-   Test the game as before (F5) , and try it out. Does your character say a comment about the key when you look at the key within your inventory?
 
 Go to part 6: [Using your own graphics](acintro6)
