@@ -127,6 +127,6 @@ Technical Forum, so that the tutorials can be improved to explain it better.
 
 ### Advanced Room Features
 
-Now you are ready for the [Advanced Room Features tutorial!](AdvancedRoomFeatures)
+Now you are ready for the [Advanced Room Features Section!](AdvancedRoomFeatures)
 
 [Return to tutorials index](StartingOff)
