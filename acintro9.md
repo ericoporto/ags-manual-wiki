@@ -125,8 +125,10 @@ a grasp of the AGS basics. If there's anything you didn't really understand or
 that you think should be covered but wasn't, please let us know on the Beginners
 Technical Forum, so that the tutorials can be improved to explain it better.
 
-### Advanced Room Features
+## Continue Reading
 
-Now you are ready for the [Advanced Room Features Section!](AdvancedRoomFeatures)
+Now you are ready to learn and play with the Advanced Room Features.
 
-[Return to tutorials index](StartingOff)
+Next Reading: [Advanced Room Features Section](AdvancedRoomFeatures)
+
+Return to Tutorials Index: [Tutorials Index](StartingOff)
