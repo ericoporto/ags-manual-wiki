@@ -85,7 +85,12 @@ up for how to set a name for the hotspot, earlier in this article.
 So, you are now in the script editor. It all looks a bit bare and
 intimidating, but you should have something like this:
 
-![Script editor after adding a hotspot event](https://user-images.githubusercontent.com/31778541/79478765-ce0fe380-7fd9-11ea-9f0f-e01f2d29ea75.png)
+    // room script file
+    
+    function hSignHome_Look()
+    {
+      
+    }
 
 The "*function hSignHome_Look*" line defines that the script underneath
 will be run when this event occurs. In AGS, the curly brackets **{** and **}**
@@ -97,7 +102,12 @@ language, so I won't attempt to explain it here. But we can start with
 something very simple, using the *Display* command, which displays a
 message to the player. Type in something like this:
 
-![A simple script](https://user-images.githubusercontent.com/31778541/79479354-a3725a80-7fda-11ea-8d96-3132d6a0287b.png)
+    // room script file
+    
+    function hSignHome_Look()
+    {
+      Display("The sign says 'EWOH'. I have no idea what that could mean.");
+    }
 
 Once you're done, you may want to "Save" your work on the Script Editor, and then click on the "Room 1" tab to return to the main room editor.
 
