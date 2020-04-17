@@ -296,11 +296,11 @@ code will want to look something like this:
       {
         Display("The sign says 'EWOH'. I have no idea what that could mean.");
       }
-      else if (myCounter == 1)
+      if (myCounter == 1)
       {
         Display("Oh it says 'Home'.");
       }
-      else if (myCounter >=2)
+      if (myCounter >=2)
       {
         Display("I guess that way leads towards my home.");
       }
