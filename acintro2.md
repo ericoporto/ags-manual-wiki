@@ -192,4 +192,6 @@ that during development of your game, you may create a script that
 causes the game to lock up - in this case, the emergency break key
 Alt+X will exit the game for you.)
 
-Go to part 3: [Adding interaction](acintro3)
+## Continue Tutorial
+
+Next Chapter: [Part 3 - Adding Interaction](acintro3)
