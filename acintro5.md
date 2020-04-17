@@ -89,4 +89,6 @@ Within the games' "General Settings", under "Inventory", there are choices relat
     `player.AddInventory` command.
 -   Test the game as before (F5) , and try it out. Does your character say a comment about the key when you look at the key within your inventory?
 
-Go to part 6: [Using your own graphics](acintro6)
+## Continue Tutorial
+
+Next Chapter: [Part 6 - Using Your Own Graphics](acintro6)
