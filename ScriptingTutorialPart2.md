@@ -1,4 +1,4 @@
-## Text Scripting Tutorial - Part 2
+## Scripting Tutorial - Part 2
 
 ### Recap
 
