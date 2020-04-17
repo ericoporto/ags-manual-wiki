@@ -1,4 +1,4 @@
-## Scripting Tutorial
+## Scripting Tutorial - Part 1
 
 In AGS, all the interactivity in the game is handled using scripts.
 They're an essential part of game-making, so it's important that we go
