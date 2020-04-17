@@ -2,8 +2,8 @@
 
 ### Recap
 
-In the first tutorial, we covered the basics of scripting - how to write
-a simple script, use variables and conditional statements. You now know
+In the [First Scripting Tutorial](ScriptingTutorialPart1), we covered the basics of scripting - how to write
+a simple script, using variables and conditional statements. You now know
 how to call all the built-in functions and write a fairly decent script.
 So, what's next?
 
@@ -23,8 +23,10 @@ processed, as long as the condition is true. So, in this case, since
 counter starts as 1, the loop will be run 9 times, since on the tenth
 time counter will be 10 and therefore it will stop.
 
-NOTE: be careful with while loops - it is possible to crash your game by
-using a badly written one. Consider this:
+![Note](images/icon_info.gif) (**NOTE**: Be careful with while loops - it is possible to crash your game by
+using a badly written one.)
+
+Consider this **poorly** written _while_ loop:
 
     int counter = 1;
     while (counter > 0) {
@@ -54,19 +56,23 @@ has **two** specific inventory items. You could do this, and put **two**
       }
     }
 
+#### 'AND' Expressions
+
 However, this is quite unwieldy and if you have a lot of conditions it
 will look rather messy. So, AGS lets you do it this way:
 
-    if ((player.HasInventory(iFirstItem)) &&
-        (player.HasInventory(iSecondItem)) )
+    if ( (player.HasInventory(iFirstItem)) &&
+         (player.HasInventory(iSecondItem)) )
     {
       Display ("You have both the items!");
     }
 
-This makes use of the `&&` operator. Note that you need an extra pair
+This makes use of the `&&` operator.
+
+![Note](images/icon_info.gif) (**NOTE**: Notice that you need an extra pair
 of outer parenthesis, to contain the whole expression. Each part of the
 expression goes inside parenthesis, as normal, and they are joined with
-the `&&` symbol.
+the `&&` symbol.)
 
 You can extend this to as many checks as you like. For example, this
 will display the message if the *openedDoor* variable is currently set
@@ -77,7 +83,7 @@ to true, and the variable *timer* is between 5 and 10.
       Display ("It's all working out fine.");
     }
 
-*'OR' expressions*
+#### 'OR' Expressions
 
 Sometimes you will want to do some processing if one **or** another
 condition is true. For example, you might want to let the player open a
@@ -132,6 +138,32 @@ a complete piece of code could look like this:
      // do this if it's not 5 or 6
     }
 
+Relating to the [Home Sign Hotspot from the Tutorial](acintro3), we can write it slightly more efficiently by using Else statements:
+
+    // room script file
+    int myCounter = 0;
+    
+    function hSignHome_Look()
+    {
+      if (myCounter == 0)
+      {
+        Display("The sign says 'EWOH'. I have no idea what that could mean.");
+      }
+      else if (myCounter == 1)
+      {
+        Display("Oh it says 'Home'.");
+      }
+      else if (myCounter >=2)
+      {
+        Display("I guess that way leads towards my home.");
+      }
+    
+      if (myCounter < 3)
+      {
+        myCounter += 1;
+      }
+    }
+
 ### Your Own Functions
 
 You've probably noticed in the manual, it mentioning functions such as
@@ -139,8 +171,7 @@ You've probably noticed in the manual, it mentioning functions such as
 global script to do cool stuff. But you may be wondering, how exactly to
 go about it.
 
-Remember in tutorial 1, we learned about function **parameters** and how
-they could be *int*, *string*, etc. Well, you write your own functions
+Remember in [Scripting Tutorial 1](ScriptingTutorialPart1#commands-explained), we learned about function **parameters** and how they could be *int*, *string*, etc. Well, you write your own functions
 like this:
 
     function dialog_request(int param)
@@ -156,7 +187,7 @@ This name can be anything you like - it is similar to naming a variable.
 
 There are some **fixed** functions, such as dialog_request and
 on_event, which are part of AGS and therefore you **MUST** use the
-correct number and type of parameters.  However, you may also add your
+correct number and type of parameters. However, you may also add your
 own functions by naming them however you like, and having as many
 parameters as you need.
 
@@ -170,7 +201,7 @@ like you call a built-in function - i.e. just write its name, parameters
 then a semicolon.
 
 I think a couple of examples are in order. First of all, let's show a
-fixed function, on_event:
+fixed function, `on_event`:
 
     function on_event (EventType event, int data)
     {
@@ -207,8 +238,8 @@ far the easiest way to do this would be to put it in a function:
 This function runs view 10, loop 2, as the character's animation, waits
 until it finishes and then reverts to the default view.
 
-TIP: if you're wondering where to place your custom functions, just
-open up the global script (Game menu, Edit Global Script) and write them
+![Note](images/icon_info.gif) (**NOTE**: If you're wondering where to place your custom functions, just
+open up the **"Global Script"** **(AGS Editor -> File Menu -> Open GlobalScript.asc)** and write them
 in there. The function must be outside all other functions.
 
 Now, elsewhere in your script, when you want the player to dance, just
@@ -242,10 +273,14 @@ Another part of your script could then do:
 You may notice that when you add your own function to your global
 script, you can call it fine from other places in the global script but
 attempting to use it in a room script gives a parse error. The manual
-explains how to solve this using the script header.
+explains how to solve this using the script header and "importing".
 
-### Conclusions
+You will need to edit the **Global Script Header** **(AGS Editor -> File Menu -> Open GlobalScript.asc)** and you can read about why within the manual. In the Index, look up "The Script Header" for more information.
+
+## Conclusion
 
 We've covered some of the more advanced topics of scripting. I'm sure
 there's a lot of stuff I've forgotten to mention, so feel free to
 comment on it on the forums.
+
+Enjoy AGS!
