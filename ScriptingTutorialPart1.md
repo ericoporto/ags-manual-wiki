@@ -7,17 +7,17 @@ through how to use them.
 ### The Basics
 
 Right, we'll start off by doing something very simple - displaying a
-message to the player when they click the Look icon on a hotspot.
-Assuming that you've done the main AGS Tutorial, you should already have
+message to the player when they click the **"Look"** icon on a hotspot.
+Assuming that you've done the main [AGS Tutorial](acintro1), you should already have
 created a script that looks like this:
 
-    function hDoor_Look()
+    function hSignHome_Look()
     {
-      Display("It's quite a large, ominous looking door.");
+      Display("The sign says 'EWOH'. I have no idea what that could mean.");
     }
 
 Let's look at this in detail. "*function*" tells AGS that this is a
-block of script code that will run when an event occurs. "*hDoor_Look*"
+block of script code that will run when an event occurs. "*hSignHome_Look*"
 is the name of that event. The empty parentheses *( )* tell AGS that
 this function takes no parameters (we'll come to them later). Finally,
 the curly brackets *{* and *}* define where this block of code starts
@@ -53,18 +53,18 @@ function. Looking this up in the manual gives us the definition:
       the standard message box, and centered in the middle of
       the screen. (description continues...)
 
-The key point here is the part of the first line inside the brackets.
+The key point here is the part of the first line inside the parentheses.
 This is called the **parameter list** and defines what parameters you
-give to the function.  A parameter is some information that the function
+give to the function. A parameter is some information that the function
 uses to decide what to do.
 
-Each parameter is listed, separated by commas. They can be one of the
+Each parameter is listed, separated by commas, and different between functions. They can be _one_ of the
 following:
 
 - string *name*
 <br>This parameter is a string, i.e. a piece of text. This means that for this
 parameter you supply text, surrounded by double-quotes. For example,
-`"My text"`. *name* is the name by which the parameter is referred to in the
+`"My text"`.<br>*name* is the name by which the parameter is referred to in the
 function description, it is not relevant for writing your script.
 
 - int *name*
@@ -75,7 +75,7 @@ this parameter you supply a number, for example `65`.
 <br>This parameter is a character script name. You need to supply the script
 name of one of the game characters.
 
-- InventoryItem\*
+- InventoryItem
 <br>This parameter is an inventory item. You need to supply the inventory item
 you want to use.
 
@@ -84,7 +84,7 @@ you want to use.
 supply it at all, but if you do the function description will tell you what
 type of value to use.
 
-So, we know that our Display function needs a string and an optional
+So, we know that our _Display_ function needs a string and an optional
 parameter. The description goes on to explain that the optional
 parameter is used for advanced things like displaying variable values,
 so we can ignore it for now.
@@ -95,7 +95,7 @@ important, as without the semicolon the script won't compile. Also, note
 that we DO NOT write the parameter type (eg. "string" or "int"). So, we
 can add this line to our script:
 
-    Display("It's quite a large, ominous looking door.");
+    Display("The sign says 'EWOH'. I have no idea what that could mean.");
 
 This is what we already did in the main tutorial, but having examined it
 in more detail it should now make more sense why we've done it this way.
@@ -145,13 +145,12 @@ do so.
 
 Suppose we want the player to be given a pink poster when they look at
 the hotspot, as well as displaying the message. Assuming we have an
-inventory item set up to be the poster with the Script Name of *iPoster*
-(see the main tutorial for how to do this), the script enables us to
+inventory item set up to be the poster with the Script Name of *iPoster*, the script enables us to
 easily make this happen.
 
 Our final script will look like this:
 
-    Display(It's quite a large, ominous looking door.");
+    Display("The sign says 'EWOH'. I have no idea what that could mean.");
     cEgo.AddInventory(iPoster);
 
 Note that the script system is case sensitive, so writing for example
@@ -218,14 +217,14 @@ body.  So, it should look something like this:
     // room script file
     int myCounter;
 
-    (other event scripts)
+    //...(other event scripts)
 
-    function hDoor_Look()
+    function hSignHome_Look()
     {
-      Display("It's quite a large, ominous looking door.");
+      Display("The sign says 'EWOH'. I have no idea what that could mean.");
     }
 
-    (rest of file follows)
+    //...(rest of file follows)
 
 No script commands can be used outside functions (or AGS wouldn't know
 when to run them!) - only variable declarations are allowed there.
@@ -288,32 +287,35 @@ the first time they look it will describe it, then if they look again
 they get a different message describing something in more detail. Our
 code will want to look something like this:
 
-    if (myCounter == 0)
+    // room script file
+    int myCounter = 0;
+    
+    function hSignHome_Look()
     {
-      Display("You see a bookshelf.");
-    }
-    if (myCounter == 1)
-    {
-      Display("Looking closer, you see a book called Hamlet.");
-    }
-    if (myCounter == 2)
-    {
-      Display("There is also a book called Harry Potter.");
-    }
-    if (myCounter == 3)
-    {
-      Display("There is nothing else of interest on the shelf.");
-    }
-    if (myCounter < 3)
-    {
-      myCounter += 1;
+      if (myCounter == 0)
+      {
+        Display("The sign says 'EWOH'. I have no idea what that could mean.");
+      }
+      else if (myCounter == 1)
+      {
+        Display("Oh it says 'Home'.");
+      }
+      else if (myCounter >=2)
+      {
+        Display("I guess that way leads towards my home.");
+      }
+    
+      if (myCounter < 3)
+      {
+        myCounter += 1;
+      }
     }
 
 *myCounter* starts off set to 0, so the first time this script is called
 it will run the first Display command, but not the others. Then, since 0
 is less than 3, it will increase *myCounter* by 1, and since 0+1 = 1 it
 now holds the value 1.<br>
-Once the player has seen all the messages (*myCounter* == 3), it no
+Once the player has seen all the messages (*myCounter* == 2), it no
 longer increases the value so if they click again they will keep getting
 the final message.
 
@@ -349,7 +351,7 @@ example, you can do:
       myCounter += 5;
     }
 
-Be sure to remember the parenthesis ().
+Be sure to remember the parenthesis () after the function name.
 
 ### Common Shortcuts
 
@@ -365,7 +367,7 @@ been written:
       myCounter++;
     }
 
-Also, the { } brackets are only needed if you are using more than one
+Also, the { } braces are only needed if you are using more than one
 command inside them. Since we have only one command, the
 "my_counter++;" line, we can remove the { } completely and just be left
 with:
@@ -374,7 +376,7 @@ with:
       myCounter++;
 
 However, this can lead to mistakes in scripts that are hard to spot, so
-I would advise always using brackets just to be safe.
+I would advise always using braces just to be safe.
 
 Finally, if you want to test whether a value is zero or not, you can
 just write it as follows:
@@ -392,6 +394,8 @@ which is equivalent to:
 We've covered the basics, so that hopefully you can now write a script
 of your own. There are many more advanced features that the system can
 do, but this should be enough to get you started.
+
+## Continue Reading
 
 When you're ready, feel free to proceed to the
 [Tutorial Chapter 2 - The Patronizing Text Returns](ScriptingTutorialPart2)
