@@ -1131,3 +1131,11 @@ font to another folder and import it from there.
 **NOTE:** Font 0 is used as the normal text font, and font 1 is used as
 the speech font. To use any additional fonts, you can set the
 Game.NormalFont and Game.SpeechFont properties in your script.
+
+## Continue Reading
+
+Now you are ready to read more about scripting.
+
+Next Reading: [Scripting Tutorial 1](ScriptingTutorialPart1)
+
+Return to Tutorials Index: [Tutorials Index](StartingOff)
