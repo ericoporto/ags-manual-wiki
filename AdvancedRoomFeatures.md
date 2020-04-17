@@ -147,3 +147,7 @@ the darkening will vary in 256-color games.)
 ![Note](images/icon_info.gif) (**NOTE**: Light levels affect characters and objects, depending on the
 "UseRoomAreaLighting" setting for each one. They do not affect overlays
 or the background scene.)
+
+## Continue Tutorial
+
+Next Chapter: [Setting Up Your Game](Settingupthegame)
