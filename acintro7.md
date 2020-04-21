@@ -12,7 +12,7 @@ give the illusion of movement.
 
 Expand the **"Views"** node in the Project Tree, and double-click on **"View 1"**:
 
-![The View Editor showing view 1](https://user-images.githubusercontent.com/31778541/79571255-e428ad00-8088-11ea-9770-5f52f51a6e88.png)
+![The View Editor showing view 1](images/acintro7_01.png)
 
 This is the **"View Editor"** where you will put together all your animations.
 You'll notice lots of frames of Roger's walking animation in this
@@ -33,7 +33,7 @@ after it.
 Left-click a frame to select it. When you do so, the Properties Grid will
 be updated with the frame's details:
 
-![Property Grid showing frame properties](https://user-images.githubusercontent.com/31778541/79572833-9d888200-808b-11ea-9b52-35afca672163.png)
+![Property Grid showing frame properties](images/acintro7_02.png)
 
 -   **Appearance** -> **Delay** is the frame's **relative** speed. This number adds a
     delay to the amount of time which the frame is displayed for,
@@ -69,7 +69,7 @@ you only have one character in the list, labeled "0: cEgo". You could
 create a new character by right-clicking that parent **"Characters"** node, but for now,
 double-click the **"cEgo"** character to bring up the **Selected Character Settings** window:
 
-![The Character Editor](https://user-images.githubusercontent.com/31778541/79572676-5ac6aa00-808b-11ea-89d4-e567757ca576.png)
+![The Character Editor](images/acintro7_03.png)
 
 The first thing you may notice is the text **"This character is the player**
 **character"** at the top of the window. This shows that the currently
@@ -146,7 +146,7 @@ key object. Go back to the Events List for the key object (remember, you
 open the room, select the "Objects" mode, then click on the key to
 select it):
 
-![Room 1 Object Alien Key Events](https://user-images.githubusercontent.com/31778541/79574723-944ce480-808e-11ea-99fd-d668bc0b4dde.png)
+![Room 1 Object Alien Key Events](images/acintro7_04.png)
 
 The main difference you'll notice now is that the "Interact object"
 event already has a name. This "oKey_Interact" is the name of the
@@ -160,7 +160,7 @@ on the player character (i.e. move him), so type `player.` and
 auto-complete will pop up with the available commands. See if you can
 work out which one we need.
 
-![The Walk command needs X and Y co-ordinates](https://user-images.githubusercontent.com/31778541/79575041-205f0c00-808f-11ea-8cfc-362deab2e996.png)
+![The Walk command needs X and Y co-ordinates](images/acintro7_05.png)
 
 **Eeek!** `player.Walk()` is correct, but the Editor wants a destination X and Y location! We don't know that,
 but we can find out! Click over to the **"Room 1"** tab on the tab bar at the top of
@@ -170,7 +170,7 @@ background. Look just above the background image, and you should see
 co-ordinates, respectively, of the key's location. So, note them down,
 and click the "room1.asc" tab to return to the script.
 
-![Getting the mouse coordinates](https://user-images.githubusercontent.com/31778541/79575401-babf4f80-808f-11ea-970c-ec1080d3877a.png)
+![Getting the mouse coordinates](images/acintro7_06.png)
 
 Now, we can type in those co-ordinates to our script. We also need to
 pass in the **"BlockingStyle"** as **eBlock**, which tells the game to wait for
@@ -178,7 +178,7 @@ Roger to get to those co-ordinates before continuing the script. If we
 didn't do this, he would start to walk but the key would disappear
 before he got there! The final script should look like this:
 
-![Our new command is run before the existing ones](https://user-images.githubusercontent.com/31778541/79575589-08d45300-8090-11ea-9d86-c46d9f44c6dd.png)
+![Our new command is run before the existing ones](images/acintro7_07.png)
 
 ### Testing Your Work
 

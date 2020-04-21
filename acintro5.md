@@ -10,7 +10,7 @@ the game.
 Go to the **"Inventory items"** node in the Project Tree. We visited this
 briefly in part 4, but it's time to go into a bit more detail.
 
-![The inventory editor, another look](https://user-images.githubusercontent.com/31778541/79494549-33230380-7ff1-11ea-978e-ed47fa886b0a.png)
+![The inventory editor, another look](images/acintro5_01.png)
 
 Every inventory item that the player can carry at some point during the
 game is listed in the Project Tree. All the items there also have a
@@ -32,7 +32,7 @@ In order to give the inventory item some interactivity, we once again
 need to call on the Events List. Click the **"Events"** (lightning) button
 to bring it up:
 
-![The events list... this time for inventory](https://user-images.githubusercontent.com/31778541/79505093-e136a980-8001-11ea-89ff-4836c1d9ebc8.png)
+![The events list... this time for inventory](images/acintro5_02.png)
 
 Now, the important point to note here is that if you are using the
 built-in inventory window (which we are), the only events which can
@@ -46,7 +46,7 @@ button. You'll be taken to the script editor once more, but this time
 you'll notice that there's already some existing script as well as our
 new method:
 
-![Script for looking at the key](https://user-images.githubusercontent.com/31778541/79505408-54d8b680-8002-11ea-915a-8cf241c740c2.png)
+![Script for looking at the key](images/acintro5_03.png)
 
 We are now editing the *global script*. This has all the script for
 handling events on game-wide things like inventory items and characters.

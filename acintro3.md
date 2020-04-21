@@ -36,7 +36,7 @@ different areas of the screen.
 
 To create a second hotspot, change the "Selected Hotspot" to **"hHotspot2 (Hotspot; ID 2)"** using the Hotspot selection drop-down list above the Properties Grid -- OR -- by using the Room Parts drop-down and selecting the Hotspot text, and then the desired Hotspot, and you can now draw a second hotspot and it will appear in a different color than the first. For this tutorial, let's draw a hotspot over the wooden sign along the bottom of the background image. You may notice that all the other hotspots will be greyed out (See Note below).
 
-![I've drawn four types of hotspot onto my screen](https://user-images.githubusercontent.com/31778541/79471998-4faf4380-7fd1-11ea-9b8a-e51b4aebbb13.png)
+![I've drawn four types of hotspot onto my screen](images/acintro3_01.png)
 
 Once you've drawn a hotspot, there are two Properties Grid fields to set for this hotspot:
 
@@ -63,7 +63,7 @@ masks greyed out" button at the right-hand end of the AGS Editor toolbar.)
 Right, now it's time to make something happen! Make sure the second
 hotspot is selected, and click the Events button:
 
-![The events list](https://user-images.githubusercontent.com/31778541/79475846-3b217a00-7fd6-11ea-8739-6c087913d925.png)
+![The events list](images/acintro3_02.png)
 
 You'll see that the property grid changes to list all the events for
 this hotspot. Events occur when the player does certain things in the
@@ -75,7 +75,7 @@ Right, let's start with something simple. When the player looks at my
 hotspot, I want to display a message telling them what they can see.
 Click on the "Look at hotspot" row, and a "..." button will appear.
 
-![The "..." button](https://user-images.githubusercontent.com/31778541/79478513-838e6700-7fd9-11ea-8cbf-a74f8f6396ed.png)
+![The "..." button](images/acintro3_03.png)
 
 Click the "..." button. This will create an entry in the script for this
 event, and you'll find yourself taken to the script editor. If instead
@@ -119,7 +119,7 @@ position for each hotspot that the character will walk to whenever the
 player interacts with the hotspot - just like the way the LucasArts
 games like Monkey Island worked.
 
-![Setting a Walk To Point](https://user-images.githubusercontent.com/31778541/79480052-986bfa00-7fdb-11ea-8b1d-f9332282fcf4.png)
+![Setting a Walk To Point](images/acintro3_04.png)
 
 Select the "Properties" button on the Properties Grid. Hover your mouse over where you want the player to walk-to when interacting with the hotspot. Notice the "Mouse Position" of your cursor is given below the "Room Parts" drop-down. You'll now need to remember those coordinates and write them down in the Properties Grid -> WalkToPoint. When completed, you should see a marker at those coordinates referencing the hotspot. In this case a **"X 2"** marker is shown, indicating that HotSpot "2" has a walk-to point at that "X".
 
@@ -144,7 +144,7 @@ itself. Among the events listed, you'll see "Walks off left edge",
 character crosses the edges that we defined back in part 2. We won't be doing this for this tutorial, but normally
 you will use the *player.ChangeRoom* script command for these events, to take the player to a different room.
 
-![Looking at Edges Interactions Properties](https://user-images.githubusercontent.com/31778541/79481471-8d19ce00-7fdd-11ea-9adb-6fce18aa3402.png)
+![Looking at Edges Interactions Properties](images/acintro3_05.png)
 
 ### Testing Your Work
 

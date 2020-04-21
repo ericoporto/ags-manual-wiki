@@ -12,7 +12,7 @@ called **"Rooms"**.
 * If you are following the tutorial, you should already have a room created for you. Expand the "Rooms" node and you'll see a **"1:"** node.
 * If you are not following the tutorial, right-click on "Rooms" in the Project Tree, and choose "New room". You'll see a **"1:"** node appear underneath. This shows us that we've created room number 1, and we can give it a name in a moment.
 
-![The Rooms list in the project tree](https://user-images.githubusercontent.com/31778541/79384126-550a8080-7f34-11ea-89b6-39a87845acdf.png)
+![The Rooms list in the project tree](images/acintro2_01.png)
 
 Expand the **"1:"** node, and double-click the **"Edit room"** node underneath
 to open the room in the workspace. You'll see a new window open up with "Room 1" as a new tab across the "Open Windows" tab bar, and your work area has changed to reflect this.
@@ -22,7 +22,7 @@ to open the room in the workspace. You'll see a new window open up with "Room 1"
 
 The Room editor is described below and arranged like this:
 
-![The Rooms window workspace](https://user-images.githubusercontent.com/31778541/79386888-ca785000-7f38-11ea-858d-285dd93ec5f6.png)
+![The Rooms window workspace](images/acintro2_02.png)
 
 There are four main parts to this window:
 
@@ -51,7 +51,7 @@ This needs to be an image of at least the same size as your game resolution (tha
 
 If you'd like to follow the tutorial, you may import the following image:
 
-![Selmiak-made background for the updated tutorial](https://user-images.githubusercontent.com/31778541/79389437-6fe0f300-7f3c-11ea-9d0c-63138adcfffb.png)
+![Selmiak-made background for the updated tutorial](images/acintro2_03.png)
 
 Otherwise, draw the image in your favorite paint package, and once done, save it
 as a BMP or PNG file. Then, return to the AGS Editor, and press the
@@ -59,7 +59,7 @@ as a BMP or PNG file. Then, return to the AGS Editor, and press the
 
 You should now see the black area in the editor replaced by your image.
 
-![I've imported my background](https://user-images.githubusercontent.com/31778541/79390031-f85f9380-7f3c-11ea-96e6-ef73f7a8e809.png)
+![I've imported my background](images/acintro2_04.png)
 
 **Edges**
 
@@ -73,7 +73,7 @@ position them appropriately.
 ![Note](images/icon_info.gif) (**NOTE**: Bear in mind that it's the character's
 **feet** that are to be considered with these lines when positioning.)
 
-![I've lined up the top and right edges correctly](https://user-images.githubusercontent.com/31778541/79390824-6a84a800-7f3e-11ea-8569-b528f294531c.png)
+![I've lined up the top and right edges correctly](images/acintro2_05.png)
 
 At the moment, walking past the edges won't actually cause anything to
 happen, but we'll deal with that later. In my example, the character can
@@ -89,7 +89,7 @@ list again, and select the **"Walkable areas"** text.
 
 ![Note](images/icon_info.gif) (**NOTE**: You may still see the "Edges" of the room displaying as they were turned to "visible" when you had that section opened. Clicking on the "Show this Room's" dropdown and clicking on the "eyeball" for "Edges" will make them hidden from your Room Background Preview area.
 
-![Walkable areas mode](https://user-images.githubusercontent.com/31778541/79393774-0238c500-7f44-11ea-8bbc-fbc63099a1a8.png)
+![Walkable areas mode](images/acintro2_06.png)
 
 In the AGS Editor top toolbar you'll notice that some new buttons have appeared. These
 are the drawing tools, and work in a similar way to most paint packages.
@@ -113,7 +113,7 @@ properly connected up, and try again.
 You can use the right mouse button with the drawing tools to erase areas
 in the same way that you use the left button to add them.
 
-![I've drawn a walkable area where I want the player to be able to walk along.](https://user-images.githubusercontent.com/31778541/79393916-45933380-7f44-11ea-89b8-42d46a89153c.png)
+![I've drawn a walkable area where I want the player to be able to walk along.](images/acintro2_07.png)
 
 **Walk-behind areas**
 

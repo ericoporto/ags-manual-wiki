@@ -44,7 +44,7 @@ Before we begin, we need to create a second character - we can't just
 have Roger talking to himself! Go to the **"Characters"** node in the Project Tree, right-click
 it and choose **"New Character"**. The new **"cChar1"** character and their properties window will automatically open up.
 
-![New Character Window](https://user-images.githubusercontent.com/31778541/79576724-bbf17c00-8091-11ea-9283-c057b0c67d98.png)
+![New Character Window](images/acintro8_01.png)
 
 In the Properties Grid:
 * **Design** -> **RealName** - Give this new character a _Real Name_. I'll call him
@@ -62,7 +62,7 @@ confusing!)
 OK, all done? Navigate to the **"Dialogs"** node in the Project Tree, and right-click on that node.
 Choose **"New dialog"** to make our first dialog. You'll see this rather empty window:
 
-![The dialog editor](https://user-images.githubusercontent.com/31778541/79577760-38d12580-8093-11ea-978d-56e56db9e9e8.png)
+![The dialog editor](images/acintro8_02.png)
 
 Conversations in AGS are made up of **topics** also referred to as a **dialog** -- the two words are one and the
 same thing. A topic consists of a set of options that the player can talk about - not all of which are
@@ -87,7 +87,7 @@ Grid to set the name, as usual.
 
 Now, type in some text from our dialog plan from above, into the three new text boxes:
 
-![We've inserted three options for topic 0](https://user-images.githubusercontent.com/31778541/79578247-f9ef9f80-8093-11ea-932f-285695ba5f87.png)
+![We've inserted three options for topic 0](images/acintro8_03.png)
 
 While we're at it, let's create the next set of options too. Right-click
 the **"Dialogs"** node in the Project Tree, and select **"New Dialog"**. A new
@@ -95,7 +95,7 @@ blank _dDialog1_ is created and should be automatically opened for you. Create t
 new options and type them in. In the Properties Grid, change the Name from
 "dDialog1" to **"dWares"**.
 
-![Our second dialog choices](https://user-images.githubusercontent.com/31778541/79578562-62d71780-8094-11ea-9a89-b402dbefe316.png)
+![Our second dialog choices](images/acintro8_04.png)
 
 Now, go back to the first dialog **"dMerchant"** tab (select it in the Editor Tab bar), and let's
 have a look at the script. This is **not** the same type of script that

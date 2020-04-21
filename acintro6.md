@@ -9,7 +9,7 @@ Double-click **"Sprites"** near the top of the Project Tree. This opens up
 the _Sprite_ tab (also referred to as the _Sprite Manager_), where you can see the complete sprite set for the
 game. There is the "Sprite Tree View" on the left and to the right of that is the "Sprite Preview Window".
 
-![Sprite manager tab explained](https://user-images.githubusercontent.com/31778541/79510207-ea784400-800a-11ea-9aab-a2921199f20e.png)
+![Sprite manager tab explained](images/acintro6_01.png)
 
 AGS uses these sprites for all game graphics, except room backgrounds.
 The Sprite Manager is the central place where you do all your graphics
@@ -35,15 +35,15 @@ You may remember that we covered importing a new sprite previously when importin
 
 The key image we imported back in Tutorial 4 doesn't look so at home in this Space Hub background. So, let's replace that key image with a new key image that looks more alien. Save the following alien key image to your computer. We'll be importing it into AGS Editor in a moment.
 
-* ![New alien key image](https://user-images.githubusercontent.com/31778541/79569040-e983f880-8084-11ea-8407-5f4fe6191021.png)
+* ![New alien key image](images/acintro6_02.png)
 
 Within the Sprite Manager, navigate the "Sprite Tree View" and "Sprite Preview Window" until you can find where you imported the key earlier. Right-click on it and choose **"Replace sprite from file..."**.
 
-![Right-clicking to replace existing sprite](https://user-images.githubusercontent.com/31778541/79568820-8f833300-8084-11ea-9a64-0b6c36d85ac0.png)
+![Right-clicking to replace existing sprite](images/acintro6_03.png)
 
 Navigate to and select the new alien key image in the dialog box, and then you'll be presented with this:
 
-![The "Import Sprite" window](https://user-images.githubusercontent.com/31778541/79569465-a0807400-8085-11ea-94eb-729c4bd2f765.png)
+![The "Import Sprite" window](images/acintro6_04.png)
 
 This is the **Import Sprite** window. You'll see the image from the file
 that you chose, along with various options. The **"Zoom"** slider on the right

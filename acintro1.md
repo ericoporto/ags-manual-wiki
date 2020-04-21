@@ -13,17 +13,17 @@ of what's here should still apply).
 Start up the AGS Editor by double-clicking the *AGSEditor.exe* file, and
 you should be greeted by the following screen:
 
-![The "Welcome to AGS" dialog](https://user-images.githubusercontent.com/31778541/79375390-8aa86d00-7f26-11ea-92e9-4ec15aece1f7.png)
+![The "Welcome to AGS" dialog](images/acintro1_01.png)
 
 Make sure that **"Start a new game"** is selected, and click **Continue**.
 You'll be presented with the **Start New Game** wizard:
 
-![Create New Game dialog](https://user-images.githubusercontent.com/31778541/79374810-a2cbbc80-7f25-11ea-9ea4-caed52a86d95.png)
+![Create New Game dialog](images/acintro1_02.png)
 
 So, without further ado, click **Next**, and you'll see the **Select Template**
 screen:
 
-![Select Template dialog](https://user-images.githubusercontent.com/31778541/79375767-2803a100-7f27-11ea-851e-d5e7495b8bdd.png)
+![Select Template dialog](images/acintro1_03.png)
 
 Here, you need to choose which template you're going to use for your new
 game. AGS comes with several, and you can find others for download on the
@@ -38,7 +38,7 @@ when you're familiar with AGS as it comes with no default graphics at all.)
 
 So, select **"Sierra-style"** and click **Next**.
 
-![Game Name dialog](https://user-images.githubusercontent.com/31778541/79376574-5fbf1880-7f28-11ea-89fc-fc2a2354f0ea.png)
+![Game Name dialog](images/acintro1_04.png)
 
 Finally, you need to decide on what to call your game.
 1. In the first box you can type the full name for your game. This is what will be displayed in the game title bar when it's running in a window, and it's used for a couple of other things too. For the purposes of this tutorial, I'm going to call it the incredibly lame **"Roger's Adventure"**, but you can use whatever you like.
@@ -52,7 +52,7 @@ that.
 Click the **Finish** button, and after a short wait you should be
 presented with the main AGS Editor window:
 
-![The main editor window](https://user-images.githubusercontent.com/31778541/79377585-e9231a80-7f29-11ea-92dc-9651279e32cb.png)
+![The main editor window](images/acintro1_05.png)
 
 So, there's your new game, ready and waiting for you to create it!
 
@@ -63,7 +63,7 @@ Tree** in the top-right corner, which allows you to access all the
 various parts of your game. Let's start by scrolling to the top of the
 Project Tree, and double-clicking the **"General Settings"** node:
 
-![The General Settings pane](https://user-images.githubusercontent.com/31778541/79386140-b4b65b00-7f37-11ea-9188-f663c3768509.png)
+![The General Settings pane](images/acintro1_06.png)
 
 This screenshot above demonstrates three of the main editor features.
 1. The **Project Tree**, as we've already discussed, gives you access to the
@@ -137,7 +137,7 @@ sure. Confirm it, and you're done.
 - **Adjusting the Palette:** Double-click the **"Colors"** node in the project tree. You should see
 this:
 
-![The Palette Editor](https://user-images.githubusercontent.com/31778541/79381305-c8f65a00-7f2f-11ea-835e-c7648362e414.png)
+![The Palette Editor](images/acintro1_07.png)
 
 The palette display has a grid with the 256 color slots on it. The
 first 40 colors are **game-wide** colors, which means that those
@@ -157,7 +157,7 @@ So, let's swap some background colors for some game-wide ones. Select
 the first "X" slot, then hold shift and click on the last slot in the
 row marked "80". The screen should look as follows:
 
-![We have selected colors 42-95](https://user-images.githubusercontent.com/31778541/79381973-c8aa8e80-7f30-11ea-8a96-d700f188b6e0.png)
+![We have selected colors 42-95](images/acintro1_08.png)
 
 We can now see the **Properties Grid** of the AGS Editor in action. Change the **"ColorType"**
 setting from **"Background"** to **"Gamewide"**, and you'll see the selected

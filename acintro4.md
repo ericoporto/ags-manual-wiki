@@ -16,15 +16,15 @@ game, it's been done far too many times. ;-)
 
 For this tutorial we will need to import a sprite of a key to be used later as an object on the background. Right-click on the following key image, save it to your computer, and we will import it into the Sprite Manager of the AGS Editor soon.
 
-* ![The image of a key to be used](https://user-images.githubusercontent.com/31778541/79488770-3f569300-7fe8-11ea-847f-0bf23a613347.png)
+* ![The image of a key to be used](images/acintro4_01.png)
 
 Within the AGS Editor, choose "Sprites" from the Project Tree, in the upper-right of the editor. Making sure you have "Main" selected in the left-side tree, you should have a screen that look like this:v
 
-![A view of the Sprite viewer](https://user-images.githubusercontent.com/31778541/79487617-8479c580-7fe6-11ea-9a79-f0ad0eb6944b.png)
+![A view of the Sprite viewer](images/acintro4_02.png)
 
 Right-click to the right of the "blue cup" image # 0, and you should get a context window drop-down of actions. Choose **"Import new sprite(s) from files..."**. Navigate to where you saved the key image on your computer and select that image file. Next, you will see the "Import Sprite" window. The window should look like this:
 
-![Importing a sprite view](https://user-images.githubusercontent.com/31778541/79488115-3dd89b00-7fe7-11ea-961f-3c1e2a675814.png)
+![Importing a sprite view](images/acintro4_03.png)
 
 Go ahead and select the "Import" button. You will now be able to see your new key graphic next to the blue cup graphic. It is now ready to be chosen as a graphic within your game.
 
@@ -41,14 +41,14 @@ Notice that the Properties Grid has changed to display the details of this
 new object -- one of which is a property called Image. Select this
 property, and a "..." button appears.
 
-![Adding an object to the room](https://user-images.githubusercontent.com/31778541/79483098-ca7f5b00-7fdf-11ea-9ce7-edc702c5b97b.png)
+![Adding an object to the room](images/acintro4_04.png)
 
 Click the "..." button, and you'll be presented with the *Sprite
 Manager*. We'll explain this in even more detail later, but basically it is
 the focal point in AGS where you import and export all your graphics
 except for room backgrounds. For this tutorial, ensure that the **"Main"** tree choice in the left-side tree is selected, and you should see your small key picture that we imported earlier. Double-click that **"Key"** image.
 
-![Selecting the Key in the Sprite Manager](https://user-images.githubusercontent.com/31778541/79489468-58137880-7fe9-11ea-803f-349e51e148c0.png)
+![Selecting the Key in the Sprite Manager](images/acintro4_05.png)
 
 You should now see that the blue cup graphic has changed into a key. You can
 move it around by left-clicking and dragging the sprite within the
@@ -61,7 +61,7 @@ and find the **"Name"** property, and set it to something sensible. The
 convention in AGS is to have object names start with an "o", for example
 *oKey*.
 
-![I've placed the key cunningly in the middle of the walkway ;-)](https://user-images.githubusercontent.com/31778541/79489829-ea1b8100-7fe9-11ea-84a2-feca867fff1d.png)
+![I've placed the key cunningly in the middle of the walkway ;-)](images/acintro4_06.png)
 
 Before we enable the key to be taken by the player, let me quickly go
 over a couple of properties in the Properties Grid:
@@ -101,11 +101,11 @@ should see a window open with a slightly different key image than the key image 
 
 * For this tutorial, update the field in the Properties Grid of **"PlayerStartsWithItem"** to be **"False"** for this iKey inventory object!
 
-![Inventory Screen of Key](https://user-images.githubusercontent.com/31778541/79491541-9a8a8480-7fec-11ea-8f36-2086080bdc97.png)
+![Inventory Screen of Key](images/acintro4_07.png)
 
 To view where this inventory image of a key is being linked to, find the **"Image"** property in the Properties Grid, select it, and then click the **"..."** button. The sprite manager re-appears, and you will find the sprite to represent the inventory object in the larger format.
 
-![Sprite manager view of the larger key](https://user-images.githubusercontent.com/31778541/79492425-00c3d700-7fee-11ea-9697-c409fef7ba2f.png)
+![Sprite manager view of the larger key](images/acintro4_08.png)
 
 OK, there are a few other settings on this screen, but let's return to
 our objective - letting the player pick up the key. Remember that the
@@ -116,7 +116,7 @@ script name is *iKey*, as we'll need it later.
 Go back to the **Objects** pane of the "Room" tab, ensure that you still have the "key" object selected, and then click on, yes you've guessed it, the **Events** button. The events here are very similar
 to the ones we had for the hotspot:
 
-![The events list for the object](images/https://user-images.githubusercontent.com/31778541/79493732-ea1e7f80-7fef-11ea-9680-d05f0563d71d.png)
+![The events list for the object](images/images/acintro4_09.png)
 
 Notice there are two obvious possibilities here: "Interact object" and
 "Pick up object". We actually want to use the "Interact object" event,
@@ -134,7 +134,7 @@ Here's my script solution. As an added bonus, I've also given the player
 5 points for their trouble, but you don't need to have that third
 command:
 
-![Script for taking the key](https://user-images.githubusercontent.com/31778541/79494040-57caab80-7ff0-11ea-80ca-621db82f8141.png)
+![Script for taking the key](images/acintro4_10.png)
 
 Note that our solution is not perfect - the player can click the hand
 icon on the key from anywhere in the room and it will disappear. We are
