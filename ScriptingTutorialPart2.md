@@ -56,7 +56,7 @@ has **two** specific inventory items. You could do this, and put **two**
       }
     }
 
-#### 'AND' Expressions
+#### AND Expressions
 
 However, this is quite unwieldy and if you have a lot of conditions it
 will look rather messy. So, AGS lets you do it this way:
@@ -83,7 +83,7 @@ to true, and the variable *timer* is between 5 and 10.
       Display ("It's all working out fine.");
     }
 
-#### 'OR' Expressions
+#### OR Expressions
 
 Sometimes you will want to do some processing if one **or** another
 condition is true. For example, you might want to let the player open a
