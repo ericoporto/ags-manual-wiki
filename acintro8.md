@@ -231,6 +231,4 @@ As mentioned earlier, there is a simple way to have Sierra-style dialogs. Iif th
 it automatically. You can use this to make Sierra-style conversations,
 because the options will never be shown to the player in this case.
 
-## Continue Tutorial
-
 Next Chapter: [Part 9 - Cursors and Fonts](acintro9)

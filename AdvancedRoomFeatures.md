@@ -148,8 +148,6 @@ the darkening will vary in 256-color games.)
 "UseRoomAreaLighting" setting for each one. They do not affect overlays
 or the background scene.)
 
-## Continue Reading
-
 Now you are ready to read in-depth about setting up your game.
 
 Next Reading: [Setting Up Your Game](Settingupthegame)

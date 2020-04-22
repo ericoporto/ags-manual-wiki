@@ -159,6 +159,4 @@ better understanding of what your script code is doing. Alternatively,
 finish off this tutorial first and then check out the scripting
 tutorial.
 
-## Continue Tutorial
-
 Next Chapter: [Part 4 - Objects and Inventory](acintro4)

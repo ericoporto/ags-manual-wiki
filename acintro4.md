@@ -146,6 +146,4 @@ But, the functionality is there, and this will do fine for now.
 OK, so we now have a fully-working first room. Test the game as
 before (F5) , and try it out. View your inventory first, and you should only have a "Blue Cup". Once the player has taken the key, call up their inventory and you should see the large key picture there.
 
-## Continue Tutorial
-
 Next Chapter: [Part 5 - Managing Inventory](acintro5)

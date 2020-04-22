@@ -1132,8 +1132,6 @@ font to another folder and import it from there.
 the speech font. To use any additional fonts, you can set the
 Game.NormalFont and Game.SpeechFont properties in your script.
 
-## Continue Reading
-
 Now you are ready to read more about scripting.
 
 Next Reading: [Scripting Tutorial 1](ScriptingTutorialPart1)

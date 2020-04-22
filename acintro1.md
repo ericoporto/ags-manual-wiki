@@ -186,6 +186,4 @@ memory and some operations may run more slowly.
 - **Setting the Game Resolution:** Go back to the **General Settings** pane, and select your chosen resolution
 from the **"Basic Properties"** -> **"Resolution"** drop-down list.
 
-## Continue Tutorial
-
 Next Chapter: [Part 2 - Creating Your First Room](acintro2)
