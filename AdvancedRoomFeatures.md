@@ -71,7 +71,7 @@ background scene, and it must be in 16-color (4-bit) or 256-color
 1-15 are used as the respective hotspot/walk-behind/walkable area
 numbers.
 
-![Note](images/icon_info.gif) (**IMPORTANT**: Do NOT use any color numbers above 15 on the mask
+![Note](images/icon_info.png) (**IMPORTANT**: Do NOT use any color numbers above 15 on the mask
 bitmap. Use only palette indexes 0 to 15.)
 
 ---
@@ -107,9 +107,9 @@ You define the speed at which the backgrounds will animate by setting
 the "BackgroundAnimationDelay" option in the property grid for the room.
 The default is 5, which cycles background every 5 frames.
 
-![Note](images/icon_info.gif) (**NOTE**: All the background scenes must be the same size.)
+![Note](images/icon_info.png) (**NOTE**: All the background scenes must be the same size.)
 
-![Note](images/icon_info.gif) (**NOTE**: **(256-color only)** The backgrounds frames each have their own
+![Note](images/icon_info.png) (**NOTE**: **(256-color only)** The backgrounds frames each have their own
 palette (unless you select "Share palette with main background" before
 importing). This means that when the current frame switches in-game, the
 palette will get reset - therefore you can't use special palette effects
@@ -136,15 +136,15 @@ this, then you can enter Red, Green and Blue values as numbers from
 Amount setting determines to what extent characters will be tinted, and
 is from 0-100.
 
-![Note](images/icon_info.gif) (**NOTE**: Light levels only work when the character's graphic is at the
+![Note](images/icon_info.png) (**NOTE**: Light levels only work when the character's graphic is at the
 same color depth as the background (i.e. a 256-color character in a
 hi-color game won't get lightened).)
 
-![Note](images/icon_info.gif) (**NOTE**: In a 256-color game, only darkening areas (light level <
+![Note](images/icon_info.png) (**NOTE**: In a 256-color game, only darkening areas (light level <
 `100%`) will work. Also, depending on the room palette the quality of
 the darkening will vary in 256-color games.)
 
-![Note](images/icon_info.gif) (**NOTE**: Light levels affect characters and objects, depending on the
+![Note](images/icon_info.png) (**NOTE**: Light levels affect characters and objects, depending on the
 "UseRoomAreaLighting" setting for each one. They do not affect overlays
 or the background scene.)
 

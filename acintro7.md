@@ -23,7 +23,7 @@ from left to right. To change the image for a frame, double-click the
 image, and you'll be presented with the sprite manager where you can
 select the image to use.
 
-![Note](images/icon_info.gif) (**NOTE**: All images for use within views are imported as usual via the sprite manager before they can be inserted into a view-frame.)
+![Note](images/icon_info.png) (**NOTE**: All images for use within views are imported as usual via the sprite manager before they can be inserted into a view-frame.)
 
 At the right-hand end of each loop, you'll see a "Create new frame"
 button, which you can click to create a new extra frame at the end of
@@ -112,7 +112,7 @@ Just in case you missed it, I'll repeat what was just said in the
 Characters section - the _Starting Room_ setting of the player
 character is used to determine which room the game starts off in.
 
-![Note](images/icon_info.gif) (**NOTE**: This feature can be handy for testing various parts of your game.
+![Note](images/icon_info.png) (**NOTE**: This feature can be handy for testing various parts of your game.
 For example, when you're working on your 16th room, set the starting room to
 room 16 so that you can get to it instantly when you run the game to
 test it.)

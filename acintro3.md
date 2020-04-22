@@ -54,7 +54,7 @@ Once you've drawn a hotspot, there are two Properties Grid fields to set for thi
     AGS is to start the script names for hotspots with an *h*, for
     example *hDoor*. The name must be unique within the room.
 
-![Note](images/icon_info.gif) (**NOTE**: In the Room Background Preview editor, all the hotspots except the currently selected one are drawn in grey. This is to emphasize which hotspot you currently have selected
+![Note](images/icon_info.png) (**NOTE**: In the Room Background Preview editor, all the hotspots except the currently selected one are drawn in grey. This is to emphasize which hotspot you currently have selected
 to edit. You can change this behavior by toggling the "Show non-selected
 masks greyed out" button at the right-hand end of the AGS Editor toolbar.)
 
@@ -129,7 +129,7 @@ point before the relevant event is triggered. If you want, the character
 can also walk there when the LOOK mode is used - this option is
 configurable in the game General Settings pane.
 
-![Note](images/icon_info.gif) (**NOTE**: To remove a walk-to point, simply set it to 0,0.)
+![Note](images/icon_info.png) (**NOTE**: To remove a walk-to point, simply set it to 0,0.)
 
 #### Edges revisited
 

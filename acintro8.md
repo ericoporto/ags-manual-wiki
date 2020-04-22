@@ -53,7 +53,7 @@ In the Properties Grid:
 character's _Script Name_. This is the name by which we refer to him
 when creating our dialogs. I'll just use **"cMerchant"** as the script name.
 
-![Note](images/icon_info.gif) (**NOTE**: I'd recommend you set it to something sensible like this, and don't just
+![Note](images/icon_info.png) (**NOTE**: I'd recommend you set it to something sensible like this, and don't just
 leave it as "cChar1" or else your dialog scripts will get very
 confusing!)
 
