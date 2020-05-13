@@ -5,6 +5,7 @@
   product of collaborative work of the following people (in alphabetic
   order):
 
+  Alan Van Drake
   Benjamin Penney  
   Benoit Pierre  
   Bernhard Rosenkraenzer  
