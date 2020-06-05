@@ -1,48 +1,63 @@
-## Predefined global script functions
+## Global functions (Event Handlers)
 
-In your main global script file, there are some functions which are
-automatically added when you create the game. These are global events,
-and the function is called when a particular event happens. There are
-also some other events which you can add if you want to.
+In your global script file, some functions will have been
+automatically added when you created your game. These are global event
+handlers, and these functions are called when particular events occur.
+There are also some optional event handlers, which you can add if you
+would like specific additional events to be processed.
 
-The available event functions are:
+### `dialog_request`
 
-_dialog_request (int parameter)_
+    dialog_request (int parameter)
 
-Called when a dialog script line "run-script" is processed. PARAMETER is
-the value of the number following the "run-script" on that line of the
-dialog script.
+Called when a dialog script line "run-script" is processed. PARAMETER
+is the value of the number following the "run-script" on that line of
+the dialog script.
 
-_game_start ()_
+---
+
+### `game_start`
+
+    game_start ()
 
 Called at the start of the game, before the first room is loaded. You
-can use this to set up the initial positions of characters, and to turn
-GUIs on and off. **You cannot run animations or do anything else which
-relies on a room being loaded**.
+would typically use this to set up the initial positions of
+characters, and to modify initial visibility of GUIs.
 
-_interface_click (int interface, int button)_
+**Note:** When this function is called it is too early to run
+animations or do anything else which relies on a room being loaded
 
-**(Now Obsolete)** Called when the player clicks on a button on a GUI
-which has its action set as "Run script". INTERFACE is the number of the
-GUI which they clicked on. BUTTON is the object number of the button
-within this GUI.
+---
 
-_on_event (EventType event, int data)_
+### `interface_click`
 
-Called whenever certain game events happen. The value of DATA depends on
-which event has occurred. This allows you to perform checks or update
-things every time the player does something, regardless of which room it
-is in. The possible values of event are:
+*(This function is now obsolete)*
+
+    interface_click (int interface, int button)
+
+Called when the player clicks on a button on a GUI which has its
+action set as "Run script". INTERFACE is the number of the GUI which
+they clicked on. BUTTON is the object number of the button within this
+GUI.
+
+---
+
+### `on_event`
+
+    on_event (EventType event, int data)
+
+Called whenever certain game events occur. The value of DATA depends
+on which event has occurred. The possible values of event are:
 
     eEventEnterRoomBeforeFadein
-          called just before room Player Enters Room event is run.
+          called just before the room's 'Player Enters Room' event occurs
           DATA = new room number
     eEventLeaveRoom
-          called just after room Player Leaves Room event is run.
+          called just after the room's 'Player Leaves Room' event occurs
           DATA = room number they are leaving
     eEventGotScore
           called whenever the player's score changes
-          DATA = number of points they got
+          DATA = number of points they've received
     eEventGUIMouseDown
           called when a mouse button is pressed down over a GUI
           DATA = GUI number
@@ -50,60 +65,100 @@ is in. The possible values of event are:
           called when a mouse button is released over a GUI
           DATA = GUI number
     eEventAddInventory
-          the player just got a new inventory item
+          called when the player has just added an inventory item
           DATA = inventory item number that was added
     eEventLoseInventory
-          the player just lost an inventory item
+          called when the player has just lost an inventory item
           DATA = inventory item number that was lost
     eEventRestoreGame
-          tells your game that it has just been restored from a save game
+          called after a saved game has been restored
           DATA = save slot number
 
-_on_key_press (eKeyCode keycode)_
+---
+
+### `on_key_press`
+
+    on_key_press (eKeyCode keycode)
 
 Called whenever a key is pressed on the keyboard. KEYCODE holds the
-ASCII value of the key. A list of these values is in [this section](ASCIIcodes).
+ASCII value of the key. A list of these values is [available here](ASCIIcodes).
 
-_on_mouse_click (MouseButton button)_
+The `on_key_press` function can also be defined in individual room
+scripts. This allows the room script to intercept a key-press first,
+and then decide whether to pass it on to the global script or not. See
+the [ClaimEvent](Globalfunctions_General#claimevent) function for more
+details.
 
-Called when the player clicks a mouse button. BUTTON is either LEFT,
-RIGHT or MIDDLE, depending on which button was clicked. The "mouse.x"
-and "mouse.y" global variables contain the mouse's position.<br>
+---
+
+### `on_mouse_click`
+
+    on_mouse_click (MouseButton button)
+
+Called when the player clicks a mouse button. BUTTON is either
+`eMouseLeft`, `eMouseRight`, or `eMouseMiddle`, depending on which
+button was clicked. The `mouse.x` and `mouse.y` global variables
+contain the mouse's position.
+
 If 'Handle inventory clicks in script' is enabled in the game options,
-this function can also be called with eMouseLeftInv, eMouseMiddleInv or
-eMouseRightInv, which indicate a left, middle or right click on an
-inventory item, respectively.<br>
+this function can also be called with `eMouseLeftInv`,
+`eMouseMiddleInv` or `eMouseRightInv`, which indicate a left, middle
+or right click on an inventory item, respectively.
+
 If 'Enable mouse wheel support' is enabled, this function can also be
 called with eMouseWheelNorth or eMouseWheelSouth, which indicate the
 user moving the mouse wheel north or south, respectively.
 
-_repeatedly_execute()_
+The `on_mouse_click` function can also be defined in individual room
+scripts. This allows the room script to intercept a mouse-click first,
+and then decide whether to pass it on to the global script or not. See
+the [ClaimEvent](Globalfunctions_General#claimevent) function for
+more details.
 
-Called every game cycle (normally 40 times per second). See
-[this help page](RepExec) for more information.
+---
 
-_repeatedly_execute_always()_
+### `repeatedly_execute`
 
-Called every game cycle, even when a blocking routine (eg.
-speech/cutscene) is in progress. You **cannot** call any blocking
-functions from this event handler. **repeatedly_execute_always** is
-called **BEFORE** the game objects (characters, rooms, etc) get updated.
-See [this help page](RepExec) for more information.
+    repeatedly_execute()
 
-_late_repeatedly_execute_always()_
+Called every game cycle (normally 40 times per second). Additional
+information is [available here](RepExec).
 
-Called every game cycle, even when a blocking routine (eg.
-speech/cutscene) is in progress. You **cannot** call any blocking
-functions from this event handler. **late_repeatedly_execute_always**
-is called **AFTER** the game objects (characters, rooms, etc) got
-updated, but before game is redrawn on screen.
+---
 
-_unhandled_event (int what, int type)_
+### `repeatedly_execute_always`
 
-Called when an event occurs, but no handler is set up in the Events
-list. This could be used to display a default "I can't do that" type of
-message. The values of WHAT and TYPE tell you what the player did.<br>
-The possible values are listed below:
+    repeatedly_execute_always()
+
+Called every game cycle, even when a blocking routine (e.g speech or
+cutscene) is in progress. You **cannot** call any blocking functions
+from this event handler. `repeatedly_execute_always` is called
+**before** the game entities (characters, rooms, etc) get updated.
+Additional information is [available here](RepExec).
+
+---
+
+### `late_repeatedly_execute_always`
+
+    late_repeatedly_execute_always()
+
+Called every game cycle, even when a blocking routine (e.g. speech or
+cutscene) is in progress. You **cannot** call any blocking functions
+from this event handler. `late_repeatedly_execute_always` is called
+**after** the game entities (characters, rooms, etc) have been
+updated, but before the game screen is redrawn.
+
+---
+
+### `unhandled_event`
+
+    unhandled_event (int what, int type)
+
+Called when an event occurs, but no corresponding event handler has
+been configured. This is typically used to display a default "I can't
+do that" type response in-order to avoid having to add unique
+messages for all in-game interactions. The values of WHAT and TYPE
+tell you what the player did. The possible values are listed below:
 
 WHAT | TYPE | Description
 --- | --- | ---
@@ -138,16 +193,6 @@ WHAT | TYPE | Description
 5 | 3 | Use an inventory item on another
 5 | 4 | Other click on inventory
 
-Note that the "Character stands on hotspot" event does not trigger this
-function, and it will not be triggered if there is an "Any click" event
-defined.
-
-This function is **not** triggered if the player clicks on nothing
-(hotspot 0).
-
-The *on_key_press* and *on_mouse_click* events can also be handled
-by individual room scripts. If you add their function definitions to
-your room script in a similar way to how they are in the global script,
-the room script can intercept the keypress/mouseclick first, and then
-decide whether to pass it on to the global script or not. See the
-[ClaimEvent](Globalfunctions_General#claimevent) function for more.
+**Note**: the "Character stands on hotspot" event does not trigger
+this function, nor will it be triggered if there is an "Any click"
+event handler defined, nor if the player clicks on nothing (hotspot 0)
