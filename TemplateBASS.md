@@ -5,7 +5,7 @@ This template is a modified version of what was previously known as the
 previous name of TwoClickHandler. The behavior of the script module aims to
 simplify and mask the cursor modes, removing the need for the player
 to manually set them. It also implements default behaviors where none are
-explicitly implemented, through the use of [unhandled_event](TextScriptEvents)
+explicitly implemented, through the use of [unhandled_event](Globalfunctions_Event)
 in the global script.
 
 Without making any direct comparisons which might result in a lawsuit, in the

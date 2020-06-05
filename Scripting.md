@@ -4,12 +4,12 @@ AGS provides a scripting system, where engine functionalities are exposed throug
 
 Browse around the script listing below, as there's much more available to the script API. In the Editor General Settings, you can use **Script API level** to configure which is the latest API for the functions and structs available for usage. Additionally, **Script compatibility level** allows to enable previous Script API entries along to the latest defined ones. These switches are useful when upgrading from one version of AGS to another, allowing to build a game written in a previous version of AGS with a newer Editor, allowing you to upgrade the Script API version you are working with without having to do it in one go.
 
-- [Predefined global script functions](TextScriptEvents)
 - [repeatedly_execute / repeatedly_execute_always](RepExec) 
 - [Custom dialog options rendering](CustomDialogOptions)
 - [Standard Enumerated Types](StandardEnums)
 - [Standard Types](StandardTypes)
 - [GameState variables](Gamevariables)
+- [Global functions: event handlers](Globalfunctions_Event)
 - [Global functions: general](Globalfunctions_General)
 - [Global functions: message display](Globalfunctions_Message)
 - [Global functions: multimedia actions](Multimedia)

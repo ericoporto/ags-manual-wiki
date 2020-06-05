@@ -68,7 +68,7 @@
 -   [Dynamic Arrays](DynamicArrays)
 -   [Extender functions](ExtenderFunctions)
 -   [Game variables](Gamevariables)
--   [Predefined global script functions](TextScriptEvents)
+-   [Predefined global script functions](Globalfunctions_Event)
 -   [repeatedly_execute (_always)](RepExec)
 -   [Custom dialog options rendering](CustomDialogOptions)
 -   [Built-in enumerated types](BuiltInEnums)

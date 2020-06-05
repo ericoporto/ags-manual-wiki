@@ -108,7 +108,7 @@ Example:
 prevents the global script on_key_press from running if the player
 pressed the space bar.
 
-SeeAlso: [Script events](TextScriptEvents)
+SeeAlso: [Script events](Globalfunctions_Event)
 
 ---
 
