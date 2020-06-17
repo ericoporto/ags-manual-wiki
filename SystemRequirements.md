@@ -6,7 +6,8 @@ To work with the Editor, you need following:
 - .NET Framework 4.5 
 - Visual C++ Redistributable for Visual Studio 2015 
 
-f you use the provided installer, the Visual C++ dependency will be installed if it's needed. Recent versions of Windows already provide the necessary .NET Framework pre-installed.
+If you use the provided installer, the Visual C++ dependency will be installed if it's needed. 
+Recent versions of Windows already provide the necessary .NET Framework pre-installed.
 
 Note that games you create do **NOT** require .NET nor Visual C++
 redistributable. 
