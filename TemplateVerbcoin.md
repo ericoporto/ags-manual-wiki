@@ -164,6 +164,15 @@ Closes the VerbCoin interface (i.e. hide its GUI)
 Returns true if the VerbCoin interface is currently open, else
 returns false.
 
+### `VerbCoin.CleanUp`
+
+    VerbCoin.CleanUp();
+
+Deletes the dynamic sprite which is used in rendering the VerbCoin
+user interface. This would typically only be done immediately before
+exiting the game, in-order to suppress warnings about dynamic sprites
+still being allocated.
+
 ### `VerbCoin.ButtonAutoDisable`
 
     bool VerbCoin.ButtonAutoDisable

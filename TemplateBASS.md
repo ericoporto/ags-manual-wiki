@@ -80,3 +80,14 @@ Show and hide the inventory when the mouse cursor y value is less than this
 value.
 
 The default value is `0` (effectively disabled in favor of PopupProportional).
+
+---
+
+### `TwoClickHandler.Close`
+
+    TwoClickHandler.Close();
+
+Hide the inventory GUI if it being shown. If the inventory GUI is already
+hidden then this function does nothing. This would typically only be called
+by higher level GUI management functions which require the inventory GUI to
+be replaced or suppressed.
