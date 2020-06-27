@@ -114,11 +114,15 @@ description could be 'use'.
 
 Registers the [GUI](GUI) used for the VerbCoin.
 
+---
+
 ### `VerbCoin.InventoryGui`
 
     GUI* VerbCoin.InventoryGui
 
 Registers the [GUI](GUI) used for the inventory window.
+
+---
 
 ### `VerbCoin.ActionLabel`
 
@@ -126,17 +130,23 @@ Registers the [GUI](GUI) used for the inventory window.
 
 Registers the [Label](Label) used to display text descriptions.
 
+---
+
 ### `VerbCoin.Enable`
 
     VerbCoin.Enable();
 
 Enables the VerbCoin interface.
 
+---
+
 ### `VerbCoin.Disable`
 
     VerbCoin.Disable();
 
 Disables the VerbCoin interface.
+
+---
 
 ### `VerbCoin.IsEnabled`
 
@@ -145,11 +155,15 @@ Disables the VerbCoin interface.
 Returns true if the VerbCoin interface is currently enabled, else
 returns false.
 
+---
+
 ### `VerbCoin.Open`
 
     VerbCoin.Open();
 
 Opens the VerbCoin interface (i.e. show its GUI).
+
+---
 
 ### `VerbCoin.Close`
 
@@ -157,12 +171,16 @@ Opens the VerbCoin interface (i.e. show its GUI).
 
 Closes the VerbCoin interface (i.e. hide its GUI)
 
+---
+
 ### `VerbCoin.IsOpen`
 
     VerbCoin.IsOpen();
 
 Returns true if the VerbCoin interface is currently open, else
 returns false.
+
+---
 
 ### `VerbCoin.CleanUp`
 
@@ -172,6 +190,8 @@ Deletes the dynamic sprite which is used in rendering the VerbCoin
 user interface. This would typically only be done immediately before
 exiting the game, in-order to suppress warnings about dynamic sprites
 still being allocated.
+
+---
 
 ### `VerbCoin.ButtonAutoDisable`
 
