@@ -180,7 +180,7 @@ Example script:
 
 ### Static attributes
 
-Using an attribute will actually allow you to simulate define static properties
+Using an attribute will actually allow you to simulate defining static properties
 within a struct.
 
     struct Some
