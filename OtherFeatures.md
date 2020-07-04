@@ -4,6 +4,7 @@ This section describes AGS features that were not covered in the
 tutorial.
 
 - [Keyboard Shortcuts](KeyboardShortcuts)
+- [Script Modules](ScriptModules)
 - [Music and sound](MusicAndSound)
 - [Distributing your game](DistGame)
 - [Backing up your game](BackingUpYourGame)
