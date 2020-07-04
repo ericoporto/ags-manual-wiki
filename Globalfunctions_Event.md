@@ -196,3 +196,16 @@ WHAT | TYPE | Description
 **Note**: the "Character stands on hotspot" event does not trigger
 this function, nor will it be triggered if there is an "Any click"
 event handler defined, nor if the player clicks on nothing (hotspot 0)
+
+---
+
+### `on_call`
+
+    on_call (int value)
+
+This callback can only be declared on Room Script.
+
+It's called after the function `CallRoomScript(value)` is executed,
+but not immediately. You can read an arbitrary integer value passed
+from `CallRoomScript`. Additional information is [available here](Globalfunctions_General#callroomscript).
+
