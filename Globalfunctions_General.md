@@ -69,7 +69,7 @@ the game.roomscript_finished variable will be set to 1, so you can
 check for that in your repeatedly_execute script if you need to do
 something afterwards.
 
-SeeAlso: [The text parser documentation](TextParser)
+SeeAlso: [The text parser documentation](TextParser), [on_call](Globalfunctions_Event#on_call)
 
 ---
 
