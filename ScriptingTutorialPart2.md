@@ -277,7 +277,7 @@ explains how to solve this using the script header and "importing".
 
 You will need to edit the **Global Script Header** **(AGS Editor -> File Menu -> Open GlobalScript.asc)** and you can read about why within the manual. In the Index, look up "The Script Header" for more information.
 
-## Conclusion
+### Conclusion
 
 We've covered some of the more advanced topics of scripting. I'm sure
 there's a lot of stuff I've forgotten to mention, so feel free to
