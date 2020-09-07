@@ -184,7 +184,7 @@ also built into the game EXE file when you compile the game (just make
 sure the file has a .OGV extension and is placed in your main game
 folder). A good converter for theora is [ffmpeg2theora](https://v2v.cc/~j/ffmpeg2theora/).
 
-**IMPORANT:** Because of an old mistake in AGS, OGG Theora videos may be positioned on screen with a slight negative offset, cutting few rows or columns of pixels. Until this is fixed, as a workaround, make sure that your video's frame sizes are multipliers of 16 and actual image placed aligned to the center. For example, if you want 320x200 video then increase canvas to 320x208 and place image at offset (0, 4).
+**IMPORTANT:** Because of an old mistake in AGS, OGG Theora videos may be positioned on screen with a slight negative offset, cutting few rows or columns of pixels. Until this is fixed, as a workaround, make sure that your video's frame sizes are multipliers of 16 and actual image placed aligned to the center. For example, if you want 320x200 video then increase canvas to 320x208 and place image at offset (0, 4).
 
 The second type of files that AGS can play is anything supported by
 Windows Media Player. This includes AVI, MPG and more. However, in order
