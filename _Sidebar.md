@@ -95,7 +95,7 @@
 -   [Inventory item functions and properties](InventoryItem)
 -   [Maths functions and properties](Maths)
 -   [Mouse functions and properties](Mouse)
--   [Multimedia functions](Game)
+-   [Multimedia functions](Multimedia)
 -   [Object functions and properties](Object)
 -   [Overlay functions and properties](Overlay)
 -   [Palette functions](Globalfunctions_Palette)
