@@ -83,6 +83,8 @@ Here _myValue_ variable will be assigned "a-value" from the dictionary.
 
 Creates a dynamic array filled with keys in the same order as they are stored in the Dictionary.
 
+Returns null if this Dictionary is empty.
+
 Example:
 
     Dictionary* myDictionary = Dictionary.Create();
@@ -103,6 +105,8 @@ In the above example the keys will be displayed on screen one by one, preceded b
     String[] Dictionary.GetValuesAsArray()
 
 Creates a dynamic array filled with values in the same order as they are stored in the Dictionary.
+
+Returns null if this Dictionary is empty.
 
 Example:
 
