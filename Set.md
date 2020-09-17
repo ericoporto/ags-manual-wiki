@@ -77,6 +77,8 @@ Example:
 
 Creates a dynamic array filled with items in same order as they are stored in the Set.
 
+Returns null if this Set is empty.
+
 Example:
 
     Set* mySet = Set.Create();
