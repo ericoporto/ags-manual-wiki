@@ -1,3 +1,7 @@
+## Obsolete Script API
+
+As new versions of AGS are released, changes in the language happens, below are the Script API removed entries, their replacement (when available) and the version that it happened.
+
 | Obsolete API | Superseded by | Obsoleted in Version |
 |-|-|-|
 | `AddInventory` | [ `Character.AddInventory` ]( Character#characteraddinventory ) |  |
