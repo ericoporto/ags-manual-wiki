@@ -792,6 +792,9 @@ thus making it perfectly clear what the command will do.
 
 Normally, you would put the enum definition into the script header.
 
+If you don't assign a value for the first enum item, it is assigned the value 1.
+Other enum items have the value of the enum before plus 1. Ex: `enum ABC { eA,eB, eC};` get's `eA`=1 `eB`=`eA+1`=2 `eC`=`eB+1`=3, by default.
+
 In summary, enums are not an essential part of scripting and you can get
 away perfectly well without using them, but in some specific situations
 they're very handy.
