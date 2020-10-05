@@ -32,6 +32,7 @@
 - [Scripting Language](ScriptingLanguage)
 - [Scripting API](Scripting)
 - [Reference](Reference)
+- [Obsolete Script API](ObsoleteScriptAPI)
 
 ## Legal Notice
 
