@@ -46,7 +46,8 @@ plays the *aExplosion* audio clip.
 
 *See Also:* [AudioClip.PlayFrom](AudioClip#audioclipplayfrom),
 [AudioClip.PlayQueued](AudioClip#audioclipplayqueued),
-[AudioClip.Stop](AudioClip#audioclipstop)
+[AudioClip.Stop](AudioClip#audioclipstop),
+[ViewFrame.LinkedAudio](ViewFrame#viewframelinkedaudio)
 
 ---
 
