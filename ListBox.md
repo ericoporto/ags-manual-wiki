@@ -103,7 +103,8 @@ you can do:
 **NOTE:** The save game list can only hold 50 save games. If
 ListBox.ItemCount returns 50 and you are doing a Save dialog box, you
 may want to make the user replace an existing file rather than saving a
-new one.
+new one. Additionally, it can only list Save Game Slots from 0 to 99, this
+allows using slots of higher number for other purposes.
 
 Example:
 
