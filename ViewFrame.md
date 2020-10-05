@@ -90,7 +90,7 @@ if so, plays it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.GetViewFrame](Game#gamegetviewframe)
+*See Also:* [Game.GetViewFrame](Game#gamegetviewframe), [Character.ScaleVolume](Character#characterscalevolume)
 
 ---
 
