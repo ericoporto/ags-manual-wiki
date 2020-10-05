@@ -71,7 +71,8 @@ of the *oMachine* room object.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](AudioChannel#audiochannelvolume)
+*See Also:* [AudioChannel.Volume](AudioChannel#audiochannelvolume),
+[Character.ScaleVolume](Character#characterscalevolume)
 
 ---
 
@@ -353,4 +354,5 @@ reduce its volume.
 *See Also:*
 [AudioChannel.SetRoomLocation](AudioChannel#audiochannelsetroomlocation),
 [Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume),
-[System.Volume](System#systemvolume)
+[System.Volume](System#systemvolume),
+[Character.ScaleVolume](Character#characterscalevolume)
