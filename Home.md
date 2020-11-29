@@ -37,7 +37,6 @@
 ## Legal Notice
 
 - [Copyright and terms of use](Copyright)
-- [Anonymous usage information](AnonymousUsageInfo)
 - [Credits](Credits)
 
 ## Getting in touch
