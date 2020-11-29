@@ -29,6 +29,7 @@
 
 ## Scripting
 
+- [Scripting Tutorial](ScriptingTutorial)
 - [Scripting Language](ScriptingLanguage)
 - [Scripting API](Scripting)
 - [Reference](Reference)
