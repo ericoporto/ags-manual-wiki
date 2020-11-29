@@ -1,10 +1,7 @@
 ## Scripting Language
 
-The AGS scripting system allows you to write a mini-program, giving you
-great control over your game.
+This section provides an extensive reference for AGS script capabilities and common practices.
 
-- [Scripting tutorial part 1](ScriptingTutorialPart1)
-- [Scripting tutorial part 2](ScriptingTutorialPart2)
 - [Script language keywords](ScriptKeywords)
 - [Pointers in AGS](Pointers)
 - [Calling global functions from local scripts](CallingGlobalFunctions)
