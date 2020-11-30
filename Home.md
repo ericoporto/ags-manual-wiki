@@ -20,6 +20,7 @@
 - [View Editor](EditorView)
 - [Inventory Items Editor](EditorInventoryItems)
 - [Other Features](OtherFeatures)
+- [System limits](SystemLimits)
 
 ## Engine
 
@@ -32,8 +33,9 @@
 - [Scripting Tutorial](ScriptingTutorial)
 - [Scripting Language](ScriptingLanguage)
 - [Scripting API](Scripting)
-- [Reference](Reference)
 - [Obsolete Script API](ObsoleteScriptAPI)
+- [Event Types](EventTypes)
+- [ASCII code table](ASCIIcodes)
 
 ## Legal Notice
 
