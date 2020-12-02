@@ -31,31 +31,28 @@ A. In the AGS Room Editor, under the object properties, in events, the field sho
 **Q. I click on a GUI button, but nothing happens. It doesn't seem to register clicks!**
 
 A. There are some different immediate suspects here.
-- Is the button set to Run Script? Go to the GUI Editor, select the button, and make sure that in its properties window, "Left Click" is set to "Run Script".
-- Is the GUI clickable? While in the GUI Editor, make sure that the "Clickable" checkbox at the top is checked for the GUI that the button is on.
+- Is the button set to Run Script? Go to the GUI Editor, select the button, and make sure that in its properties window, "Click Action" is set to "Run Script".
+- Is your script wired to the button's event? In the button properties, in events, the "OnClick" field should be filled with the function to execute.
+- Is the GUI *and* the button clickable? Make sure that the "Clickable" property is set to "True" for both of them.
 - Alternatively, if you are creating many GUIs, check if you have created a transparent, clickable GUI that is on top of the GUI you are clicking.
-- Is your script in the right function? You need to put your script inside the `interfaceName_click` function in the global script, and the event must be wired on the GUI Editor.
 
 ---
 
 **Q. When I enter a certain room, I just get a black screen.**
 
-A. Make sure that you haven't used a Display Message command in the
+A. Make sure that you haven't used a blocking script command such as "Display", "Character.Say", "Character.Walk" or similar in the
 "Enters room before fade-in" event for that room. Remember that this
 event happens BEFORE the screen fades in.
 
 To make sure, when you get the black screen, try pressing enter, or
 clicking the left mouse button. If nothing happens then something more
-serious may have happened. If this is the case, press Alt+X, which
-should exit the program and allow you to trace which line of script it
-has stopped on.
+serious may have happened. If this is the case, while running the game from the Editor, switch to the Editor and click on "Pause" button on toolbar: that will stop game execution and may allow you to trace which line of script it has stuck on.
 
 ---
 
 **Q. The character isn't drawn behind my walk-behind areas!**
 
-A. You need to define the base line for the area, or he will always be
-drawn in front. See the tutorial for more information.
+A. You need to define the baseline for these areas, baselines determine the order things (characters, objects and walk-behinds) are arranged in the room.
 
 ---
 
