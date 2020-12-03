@@ -1,6 +1,6 @@
 ## Frequently Asked Questions
 
-This section of the manual is very rarely updated. Please visit the [AGS Forums](https://www.adventuregamestudio.co.uk/forums/index.php) or [AGS Discord server](https://discord.gg/BSvN5ZF) if you need more answers on beginner questions.
+This section of the manual is very rarely updated. Please visit the [AGS Forums](https://www.adventuregamestudio.co.uk/forums/) or [AGS Discord server](https://discord.gg/BSvN5ZF) if you need more answers on beginner questions.
 
 ---
 
