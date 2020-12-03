@@ -117,7 +117,7 @@ A. "Display" command pauses whole game, use an Overlay or GUI with a label inste
 
 **Q. How do I do an action when animation reaches certain frame?**
 
-A. In repeatedly_execute function test whether an object is [animating](Object#objectanimate), and what it's current View, Loop and Frame properties (Characters and Buttons have similar values). Execute an action when these properties match your condition.
+A. In repeatedly_execute function test whether an object is [animating](Object#objectanimating), and what it's current View, Loop and Frame properties (Characters and Buttons have similar values). Execute an action when these properties match your condition.
 
 ---
 
