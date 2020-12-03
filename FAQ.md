@@ -75,7 +75,7 @@ A. There are various ways to do this, depending on how do you want your menu to 
 **Q. Can I hide player character in particular room (main menu, intro, credits screen)?**
 
 A. Open your room in the Room Editor and set its "ShowPlayerCharacter" property to "False".<br>
-If you want to hide player character only for some time, you may set Transparency to "100", or just move him/her out of the room, for example, by assigning x position to a large negative value.
+If you want to hide player character only for some time, you may set that character's Transparency to "100" in script, or just move him/her out of the room borders, for example, by assigning x position to a large negative value.
 
 ---
 
@@ -85,7 +85,7 @@ A. You need to define the baseline for these areas, baselines determine the orde
 
 ---
 
-**Q. There's a bunch of script commands I need to execute on several events, is there a way to not copy/paste same 5 (20, 50, 100) lines everywhere I need them?**
+**Q. There's a bunch of identical script commands I need to execute on several events, is there a way to not copy/paste same 5 (20, 50, 100) lines everywhere I need them?**
 
 A. Sure, create your own custom function in script, put these commands there, and call this functions each time you want these commands executed. Refer to [Scripting Tutorial](ScriptingTutorialPart2#your-own-functions) for more on this subject.
 
@@ -105,7 +105,7 @@ A. Yes, you can. The dialog lines that start with at least one space character a
 
 **Q. How do I change object's "Name" or "Description" at runtime so that I could display a different one after a game event?**
 
-A. At the time of writing this AGS does not let you change these, as well as few other properties at runtime (this may be fixed in future versions). The common solution for this problem is to use "Custom Properties", which you define in the Editor and may modified in script using SetProperty and SetTextProperty functions for respective object type.
+A. At the time of writing this answer AGS does not let you change these values, as well as few other properties at runtime (this may be fixed in future versions). The common solution is to use "Custom Properties", which you define in the Editor and may modify in script using SetProperty and SetTextProperty functions for the respective object type.
 
 ---
 
@@ -121,9 +121,9 @@ A. In repeatedly_execute function test whether an object is [animating](Object#o
 
 ---
 
-**Q. How do I put variable on a GUI label?**
+**Q. How do I put a variable on a GUI label?**
 
-A. [String.Format](String#stringformat) script function creates a string with variable values inside. You may then use that string anywhere, for example, assign to a label's Text property.
+A. [String.Format](String#stringformat) script function allows to create a string with variable printed in it. You may then use that string anywhere, for example, assign to a label's Text property.
 
 ---
 
