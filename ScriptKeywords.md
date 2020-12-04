@@ -1,44 +1,5 @@
 ## Script language keywords
 
-### Arrays
-
-*data_type* *name* `[` *size* `];`
-
-Arrays allow you to easily create several variables of the same type.
-For example, suppose you wanted to store a health variable for all the
-different characters in the game. One way would be to declare several
-different variables like this:
-
-    int egoHealth;
-    int badGuyHealth;
-    int swordsmanHealth;
-
-but that quickly gets messy and difficult to keep up to date, since you
-need to use different script code to update each one. So instead, you
-can do this at the top of your script:
-
-    int health[50];
-
-This example declares 50 int variables, all called *health*.<br>
-You access each separate variable via its **index** (the number in the
-brackets). Indexes start from 0, so in this case the *health* array can
-be accessed by indexes 0 to 49. If you attempt to access an invalid
-index, your game will exit with an error.
-
-Here's an example of using the array:
-
-    health[3] = 50;
-    health[4] = 100;
-    health[player.ID] = 10;
-
-this sets Health 3 to 50, Health 4 to 100, and the Health index that
-corresponds to the player character's ID number to 10.  
-You need to do this inside a function.
-
-See Also: [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct)
-
----
-
 ### Data types
 
 Type | Description
@@ -81,6 +42,45 @@ The way floating point numbers are stored means that 6 might actually be
 stored as 6.000001 or 5.999999; this is a common gotcha to all
 programming languages so just be aware of it if you use any floating
 point arithmetic.
+
+---
+
+### Arrays
+
+*data_type* *name* `[` *size* `];`
+
+Arrays allow you to easily create several variables of the same type.
+For example, suppose you wanted to store a health variable for all the
+different characters in the game. One way would be to declare several
+different variables like this:
+
+    int egoHealth;
+    int badGuyHealth;
+    int swordsmanHealth;
+
+but that quickly gets messy and difficult to keep up to date, since you
+need to use different script code to update each one. So instead, you
+can do this at the top of your script:
+
+    int health[50];
+
+This example declares 50 int variables, all called *health*.<br>
+You access each separate variable via its **index** (the number in the
+brackets). Indexes start from 0, so in this case the *health* array can
+be accessed by indexes 0 to 49. If you attempt to access an invalid
+index, your game will exit with an error.
+
+Here's an example of using the array:
+
+    health[3] = 50;
+    health[4] = 100;
+    health[player.ID] = 10;
+
+this sets Health 3 to 50, Health 4 to 100, and the Health index that
+corresponds to the player character's ID number to 10.  
+You need to do this inside a function.
+
+See Also: [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct)
 
 ---
 
