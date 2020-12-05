@@ -27,7 +27,7 @@ What's the point of having pointers? There are few common reasons why they are u
 
 The main purpose of the pointer could sound a bit too technical, but it's still good to know. In programming languages, when you use a value somewhere, would it be assigning to a variable, or passing into a function, or returning it from function, that value gets *copied*. If it's something simple, like few integers, that's not a big deal. But if it's an object with many properties stored inside, many such operations could slow program down.
 Furthermore, because it's a copy, it becomes impossible to do work on an object inside a function, and then use modified object further. Any changes applied in a function would be done over a *copy* rather than the original object.
-There are various methods to overcome this problem, and pointers could be the most straightforward of them.
+There are various methods to overcome this problem, and pointers could be the most straightforward of them. With pointers only "direction to object" is copied, but not the object itself.
 
 Then, pointers are more direct way to use objects, read and set their properties. For example, if there's an array of objects, like `character[]` is an array of all Characters in your game, then to address a particular character you'd have to use this array and a character index, like this:
 
