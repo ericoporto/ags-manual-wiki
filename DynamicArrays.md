@@ -21,9 +21,9 @@ if you try to access the array. You can change the size of an array by
 simply using another `new` command with a different size; but this will
 erase the contents of the array in the process.
 
-Currently dynamic arrays are supported as global and local variables, or
-members of normal (not managed) structs. Also, at present you can create
-arrays of basic types (int, char, etc) and of built-in types (String,
-Character, etc) but not of custom structs.
+You may create dynamic arrays of basic types (int, char, etc), built-in types (String,
+Character, etc), and custom structs declared as `managed`. But currently you cannot have dynamic arrays of regular (non-managed) custom structs.
+
+On another hand, you cannot have dynamic arrays inside "managed" structs as their members, but can have them anywhere else.
 
 See Also: [Arrays](ScriptKeywords#arrays), [Structs](ScriptKeywords#struct)
