@@ -9,7 +9,15 @@ Functions and variables declared in script A could be used in script B if two co
 ### Exporting and importing a function.
 
 All script functions are exported automatically, so they only need an import declaration to let other scripts know that they exist. This is done by declaring a function with an [import](ScriptKeywords#import) keyword somewhere where script B can "see" it. The best practice is to place them in script A's header.
-Import declaration looks simply like:
+
+For example, suppose you have following function in script A:
+
+    function ScriptAFunction(int param1, int param2)
+    {
+        // some actions here
+    }
+
+Then import declaration in the script A header will looks like:
 
     import function ScriptAFunction(int param1, int param2);
 
@@ -18,7 +26,8 @@ The name, type and arguments of the function must be the same ofcourse, otherwis
 ### Exporting and importing a variable
 
 Script variables are not exported by default, so that has to be done explicitly inside the script which has them declared, using [export](ScriptKeywords#export) keyword.
-Suppose you have following declaration in the script:
+
+Suppose you have following declaration in the script A:
 
     int public_variable;
 
@@ -26,11 +35,11 @@ and you want to export this to be used in other scripts, all you do is put follo
 
     export public_variable;
 
-And then declare variable's import for other scripts to see, *presumably in the header*:
+And then declare variable's import for other scripts to see, presumably in the script A header:
 
     import int public_variable;
 
-The name and type must match the variable inside the script.
+The name and type must match the script's variable.
 
 To put this simply, the import declaration lets other scripts see this variable, and the export command actually connects existing variable to that declaration.
 
