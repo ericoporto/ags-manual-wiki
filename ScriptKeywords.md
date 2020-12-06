@@ -742,8 +742,6 @@ See Also: [managed](ScriptKeywords#managed), [Pointers in AGS](Pointers)
 
 ### enum
 
-**Recommended for advanced users only**
-
 **enum** *name* `{`<br>
 *option1* \[ = *value1* \],<br>
 *option2* \[ = *value2* \],<br>
