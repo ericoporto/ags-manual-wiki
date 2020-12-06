@@ -6,7 +6,7 @@ Functions and variables declared in script A could be used in script B if two co
 
 **NOTE:** Room and Dialog scripts can use functions and variables from all the regular script modules, but not from other rooms or dialogs.
 
-### Exporting and importing a function.
+### Exporting and importing a function
 
 All script functions are exported automatically, so they only need an import declaration to let other scripts know that they exist. This is done by declaring a function with an [import](ScriptKeywords#import) keyword somewhere where script B can "see" it. The best practice is to place them in script A's header.
 
