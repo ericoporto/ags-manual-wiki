@@ -1329,7 +1329,7 @@ will set the timer 1 to expire after 1000 game cycles.
 
 Example 2:
 
-When you have a hard time keeping track of the timers only by number you can use [Macros](Preprocessor#define-macro) to replace the descriptive name with the time number everywhere the descriptive name is use. To better keep track of these macros you could put them on top of the global script.
+When you have a hard time keeping track of the timers only by number you can use [Macros](Preprocessor#define) to replace the descriptive name with the time number everywhere the descriptive name is use. To better keep track of these macros you could put them on top of the global script.
 
     #define Delay_CustomAnimation 1
 
