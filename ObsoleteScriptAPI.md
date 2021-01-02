@@ -1,6 +1,6 @@
 ## Obsolete Script API
 
-As new versions of AGS are released, changes in the language happens. Below are the Script API removed entries, their replacements (when available) and the version that it happened.
+As new versions of AGS are released this sometimes bring changes to the script commands. Following table lists the functions and variables removed from the Script API, their replacements (when available) and the version in which the change took place.
 
 | Obsolete API | Superseded by | Obsoleted in Version |
 |-|-|-|
