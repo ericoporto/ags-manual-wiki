@@ -31,7 +31,7 @@ Suppose you have following declaration in the script A:
 
     int public_variable;
 
-and you want to export this to be used in other scripts, all you do is put following statement *inside the same script where you declared variable* (script A):
+and you want to export this to be used in other scripts, you put following statement *inside the same script where you declared the variable* (script A):
 
     export public_variable;
 
