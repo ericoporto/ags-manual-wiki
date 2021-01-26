@@ -2,7 +2,7 @@
 
 Adventure Game Studio
 
-Copyright 1999-2011 Chris Jones and 2011-2020 various contributors
+Copyright 1999-2011 Chris Jones and 2011-2021 various contributors
 
 ---
 
