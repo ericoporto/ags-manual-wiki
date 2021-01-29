@@ -116,7 +116,7 @@ script name is *iKey*, as we'll need it later.
 Go back to the **Objects** pane of the "Room" tab, ensure that you still have the "key" object selected, and then click on, yes you've guessed it, the **Events** button. The events here are very similar
 to the ones we had for the hotspot:
 
-![The events list for the object](images/images/acintro4_09.png)
+![The events list for the object](images/acintro4_09.png)
 
 Notice there are two obvious possibilities here: "Interact object" and
 "Pick up object". We actually want to use the "Interact object" event,
