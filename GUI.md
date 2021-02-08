@@ -547,9 +547,8 @@ moves the GUI down 5 pixels.
 Gets/sets the z-order of the GUI. This allows you to dynamically change
 the ordering of GUIs on the screen.
 
-The Z-order setting is an arbitrary number between 0 and 1000. AGS draws
-the GUIs in order, from the lowest numbered at the back to the highest
-numbered at the front.
+The Z-order setting is an arbitrary integer number that can be positive or negative. AGS draws
+the GUIs in order, from the lowest numbered at the back to the highest numbered at the front.
 
 Example:
 
