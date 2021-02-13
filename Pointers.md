@@ -3,11 +3,7 @@
 Various commands in the new scripting language will require you to use
 pointers. This section has been split into three separate topics to
 introduce you to pointers depending on your previous programming
-experience -- select one of the links below:
-
-[Pointers for programming newbies](Pointers#pointers-for-programming-newbies)<br>
-[Pointers for people who know Java or C#](Pointers#pointers-for-people-who-know-java-or-c)<br>
-[Pointers for people who know C or C++](Pointers#pointers-for-people-who-know-c-or-c)
+experience.
 
 ---
 
