@@ -35,11 +35,13 @@ and you want to export this to be used in other scripts, you put following state
 
     export public_variable;
 
-And then declare variable's import for other scripts to see, presumably in the script A header:
+The `export` statement needs only variable's name and nothing else.
+
+Then declare variable's import for other scripts to see, presumably *in the script A header*:
 
     import int public_variable;
 
-The name and type must match the script's variable.
+Both the name and type must match the variable's own declaration exactly.
 
 To put this simply, the import declaration lets other scripts see this variable, and the export command actually connects existing variable to that declaration.
 
