@@ -60,7 +60,7 @@
 - [Scripting tutorial part 1](ScriptingTutorialPart1)
 - [Scripting tutorial part 2](ScriptingTutorialPart2)
 - [Pointers in AGS](Pointers)
-- [Calling global functions from local scripts](CallingGlobalFunctions)
+- [Importing functions and variables in other scripts](ImportingFunctionsAndVariables)
 - [The script header](TheScriptHeader)
 - [String formatting](StringFormats)
 - [Multiple Scripts](ScriptModules)
@@ -71,7 +71,7 @@
 - [Predefined global script functions](Globalfunctions_Event)
 - [repeatedly_execute (_always)](RepExec)
 - [Custom dialog options rendering](CustomDialogOptions)
-- [Built-in enumerated types](BuiltInEnums)
+- [Built-in enumerated types](StandardEnums)
 - [Script language keywords](ScriptKeywords)
 - [AudioChannel functions and properties](AudioChannel)
 - [AudioClip functions and properties](AudioClip)
@@ -109,7 +109,8 @@
 - [Text display / Speech functions](Globalfunctions_Message)
 - [ViewFrame functions and properties](ViewFrame)
 
-[Reference](Reference)
+***Reference***
+
 - [Event Types](EventTypes)
 - [System limits](SystemLimits)
 - [Keyboard Shortcuts](KeyboardShortcuts)
