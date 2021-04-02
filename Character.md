@@ -1728,8 +1728,8 @@ Gets/sets the character's baseline. This allows you to set a specific
 base line for the character, which works similarly to walk-behind area
 and object baselines.
 
-The baseline can be from 1 to the height of the room (normally 200), or
-set it to 0 to go back to using the character's feet as the baseline.
+The baseline can be from 1 to the height of the room.
+Setting it to 0 will make character go back to using its y coordinate as the baseline.
 
 Example:
 
