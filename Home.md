@@ -19,6 +19,7 @@
 - [Sprite Manager](EditorSprite)
 - [View Editor](EditorView)
 - [Inventory Items Editor](EditorInventoryItems)
+- [Script Modules](ScriptModules)
 - [Other Features](OtherFeatures)
 - [System limits](SystemLimits)
 
