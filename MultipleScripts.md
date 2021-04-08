@@ -65,3 +65,5 @@ global script.
 The [ClaimEvent](Globalfunctions_General#claimevent) command is supported for
 on_key_press, on_mouse_click and on_event. Calling it prevents the
 rest of the scripts (including the global script) from being called.
+
+See Also: [Importing functions and variables in other scripts](ImportingFunctionsAndVariables)
