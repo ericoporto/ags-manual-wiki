@@ -37,6 +37,7 @@
 - [Obsolete Script API](ObsoleteScriptAPI)
 - [Event Types](EventTypes)
 - [ASCII code table](ASCIIcodes)
+- [Audio in script](AudioInScript)
 
 ## Legal Notice
 
