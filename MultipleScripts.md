@@ -2,7 +2,7 @@
 
 If you're working on a fairly large game, you'll find that your global
 script can quickly become rather large and unwieldy. AGS allows you to
-create extra scripts (formerly known as Script Modules) in order to
+create extra scripts (also known as Script Modules) in order to
 split up your code and easily import scripts written by other people.
 
 The main global script still has to contain all the event functions
