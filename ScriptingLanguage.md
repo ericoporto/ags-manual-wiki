@@ -10,7 +10,7 @@ This section provides an extensive reference for AGS script capabilities and com
 - [Dynamic Arrays](DynamicArrays)
 - [Extender functions](ExtenderFunctions)
 - [String formatting](StringFormats)
-- [Multiple Scripts](ScriptModules)
+- [Multiple Scripts](MultipleScripts)
 - [Dialog Script](DialogScript)
 - [Object Oriented programming](OOProgramming)
 - [Understanding blocking scripts](BlockingScripts)
