@@ -105,6 +105,8 @@ you to explicitly specify the priority when you play it, for example:
 
     aExplosion.Play(eAudioPriorityLow);
 
+**NOTE:** having only one channel reserved for an audio type and all clips having same priority by default will make any new played sound of that type replace the previous one automatically. This may be useful, for example, to ensure that only one music clip is playing at the same time in your game.
+
 **Seeking and changing volume**
 
 So, how do you change a sound once it is playing? Well, there are no
