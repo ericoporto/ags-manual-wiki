@@ -4,7 +4,7 @@ AGS provides a scripting system, where engine functionalities are exposed throug
 
 **NOTE:** API stands for "Application Programming Interface". This is a common term, it defines all the means a program (such as AGS engine) provides for user to control it programmatically.
 
-## API switches
+### API switches
 
 When new version of AGS comes with new API entries these may cause conflicts with previously made scripts. Sometimes a function gets deprecated and disabled, or replaced by a different one. Sometimes new function is added that may use name which you already used in your script. Usually it's a good idea to adjust your script and resolve these problems by hand. But if you do not want to or do not have time to do so just yet - there are API switches.
 
