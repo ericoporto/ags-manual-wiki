@@ -43,3 +43,5 @@ reference functions that are import declared in the headers of the modules above
 them in the Script listing in the Explore Project.
 
 You can find useful script modules from others in the [Modules & Plugins board](https://www.adventuregamestudio.co.uk/forums/index.php?board=10.0) in the ags forums.
+
+See Also: [More on handling multiple scripts](MultipleScripts)
