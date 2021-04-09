@@ -158,31 +158,31 @@ For that reason, if save compatibility is essential, it is recommended to only *
 
 ### Solution 0: Code your own save system
 
-Yes, this may sound as a crazy suggestion, but it's a real opportunity. Depending on your requirements this solution may range from almost trivial to nearly impossible to accomplish in script. This is a whole separate topic though so we won't go into much detail here. But to give a heads up, if you would like to experiment:
+Yes, this may sound like a crazy suggestion, but it's a real possibility. Depending on your requirements this solution may range from almost trivial to nearly impossible to accomplish in script. This is a whole separate topic though, so we won't go into much detail here. But if you want to experiment here are some points to get you started:
 
-* AGS supports writing and reading custom files. See [File functions](File) for the reference.
-* Consider simplier save state, more like checkpoints. If you can live without restoring literally everything to a smallest bit, maybe you can only save most important game variables, items that player possess, state of puzzles.
-* Learn to describe game state using just few variables and restore game and rooms from these. For example, if your variable sais that "puzzle A is solved", you may know that Room Objects A and B should be invisible, item C in player's inventory, and NPC character D moved to room 2. Such approach allows to rebuild game in script just from a few variables restored from a custom file. But of course you have to plan this ahead well.
+* AGS supports writing and reading custom files. See [File functions](File) for reference.
+* Consider using simpler save states, more like checkpoints. If you can live without restoring literally everything to the smallest bit, maybe you can only save the most important game variables, items that the player possesses, the state of the accessible puzzles.
+* Learn to describe the game state using just a few variables and restore the game and rooms from these. For example, if your variable says that "puzzle A is solved", you may know that Room Objects A and B are invisible, item C is in the player's inventory, and non-player character D moved to room 2. This approach allows you to rebuild the game state in script just from a few variables the game reads from a custom file. But of course you have to plan this ahead well.
 
 ### Solution 1: Reusing game objects
 
-If you need to urgently patch your released game but realized you are going to break previous saves by doing that, you may try reusing existing game objects.
+If you need to urgently patch your released game but realize you are going to break previous saves by doing that, you may try reusing existing game objects.
 
-Characters may switch Views and play different roles in other rooms. Unused Room Objects are perhaps more rare, but they may be switched their Graphic or View too and act like something else. Characters may be used as room elements too, except they cannot be simply assigned a sprite, but require a View.
+Characters may switch Views and play different roles in other rooms. Unused Room Objects are perhaps more rare, but their Graphic or View may be switched too and can act as something else. Characters may be used as room elements too, except they cannot be simply assigned a sprite, but require a View.
 GUIs may be reconfigured on the fly, if you have enough suitable controls on them.
-View Frames may be assigned different sprites, even DynamicSprite which you can paint upon to display something different.
+View Frames may be assigned different sprites, even [Dynamic Sprites](DynamicSprite), which you can paint upon with script functions to display something completely different.
 
 Global variables may be reused for other purposes if you find a way to indicate what meaning they have at the moment and how they should be used in your script in various circumstances.
 
 ### Solution 2: Dummy object reserve
 
-If you are planning ahead your game release, there's one very straightforward yet ugly solution: create a number of extra objects of every type (Characters, GUIs, and so on) that you don't use right now but which could be used in case of emergency for patching the game.
+If you are planning changes after your game's release, there's one very straightforward yet ugly solution: create a number of extra objects of every type (Characters, GUIs, and so on) that you don't use right now but which could be used in case of emergency for patching the game.
 
-In terms of script, you can allocate big global arrays of ints or other types as a reserve for future fixes and updates, then use elements of those arrays whenever you need an extra variable.
+In your script, you can allocate big global arrays of ints and other types as a reserve for future fixes and updates, then use elements of those arrays whenever you need an extra variable.
 
 ### Solution 3: New rooms
 
-If you must change room's contents but do not want to break saves at all costs you may create a duplicate room with a new number and updated contents, then script changing room if player restores a save made in the old room.
+If you must change the content of a room but do not want to break saves at all costs you may create a duplicate room with a new number and updated contents, then script changing to this new room if the player restores a save made in the old room.
 
 This is done like this, for example:
 <pre>
@@ -197,14 +197,14 @@ function on_event(EventType evt, int data) {
 
 ### Solution 4: String, Dictionary and Set
 
-You may use String variables (or even one String) to store almost any amount of additional data without adding new variables. Strings may be [formatted](StringFormats) to include numbers too. You may create for example a comma-separated list of values, then parse it back by iterating over characters, cutting into substrings and converting back to wanted types. That will involve some advanced scripting but can be used as a last resort.
+You may use String variables (or even one String) to store almost any amount of additional data without adding new variables. Strings may be [formatted](StringFormats) to include numbers too. You may create for example a comma-separated list of values, then parse it back by iterating over characters, cutting it into substrings and converting it back to the wanted types. That will involve some advanced scripting but can be used as a last resort.
 
-Since AGS 3.5.0 there's also a [Dictionary](Dictionary) and [Set](Set) types. Those may serve as an easier alternative in this solution. It's easy to check which variables (keys) they contain. You can even store "game version" inside as one of the elements and test it after restoring a save to know which version of your game saved it. They may be used as a universal global storage, for example, for story variables, expanding them between game updates.
+Since AGS 3.5.0 there's also a [Dictionary](Dictionary) type and a [Set](Set) type available. Those types may serve as an easier alternative in this solution. It's easy to check which variables (keys) they contain. You can even store the "game version" inside them as one of the elements and check for that value after restoring a save to know which version of your game saved it. They may be used as a universal global storage, for example, for story variables, expanding them between game updates.
 
 ### Solution 5: Extending dynamic arrays and managed structs
 
-As mentioned earlier, any managed object is not restricted to change because its full contents are read from the save. This allows to use managed structs and dynamic arrays as infinite reserve for variables.
-Upon loading an old save you would need to test a length or other kind of "version" of that array and resize it: create new one, copy old restored contents, fill in rest with default values, replace pointer variable.
+As mentioned earlier in this article, any managed object is not restricted to change because its full content is read from the save. This allows you to use managed structs and dynamic arrays as infinite reserve for variables.
+Upon loading an old save you would need to test the length or another kind of "version" of that array and resize it: create a new one, copy the old restored contents, fill up the rest with default values, replace the pointer variable.
 
 Consider following example:
 <pre>
@@ -241,7 +241,7 @@ function on_event(EventType evt, int data) {
 }
 </pre>
 
-Similar solution may be used for managed structs, although it may be bit more complicated to script but essentially is same thing.
+A similar solution may be used for managed structs, although it may be bit more complicated to script but essentially it is the same thing.
 <pre>
 managed struct MyStruct {
     // variables from version 1
