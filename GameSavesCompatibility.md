@@ -39,10 +39,10 @@ even though there's now only one variable, this also gives a total size of 3 int
 
 ### Changes that DON'T break saves but are NOT SAFE
 
-Changing the number of Room Objects in existing rooms, while technically not preventing the compiled game to restore old saves, still may lead to bugs. Because their real number is stored in saves, players may end up having more or less objects in a room than there are supposed to be in the game. And because currently you cannot create or delete Room Objects with a script command you won't be able to fix this, you can only detect this happening by checking [Room.ObjectCount](Room#roomobjectcount).
+Changing the number of Room Objects in existing rooms, while technically not preventing the compiled game to restore old saves, still may lead to bugs. Because their real number is stored in saves, players may end up having more or less objects in a room than there are supposed to be. And because currently you cannot create or delete Room Objects with a script command you won't be able to fix this, you can only detect this happening by checking [Room.ObjectCount](Room#roomobjectcount).
 
 Changing the size of the dynamic arrays and managed structs won't break saves, but may cause the game to crash if a script tries to access newer elements or variables in these arrays and structs after restoring older saves.<br>
-Still this may be worked around and can actually be used to your advantage in case this bad situation happens: see the [dedicated section below](#an-issue-of-dynamic-objects) for more information.
+Still this may be worked around and can actually be used to your advantage: see the [dedicated section below](#an-issue-of-dynamic-objects) for more information.
 
 ### Changes that DON'T break saves and ARE SAFE
 
