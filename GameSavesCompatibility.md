@@ -195,7 +195,13 @@ function on_event(EventType evt, int data) {
 }
 </pre>
 
-### Solution 4: Extending dynamic arrays and Dictionary
+### Solution 4: String, Dictionary and Set
+
+You may use String variables (or even one String) to store almost any amount of additional data without adding new variables. Strings may be [formatted](StringFormats) to include numbers too. You may create for example a comma-separated list of values, then parse it back by iterating over characters, cutting into substrings and converting back to wanted types. That will involve some advanced scripting but can be used as a last resort.
+
+Since AGS 3.5.0 there's also a [Dictionary](Dictionary) and [Set](Set) types. Those may serve as an easier alternative in this solution. It's easy to check which variables (keys) they contain. You can even store "game version" inside as one of the elements and test it after restoring a save to know which version of your game saved it. They may be used as a universal global storage, for example, for story variables, expanding them between game updates.
+
+### Solution 5: Extending dynamic arrays and managed structs
 
 As mentioned earlier, any managed object is not restricted to change because its full contents are read from the save. This allows to use managed structs and dynamic arrays as infinite reserve for variables.
 Upon loading an old save you would need to test a length or other kind of "version" of that array and resize it: create new one, copy old restored contents, fill in rest with default values, replace pointer variable.
@@ -273,7 +279,3 @@ function on_event(EventType evt, int data) {
     }
 }
 </pre>
-
-### Solution 5: Dictionary and Set
-
-Since AGS 3.5.0 there's also a [Dictionary](Dictionary) and [Set](Set) types. Those may serve as an easier alternative to extending dynamic arrays or managed structs in this solution. It's easy to check which variables (keys) they contain. You can even store "game version" inside as one of the elements. They may be used as a universal global storage, for example, for story variables, expanding them between game updates.
