@@ -42,7 +42,7 @@ even though there's now only one variable, this also gives a total size of 3 int
 Changing the number of Room Objects in existing rooms, while technically not preventing the compiled game to restore old saves, still may lead to bugs. Because their real number is stored in saves, players may end up having more or less objects in a room than there are supposed to be. And because currently you cannot create or delete Room Objects with a script command you won't be able to fix this, you can only detect this happening by checking [Room.ObjectCount](Room#roomobjectcount).
 
 Changing the size of the dynamic arrays and managed structs won't break saves, but may cause the game to crash if a script tries to access newer elements or variables in these arrays and structs after restoring older saves.<br>
-Still this may be worked around and can actually be used to your advantage: see the [dedicated section below](#an-issue-of-dynamic-objects) for more information.
+Still this may be worked around and can actually be used to your advantage: see the [dedicated section below](GameSavesCompatibility#an-issue-of-dynamic-objects) for more information.
 
 ### Changes that DON'T break saves and ARE SAFE
 
@@ -63,7 +63,7 @@ Adding or removing any kind of plain resources, such as
 **IMPORTANT:** Removing sprites is only safe if you fix any objects that could have them assigned upon restoring a save. Same goes for clips assigned to View Frames, and fonts used on GUI.
 
 In scripts:
-* User types (structs) may be added; but if you change the size of a regular struct while having variables of that type in your script - that would also change the size of these variables, and may break saves. Managed structs *may* be changed in size without breaking a save, but this requires special approach ([see below](#an-issue-of-dynamic-objects)).
+* User types (structs) may be added; but if you change the size of a regular struct while having variables of that type in your script - that would also change the size of these variables, and may break saves. Managed structs *may* be changed in size without breaking a save, but this requires special approach ([see below](GameSavesCompatibility#an-issue-of-dynamic-objects)).
 * Macros,
 * Functions and attributes, and generally - function code itself,
 * For same reasons - changing existing dialog scripts,
@@ -103,7 +103,7 @@ function game_start() {
 
 There are other ways of course, for instance you may store array's length in its first element. That way you keep it within array itself, but will have to remember it's there when you work with array. Anyway, that's a different topic.
 In any case, having array's length stored, if you ever change that array's size and restore older save, that length variable will be also restored and tell you correct array's size.
-If you still need array to be exactly size 200 in the new version of the game you may resize it after restoring a save. This is explained further in ["Solutions" section](#solution-4-extending-dynamic-arrays-and-dictionary).
+If you still need array to be exactly size 200 in the new version of the game you may resize it after restoring a save. This is explained further in ["Solutions" section](GameSavesCompatibility#solution-4-extending-dynamic-arrays-and-dictionary).
 
 Less likely, but if you instead reduce array's size then the array restored from older save will be bigger in size than necessary, but that's much less of a problem and may be safely ignored.
 
@@ -131,7 +131,7 @@ managed struct MyStruct {
 </pre>
 
 If you load older save from version 1 while running version 2, created objects of this type will load but will be one variable less in size. Trying to use this variable in script will result in error. This is similar to array case.
-The solution then is likely similar: upon restoring older save recreate managed objects (they will be of correct size), copy valid contents from restored objects into them, and reassign pointers to these recreated objects. Again this is explained more in a ["Solutions" section](#solution-5-extending-dynamic-arrays-and-managed-structs).
+The solution then is likely similar: upon restoring older save recreate managed objects (they will be of correct size), copy valid contents from restored objects into them, and reassign pointers to these recreated objects. Again this is explained more in a ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed-structs).
 
 And again, if you remove a variable instead:
 <pre>
