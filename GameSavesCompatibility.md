@@ -152,6 +152,14 @@ For that reason, if save compatibility is essential, it's recommended to only *e
 
 ---
 
+### Solution 0: Code your own save system
+
+Yes, this may sound as a crazy suggestion, but it's a real opportunity. Depending on your requirements this solution may range from almost trivial to nearly impossible to accomplish in script. This is a whole separate topic though so we won't go into much detail here. But to give a heads up, if you would like to experiment:
+
+* AGS supports writing and reading custom files. See [File functions](File) for the reference.
+* Consider simplier save state, more like checkpoints. If you can live without restoring literally everything to a smallest bit, maybe you can only save most important game variables, items that player possess, state of puzzles.
+* Learn to describe game state using just few variables and restore game and rooms from these. For example, if your variable sais that "puzzle A is solved", you may know that Room Objects A and B should be invisible, item C in player's inventory, and NPC character D moved to room 2. Such approach allows to rebuild game in script just from a few variables restored from a custom file. But of course you have to plan this ahead well.
+
 ### Solution 1: Reusing game objects
 
 If you need to urgently patch your released game but realized you are going to break previous saves by doing that, you may try reusing existing game objects.
@@ -262,4 +270,6 @@ function on_event(EventType evt, int data) {
 }
 </pre>
 
-Since AGS 3.5.0 there's also a [Dictionary](Dictionary) type. This may serve as an alternative to dynamic arrays or managed structs in this solution. It's easy to extend and easy to check which variables (keys) it contains. You can even store "game version" inside as one of the elements. It may be used as a universal global storage, for example, for story variables that's easy to expand between game updates.
+### Solution 5: Dictionary and Set
+
+Since AGS 3.5.0 there's also a [Dictionary](Dictionary) and [Set](Set) types. Those may serve as an easier alternative to extending dynamic arrays or managed structs in this solution. It's easy to check which variables (keys) they contain. You can even store "game version" inside as one of the elements. They may be used as a universal global storage, for example, for story variables, expanding them between game updates.
