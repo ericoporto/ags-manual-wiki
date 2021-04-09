@@ -90,7 +90,7 @@ Let's assume you had this in game version 1, made a save, then increased the dyn
 </pre>
 
 What will happen if you now compile game version 2 and then restore the old save? The game will restore the dynamic array with the previous size of 100. This means that if your new script will now try to access elements in the array beyond 100 (thinking that this array has 200 elements now), that will result in an "index out of range" error.
-Unfortunately at the time of writing dynamic arrays don't let you know their length in script. But you can store their length somewhere else, for example, in a variable:
+Unfortunately at the time of writing this AGS manual page, you can't acces the length of a dynamic arrays directly in script. But you can store their length somewhere else, for example, in a variable:
 <pre>
 int dyn_arr[];
 int arr_size;
