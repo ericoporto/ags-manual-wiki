@@ -7,6 +7,7 @@
 - [Standard Enumerated Types](StandardEnums)
 - [Standard Types](StandardTypes)
 - [GameState variables](Gamevariables)
+- [Global arrays](GlobalArrays)
 - [Global functions: event handlers](Globalfunctions_Event)
 - [Global functions: general](Globalfunctions_General)
 - [Global functions: message display](Globalfunctions_Message)
