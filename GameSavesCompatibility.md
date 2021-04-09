@@ -2,7 +2,7 @@
 
 AGS games have a built-in save system that is very convenient most of the time as it automatically writes down states of the game and all objects in it, allowing to restore saved game to exactly same condition it was saved in.
 
-But has one serious flaw. When game data is written to a save file the game objects and variables are written as lists, where separate items are not identified in any way rather than order in that list.
+But it has one serious flaw. When game data is written to a save file the game objects and variables are written as lists, where separate items are not identified in any way rather than order in that list.
 Because of that, if you, the author of the game, update your game adding or removing any objects, *all the saves made by previous version will become unusable*.
 Simply changing IDs of game objects in the project tree or order of the variables in script will cause previous saves to glitch, as old data will be restored into wrong objects or variables.
 
