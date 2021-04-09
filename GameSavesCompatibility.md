@@ -103,11 +103,11 @@ function game_start() {
 
 There are other ways of fixing this, for example you could store the array length in its first element. This way you keep the save breaking value within the array itself, but you will have to remember it's there when you work with the array. Anyway, that's a different topic.
 In any case, having the array length stored, if you ever change that array's size and restore an older save, that length variable will also be restored and will tell you the correct size of the array.
-If you still need the array to be exactly 200 elements in size in the new version of the game you may resize it after restoring a save. This is explained further in ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed structs).
+If you still need the array to be exactly 200 elements in size in the new version of the game you may resize it after restoring a save. This is explained further in the ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed-structs).
 
 Less likely, but if you instead reduce the array's size then the array restored from the older save will be bigger in size than necessary, but that's much less of a problem and can be ignored safely.
 
-This is what happens with changes in dynamic arrays, but what about changes in custom managed structs? Assume in game version 1 you have:
+This is what happens with changes in dynamic arrays, but what about *changes in custom managed structs*? Assume in game version 1 you have:
 <pre>
 managed struct MyStruct {
     int a;
@@ -130,8 +130,8 @@ managed struct MyStruct {
 };
 </pre>
 
-If you load older save from version 1 while running version 2, created objects of this type will load but will be one variable less in size. Trying to use this variable in script will result in error. This is similar to array case.
-The solution then is likely similar: upon restoring older save recreate managed objects (they will be of correct size), copy valid contents from restored objects into them, and reassign pointers to these recreated objects. Again this is explained more in a ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed-structs).
+If you load an older save from version 1 while running version 2, created objects of this type will load but will be one variable less in size. Trying to use the additional variable in script will result in an error. This is similar to the array case.
+The solution here is similar to the array solution: upon restoring the older save recreate all managed objects (they will be of the correct size), copy valid content from restored objects into them, and reassign pointers to these recreated objects. Again this is explained more in the ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed-structs).
 
 And again, if you remove a variable instead:
 <pre>
@@ -140,7 +140,7 @@ managed struct MyStruct {
 };
 </pre>
 
-Here he older save will be restored, and old variants of MyStruct will also be loaded. They will contain all the removed variables, but you no longer will be able to access them in script because they are no longer declared so script is not aware they exist.
+in this case the older save will be restored, and the old variants of MyStruct will also be loaded. They will contain all the removed variables, but you no longer will be able to access them in script because they are no longer declared so the script is not aware of their existence.
 
 Finally, there's another potential problem. Let's look at this variant:
 <pre>
@@ -150,9 +150,9 @@ managed struct MyStruct {
     int c;
 };
 </pre>
-The `b` variable was removed, so variable `c` now follows `a`. If you load older save however, the old MyStruct objects contain variable `b`, and its value will be assigned to `c` instead as it took its place in the struct.
+The `b` variable was removed, so variable `c` now follows `a`. If you load an older save however, the old MyStruct objects contain variable `b`, and its value will be assigned to `c` instead of `b`, as it took its place in the struct.
 
-For that reason, if save compatibility is essential, it's recommended to only *extend* managed types but not cut out existing data.
+For that reason, if save compatibility is essential, it is recommended to only *extend* managed types and not cut out existing data.
 
 ---
 
