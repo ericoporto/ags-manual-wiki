@@ -46,10 +46,10 @@ Still this may be worked around and can actually be used to your advantage: see 
 
 ### Changes that DON'T break saves and ARE SAFE
 
-Parts of game which may be safely added or removed:
+Parts of the game which may be safely added or removed:
 * Dialog options in existing Dialogs.
-* Rooms, adding new ones. Removing a room is *not* safe, as loading state saved in a no longer existing room will crash the game.
-* Adding room backgrounds in existing rooms, but probably not removing them (*need to be checked*).
+* Rooms, adding new ones. Removing a room is *not* safe, as loading a state saved in a no longer existing room will crash the game.
+* Adding room backgrounds in existing rooms, but probably not removing them (*needs to be checked*).
 * Custom properties. If you remove existing ones, their values may still load from the older save but will not be accessible.
 
 Adding or removing any kind of plain resources, such as
@@ -60,20 +60,20 @@ Adding or removing any kind of plain resources, such as
 * Video files,
 * Translations
 
-**IMPORTANT:** Removing sprites is only safe if you fix any objects that could have them assigned upon restoring a save. Same goes for clips assigned to View Frames, and fonts used on GUI.
+**IMPORTANT:** Removing sprites is only safe if you fix all objects that could have them assigned upon restoring a save. The same goes for clips assigned to View Frames, and fonts used on GUIs.
 
 In scripts:
-* User types (structs) may be added; but if you change the size of a regular struct while having variables of that type in your script - that would also change the size of these variables, and may break saves. Managed structs *may* be changed in size without breaking a save, but this requires special approach ([see below](GameSavesCompatibility#an-issue-of-dynamic-objects)).
+* User types (structs) may be added; but if you change the size of a regular struct while having variables of that type in your script - that would also change the size of these variables, and may break saves. Managed structs *may* be changed in size without breaking a save, but this requires a special approach ([see below](GameSavesCompatibility#an-issue-of-dynamic-objects)).
 * Macros,
 * Functions and attributes, and generally - function code itself,
-* For same reasons - changing existing dialog scripts,
-* Local variables (inside functions) may be added and removed freely because they are not saved, because AGS does not allow to save game while inside a script function
+* For the same reasons - changing existing dialog scripts,
+* Local variables (inside functions) may be added and removed freely because they are not saved, because AGS does not allow the game to save while it is inside a script function
 
 ### An issue of dynamic objects
 
-The pointers which are global variables are part of script's total variable size, and so adding or removing them in script will result in save break.
-The *managed objects themselves* are stored not in script's variable memory, but in their own memory pool. They are also written to save file awhole, and loading this save will restore original managed object with its original size. Therefore, changing their sizes in new version of the game don't break previous saves.
-However, there's a number of potential problems with that and these has to be resolved if you like to maintain save compatibility.
+The pointers which are global variables are part of script's total variable size, so adding or removing them in script will result in the save breaking.
+The *managed objects themselves* are not stored in the script's variable memory, but in their own memory pool. They are also completely written to the save file, and loading this save will restore the original managed object with its original size. Therefore, changing their sizes in a new version of the game doesn't break previous saves.
+However, there's a number of potential problems with that and these have to be resolved if you want to maintain save compatibility.
 
 Consider a simple dynamic array:
 <pre>
@@ -84,13 +84,13 @@ function game_start() {
 }
 </pre>
 
-Let's assume you had this in game version 1, made a save, then increased dynamic array's size in script to 200:
+Let's assume you had this in game version 1, made a save, then increased the dynamic array's size in script to 200:
 <pre>
     dyn_arr = new int[200];
 </pre>
 
-What will happen if you now compile game version 2 and then restore old save? The game will restore dynamic array of the previous size 100. This means that if your new script will try to access elements beyond 100 (thinking that array has 200 elements now), that would cause "index out of range" error.
-Unfortunately at the time of writing dynamic arrays don't let you know their length in script. But you can store their length elsewhere, for example, in a variable:
+What will happen if you now compile game version 2 and then restore the old save? The game will restore the dynamic array with the previous size of 100. This means that if your new script will now try to access elements in the array beyond 100 (thinking that this array has 200 elements now), that will result in an "index out of range" error.
+Unfortunately at the time of writing dynamic arrays don't let you know their length in script. But you can store their length somewhere else, for example, in a variable:
 <pre>
 int dyn_arr[];
 int arr_size;
@@ -101,13 +101,13 @@ function game_start() {
 }
 </pre>
 
-There are other ways of course, for instance you may store array's length in its first element. That way you keep it within array itself, but will have to remember it's there when you work with array. Anyway, that's a different topic.
-In any case, having array's length stored, if you ever change that array's size and restore older save, that length variable will be also restored and tell you correct array's size.
-If you still need array to be exactly size 200 in the new version of the game you may resize it after restoring a save. This is explained further in ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed structs).
+There are other ways of fixing this, for example you could store the array length in its first element. This way you keep the save breaking value within the array itself, but you will have to remember it's there when you work with the array. Anyway, that's a different topic.
+In any case, having the array length stored, if you ever change that array's size and restore an older save, that length variable will also be restored and will tell you the correct size of the array.
+If you still need the array to be exactly 200 elements in size in the new version of the game you may resize it after restoring a save. This is explained further in ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed structs).
 
-Less likely, but if you instead reduce array's size then the array restored from older save will be bigger in size than necessary, but that's much less of a problem and may be safely ignored.
+Less likely, but if you instead reduce the array's size then the array restored from the older save will be bigger in size than necessary, but that's much less of a problem and can be ignored safely.
 
-As we are done with dynamic array, now let's consider a custom managed struct. Assume in game version 1 you have:
+This is what happens with changes in dynamic arrays, but what about changes in custom managed structs? Assume in game version 1 you have:
 <pre>
 managed struct MyStruct {
     int a;
