@@ -103,7 +103,7 @@ function game_start() {
 
 There are other ways of course, for instance you may store array's length in its first element. That way you keep it within array itself, but will have to remember it's there when you work with array. Anyway, that's a different topic.
 In any case, having array's length stored, if you ever change that array's size and restore older save, that length variable will be also restored and tell you correct array's size.
-If you still need array to be exactly size 200 in the new version of the game you may resize it after restoring a save. This is explained further in ["Solutions" section](GameSavesCompatibility#solution-4-extending-dynamic-arrays-and-dictionary).
+If you still need array to be exactly size 200 in the new version of the game you may resize it after restoring a save. This is explained further in ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed structs).
 
 Less likely, but if you instead reduce array's size then the array restored from older save will be bigger in size than necessary, but that's much less of a problem and may be safely ignored.
 
