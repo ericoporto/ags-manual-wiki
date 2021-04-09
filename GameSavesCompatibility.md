@@ -131,7 +131,7 @@ managed struct MyStruct {
 </pre>
 
 If you load older save from version 1 while running version 2, created objects of this type will load but will be one variable less in size. Trying to use this variable in script will result in error. This is similar to array case.
-The solution then is likely similar: upon restoring older save recreate managed objects (they will be of correct size), copy valid contents from restored objects into them, and reassign pointers to these recreated objects. Again this is explained more in a ["Solutions" section](#solution-4-extending-dynamic-arrays-and-dictionary).
+The solution then is likely similar: upon restoring older save recreate managed objects (they will be of correct size), copy valid contents from restored objects into them, and reassign pointers to these recreated objects. Again this is explained more in a ["Solutions" section](#solution-5-extending-dynamic-arrays-and-managed-structs).
 
 And again, if you remove a variable instead:
 <pre>
