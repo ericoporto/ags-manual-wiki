@@ -3,46 +3,46 @@
 AGS games have a built-in save system that is very convenient most of the time as it automatically writes down states of the game and all objects in it, allowing to restore saved game to exactly same condition it was saved in.
 
 But it has one serious flaw. When game data is written to a save file the game objects and variables are written as lists, where separate items are not identified in any way rather than order in that list.
-Because of that, if you, the author of the game, update your game adding or removing any objects, *all the saves made by previous version will become unusable*.
-Simply changing IDs of game objects in the project tree or order of the variables in script will cause previous saves to glitch, as old data will be restored into wrong objects or variables.
+Because of that, **if you**, the author of the game, **update your game adding or removing any objects, *all the saves made with a previous version of the game will become unusable***.
+Simply changing the IDs of game objects in the project tree or changing the order of the variables in script will cause previous saves to glitch, as old data will be restored into wrong objects or variables.
 
-This may not be the biggest issue while the game is in development, as you have multiple ways to make game "teleport" to necessary scene instead of using a save state. But it becomes a problem after you released your game to public, as any update or patch that involves adding new objects or variables will render player's saves unusable.
+This may not be the biggest issue while the game is in development, as you have multiple ways to make the game "teleport" the player character to the desired scene instead of using a save state. But it becomes a problem after you released your game to the public, as any update or patch that involves adding new objects or variables will render the player's saves unusable.
 
-Following article explores which changes to game are safe and which are not in terms of keeping your game compatible with older saves, and which known methods exist to work around this problem.
+Following article explores which changes to your game are safe and which are not in terms of keeping your game compatible with older saves, and which known methods exist to work around this problem.
 
-### Changes in game that break saves
+### Changes in the game project that break saves
 
-Changing number (adding or removing) of almost all game objects will break previous saved states. Following types of objects contribute to this:
+Changing the number (adding or removing) of almost all game objects will break previous saved states. Following types of objects contribute to this:
 * Audio Types,
 * Characters,
 * Dialogs (but not options in existing Dialog, for technical reasons),
 * Global Variables,
-* GUI and controls on existing GUI,
+* GUIs and controls on existing GUIs,
 * Inventory items,
 * Mouse cursor types,
-* Views, loops and frames in them (because frames may be changed in script and their properties are added to save state),
-* Script modules (number of them)
+* Views, loops and frames in them (because frames may be changed in script and their properties are added to the save state),
+* Script modules (when changing the number of them by adding or removing scripts)
 
-In addition to that, changing *total size* of variables declared in the global scope of each script (*NOT* local function variables) will break older save states.<br>
-To elaborate on what "total size" is, imagine you have this declared in some script:
+In addition to that, changing the *total size* of variables declared in the global scope of each script (*NOT* local function variables) will break older save states.<br>
+To elaborate on what "total size" is, imagine you have this declared in a script:
 <pre>
 int a;
 int b;
 int c;
 </pre>
-This makes total size of script variables to be 3 integers (or 3 * 4 = 12 bytes). Now, if you change this to
+This adds up to make the total size of script variables 3 integers (or 3 * 4 bytes = 12 bytes). Now, if you change this to
 <pre>
 int vars[3];
 </pre>
-Even though there's now only one variable this also makes total size of 3 integers, and won't break save states.
-(Here we omit a question whether it will still make sense to restore older save with such change in script.)
+even though there's now only one variable, this also gives a total size of 3 integers, and won't break save states.
+(Here we omit the question whether it will still make sense to restore older save with such a change in the script.)
 
 ### Changes that DON'T break saves but are NOT SAFE
 
-Changing number of Room Objects in existing rooms, while technically not preventing to restore old saves, still may lead to bugs. Because their real number is stored in saves players may end up having more or less objects in a room than supposed by the game. And because currently you cannot create or delete Room Objects with a script command you won't be able to fix this, only detect when this happens by checking [Room.ObjectCount](Room#roomobjectcount).
+Changing the number of Room Objects in existing rooms, while technically not preventing the compiled game to restore old saves, still may lead to bugs. Because their real number is stored in saves, players may end up having more or less objects in a room than there are supposed to be in the game. And because currently you cannot create or delete Room Objects with a script command you won't be able to fix this, you can only detect this happening by checking [Room.ObjectCount](Room#roomobjectcount).
 
-Changing the size of the dynamic arrays and managed structs won't break saves, but may cause game to crash if script tries to access newer elements or variables in these arrays and structs after restoring older saves.<br>
-Still this may be worked around and actually be used for your advantage in the bad situation: see [dedicated section below](#an-issue-of-dynamic-objects) for more information.
+Changing the size of the dynamic arrays and managed structs won't break saves, but may cause the game to crash if a script tries to access newer elements or variables in these arrays and structs after restoring older saves.<br>
+Still this may be worked around and can actually be used to your advantage in case this bad situation happens: see the [dedicated section below](#an-issue-of-dynamic-objects) for more information.
 
 ### Changes that DON'T break saves and ARE SAFE
 
