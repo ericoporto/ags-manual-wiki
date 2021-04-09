@@ -46,7 +46,7 @@ Changing number of certain things while technically not preventing to restore ol
 ### Changes that DON'T break saves and ARE SAFE
 
 Parts of game which may be safely added or removed:
-* Rooms, when they are added or removed in whole. Except loading state saved in a no longer non-existing room will crash the game.
+* Rooms, when they are added or removed in whole. Except loading state saved in a no longer existing room will crash the game.
 * Room backgrounds in existing rooms.
 
 Also adding or removing any kind of plain resources, such as
