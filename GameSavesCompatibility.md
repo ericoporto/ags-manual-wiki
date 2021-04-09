@@ -63,7 +63,7 @@ Adding or removing any kind of plain resources, such as
 **IMPORTANT:** Removing sprites is only safe if you fix any objects that could have them assigned upon restoring a save. Same goes for clips assigned to View Frames, and fonts used on GUI.
 
 In scripts:
-* User types (structs) may be added; but if you change the size of a regular struct while having variables of that type in your script - that would also change the size of these variables, and may break saves. Managed structs *may* be changed in size without breaking a save, but this requires special approach ([see below]((#an-issue-of-dynamic-objects))).
+* User types (structs) may be added; but if you change the size of a regular struct while having variables of that type in your script - that would also change the size of these variables, and may break saves. Managed structs *may* be changed in size without breaking a save, but this requires special approach ([see below](#an-issue-of-dynamic-objects)).
 * Macros,
 * Functions and attributes, and generally - function code itself,
 * For same reasons - changing existing dialog scripts,
