@@ -8,11 +8,11 @@ Simply changing IDs of game objects in the project tree or order of the variable
 
 This may not be the biggest issue while the game is in development, as you have multiple ways to make game "teleport" to necessary scene instead of using a save state. But it becomes a problem after you released your game to public, as any update or patch that involves adding new objects or variables will render player's saves unusable.
 
-Following article explores which changes to game are safe and which are not in terms of keeping your game compatible with older saves, and which known methods exist to help you keep your game compatible with previous saves.
+Following article explores which changes to game are safe and which are not in terms of keeping your game compatible with older saves, and which known methods exist to work around this problem.
 
 ### Changes in game that break saves
 
-Changing number (adding or removing) of any game objects will break previous saved states. Following types of objects contribute to this:
+Changing number (adding or removing) of almost all game objects will break previous saved states. Following types of objects contribute to this:
 * Audio Types,
 * Characters,
 * Dialogs (but not options in existing Dialog, for technical reasons),
@@ -23,8 +23,8 @@ Changing number (adding or removing) of any game objects will break previous sav
 * Views, loops and frames in them (because frames may be changed in script and their properties are added to save state),
 * Script modules (number of them)
 
-In addition to that, changing *total size* of variables declared in the global scope of each script (*NOT* local function variables) will similarily break older save states.
-To elaborate, imagine you have this declared in some script:
+In addition to that, changing *total size* of variables declared in the global scope of each script (*NOT* local function variables) will break older save states.<br>
+To elaborate on what "total size" is, imagine you have this declared in some script:
 <pre>
 int a;
 int b;
@@ -39,31 +39,35 @@ Even though there's now only one variable this also makes total size of 3 intege
 
 ### Changes that DON'T break saves but are NOT SAFE
 
-Changing number of Room Objects in existing rooms, while technically not preventing to restore old saves, still may lead to bugs. Because their real number is stored in saves players may end up having more or less objects in a room than supposed by the game.
+Changing number of Room Objects in existing rooms, while technically not preventing to restore old saves, still may lead to bugs. Because their real number is stored in saves players may end up having more or less objects in a room than supposed by the game. And because currently you cannot create or delete Room Objects with a script command you won't be able to fix this, only detect when this happens by checking [Room.ObjectCount](Room#roomobjectcount).
 
-Change the size of the dynamic arrays and managed structs won't break saves, but may cause game to crash if script tries to access newer elements or variables in these arrays and structs after restoring older saves.
+Changing the size of the dynamic arrays and managed structs won't break saves, but may cause game to crash if script tries to access newer elements or variables in these arrays and structs after restoring older saves.<br>
 Still this may be worked around and actually be used for your advantage in the bad situation: see [dedicated section below](#an-issue-of-dynamic-objects) for more information.
 
 ### Changes that DON'T break saves and ARE SAFE
 
 Parts of game which may be safely added or removed:
-* Rooms, when they are added or removed in whole. Except loading state saved in a no longer existing room will crash the game.
-* Room backgrounds in existing rooms.
+* Dialog options in existing Dialogs.
+* Rooms, adding new ones. Removing a room is *not* safe, as loading state saved in a no longer existing room will crash the game.
+* Adding room backgrounds in existing rooms, but probably not removing them (*need to be checked*).
 * Custom properties. If you remove existing ones, their values may still load from the older save but will not be accessible.
 
-Also adding or removing any kind of plain resources, such as
-* Sprites,
+Adding or removing any kind of plain resources, such as
+* Sprites
 * Fonts,
 * Audio clips,
 * Voice-over clips,
 * Video files,
 * Translations
 
+**IMPORTANT:** Removing sprites is only safe if you fix any objects that could have them assigned upon restoring a save. Same goes for clips assigned to View Frames, and fonts used on GUI.
+
 In scripts:
-* User types (structs) may be added; but if you change the size of a regular struct while having variables of that type in your script - that would also change the size of these variables, and may break saves. Managed structs *may* be changed in size without breaking a save, but this may still cause glitches (see below).
+* User types (structs) may be added; but if you change the size of a regular struct while having variables of that type in your script - that would also change the size of these variables, and may break saves. Managed structs *may* be changed in size without breaking a save, but this requires special approach ([see below]((#an-issue-of-dynamic-objects))).
 * Macros,
 * Functions and attributes, and generally - function code itself,
-* Local variables (inside functions), because they are not saved, because AGS does not allow to save game while inside a script function
+* For same reasons - changing existing dialog scripts,
+* Local variables (inside functions) may be added and removed freely because they are not saved, because AGS does not allow to save game while inside a script function
 
 ### An issue of dynamic objects
 
