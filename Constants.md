@@ -1,6 +1,6 @@
 ## Constants
 
-The following predefined macros are available in your scripts:
+The following predefined macros and constants are available in your scripts:
 
 Name | Description
 --- | ---
@@ -18,6 +18,8 @@ AGS_MAX_INV_ITEMS | The maximum number of inventory items
 AGS_MAX_OBJECTS | The maximum objects per room
 AGS_MAX_HOTSPOTS | The maximum hotspots per room
 AGS_MAX_REGIONS | The maximum regions per room
+MAX_LISTBOX_SAVED_GAMES | Limit of save files filled into ListBox when using [FillSaveGameList](ListBox#listboxfillsavegamelist)
+PALETTE_SIZE | Size of game palette, for 256-color mode
 
 You can check for whether a macro is defined or not by using the
 `#ifdef` and `#ifndef` keywords:
