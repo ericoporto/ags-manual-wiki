@@ -1023,7 +1023,7 @@ the filename the player typed.
     void SetAmbientLightLevel(int light_level);
 
 Sets an ambient light level that affects all objects and characters in
-the room.
+the room that have their UseRoomAreaLighting property set to true.
 
 The light level is from **-100 to 100**, where 0 means that no
 adjustment will be applied to sprites.
@@ -1062,7 +1062,7 @@ do not have individual light levels).
 
     SetAmbientTint(int red, int green, int blue, int saturation, int luminance)
 
-Tints all objects and characters on the screen to (RED, GREEN, BLUE)
+Tints all objects and characters on the screen that have their UseRoomAreaLighting property set to true to (RED, GREEN, BLUE)
 with SATURATION percent saturation.
 
 This allows you to apply a global tint to everything on the screen. The
