@@ -6,7 +6,7 @@ AGS provides a scripting system, where engine functionalities are exposed throug
 
 ### API switches
 
-When a new version of AGS comes with new API entries these may cause conflicts with previously made scripts. Sometimes a function gets deprecated (outdated) and disabled, or replaced by a different and better one. Sometimes new a function is added that may use a name which you already used in your script, which can obviously lead to conflicts. Usually it's a good idea to adjust your script and resolve these problems by hand. But if you do not want to or do not have the time to do so just yet - there are API switches.
+When a new version of AGS comes with new API entries these may cause conflicts with previously made scripts. Sometimes a function gets deprecated (outdated) and disabled, or replaced by a different and better one. Sometimes a new function is added that may use a name which you already used in your script, which can obviously lead to conflicts. Usually it's a good idea to adjust your script and resolve these problems by hand. But if you do not want to or do not have the time to do so just yet - there are API switches.
 
 In a nutshell, API switches let you control which parts of the API are active in your game.
 
