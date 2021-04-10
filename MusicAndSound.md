@@ -10,10 +10,10 @@ AGS is able to play the following types of audio file: OGG, MP3, MIDI,
 WAV (uncompressed), MOD, XM, IT, S3M and VOC.
 
 The only limitation to this is that AGS is only able to play one MIDI
-file at a time. If you attempt to play two simultaneous MIDI music
-files, the first one will be cut off when the second one starts playing.
+file at a time. If you attempt to play two MIDI music files simultaneously, 
+the first one will be cut off when the second one starts playing.
 
-If you haven't heard of OGG before, it's a digital music format, similar
+OGG is a digital music format similar
 to MP3, but achieving better compression and higher quality. More
 importantly, it is a totally free format so no royalty payments or
 licenses are required to use it. For more information and programs to
@@ -27,7 +27,7 @@ sub-nodes called "Speech", "Types" and two default folders called
 
 **Speech**
 
-At the moment, voice speech files are not setup within the editor. See
+At the moment, voice speech files are not set up within the editor. See
 the [Speech](MusicAndSound#voice-speech) help page to find out more about
 adding speech to your game.
 
@@ -58,7 +58,9 @@ option called "Add Audio Files".
 
 Select this option, and you'll be given a dialog box to find the audio
 files that you want to import. Once imported, they'll be assigned script
-names automatically.
+names automatically. If you already name the soundfiles you create and want to use in a short and descriptive way
+you don't have to rename them in the game project and save a lot of time and keep both your game project and the 
+assets organized.
 
 Double-click an audio file in the project tree to open a window where
 you can preview it, as well as change its properties in the Property
