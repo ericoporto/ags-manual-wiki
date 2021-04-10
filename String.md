@@ -6,7 +6,7 @@
 
     String.Append(string str2)
 
-Appends the string STR2 to the end of the specified string, and returns
+Appends the string `str2` to the end of the specified string, and returns
 the result.
 
 **IMPORTANT:** The result of joining the strings together is returned as
@@ -64,13 +64,13 @@ obsolete)*<br>
 
     String.CompareTo(string str2, optional bool caseSensitive)
 
-Compares the specified string to STR2. *caseSensitive* determines
+Compares the specified string to `str2`. *caseSensitive* determines
 whether "Dog" and "dog" are equivalent; case sensitivity is off by
 default.
 
 Returns 0 if the strings match, a number less than 0 if this string is
-earlier in the alphabet than STR2, and a number greater than 0 if this
-string is later in the alphabet than STR2.
+earlier in the alphabet than `str2`, and a number greater than 0 if this
+string is later in the alphabet than `str2`.
 
 **TIP:** To do a case-sensitive comparison of two strings, it's easier
 to just use the == operator.
