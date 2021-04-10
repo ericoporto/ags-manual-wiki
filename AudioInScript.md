@@ -27,4 +27,4 @@ Notice that `chan` is assigned to `aSound1.Play()`, and not to `aSound2.Play()`.
 This effect may either be wanted or unwanted and can lead to bugs depending on how you script your game, so keep this in mind.
 
 
-*See also:* [Music and Sound](MusicAndSound)
+*See also:* [Music and Sound](MusicAndSound), [Audio Channel](AudioChannel), [Audio Clip](AudioClip)
