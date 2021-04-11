@@ -35,7 +35,7 @@ If you want to export this variable for use in other scripts, you put following 
 
     export public_variable;
 
-The `export` statement must be placed outside of function and needs _only variable's name_ and nothing else.
+The `export` statement must be placed outside of function and needs _only variable's name_ and nothing else. You can export several variables in one statement if you separate their names with commas.
 
 Then declare variable's import for other scripts to see, presumably *in the script A header*:
 
@@ -44,9 +44,27 @@ Then declare variable's import for other scripts to see, presumably *in the scri
 Both the name and type must match the variable's own declaration exactly.<br>
 This bit is important. If variable is `int` it should be imported as `int`, if it's of type `Character*` then import should also be declared as `Character*`.<br>
 Imported arrays must have correct size, for example if you have `int arr[10];` then import declaration must be `import int arr[10];`, otherwise there will be errors.
+You may declare import for several variables _of same type_ in one statement if you separate them by commas:
+
+    import int var1, var2;
 
 Most commonly import declarations are put in the header of the same script where these variables are defined. But in theory you may instead not do that and place imports inside each particular script where you intend to use these variables.
+
+So, for a final example, you have this in MyScript.asc:
+
+    int public_int1, public_int2;
+    float public_float;
+    String public_str;
+    export public_int1, public_int2, public_float, public_str;
+
+And in MyScript.ash:
+
+    import int public_int1, public_int2;
+    import float public_float;
+    import String public_str;
 
 To sum up, the import declaration lets other scripts see this variable, and the export command actually connects existing variable to that declaration.
 
 **NOTE:** AGS Editor has a special menu "Global Variables" meant for easier creation of public variables which could be accessible everywhere. This may be a better alternative for beginners, as it takes care of all this import/export stuff behind the scenes.
+
+See Also: [import keyword](ScriptKeywords#import), [export keyword](ScriptKeywords#export)
