@@ -35,7 +35,7 @@ If you want to export this variable for use in other scripts, you put following 
 
     export public_variable;
 
-The `export` statement needs only variable's name and nothing else.
+The `export` statement must be placed outside of function and needs _only variable's name_ and nothing else.
 
 Then declare variable's import for other scripts to see, presumably *in the script A header*:
 
