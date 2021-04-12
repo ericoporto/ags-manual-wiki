@@ -10,45 +10,45 @@ Functions and variables declared in script A could be used in script B if two co
 
 All script functions are exported automatically, so they only need an import declaration to let other scripts know that they exist. This is done by declaring a function with an [import](ScriptKeywords#import) keyword somewhere where script B can "see" it. The best practice is to place them in script A's header.
 
-For example, suppose you have following function in script A:
+For example, suppose you have the following function in script A:
 
     function ScriptAFunction(int param1, int param2)
     {
         // some actions here
     }
 
-Then import declaration in the script A header will looks like:
+Then import the declaration in the script A header will looks like:
 
     import function ScriptAFunction(int param1, int param2);
 
-The name, type and arguments of the function must be the same ofcourse, otherwise there will be errors either during compilation or at runtime.
+The name, type and arguments of the function must be the same of course, otherwise there will be errors either during compilation or at runtime.
 
 ### Exporting and importing a variable
 
-Script variables are not exported by default, so that has to be done explicitly inside the script which has them declared, using [export](ScriptKeywords#export) keyword.
+Script variables are not exported by default, so that has to be done explicitly inside the script which has them declared, using the [export](ScriptKeywords#export) keyword.
 
-Suppose you have following variable declaration inside script A:
+Suppose you have the following variable declaration inside script A:
 
     int public_variable;
 
-If you want to export this variable for use in other scripts, you put following `export` statement *inside the same script where you declared the variable* (script A):
+If you want to export this variable for use in other scripts, you put the following `export` statement *inside the same script where you declared the variable* (script A):
 
     export public_variable;
 
-The `export` statement must be placed outside of function and needs _only variable's name_ and nothing else. You can export several variables in one statement if you separate their names with commas.
+The `export` statement must be placed outside of the function and needs _only the variable's name_ and nothing else. You can export several variables in one statement if you separate their names with commas.
 
-Then declare variable's import for other scripts to see, presumably *in the script A header*:
+Then declare the variable's import for other scripts to see, presumably *in the script A header*:
 
     import int public_variable;
 
 Both the name and type must match the variable's own declaration exactly.<br>
-This bit is important. If variable is `int` it should be imported as `int`, if it's of type `Character*` then import should also be declared as `Character*`.<br>
-Imported arrays must have correct size, for example if you have `int arr[10];` then import declaration must be `import int arr[10];`, otherwise there will be errors.
-You may declare import for several variables _of same type_ in one statement if you separate them by commas:
+This bit is important. If the variable is `int` it should be imported as `int`, if it's of the type `Character*` then the import should also be declared as `Character*`.<br>
+Imported arrays must have the correct size, for example if you have `int arr[10];` then the import declaration must be `import int arr[10];`, otherwise there will be errors.
+You can declare the import of several variables _of the same type_ in one statement if you separate them by commas:
 
     import int var1, var2;
 
-Most commonly import declarations are put in the header of the same script where these variables are defined. But in theory you may instead not do that and place imports inside each particular script where you intend to use these variables.
+Most commonly import declarations are put in the header of the same script where these variables are defined. But in theory you may not do that and instead place imports inside each particular script where you intend to use these variables.
 
 So, for a final example, you have this in MyScript.asc:
 
@@ -63,8 +63,8 @@ And in MyScript.ash:
     import float public_float;
     import String public_str;
 
-To sum up, the import declaration lets other scripts see this variable, and the export command actually connects existing variable to that declaration.
+To sum this up, the import declaration lets other scripts see this variable, and the export command actually connects existing variables to that declaration.
 
-**NOTE:** AGS Editor has a special menu "Global Variables" meant for easier creation of public variables which could be accessible everywhere. This may be a better alternative for beginners, as it takes care of all this import/export stuff behind the scenes.
+**NOTE:** The AGS Editor has a special menu called "Global Variables" meant for easier creation of public variables which could are accessible everywhere. This may be a better alternative for beginners, as it takes care of all this import/export managing behind the scenes.
 
 See Also: [import keyword](ScriptKeywords#import), [export keyword](ScriptKeywords#export)
