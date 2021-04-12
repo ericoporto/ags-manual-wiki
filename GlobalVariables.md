@@ -1,6 +1,6 @@
 ## Global variables
 
-The Global Variables pane allows you to easily add variables to your
+The Global Variables dialog window allows you to easily add variables to your
 game which can then be accessed from all your scripts.
 
 In previous versions of AGS, declaring a global variable in the script
@@ -57,3 +57,5 @@ like "GUI", "DynamicSprite" and "Character". These are for more advanced
 users only. If you create one of these you cannot set a default value,
 and it will initially be set to *null*. You will need to initialize the
 pointer in your script to point to something before you use it.
+
+*See also:* [Importing Functions and Variables](ImportingFunctionsAndVariables), [Global Arrays](GlobalArrays)
