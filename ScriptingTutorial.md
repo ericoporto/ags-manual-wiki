@@ -4,3 +4,4 @@ The AGS scripting system allows you to write a mini-program, giving you great co
 
 - [Scripting Tutorial - Part 1](ScriptingTutorialPart1)
 - [Scripting Tutorial - Part 2](ScriptingTutorialPart2)
+- [Scripting Tutorial - Part 3](acintro3)
