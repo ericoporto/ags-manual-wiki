@@ -284,3 +284,6 @@ there's a lot of stuff I've forgotten to mention, so feel free to
 comment on it on the forums.
 
 Enjoy AGS!
+
+Also there is a [Scripting Tutorial - Part 3](acintro3)
+or go back to the [First Scripting Tutorial](ScriptingTutorialPart1)
