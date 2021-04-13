@@ -1,6 +1,6 @@
 ## Standard Enumerated Types
 
-AGS has several [enumerated types](ScriptKeywords#enum) in it's standard header.
+AGS has several [enumerated types](ScriptKeywords#enum) in its standard header.
 These are
 used in calls to various commands, and will usually pop up automatically
 in autocomplete. However, for times where autocomplete doesn't do the
@@ -108,7 +108,7 @@ will execute some code if *align* variable contains "Left" in any combination (e
       eAlignRight         = 4
     };
 
-Note that HorizontalAlignment's values match first values of Alignment enumeration (eAlignTopLeft, eAlignTopCenter, eAlignTopRight).
+Note that HorizontalAlignment's values match the first values of Alignment enumeration (eAlignTopLeft, eAlignTopCenter, eAlignTopRight).
 
 *Compatibility:* replaced old Alignment enumeration in AGS 3.5.0.
 
