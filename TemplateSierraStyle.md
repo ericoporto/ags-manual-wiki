@@ -69,3 +69,6 @@ Assigns the key used to move the player to the left.
     eKeyCode KeyboardMovement.KeyRight
 
 Assigns the key used to move the player to the right.
+
+
+*See also*: [Templates](Templates), [Setting up the game](Settingupthegame)
