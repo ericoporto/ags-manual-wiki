@@ -469,7 +469,8 @@ of checkboxes to its right:
 **Dialog scripts**
 
 You control what happens when the player chooses an option by editing
-the script on the right. For more information on this script see [related topic](DialogScript).
+the script on the right. For more information on how to handle this script 
+see the [Article about Dialog Scripts](DialogScript).
 
 **Parser input**
 
