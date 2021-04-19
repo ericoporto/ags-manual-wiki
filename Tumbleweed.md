@@ -273,3 +273,4 @@ Now the GUI will be set to the corresponding language when the user selects a
 different language by running game setup.
 
 
+*See also*: [Templates](Templates), [Setting up the game](Settingupthegame)
