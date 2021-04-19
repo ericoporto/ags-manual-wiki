@@ -4,43 +4,43 @@
 
 When you choose the "Build EXE" option in the Editor, a "Compiled" directory is created in your game's folder, where more subdirectories are created in turn.
 
-* "Compiled/Data" subfolder is made always. Here it serves as an intermediate storage, and contains the "raw" game data that cannot be used on its own, but may be run by an AGS engine executable (on any supported platform). From this folder these files will be then _copied into other subfolders_, each for one build target (platform) you selected in the project's General Settings.
-* "Compiled/Windows" subfolder will be created if you have "Windows" target enabled. It will contain game data merged with the engine executable for Windows, as well as the "winsetup.exe" which launches an integrated setup program.
-* "Compiled/Linux" subfolder will be created if you have "Linux" target enabled. It will contain game data merged with the engine executable and necessary third-party libraries for 32-bit and 64-bit Linux systems.
+* "Compiled/Data" subfolder is always made. Here it serves as an intermediate storage, and contains the "raw" game data that cannot be used on its own, but may be run by an AGS engine executable (on any supported platform). From this folder these files will then be _copied into other subfolders_, one for each build target (platform) you selected in the project's General Settings.
+* "Compiled/Windows" subfolder will be created if you have "Windows" enabled as target platform. The folder will contain the game data merged with the engine executable for Windows, as well as a file called "winsetup.exe" which launches an integrated setup program.
+* "Compiled/Linux" subfolder will be created if you have "Linux" enabled as target platform. The folder will contain the game data merged with the engine executable and necessary third-party libraries for 32-bit and 64-bit Linux systems.
 
-The contents of these subfolders may be now distributed to corresponding operating systems. For example, if you want to
-distribute Windows version of your game, you need to take _only_ the contents of "Compiled/Windows" subfolder. For Linux the "Compiled/Linux" subfolder is sufficient.
+The contents of these subfolders can be now distributed to players with the corresponding operating systems. For example, if you want to
+distribute the Windows version of your game, you _only_ need the contents of the "Compiled/Windows" subfolder. For Linux the "Compiled/Linux" subfolder is sufficient.
 
-"Compiled/Data" should usually be skipped. It still may come useful if you are preparing a kind of a custom distribution, but remember that it cannot be run on its own: you'd need to add one of the available engine versions to it, or warn users that they'd have to have AGS engine installed on their system.
+The "Compiled/Data" folder should usually not be distributed. It still may come in useful if you are preparing a custom distribution, but remember that the contents of this folder cannot be run on its own: you need to add one of the available engine versions to it, or warn users that they have to have the AGS engine installed on their system.
 
 ### Compiled game contents
 
-The main game data file has **game.ags** naming format, where "game" is the "Game file name" property set in the General Settings. When compiled for Windows it is merged with the engine and results in **game.exe** instead.
+The main game data file naming format is **game.ags**, where "game" is the entry for the "Game file name" property set in the General Settings. When compiled for Windows the main game data is merged with the engine and results in a file called **game.exe** instead.
 
-If you have selected to split resources files, you will also have several files named **game.001**, **game.002**, and so forth.
+If you selected the option to split the resources files, you will also have several files named **game.001**, **game.002**, and so forth in the folder.
 
-Games with digital music will usually have **audio.vox**. The **audio.vox** contains audio clips that you have marked
-as "InSeperateVOX" in the editor. This allows you to have an optional audio download, if your game uses lots of sound files but you don't want the player to have to download them.
+Games with digital music will usually have another file called **audio.vox** in the compiled folder. The **audio.vox** contains audio clips that you have marked
+as "InSeperateVOX" in the editor. This allows you to have an optional audio download, if your game uses lots of sound files but you want to give the player the choice to down them separately to save bandwidth.
 
-Games with digital speech voice-over will have a separate **speech.vox** file.
+Games with digital speech voice-over will have a separate **speech.vox** file in the compiled game's folder. Again you can distribute the Voice Acting soundfiles separately as the filesize for your game grows fast when you have a lot of spoken words and include the speech files into the game.
 
-**acsetup.cfg** is a text file containing default configuration for the game. It's generated by the editor from Default Setup's properties.
+**acsetup.cfg** is a text file containing the default configuration for the game. This file is generated by the editor from the Default Setup properties.
 
-The Windows build of your game will also include **winsetup.exe** which is a setup program launcher. Note that the setup program itself is integrated into your game exe, and it's also possible to launch it by executing `game.exe --setup` in command line.
+The Windows build of your game will also include a **winsetup.exe** file in the compiled folder, which is a setup program launcher. Note that the setup program itself is integrated into your game exe, and it's also possible to launch the setup by executing `game.exe --setup` in the command line.
 
 ### Customizing game data
 
-If you want to distribute custom data with your game you may simply add necessary files to where the main game data (game.ags or game.exe) is located.
+If you want to distribute custom data with your game you can simply add the necessary files where the main game data (game.ags or game.exe) is located.
 
-Note that any custom files put into "Compiled/Data" folder will also be copied to all the final build targets (Windows, Linux, etc) when the game is built. At the moment this is the most convenient method of making sure same custom data will be included everywhere. If you need it to be present only with particular distribution, like only Windows, or only Linux, then put the files into corresponding platform subfolder instead.
+Note that any custom files put into the "Compiled/Data" folder will also be copied to all the final build targets (Windows, Linux, etc) when the game is built. At the moment this is the most convenient method of making sure the same custom data will be included for all target platforms. If you need the custom files to be present only with a particular distribution, like only for Windows, or only for Linux, then put the files into the corresponding platform subfolder instead.
 
-### Warning on de-compiling built game
+### Warning on de-compiling the built game
 
 It is not possible to load the exe file back into the AGS Editor. This means two things when only the EXE file is available: (1) other people can't edit your game's data, and (2) you can't either. Always keep a backup of the other files produced (.CRM, GAME.AGF, etc) as they are what the Editor needs to be able to load your game for editing.
 
 ### Licensing
 
-Due to the licenses of code used by AGS, your documentation
+Due to the licenses of code used by AGS, the documentation of your game
 should acknowledge the following:
 
 * TrueType font display uses ALFont by Javier Gonzalez and the FreeType
@@ -59,21 +59,21 @@ You must also comply with the license for AGS:
 
 ### Custom icon
 
-If you wish, you can use your own custom icon when you build a Windows
-EXE file. To do this, simply place your icon in your game's folder, and
-name it USER.ICO. Then, load the editor and save the game.
+You can use your own custom icon for the game.exe when you build a Windows
+EXE file. To do this, simply place your icon in your gameproject's folder, and
+name it USER.ICO. Then, open the project in the editor and compile the game.
 
 *NOTE: The icon **must** be a proper Windows .ICO file, **not** just a
 renamed BMP file. Icon editors, such as AX-Icons from
-https://www.axialis.com/, will convert it for you.*
+https://www.axialis.com/, GIMP or IrfanView, will convert any image for you.*
 
-You can also have a custom icon for the Setup program generated. To do
-so, create your icon as above but name it **setup.ico** in the game
+You can also have a custom icon for the Setup program. To do
+so, create your icon as above but name it **setup.ico** in the game project
 folder.
 
 ### Splash screen
 
-You can make a "Loading..." style splash screen to be displayed while your game starts up. To do so, simply save the image as **preload.pcx** (must be the same resolution and color depth as the game) in the game folder, and build the game. It should then display while the game is loading.
+You can make a "Loading..." style splash screen to be displayed while your game starts up. To do so, simply save the image as **preload.pcx** (must be the same resolution and color depth as the game) in the game project folder, and build the game. It should then display while the game is loading.
 
 ---
 
@@ -85,27 +85,27 @@ includes an option to split up the resource files into smaller chunks to
 avoid this happening. On the General Settings pane you'll notice a
 setting "Split resource files into X Mb sized chunks".
 
-If you tick this, then type in a number such as 1 or 2, then save the
-game, the game data will be split up into chunks that size, named
+If you tick this, then type in a value such as 1 or 2, then save the
+game. Now when you compile the game, the data will be split up into chunks of that size, named
 GAME.001, GAME.002 and so on.
 
 Some resources are still combined into the EXE file but all the rooms
 will be placed into the other files. If you use this option, you need to
-distribute your game's EXE file plus all the GAME.00? files.
+distribute your game's EXE file plus all the GAME.### files.
 
 ---
 
-### Managing Graphics Footprint
+### Managing the Graphics Footprint
 
-Your game sprites are stored as bitmap files, and it's size will be proportional to the number of pixels stored, normally being packed along with your game executable. They are packed sequentially, so for distribution systems that supports binary patching, like Steam, when you add a new sprite and update your game, only that single sprite will be delivered through it - Steam also applies a compression when sending these patches. If your game is distributed as a single binary file, zipping will reduce it's download size, but you can also turn on RLE compression on your game settings, which can reduce their size on disk.
+Your game sprites are stored as bitmap files, and it's size will be proportional to the number of pixels stored, normally being packed along with your game executable. They are packed sequentially, so for distribution systems that support binary patching, like Steam, when you add a new sprite and update your game, only that single sprite will be delivered through it - Steam also applies a compression when sending these patches. If your game is distributed as a single binary file, zipping will reduce it's download size, but you can also turn on RLE compression on your game settings, which can reduce their size on disk.
 
-You can generate some graphics programatically in your game using Dynamic Sprites, just remember if you don't unload and reload them between save and load, if you are using the savestate feature from AGS, this sprites will be serialized to the game savefiles, potentially making them of a significant size.
+You can generate some graphics programatically in your game using [Dynamic Sprites](DynamicSprite), just remember if you don't unload and reload them between save and load, if you are using the savestate feature native to AGS, these sprites will be serialized to the game savefiles, potentially bloating up their size.
 
-### Managing Audio Footprint
+### Managing the Audio Footprint
 
-AGS stores audio files directly from their imported files, and can be globed as an external audio.vox file or be part of the main game executable. Speech is always packed as an external speech.vox file. AGS doesn't compress the audio, but instead relies on the original compression from each individually imported audio file when generating audio packs (`.vox`) or when embedding them in the game file. 
+AGS stores audio files directly copied from their imported files, and can be outsourced from the main game file as an external audio.vox file or they can be merged into and be part of the main game executable. Speech is always packed as an external speech.vox file. AGS doesn't compress the audio, but instead relies on the original compression from each individually imported audio file when generating audio packs (`.vox`) or when embedding them in the game file. 
 
-Since audio files tend to be less volatile at middle to late parts of game development, and some distribution platforms don't provide binary patching, it may be wise to have them as external files so that they are not downloaded again by your player when your game has an update.
+Since audio files tend to be less volatile during middle to late parts of game development, and some distribution platforms don't provide binary patching, it may be wise to have them as external files so that they are not downloaded again by your player when your game has an update.
 
 **Speech**
 
@@ -117,4 +117,4 @@ For sound effect files, usually ogg provides a good compression, you may need to
 
 **Music**
 
-Music files will compress just fine with ogg. It's a good idea to experiment with different compression levels. If you have to, you can use mp3 files too, just be aware they may produce a small audible gap when looping, so avoid mp3 on short musics. Don't use wav files for music or it will make your game size too big without perceptual quality gains.
+Music files will compress just fine with the ogg format. It's a good idea to experiment with different compression levels. If you have to, you can use mp3 files too, just be aware they may produce a small audible gap when looping, so avoid mp3 on short music tracks. Don't use wav files for music or it will make your game size too big without perceptual quality gains.
