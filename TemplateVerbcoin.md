@@ -199,3 +199,6 @@ still being allocated.
 
 Sets whether VerbCoin buttons should be disabled, if clicking them
 would result in an unhandled event.
+
+
+*See also*: [Templates](Templates), [Setting up the game](Settingupthegame)
