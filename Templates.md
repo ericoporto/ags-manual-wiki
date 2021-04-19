@@ -76,3 +76,6 @@ make your changes - the user probably doesn't want to already have a
 semi-completed game when they use your template. Rather, game templates
 are about different types of game controls, gameplay mechanics you want
 to share.
+
+
+*See also*: [Setting up the Game](Settingupthegame)
