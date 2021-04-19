@@ -78,4 +78,4 @@ are about different types of game controls, gameplay mechanics you want
 to share.
 
 
-*See also*: [Setting up the Game](Settingupthegame)
+*See also*: [Setting up the Game](Settingupthegame), [Tutorials Index](StartingOff)
