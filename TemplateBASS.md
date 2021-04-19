@@ -91,3 +91,6 @@ Hide the inventory GUI if it being shown. If the inventory GUI is already
 hidden then this function does nothing. This would typically only be called
 by higher level GUI management functions which require the inventory GUI to
 be replaced or suppressed.
+
+
+*See also*: [Templates](Templates), [Setting up the game](Settingupthegame)
