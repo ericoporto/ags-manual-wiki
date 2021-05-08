@@ -22,7 +22,16 @@ This function returns a File object, which you use to perform operations
 on the file. *null* is returned if there was a problem (eg. file not
 existing when MODE is eFileRead).
 
-When specifying file path you may use special location tags:<br>
+When specifying file path you may use tags that specify either a special file or location.
+
+Following file tags are supported:<br>
+`$CONFIGFILE$`, which allows you to open player's configuration file for reading or writing. This is recommended to be used instead of telling exact path, because config file may be found in different places depending on game settings or personal player's setup.
+
+Example:
+
+    File.Open("$CONFIGFILE$", eFileRead);
+
+Following location tags are supported:<br>
 `$INSTALLDIR$`, which allows you to explicitly read files in the game
 installation directory.<br>
 `$SAVEGAMEDIR$`, which allows you to write/read files in the save game
@@ -30,6 +39,10 @@ directory.<br>
 `$APPDATADIR$`, which allows you to write/read files to a folder on the
 system which is accessible by and shared by all users. The example of
 their use is below.
+
+Example:
+
+    File.Open("$SAVEGAMEDIR$/game.dat", eFileWrite);
 
 **IMPORTANT**: For security reasons, if you open the file for writing,
 then you can ONLY work with files in either `$SAVEGAMEDIR$` or
@@ -65,6 +78,8 @@ Example:
 will open the file temp.tmp in the save game folder for writing. An
 error message is displayed if the file could not be created. Otherwise,
 it will write the string "test string" to the file and close it.
+
+*Compatibility:* $CONFIGFILE$ tag supported by AGS 3.5.1 and later versions.
 
 *See Also:* [File.Close](File#fileclose),
 [File.Exists](File#fileexists),
