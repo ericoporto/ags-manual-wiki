@@ -623,6 +623,8 @@ SetGameOption. **Basic properties**
 
 **Compiler**
 
+-   **Attach game data to exe** (Windows only) - when enabled the main game data will be appended to "gamename.exe" file. This is how AGS games were packed traditionally, and is on by default. When disabled game data will be packed into the separate "gamename.ags" file and placed alongside with the game exe.<br>
+Disabling this option will make the game file structure more transparent and, for example, may help to prevent false positive reports from antiviruses that often don't like it when AGS engine reads data from exe.
 -   **Build target platforms** - a checklist of platforms for which the
     game will be compiled.
 -   **Compress the sprite file** - when enabled the sprites will be
