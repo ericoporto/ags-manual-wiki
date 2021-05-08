@@ -449,7 +449,7 @@ will print \"Hello!\" onto the middle of the background scene.
 
 ### `GetTranslation`
 
-    String GetTranslation(string original)
+    const string GetTranslation(string original)
 
 Gets the translated equivalent of the supplied string. You do not
 normally need to use this since the game translates most things for you.
