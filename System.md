@@ -1,5 +1,19 @@
 ## `System` functions and properties
 
+### `System.SaveConfigToFile`
+
+    static void System.SaveConfigToFile()
+
+Writes current engine settings to the player's configuration file, so that they may be applied next time the game is launched.
+
+This saves only the options that may be changed at runtime, such as translation and fullscreen/windowed graphic mode.
+
+*Compatibility:* Supported by **AGS 3.5.1** and later versions.
+
+*See Also:* [File.Open](File#fileopen)
+
+---
+
 ### `System.AudioChannelCount`
 
     readonly static int System.AudioChannelCount;
