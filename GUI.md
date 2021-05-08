@@ -368,9 +368,11 @@ Gets the style of GUI behavior on screen. Possible values are:
     eGUIPopupModal        like normal, but pauses game when shown
     eGUIPopupPersistent   like normal, but not removed when the game's user interface is disabled
 
-**NOTE:** for MouseYPos style GUI.Visible property does not control visibility directly. The GUI will become visible only when both conditions match:
+**NOTE:** for MouseYPos style [GUI.Visible](GUI#guivisible) property does not control visibility directly. The GUI will become visible only when both conditions match:
 - GUI.Visible property set to TRUE;
 - mouse cursor is closer to the screen top than GUI.PopupYPos value.
+
+[GUI.Shown](GUI#guishown) property tells whether GUI is actually displayed, which may be different from GUI.Visible in the case of MouseYPos style.
 
 **NOTE:** To automatically hide a GUI when the user interface is disabled, the
 General Settings option `When player interface is disabled, GUIs should` needs
@@ -378,7 +380,7 @@ to be set as `Be hidden`.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [GUI.PopupYPos](GUI#guipopupypos), [GUI.Visible](GUI#guivisible)
+*See Also:* [GUI.PopupYPos](GUI#guipopupypos), [GUI.Shown](GUI#guishown), [GUI.Visible](GUI#guivisible)
 
 ---
 
@@ -391,6 +393,22 @@ Gets/sets the Y co-ordinate at which the GUI will appear when using MouseYPos po
 This property is ignored if GUI has a different style.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See Also:* [GUI.PopupStyle](GUI#guipopupstyle), [GUI.Shown](GUI#guishown), [GUI.Visible](GUI#guivisible)
+
+---
+
+### `GUI.Shown`
+
+    readonly bool GUI.Shown
+
+Tells whether GUI is currently active on screen.
+
+In the common circumstances this property's value is equivalent to checking [GUI.Visible](GUI#guivisible). But for GUIs with "Mouse Ypos" popup style the Visible property does not actually determine whether the GUI is displayed, but instead it controls whether the GUI **is allowed to** pop up. In such case it is Shown property that would tell if the GUI is actually displayed on screen at this moment.
+
+**NOTE:** Shown property only reports a logical state, it does not test whether GUI may be seen by the player or not (overlapped by other objects, moved offscreen or fully transparent).
+
+*Compatibility:* Supported by **AGS 3.5.1** and later versions.
 
 *See Also:* [GUI.PopupStyle](GUI#guipopupstyle), [GUI.Visible](GUI#guivisible)
 
@@ -458,10 +476,12 @@ become paused until the GUI is removed by setting Visible back to false
 (eg. when the user presses an OK button or something similar).
 
 For "Mouse Ypos" GUIs, the Visible property does not actually determine
-whether the GUI can be seen, but instead it controls whether the GUI
+whether the GUI is displayed, but instead it controls whether the GUI
 **is allowed to** pop up. If Visible is *false*, then moving the mouse
 to the top of the screen will not activate the GUI; if it is *true*,
 then the GUI will be allowed to be popped up.
+
+**NOTE:** for "Mouse Ypos" style GUIs the way to actually know if GUI is displayed or not is [GUI.Shown](GUI#guishown) property.
 
 Example:
 
@@ -469,7 +489,7 @@ Example:
 
 will turn on the SETTINGS GUI.
 
-*See Also:* [IsGamePaused](Globalfunctions_General#isgamepaused)
+*See Also:* [GUI.Shown](GUI#guishown), [IsGamePaused](Globalfunctions_General#isgamepaused)
 
 ---
 
