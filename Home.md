@@ -10,7 +10,7 @@
 - [Upgrading to AGS 3.5](UpgradeTo35)
 - [Upgrading from a previous version](UpgradingFromPreviousVersion)
 
-## Editor Reference
+## Editor
 
 - [New Game templates](Templates)
 - [Room Editor](EditorRoom)
