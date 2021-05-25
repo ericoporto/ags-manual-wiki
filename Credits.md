@@ -16,6 +16,7 @@
   Francesco Ariis  
   Gilad Shaham  
   Ivan Mogilko  
+  James Duong  
   Janet Gilbert  
   Jochen Schleu  
   Joe Lee  
@@ -38,30 +39,31 @@
   Steve McCrea  
   Steven Poulton  
   Sunit Das  
+  Thierry Crozat  
   Tobias Hansen  
   Tom Vandepoele  
   Tzach Shabtay
 
-- The default icon bar graphics were done by Teemu Eramaa (teemue@nic.fi)
 - Windows editor original splash design by abstauber
 - Windows editor icons by Klaus
 - Blank Game template created by AGA
-- Sierra-style game template originally worked on by Rui "Trovatore" Pires,
-  enhanced with the new art by ProgZmax, CaesarCub, Hobo, Selmiak and Jim Reed.
-- LEC 9-verb template by abstauber
-- Verb Coin template by Electroshokker, graphics by Misj
-- Lightweight BASS template by Bjorn Ludwig
+- Sierra-style game template by Rui "Trovatore" Pires
+- New BASS and Verb Coin game templates by Morgan Willcock,
+  based on ideas by Bjorn Ludwig and Electroshokker respectively
+- Sierra-style, BASS and Verb Coin templates are sharing art by
+  ProgZmax, CaesarCub, Hobo, Selmiak and Jim Reed
+- Tumbleweed game template by abstauber
+- Script editor component is scintilla by Neil Hodgson (https://www.scintilla.org/)
+- Editor uses irrKlang .NET audio
+  player (https://www.ambiera.com/irrklang/)
+- GIF loading by Magick.Net (https://www.imagemagick.org/)
+- Docking panel suit by WeiFen Luo and contributors (http://dockpanelsuite.com/)
+- JSON handled with Newtonsoft.Json by James Newton-King (https://www.newtonsoft.com/json)
+- Engine supports graphics and sound using Allegro 4 game programming library by
+  Shawn Hargreaves and many others (https://liballeg.org/)
 - Hq2x and Hq3x scalers by Maxim Stepin
 - Hi-color fade out/in routines by Matthew Leverton
 - Sprite anti-aliasing code by Michael Bukin
-- Editor uses irrKlang .NET audio
-  player (https://www.ambiera.com/irrklang/)
-- Graphics and sound are courtesy of the Allegro graphics library by
-  Shawn Hargreaves and many others. You can get it at
-  https://sourceforge.net/projects/alleg/
-- Script editor component is scintilla by Neil Hodgson. You can get it
-  from https://www.scintilla.org/
-- GIF loading by Magick.Net (https://www.imagemagick.org/)
 - TrueType font display uses ALFont by Javier Gonzalez and the
   FreeType project
 - Windows engine uses libcda CD player by Peter Wang.
@@ -74,6 +76,4 @@
 - DUMB MOD/XM/S3M/IT player, (C) 2001-2005 Ben Davis, Robert J Ohannessian
   and Julien Cugniere. You can get it from http://dumb.sourceforge.net/
 
-Thanks to all the AGS beta testers for all their suggestions and bug
-reports - Cornjob, AGC2, AGA, Relight, c_leksutin, Spyros and the rest
-of the team.
+Thanks to all the AGS beta testers for all their suggestions and bug reports.
