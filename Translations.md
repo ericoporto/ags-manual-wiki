@@ -55,7 +55,7 @@ There are two more things you may add to the translation file: comments and font
 Comment lines should begin with `//`, just like in script, and anything else on the same line will be ignored, and such lines won't be counted when deciding which line is original text and which is translation.
 Comments are allowed to be placed anywhere in the file, and they are good way to keep notes for yourself or your translators.
 
-Font options let you define certain font substitutes for this particular translation. All options begin with `#` followed by `OPTION=VALUE` kind of string where "OPTION" is the corresponding name. Following options are supported:
+Font options let you define certain font substitutes for this particular translation. All options begin with the comment opening and a pound sign: `//#` - followed by `OPTION=VALUE` kind of string where "OPTION" is the corresponding name. Following options are supported:
 - **NormalFont** - sets font used for displaying messages on screen. This corresponds to [Game.NormalFont](Game#gamenormalfont) script property. The value may be either font's number or `DEFAULT` for no change.
 - **SpeechFont** - sets font used for character speech. This corresponds to [Game.SpeechFont](Game#gamespeechfont) script property. The value may be either font's number or `DEFAULT` for no change.
 - **TextDirection** - sets text written direction. This corresponds to calling [SetGameOption](Globalfunctions_General#setgameoption) script function with OPT_RIGHTTOLEFT argument. The value may be `LEFT` (for left-to-right), `RIGHT` (for right-to-left) or `DEFAULT`.
@@ -63,11 +63,11 @@ Font options let you define certain font substitutes for this particular transla
 Example:
 <pre>
 // The normal font to use - DEFAULT or font number
-#NormalFont=4
+//#NormalFont=4
 // The speech font to use - DEFAULT or font number
-#SpeechFont=DEFAULT
+//#SpeechFont=DEFAULT
 // Text direction - DEFAULT, LEFT or RIGHT
-#TextDirection=RIGHT
+//#TextDirection=RIGHT
 </pre>
 This would set NormalFont to font 4, leave SpeechFont unchanged, and switch text direction to Right-to-left mode.
 
