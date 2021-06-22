@@ -191,13 +191,15 @@ within a struct.
     // since the attribute is static, adding a property to the struct doesn't make sense
     int Some_Thing;
 
-    // even though it's static we can still use extenders to define the accessors
-    int get_Thing(this Some*) 
+    // even though it's static we can still use extenders to define the accessors;
+    // but note how we use "static Some" here instead of "this Some*", as no this pointer
+    // may be available in a static method.
+    int get_Thing(static Some) 
     {
         return Some_Thing;
     }
 
-    void set_Thing(this Some*, int thing)
+    void set_Thing(static Some, int thing)
     {
         Some_Thing = thing;
     }
