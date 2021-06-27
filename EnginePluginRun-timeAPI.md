@@ -2,7 +2,7 @@
 
 ### Run-time events
 
-#### `AGS_EngineStartup`
+#### AGS_EngineStartup
 ```
 DLLEXPORT void AGS_EngineStartup (IAGSEngine *lpGame);
 ```
@@ -15,7 +15,7 @@ Once this function completes, the plugin will only regain program control when o
 
 _![Info icon](images/icon_info.png)_ This function is called before the graphics subsystem is started, so functions like GetScreenDimensions and GetGraphicsDriverID will not work if called from this event. 
 
-#### `AGS_EngineShutdown`
+#### AGS_EngineShutdown
 ```
 DLLEXPORT void AGS_EngineShutdown();
 ```
@@ -24,7 +24,7 @@ Called by the game engine just before it exits. This gives you a chance to free 
 
 _(Shutdown is only called by engine interface version 13 and above.)_
 
-#### `AGS_EngineOnEvent`
+#### AGS_EngineOnEvent
 ```
 DLLEXPORT int AGS_EngineOnEvent (int event, int data);
 ```
@@ -38,7 +38,7 @@ For example, if you were handling a Keypress event, and you did something in res
 
 _![Warning](images/icon_warn.png)_ Only return 1 when absolutely necessary since it may interfere with other plugins operation.
 
-#### `AGS_EngineDebugHook`
+#### AGS_EngineDebugHook
 ```
 DLLEXPORT int AGS_EngineDebugHook(const char * scriptName, int lineNum, int reserved);
 ```
@@ -55,7 +55,7 @@ Return 1 if you handled the debug, or 0 to allow other plugins to have a go.
 
 _(Supported by engine interface version 13 and above)_
 
-#### `AGS_EngineInitGfx`
+#### AGS_EngineInitGfx
 ```
 DLLEXPORT void AGS_EngineInitGfx(const char *driverID, void *data);
 ```
@@ -82,7 +82,7 @@ _![Warning](images/icon_warn.png)_ Very little error checking is performed on th
 
 The text script currently supports `char`, `short` and `int` types. These are 1, 2 and 4 byte integers respectively. Text script strings are implemented as standard C-style `char*` pointers, but with preallocated buffers of 200 bytes per string. Therefore, if you write a function which takes a string from the text script, make sure that if you add anything to it you don't write past 200 characters, or problems will result.
 
-#### `IAGSEngine.version`
+#### IAGSEngine.version
 ```
 int version;
 ```
@@ -91,7 +91,7 @@ Specifies the interface version. You should check this to determine what version
 
 AGS v2.51 (the first version to support plugins) was distributed with interface version **7**, so you can reasonably expect that as a minimum for your plugin.
 
-#### `IAGSEngine.AbortGame`
+#### IAGSEngine.AbortGame
 ```
 void AbortGame (const char * reason);
 ```
@@ -110,7 +110,7 @@ If you need to exit the game, you should always use this instead of the standard
 
 _Added in version: 1_
 
-#### `IAGSEngine.GetEngineVersion`
+#### IAGSEngine.GetEngineVersion
 ```
 const char* GetEngineVersion ();
 ```
@@ -119,7 +119,7 @@ Returns the full build number of the engine, for example "2.51.400". You can use
 
 _Added in version: 1_
 
-#### `IAGSEngine.RegisterScriptFunction`
+#### IAGSEngine.RegisterScriptFunction
 ```
 void RegisterScriptFunction (const char *name, void *address);
 ```
@@ -155,7 +155,7 @@ In other words, the function takes the object as its first parameter. The export
 
 _Added in version: 1_
 
-#### `IAGSEngine.GetWindowHandle`
+#### IAGSEngine.GetWindowHandle
 ```
 HWND GetWindowHandle ();
 ```
@@ -164,7 +164,7 @@ Returns the window handle of the main game window.
 
 _Added in version: 1_
 
-#### `IAGSEngine.GetGraphicsDriverID`
+#### IAGSEngine.GetGraphicsDriverID
 ```
 const char* GetGraphicsDriverID();
 ```
@@ -179,7 +179,7 @@ _![Info icon](images/icon_info.png)_ When the Direct3D driver is in use, the scr
 
 _Added in version: 19_
 
-#### `IAGSEngine.GetDirectDraw2`
+#### IAGSEngine.GetDirectDraw2
 ```
 LPDIRECTDRAW2 GetDirectDraw2 ();
 ```
@@ -190,7 +190,7 @@ This function is only supported if the player is using the DX5 graphics driver.
 
 _Added in version: 1_
 
-#### `IAGSEngine.GetBitmapSurface`
+#### IAGSEngine.GetBitmapSurface
 ```
 LPDIRECTDRAWSURFACE2 GetBitmapSurface (BITMAP *bmp);
 ```
@@ -203,7 +203,7 @@ _![Warning](images/icon_warn.png)_ This is the Allegro BITMAP structure, not the
 
 _Added in version: 1_
 
-#### `IAGSEngine.GetScreen`
+#### IAGSEngine.GetScreen
 ```
 BITMAP * GetScreen ();
 ```
@@ -214,32 +214,32 @@ This function is only supported if the player is using the DX5 graphics driver.
 
 _Added in version: 1_
 
-#### `IAGSEngine.RequestEventHook`
+#### IAGSEngine.RequestEventHook
 ```
 void RequestEventHook (int event);
 ```
 
 Requests that the engine calls the plugin's `AGS_EngineOnEvent` function when the specified event occurs in future. Possible values are:
 
-##### IAGSEngine event `AGSE_KEYPRESS`
+##### IAGSEngine event AGSE_KEYPRESS
 
 triggered when the user presses a key on the keyboard
 
 **data value:** ASCII value of keystroke, as text script on_key_press (but lower case a-z are passed as 97..122)
 
-##### IAGSEngine event `AGSE_MOUSECLICK`
+##### IAGSEngine event AGSE_MOUSECLICK
 
 triggered when the user clicks a mouse button
 
 **data value:** mouse button pressed (1=left, 2=right, 3=middle)
 
-##### IAGSEngine event `AGSE_POSTSCREENDRAW`
+##### IAGSEngine event AGSE_POSTSCREENDRAW
 
 triggered after the virtual screen has been drawn each frame, but before the mouse cursor is painted and it gets copied to the screen 
 
 **data value:** _\*\* See Note 1 below_
 
-##### IAGSEngine event `AGSE_PRESCREENDRAW`  
+##### IAGSEngine event AGSE_PRESCREENDRAW
 
 _(version 4 and later only)_
 
@@ -247,7 +247,7 @@ triggered every frame after the room background has been drawn, but before anyth
 
 **data value:** _\*\* See Note 1 below_
 
-##### IAGSEngine event `AGSE_SAVEGAME`    
+##### IAGSEngine event AGSE_SAVEGAME  
 
 _(version 5 and later only)_
 
@@ -255,7 +255,7 @@ triggered when the game position is saved. You can then use the interface `FWrit
 
 **data value:** file handle of save game
 
-##### IAGSEngine event `AGSE_RESTOREGAME`  
+##### IAGSEngine event AGSE_RESTOREGAME
 
 _(version 5 and later only)_
 
@@ -263,7 +263,7 @@ triggered when the game position is loaded. You then use the `FRead` function to
 
 **data value:** file handle of save game
 
-##### IAGSEngine event `AGSE_PREGUIDRAW`  
+##### IAGSEngine event AGSE_PREGUIDRAW
 
 _(version 6 and later only)_
 
@@ -271,7 +271,7 @@ triggered once the screen has been constructed, but before the GUIs have been dr
 
 **data value:** _\*\* See Note 1 below_
 
-##### IAGSEngine event `AGSE_LEAVEROOM`  
+##### IAGSEngine event AGSE_LEAVEROOM
 
 _(version 6 and later only)_
 
@@ -279,7 +279,7 @@ triggered when the player leaves the current room, after the Player Leaves Scree
 
 **data value:** old room number
 
-##### IAGSEngine event `AGSE_ENTERROOM`    
+##### IAGSEngine event AGSE_ENTERROOM
 
 _(version 6 and later only)_
 
@@ -287,7 +287,7 @@ triggered when the player enters a new room, before the screen fades in
 
 **data value:** new room number
 
-##### IAGSEngine event `AGSE_TRANSITIONOUT`    
+##### IAGSEngine event AGSE_TRANSITIONOUT
 
 _(version 6 and later only)_
 
@@ -295,7 +295,7 @@ triggered when the screen is about to fade out as the player changes rooms. If y
 
 **data value:** _(unused, currently 0)_
 
-##### IAGSEngine event `AGSE_TRANSITIONIN`  
+##### IAGSEngine event AGSE_TRANSITIONIN
 
 _(version 6 and later only)_
 
@@ -303,7 +303,7 @@ triggered when the screen is about to fade in as the player changes rooms. If yo
 
 **data value:** _(unused, currently 0)_
 
-##### IAGSEngine event `AGSE_FINALSCREENDRAW`
+##### IAGSEngine event AGSE_FINALSCREENDRAW
 
 _(version 12 and later only)_
 
@@ -311,7 +311,7 @@ triggered each frame after the mouse cursor is painted and immediately before th
 
 **data value:** _\*\* See Note 1 below_
 
-##### IAGSEngine event `AGSE_TRANSLATETEXT`
+##### IAGSEngine event AGSE_TRANSLATETEXT
 
 (version 12 and later only)
 
@@ -319,7 +319,7 @@ triggered whenever there is some in-game text that might need translating. If yo
 
 **data value:** the text to translate (cast this parameter to `const char *`)
 
-##### IAGSEngine event `AGSE_SCRIPTDEBUG`
+##### IAGSEngine event AGSE_SCRIPTDEBUG
 
 _(version 13 and later only)_
 
@@ -327,7 +327,7 @@ triggers the AGS\_ EngineDebugHook function every time the game script advances 
 
 **data value:** _N/A_
 
-##### IAGSEngine event `AGSE_SPRITELOAD`
+##### IAGSEngine event AGSE_SPRITELOAD
 
 _(version 18 and later only)_
 
@@ -335,7 +335,7 @@ triggered whenever a sprite is loaded into memory. This allows you to modify spr
 
 **data value:** sprite number
 
-##### IAGSEngine event `AGSE_PRERENDER`
+##### IAGSEngine event AGSE_PRERENDER
 
 _(version 21 and later only)_
 
@@ -343,7 +343,7 @@ triggered every frame after the game logic has run but before anything is render
 
 **data value:** _(unused, currently 0)_
 
-##### IAGSEngine event `AGSE_PRESAVEGAME`
+##### IAGSEngine event AGSE_PRESAVEGAME
 
 _(version 24 and later only)_
 
@@ -351,7 +351,7 @@ triggered just before a save game is created. The script engine is still working
 
 **data value:** _(unused, currently 0)_
 
-##### IAGSEngine event `AGSE_POSTRESTOREGAME`
+##### IAGSEngine event AGSE_POSTRESTOREGAME
 
 _(version 24 and later only)_
 
@@ -397,7 +397,7 @@ _![Info icon](images/icon_info.png)_ Each frame (or _game loop_), AGS redraws th
 
 _Added in version: 2_
 
-#### `IAGSEngine.GetSavedData`
+#### IAGSEngine.GetSavedData
 ```
 int GetSavedData (char *buffer, int bufsize);
 ```
@@ -408,7 +408,7 @@ Gets the plugin data that was originally saved with AGS_EditorSaveGame. If your 
 
 _Added in version: 2_
 
-#### `IAGSEngine.GetVirtualScreen`
+#### IAGSEngine.GetVirtualScreen
 ```
 BITMAP * GetVirtualScreen ();
 ```
@@ -420,7 +420,7 @@ This function is only supported if the player is using the DX5 graphics driver.
 _Added in version: 3_
 
 
-#### `IAGSEngine.GetRawBitmapSurface`
+#### IAGSEngine.GetRawBitmapSurface
 ```
 unsigned char ** GetRawBitmapSurface (BITMAP *bmp);
 ```
@@ -441,7 +441,7 @@ _![Warning](images/icon_warn.png)_ This function cannot be used with the real sc
 
 _Added in version: 3_
 
-#### `IAGSEngine.ReleaseBitmapSurface`
+#### IAGSEngine.ReleaseBitmapSurface
 ```
 void ReleaseBitmapSurface (BITMAP *bmp);
 ```
@@ -450,7 +450,7 @@ Releases a bitmap previously locked with `GetRawBitmapSurface`.
 
 _Added in version: 3_
 
-#### `IAGSEngine.GetScreenDimensions`
+#### IAGSEngine.GetScreenDimensions
 ```
 void GetScreenDimensions (int *width, int *height, int *coldepth);
 ```
@@ -461,7 +461,7 @@ Fills in the supplied variables with the current display mode that the engine is
 
 _Added in version: 3_
 
-#### `IAGSEngine.DrawText`
+#### IAGSEngine.DrawText
 ```
 void DrawText (int x, int y, int font, int color, char *text);
 ```
@@ -472,7 +472,7 @@ _![Info icon](images/icon_info.png)_ The `x` and `y` parameters are in actual sc
 
 _Added in version: 3_
 
-#### `IAGSEngine.GetMousePosition`
+#### IAGSEngine.GetMousePosition
 ```
 void GetMousePosition (int *x, int *y);
 ```
@@ -481,7 +481,7 @@ Fills the supplied variables with the current mouse cursor co-ordinates. Note th
 
 _Added in version: 3_
 
-#### `IAGSEngine.GetBitmapDimensions`
+#### IAGSEngine.GetBitmapDimensions
 ```
 void GetBitmapDimensions (BITMAP *bmp, int *width, int *height, int *coldepth);
 ```
@@ -492,7 +492,7 @@ Fills in the supplied integer variables with the properties of the specified bit
 
 _Added in version: 4_
 
-#### `IAGSEngine.GetNumBackgrounds`
+#### IAGSEngine.GetNumBackgrounds
 ```
 int GetNumBackgrounds ();
 ```
@@ -501,7 +501,7 @@ Returns the number of background frames that the current room has (a normal room
 
 _Added in version: 4_
 
-#### `IAGSEngine.GetCurrentBackground`
+#### IAGSEngine.GetCurrentBackground
 ```
 int GetCurrentBackground ();
 ```
@@ -510,7 +510,7 @@ Returns the number of the currently displayed background frame. (0 is the defaul
 
 _Added in version: 4_
 
-#### `IAGSEngine.GetBackgroundScene`
+#### IAGSEngine.GetBackgroundScene
 ```
 BITMAP * GetBackgroundScene (int frame);
 ```
@@ -519,7 +519,7 @@ Returns a reference to the specified background frame (0 is the default frame, 1
 
 _Added in version: 4_
 
-#### `IAGSEngine.GetCurrentRoom`
+#### IAGSEngine.GetCurrentRoom
 ```
 int GetCurrentRoom ();
 ```
@@ -528,7 +528,7 @@ Returns the room number that the game is currently in. 
 
 _Added in version: 4_
 
-#### `IAGSEngine.FRead`
+#### IAGSEngine.FRead
 ```
 int FRead (void *buffer, int length, int handle);
 ```
@@ -537,7 +537,7 @@ Similar to the C function `fread`, this reads `length` bytes of `buffer` from fi
 
 _Added in version: 5_
 
-#### `IAGSEngine.FWrite`
+#### IAGSEngine.FWrite
 ```
 int FWrite (void *buffer, int length, int handle);
 ```
@@ -546,7 +546,7 @@ Similar to the C function `fwrite`, this writes `length` bytes of `buffer` to fi
 
 _Added in version: 5_
 
-#### `IAGSEngine.SetVirtualScreen`
+#### IAGSEngine.SetVirtualScreen
 ```
 void SetVirtualScreen (BITMAP *bmp);
 ```
@@ -555,7 +555,7 @@ Sets `bmp` as the current virtual screen, so that all drawing routines will draw
 
 _Added in version: 5_
 
-#### `IAGSEngine.DrawTextWrapped`
+#### IAGSEngine.DrawTextWrapped
 ```
 void DrawTextWrapped (int x, int y, int width, int font, int color, const char *text);
 ```
@@ -564,7 +564,7 @@ Prints `text` to the current virtual screen at (`x`, `y`), using `width` pixels 
 
 _Added in version: 5_
 
-#### `IAGSEngine.BlitBitmap`
+#### IAGSEngine.BlitBitmap
 ```
 void BlitBitmap (int x, int y, BITMAP *bmp, int masked);
 ```
@@ -575,7 +575,7 @@ If `masked` is 1, then transparent pixels are skipped.
 
 _Added in version: 5_
 
-#### `IAGSEngine.LookupParserWord`
+#### IAGSEngine.LookupParserWord
 ```
 int LookupParserWord (const char *word);
 ```
@@ -585,7 +585,7 @@ Returns -1 if the word was not in the dictionary.   
 
 _Added in version: 5_
 
-#### `IAGSEngine.PollSystem`
+#### IAGSEngine.PollSystem
 ```
 void PollSystem ();
 ```
@@ -598,7 +598,7 @@ _![Info icon](images/icon_info.png)_ AGS is single-threaded; this means that any
 
 _Added in version: 5_
 
-#### `IAGSEngine.GetNumCharacters`
+#### IAGSEngine.GetNumCharacters
 ```
 int GetNumCharacters ();
 ```
@@ -607,7 +607,7 @@ Returns the number of characters in the current game. Valid character ID's range
 
 _Added in version: 6_
 
-#### `IAGSEngine.GetCharacter`
+#### IAGSEngine.GetCharacter
 ```
 AGSCharacter * GetCharacter (int charid);
 ```
@@ -619,7 +619,7 @@ Also, remember that all view numbers stored are **1 less** than the numbers show
 
 _Added in version: 6_
 
-#### `IAGSEngine.GetGameOptions`
+#### IAGSEngine.GetGameOptions
 ```
 AGSGameOptions * GetGameOptions ();
 ```
@@ -630,7 +630,7 @@ _![Info icon](images/icon_info.png)_ One handy member here is the `AGSGameOption
 
 _Added in version: 6_
 
-#### `IAGSEngine.GetPalette`
+#### IAGSEngine.GetPalette
 ```
 AGSColor * GetPalette ();
 ```
@@ -641,7 +641,7 @@ _![Info icon](images/icon_info.png)_ In a game with animating backgrounds, the p
 
 _Added in version: 6_
 
-#### `IAGSEngine.SetPalette`
+#### IAGSEngine.SetPalette
 ```
 void SetPalette (int start, int finish, AGSColor *palette);
 ```
@@ -650,7 +650,7 @@ Sets the current screen palette to `palette`, which must be an array of 256 `AGS
 
 _Added in version: 6_
 
-#### `IAGSEngine.GetPlayerCharacter`
+#### IAGSEngine.GetPlayerCharacter
 ```
 int GetPlayerCharacter ();
 ```
@@ -659,7 +659,7 @@ Returns the number of the current player character.
 
 _Added in version: 7_
 
-#### `IAGSEngine.GetNumObjects`
+#### IAGSEngine.GetNumObjects
 ```
 int GetNumObjects ();
 ```
@@ -668,7 +668,7 @@ Returns the number of objects in the current room.
 
 _Added in version: 7_
 
-#### `IAGSEngine.GetObject`
+#### IAGSEngine.GetObject
 ```
 AGSObject * GetObject (int number);
 ```
@@ -679,7 +679,7 @@ _![Warning](images/icon_warn.png)_ Unlike the character structs, object state po
 
 _Added in version: 7_
 
-#### `IAGSEngine.RoomToViewport`
+#### IAGSEngine.RoomToViewport
 ```
 void RoomToViewport (int *x, int *y);
 ```
@@ -692,7 +692,7 @@ _![Info icon](images/icon_info.png)_ You should check the resulting co-ordinates
 
 _Added in version: 7_
 
-#### `IAGSEngine.ViewportToRoom`
+#### IAGSEngine.ViewportToRoom
 ```
 void ViewportToRoom (int *x, int *y);
 ```
@@ -703,7 +703,7 @@ When you call this function, the variables you pass will be converted to hold th
 
 _Added in version: 7_
 
-#### `IAGSEngine.GetSpriteGraphic`
+#### IAGSEngine.GetSpriteGraphic
 ```
 BITMAP * GetSpriteGraphic (int slot);
 ```
@@ -716,7 +716,7 @@ _![Warning](images/icon_warn.png)_ The AGS Sprite Cache may destroy any sprite f
 
 _Added in version: 7_
 
-#### `IAGSEngine.CreateBlankBitmap`
+#### IAGSEngine.CreateBlankBitmap
 ```
 BITMAP * CreateBlankBitmap (int width, int height, int coldepth);
 ```
@@ -731,7 +731,7 @@ _![Warning](images/icon_warn.png)_ The bitmap will remain in memory until you ex
 
  _Added in version: 7_
 
-#### `IAGSEngine.FreeBitmap`
+#### IAGSEngine.FreeBitmap
 ```
 void FreeBitmap (BITMAP *bmp);
 ```
@@ -742,7 +742,7 @@ _![Warning](images/icon_warn.png)_ **Only** use this command with bitmaps you cr
 
  _Added in version: 7_
 
-#### `IAGSEngine.GetRoomMask`
+#### IAGSEngine.GetRoomMask
 ```
 BITMAP * GetRoomMask (int which);
 ```
@@ -763,7 +763,7 @@ _![Warning](images/icon_warn.png)_ The area masks are re-allocated when the play
 
 _Added in version: 8   (MASK_REGIONS requires version 11)._
 
-#### `IAGSEngine.GetViewFrame`
+#### IAGSEngine.GetViewFrame
 ```
 AGSViewFrame* GetViewFrame (int view, int loop, int frame);
 ```
@@ -779,7 +779,7 @@ If `view` or `loop` are invalid, AGS will exit with an error message.
 
 _Added in version: 9_
 
-#### `IAGSEngine.GetWalkbehindBaseline`
+#### IAGSEngine.GetWalkbehindBaseline
 ```
 int GetWalkbehindBaseline (int area);
 ```
@@ -788,7 +788,7 @@ Returns the baseline for walk-behind area number `area`. This is always in chara
 
 _Added in version: 9_
 
-#### `IAGSEngine.GetScriptFunctionAddress`
+#### IAGSEngine.GetScriptFunctionAddress
 ```
 void* GetScriptFunctionAddress (const char *funcName);
 ```
@@ -803,7 +803,7 @@ _![Warning](images/icon_warn.png)_ If you specify the name of an actual function
 
 _Added in version: 9_
 
-#### `IAGSEngine.GetBitmapTransparentColor`
+#### IAGSEngine.GetBitmapTransparentColor
 ```
 int GetBitmapTransparentColor (BITMAP *bmp);
 ```
@@ -812,7 +812,7 @@ Returns the pixel color which is skipped when rendering the bitmap. This is 0 in
 
 _Added in version: 9_
 
-#### `IAGSEngine.GetAreaScaling`
+#### IAGSEngine.GetAreaScaling
 ```
 int GetAreaScaling (int x, int y);
 ```
@@ -821,7 +821,7 @@ Returns the walkable area scaling level at the specified co-ordinates. This rang
 
 _Added in version: 9_
 
-#### `IAGSEngine.IsGamePaused`
+#### IAGSEngine.IsGamePaused
 ```
 int IsGamePaused ();
 ```
@@ -830,7 +830,7 @@ Equivalent to the text script `IsGamePaused` function. This returns non-zero if 
 
 _Added in version: 9_
 
-#### `IAGSEngine.GetRawPixelColor`
+#### IAGSEngine.GetRawPixelColor
 ```
 int GetRawPixelColor (int color);
 ```
@@ -845,7 +845,7 @@ If the user is running 15-bit color, the value is converted to an appropriate 15
 
 _Added in version: 10_
 
-#### `IAGSEngine.GetSpriteWidth`
+#### IAGSEngine.GetSpriteWidth
 ```
 int GetSpriteWidth (int slot);
 ```
@@ -856,7 +856,7 @@ This is faster than using `GetBitmapDimensions` with `GetSpriteGraphic`, since t
 
 _Added in version: 11_
 
-#### `IAGSEngine.GetSpriteHeight`
+#### IAGSEngine.GetSpriteHeight
 ```
 int GetSpriteHeight (int slot);
 ```
@@ -867,7 +867,7 @@ This is faster than using `GetBitmapDimensions` with `GetSpriteGraphic`, since t
 
 _Added in version: 11_
 
-#### `IAGSEngine.GetTextExtent`
+#### IAGSEngine.GetTextExtent
 ```
 void GetTextExtent (int font, const char *text, int *width, int *height);
 ```
@@ -878,7 +878,7 @@ Calculates the width and height, in pixels, of displaying `text` in game font nu
 
 _Added in version: 11_
 
-#### `IAGSEngine.PrintDebugConsole`
+#### IAGSEngine.PrintDebugConsole
 ```
 void PrintDebugConsole (const char *message);
 ```
@@ -889,7 +889,7 @@ The debug console is designed to help the user find problems by tracing through 
 
 _Added in version: 11_
 
-#### `IAGSEngine.IsChannelPlaying`
+#### IAGSEngine.IsChannelPlaying
 ```
 int IsChannelPlaying (int channel);
 ```
@@ -898,7 +898,7 @@ Equivalent to the text script function of the same name, returns 1 if the channe
 
 _Added in version: 11_
 
-#### `IAGSEngine.PlaySoundChannel`
+#### IAGSEngine.PlaySoundChannel
 ```
 void PlaySoundChannel (int channel, int soundType, int volume, int loop, const char *filename);
 ```
@@ -923,7 +923,7 @@ _![Warning](images/icon_warn.png)_ Only one MIDI file, and one MOD/XM file can b
 
 _Added in version: 11_
 
-#### `IAGSEngine.MarkRegionDirty`
+#### IAGSEngine.MarkRegionDirty
 ```
 void MarkRegionDirty(int left, int top, int right, int bottom);
 ```
@@ -934,7 +934,7 @@ _![Info icon](images/icon_info.png)_ All engine API functions such as `DrawText`
 
 _Added in version: 12_
 
-#### `IAGSEngine.GetMouseCursor`
+#### IAGSEngine.GetMouseCursor
 ```
 AGSMouseCursor* GetMouseCursor(int cursor);
 ```
@@ -945,7 +945,7 @@ _![Warning](images/icon_warn.png)_ The returned struct is read-only. You should 
 
 _Added in version: 12_
 
-#### `IAGSEngine.GetRawColorComponents`
+#### IAGSEngine.GetRawColorComponents
 ```
 void GetRawColorComponents(int coldepth, int color,int *red, int *green, int *blue, int *alpha);
 ```
@@ -956,7 +956,7 @@ You can pass any of the pointers as NULL if you don't want to know that value. T
 
 _Added in version: 12_
 
-#### `IAGSEngine.MakeRawColorPixel`
+#### IAGSEngine.MakeRawColorPixel
 ```
 int MakeRawColorPixel(int coldepth, int red, int green, int blue, int alpha);
 ```
@@ -967,7 +967,7 @@ The `alpha` value is only meaningful for 32-bit color alpha channel bitmaps, and
 
 _Added in version: 12_
 
-#### `IAGSEngine.GetFontType`
+#### IAGSEngine.GetFontType
 ```
 int GetFontType(int fontNum);
 ```
@@ -982,7 +982,7 @@ Returns what type of font `fontNum` is, as one of the following values:
 
  _Added in version: 12_
 
-#### `IAGSEngine.CreateDynamicSprite`
+#### IAGSEngine.CreateDynamicSprite
 ```
 int CreateDynamicSprite(int coldepth, int width, int height);
 ```
@@ -995,7 +995,7 @@ Returns 0 if the sprite could not be created, or the sprite slot number on succe
 
 _Added in version: 12_
 
-### `IAGSEngine.DeleteDynamicSprite`
+### IAGSEngine.DeleteDynamicSprite
 ```
 void DeleteDynamicSprite(int slot);
 ```
@@ -1004,7 +1004,7 @@ Removes the previously created dynamic sprite from memory. It can no longer be u
 
 _Added in version: 12_
 
-#### `IAGSEngine.IsSpriteAlphaBlended`
+#### IAGSEngine.IsSpriteAlphaBlended
 ```
 int IsSpriteAlphaBlended(int slot);
 ```
@@ -1017,7 +1017,7 @@ Only 32-bit bitmaps can have an alpha channel. For all other color depths, this 
 
 _Added in version: 12_
 
-#### `IAGSEngine.UnrequestEventHook`
+#### IAGSEngine.UnrequestEventHook
 ```
 void UnrequestEventHook(int event)
 ```
@@ -1028,7 +1028,7 @@ This is useful to call for performance reasons if you no longer require notifica
 
 _Added in version: 13_
 
-#### `IAGSEngine.BlitSpriteTranslucent`
+#### IAGSEngine.BlitSpriteTranslucent
 ```
 void BlitSpriteTranslucent(int x, int y, BITMAP *spr, int trans);
 ```
@@ -1039,7 +1039,7 @@ Draws graphic `spr` to the current virtual screen at (`x`,`y`), with translucenc
 
 _Added in version: 13_
 
-#### `IAGSEngine.BlitSpriteRotated`
+#### IAGSEngine.BlitSpriteRotated
 ```
 void BlitSpriteRotated(int x, int y, BITMAP *spr, int angle);
 ```
@@ -1050,7 +1050,7 @@ The sprite is positioned with its upper-left corner at (`x`,`y`), then it is rot
 
 _Added in version: 13_
 
-#### `IAGSEngine.GetDirectSound`
+#### IAGSEngine.GetDirectSound
 ```
 LPDIRECTSOUND GetDirectSound();
 ```
@@ -1061,7 +1061,7 @@ This function returns `NULL` if sound is disabled, or if the player is using the
 
 _Added in version: 14_
 
-#### `IAGSEngine.DisableSound`
+#### IAGSEngine.DisableSound
 ```
 void DisableSound();
 ```
@@ -1070,7 +1070,7 @@ Disables AGS's sound system completely. Use this if you want your plugin to take
 
 _Added in version: 14_
 
-#### `IAGSEngine.CanRunScriptFunctionNow`
+#### IAGSEngine.CanRunScriptFunctionNow
 ```
 int CanRunScriptFunctionNow();
 ```
@@ -1079,7 +1079,7 @@ Determines whether a game script function can be run now. Returns 0 if there is 
 
 _Added in version: 14_
 
-#### `IAGSEngine.CallGameScriptFunction`
+#### IAGSEngine.CallGameScriptFunction
 ```
 int CallGameScriptFunction(const char *name, int globalScript, int numArgs, int arg1 = 0, int arg2 = 0, int arg3 = 0);
 ```
@@ -1092,7 +1092,7 @@ This function returns 0 on success, and a non-zero value otherwise. This will al
 
 _Added in version: 14_
 
-#### `IAGSEngine.QueueGameScriptFunction`
+#### IAGSEngine.QueueGameScriptFunction
 ```
 void QueueGameScriptFunction(const char *name, int globalScript, int numArgs, int arg1 = 0, int arg2 = 0);
 ```
@@ -1105,7 +1105,7 @@ If no scripts are currently running, the requested script will be run straight a
 
 _Added in version: 15_
 
-#### `IAGSEngine.NotifySpriteUpdated`
+#### IAGSEngine.NotifySpriteUpdated
 ```
 void NotifySpriteUpdated(int slot);
 ```
@@ -1114,7 +1114,7 @@ Notifies the engine that the specified sprite has been updated by the plugin. Yo
 
 _Added in version: 15_
 
-#### `IAGSEngine.SetSpriteAlphaBlended`
+#### IAGSEngine.SetSpriteAlphaBlended
 ```
 void SetSpriteAlphaBlended(int slot, int isAlphaBlended);
 ```
@@ -1125,12 +1125,12 @@ _![Warning](images/icon_warn.png)_ This function should only be used with 32-bit
 
 _Added in version: 15_
 
-#### `IAGSEngine.RegisterManagedObject`
+#### IAGSEngine.RegisterManagedObject
 ```
 int RegisterManagedObject(const void *object, IAGSScriptManagedObject *callback);
 ```
 
-Registers a new managed object with the script engine. `object` points to the actual object itself, and `callback` points to the class implementing the IAGSScriptManagedObject interface, which will be called to perform operations on the object.
+Registers a new managed object with the script engine. `object` points to the actual object itself, and `callback` points to the class implementing the `IAGSScriptManagedObject` interface, which will be called to perform operations on the object.
 
 `callback` and `object` can, but do not have to, point to the same thing (ie. it is possible to have the actual object implement the interface; but if you do so, beware that you should not expose any normal variables from the class due to the vtable occupying the first part of the memory).
 
@@ -1142,7 +1142,7 @@ From engine interface version 16 and later, this function returns the managed po
 
 _Added in version: 15_
 
-#### `IAGSEngine.AddManagedObjectReader`
+#### IAGSEngine.AddManagedObjectReader
 ```
 void AddManagedObjectReader(const char *typeName, IAGSManagedObjectReader *reader);
 ```
@@ -1155,7 +1155,7 @@ _![Warning](images/icon_warn.png)_ AGS only keeps a pointer to `typeName` and do
 
 _Added in version: 15_
 
-#### `IAGSEngine.RegisterUnserializedObject`
+#### IAGSEngine.RegisterUnserializedObject
 ```
 void RegisterUnserializedObject(int key, const void *object, IAGSScriptManagedObject *callback);
 ```
@@ -1166,7 +1166,7 @@ The `key` parameter is the object's key, supplied to the `ObjectReader`, which a
 
 _Added in version: 15_
 
-#### `IAGSEngine.GetManagedObjectKeyByAddress`
+#### IAGSEngine.GetManagedObjectKeyByAddress
 ```
 int GetManagedObjectKeyByAddress(const char *address);
 ```
@@ -1179,7 +1179,7 @@ This function is quite slow so you should avoid using it wherever possible.
 
 _Added in version: 16_
 
-#### `IAGSEngine.GetManagedObjectAddressByKey`
+#### IAGSEngine.GetManagedObjectAddressByKey
 ```
 void* GetManagedObjectAddressByKey(int key);
 ```
@@ -1190,7 +1190,7 @@ Returns `NULL` if the key is invalid.
 
 _Added in version: 16_
 
-#### `IAGSEngine.CreateScriptString`
+#### IAGSEngine.CreateScriptString
 ```
 const char * CreateScriptString(const char *fromText);
 ```
@@ -1201,7 +1201,7 @@ The new string becomes part of the AGS Managed Object Pool and will be freed aut
 
 _Added in version: 17_
 
-#### `IAGSEngine.IncrementManagedObjectRefCount`
+#### IAGSEngine.IncrementManagedObjectRefCount
 ```
 int IncrementManagedObjectRefCount(const char *address);
 ```
@@ -1214,7 +1214,7 @@ _![Warning](images/icon_warn.png)_ Be **very careful** when using this function.
 
 _Added in version: 18_
 
-#### `IAGSEngine.DecrementManagedObjectRefCount`
+#### IAGSEngine.DecrementManagedObjectRefCount
 ```
 int DecrementManagedObjectRefCount(const char *address);
 ```
@@ -1227,7 +1227,7 @@ _![Warning](images/icon_warn.png)_ Be **very careful** when using this function.
 
 _Added in version: 18_
 
-#### `IAGSEngine.SetMousePosition`
+#### IAGSEngine.SetMousePosition
 ```
 void SetMousePosition(int x, int y);
 ```
@@ -1236,7 +1236,7 @@ Changes the mouse cursor position to (x,y). As with _GetMousePosition_, these co
 
 _Added in version: 18_
 
-#### `IAGSEngine.SimulateMouseClick`
+#### IAGSEngine.SimulateMouseClick
 ```
 void SimulateMouseClick(int button);
 ```
@@ -1245,7 +1245,7 @@ Simulates the mouse being clicked by the player. `button` is which mouse button 
 
 _Added in version: 18_
 
-#### `IAGSEngine.GetMovementPathWaypointCount`
+#### IAGSEngine.GetMovementPathWaypointCount
 ```
 int GetMovementPathWaypointCount(int pathId);
 ```
@@ -1256,7 +1256,7 @@ The `GetMovementPath` family of functions allow you to access the paths for movi
 
 _Added in version: 18_
 
-#### `IAGSEngine.GetMovementPathLastWaypoint`
+#### IAGSEngine.GetMovementPathLastWaypoint
 ```
 int GetMovementPathLastWaypoint(int pathId);
 ```
@@ -1265,7 +1265,7 @@ Gets the last waypoint that was passed on this movement path. The starting point
 
 _Added in version: 18_
 
-#### `IAGSEngine.GetMovementPathWaypointLocation`
+#### IAGSEngine.GetMovementPathWaypointLocation
 ```
 void GetMovementPathWaypointLocation(int32 pathId, int32 waypoint, int32 *x, int32 *y);
 ```
@@ -1276,7 +1276,7 @@ _![Warning](images/icon_warn.png)_ No error checking is done on these functions 
 
 _Added in version: 18_
 
-#### `IAGSEngine.GetMovementPathWaypointSpeed`
+#### IAGSEngine.GetMovementPathWaypointSpeed
 ```
 void GetMovementPathWaypointSpeed(int32 pathId, int32 waypoint, int32 *xSpeed, int32 *ySpeed);
 ```
@@ -1285,7 +1285,7 @@ Gets the X and Y speed at which the character/object will move from the specifie
 
 _Added in version: 18_
 
-#### `IAGSEngine.IsRunningUnderDebugger`
+#### IAGSEngine.IsRunningUnderDebugger
 ```
 int IsRunningUnderDebugger();
 ```
@@ -1294,7 +1294,7 @@ Returns whether the game is currently running under the AGS Editor's debugger. I
 
 _Added in version: 22_
 
-#### `IAGSEngine.BreakIntoDebugger`
+#### IAGSEngine.BreakIntoDebugger
 ```
 void BreakIntoDebugger();
 ```
@@ -1303,7 +1303,7 @@ Tells AGS to stop and break out into the editor's debugger. This will not happen
 
 _Added in version: 22_
 
-#### `IAGSEngine.GetPathToFileInCompiledFolder`
+#### IAGSEngine.GetPathToFileInCompiledFolder
 ```
 void GetPathToFileInCompiledFolder(const char *fileName, char *buffer)
 ```
@@ -1317,7 +1317,7 @@ You should allocate `buffer` as `MAX_PATH` bytes long.
 
 _Added in version: 22_
 
-#### `IAGSEngine.GetDirectInputKeyboard`
+#### IAGSEngine.GetDirectInputKeyboard
 ```
 LPDIRECTINPUTDEVICE GetDirectInputKeyboard();
 ```
@@ -1326,7 +1326,7 @@ Returns a pointer to the `IDirectInputDevice` interface that AGS is using to con
 
 _Added in version: 23_
 
-#### `IAGSEngine.GetDirectInputMouse`
+#### IAGSEngine.GetDirectInputMouse
 ```
 LPDIRECTINPUTDEVICE GetDirectInputMouse();
 ```
@@ -1335,7 +1335,7 @@ Returns a pointer to the `IDirectInputDevice` interface that AGS is using to con
 
 _Added in version: 23_
 
-#### `IAGSEngine.ReplaceFontRenderer`
+#### IAGSEngine.ReplaceFontRenderer
 ```
 IAGSFontRenderer* ReplaceFontRenderer(int fontNumber, IAGSFontRenderer* newRenderer)
 ```
@@ -1350,7 +1350,7 @@ _Added in version: 23_
 
 The `IAGSScriptManagedObject` interface is implemented for objects which the plugin wants to return to the game script. It allows a callback mechanism for AGS to request various operations on the object. You must implement the following:
 
-#### `IAGSScriptManagedObject.Dispose`
+#### IAGSScriptManagedObject.Dispose
 ```
 int Dispose(const char *address, bool force);
 ```
@@ -1365,7 +1365,7 @@ You must return 1 from this function if you destroy the object at `address` - in
 
 _Added in version: 15_
 
-#### `IAGSScriptManagedObject.GetType`
+#### IAGSScriptManagedObject.GetType
 ```
 const char* GetType();
 ```
@@ -1374,7 +1374,7 @@ Returns the type name of the object. This must match the type name supplied to `
 
 _Added in version: 15_
 
-#### `IAGSScriptManagedObject.Serialize`
+#### IAGSScriptManagedObject.Serialize
 ```
 int Serialize(const char *address, char *buffer, int bufsize);
 ```
@@ -1385,11 +1385,11 @@ You must return the number of bytes written to the buffer.
 
 _Added in version: 15_
 
-### `IAGSManagedObjectReader` interface
+### IAGSManagedObjectReader interface
 
 The IAGSManagedObjectReader interface is implemented for each managed object type, to enable the objects to be reconstructed after being read back from disk. You must implement the following:
 
-#### `IAGSManagedObjectReader.Unserialize`
+#### IAGSManagedObjectReader.Unserialize
 ```
 void Unserialize(int key, const char *serializedData, int dataSize);
 ```
@@ -1400,11 +1400,11 @@ You should re-construct the object from the serialized data, and then re-registe
 
 _Added in version: 15_
 
-### `IAGSFontRenderer` interface
+### IAGSFontRenderer interface
 
 The `IAGSFontRenderer` interface can be implemented to override AGS's built-in text rendering with a custom system. The methods on the interface are as follows:
 
-#### `IAGSFontRenderer.LoadFromDisk`
+#### IAGSFontRenderer.LoadFromDisk
 ```
 bool LoadFromDisk(int fontNumber, int fontSize);
 ```
@@ -1413,7 +1413,7 @@ Used internally by AGS to load the font from disk. However, you currently cannot
 
 _Added in version: 23_
 
-#### `IAGSFontRenderer.FreeMemory`
+#### IAGSFontRenderer.FreeMemory
 ```
 void FreeMemory(int fontNumber);
 ```
@@ -1422,7 +1422,7 @@ Called when the engine is shutting down, to free the memory associated with this
 
 _Added in version: 23_
 
-#### `IAGSFontRenderer.SupportsExtendedCharacters`
+#### IAGSFontRenderer.SupportsExtendedCharacters
 ```
 bool SupportsExtendedCharacters(int fontNumber);
 ```
@@ -1433,7 +1433,7 @@ _![Warning](images/icon_warn.png)_ If you return false from this function, AGS w
 
 _Added in version: 23_
 
-#### `IAGSFontRenderer.GetTextWidth`
+#### IAGSFontRenderer.GetTextWidth
 ```
 int GetTextWidth(const char *text, int fontNumber);
 ```
@@ -1442,7 +1442,7 @@ AGS will call this method to find out the width, in pixels, of drawing the speci
 
 _Added in version: 23_
 
-#### `IAGSFontRenderer.GetTextHeight`
+#### IAGSFontRenderer.GetTextHeight
 ```
 int GetTextHeight(const char *text, int fontNumber);
 ```
@@ -1451,7 +1451,7 @@ AGS will call this method to find out the height, in pixels, of drawing the spec
 
 _Added in version: 23_
 
-#### `IAGSFontRenderer.RenderText`
+#### IAGSFontRenderer.RenderText
 ```
 void RenderText(const char *text, int fontNumber, BITMAP *destination, int x, int y, int color);
 ```
@@ -1462,7 +1462,7 @@ AGS calls this method to render text to a bitmap. `destination` is the bitmap su
 
 _Added in version: 23_
 
-#### `IAGSFontRenderer.AdjustYCoordinateForFont`
+#### IAGSFontRenderer.AdjustYCoordinateForFont
 ```
 void AdjustYCoordinateForFont(int *ycoord, int fontNumber);
 ```
@@ -1471,7 +1471,7 @@ This method is a workaround introduced for TTF fonts, which allows you to adjust
 
 _Added in version: 23_
 
-#### `IAGSFontRenderer.EnsureTextValidForFont`
+#### IAGSFontRenderer.EnsureTextValidForFont
 ```
 void EnsureTextValidForFont(char *text, int fontNumber);
 ```

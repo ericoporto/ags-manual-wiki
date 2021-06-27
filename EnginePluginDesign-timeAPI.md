@@ -2,7 +2,7 @@
 
 Since the AGS Editor is currently windows only, you can use a macro to not include the design-time parts when building the plugin for other platforms.
 
-### `DllMain`
+### DllMain
 
 Your DLL should have the following entry points:
 
@@ -12,7 +12,7 @@ This will get called once when the editor first starts up, and once when it fina
 
 ### Design-time events
 
-#### `AGS_GetPluginName`
+#### AGS_GetPluginName
 ```
 DLLEXPORT LPCSTR AGS_GetPluginName ();
 ```
@@ -21,7 +21,7 @@ Called by the editor to retrieve a user-friendly name for the plugin. This is th
 
 Normally, you will implement this as a simple one-line function that returns a static string with the plugin description.
 
-#### `AGS_EditorStartup`
+#### AGS_EditorStartup
 ```
 DLLEXPORT int AGS_EditorStartup (IAGSEditor *lpEditor);
 ```
@@ -34,14 +34,14 @@ In particular, this function should register any additions to the script header 
 
 You should return 0 to indicate success; any other value indicates that a problem occurred, and the editor will not attempt any further communication with the plugin unless the user tries to start it again.
 
-#### `AGS_EditorShutdown`
+#### AGS_EditorShutdown
 ```
 DLLEXPORT void AGS_EditorShutdown ();
 ```
 
 Called by the editor when the user elects to remove the plugin from their game. The plugin should un-register anything that it registered at startup, since if the user later decides to add the plugin again, the Startup function will be run again.
 
-#### `AGS_EditorProperties`
+#### AGS_EditorProperties
 ```
 DLLEXPORT void AGS_EditorProperties (HWND parent);
 ```
@@ -52,7 +52,7 @@ Called by the editor when the user highlights the plugin and clicks the Properti
 
 The parameter gives you the parent window handle you should use if you want to pop up a dialog. You should make any dialogs modal so that this function does not return until they are dismissed.
 
-#### `AGS_EditorSaveGame`
+#### AGS_EditorSaveGame
 ```
 DLLEXPORT int AGS_EditorSaveGame (char *buffer, int bufsize);
 ```
@@ -69,7 +69,7 @@ The current version of AGS gives you a 5120 byte buffer, but future versions may
 
 You will probably only need this function if you have some options in the Properties that the user can set, otherwise there's no need to use it.
 
-#### `AGS_EditorLoadGame`
+#### AGS_EditorLoadGame
 ```
 DLLEXPORT void AGS_EditorLoadGame (char *buffer, int bufsize);
 ```
@@ -80,7 +80,7 @@ Called by the editor when a game is loaded from disk. This will only be called i
 
 `buffer` is a byte array of size `bufsize`, which contains any data you wrote out in a previous session with `AGS_EditorSaveGame`. Note that the buffer is not persistent - when your function returns, the buffer is freed, so you should copy any important data you need to elsewhere. 
 
-####  `AGS_PluginV2`
+#### AGS_PluginV2
 ```
 DLLEXPORT int AGS_PluginV2 ();
 ```
@@ -91,7 +91,7 @@ This entry point is never called by AGS, but it must be present and exported fro
 
 This interface is provided to the plugin as the way of calling back to the editor. It provides these members:
 
-#### `IAGSEditor.version`
+#### IAGSEditor.version
 ```
 int version;
 ```
@@ -100,7 +100,7 @@ Specifies the interface version. You should check this to determine what version
 
 The current version number for the latest version of AGS is **1**.
 
-#### `IAGSEditor.GetEditorHandle`
+#### IAGSEditor.GetEditorHandle
 ```
 HWND GetEditorHandle ();
 ```
@@ -109,7 +109,7 @@ Returns the window handle to the AGS Editor's main frame. This might be useful i
 
 _Added in version: 1_
 
-#### `IAGSEditor.GetWindowHandle`
+#### IAGSEditor.GetWindowHandle
 ```
 HWND GetWindowHandle ();
 ```
@@ -118,7 +118,7 @@ Returns the window handle to the current active window. If you want to pop up a 
 
 _Added in version: 1_
 
-#### `IAGSEditor.RegisterScriptHeader`
+#### IAGSEditor.RegisterScriptHeader
 ```
 void RegisterScriptHeader (const char * header);
 ```
@@ -135,7 +135,7 @@ Note that the editor only keeps a reference to this string rather than a copy, s
 
 _Added in version: 1_
 
-#### `IAGSEditor.UnregisterScriptHeader`
+#### IAGSEditor.UnregisterScriptHeader
 ```
 void UnregisterScriptHeader (const char *header);
 ```
