@@ -19,9 +19,11 @@
 - [Sprite Manager](EditorSprite)
 - [View Editor](EditorView)
 - [Inventory Items Editor](EditorInventoryItems)
+- [Music and sound](MusicAndSound)
 - [Script Modules](ScriptModules)
-- [Other Features](OtherFeatures)
 - [System limits](SystemLimits)
+- [Plugins](Plugins)
+- [Other Features](OtherFeatures)
 
 ## Engine
 

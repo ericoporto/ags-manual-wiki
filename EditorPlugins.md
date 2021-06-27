@@ -1,4 +1,4 @@
-## AGS Editor Plugins
+## Editor Plugins
 
 AGS allows external utilities to enhance the Editor's functionality by the use of .NET plugins. These plugins can be written in any .NET language including C#, VB.NET, Visual C++ .NET and more.
 
