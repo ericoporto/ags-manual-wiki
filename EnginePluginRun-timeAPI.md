@@ -160,6 +160,8 @@ _Added in version: 1_
 HWND GetWindowHandle ();
 ```
 
+_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+
 Returns the window handle of the main game window.
 
 _Added in version: 1_
@@ -184,6 +186,8 @@ _Added in version: 19_
 LPDIRECTDRAW2 GetDirectDraw2 ();
 ```
 
+_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+
 Returns the main IDirectDraw2 interface that the game is using.
 
 This function is only supported if the player is using the DX5 graphics driver.
@@ -194,6 +198,8 @@ _Added in version: 1_
 ```
 LPDIRECTDRAWSURFACE2 GetBitmapSurface (BITMAP *bmp);
 ```
+
+_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
 
 Returns the IDirectDrawSurface2 interface associated with the specified bitmap.
 
@@ -1055,6 +1061,8 @@ _Added in version: 13_
 LPDIRECTSOUND GetDirectSound();
 ```
 
+_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+
 Returns the main `IDirectSound` interface that the engine is using. This command does **not** `AddRef` the pointer it returns, so you don't need to Release it.
 
 This function returns `NULL` if sound is disabled, or if the player is using the WaveOut driver rather than the DirectSound one.
@@ -1322,6 +1330,8 @@ _Added in version: 22_
 LPDIRECTINPUTDEVICE GetDirectInputKeyboard();
 ```
 
+_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+
 Returns a pointer to the `IDirectInputDevice` interface that AGS is using to control the keyboard. This command does **not** `AddRef` the pointer it returns, so you don't need to Release it.
 
 _Added in version: 23_
@@ -1330,6 +1340,8 @@ _Added in version: 23_
 ```
 LPDIRECTINPUTDEVICE GetDirectInputMouse();
 ```
+
+_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
 
 Returns a pointer to the `IDirectInputDevice` interface that AGS is using to control the mouse. This command does **not** `AddRef` the pointer it returns, so you don't need to Release it.
 
