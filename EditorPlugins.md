@@ -24,7 +24,7 @@ The following tutorial will walk you through creating a plugin with Visual C#. I
 
 Start up Visual Studio, and select to create a new project (File, New, Project). In the "New project" window which appears, make sure "Visual C#" is selected in the left hand list, and then choose "Class Library" on the right. Type a name that starts with *AGS.Plugin*. for example I'm going to use `AGS.Plugin.TestPlugin`:
 
-IMAGE 1
+_![Creating a new Class Library project](images/netplug1.png)_
 
 Now, we need to add a class that will be created when the plugin is loaded. Choose "Add Class" from the Project menu, and give it a name. This will be the main plugin class, so I'm going to call mine "PluginMain".
 
@@ -32,13 +32,13 @@ Next, we need access to the AGS libraries. Choose "Add Reference" from the Proje
 
 Visual Studio has given us a pretty bare class file. We need to make a couple of adjustments. First, add "public" to the class definition so that AGS can find it. Second, we need to tell AGS that this is our main class. We do this by making it implement the *IAGSEditorPlugin* interface, so add that to the class definition too:
 
-IMAGE 2
+_![New class, now public and implementing the interface](images/netplug2.png)_
 
 There's one other requirement for our main class. We need to add a *RequiredAGSVersion* attribute to the class, defining what the minimum version of AGS is that our plugin needs. You can just set it to "3.0.0.0" if your plugin works with the basic editor functionality, but if you use any new features added in later versions then you'll need to change the version number to match.
 
 The next thing we need is a constructor so that our class can be created. AGS requires it to have one parameter, of the type *IAGSEditor*. This will be the main object that we will use to communicate with the editor, so we'll save a copy in a member variable for future reference:
 
-IMAGE 3
+_![Added attribute and basic plumbing](images/netplug3.png)_
 
 ### Components
 
