@@ -1358,6 +1358,41 @@ This allows you to override AGS's built-in font rendering with your own system. 
 
 _Added in version: 23_
 
+#### IAGSEngine.GetRenderStageDesc
+```
+void GetRenderStageDesc(AGSRenderStageDesc* desc)
+```
+
+Fills the provided `AGSRenderStageDesc` struct with the current render stage description. `AGSRenderStageDesc` is declared as:
+
+```
+struct AGSRenderMatrixes {
+  float WorldMatrix[16];
+  float ViewMatrix[16];
+  float ProjMatrix[16];
+};
+
+// Render stage description
+struct AGSRenderStageDesc {
+  int Version;
+  AGSRenderMatrixes Matrixes;
+};
+```
+
+AGSRenderStageDesc's first field is `Version`, which must be filled by the plugin itself *before* calling this function. This field's value corresponds to the required engine's interface and tells which struct's fields should be assigned by the engine. It should be 25 or higher for this function to have any effect at all.
+
+As of interface version 25 the only other meaningful field in `AGSRenderStageDesc` is `Matrixes` of type `AGSRenderMatrixes`. This is another struct that contains three arrays, 16 floating point values each. They represent three main transformation matrixes for the current render stage: World, View and Projection. The matrix format will correspond to the *internal format of the current renderer* that engine runs (OpenGL, Direct3D, and so on). Thus, if your plugin works with the same renderer as the engine it may safely use these matrixes with that renderer's functions.
+
+_![Info icon](images/icon_info.png)_ You may know which renderer is run by the engine if you call [GetGraphicsDriverID](#iagsenginegetgraphicsdriverid).
+
+_![Info icon](images/icon_info.png)_ Software renderer will always fill these matrixes with zeroes.
+
+_![Info icon](images/icon_info.png)_ This function is only guaranteed to return useful data if you call it in one of the [render stage events](#iagsenginerequesteventhook).
+
+_![Warning](images/icon_warn.png)_ Plugin *must* fill the struct's Version field before passing it into the function.
+
+_Added in version: 25_
+
 ### IAGSScriptManagedObject interface
 
 The `IAGSScriptManagedObject` interface is implemented for objects which the plugin wants to return to the game script. It allows a callback mechanism for AGS to request various operations on the object. You must implement the following:
