@@ -143,11 +143,11 @@ _![Warning](images/icon_warn.png)_ If you want to override built-in functions, m
 AGS 2.7 and later support object-based scripting. In order to export an object from your plugin, you'll need to include its struct definition in the RegisterScriptHeader editor call. Then, you export functions as follows:
 
 ```
-int PluginObject_DoSomething(PluginObject *obj, int a) {  
-  return a + 10;  
-}  
-...  
-RegisterScriptFunction("PluginObject::DoSomething^1",  
+int PluginObject_DoSomething(PluginObject *obj, int a) {
+  return a + 10;
+}
+...
+RegisterScriptFunction("PluginObject::DoSomething^1",
                        PluginObject_DoSomething);
 ```
 
