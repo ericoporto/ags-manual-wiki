@@ -7,13 +7,13 @@
 DLLEXPORT void AGS_EngineStartup (IAGSEngine *lpGame);
 ```
 
-Called by the game engine when the game is loading. This function is called once AGS has loaded everything it needs to into memory, but before it loads the global script.  
+Called by the game engine when the game is loading. This function is called once AGS has loaded everything it needs to into memory, but before it loads the global script.
 
 Your plugin should use this opportunity to register any text script functions that it provides, and to request hooks for any game events that it wants to handle.
 
 Once this function completes, the plugin will only regain program control when one of its text script functions is called, or when one of the hooks it registered is executed.
 
-_![Info icon](images/icon_info.png)_ This function is called before the graphics subsystem is started, so functions like GetScreenDimensions and GetGraphicsDriverID will not work if called from this event. 
+_![Info icon](images/icon_info.png)_ This function is called before the graphics subsystem is started, so functions like GetScreenDimensions and GetGraphicsDriverID will not work if called from this event.
 
 #### AGS_EngineShutdown
 ```
@@ -68,7 +68,7 @@ If `driverID` is "D3D9", then the `data` parameter is a pointer to the `D3DPRESE
 
 If `driverID` is "DX5", then the `data` parameter will currently be passed as `NULL`.
 
-_![Info icon](images/icon_info.png)_ This event is called just as the graphics subsystem is starting, so functions that like GetScreenDimensions that rely on the screen being initialized will not work if called from this event. 
+_![Info icon](images/icon_info.png)_ This event is called just as the graphics subsystem is starting, so functions that like GetScreenDimensions that rely on the screen being initialized will not work if called from this event.
 
 _![Info icon](images/icon_info.png)_ This event can be called more than once. It is called every time AGS tries to initialize the screen, so if the first resolution is not supported for example then it will get called again as AGS retries.
 
@@ -87,7 +87,7 @@ The text script currently supports `char`, `short` and `int` types. These are 1,
 int version;
 ```
 
-Specifies the interface version. You should check this to determine what version of the engine is being used, because certain interface methods will have been added in later versions, and attempting to use them with an earlier version will crash the system.  
+Specifies the interface version. You should check this to determine what version of the engine is being used, because certain interface methods will have been added in later versions, and attempting to use them with an earlier version will crash the system.
 
 AGS v2.51 (the first version to support plugins) was distributed with interface version **7**, so you can reasonably expect that as a minimum for your plugin.
 
@@ -96,9 +96,9 @@ AGS v2.51 (the first version to support plugins) was distributed with interface 
 void AbortGame (const char * reason);
 ```
 
-Aborts the game, presenting the standard AGS "An error has occured, please correct the problem" message box to the user, with the error description being the string supplied.  
+Aborts the game, presenting the standard AGS "An error has occured, please correct the problem" message box to the user, with the error description being the string supplied.
 
-To indicate that it was a user error (for example, they provided an invalid parameter to your text script function), prepend a ! to the message. For example,  
+To indicate that it was a user error (for example, they provided an invalid parameter to your text script function), prepend a ! to the message. For example,
 
 ```
 AbortGame ("!MyScriptFunction: Not a valid color");
@@ -115,7 +115,7 @@ _Added in version: 1_
 const char* GetEngineVersion ();
 ```
 
-Returns the full build number of the engine, for example "2.51.400". You can use this with strcmp if your plugin requires a specific engine version. 
+Returns the full build number of the engine, for example "2.51.400". You can use this with strcmp if your plugin requires a specific engine version.
 
 _Added in version: 1_
 
@@ -127,12 +127,12 @@ void RegisterScriptFunction (const char *name, void *address);
 Allows you to add your own text script functions to AGS. `name` is the name of the function as the script knows it, for example "AddNumbers". `address` is a pointer to your function that implements the command. For example:
 
 ```
-int AddNumbers (int a, int b) { return a + b; }  
-...  
+int AddNumbers (int a, int b) { return a + b; }
+...
 RegisterScriptFunction ("AddNumbers", AddNumbers);
 ```
 
-Note that it is possible to override the built-in functions with this command. If you do, for example,  
+Note that it is possible to override the built-in functions with this command. If you do, for example,
 ```
 RegisterScriptFunction ("GetLocationType", AddNumbers);
 ```
@@ -144,11 +144,11 @@ AGS 2.7 and later support object-based scripting. In order to export an object f
 
 ```
 int PluginObject_DoSomething(PluginObject *obj, int a) {
-  return a + 10;
+  return a + 10;
 }
 ...
 RegisterScriptFunction("PluginObject::DoSomething^1",
-                       PluginObject_DoSomething);
+                         PluginObject_DoSomething);
 ```
 
 In other words, the function takes the object as its first parameter. The exported name is `"structname::functionname^numparams"`, where `numparams` is the number of parameters it takes (excluding the object itself).
@@ -241,7 +241,7 @@ triggered when the user clicks a mouse button
 
 ##### IAGSEngine event AGSE_POSTSCREENDRAW
 
-triggered after the virtual screen has been drawn each frame, but before the mouse cursor is painted and it gets copied to the screen 
+triggered after the virtual screen has been drawn each frame, but before the mouse cursor is painted and it gets copied to the screen
 
 **data value:** _\*\* See Note 1 below_
 
@@ -253,7 +253,7 @@ triggered every frame after the room background has been drawn, but before anyth
 
 **data value:** _\*\* See Note 1 below_
 
-##### IAGSEngine event AGSE_SAVEGAME  
+##### IAGSEngine event AGSE_SAVEGAME
 
 _(version 5 and later only)_
 
@@ -380,7 +380,7 @@ _![Info icon](images/icon_info.png)_ Each frame (or _game loop_), AGS redraws th
 9.  Call `AGSE_POSTSCREENDRAW`
 10. Draw mouse cursor and finalize.
 11. Call `AGSE_FINALSCREENDRAW`
-12. Paste the virtual screen to the real screen. 
+12. Paste the virtual screen to the real screen
 
 **D3D9 driver**
 
@@ -419,7 +419,7 @@ _Added in version: 2_
 BITMAP * GetVirtualScreen ();
 ```
 
-Returns a reference to the virtual screen bitmap (as an _Allegro_ BITMAP). The virtual screen is what all drawing routines will draw onto, and usually points to a screen-sized memory bitmap that the engine paints on to construct each frame. Once it is finished, the whole thing is copied to the real screen. This is done to prevent the screen flickering as various things are painted on. 
+Returns a reference to the virtual screen bitmap (as an _Allegro_ BITMAP). The virtual screen is what all drawing routines will draw onto, and usually points to a screen-sized memory bitmap that the engine paints on to construct each frame. Once it is finished, the whole thing is copied to the real screen. This is done to prevent the screen flickering as various things are painted on.
 
 This function is only supported if the player is using the DX5 graphics driver.
 
@@ -435,8 +435,8 @@ Gets a reference to the linear bank of memory that contains the surface of `bmp`
 
 This function locks the surface for you, which means you **must** call ReleaseBitmapSurface to release it when you are done. Failure to do so will most likely hang the engine.
 
-_![Warning](images/icon_warn.png)_ If the bitmap color depth is 15/16 bit, the return value should be cast to `unsigned short**`.   
-If the bitmap color depth is 32 bit, the return value should be cast to `unsigned long**`.   
+_![Warning](images/icon_warn.png)_ If the bitmap color depth is 15/16 bit, the return value should be cast to `unsigned short**`.  
+If the bitmap color depth is 32 bit, the return value should be cast to `unsigned long**`.  
 If the bitmap color depth is 24 bit, the return value needs to be accessed in blocks of 3 bytes. The best method of doing this is left up to you.
 
 _![Warning](images/icon_warn.png)_ If you change any areas of the virtual screen bitmap via this raw surface, you should call `MarkRegionDirty` with the affected area, so that AGS redraws that part of the screen.
@@ -530,7 +530,7 @@ _Added in version: 4_
 int GetCurrentRoom ();
 ```
 
-Returns the room number that the game is currently in. 
+Returns the room number that the game is currently in.
 
 _Added in version: 4_
 
@@ -557,7 +557,7 @@ _Added in version: 5_
 void SetVirtualScreen (BITMAP *bmp);
 ```
 
-Sets `bmp` as the current virtual screen, so that all drawing routines will draw onto it.  You should restore the virtual screen to its original setting before returning from your plugin function. (Use GetVirtualScreen first to save the old reference).
+Sets `bmp` as the current virtual screen, so that all drawing routines will draw onto it. You should restore the virtual screen to its original setting before returning from your plugin function. (Use GetVirtualScreen first to save the old reference).
 
 _Added in version: 5_
 
@@ -566,7 +566,7 @@ _Added in version: 5_
 void DrawTextWrapped (int x, int y, int width, int font, int color, const char *text);
 ```
 
-Prints `text` to the current virtual screen at (`x`, `y`), using `width` pixels wide to do so, wrapping the text to ensure it does not exceed the width.  
+Prints `text` to the current virtual screen at (`x`, `y`), using `width` pixels wide to do so, wrapping the text to ensure it does not exceed the width.
 
 _Added in version: 5_
 
@@ -587,7 +587,7 @@ int LookupParserWord (const char *word);
 ```
 
 Checks the text parser dictionary for `word`, and returns its word number. All synonyms of a word have the same word number, as shown in the Text Parser pane in the AGS Editor.  
-Returns -1 if the word was not in the dictionary.   
+Returns -1 if the word was not in the dictionary.
 
 _Added in version: 5_
 
@@ -609,7 +609,7 @@ _Added in version: 5_
 int GetNumCharacters ();
 ```
 
-Returns the number of characters in the current game. Valid character ID's range from 0 to the return value minus 1. 
+Returns the number of characters in the current game. Valid character ID's range from 0 to the return value minus 1.
 
 _Added in version: 6_
 
@@ -643,7 +643,7 @@ AGSColor * GetPalette ();
 
 Returns a reference to the current palette. This is an array of 256 elements of the `AGSColor` struct.
 
-_![Info icon](images/icon_info.png)_ In a game with animating backgrounds, the palette can change quite often, so you should generally only rely on the palette remaining consistent for the length of your function.  
+_![Info icon](images/icon_info.png)_ In a game with animating backgrounds, the palette can change quite often, so you should generally only rely on the palette remaining consistent for the length of your function.
 
 _Added in version: 6_
 
@@ -692,9 +692,9 @@ void RoomToViewport (int *x, int *y);
 
 Converts the room co-ordinates (`x`, `y`) into current viewport co-ordinates. The input co-ordinates are room co-ordinates using the 320x200-style scheme that the text script uses and that object and character co-ordinates are stored as.
 
-When you call this function, the variables you pass will be converted to hold the equivalent viewport co-ordinates. These are real resolution-sized co-ordinates within the current viewable area of the screen.  
+When you call this function, the variables you pass will be converted to hold the equivalent viewport co-ordinates. These are real resolution-sized co-ordinates within the current viewable area of the screen.
 
-_![Info icon](images/icon_info.png)_ You should check the resulting co-ordinates with the screen size to determine whether they are currently visible on the screen. 
+_![Info icon](images/icon_info.png)_ You should check the resulting co-ordinates with the screen size to determine whether they are currently visible on the screen.
 
 _Added in version: 7_
 
@@ -705,7 +705,7 @@ void ViewportToRoom (int *x, int *y);
 
 Converts the viewport co-ordinates (`x`, `y`) into room co-ordinates. The input co-ordinates are screen resolution scale co-ordinates within the current viewable area of the room.
 
-When you call this function, the variables you pass will be converted to hold the equivalent room co-ordinates, such as stored in the character and object structs, and used in the text script. 
+When you call this function, the variables you pass will be converted to hold the equivalent room co-ordinates, such as stored in the character and object structs, and used in the text script.
 
 _Added in version: 7_
 
@@ -735,25 +735,25 @@ _![Info icon](images/icon_info.png)_ To draw onto the bitmap either use `GetRawB
 
 _![Warning](images/icon_warn.png)_ The bitmap will remain in memory until you explicitly free it with `FreeBitmap`. Use this command sparingly, as each bitmap you create eats into the engine's available memory.
 
- _Added in version: 7_
+_Added in version: 7_
 
 #### IAGSEngine.FreeBitmap
 ```
 void FreeBitmap (BITMAP *bmp);
 ```
 
-Frees the bitmap `bmp` from memory. 
+Frees the bitmap `bmp` from memory.
 
 _![Warning](images/icon_warn.png)_ **Only** use this command with bitmaps you created with `CreateBlankBitmap`. Using it with an AGS system bitmap, such as one obtained with `GetVirtualScreen`, `GetScreen` or `GetSpriteGraphic` will crash the engine.
 
- _Added in version: 7_
+_Added in version: 7_
 
 #### IAGSEngine.GetRoomMask
 ```
 BITMAP * GetRoomMask (int which);
 ```
 
-Returns a reference to the requested mask for the current room. `which` is one of the following values:  
+Returns a reference to the requested mask for the current room. `which` is one of the following values:
 `MASK_WALKABLE`  
 `MASK_WALKBEHIND`  
 `MASK_HOTSPOT`  
@@ -767,7 +767,7 @@ The walkable area, hotspot and region masks are the size of the current room, bu
 
 _![Warning](images/icon_warn.png)_ The area masks are re-allocated when the player changes rooms, so do **not** keep a pointer returned by this function longer than you need it.
 
-_Added in version: 8   (MASK_REGIONS requires version 11)._
+_Added in version: 8 (MASK_REGIONS requires version 11)._
 
 #### IAGSEngine.GetViewFrame
 ```
@@ -776,10 +776,10 @@ AGSViewFrame* GetViewFrame (int view, int loop, int frame);
 
 Returns the view frame structure for the specified frame. `view` is the number you get from the editor (that's used in `SetCharacterView` and so forth), not the view minus 1.
 
--   **Interface version 10 and later:**  
-    If `frame` is not valid (eg. there aren't that many frames in the specified loop), returns NULL.
--   **Interface version 9:**  
-    If `frame` is not valid (eg. there aren't that many frames in the specified loop), AGS will exit with an error message.
+- **Interface version 10 and later:**
+  If `frame` is not valid (eg. there aren't that many frames in the specified loop), returns NULL.
+- **Interface version 9:**
+  If `frame` is not valid (eg. there aren't that many frames in the specified loop), AGS will exit with an error message.
 
 If `view` or `loop` are invalid, AGS will exit with an error message.
 
@@ -805,7 +805,7 @@ Returns NULL if you specify a function that doesn't exist.
 
 _![Warning](images/icon_warn.png)_ You **must** cast the result to the correct function type in order to call it - ie. you must know how many parameters the function expects, and call it appropriately. Failure to do so will corrupt the stack and likely crash the engine.
 
-_![Warning](images/icon_warn.png)_ If you specify the name of an actual function in the script, for example  repeatedly_execute, it will return an address - however, this will be a script address and attempting to call it will crash the game. **Only** use this feature to obtain the address of AGS's script functions as documented in the manual.
+_![Warning](images/icon_warn.png)_ If you specify the name of an actual function in the script, for example repeatedly_execute, it will return an address - however, this will be a script address and attempting to call it will crash the game. **Only** use this feature to obtain the address of AGS's script functions as documented in the manual.
 
 _Added in version: 9_
 
@@ -832,7 +832,7 @@ _Added in version: 9_
 int IsGamePaused ();
 ```
 
-Equivalent to the text script `IsGamePaused` function. This returns non-zero if the game is paused, or 0 if it is not paused. 
+Equivalent to the text script `IsGamePaused` function. This returns non-zero if the game is paused, or 0 if it is not paused.
 
 _Added in version: 9_
 
@@ -917,7 +917,7 @@ Plays a new sound on the sound channel number `channel`. `volume` can be from 0 
 | ---------------- | -------------------------------------- |
 | `PSND_WAVE`      | Uncompressed .WAV file                 |
 | `PSND_MP3STREAM` | MP3, streamed from disk                |
-| `PSND_MP3STATIC` | MP3, loaded into memory before playing |
+| `PSND_MP3STATIC` | MP3, loaded into memory before playing |
 | `PSND_OGGSTREAM` | OGG, streamed from disk                |
 | `PSND_OGGSTATIC` | OGG, loaded into memory before playing |
 | `PSND_MIDI`      | MIDI file                              |
@@ -925,7 +925,7 @@ Plays a new sound on the sound channel number `channel`. `volume` can be from 0 
 
 _![Info icon](images/icon_info.png)_ You should normally just use the PlaySound, PlaySoundEx and PlayMusic functions (via GetScriptFunctionAddress) to play sounds - only use this function in specific circumstances.
 
-_![Warning](images/icon_warn.png)_ Only one MIDI file, and one MOD/XM file can be playing at a time. You should generally keep away from these two sound types unless you are sure about what you are doing. 
+_![Warning](images/icon_warn.png)_ Only one MIDI file, and one MOD/XM file can be playing at a time. You should generally keep away from these two sound types unless you are sure about what you are doing.
 
 _Added in version: 11_
 
@@ -986,7 +986,7 @@ Returns what type of font `fontNum` is, as one of the following values:
 | `FNT_SCI`     | font is a SCI font           |
 | `FNT_TTF`     | font is a TTF font           |
 
- _Added in version: 12_
+_Added in version: 12_
 
 #### IAGSEngine.CreateDynamicSprite
 ```
@@ -1426,7 +1426,7 @@ _Added in version: 15_
 int Serialize(const char *address, char *buffer, int bufsize);
 ```
 
-Called when the player saves the game. You must write any persistent data for the object at `address` into the supplied `buffer`. The buffer is `bufsize` bytes long, and you must not write any more data than that.
+Called when the player saves the game. You must write any persistent data for the object at `address` into the supplied `buffer`. The buffer is `bufsize` bytes long, and you must not write any more data than that.
 
 You must return the number of bytes written to the buffer.
 
