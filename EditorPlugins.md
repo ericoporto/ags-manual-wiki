@@ -22,7 +22,7 @@ Sample code for a plugin is [available to download](https://www.adventuregamestu
 
 The following tutorial will walk you through creating a plugin with Visual C#. I'll be using Visual Studio 2005 in this tutorial, but the further versions should likely work very similarly.
 
-Start up Visual Studio, and select to create a new project (File, New, Project). In the "New project" window which appears, make sure "Visual C#" is selected in the left hand list, and then choose "Class Library" on the right. Type a name that starts with *AGS.Plugin*. for example I'm going to use `AGS.Plugin.TestPlugin`:
+Start up Visual Studio, and select to create a new project (File, New, Project). In the "New project" window which appears, make sure "Visual C#" is selected in the left hand list, and then choose "Class Library" on the right. Type a name that starts with *AGS.Plugin*. for example I'm going to use `AGS.Plugin.Example`:
 
 _![Creating a new Class Library project](images/netplug1.png)_
 
