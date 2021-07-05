@@ -1,5 +1,7 @@
 ## Dynamic Arrays
 
+### Overview
+
 Suppose that you're writing a script that you want people to be able to
 use in their games. You need to store the Health for every character in
 the game, but you don't know how many characters there will be. What do
@@ -25,5 +27,100 @@ You may create dynamic arrays of basic types (int, char, etc), built-in types (S
 Character, etc), and custom structs declared as `managed`. But currently you cannot have dynamic arrays of regular (non-managed) custom structs.
 
 On another hand, you cannot have dynamic arrays inside "managed" structs as their members, but can have them anywhere else.
+
+### Filling a dynamic array
+
+If you have dynamic array of managed pointers, then after creation all of these pointers will be null. You must also assign individual elements one by one. For example, when you want to fill an array with already existing game objects:
+
+<pre>
+Character *groupOfChars[] = new Character[4];
+groupOfChars[0] = cRoger;
+groupOfChars[1] = cMary;
+groupOfChars[2] = cThomas;
+groupOfChars[3] = cVillager;
+</pre>
+
+Similarily, when you want to create completely new objects:
+<pre>
+DynamicSprite *sprites[] = new DynamicSprite[4];
+sprites[0] = DynamicSprite.Create(10, 10);
+sprites[1] = DynamicSprite.Create(20, 20);
+sprites[2] = DynamicSprite.Create(10, 40);
+sprites[3] = DynamicSprite.Create(50, 10);
+</pre>
+
+Accessing individual elements is as simple as with regular array:
+<pre>
+int health = characterHealth[5];
+int charX = groupOfChars[3].x;
+sprites[1].Flip(eFlipLeftToRight);
+</pre>
+
+You don't *have* to fill all the array indexes of course, you may as well leave some empty (null). Just remember to keep track of that, and if your script may access empty indexes make sure to check if the element is null or not before using it:
+
+<pre>
+for (int i = 0; i < numSprites; i++) {
+    if (sprites[i] != null) {
+        sprites[i].Flip(eFlipLeftToRight);
+    }
+}
+</pre>
+
+### Resizing a dynamic array
+
+Dynamic arrays cannot be resized on their own. If later you require a bigger array, you may to do following:
+* Create a new, larger array and save it in a temporary variable;
+* Copy all elements from the old array into the new one;
+* Assign new array to your usual array variable.
+
+For example:
+<pre>
+int arrOfInts[]; // declare a dynamic array of ints
+
+function game_start() {
+    arrOfInts = new int[100]; // create array of 100 ints
+}
+
+function resize_array() {
+    int tempArr[] = new int[200]; // create array of 200 ints and save it in a temp var
+    for (i = 0; i < 100; i++) {
+        tempArr[i] = arrOfInts[i]; // copy contents of the old array
+    }
+    arrOfInts = tempArr; // assign new array to your usual variable
+}
+</pre>
+
+Same solution may work when you want to reduce an array to a smaller size, except in that case you'll have to loose some elements.
+
+### Deleting dynamic array
+
+Like most of the dynamically created objects in AGS, dynamic arrays exist so long as it is assigned to at least one pointer. If you have one pointer to array, and you change its value or assign it to null, then the dynamic array will get deleted automatically:
+
+<pre>
+int arrOfInts[];
+arrOfInts = new int[100]; // create and assign an array of 100 ints
+arrOfInts = new int[200]; // assign a new array of 200 ints; the previous one is lost and gets deleted
+arrOfInts = null; // now the second array is also lost and get deleted
+</pre>
+
+Note that if you store a dynamic array in a local function variable, that variable will get removed as soon as function ends, and if array was not reassigned to any global pointer, then it also gets deleted automatically.
+
+<pre>
+function func() {
+    int arrOfInts[] = new int[100];
+    <...> // do something with this array
+} // as soon as function ends the array gets deleted
+</pre>
+
+The array will not be deleted if you *return* it from the function; so long as the returned array is assigned to a pointer of course:
+<pre>
+int[] func_makearr(int size) {
+    int arrOfInts[] = new int[size];
+    return arrOfInts; // not deleted just yet
+}
+
+// somewhere else in code:
+int arr[] = func_makearr(100); // the returned array will be assigned to `arr` pointer
+</pre>
 
 See Also: [Arrays](ScriptKeywords#arrays), [Structs](ScriptKeywords#struct)
