@@ -40,6 +40,18 @@ compiling:
     #error This script requires at least AGS 2.71
     #endif
 
+If you'd like to know if a new API is available, test for the corresponding SCRIPT_API_vXXX constant:
+
+    #ifdef SCRIPT_API_v360
+    // can use new code added in 3.6.0
+    #endif
+
+If on contrary you need to know if a deprecated API is enabled, test for the corresponding SCRIPT_COMPAT_vXXX constant:
+
+    #ifdef SCRIPT_COMPAT_v320
+    // can use old code, deprecated after 3.2.0
+    #endif
+
 The other constants `AGS_MAX_*` are useful if you are writing some
 script code that you want to be portable to different versions of AGS,
 and to pick up the limits from the user's AGS version. For example, if
