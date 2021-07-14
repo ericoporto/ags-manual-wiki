@@ -42,8 +42,14 @@ Then declare the variable's import for other scripts to see, presumably *in the 
     import int public_variable;
 
 Both the name and type must match the variable's own declaration exactly.<br>
-This bit is important. If the variable is `int` it should be imported as `int`, if it's of the type `Character*` then the import should also be declared as `Character*`.<br>
-Imported arrays must have the correct size, for example if you have `int arr[10];` then the import declaration must be `import int arr[10];`, otherwise there will be errors.
+This bit is important. If the variable is `int` it should be imported as `int`, if it's of the type `Character*` then the import should also be declared as `Character*`.
+
+Imported arrays must have the correct size, for example if you have `int arr[10];` then the import declaration must be:
+
+    import int arr[10];
+
+(NOTE: the export command still requires its name *only*: `export arr;`)
+
 You can declare the import of several variables _of the same type_ in one statement if you separate them by commas:
 
     import int var1, var2;
