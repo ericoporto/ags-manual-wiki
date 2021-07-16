@@ -13,6 +13,8 @@ Example:
       player.ChangeRoom(10);
     }
 
+If room 10 is valid, go to that room.
+
 ### `Room.GetDrawingSurfaceForBackground`
 
     static DrawingSurface* Room.GetDrawingSurfaceForBackground(optional int backgroundNumber)
