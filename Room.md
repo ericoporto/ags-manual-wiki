@@ -1,5 +1,18 @@
 ## `Room` functions and properties
 
+### `Room.Exists`
+
+    static bool Room.Exists(int room)
+
+Returns true if the specified room exists in the game.
+
+Example:
+
+    if(Room.Exists(10))
+    {
+      player.ChangeRoom(10);
+    }
+
 ### `Room.GetDrawingSurfaceForBackground`
 
     static DrawingSurface* Room.GetDrawingSurfaceForBackground(optional int backgroundNumber)
