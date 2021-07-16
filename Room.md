@@ -15,6 +15,8 @@ Example:
 
 If room 10 is valid, go to that room.
 
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
 ### `Room.GetDrawingSurfaceForBackground`
 
     static DrawingSurface* Room.GetDrawingSurfaceForBackground(optional int backgroundNumber)
