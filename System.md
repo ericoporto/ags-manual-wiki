@@ -8,7 +8,7 @@ Prints the message string in `format` to the log, with the defined LogLevel, to 
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
-*See Also:* [The run-time engine](RuntimeEngine)
+*See Also:* [The run-time engine](RuntimeEngine), [LogLevel Enum](StandardEnums#loglevel)
 
 ---
 
