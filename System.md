@@ -1,5 +1,17 @@
 ## `System` functions and properties
 
+### `System.Log`
+
+    static void System.Log(LogLevel level, const string format, ...)
+
+Prints the message string in `format` to the log, with the defined LogLevel, to the group `script`.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See Also:* [The run-time engine](RuntimeEngine)
+
+---
+
 ### `System.SaveConfigToFile`
 
     static void System.SaveConfigToFile()
