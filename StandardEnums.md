@@ -6,6 +6,8 @@ used in calls to various commands, and will usually pop up automatically
 in autocomplete. However, for times where autocomplete doesn't do the
 job, having a manual reference is invaluable:
 
+### `BlockingStyle`
+
     enum BlockingStyle {
       eBlock,
       eNoBlock
@@ -20,6 +22,8 @@ job, having a manual reference is invaluable:
 [Character.WalkStraight](Character#characterwalkstraight),
 [Object.Animate](Object#objectanimate),
 [Object.Move](Object#objectmove)
+
+### `CharacterDirection`
 
     enum CharacterDirection {
       eDirectionDown = 0,
@@ -36,6 +40,8 @@ job, having a manual reference is invaluable:
 *Used by:* [Character.ChangeRoom](Character#characterchangeroom),
 [Character.FaceDirection](Character#characterfacedirection)
 
+### `Direction`
+
     enum Direction {
       eForwards,
       eBackwards
@@ -43,6 +49,8 @@ job, having a manual reference is invaluable:
 
 *Used by:* [Character.Animate](Character#characteranimate),
 [Object.Animate](Object#objectanimate)
+
+### `WalkWhere`
 
     enum WalkWhere {
       eAnywhere,
@@ -53,6 +61,8 @@ job, having a manual reference is invaluable:
 [Character.Walk](Character#characterwalk),
 [Object.Move](Object#objectmove)
 
+### `StopMovementStyle`
+
     enum StopMovementStyle
     {
       eKeepMoving = 0,
@@ -62,6 +72,8 @@ job, having a manual reference is invaluable:
 *Used by:* [Character.LockView](Character#characterlockviewaligned),
 [Character.LockViewFrame](Character#characterlockviewoffset)
 
+### `RepeatStyle`
+
     enum RepeatStyle {
       eOnce,
       eRepeat
@@ -70,6 +82,8 @@ job, having a manual reference is invaluable:
 *Used by:* [Button.Animate](Button#buttonanimate),
 [Character.Animate](Character#characteranimate),
 [Object.Animate](Object#objectanimate)
+
+### `Alignment`
 
     enum Alignment {
       eAlignNone          = 0,
@@ -102,6 +116,8 @@ will execute some code if *align* variable contains "Left" in any combination (e
 
 *Used by:* [Button.TextAlignment](Button#buttontextalignment)
 
+### `HorizontalAlignment`
+
     enum HorizontalAlignment {
       eAlignLeft          = 1,
       eAlignCenter        = 2,
@@ -115,6 +131,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 *Used by:*
 [Character.LockViewAligned](Character#characterlockviewaligned), [DrawingSurface.DrawStringWrapped](DrawingSurface#drawingsurfacedrawstringwrapped), [Label.TextAlignment](Label#labeltextalignment), [ListBox.TextAlignment](ListBox#listboxtextalignment), [Speech.TextAlignment](Speech#speechtextalignment)
 
+### `eFlipDirection`
+
     enum eFlipDirection {
       eFlipLeftToRight,
       eFlipUpsideDown,
@@ -122,6 +140,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
     };
 
 *Used by:* [DynamicSprite.Flip](DynamicSprite#dynamicspriteflip)
+
+### `TransitionStyle`
 
     enum TransitionStyle {
       eTransitionFade,
@@ -133,6 +153,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 
 *Used by:* [SetScreenTransition](Globalfunctions_Screen#setscreentransition),
 [SetNextScreenTransition](Globalfunctions_Screen#setnextscreentransition)
+
+### `MouseButton`
 
     enum MouseButton {
       eMouseLeft,
@@ -148,6 +170,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 *Used by:* [Mouse.IsButtonDown](Mouse#mouseisbuttondown)<br>
 *Passed into:* on_mouse_click
 
+### `EventType`
+
     enum EventType {
       eEventLeaveRoom,
       eEventEnterRoomBeforeFadein,
@@ -161,6 +185,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 
 *Passed into:* on_event
 
+### `RoundDirection`
+
     enum RoundDirection {
       eRoundDown,
       eRoundNearest,
@@ -168,6 +194,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
     };
 
 *Used by:* [FloatToInt](Maths#floattoint)
+
+### `eSpeechStyle`
 
     enum eSpeechStyle {
       eSpeechLucasarts,
@@ -177,6 +205,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
     };
 
 *Used by:* [Speech.Style](Speech#speechstyle)
+
+### `SkipSpeechStyle`
 
     enum SkipSpeechStyle {
       eSkipKeyMouseTime = 0,
@@ -190,6 +220,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 
 *Used by:* [Speech.SkipStyle](Speech#speechskipstyle)
 
+### `eVoiceMode`
+
     enum eVoiceMode {
       eSpeechTextOnly,
       eSpeechVoiceAndText,
@@ -197,6 +229,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
     };
 
 *Used by:* [Speech.VoiceMode](Speech#speechvoicemode)
+
+### `DialogOptionState`
 
     enum DialogOptionState {
       eOptionOff,
@@ -206,6 +240,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 
 *Used by:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
 [Dialog.SetOptionState](Dialog#dialogsetoptionstate)
+
+### `CutsceneSkipType`
 
     enum CutsceneSkipType {
       eSkipESCOnly,
@@ -218,6 +254,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 
 *Used by:* [StartCutscene](Globalfunctions_General#startcutscene)
 
+### `eOperatingSystem`
+
     enum eOperatingSystem {
       eOSDOS,
       eOSWindows,
@@ -229,6 +267,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
     };
 
 *Used by:* [System.OperatingSystem](System#systemoperatingsystem)
+
+### `eCDAudioFunction`
 
     enum eCDAudioFunction {
       eCDIsDriverPresent,
@@ -244,6 +284,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
     };
 
 *Used by:* [CDAudio](Multimedia#cdaudio)
+
+### `CursorMode`
 
     enum CursorMode {
       eModeXXXX,
@@ -272,6 +314,8 @@ removed, and *eMode* is added to the front.<br>
 [Character.IsInteractionAvailable](Character#characterisinteractionavailable),
 [Character.RunInteraction](Character#characterruninteraction)
 
+### `FontType`
+
     enum FontType {
       eFontXXXX,
       eFontXXXX,
@@ -295,6 +339,8 @@ to the front.<br>
 [Overlay.CreateTextual](Overlay#overlaycreatetextual),
 [Overlay.SetText](Overlay#overlaysettext)
 
+### `LocationType`
+
     enum LocationType {
       eLocationNothing,
       eLocationHotspot,
@@ -304,6 +350,8 @@ to the front.<br>
 
 *Returned by:* [GetLocationType](Globalfunctions_General#getlocationtype)
 
+### `FileMode`
+
     enum FileMode {
       eFileRead,
       eFileWrite,
@@ -311,6 +359,8 @@ to the front.<br>
     };
 
 *Used by:* [File.Open](File#fileopen)
+
+### `FileSeek`
 
     enum FileSeek {
       eSeekBegin = 0,
@@ -320,6 +370,8 @@ to the front.<br>
 
 *Used by:* [File.Seek](File#fileseek)
 
+### `DialogOptionSayStyle`
+
     enum DialogOptionSayStyle {
       eSayUseOptionSetting,
       eSayAlways,
@@ -327,6 +379,8 @@ to the front.<br>
     };
 
 *Used by:* [Dialog.DisplayOptions](Dialog#dialogdisplayoptions)
+
+### `VideoSkipStyle`
 
     enum VideoSkipStyle {
       eVideoSkipNotAllowed,
@@ -336,6 +390,8 @@ to the front.<br>
     };
 
 *Used by:* [PlayVideo](Multimedia#playvideo)
+
+### `AudioFileType`
 
     enum AudioFileType {
       eAudioFileOGG,
@@ -347,6 +403,8 @@ to the front.<br>
     };
 
 *Used by:* [AudioClip.FileType](AudioClip#audioclipfiletype)
+
+### `AudioPriority`
 
     enum AudioPriority {
       eAudioPriorityVeryLow = 1,
@@ -360,6 +418,8 @@ to the front.<br>
 [AudioClip.PlayFrom](AudioClip#audioclipplayfrom),
 [AudioClip.PlayQueued](AudioClip#audioclipplayqueued)
 
+### `GUIPopupStyle`
+
     enum GUIPopupStyle {
       eGUIPopupNormal = 0,
       eGUIPopupMouseYPos = 1,
@@ -370,6 +430,8 @@ to the front.<br>
 *Supported by:* AGS 3.5.0 and higher.
 
 *Used by:* [GUI.PopupStyle](GUI#guipopupstyle)
+
+### `StringCompareStyle`
 
     enum StringCompareStyle {
       eCaseInsensitive = 0,
@@ -385,6 +447,8 @@ to the front.<br>
 [String.Replace](String#stringreplace),
 [String.StartsWith](String#stringstartswith)
 
+### `SortStyle`
+
     enum SortStyle {
       eNonSorted = 0,
       eSorted = 1
@@ -394,3 +458,20 @@ to the front.<br>
 
 *Used by:* [Dictionary.Create](Dictionary#dictionarycreate),
 [Set.Create](Set#setcreate)
+
+### `LogLevel`
+
+    enum LogLevel
+    {
+        eLogAlert = 1,
+        eLogFatal = 2,
+        eLogError = 3,
+        eLogWarn = 4,
+        eLogInfo = 5,
+        eLogDebug = 6
+    };
+
+
+*Supported by:* AGS 3.6.0 and higher.
+
+*Used by:* [System.Log](System#systemlog)
