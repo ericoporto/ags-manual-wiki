@@ -450,6 +450,8 @@ Example:
 will change object 3's view to view number 14, and change object 1 to
 view 5, loop 2, frame 0.
 
+*Note:* Since **AGS 3.6.0** and later versions, this function will also resets loop and frame to 0 by default if you don't specify their values.
+
 *See Also:* [Object.Animate](Object#objectanimate)
 
 ---
