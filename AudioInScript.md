@@ -15,13 +15,15 @@ When audio ends playing whether on its own or by calling AudioChannel.Stop() or 
 The consequence of all the above is that if you keep the AudioChannel* pointer returned by AudioClip.Play, for example store it in a global variable, that pointer will always be valid, but because the same channel can be used to play a new and different clip, you can use the same stored pointer to adjust the new clip's playback properties.
 
 This effect can be demonstrated by the following example. Make sure that your sound type has "MaxChannels" set to "1", then add the following script to the first room's "after fade-in event":
-<pre>
+
+```
 function room_AfterFadeIn() {
     AudioChannel* chan = aSound1.Play();
     aSound2.Play();
     chan.Volume = 50;
 }
-</pre>
+```
+
 Notice that `chan` is assigned to `aSound1.Play()`, and not to `aSound2.Play()`. But because we set "MaxChannels" of the sound type to "1" there is only 1 channel reserved for sounds, so aSound2 will replace aSound1. And because the `chan` pointer is already pointing to the only reserved channel, setting the volume will actually change aSound2's volume, as it is the audio clip playing on the channel now.
 
 This effect may either be wanted or unwanted and can lead to bugs depending on how you script your game, so keep this in mind.

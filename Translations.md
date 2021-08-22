@@ -61,14 +61,16 @@ Font options let you define certain font substitutes for this particular transla
 - **TextDirection** - sets text written direction. This corresponds to calling [SetGameOption](Globalfunctions_General#setgameoption) script function with OPT_RIGHTTOLEFT argument. The value may be `LEFT` (for left-to-right), `RIGHT` (for right-to-left) or `DEFAULT`.
 
 Example:
-<pre>
+
+```
 // The normal font to use - DEFAULT or font number
 //#NormalFont=4
 // The speech font to use - DEFAULT or font number
 //#SpeechFont=DEFAULT
 // Text direction - DEFAULT, LEFT or RIGHT
 //#TextDirection=RIGHT
-</pre>
+```
+
 This would set NormalFont to font 4, leave SpeechFont unchanged, and switch text direction to Right-to-left mode.
 
 **NOTE:** these options are applied to game properties the moment new translation is enabled. But they are not kept permanently while that translation is active. Changing any of these in script would override values set by current translation.

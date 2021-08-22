@@ -25,15 +25,19 @@ Changing the number (adding or removing) of almost all game objects will break p
 
 In addition to that, changing the *total size* of variables declared in the global scope of each script (*NOT* local function variables) will break older save states.<br>
 To elaborate on what "total size" is, imagine you have this declared in a script:
-<pre>
+
+```
 int a;
 int b;
 int c;
-</pre>
+```
+
 This adds up to make the total size of script variables 3 integers (or 3 * 4 bytes = 12 bytes). Now, if you change this to
-<pre>
+
+```
 int vars[3];
-</pre>
+```
+
 even though there's now only one variable, this also gives a total size of 3 integers, and won't break save states.
 (Here we omit the question whether it will still make sense to restore older save with such a change in the script.)
 
@@ -76,22 +80,25 @@ The *managed objects themselves* are not stored in the script's variable memory,
 However, there's a number of potential problems with that and these have to be resolved if you want to maintain save compatibility.
 
 Consider a simple dynamic array:
-<pre>
+
+```
 int dyn_arr[];
 
 function game_start() {
     dyn_arr = new int[100];
 }
-</pre>
+```
 
 Let's assume you had this in game version 1, made a save, then increased the dynamic array's size in script to 200:
-<pre>
+
+```
     dyn_arr = new int[200];
-</pre>
+```
 
 What will happen if you now compile game version 2 and then restore the old save? The game will restore the dynamic array with the previous size of 100. This means that if your new script will now try to access elements in the array beyond 100 (thinking that this array has 200 elements now), that will result in an "index out of range" error.
 Unfortunately at the time of writing this AGS manual page, you can't access the length of a dynamic arrays directly in script. But you can store their length somewhere else, for example, in a variable:
-<pre>
+
+```
 int dyn_arr[];
 int arr_size;
 
@@ -99,7 +106,7 @@ function game_start() {
     dyn_arr = new int[100];
     arr_size = 100;
 }
-</pre>
+```
 
 There are other ways of fixing this, for example you could store the array length in its first element. This way you keep the save breaking value within the array itself, but you will have to remember it's there when you work with the array. Anyway, that's a different topic.
 In any case, having the array length stored, if you ever change that array's size and restore an older save, that length variable will also be restored and will tell you the correct size of the array.
@@ -108,7 +115,8 @@ If you still need the array to be exactly 200 elements in size in the new versio
 Less likely, but if you instead reduce the array's size then the array restored from the older save will be bigger in size than necessary, but that's much less of a problem and can be ignored safely.
 
 This is what happens with changes in dynamic arrays, but what about *changes in custom managed structs*? Assume in game version 1 you have:
-<pre>
+
+```
 managed struct MyStruct {
     int a;
     int b;
@@ -119,37 +127,41 @@ MyStruct* var;
 function game_start() {
     var = new MyStruct;
 }
-</pre>
+```
 
 Then in game version 2 you decided to add another variable:
-<pre>
+
+```
 managed struct MyStruct {
     int a;
     int b;
     int c;
 };
-</pre>
+```
 
 If you load an older save from version 1 while running version 2, created objects of this type will load but will be one variable less in size. Trying to use the additional variable in script will result in an error. This is similar to the array case.
 The solution here is similar to the array solution: upon restoring the older save recreate all managed objects (they will be of the correct size), copy valid content from restored objects into them, and reassign pointers to these recreated objects. Again this is explained more in the ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed-structs).
 
 And again, if you remove a variable instead:
-<pre>
+
+```
 managed struct MyStruct {
     int a;
 };
-</pre>
+```
 
 in this case the older save will be restored, and the old variants of MyStruct will also be loaded. They will contain all the removed variables, but you no longer will be able to access them in script because they are no longer declared so the script is not aware of their existence.
 
 Finally, there's another potential problem. Let's look at this variant:
-<pre>
+
+```
 managed struct MyStruct {
     int a;
     // int b;
     int c;
 };
-</pre>
+```
+
 The `b` variable was removed, so variable `c` now follows `a`. If you load an older save however, the old MyStruct objects contain variable `b`, and its value will be assigned to `c` instead of `b`, as it took its place in the struct.
 
 For that reason, if save compatibility is essential, it is recommended to only *extend* managed types and not cut out existing data.
@@ -185,7 +197,8 @@ In your script, you can allocate big global arrays of ints and other types as a 
 If you must change the content of a room but do not want to break saves at all costs you may create a duplicate room with a new number and updated contents, then script changing to this new room if the player restores a save made in the old room.
 
 This is done like this, for example:
-<pre>
+
+```
 function on_event(EventType evt, int data) {
     if (evt == eEventRestoreGame) {
         if (player.Room == OLD_ROOM_NUMBER) {
@@ -193,7 +206,7 @@ function on_event(EventType evt, int data) {
         }
     }
 }
-</pre>
+```
 
 ### Solution 4: String, Dictionary and Set
 
@@ -207,7 +220,8 @@ As mentioned earlier in this article, any managed object is not restricted to ch
 Upon loading an old save you would need to test the length or another kind of "version" of that array and resize it: create a new one, copy the old restored contents, fill up the rest with default values, replace the pointer variable.
 
 Consider following example:
-<pre>
+
+```
 #define GAME_VER_001_LENGTH 10
 #define GAME_VER_002_LENGTH 20
 
@@ -239,10 +253,11 @@ function on_event(EventType evt, int data) {
         }
     }
 }
-</pre>
+```
 
 A similar solution may be used for managed structs, although it may be bit more complicated to script but essentially it is the same thing.
-<pre>
+
+```
 managed struct MyStruct {
     // variables from version 1
     int a;
@@ -278,4 +293,4 @@ function on_event(EventType evt, int data) {
         }
     }
 }
-</pre>
+```
