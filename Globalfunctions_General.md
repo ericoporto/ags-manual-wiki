@@ -142,6 +142,8 @@ with what they do:
         parts of the game or going to a specific point to test something.
     4   Show FPS - toggles whether the current frames per second is displayed
         on the screen. Pass DATA as 1 to turn this on, 0 to turn it off.
+    5   Character Walk Path - shows walking path for the character. 
+        Pass DATA matching desired Character ID.
 
 *See Also:* [Debugging features](Debuggingfeatures),
 [System.RuntimeInfo](System#systemruntimeinfo)
