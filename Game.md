@@ -957,7 +957,7 @@ Example:
       Display("You are using the German translation.");
     }
 
-*See Also:* 
+*See Also:*
 [Game.ChangeTranslation](Game#gamechangetranslation),
 [GetTranslation](Globalfunctions_General#gettranslation),
 [IsTranslationAvailable](Globalfunctions_General#istranslationavailable),

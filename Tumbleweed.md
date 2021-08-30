@@ -19,7 +19,7 @@ Tumbleweed template and this manual page is created by Abstauber, and released w
 
 *Tumbleweed Verbs*
 is a template that allows you to recreate those classic SCUMM games,
-as well as the modern iteration Thimbleweed Park (TM) by Terrible Toybox, Inc. 
+as well as the modern iteration Thimbleweed Park (TM) by Terrible Toybox, Inc.
 
 Setting up the template with all your custom graphics and colors has been
 simplified a lot. All settings are grouped in the submodule TemplateSettings.asc.

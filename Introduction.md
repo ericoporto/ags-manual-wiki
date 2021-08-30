@@ -17,7 +17,7 @@ Making a game has never been so productive!
 
 ### Installing AGS
 
-*Note:* AGS Editor is Windows only. 
+*Note:* AGS Editor is Windows only.
 
 *Download AGS*. The latest stable release is always available from the [AGS Download site](https://www.adventuregamestudio.co.uk/site/ags/), and beta releases can be found at the top of [Editor Releases Forum](https://www.adventuregamestudio.co.uk/forums/index.php?board=28.0).
 

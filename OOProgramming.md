@@ -194,7 +194,7 @@ within a struct.
     // even though it's static we can still use extenders to define the accessors;
     // but note how we use "static Some" here instead of "this Some*", as no this pointer
     // may be available in a static method.
-    int get_Thing(static Some) 
+    int get_Thing(static Some)
     {
         return Some_Thing;
     }

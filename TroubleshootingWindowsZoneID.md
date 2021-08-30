@@ -1,4 +1,4 @@
-## Troubleshooting Windows Zone Identifier 
+## Troubleshooting Windows Zone Identifier
 
 ### Introduction
 

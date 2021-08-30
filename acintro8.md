@@ -48,7 +48,7 @@ it and choose **"New Character"**. The new **"cChar1"** character and their prop
 
 In the Properties Grid:
 * **Design** -> **RealName** - Give this new character a _Real Name_. I'll call him
-**"Merchant"**. 
+**"Merchant"**.
 * **Design** -> **ScriptName** - Now - **and this bit is vital** - you also need to set this new
 character's _Script Name_. This is the name by which we refer to him
 when creating our dialogs. I'll just use **"cMerchant"** as the script name.

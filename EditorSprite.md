@@ -21,7 +21,7 @@ your game project.
 AGS it is added to the sprite data inside your game project's directory and the
 source file isn't read again unless you choose to re-import it. This is done by
 right clicking a sprite and choosing the "Replace sprite(s) from source..."
-option. 
+option.
 
 **NOTE:** You can quickly select all files in a folder by selecting the first
 file and then pressing Shift+End.

@@ -21,8 +21,8 @@ because all sprite and background scene imports rely on the palette
 setup to be the same. You **CANNOT** use hi-color nor true-color
 sprites or backgrounds in a 256-color game.
 All this means, use 8-bit color only when you know what you are doing or when you intentionally want to punish yourself with lots of nerdy fumbling around on settings for colormodes that were not artist's decisions but actual hardware limitations of the time and every artist is glad these restrictions are no longer in place.
-But you can do really cool color cycling effects only in 8-bit games, 
-other than that this is really outdated technology, but it still works 
+But you can do really cool color cycling effects only in 8-bit games,
+other than that this is really outdated technology, but it still works
 of course, and how it works is explained in the next paragraphs.
 
 
@@ -469,7 +469,7 @@ of checkboxes to its right:
 **Dialog scripts**
 
 You control what happens when the player chooses an option by editing
-the script on the right. For more information on how to handle this script 
+the script on the right. For more information on how to handle this script
 see the [Article about Dialog Scripts](DialogScript).
 
 **Parser input**

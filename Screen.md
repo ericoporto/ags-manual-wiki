@@ -1,6 +1,6 @@
 ## `Screen` Functions and Properties
 
-Screen is a new small struct that provides access to viewports and conversion between screen and room coordinates. 
+Screen is a new small struct that provides access to viewports and conversion between screen and room coordinates.
 
 *Compatibility:* Screen struct is supported by **AGS 3.5.0** and later versions.
 

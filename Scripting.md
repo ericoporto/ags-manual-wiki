@@ -1,7 +1,7 @@
 ## Scripting API
 
 - [Script API Overview](ScriptAPIOverview)
-- [repeatedly_execute / repeatedly_execute_always](RepExec) 
+- [repeatedly_execute / repeatedly_execute_always](RepExec)
 - [Custom dialog options rendering](CustomDialogOptions)
 - [Standard Constants](Constants)
 - [Standard Enumerated Types](StandardEnums)

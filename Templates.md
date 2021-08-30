@@ -7,7 +7,7 @@ your game off.
 AGS comes with a few standard templates:
 
 - Empty Game (...which is what it says)
-- [Tumbleweed](Tumbleweed) (9-Verb) 
+- [Tumbleweed](Tumbleweed) (9-Verb)
 - [Sierra-style](TemplateSierraStyle)
 - [BASS (two click handler)](TemplateBASS) (like **B**eneath **a** **S**teel **S**ky)
 - [Verbcoin](TemplateVerbcoin)
@@ -67,7 +67,7 @@ do, then its contents will be displayed to the user in a messagebox
 after they create a new game based on the template. You could use this
 to explain briefly about any key aspects of the template, or it could
 tell them to read your README file. This file should be quite small,
-its entire contents need to fit into a standard message box, so keep 
+its entire contents need to fit into a standard message box, so keep
 it below 255 characters.
 
 NOTE: Do not simply make a template out of a half-finished game. If

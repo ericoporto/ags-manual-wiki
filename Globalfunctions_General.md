@@ -142,7 +142,7 @@ with what they do:
         parts of the game or going to a specific point to test something.
     4   Show FPS - toggles whether the current frames per second is displayed
         on the screen. Pass DATA as 1 to turn this on, 0 to turn it off.
-    5   Character Walk Path - shows walking path for the character. 
+    5   Character Walk Path - shows walking path for the character.
         Pass DATA matching desired Character ID.
 
 *See Also:* [Debugging features](Debuggingfeatures),
@@ -469,7 +469,7 @@ Example:
 If there is no translation for the supplied string, it will be returned
 unchanged, so it is always safe to use this function.
 
-*See Also:* 
+*See Also:*
 [Game.ChangeTranslation](Game#gamechangetranslation),
 [Game.TranslationFilename](Game#gametranslationfilename),
 [IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
@@ -694,7 +694,7 @@ Finds out whether the player is using a game translation or not.
 
 Returns 1 if a translation is in use, 0 if not.
 
-*See Also:* 
+*See Also:*
 [Game.ChangeTranslation](Game#gamechangetranslation),
 [Game.TranslationFilename](Game#gametranslationfilename),
 [GetTranslation](Globalfunctions_General#gettranslation),
@@ -758,7 +758,7 @@ Will move the character EGO below object number 0, then turn off object
 
 Stops AGS processing character movement and animations. This has the
 same effect on the game as happens when a modal GUI is popped up. `PauseGame()`
-works as a counter, so if you call it twice, you will need to 
+works as a counter, so if you call it twice, you will need to
 call `UnPauseGame()` game twice too to resume game.
 
 To avoid this behavior make sure to only pause once:
@@ -1335,7 +1335,7 @@ When you have a hard time keeping track of the timers only by number you can use
 
     #define Delay_CustomAnimation 1
 
-    SetTimer(Delay_CustomAnimation, 2000); 
+    SetTimer(Delay_CustomAnimation, 2000);
 
 this "names" timer 1 and sets it to expire after 2000 game cycles
 
@@ -1461,14 +1461,14 @@ the editor.
 
     UnPauseGame ()
 
-Resumes the game. 
+Resumes the game.
 
 Example:
 
     if (IsGamePaused() == 1)
         UnPauseGame();
 
-will unpause the game if it is paused. 
+will unpause the game if it is paused.
 
 **NOTE:** Because PauseGame works as a counter, if you called it more
 than once, this won't work. To ignore this behavior, unpause as much
