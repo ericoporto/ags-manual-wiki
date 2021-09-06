@@ -127,7 +127,7 @@ Example:
 
 ### `GetViewportX`
 
-**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[.Camera.X](Camera#camerax) instead.**
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[Camera.X](Camera#camerax) instead.**
 
     GetViewportX()
 
@@ -138,7 +138,7 @@ allows you to find out what part of the room the player is looking at.
 
 ### `GetViewportY`
 
-**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[.Camera.Y](Camera#cameray) instead.**
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[Camera.Y](Camera#cameray) instead.**
 
     GetViewportY()
 
@@ -231,7 +231,7 @@ will display a message if the player has been to room 14.
 
 ### `ReleaseViewport`
 
-**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[.Camera.AutoTracking](Camera#cameraautotracking) instead.**
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[Camera.AutoTracking](Camera#cameraautotracking) instead.**
 
     ReleaseViewport()
 
@@ -368,7 +368,7 @@ integer 20 is 1.
 
 ### `SetViewport`
 
-**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[.Camera.SetAt](Camera#camerasetat) instead.**
+**This function is obsolete since AGS 3.5.0. Use [Game](Game#gamecamera)[Camera.SetAt](Camera#camerasetat) instead.**
 
     SetViewport(int x, int y)
 
