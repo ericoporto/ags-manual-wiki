@@ -50,7 +50,7 @@ speed 3. The function won't return until the animation is finished.
 
 *Compatibility:* Optional *frame* parameter is supported only by **AGS 3.5.0** and later versions.
 
-*See Also:* [Button.Animate](Button#buttonanimate),
+*See also:* [Button.Animate](Button#buttonanimate),
 [Character.Animate](Character#characteranimate),
 [Object.Animating](Object#objectanimating),
 [Object.SetView](Object#objectsetview),
@@ -75,7 +75,7 @@ will display the message if the object oBullet is over the object oWall.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Object.GetAtScreenXY](Object#objectgetatscreenxy),
+*See also:* [Object.GetAtScreenXY](Object#objectgetatscreenxy),
 [Character.GetAtRoomXY](Character#charactergetatroomxy),
 [Hotspot.GetAtRoomXY](Hotspot#hotspotgetatroomxy),
 [Region.GetAtRoomXY](Region#regiongetatroomxy),
@@ -102,7 +102,7 @@ Example:
 
 will display the message if there is the object oRock under the mouse cursor.
 
-*See Also:* [Object.GetAtRoomXY](Object#objectgetatroomxy), [Character.GetAtScreenXY](Character#charactergetatscreenxy), [Hotspot.GetAtScreenXY](Hotspot#hotspotgetatscreenxy), [Region.GetAtScreenXY](Region#regiongetatscreenxy), [Game.GetLocationName](Game#gamegetlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
+*See also:* [Object.GetAtRoomXY](Object#objectgetatroomxy), [Character.GetAtScreenXY](Character#charactergetatscreenxy), [Hotspot.GetAtScreenXY](Hotspot#hotspotgetatscreenxy), [Region.GetAtScreenXY](Region#regiongetatscreenxy), [Game.GetLocationName](Game#gamegetlocationname), [GetLocationType](Globalfunctions_General#getlocationtype)
 
 ---
 
@@ -128,7 +128,7 @@ Example:
 will print the message if object 0 has its "Value" property set to more
 than 200.
 
-*See Also:* [Object.GetTextProperty](Object#objectgettextproperty)
+*See also:* [Object.GetTextProperty](Object#objectgettextproperty)
 
 ---
 
@@ -154,7 +154,7 @@ Example:
 
 will retrieve Object 0's "description" property then display it.
 
-*See Also:* [Object.GetProperty](Object#objectgetproperty)
+*See also:* [Object.GetProperty](Object#objectgetproperty)
 
 ---
 
@@ -180,7 +180,7 @@ will change Table's "ItemCapacity" custom property to 5.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Object.SetTextProperty](Object#objectsettextproperty)
+*See also:* [Object.SetTextProperty](Object#objectsettextproperty)
 
 ---
 
@@ -204,7 +204,7 @@ will change table's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Object.SetProperty](Object#objectsetproperty)
+*See also:* [Object.SetProperty](Object#objectsetproperty)
 
 ---
 
@@ -229,7 +229,7 @@ Example:
 
 will display the message if the objects 2 and 3 are colliding.
 
-*See Also:* [AreThingsOverlapping](Globalfunctions_Room#arethingsoverlapping)
+*See also:* [AreThingsOverlapping](Globalfunctions_Room#arethingsoverlapping)
 
 ---
 
@@ -252,7 +252,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
+*See also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
 [Object.RunInteraction](Object#objectruninteraction)
 
 ---
@@ -317,7 +317,7 @@ Example:
 will move object 2 to 125,40 and return control to the player when the
 object gets there.
 
-*See Also:* [Object.Moving](Object#objectmoving),
+*See also:* [Object.Moving](Object#objectmoving),
 [Character.Walk](Character#characterwalk),
 [Object.StopMoving](Object#objectstopmoving)
 
@@ -340,7 +340,7 @@ Example:
 
 will tint object 1 green for a second, then turn it back to normal.
 
-*See Also:* [Object.Tint](Object#objecttint)
+*See also:* [Object.Tint](Object#objecttint)
 
 ---
 
@@ -360,7 +360,7 @@ Example:
 will execute the code defined in object 3's "Interact with object" event
 handler.
 
-*See Also:* [Room.ProcessClick](Room#roomprocessclick),
+*See also:* [Room.ProcessClick](Room#roomprocessclick),
 [Object.IsInteractionAvailable](Object#objectisinteractionavailable),
 [Character.RunInteraction](Character#characterruninteraction),
 [Hotspot.RunInteraction](Hotspot#hotspotruninteraction)
@@ -396,7 +396,7 @@ This will give the lamp maximal individual brightness.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Object.Tint](Object#objecttint),
+*See also:* [Object.Tint](Object#objecttint),
 [SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel),
 [Character.SetLightLevel](Character#charactersetlightlevel),
 [Region.LightLevel](Region#regionlightlevel)
@@ -423,7 +423,7 @@ Example:
 
 will change object's 2 position to 50,100.
 
-*See Also:* [Object.X](Object#objectx),
+*See also:* [Object.X](Object#objectx),
 [Object.Y](Object#objecty)
 
 ---
@@ -452,7 +452,7 @@ view 5, loop 2, frame 0.
 
 *Note:* Since **AGS 3.6.0** and later versions, this function will also resets loop and frame to 0 by default if you don't specify their values.
 
-*See Also:* [Object.Animate](Object#objectanimate)
+*See also:* [Object.Animate](Object#objectanimate)
 
 ---
 
@@ -471,7 +471,7 @@ Example:
 
 will stop object 2 animating if it currently is doing so.
 
-*See Also:* [Object.Animate](Object#objectanimate),
+*See also:* [Object.Animate](Object#objectanimate),
 [Object.Animating](Object#objectanimating)
 
 ---
@@ -493,7 +493,7 @@ Example:
 
 will stop object 2 moving if it currently is doing so.
 
-*See Also:* [Object.Moving](Object#objectmoving),
+*See also:* [Object.Moving](Object#objectmoving),
 [Object.Move](Object#objectmove),
 [Character.StopMoving](Character#characterstopmoving)
 
@@ -529,7 +529,7 @@ Example:
 
 will tint object 1 green.
 
-*See Also:* [Object.RemoveTint](Object#objectremovetint),
+*See also:* [Object.RemoveTint](Object#objectremovetint),
 [SetAmbientTint](Globalfunctions_General#setambienttint)
 
 ---
@@ -556,7 +556,7 @@ will animate object 2 and wait until the animation finishes.
 In reality, you would simply use the Blocking parameter of Animate so
 you wouldn't need to do this.
 
-*See Also:* [Object.Animate](Object#objectanimate),
+*See also:* [Object.Animate](Object#objectanimate),
 [Object.Moving](Object#objectmoving),
 [Object.StopAnimating](Object#objectstopanimating),
 [Object.X](Object#objectx), [Object.Y](Object#objecty)
@@ -587,7 +587,7 @@ Example:
 will change object's 4 baseline to a line positioned at y coordinate
 100.
 
-*See Also:* [Character.Baseline](Character#characterbaseline),
+*See also:* [Character.Baseline](Character#characterbaseline),
 [Object.Y](Object#objecty),
 [SetWalkBehindBase](Globalfunctions_Room#setwalkbehindbase)
 
@@ -618,7 +618,7 @@ Example:
 will make the Rock object block 20 pixels high (10 above and 10 below
 its baseline)
 
-*See Also:* [Object.BlockingWidth](Object#objectblockingwidth),
+*See also:* [Object.BlockingWidth](Object#objectblockingwidth),
 [Object.Solid](Object#objectsolid)
 
 ---
@@ -648,7 +648,7 @@ Example:
 will make the Rock object block 50 pixels wide (25 pixels to the left of
 its center, and 25 to the right)
 
-*See Also:* [Object.BlockingHeight](Object#objectblockingheight),
+*See also:* [Object.BlockingHeight](Object#objectblockingheight),
 [Object.Solid](Object#objectsolid)
 
 ---
@@ -674,7 +674,7 @@ Example:
 
 will make object 2 ignore clicks from the player.
 
-*See Also:*
+*See also:*
 [Object.Visible](Object#objectvisible),
 [Character.Clickable](Character#characterclickable),
 [Hotspot.Enabled](Hotspot#hotspotenabled),
@@ -726,7 +726,7 @@ Example:
 will change the object 2's image to the image stored in the sprite
 manager's slot 100.
 
-*See Also:* [Object.SetView](Object#objectsetview)
+*See also:* [Object.SetView](Object#objectsetview)
 
 ---
 
@@ -885,7 +885,7 @@ Example:
 will move object 2 to 125,40 and return control to the player when the
 object gets there.
 
-*See Also:* [Object.Animating](Object#objectanimating),
+*See also:* [Object.Animating](Object#objectanimating),
 [Object.StopMoving](Object#objectstopmoving)
 
 ---
@@ -908,7 +908,7 @@ Example:
 
 will retrieve and then display object 0's name.
 
-*See Also:* [Game.GetLocationName](Game#gamegetlocationname)
+*See also:* [Game.GetLocationName](Game#gamegetlocationname)
 
 ---
 
@@ -931,7 +931,7 @@ Example:
 
 will mean that the Smallrock object blocks the path of characters.
 
-*See Also:* [Object.BlockingHeight](Object#objectblockingheight),
+*See also:* [Object.BlockingHeight](Object#objectblockingheight),
 [Object.BlockingWidth](Object#objectblockingwidth)
 
 ---
@@ -951,7 +951,7 @@ false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Object.Tint](Object#objecttint),
+*See also:* [Object.Tint](Object#objecttint),
 [Object.HasExplicitTint](Object#objecthasexplicittint),
 [Object.TintGreen](Object#objecttintgreen),
 [Object.TintRed](Object#objecttintred),
@@ -974,7 +974,7 @@ false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Object.Tint](Object#objecttint),
+*See also:* [Object.Tint](Object#objecttint),
 [Object.TintBlue](Object#objecttintblue),
 [Object.TintRed](Object#objecttintred),
 [Object.TintSaturation](Object#objecttintsaturation),
@@ -997,7 +997,7 @@ false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Object.Tint](Object#objecttint),
+*See also:* [Object.Tint](Object#objecttint),
 [Object.TintBlue](Object#objecttintblue),
 [Object.TintGreen](Object#objecttintgreen),
 [Object.TintSaturation](Object#objecttintsaturation),
@@ -1020,7 +1020,7 @@ false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Object.Tint](Object#objecttint),
+*See also:* [Object.Tint](Object#objecttint),
 [Object.TintBlue](Object#objecttintblue),
 [Object.TintGreen](Object#objecttintgreen),
 [Object.TintRed](Object#objecttintred),
@@ -1043,7 +1043,7 @@ false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Object.Tint](Object#objecttint),
+*See also:* [Object.Tint](Object#objecttint),
 [Object.TintBlue](Object#objecttintblue),
 [Object.TintGreen](Object#objecttintgreen),
 [Object.TintRed](Object#objecttintred),
@@ -1089,7 +1089,7 @@ Example:
 will gradually fade out the object from its current transparency level
 to being fully invisible.
 
-*See Also:* [Character.Transparency](Character#charactertransparency),
+*See also:* [Character.Transparency](Character#charactertransparency),
 [GUI.Transparency](GUI#guitransparency)
 
 ---
@@ -1157,7 +1157,7 @@ Example:
 
 will display the X co-ordinate of object 1.
 
-*See Also:* [Object.Y](Object#objecty),
+*See also:* [Object.Y](Object#objecty),
 [Object.Animating](Object#objectanimating),
 [Object.Visible](Object#objectvisible),
 [Object.SetPosition](Object#objectsetposition)
@@ -1186,7 +1186,7 @@ Example:
 
 will display the Y co-ordinate of object 1.
 
-*See Also:* [Object.Animating](Object#objectanimating),
+*See also:* [Object.Animating](Object#objectanimating),
 [Object.Baseline](Object#objectbaseline),
 [Object.X](Object#objectx),
 [Object.SetPosition](Object#objectsetposition)

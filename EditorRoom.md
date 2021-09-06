@@ -132,4 +132,4 @@ preferred external image editor.
 indexed color palette, where color 0 signifies transparency and colors 1-15 are
 used as the respective hotspot/walk-behind/walkable area numbers
 
-See Also: [Room](Room)
+*See also:* [Room](Room)

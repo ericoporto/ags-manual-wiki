@@ -16,7 +16,7 @@ Example:
 
 will center the CONTROLPANEL GUI in the middle of the screen.
 
-*See Also:* [GUI.SetPosition](GUI#guisetposition)
+*See also:* [GUI.SetPosition](GUI#guisetposition)
 
 ---
 
@@ -40,7 +40,7 @@ triggers OnClick event for gMainMenu.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Button.Click](Button#buttonclick),
+*See also:* [Button.Click](Button#buttonclick),
 [GUI.ProcessClick](GUI#guiprocessclick)
 
 ---
@@ -78,7 +78,7 @@ Example:
 
 will display the number of the GUI that the mouse is over.
 
-*See Also:*
+*See also:*
 [GUIControl.GetAtScreenXY](GUIControl#guicontrolgetatscreenxy),
 [GUI.ID](GUI#guiid), [GUI.ZOrder](GUI#guizorder)
 
@@ -108,7 +108,7 @@ Pointer mode, which will ignore anything but interface.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Mouse.Click](Mouse#mouseclick),
+*See also:* [Mouse.Click](Mouse#mouseclick),
 [Room.ProcessClick](Room#roomprocessclick)
 
 ---
@@ -130,7 +130,7 @@ Example:
 
 will move the GUI to the position where the cursor is.
 
-*See Also:* [GUI.Centre](GUI#guicentre),
+*See also:* [GUI.Centre](GUI#guicentre),
 [GUI.BackgroundGraphic](GUI#guibackgroundgraphic),
 [GUIControl.SetPosition](GUIControl#guicontrolsetposition),
 [GUI.SetSize](GUI#guisetsize), [GUI.X](GUI#guix),
@@ -158,7 +158,7 @@ Example:
 
 changes the ICONBAR GUI to be the size of half the screen
 
-*See Also:* [GUI.Centre](GUI#guicentre),
+*See also:* [GUI.Centre](GUI#guicentre),
 [GUI.Height](GUI#guiheight),
 [GUIControl.SetPosition](GUIControl#guicontrolsetposition),
 [GUI.SetPosition](GUI#guisetposition),
@@ -179,7 +179,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [TextWindowGUI](TextWindowGUI)
+*See also:* [TextWindowGUI](TextWindowGUI)
 
 ---
 
@@ -195,7 +195,7 @@ This property is ignored if the GUI.BackgroundGraphic is assigned a sprite numbe
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [GUI.BackgroundGraphic](GUI#guibackgroundgraphic), [GUI.BorderColor](GUI#guibordercolor)
+*See also:* [GUI.BackgroundGraphic](GUI#guibackgroundgraphic), [GUI.BorderColor](GUI#guibordercolor)
 
 ---
 
@@ -211,7 +211,7 @@ You can set this to 0 to remove the background image from the GUI.
 
 When this property is assigned a sprite number other than 0 GUI.BackgroundColor and GUI.BorderColor are ignored.
 
-*See Also:* [GUI.SetPosition](GUI#guisetposition),
+*See also:* [GUI.SetPosition](GUI#guisetposition),
 [Button.NormalGraphic](Button#buttonnormalgraphic)
 
 ---
@@ -228,7 +228,7 @@ Not applicable to TextWindow GUIs. This property is ignored if the GUI.Backgroun
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [GUI.BackgroundColor](GUI#guibackgroundcolor), [GUI.BackgroundGraphic](GUI#guibackgroundgraphic)
+*See also:* [GUI.BackgroundColor](GUI#guibackgroundcolor), [GUI.BackgroundGraphic](GUI#guibackgroundgraphic)
 
 ---
 
@@ -255,7 +255,7 @@ Example:
 
 sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
-*See Also:* [GUI.GetAtScreenXY](GUI#guigetatscreenxy)
+*See also:* [GUI.GetAtScreenXY](GUI#guigetatscreenxy)
 
 ---
 
@@ -277,7 +277,7 @@ Example:
 
 disables all controls on the INVENTORY GUI.
 
-*See Also:* [GUI.Controls](GUI#guicontrols)
+*See also:* [GUI.Controls](GUI#guicontrols)
 
 ---
 
@@ -311,7 +311,7 @@ Example:
 gets list box number 4 from the INVENTORY GUI, and then adds an item to
 it. If control 4 isn't a listbox, you will get a Null Reference error.
 
-*See Also:* [GUIControl.As\*](GUIControl#guicontrolastype),
+*See also:* [GUIControl.As\*](GUIControl#guicontrolastype),
 [GUI.ControlCount](GUI#guicontrolcount)
 
 ---
@@ -331,7 +331,7 @@ Example:
 
 displays the height of the ICONBAR GUI.
 
-*See Also:* [GUI.SetSize](GUI#guisetsize),
+*See also:* [GUI.SetSize](GUI#guisetsize),
 [GUI.Width](GUI#guiwidth)
 
 ---
@@ -353,7 +353,7 @@ uses the obsolete SetGUIClickable function to make the ICONBAR GUI
 clickable, and then uses the equivalent modern property to stop it being
 clickable.
 
-*See Also:* [GUIControl.ID](GUIControl#guicontrolid)
+*See also:* [GUIControl.ID](GUIControl#guicontrolid)
 
 ---
 
@@ -380,7 +380,7 @@ to be set as `Be hidden`.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [GUI.PopupYPos](GUI#guipopupypos), [GUI.Shown](GUI#guishown), [GUI.Visible](GUI#guivisible)
+*See also:* [GUI.PopupYPos](GUI#guipopupypos), [GUI.Shown](GUI#guishown), [GUI.Visible](GUI#guivisible)
 
 ---
 
@@ -394,7 +394,7 @@ This property is ignored if GUI has a different style.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [GUI.PopupStyle](GUI#guipopupstyle), [GUI.Shown](GUI#guishown), [GUI.Visible](GUI#guivisible)
+*See also:* [GUI.PopupStyle](GUI#guipopupstyle), [GUI.Shown](GUI#guishown), [GUI.Visible](GUI#guivisible)
 
 ---
 
@@ -410,7 +410,7 @@ In the common circumstances this property's value is equivalent to checking [GUI
 
 *Compatibility:* Supported by **AGS 3.5.1** and later versions.
 
-*See Also:* [GUI.PopupStyle](GUI#guipopupstyle), [GUI.Visible](GUI#guivisible)
+*See also:* [GUI.PopupStyle](GUI#guipopupstyle), [GUI.Visible](GUI#guivisible)
 
 ---
 
@@ -451,7 +451,7 @@ Example:
 
 will gradually fade the INVENTORY GUI out until it is invisible.
 
-*See Also:* [Object.Transparency](Object#objecttransparency)
+*See also:* [Object.Transparency](Object#objecttransparency)
 
 ---
 
@@ -489,7 +489,7 @@ Example:
 
 will turn on the SETTINGS GUI.
 
-*See Also:* [GUI.Shown](GUI#guishown), [IsGamePaused](Globalfunctions_General#isgamepaused)
+*See also:* [GUI.Shown](GUI#guishown), [IsGamePaused](Globalfunctions_General#isgamepaused)
 
 ---
 
@@ -508,7 +508,7 @@ Example:
 
 makes the INVENTORY GUI 5 pixels wider.
 
-*See Also:* [GUI.Height](GUI#guiheight),
+*See also:* [GUI.Height](GUI#guiheight),
 [GUI.SetSize](GUI#guisetsize)
 
 ---
@@ -530,7 +530,7 @@ Example:
 
 moves the GUI right 5 pixels.
 
-*See Also:* [GUI.SetPosition](GUI#guisetposition),
+*See also:* [GUI.SetPosition](GUI#guisetposition),
 [GUI.Y](GUI#guiy)
 
 ---
@@ -553,7 +553,7 @@ Example:
 
 moves the GUI down 5 pixels.
 
-*See Also:* [GUI.SetPosition](GUI#guisetposition),
+*See also:* [GUI.SetPosition](GUI#guisetposition),
 [GUI.X](GUI#guix)
 
 ---
@@ -576,5 +576,5 @@ Example:
 
 sets the STATUSLINE GUI to be behind all other GUIs.
 
-*See Also:* [GUI.GetAtScreenXY](GUI#guigetatscreenxy)
+*See also:* [GUI.GetAtScreenXY](GUI#guigetatscreenxy)
 

@@ -20,7 +20,7 @@ Example:
 
 will change the *txtUserInput* text box to use Font "Normal".
 
-*See Also:* [Label.Font](Label#labelfont),
+*See also:* [Label.Font](Label#labelfont),
 [TextBox.Text](TextBox#textboxtext)
 
 ---
@@ -56,7 +56,7 @@ Example:
 
 will clear the txtUserInput text box.
 
-*See Also:* [TextBox.Font](TextBox#textboxfont),
+*See also:* [TextBox.Font](TextBox#textboxfont),
 [String.CompareTo](String#stringcompareto),
 [Label.Text](Label#labeltext)
 
@@ -77,5 +77,5 @@ will change text box 'txtInput' to have yellow text.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [TextBox.ShowBorder](TextBox#textboxshowborder), [TextBox.Text](TextBox#textboxtext)
+*See also:* [TextBox.ShowBorder](TextBox#textboxshowborder), [TextBox.Text](TextBox#textboxtext)
 

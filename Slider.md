@@ -2,7 +2,7 @@
 
 Slider is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
-_See also:_ [Editing GUI Sliders](EditingGUIs#sliders)
+*See also:* [Editing GUI Sliders](EditingGUIs#sliders)
 
 ---
 
@@ -24,7 +24,7 @@ displays the *sldHealth* slider's background image
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](Slider#sliderhandlegraphic)
+*See also:* [Slider.HandleGraphic](Slider#sliderhandlegraphic)
 
 ---
 
@@ -47,7 +47,7 @@ displays the *sldHealth* slider's handle image
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:*
+*See also:*
 [Slider.BackgroundGraphic](Slider#sliderbackgroundgraphic),
 [Slider.HandleOffset](Slider#sliderhandleoffset)
 
@@ -69,7 +69,7 @@ the right.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Slider.HandleGraphic](Slider#sliderhandlegraphic)
+*See also:* [Slider.HandleGraphic](Slider#sliderhandlegraphic)
 
 ---
 
@@ -90,7 +90,7 @@ Example:
 
 sets the maximum value of the *sldHealth* slider to 200.
 
-*See Also:* [Slider.Min](Slider#slidermin),
+*See also:* [Slider.Min](Slider#slidermin),
 [Slider.Value](Slider#slidervalue)
 
 ---
@@ -113,7 +113,7 @@ Example:
 
 sets the minimum value of the *sldHealth* slider to 0.
 
-*See Also:* [Slider.Max](Slider#slidermax),
+*See also:* [Slider.Max](Slider#slidermax),
 [Slider.Value](Slider#slidervalue)
 
 ---
@@ -138,5 +138,5 @@ Example:
 
 will set the audio volume to the value of the slider *sldVolume*.
 
-*See Also:* [Label.Text](Label#labeltext)
+*See also:* [Label.Text](Label#labeltext)
 

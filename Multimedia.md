@@ -82,7 +82,7 @@ waits for any currently playing music to finish.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](Multimedia#gamestopaudio)
+*See also:* [Game.StopAudio](Multimedia#gamestopaudio)
 
 ---
 
@@ -106,7 +106,7 @@ will display a message if the voice pack is not available.
 **NOTE:** This function used to be called IsVoxAvailable, but has now
 been renamed to avoid confusion.
 
-*See Also:* [AudioClip.IsAvailable](AudioClip#audioclipisavailable)
+*See also:* [AudioClip.IsAvailable](AudioClip#audioclipisavailable)
 
 ---
 
@@ -134,7 +134,7 @@ Example:
 will play flic2 and the player will be able to skip the flic by pressing
 the ESC key.
 
-*See Also:* [PlayVideo](Multimedia#playvideo)
+*See also:* [PlayVideo](Multimedia#playvideo)
 
 ---
 
@@ -147,7 +147,7 @@ This command is obsolete.
 Use the AudioClip.Play command and set its Volume property to 0 to
 simulate this effect.
 
-*See Also:* [AudioClip.Play](AudioClip#audioclipplay),
+*See also:* [AudioClip.Play](AudioClip#audioclipplay),
 [AudioChannel.Volume](AudioChannel#audiochannelvolume)
 
 ---
@@ -213,7 +213,7 @@ AVI / MPG: Windows only.
 *Compatibility:* OGG Theora supported by **AGS 3.1.1** and later
 versions.
 
-*See Also:* [PlayFlic](Multimedia#playflic)
+*See also:* [PlayFlic](Multimedia#playflic)
 
 ---
 
@@ -240,7 +240,7 @@ while speech is playing.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume)
+*See also:* [Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume)
 
 ---
 
@@ -279,7 +279,7 @@ will change the volume of all currently playing and future music to
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [SetSpeechVolume](Multimedia#setspeechvolume),
+*See also:* [SetSpeechVolume](Multimedia#setspeechvolume),
 [AudioClip.Play](AudioClip#audioclipplay),
 [System.Volume](System#systemvolume)
 
@@ -299,7 +299,7 @@ Example:
 
 will set the speech volume to 200.
 
-*See Also:* [Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume)
+*See also:* [Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume)
 
 ---
 
@@ -325,6 +325,6 @@ will stop all currently playing audio.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.IsAudioPlaying](Multimedia#gameisaudioplaying),
+*See also:* [Game.IsAudioPlaying](Multimedia#gameisaudioplaying),
 [AudioClip.Play](AudioClip#audioclipplay),
 [AudioChannel.Stop](AudioChannel#audiochannelstop)

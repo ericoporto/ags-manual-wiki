@@ -80,7 +80,7 @@ this sets Health 3 to 50, Health 4 to 100, and the Health index that
 corresponds to the player character's ID number to 10.  
 You need to do this inside a function.
 
-See Also: [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct)
+*See also:* [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct)
 
 ---
 
@@ -158,7 +158,7 @@ than this.
 
 **NOTE:** We recommend to not rely on editor version in most cases, and use [Script API version macros](Constants) instead whenever possible.
 
-_See also_: [Preprocessor](Preprocessor#ifver-ifnver)
+*See also:* [Preprocessor](Preprocessor#ifver-ifnver)
 
 ---
 
@@ -655,7 +655,7 @@ function variable, and function ended), or is assigned another object,
 or simply assigned `null`, then the dynamic object is removed from your
 game forever.
 
-See Also: [new](ScriptKeywords#new), [Pointers in AGS](Pointers)
+*See also:* [new](ScriptKeywords#new), [Pointers in AGS](Pointers)
 
 ---
 
@@ -684,7 +684,7 @@ Example:
       SomeApple = new Apple;
     }
 
-See Also: [managed](ScriptKeywords#managed), [Pointers in AGS](Pointers)
+*See also:* [managed](ScriptKeywords#managed), [Pointers in AGS](Pointers)
 
 ---
 

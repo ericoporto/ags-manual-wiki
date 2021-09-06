@@ -29,7 +29,7 @@ Example:
 will run the code if object 2 is overlapping EGO. This could be useful
 if object 2 was a bullet, for instance.
 
-*See Also:*
+*See also:*
 [Character.IsCollidingWithChar](Character#characteriscollidingwithchar),
 [Object.IsCollidingWithObject](Object#objectiscollidingwithobject)
 
@@ -61,7 +61,7 @@ Example:
 
 will disable all ground-level events, but leave light levels working
 
-*See Also:* [Hotspot.Enabled](Hotspot#hotspotenabled),
+*See also:* [Hotspot.Enabled](Hotspot#hotspotenabled),
 [Region.Enabled](Region#regionenabled),
 [EnableGroundLevelAreas](Globalfunctions_Room#enablegroundlevelareas)
 
@@ -81,7 +81,7 @@ Example:
 
 will re-enable all ground-level events.
 
-*See Also:* [Hotspot.Enabled](Hotspot#hotspotenabled),
+*See also:* [Hotspot.Enabled](Hotspot#hotspotenabled),
 [Region.Enabled](Region#regionenabled),
 [DisableGroundLevelAreas](Globalfunctions_Room#disablegroundlevelareas)
 
@@ -102,7 +102,7 @@ Example:
 
 will turn on object 2 if the background frame of the room is frame 4.
 
-*See Also:* [SetBackgroundFrame](Globalfunctions_Room#setbackgroundframe)
+*See also:* [SetBackgroundFrame](Globalfunctions_Room#setbackgroundframe)
 
 ---
 
@@ -120,7 +120,7 @@ Example:
     if (GetScalingAt(player.x, player.y) == 100)
         Display ("The player is currently at normal size.");
 
-*See Also:* [GetWalkableAreaAt](Globalfunctions_Room#getwalkableareaat),
+*See also:* [GetWalkableAreaAt](Globalfunctions_Room#getwalkableareaat),
 [SetAreaScaling](Globalfunctions_Room#setareascaling)
 
 ---
@@ -172,7 +172,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [GetWalkableAreaAtScreen](Globalfunctions_Room#getwalkableareaatscreen), [Hotspot.GetAtRoomXY](Hotspot#hotspotgetatroomxy),
+*See also:* [GetWalkableAreaAtScreen](Globalfunctions_Room#getwalkableareaatscreen), [Hotspot.GetAtRoomXY](Hotspot#hotspotgetatroomxy),
 [Region.GetAtRoomXY](Region#regiongetatroomxy),
 [GetScalingAt](Globalfunctions_Room#getscalingat)
 
@@ -195,7 +195,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [GetWalkableAreaAtRoom](Globalfunctions_Room#getwalkableareaatroom), [Hotspot.GetAtScreenXY](Hotspot#hotspotgetatscreenxy),
+*See also:* [GetWalkableAreaAtRoom](Globalfunctions_Room#getwalkableareaatroom), [Hotspot.GetAtScreenXY](Hotspot#hotspotgetatscreenxy),
 [Region.GetAtScreenXY](Region#regiongetatscreenxy),
 [GetScalingAt](Globalfunctions_Room#getscalingat)
 
@@ -225,7 +225,7 @@ Example:
 
 will display a message if the player has been to room 14.
 
-*See Also:* [ResetRoom](Globalfunctions_Room#resetroom)
+*See also:* [ResetRoom](Globalfunctions_Room#resetroom)
 
 ---
 
@@ -258,7 +258,7 @@ Example:
 
 will make the walking area 5 unwalkable.
 
-*See Also:* [RestoreWalkableArea](Globalfunctions_Room#restorewalkablearea)
+*See also:* [RestoreWalkableArea](Globalfunctions_Room#restorewalkablearea)
 
 ---
 
@@ -287,7 +287,7 @@ Example:
 will reset the intro room so it can be played again if the player wants
 to.
 
-*See Also:* [HasPlayerBeenInRoom](Globalfunctions_Room#hasplayerbeeninroom)
+*See also:* [HasPlayerBeenInRoom](Globalfunctions_Room#hasplayerbeeninroom)
 
 ---
 
@@ -303,7 +303,7 @@ Example:
 
 will make the walking area 4 walkable again.
 
-*See Also:* [RemoveWalkableArea](Globalfunctions_Room#removewalkablearea)
+*See also:* [RemoveWalkableArea](Globalfunctions_Room#removewalkablearea)
 
 ---
 
@@ -332,7 +332,7 @@ Example:
 will set walkable area 5 to use continuous scaling from 120 to 170
 percent.
 
-*See Also:* [GetScalingAt](Globalfunctions_Room#getscalingat),
+*See also:* [GetScalingAt](Globalfunctions_Room#getscalingat),
 [GetWalkableAreaAt](Globalfunctions_Room#getwalkableareaat)
 
 ---
@@ -362,7 +362,7 @@ Example:
 will change the current room's background frame to 4 if the global
 integer 20 is 1.
 
-*See Also:* [GetBackgroundFrame](Globalfunctions_Room#getbackgroundframe)
+*See also:* [GetBackgroundFrame](Globalfunctions_Room#getbackgroundframe)
 
 ---
 
@@ -403,4 +403,4 @@ Example:
 
 will disable the walkbehind area number 3.
 
-*See Also:* [Object.Baseline](Object#objectbaseline)
+*See also:* [Object.Baseline](Object#objectbaseline)

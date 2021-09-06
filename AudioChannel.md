@@ -37,7 +37,7 @@ seek it back to the start.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Position](AudioChannel#audiochannelposition)
+*See also:* [AudioChannel.Position](AudioChannel#audiochannelposition)
 
 ---
 
@@ -71,7 +71,7 @@ of the *oMachine* room object.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](AudioChannel#audiochannelvolume),
+*See also:* [AudioChannel.Volume](AudioChannel#audiochannelvolume),
 [Character.ScaleVolume](Character#characterscalevolume)
 
 ---
@@ -117,7 +117,7 @@ stop it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [Game.StopAudio](Multimedia#gamestopaudio)
+*See also:* [Game.StopAudio](Multimedia#gamestopaudio)
 
 ---
 
@@ -161,7 +161,7 @@ finishes.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#audioclipplay)
+*See also:* [AudioClip.Play](AudioClip#audioclipplay)
 
 ---
 
@@ -185,7 +185,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.PositionMs](AudioChannel#audiochannelpositionms)
+*See also:* [AudioChannel.PositionMs](AudioChannel#audiochannelpositionms)
 
 ---
 
@@ -211,7 +211,7 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#audioclipplay)
+*See also:* [AudioClip.Play](AudioClip#audioclipplay)
 
 ---
 
@@ -242,7 +242,7 @@ will display what is currently playing on audio channel 2.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioClip.Play](AudioClip#audioclipplay),
+*See also:* [AudioClip.Play](AudioClip#audioclipplay),
 [System.AudioChannels](System#systemaudiochannels)
 
 ---
@@ -280,7 +280,7 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:*
+*See also:*
 [AudioChannel.PositionMs](AudioChannel#audiochannelpositionms),
 [AudioChannel.Seek](AudioChannel#audiochannelseek)
 
@@ -311,7 +311,7 @@ display its position.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* *See Also:*
+*See also:* *See also:*
 [AudioChannel.LengthMs](AudioChannel#audiochannellengthms),
 [AudioChannel.Position](AudioChannel#audiochannelposition)
 
@@ -351,7 +351,7 @@ reduce its volume.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:*
+*See also:*
 [AudioChannel.SetRoomLocation](AudioChannel#audiochannelsetroomlocation),
 [Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume),
 [System.Volume](System#systemvolume),

@@ -32,7 +32,7 @@ Example:
 
 will display the number of the inv item that the mouse is over
 
-*See Also:* [InventoryItem.Name](InventoryItem#inventoryitemname),
+*See also:* [InventoryItem.Name](InventoryItem#inventoryitemname),
 [Game.GetLocationName](Game#gamegetlocationname)
 
 ---
@@ -58,7 +58,7 @@ Example:
 will print the message if inventory item 1 has its "Value" property set
 to more than 200.
 
-*See Also:*
+*See also:*
 [InventoryItem.GetTextProperty](InventoryItem#inventoryitemgettextproperty)
 
 ---
@@ -85,7 +85,7 @@ Example:
 
 will retrieve inv item 2's "description" property and display it.
 
-*See Also:*
+*See also:*
 [InventoryItem.GetProperty](InventoryItem#inventoryitemgetproperty)
 
 ---
@@ -113,7 +113,7 @@ will change Stone's "weight" custom property to 120.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:*
+*See also:*
 [InventoryItem.SetTextProperty](InventoryItem#inventoryitemsettextproperty)
 
 ---
@@ -139,7 +139,7 @@ will change key's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:*
+*See also:*
 [InventoryItem.SetProperty](InventoryItem#inventoryitemsetproperty)
 
 ---
@@ -167,7 +167,7 @@ Example:
     if (iKeyring.IsInteractionAvailable(eModeLookat) == 0)
       Display("looking at this item would not do anything.");
 
-*See Also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
+*See also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
 [InventoryItem.RunInteraction](InventoryItem#inventoryitemruninteraction)
 
 ---
@@ -190,7 +190,7 @@ will run the inventory event handler for the current cursor mode when
 the player clicks on the item (Handle Inv Clicks needs to be enabled for
 this to work)
 
-*See Also:*
+*See also:*
 [InventoryItem.IsInteractionAvailable](InventoryItem#inventoryitemisinteractionavailable),
 [Room.ProcessClick](Room#roomprocessclick),
 [Character.RunInteraction](Character#characterruninteraction)
@@ -216,7 +216,7 @@ will display inventory item *iKey*'s cursor graphic.
 
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
-*See Also:* [InventoryItem.Graphic](InventoryItem#inventoryitemgraphic)
+*See also:* [InventoryItem.Graphic](InventoryItem#inventoryitemgraphic)
 
 ---
 
@@ -243,7 +243,7 @@ Example:
 will place the sprite number of the player's current inventory item into
 slot.
 
-*See Also:*
+*See also:*
 [InventoryItem.CursorGraphic](InventoryItem#inventoryitemcursorgraphic),
 [InventoryItem.GetAtScreenXY](InventoryItem#inventoryitemgetatscreenxy),
 [InventoryItem.Name](InventoryItem#inventoryitemname)
@@ -265,7 +265,7 @@ Example:
 uses the obsolete AddInventory command to add the shovel to EGO's
 inventory
 
-*See Also:* [Character.AddInventory](Character#characteraddinventory),
+*See also:* [Character.AddInventory](Character#characteraddinventory),
 [Character.LoseInventory](Character#characterloseinventory)
 
 ---
@@ -296,7 +296,7 @@ Example:
 
 will display the name of the player's current inventory item.
 
-*See Also:*
+*See also:*
 [InventoryItem.GetAtScreenXY](InventoryItem#inventoryitemgetatscreenxy),
 [InventoryItem.Graphic](InventoryItem#inventoryitemgraphic),
 [Game.GetLocationName](Game#gamegetlocationname)

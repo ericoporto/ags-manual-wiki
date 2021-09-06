@@ -10,7 +10,7 @@ By default viewport covers whole game screen, but you may change that anytime. C
 
 *Compatibility:* Viewport struct is supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Camera](Camera), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload), [Screen.Viewport](Screen#screenviewport), [Screen.Viewports](Screen#screenviewports)
+*See also:* [Camera](Camera), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload), [Screen.Viewport](Screen#screenviewport), [Screen.Viewports](Screen#screenviewports)
 
 ---
 
@@ -21,7 +21,7 @@ By default viewport covers whole game screen, but you may change that anytime. C
 Creates a new viewport and returns a pointer which you may use to operate it. Any viewport created like this may be also accessed by [Screen.Viewports](Screen#screenviewports) by index.
 The new viewport will cover whole game screen by default and does not have any camera linked initially (this is something that you will have to do).
 
-*See Also:* [Viewport.Camera](Viewport#viewportcamera), [Viewport.Delete](Viewport#viewportdelete), [Screen.Viewport](Screen#screenviewport), [Screen.Viewports](Screen#screenviewports)
+*See also:* [Viewport.Camera](Viewport#viewportcamera), [Viewport.Delete](Viewport#viewportdelete), [Screen.Viewport](Screen#screenviewport), [Screen.Viewports](Screen#screenviewports)
 
 ---
 
@@ -33,7 +33,7 @@ Removes an existing viewport. Primary viewport can be never removed and this com
 
 **IMPORTANT:** in **Screen.Viewports** array viewports are arranged in the order they were created. When you delete one in the middle all the following viewports will be shifted towards beginning of array.
 
-*See Also:* [Viewport.Create](Viewport#viewportcreate), [Screen.Viewport](Screen#screenviewport), [Screen.Viewports](Screen#screenviewports)
+*See also:* [Viewport.Create](Viewport#viewportcreate), [Screen.Viewport](Screen#screenviewport), [Screen.Viewports](Screen#screenviewports)
 
 ---
 
@@ -64,7 +64,7 @@ Example:
       Display("Player character is currently offscreen.");
     }
 
-*See Also:* [Viewport.ScreenToRoomPoint](Viewport#viewportscreentoroompoint), [Screen.RoomToScreenPoint](Screen#screenroomtoscreenpoint), [Screen.ScreenToRoomPoint](Screen#screenscreentoroompoint)
+*See also:* [Viewport.ScreenToRoomPoint](Viewport#viewportscreentoroompoint), [Screen.RoomToScreenPoint](Screen#screenroomtoscreenpoint), [Screen.ScreenToRoomPoint](Screen#screenscreentoroompoint)
 
 ---
 
@@ -74,7 +74,7 @@ Example:
 
 Changes viewport's position on the screen.
 
-*See Also:* [Viewport.X](Viewport#viewportx), [Viewport.Y](Viewport#viewporty), [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
+*See also:* [Viewport.X](Viewport#viewportx), [Viewport.Y](Viewport#viewporty), [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
 
 ---
 
@@ -97,7 +97,7 @@ Example:
       Display("Mouse cursor is currently outside the viewport.");
     }
 
-*See Also:* [Viewport.RoomToScreenPoint](Viewport#viewportscreentoroompoint), [Screen.RoomToScreenPoint](Screen#screenroomtoscreenpoint), [Screen.ScreenToRoomPoint](Screen#screenscreentoroompoint)
+*See also:* [Viewport.RoomToScreenPoint](Viewport#viewportscreentoroompoint), [Screen.RoomToScreenPoint](Screen#screenroomtoscreenpoint), [Screen.ScreenToRoomPoint](Screen#screenscreentoroompoint)
 
 ---
 
@@ -107,7 +107,7 @@ Example:
 
 Gets/sets the camera to be displayed in this viewport. Changing cameras is safe anytime, and the looks inside viewport will be changed during next drawing frame.
 
-*See Also:* [Camera.Create](Camera#cameracreate), [Game.Camera](Game#gamecamera), [Game.Cameras](Game#gamecameras)
+*See also:* [Camera.Create](Camera#cameracreate), [Game.Camera](Game#gamecamera), [Game.Cameras](Game#gamecameras)
 
 ---
 
@@ -117,7 +117,7 @@ Gets/sets the camera to be displayed in this viewport. Changing cameras is safe 
 
 Gets/sets the viewport's height in screen coordinates.
 
-*See Also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.X](Viewport#viewportx), [Viewport.Y](Viewport#viewporty), [Viewport.Width](Viewport#viewportwidth), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
+*See also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.X](Viewport#viewportx), [Viewport.Y](Viewport#viewporty), [Viewport.Width](Viewport#viewportwidth), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
 
 ---
 
@@ -129,7 +129,7 @@ Gets/sets the viewport's z-order relative to other viewports. This will be taken
 
 The z-order is an arbitrary number and only have meaning in comparison with other viewport's setting. Similarly to [GUI.ZOrder](GUI#guizorder), the lower value puts viewport to the back and higher value to the top.
 
-*See Also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.X](Viewport#viewportx), [Viewport.Y](Viewport#viewporty), [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
+*See also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.X](Viewport#viewportx), [Viewport.Y](Viewport#viewporty), [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
 
 ---
 
@@ -147,7 +147,7 @@ Gets/sets whether the viewport is enabled and drawn on screen.
 
 Gets/sets the viewport's width in screen coordinates.
 
-*See Also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.X](Viewport#viewportx), [Viewport.Y](Viewport#viewporty), [Viewport.Height](Viewport#viewportheight), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
+*See also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.X](Viewport#viewportx), [Viewport.Y](Viewport#viewporty), [Viewport.Height](Viewport#viewportheight), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
 
 ---
 
@@ -157,7 +157,7 @@ Gets/sets the viewport's width in screen coordinates.
 
 Gets/sets the X position on the screen where this viewport is located.
 
-*See Also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.Y](Viewport#viewporty), [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
+*See also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.Y](Viewport#viewporty), [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
 
 ---
 
@@ -167,4 +167,4 @@ Gets/sets the X position on the screen where this viewport is located.
 
 Gets/sets the Y position on the screen where this viewport is located.
 
-*See Also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.X](Viewport#viewportx), [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
+*See also:* [Viewport.SetPosition](Viewport#viewportsetposition), [Viewport.X](Viewport#viewportx), [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight), [Viewport.ZOrder](Viewport#viewportzorder), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)

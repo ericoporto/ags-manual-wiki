@@ -506,7 +506,7 @@ SetGameOption. **Basic properties**
     devices support. 16-bit is rather a compatibility setting, that will
     reduce the size of your game resources at the cost of color
     precision. 8-bit color mode is a special feature for making
-    palette-based games. See Also: [Palette setup](Settingupthegame#palette-setup),
+    palette-based games. See also: [Palette setup](Settingupthegame#palette-setup),
     [Palette functions](Globalfunctions_Palette)
 -   **Developer name** - this will add the provided string to the game's
     executable properties, which will also be shown in
@@ -889,7 +889,7 @@ Additionally, following settings are available:
 game compilation, so if you change these settings you will need to
 rebuild your game one more time to apply them.
 
-See also: [Run-time engine setup](Setup), [Config file locations](RuntimeEngine#configuration-file-locations)
+*See also:* [Run-time engine setup](Setup), [Config file locations](RuntimeEngine#configuration-file-locations)
 
 ---
 

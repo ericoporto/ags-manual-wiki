@@ -8,7 +8,7 @@ Prints the message string in `format` to the log, with the defined LogLevel, to 
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
-*See Also:* [The run-time engine](RuntimeEngine), [LogLevel Enum](StandardEnums#loglevel)
+*See also:* [The run-time engine](RuntimeEngine), [LogLevel Enum](StandardEnums#loglevel)
 
 ---
 
@@ -22,7 +22,7 @@ This saves only the options that may be changed at runtime, such as translation 
 
 *Compatibility:* Supported by **AGS 3.5.1** and later versions.
 
-*See Also:* [File.Open](File#fileopen)
+*See also:* [File.Open](File#fileopen)
 
 ---
 
@@ -44,7 +44,7 @@ will display a message with the number of audio channels.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [System.AudioChannels](System#systemaudiochannels)
+*See also:* [System.AudioChannels](System#systemaudiochannels)
 
 ---
 
@@ -65,7 +65,7 @@ will display a message with Audio Channel 2's current volume.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel](AudioChannel),
+*See also:* [AudioChannel](AudioChannel),
 [System.AudioChannelCount](System#systemaudiochannelcount)
 
 ---
@@ -90,7 +90,7 @@ will display a message if Caps Lock is on.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [System.NumLock](System#systemnumlock),
+*See also:* [System.NumLock](System#systemnumlock),
 [System.ScrollLock](System#systemscrolllock)
 
 ---
@@ -112,7 +112,7 @@ Example:
 
 will display the current resolution and color depth
 
-*See Also:* [System.ScreenHeight](System#systemscreenheight),
+*See also:* [System.ScreenHeight](System#systemscreenheight),
 [System.ScreenWidth](System#systemscreenwidth)
 
 ---
@@ -140,7 +140,7 @@ Example:
 
 will turn the screen brightness up to `50%` higher than normal
 
-*See Also:*
+*See also:*
 [System.SupportsGammaControl](System#systemsupportsgammacontrol)
 
 ---
@@ -169,7 +169,7 @@ Example:
 will display a message if the game is being run with hardware
 acceleration
 
-See Also: [AGS Graphics Drivers](GraphicsDriver)
+*See also:* [AGS Graphics Drivers](GraphicsDriver)
 
 ---
 
@@ -205,7 +205,7 @@ switches back to game.
 
 *Compatibility:* Supported by **AGS 3.3.5** and later versions.
 
-*See Also:* [SetMultitaskingMode](Globalfunctions_General#setmultitaskingmode)
+*See also:* [SetMultitaskingMode](Globalfunctions_General#setmultitaskingmode)
 
 ---
 
@@ -229,7 +229,7 @@ will display a message if Num Lock is on.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [System.CapsLock](System#systemcapslock),
+*See also:* [System.CapsLock](System#systemcapslock),
 [System.ScrollLock](System#systemscrolllock)
 
 ---
@@ -308,7 +308,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Debug](Globalfunctions_General#debug)
+*See also:* [Debug](Globalfunctions_General#debug)
 
 ---
 
@@ -322,7 +322,7 @@ Example:
 
 Returns the game's screen height in native coordinates, **not** accounting for the scaling applied by graphic renderer. Historically it also included a size of the black letterbox borders, making it a confusing parameter.
 
-*See Also:* [System.ColorDepth](System#systemcolordepth), [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
+*See also:* [System.ColorDepth](System#systemcolordepth), [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
 [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
 
 ---
@@ -337,7 +337,7 @@ Returns the game's screen height in native coordinates, **not** accounting for t
 
 Returns the game's screen width in native coordinates, **not** accounting for the scaling applied by graphic renderer. Historically it also included a size of the black widescreen side borders, making it a confusing parameter.
 
-*See Also:* [System.ColorDepth](System#systemcolordepth), [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
+*See also:* [System.ColorDepth](System#systemcolordepth), [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
 [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
 
 ---
@@ -363,7 +363,7 @@ will display a message if Scroll Lock is on.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:* [System.CapsLock](System#systemcapslock),
+*See also:* [System.CapsLock](System#systemcapslock),
 [System.NumLock](System#systemnumlock)
 
 ---
@@ -393,7 +393,7 @@ Example:
 
 will display a message if the system supports changing the gamma
 
-*See Also:* [System.Gamma](System#systemgamma)
+*See also:* [System.Gamma](System#systemgamma)
 
 ---
 
@@ -428,7 +428,7 @@ will display the AGS version number
 Returns the game's screen height in native coordinates, **not** accounting for the scaling applied by graphic renderer.
 Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [Viewport.Height](Viewport#viewportheight) is **not** a direct equivalent.
 
-*See Also:* [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
+*See also:* [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
 [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
 
 ---
@@ -444,7 +444,7 @@ Note that before AGS 3.5.0 there was no differentiation between "game's viewport
 Returns the game's screen width in native coordinates, **not** accounting for the scaling applied by graphic renderer.
 Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [Viewport.Width](Viewport#viewportwidth) is **not** a direct equivalent.
 
-*See Also:* [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
+*See also:* [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
 [Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
 
 ---
@@ -469,7 +469,7 @@ will set the overall output volume to 80.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See Also:* [AudioChannel.Volume](AudioChannel#audiochannelvolume),
+*See also:* [AudioChannel.Volume](AudioChannel#audiochannelvolume),
 [Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume)
 
 ---

@@ -21,7 +21,7 @@ Example:
 
 will scroll the *invMain* inv window down one row.
 
-*See Also:* [InvWindow.ScrollUp](InvWindow#invwindowscrollup),
+*See also:* [InvWindow.ScrollUp](InvWindow#invwindowscrollup),
 [InvWindow.TopItem](InvWindow#invwindowtopitem)
 
 ---
@@ -43,7 +43,7 @@ Example:
 
 will scroll the *invMain* inv window up one row.
 
-*See Also:* [InvWindow.ScrollDown](InvWindow#invwindowscrolldown),
+*See also:* [InvWindow.ScrollDown](InvWindow#invwindowscrolldown),
 [InvWindow.TopItem](InvWindow#invwindowtopitem)
 
 ---
@@ -85,7 +85,7 @@ Example:
 will display the name of the first item displayed in the *invMain*
 inventory window.
 
-*See Also:* [InvWindow.ItemCount](InvWindow#invwindowitemcount)
+*See also:* [InvWindow.ItemCount](InvWindow#invwindowitemcount)
 
 ---
 
@@ -110,7 +110,7 @@ Example:
 will enable the GUI buttons *btnInvUp* and *btnInvDown* if there are
 more inventory items than will fit in the inventory window.
 
-*See Also:* [InvWindow.ItemAtIndex](InvWindow#invwindowitematindex),
+*See also:* [InvWindow.ItemAtIndex](InvWindow#invwindowitematindex),
 [InvWindow.ItemsPerRow](InvWindow#invwindowitemsperrow),
 [InvWindow.RowCount](InvWindow#invwindowrowcount)
 
@@ -133,7 +133,7 @@ Example:
 
 sets the *invMain* inventory window to use item cells 50x30 large.
 
-*See Also:* [InvWindow.ItemWidth](InvWindow#invwindowitemwidth),
+*See also:* [InvWindow.ItemWidth](InvWindow#invwindowitemwidth),
 [InvWindow.RowCount](InvWindow#invwindowrowcount)
 
 ---
@@ -155,7 +155,7 @@ Example:
 
 sets the *invMain* inventory window to use item cells 50x30 large.
 
-*See Also:* [InvWindow.ItemHeight](InvWindow#invwindowitemheight),
+*See also:* [InvWindow.ItemHeight](InvWindow#invwindowitemheight),
 [InvWindow.ItemsPerRow](InvWindow#invwindowitemsperrow)
 
 ---
@@ -176,7 +176,7 @@ Example:
 
 displays how many items can be visible in the invMain window at once.
 
-*See Also:* [InvWindow.ItemWidth](InvWindow#invwindowitemwidth),
+*See also:* [InvWindow.ItemWidth](InvWindow#invwindowitemwidth),
 [InvWindow.RowCount](InvWindow#invwindowrowcount)
 
 ---
@@ -195,7 +195,7 @@ Example:
 
 displays how many items can be visible in the invMain window at once.
 
-*See Also:* [InvWindow.ItemHeight](InvWindow#invwindowitemheight),
+*See also:* [InvWindow.ItemHeight](InvWindow#invwindowitemheight),
 [InvWindow.ItemsPerRow](InvWindow#invwindowitemsperrow)
 
 ---
@@ -224,5 +224,5 @@ Example:
 makes the *btnScrollUp* button visible or invisible depending on whether
 the inventory list can be scrolled up.
 
-*See Also:* [InvWindow.ItemCount](InvWindow#invwindowitemcount)
+*See also:* [InvWindow.ItemCount](InvWindow#invwindowitemcount)
 

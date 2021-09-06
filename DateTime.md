@@ -24,7 +24,7 @@ Example:
 
 will display the current date and time in 24-hour format
 
-*See Also:* [DateTime.DayOfMonth](DateTime#datetimedayofmonth),
+*See also:* [DateTime.DayOfMonth](DateTime#datetimedayofmonth),
 [DateTime.Hour](DateTime#datetimehour),
 [DateTime.Minute](DateTime#datetimeminute),
 [DateTime.Month](DateTime#datetimemonth),
@@ -43,7 +43,7 @@ be from 1 to 31, representing the current day within the month.
 
 Example: For an example, see [DateTime.Now](DateTime#datetimenow).
 
-*See Also:* [DateTime.Now](DateTime#datetimenow)
+*See also:* [DateTime.Now](DateTime#datetimenow)
 
 ---
 
@@ -56,7 +56,7 @@ Gets the hour represented by the DateTime object. This will be from 0 to
 
 Example: For an example, see [DateTime.Now](DateTime#datetimenow).
 
-*See Also:* [DateTime.Now](DateTime#datetimenow)
+*See also:* [DateTime.Now](DateTime#datetimenow)
 
 ---
 
@@ -69,7 +69,7 @@ to 59, representing the minute in 24-hour format.
 
 Example: For an example, see [DateTime.Now](DateTime#datetimenow).
 
-*See Also:* [DateTime.Now](DateTime#datetimenow)
+*See also:* [DateTime.Now](DateTime#datetimenow)
 
 ---
 
@@ -82,7 +82,7 @@ to 12, representing the month of the year.
 
 Example: For an example, see [DateTime.Now](DateTime#datetimenow).
 
-*See Also:* [DateTime.Now](DateTime#datetimenow)
+*See also:* [DateTime.Now](DateTime#datetimenow)
 
 ---
 
@@ -114,7 +114,7 @@ Example:
 
 should display that 3 seconds have elapsed.
 
-*See Also:* [DateTime.Now](DateTime#datetimenow),
+*See also:* [DateTime.Now](DateTime#datetimenow),
 [SetTimer](Globalfunctions_General#settimer)
 
 ---
@@ -128,7 +128,7 @@ to 59, representing the second.
 
 Example: For an example, see [DateTime.Now](DateTime#datetimenow).
 
-*See Also:* [DateTime.Now](DateTime#datetimenow)
+*See also:* [DateTime.Now](DateTime#datetimenow)
 
 ---
 
@@ -141,4 +141,4 @@ for example *2005*.
 
 Example: For an example, see [DateTime.Now](DateTime#datetimenow).
 
-*See Also:* [DateTime.Now](DateTime#datetimenow)
+*See also:* [DateTime.Now](DateTime#datetimenow)

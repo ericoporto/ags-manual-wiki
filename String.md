@@ -24,7 +24,7 @@ Example:
 
 will display "HelloWorld".
 
-*See Also:* [String.AppendChar](String#stringappendchar),
+*See also:* [String.AppendChar](String#stringappendchar),
 [String.Substring](String#stringsubstring),
 [String.Truncate](String#stringtruncate)
 
@@ -52,7 +52,7 @@ Example:
 
 will display "Hello".
 
-*See Also:* [String.Append](String#stringappend)
+*See also:* [String.Append](String#stringappend)
 
 ---
 
@@ -138,7 +138,7 @@ will display the "Ends with script!" message.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [String.IndexOf](String#stringindexof),
+*See also:* [String.IndexOf](String#stringindexof),
 [String.StartsWith](String#stringstartswith)
 
 ---
@@ -167,7 +167,7 @@ Example:
 
 will create a text string containing "10".
 
-*See Also:* [Display](Globalfunctions_Message#display)
+*See also:* [Display](Globalfunctions_Message#display)
 
 ---
 
@@ -198,7 +198,7 @@ Example:
       Display("a needle was found starting at character %d in the string.", result);
     }
 
-*See Also:* [String.EndsWith](String#stringendswith),
+*See also:* [String.EndsWith](String#stringendswith),
 [String.StartsWith](String#stringstartswith)
 
 ---
@@ -254,7 +254,7 @@ Example:
 
 will display "Old: THIS is a test string, new: this is a test string".
 
-*See Also:* [String.UpperCase](String#stringuppercase)
+*See also:* [String.UpperCase](String#stringuppercase)
 
 ---
 
@@ -283,7 +283,7 @@ script!".
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [String.ReplaceCharAt](String#stringreplacecharat)
+*See also:* [String.ReplaceCharAt](String#stringreplacecharat)
 
 ---
 
@@ -310,7 +310,7 @@ Example:
 
 will display "Old: Hello, new: Hemlo".
 
-*See Also:* [String.Chars](String#stringchars),
+*See also:* [String.Chars](String#stringchars),
 [String.Replace](String#stringreplace)
 
 ---
@@ -337,7 +337,7 @@ will display the "Starts with hello!" message.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [String.EndsWith](String#stringendswith),
+*See also:* [String.EndsWith](String#stringendswith),
 [String.IndexOf](String#stringindexof)
 
 ---
@@ -361,7 +361,7 @@ Example:
 
 will display "Original: Hello World!, Substring: lo Wo".
 
-*See Also:* [String.Append](String#stringappend),
+*See also:* [String.Append](String#stringappend),
 [String.Chars](String#stringchars)
 
 ---
@@ -384,7 +384,7 @@ Example:
 
 will display "Original: Hello World!, Truncated: Hell".
 
-*See Also:* [String.Append](String#stringappend),
+*See also:* [String.Append](String#stringappend),
 [String.Substring](String#stringsubstring)
 
 ---
@@ -409,7 +409,7 @@ Example:
 
 will display "Old: THIS is a test string, new: THIS IS A TEST STRING".
 
-*See Also:* [String.LowerCase](String#stringlowercase)
+*See also:* [String.LowerCase](String#stringlowercase)
 
 ---
 
@@ -435,7 +435,7 @@ is useful for processing strings input from the user.
 **NOTE:** To convert a float to a string, you can use the
 [String.Format](String#stringformat) command.
 
-*See Also:* [Game.InputBox](Game#gameinputbox),
+*See also:* [Game.InputBox](Game#gameinputbox),
 [String.AsInt](String#stringasint),
 [String.Format](String#stringformat)
 
@@ -470,7 +470,7 @@ useful for processing strings input from the user.
 **NOTE:** To convert an integer to a string, you can use the
 [String.Format](String#stringformat) command.
 
-*See Also:* [Game.InputBox](Game#gameinputbox),
+*See also:* [Game.InputBox](Game#gameinputbox),
 [String.AsFloat](String#stringasfloat),
 [String.Format](String#stringformat)
 
@@ -501,7 +501,7 @@ Example:
 
 will display "The 4th character is: s".
 
-*See Also:* [String.Length](String#stringlength),
+*See also:* [String.Length](String#stringlength),
 [String.ReplaceCharAt](String#stringreplacecharat)
 
 ---

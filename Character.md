@@ -31,7 +31,7 @@ Example:
 
 will give inventory item iKey to character EGO.
 
-*See Also:* [Character.HasInventory](Character#characterhasinventory),
+*See also:* [Character.HasInventory](Character#characterhasinventory),
 [Character.LoseInventory](Character#characterloseinventory),
 [UpdateInventory](Globalfunctions_General#updateinventory),
 [Character.InventoryQuantity](Character#characterinventoryquantity)
@@ -64,7 +64,7 @@ tells character SOMEGUY to first of all walk to the center of the screen
 normally (obeying walkable areas), then move to the bottom left corner
 and then top left corner afterwards.
 
-*See Also:* [Character.Move](Character#charactermove)
+*See also:* [Character.Move](Character#charactermove)
 [Character.Walk](Character#characterwalk)
 
 ---
@@ -119,7 +119,7 @@ and wait until the animation finishes before returning.
 
 *Compatibility:* Optional *frame* parameter is supported only by **AGS 3.5.0** and later versions.
 
-*See Also:* [Button.Animate](Button#buttonanimate),
+*See also:* [Button.Animate](Button#buttonanimate),
 [Object.Animate](Object#objectanimate)
 
 ---
@@ -164,7 +164,7 @@ coordinates 100,50. This will also mean that the game moves into room 4.
 *Compatibility:* Optional *direction* parameter is supported only by
 **AGS 3.4.0** and later versions.
 
-*See Also:*
+*See also:*
 [Character.ChangeRoomAutoPosition](Character#characterchangeroomautoposition)
 
 ---
@@ -205,7 +205,7 @@ will move the player character to room 4 and place him half way down the
 right hand side of the screen. This will also mean that the game moves
 into room 4.
 
-*See Also:* [Character.ChangeRoom](Character#characterchangeroom)
+*See also:* [Character.ChangeRoom](Character#characterchangeroom)
 
 ---
 
@@ -230,7 +230,7 @@ Example:
 
 will make the EGO character use view number 5 as his walking view.
 
-*See Also:* [Character.LockView](Character#characterlockview),
+*See also:* [Character.LockView](Character#characterlockview),
 [Character.NormalView](Character#characternormalview)
 
 ---
@@ -267,7 +267,7 @@ Example:
 
 will make the character EGO face the character MAN
 
-*See Also:*
+*See also:*
 [Character.FaceDirection](Character#characterfacedirection),
 [Character.FaceLocation](Character#characterfacelocation),
 [Character.FaceObject](Character#characterfaceobject),
@@ -306,7 +306,7 @@ will make the character EGO face up-right.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:*
+*See also:*
 [Character.FaceCharacter](Character#characterfacecharacter),
 [Character.FaceLocation](Character#characterfacelocation),
 [Character.FaceObject](Character#characterfaceobject),
@@ -348,7 +348,7 @@ Example:
 
 will make the character face to the east.
 
-*See Also:*
+*See also:*
 [Character.FaceCharacter](Character#characterfacecharacter),
 [Character.FaceDirection](Character#characterfacedirection),
 [Character.FaceObject](Character#characterfaceobject),
@@ -384,7 +384,7 @@ Example:
 
 will make the player character face object 2.
 
-*See Also:*
+*See also:*
 [Character.FaceCharacter](Character#characterfacecharacter),
 [Character.FaceDirection](Character#characterfacedirection),
 [Character.FaceLocation](Character#characterfacelocation),
@@ -450,7 +450,7 @@ Example:
 will make character MAN follow character EGO standing about 5 pixels
 near him and waiting for a while before he makes his move.
 
-*See Also:*
+*See also:*
 [game.following_room_timer](Gamevariables)
 
 ---
@@ -474,7 +474,7 @@ will display the message if the room object oBullet is over any character.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Character.GetAtScreenXY](Character#charactergetatscreenxy),
+*See also:* [Character.GetAtScreenXY](Character#charactergetatscreenxy),
 [Hotspot.GetAtRoomXY](Hotspot#hotspotgetatroomxy),
 [Object.GetAtRoomXY](Object#objectgetatroomxy),
 [Region.GetAtRoomXY](Region#regiongetatroomxy),
@@ -504,7 +504,7 @@ Example:
 
 will display the message if the mouse cursor is over the EGO character
 
-*See Also:* [Character.GetAtRoomXY](Character#charactergetatroomxy),
+*See also:* [Character.GetAtRoomXY](Character#charactergetatroomxy),
 [Hotspot.GetAtScreenXY](Hotspot#hotspotgetatscreenxy),
 [Object.GetAtScreenXY](Object#objectgetatscreenxy),
 [Region.GetAtScreenXY](Region#regiongetatscreenxy),
@@ -534,7 +534,7 @@ Example:
 will print the message if EGO has its "Value" property set to more than
 200.
 
-*See Also:*
+*See also:*
 [Character.GetTextProperty](Character#charactergettextproperty)
 
 ---
@@ -561,7 +561,7 @@ Example:
 
 will retrieve EGO's "description" property and display it.
 
-*See Also:* [Character.GetProperty](Character#charactergetproperty)
+*See also:* [Character.GetProperty](Character#charactergetproperty)
 
 ---
 
@@ -587,7 +587,7 @@ will change EGO character's "XPLevel" custom property to 10.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:*
+*See also:*
 [Character.SetTextProperty](Character#charactersettextproperty)
 
 ---
@@ -612,7 +612,7 @@ will change EGO's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Character.SetProperty](Character#charactersetproperty)
+*See also:* [Character.SetProperty](Character#charactersetproperty)
 
 ---
 
@@ -655,7 +655,7 @@ will display a message if the player has the key.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Character.AddInventory](Character#characteraddinventory),
+*See also:* [Character.AddInventory](Character#characteraddinventory),
 [Character.InventoryQuantity](Character#characterinventoryquantity),
 [Character.LoseInventory](Character#characterloseinventory)
 
@@ -681,7 +681,7 @@ Example:
 will execute the colliding code only if the characters EGO and MAN are
 colliding.
 
-*See Also:*
+*See also:*
 [Character.IsCollidingWithObject](Character#characteriscollidingwithobject),
 [Object.IsCollidingWithObject](Object#objectiscollidingwithobject),
 [AreThingsOverlapping](Globalfunctions_Room#arethingsoverlapping)
@@ -709,7 +709,7 @@ Example:
 will execute the colliding code only if the character EGO and the object
 number 3 are colliding.
 
-*See Also:*
+*See also:*
 [Character.IsCollidingWithChar](Character#characteriscollidingwithchar),
 [Object.IsCollidingWithObject](Object#objectiscollidingwithobject),
 [AreThingsOverlapping](Globalfunctions_Room#arethingsoverlapping)
@@ -769,7 +769,7 @@ character to his normal view.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Animate](Character#characteranimate),
+*See also:* [Character.Animate](Character#characteranimate),
 [Character.ChangeView](Character#characterchangeview),
 [Character.SpeechView](Character#characterspeechview),
 [Character.LockViewAligned](Character#characterlockviewaligned),
@@ -831,7 +831,7 @@ character to his normal view.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.LockView](Character#characterlockview),
+*See also:* [Character.LockView](Character#characterlockview),
 [Character.LockViewOffset](Character#characterlockviewoffset),
 [Character.UnlockView](Character#characterunlockview)
 
@@ -867,7 +867,7 @@ second, then return him to normal.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Animate](Character#characteranimate),
+*See also:* [Character.Animate](Character#characteranimate),
 [Character.LockView](Character#characterlockview),
 [Character.UnlockView](Character#characterunlockview)
 
@@ -921,7 +921,7 @@ all frames will be shifted 1 pixel right and 1 pixel up.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.LockView](Character#characterlockview),
+*See also:* [Character.LockView](Character#characterlockview),
 [Character.LockViewAligned](Character#characterlockviewaligned),
 [Character.UnlockView](Character#characterunlockview)
 
@@ -949,7 +949,7 @@ Example:
 will make the character EGO lose the inventory item iKey from the
 inventory tab
 
-*See Also:* [Character.AddInventory](Character#characteraddinventory),
+*See also:* [Character.AddInventory](Character#characteraddinventory),
 [Character.InventoryQuantity](Character#characterinventoryquantity)
 
 ---
@@ -979,7 +979,7 @@ his destination.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See Also:* [Character.AddWaypoint](Character#characteraddwaypoint),
+*See also:* [Character.AddWaypoint](Character#characteraddwaypoint),
 [Character.FaceCharacter](Character#characterfacecharacter),
 [Character.Walk](Character#characterwalk),
 [MoveCharacterToObject](Globalfunctions_General#movecharactertoobject),
@@ -1030,7 +1030,7 @@ Example:
 will tint the player character green for a second, then turn it back to
 normal.
 
-*See Also:*
+*See also:*
 [Character.HasExplicitTint](Character#characterhasexplicittint),
 [Character.Tint](Character#charactertint)
 
@@ -1055,7 +1055,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
+*See also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
 [Character.RunInteraction](Character#characterruninteraction)
 
 ---
@@ -1076,7 +1076,7 @@ Example:
 
 will execute the code defined in the MAN's "TALK TO CHARACTER" event.
 
-*See Also:* [Room.ProcessClick](Room#roomprocessclick),
+*See also:* [Room.ProcessClick](Room#roomprocessclick),
 [Character.IsInteractionAvailable](Character#characterisinteractionavailable),
 [Hotspot.RunInteraction](Hotspot#hotspotruninteraction),
 [InventoryItem.RunInteraction](InventoryItem#inventoryitemruninteraction)
@@ -1106,7 +1106,7 @@ Example:
 will display the message above the character's EGO head like the LEC
 games, whilst playing the character's talking animation.
 
-*See Also:* [Display](Globalfunctions_Message#display),
+*See also:* [Display](Globalfunctions_Message#display),
 [Character.SayAt](Character#charactersayat),
 [Character.SayBackground](Character#charactersaybackground),
 [Character.Think](Character#characterthink),
@@ -1136,7 +1136,7 @@ Example:
 will display the message in the top right corner of the screen, whilst
 playing the character's talking animation.
 
-*See Also:* [Character.Say](Character#charactersay),
+*See also:* [Character.Say](Character#charactersay),
 [Character.SayBackground](Character#charactersaybackground)
 
 ---
@@ -1172,7 +1172,7 @@ Example:
 will display the message above character MAN's head without pausing the
 game.
 
-*See Also:* [Character.Say](Character#charactersay)
+*See also:* [Character.Say](Character#charactersay)
 
 ---
 
@@ -1198,7 +1198,7 @@ will change the character that the player controls to character MAN and
 also change to the room that MAN is in, if he is not in the current
 room.
 
-*See Also:* [Character.ID](Character#characterid),
+*See also:* [Character.ID](Character#characterid),
 [Character.ChangeRoom](Character#characterchangeroom)
 
 ---
@@ -1232,7 +1232,7 @@ This will give character EGO maximal individual brightness.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Character.Tint](Character#charactertint),
+*See also:* [Character.Tint](Character#charactertint),
 [SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel),
 [Object.SetLightLevel](Object#objectsetlightlevel),
 [Region.LightLevel](Region#regionlightlevel)
@@ -1297,7 +1297,7 @@ Example:
 
 will change the character EGO's speed to 10.
 
-*See Also:*
+*See also:*
 [Character.AnimationSpeed](Character#characteranimationspeed),
 [Character.StopMoving](Character#characterstopmoving),
 [Character.Walk](Character#characterwalk),
@@ -1324,7 +1324,7 @@ Example:
 
 will stop the character when he reaches the coordinate x=300.
 
-*See Also:* [Character.Walk](Character#characterwalk),
+*See also:* [Character.Walk](Character#characterwalk),
 [Object.StopMoving](Object#objectstopmoving)
 
 ---
@@ -1373,7 +1373,7 @@ Example:
 will display the message above EGO's head and play the character's
 thinking animation.
 
-*See Also:*
+*See also:*
 [Character.BlinkWhileThinking](Character#characterblinkwhilethinking),
 [Character.Say](Character#charactersay),
 [Character.Thinking](Character#characterthinking),
@@ -1412,7 +1412,7 @@ Example:
 
 will tint the EGO character green.
 
-*See Also:*
+*See also:*
 [Character.HasExplicitTint](Character#characterhasexplicittint),
 [Character.RemoveTint](Character#characterremovetint),
 [SetAmbientTint](Globalfunctions_General#setambienttint)
@@ -1434,7 +1434,7 @@ property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](Character#charactertint),
+*See also:* [Character.Tint](Character#charactertint),
 [Character.HasExplicitTint](Character#characterhasexplicittint),
 [Character.TintGreen](Character#charactertintgreen),
 [Character.TintRed](Character#charactertintred),
@@ -1457,7 +1457,7 @@ property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](Character#charactertint),
+*See also:* [Character.Tint](Character#charactertint),
 [Character.TintBlue](Character#charactertintblue),
 [Character.TintRed](Character#charactertintred),
 [Character.TintSaturation](Character#charactertintsaturation),
@@ -1480,7 +1480,7 @@ property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](Character#charactertint),
+*See also:* [Character.Tint](Character#charactertint),
 [Character.TintBlue](Character#charactertintblue),
 [Character.TintGreen](Character#charactertintgreen),
 [Character.TintSaturation](Character#charactertintsaturation),
@@ -1503,7 +1503,7 @@ property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](Character#charactertint),
+*See also:* [Character.Tint](Character#charactertint),
 [Character.TintBlue](Character#charactertintblue),
 [Character.TintGreen](Character#charactertintgreen),
 [Character.TintRed](Character#charactertintred),
@@ -1526,7 +1526,7 @@ property is false, then this value is meaningless.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.Tint](Character#charactertint),
+*See also:* [Character.Tint](Character#charactertint),
 [Character.TintBlue](Character#charactertintblue),
 [Character.TintGreen](Character#charactertintgreen),
 [Character.TintRed](Character#charactertintred),
@@ -1561,7 +1561,7 @@ character to its normal view.
 *Compatibility:* Optional *StopMovementStyle* parameter is supported
 only by **AGS 3.4.1** and later versions.
 
-*See Also:* [Character.LockView](Character#characterlockview)
+*See also:* [Character.LockView](Character#characterlockview)
 
 ---
 
@@ -1607,7 +1607,7 @@ Example:
 will make the character walk to 155,122. The script will not continue
 until the character has reached his destination.
 
-*See Also:* [Character.AddWaypoint](Character#characteraddwaypoint),
+*See also:* [Character.AddWaypoint](Character#characteraddwaypoint),
 [Character.FaceCharacter](Character#characterfacecharacter),
 [Character.Move](Character#charactermove),
 [MoveCharacterToObject](Globalfunctions_General#movecharactertoobject),
@@ -1641,7 +1641,7 @@ Example:
 will move the character EGO in a straight line towards co ordinates
 166,78 until he hits a non walkable area.
 
-*See Also:* [Character.Walk](Character#characterwalk)
+*See also:* [Character.Walk](Character#characterwalk)
 
 ---
 
@@ -1692,7 +1692,7 @@ will animate EGO and wait until the animation finishes.
 In reality, you would simply use the Blocking parameter of Animate so
 you wouldn't need to do this.
 
-*See Also:* [Character.Animate](Character#characteranimate),
+*See also:* [Character.Animate](Character#characteranimate),
 [Character.Moving](Character#charactermoving),
 [Character.Speaking](Character#characterspeaking),
 [Character.Thinking](Character#characterthinking)
@@ -1713,7 +1713,7 @@ Example:
 
 will change the player character's animation speed to 4.
 
-*See Also:* [Character.SetWalkSpeed](Character#charactersetwalkspeed),
+*See also:* [Character.SetWalkSpeed](Character#charactersetwalkspeed),
 [Character.SpeechAnimationDelay](Character#characterspeechanimationdelay)
 
 ---
@@ -1739,7 +1739,7 @@ will move the character's baseline (which can be used for testing
 collisions, or for walk-behinds) to a line positioned at y coordinate =
 120.
 
-*See Also:* [Object.Baseline](Object#objectbaseline),
+*See also:* [Object.Baseline](Object#objectbaseline),
 [SetWalkBehindBase](Globalfunctions_Room#setwalkbehindbase)
 
 ---
@@ -1766,7 +1766,7 @@ Example:
 will change the character EGO's blink view to view 10, and play the
 animation every 4 seconds.
 
-*See Also:* [Character.BlinkView](Character#characterblinkview),
+*See also:* [Character.BlinkView](Character#characterblinkview),
 [Character.SpeechView](Character#characterspeechview)
 
 ---
@@ -1791,7 +1791,7 @@ Example:
 will change the character EGO's blink view to view 10, and play the
 animation every 4 seconds.
 
-*See Also:*
+*See also:*
 [Character.BlinkInterval](Character#characterblinkinterval),
 [Character.SpeechView](Character#characterspeechview)
 
@@ -1812,7 +1812,7 @@ Example:
 
 will stop EGO from blinking while his thinking animation is playing.
 
-*See Also:* [Character.BlinkView](Character#characterblinkview),
+*See also:* [Character.BlinkView](Character#characterblinkview),
 [Character.Think](Character#characterthink)
 
 ---
@@ -1841,7 +1841,7 @@ Example:
 
 will make EGO block 20 pixels high (10 above and 10 below his baseline)
 
-*See Also:*
+*See also:*
 [Character.BlockingWidth](Character#characterblockingwidth),
 [Character.Solid](Character#charactersolid)
 
@@ -1872,7 +1872,7 @@ Example:
 will make EGO block 50 pixels wide (25 pixels to the left of his X
 co-ordinate, and 25 to the right)
 
-*See Also:*
+*See also:*
 [Character.BlockingHeight](Character#characterblockingheight),
 [Character.Solid](Character#charactersolid)
 
@@ -1899,7 +1899,7 @@ Example:
 
 will make the game ignore clicks on the character MAN.
 
-*See Also:* [Object.Clickable](Object#objectclickable),
+*See also:* [Object.Clickable](Object#objectclickable),
 [Character.Move](Character#charactermove),
 [Character.Moving](Character#charactermoving),
 [Character.Walk](Character#characterwalk)
@@ -1915,7 +1915,7 @@ character is not walking or moving it is equal to its current position.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Character.DestinationY](Character#characterdestinationy),
+*See also:* [Character.DestinationY](Character#characterdestinationy),
 [Character.Move](Character#charactermove),
 [Character.Moving](Character#charactermoving),
 [Character.Walk](Character#characterwalk)
@@ -1931,7 +1931,7 @@ character is not walking or moving it is equal to its current position.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See Also:* [Character.DestinationX](Character#characterdestinationx),
+*See also:* [Character.DestinationX](Character#characterdestinationx),
 [Character.Move](Character#charactermove),
 [Character.Moving](Character#charactermoving),
 [Character.Walk](Character#characterwalk)
@@ -2111,7 +2111,7 @@ Example:
 
 will display how many inventory items of type iCash the player has.
 
-*See Also:* [UpdateInventory](Globalfunctions_General#updateinventory),
+*See also:* [UpdateInventory](Globalfunctions_General#updateinventory),
 [Character.AddInventory](Character#characteraddinventory),
 [Character.HasInventory](Character#characterhasinventory),
 [Character.LoseInventory](Character#characterloseinventory)
@@ -2196,7 +2196,7 @@ him to (50,100), then turn it back on again.
 
 *Compatibility:* Supported by **AGS 3.1.1** and later versions.
 
-*See Also:* [Character.Move](Character#charactermove),
+*See also:* [Character.Move](Character#charactermove),
 [Character.Moving](Character#charactermoving),
 [Character.Walk](Character#characterwalk)
 
@@ -2222,7 +2222,7 @@ Example:
 will move EGO to 125,40 and return control to the player when he gets
 there.
 
-*See Also:* [Character.Animating](Character#characteranimating),
+*See also:* [Character.Animating](Character#characteranimating),
 [Character.Move](Character#charactermove),
 [Character.Speaking](Character#characterspeaking),
 [Character.StopMoving](Character#characterstopmoving),
@@ -2273,7 +2273,7 @@ Example:
 will display a message if EGO is currently displayed using his normal
 view.
 
-*See Also:* [Character.ChangeView](Character#characterchangeview),
+*See also:* [Character.ChangeView](Character#characterchangeview),
 [Character.View](Character#characterview)
 
 ---
@@ -2340,7 +2340,7 @@ Example:
 
 will mean that EGO's speed is adjusted in line with his scaling
 
-*See Also:* [Character.ScaleVolume](Character#characterscalevolume)
+*See also:* [Character.ScaleVolume](Character#characterscalevolume)
 
 ---
 
@@ -2366,7 +2366,7 @@ Example:
 will mean that EGO's footstep sounds are adjusted in line with his
 scaling
 
-*See Also:*
+*See also:*
 [Character.ScaleMoveSpeed](Character#characterscalemovespeed)
 
 ---
@@ -2418,7 +2418,7 @@ Example:
 
 will mean that EGO blocks the path other characters.
 
-*See Also:*
+*See also:*
 [Character.BlockingHeight](Character#characterblockingheight),
 [Character.BlockingWidth](Character#characterblockingwidth)
 
@@ -2448,7 +2448,7 @@ Example:
 will animate the character using loop 3 while they are talking (only
 useful with Sierra-style speech).
 
-*See Also:* [Character.Animating](Character#characteranimating),
+*See also:* [Character.Animating](Character#characteranimating),
 [Character.Moving](Character#charactermoving),
 [Character.Say](Character#charactersay),
 [Character.SpeakingFrame](Character#characterspeakingframe),
@@ -2485,7 +2485,7 @@ Example:
 will move cMan to the right every time the talking animation loops back
 to Frame 0.
 
-*See Also:* [Character.Say](Character#charactersay),
+*See also:* [Character.Say](Character#charactersay),
 [Character.Speaking](Character#characterspeaking)
 
 ---
@@ -2512,7 +2512,7 @@ will change the player character's speech animation speed to 4.
 
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
-*See Also:*
+*See also:*
 [Character.AnimationSpeed](Character#characteranimationspeed),
 [Character.SpeechView](Character#characterspeechview),
 [Game.TextReadingSpeed](Game#gametextreadingspeed),
@@ -2540,7 +2540,7 @@ Example:
 
 will change the character's EGO talking color to yellow.
 
-*See Also:* [Character.SpeechView](Character#characterspeechview)
+*See also:* [Character.SpeechView](Character#characterspeechview)
 
 ---
 
@@ -2563,7 +2563,7 @@ Example:
 
 will change the character EGO's speech view to view 10.
 
-*See Also:* [Character.ChangeView](Character#characterchangeview),
+*See also:* [Character.ChangeView](Character#characterchangeview),
 [Character.BlinkView](Character#characterblinkview),
 [Character.SpeechAnimationDelay](Character#characterspeechanimationdelay),
 [Character.SpeechColor](Character#characterspeechcolor)
@@ -2598,7 +2598,7 @@ this will keep character semi-transparent while he is thinking.
 
 *Compatibility:* Supported by **AGS 3.3.4** and later versions.
 
-*See Also:* [Character.Animating](Character#characteranimating),
+*See also:* [Character.Animating](Character#characteranimating),
 [Character.Moving](Character#charactermoving),
 [Character.Speaking](Character#characterspeaking)
 [Character.Think](Character#characterthink),
@@ -2637,7 +2637,7 @@ to Frame 0.
 
 *Compatibility:* Supported by **AGS 3.3.4** and later versions.
 
-*See Also:* [Character.Think](Character#characterthink),
+*See also:* [Character.Think](Character#characterthink),
 [Character.Thinking](Character#characterthinking)
 
 ---
@@ -2657,7 +2657,7 @@ Example:
 
 will change the character EGO's thinking view to 14.
 
-*See Also:* [Character.Think](Character#characterthink)
+*See also:* [Character.Think](Character#characterthink)
 
 ---
 
@@ -2698,7 +2698,7 @@ Example:
 will gradually fade out the character from its current transparency
 level to being fully invisible.
 
-*See Also:* [Object.Transparency](Object#objecttransparency)
+*See also:* [Object.Transparency](Object#objecttransparency)
 
 ---
 
@@ -2765,7 +2765,7 @@ Example:
 
 will display the player's X speed.
 
-*See Also:* [Character.SetWalkSpeed](Character#charactersetwalkspeed),
+*See also:* [Character.SetWalkSpeed](Character#charactersetwalkspeed),
 [Character.WalkSpeedY](Character#characterwalkspeedy)
 
 ---
@@ -2786,7 +2786,7 @@ Example:
 
 will display the player's Y speed.
 
-*See Also:* [Character.SetWalkSpeed](Character#charactersetwalkspeed),
+*See also:* [Character.SetWalkSpeed](Character#charactersetwalkspeed),
 [Character.WalkSpeedX](Character#characterwalkspeedx)
 
 ---
@@ -2809,7 +2809,7 @@ Example:
 
 displays the player character's current coordinates.
 
-*See Also:* [Character.y](Character#charactery),
+*See also:* [Character.y](Character#charactery),
 [Character.z](Character#characterz)
 
 ---
@@ -2832,7 +2832,7 @@ Example:
 
 displays the player character's current coordinates.
 
-*See Also:* [Character.x](Character#characterx),
+*See also:* [Character.x](Character#characterx),
 [Character.z](Character#characterz)
 
 ---
@@ -2857,5 +2857,5 @@ Example:
 
 gradually levitates the character up to 20 pixels.
 
-*See Also:* [Character.x](Character#characterx),
+*See also:* [Character.x](Character#characterx),
 [Character.y](Character#charactery)

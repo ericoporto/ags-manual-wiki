@@ -127,4 +127,4 @@ int[] func_makearr(int size) {
 int arr[] = func_makearr(100); // the returned array will be assigned to `arr` pointer
 ```
 
-See Also: [Arrays](ScriptKeywords#arrays), [Structs](ScriptKeywords#struct)
+*See also:* [Arrays](ScriptKeywords#arrays), [Structs](ScriptKeywords#struct)

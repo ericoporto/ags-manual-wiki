@@ -46,7 +46,7 @@ depending on what the player selected.
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
-*See Also:* [Dialog.Start](Dialog#dialogstart),
+*See also:* [Dialog.Start](Dialog#dialogstart),
 [Parser.ParseText](Parser#parserparsetext)
 
 ---
@@ -84,7 +84,7 @@ Example:
 Will display a message if option 2 of dialog dJoeExcited is not
 currently switched on.
 
-*See Also:*
+*See also:*
 [Dialog.HasOptionBeenChosen](Dialog#dialoghasoptionbeenchosen),
 [Dialog.SetHasOptionBeenChosen](Dialog#dialogsethasoptionbeenchosen),
 [Dialog.SetOptionState](Dialog#dialogsetoptionstate)
@@ -109,7 +109,7 @@ will display the text for the third option of the dJoeBloggs dialog.
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
-*See Also:* [Dialog.OptionCount](Dialog#dialogoptioncount),
+*See also:* [Dialog.OptionCount](Dialog#dialogoptioncount),
 [Dialog.GetOptionState](Dialog#dialoggetoptionstate)
 
 ---
@@ -136,7 +136,7 @@ before.
 
 *Compatibility:* Supported by **AGS 3.1.1** and later versions.
 
-*See Also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
+*See also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
 [Dialog.SetHasOptionBeenChosen](Dialog#dialogsethasoptionbeenchosen),
 
 ---
@@ -177,7 +177,7 @@ will display the number of options in the dFisherman dialog.
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
-*See Also:* [Dialog.GetOptionText](Dialog#dialoggetoptiontext),
+*See also:* [Dialog.GetOptionText](Dialog#dialoggetoptiontext),
 [Dialog.GetOptionState](Dialog#dialoggetoptionstate)
 
 ---
@@ -204,7 +204,7 @@ will mark option 1 of dialog dDialog1 as "not chosen yet".
 
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
 
-*See Also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
+*See also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
 [Dialog.HasOptionBeenChosen](Dialog#dialoghasoptionbeenchosen)
 
 ---
@@ -244,7 +244,7 @@ Example:
 
 will enable option 2 of topic number 4 if the Global Integer 10 is 1.
 
-*See Also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
+*See also:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
 [Dialog.Start](Dialog#dialogstart),
 [StopDialog](Dialog#stopdialog)
 
@@ -293,7 +293,7 @@ Example:
 
 will start the conversation topic named dMerchant.
 
-*See Also:* [Dialog.DisplayOptions](Dialog#dialogdisplayoptions),
+*See also:* [Dialog.DisplayOptions](Dialog#dialogdisplayoptions),
 [Dialog.SetOptionState](Dialog#dialogsetoptionstate)
 
 ---
@@ -319,5 +319,5 @@ Example:
 
 will give the player the inventory item 3 and then end the conversation.
 
-*See Also:* [Dialog.SetOptionState](Dialog#dialogsetoptionstate)
+*See also:* [Dialog.SetOptionState](Dialog#dialogsetoptionstate)
 

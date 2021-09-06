@@ -19,7 +19,7 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
+*See also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
 [FadeOut](Globalfunctions_Screen#fadeout), [SetFadeColor](Globalfunctions_Screen#setfadecolor)
 
 ---
@@ -42,7 +42,7 @@ Example:
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
 
-*See Also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
+*See also:* [CyclePalette](Globalfunctions_Palette#cyclepalette),
 [FadeIn](Globalfunctions_Screen#fadein), [SetFadeColor](Globalfunctions_Screen#setfadecolor)
 
 ---
@@ -160,7 +160,7 @@ Example:
 
 will shake the screen a little.
 
-*See Also:* [ShakeScreenBackground](Globalfunctions_Screen#shakescreenbackground)
+*See also:* [ShakeScreenBackground](Globalfunctions_Screen#shakescreenbackground)
 
 ---
 
@@ -190,7 +190,7 @@ Example:
 
 will shake the screen a little for 2 seconds.
 
-*See Also:* [ShakeScreen](Globalfunctions_Screen#shakescreen)
+*See also:* [ShakeScreen](Globalfunctions_Screen#shakescreen)
 
 ---
 

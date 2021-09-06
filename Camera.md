@@ -17,7 +17,7 @@ By default each camera follows the player character, this is know as "auto-track
 
 *Compatibility:* The Camera struct is supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Viewport](Viewport), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload), [Game.Camera](Game#gamecamera), [Game.Cameras](Game#gamecameras)
+*See also:* [Viewport](Viewport), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload), [Game.Camera](Game#gamecamera), [Game.Cameras](Game#gamecameras)
 
 ---
 
@@ -28,7 +28,7 @@ By default each camera follows the player character, this is know as "auto-track
 Creates a new camera and returns a pointer which you may use to operate it. Any camera created like this may be also accessed at [Game.Cameras](Game#gamecameras) by index.
 The new camera will, by default, be located at the room's origin (0, 0) and be sized to fit either the game screen or the room background, whichever is *smaller*. It will also have auto-tracking enabled. You may change any of its properties later.
 
-*See Also:* [Camera.Delete](Camera#cameradelete), [Game.Camera](Game#gamecamera), [Game.Cameras](Game#gamecameras), [Viewport.Camera](Viewport#viewportcamera)
+*See also:* [Camera.Delete](Camera#cameradelete), [Game.Camera](Game#gamecamera), [Game.Cameras](Game#gamecameras), [Viewport.Camera](Viewport#viewportcamera)
 
 ---
 
@@ -42,7 +42,7 @@ Removes an existing camera.
 
 **IMPORTANT:** In the **Game.Cameras** array cameras are arranged in the order they were created. If you delete one from the middle all of the cameras with a higher index will be shifted towards the beginning of array.
 
-*See Also:* [Camera.Create](Camera#cameracreate), [Game.Camera](Game#gamecamera), [Game.Cameras](Game#gamecameras)
+*See also:* [Camera.Create](Camera#cameracreate), [Game.Camera](Game#gamecamera), [Game.Cameras](Game#gamecameras)
 
 ---
 
@@ -52,7 +52,7 @@ Removes an existing camera.
 
 Changes the camera's position in the room and disables automatic tracking of the player character.
 
-*See Also:* [Camera.SetSize](Camera#camerasetsize), [Camera.AutoTracking](Camera#cameraautotracking), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray), [Camera.Width](Camera#camerawidth), [Camera.Height](Camera#cameraheight)
+*See also:* [Camera.SetSize](Camera#camerasetsize), [Camera.AutoTracking](Camera#cameraautotracking), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray), [Camera.Width](Camera#camerawidth), [Camera.Height](Camera#cameraheight)
 
 ---
 
@@ -64,7 +64,7 @@ Changes the camera's capture dimensions, in room coordinates.
 
 If the camera's size is larger than the Viewport it is drawn in, then the room will be scaled down (producing a zoomed-out effect). If the camera's size is smaller than the Viewport then the room will be scaled up (producing a zoomed-in effect).
 
-*See Also:* [Camera.SetAt](Camera#camerasetat), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray), [Camera.Width](Camera#camerawidth), [Camera.Height](Camera#cameraheight), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
+*See also:* [Camera.SetAt](Camera#camerasetat), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray), [Camera.Width](Camera#camerawidth), [Camera.Height](Camera#cameraheight), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
 
 ---
 
@@ -74,7 +74,7 @@ If the camera's size is larger than the Viewport it is drawn in, then the room w
 
 Gets/sets whether this camera will automatically follow the player character's position in the room. When disabled, the camera retains its position until you change it using script commands or turn auto-tracking back on.
 
-*See Also:* [Camera.SetAt](Camera#camerasetat), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray)
+*See also:* [Camera.SetAt](Camera#camerasetat), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray)
 
 ---
 
@@ -84,7 +84,7 @@ Gets/sets whether this camera will automatically follow the player character's p
 
 Gets/sets the camera's capture height in room coordinates.
 
-*See Also:* [Camera.SetAt](Camera#camerasetat), [Camera.SetSize](Camera#camerasetsize), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray), [Camera.Width](Camera#camerawidth), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
+*See also:* [Camera.SetAt](Camera#camerasetat), [Camera.SetSize](Camera#camerasetsize), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray), [Camera.Width](Camera#camerawidth), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
 
 ---
 
@@ -94,7 +94,7 @@ Gets/sets the camera's capture height in room coordinates.
 
 Gets/sets the camera's capture width in room coordinates.
 
-*See Also:* [Camera.SetAt](Camera#camerasetat), [Camera.SetSize](Camera#camerasetsize), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray), [Camera.Height](Camera#cameraheight), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
+*See also:* [Camera.SetAt](Camera#camerasetat), [Camera.SetSize](Camera#camerasetsize), [Camera.X](Camera#camerax), [Camera.Y](Camera#cameray), [Camera.Height](Camera#cameraheight), [Screen.AutoSizeViewportOnRoomLoad](Screen#screenautosizeviewportonroomload)
 
 ---
 
@@ -104,7 +104,7 @@ Gets/sets the camera's capture width in room coordinates.
 
 Gets/sets the X position of this camera in the room. Setting a value will also disable auto-tracking.
 
-*See Also:* [Camera.SetAt](Camera#camerasetat), [Camera.SetSize](Camera#camerasetsize), [Camera.AutoTracking](Camera#cameraautotracking), [Camera.Y](Camera#cameray), [Camera.Width](Camera#camerawidth), [Camera.Height](Camera#cameraheight)
+*See also:* [Camera.SetAt](Camera#camerasetat), [Camera.SetSize](Camera#camerasetsize), [Camera.AutoTracking](Camera#cameraautotracking), [Camera.Y](Camera#cameray), [Camera.Width](Camera#camerawidth), [Camera.Height](Camera#cameraheight)
 
 ---
 
@@ -114,4 +114,4 @@ Gets/sets the X position of this camera in the room. Setting a value will also d
 
 Gets/sets the Y position of this camera in the room. Setting a value will also disable auto-tracking.
 
-*See Also:* [Camera.SetAt](Camera#camerasetat), [Camera.SetSize](Camera#camerasetsize), [Camera.AutoTracking](Camera#cameraautotracking), [Camera.X](Camera#camerax), [Camera.Width](Camera#camerawidth), [Camera.Height](Camera#cameraheight)
+*See also:* [Camera.SetAt](Camera#camerasetat), [Camera.SetSize](Camera#camerasetsize), [Camera.AutoTracking](Camera#cameraautotracking), [Camera.X](Camera#camerax), [Camera.Width](Camera#camerawidth), [Camera.Height](Camera#cameraheight)

@@ -40,7 +40,7 @@ Example:
 clears the room background to be fully yellow, then draws a pink circle
 in the middle of it.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawingColor](DrawingSurface#drawingsurfacedrawingcolor)
 
 ---
@@ -77,7 +77,7 @@ Example:
 will save a copy of the room background, draw a triangle onto it, wait
 for a while and then restore the original background.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawSurface](DrawingSurface#drawingsurfacedrawsurface)
 
 ---
@@ -100,7 +100,7 @@ Example:
 
 will draw a circle in the center of the screen, of 50 pixels radius.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawLine](DrawingSurface#drawingsurfacedrawline),
 [DrawingSurface.DrawingColor](DrawingSurface#drawingsurfacedrawingcolor)
 
@@ -145,7 +145,7 @@ Example:
 will draw the *oDoor* object's graphic onto the room background at (100,
 100), at `40%` transparency.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawLine](DrawingSurface#drawingsurfacedrawline),
 [DrawingSurface.DrawString](DrawingSurface#drawingsurfacedrawstring),
 [DrawingSurface.DrawSurface](DrawingSurface#drawingsurfacedrawsurface),
@@ -180,7 +180,7 @@ Example:
 will draw a line from the left top of the screen (0,0) to the middle of
 the screen (160,100);
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawCircle](DrawingSurface#drawingsurfacedrawcircle),
 [DrawingSurface.DrawRectangle](DrawingSurface#drawingsurfacedrawrectangle),
 [DrawingSurface.DrawTriangle](DrawingSurface#drawingsurfacedrawtriangle),
@@ -215,7 +215,7 @@ Example:
 will display message 10 in the center of the screen, starting from Y =
 40.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawString](DrawingSurface#drawingsurfacedrawstring),
 [DrawingSurface.DrawingColor](DrawingSurface#drawingsurfacedrawingcolor),
 [DrawingSurface.DrawStringWrapped](DrawingSurface#drawingsurfacedrawstringwrapped)
@@ -243,7 +243,7 @@ Example:
 
 draws a yellow pixel in the top left of the room background
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawingColor](DrawingSurface#drawingsurfacedrawingcolor),
 [DrawingSurface.DrawLine](DrawingSurface#drawingsurfacedrawline),
 [DrawingSurface.GetPixel](DrawingSurface#drawingsurfacegetpixel),
@@ -273,7 +273,7 @@ Example:
 
 will draw a rectangle over the top left hand quarter of the screen.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawImage](DrawingSurface#drawingsurfacedrawimage),
 [DrawingSurface.DrawLine](DrawingSurface#drawingsurfacedrawline)
 
@@ -301,7 +301,7 @@ Example:
 
 will write some text onto the middle-left of the room background
 
-*See Also:* [GetTextWidth](Globalfunctions_General#gettextwidth),
+*See also:* [GetTextWidth](Globalfunctions_General#gettextwidth),
 [DrawingSurface.DrawStringWrapped](DrawingSurface#drawingsurfacedrawstringwrapped),
 [DrawingSurface.DrawingColor](DrawingSurface#drawingsurfacedrawingcolor)
 
@@ -332,7 +332,7 @@ will display the text in the center of the screen, starting from Y = 40.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawString](DrawingSurface#drawingsurfacedrawstring),
 [DrawingSurface.DrawingColor](DrawingSurface#drawingsurfacedrawingcolor),
 [DrawingSurface.DrawMessageWrapped](DrawingSurface#drawingsurfacedrawmessagewrapped)
@@ -372,7 +372,7 @@ Example:
 
 this will draw background frame 1 onto frame 0 at 50`%` opacity.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawImage](DrawingSurface#drawingsurfacedrawimage),
 [SetAmbientTint](Globalfunctions_General#setambienttint)
 
@@ -398,7 +398,7 @@ Example:
 
 will draw a triangle with corners at the points (0,0),(160,100),(0,200).
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawImage](DrawingSurface#drawingsurfacedrawimage),
 [DrawingSurface.DrawLine](DrawingSurface#drawingsurfacedrawline),
 [DrawingSurface.DrawRectangle](DrawingSurface#drawingsurfacedrawrectangle)
@@ -425,7 +425,7 @@ Example:
 draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
 
-*See Also:*
+*See also:*
 [DynamicSprite.GetDrawingSurface](DynamicSprite#dynamicspritegetdrawingsurface),
 [Room.GetDrawingSurfaceForBackground](Room#roomgetdrawingsurfaceforbackground)
 
@@ -459,7 +459,7 @@ will draw a yellow line from the left top of the screen (0,0) to the
 middle of the screen (160,100), and a white line from the bottom left to
 the middle.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawCircle](DrawingSurface#drawingsurfacedrawcircle),
 [DrawingSurface.DrawLine](DrawingSurface#drawingsurfacedrawline),
 [DrawingSurface.DrawRectangle](DrawingSurface#drawingsurfacedrawrectangle),
@@ -494,7 +494,7 @@ displays the pixel color of the center pixel on the screen.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See Also:*
+*See also:*
 [DrawingSurface.DrawingColor](DrawingSurface#drawingsurfacedrawingcolor),
 [DrawingSurface.DrawPixel](DrawingSurface#drawingsurfacedrawpixel),
 [DrawingSurface.UseHighResCoordinates](DrawingSurface#drawingsurfaceusehighrescoordinates)
@@ -515,7 +515,7 @@ Example:
 
 displays the size of the surface to the player
 
-*See Also:*
+*See also:*
 [DrawingSurface.UseHighResCoordinates](DrawingSurface#drawingsurfaceusehighrescoordinates),
 [DrawingSurface.Width](DrawingSurface#drawingsurfacewidth)
 
@@ -560,6 +560,6 @@ Example:
 
 displays the size of the surface to the player
 
-*See Also:* [DrawingSurface.Height](DrawingSurface#drawingsurfaceheight),
+*See also:* [DrawingSurface.Height](DrawingSurface#drawingsurfaceheight),
 [DrawingSurface.UseHighResCoordinates](DrawingSurface#drawingsurfaceusehighrescoordinates)
 

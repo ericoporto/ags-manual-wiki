@@ -8,4 +8,4 @@ On the other hand, regular variable declarations should **not** be placed in a s
 
 It's also best to not place actual functions in headers, as this will create duplicates of such functions everywhere. This is less serious problem, but still not a very good thing. Place function imports in headers instead.
 
-See Also: [Importing functions and variables in other scripts](ImportingFunctionsAndVariables)
+*See also:* [Importing functions and variables in other scripts](ImportingFunctionsAndVariables)

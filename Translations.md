@@ -95,7 +95,7 @@ is used in that language (make sure to check for capitalized special characters 
 after changing the encoding to ANSI. A lot of wordprocessors use Ctrl+H as hotkey for the
 search and replace function.
 
-*See Also:*
+*See also:*
 [Game.ChangeTranslation](Game#gamechangetranslation),
 [Game.TranslationFilename](Game#gametranslationfilename),
 [GetTranslation](Globalfunctions_General#gettranslation), [IsTranslationAvailable](Globalfunctions_General#istranslationavailable)

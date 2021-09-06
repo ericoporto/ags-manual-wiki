@@ -73,4 +73,4 @@ To sum this up, the import declaration lets other scripts see this variable, and
 
 **NOTE:** The AGS Editor has a special menu called "Global Variables" meant for easier creation of public variables which could are accessible everywhere. This may be a better alternative for beginners, as it takes care of all this import/export managing behind the scenes.
 
-See Also: [import keyword](ScriptKeywords#import), [export keyword](ScriptKeywords#export)
+*See also:* [import keyword](ScriptKeywords#import), [export keyword](ScriptKeywords#export)

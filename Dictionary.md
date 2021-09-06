@@ -54,7 +54,7 @@ Example:
 
 This will add "my-key" key, assign "my-value" to that key and then test whether that key was added successfully.
 
-*See Also:* [Dictionary.Get](Dictionary#dictionaryget),
+*See also:* [Dictionary.Get](Dictionary#dictionaryget),
 [Dictionary.Set](Dictionary#dictionaryset)
 
 ---
@@ -73,7 +73,7 @@ Example:
 
 Here _myValue_ variable will be assigned "a-value" from the dictionary.
 
-*See Also:* [Dictionary.Set](Dictionary#dictionaryset)
+*See also:* [Dictionary.Set](Dictionary#dictionaryset)
 
 ---
 
@@ -98,7 +98,7 @@ Example:
 
 In the above example the keys will be displayed on screen one by one, preceded by their index.
 
-*See Also:* [Dictionary.ItemCount](Dictionary#dictionaryitemcount)
+*See also:* [Dictionary.ItemCount](Dictionary#dictionaryitemcount)
 
 ---
 
@@ -123,7 +123,7 @@ Example:
 
 In the above example the values will be displayed on screen one by one, preceded by their index.
 
-*See Also:* [Dictionary.ItemCount](Dictionary#dictionaryitemcount)
+*See also:* [Dictionary.ItemCount](Dictionary#dictionaryitemcount)
 
 ---
 
@@ -133,7 +133,7 @@ In the above example the values will be displayed on screen one by one, preceded
 
 Removes a key/value pair from the dictionary, returns true on success and false if there was no such key.
 
-*See Also:* [Dictionary.Set](Dictionary#dictionaryset)
+*See also:* [Dictionary.Set](Dictionary#dictionaryset)
 
 ---
 
@@ -143,7 +143,7 @@ Removes a key/value pair from the dictionary, returns true on success and false 
 
 Assigns a value to the given key. If the key did not exist then it will be created, otherwise the old value for this key will be overwritten with a new one.
 
-*See Also:* [Dictionary.Get](Dictionary#dictionaryget),
+*See also:* [Dictionary.Get](Dictionary#dictionaryget),
 [Dictionary.Remove](Dictionary#dictionaryremove)
 
 ---
@@ -154,7 +154,7 @@ Assigns a value to the given key. If the key did not exist then it will be creat
 
 Returns the string comparison method for this dictionary, which determines whether its keys are case-sensitive.
 
-*See Also:* [Dictionary.SortStyle](Dictionary#dictionarysortstyle)
+*See also:* [Dictionary.SortStyle](Dictionary#dictionarysortstyle)
 
 ---
 
@@ -172,4 +172,4 @@ Gets the number of key/value pairs currently in the dictionary.
 
 Returns the key sorting method for this dictionary.
 
-*See Also:* [Dictionary.CompareStyle](Dictionary#dictionarycomparestyle)
+*See also:* [Dictionary.CompareStyle](Dictionary#dictionarycomparestyle)

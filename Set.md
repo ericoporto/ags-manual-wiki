@@ -14,7 +14,7 @@ At the moment a Set does not let you directly access all of its internal data at
 
 *Compatibility:* Set struct is supported by **AGS 3.5.0** and later versions.
 
-*See Also:* [Dictionary](Dictionary)
+*See also:* [Dictionary](Dictionary)
 
 ---
 
@@ -41,7 +41,7 @@ Example:
     mySet.Add("item1");
     bool wasAdded = mySet.Add("item1"); // wasAdded will be false
 
-*See Also:* [Contains](Set#setcontains), [Remove](Set#setremove)
+*See also:* [Contains](Set#setcontains), [Remove](Set#setremove)
 
 ---
 
@@ -67,7 +67,7 @@ Example:
       Display("Test passed!");
     }
 
-*See Also:* [Add](Set#setadd), [Remove](Set#setremove)
+*See also:* [Add](Set#setadd), [Remove](Set#setremove)
 
 ---
 
@@ -90,7 +90,7 @@ Example:
 
 In the above example the items will be displayed on screen one by one, preceded by their index.
 
-*See Also:* [Set.ItemCount](Set#setitemcount)
+*See also:* [Set.ItemCount](Set#setitemcount)
 
 ---
 
@@ -100,7 +100,7 @@ In the above example the items will be displayed on screen one by one, preceded 
 
 Removes an item from the Set. Returns false if there was no such item, otherwise returns true.
 
-*See Also:* [Add](Set#setadd), [Contains](Set#setcontains)
+*See also:* [Add](Set#setadd), [Contains](Set#setcontains)
 
 ---
 
@@ -110,7 +110,7 @@ Removes an item from the Set. Returns false if there was no such item, otherwise
 
 Returns the string comparison method for this Set.
 
-*See Also:* [SortStyle](Set#setsortstyle)
+*See also:* [SortStyle](Set#setsortstyle)
 
 ---
 
@@ -128,4 +128,4 @@ Returns the number of items currently in the Set.
 
 Returns the sorting method for this Set.
 
-*See Also:* [CompareStyle](Set#setcomparestyle)
+*See also:* [CompareStyle](Set#setcomparestyle)
