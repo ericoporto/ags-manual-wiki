@@ -1,6 +1,6 @@
 ## `TextWindowGUI` functions and properties
 
-This struct extends the GUI struct, so it has all functions and properties from [GUI](GUI), in addition to the properties below.
+This struct extends the GUI struct, so it has all functions and properties from [`GUI`](GUI), in addition to the properties below.
 
 *Compatibility:* TextWindowGUI is supported by AGS 3.5.0 and later versions.
 
@@ -21,7 +21,7 @@ Example:
       this.Say(message);
     }
 
-above function adjusts gTextGui's text color before calling a standard [Character.Say](Character#charactersay) function. It assumes that gTextGui was assigned as a default textwindow for the character speech. Such custom function may then be used as:
+above function adjusts gTextGui's text color before calling a standard [`Character.Say`](Character#charactersay) function. It assumes that gTextGui was assigned as a default textwindow for the character speech. Such custom function may then be used as:
 
     cEgo.MySay("My text has my colors!");
 

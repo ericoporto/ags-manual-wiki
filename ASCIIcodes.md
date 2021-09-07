@@ -1,6 +1,6 @@
 ## ASCII code table
 
-This section lists the key codes which can be passed to [on_key_press](Globalfunctions_Event)
+This section lists the key codes which can be passed to [`on_key_press`](Globalfunctions_Event)
 and which keys they represent:
 
 AGS KeyCode | Key | ASCII code
@@ -123,7 +123,7 @@ eKeyEnd | End | 379
 eKeyDownArrow | DownArrow | 380
 eKeyPageDown | PageDown | 381
 
-Use these key codes in your [on_key_press](Globalfunctions_Event) function to process player
+Use these key codes in your [`on_key_press`](Globalfunctions_Event) function to process player
 input. For example:
 
     if (keycode == eKeyA) Display("You pressed A");

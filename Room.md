@@ -51,8 +51,8 @@ draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
 
 *See also:*
-[DrawingSurface.DrawLine](DrawingSurface#drawingsurfacedrawline),
-[DrawingSurface.Release](DrawingSurface#drawingsurfacerelease)
+[`DrawingSurface.DrawLine`](DrawingSurface#drawingsurfacedrawline),
+[`DrawingSurface.Release`](DrawingSurface#drawingsurfacerelease)
 
 ---
 
@@ -82,7 +82,7 @@ Example:
 will print the message if the current room has its "CanBeAttackedHere"
 box ticked.
 
-*See also:* [Room.GetTextProperty](Room#roomgettextproperty)
+*See also:* [`Room.GetTextProperty`](Room#roomgettextproperty)
 
 ---
 
@@ -111,7 +111,7 @@ Example:
 
 will retrieve the room's "description" property then display it.
 
-*See also:* [Room.GetProperty](Room#roomgetproperty)
+*See also:* [`Room.GetProperty`](Room#roomgetproperty)
 
 ---
 
@@ -140,7 +140,7 @@ will change room's "Darkness" custom property to 10.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See also:* [Room.SetTextProperty](Room#roomsettextproperty)
+*See also:* [`Room.SetTextProperty`](Room#roomsettextproperty)
 
 ---
 
@@ -167,7 +167,7 @@ will change room's "description" property.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See also:* [Room.SetProperty](Room#roomsetproperty)
+*See also:* [`Room.SetProperty`](Room#roomsetproperty)
 
 ---
 
@@ -191,10 +191,10 @@ Example:
 
 will simulate a click in the Look mode on screen co-ordinates (100, 50).
 
-*See also:* [GUI.ProcessClick](GUI#guiprocessclick),
-[Mouse.Click](Mouse#mouseclick),
-[IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
-[Hotspot.RunInteraction](Hotspot#hotspotruninteraction)
+*See also:* [`GUI.ProcessClick`](GUI#guiprocessclick),
+[`Mouse.Click`](Mouse#mouseclick),
+[`IsInteractionAvailable`](Globalfunctions_General#isinteractionavailable),
+[`Hotspot.RunInteraction`](Hotspot#hotspotruninteraction)
 
 ---
 
@@ -209,9 +209,9 @@ Example:
 
     Display("The current room's bottom edge is at %d.", Room.BottomEdge);
 
-*See also:* [Room.LeftEdge](Room#roomleftedge),
-[Room.RightEdge](Room#roomrightedge),
-[Room.TopEdge](Room#roomtopedge)
+*See also:* [`Room.LeftEdge`](Room#roomleftedge),
+[`Room.RightEdge`](Room#roomrightedge),
+[`Room.TopEdge`](Room#roomtopedge)
 
 ---
 
@@ -228,7 +228,7 @@ Example:
     Display("The current room background is %d-bit color.", Room.ColorDepth);
 
 *See also:*
-[DrawingSurface.DrawImage](DrawingSurface#drawingsurfacedrawimage)
+[`DrawingSurface.DrawImage`](DrawingSurface#drawingsurfacedrawimage)
 
 ---
 
@@ -244,7 +244,7 @@ Example:
 
     Display("The current room size is %d x %d.", Room.Width, Room.Height);
 
-*See also:* [Room.Width](Room#roomwidth)
+*See also:* [`Room.Width`](Room#roomwidth)
 
 ---
 
@@ -259,9 +259,9 @@ Example:
 
     Display("The current room's left edge is at %d.", Room.LeftEdge);
 
-*See also:* [Room.BottomEdge](Room#roombottomedge),
-[Room.RightEdge](Room#roomrightedge),
-[Room.TopEdge](Room#roomtopedge)
+*See also:* [`Room.BottomEdge`](Room#roombottomedge),
+[`Room.RightEdge`](Room#roomrightedge),
+[`Room.TopEdge`](Room#roomtopedge)
 
 ---
 
@@ -331,9 +331,9 @@ Example:
 
     Display("The current room's right edge is at %d.", Room.RightEdge);
 
-*See also:* [Room.BottomEdge](Room#roombottomedge),
-[Room.LeftEdge](Room#roomleftedge),
-[Room.TopEdge](Room#roomtopedge)
+*See also:* [`Room.BottomEdge`](Room#roombottomedge),
+[`Room.LeftEdge`](Room#roomleftedge),
+[`Room.TopEdge`](Room#roomtopedge)
 
 ---
 
@@ -348,9 +348,9 @@ Example:
 
     Display("The current room's top edge is at %d.", Room.TopEdge);
 
-*See also:* [Room.BottomEdge](Room#roombottomedge),
-[Room.LeftEdge](Room#roomleftedge),
-[Room.RightEdge](Room#roomrightedge)
+*See also:* [`Room.BottomEdge`](Room#roombottomedge),
+[`Room.LeftEdge`](Room#roomleftedge),
+[`Room.RightEdge`](Room#roomrightedge)
 
 ---
 
@@ -366,5 +366,5 @@ Example:
 
     Display("The current room size is %d x %d.", Room.Width, Room.Height);
 
-*See also:* [Room.Height](Room#roomheight)
+*See also:* [`Room.Height`](Room#roomheight)
 

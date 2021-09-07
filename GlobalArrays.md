@@ -4,12 +4,12 @@ There's a number of global arrays declared for you to access certain game object
 
 Array | Length | Description
 --- | --- | ---
-Character character[] | [Game.CharacterCount](Game#gamecharactercount) | All game's Characters
-Dialog dialog[] | [Game.DialogCount](Game#gamedialogcount) | All game's dialogs
-GUI gui[] | [Game.GUICount](Game#gameguicount) | All game's GUI
-InventoryItem inventory[] | [Game.InventoryItemCount](Game#gameinventoryitemcount) | All game's InventoryItems
+Character character[] | [`Game.CharacterCount`](Game#gamecharactercount) | All game's Characters
+Dialog dialog[] | [`Game.DialogCount`](Game#gamedialogcount) | All game's dialogs
+GUI gui[] | [`Game.GUICount`](Game#gameguicount) | All game's GUI
+InventoryItem inventory[] | [`Game.InventoryItemCount`](Game#gameinventoryitemcount) | All game's InventoryItems
 Hotspot hotspot[] | AGS_MAX_HOTSPOTS | Current room's Hotspots
-Object object[] | [Room.ObjectCount](Room#roomobjectcount) | Current room's Room Objects
+Object object[] | [`Room.ObjectCount`](Room#roomobjectcount) | Current room's Room Objects
 Region region[] | AGS_MAX_REGIONS | Current room's Regions
 ColorType palette[] | PALETTE_SIZE | Game's palette, for 256-color mode
 

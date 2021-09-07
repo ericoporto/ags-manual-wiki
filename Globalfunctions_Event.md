@@ -86,7 +86,7 @@ ASCII value of the key. A list of these values is [available here](ASCIIcodes).
 The `on_key_press` function can also be defined in individual room
 scripts. This allows the room script to intercept a key-press first,
 and then decide whether to pass it on to the global script or not. See
-the [ClaimEvent](Globalfunctions_General#claimevent) function for more
+the [`ClaimEvent`](Globalfunctions_General#claimevent) function for more
 details.
 
 ---
@@ -112,7 +112,7 @@ user moving the mouse wheel north or south, respectively.
 The `on_mouse_click` function can also be defined in individual room
 scripts. This allows the room script to intercept a mouse-click first,
 and then decide whether to pass it on to the global script or not. See
-the [ClaimEvent](Globalfunctions_General#claimevent) function for
+the [`ClaimEvent`](Globalfunctions_General#claimevent) function for
 more details.
 
 ---

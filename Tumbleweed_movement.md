@@ -24,7 +24,7 @@ Moves the player character around on walkable areas, a wrapper for MovePlayerEx.
 Returns 1, if the character has reached it's goal and 0 if the movement has been canceled before.
 
 *See also:*
-[Verbs.MovePlayerEx](Tumbleweed_movement#verbsmoveplayerex)
+[`Verbs.MovePlayerEx`](Tumbleweed_movement#verbsmoveplayerex)
 
 ### `Verbs.MovePlayerEx`
 
@@ -48,7 +48,7 @@ The same as GoToCharacterEx, just with the one character being the player and a 
 Returns 1, if the character has reached it's goal and 0 if the movement has been canceled before.
 
 *See also:*
-[Verbs.GoToCharacterEx](Tumbleweed_movement#verbsgotocharacterex)
+[`Verbs.GoToCharacterEx`](Tumbleweed_movement#verbsgotocharacterex)
 
 ---
 
@@ -63,8 +63,8 @@ blocking: 0=non-blocking; 1=blocking; 2=semi-blocking
 Returns 1, if the character has reached it's goal and 0 if the movement has been canceled before.
 
 *See also:*
-[Verbs.GoToCharacter](Tumbleweed_movement#verbsgotocharacter),
-[Verbs.NPCGoToCharacter](Tumbleweed_movement#verbsnpcgotocharacter)
+[`Verbs.GoToCharacter`](Tumbleweed_movement#verbsgotocharacter),
+[`Verbs.NPCGoToCharacter`](Tumbleweed_movement#verbsnpcgotocharacter)
 
 ---
 
@@ -78,7 +78,7 @@ The same as GoToCharacterEx, just with an default offset of x=35 and y=20
 Returns 1, if the character has reached it's goal and 0 if the movement has been canceled before.
 
 *See also:*
-[Verbs.GoToCharacterEx](Tumbleweed_movement#verbsgotocharacterex)
+[`Verbs.GoToCharacterEx`](Tumbleweed_movement#verbsgotocharacterex)
 
 ---
 
@@ -100,8 +100,8 @@ if (Verbs.AnyClickMove(130,110,eDir_Left) == 1 ) player.Say("I've reached the pl
 So the Message is only displayed, if the movement hasn't been canceled.
 
 *See also:*
-[Verbs.MovePlayer](Tumbleweed_movement#verbsmoveplayer),
-[Verbs.MovePlayerEx](Tumbleweed_movement#verbsmoveplayerex)
+[`Verbs.MovePlayer`](Tumbleweed_movement#verbsmoveplayer),
+[`Verbs.MovePlayerEx`](Tumbleweed_movement#verbsmoveplayerex)
 
 ---
 
@@ -114,9 +114,9 @@ int Verbs.AnyClickWalk(int x, int y, eDirection dir);
 This function is almost similar to AnyClickMove. But it's only called, if the current action is eGA_WalkTo.
 
 *See also:*
-[Verbs.MovePlayer](Tumbleweed_movement#verbsmoveplayer),
-[Verbs.MovePlayerEx](Tumbleweed_movement#verbsmoveplayerex),
-[Verbs.AnyClickMove](Tumbleweed_movement#verbsanyclickmove)
+[`Verbs.MovePlayer`](Tumbleweed_movement#verbsmoveplayer),
+[`Verbs.MovePlayerEx`](Tumbleweed_movement#verbsmoveplayerex),
+[`Verbs.AnyClickMove`](Tumbleweed_movement#verbsanyclickmove)
 
 ---
 
@@ -129,7 +129,7 @@ int Verbs.AnyClickWalkLook(int x, int y, eDirection dir, String lookat);
 This function moves the player character to the given location, turns it to the given direction and lets it say the message, given in the string.
 
 *See also:*
-[Verbs.AnyClickWalk](Tumbleweed_movement#verbsanyclickwalk)
+[`Verbs.AnyClickWalk`](Tumbleweed_movement#verbsanyclickwalk)
 
 ---
 
@@ -144,8 +144,8 @@ This function starts the same as any_click_walk_look. If an object ID > 0 has be
 The function return 0 if the action has been canceled, before the player has reached the coordinates. 1 is returned if the player has reached the given destination, but has not picked up the item. 2 is returned, if the item has been picked up.
 
 *See also:*
-[Verbs.AnyClickWalkLook](Tumbleweed_movement#verbsanyclickwalklook),
-[Verbs.AnyClickWalk](Tumbleweed_movement#verbsanyclickwalk)
+[`Verbs.AnyClickWalkLook`](Tumbleweed_movement#verbsanyclickwalklook),
+[`Verbs.AnyClickWalk`](Tumbleweed_movement#verbsanyclickwalk)
 
 ---
 
@@ -163,8 +163,8 @@ if (Verbs.AnyClickUseInv(iWrench,100,130,eDir_Left) == 2 ) player.Say("I will no
 ```
 
 *See also:*
-[Verbs.AnyClickWalkLook](Tumbleweed_movement#verbsanyclickwalklook),
-[Verbs.AnyClickWalk](Tumbleweed_movement#verbsanyclickwalk)
+[`Verbs.AnyClickWalkLook`](Tumbleweed_movement#verbsanyclickwalklook),
+[`Verbs.AnyClickWalk`](Tumbleweed_movement#verbsanyclickwalk)
 
 ---
 
@@ -179,8 +179,8 @@ E.g. this is used in the exit extension processing.
 blocking: 0=non-blocking; 1=blocking; 2=semi-blocking (default)
 
 *See also:*
-[Verbs.MovePlayer](Tumbleweed_movement#verbsmoveplayer),
-[Verbs.WalkOffScreen](Tumbleweed_movement#verbswalkoffscreen)
+[`Verbs.MovePlayer`](Tumbleweed_movement#verbsmoveplayer),
+[`Verbs.WalkOffScreen`](Tumbleweed_movement#verbswalkoffscreen)
 
 ---
 

@@ -22,7 +22,7 @@ This saves only the options that may be changed at runtime, such as translation 
 
 *Compatibility:* Supported by **AGS 3.5.1** and later versions.
 
-*See also:* [File.Open](File#fileopen)
+*See also:* [`File.Open`](File#fileopen)
 
 ---
 
@@ -44,7 +44,7 @@ will display a message with the number of audio channels.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [System.AudioChannels](System#systemaudiochannels)
+*See also:* [`System.AudioChannels`](System#systemaudiochannels)
 
 ---
 
@@ -65,8 +65,8 @@ will display a message with Audio Channel 2's current volume.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [AudioChannel](AudioChannel),
-[System.AudioChannelCount](System#systemaudiochannelcount)
+*See also:* [`AudioChannel`](AudioChannel),
+[`System.AudioChannelCount`](System#systemaudiochannelcount)
 
 ---
 
@@ -90,8 +90,8 @@ will display a message if Caps Lock is on.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See also:* [System.NumLock](System#systemnumlock),
-[System.ScrollLock](System#systemscrolllock)
+*See also:* [`System.NumLock`](System#systemnumlock),
+[`System.ScrollLock`](System#systemscrolllock)
 
 ---
 
@@ -112,8 +112,8 @@ Example:
 
 will display the current resolution and color depth
 
-*See also:* [System.ScreenHeight](System#systemscreenheight),
-[System.ScreenWidth](System#systemscreenwidth)
+*See also:* [`System.ScreenHeight`](System#systemscreenheight),
+[`System.ScreenWidth`](System#systemscreenwidth)
 
 ---
 
@@ -125,7 +125,7 @@ Gets/sets the current screen Gamma level. This is 100 by default, and
 you can set it anywhere from 0 (pitch black) to 200 (double normal
 brightness).
 
-[System.SupportsGammaControl](System#systemsupportsgammacontrol)
+[`System.SupportsGammaControl`](System#systemsupportsgammacontrol)
 must return *true* in order for this property to have any effect.
 
 Because every player's monitor will be different, you should normally
@@ -141,7 +141,7 @@ Example:
 will turn the screen brightness up to `50%` higher than normal
 
 *See also:*
-[System.SupportsGammaControl](System#systemsupportsgammacontrol)
+[`System.SupportsGammaControl`](System#systemsupportsgammacontrol)
 
 ---
 
@@ -205,7 +205,7 @@ switches back to game.
 
 *Compatibility:* Supported by **AGS 3.3.5** and later versions.
 
-*See also:* [SetMultitaskingMode](Globalfunctions_General#setmultitaskingmode)
+*See also:* [`SetMultitaskingMode`](Globalfunctions_General#setmultitaskingmode)
 
 ---
 
@@ -229,8 +229,8 @@ will display a message if Num Lock is on.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See also:* [System.CapsLock](System#systemcapslock),
-[System.ScrollLock](System#systemscrolllock)
+*See also:* [`System.CapsLock`](System#systemcapslock),
+[`System.ScrollLock`](System#systemscrolllock)
 
 ---
 
@@ -308,13 +308,13 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See also:* [Debug](Globalfunctions_General#debug)
+*See also:* [`Debug`](Globalfunctions_General#debug)
 
 ---
 
 ### `System.ScreenHeight`
 
-**This property is obsolete since AGS 3.5.0. Use [Screen.Height](Screen#screenheight) instead.**
+**This property is obsolete since AGS 3.5.0. Use [`Screen.Height`](Screen#screenheight) instead.**
 
 *(Formerly known as system.screen_height, which is now obsolete)*
 
@@ -322,14 +322,14 @@ Example:
 
 Returns the game's screen height in native coordinates, **not** accounting for the scaling applied by graphic renderer. Historically it also included a size of the black letterbox borders, making it a confusing parameter.
 
-*See also:* [System.ColorDepth](System#systemcolordepth), [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
-[Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
+*See also:* [`System.ColorDepth`](System#systemcolordepth), [`Screen.Width`](Screen#screenwidth), [`Screen.Height`](Screen#screenheight),
+[`Viewport.Width`](Viewport#viewportwidth), [`Viewport.Height`](Viewport#viewportheight)
 
 ---
 
 ### `System.ScreenWidth`
 
-**This property is obsolete since AGS 3.5.0. Use [Screen.Width](Screen#screenwidth) instead.**
+**This property is obsolete since AGS 3.5.0. Use [`Screen.Width`](Screen#screenwidth) instead.**
 
 *(Formerly known as system.screen_width, which is now obsolete)*
 
@@ -337,8 +337,8 @@ Returns the game's screen height in native coordinates, **not** accounting for t
 
 Returns the game's screen width in native coordinates, **not** accounting for the scaling applied by graphic renderer. Historically it also included a size of the black widescreen side borders, making it a confusing parameter.
 
-*See also:* [System.ColorDepth](System#systemcolordepth), [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
-[Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
+*See also:* [`System.ColorDepth`](System#systemcolordepth), [`Screen.Width`](Screen#screenwidth), [`Screen.Height`](Screen#screenheight),
+[`Viewport.Width`](Viewport#viewportwidth), [`Viewport.Height`](Viewport#viewportheight)
 
 ---
 
@@ -363,8 +363,8 @@ will display a message if Scroll Lock is on.
 
 *Compatibility:* Supported by **AGS 3.0.1** and later versions.
 
-*See also:* [System.CapsLock](System#systemcapslock),
-[System.NumLock](System#systemnumlock)
+*See also:* [`System.CapsLock`](System#systemcapslock),
+[`System.NumLock`](System#systemnumlock)
 
 ---
 
@@ -376,7 +376,7 @@ Gets whether the player's PC supports changing the screen's gamma
 control settings.
 
 This must return *true* before you try and change the
-[System.Gamma](System#systemgamma) property. The situations in which
+[`System.Gamma`](System#systemgamma) property. The situations in which
 this will be supported are listed below.
 
 **Cross-Platform Support**
@@ -393,7 +393,7 @@ Example:
 
 will display a message if the system supports changing the gamma
 
-*See also:* [System.Gamma](System#systemgamma)
+*See also:* [`System.Gamma`](System#systemgamma)
 
 ---
 
@@ -419,33 +419,33 @@ will display the AGS version number
 
 ### `System.ViewportHeight`
 
-**This property is obsolete since AGS 3.5.0. Use [Screen.Height](Screen#screenheight) instead.**
+**This property is obsolete since AGS 3.5.0. Use [`Screen.Height`](Screen#screenheight) instead.**
 
 *(Formerly known as system.viewport_height, which is now obsolete)*
 
     readonly static int System.ViewportHeight;
 
 Returns the game's screen height in native coordinates, **not** accounting for the scaling applied by graphic renderer.
-Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [Viewport.Height](Viewport#viewportheight) is **not** a direct equivalent.
+Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [`Viewport.Height`](Viewport#viewportheight) is **not** a direct equivalent.
 
-*See also:* [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
-[Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
+*See also:* [`Screen.Width`](Screen#screenwidth), [`Screen.Height`](Screen#screenheight),
+[`Viewport.Width`](Viewport#viewportwidth), [`Viewport.Height`](Viewport#viewportheight)
 
 ---
 
 ### `System.ViewportWidth`
 
-**This property is obsolete since AGS 3.5.0. Use [Screen.Width](Screen#screenwidth) instead.**
+**This property is obsolete since AGS 3.5.0. Use [`Screen.Width`](Screen#screenwidth) instead.**
 
 *(Formerly known as system.viewport_width, which is now obsolete)*
 
     readonly static int System.ViewportWidth;
 
 Returns the game's screen width in native coordinates, **not** accounting for the scaling applied by graphic renderer.
-Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [Viewport.Width](Viewport#viewportwidth) is **not** a direct equivalent.
+Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [`Viewport.Width`](Viewport#viewportwidth) is **not** a direct equivalent.
 
-*See also:* [Screen.Width](Screen#screenwidth), [Screen.Height](Screen#screenheight),
-[Viewport.Width](Viewport#viewportwidth), [Viewport.Height](Viewport#viewportheight)
+*See also:* [`Screen.Width`](Screen#screenwidth), [`Screen.Height`](Screen#screenheight),
+[`Viewport.Width`](Viewport#viewportwidth), [`Viewport.Height`](Viewport#viewportheight)
 
 ---
 
@@ -469,8 +469,8 @@ will set the overall output volume to 80.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [AudioChannel.Volume](AudioChannel#audiochannelvolume),
-[Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume)
+*See also:* [`AudioChannel.Volume`](AudioChannel#audiochannelvolume),
+[`Game.SetAudioTypeVolume`](Multimedia#gamesetaudiotypevolume)
 
 ---
 

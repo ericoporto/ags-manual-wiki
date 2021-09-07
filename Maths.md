@@ -21,7 +21,7 @@ Example:
 
 displays the integer value of 10.7, rounded in the three different ways.
 
-*See also:* [IntToFloat](Maths#inttofloat)
+*See also:* [`IntToFloat`](Maths#inttofloat)
 
 ---
 
@@ -40,7 +40,7 @@ Example:
 
 loads 10.0 into the variable *number*.
 
-*See also:* [FloatToInt](Maths#floattoint)
+*See also:* [`FloatToInt`](Maths#floattoint)
 
 ---
 
@@ -51,7 +51,7 @@ loads 10.0 into the variable *number*.
 Calculates the arc-cosine, in radians, of the specified value.
 
 To convert an angle in radians to degrees, use
-[Maths.RadiansToDegrees](Maths#mathsradianstodegrees).
+[`Maths.RadiansToDegrees`](Maths#mathsradianstodegrees).
 
 Example:
 
@@ -59,8 +59,8 @@ Example:
 
 calculates the arc-cosine of 1.0 and places it into variable *angle*.
 
-*See also:* [Maths.Cos](Maths#mathscos),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
+*See also:* [`Maths.Cos`](Maths#mathscos),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
 
 ---
 
@@ -71,7 +71,7 @@ calculates the arc-cosine of 1.0 and places it into variable *angle*.
 Calculates the arc-sine, in radians, of the specified value.
 
 To convert an angle in radians to degrees, use
-[Maths.RadiansToDegrees](Maths#mathsradianstodegrees).
+[`Maths.RadiansToDegrees`](Maths#mathsradianstodegrees).
 
 Example:
 
@@ -79,8 +79,8 @@ Example:
 
 calculates the arc-sine of 0.5 and places it into variable *angle*.
 
-*See also:* [Maths.Sin](Maths#mathssin),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
+*See also:* [`Maths.Sin`](Maths#mathssin),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
 
 ---
 
@@ -91,7 +91,7 @@ calculates the arc-sine of 0.5 and places it into variable *angle*.
 Calculates the arc-tan, in radians, of the specified value.
 
 To convert an angle in radians to degrees, use
-[Maths.RadiansToDegrees](Maths#mathsradianstodegrees).
+[`Maths.RadiansToDegrees`](Maths#mathsradianstodegrees).
 
 Example:
 
@@ -99,9 +99,9 @@ Example:
 
 calculates the arc-tan of 0.5 and places it into variable *angle*.
 
-*See also:* [Maths.ArcTan2](Maths#mathsarctan2),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
-[Maths.Tan](Maths#mathstan)
+*See also:* [`Maths.ArcTan2`](Maths#mathsarctan2),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
+[`Maths.Tan`](Maths#mathstan)
 
 ---
 
@@ -114,7 +114,7 @@ other than the origin, even if x equals 0 and y does not equal 0. The
 result is returned in radians.
 
 To convert an angle in radians to degrees, use
-[Maths.RadiansToDegrees](Maths#mathsradianstodegrees).
+[`Maths.RadiansToDegrees`](Maths#mathsradianstodegrees).
 
 Example:
 
@@ -123,8 +123,8 @@ Example:
 calculates the arc-tan of -862.42 / 78.5149 and places it into variable
 *angle*.
 
-*See also:* [Maths.DegreesToRadians](Maths#mathsdegreestoradians),
-[Maths.ArcTan](Maths#mathsarctan)
+*See also:* [`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
+[`Maths.ArcTan`](Maths#mathsarctan)
 
 ---
 
@@ -135,7 +135,7 @@ calculates the arc-tan of -862.42 / 78.5149 and places it into variable
 Calculates the cosine of the specified angle (in radians).
 
 To convert an angle in degrees to radians, use
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians).
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians).
 
 Example:
 
@@ -144,10 +144,10 @@ Example:
 calculates the cosine of 360 degrees (which is 1.0) and places it into
 variable *cosine*.
 
-*See also:* [Maths.ArcCos](Maths#mathsarccos),
-[Maths.Cosh](Maths#mathscosh),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
-[Maths.Sin](Maths#mathssin), [Maths.Tan](Maths#mathstan)
+*See also:* [`Maths.ArcCos`](Maths#mathsarccos),
+[`Maths.Cosh`](Maths#mathscosh),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
+[`Maths.Sin`](Maths#mathssin), [`Maths.Tan`](Maths#mathstan)
 
 ---
 
@@ -158,7 +158,7 @@ variable *cosine*.
 Calculates the hyperbolic cosine of the specified angle (in radians).
 
 To convert an angle in degrees to radians, use
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians).
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians).
 
 Example:
 
@@ -169,9 +169,9 @@ variable *hcos*.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [Maths.Cos](Maths#mathscos),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
-[Maths.Sinh](Maths#mathssinh), [Maths.Tanh](Maths#mathstanh)
+*See also:* [`Maths.Cos`](Maths#mathscos),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
+[`Maths.Sinh`](Maths#mathssinh), [`Maths.Tanh`](Maths#mathstanh)
 
 ---
 
@@ -193,9 +193,9 @@ Example:
 calculates the cosine of 360 degrees (which is 1.0) and places it into
 variable *cosine*.
 
-*See also:* [Maths.Cos](Maths#mathscos),
-[Maths.RadiansToDegrees](Maths#mathsradianstodegrees),
-[Maths.Sin](Maths#mathssin), [Maths.Tan](Maths#mathstan)
+*See also:* [`Maths.Cos`](Maths#mathscos),
+[`Maths.RadiansToDegrees`](Maths#mathsradianstodegrees),
+[`Maths.Sin`](Maths#mathssin), [`Maths.Tan`](Maths#mathstan)
 
 ---
 
@@ -218,8 +218,8 @@ the variable.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [Maths.Log](Maths#mathslog),
-[Maths.Log10](Maths#mathslog10)
+*See also:* [`Maths.Log`](Maths#mathslog),
+[`Maths.Log10`](Maths#mathslog10)
 
 ---
 
@@ -240,8 +240,8 @@ variable.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [Maths.Exp](Maths#mathsexp),
-[Maths.Log10](Maths#mathslog10)
+*See also:* [`Maths.Exp`](Maths#mathsexp),
+[`Maths.Log10`](Maths#mathslog10)
 
 ---
 
@@ -262,8 +262,8 @@ the variable.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [Maths.Exp](Maths#mathsexp),
-[Maths.Log](Maths#mathslog)
+*See also:* [`Maths.Exp`](Maths#mathsexp),
+[`Maths.Log`](Maths#mathslog)
 
 ---
 
@@ -284,9 +284,9 @@ Example:
 
 converts *PI* radians into degrees (which is 180).
 
-*See also:* [Maths.Cos](Maths#mathscos),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
-[Maths.Sin](Maths#mathssin), [Maths.Tan](Maths#mathstan)
+*See also:* [`Maths.Cos`](Maths#mathscos),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
+[`Maths.Sin`](Maths#mathssin), [`Maths.Tan`](Maths#mathstan)
 
 ---
 
@@ -304,7 +304,7 @@ Example:
 
 calculates 4 to the power 3 (which is 64).
 
-*See also:* [Maths.Sqrt](Maths#mathssqrt)
+*See also:* [`Maths.Sqrt`](Maths#mathssqrt)
 
 ---
 
@@ -315,7 +315,7 @@ calculates 4 to the power 3 (which is 64).
 Calculates the sine of the specified angle (in radians).
 
 To convert an angle in degrees to radians, use
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians).
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians).
 
 Example:
 
@@ -324,10 +324,10 @@ Example:
 calculates the sine of 360 degrees (which is 0) and places it into
 variable *sine*.
 
-*See also:* [Maths.ArcSin](Maths#mathsarcsin),
-[Maths.Sinh](Maths#mathssinh),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
-[Maths.Cos](Maths#mathscos), [Maths.Tan](Maths#mathstan)
+*See also:* [`Maths.ArcSin`](Maths#mathsarcsin),
+[`Maths.Sinh`](Maths#mathssinh),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
+[`Maths.Cos`](Maths#mathscos), [`Maths.Tan`](Maths#mathstan)
 
 ---
 
@@ -338,7 +338,7 @@ variable *sine*.
 Calculates the hyperbolic sine of the specified angle (in radians).
 
 To convert an angle in degrees to radians, use
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians).
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians).
 
 Example:
 
@@ -349,10 +349,10 @@ variable *hsine*.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [Maths.ArcSin](Maths#mathsarcsin),
-[Maths.Sin](Maths#mathssin),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
-[Maths.Cosh](Maths#mathscosh), [Maths.Tanh](Maths#mathstanh)
+*See also:* [`Maths.ArcSin`](Maths#mathsarcsin),
+[`Maths.Sin`](Maths#mathssin),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
+[`Maths.Cosh`](Maths#mathscosh), [`Maths.Tanh`](Maths#mathstanh)
 
 ---
 
@@ -371,9 +371,9 @@ Example:
 
 displays the square root of 4 (rounded down to the nearest integer).
 
-*See also:* [Maths.Cos](Maths#mathscos),
-[Maths.RaiseToPower](Maths#mathsraisetopower),
-[Maths.Sin](Maths#mathssin), [Maths.Tan](Maths#mathstan)
+*See also:* [`Maths.Cos`](Maths#mathscos),
+[`Maths.RaiseToPower`](Maths#mathsraisetopower),
+[`Maths.Sin`](Maths#mathssin), [`Maths.Tan`](Maths#mathstan)
 
 ---
 
@@ -384,7 +384,7 @@ displays the square root of 4 (rounded down to the nearest integer).
 Calculates the tangent of the specified angle (in radians).
 
 To convert an angle in degrees to radians, use
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians).
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians).
 
 Example:
 
@@ -393,10 +393,10 @@ Example:
 calculates the tan of 45 degrees (which is 1.0) and places it into
 variable *tan*.
 
-*See also:* [Maths.ArcTan](Maths#mathsarctan),
-[Maths.Tanh](Maths#mathstanh),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
-[Maths.Cos](Maths#mathscos), [Maths.Sin](Maths#mathssin)
+*See also:* [`Maths.ArcTan`](Maths#mathsarctan),
+[`Maths.Tanh`](Maths#mathstanh),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
+[`Maths.Cos`](Maths#mathscos), [`Maths.Sin`](Maths#mathssin)
 
 ---
 
@@ -407,7 +407,7 @@ variable *tan*.
 Calculates the hyperbolic tangent of the specified angle (in radians).
 
 To convert an angle in degrees to radians, use
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians).
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians).
 
 Example:
 
@@ -418,10 +418,10 @@ calculates the hyperbolic tan of 45 degrees and places it into variable
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [Maths.ArcTan](Maths#mathsarctan),
-[Maths.Tan](Maths#mathstan),
-[Maths.DegreesToRadians](Maths#mathsdegreestoradians),
-[Maths.Cos](Maths#mathscos), [Maths.Sin](Maths#mathssin)
+*See also:* [`Maths.ArcTan`](Maths#mathsarctan),
+[`Maths.Tan`](Maths#mathstan),
+[`Maths.DegreesToRadians`](Maths#mathsdegreestoradians),
+[`Maths.Cos`](Maths#mathscos), [`Maths.Sin`](Maths#mathssin)
 
 ---
 
@@ -437,6 +437,6 @@ Example:
 
 displays the value of Pi.
 
-*See also:* [Maths.Cos](Maths#mathscos),
-[Maths.Sin](Maths#mathssin), [Maths.Tan](Maths#mathstan)
+*See also:* [`Maths.Cos`](Maths#mathscos),
+[`Maths.Sin`](Maths#mathssin), [`Maths.Tan`](Maths#mathstan)
 

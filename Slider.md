@@ -1,6 +1,6 @@
 ## `Slider` properties
 
-Slider is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
+Slider is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
 *See also:* [Editing GUI Sliders](EditingGUIs#sliders)
 
@@ -24,7 +24,7 @@ displays the *sldHealth* slider's background image
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See also:* [Slider.HandleGraphic](Slider#sliderhandlegraphic)
+*See also:* [`Slider.HandleGraphic`](Slider#sliderhandlegraphic)
 
 ---
 
@@ -48,8 +48,8 @@ displays the *sldHealth* slider's handle image
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
 *See also:*
-[Slider.BackgroundGraphic](Slider#sliderbackgroundgraphic),
-[Slider.HandleOffset](Slider#sliderhandleoffset)
+[`Slider.BackgroundGraphic`](Slider#sliderbackgroundgraphic),
+[`Slider.HandleOffset`](Slider#sliderhandleoffset)
 
 ---
 
@@ -69,7 +69,7 @@ the right.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See also:* [Slider.HandleGraphic](Slider#sliderhandlegraphic)
+*See also:* [`Slider.HandleGraphic`](Slider#sliderhandlegraphic)
 
 ---
 
@@ -90,8 +90,8 @@ Example:
 
 sets the maximum value of the *sldHealth* slider to 200.
 
-*See also:* [Slider.Min](Slider#slidermin),
-[Slider.Value](Slider#slidervalue)
+*See also:* [`Slider.Min`](Slider#slidermin),
+[`Slider.Value`](Slider#slidervalue)
 
 ---
 
@@ -113,8 +113,8 @@ Example:
 
 sets the minimum value of the *sldHealth* slider to 0.
 
-*See also:* [Slider.Max](Slider#slidermax),
-[Slider.Value](Slider#slidervalue)
+*See also:* [`Slider.Max`](Slider#slidermax),
+[`Slider.Value`](Slider#slidervalue)
 
 ---
 
@@ -138,5 +138,5 @@ Example:
 
 will set the audio volume to the value of the slider *sldVolume*.
 
-*See also:* [Label.Text](Label#labeltext)
+*See also:* [`Label.Text`](Label#labeltext)
 

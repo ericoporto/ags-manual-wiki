@@ -328,7 +328,7 @@ of the loop.
 *statements*<br>
 `}` **while (** *expression* **);**
 
-Similarly to [while](ScriptKeywords#while) runs *statements*
+Similarly to [`while`](ScriptKeywords#while) runs *statements*
 continuously, so long as *expression* is true, but unlike **while** it
 checks the expression AFTER executing statements, not before. This also
 means that the statements will be executed at least once.
@@ -368,7 +368,7 @@ by changing some variable value. Every part of the command header -
 *initialization*, *expression* and *iteration* - is optional: there may
 be **for** command without initialization, or without iteration, or even
 without conditional expression (in which case loop should be ended with
-either [break](ScriptKeywords#break) or [return](ScriptKeywords#return).
+either [`break`](ScriptKeywords#break) or [`return`](ScriptKeywords#return).
 
 For example:
 
@@ -396,7 +396,7 @@ coordinate x = 100.
 **break**;
 
 `break` statement ends the execution of most inner loop or
-[switch](ScriptKeywords#switch-case-statements) immediately. After this script
+[`switch`](ScriptKeywords#switch-case-statements) immediately. After this script
 continues running from the next line after loop or switch.
 
 For example:
@@ -420,7 +420,7 @@ immediately.
 
 `continue` statement makes the loop skip remaining statements in current
 iteration and proceed to the next end-condition check, followed by the
-loop restart, if condition is still met, or loop end. If in [for](ScriptKeywords#for)
+loop restart, if condition is still met, or loop end. If in [`for`](ScriptKeywords#for)
 kind of loop, the *iteration* statement is executed right before that.
 
 For example:
@@ -464,7 +464,7 @@ then, elsewhere in your code you can simply call:
 to add inventory item *iKey* and play the sound.
 
 Generally, you place your functions in your global script. You then need
-to add an [import](ScriptKeywords#import) line to your script header to allow the
+to add an [`import`](ScriptKeywords#import) line to your script header to allow the
 function to be called from room scripts.
 
 **Optional parameters**
@@ -606,7 +606,7 @@ This creates a pointer variable `my_apple` of managed type `Apple`.
 However, this does **not** create an object itself yet, and `my_apple`
 is assigned **null** value now. If you try to access struct members
 using `my_apple` now, you will get errors. To create an actual object
-you need to use a [new](ScriptKeywords#new) keyword:
+you need to use a [`new`](ScriptKeywords#new) keyword:
 
     my_apple = new Apple;
 
@@ -655,7 +655,7 @@ function variable, and function ended), or is assigned another object,
 or simply assigned `null`, then the dynamic object is removed from your
 game forever.
 
-*See also:* [new](ScriptKeywords#new), [Pointers in AGS](Pointers)
+*See also:* [`new`](ScriptKeywords#new), [Pointers in AGS](Pointers)
 
 ---
 
@@ -684,7 +684,7 @@ Example:
       SomeApple = new Apple;
     }
 
-*See also:* [managed](ScriptKeywords#managed), [Pointers in AGS](Pointers)
+*See also:* [`managed`](ScriptKeywords#managed), [Pointers in AGS](Pointers)
 
 ---
 
@@ -835,7 +835,7 @@ details.
 **export** *variable* \[, *variable* ... \] ;
 
 Declares that *variable* is exported and is available to access in other scripts,
-if declared using the [import](ScriptKeywords#import) keyword in those scripts.
+if declared using the [`import`](ScriptKeywords#import) keyword in those scripts.
 
 For example:
 
@@ -867,7 +867,7 @@ For example:
 
 The *writeprotected* keyword is used to define a property within a struct,
 which can only be modified by struct members (including extender functions)
-using the [this](ScriptKeywords#this) keyword. Reading the value is not
+using the [`this`](ScriptKeywords#this) keyword. Reading the value is not
 restricted.
 
 For example:
@@ -886,7 +886,7 @@ For example:
 
 The *protected* keyword is used to define a property within a struct, which
 can only be accessed or modified by struct members (including extender
-functions) using the [this](ScriptKeywords#this) keyword.
+functions) using the [`this`](ScriptKeywords#this) keyword.
 
 For example:
 
@@ -905,7 +905,7 @@ function **noloopcheck** *function_name* ( *parameters ...* ) `{`
 The noloopcheck keyword disables the script loop checking for the
 current function.
 
-Normally, if a [while](ScriptKeywords#dowhile) loop runs for more than
+Normally, if a [`while`](ScriptKeywords#dowhile) loop runs for more than
 150,000 loops, AGS will assume that the script has hung and abort the
 game. This is to assist scripting since otherwise the game would lock up
 if you scripted a loop wrongly.

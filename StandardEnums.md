@@ -13,15 +13,15 @@ job, having a manual reference is invaluable:
       eNoBlock
     };
 
-*Used by:* [Character.Animate](Character#characteranimate),
-[Character.FaceCharacter](Character#characterfacecharacter),
-[Character.FaceLocation](Character#characterfacelocation),
-[Character.FaceObject](Character#characterfaceobject),
-[Character.Move](Character#charactermove),
-[Character.Walk](Character#characterwalk),
-[Character.WalkStraight](Character#characterwalkstraight),
-[Object.Animate](Object#objectanimate),
-[Object.Move](Object#objectmove)
+*Used by:* [`Character.Animate`](Character#characteranimate),
+[`Character.FaceCharacter`](Character#characterfacecharacter),
+[`Character.FaceLocation`](Character#characterfacelocation),
+[`Character.FaceObject`](Character#characterfaceobject),
+[`Character.Move`](Character#charactermove),
+[`Character.Walk`](Character#characterwalk),
+[`Character.WalkStraight`](Character#characterwalkstraight),
+[`Object.Animate`](Object#objectanimate),
+[`Object.Move`](Object#objectmove)
 
 ### `CharacterDirection`
 
@@ -37,8 +37,8 @@ job, having a manual reference is invaluable:
       eDirectionNone = SCR_NO_VALUE
     };
 
-*Used by:* [Character.ChangeRoom](Character#characterchangeroom),
-[Character.FaceDirection](Character#characterfacedirection)
+*Used by:* [`Character.ChangeRoom`](Character#characterchangeroom),
+[`Character.FaceDirection`](Character#characterfacedirection)
 
 ### `Direction`
 
@@ -47,8 +47,8 @@ job, having a manual reference is invaluable:
       eBackwards
     };
 
-*Used by:* [Character.Animate](Character#characteranimate),
-[Object.Animate](Object#objectanimate)
+*Used by:* [`Character.Animate`](Character#characteranimate),
+[`Object.Animate`](Object#objectanimate)
 
 ### `WalkWhere`
 
@@ -57,9 +57,9 @@ job, having a manual reference is invaluable:
       eWalkableAreas
     };
 
-*Used by:* [Character.Move](Character#charactermove),
-[Character.Walk](Character#characterwalk),
-[Object.Move](Object#objectmove)
+*Used by:* [`Character.Move`](Character#charactermove),
+[`Character.Walk`](Character#characterwalk),
+[`Object.Move`](Object#objectmove)
 
 ### `StopMovementStyle`
 
@@ -69,8 +69,8 @@ job, having a manual reference is invaluable:
       eStopMoving = 1
     };
 
-*Used by:* [Character.LockView](Character#characterlockviewaligned),
-[Character.LockViewFrame](Character#characterlockviewoffset)
+*Used by:* [`Character.LockView`](Character#characterlockviewaligned),
+[`Character.LockViewFrame`](Character#characterlockviewoffset)
 
 ### `RepeatStyle`
 
@@ -79,9 +79,9 @@ job, having a manual reference is invaluable:
       eRepeat
     };
 
-*Used by:* [Button.Animate](Button#buttonanimate),
-[Character.Animate](Character#characteranimate),
-[Object.Animate](Object#objectanimate)
+*Used by:* [`Button.Animate`](Button#buttonanimate),
+[`Character.Animate`](Character#characteranimate),
+[`Object.Animate`](Object#objectanimate)
 
 ### `Alignment`
 
@@ -114,7 +114,7 @@ will execute some code if *align* variable contains "Left" in any combination (e
 
 *Compatibility:* new version of Alignment enum was introduced in AGS 3.5.0. Previous Alignment was renamed into HorizontalAlignment.
 
-*Used by:* [Button.TextAlignment](Button#buttontextalignment)
+*Used by:* [`Button.TextAlignment`](Button#buttontextalignment)
 
 ### `HorizontalAlignment`
 
@@ -129,7 +129,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 *Compatibility:* replaced old Alignment enumeration in AGS 3.5.0.
 
 *Used by:*
-[Character.LockViewAligned](Character#characterlockviewaligned), [DrawingSurface.DrawStringWrapped](DrawingSurface#drawingsurfacedrawstringwrapped), [Label.TextAlignment](Label#labeltextalignment), [ListBox.TextAlignment](ListBox#listboxtextalignment), [Speech.TextAlignment](Speech#speechtextalignment)
+[`Character.LockViewAligned`](Character#characterlockviewaligned), [`DrawingSurface.DrawStringWrapped`](DrawingSurface#drawingsurfacedrawstringwrapped), [`Label.TextAlignment`](Label#labeltextalignment), [`ListBox.TextAlignment`](ListBox#listboxtextalignment), [`Speech.TextAlignment`](Speech#speechtextalignment)
 
 ### `eFlipDirection`
 
@@ -139,7 +139,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eFlipBoth
     };
 
-*Used by:* [DynamicSprite.Flip](DynamicSprite#dynamicspriteflip)
+*Used by:* [`DynamicSprite.Flip`](DynamicSprite#dynamicspriteflip)
 
 ### `TransitionStyle`
 
@@ -151,8 +151,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eTransitionCrossfade
     };
 
-*Used by:* [SetScreenTransition](Globalfunctions_Screen#setscreentransition),
-[SetNextScreenTransition](Globalfunctions_Screen#setnextscreentransition)
+*Used by:* [`SetScreenTransition`](Globalfunctions_Screen#setscreentransition),
+[`SetNextScreenTransition`](Globalfunctions_Screen#setnextscreentransition)
 
 ### `MouseButton`
 
@@ -167,7 +167,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eMouseWheelSouth
     };
 
-*Used by:* [Mouse.IsButtonDown](Mouse#mouseisbuttondown)<br>
+*Used by:* [`Mouse.IsButtonDown`](Mouse#mouseisbuttondown)<br>
 *Passed into:* on_mouse_click
 
 ### `EventType`
@@ -193,7 +193,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eRoundUp
     };
 
-*Used by:* [FloatToInt](Maths#floattoint)
+*Used by:* [`FloatToInt`](Maths#floattoint)
 
 ### `eSpeechStyle`
 
@@ -204,7 +204,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eSpeechFullScreen
     };
 
-*Used by:* [Speech.Style](Speech#speechstyle)
+*Used by:* [`Speech.Style`](Speech#speechstyle)
 
 ### `SkipSpeechStyle`
 
@@ -218,7 +218,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eSkipMouse        = 6
     };
 
-*Used by:* [Speech.SkipStyle](Speech#speechskipstyle)
+*Used by:* [`Speech.SkipStyle`](Speech#speechskipstyle)
 
 ### `eVoiceMode`
 
@@ -228,7 +228,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eSpeechVoiceOnly
     };
 
-*Used by:* [Speech.VoiceMode](Speech#speechvoicemode)
+*Used by:* [`Speech.VoiceMode`](Speech#speechvoicemode)
 
 ### `DialogOptionState`
 
@@ -238,8 +238,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eOptionOffForever
     };
 
-*Used by:* [Dialog.GetOptionState](Dialog#dialoggetoptionstate),
-[Dialog.SetOptionState](Dialog#dialogsetoptionstate)
+*Used by:* [`Dialog.GetOptionState`](Dialog#dialoggetoptionstate),
+[`Dialog.SetOptionState`](Dialog#dialogsetoptionstate)
 
 ### `CutsceneSkipType`
 
@@ -252,7 +252,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eSkipScriptOnly
     };
 
-*Used by:* [StartCutscene](Globalfunctions_General#startcutscene)
+*Used by:* [`StartCutscene`](Globalfunctions_General#startcutscene)
 
 ### `eOperatingSystem`
 
@@ -266,7 +266,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eOSPSP
     };
 
-*Used by:* [System.OperatingSystem](System#systemoperatingsystem)
+*Used by:* [`System.OperatingSystem`](System#systemoperatingsystem)
 
 ### `eCDAudioFunction`
 
@@ -283,7 +283,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eCDSelectActiveCDDrive
     };
 
-*Used by:* [CDAudio](Multimedia#cdaudio)
+*Used by:* [`CDAudio`](Multimedia#cdaudio)
 
 ### `CursorMode`
 
@@ -296,23 +296,23 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 The CursorMode enumeration is generated automatically based on your
 mouse cursors. The cursor mode name is taken, all its spaces are
 removed, and *eMode* is added to the front.<br>
-*Used by:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
-[Room.ProcessClick](Room#roomprocessclick),
-[Mouse.ChangeModeGraphic](Mouse#mousechangemodegraphic),
-[Mouse.ChangeModeHotspot](Mouse#mousechangemodehotspot),
-[Mouse.DisableMode](Mouse#mousedisablemode),
-[Mouse.EnableMode](Mouse#mouseenablemode),
-[Mouse.IsModeEnabled](Mouse#mouseismodeenabled),
-[Mouse.UseModeGraphic](Mouse#mouseusemodegraphic),
-[Mouse.Mode](Mouse#mousemode),
-[InventoryItem.IsInteractionAvailable](InventoryItem#inventoryitemisinteractionavailable),
-[InventoryItem.RunInteraction](InventoryItem#inventoryitemruninteraction),
-[Hotspot.IsInteractionAvailable](Hotspot#hotspotisinteractionavailable),
-[Hotspot.RunInteraction](Hotspot#hotspotruninteraction),
-[Object.IsInteractionAvailable](Object#objectisinteractionavailable),
-[Object.RunInteraction](Object#objectruninteraction),
-[Character.IsInteractionAvailable](Character#characterisinteractionavailable),
-[Character.RunInteraction](Character#characterruninteraction)
+*Used by:* [`IsInteractionAvailable`](Globalfunctions_General#isinteractionavailable),
+[`Room.ProcessClick`](Room#roomprocessclick),
+[`Mouse.ChangeModeGraphic`](Mouse#mousechangemodegraphic),
+[`Mouse.ChangeModeHotspot`](Mouse#mousechangemodehotspot),
+[`Mouse.DisableMode`](Mouse#mousedisablemode),
+[`Mouse.EnableMode`](Mouse#mouseenablemode),
+[`Mouse.IsModeEnabled`](Mouse#mouseismodeenabled),
+[`Mouse.UseModeGraphic`](Mouse#mouseusemodegraphic),
+[`Mouse.Mode`](Mouse#mousemode),
+[`InventoryItem.IsInteractionAvailable`](InventoryItem#inventoryitemisinteractionavailable),
+[`InventoryItem.RunInteraction`](InventoryItem#inventoryitemruninteraction),
+[`Hotspot.IsInteractionAvailable`](Hotspot#hotspotisinteractionavailable),
+[`Hotspot.RunInteraction`](Hotspot#hotspotruninteraction),
+[`Object.IsInteractionAvailable`](Object#objectisinteractionavailable),
+[`Object.RunInteraction`](Object#objectruninteraction),
+[`Character.IsInteractionAvailable`](Character#characterisinteractionavailable),
+[`Character.RunInteraction`](Character#characterruninteraction)
 
 ### `FontType`
 
@@ -325,19 +325,19 @@ removed, and *eMode* is added to the front.<br>
 The FontType enumeration is generated automatically based on your fonts.
 The font name is taken, all its spaces are removed, and *eFont* is added
 to the front.<br>
-*Used by:* [Button.Font](Button#buttonfont),
-[DrawingSurface.DrawMessageWrapped](DrawingSurface#drawingsurfacedrawmessagewrapped),
-[DrawingSurface.DrawString](DrawingSurface#drawingsurfacedrawstring),
-[DrawingSurface.DrawStringWrapped](DrawingSurface#drawingsurfacedrawstringwrapped),
-[Game.NormalFont](Game#gamenormalfont),
-[Game.SpeechFont](Game#gamespeechfont),
-[GetTextHeight](Globalfunctions_General#gettextheight),
-[GetTextWidth](Globalfunctions_General#gettextwidth),
-[Label.Font](Label#labelfont),
-[ListBox.Font](ListBox#listboxfont),
-[TextBox.Font](TextBox#textboxfont),
-[Overlay.CreateTextual](Overlay#overlaycreatetextual),
-[Overlay.SetText](Overlay#overlaysettext)
+*Used by:* [`Button.Font`](Button#buttonfont),
+[`DrawingSurface.DrawMessageWrapped`](DrawingSurface#drawingsurfacedrawmessagewrapped),
+[`DrawingSurface.DrawString`](DrawingSurface#drawingsurfacedrawstring),
+[`DrawingSurface.DrawStringWrapped`](DrawingSurface#drawingsurfacedrawstringwrapped),
+[`Game.NormalFont`](Game#gamenormalfont),
+[`Game.SpeechFont`](Game#gamespeechfont),
+[`GetTextHeight`](Globalfunctions_General#gettextheight),
+[`GetTextWidth`](Globalfunctions_General#gettextwidth),
+[`Label.Font`](Label#labelfont),
+[`ListBox.Font`](ListBox#listboxfont),
+[`TextBox.Font`](TextBox#textboxfont),
+[`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
+[`Overlay.SetText`](Overlay#overlaysettext)
 
 ### `LocationType`
 
@@ -348,7 +348,7 @@ to the front.<br>
       eLocationObject
     };
 
-*Returned by:* [GetLocationType](Globalfunctions_General#getlocationtype)
+*Returned by:* [`GetLocationType`](Globalfunctions_General#getlocationtype)
 
 ### `FileMode`
 
@@ -358,7 +358,7 @@ to the front.<br>
       eFileAppend
     };
 
-*Used by:* [File.Open](File#fileopen)
+*Used by:* [`File.Open`](File#fileopen)
 
 ### `FileSeek`
 
@@ -368,7 +368,7 @@ to the front.<br>
       eSeekEnd = 2
     };
 
-*Used by:* [File.Seek](File#fileseek)
+*Used by:* [`File.Seek`](File#fileseek)
 
 ### `DialogOptionSayStyle`
 
@@ -378,7 +378,7 @@ to the front.<br>
       eSayNever
     };
 
-*Used by:* [Dialog.DisplayOptions](Dialog#dialogdisplayoptions)
+*Used by:* [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions)
 
 ### `VideoSkipStyle`
 
@@ -389,7 +389,7 @@ to the front.<br>
       eVideoSkipAnyKeyOrMouse
     };
 
-*Used by:* [PlayVideo](Multimedia#playvideo)
+*Used by:* [`PlayVideo`](Multimedia#playvideo)
 
 ### `AudioFileType`
 
@@ -402,7 +402,7 @@ to the front.<br>
       eAudioFileMOD
     };
 
-*Used by:* [AudioClip.FileType](AudioClip#audioclipfiletype)
+*Used by:* [`AudioClip.FileType`](AudioClip#audioclipfiletype)
 
 ### `AudioPriority`
 
@@ -414,9 +414,9 @@ to the front.<br>
       eAudioPriorityVeryHigh = 100
     };
 
-*Used by:* [AudioClip.Play](AudioClip#audioclipplay),
-[AudioClip.PlayFrom](AudioClip#audioclipplayfrom),
-[AudioClip.PlayQueued](AudioClip#audioclipplayqueued)
+*Used by:* [`AudioClip.Play`](AudioClip#audioclipplay),
+[`AudioClip.PlayFrom`](AudioClip#audioclipplayfrom),
+[`AudioClip.PlayQueued`](AudioClip#audioclipplayqueued)
 
 ### `GUIPopupStyle`
 
@@ -429,7 +429,7 @@ to the front.<br>
 
 *Supported by:* AGS 3.5.0 and higher.
 
-*Used by:* [GUI.PopupStyle](GUI#guipopupstyle)
+*Used by:* [`GUI.PopupStyle`](GUI#guipopupstyle)
 
 ### `StringCompareStyle`
 
@@ -440,12 +440,12 @@ to the front.<br>
 
 *Supported by:* AGS 3.5.0 and higher.
 
-*Used by:* [Dictionary.Create](Dictionary#dictionarycreate),
-[Set.Create](Set#setcreate),
-[String.CompareTo](String#stringcompareto),
-[String.EndsWith](String#stringendswith),
-[String.Replace](String#stringreplace),
-[String.StartsWith](String#stringstartswith)
+*Used by:* [`Dictionary.Create`](Dictionary#dictionarycreate),
+[`Set.Create`](Set#setcreate),
+[`String.CompareTo`](String#stringcompareto),
+[`String.EndsWith`](String#stringendswith),
+[`String.Replace`](String#stringreplace),
+[`String.StartsWith`](String#stringstartswith)
 
 ### `SortStyle`
 
@@ -456,8 +456,8 @@ to the front.<br>
 
 *Supported by:* AGS 3.5.0 and higher.
 
-*Used by:* [Dictionary.Create](Dictionary#dictionarycreate),
-[Set.Create](Set#setcreate)
+*Used by:* [`Dictionary.Create`](Dictionary#dictionarycreate),
+[`Set.Create`](Set#setcreate)
 
 ### `LogLevel`
 
@@ -474,4 +474,4 @@ to the front.<br>
 
 *Supported by:* AGS 3.6.0 and higher.
 
-*Used by:* [System.Log](System#systemlog)
+*Used by:* [`System.Log`](System#systemlog)

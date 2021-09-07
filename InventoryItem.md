@@ -32,8 +32,8 @@ Example:
 
 will display the number of the inv item that the mouse is over
 
-*See also:* [InventoryItem.Name](InventoryItem#inventoryitemname),
-[Game.GetLocationName](Game#gamegetlocationname)
+*See also:* [`InventoryItem.Name`](InventoryItem#inventoryitemname),
+[`Game.GetLocationName`](Game#gamegetlocationname)
 
 ---
 
@@ -59,7 +59,7 @@ will print the message if inventory item 1 has its "Value" property set
 to more than 200.
 
 *See also:*
-[InventoryItem.GetTextProperty](InventoryItem#inventoryitemgettextproperty)
+[`InventoryItem.GetTextProperty`](InventoryItem#inventoryitemgettextproperty)
 
 ---
 
@@ -86,7 +86,7 @@ Example:
 will retrieve inv item 2's "description" property and display it.
 
 *See also:*
-[InventoryItem.GetProperty](InventoryItem#inventoryitemgetproperty)
+[`InventoryItem.GetProperty`](InventoryItem#inventoryitemgetproperty)
 
 ---
 
@@ -114,7 +114,7 @@ will change Stone's "weight" custom property to 120.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See also:*
-[InventoryItem.SetTextProperty](InventoryItem#inventoryitemsettextproperty)
+[`InventoryItem.SetTextProperty`](InventoryItem#inventoryitemsettextproperty)
 
 ---
 
@@ -140,7 +140,7 @@ will change key's "description" property.
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See also:*
-[InventoryItem.SetProperty](InventoryItem#inventoryitemsetproperty)
+[`InventoryItem.SetProperty`](InventoryItem#inventoryitemsetproperty)
 
 ---
 
@@ -167,8 +167,8 @@ Example:
     if (iKeyring.IsInteractionAvailable(eModeLookat) == 0)
       Display("looking at this item would not do anything.");
 
-*See also:* [IsInteractionAvailable](Globalfunctions_General#isinteractionavailable),
-[InventoryItem.RunInteraction](InventoryItem#inventoryitemruninteraction)
+*See also:* [`IsInteractionAvailable`](Globalfunctions_General#isinteractionavailable),
+[`InventoryItem.RunInteraction`](InventoryItem#inventoryitemruninteraction)
 
 ---
 
@@ -191,9 +191,9 @@ the player clicks on the item (Handle Inv Clicks needs to be enabled for
 this to work)
 
 *See also:*
-[InventoryItem.IsInteractionAvailable](InventoryItem#inventoryitemisinteractionavailable),
-[Room.ProcessClick](Room#roomprocessclick),
-[Character.RunInteraction](Character#characterruninteraction)
+[`InventoryItem.IsInteractionAvailable`](InventoryItem#inventoryitemisinteractionavailable),
+[`Room.ProcessClick`](Room#roomprocessclick),
+[`Character.RunInteraction`](Character#characterruninteraction)
 
 ---
 
@@ -216,7 +216,7 @@ will display inventory item *iKey*'s cursor graphic.
 
 *Compatibility:* Supported by **AGS 3.1.2** and later versions.
 
-*See also:* [InventoryItem.Graphic](InventoryItem#inventoryitemgraphic)
+*See also:* [`InventoryItem.Graphic`](InventoryItem#inventoryitemgraphic)
 
 ---
 
@@ -244,9 +244,9 @@ will place the sprite number of the player's current inventory item into
 slot.
 
 *See also:*
-[InventoryItem.CursorGraphic](InventoryItem#inventoryitemcursorgraphic),
-[InventoryItem.GetAtScreenXY](InventoryItem#inventoryitemgetatscreenxy),
-[InventoryItem.Name](InventoryItem#inventoryitemname)
+[`InventoryItem.CursorGraphic`](InventoryItem#inventoryitemcursorgraphic),
+[`InventoryItem.GetAtScreenXY`](InventoryItem#inventoryitemgetatscreenxy),
+[`InventoryItem.Name`](InventoryItem#inventoryitemname)
 
 ---
 
@@ -265,8 +265,8 @@ Example:
 uses the obsolete AddInventory command to add the shovel to EGO's
 inventory
 
-*See also:* [Character.AddInventory](Character#characteraddinventory),
-[Character.LoseInventory](Character#characterloseinventory)
+*See also:* [`Character.AddInventory`](Character#characteraddinventory),
+[`Character.LoseInventory`](Character#characterloseinventory)
 
 ---
 
@@ -297,7 +297,7 @@ Example:
 will display the name of the player's current inventory item.
 
 *See also:*
-[InventoryItem.GetAtScreenXY](InventoryItem#inventoryitemgetatscreenxy),
-[InventoryItem.Graphic](InventoryItem#inventoryitemgraphic),
-[Game.GetLocationName](Game#gamegetlocationname)
+[`InventoryItem.GetAtScreenXY`](InventoryItem#inventoryitemgetatscreenxy),
+[`InventoryItem.Graphic`](InventoryItem#inventoryitemgraphic),
+[`Game.GetLocationName`](Game#gamegetlocationname)
 

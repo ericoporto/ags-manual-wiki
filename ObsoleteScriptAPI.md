@@ -28,7 +28,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `character[].animspeed` | [`Character.AnimationSpeed`](Character#characteranimationspeed) | |
 | `character[].defview` | [`Character.NormalView`](Character#characternormalview) | |
 | `character[].frame` | [`Character.Frame`](Character#characterframe) | |
-| `character[].inv` | [`Character.InventoryQuantity[]`](Character#characterinventoryquantity) | |
+| `character[].inv` | [`Character.InventoryQuantity[`]``](Character#characterinventoryquantity) | |
 | `character[].loop` | [`Character.Loop`](Character#characterloop) | |
 | `character[].name` | [`Character.Name`](Character#charactername) | |
 | `character[].prevroom` | [`Character.PreviousRoom`](Character#characterpreviousroom) | |
@@ -164,14 +164,14 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `IsOverlayValid` | [`Overlay.Valid`](Overlay#overlayvalid) | |
 | `Label.GetText` | [`Label.Text`](Label#labeltext) | |
 | `Label.SetText` | [`Label.Text`](Label#labeltext) | |
-| `ListBox.GetItemText` | [`ListBox.Items[]`](ListBox#listboxitems) | |
+| `ListBox.GetItemText` | [`ListBox.Items[`]``](ListBox#listboxitems) | |
 | `ListBox.HideBorder` | [`ListBox.ShowBorder`](ListBox#listboxshowborder) | |
 | `ListBox.HideScrollArrows` | [`ListBox.ShowScrollArrows`](ListBox#listboxshowscrollarrows) | |
-| `ListBox.SetItemText` | [`ListBox.Items[]`](ListBox#listboxitems) | |
+| `ListBox.SetItemText` | [`ListBox.Items[`]``](ListBox#listboxitems) | |
 | `ListBoxAdd` | [`ListBox.AddItem`](ListBox#listboxadditem) | |
 | `ListBoxClear` | [`ListBox.Clear`](ListBox#listboxclear) | |
 | `ListBoxDirList` | [`ListBox.FillDirList`](ListBox#listboxfilldirlist) | |
-| `ListBoxGetItemText` | [`ListBox.Items[]`](ListBox#listboxitems) | |
+| `ListBoxGetItemText` | [`ListBox.Items[`]``](ListBox#listboxitems) | |
 | `ListBoxGetNumItems` | [`ListBox.ItemCount`](ListBox#listboxitemcount) | |
 | `ListBoxGetSelected` | [`ListBox.SelectedIndex`](ListBox#listboxselectedindex) | |
 | `ListBoxRemove` | [`ListBox.RemoveItem`](ListBox#listboxremoveitem) | |
@@ -239,7 +239,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `RunObjectInteraction` | [`Object.RunInteraction`](Object#objectruninteraction) | |
 | `RunRegionInteraction` | [`RunRegionInteraction`](Region#regionruninteraction) | |
 | `SaveCursorForLocationChange` | [`Mouse.SaveCursorUntilItLeaves`](Mouse#mousesavecursoruntilitleaves) | |
-| `savegameindex[]` | [`ListBox.SaveGameSlots[]`](ListBox#listboxsavegameslots) | |
+| `savegameindex[]` | [`ListBox.SaveGameSlots[`]``](ListBox#listboxsavegameslots) | |
 | `SeekMIDIPosition` | [`AudioChannel.Seek`](AudioChannel#audiochannelseek) | |
 | `SeekMODPattern` | [`AudioChannel.Seek`](AudioChannel#audiochannelseek) | |
 | `SeekMP3PosMillis` | [`AudioChannel.Seek`](AudioChannel#audiochannelseek) | |
@@ -333,7 +333,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `StrContains` | [`String.IndexOf`](String#stringindexof) | |
 | `StrCopy` | [`String.Copy`](String#stringcopy) | |
 | `StrFormat` | [`String.Format`](String#stringformat) | |
-| `StrGetCharAt` | [`String.Chars[]`](String#stringchars) | |
+| `StrGetCharAt` | [`String.Chars[`]``](String#stringchars) | |
 | `String.Contains` | [`String.IndexOf`](String#stringindexof) | |
 | `StringToInt` | [`String.AsInt`](String#stringasint) | |
 | `StrLen` | [`String.Length`](String#stringlength) | |

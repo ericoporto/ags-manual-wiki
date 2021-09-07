@@ -56,8 +56,8 @@ A door can have 3 different states:
 * `2` = The door is closed and locked
 
 *See also:*
-[Verbs.GetDoorState](Tumbleweed_door#verbsgetdoorstate),
-[Verbs.InitObject](Tumbleweed_door#verbsinitobject)
+[`Verbs.GetDoorState`](Tumbleweed_door#verbsgetdoorstate),
+[`Verbs.InitObject`](Tumbleweed_door#verbsinitobject)
 
 ---
 
@@ -74,8 +74,8 @@ Returns the current state of a door.
 * `2` = The door is closed and locked
 
 *See also:*
-[Verbs.SetDoorState](Tumbleweed_door#verbssetdoorstate),
-[Verbs.InitObject](Tumbleweed_door#verbsinitobject)
+[`Verbs.SetDoorState`](Tumbleweed_door#verbssetdoorstate),
+[`Verbs.InitObject`](Tumbleweed_door#verbsinitobject)
 
 ---
 
@@ -89,7 +89,7 @@ Used to set up the corresponding object, used by the door with the given id. If 
 Otherwise, the object will be shown. The object stays unclickable all the time.
 
 *See also:*
-[Verbs.SetDoorState](Tumbleweed_door#verbssetdoorstate)
+[`Verbs.SetDoorState`](Tumbleweed_door#verbssetdoorstate)
 
 ---
 
@@ -115,7 +115,7 @@ If you have defined default door sounds, these are also being called in this fun
 You need Doors.AnyClickSpecial for that.
 
 *See also:*
-[Verbs.AnyClickSpecial](Tumbleweed_door#verbsanyclickspecial)
+[`Verbs.AnyClickSpecial`](Tumbleweed_door#verbsanyclickspecial)
 
 ---
 
@@ -133,4 +133,4 @@ This function extends any_click_door with the following parameters:
 * closevalue: default 0 (closed), but you can also set 2 (locked).
 
 *See also:*
-[Verbs.AnyClick](Tumbleweed_door#verbsanyclick)
+[`Verbs.AnyClick`](Tumbleweed_door#verbsanyclick)

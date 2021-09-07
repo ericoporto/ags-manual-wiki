@@ -27,7 +27,7 @@ Example:
 will abort the game if MakeWider is called with a parameter less than
 10.
 
-SeeAlso: [QuitGame](Globalfunctions_General#quitgame)
+SeeAlso: [`QuitGame`](Globalfunctions_General#quitgame)
 
 ---
 
@@ -69,7 +69,7 @@ the game.roomscript_finished variable will be set to 1, so you can
 check for that in your repeatedly_execute script if you need to do
 something afterwards.
 
-SeeAlso: [The text parser documentation](TextParser), [on_call](Globalfunctions_Event#on_call)
+SeeAlso: [The text parser documentation](TextParser), [`on_call`](Globalfunctions_Event#on_call)
 
 ---
 
@@ -146,7 +146,7 @@ with what they do:
         Pass DATA matching desired Character ID.
 
 *See also:* [Debugging features](Debuggingfeatures),
-[System.RuntimeInfo](System#systemruntimeinfo)
+[`System.RuntimeInfo`](System#systemruntimeinfo)
 
 ---
 
@@ -167,8 +167,8 @@ Example:
 
 deletes save game slot 130 (which we should have saved earlier).
 
-*See also:* [RestoreGameSlot](Globalfunctions_General#restoregameslot),
-[SaveGameSlot](Globalfunctions_General#savegameslot)
+*See also:* [`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
+[`SaveGameSlot`](Globalfunctions_General#savegameslot)
 
 ---
 
@@ -193,8 +193,8 @@ Example:
 
 will disable the user's interface.
 
-*See also:* [EnableInterface](Globalfunctions_General#enableinterface),
-[IsInterfaceEnabled](Globalfunctions_General#isinterfaceenabled)
+*See also:* [`EnableInterface`](Globalfunctions_General#enableinterface),
+[`IsInterfaceEnabled`](Globalfunctions_General#isinterfaceenabled)
 
 ---
 
@@ -212,8 +212,8 @@ Example:
 
 will enable the user's interface.
 
-*See also:* [DisableInterface](Globalfunctions_General#disableinterface),
-[IsInterfaceEnabled](Globalfunctions_General#isinterfaceenabled)
+*See also:* [`DisableInterface`](Globalfunctions_General#disableinterface),
+[`IsInterfaceEnabled`](Globalfunctions_General#isinterfaceenabled)
 
 ---
 
@@ -225,9 +225,9 @@ Marks the end of a cutscene. If the player skips the cutscene, the game
 will fast-forward to this point. This function returns 0 if the player
 watched the cutscene, or 1 if they skipped it.
 
-*See also:* [SkipCutscene](Globalfunctions_General#skipcutscene), [StartCutscene](Globalfunctions_General#startcutscene),
-[Game.InSkippableCutscene](Game#gameinskippablecutscene),
-[Game.SkippingCutscene](Game#gameskippingcutscene)
+*See also:* [`SkipCutscene`](Globalfunctions_General#skipcutscene), [`StartCutscene`](Globalfunctions_General#startcutscene),
+[`Game.InSkippableCutscene`](Game#gameinskippablecutscene),
+[`Game.SkippingCutscene`](Game#gameskippingcutscene)
 
 ---
 
@@ -241,7 +241,7 @@ the AGS Editor Game Settings pane.
 OPTION specifies which option to get, and its current value is returned.
 
 The valid values for OPTION are listed in
-[SetGameOption](Globalfunctions_General#setgameoption).
+[`SetGameOption`](Globalfunctions_General#setgameoption).
 
 Example:
 
@@ -249,7 +249,7 @@ Example:
       Display("pixel-perfect click deteciton is on!");
     }
 
-*See also:* [SetGameOption](Globalfunctions_General#setgameoption)
+*See also:* [`SetGameOption`](Globalfunctions_General#setgameoption)
 
 ---
 
@@ -259,21 +259,21 @@ The *GetGameParameter* function is now obsolete.
 
 It has been replaced with the following functions and properties:
 
-[Game.SpriteWidth](Game#gamespritewidth) (was gp_spritewidth)<br>
-[Game.SpriteHeight](Game#gamespriteheight) (was gp_spriteheight)<br>
-[Game.GetLoopCountForView](Game#gamegetloopcountforview) (was
+[`Game.SpriteWidth`](Game#gamespritewidth) (was gp_spritewidth)<br>
+[`Game.SpriteHeight`](Game#gamespriteheight) (was gp_spriteheight)<br>
+[`Game.GetLoopCountForView`](Game#gamegetloopcountforview) (was
 GP_NUMLOOPS)<br>
-[Game.GetFrameCountForLoop](Game#gamegetframecountforloop) (was
+[`Game.GetFrameCountForLoop`](Game#gamegetframecountforloop) (was
 GP_NUMFRAMES)<br>
-[Game.GetRunNextSettingForLoop](Game#gamegetrunnextsettingforloop)
+[`Game.GetRunNextSettingForLoop`](Game#gamegetrunnextsettingforloop)
 (was GP_ISRUNNEXTLOOP)<br>
-[Game.GetViewFrame](Game#gamegetviewframe) (was GP_FRAMExxx,
+[`Game.GetViewFrame`](Game#gamegetviewframe) (was GP_FRAMExxx,
 GP_ISFRAMEFLIPPED)<br>
-[Game.GUICount](Game#gameguicount) (was gp_numguis)<br>
-[Room.ObjectCount](Room#roomobjectcount) (was gp_numobjects)<br>
-[Game.CharacterCount](Game#gamecharactercount) (was
+[`Game.GUICount`](Game#gameguicount) (was gp_numguis)<br>
+[`Room.ObjectCount`](Room#roomobjectcount) (was gp_numobjects)<br>
+[`Game.CharacterCount`](Game#gamecharactercount) (was
 GP_NUMCHARACTERS)<br>
-[Game.InventoryItemCount](Game#gameinventoryitemcount)(was
+[`Game.InventoryItemCount`](Game#gameinventoryitemcount)(was
 GP_NUMINVITEMS)
 
 ---
@@ -293,7 +293,7 @@ Example:
 will always keep the game speed at 40 cycles per second (in case the
 user has raised it )
 
-*See also:* [SetGameSpeed](Globalfunctions_General#setgamespeed)
+*See also:* [`SetGameSpeed`](Globalfunctions_General#setgamespeed)
 
 ---
 
@@ -315,8 +315,8 @@ Example:
 
 will execute the code only if Global Integer 20 is 1.
 
-*See also:* [SetGlobalInt](Globalfunctions_General#setglobalint),
-[Game.GlobalStrings](Game#gameglobalstrings)
+*See also:* [`SetGlobalInt`](Globalfunctions_General#setglobalint),
+[`Game.GlobalStrings`](Game#gameglobalstrings)
 
 ---
 
@@ -340,8 +340,8 @@ Example:
 will execute the code only if interaction variable \"climbed rock\" is
 1.
 
-*See also:* [GetGlobalInt](Globalfunctions_General#getglobalint),
-[SetGraphicalVariable](Globalfunctions_General#setgraphicalvariable)
+*See also:* [`GetGlobalInt`](Globalfunctions_General#getglobalint),
+[`SetGraphicalVariable`](Globalfunctions_General#setgraphicalvariable)
 
 ---
 
@@ -371,9 +371,9 @@ Example:
 
 will set the cursor mode to talk if the cursor is over a character.
 
-*See also:* [Hotspot.GetAtScreenXY](Hotspot#hotspotgetatscreenxy),
-[Game.GetLocationName](Game#gamegetlocationname),
-[Object.GetAtScreenXY](Object#objectgetatscreenxy)
+*See also:* [`Hotspot.GetAtScreenXY`](Hotspot#hotspotgetatscreenxy),
+[`Game.GetLocationName`](Game#gamegetlocationname),
+[`Object.GetAtScreenXY`](Object#objectgetatscreenxy)
 
 ---
 
@@ -389,7 +389,7 @@ Example:
 
     Display("The player character number is %d", player.ID);
 
-*See also:* [Character.ID](Character#characterid)
+*See also:* [`Character.ID`](Character#characterid)
 
 ---
 
@@ -401,7 +401,7 @@ Calculates the height on the screen that drawing TEXT in FONT within an
 area of WIDTH would take up.
 
 This allows you to work out how tall a message displayed with a command
-like [DrawMessageWrapped](DrawingSurface#drawingsurfacedrawmessagewrapped)
+like [`DrawMessageWrapped`](DrawingSurface#drawingsurfacedrawmessagewrapped)
 will be. WIDTH is the width of the area in which the text will be
 displayed.
 
@@ -416,8 +416,8 @@ Example:
 will move the BOTTOMLINE GUI so that it can display the text within the
 screen.
 
-*See also:* [GetTextWidth](Globalfunctions_General#gettextwidth),
-[DrawingSurface.DrawString](DrawingSurface#drawingsurfacedrawstring)
+*See also:* [`GetTextWidth`](Globalfunctions_General#gettextwidth),
+[`DrawingSurface.DrawString`](DrawingSurface#drawingsurfacedrawstring)
 
 ---
 
@@ -444,8 +444,8 @@ Example:
 
 will print \"Hello!\" onto the middle of the background scene.
 
-*See also:* [GetTextHeight](Globalfunctions_General#gettextheight),
-[DrawingSurface.DrawString](DrawingSurface#drawingsurfacedrawstring)
+*See also:* [`GetTextHeight`](Globalfunctions_General#gettextheight),
+[`DrawingSurface.DrawString`](DrawingSurface#drawingsurfacedrawstring)
 
 ---
 
@@ -470,9 +470,9 @@ If there is no translation for the supplied string, it will be returned
 unchanged, so it is always safe to use this function.
 
 *See also:*
-[Game.ChangeTranslation](Game#gamechangetranslation),
-[Game.TranslationFilename](Game#gametranslationfilename),
-[IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
+[`Game.ChangeTranslation`](Game#gamechangetranslation),
+[`Game.TranslationFilename`](Game#gametranslationfilename),
+[`IsTranslationAvailable`](Globalfunctions_General#istranslationavailable),
 [Translation Manual](Translations)
 
 ---
@@ -494,7 +494,7 @@ Example:
 
 will give 5 points to the player.
 
-*See also:* [Game.DoOnceOnly](Game#gamedoonceonly)
+*See also:* [`Game.DoOnceOnly`](Game#gamedoonceonly)
 
 ---
 
@@ -513,7 +513,7 @@ will store the speech font's height in the variable.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See also:* [GetFontLineSpacing](Globalfunctions_General#getfontlinespacing)
+*See also:* [`GetFontLineSpacing`](Globalfunctions_General#getfontlinespacing)
 
 ---
 
@@ -544,7 +544,7 @@ speech font.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*See also:* [GetFontHeight](Globalfunctions_General#getfontheight)
+*See also:* [`GetFontHeight`](Globalfunctions_General#getfontheight)
 
 ---
 
@@ -577,7 +577,7 @@ Example:
 
 will unpause the game if it's paused.
 
-*See also:* [GUI.Visible](GUI#guivisible)
+*See also:* [`GUI.Visible`](GUI#guivisible)
 
 ---
 
@@ -597,8 +597,8 @@ Example:
 
 will disable the user interface if it's enabled.
 
-*See also:* [DisableInterface](Globalfunctions_General#disableinterface),
-[EnableInterface](Globalfunctions_General#enableinterface)
+*See also:* [`DisableInterface`](Globalfunctions_General#disableinterface),
+[`EnableInterface`](Globalfunctions_General#enableinterface)
 
 ---
 
@@ -621,11 +621,11 @@ Example:
       Display("looking here would not do anything.");
 
 *See also:*
-[InventoryItem.IsInteractionAvailable](InventoryItem#inventoryitemisinteractionavailable),
-[Hotspot.IsInteractionAvailable](Hotspot#hotspotisinteractionavailable),
-[Object.IsInteractionAvailable](Object#objectisinteractionavailable),
-[Character.IsInteractionAvailable](Character#characterisinteractionavailable),
-[Room.ProcessClick](Room#roomprocessclick)
+[`InventoryItem.IsInteractionAvailable`](InventoryItem#inventoryitemisinteractionavailable),
+[`Hotspot.IsInteractionAvailable`](Hotspot#hotspotisinteractionavailable),
+[`Object.IsInteractionAvailable`](Object#objectisinteractionavailable),
+[`Character.IsInteractionAvailable`](Character#characterisinteractionavailable),
+[`Room.ProcessClick`](Room#roomprocessclick)
 
 ---
 
@@ -659,7 +659,7 @@ Example:
 will move the character EGO upwards 3 pixels when the up arrow is
 pressed.
 
-*See also:* [Mouse.IsButtonDown](Mouse#mouseisbuttondown)
+*See also:* [`Mouse.IsButtonDown`](Mouse#mouseisbuttondown)
 
 ---
 
@@ -682,7 +682,7 @@ Example:
 
 will display a message when timer 1 expires.
 
-*See also:* [SetTimer](Globalfunctions_General#settimer)
+*See also:* [`SetTimer`](Globalfunctions_General#settimer)
 
 ---
 
@@ -695,9 +695,9 @@ Finds out whether the player is using a game translation or not.
 Returns 1 if a translation is in use, 0 if not.
 
 *See also:*
-[Game.ChangeTranslation](Game#gamechangetranslation),
-[Game.TranslationFilename](Game#gametranslationfilename),
-[GetTranslation](Globalfunctions_General#gettranslation),
+[`Game.ChangeTranslation`](Game#gamechangetranslation),
+[`Game.TranslationFilename`](Game#gametranslationfilename),
+[`GetTranslation`](Globalfunctions_General#gettranslation),
 [Translation Manual](Translations)
 
 ---
@@ -721,10 +721,10 @@ Example:
 
 will move the character EGO to the hotspot's 6 \"walk to point\".
 
-*See also:* [Hotspot.WalkToX](Hotspot#hotspotwalktox),
-[Hotspot.WalkToY](Hotspot#hotspotwalktoy),
-[Character.Walk](Character#characterwalk),
-[MoveCharacterToObject](Globalfunctions_General#movecharactertoobject)
+*See also:* [`Hotspot.WalkToX`](Hotspot#hotspotwalktox),
+[`Hotspot.WalkToY`](Hotspot#hotspotwalktoy),
+[`Character.Walk`](Character#characterwalk),
+[`MoveCharacterToObject`](Globalfunctions_General#movecharactertoobject)
 
 ---
 
@@ -747,8 +747,8 @@ Example:
 Will move the character EGO below object number 0, then turn off object
 0.
 
-*See also:* [Character.Walk](Character#characterwalk),
-[MoveCharacterToHotspot](Globalfunctions_General#movecharactertohotspot)
+*See also:* [`Character.Walk`](Character#characterwalk),
+[`MoveCharacterToHotspot`](Globalfunctions_General#movecharactertohotspot)
 
 ---
 
@@ -784,7 +784,7 @@ Example:
 
 will pause the game if the player presses the space bar
 
-*See also:* [UnPauseGame](Globalfunctions_General#unpausegame)
+*See also:* [`UnPauseGame`](Globalfunctions_General#unpausegame)
 
 ---
 
@@ -804,7 +804,7 @@ Example:
 
 will quit the game without asking the player to confirm.
 
-*See also:* [AbortGame](Globalfunctions_General#abortgame)
+*See also:* [`AbortGame`](Globalfunctions_General#abortgame)
 
 ---
 
@@ -846,7 +846,7 @@ Example:
 
 will restart the game if the player presses the F7 key.
 
-*SeeAlso:* [SetRestartPoint](Globalfunctions_General#setrestartpoint)
+*SeeAlso:* [`SetRestartPoint`](Globalfunctions_General#setrestartpoint)
 
 ---
 
@@ -866,8 +866,8 @@ Example:
 
 will bring up the restore game dialog if the player presses the F5 key.
 
-*See also:* [RestoreGameSlot](Globalfunctions_General#restoregameslot),
-[SaveGameDialog](Globalfunctions_General#savegamedialog)
+*See also:* [`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
+[`SaveGameDialog`](Globalfunctions_General#savegamedialog)
 
 ---
 
@@ -893,9 +893,9 @@ Example:
 will restore game slot 30 if this slot number exists.
 
 *See also:*
-[Game.GetSaveSlotDescription](Game#gamegetsaveslotdescription),
-[RestoreGameDialog](Globalfunctions_General#restoregamedialog),
-[SaveGameSlot](Globalfunctions_General#savegameslot)
+[`Game.GetSaveSlotDescription`](Game#gamegetsaveslotdescription),
+[`RestoreGameDialog`](Globalfunctions_General#restoregamedialog),
+[`SaveGameSlot`](Globalfunctions_General#savegameslot)
 
 ---
 
@@ -958,8 +958,8 @@ Example:
 
 will bring up the save game dialog if the player presses the F3 key.
 
-*See also:* [RestoreGameDialog](Globalfunctions_General#restoregamedialog),
-[SaveGameSlot](Globalfunctions_General#savegameslot)
+*See also:* [`RestoreGameDialog`](Globalfunctions_General#restoregamedialog),
+[`SaveGameSlot`](Globalfunctions_General#savegameslot)
 
 ---
 
@@ -986,9 +986,9 @@ Example:
 will save the current game position to slot 30 with the description
 \"Save game\".
 
-*See also:* [DeleteSaveSlot](Globalfunctions_General#deletesaveslot),
-[RestoreGameSlot](Globalfunctions_General#restoregameslot),
-[SaveGameDialog](Globalfunctions_General#savegamedialog)
+*See also:* [`DeleteSaveSlot`](Globalfunctions_General#deletesaveslot),
+[`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
+[`SaveGameDialog`](Globalfunctions_General#savegamedialog)
 
 ---
 
@@ -1016,7 +1016,7 @@ will prompt the player for a filename and then save the screenshot with
 the filename the player typed.
 
 *See also:*
-[DynamicSprite.SaveToFile](DynamicSprite#dynamicspritesavetofile)
+[`DynamicSprite.SaveToFile`](DynamicSprite#dynamicspritesavetofile)
 
 ---
 
@@ -1053,10 +1053,10 @@ do not have individual light levels).
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See also:* [SetAmbientTint](Globalfunctions_General#setambienttint),
-[Character.SetLightLevel](Character#charactersetlightlevel),
-[Object.SetLightLevel](Object#objectsetlightlevel),
-[Region.LightLevel](Region#regionlightlevel)
+*See also:* [`SetAmbientTint`](Globalfunctions_General#setambienttint),
+[`Character.SetLightLevel`](Character#charactersetlightlevel),
+[`Object.SetLightLevel`](Object#objectsetlightlevel),
+[`Region.LightLevel`](Region#regionlightlevel)
 
 ---
 
@@ -1096,10 +1096,10 @@ Example:
 
 will tint everything on the screen with a hint of blue.
 
-*See also:* [SetAmbientLightLevel](Globalfunctions_General#setambientlightlevel),
-[Character.Tint](Character#charactertint),
-[Object.Tint](Object#objecttint),
-[Region.Tint](Region#regiontint)
+*See also:* [`SetAmbientLightLevel`](Globalfunctions_General#setambientlightlevel),
+[`Character.Tint`](Character#charactertint),
+[`Object.Tint`](Object#objecttint),
+[`Region.Tint`](Region#regiontint)
 
 ---
 
@@ -1151,9 +1151,9 @@ Example:
 
 will disable pixel-perfect click detection.
 
-*See also:* [GetGameOption](Globalfunctions_General#getgameoption),
-[Speech.Style](Speech#speechstyle),
-[SetTextWindowGUI](Globalfunctions_General#settextwindowgui)
+*See also:* [`GetGameOption`](Globalfunctions_General#getgameoption),
+[`Speech.Style`](Speech#speechstyle),
+[`SetTextWindowGUI`](Globalfunctions_General#settextwindowgui)
 
 ---
 
@@ -1176,7 +1176,7 @@ NOTE: Because the mouse cursor is repainted at the game frame rate, at
 very low speeds, like 10 to 20 fps, the mouse will appear to be jumpy
 and not very responsive.
 
-NOTE: If you set the [System.VSync](System#systemvsync) property to
+NOTE: If you set the [`System.VSync`](System#systemvsync) property to
 *true*, the game speed will be capped at the screen's refresh rate, so
 you will be unable to set it higher than 60-85 (depending on the
 player's screen refresh).
@@ -1187,7 +1187,7 @@ Example:
 
 will set the game speed to 80.
 
-*See also:* [GetGameSpeed](Globalfunctions_General#getgamespeed)
+*See also:* [`GetGameSpeed`](Globalfunctions_General#getgamespeed)
 
 ---
 
@@ -1210,7 +1210,7 @@ Example:
 
 will set the Global Integer 10 to 1.
 
-*See also:* [GetGlobalInt](Globalfunctions_General#getglobalint)
+*See also:* [`GetGlobalInt`](Globalfunctions_General#getglobalint)
 
 ---
 
@@ -1232,7 +1232,7 @@ Example:
 
 will set the interaction editor \"climbed rock\" variable to 1.
 
-*See also:* [GetGraphicalVariable](Globalfunctions_General#getgraphicalvariable)
+*See also:* [`GetGraphicalVariable`](Globalfunctions_General#getgraphicalvariable)
 
 ---
 
@@ -1285,7 +1285,7 @@ therefore, when you call this it will actually set the restart point at
 the next game loop where there is not a blocking script running in the
 background.
 
-*SeeAlso:* [RestartGame](Globalfunctions_General#restartgame)
+*SeeAlso:* [`RestartGame`](Globalfunctions_General#restartgame)
 
 ---
 
@@ -1339,7 +1339,7 @@ When you have a hard time keeping track of the timers only by number you can use
 
 this "names" timer 1 and sets it to expire after 2000 game cycles
 
-*See also:* [IsTimerExpired](Globalfunctions_General#istimerexpired)
+*See also:* [`IsTimerExpired`](Globalfunctions_General#istimerexpired)
 
 ---
 
@@ -1361,8 +1361,8 @@ will check if game is inside a cutscene, and if player has pressed a space bar t
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See also:* [EndCutscene](Globalfunctions_General#endcutscene), [SkipUntilCharacterStops](Globalfunctions_General#skipuntilcharacterstops), [StartCutscene](Globalfunctions_General#startcutscene), [Game.InSkippableCutscene](Game#gameinskippablecutscene),
-[Game.SkippingCutscene](Game#gameskippingcutscene)
+*See also:* [`EndCutscene`](Globalfunctions_General#endcutscene), [`SkipUntilCharacterStops`](Globalfunctions_General#skipuntilcharacterstops), [`StartCutscene`](Globalfunctions_General#startcutscene), [`Game.InSkippableCutscene`](Game#gameinskippablecutscene),
+[`Game.SkippingCutscene`](Game#gameskippingcutscene)
 
 ---
 
@@ -1391,7 +1391,7 @@ This means that if the player presses ESC, the game will skip ahead
 until EGO finishes moving, or is interrupted by a Display command or a
 blocking cutscene.
 
-*See also:* [StartCutscene](Globalfunctions_General#startcutscene)
+*See also:* [`StartCutscene`](Globalfunctions_General#startcutscene)
 
 ---
 
@@ -1431,9 +1431,9 @@ ESC the game could appear to hang.
 
 *Compatibility:* eSkipScriptOnly cutscene mode is supported by **AGS 3.5.0** and later versions.
 
-*See also:* [EndCutscene](Globalfunctions_General#endcutscene), [SkipCutscene](Globalfunctions_General#skipcutscene), [SkipUntilCharacterStops](Globalfunctions_General#skipuntilcharacterstops),
-[Game.InSkippableCutscene](Game#gameinskippablecutscene),
-[Game.SkippingCutscene](Game#gameskippingcutscene)
+*See also:* [`EndCutscene`](Globalfunctions_General#endcutscene), [`SkipCutscene`](Globalfunctions_General#skipcutscene), [`SkipUntilCharacterStops`](Globalfunctions_General#skipuntilcharacterstops),
+[`Game.InSkippableCutscene`](Game#gameinskippablecutscene),
+[`Game.SkippingCutscene`](Game#gameskippingcutscene)
 
 ---
 
@@ -1451,9 +1451,9 @@ Note that using this function will reset the order that items are
 displayed in the inventory window to the same order they were created in
 the editor.
 
-*See also:* [Character.AddInventory](Character#characteraddinventory),
-[Character.LoseInventory](Character#characterloseinventory),
-[Character.InventoryQuantity](Character#characterinventoryquantity)
+*See also:* [`Character.AddInventory`](Character#characteraddinventory),
+[`Character.LoseInventory`](Character#characterloseinventory),
+[`Character.InventoryQuantity`](Character#characterinventoryquantity)
 
 ---
 
@@ -1476,7 +1476,7 @@ as needed with the below snippet.
 
     while (IsGamePaused()) UnPauseGame();
 
-*See also:* [PauseGame](Globalfunctions_General#pausegame)
+*See also:* [`PauseGame`](Globalfunctions_General#pausegame)
 
 ---
 
@@ -1498,8 +1498,8 @@ Example:
 will move the character EGO to 120,140, wait until he gets there then
 wait for 2 seconds (80 game cycles) and then face right.
 
-*See also:* [WaitKey](Globalfunctions_General#waitkey),
-[WaitMouseKey](Globalfunctions_General#waitmousekey)
+*See also:* [`WaitKey`](Globalfunctions_General#waitkey),
+[`WaitMouseKey`](Globalfunctions_General#waitmousekey)
 
 ---
 
@@ -1522,8 +1522,8 @@ Example:
 will pause the script and wait until 5 seconds have passed or the player
 presses a key.
 
-*See also:* [Wait](Globalfunctions_General#wait),
-[WaitMouseKey](Globalfunctions_General#waitmousekey)
+*See also:* [`Wait`](Globalfunctions_General#wait),
+[`WaitMouseKey`](Globalfunctions_General#waitmousekey)
 
 ---
 
@@ -1548,4 +1548,4 @@ Example:
 will pause the script and wait until 5 seconds have passed or the player
 presses a key or clicks the mouse.
 
-*See also:* [Wait](Globalfunctions_General#wait), [WaitKey](Globalfunctions_General#waitkey)
+*See also:* [`Wait`](Globalfunctions_General#wait), [`WaitKey`](Globalfunctions_General#waitkey)

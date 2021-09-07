@@ -49,14 +49,14 @@ Only rooms and their contents (characters, objects) are affected by the viewport
     int roomx = mouse.x + GetViewportX();
     int roomy = mouse.y + GetViewportY();
 
-Since 3.5 this is no longer enough, because not only viewport itself may have offset on screen, but also camera's image may be scaled inside a viewport. For that reason there are now actual functions that help you do this conversion: [Screen.ScreenToRoomPoint](Screen#screenscreentoroompoint), [Screen.RoomToScreenPoint](Screen#screenroomtoscreenpoint), [Viewport.ScreenToRoomPoint](Viewport#viewportscreentoroompoint), [Viewport.RoomToScreenPoint](Viewport#viewportroomtoscreenpoint).<br>
+Since 3.5 this is no longer enough, because not only viewport itself may have offset on screen, but also camera's image may be scaled inside a viewport. For that reason there are now actual functions that help you do this conversion: [`Screen.ScreenToRoomPoint`](Screen#screenscreentoroompoint), [`Screen.RoomToScreenPoint`](Screen#screenroomtoscreenpoint), [`Viewport.ScreenToRoomPoint`](Viewport#viewportscreentoroompoint), [`Viewport.RoomToScreenPoint`](Viewport#viewportroomtoscreenpoint).<br>
 They are used like:
 
     Point *roompt = Screen.ScreenToRoomPoint(mouse.x, mouse.y);
     int roomx = roompt.x;
     int roomy = roompt.y;
 
-For more information see: [Camera](Camera), [Viewport](Viewport), [Game.Cameras](Game#gamecameras), [Screen.Viewports](Screen#screenviewports)
+For more information see: [`Camera`](Camera), [`Viewport`](Viewport), [`Game.Cameras`](Game#gamecameras), [`Screen.Viewports`](Screen#screenviewports)
 
 ### New Screen struct
 
@@ -71,7 +71,7 @@ System.ViewportHeight | Screen.Height
 
 As you may notice, both deprecated ScreenWidth/Height and ViewportWidth/Height properties are corresponding to the single new pair. That is because in practice both System.ScreenWidth and System.ViewportWidth were representing almost same thing, except for specific cases which are no longer valid in modern AGS anyway.
 
-For more information see: [Screen](Screen)
+For more information see: [`Screen`](Screen)
 
 ### Room sizes and mask resolution
 

@@ -33,7 +33,7 @@ void Verbs.SetActionButtons(Action action, int btn_ID, int sprite, int sprite_hi
 This functions connects the verb buttons with the action and is also used to assign / change the graphics of the verb buttons.
 
 *See also:*
-[Verbs.AdjustLanguage](Tumbleweed_translation#verbsadjustlanguage)
+[`Verbs.AdjustLanguage`](Tumbleweed_translation#verbsadjustlanguage)
 
 ---
 
@@ -66,7 +66,7 @@ void Verbs.SetAlternativeAction(char extension, Action alt_action);
 This function makes the right-click shortcuts work. If you use extensions like ">p" (e.g. pickup), this function makes sure, that the correct verb button is highlighted.
 
 *See also:*
-[Verbs.CheckDefaultAction](Tumbleweed_actions#verbscheckdefaultaction)
+[`Verbs.CheckDefaultAction`](Tumbleweed_actions#verbscheckdefaultaction)
 
 ---
 
@@ -94,8 +94,8 @@ void UpdateActionBar();
 This function is used to show and update the status bar. It checks for an extension, triggers the translation and renders the results on screen.
 
 *See also:*
-[Verbs.TranslateAction](Tumbleweed_translation#verbstranslateaction),
-[Verbs.RemoveExtension](Tumbleweed_extensions#verbsremoveextension)
+[`Verbs.TranslateAction`](Tumbleweed_translation#verbstranslateaction),
+[`Verbs.RemoveExtension`](Tumbleweed_extensions#verbsremoveextension)
 
 ---
 

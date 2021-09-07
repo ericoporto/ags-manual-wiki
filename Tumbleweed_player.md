@@ -11,7 +11,7 @@ vpod Verbs.FreezePlayer();
 Use this function to prevent the player from moving by the following movement functions of the template.
 
 *See also:*
-[Verbs.UnfreezePlayer](Tumbleweed_player#verbsunfreezeplayer)
+[`Verbs.UnfreezePlayer`](Tumbleweed_player#verbsunfreezeplayer)
 
 ---
 
@@ -24,7 +24,7 @@ void Verbs.UnfreezePlayer();
 Use this function to undo the FreezePlayer function and let the characters move again.
 
 *See also:*
-[Verbs.FreezePlayer](Tumbleweed_player#verbsfreezeplayer)
+[`Verbs.FreezePlayer`](Tumbleweed_player#verbsfreezeplayer)
 
 ---
 

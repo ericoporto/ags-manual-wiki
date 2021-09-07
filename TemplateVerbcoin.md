@@ -13,7 +13,7 @@ The main changes are:
 - No additional VerbCoin interfaces will be opened over the top of inventory items
 - Rather than customize the action description per object/hotspot/character
   and allow actions to change based on context, the emphasis is on fixed
-  actions with fallback to defaults (using [unhandled_event](Globalfunctions_Event))
+  actions with fallback to defaults (using [`unhandled_event`](Globalfunctions_Event))
 
 As a general guide, left click on things to open the Verbcoin, right click
 to open the inventory window.
@@ -112,7 +112,7 @@ description could be 'use'.
 
     GUI* VerbCoin.InterfaceGui
 
-Registers the [GUI](GUI) used for the VerbCoin.
+Registers the [`GUI`](GUI) used for the VerbCoin.
 
 ---
 
@@ -120,7 +120,7 @@ Registers the [GUI](GUI) used for the VerbCoin.
 
     GUI* VerbCoin.InventoryGui
 
-Registers the [GUI](GUI) used for the inventory window.
+Registers the [`GUI`](GUI) used for the inventory window.
 
 ---
 
@@ -128,7 +128,7 @@ Registers the [GUI](GUI) used for the inventory window.
 
     Label* VerbCoin.ActionLabel
 
-Registers the [Label](Label) used to display text descriptions.
+Registers the [`Label`](Label) used to display text descriptions.
 
 ---
 

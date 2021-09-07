@@ -73,7 +73,7 @@ Unlike the 9Verb MI-Style template, the fonts can be customized and overwritten
 in AdjustGUIText().
 
 *See also:*
-[Verbs.SetActionButtons](Tumbleweed_actions#verbssetactionbuttons)
+[`Verbs.SetActionButtons`](Tumbleweed_actions#verbssetactionbuttons)
 
 ---
 
@@ -87,4 +87,4 @@ This function will also be called inside the template's game_start() function.
 Here you can modify the labels of your GUI buttons for the options GUI. In case you need it, you can also define alternative fonts for different languages.
 
 *See also:*
-[Verbs.AdjustLanguage](Tumbleweed_translation#verbsadjustlanguage)
+[`Verbs.AdjustLanguage`](Tumbleweed_translation#verbsadjustlanguage)

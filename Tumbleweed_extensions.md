@@ -36,7 +36,7 @@ You can see this behavior in the sample room, when opening the letter. Otherwise
 But with the use-extension, it is getting opened by a single left-click. The exit extension is covered in the following chapter.
 
 *See also:*
-[Verbs.CheckDefaultAction](Tumbleweed_actions#verbscheckdefaultaction)
+[`Verbs.CheckDefaultAction`](Tumbleweed_actions#verbscheckdefaultaction)
 
 ---
 

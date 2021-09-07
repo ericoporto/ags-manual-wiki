@@ -59,16 +59,16 @@ course of the game. Now this restriction was eliminated and you can
 change any existing custom property in game script, using appropriate
 SetProperty and SetTextProperty functions:
 
-[Character.SetProperty](Character#charactersetproperty),
-[Character.SetTextProperty](Character#charactersettextproperty),
-[Hotspot.SetProperty](Hotspot#hotspotsetproperty),
-[Hotspot.SetTextProperty](Hotspot#hotspotsettextproperty),
-[InventoryItem.SetProperty](InventoryItem#inventoryitemsetproperty),
-[InventoryItem.SetTextProperty](InventoryItem#inventoryitemsettextproperty),
-[Object.SetProperty](Object#objectsetproperty),
-[Object.SetTextProperty](Object#objectsettextproperty),
-[Room.SetProperty](Room#roomsetproperty),
-[Room.SetTextProperty](Room#roomsettextproperty)
+[`Character.SetProperty`](Character#charactersetproperty),
+[`Character.SetTextProperty`](Character#charactersettextproperty),
+[`Hotspot.SetProperty`](Hotspot#hotspotsetproperty),
+[`Hotspot.SetTextProperty`](Hotspot#hotspotsettextproperty),
+[`InventoryItem.SetProperty`](InventoryItem#inventoryitemsetproperty),
+[`InventoryItem.SetTextProperty`](InventoryItem#inventoryitemsettextproperty),
+[`Object.SetProperty`](Object#objectsetproperty),
+[`Object.SetTextProperty`](Object#objectsettextproperty),
+[`Room.SetProperty`](Room#roomsetproperty),
+[`Room.SetTextProperty`](Room#roomsettextproperty)
 
 Besides, the number of properties is no longer limited by 30, you may
 make as much of them as you need for your game.
@@ -99,13 +99,13 @@ variable, define end condition and write iteration - all in its header.
 Another introduced command is `switch`. One `switch` can replace a long
 list of `if` and `else if` blocks.
 
-See: [switch](ScriptKeywords#switch-case-statements),
-[do..while](ScriptKeywords#dowhile),
-[for](ScriptKeywords#for),
-[break](ScriptKeywords#break),
-[continue](ScriptKeywords#continue),
-[managed](ScriptKeywords#managed),
-[new](ScriptKeywords#new)
+See: [`switch`](ScriptKeywords#switch-case-statements),
+[`do..while`](ScriptKeywords#dowhile),
+[`for`](ScriptKeywords#for),
+[`break`](ScriptKeywords#break),
+[`continue`](ScriptKeywords#continue),
+[`managed`](ScriptKeywords#managed),
+[`new`](ScriptKeywords#new)
 
 **Custom Dialog Options rendering extended**
 
@@ -122,12 +122,12 @@ screen.
 The `dialog_options_mouse_click` will now be called always, even if user
 clicks on the option, but on other hand option won't be run without
 explicit command:
-[RunActiveOption](DialogOptionsRenderingInfo#dialogoptionsrenderinginforunactiveoption).
+[`RunActiveOption`](DialogOptionsRenderingInfo#dialogoptionsrenderinginforunactiveoption).
 
 Along with RunActiveOption,
-[DialogOptionsRenderingInfo](DialogOptionsRenderingInfo)
+[`DialogOptionsRenderingInfo`](DialogOptionsRenderingInfo)
 struct received another member function:
-[Update](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoupdate). It forces options
+[`Update`](DialogOptionsRenderingInfo#dialogoptionsrenderinginfoupdate). It forces options
 GUI to redraw itself, hence may be used to implement custom animation,
 or similar behavior.
 
@@ -148,8 +148,8 @@ For detailed information see:
 
 obsolete function/variable | replace with
 --- | ---
-GetRoomProperty | [Room.GetProperty](Room#roomgetproperty)
-ProcessClick | [Room.ProcessClick](Room#roomprocessclick)
+GetRoomProperty | [`Room.GetProperty`](Room#roomgetproperty)
+ProcessClick | [`Room.ProcessClick`](Room#roomprocessclick)
 
 **REMINDER:** you can also use "Script Compatibility Level" switch to
 enable old functions.

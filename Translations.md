@@ -4,7 +4,7 @@
 
 You may have multiple translations in your game. In AGS translation works like a table of strings, where for each of the original text strings in your game you provide a replacement.
 This includes speech text in dialogs, any text in double-quotes in regular scripts, and also certain property values (GUI texts, character names, hotspot descriptions and similar).
-When in game with a translation enabled AGS will automatically replace displayed text on GUI, character speech and text messages. For other cases there's script function [GetTranslation](Globalfunctions_General#gettranslation) that lets you retrieve translation for any wanted string which you may then use as necessary.
+When in game with a translation enabled AGS will automatically replace displayed text on GUI, character speech and text messages. For other cases there's script function [`GetTranslation`](Globalfunctions_General#gettranslation) that lets you retrieve translation for any wanted string which you may then use as necessary.
 
 Let's move on to how translations are created in the editor.
 
@@ -36,7 +36,7 @@ While most in-game text is translated automatically, there are a few
 instances when this is not possible. These are when a script uses
 functions like Append to build up a string, or CompareTo to check some
 user input. In these cases, you can use the
-[GetTranslation](Globalfunctions_General#gettranslation) function to make it work.
+[`GetTranslation`](Globalfunctions_General#gettranslation) function to make it work.
 
 [Formatted strings](StringFormats) may also end up in translation file, these are ones that contain input placeholders such as '%s', '%d' and so on. It's *essential* that translated line has all the same placeholders and has them in the same order. Otherwise this line may cause errors in game.
 
@@ -56,9 +56,9 @@ Comment lines should begin with `//`, just like in script, and anything else on 
 Comments are allowed to be placed anywhere in the file, and they are good way to keep notes for yourself or your translators.
 
 Font options let you define certain font substitutes for this particular translation. All options begin with the comment opening and a pound sign: `//#` - followed by `OPTION=VALUE` kind of string where "OPTION" is the corresponding name. Following options are supported:
-- **NormalFont** - sets font used for displaying messages on screen. This corresponds to [Game.NormalFont](Game#gamenormalfont) script property. The value may be either font's number or `DEFAULT` for no change.
-- **SpeechFont** - sets font used for character speech. This corresponds to [Game.SpeechFont](Game#gamespeechfont) script property. The value may be either font's number or `DEFAULT` for no change.
-- **TextDirection** - sets text written direction. This corresponds to calling [SetGameOption](Globalfunctions_General#setgameoption) script function with OPT_RIGHTTOLEFT argument. The value may be `LEFT` (for left-to-right), `RIGHT` (for right-to-left) or `DEFAULT`.
+- **NormalFont** - sets font used for displaying messages on screen. This corresponds to [`Game.NormalFont`](Game#gamenormalfont) script property. The value may be either font's number or `DEFAULT` for no change.
+- **SpeechFont** - sets font used for character speech. This corresponds to [`Game.SpeechFont`](Game#gamespeechfont) script property. The value may be either font's number or `DEFAULT` for no change.
+- **TextDirection** - sets text written direction. This corresponds to calling [`SetGameOption`](Globalfunctions_General#setgameoption) script function with OPT_RIGHTTOLEFT argument. The value may be `LEFT` (for left-to-right), `RIGHT` (for right-to-left) or `DEFAULT`.
 
 Example:
 
@@ -96,6 +96,6 @@ after changing the encoding to ANSI. A lot of wordprocessors use Ctrl+H as hotke
 search and replace function.
 
 *See also:*
-[Game.ChangeTranslation](Game#gamechangetranslation),
-[Game.TranslationFilename](Game#gametranslationfilename),
-[GetTranslation](Globalfunctions_General#gettranslation), [IsTranslationAvailable](Globalfunctions_General#istranslationavailable)
+[`Game.ChangeTranslation`](Game#gamechangetranslation),
+[`Game.TranslationFilename`](Game#gametranslationfilename),
+[`GetTranslation`](Globalfunctions_General#gettranslation), [`IsTranslationAvailable`](Globalfunctions_General#istranslationavailable)

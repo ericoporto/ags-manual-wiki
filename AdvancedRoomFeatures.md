@@ -48,9 +48,9 @@ That's all you have to do. Draw on the walkable areas, hotspots and so
 on, as normal, and then save the room. The screen will scroll to follow
 the main character around.
 
-With the script command [Camera.SetAt](Camera#camerasetat), you can manually scroll
+With the script command [`Camera.SetAt`](Camera#camerasetat), you can manually scroll
 the room around if you don't want it to follow the character. The default camera
-is accessible using [Game.Camera](Game#gamecamera).
+is accessible using [`Game.Camera`](Game#gamecamera).
 
 ---
 

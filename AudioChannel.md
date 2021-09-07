@@ -37,7 +37,7 @@ seek it back to the start.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [AudioChannel.Position](AudioChannel#audiochannelposition)
+*See also:* [`AudioChannel.Position`](AudioChannel#audiochannelposition)
 
 ---
 
@@ -71,8 +71,8 @@ of the *oMachine* room object.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [AudioChannel.Volume](AudioChannel#audiochannelvolume),
-[Character.ScaleVolume](Character#characterscalevolume)
+*See also:* [`AudioChannel.Volume`](AudioChannel#audiochannelvolume),
+[`Character.ScaleVolume`](Character#characterscalevolume)
 
 ---
 
@@ -117,7 +117,7 @@ stop it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [Game.StopAudio](Multimedia#gamestopaudio)
+*See also:* [`Game.StopAudio`](Multimedia#gamestopaudio)
 
 ---
 
@@ -161,7 +161,7 @@ finishes.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [AudioClip.Play](AudioClip#audioclipplay)
+*See also:* [`AudioClip.Play`](AudioClip#audioclipplay)
 
 ---
 
@@ -185,7 +185,7 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [AudioChannel.PositionMs](AudioChannel#audiochannelpositionms)
+*See also:* [`AudioChannel.PositionMs`](AudioChannel#audiochannelpositionms)
 
 ---
 
@@ -211,7 +211,7 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [AudioClip.Play](AudioClip#audioclipplay)
+*See also:* [`AudioClip.Play`](AudioClip#audioclipplay)
 
 ---
 
@@ -242,8 +242,8 @@ will display what is currently playing on audio channel 2.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [AudioClip.Play](AudioClip#audioclipplay),
-[System.AudioChannels](System#systemaudiochannels)
+*See also:* [`AudioClip.Play`](AudioClip#audioclipplay),
+[`System.AudioChannels`](System#systemaudiochannels)
 
 ---
 
@@ -267,7 +267,7 @@ What *position* represents depends on the FileType of the audio clip:
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](AudioChannel#audiochannelseek) function.
+[`AudioChannel.Seek`](AudioChannel#audiochannelseek) function.
 
 Example:
 
@@ -281,8 +281,8 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See also:*
-[AudioChannel.PositionMs](AudioChannel#audiochannelpositionms),
-[AudioChannel.Seek](AudioChannel#audiochannelseek)
+[`AudioChannel.PositionMs`](AudioChannel#audiochannelpositionms),
+[`AudioChannel.Seek`](AudioChannel#audiochannelseek)
 
 ---
 
@@ -298,7 +298,7 @@ offset into the sound in milliseconds. MIDI files will always return 0.
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[AudioChannel.Seek](AudioChannel#audiochannelseek) function.
+[`AudioChannel.Seek`](AudioChannel#audiochannelseek) function.
 
 Example:
 
@@ -312,8 +312,8 @@ display its position.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See also:*
-[AudioChannel.LengthMs](AudioChannel#audiochannellengthms),
-[AudioChannel.Position](AudioChannel#audiochannelposition)
+[`AudioChannel.LengthMs`](AudioChannel#audiochannellengthms),
+[`AudioChannel.Position`](AudioChannel#audiochannelposition)
 
 ---
 
@@ -352,7 +352,7 @@ reduce its volume.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See also:*
-[AudioChannel.SetRoomLocation](AudioChannel#audiochannelsetroomlocation),
-[Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume),
-[System.Volume](System#systemvolume),
-[Character.ScaleVolume](Character#characterscalevolume)
+[`AudioChannel.SetRoomLocation`](AudioChannel#audiochannelsetroomlocation),
+[`Game.SetAudioTypeVolume`](Multimedia#gamesetaudiotypevolume),
+[`System.Volume`](System#systemvolume),
+[`Character.ScaleVolume`](Character#characterscalevolume)

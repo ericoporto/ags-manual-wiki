@@ -16,7 +16,7 @@ Example:
 
 will center the CONTROLPANEL GUI in the middle of the screen.
 
-*See also:* [GUI.SetPosition](GUI#guisetposition)
+*See also:* [`GUI.SetPosition`](GUI#guisetposition)
 
 ---
 
@@ -40,8 +40,8 @@ triggers OnClick event for gMainMenu.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See also:* [Button.Click](Button#buttonclick),
-[GUI.ProcessClick](GUI#guiprocessclick)
+*See also:* [`Button.Click`](Button#buttonclick),
+[`GUI.ProcessClick`](GUI#guiprocessclick)
 
 ---
 
@@ -79,8 +79,8 @@ Example:
 will display the number of the GUI that the mouse is over.
 
 *See also:*
-[GUIControl.GetAtScreenXY](GUIControl#guicontrolgetatscreenxy),
-[GUI.ID](GUI#guiid), [GUI.ZOrder](GUI#guizorder)
+[`GUIControl.GetAtScreenXY`](GUIControl#guicontrolgetatscreenxy),
+[`GUI.ID`](GUI#guiid), [`GUI.ZOrder`](GUI#guizorder)
 
 ---
 
@@ -108,8 +108,8 @@ Pointer mode, which will ignore anything but interface.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
-*See also:* [Mouse.Click](Mouse#mouseclick),
-[Room.ProcessClick](Room#roomprocessclick)
+*See also:* [`Mouse.Click`](Mouse#mouseclick),
+[`Room.ProcessClick`](Room#roomprocessclick)
 
 ---
 
@@ -130,11 +130,11 @@ Example:
 
 will move the GUI to the position where the cursor is.
 
-*See also:* [GUI.Centre](GUI#guicentre),
-[GUI.BackgroundGraphic](GUI#guibackgroundgraphic),
-[GUIControl.SetPosition](GUIControl#guicontrolsetposition),
-[GUI.SetSize](GUI#guisetsize), [GUI.X](GUI#guix),
-[GUI.Y](GUI#guiy)
+*See also:* [`GUI.Centre`](GUI#guicentre),
+[`GUI.BackgroundGraphic`](GUI#guibackgroundgraphic),
+[`GUIControl.SetPosition`](GUIControl#guicontrolsetposition),
+[`GUI.SetSize`](GUI#guisetsize), [`GUI.X`](GUI#guix),
+[`GUI.Y`](GUI#guiy)
 
 ---
 
@@ -158,11 +158,11 @@ Example:
 
 changes the ICONBAR GUI to be the size of half the screen
 
-*See also:* [GUI.Centre](GUI#guicentre),
-[GUI.Height](GUI#guiheight),
-[GUIControl.SetPosition](GUIControl#guicontrolsetposition),
-[GUI.SetPosition](GUI#guisetposition),
-[GUI.Width](GUI#guiwidth)
+*See also:* [`GUI.Centre`](GUI#guicentre),
+[`GUI.Height`](GUI#guiheight),
+[`GUIControl.SetPosition`](GUIControl#guicontrolsetposition),
+[`GUI.SetPosition`](GUI#guisetposition),
+[`GUI.Width`](GUI#guiwidth)
 
 ---
 
@@ -179,7 +179,7 @@ Example:
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See also:* [TextWindowGUI](TextWindowGUI)
+*See also:* [`TextWindowGUI`](TextWindowGUI)
 
 ---
 
@@ -195,7 +195,7 @@ This property is ignored if the GUI.BackgroundGraphic is assigned a sprite numbe
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See also:* [GUI.BackgroundGraphic](GUI#guibackgroundgraphic), [GUI.BorderColor](GUI#guibordercolor)
+*See also:* [`GUI.BackgroundGraphic`](GUI#guibackgroundgraphic), [`GUI.BorderColor`](GUI#guibordercolor)
 
 ---
 
@@ -211,8 +211,8 @@ You can set this to 0 to remove the background image from the GUI.
 
 When this property is assigned a sprite number other than 0 GUI.BackgroundColor and GUI.BorderColor are ignored.
 
-*See also:* [GUI.SetPosition](GUI#guisetposition),
-[Button.NormalGraphic](Button#buttonnormalgraphic)
+*See also:* [`GUI.SetPosition`](GUI#guisetposition),
+[`Button.NormalGraphic`](Button#buttonnormalgraphic)
 
 ---
 
@@ -228,7 +228,7 @@ Not applicable to TextWindow GUIs. This property is ignored if the GUI.Backgroun
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See also:* [GUI.BackgroundColor](GUI#guibackgroundcolor), [GUI.BackgroundGraphic](GUI#guibackgroundgraphic)
+*See also:* [`GUI.BackgroundColor`](GUI#guibackgroundcolor), [`GUI.BackgroundGraphic`](GUI#guibackgroundgraphic)
 
 ---
 
@@ -255,7 +255,7 @@ Example:
 
 sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
-*See also:* [GUI.GetAtScreenXY](GUI#guigetatscreenxy)
+*See also:* [`GUI.GetAtScreenXY`](GUI#guigetatscreenxy)
 
 ---
 
@@ -277,7 +277,7 @@ Example:
 
 disables all controls on the INVENTORY GUI.
 
-*See also:* [GUI.Controls](GUI#guicontrols)
+*See also:* [`GUI.Controls`](GUI#guicontrols)
 
 ---
 
@@ -311,8 +311,8 @@ Example:
 gets list box number 4 from the INVENTORY GUI, and then adds an item to
 it. If control 4 isn't a listbox, you will get a Null Reference error.
 
-*See also:* [GUIControl.As\*](GUIControl#guicontrolastype),
-[GUI.ControlCount](GUI#guicontrolcount)
+*See also:* [`GUIControl.As\*`](GUIControl#guicontrolastype),
+[`GUI.ControlCount`](GUI#guicontrolcount)
 
 ---
 
@@ -331,8 +331,8 @@ Example:
 
 displays the height of the ICONBAR GUI.
 
-*See also:* [GUI.SetSize](GUI#guisetsize),
-[GUI.Width](GUI#guiwidth)
+*See also:* [`GUI.SetSize`](GUI#guisetsize),
+[`GUI.Width`](GUI#guiwidth)
 
 ---
 
@@ -353,7 +353,7 @@ uses the obsolete SetGUIClickable function to make the ICONBAR GUI
 clickable, and then uses the equivalent modern property to stop it being
 clickable.
 
-*See also:* [GUIControl.ID](GUIControl#guicontrolid)
+*See also:* [`GUIControl.ID`](GUIControl#guicontrolid)
 
 ---
 
@@ -368,11 +368,11 @@ Gets the style of GUI behavior on screen. Possible values are:
     eGUIPopupModal        like normal, but pauses game when shown
     eGUIPopupPersistent   like normal, but not removed when the game's user interface is disabled
 
-**NOTE:** for MouseYPos style [GUI.Visible](GUI#guivisible) property does not control visibility directly. The GUI will become visible only when both conditions match:
+**NOTE:** for MouseYPos style [`GUI.Visible`](GUI#guivisible) property does not control visibility directly. The GUI will become visible only when both conditions match:
 - GUI.Visible property set to TRUE;
 - mouse cursor is closer to the screen top than GUI.PopupYPos value.
 
-[GUI.Shown](GUI#guishown) property tells whether GUI is actually displayed, which may be different from GUI.Visible in the case of MouseYPos style.
+[`GUI.Shown`](GUI#guishown) property tells whether GUI is actually displayed, which may be different from GUI.Visible in the case of MouseYPos style.
 
 **NOTE:** To automatically hide a GUI when the user interface is disabled, the
 General Settings option `When player interface is disabled, GUIs should` needs
@@ -380,7 +380,7 @@ to be set as `Be hidden`.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See also:* [GUI.PopupYPos](GUI#guipopupypos), [GUI.Shown](GUI#guishown), [GUI.Visible](GUI#guivisible)
+*See also:* [`GUI.PopupYPos`](GUI#guipopupypos), [`GUI.Shown`](GUI#guishown), [`GUI.Visible`](GUI#guivisible)
 
 ---
 
@@ -394,7 +394,7 @@ This property is ignored if GUI has a different style.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See also:* [GUI.PopupStyle](GUI#guipopupstyle), [GUI.Shown](GUI#guishown), [GUI.Visible](GUI#guivisible)
+*See also:* [`GUI.PopupStyle`](GUI#guipopupstyle), [`GUI.Shown`](GUI#guishown), [`GUI.Visible`](GUI#guivisible)
 
 ---
 
@@ -404,13 +404,13 @@ This property is ignored if GUI has a different style.
 
 Tells whether GUI is currently active on screen.
 
-In the common circumstances this property's value is equivalent to checking [GUI.Visible](GUI#guivisible). But for GUIs with "Mouse Ypos" popup style the Visible property does not actually determine whether the GUI is displayed, but instead it controls whether the GUI **is allowed to** pop up. In such case it is Shown property that would tell if the GUI is actually displayed on screen at this moment.
+In the common circumstances this property's value is equivalent to checking [`GUI.Visible`](GUI#guivisible). But for GUIs with "Mouse Ypos" popup style the Visible property does not actually determine whether the GUI is displayed, but instead it controls whether the GUI **is allowed to** pop up. In such case it is Shown property that would tell if the GUI is actually displayed on screen at this moment.
 
 **NOTE:** Shown property only reports a logical state, it does not test whether GUI may be seen by the player or not (overlapped by other objects, moved offscreen or fully transparent).
 
 *Compatibility:* Supported by **AGS 3.5.1** and later versions.
 
-*See also:* [GUI.PopupStyle](GUI#guipopupstyle), [GUI.Visible](GUI#guivisible)
+*See also:* [`GUI.PopupStyle`](GUI#guipopupstyle), [`GUI.Visible`](GUI#guivisible)
 
 ---
 
@@ -451,7 +451,7 @@ Example:
 
 will gradually fade the INVENTORY GUI out until it is invisible.
 
-*See also:* [Object.Transparency](Object#objecttransparency)
+*See also:* [`Object.Transparency`](Object#objecttransparency)
 
 ---
 
@@ -481,7 +481,7 @@ whether the GUI is displayed, but instead it controls whether the GUI
 to the top of the screen will not activate the GUI; if it is *true*,
 then the GUI will be allowed to be popped up.
 
-**NOTE:** for "Mouse Ypos" style GUIs the way to actually know if GUI is displayed or not is [GUI.Shown](GUI#guishown) property.
+**NOTE:** for "Mouse Ypos" style GUIs the way to actually know if GUI is displayed or not is [`GUI.Shown`](GUI#guishown) property.
 
 Example:
 
@@ -489,7 +489,7 @@ Example:
 
 will turn on the SETTINGS GUI.
 
-*See also:* [GUI.Shown](GUI#guishown), [IsGamePaused](Globalfunctions_General#isgamepaused)
+*See also:* [`GUI.Shown`](GUI#guishown), [`IsGamePaused`](Globalfunctions_General#isgamepaused)
 
 ---
 
@@ -508,8 +508,8 @@ Example:
 
 makes the INVENTORY GUI 5 pixels wider.
 
-*See also:* [GUI.Height](GUI#guiheight),
-[GUI.SetSize](GUI#guisetsize)
+*See also:* [`GUI.Height`](GUI#guiheight),
+[`GUI.SetSize`](GUI#guisetsize)
 
 ---
 
@@ -530,8 +530,8 @@ Example:
 
 moves the GUI right 5 pixels.
 
-*See also:* [GUI.SetPosition](GUI#guisetposition),
-[GUI.Y](GUI#guiy)
+*See also:* [`GUI.SetPosition`](GUI#guisetposition),
+[`GUI.Y`](GUI#guiy)
 
 ---
 
@@ -553,8 +553,8 @@ Example:
 
 moves the GUI down 5 pixels.
 
-*See also:* [GUI.SetPosition](GUI#guisetposition),
-[GUI.X](GUI#guix)
+*See also:* [`GUI.SetPosition`](GUI#guisetposition),
+[`GUI.X`](GUI#guix)
 
 ---
 
@@ -576,5 +576,5 @@ Example:
 
 sets the STATUSLINE GUI to be behind all other GUIs.
 
-*See also:* [GUI.GetAtScreenXY](GUI#guigetatscreenxy)
+*See also:* [`GUI.GetAtScreenXY`](GUI#guigetatscreenxy)
 

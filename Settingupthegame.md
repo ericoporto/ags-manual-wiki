@@ -524,7 +524,7 @@ SetGameOption. **Basic properties**
     the window title, and also added to the game's
     executable properties.
 -   **Maximum possible score** - the maximum score your game has, if you
-    are using score mechanics, such as [GiveScore](Globalfunctions_General#givescore)
+    are using score mechanics, such as [`GiveScore`](Globalfunctions_General#givescore)
     script function.
 -   **Put sound and sprite files in source control** - whether game
     resources, such as sprites and audio, are put under source control.
@@ -614,8 +614,8 @@ SetGameOption. **Basic properties**
     suddenly switching to face the right way.
 -   **Characters turn to face direction** - if set, then when a
     character turns round with the
-    [Character.FaceLocation](Character#characterfacelocation) or
-    [Character.FaceCharacter](Character#characterfacecharacter) script
+    [`Character.FaceLocation`](Character#characterfacelocation) or
+    [`Character.FaceCharacter`](Character#characterfacecharacter) script
     commands, they will visibly turn around using their available loops.
     If this option is not set, they will immediately appear facing their
     new direction.
@@ -806,7 +806,7 @@ Disabling this option will make the game file structure more transparent and, fo
     information.
 -   **Custom thought bubble GUI** - Determines which text window GUI is
     used for displaying thoughts with
-    [Think](Character#characterthink).
+    [`Think`](Character#characterthink).
 -   **Write game text Right-to-Left** - in-game text will be written
     right-to-left, i.e. line breaks are worked out from the end of the
     sentence going backwards, and the last words are displayed first.

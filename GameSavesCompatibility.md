@@ -43,7 +43,7 @@ even though there's now only one variable, this also gives a total size of 3 int
 
 ### Changes that DON'T break saves but are NOT SAFE
 
-Changing the number of Room Objects in existing rooms, while technically not preventing the compiled game to restore old saves, still may lead to bugs. Because their real number is stored in saves, players may end up having more or less objects in a room than there are supposed to be. And because currently you cannot create or delete Room Objects with a script command you won't be able to fix this, you can only detect this happening by checking [Room.ObjectCount](Room#roomobjectcount).
+Changing the number of Room Objects in existing rooms, while technically not preventing the compiled game to restore old saves, still may lead to bugs. Because their real number is stored in saves, players may end up having more or less objects in a room than there are supposed to be. And because currently you cannot create or delete Room Objects with a script command you won't be able to fix this, you can only detect this happening by checking [`Room.ObjectCount`](Room#roomobjectcount).
 
 Changing the size of the dynamic arrays and managed structs won't break saves, but may cause the game to crash if a script tries to access newer elements or variables in these arrays and structs after restoring older saves.<br>
 Still this may be worked around and can actually be used to your advantage: see the [dedicated section below](GameSavesCompatibility#an-issue-of-dynamic-objects) for more information.
@@ -212,7 +212,7 @@ function on_event(EventType evt, int data) {
 
 You may use String variables (or even one String) to store almost any amount of additional data without adding new variables. Strings may be [formatted](StringFormats) to include numbers too. You may create for example a comma-separated list of values, then parse it back by iterating over characters, cutting it into substrings and converting it back to the wanted types. That will involve some advanced scripting but can be used as a last resort.
 
-Since AGS 3.5.0 there's also a [Dictionary](Dictionary) type and a [Set](Set) type available. Those types may serve as an easier alternative in this solution. It's easy to check which variables (keys) they contain. You can even store the "game version" inside them as one of the elements and check for that value after restoring a save to know which version of your game saved it. They may be used as a universal global storage, for example, for story variables, expanding them between game updates.
+Since AGS 3.5.0 there's also a [`Dictionary`](Dictionary) type and a [`Set`](Set) type available. Those types may serve as an easier alternative in this solution. It's easy to check which variables (keys) they contain. You can even store the "game version" inside them as one of the elements and check for that value after restoring a save to know which version of your game saved it. They may be used as a universal global storage, for example, for story variables, expanding them between game updates.
 
 ### Solution 5: Extending dynamic arrays and managed structs
 

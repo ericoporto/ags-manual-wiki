@@ -18,7 +18,7 @@ AGS_MAX_INV_ITEMS | The maximum number of inventory items
 AGS_MAX_OBJECTS | The maximum objects per room
 AGS_MAX_HOTSPOTS | The maximum hotspots per room
 AGS_MAX_REGIONS | The maximum regions per room
-MAX_LISTBOX_SAVED_GAMES | Limit of save files filled into ListBox when using [FillSaveGameList](ListBox#listboxfillsavegamelist)
+MAX_LISTBOX_SAVED_GAMES | Limit of save files filled into ListBox when using [`FillSaveGameList`](ListBox#listboxfillsavegamelist)
 PALETTE_SIZE | Size of game palette, for 256-color mode
 
 You can check for whether a macro is defined or not by using the
@@ -62,4 +62,4 @@ you could do:
 
 To get the actual number of things in the game rather than the AGS
 limit, use the
-[Game.CharacterCount](Game#gamecharactercount)-style properties.
+[`Game.CharacterCount`](Game#gamecharactercount)-style properties.

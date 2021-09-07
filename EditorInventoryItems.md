@@ -28,7 +28,7 @@ Select the Y value for the hotspot of the active cursor image. It's the distance
 
 ### ID
 
-The internal ID of this inventory Item. This value cannot be changed, it can be read only by the script property [InventoryItem.ID](InventoryItem#inventoryitemid).
+The internal ID of this inventory Item. This value cannot be changed, it can be read only by the script property [`InventoryItem.ID`](InventoryItem#inventoryitemid).
 
 ### Name
 
@@ -44,6 +44,6 @@ Configure any [custom properties](CustomProperties) for this inventory item. A c
 
 <hr>
 
-Within the game the player can pick up and store inventory items into his inventory by interacting with the scene or other characters. You add a new inventory item to his inventory with the [cChar.AddInventory(iInvItem)](Character#characteraddinventory) function. When the player uses or gives away the item you remove it from the character's inventory with the [cChar.LoseInventory(iInvItem)](Character#characterloseinventory) function. Make sure you check the [Mouse.Mode](Mouse#mousemode) afterwards, especially when the active cursor is the inventory item the player just lost.
+Within the game the player can pick up and store inventory items into his inventory by interacting with the scene or other characters. You add a new inventory item to his inventory with the [`cChar.AddInventory(iInvItem)`](Character#characteraddinventory) function. When the player uses or gives away the item you remove it from the character's inventory with the [`cChar.LoseInventory(iInvItem)`](Character#characterloseinventory) function. Make sure you check the [`Mouse.Mode`](Mouse#mousemode) afterwards, especially when the active cursor is the inventory item the player just lost.
 
-*See also:* [InventoryItem](InventoryItem)
+*See also:* [`InventoryItem`](InventoryItem)

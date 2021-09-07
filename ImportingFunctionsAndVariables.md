@@ -8,7 +8,7 @@ Functions and variables declared in script A could be used in script B if two co
 
 ### Exporting and importing a function
 
-All script functions are exported automatically, so they only need an import declaration to let other scripts know that they exist. This is done by declaring a function with an [import](ScriptKeywords#import) keyword somewhere where script B can "see" it. The best practice is to place them in script A's header.
+All script functions are exported automatically, so they only need an import declaration to let other scripts know that they exist. This is done by declaring a function with an [`import`](ScriptKeywords#import) keyword somewhere where script B can "see" it. The best practice is to place them in script A's header.
 
 For example, suppose you have the following function in script A:
 
@@ -25,7 +25,7 @@ The name, type and arguments of the function must be the same of course, otherwi
 
 ### Exporting and importing a variable
 
-Script variables are not exported by default, so that has to be done explicitly inside the script which has them declared, using the [export](ScriptKeywords#export) keyword.
+Script variables are not exported by default, so that has to be done explicitly inside the script which has them declared, using the [`export`](ScriptKeywords#export) keyword.
 
 Suppose you have the following variable declaration inside script A:
 

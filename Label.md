@@ -1,6 +1,6 @@
 ## `Label` functions and properties
 
-Label is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
+Label is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
 ---
 
@@ -23,9 +23,9 @@ Example:
 will change label 'lblStatus' to use font "Foreign" if a game
 translation is in use.
 
-*See also:* [IsTranslationAvailable](Globalfunctions_General#istranslationavailable),
-[Label.Text](Label#labeltext),
-[TextBox.Font](TextBox#textboxfont)
+*See also:* [`IsTranslationAvailable`](Globalfunctions_General#istranslationavailable),
+[`Label.Text`](Label#labeltext),
+[`TextBox.Font`](TextBox#textboxfont)
 
 ---
 
@@ -48,10 +48,10 @@ Example:
 will display the name of the location the cursor is over on label
 'lblStatus'
 
-*See also:* [Button.NormalGraphic](Button#buttonnormalgraphic),
-[Button.Text](Button#buttontext),
-[Label.TextColor](Label#labeltextcolor),
-[Label.Font](Label#labelfont)
+*See also:* [`Button.NormalGraphic`](Button#buttonnormalgraphic),
+[`Button.Text`](Button#buttontext),
+[`Label.TextColor`](Label#labeltextcolor),
+[`Label.Font`](Label#labelfont)
 
 ---
 
@@ -61,8 +61,8 @@ will display the name of the location the cursor is over on label
 
 Gets/sets how the text is aligned relative to the label's rectangle. Note that currently label supports only horizontal alignment which could be eAlignLeft, eAlignRight and eAlignCenter.
 
-*See also:* [Standard Enumerated Types](StandardEnums), [Label.Font](Label#labelfont),
-[Label.Text](Label#labeltext)
+*See also:* [Standard Enumerated Types](StandardEnums), [`Label.Font`](Label#labelfont),
+[`Label.Text`](Label#labeltext)
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
@@ -82,6 +82,6 @@ Example:
 
 will change label 'lblStatus' to have yellow text.
 
-*See also:* [Label.Font](Label#labelfont),
-[Label.Text](Label#labeltext)
+*See also:* [`Label.Font`](Label#labelfont),
+[`Label.Text`](Label#labeltext)
 

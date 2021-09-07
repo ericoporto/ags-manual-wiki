@@ -66,7 +66,7 @@ like.
 
 Glad you asked! Instead of all those old commands like SetMusicVolume,
 SetDigitalMasterVolume, etc, there is now simply one overall system
-volume ([System.Volume](System#systemvolume)), and then each sound
+volume ([`System.Volume`](System#systemvolume)), and then each sound
 that is playing has its own volume control as well. This is controlled
 by the [Volume property](AudioChannel#audiochannelvolume) on the audio
 channel (see the [Audio page](MusicAndSound) for details on
@@ -74,7 +74,7 @@ this).
 
 Finally, you can update the volume of one particular type of audio (eg.
 sound, music) by using the
-[Game.SetAudioTypeVolume](Multimedia#gamesetaudiotypevolume) command.
+[`Game.SetAudioTypeVolume`](Multimedia#gamesetaudiotypevolume) command.
 
 **Wait, what's an audio channel?**
 
@@ -94,13 +94,13 @@ optional Repeat parameter, allowing you to specify whether it loops or
 not.
 
 The X/Y directional aspect of PlayAmbientSound is supported by the
-[SetRoomLocation](AudioChannel#audiochannelsetroomlocation) command on the
+[`SetRoomLocation`](AudioChannel#audiochannelsetroomlocation) command on the
 audio channel.
 
 **Is there any new cool stuff that I can do?**
 
 You can now adjust the left-right panning of audio, using the
-[AudioChannel.Panning](AudioChannel#audiochannelpanning) property. You
+[`AudioChannel.Panning`](AudioChannel#audiochannelpanning) property. You
 also have finer control over syncing up different pieces of audio,
 through the ability to get and seek offsets more accurately.
 

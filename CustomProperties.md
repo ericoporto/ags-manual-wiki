@@ -56,27 +56,27 @@ appear in the properties window for characters, objects, and so on.
 To access the properties from the script, there are various script
 functions. See their descriptions for how they work:
 
-[Character.GetProperty](Character#charactergetproperty)<br>
-[Character.GetTextProperty](Character#charactergettextproperty)<br>
-[Character.SetProperty](Character#charactersetproperty)<br>
-[Character.SetTextProperty](Character#charactersettextproperty)<br>
-[Hotspot.GetProperty](Hotspot#hotspotgetproperty)<br>
-[Hotspot.GetTextProperty](Hotspot#hotspotgettextproperty)<br>
-[Hotspot.SetProperty](Hotspot#hotspotsetproperty)<br>
-[Hotspot.SetTextProperty](Hotspot#hotspotsettextproperty)<br>
-[InventoryItem.GetProperty](InventoryItem#inventoryitemgetproperty)<br>
-[InventoryItem.GetTextProperty](InventoryItem#inventoryitemgettextproperty)<br>
-[InventoryItem.SetProperty](InventoryItem#inventoryitemsetproperty)<br>
-[InventoryItem.SetTextProperty](InventoryItem#inventoryitemsettextproperty)<br>
-[Object.GetProperty](Object#objectgetproperty)<br>
-[Object.GetTextProperty](Object#objectgettextproperty)<br>
-[Object.SetProperty](Object#objectsetproperty)<br>
-[Object.SetTextProperty](Object#objectsettextproperty)<br>
-[Room.GetProperty](Room#roomgetproperty)<br>
-[Room.GetTextProperty](Room#roomgettextproperty)<br>
-[Room.SetProperty](Room#roomsetproperty)<br>
-[Room.SetTextProperty](Room#roomsettextproperty)
+[`Character.GetProperty`](Character#charactergetproperty)<br>
+[`Character.GetTextProperty`](Character#charactergettextproperty)<br>
+[`Character.SetProperty`](Character#charactersetproperty)<br>
+[`Character.SetTextProperty`](Character#charactersettextproperty)<br>
+[`Hotspot.GetProperty`](Hotspot#hotspotgetproperty)<br>
+[`Hotspot.GetTextProperty`](Hotspot#hotspotgettextproperty)<br>
+[`Hotspot.SetProperty`](Hotspot#hotspotsetproperty)<br>
+[`Hotspot.SetTextProperty`](Hotspot#hotspotsettextproperty)<br>
+[`InventoryItem.GetProperty`](InventoryItem#inventoryitemgetproperty)<br>
+[`InventoryItem.GetTextProperty`](InventoryItem#inventoryitemgettextproperty)<br>
+[`InventoryItem.SetProperty`](InventoryItem#inventoryitemsetproperty)<br>
+[`InventoryItem.SetTextProperty`](InventoryItem#inventoryitemsettextproperty)<br>
+[`Object.GetProperty`](Object#objectgetproperty)<br>
+[`Object.GetTextProperty`](Object#objectgettextproperty)<br>
+[`Object.SetProperty`](Object#objectsetproperty)<br>
+[`Object.SetTextProperty`](Object#objectsettextproperty)<br>
+[`Room.GetProperty`](Room#roomgetproperty)<br>
+[`Room.GetTextProperty`](Room#roomgettextproperty)<br>
+[`Room.SetProperty`](Room#roomsetproperty)<br>
+[`Room.SetTextProperty`](Room#roomsettextproperty)
 
-**NOTE:** Calling [ResetRoom](Globalfunctions_Room#resetroom) will reset that
+**NOTE:** Calling [`ResetRoom`](Globalfunctions_Room#resetroom) will reset that
 room's properties to default values, as well as that room's hotspot and
 object properties.

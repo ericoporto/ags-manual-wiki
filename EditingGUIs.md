@@ -170,8 +170,8 @@ display the player's current inventory, in the same way as the LucasArts
 games did. To make the inventory window scrollable, you will need to add
 Up and Down arrow buttons, and attach script code to those buttons to
 use the available functions such as
-[InvWindow.ScrollUp](InvWindow#invwindowscrollup) and
-[InvWindow.ScrollDown](InvWindow#invwindowscrolldown).
+[`InvWindow.ScrollUp`](InvWindow#invwindowscrollup) and
+[`InvWindow.ScrollDown`](InvWindow#invwindowscrolldown).
 
 To see a full list of commands available for inventory windows, see the
 [GUI Inv Window Functions and Properties](GUI)

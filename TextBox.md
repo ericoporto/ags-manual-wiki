@@ -1,6 +1,6 @@
 ## `TextBox` functions and properties
 
-TextBox is a subclass of [GUIControl](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
+TextBox is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
 ---
 
@@ -20,8 +20,8 @@ Example:
 
 will change the *txtUserInput* text box to use Font "Normal".
 
-*See also:* [Label.Font](Label#labelfont),
-[TextBox.Text](TextBox#textboxtext)
+*See also:* [`Label.Font`](Label#labelfont),
+[`TextBox.Text`](TextBox#textboxtext)
 
 ---
 
@@ -56,9 +56,9 @@ Example:
 
 will clear the txtUserInput text box.
 
-*See also:* [TextBox.Font](TextBox#textboxfont),
-[String.CompareTo](String#stringcompareto),
-[Label.Text](Label#labeltext)
+*See also:* [`TextBox.Font`](TextBox#textboxfont),
+[`String.CompareTo`](String#stringcompareto),
+[`Label.Text`](Label#labeltext)
 
 ---
 
@@ -77,5 +77,5 @@ will change text box 'txtInput' to have yellow text.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*See also:* [TextBox.ShowBorder](TextBox#textboxshowborder), [TextBox.Text](TextBox#textboxtext)
+*See also:* [`TextBox.ShowBorder`](TextBox#textboxshowborder), [`TextBox.Text`](TextBox#textboxtext)
 

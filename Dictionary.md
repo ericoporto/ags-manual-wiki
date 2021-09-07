@@ -10,9 +10,9 @@ A Dictionary has two general properties: **sort style** and **compare style**.
 
 **Compare style** determines whether string keys are compared as case sensitive or case insensitive. For example, in a case-sensitive dictionary the strings "Parameter" and "parameter" will be seen as two different keys, but in a case-insensitive dictionary they will be seen as the same key. Compare style defines both key uniqueness and sorting.
 
-At the moment a dictionary does not let you directly access all of its internal data, but has [GetKeysAsArray](Dictionary#dictionarygetkeysasarray) and [GetValuesAsArray](Dictionary#dictionarygetvaluesasarray) functions that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in these arrays will match their order within the dictionary, hence if the dictionary was sorted the array will be sorted as well.
+At the moment a dictionary does not let you directly access all of its internal data, but has [`GetKeysAsArray`](Dictionary#dictionarygetkeysasarray) and [`GetValuesAsArray`](Dictionary#dictionarygetvaluesasarray) functions that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in these arrays will match their order within the dictionary, hence if the dictionary was sorted the array will be sorted as well.
 
-To summarize, dictionaries make convenient storage for key/value pairs. If you do not need pairs but rather a sequence of unique values, you may wish to use a [Set](Set) instead.
+To summarize, dictionaries make convenient storage for key/value pairs. If you do not need pairs but rather a sequence of unique values, you may wish to use a [`Set`](Set) instead.
 
 *Compatibility:* Dictionary struct is supported by **AGS 3.5.0** and later versions.
 
@@ -54,8 +54,8 @@ Example:
 
 This will add "my-key" key, assign "my-value" to that key and then test whether that key was added successfully.
 
-*See also:* [Dictionary.Get](Dictionary#dictionaryget),
-[Dictionary.Set](Dictionary#dictionaryset)
+*See also:* [`Dictionary.Get`](Dictionary#dictionaryget),
+[`Dictionary.Set`](Dictionary#dictionaryset)
 
 ---
 
@@ -73,7 +73,7 @@ Example:
 
 Here _myValue_ variable will be assigned "a-value" from the dictionary.
 
-*See also:* [Dictionary.Set](Dictionary#dictionaryset)
+*See also:* [`Dictionary.Set`](Dictionary#dictionaryset)
 
 ---
 
@@ -98,7 +98,7 @@ Example:
 
 In the above example the keys will be displayed on screen one by one, preceded by their index.
 
-*See also:* [Dictionary.ItemCount](Dictionary#dictionaryitemcount)
+*See also:* [`Dictionary.ItemCount`](Dictionary#dictionaryitemcount)
 
 ---
 
@@ -123,7 +123,7 @@ Example:
 
 In the above example the values will be displayed on screen one by one, preceded by their index.
 
-*See also:* [Dictionary.ItemCount](Dictionary#dictionaryitemcount)
+*See also:* [`Dictionary.ItemCount`](Dictionary#dictionaryitemcount)
 
 ---
 
@@ -133,7 +133,7 @@ In the above example the values will be displayed on screen one by one, preceded
 
 Removes a key/value pair from the dictionary, returns true on success and false if there was no such key.
 
-*See also:* [Dictionary.Set](Dictionary#dictionaryset)
+*See also:* [`Dictionary.Set`](Dictionary#dictionaryset)
 
 ---
 
@@ -143,8 +143,8 @@ Removes a key/value pair from the dictionary, returns true on success and false 
 
 Assigns a value to the given key. If the key did not exist then it will be created, otherwise the old value for this key will be overwritten with a new one.
 
-*See also:* [Dictionary.Get](Dictionary#dictionaryget),
-[Dictionary.Remove](Dictionary#dictionaryremove)
+*See also:* [`Dictionary.Get`](Dictionary#dictionaryget),
+[`Dictionary.Remove`](Dictionary#dictionaryremove)
 
 ---
 
@@ -154,7 +154,7 @@ Assigns a value to the given key. If the key did not exist then it will be creat
 
 Returns the string comparison method for this dictionary, which determines whether its keys are case-sensitive.
 
-*See also:* [Dictionary.SortStyle](Dictionary#dictionarysortstyle)
+*See also:* [`Dictionary.SortStyle`](Dictionary#dictionarysortstyle)
 
 ---
 
@@ -172,4 +172,4 @@ Gets the number of key/value pairs currently in the dictionary.
 
 Returns the key sorting method for this dictionary.
 
-*See also:* [Dictionary.CompareStyle](Dictionary#dictionarycomparestyle)
+*See also:* [`Dictionary.CompareStyle`](Dictionary#dictionarycomparestyle)

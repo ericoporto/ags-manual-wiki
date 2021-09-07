@@ -13,7 +13,7 @@ the player character.
 **Note**: Only one character can be the designated as the player character within
 this panel since this will also determine which room the game starts in. Changing
 the player character during the game is possible by using the script function
-[Character.SetAsPlayer](Character#charactersetasplayer).
+[`Character.SetAsPlayer`](Character#charactersetasplayer).
 
 ![](images/EditorCharacter_1.png)
 

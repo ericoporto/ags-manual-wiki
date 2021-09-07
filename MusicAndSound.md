@@ -154,7 +154,7 @@ been started yet).
 
 **Overall system volume**
 
-There is a property called [System.Volume](System#systemvolume) that
+There is a property called [`System.Volume`](System#systemvolume) that
 controls the overall game volume, which you can use with some sort of
 volume control slider for the player. All individual sound volumes work
 within the overall system volume.
@@ -217,7 +217,7 @@ the rest of your game data so that you can offer it as an optional extra
 download to the player. The game will function correctly if the file is
 not present.
 
-*SeeAlso:* [Speech.VoiceMode](Speech#speechvoicemode)
+*SeeAlso:* [`Speech.VoiceMode`](Speech#speechvoicemode)
 
 ---
 

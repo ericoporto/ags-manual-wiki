@@ -7,7 +7,7 @@ DirectDraw is the 'classic' software graphics driver, that AGS has used
 ever since the initial Windows version was released. It's perfectly fine
 for simple games that don't use many large sprites, tinting or alpha
 blending. It's also quite fast at performing drawing operations issued
-through a [DrawingSurface](DrawingSurface).
+through a [`DrawingSurface`](DrawingSurface).
 
 Direct3D is a newer, hardware accelerated graphics driver. It uses the
 Direct3D 9.0 to render the game in a fully hardware-accelerated

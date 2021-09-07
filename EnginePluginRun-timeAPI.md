@@ -1383,7 +1383,7 @@ AGSRenderStageDesc's first field is `Version`, which must be filled by the plugi
 
 As of interface version 25 the only other meaningful field in `AGSRenderStageDesc` is `Matrixes` of type `AGSRenderMatrixes`. This is another struct that contains three arrays, 16 floating point values each. They represent three main transformation matrixes for the current render stage: World, View and Projection. The matrix format will correspond to the *internal format of the current renderer* that engine runs (OpenGL, Direct3D, and so on). Thus, if your plugin works with the same renderer as the engine it may safely use these matrixes with that renderer's functions.
 
-_![Info icon](images/icon_info.png)_ You may know which renderer is run by the engine if you call [GetGraphicsDriverID](EnginePluginRun-timeAPI#iagsenginegetgraphicsdriverid).
+_![Info icon](images/icon_info.png)_ You may know which renderer is run by the engine if you call [`GetGraphicsDriverID`](EnginePluginRun-timeAPI#iagsenginegetgraphicsdriverid).
 
 _![Info icon](images/icon_info.png)_ Software renderer will always fill these matrixes with zeroes.
 

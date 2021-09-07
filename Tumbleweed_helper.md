@@ -31,8 +31,8 @@ int Verbs.GetButtonAction(int action);
 Returns the connected action of a verb button. The actions for the verb buttons are not "hard-wired" inside the GUI-script, but defined in the function SetButtonAction.
 
 *See also:*
-[Verbs.SetActionButtons](Tumbleweed_actions#verbssetactionbuttons),
-[Verbs.AdjustLanguage](Tumbleweed_translation#verbsadjustlanguage)
+[`Verbs.SetActionButtons`](Tumbleweed_actions#verbssetactionbuttons),
+[`Verbs.AdjustLanguage`](Tumbleweed_translation#verbsadjustlanguage)
 
 ---
 
@@ -45,8 +45,8 @@ void Verbs.DisableGui();
 This functions disables the GUI and hides it.
 
 *See also:*
-[Verbs.IsGuiDisabled](Tumbleweed_helper#verbsisguidisabled),
-[Verbs.EnableGui](Tumbleweed_helper#verbsenablegui)
+[`Verbs.IsGuiDisabled`](Tumbleweed_helper#verbsisguidisabled),
+[`Verbs.EnableGui`](Tumbleweed_helper#verbsenablegui)
 
 ---
 
@@ -59,8 +59,8 @@ void Verbs.EnableGui();
 This function enables the GUI again.
 
 *See also:*
-[Verbs.IsGuiDisabled](Tumbleweed_helper#verbsisguidisabled),
-[Verbs.DisableGui](Tumbleweed_helper#verbsdisablegui)
+[`Verbs.IsGuiDisabled`](Tumbleweed_helper#verbsisguidisabled),
+[`Verbs.DisableGui`](Tumbleweed_helper#verbsdisablegui)
 
 ---
 
@@ -73,7 +73,7 @@ bool Verbs.IsGuiDisabled();
 Returns true, if the GUI is currently disabled, false otherwise
 
 *See also:*
-[Verbs.DisableGui](Tumbleweed_helper#verbsdisablegui)
+[`Verbs.DisableGui`](Tumbleweed_helper#verbsdisablegui)
 
 ---
 

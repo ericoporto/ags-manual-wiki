@@ -18,8 +18,8 @@ Example:
       Display("This frame is not flipped");
     }
 
-*See also:* [Game.GetViewFrame](Game#gamegetviewframe),
-[ViewFrame.Graphic](ViewFrame#viewframegraphic)
+*See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
+[`ViewFrame.Graphic`](ViewFrame#viewframegraphic)
 
 ---
 
@@ -37,9 +37,9 @@ Example:
     Display("This ViewFrame is view %d, loop %d, frame %d",
       frame.View, frame.Loop, frame.Frame);
 
-*See also:* [Game.GetViewFrame](Game#gamegetviewframe),
-[ViewFrame.Loop](ViewFrame#viewframeloop),
-[ViewFrame.View](ViewFrame#viewframeview)
+*See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
+[`ViewFrame.Loop`](ViewFrame#viewframeloop),
+[`ViewFrame.View`](ViewFrame#viewframeview)
 
 ---
 
@@ -56,7 +56,7 @@ Example:
     ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
     Display("This frame uses sprite %d", frame.Graphic);
 
-*See also:* [Game.GetViewFrame](Game#gamegetviewframe)
+*See also:* [`Game.GetViewFrame`](Game#gamegetviewframe)
 
 ---
 
@@ -90,7 +90,7 @@ if so, plays it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [Game.GetViewFrame](Game#gamegetviewframe), [Character.ScaleVolume](Character#characterscalevolume)
+*See also:* [`Game.GetViewFrame`](Game#gamegetviewframe), [`Character.ScaleVolume`](Character#characterscalevolume)
 
 ---
 
@@ -108,9 +108,9 @@ Example:
     Display("This ViewFrame is view %d, loop %d, frame %d",
       frame.View, frame.Loop, frame.Frame);
 
-*See also:* [Game.GetViewFrame](Game#gamegetviewframe),
-[ViewFrame.Frame](ViewFrame#viewframeframe),
-[ViewFrame.View](ViewFrame#viewframeview)
+*See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
+[`ViewFrame.Frame`](ViewFrame#viewframeframe),
+[`ViewFrame.View`](ViewFrame#viewframeview)
 
 ---
 
@@ -128,7 +128,7 @@ Example:
     ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
     Display("This frame has speed %d.", frame.Speed);
 
-*See also:* [Game.GetViewFrame](Game#gamegetviewframe)
+*See also:* [`Game.GetViewFrame`](Game#gamegetviewframe)
 
 ---
 
@@ -146,7 +146,7 @@ Example:
     Display("This ViewFrame is view %d, loop %d, frame %d",
       frame.View, frame.Loop, frame.Frame);
 
-*See also:* [Game.GetViewFrame](Game#gamegetviewframe),
-[ViewFrame.Loop](ViewFrame#viewframeloop),
-[ViewFrame.Frame](ViewFrame#viewframeframe)
+*See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
+[`ViewFrame.Loop`](ViewFrame#viewframeloop),
+[`ViewFrame.Frame`](ViewFrame#viewframeframe)
 

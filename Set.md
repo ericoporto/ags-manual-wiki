@@ -4,17 +4,17 @@ A Set allows you to store a sequence of unique strings and look them up efficien
 
 Because of how a Set work internally, searching for a string in a Set is faster than searching for it in a plain array. Its advantage increases with the number of items. They are also fast in adding and removing items dynamically.
 
-Similar to [Dictionary](Dictionary), Set has two general properties: **sort style** and **compare style**.
+Similar to [`Dictionary`](Dictionary), Set has two general properties: **sort style** and **compare style**.
 
 **Sort style** defines whether items are stored sorted or unsorted. The unsorted containers are typically faster to search in, but the items will be stored in an undefined order.
 
 **Compare style** determines whether strings are compared as case sensitive or case insensitive. For example, in a case-sensitive Set the strings "Parameter" and "parameter" will be seen as two different items, but in a case-insensitive Set they will be seen as identical. Compare style defines both string uniqueness and sorting.
 
-At the moment a Set does not let you directly access all of its internal data at once, but it does have the [GetItemsAsArray](Set#setgetitemsasarray) function that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in this array will be match the order within the Set, hence if the Set was sorted the array will be sorted as well.
+At the moment a Set does not let you directly access all of its internal data at once, but it does have the [`GetItemsAsArray`](Set#setgetitemsasarray) function that will write all items to a dynamic array, which you may parse, print, and otherwise use as you see fit. The order of items in this array will be match the order within the Set, hence if the Set was sorted the array will be sorted as well.
 
 *Compatibility:* Set struct is supported by **AGS 3.5.0** and later versions.
 
-*See also:* [Dictionary](Dictionary)
+*See also:* [`Dictionary`](Dictionary)
 
 ---
 
@@ -41,7 +41,7 @@ Example:
     mySet.Add("item1");
     bool wasAdded = mySet.Add("item1"); // wasAdded will be false
 
-*See also:* [Contains](Set#setcontains), [Remove](Set#setremove)
+*See also:* [`Contains`](Set#setcontains), [`Remove`](Set#setremove)
 
 ---
 
@@ -67,7 +67,7 @@ Example:
       Display("Test passed!");
     }
 
-*See also:* [Add](Set#setadd), [Remove](Set#setremove)
+*See also:* [`Add`](Set#setadd), [`Remove`](Set#setremove)
 
 ---
 
@@ -90,7 +90,7 @@ Example:
 
 In the above example the items will be displayed on screen one by one, preceded by their index.
 
-*See also:* [Set.ItemCount](Set#setitemcount)
+*See also:* [`Set.ItemCount`](Set#setitemcount)
 
 ---
 
@@ -100,7 +100,7 @@ In the above example the items will be displayed on screen one by one, preceded 
 
 Removes an item from the Set. Returns false if there was no such item, otherwise returns true.
 
-*See also:* [Add](Set#setadd), [Contains](Set#setcontains)
+*See also:* [`Add`](Set#setadd), [`Contains`](Set#setcontains)
 
 ---
 
@@ -110,7 +110,7 @@ Removes an item from the Set. Returns false if there was no such item, otherwise
 
 Returns the string comparison method for this Set.
 
-*See also:* [SortStyle](Set#setsortstyle)
+*See also:* [`SortStyle`](Set#setsortstyle)
 
 ---
 
@@ -128,4 +128,4 @@ Returns the number of items currently in the Set.
 
 Returns the sorting method for this Set.
 
-*See also:* [CompareStyle](Set#setcomparestyle)
+*See also:* [`CompareStyle`](Set#setcomparestyle)

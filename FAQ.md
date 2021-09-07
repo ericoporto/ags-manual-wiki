@@ -117,13 +117,13 @@ A. "Display" command pauses whole game, use an Overlay or GUI with a label inste
 
 **Q. How do I do an action when animation reaches certain frame?**
 
-A. In repeatedly_execute function test whether an object is [animating](Object#objectanimating), and what it's current View, Loop and Frame properties (Characters and Buttons have similar values). Execute an action when these properties match your condition.
+A. In repeatedly_execute function test whether an object is [`animating`](Object#objectanimating), and what it's current View, Loop and Frame properties (Characters and Buttons have similar values). Execute an action when these properties match your condition.
 
 ---
 
 **Q. How do I put a variable on a GUI label?**
 
-A. [String.Format](String#stringformat) script function allows to create a string with variable printed in it. You may then use that string anywhere, for example, assign to a label's Text property.
+A. [`String.Format`](String#stringformat) script function allows to create a string with variable printed in it. You may then use that string anywhere, for example, assign to a label's Text property.
 
 ---
 
