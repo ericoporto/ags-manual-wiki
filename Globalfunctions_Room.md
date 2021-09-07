@@ -42,7 +42,7 @@ if object 2 was a bullet, for instance.
 Disables all ground-level events. This means that all Region events, the
 Player Stands On Hotspot event, and the room edges become disabled.
 
-This command is useful in conjunction with the character\[\].z variable,
+This command is useful in conjunction with the `character[].z` variable,
 if you want the player to be able to temporarily fly or levitate, for
 example. It allows you to stop the character from triggering Player
 Stands On events while they are in the air.

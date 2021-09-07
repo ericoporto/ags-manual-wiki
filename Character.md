@@ -1648,7 +1648,7 @@ will move the character EGO in a straight line towards co ordinates
 ### `Character.ActiveInventory`
 
 *(Formerly known as `SetActiveInventory`, which is now obsolete)*<br>
-*(Formerly known as `character\[\].activeinv`, which is now obsolete)*
+*(Formerly known as `character[].activeinv`, which is now obsolete)*
 
     InventoryItem* Character.ActiveInventory
 
@@ -1672,7 +1672,7 @@ that the player has the inventory item)
 
 ### `Character.Animating`
 
-*(Formerly known as `character\[\].animating`, which is now obsolete)*
+*(Formerly known as `character[].animating`, which is now obsolete)*
 
     readonly bool Character.Animating
 
@@ -1701,7 +1701,7 @@ you wouldn't need to do this.
 
 ### `Character.AnimationSpeed`
 
-*(Formerly known as `character\[\].animspeed`, which is now obsolete)*
+*(Formerly known as `character[].animspeed`, which is now obsolete)*
 
     int Character.AnimationSpeed;
 
@@ -1959,7 +1959,7 @@ will enable diagonal walking loops for character EGO.
 
 ### `Character.Frame`
 
-*(Formerly known as `character\[\].frame`, which is now obsolete)*
+*(Formerly known as `character[].frame`, which is now obsolete)*
 
     int Character.Frame
 
@@ -2084,7 +2084,7 @@ character as an overlay to display rain or snow onto a scene.
 
 ### `Character.InventoryQuantity`
 
-*(Formerly known as `character\[\].inv`, which is now obsolete)*
+*(Formerly known as `character[].inv`, which is now obsolete)*
 
     int Character.InventoryQuantity[]
 
@@ -2120,7 +2120,7 @@ will display how many inventory items of type iCash the player has.
 
 ### `Character.Loop`
 
-*(Formerly known as `character\[\].loop`, which is now obsolete)*
+*(Formerly known as `character[].loop`, which is now obsolete)*
 
     int Character.Loop
 
@@ -2204,7 +2204,7 @@ him to (50,100), then turn it back on again.
 
 ### `Character.Moving`
 
-*(Formerly known as `character\[\].walking`, which is now obsolete)*
+*(Formerly known as `character[].walking`, which is now obsolete)*
 
     readonly bool Character.Moving
 
@@ -2233,7 +2233,7 @@ there.
 
 ### `Character.Name`
 
-*(Formerly known as `character\[\].name`, which is now obsolete)*
+*(Formerly known as `character[].name`, which is now obsolete)*
 
     String Character.Name
 
@@ -2253,7 +2253,7 @@ will display the name of the player character
 
 ### `Character.NormalView`
 
-*(Formerly known as `character\[\].defview`, which is now obsolete)*
+*(Formerly known as `character[].defview`, which is now obsolete)*
 
     readonly int Character.NormalView
 
@@ -2280,7 +2280,7 @@ view.
 
 ### `Character.PreviousRoom`
 
-*(Formerly known as `character\[\].prevroom`, which is now obsolete)*
+*(Formerly known as `character[].prevroom`, which is now obsolete)*
 
     readonly int Character.PreviousRoom
 
@@ -2302,7 +2302,7 @@ will display the EGO character's previous room.
 
 ### `Character.Room`
 
-*(Formerly known as `character\[\].room`, which is now obsolete)*
+*(Formerly known as `character[].room`, which is now obsolete)*
 
     readonly int Character.Room
 
@@ -2547,7 +2547,7 @@ will change the character's EGO talking color to yellow.
 ### `Character.SpeechView`
 
 *(Formerly known as `SetCharacterSpeechView`, which is now obsolete)*<br>
-*(Formerly known as `character\[\].talkview`, which is now obsolete)*
+*(Formerly known as `character[].talkview`, which is now obsolete)*
 
     int Character.SpeechView
 
@@ -2644,7 +2644,7 @@ to Frame 0.
 
 ### `Character.ThinkView`
 
-*(Formerly known as `character\[\].thinkview`, which is now obsolete)*
+*(Formerly known as `character[].thinkview`, which is now obsolete)*
 
     int Character.ThinkView
 

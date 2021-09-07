@@ -62,7 +62,7 @@ will change palette slot number 10 from light green to yellow
     UpdatePalette()
 
 Commits the changes you made to the game palette. The script global
-variable palette\[\] stores the state of all the colors of the palette.
+variable `palette[]` stores the state of all the colors of the palette.
 You can access the red, green and blue components with .r, .g and .b.
 The values range from 0 to 63.
 
