@@ -58,7 +58,7 @@ background, then releases the image.
 
 ### `Room.GetProperty`
 
-*(Formerly known as global function GetRoomProperty, which is now
+*(Formerly known as global function `GetRoomProperty`, which is now
 obsolete)*
 
     Room.GetProperty(string property)
@@ -88,7 +88,7 @@ box ticked.
 
 ### `Room.GetTextProperty`
 
-*(Formerly known as global function GetRoomPropertyText, which is now
+*(Formerly known as global function `GetRoomPropertyText`, which is now
 obsolete)*
 
     static String Room.GetTextProperty(string property)
@@ -173,7 +173,7 @@ will change room's "description" property.
 
 ### `Room.ProcessClick`
 
-*(Formerly known as global function ProcessClick, which is now
+*(Formerly known as global function `ProcessClick`, which is now
 obsolete)*
 
     static void Room.ProcessClick(int x, int y, CursorMode)
@@ -234,7 +234,7 @@ Example:
 
 ### `Room.Height`
 
-*(Formerly known as game.room_height, which is now obsolete)*
+*(Formerly known as `game.room_height`, which is now obsolete)*
 
     readonly static int Room.Height
 
@@ -267,7 +267,7 @@ Example:
 
 ### `Room.Messages`
 
-*(Formerly known as global function GetMessageText, which is now
+*(Formerly known as global function `GetMessageText`, which is now
 obsolete)*
 
     readonly static String Room.Messages[int message]
@@ -308,7 +308,7 @@ Example:
 
 ### `Room.ObjectCount`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly static int Room.ObjectCount
 
@@ -356,7 +356,7 @@ Example:
 
 ### `Room.Width`
 
-*(Formerly known as game.room_width, which is now obsolete)*
+*(Formerly known as `game.room_width`, which is now obsolete)*
 
     readonly static int Room.Width
 

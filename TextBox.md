@@ -6,7 +6,7 @@ TextBox is a subclass of [`GUIControl`](GUIControl) and therefore inherits all G
 
 ### `TextBox.Font`
 
-*(Formerly known as SetTextBoxFont, which is now obsolete)*
+*(Formerly known as `SetTextBoxFont`, which is now obsolete)*
 
     FontType TextBox.Font
 
@@ -39,10 +39,10 @@ Border is drawn using color from TextColor property.
 
 ### `TextBox.Text`
 
-*(Formerly known as GetTextBoxText, which is now obsolete)*<br>
-*(Formerly known as SetTextBoxText, which is now obsolete)*<br>
-*(Formerly known as TextBox.GetText, which is now obsolete)*<br>
-*(Formerly known as TextBox.SetText, which is now obsolete)*
+*(Formerly known as `GetTextBoxText`, which is now obsolete)*<br>
+*(Formerly known as `SetTextBoxText`, which is now obsolete)*<br>
+*(Formerly known as `TextBox.GetText`, which is now obsolete)*<br>
+*(Formerly known as `TextBox.SetText`, which is now obsolete)*
 
     String TextBox.Text;
 

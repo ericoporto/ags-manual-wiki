@@ -2,7 +2,7 @@
 
 ### `GUI.Centre`
 
-*(Formerly known as CentreGUI, which is now obsolete)*
+*(Formerly known as `CentreGUI`, which is now obsolete)*
 
     GUI.Centre()
 
@@ -47,7 +47,7 @@ triggers OnClick event for gMainMenu.
 
 ### `GUI.GetAtScreenXY`
 
-*(Formerly known as GetGUIAt, which is now obsolete)*
+*(Formerly known as `GetGUIAt`, which is now obsolete)*
 
     static GUI* GUI.GetAtScreenXY(int x, int y)
 
@@ -115,7 +115,7 @@ Pointer mode, which will ignore anything but interface.
 
 ### `GUI.SetPosition`
 
-*(Formerly known as SetGUIPosition, which is now obsolete)*
+*(Formerly known as `SetGUIPosition`, which is now obsolete)*
 
     GUI.SetPosition(int x, int y)
 
@@ -140,7 +140,7 @@ will move the GUI to the position where the cursor is.
 
 ### `GUI.SetSize`
 
-*(Formerly known as SetGUISize, which is now obsolete)*
+*(Formerly known as `SetGUISize`, which is now obsolete)*
 
     GUI.SetSize(int width, int height)
 
@@ -201,7 +201,7 @@ This property is ignored if the GUI.BackgroundGraphic is assigned a sprite numbe
 
 ### `GUI.BackgroundGraphic`
 
-*(Formerly known as SetGUIBackgroundPic, which is now obsolete)*
+*(Formerly known as `SetGUIBackgroundPic`, which is now obsolete)*
 
     int GUI.BackgroundGraphic
 
@@ -234,7 +234,7 @@ Not applicable to TextWindow GUIs. This property is ignored if the GUI.Backgroun
 
 ### `GUI.Clickable`
 
-*(Formerly known as SetGUIClickable, which is now obsolete)*
+*(Formerly known as `SetGUIClickable`, which is now obsolete)*
 
     bool GUI.Clickable
 
@@ -416,7 +416,7 @@ In the common circumstances this property's value is equivalent to checking [`GU
 
 ### `GUI.Transparency`
 
-*(Formerly known as SetGUITransparency, which is now obsolete)*
+*(Formerly known as `SetGUITransparency`, which is now obsolete)*
 
     int GUI.Transparency
 
@@ -457,11 +457,11 @@ will gradually fade the INVENTORY GUI out until it is invisible.
 
 ### `GUI.Visible`
 
-*(Formerly known as GUIOff, which is now obsolete)*<br>
-*(Formerly known as GUIOn, which is now obsolete)*<br>
-*(Formerly known as InterfaceOff, which is now obsolete)*<br>
-*(Formerly known as InterfaceOn, which is now obsolete)*<br>
-*(Formerly known as IsGUIOn, which is now obsolete)*
+*(Formerly known as `GUIOff`, which is now obsolete)*<br>
+*(Formerly known as `GUIOn`, which is now obsolete)*<br>
+*(Formerly known as `InterfaceOff`, which is now obsolete)*<br>
+*(Formerly known as `InterfaceOn`, which is now obsolete)*<br>
+*(Formerly known as `IsGUIOn`, which is now obsolete)*
 
     bool GUI.Visible
 
@@ -560,7 +560,7 @@ moves the GUI down 5 pixels.
 
 ### `GUI.ZOrder`
 
-*(Formerly known as SetGUIZOrder, which is now obsolete)*
+*(Formerly known as `SetGUIZOrder`, which is now obsolete)*
 
     int GUI.ZOrder
 

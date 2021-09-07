@@ -2,7 +2,7 @@
 
 ### `DateTime.Now`
 
-*(Formerly known as GetTime, which is now obsolete)*
+*(Formerly known as `GetTime`, which is now obsolete)*
 
     readonly static DateTime* DateTime.Now;
 
@@ -88,7 +88,7 @@ Example: For an example, see [`DateTime.Now`](DateTime#datetimenow).
 
 ### `DateTime.RawTime`
 
-*(Formerly known as GetRawTime, which is now obsolete)*
+*(Formerly known as `GetRawTime`, which is now obsolete)*
 
     readonly int DateTime.RawTime;
 

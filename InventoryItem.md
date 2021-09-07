@@ -2,7 +2,7 @@
 
 ### `InventoryItem.GetAtScreenXY`
 
-*(Formerly known as global function GetInvAt, which is now obsolete)*
+*(Formerly known as global function `GetInvAt`, which is now obsolete)*
 
     static InventoryItem* InventoryItem.GetAtScreenXY(int x, int y)
 
@@ -39,7 +39,7 @@ will display the number of the inv item that the mouse is over
 
 ### `InventoryItem.GetProperty`
 
-*(Formerly known as GetInvProperty, which is now obsolete)*
+*(Formerly known as `GetInvProperty`, which is now obsolete)*
 
     InventoryItem.GetProperty(string property)
 
@@ -65,8 +65,8 @@ to more than 200.
 
 ### `InventoryItem.GetTextProperty`
 
-*(Formerly known as GetInvPropertyText, which is now obsolete)*<br>
-*(Formerly known as InventoryItem.GetPropertyText, which is now
+*(Formerly known as `GetInvPropertyText`, which is now obsolete)*<br>
+*(Formerly known as `InventoryItem.GetPropertyText`, which is now
 obsolete)*
 
     String InventoryItem.GetTextProperty(string property)
@@ -146,7 +146,7 @@ will change key's "description" property.
 
 ### `InventoryItem.IsInteractionAvailable`
 
-*(Formerly known as IsInventoryInteractionAvailable, which is now
+*(Formerly known as `IsInventoryInteractionAvailable`, which is now
 obsolete)*
 
     InventoryItem.IsInteractionAvailable(CursorMode)
@@ -174,7 +174,7 @@ Example:
 
 ### `InventoryItem.RunInteraction`
 
-*(Formerly known as RunInventoryInteraction, which is now obsolete)*
+*(Formerly known as `RunInventoryInteraction`, which is now obsolete)*
 
     InventoryItem.RunInteraction(CursorMode)
 
@@ -222,8 +222,8 @@ will display inventory item *iKey*'s cursor graphic.
 
 ### `InventoryItem.Graphic`
 
-*(Formerly known as GetInvGraphic, which is now obsolete)*<br>
-*(Formerly known as SetInvItemPic, which is now obsolete)*
+*(Formerly known as `GetInvGraphic`, which is now obsolete)*<br>
+*(Formerly known as `SetInvItemPic`, which is now obsolete)*
 
     int InventoryItem.Graphic
 
@@ -272,10 +272,10 @@ inventory
 
 ### `InventoryItem.Name`
 
-*(Formerly known as GetInvName, which is now obsolete)*<br>
-*(Formerly known as SetInvItemName, which is now obsolete)*<br>
-*(Formerly known as InventoryItem.GetName, which is now obsolete)*<br>
-*(Formerly known as InventoryItem.SetName, which is now obsolete)*
+*(Formerly known as `GetInvName`, which is now obsolete)*<br>
+*(Formerly known as `SetInvItemName`, which is now obsolete)*<br>
+*(Formerly known as `InventoryItem.GetName`, which is now obsolete)*<br>
+*(Formerly known as `InventoryItem.SetName`, which is now obsolete)*
 
     String InventoryItem.Name;
 

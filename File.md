@@ -2,7 +2,7 @@
 
 ### `File.Open`
 
-*(Formerly known as FileOpen, which is now obsolete)*
+*(Formerly known as `FileOpen`, which is now obsolete)*
 
     static File* File.Open(string filename, FileMode)
 
@@ -90,7 +90,7 @@ it will write the string "test string" to the file and close it.
 
 ### `File.Close`
 
-*(Formerly known as FileClose, which is now obsolete)*
+*(Formerly known as `FileClose`, which is now obsolete)*
 
     File.Close()
 
@@ -173,7 +173,7 @@ will create the file "temp.tmp" if it doesn't exist
 
 ### `File.ReadInt`
 
-*(Formerly known as FileReadInt, which is now obsolete)*
+*(Formerly known as `FileReadInt`, which is now obsolete)*
 
     File.ReadInt()
 
@@ -197,7 +197,7 @@ the file.
 
 ### `File.ReadRawChar`
 
-*(Formerly known as FileReadRawChar, which is now obsolete)*
+*(Formerly known as `FileReadRawChar`, which is now obsolete)*
 
     File.ReadRawChar()
 
@@ -222,7 +222,7 @@ string 'buffer'.
 
 ### `File.ReadRawInt`
 
-*(Formerly known as FileReadRawInt, which is now obsolete)*
+*(Formerly known as `FileReadRawInt`, which is now obsolete)*
 
     File.ReadRawInt()
 
@@ -248,7 +248,7 @@ number.
 
 ### `File.ReadRawLineBack`
 
-*(Formerly known as File.ReadRawLine, which is now obsolete)*
+*(Formerly known as `File.ReadRawLine`, which is now obsolete)*
 
     String File.ReadRawLineBack()
 
@@ -279,8 +279,8 @@ will display the contents of the 'error.log' file, if it exists
 
 ### `File.ReadStringBack`
 
-*(Formerly known as FileRead, which is now obsolete)*<br>
-*(Formerly known as File.ReadString, which is now obsolete)*
+*(Formerly known as `FileRead`, which is now obsolete)*<br>
+*(Formerly known as `File.ReadString`, which is now obsolete)*
 
     String File.ReadStringBack()
 
@@ -351,7 +351,7 @@ will open the file test.dat, read `first_value`, skip 256 bytes, read
 
 ### `File.WriteInt`
 
-*(Formerly known as FileWriteInt, which is now obsolete)*
+*(Formerly known as `FileWriteInt`, which is now obsolete)*
 
     File.WriteInt(int value)
 
@@ -375,7 +375,7 @@ will open the file stats.dat and write the integer number in it.
 
 ### `File.WriteRawChar`
 
-*(Formerly known as FileWriteRawChar, which is now obsolete)*
+*(Formerly known as `FileWriteRawChar`, which is now obsolete)*
 
     File.WriteRawChar(int value)
 
@@ -406,7 +406,7 @@ the file.
 
 ### `File.WriteRawLine`
 
-*(Formerly known as FileWriteRawLine, which is now obsolete)*
+*(Formerly known as `FileWriteRawLine`, which is now obsolete)*
 
     File.WriteRawLine(string text)
 
@@ -432,7 +432,7 @@ will write an error line in the file error.log.
 
 ### `File.WriteString`
 
-*(Formerly known as FileWrite, which is now obsolete)*
+*(Formerly known as `FileWrite`, which is now obsolete)*
 
     File.WriteString(string text)
 
@@ -461,7 +461,7 @@ it will display an error message. Otherwise, it will write the string
 
 ### `File.EOF`
 
-*(Formerly known as FileIsEOF, which is now obsolete)*
+*(Formerly known as `FileIsEOF`, which is now obsolete)*
 
     readonly bool File.EOF
 
@@ -489,7 +489,7 @@ screen.
 
 ### `File.Error`
 
-*(Formerly known as FileIsError, which is now obsolete)*
+*(Formerly known as `FileIsError`, which is now obsolete)*
 
     readonly bool File.Error
 

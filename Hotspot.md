@@ -28,7 +28,7 @@ will display the message if the player character is over the hPressurePlate hots
 
 ### `Hotspot.GetAtScreenXY`
 
-*(Formerly known as global function GetHotspotAt, which is now
+*(Formerly known as global function `GetHotspotAt`, which is now
 obsolete)*
 
     static Hotspot* Hotspot.GetAtScreenXY(int x, int y)
@@ -54,7 +54,7 @@ will display a message depending on what the mouse is on.
 
 ### `Hotspot.GetProperty`
 
-*(Formerly known as GetHotspotProperty, which is now obsolete)*
+*(Formerly known as `GetHotspotProperty`, which is now obsolete)*
 
     Hotspot.GetProperty(string property)
 
@@ -79,8 +79,8 @@ than 200.
 
 ### `Hotspot.GetTextProperty`
 
-*(Formerly known as GetHotspotPropertyText, which is now obsolete)*<br>
-*(Formerly known as Hotspot.GetPropertyText, which is now obsolete)*
+*(Formerly known as `GetHotspotPropertyText`, which is now obsolete)*<br>
+*(Formerly known as `Hotspot.GetPropertyText`, which is now obsolete)*
 
     String Hotspot.GetTextProperty(string property)
 
@@ -178,7 +178,7 @@ Example:
 
 ### `Hotspot.RunInteraction`
 
-*(Formerly known as RunHotspotInteraction, which is now obsolete)*
+*(Formerly known as `RunHotspotInteraction`, which is now obsolete)*
 
     Hotspot.RunInteraction(CursorMode)
 
@@ -201,8 +201,8 @@ hDoor.
 
 ### `Hotspot.Enabled`
 
-*(Formerly known as DisableHotspot, which is now obsolete)*<br>
-*(Formerly known as EnableHotspot, which is now obsolete)*
+*(Formerly known as `DisableHotspot`, which is now obsolete)*<br>
+*(Formerly known as `EnableHotspot`, which is now obsolete)*
 
     bool Hotspot.Enabled
 
@@ -249,8 +249,8 @@ displays hDoor's hotspot number, and then displays hotspot 3's number
 
 ### `Hotspot.Name`
 
-*(Formerly known as GetHotspotName, which is now obsolete)*<br>
-*(Formerly known as Hotspot.GetName, which is now obsolete)*
+*(Formerly known as `GetHotspotName`, which is now obsolete)*<br>
+*(Formerly known as `Hotspot.GetName`, which is now obsolete)*
 
     readonly String Hotspot.Name;
 
@@ -271,7 +271,7 @@ will retrieve and then display hotspot 3's name.
 
 ### `Hotspot.WalkToX`
 
-*(Formerly known as GetHotspotPointX, which is now obsolete)*
+*(Formerly known as `GetHotspotPointX`, which is now obsolete)*
 
     readonly int Hotspot.WalkToX
 
@@ -291,7 +291,7 @@ will move the character to hotspot hTable's walk-to point.
 
 ### `Hotspot.WalkToY`
 
-*(Formerly known as GetHotspotPointY, which is now obsolete)*
+*(Formerly known as `GetHotspotPointY`, which is now obsolete)*
 
     readonly int Hotspot.WalkToY
 

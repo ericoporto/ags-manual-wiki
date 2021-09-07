@@ -20,7 +20,7 @@ that event it will be run, otherwise nothing happens.
 
 ### `Button.Animate`
 
-*(Formerly known as AnimateButton, which is now obsolete)*
+*(Formerly known as `AnimateButton`, which is now obsolete)*
 
     Button.Animate(int view, int loop, int delay, RepeatStyle)
 
@@ -199,7 +199,7 @@ will change the *btnOK* button to use Font "Main".
 
 ### `Button.Graphic`
 
-*(Formerly part of GetButtonPic, which is now obsolete)*
+*(Formerly part of `GetButtonPic`, which is now obsolete)*
 
     readonly int Button.Graphic;
 
@@ -226,8 +226,8 @@ will display btnPlay's current sprite number.
 
 ### `Button.MouseOverGraphic`
 
-*(Formerly part of GetButtonPic, which is now obsolete)*<br>
-*(Formerly part of SetButtonPic, which is now obsolete)*
+*(Formerly part of `GetButtonPic`, which is now obsolete)*<br>
+*(Formerly part of `SetButtonPic`, which is now obsolete)*
 
     int Button.MouseOverGraphic;
 
@@ -248,8 +248,8 @@ will display btnPlay's mouse-over sprite number.
 
 ### `Button.NormalGraphic`
 
-*(Formerly part of GetButtonPic, which is now obsolete)*<br>
-*(Formerly part of SetButtonPic, which is now obsolete)*
+*(Formerly part of `GetButtonPic`, which is now obsolete)*<br>
+*(Formerly part of `SetButtonPic`, which is now obsolete)*
 
     int Button.NormalGraphic;
 
@@ -275,8 +275,8 @@ will display btnPlay's normal sprite number.
 
 ### `Button.PushedGraphic`
 
-*(Formerly part of GetButtonPic, which is now obsolete)*<br>
-*(Formerly part of SetButtonPic, which is now obsolete)*
+*(Formerly part of `GetButtonPic`, which is now obsolete)*<br>
+*(Formerly part of `SetButtonPic`, which is now obsolete)*
 
     int Button.PushedGraphic;
 
@@ -298,9 +298,9 @@ will display btnPlay's pushed sprite number.
 
 ### `Button.Text`
 
-*(Formerly known as SetButtonText, which is now obsolete)*<br>
-*(Formerly known as Button.GetText, which is now obsolete)*<br>
-*(Formerly known as Button.SetText, which is now obsolete)*
+*(Formerly known as `SetButtonText`, which is now obsolete)*<br>
+*(Formerly known as `Button.GetText`, which is now obsolete)*<br>
+*(Formerly known as `Button.SetText`, which is now obsolete)*
 
     String Button.Text;
 

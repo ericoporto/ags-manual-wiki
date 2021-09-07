@@ -59,8 +59,8 @@ will play track 3 of the CD that's in the CD ROM drive.
 
 ### `Game.IsAudioPlaying`
 
-*(Formerly known as IsMusicPlaying, which is now obsolete)*<br>
-*(Formerly known as IsSoundPlaying, which is now obsolete)*
+*(Formerly known as `IsMusicPlaying`, which is now obsolete)*<br>
+*(Formerly known as `IsSoundPlaying`, which is now obsolete)*
 
     static bool Game.IsAudioPlaying(optional AudioType)
 
@@ -219,7 +219,7 @@ versions.
 
 ### `Game.SetAudioTypeSpeechVolumeDrop`
 
-*(Formerly known as game.speech_music_drop, which is now obsolete)*
+*(Formerly known as `game.speech_music_drop`, which is now obsolete)*
 
     static Game.SetAudioTypeSpeechVolumeDrop(AudioType, int volumeReduction)
 
@@ -246,7 +246,7 @@ while speech is playing.
 
 ### `Game.SetAudioTypeVolume`
 
-*(Formerly known as SetSoundVolume, which is now obsolete)*
+*(Formerly known as `SetSoundVolume`, which is now obsolete)*
 
     static Game.SetAudioTypeVolume(AudioType, int volume, ChangeVolumeType)
 
@@ -305,8 +305,8 @@ will set the speech volume to 200.
 
 ### `Game.StopAudio`
 
-*(Formerly known as Game.StopSound, which is now obsolete)*<br>
-*(Formerly known as StopMusic, which is now obsolete)*
+*(Formerly known as `Game.StopSound`, which is now obsolete)*<br>
+*(Formerly known as `StopMusic`, which is now obsolete)*
 
     static Game.StopAudio(optional AudioType)
 

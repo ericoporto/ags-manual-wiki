@@ -6,7 +6,7 @@ ListBox is a subclass of [`GUIControl`](GUIControl) and therefore inherits all G
 
 ### `ListBox.AddItem`
 
-*(Formerly known as ListBoxAdd, which is now obsolete)*
+*(Formerly known as `ListBoxAdd`, which is now obsolete)*
 
     ListBox.AddItem(string newitem)
 
@@ -34,7 +34,7 @@ will take the input from the user and add it to the listbox.
 
 ### `ListBox.Clear`
 
-*(Formerly known as ListBoxClear, which is now obsolete)*
+*(Formerly known as `ListBoxClear`, which is now obsolete)*
 
     ListBox.Clear()
 
@@ -52,7 +52,7 @@ will remove all the items from listbox *lstNoteBook*.
 
 ### `ListBox.FillDirList`
 
-*(Formerly known as ListBoxDirList, which is now obsolete)*
+*(Formerly known as `ListBoxDirList`, which is now obsolete)*
 
     ListBox.FillDirList(string filemask)
 
@@ -86,7 +86,7 @@ actually for this task you would use FillSaveGameList instead.
 
 ### `ListBox.FillSaveGameList`
 
-*(Formerly known as ListBoxSaveGameList, which is now obsolete)*
+*(Formerly known as `ListBoxSaveGameList`, which is now obsolete)*
 
     ListBox.FillSaveGameList()
 
@@ -177,7 +177,7 @@ will insert the Third Item in between the First and Second items.
 
 ### `ListBox.RemoveItem`
 
-*(Formerly known as ListBoxRemove, which is now obsolete)*
+*(Formerly known as `ListBoxRemove`, which is now obsolete)*
 
     ListBox.RemoveItem(int item)
 
@@ -277,7 +277,7 @@ Gets/sets whether the built-in up/down scroll arrows are _hidden_.
 
 ### `ListBox.ItemCount`
 
-*(Formerly known as ListBoxGetNumItems, which is now obsolete)*
+*(Formerly known as `ListBoxGetNumItems`, which is now obsolete)*
 
     readonly int ListBox.ItemCount
 
@@ -299,9 +299,9 @@ will pass the number of saved games to the int saves.
 
 ### `ListBox.Items`
 
-*(Formerly known as ListBoxGetItemText, which is now obsolete)*<br>
-*(Formerly known as ListBox.GetItemText, which is now obsolete)*<br>
-*(Formerly known as ListBox.SetItemText, which is now obsolete)*
+*(Formerly known as `ListBoxGetItemText`, which is now obsolete)*<br>
+*(Formerly known as `ListBox.GetItemText`, which is now obsolete)*<br>
+*(Formerly known as `ListBox.SetItemText`, which is now obsolete)*
 
     String ListBox.Items[index]
 
@@ -351,7 +351,7 @@ will display the number of rows that the listbox can display.
 
 ### `ListBox.SaveGameSlots`
 
-*(Formerly known as global array savegameindex, which is now obsolete)*
+*(Formerly known as global array `savegameindex`, which is now obsolete)*
 
     readonly int ListBox.SaveGameSlots[];
 
@@ -397,8 +397,8 @@ Example:
 
 ### `ListBox.SelectedIndex`
 
-*(Formerly known as ListBoxGetSelected, which is now obsolete)*<br>
-*(Formerly known as ListBoxSetSelected, which is now obsolete)*
+*(Formerly known as `ListBoxGetSelected`, which is now obsolete)*<br>
+*(Formerly known as `ListBoxSetSelected`, which is now obsolete)*
 
     int ListBox.SelectedIndex
 
@@ -435,7 +435,7 @@ Example:
 
 ### `ListBox.ShowBorder`
 
-*(Formerly known as ListBox.HideBorder, which is now obsolete)*
+*(Formerly known as `ListBox.HideBorder`, which is now obsolete)*
 
     bool ListBox.ShowBorder
 
@@ -454,7 +454,7 @@ Note that hiding the border will also implicitly hide the up/down scroll arrows 
 
 ### `ListBox.ShowScrollArrows`
 
-*(Formerly known as ListBox.HideScrollArrows, which is now obsolete)*
+*(Formerly known as `ListBox.HideScrollArrows`, which is now obsolete)*
 
     bool ListBox.ShowScrollArrows
 
@@ -507,7 +507,7 @@ Example:
 
 ### `ListBox.TopItem`
 
-*(Formerly known as ListBoxSetTopItem, which is now obsolete)*
+*(Formerly known as `ListBoxSetTopItem`, which is now obsolete)*
 
     int ListBox.TopItem
 

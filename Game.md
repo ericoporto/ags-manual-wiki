@@ -73,7 +73,7 @@ will give the player 5 points the first time this script is run.
 
 ### `Game.GetColorFromRGB`
 
-*(Formerly known as RawSetColorRGB, which is now obsolete)*
+*(Formerly known as `RawSetColorRGB`, which is now obsolete)*
 
     static int Game.GetColorFromRGB(int red, int green, int blue)
 
@@ -103,7 +103,7 @@ will draw a bright green line onto the room background
 
 ### `Game.GetFrameCountForLoop`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     static int Game.GetFrameCountForLoop(int view, int loop)
 
@@ -127,7 +127,7 @@ Example:
 
 ### `Game.GetLocationName`
 
-*(Formerly known as global function GetLocationName, which is now
+*(Formerly known as global function `GetLocationName`, which is now
 obsolete)*
 
     static String Game.GetLocationName(int x, int y)
@@ -160,7 +160,7 @@ will get the name of whatever the mouse is over into the string variable and the
 
 ### `Game.GetLoopCountForView`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     static int Game.GetLoopCountForView(int view)
 
@@ -183,7 +183,7 @@ Example:
 
 ### `Game.GetRunNextSettingForLoop`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     static bool Game.GetRunNextSettingForLoop(int view, int loop)
 
@@ -211,7 +211,7 @@ Example:
 
 ### `Game.GetSaveSlotDescription`
 
-*(Formerly known as global function GetSaveSlotDescription, which is now
+*(Formerly known as global function `GetSaveSlotDescription`, which is now
 obsolete)*
 
     static String Game.GetSaveSlotDescription(int slot)
@@ -235,7 +235,7 @@ will get the description of save slot 10 into the variable.
 
 ### `Game.GetViewFrame`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     static ViewFrame* Game.GetViewFrame(int view, int loop, int frame)
 
@@ -264,7 +264,7 @@ Example:
 
 ### `Game.InputBox`
 
-*(Formerly known as global function InputBox, which is now obsolete)*
+*(Formerly known as global function `InputBox`, which is now obsolete)*
 
     static String Game.InputBox(string prompt)
 
@@ -491,7 +491,7 @@ This script positions all existing cameras at the room's top-left corner.
 
 ### `Game.CharacterCount`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly static int Game.CharacterCount
 
@@ -559,7 +559,7 @@ Example:
 
 ### `Game.GlobalMessages`
 
-*(Formerly known as global function GetMessageText, which is now
+*(Formerly known as global function `GetMessageText`, which is now
 obsolete)*
 
     readonly static String Game.GlobalMessages[int message]
@@ -584,8 +584,8 @@ will display global message 997.
 
 ### `Game.GlobalStrings`
 
-*(Formerly known as GetGlobalString, which is now obsolete)*<br>
-*(Formerly known as SetGlobalString, which is now obsolete)*
+*(Formerly known as `GetGlobalString`, which is now obsolete)*<br>
+*(Formerly known as `SetGlobalString`, which is now obsolete)*
 
     static String Game.GlobalStrings[index]
 
@@ -607,7 +607,7 @@ will set global string 15 to contain \"Joe\".
 
 ### `Game.GUICount`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly static int Game.GUICount
 
@@ -657,7 +657,7 @@ text is automatically removed from the screen.
 
 ### `Game.InSkippableCutscene`
 
-*(Formerly known as game.in_cutscene, which is now obsolete)*
+*(Formerly known as `game.in_cutscene`, which is now obsolete)*
 
     static bool Game.InSkippableCutscene
 
@@ -693,7 +693,7 @@ will display a message if we are within a cutscene
 
 ### `Game.InventoryItemCount`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly static int Game.InventoryItemCount
 
@@ -776,7 +776,7 @@ will display the game name.
 
 ### `Game.NormalFont`
 
-*(Formerly known as global function SetNormalFont, which is now
+*(Formerly known as global function `SetNormalFont`, which is now
 obsolete)*
 
     static FontType Game.NormalFont
@@ -805,7 +805,7 @@ will change the normal font to the font \"Special\".
 
 ### `Game.SkippingCutscene`
 
-*(Formerly known as game.skipping_cutscene, which is now obsolete)*
+*(Formerly known as `game.skipping_cutscene`, which is now obsolete)*
 
     static bool Game.SkippingCutscene
 
@@ -842,7 +842,7 @@ cutscene.
 
 ### `Game.SpeechFont`
 
-*(Formerly known as global function SetSpeechFont, which is now
+*(Formerly known as global function `SetSpeechFont`, which is now
 obsolete)*
 
     static FontType Game.SpeechFont;
@@ -864,7 +864,7 @@ will change the speech font to \"Standard\".
 
 ### `Game.SpriteHeight`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly static int Game.SpriteHeight[int slot]
 
@@ -884,7 +884,7 @@ Example:
 
 ### `Game.SpriteWidth`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly static int Game.SpriteWidth[int slot]
 
@@ -904,7 +904,7 @@ Example:
 
 ### `Game.TextReadingSpeed`
 
-*(Formerly known as game.text_speed, which is now obsolete)*
+*(Formerly known as `game.text_speed`, which is now obsolete)*
 
     static int Game.TextReadingSpeed;
 
@@ -941,7 +941,7 @@ on-screen for twice as long as usual.
 
 ### `Game.TranslationFilename`
 
-*(Formerly known as GetTranslationName, which is now obsolete)*
+*(Formerly known as `GetTranslationName`, which is now obsolete)*
 
     readonly static String Game.TranslationFilename;
 
@@ -1000,7 +1000,7 @@ Example:
 
 ### `Game.ViewCount`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly static int Game.ViewCount
 

@@ -120,8 +120,8 @@ sets the minimum value of the *sldHealth* slider to 0.
 
 ### `Slider.Value`
 
-*(Formerly known as GetSliderValue, which is now obsolete)*<br>
-*(Formerly known as SetSliderValue, which is now obsolete)*
+*(Formerly known as `GetSliderValue`, which is now obsolete)*<br>
+*(Formerly known as `SetSliderValue`, which is now obsolete)*
 
     int Slider.Value;
 

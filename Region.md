@@ -2,7 +2,7 @@
 
 ### `Region.GetAtRoomXY`
 
-*(Formerly known as global function GetRegionAt, which is now obsolete)*
+*(Formerly known as global function `GetRegionAt`, which is now obsolete)*
 
     static Region* Region.GetAtRoomXY(int x, int y)
 
@@ -47,7 +47,7 @@ will display the message if there is any region under the mouse cursor.
 
 ### `Region.RunInteraction`
 
-*(Formerly known as RunRegionInteraction, which is now obsolete)*
+*(Formerly known as `RunRegionInteraction`, which is now obsolete)*
 
     Region.RunInteraction(int event)
 
@@ -76,7 +76,7 @@ walks onto region" for region 4.
 
 ### `Region.Tint`
 
-*(Formerly known as SetRegionTint, which is now obsolete)*
+*(Formerly known as `SetRegionTint`, which is now obsolete)*
 
     Region.Tint(int red, int green, int blue, int amount, optional int luminance)
 
@@ -112,8 +112,8 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 
 ### `Region.Enabled`
 
-*(Formerly known as DisableRegion, which is now obsolete)*<br>
-*(Formerly known as EnableRegion, which is now obsolete)*
+*(Formerly known as `DisableRegion`, which is now obsolete)*<br>
+*(Formerly known as `EnableRegion`, which is now obsolete)*
 
     bool Region.Enabled
 
@@ -157,7 +157,7 @@ displays region 3's number (which will be 3).
 
 ### `Region.LightLevel`
 
-*(Formerly known as SetAreaLightLevel, which is now obsolete)*
+*(Formerly known as `SetAreaLightLevel`, which is now obsolete)*
 
     int Region.LightLevel
 

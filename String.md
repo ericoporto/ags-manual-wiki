@@ -2,7 +2,7 @@
 
 ### `String.Append`
 
-*(Formerly known as global function StrCat, which is now obsolete)*
+*(Formerly known as global function `StrCat`, which is now obsolete)*
 
     String.Append(string str2)
 
@@ -58,9 +58,9 @@ will display "Hello".
 
 ### `String.CompareTo`
 
-*(Formerly known as global function StrCaseComp, which is now
+*(Formerly known as global function `StrCaseComp`, which is now
 obsolete)*<br>
-*(Formerly known as global function StrComp, which is now obsolete)*
+*(Formerly known as global function `StrComp`, which is now obsolete)*
 
     String.CompareTo(string str2, optional bool caseSensitive)
 
@@ -99,7 +99,7 @@ will display "Strings match with case sensitivity off!", and then
 
 ### `String.Copy`
 
-*(Formerly known as global function StrCopy, which is now obsolete)*
+*(Formerly known as global function `StrCopy`, which is now obsolete)*
 
     String.Copy()
 
@@ -145,7 +145,7 @@ will display the "Ends with script!" message.
 
 ### `String.Format`
 
-*(Formerly known as global function StrFormat, which is now obsolete)*
+*(Formerly known as global function `StrFormat`, which is now obsolete)*
 
     static String.Format(string fmt, ...)
 
@@ -173,9 +173,9 @@ will create a text string containing "10".
 
 ### `String.IndexOf`
 
-*(Formerly known as global function StrContains, which is now
+*(Formerly known as global function `StrContains`, which is now
 obsolete)*<br>
-*(Formerly known as String.Contains, which is now obsolete)*
+*(Formerly known as `String.Contains`, which is now obsolete)*
 
     String.IndexOf(string needle)
 
@@ -236,7 +236,7 @@ will set the myString variable to "Some text" if it is null or empty
 
 ### `String.LowerCase`
 
-*(Formerly known as global function StrToLowerCase, which is now
+*(Formerly known as global function `StrToLowerCase`, which is now
 obsolete)*
 
     String.LowerCase()
@@ -289,7 +289,7 @@ script!".
 
 ### `String.ReplaceCharAt`
 
-*(Formerly known as global function StrSetCharAt, which is now
+*(Formerly known as global function `StrSetCharAt`, which is now
 obsolete)*
 
     String.ReplaceCharAt(int index, char newChar)
@@ -391,7 +391,7 @@ will display "Original: Hello World!, Truncated: Hell".
 
 ### `String.UpperCase`
 
-*(Formerly known as global function StrToUpperCase, which is now
+*(Formerly known as global function `StrToUpperCase`, which is now
 obsolete)*
 
     String.UpperCase()
@@ -443,7 +443,7 @@ is useful for processing strings input from the user.
 
 ### `String.AsInt`
 
-*(Formerly known as global function StringToInt, which is now obsolete)*
+*(Formerly known as global function `StringToInt`, which is now obsolete)*
 
     readonly int String.AsInt;
 
@@ -478,7 +478,7 @@ useful for processing strings input from the user.
 
 ### `String.Chars`
 
-*(Formerly known as global function StrGetCharAt, which is now
+*(Formerly known as global function `StrGetCharAt`, which is now
 obsolete)*
 
     readonly char String.Chars[position];
@@ -508,7 +508,7 @@ will display "The 4th character is: s".
 
 ### `String.Length`
 
-*(Formerly known as global function StrLen, which is now obsolete)*
+*(Formerly known as global function `StrLen`, which is now obsolete)*
 
     readonly int String.Length;
 

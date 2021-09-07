@@ -198,7 +198,7 @@ and then draws the result onto the background.
 
 ### `DynamicSprite.CreateFromFile`
 
-*(Formerly known as LoadImageFile, which is now obsolete)*
+*(Formerly known as `LoadImageFile`, which is now obsolete)*
 
     static DynamicSprite* DynamicSprite.CreateFromFile(string filename)
 
@@ -249,7 +249,7 @@ Once the image is finished with, Delete should be called on it.
 
 ### `DynamicSprite.CreateFromSaveGame`
 
-*(Formerly known as LoadSaveSlotScreenshot, which is now obsolete)*
+*(Formerly known as `LoadSaveSlotScreenshot`, which is now obsolete)*
 
     static DynamicSprite* DynamicSprite.CreateFromSaveGame
                             (int saveSlot, int width, int height)
@@ -456,7 +456,7 @@ pixels, and then draw it onto the room background at (100,100).
 
 ### `DynamicSprite.Delete`
 
-*(Formerly known as DeleteSprite, which is now obsolete)*
+*(Formerly known as `DeleteSprite`, which is now obsolete)*
 
     DynamicSprite.Delete();
 

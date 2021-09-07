@@ -53,7 +53,7 @@ depending on what the player selected.
 
 ### `Dialog.GetOptionState`
 
-*(Formerly known as global function GetDialogOption, which is now
+*(Formerly known as global function `GetDialogOption`, which is now
 obsolete)*
 
     Dialog.GetOptionState(int option)
@@ -211,7 +211,7 @@ will mark option 1 of dialog dDialog1 as "not chosen yet".
 
 ### `Dialog.SetOptionState`
 
-*(Formerly known as global function SetDialogOption, which is now
+*(Formerly known as global function `SetDialogOption`, which is now
 obsolete)*
 
     Dialog.SetOptionState(int option, DialogOptionState)
@@ -274,7 +274,7 @@ will display a message if dFisherman has the option enabled
 
 ### `Dialog.Start`
 
-*(Formerly known as global function RunDialog, which is now obsolete)*
+*(Formerly known as global function `RunDialog`, which is now obsolete)*
 
     Dialog.Start()
 

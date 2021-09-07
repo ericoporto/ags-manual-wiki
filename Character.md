@@ -2,9 +2,9 @@
 
 ### `Character.AddInventory`
 
-*(Formerly known as global function AddInventory, which is now
+*(Formerly known as global function `AddInventory`, which is now
 obsolete)*<br>
-*(Formerly known as global function AddInventoryToCharacter, which is
+*(Formerly known as global function `AddInventoryToCharacter`, which is
 now obsolete)*
 
     Character.AddInventory(InventoryItem *item, optional int addAtIndex)
@@ -40,7 +40,7 @@ will give inventory item iKey to character EGO.
 
 ### `Character.AddWaypoint`
 
-*(Formerly known as MoveCharacterPath, which is now obsolete)*
+*(Formerly known as `MoveCharacterPath`, which is now obsolete)*
 
     Character.AddWaypoint(int x, int y)
 
@@ -71,8 +71,8 @@ and then top left corner afterwards.
 
 ### `Character.Animate`
 
-*(Formerly known as AnimateCharacter, which is now obsolete)*<br>
-*(Formerly known as AnimateCharacterEx, which is now obsolete)*
+*(Formerly known as `AnimateCharacter`, which is now obsolete)*<br>
+*(Formerly known as `AnimateCharacterEx`, which is now obsolete)*
 
     Character.Animate(int loop, int delay, optional RepeatStyle,
                       optional BlockingStyle, optional Direction, optional int frame)
@@ -126,9 +126,9 @@ and wait until the animation finishes before returning.
 
 ### `Character.ChangeRoom`
 
-*(Formerly known as NewRoom, which is now obsolete)*<br>
-*(Formerly known as NewRoomEx, which is now obsolete)*<br>
-*(Formerly known as NewRoomNPC, which is now obsolete)*
+*(Formerly known as `NewRoom`, which is now obsolete)*<br>
+*(Formerly known as `NewRoomEx`, which is now obsolete)*<br>
+*(Formerly known as `NewRoomNPC`, which is now obsolete)*
 
     Character.ChangeRoom(int room_number, optional int x, optional int y, optional CharacterDirection direction)
 
@@ -211,7 +211,7 @@ into room 4.
 
 ### `Character.ChangeView`
 
-*(Formerly known as ChangeCharacterView, which is now obsolete)*
+*(Formerly known as `ChangeCharacterView`, which is now obsolete)*
 
     Character.ChangeView(int view)
 
@@ -237,7 +237,7 @@ will make the EGO character use view number 5 as his walking view.
 
 ### `Character.FaceCharacter`
 
-*(Formerly known as global function FaceCharacter, which is now
+*(Formerly known as global function `FaceCharacter`, which is now
 obsolete)*
 
     Character.FaceCharacter(Character* toFace, optional BlockingStyle)
@@ -316,7 +316,7 @@ will make the character EGO face up-right.
 
 ### `Character.FaceLocation`
 
-*(Formerly known as global function FaceLocation, which is now
+*(Formerly known as global function `FaceLocation`, which is now
 obsolete)*
 
     Character.FaceLocation(int x, int y, optional BlockingStyle)
@@ -394,9 +394,9 @@ will make the player character face object 2.
 
 ### `Character.FollowCharacter`
 
-*(Formerly known as global function FollowCharacter, which is now
+*(Formerly known as global function `FollowCharacter`, which is now
 obsolete)*<br>
-*(Formerly known as global function FollowCharacterEx, which is now
+*(Formerly known as global function `FollowCharacterEx`, which is now
 obsolete)*
 
     Character.FollowCharacter(Character* chartofollow, optional int dist,
@@ -484,7 +484,7 @@ will display the message if the room object oBullet is over any character.
 
 ### `Character.GetAtScreenXY`
 
-*(Formerly known as global function GetCharacterAt, which is now
+*(Formerly known as global function `GetCharacterAt`, which is now
 obsolete)*
 
     static Character* Character.GetAtScreenXY(int x, int y)
@@ -514,7 +514,7 @@ will display the message if the mouse cursor is over the EGO character
 
 ### `Character.GetProperty`
 
-*(Formerly known as GetCharacterProperty, which is now obsolete)*
+*(Formerly known as `GetCharacterProperty`, which is now obsolete)*
 
     Character.GetProperty(string property)
 
@@ -541,8 +541,8 @@ will print the message if EGO has its "Value" property set to more than
 
 ### `Character.GetTextProperty`
 
-*(Formerly known as GetCharacterPropertyText, which is now obsolete)*<br>
-*(Formerly known as Character.GetPropertyText, which is now obsolete)*
+*(Formerly known as `GetCharacterPropertyText`, which is now obsolete)*<br>
+*(Formerly known as `Character.GetPropertyText`, which is now obsolete)*
 
     String Character.GetTextProperty(string property)
 
@@ -663,7 +663,7 @@ will display a message if the player has the key.
 
 ### `Character.IsCollidingWithChar`
 
-*(Formerly known as AreCharactersColliding, which is now obsolete)*
+*(Formerly known as `AreCharactersColliding`, which is now obsolete)*
 
     Character.IsCollidingWithChar(Character* otherChar)
 
@@ -690,7 +690,7 @@ colliding.
 
 ### `Character.IsCollidingWithObject`
 
-*(Formerly known as AreCharObjColliding, which is now obsolete)*
+*(Formerly known as `AreCharObjColliding`, which is now obsolete)*
 
     Character.IsCollidingWithObject(Object* obj)
 
@@ -737,7 +737,7 @@ light.
 
 ### `Character.LockView`
 
-*(Formerly known as SetCharacterView, which is now obsolete)*
+*(Formerly known as `SetCharacterView`, which is now obsolete)*
 
     Character.LockView(int view, optional StopMovementStyle)
 
@@ -780,7 +780,7 @@ only by **AGS 3.4.1** and later versions.
 
 ### `Character.LockViewAligned`
 
-*(Formerly known as SetCharacterViewEx, which is now obsolete)*
+*(Formerly known as `SetCharacterViewEx`, which is now obsolete)*
 
     Character.LockViewAligned(int view, int loop, Alignment, optional StopMovementStyle)
 
@@ -839,7 +839,7 @@ only by **AGS 3.4.1** and later versions.
 
 ### `Character.LockViewFrame`
 
-*(Formerly known as SetCharacterFrame, which is now obsolete)*
+*(Formerly known as `SetCharacterFrame`, which is now obsolete)*
 
     Character.LockViewFrame(int view, int loop, int frame, optional StopMovementStyle)
 
@@ -875,7 +875,7 @@ only by **AGS 3.4.1** and later versions.
 
 ### `Character.LockViewOffset`
 
-*(Formerly known as SetCharacterViewOffset, which is now obsolete)*
+*(Formerly known as `SetCharacterViewOffset`, which is now obsolete)*
 
     Character.LockViewOffset(int view, int xOffset, int yOffset, optional StopMovementStyle)
 
@@ -929,9 +929,9 @@ only by **AGS 3.4.1** and later versions.
 
 ### `Character.LoseInventory`
 
-*(Formerly known as global function LoseInventory, which is now
+*(Formerly known as global function `LoseInventory`, which is now
 obsolete)*<br>
-*(Formerly known as LoseInventoryFromCharacter, which is now obsolete)*
+*(Formerly known as `LoseInventoryFromCharacter`, which is now obsolete)*
 
     Character.LoseInventory(InventoryItem *item)
 
@@ -990,7 +990,7 @@ his destination.
 
 ### `Character.PlaceOnWalkableArea`
 
-*(Formerly known as MoveToWalkableArea, which is now obsolete)*
+*(Formerly known as `MoveToWalkableArea`, which is now obsolete)*
 
     Character.PlaceOnWalkableArea()
 
@@ -1062,7 +1062,7 @@ Example:
 
 ### `Character.RunInteraction`
 
-*(Formerly known as RunCharacterInteraction, which is now obsolete)*
+*(Formerly known as `RunCharacterInteraction`, which is now obsolete)*
 
     Character.RunInteraction(CursorMode)
 
@@ -1085,7 +1085,7 @@ will execute the code defined in the MAN's "TALK TO CHARACTER" event.
 
 ### `Character.Say`
 
-*(Formerly known as DisplaySpeech, which is now obsolete)*
+*(Formerly known as `DisplaySpeech`, which is now obsolete)*
 
     Character.Say(string message)
 
@@ -1116,7 +1116,7 @@ games, whilst playing the character's talking animation.
 
 ### `Character.SayAt`
 
-*(Formerly known as DisplaySpeechAt, which is now obsolete)*
+*(Formerly known as `DisplaySpeechAt`, which is now obsolete)*
 
     SayAt(int x, int y, int width, string message)
 
@@ -1143,7 +1143,7 @@ playing the character's talking animation.
 
 ### `Character.SayBackground`
 
-*(Formerly known as DisplaySpeechBackground, which is now obsolete)*
+*(Formerly known as `DisplaySpeechBackground`, which is now obsolete)*
 
     Overlay* Character.SayBackground(string message)
 
@@ -1178,7 +1178,7 @@ game.
 
 ### `Character.SetAsPlayer`
 
-*(Formerly known as SetPlayerCharacter, which is now obsolete)*
+*(Formerly known as `SetPlayerCharacter`, which is now obsolete)*
 
     Character.SetAsPlayer()
 
@@ -1241,7 +1241,7 @@ This will give character EGO maximal individual brightness.
 
 ### `Character.SetIdleView`
 
-*(Formerly known as SetCharacterIdle, which is now obsolete)*
+*(Formerly known as `SetCharacterIdle`, which is now obsolete)*
 
     Character.SetIdleView(int idleview, int delay)
 
@@ -1274,8 +1274,8 @@ be played if the character is idle for 30 seconds.
 
 ### `Character.SetWalkSpeed`
 
-*(Formerly known as SetCharacterSpeed, which is now obsolete)*<br>
-*(Formerly known as SetCharacterSpeedEx, which is now obsolete)*
+*(Formerly known as `SetCharacterSpeed`, which is now obsolete)*<br>
+*(Formerly known as `SetCharacterSpeedEx`, which is now obsolete)*
 
     Character.SetWalkSpeed(int x_speed, int y_speed)
 
@@ -1308,7 +1308,7 @@ will change the character EGO's speed to 10.
 
 ### `Character.StopMoving`
 
-*(Formerly known as global function StopMoving, which is now obsolete)*
+*(Formerly known as global function `StopMoving`, which is now obsolete)*
 
     Character.StopMoving()
 
@@ -1331,7 +1331,7 @@ will stop the character when he reaches the coordinate x=300.
 
 ### `Character.Think`
 
-*(Formerly known as DisplayThought, which is now obsolete)*
+*(Formerly known as `DisplayThought`, which is now obsolete)*
 
     Character.Think(string message, ...)
 
@@ -1536,7 +1536,7 @@ property is false, then this value is meaningless.
 
 ### `Character.UnlockView`
 
-*(Formerly known as ReleaseCharacterView, which is now obsolete)*
+*(Formerly known as `ReleaseCharacterView`, which is now obsolete)*
 
     Character.UnlockView(StopMovementStyle=eStopMoving)
 
@@ -1567,9 +1567,9 @@ only by **AGS 3.4.1** and later versions.
 
 ### `Character.Walk`
 
-*(Formerly known as MoveCharacter, which is now obsolete)*<br>
-*(Formerly known as MoveCharacterBlocking, which is now obsolete)*<br>
-*(Formerly known as MoveCharacterDirect, which is now obsolete)*
+*(Formerly known as `MoveCharacter`, which is now obsolete)*<br>
+*(Formerly known as `MoveCharacterBlocking`, which is now obsolete)*<br>
+*(Formerly known as `MoveCharacterDirect`, which is now obsolete)*
 
     Character.Walk(int x, int y, optional BlockingStyle,
                                  optional WalkWhere);
@@ -1618,7 +1618,7 @@ until the character has reached his destination.
 
 ### `Character.WalkStraight`
 
-*(Formerly known as MoveCharacterStraight, which is now obsolete)*
+*(Formerly known as `MoveCharacterStraight`, which is now obsolete)*
 
     Character.WalkStraight(int x, int y, optional BlockingStyle);
 
@@ -1647,8 +1647,8 @@ will move the character EGO in a straight line towards co ordinates
 
 ### `Character.ActiveInventory`
 
-*(Formerly known as SetActiveInventory, which is now obsolete)*<br>
-*(Formerly known as character\[\].activeinv, which is now obsolete)*
+*(Formerly known as `SetActiveInventory`, which is now obsolete)*<br>
+*(Formerly known as `character\[\].activeinv`, which is now obsolete)*
 
     InventoryItem* Character.ActiveInventory
 
@@ -1672,7 +1672,7 @@ that the player has the inventory item)
 
 ### `Character.Animating`
 
-*(Formerly known as character\[\].animating, which is now obsolete)*
+*(Formerly known as `character\[\].animating`, which is now obsolete)*
 
     readonly bool Character.Animating
 
@@ -1701,7 +1701,7 @@ you wouldn't need to do this.
 
 ### `Character.AnimationSpeed`
 
-*(Formerly known as character\[\].animspeed, which is now obsolete)*
+*(Formerly known as `character\[\].animspeed`, which is now obsolete)*
 
     int Character.AnimationSpeed;
 
@@ -1720,7 +1720,7 @@ will change the player character's animation speed to 4.
 
 ### `Character.Baseline`
 
-*(Formerly known as SetCharacterBaseline, which is now obsolete)*
+*(Formerly known as `SetCharacterBaseline`, which is now obsolete)*
 
     int Character.Baseline
 
@@ -1746,7 +1746,7 @@ collisions, or for walk-behinds) to a line positioned at y coordinate =
 
 ### `Character.BlinkInterval`
 
-*(Formerly part of SetCharacterBlinkView, which is now obsolete)*
+*(Formerly part of `SetCharacterBlinkView`, which is now obsolete)*
 
     int Character.BlinkInterval
 
@@ -1773,7 +1773,7 @@ animation every 4 seconds.
 
 ### `Character.BlinkView`
 
-*(Formerly part of SetCharacterBlinkView, which is now obsolete)*
+*(Formerly part of `SetCharacterBlinkView`, which is now obsolete)*
 
     int Character.BlinkView
 
@@ -1880,7 +1880,7 @@ co-ordinate, and 25 to the right)
 
 ### `Character.Clickable`
 
-*(Formerly known as SetCharacterClickable, which is now obsolete)*
+*(Formerly known as `SetCharacterClickable`, which is now obsolete)*
 
     bool Character.Clickable
 
@@ -1940,7 +1940,7 @@ character is not walking or moving it is equal to its current position.
 
 ### `Character.DiagonalLoops`
 
-*(Formerly part of SetCharacterProperty, which is now obsolete)*
+*(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
     bool Character.DiagonalLoops
 
@@ -1959,7 +1959,7 @@ will enable diagonal walking loops for character EGO.
 
 ### `Character.Frame`
 
-*(Formerly known as character\[\].frame, which is now obsolete)*
+*(Formerly known as `character\[\].frame`, which is now obsolete)*
 
     int Character.Frame
 
@@ -2043,7 +2043,7 @@ will display EGO's current idle view number.
 
 ### `Character.IgnoreLighting`
 
-*(Formerly known as SetCharacterIgnoreLight, which is now obsolete)*
+*(Formerly known as `SetCharacterIgnoreLight`, which is now obsolete)*
 
     bool Character.IgnoreLighting
 
@@ -2065,7 +2065,7 @@ with different light levels.
 
 **This property is obsolete since AGS 3.5.0 and not recommended for use at all.**
 
-*(Formerly known as SetCharacterIgnoreWalkbehinds, which is now
+*(Formerly known as `SetCharacterIgnoreWalkbehinds`, which is now
 obsolete)*
 
     bool Character.IgnoreWalkbehinds
@@ -2084,7 +2084,7 @@ character as an overlay to display rain or snow onto a scene.
 
 ### `Character.InventoryQuantity`
 
-*(Formerly known as character\[\].inv, which is now obsolete)*
+*(Formerly known as `character\[\].inv`, which is now obsolete)*
 
     int Character.InventoryQuantity[]
 
@@ -2120,7 +2120,7 @@ will display how many inventory items of type iCash the player has.
 
 ### `Character.Loop`
 
-*(Formerly known as character\[\].loop, which is now obsolete)*
+*(Formerly known as `character\[\].loop`, which is now obsolete)*
 
     int Character.Loop
 
@@ -2141,8 +2141,8 @@ displays EGO's current loop number within his view.
 
 ### `Character.ManualScaling`
 
-*(Formerly known as Character.IgnoreScaling, which is now obsolete)*<br>
-*(Formerly part of SetCharacterProperty, which is now obsolete)*
+*(Formerly known as `Character.IgnoreScaling`, which is now obsolete)*<br>
+*(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
     bool Character.ManualScaling
 
@@ -2204,7 +2204,7 @@ him to (50,100), then turn it back on again.
 
 ### `Character.Moving`
 
-*(Formerly known as character\[\].walking, which is now obsolete)*
+*(Formerly known as `character\[\].walking`, which is now obsolete)*
 
     readonly bool Character.Moving
 
@@ -2233,7 +2233,7 @@ there.
 
 ### `Character.Name`
 
-*(Formerly known as character\[\].name, which is now obsolete)*
+*(Formerly known as `character\[\].name`, which is now obsolete)*
 
     String Character.Name
 
@@ -2253,7 +2253,7 @@ will display the name of the player character
 
 ### `Character.NormalView`
 
-*(Formerly known as character\[\].defview, which is now obsolete)*
+*(Formerly known as `character\[\].defview`, which is now obsolete)*
 
     readonly int Character.NormalView
 
@@ -2280,7 +2280,7 @@ view.
 
 ### `Character.PreviousRoom`
 
-*(Formerly known as character\[\].prevroom, which is now obsolete)*
+*(Formerly known as `character\[\].prevroom`, which is now obsolete)*
 
     readonly int Character.PreviousRoom
 
@@ -2302,7 +2302,7 @@ will display the EGO character's previous room.
 
 ### `Character.Room`
 
-*(Formerly known as character\[\].room, which is now obsolete)*
+*(Formerly known as `character\[\].room`, which is now obsolete)*
 
     readonly int Character.Room
 
@@ -2321,7 +2321,7 @@ will display the EGO character's current room.
 
 ### `Character.ScaleMoveSpeed`
 
-*(Formerly part of SetCharacterProperty, which is now obsolete)*
+*(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
     bool Character.ScaleMoveSpeed
 
@@ -2400,7 +2400,7 @@ will tell EGO to ignore walkable area scaling levels and be fixed to
 
 ### `Character.Solid`
 
-*(Formerly part of SetCharacterProperty, which is now obsolete)*
+*(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
     bool Character.Solid
 
@@ -2523,7 +2523,7 @@ will change the player character's speech animation speed to 4.
 
 ### `Character.SpeechColor`
 
-*(Formerly known as SetTalkingColor, which is now obsolete)*
+*(Formerly known as `SetTalkingColor`, which is now obsolete)*
 
     int Character.SpeechColor
 
@@ -2546,8 +2546,8 @@ will change the character's EGO talking color to yellow.
 
 ### `Character.SpeechView`
 
-*(Formerly known as SetCharacterSpeechView, which is now obsolete)*<br>
-*(Formerly known as character\[\].talkview, which is now obsolete)*
+*(Formerly known as `SetCharacterSpeechView`, which is now obsolete)*<br>
+*(Formerly known as `character\[\].talkview`, which is now obsolete)*
 
     int Character.SpeechView
 
@@ -2644,7 +2644,7 @@ to Frame 0.
 
 ### `Character.ThinkView`
 
-*(Formerly known as character\[\].thinkview, which is now obsolete)*
+*(Formerly known as `character\[\].thinkview`, which is now obsolete)*
 
     int Character.ThinkView
 
@@ -2663,7 +2663,7 @@ will change the character EGO's thinking view to 14.
 
 ### `Character.Transparency`
 
-*(Formerly known as SetCharacterTransparency, which is now obsolete)*
+*(Formerly known as `SetCharacterTransparency`, which is now obsolete)*
 
     int Character.Transparency
 
@@ -2704,7 +2704,7 @@ level to being fully invisible.
 
 ### `Character.TurnBeforeWalking`
 
-*(Formerly part of SetCharacterProperty, which is now obsolete)*
+*(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
     bool Character.TurnBeforeWalking
 

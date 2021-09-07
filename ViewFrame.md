@@ -2,7 +2,7 @@
 
 ### `ViewFrame.Flipped`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly bool ViewFrame.Flipped
 
@@ -25,7 +25,7 @@ Example:
 
 ### `ViewFrame.Frame`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly int ViewFrame.Frame
 
@@ -45,7 +45,7 @@ Example:
 
 ### `ViewFrame.Graphic`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     int ViewFrame.Graphic
 
@@ -62,9 +62,9 @@ Example:
 
 ### `ViewFrame.LinkedAudio`
 
-*(Formerly known as ViewFrame.Sound, which is now obsolete)*<br>
-*(Formerly known as SetFrameSound, which is now obsolete)*<br>
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly known as `ViewFrame.Sound`, which is now obsolete)*<br>
+*(Formerly known as `SetFrameSound`, which is now obsolete)*<br>
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     AudioClip* ViewFrame.LinkedAudio
 
@@ -96,7 +96,7 @@ if so, plays it.
 
 ### `ViewFrame.Loop`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly int ViewFrame.Loop
 
@@ -116,7 +116,7 @@ Example:
 
 ### `ViewFrame.Speed`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly int ViewFrame.Speed
 
@@ -134,7 +134,7 @@ Example:
 
 ### `ViewFrame.View`
 
-*(Formerly part of GetGameParameter, which is now obsolete)*
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
 
     readonly int ViewFrame.View
 

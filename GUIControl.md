@@ -9,7 +9,7 @@ has its own specific section.
 
 ### `GUIControl.GetAtScreenXY`
 
-*(Formerly known as GetGUIObjectAt, which is now obsolete)*
+*(Formerly known as `GetGUIObjectAt`, which is now obsolete)*
 
     static GUIControl* GUIControl.GetAtScreenXY(int x, int y)
 
@@ -127,7 +127,7 @@ will make the *btnSaveGame* button non-clickable.
 
 ### `GUIControl.Enabled`
 
-*(Formerly known as SetGUIObjectEnabled, which is now obsolete)*
+*(Formerly known as `SetGUIObjectEnabled`, which is now obsolete)*
 
     bool GUIControl.Enabled
 
@@ -266,7 +266,7 @@ the GUI.
 
 ### `GUIControl.SetPosition`
 
-*(Formerly known as SetGUIObjectPosition, which is now obsolete)*
+*(Formerly known as `SetGUIObjectPosition`, which is now obsolete)*
 
     GUIControl.SetPosition(int x, int y)
 
@@ -298,7 +298,7 @@ GUI.
 
 ### `GUIControl.SetSize`
 
-*(Formerly known as SetGUIObjectSize, which is now obsolete)*
+*(Formerly known as `SetGUIObjectSize`, which is now obsolete)*
 
     GUIControl.SetSize(int width, int height)
 

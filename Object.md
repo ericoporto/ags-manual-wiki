@@ -2,8 +2,8 @@
 
 ### `Object.Animate`
 
-*(Formerly known as AnimateObject, which is now obsolete)*<br>
-*(Formerly known as AnimateObjectEx, which is now obsolete)*
+*(Formerly known as `AnimateObject`, which is now obsolete)*<br>
+*(Formerly known as `AnimateObjectEx`, which is now obsolete)*
 
     Object.Animate(int loop, int delay, optional RepeatStyle,
                    optional BlockingStyle, optional Direction, optional int frame)
@@ -85,7 +85,7 @@ will display the message if the object oBullet is over the object oWall.
 
 ### `Object.GetAtScreenXY`
 
-*(Formerly known as global function GetObjectAt, which is now obsolete)*
+*(Formerly known as global function `GetObjectAt`, which is now obsolete)*
 
     static Object* Object.GetAtScreenXY(int x, int y)
 
@@ -108,7 +108,7 @@ will display the message if there is the object oRock under the mouse cursor.
 
 ### `Object.GetProperty`
 
-*(Formerly known as GetObjectProperty, which is now obsolete)*
+*(Formerly known as `GetObjectProperty`, which is now obsolete)*
 
     Object.GetProperty(string property)
 
@@ -134,8 +134,8 @@ than 200.
 
 ### `Object.GetTextProperty`
 
-*(Formerly known as GetObjectPropertyText, which is now obsolete)*<br>
-*(Formerly known as Object.GetPropertyText, which is now obsolete)*
+*(Formerly known as `GetObjectPropertyText`, which is now obsolete)*<br>
+*(Formerly known as `Object.GetPropertyText`, which is now obsolete)*
 
     String Object.GetTextProperty(string property)
 
@@ -210,7 +210,7 @@ will change table's "description" property.
 
 ### `Object.IsCollidingWithObject`
 
-*(Formerly known as AreObjectsColliding, which is now obsolete)*
+*(Formerly known as `AreObjectsColliding`, which is now obsolete)*
 
     bool Object.IsCollidingWithObject(Object* obj2)
 
@@ -259,7 +259,7 @@ Example:
 
 ### `Object.MergeIntoBackground`
 
-*(Formerly known as MergeObject, which is now obsolete)*
+*(Formerly known as `MergeObject`, which is now obsolete)*
 
     Object.MergeIntoBackground()
 
@@ -287,8 +287,8 @@ the object unusable.
 
 ### `Object.Move`
 
-*(Formerly known as MoveObject, which is now obsolete)*<br>
-*(Formerly known as MoveObjectDirect, which is now obsolete)*
+*(Formerly known as `MoveObject`, which is now obsolete)*<br>
+*(Formerly known as `MoveObjectDirect`, which is now obsolete)*
 
     Object.Move(int x, int y, int speed, optional BlockingStyle,
                 optional WalkWhere);
@@ -325,7 +325,7 @@ object gets there.
 
 ### `Object.RemoveTint`
 
-*(Formerly known as RemoveObjectTint, which is now obsolete)*
+*(Formerly known as `RemoveObjectTint`, which is now obsolete)*
 
     Object.RemoveTint()
 
@@ -346,7 +346,7 @@ will tint object 1 green for a second, then turn it back to normal.
 
 ### `Object.RunInteraction`
 
-*(Formerly known as RunObjectInteraction, which is now obsolete)*
+*(Formerly known as `RunObjectInteraction`, which is now obsolete)*
 
     Object.RunInteraction(CursorMode)
 
@@ -405,7 +405,7 @@ This will give the lamp maximal individual brightness.
 
 ### `Object.SetPosition`
 
-*(Formerly known as SetObjectPosition, which is now obsolete)*
+*(Formerly known as `SetObjectPosition`, which is now obsolete)*
 
     Object.SetPosition(int x, int y)
 
@@ -430,8 +430,8 @@ will change object's 2 position to 50,100.
 
 ### `Object.SetView`
 
-*(Formerly known as SetObjectFrame, which is now obsolete)*<br>
-*(Formerly known as SetObjectView, which is now obsolete)*
+*(Formerly known as `SetObjectFrame`, which is now obsolete)*<br>
+*(Formerly known as `SetObjectView`, which is now obsolete)*
 
     Object.SetView(int view, optional int loop, optional int frame)
 
@@ -478,7 +478,7 @@ will stop object 2 animating if it currently is doing so.
 
 ### `Object.StopMoving`
 
-*(Formerly known as StopObjectMoving, which is now obsolete)*
+*(Formerly known as `StopObjectMoving`, which is now obsolete)*
 
     Object.StopMoving()
 
@@ -501,7 +501,7 @@ will stop object 2 moving if it currently is doing so.
 
 ### `Object.Tint`
 
-*(Formerly known as SetObjectTint, which is now obsolete)*
+*(Formerly known as `SetObjectTint`, which is now obsolete)*
 
     Object.Tint(int red, int green, int blue,
                 int saturation, int luminance)
@@ -536,7 +536,7 @@ will tint object 1 green.
 
 ### `Object.Animating`
 
-*(Formerly known as IsObjectAnimating, which is now obsolete)*
+*(Formerly known as `IsObjectAnimating`, which is now obsolete)*
 
     readonly bool Object.Animating
 
@@ -565,8 +565,8 @@ you wouldn't need to do this.
 
 ### `Object.Baseline`
 
-*(Formerly known as GetObjectBaseline, which is now obsolete)*<br>
-*(Formerly known as SetObjectBaseline, which is now obsolete)*
+*(Formerly known as `GetObjectBaseline`, which is now obsolete)*<br>
+*(Formerly known as `SetObjectBaseline`, which is now obsolete)*
 
     int Object.Baseline
 
@@ -655,7 +655,7 @@ its center, and 25 to the right)
 
 ### `Object.Clickable`
 
-*(Formerly known as SetObjectClickable, which is now obsolete)*
+*(Formerly known as `SetObjectClickable`, which is now obsolete)*
 
     bool Object.Clickable
 
@@ -709,8 +709,8 @@ will display the oDoor object's current frame number
 
 ### `Object.Graphic`
 
-*(Formerly known as GetObjectGraphic, which is now obsolete)*<br>
-*(Formerly known as SetObjectGraphic, which is now obsolete)*
+*(Formerly known as `GetObjectGraphic`, which is now obsolete)*<br>
+*(Formerly known as `SetObjectGraphic`, which is now obsolete)*
 
     int Object.Graphic
 
@@ -806,7 +806,7 @@ will tell the Door object not to be scaled on walkable areas.
 
 **This property is obsolete since AGS 3.5.0 and not recommended for use at all.**
 
-*(Formerly known as SetObjectIgnoreWalkbehinds, which is now obsolete)*
+*(Formerly known as `SetObjectIgnoreWalkbehinds`, which is now obsolete)*
 
     bool Object.IgnoreWalkbehinds
 
@@ -867,7 +867,7 @@ will display the oDoor object's current loop number
 
 ### `Object.Moving`
 
-*(Formerly known as IsObjectMoving, which is now obsolete)*
+*(Formerly known as `IsObjectMoving`, which is now obsolete)*
 
     readonly bool Object.Moving
 
@@ -892,8 +892,8 @@ object gets there.
 
 ### `Object.Name`
 
-*(Formerly known as GetObjectName, which is now obsolete)*<br>
-*(Formerly known as Object.GetName, which is now obsolete)*
+*(Formerly known as `GetObjectName`, which is now obsolete)*<br>
+*(Formerly known as `Object.GetName`, which is now obsolete)*
 
     readonly String Object.Name;
 
@@ -1053,7 +1053,7 @@ false, then this value is meaningless.
 
 ### `Object.Transparency`
 
-*(Formerly known as SetObjectTransparency, which is now obsolete)*
+*(Formerly known as `SetObjectTransparency`, which is now obsolete)*
 
     int Object.Transparency
 
@@ -1120,9 +1120,9 @@ will display the oDoor object's current view number
 
 ### `Object.Visible`
 
-*(Formerly known as IsObjectOn, which is now obsolete)*<br>
-*(Formerly known as ObjectOff, which is now obsolete)*<br>
-*(Formerly known as ObjectOn, which is now obsolete)*
+*(Formerly known as `IsObjectOn`, which is now obsolete)*<br>
+*(Formerly known as `ObjectOff`, which is now obsolete)*<br>
+*(Formerly known as `ObjectOn`, which is now obsolete)*
 
     bool Object.Visible
 
@@ -1143,7 +1143,7 @@ will make object number 5 in the current room disappear.
 
 ### `Object.X`
 
-*(Formerly known as GetObjectX, which is now obsolete)*
+*(Formerly known as `GetObjectX`, which is now obsolete)*
 
     int Object.X
 
@@ -1166,7 +1166,7 @@ will display the X co-ordinate of object 1.
 
 ### `Object.Y`
 
-*(Formerly known as GetObjectY, which is now obsolete)*
+*(Formerly known as `GetObjectY`, which is now obsolete)*
 
     int Object.Y
 

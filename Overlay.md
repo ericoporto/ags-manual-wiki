@@ -2,7 +2,7 @@
 
 ### `Overlay.CreateGraphical`
 
-*(Formerly known as CreateGraphicOverlay, which is now obsolete)*
+*(Formerly known as `CreateGraphicOverlay`, which is now obsolete)*
 
     static Overlay* Overlay.CreateGraphical(int x, int y, int slot, bool transparent)
 
@@ -35,7 +35,7 @@ it.
 
 ### `Overlay.CreateTextual`
 
-*(Formerly known as CreateTextOverlay, which is now obsolete)*
+*(Formerly known as `CreateTextOverlay`, which is now obsolete)*
 
     static Overlay* Overlay.CreateTextual(int x, int y, int width,
                                           FontType font, int color, string text)
@@ -94,7 +94,7 @@ removed.
 
 ### `Overlay.Remove`
 
-*(Formerly known as RemoveOverlay, which is now obsolete)*
+*(Formerly known as `RemoveOverlay`, which is now obsolete)*
 
     Overlay.Remove()
 
@@ -116,7 +116,7 @@ and then remove the overlay from the screen.
 
 ### `Overlay.SetText`
 
-*(Formerly known as SetTextOverlay, which is now obsolete)*
+*(Formerly known as `SetTextOverlay`, which is now obsolete)*
 
     Overlay.SetText(int width, FontType font, int color, string text, ...)
 
@@ -143,7 +143,7 @@ and then replace the overlay with another one.
 
 ### `Overlay.Valid`
 
-*(Formerly known as IsOverlayValid, which is now obsolete)*
+*(Formerly known as `IsOverlayValid`, which is now obsolete)*
 
     readonly bool Overlay.Valid;
 
@@ -167,7 +167,7 @@ Then, removes the overlay and prints Valid again (which will now be 0).
 
 ### `Overlay.X`
 
-*(Formerly known as MoveOverlay, which is now obsolete)*
+*(Formerly known as `MoveOverlay`, which is now obsolete)*
 
     int Overlay.X;
 
@@ -195,7 +195,7 @@ creates a text overlay, then gradually slides it across the screen.
 
 ### `Overlay.Y`
 
-*(Formerly known as MoveOverlay, which is now obsolete)*
+*(Formerly known as `MoveOverlay`, which is now obsolete)*
 
     int Overlay.Y;
 

@@ -6,7 +6,7 @@ Label is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GUI
 
 ### `Label.Font`
 
-*(Formerly known as SetLabelFont, which is now obsolete)*
+*(Formerly known as `SetLabelFont`, which is now obsolete)*
 
     FontType Label.Font;
 
@@ -31,9 +31,9 @@ translation is in use.
 
 ### `Label.Text`
 
-*(Formerly known as SetLabelText, which is now obsolete)*<br>
-*(Formerly known as Label.GetText, which is now obsolete)*<br>
-*(Formerly known as Label.SetText, which is now obsolete)*
+*(Formerly known as `SetLabelText`, which is now obsolete)*<br>
+*(Formerly known as `Label.GetText`, which is now obsolete)*<br>
+*(Formerly known as `Label.SetText`, which is now obsolete)*
 
     String Label.Text;
 
@@ -70,7 +70,7 @@ Gets/sets how the text is aligned relative to the label's rectangle. Note that c
 
 ### `Label.TextColor`
 
-*(Formerly known as SetLabelColor, which is now obsolete)*
+*(Formerly known as `SetLabelColor`, which is now obsolete)*
 
     int Label.TextColor;
 

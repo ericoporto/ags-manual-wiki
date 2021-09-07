@@ -97,7 +97,7 @@ will display a message if Caps Lock is on.
 
 ### `System.ColorDepth`
 
-*(Formerly known as system.color_depth, which is now obsolete)*
+*(Formerly known as `system.color_depth`, which is now obsolete)*
 
     readonly static int System.ColorDepth;
 
@@ -236,7 +236,7 @@ will display a message if Num Lock is on.
 
 ### `System.OperatingSystem`
 
-*(Formerly known as system.os, which is now obsolete)*
+*(Formerly known as `system.os`, which is now obsolete)*
 
     readonly static eOperatingSystem System.OperatingSystem;
 
@@ -316,7 +316,7 @@ Example:
 
 **This property is obsolete since AGS 3.5.0. Use [`Screen.Height`](Screen#screenheight) instead.**
 
-*(Formerly known as system.screen_height, which is now obsolete)*
+*(Formerly known as `system.screen_height`, which is now obsolete)*
 
     readonly static int System.ScreenHeight;
 
@@ -331,7 +331,7 @@ Returns the game's screen height in native coordinates, **not** accounting for t
 
 **This property is obsolete since AGS 3.5.0. Use [`Screen.Width`](Screen#screenwidth) instead.**
 
-*(Formerly known as system.screen_width, which is now obsolete)*
+*(Formerly known as `system.screen_width`, which is now obsolete)*
 
     readonly static int System.ScreenWidth;
 
@@ -399,7 +399,7 @@ will display a message if the system supports changing the gamma
 
 ### `System.Version`
 
-*(Formerly known as system.version, which is now obsolete)*
+*(Formerly known as `system.version`, which is now obsolete)*
 
     readonly static String System.Version;
 
@@ -421,7 +421,7 @@ will display the AGS version number
 
 **This property is obsolete since AGS 3.5.0. Use [`Screen.Height`](Screen#screenheight) instead.**
 
-*(Formerly known as system.viewport_height, which is now obsolete)*
+*(Formerly known as `system.viewport_height`, which is now obsolete)*
 
     readonly static int System.ViewportHeight;
 
@@ -437,7 +437,7 @@ Note that before AGS 3.5.0 there was no differentiation between "game's viewport
 
 **This property is obsolete since AGS 3.5.0. Use [`Screen.Width`](Screen#screenwidth) instead.**
 
-*(Formerly known as system.viewport_width, which is now obsolete)*
+*(Formerly known as `system.viewport_width`, which is now obsolete)*
 
     readonly static int System.ViewportWidth;
 
@@ -451,8 +451,8 @@ Note that before AGS 3.5.0 there was no differentiation between "game's viewport
 
 ### `System.Volume`
 
-*(Formerly known as SetDigitalMasterVolume, which is now obsolete)*<br>
-*(Formerly known as SetMusicMasterVolume, which is now obsolete)*
+*(Formerly known as `SetDigitalMasterVolume`, which is now obsolete)*<br>
+*(Formerly known as `SetMusicMasterVolume`, which is now obsolete)*
 
     static int System.Volume;
 
@@ -476,7 +476,7 @@ will set the overall output volume to 80.
 
 ### `System.VSync`
 
-*(Formerly known as system.vsync, which is now obsolete)*
+*(Formerly known as `system.vsync`, which is now obsolete)*
 
     static bool System.VSync;
 
@@ -502,7 +502,7 @@ will display a message if vsync is on
 
 ### `System.Windowed`
 
-*(Formerly known as system.windowed, which is now obsolete)*
+*(Formerly known as `system.windowed`, which is now obsolete)*
 
     static bool System.Windowed;
 

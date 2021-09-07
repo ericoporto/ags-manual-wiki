@@ -2,7 +2,7 @@
 
 ### `Mouse.ChangeModeGraphic`
 
-*(Formerly known as ChangeCursorGraphic, which is now obsolete)*
+*(Formerly known as `ChangeCursorGraphic`, which is now obsolete)*
 
     Mouse.ChangeModeGraphic(CursorMode, int slot)
 
@@ -31,7 +31,7 @@ imported in the sprite's manager slot 120.
 
 ### `Mouse.ChangeModeHotspot`
 
-*(Formerly known as ChangeCursorHotspot, which is now obsolete)*
+*(Formerly known as `ChangeCursorHotspot`, which is now obsolete)*
 
     Mouse.ChangeModeHotspot(CursorMode, int x, int y)
 
@@ -125,7 +125,7 @@ Settable since **AGS 3.5.0**.
 
 ### `Mouse.DisableMode`
 
-*(Formerly known as DisableCursorMode, which is now obsolete)*
+*(Formerly known as `DisableCursorMode`, which is now obsolete)*
 
     Mouse.DisableMode(int mode)
 
@@ -150,7 +150,7 @@ will make the walk mode unavailable until it's enabled again.
 
 ### `Mouse.EnableMode`
 
-*(Formerly known as EnableCursorMode, which is now obsolete)*
+*(Formerly known as `EnableCursorMode`, which is now obsolete)*
 
     Mouse.EnableMode(int mode)
 
@@ -209,7 +209,7 @@ will display the sprite slot number of the current mouse cursor.
 
 ### `Mouse.IsButtonDown`
 
-*(Formerly known as global function IsButtonDown, which is now
+*(Formerly known as global function `IsButtonDown`, which is now
 obsolete)*
 
     Mouse.IsButtonDown(MouseButton)
@@ -246,7 +246,7 @@ versions.<br>
 
 ### `Mouse.SaveCursorUntilItLeaves`
 
-*(Formerly known as SaveCursorForLocationChange, which is now obsolete)*
+*(Formerly known as `SaveCursorForLocationChange`, which is now obsolete)*
 
     Mouse.SaveCursorUntilItLeaves()
 
@@ -274,7 +274,7 @@ current object
 
 ### `Mouse.SelectNextMode`
 
-*(Formerly known as SetNextCursorMode, which is now obsolete)*
+*(Formerly known as `SetNextCursorMode`, which is now obsolete)*
 
     Mouse.SelectNextMode()
 
@@ -302,7 +302,7 @@ the Use Inventory mode if the player has an active inventory item.
 
 ### `Mouse.SetBounds`
 
-*(Formerly known as SetMouseBounds, which is now obsolete)*
+*(Formerly known as `SetMouseBounds`, which is now obsolete)*
 
     Mouse.SetBounds(int left, int top, int right, int bottom)
 
@@ -329,7 +329,7 @@ screen of a game that has screen resolution of 320x200.
 
 ### `Mouse.SetPosition`
 
-*(Formerly known as SetMousePosition, which is now obsolete)*
+*(Formerly known as `SetMousePosition`, which is now obsolete)*
 
     Mouse.SetPosition(int x, int y)
 
@@ -390,7 +390,7 @@ converts slider control's position into mouse speed.
 
 ### `Mouse.Update`
 
-*(Formerly known as RefreshMouse, which is now obsolete)*
+*(Formerly known as `RefreshMouse`, which is now obsolete)*
 
     Mouse.Update();
 
@@ -413,7 +413,7 @@ will display the mouse position just before each dialog box is displayed
 
 ### `Mouse.UseDefaultGraphic`
 
-*(Formerly known as SetDefaultCursor, which is now obsolete)*
+*(Formerly known as `SetDefaultCursor`, which is now obsolete)*
 
     Mouse.UseDefaultGraphic()
 
@@ -427,7 +427,7 @@ changed it with the UseModeGraphic function.
 
 ### `Mouse.UseModeGraphic`
 
-*(Formerly known as SetMouseCursor, which is now obsolete)*
+*(Formerly known as `SetMouseCursor`, which is now obsolete)*
 
     Mouse.UseModeGraphic(CursorMode)
 
@@ -452,8 +452,8 @@ Cursors tab.
 
 ### `Mouse.Mode`
 
-*(Formerly known as GetCursorMode, which is now obsolete)*<br>
-*(Formerly known as SetCursorMode, which is now obsolete)*
+*(Formerly known as `GetCursorMode`, which is now obsolete)*<br>
+*(Formerly known as `SetCursorMode`, which is now obsolete)*
 
     int Mouse.Mode;
 
@@ -483,8 +483,8 @@ will execute the code only if the current cursor mode is MODE 0 (WALK).
 
 ### `Mouse.Visible`
 
-*(Formerly known as HideMouseCursor, which is now obsolete)*<br>
-*(Formerly known as ShowMouseCursor, which is now obsolete)*
+*(Formerly known as `HideMouseCursor`, which is now obsolete)*<br>
+*(Formerly known as `ShowMouseCursor`, which is now obsolete)*
 
     bool Mouse.Visible;
 

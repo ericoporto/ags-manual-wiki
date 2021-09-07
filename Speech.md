@@ -2,7 +2,7 @@
 
 ### `Speech.AnimationStopTimeMargin`
 
-*(Formerly known as game.close_mouth_end_speech_time, which is now
+*(Formerly known as `game.close_mouth_end_speech_time`, which is now
 obsolete)*
 
     static int Speech.AnimationStopTimeMargin
@@ -69,7 +69,7 @@ and is set to zero by default.
 
 ### `Speech.GlobalSpeechAnimationDelay`
 
-*(Formerly known as game.talkanim_speed, which is now obsolete)*
+*(Formerly known as `game.talkanim_speed`, which is now obsolete)*
 
     static int Speech.GlobalSpeechAnimationDelay
 
@@ -131,7 +131,7 @@ Gets/sets the character's speech portrait **y** coordinate on screen.
 
 ### `Speech.SkipKey`
 
-*(Formerly known as game.skip_speech_specific_key, which is now
+*(Formerly known as `game.skip_speech_specific_key`, which is now
 obsolete)*
 
     static eKeyCode Speech.SkipKey
@@ -155,7 +155,7 @@ will assign the "space" key to skip the speech.
 
 ### `Speech.SkipStyle`
 
-*(Formerly known as SetSkipSpeech, which is now obsolete)*
+*(Formerly known as `SetSkipSpeech`, which is now obsolete)*
 
     static SkipSpeechStyle Speech.SkipStyle
 
@@ -187,7 +187,7 @@ or a key.
 
 ### `Speech.Style`
 
-*(Formerly known as SetSpeechStyle, which is now obsolete)*
+*(Formerly known as `SetSpeechStyle`, which is now obsolete)*
 
     static eSpeechStyle Speech.Style
 
@@ -213,7 +213,7 @@ will change the speech style to a close up portrait of the character.
 
 ### `Speech.TextAlignment`
 
-*(Formerly known as game.speech_text_align, which is now obsolete)*
+*(Formerly known as `game.speech_text_align`, which is now obsolete)*
 
     static Alignment Speech.TextAlignment
 
@@ -259,7 +259,7 @@ will make the game use global speech animation delay.
 
 ### `Speech.VoiceMode`
 
-*(Formerly known as SetVoiceMode, which is now obsolete)*
+*(Formerly known as `SetVoiceMode`, which is now obsolete)*
 
     static eVoiceMode Speech.VoiceMode
 

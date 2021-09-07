@@ -91,7 +91,7 @@ inventory window.
 
 ### `InvWindow.ItemCount`
 
-*(Formerly known as game.num_inv_items, which is now obsolete)*
+*(Formerly known as `game.num_inv_items`, which is now obsolete)*
 
     readonly int InvWindow.ItemCount;
 
@@ -118,7 +118,7 @@ more inventory items than will fit in the inventory window.
 
 ### `InvWindow.ItemHeight`
 
-*(Formerly known as SetInvDimensions, which is now obsolete)*
+*(Formerly known as `SetInvDimensions`, which is now obsolete)*
 
     int InvWindow.ItemHeight;
 
@@ -140,7 +140,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 
 ### `InvWindow.ItemWidth`
 
-*(Formerly known as SetInvDimensions, which is now obsolete)*
+*(Formerly known as `SetInvDimensions`, which is now obsolete)*
 
     int InvWindow.ItemWidth;
 
@@ -162,7 +162,7 @@ sets the *invMain* inventory window to use item cells 50x30 large.
 
 ### `InvWindow.ItemsPerRow`
 
-*(Formerly known as game.items_per_line, which is now obsolete)*
+*(Formerly known as `game.items_per_line`, which is now obsolete)*
 
     readonly int InvWindow.ItemsPerRow;
 
@@ -202,7 +202,7 @@ displays how many items can be visible in the invMain window at once.
 
 ### `InvWindow.TopItem`
 
-*(Formerly known as game.top_inv_item, which is now obsolete)*
+*(Formerly known as `game.top_inv_item`, which is now obsolete)*
 
     int InvWindow.TopItem;
 

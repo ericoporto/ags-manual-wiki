@@ -18,7 +18,7 @@ copies of the image and upload it to video memory if appropriate.
 
 ### `DrawingSurface.Clear`
 
-*(Formerly known as RawClearScreen, which is now obsolete)*
+*(Formerly known as `RawClearScreen`, which is now obsolete)*
 
     DrawingSurface.Clear(optional int color)
 
@@ -47,7 +47,7 @@ in the middle of it.
 
 ### `DrawingSurface.CreateCopy`
 
-*(Formerly known as RawSaveScreen, which is now obsolete)*
+*(Formerly known as `RawSaveScreen`, which is now obsolete)*
 
     DrawingSurface* DrawingSurface.CreateCopy()
 
@@ -84,7 +84,7 @@ for a while and then restore the original background.
 
 ### `DrawingSurface.DrawCircle`
 
-*(Formerly known as RawDrawCircle, which is now obsolete)*
+*(Formerly known as `RawDrawCircle`, which is now obsolete)*
 
     DrawingSurface.DrawCircle(int x, int y, int radius)
 
@@ -108,9 +108,9 @@ will draw a circle in the center of the screen, of 50 pixels radius.
 
 ### `DrawingSurface.DrawImage`
 
-*(Formerly known as RawDrawImage, which is now obsolete)*<br>
-*(Formerly known as RawDrawImageResized, which is now obsolete)*<br>
-*(Formerly known as RawDrawImageTransparent, which is now obsolete)*
+*(Formerly known as `RawDrawImage`, which is now obsolete)*<br>
+*(Formerly known as `RawDrawImageResized`, which is now obsolete)*<br>
+*(Formerly known as `RawDrawImageTransparent`, which is now obsolete)*
 
     DrawingSurface.DrawImage(int x, int y, int slot, optional int transparency,
                              optional int width, optional int height)
@@ -155,7 +155,7 @@ will draw the *oDoor* object's graphic onto the room background at (100,
 
 ### `DrawingSurface.DrawLine`
 
-*(Formerly known as RawDrawLine, which is now obsolete)*
+*(Formerly known as `RawDrawLine`, which is now obsolete)*
 
     DrawingSurface.DrawLine(int from_x, int from_y, int to_x, int to_y,
                             optional int thickness)
@@ -190,7 +190,7 @@ the screen (160,100);
 
 ### `DrawingSurface.DrawMessageWrapped`
 
-*(Formerly known as RawPrintMessageWrapped, which is now obsolete)*
+*(Formerly known as `RawPrintMessageWrapped`, which is now obsolete)*
 
     DrawingSurface.DrawMessageWrapped(int x, int y, int width,
                                       FontType font, int message_number)
@@ -253,7 +253,7 @@ draws a yellow pixel in the top left of the room background
 
 ### `DrawingSurface.DrawRectangle`
 
-*(Formerly known as RawDrawRectangle, which is now obsolete)*
+*(Formerly known as `RawDrawRectangle`, which is now obsolete)*
 
     DrawingSurface.DrawRectangle(int x1, int y1, int x2, int y2)
 
@@ -281,7 +281,7 @@ will draw a rectangle over the top left hand quarter of the screen.
 
 ### `DrawingSurface.DrawString`
 
-*(Formerly known as RawPrint, which is now obsolete)*
+*(Formerly known as `RawPrint`, which is now obsolete)*
 
     DrawingSurface.DrawString(int x, int y, FontType font, string text, ...)
 
@@ -341,8 +341,8 @@ will display the text in the center of the screen, starting from Y = 40.
 
 ### `DrawingSurface.DrawSurface`
 
-*(Formerly known as RawDrawFrameTransparent, which is now obsolete)*<br>
-*(Formerly known as RawRestoreScreen, which is now obsolete)*
+*(Formerly known as `RawDrawFrameTransparent`, which is now obsolete)*<br>
+*(Formerly known as `RawRestoreScreen`, which is now obsolete)*
 
     DrawingSurface.DrawSurface(DrawingSurface *source, optional int transparency)
 
@@ -380,7 +380,7 @@ this will draw background frame 1 onto frame 0 at 50`%` opacity.
 
 ### `DrawingSurface.DrawTriangle`
 
-*(Formerly known as RawDrawTriangle, which is now obsolete)*
+*(Formerly known as `RawDrawTriangle`, which is now obsolete)*
 
     DrawingSurface.DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3)
 
@@ -433,7 +433,7 @@ background, then releases the image.
 
 ### `DrawingSurface.DrawingColor`
 
-*(Formerly known as RawSetColor, which is now obsolete)*
+*(Formerly known as `RawSetColor`, which is now obsolete)*
 
     int DrawingSurface.DrawingColor
 

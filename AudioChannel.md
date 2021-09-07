@@ -9,9 +9,9 @@ them.
 
 ### `AudioChannel.Seek`
 
-*(Formerly known as SeekMIDIPosition, which is now obsolete)*<br>
-*(Formerly known as SeekMODPattern, which is now obsolete)*<br>
-*(Formerly known as SeekMP3PosMillis, which is now obsolete)*
+*(Formerly known as `SeekMIDIPosition`, which is now obsolete)*<br>
+*(Formerly known as `SeekMODPattern`, which is now obsolete)*<br>
+*(Formerly known as `SeekMP3PosMillis`, which is now obsolete)*
 
     AudioChannel.Seek(int position)
 
@@ -43,7 +43,7 @@ seek it back to the start.
 
 ### `AudioChannel.SetRoomLocation`
 
-*(Formerly part of PlayAmbientSound, which is now obsolete)*
+*(Formerly part of `PlayAmbientSound`, which is now obsolete)*
 
     AudioChannel.SetRoomLocation(int x, int y)
 
@@ -99,8 +99,8 @@ plays *aFunnyTalk* clip at the double speed.
 
 ### `AudioChannel.Stop`
 
-*(Formerly known as StopAmbientSound, which is now obsolete)*<br>
-*(Formerly known as StopChannel, which is now obsolete)*
+*(Formerly known as `StopAmbientSound`, which is now obsolete)*<br>
+*(Formerly known as `StopChannel`, which is now obsolete)*
 
     AudioChannel.Stop()
 
@@ -143,7 +143,7 @@ channel it is playing on.
 
 ### `AudioChannel.IsPlaying`
 
-*(Formerly known as IsChannelPlaying, which is now obsolete)*
+*(Formerly known as `IsChannelPlaying`, which is now obsolete)*
 
     readonly bool AudioChannel.IsPlaying
 
@@ -217,7 +217,7 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 ### `AudioChannel.PlayingClip`
 
-*(Formerly known as GetCurrentMusic, which is now obsolete)*
+*(Formerly known as `GetCurrentMusic`, which is now obsolete)*
 
     readonly AudioClip* AudioChannel.PlayingClip
 
@@ -249,9 +249,9 @@ will display what is currently playing on audio channel 2.
 
 ### `AudioChannel.Position`
 
-*(Formerly known as GetMIDIPosition, which is now obsolete)*<br>
-*(Formerly known as GetMODPattern, which is now obsolete)*<br>
-*(Formerly known as GetMP3PosMillis, which is now obsolete)*
+*(Formerly known as `GetMIDIPosition`, which is now obsolete)*<br>
+*(Formerly known as `GetMODPattern`, which is now obsolete)*<br>
+*(Formerly known as `GetMP3PosMillis`, which is now obsolete)*
 
     readonly int AudioChannel.Position
 
@@ -319,8 +319,8 @@ display its position.
 
 ### `AudioChannel.Volume`
 
-*(Formerly known as SetChannelVolume, which is now obsolete)*<br>
-*(Formerly known as SetMusicVolume, which is now obsolete)*
+*(Formerly known as `SetChannelVolume`, which is now obsolete)*<br>
+*(Formerly known as `SetMusicVolume`, which is now obsolete)*
 
     int AudioChannel.Volume
 

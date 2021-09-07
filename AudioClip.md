@@ -8,12 +8,12 @@ commands in this section allow to play them.
 
 ### `AudioClip.Play`
 
-*(Formerly known as PlayAmbientSound, which is now obsolete)*<br>
-*(Formerly known as PlayMP3File, which is now obsolete)*<br>
-*(Formerly known as PlayMusic, which is now obsolete)*<br>
-*(Formerly known as PlaySound, which is now obsolete)*<br>
-*(Formerly known as PlaySoundEx, which is now obsolete)*<br>
-*(Formerly known as SetMusicRepeat, which is now obsolete)*
+*(Formerly known as `PlayAmbientSound`, which is now obsolete)*<br>
+*(Formerly known as `PlayMP3File`, which is now obsolete)*<br>
+*(Formerly known as `PlayMusic`, which is now obsolete)*<br>
+*(Formerly known as `PlaySound`, which is now obsolete)*<br>
+*(Formerly known as `PlaySoundEx`, which is now obsolete)*<br>
+*(Formerly known as `SetMusicRepeat`, which is now obsolete)*
 
     AudioChannel* AudioClip.Play(optional AudioPriority, optional RepeatStyle)
 
@@ -79,7 +79,7 @@ it is OGG/MP3).
 
 ### `AudioClip.PlayQueued`
 
-*(Formerly known as PlayMusicQueued, which is now obsolete)*
+*(Formerly known as `PlayMusicQueued`, which is now obsolete)*
 
     AudioChannel* AudioClip.PlayQueued(optional AudioPriority, optional RepeatStyle)
 
@@ -185,7 +185,7 @@ displays a message if aExplosion is a MIDI file
 
 ### `AudioClip.IsAvailable`
 
-*(Formerly known as IsMusicVoxAvailable, which is now obsolete)*
+*(Formerly known as `IsMusicVoxAvailable`, which is now obsolete)*
 
     readonly bool AudioClip.IsAvailable;
 
