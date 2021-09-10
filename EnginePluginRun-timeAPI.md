@@ -1001,7 +1001,7 @@ Returns 0 if the sprite could not be created, or the sprite slot number on succe
 
 _Added in version: 12_
 
-### IAGSEngine.DeleteDynamicSprite
+#### IAGSEngine.DeleteDynamicSprite
 ```
 void DeleteDynamicSprite(int slot);
 ```
