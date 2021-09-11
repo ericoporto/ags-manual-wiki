@@ -777,9 +777,9 @@ AGSViewFrame* GetViewFrame (int view, int loop, int frame);
 Returns the view frame structure for the specified frame. `view` is the number you get from the editor (that's used in `SetCharacterView` and so forth), not the view minus 1.
 
 - **Interface version 10 and later:**
-  If `frame` is not valid (eg. there aren't that many frames in the specified loop), returns NULL.
+  If `frame` is not valid (e.g. there aren't that many frames in the specified loop), returns NULL.
 - **Interface version 9:**
-  If `frame` is not valid (eg. there aren't that many frames in the specified loop), AGS will exit with an error message.
+  If `frame` is not valid (e.g. there aren't that many frames in the specified loop), AGS will exit with an error message.
 
 If `view` or `loop` are invalid, AGS will exit with an error message.
 

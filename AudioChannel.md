@@ -22,7 +22,7 @@ What *position* represents depends on the FileType of the audio clip:
 
 -   **MIDI** - the beat number
 -   **MOD/XM/S3M** - the pattern number
--   **WAV/VOC** - the sample number (eg. in a 22050 Hz sound, 22050 =
+-   **WAV/VOC** - the sample number (e.g. in a 22050 Hz sound, 22050 =
     1 second)
 -   **OGG/MP3** - milliseconds offset
 
@@ -261,7 +261,7 @@ What *position* represents depends on the FileType of the audio clip:
 
 -   **MIDI** - the beat number
 -   **MOD/XM/S3M** - the pattern number
--   **WAV/VOC** - the sample number (eg. in a 22050 Hz sound, 22050 =
+-   **WAV/VOC** - the sample number (e.g. in a 22050 Hz sound, 22050 =
     1 second)
 -   **OGG/MP3** - milliseconds offset
 

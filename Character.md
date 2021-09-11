@@ -85,7 +85,7 @@ are relative to this overall speed.
 
 Before using this command, you should use
 [`LockView`](Character#characterlockview) in order to select the view you
-want to animate with and prevent any automatic animations (eg. walking
+want to animate with and prevent any automatic animations (e.g. walking
 or idle animations) from playing.
 
 The *RepeatStyle* parameter sets whether the animation will continuously

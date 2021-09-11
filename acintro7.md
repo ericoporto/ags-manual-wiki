@@ -90,7 +90,7 @@ you can find a full description of all the options in the manual.
     direction is chosen for display. With an 8-loop character, all 8
     directions are displayed depending on the character's direction.<br>
     Which loop represents which direction is shown in the Views editor
-    (eg. "Loop 0 (down)").
+    (e.g. "Loop 0 (down)").
 -   **Design** -> **Clickable** - if this is not checked, then this character will be
     see-through to mouse clicks. This is similar to the way the player
     character worked in LucasArts games - you cannot actually click on

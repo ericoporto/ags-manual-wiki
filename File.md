@@ -19,7 +19,7 @@ eFileAppend opens an existing file for writing and starts adding
 information at the end (i.e. the existing contents are not deleted).
 
 This function returns a File object, which you use to perform operations
-on the file. *null* is returned if there was a problem (eg. file not
+on the file. *null* is returned if there was a problem (e.g. file not
 existing when MODE is eFileRead).
 
 When specifying file path you may use tags that specify either a special file or location.

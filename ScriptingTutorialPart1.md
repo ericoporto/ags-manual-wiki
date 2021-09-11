@@ -92,7 +92,7 @@ so we can ignore it for now.
 To make our script call the function we write its name, then the
 parameters inside brackets, and finally a semicolon. This is very
 important, as without the semicolon the script won't compile. Also, note
-that we DO NOT write the parameter type (eg. "string" or "int"). So, we
+that we DO NOT write the parameter type (e.g. "string" or "int"). So, we
 can add this line to our script:
 
     Display("The sign says 'EWOH'. I have no idea what that could mean.");

@@ -473,7 +473,7 @@ GUI on and off, and has no further effects.
 
 For "Popup modal" GUIs, setting Visible to true causes the game to
 become paused until the GUI is removed by setting Visible back to false
-(eg. when the user presses an OK button or something similar).
+(e.g. when the user presses an OK button or something similar).
 
 For "Mouse Ypos" GUIs, the Visible property does not actually determine
 whether the GUI is displayed, but instead it controls whether the GUI

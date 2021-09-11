@@ -356,7 +356,7 @@ walking, the game will cycle through the rest of the frames in the loop.
 The "MovementSpeed" option allows you to control how fast the character
 moves when walking. Here, a larger number means he walks faster. If you
 find that a movement speed of 1 is still too fast, you can use negative
-numbers (eg. -3) which will move even more slowly. The lower you go, the
+numbers (e.g. -3) which will move even more slowly. The lower you go, the
 slower the movement speed.
 
 The "SpeechColor" option specifies which color is used for the text
@@ -366,7 +366,7 @@ the "Colors" pane.
 
 The "IdleView" option allows you to set an idle animation for the
 character. To do this, create a new view, with one or more loops of the
-character idle (eg. smoking, reading a book, etc). Then, set the "Idle
+character idle (e.g. smoking, reading a book, etc). Then, set the "Idle
 view" to this view number. If the player stands still for 20 seconds
 (you can change the timeout with the Character.SetIdleView script
 function), then the current loop from the idle view will be played.
@@ -416,7 +416,7 @@ purposes.
 line with their zoom level, as set on the walkable areas.
 
 "Adjust volume with scaling" modifies the volume of any frame-linked
-sounds on the character's view (eg. footstep sounds) with their zoom
+sounds on the character's view (e.g. footstep sounds) with their zoom
 level, as set on the walkable areas.
 
 "Solid" specifies that this character is solid and will block other
@@ -837,7 +837,7 @@ Disabling this option will make the game file structure more transparent and, fo
     style exists for compatibility with older versions of AGS only.
 -   **When player interface is disabled, GUI should** - determines what
     happens to buttons on your GUIs while the game interface is
-    disabled (eg. during a cutscene).
+    disabled (e.g. during a cutscene).
 
 **Windows Game Explorer** See:
 [Windows Game Explorer](IntegrationWithWindows#windows-game-explorer)

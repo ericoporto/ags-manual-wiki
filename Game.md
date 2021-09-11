@@ -346,12 +346,12 @@ Changes the directory where save game files are stored to the supplied
 *directory*. If the directory does not exist, AGS will attempt to create
 it.
 
-You cannot use fully qualified directories with this command (eg.
+You cannot use fully qualified directories with this command (e.g.
 `C:\Games\Cool\Saves`), because the player might have installed your
 game to any folder, and they might not be running Windows.
 
 Therefore, only two types of path are supported:<br>
-1. Relative paths (eg. \"Saves\"). This will create a subfolder inside
+1. Relative paths (e.g. \"Saves\"). This will create a subfolder inside
 **default game save folder**<br>
 2. The special tag `$MYDOCS$` which allows you to explicitly create a
 different folder for your save games inside the user's documents

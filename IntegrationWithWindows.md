@@ -87,7 +87,7 @@ on Windows XP and earlier versions).
 The rest of the settings here allow you to set up various fields that
 the Game Explorer can display. **Developer Website** must be a URL
 starting with `http://` if you fill it in, and **Version** must be a
-four-point version number (eg. 1.0.0.0).
+four-point version number (e.g. 1.0.0.0).
 
 The **Windows Experience Index** is a score that Windows gives each
 computer depending on its game-playing prowess. 1 is the lowest score,
