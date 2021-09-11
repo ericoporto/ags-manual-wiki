@@ -115,14 +115,14 @@ AGS keycode | Key | ASCII code
 `eKeyF11` | F11 | 433
 `eKeyF12` | F12 | 434
 `eKeyHome` | Home | 371
-`eKeyUpArrow` | UpArrow | 372
-`eKeyPageUp` | PageUp | 373
-`eKeyLeftArrow` | LeftArrow | 375
-`eKeyNumPad5` | NumPad 5 | 376
-`eKeyRightArrow` | RightArrow | 377
+`eKeyUpArrow` | Up arrow | 372
+`eKeyPageUp` | Page up | 373
+`eKeyLeftArrow` | Left arrow | 375
+`eKeyNumPad5` | Numeric keypad 5 | 376
+`eKeyRightArrow` | Right arrow | 377
 `eKeyEnd` | End | 379
-`eKeyDownArrow` | DownArrow | 380
-`eKeyPageDown` | PageDown | 381
+`eKeyDownArrow` | Down arrow | 380
+`eKeyPageDown` | Page down | 381
 
 Use these keycodes in your
 [`on_key_press`](Globalfunctions_Event#on_key_press) function to
