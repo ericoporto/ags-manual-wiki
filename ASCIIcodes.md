@@ -138,9 +138,9 @@ called with these codes):
 
 Key | ASCII code
 --- | ---
-Left shift | 403
-Right shift | 404
-Left ctrl | 405
-Right ctrl | 406
+Left Shift | 403
+Right Shift | 404
+Left Ctrl | 405
+Right Ctrl | 406
 Alt | 407
 
