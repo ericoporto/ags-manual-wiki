@@ -82,7 +82,7 @@ AGS keycode | Key | ASCII code
 `eKeyDollar` | $ | 36
 `eKeyDoubleQuote` | " | 34
 `eKeyEquals` | = | 61
-`eKeyEscape` | ESC | 27
+`eKeyEscape` | Escape | 27
 `eKeyExclamationMark` | ! | 33
 `eKeyForwardSlash` | / | 47
 `eKeyGreaterThan` | > | 62
@@ -96,11 +96,11 @@ AGS keycode | Key | ASCII code
 `eKeyPeriod` | . | 46
 `eKeyPlus` | + | 43
 `eKeyQuestionMark` | ? | 63
-`eKeyReturn` | RETURN | 13
+`eKeyReturn` | Return | 13
 `eKeySemiColon` | ; | 59
 `eKeySingleQuote` | ' | 39
-`eKeySpace` | SPACE | 32
-`eKeyTab` | TAB | 9
+`eKeySpace` | Space | 32
+`eKeyTab` | Tab | 9
 `eKeyUnderscore` | _ | 95
 `eKeyF1` | F1 | 359
 `eKeyF2` | F2 | 360
