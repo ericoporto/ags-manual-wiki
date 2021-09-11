@@ -48,7 +48,7 @@ DLLEXPORT void AGS_EditorProperties (HWND parent);
 
 _(Optional - plugin does not have to have this function)_
 
-Called by the editor when the user highlights the plugin and clicks the Properties button. You can use this to display a copyright message, or allow the user to set options for your plugin, for instance. This will only be called when the plugin is selected (ie. `EditorStartup` has been called).
+Called by the editor when the user highlights the plugin and clicks the Properties button. You can use this to display a copyright message, or allow the user to set options for your plugin, for instance. This will only be called when the plugin is selected (i.e. `EditorStartup` has been called).
 
 The parameter gives you the parent window handle you should use if you want to pop up a dialog. You should make any dialogs modal so that this function does not return until they are dismissed.
 

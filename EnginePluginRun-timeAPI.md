@@ -790,7 +790,7 @@ _Added in version: 9_
 int GetWalkbehindBaseline (int area);
 ```
 
-Returns the baseline for walk-behind area number `area`. This is always in character-resolution, ie. the maximum value is 200 in all resolutions.
+Returns the baseline for walk-behind area number `area`. This is always in character-resolution, i.e. the maximum value is 200 in all resolutions.
 
 _Added in version: 9_
 
@@ -803,7 +803,7 @@ Returns the memory address of the text script exported function `funcName`. This
 
 Returns NULL if you specify a function that doesn't exist.
 
-_![Warning](images/icon_warn.png)_ You **must** cast the result to the correct function type in order to call it - ie. you must know how many parameters the function expects, and call it appropriately. Failure to do so will corrupt the stack and likely crash the engine.
+_![Warning](images/icon_warn.png)_ You **must** cast the result to the correct function type in order to call it - i.e. you must know how many parameters the function expects, and call it appropriately. Failure to do so will corrupt the stack and likely crash the engine.
 
 _![Warning](images/icon_warn.png)_ If you specify the name of an actual function in the script, for example repeatedly_execute, it will return an address - however, this will be a script address and attempting to call it will crash the game. **Only** use this feature to obtain the address of AGS's script functions as documented in the manual.
 
@@ -1140,7 +1140,7 @@ int RegisterManagedObject(const void *object, IAGSScriptManagedObject *callback)
 
 Registers a new managed object with the script engine. `object` points to the actual object itself, and `callback` points to the class implementing the `IAGSScriptManagedObject` interface, which will be called to perform operations on the object.
 
-`callback` and `object` can, but do not have to, point to the same thing (ie. it is possible to have the actual object implement the interface; but if you do so, beware that you should not expose any normal variables from the class due to the vtable occupying the first part of the memory).
+`callback` and `object` can, but do not have to, point to the same thing (i.e. it is possible to have the actual object implement the interface; but if you do so, beware that you should not expose any normal variables from the class due to the vtable occupying the first part of the memory).
 
 The `object` is added to the managed object pool, with a reference count of zero. Once this function has been called, `object` can be returned to the script and will be automatically picked up by the script engine.
 
@@ -1474,7 +1474,7 @@ _Added in version: 23_
 bool SupportsExtendedCharacters(int fontNumber);
 ```
 
-AGS will call this method to determine whether the specified font supports extended characters (ie. characters with a ASCII value of 128 or above). Return `true` or `false`, depending on your implementation.
+AGS will call this method to determine whether the specified font supports extended characters (i.e. characters with a ASCII value of 128 or above). Return `true` or `false`, depending on your implementation.
 
 _![Warning](images/icon_warn.png)_ If you return false from this function, AGS will not necessarily strip extended characters out of text. If you do not support extended characters, then you should implement the `EnsureTextValidForFont` method (below) to strip them out.
 
