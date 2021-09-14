@@ -209,6 +209,7 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 ### `SkipSpeechStyle`
 
     enum SkipSpeechStyle {
+      eSkipNone         = -1,
       eSkipKeyMouseTime = 0,
       eSkipKeyTime      = 1,
       eSkipTime         = 2,
