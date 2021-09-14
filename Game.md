@@ -1012,3 +1012,18 @@ views for some reason. Valid views are numbered from 1 to ViewCount.
 Example:
 
     Display("The game has %d views.", Game.ViewCount);
+
+---
+
+### `Game.BlockingWaitSkipped`
+
+    readonly static int Game.BlockingWaitSkipped
+
+Gets the code which describes how was the last blocking state skipped by a user (or autotimer).
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:*
+[`WaitKey`](Globalfunctions_Wait#waitkey),
+[`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
+[`SkipWait`](Globalfunctions_Wait#skipwait)

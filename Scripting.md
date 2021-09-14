@@ -15,6 +15,7 @@
 - [Global functions: palette operations](Globalfunctions_Palette)
 - [Global functions: room actions](Globalfunctions_Room)
 - [Global functions: screen effects](Globalfunctions_Screen)
+- [Global functions: wait](Globalfunctions_Wait)
 - [AudioChannel functions and properties](AudioChannel)
 - [AudioClip functions and properties](AudioClip)
 - [Camera functions and properties](Camera)
