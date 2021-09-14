@@ -136,11 +136,11 @@ The following extra codes can only be used with
 (i.e. [`on_key_press`](Globalfunctions_Event#on_key_press) is never
 called with these codes):
 
-Key | ASCII code
---- | ---
-Left Shift | 403
-Right Shift | 404
-Left Ctrl | 405
-Right Ctrl | 406
-Alt | 407
+AGS keycode | Key | ASCII code
+--- | --- | ---
+`eKeyShiftLeft` | Left Shift | 403
+`eKeyShiftRight` | Right Shift | 404
+`eKeyCtrlLeft` | Left Ctrl | 405
+`eKeyCtrlRight` | Right Ctrl | 406
+none | Alt | 407
 
