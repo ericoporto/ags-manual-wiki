@@ -5,7 +5,7 @@ Since AGS 3.6.0, All Wait related functions can return a **Skip Reason** on why 
 
 - `0 =` ended by timeout or `SkipWait()`;
 - `> 0 =` keycode;
-- `< 0 =` negated mouse button code minus one (because of how mouse codes start with 0). In order to get mouse code do this: MouseButton btn = -(result + 1);
+- `< 0 =` negated mouse button code minus one (because of how mouse codes start with 0). In order to get mouse code do this: `MouseButton btn = -(result + 1)`;
 
 
 ---
