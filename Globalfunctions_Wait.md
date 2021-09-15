@@ -21,7 +21,7 @@ Cancels current Wait function, regardless of its type, if one was active at the 
 *See also:* [`WaitKey`](Globalfunctions_General#waitkey),
 [`WaitMouse`](Globalfunctions_General#waitmouse),
 [`WaitMouseKey`](Globalfunctions_General#waitmousekey),
-[`Game.BlockingWaitSkipped`](Game#blockingwaitskipped)
+[`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped)
 
 ---
 
@@ -46,7 +46,7 @@ wait for 2 seconds (80 game cycles) and then face right.
 *See also:* [`WaitKey`](Globalfunctions_General#waitkey),
 [`WaitMouse`](Globalfunctions_General#waitmouse),
 [`WaitMouseKey`](Globalfunctions_General#waitmousekey),
-[`Game.BlockingWaitSkipped`](Game#blockingwaitskipped)
+[`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped)
 
 ---
 
@@ -77,7 +77,7 @@ presses a key.
 *See also:* [`Wait`](Globalfunctions_Wait#wait),
 [`WaitMouse`](Globalfunctions_General#waitmouse),
 [`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
-[`Game.BlockingWaitSkipped`](Game#blockingwaitskipped)
+[`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped)
 
 ---
 
@@ -111,7 +111,7 @@ presses a key or clicks the mouse.
 *See also:* [`Wait`](Globalfunctions_Wait#wait), 
 [`WaitKey`](Globalfunctions_Wait#waitkey),
 [`WaitMouse`](Globalfunctions_General#waitmouse),
-[`Game.BlockingWaitSkipped`](Game#blockingwaitskipped)
+[`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped)
 
 ---
 
@@ -145,5 +145,5 @@ presses clicks the mouse.
 *See also:* [`Wait`](Globalfunctions_Wait#wait), 
 [`WaitKey`](Globalfunctions_Wait#waitkey), 
 [`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
-[`Game.BlockingWaitSkipped`](Game#blockingwaitskipped),
+[`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped),
 [`SkipWait`](Globalfunctions_Wait#skipwait)
