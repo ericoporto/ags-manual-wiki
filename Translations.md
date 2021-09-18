@@ -90,7 +90,11 @@ is used in that language (make sure to check for capitalized special characters 
 after changing the encoding to ANSI. A lot of wordprocessors use Ctrl+H as hotkey for the
 search and replace function.
 
-There is a great Editor Plugin that makes handling translations easier called [Speech Center](https://www.adventuregamestudio.co.uk/forums/index.php?topic=45622.0).
+### Advanced Help
+
+There is a great Editor Plugin called [Speech Center](https://www.adventuregamestudio.co.uk/forums/index.php?topic=45622.0) that makes handling translations easier. You can find a download link for the file in the linked AGS Forum thread.
+
+
 
 *See also:*
 [`Game.ChangeTranslation`](Game#gamechangetranslation),
