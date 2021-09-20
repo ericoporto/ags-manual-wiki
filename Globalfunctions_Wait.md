@@ -18,9 +18,9 @@ Cancels current Wait function, regardless of its type, if one was active at the 
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
-*See also:* [`WaitKey`](Globalfunctions_General#waitkey),
-[`WaitMouse`](Globalfunctions_General#waitmouse),
-[`WaitMouseKey`](Globalfunctions_General#waitmousekey),
+*See also:* [`WaitKey`](Globalfunctions_Wait#waitkey),
+[`WaitMouse`](Globalfunctions_Wait#waitmouse),
+[`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
 [`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped)
 
 ---
@@ -43,9 +43,9 @@ Example:
 will move the character EGO to 120,140, wait until he gets there then
 wait for 2 seconds (80 game cycles) and then face right.
 
-*See also:* [`WaitKey`](Globalfunctions_General#waitkey),
-[`WaitMouse`](Globalfunctions_General#waitmouse),
-[`WaitMouseKey`](Globalfunctions_General#waitmousekey),
+*See also:* [`WaitKey`](Globalfunctions_Wait#waitkey),
+[`WaitMouse`](Globalfunctions_Wait#waitmouse),
+[`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
 [`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped)
 
 ---
@@ -75,7 +75,7 @@ will pause the script and wait until 5 seconds have passed or the player
 presses a key.
 
 *See also:* [`Wait`](Globalfunctions_Wait#wait),
-[`WaitMouse`](Globalfunctions_General#waitmouse),
+[`WaitMouse`](Globalfunctions_Wait#waitmouse),
 [`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
 [`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped)
 
@@ -110,7 +110,7 @@ presses a key or clicks the mouse.
 
 *See also:* [`Wait`](Globalfunctions_Wait#wait), 
 [`WaitKey`](Globalfunctions_Wait#waitkey),
-[`WaitMouse`](Globalfunctions_General#waitmouse),
+[`WaitMouse`](Globalfunctions_Wait#waitmouse),
 [`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped)
 
 ---
