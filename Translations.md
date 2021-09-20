@@ -8,6 +8,8 @@ When you play a game with a translation enabled, AGS will automatically replace 
 
 Let's move on to how translations are created in the editor.
 
+![Add a translation to your game project](https://user-images.githubusercontent.com/22618469/133994551-e2cd2504-fb74-41eb-94e7-cc28c6414306.png)
+
 When you have your game project opened right-click the "Translations" node in the tree, and choose "New translation". Once you've named it, AGS will ask if you want to populate the file now. Say yes.
 
 A new file will be created in the game folder, called NAME.TRS, where NAME is the name you gave to the translation in the editor. This file is simply a text file by format and a .trs suffix, and will be generated with each original line of text separated by a blank line. That blank line is where you enter the translated text.
