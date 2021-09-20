@@ -12,7 +12,6 @@ There are maximum...
 - 90000 imported sprites
 - 30 options per dialog topic
 - 20 timers
-- 20 screen overlays at a time
 - 5 background frames per room
 - 20 mouse cursors
 - 8 audio channels
@@ -27,6 +26,7 @@ There are maximum...
 - unlimited loops per view
 - unlimited frames per loop
 - unlimited custom properties
+- unlimited screen overlays at a time
 
 Some additional limits
 
