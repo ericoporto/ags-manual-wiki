@@ -4,7 +4,7 @@ This section tells you the maximums for various parts of the system. If
 you have been wondering "How many rooms can I have?" or something
 similar, chances are this section will answer it.
 
-There are maximum...
+### There are maximum...
 
 - 40 objects per room
 - 299 state-saving rooms per game
@@ -28,7 +28,7 @@ There are maximum...
 - unlimited custom properties
 - unlimited screen overlays at a time
 
-Some additional limits
+### Some additional limits
 
 - In AGS integers and floats are 32-bit. Integers can be from -2147483648 to +2147483647, and floats are a bit more complicated, so it's better to test them.
 
@@ -41,3 +41,21 @@ Some additional limits
 - There is a total overall limit on the number of functions that can be exported by all plugins added together, which in theory it would be possible for a single plugin to exceed. It's in the region of a couple of hundred though, so it shouldn't be an issue. It wouldn't be too difficult to increase, if the need arose.
 
 We are working on removing existing limitations in the AGS, so some of the remaining restrictions might be loosened or eliminated in the following updates.
+
+
+### Changelog of lifted limits
+
+AGS v3.6:
+* 20 screen overlays at a time lifted
+
+AGS v3.5
+
+* packed sprites file (acsprset.spr) lifted from 2 GB limit
+* Imported sprites count limit raised from 30000 to 90000
+* Total number of sprites in game (includes both imported and Dynamic Sprites) lifted to around 2 billions of dynamic sprites
+* Font count limit of 30 removed
+* length limit on the Button lifted from 50 character
+* length limit on TextBox lifted from 200 lines
+* ListBox item count limit lifted from 200
+* hidden limit for DoOnceOnly token length lifted from 200 characters
+* local messages per room limit lifted from 100 (excluding script)
