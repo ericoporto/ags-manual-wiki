@@ -96,7 +96,6 @@ job, having a manual reference is invaluable:
       eAlignBottomLeft    = 64,
       eAlignBottomCenter  = 128,
       eAlignBottomRight   = 256,
-
       eAlignHasLeft       = 73,
       eAlignHasRight      = 292,
       eAlignHasTop        = 7,
