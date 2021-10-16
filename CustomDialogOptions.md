@@ -44,14 +44,11 @@ in any script you like. However, beware that if the functions are
 present in more than one script they could interfere with each other and
 cause problems.
 
-**COMPATIBILITY NOTE:** The older versions of AGS (pre-3.4.0) supported
-slightly different set of functions. Thus, there was no
-`dialog_options_repexec`, but you had to add `dialog_options_get_active`
-function instead, in which you set active option property. Clicks on the
-options were processed by AGS automatically, so doing this was
-essential. If you have imported older project and want to keep old
-dialog option scripts, then you should go to General Settings and enable
-"Use old-style dialog options rendering API".
+**COMPATIBILITY NOTE:** The older versions of AGS (pre-3.4.0) were working with
+somewhat different set of functions. There was no
+`dialog_options_repexec` and `dialog_options_key_press`, but you had to add `dialog_options_get_active`
+function instead in which you'd set an active dialog option (or none) on each game update, for example, depending on the cursor position. Mouse clicks were processed by the engine, and if an active option was set in `dialog_options_get_active` then it was run automatically.
+There is a compatibility switch in the General Settings called "Use old-style dialog options rendering API" that toggles between the old and new behavior. If you have imported older project and want to keep old dialog option scripts, then make sure it's enabled. If you wish to update your game to the new behavior, then turn it off.
 
 **IMPORTANT:** When adding the functions to the script, they all take in
 a parameter of type [`DialogOptionsRenderingInfo`](DialogOptionsRenderingInfo).
