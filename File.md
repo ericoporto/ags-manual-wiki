@@ -6,23 +6,17 @@
 
     static File* File.Open(string filename, FileMode)
 
-Opens a disk file for reading or writing. These disk I/O functions are
-only intended for simple tasks like the way the QFG series export the
-character when you complete it.
+Opens a disk file for reading or writing, and returns a `File` object pointer which you may use to perform operations on this file, or *null* if engine failed to open a file for whatever reasons.
 
-MODE is either eFileRead, eFileWrite or eFileAppend, depending on
+MODE is either `eFileRead`, `eFileWrite` or `FileAppend`, depending on
 whether you want to write to or read from the file. If you pass
-eFileWrite and a file called FILENAME already exists, it will be
+`eFileWrite` and a file called FILENAME already exists, it will be
 overwritten.
 
-eFileAppend opens an existing file for writing and starts adding
+`eFileAppend` opens an existing file for writing and starts adding
 information at the end (i.e. the existing contents are not deleted).
 
-This function returns a File object, which you use to perform operations
-on the file. *null* is returned if there was a problem (e.g. file not
-existing when MODE is eFileRead).
-
-When specifying file path you may use tags that specify either a special file or location.
+When specifying a file path you may use tags that define either a special file or location.
 
 Following *file tags* are supported:<br>
 `$CONFIGFILE$`, which allows you to open player's configuration file for reading or writing. This is recommended to be used instead of telling exact path, because config file may be found in different places depending on game settings or personal player's setup.
