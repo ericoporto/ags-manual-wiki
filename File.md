@@ -24,14 +24,14 @@ existing when MODE is eFileRead).
 
 When specifying file path you may use tags that specify either a special file or location.
 
-Following file tags are supported:<br>
+Following *file tags* are supported:<br>
 `$CONFIGFILE$`, which allows you to open player's configuration file for reading or writing. This is recommended to be used instead of telling exact path, because config file may be found in different places depending on game settings or personal player's setup.
 
 Example:
 
     File.Open("$CONFIGFILE$", eFileRead);
 
-Following location tags are supported:<br>
+Following *location tags* are supported:<br>
 `$INSTALLDIR$`, which allows you to explicitly read files in the game
 installation directory.<br>
 `$SAVEGAMEDIR$`, which allows you to write/read files in the save game
@@ -40,30 +40,22 @@ directory.<br>
 system which is accessible by and shared by all users. The example of
 their use is below.
 
-Example:
+Examples:
 
-    File.Open("$SAVEGAMEDIR$/game.dat", eFileWrite);
+    File.Open("$INSTALLDIR$/game.dat", eFileRead);
+    File.Open("$SAVEGAMEDIR$/userinfo.txt", eFileWrite);
+    File.Open("$APPDATADIR$/scoretable.dat", eFileAppend);
 
 **IMPORTANT**: For security reasons, if you open the file for writing,
 then you can ONLY work with files in either `$SAVEGAMEDIR$` or
 `$APPDATADIR$` locations. An attempt to write file in `$INSTALLDIR$`
-will result in failure, and *null* is returned. An attempt to write file
-into relative path without specifying any location tag will make AGS to
-automatically remap such path into `$APPDATADIR$`. This is done for
-backwards-compatibility. On other hand, if you open file for writing
-using an absolute path, or relative path that points to location outside
-of game directory, it will automatically be rejected, and *null* is
-returned.
+will result in failure, and *null* is returned. Similarily, if you try to open a file for writing using an absolute path, or relative path that points to location outside of the game directory, it will be automatically rejected, and *null* is returned.
 
-**NOTE:** You **MUST** close the file with the Close function when you
-have finished using it. There are only a limited number of file handles,
+**IMPORTANT**: An attempt to write file into relative path *without specifying any location tag* will make AGS
+automatically remap such path into `$APPDATADIR$`. This is done for backward compatibility. To ensure that your script does exactly what you want, please use location tags.
+
+`File.Open` returns a File* pointer, which you should store in a variable of that type. You may then use that pointer to perform reading or writing operations. After finishing work you should close the file with the `Close` function. There are only a limited number of file handles,
 and forgetting to close the file can lead to problems later on.
-
-**NOTE:** Open file pointers are not persisted across save games. That
-is, if you open a file, then save the game; then when you restore the
-game, the File will not be usable and you'll have to open it again to
-continue any I/O. The safest practice is not to declare any global File
-variables.
 
 Example:
 
@@ -78,6 +70,12 @@ Example:
 will open the file temp.tmp in the save game folder for writing. An
 error message is displayed if the file could not be created. Otherwise,
 it will write the string "test string" to the file and close it.
+
+**NOTE:** Open file pointers are not persisted across save games. That
+is, if you open a file, then save the game; then when you restore the
+game, the File will not be usable and you'll have to open it again to
+continue any I/O. The safest practice is not to declare any global File
+variables.
 
 *Compatibility:* $CONFIGFILE$ tag supported by AGS 3.5.1 and later versions.
 
@@ -99,7 +97,7 @@ function when you have finished reading/writing the file.
 
 Example:
 
-    File *output = File.Open("test.dat", eFileWrite);
+    File *output = File.Open("$SAVEGAMEDIR$/test.dat", eFileWrite);
     output.WriteString("test string");
     output.Close();
 
@@ -124,7 +122,7 @@ File pointer to use it. See the example below.
 
 Example:
 
-    File.Delete("$APPDATADIR$/temp.tmp");
+    File.Delete("$SAVEGAMEDIR$/temp.tmp");
 
 will delete the file "temp.tmp" from the app data directory, if it
 exists.
@@ -142,22 +140,14 @@ exists.
 
 Checks if the specified file exists on the file system.
 
-When specifying file path you may use special location tags:<br>
-`$INSTALLDIR$`, which allows you to explicitly read files in the game
-installation directory.<br>
-`$SAVEGAMEDIR$`, which allows you to access files in the save game
-directory.<br>
-`$APPDATADIR$`, which allows you to write/read files to a folder on the
-system which is accessible by and shared by all users.
-
 **NOTE:** This is a static function, therefore you don't need an open
 File pointer to use it. See the example below.
 
 Example:
 
-    if (!File.Exists("temp.tmp"))
+    if (!File.Exists("$SAVEGAMEDIR$/temp.tmp"))
     {
-      File *output = File.Open("temp.tmp", eFileWrite);
+      File *output = File.Open("$SAVEGAMEDIR$/temp.tmp", eFileWrite);
       output.WriteString("some text");
       output.Close();
     }
@@ -183,7 +173,7 @@ integers written with File.WriteInt can be read back.
 Example:
 
     int number;
-    File *input = File.Open("stats.dat", eFileRead);
+    File *input = File.Open("$SAVEGAMEDIR$/stats.dat", eFileRead);
     number = input.ReadInt();
     input.Close();
 
@@ -207,7 +197,7 @@ it is recommended for expert users only.
 
 Example:
 
-    File *input = File.Open("stats.txt", eFileRead);
+    File *input = File.Open("$SAVEGAMEDIR$/stats.txt", eFileRead);
     String buffer = String.Format("%c", input.ReadRawChar());
     input.Close();
 
@@ -234,7 +224,7 @@ performed.
 Example:
 
     int number;
-    File *input = File.Open("stats.txt", eFileRead);
+    File *input = File.Open("$SAVEGAMEDIR$/stats.txt", eFileRead);
     number = input.ReadRawInt();
     input.Close();
 
@@ -262,7 +252,7 @@ unpredictable.
 
 Example:
 
-    File *input = File.Open("error.log", eFileRead);
+    File *input = File.Open("$SAVEGAMEDIR$/error.log", eFileRead);
     if (input != null) {
       while (!input.EOF) {
         String line = input.ReadRawLineBack();
@@ -291,7 +281,7 @@ files, even text files.
 
 Example:
 
-    File *input = File.Open("test.dat", eFileRead);
+    File *input = File.Open("$SAVEGAMEDIR$/test.dat", eFileRead);
     String buffer = input.ReadStringBack();
     input.Close();
 
@@ -334,7 +324,7 @@ know written format precisely.
 
 Example:
 
-    File *input = File.Open("test.dat", eFileRead);
+    File *input = File.Open("$SAVEGAMEDIR$/test.dat", eFileRead);
     int first_value = input.ReadRawInt();
     input.Seek(256);
     int second_value = input.ReadRawInt();
@@ -362,7 +352,7 @@ File.Open, and you can read the value back later with File.ReadInt.
 Example:
 
     int number = 6;
-    File *output = File.Open("stats.dat", eFileWrite);
+    File *output = File.Open("$SAVEGAMEDIR$/stats.dat", eFileWrite);
     output.WriteInt(number);
     output.Close();
 
@@ -390,7 +380,7 @@ can contain any value from 0 to 255.
 
 Example:
 
-    File *output = File.Open("output.txt", eFileWrite);
+    File *output = File.Open("$SAVEGAMEDIR$/output.txt", eFileWrite);
     output.WriteRawChar('A');
     output.WriteRawChar('B');
     output.WriteRawChar(13);
@@ -419,7 +409,7 @@ characters.
 
 Example:
 
-    File *output = File.Open("error.log", eFileAppend);
+    File *output = File.Open("$SAVEGAMEDIR$/error.log", eFileAppend);
     output.WriteRawLine("There was an error playing sound1.wav");
     output.Close();
 
@@ -442,7 +432,7 @@ the file, which can only be read back by using File.ReadStringBack.
 
 Example:
 
-    File *output = File.Open("temp.tmp", eFileWrite);
+    File *output = File.Open("$SAVEGAMEDIR$/temp.tmp", eFileWrite);
     if (output == null) Display("Error opening file.");
     else {
       output.WriteString("test string");
@@ -471,7 +461,7 @@ entire contents of the file has now been read, or 0 if not.
 
 Example:
 
-    File *output = File.Open("test.dat", eFileRead);
+    File *output = File.Open("$SAVEGAMEDIR$/test.dat", eFileRead);
     while (!output.EOF) {
       int temp = output.ReadRawChar();
       Display("%c", temp);
@@ -508,7 +498,7 @@ To find out whether all data has been read from a file, use
 
 Example:
 
-    File *output = File.Open("test.dat", eFileWrite);
+    File *output = File.Open("$SAVEGAMEDIR$/test.dat", eFileWrite);
     output.WriteInt(51);
     if (output.Error) {
       Display("Error writing the data!");
@@ -537,7 +527,7 @@ function has read or written.
 
 Example:
 
-    File *output = File.Open("test.dat", eFileWrite);
+    File *output = File.Open("$SAVEGAMEDIR$/test.dat", eFileWrite);
     int old_pos = output.Position;
     WriteCustomModuleData(output);
     int new_pos = output.Position;
