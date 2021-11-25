@@ -154,12 +154,7 @@ with what they do:
 
     DeleteSaveSlot (int slot)
 
-Deletes the save game in save slot number SLOT.
-
-NOTE: if you specify one of the standard slots (1-50), then AGS will
-rearrange the other save games to make sure there is a sequence of slots
-from 1 upwards. Therefore, you will need to refresh any save game lists
-you have after calling this function.
+Deletes the save game in save slot number SLOT. If there were no save then nothing happens.
 
 Example:
 
@@ -875,10 +870,7 @@ will bring up the restore game dialog if the player presses the F5 key.
 
     RestoreGameSlot (int slot)
 
-Restores the game position saved into slot number SLOT. You might want
-to use these specific slot functions if for example you only want to
-allow the player to have one save game position rather than the usual
-20. If this slot number does not exist, an error message is displayed to
+Restores the game position saved into slot number SLOT. If this slot number does not exist, an error message is displayed to
 the player but the game continues. To avoid the error, use the
 GetSaveSlotDescription function to see if the position exists before
 restoring it.
@@ -971,10 +963,6 @@ Saves the current game position to the save game number specified by
 SLOT, using DESCRIPTION as the textual description of the save position.
 Be careful using this function, because you could overwrite one of the
 player's save slots if you aren't careful.
-
-The SaveGameDialog function uses slots numbered from 1 to 20, so if you
-don't want to interfere with the player's saves, I would recommend
-saving to slot numbers of 100 and above.
 
 **NOTE:** The game will not be saved immediately; instead, it will be
 saved when the script function finishes executing.
