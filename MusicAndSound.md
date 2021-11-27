@@ -208,9 +208,7 @@ placed in the "Speech" sub-directory of the game folder.
 
 **NOTE:** WAV, OGG and MP3 format files can be used for speech.
 
-**NOTE:** You cannot use speech file numbers above 9999. That is, you
-can have EGO1.OGG all the way up to EGO9999.OGG, but not EGO10000.OGG or
-higher.
+**NOTE:** Speech file numbers are restricted to the positive range of 1 to 2147483647 (2 billion). This is a technical limitation based on how these are handled inside the engine, but we do not think it will ever become a problem to the user.
 
 Speech is compiled into a file called SPEECH.VOX and is separate from
 the rest of your game data so that you can offer it as an optional extra
