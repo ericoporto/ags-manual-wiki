@@ -4,7 +4,7 @@ This section tells you the maximums for various parts of the system. If
 you have been wondering "How many rooms can I have?" or something
 similar, chances are this section will answer it.
 
-### There are maximum...
+### System restrictions
 
 - 40 objects per room
 - 299 state-saving rooms per game
@@ -28,7 +28,7 @@ similar, chances are this section will answer it.
 - unlimited custom properties
 - unlimited screen overlays at a time
 
-### Some additional limits
+### Additional considerations
 
 - In AGS integers and floats are 32-bit. Integers can be from -2147483648 to +2147483647, and floats are a bit more complicated, so it's better to test them.
 
@@ -41,7 +41,6 @@ similar, chances are this section will answer it.
 - There is a total overall limit on the number of functions that can be exported by all plugins added together, which in theory it would be possible for a single plugin to exceed. It's in the region of a couple of hundred though, so it shouldn't be an issue. It wouldn't be too difficult to increase, if the need arose.
 
 We are working on removing existing limitations in the AGS, so some of the remaining restrictions might be loosened or eliminated in the following updates.
-
 
 ### Changelog of lifted limits
 
