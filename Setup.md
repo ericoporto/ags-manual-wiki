@@ -148,11 +148,17 @@ increased.
 
 **Custom game saves path**
 
-When unchecked, the game will store its files - saved games, and custom
-runtime data - in the default Windows folders:
-`C:/Users/<Username>/Saved Games/<Game Title>` and
-`C:/Program Data/Adventure Game Studio/<Game Title>` respectively.
+When unchecked, the game will store its saved games in the default Windows folder:
+`C:/Users/<Username>/Saved Games/<Game Title>`.
 Players may enable this option and define their own location to store
-game files.
+game saves.
+
+**Custom game shared data path**
+
+When unchecked, the game will store its shared files - custom
+runtime data shared among all the users of this computer - in the default Windows folder:
+`C:/Program Data/Adventure Game Studio/<Game Title>`.
+Players may enable this option and define their own location to store
+these game files.
 
 *See also:* [Default setup](Settingupthegame#default-setup)
