@@ -53,7 +53,8 @@ Still this may be worked around and can actually be used to your advantage: see 
 Parts of the game which may be safely added or removed:
 * Dialog options in existing Dialogs.
 * Rooms, adding new ones. Removing a room is *not* safe, as loading a state saved in a no longer existing room will crash the game.
-* Adding room backgrounds in existing rooms, but probably not removing them (*needs to be checked*).
+* Adding more background frames to existing rooms, but probably not removing them (*needs to be checked*).
+* Editing room backgrounds or area masks is fully safe; even if you draw areas of different ID (color).
 * Custom properties. If you remove existing ones, their values may still load from the older save but will not be accessible.
 
 Adding or removing any kind of plain resources, such as
