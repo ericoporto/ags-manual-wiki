@@ -109,11 +109,11 @@ function game_start() {
 }
 ```
 
-There are other ways of fixing this, for example you could store the array length in its first element. This way you keep the save breaking value within the array itself, but you will have to remember it's there when you work with the array. Anyway, that's a different topic.
+There are other ways of fixing this, for example you could store the array length in its first element. You just will have to remember it's there when working with the array; but that's a different topic.
 In any case, having the array length stored, if you ever change that array's size and restore an older save, that length variable will also be restored and will tell you the correct size of the array.
 If you still need the array to be exactly 200 elements in size in the new version of the game you may resize it after restoring a save. This is explained further in the ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed-structs).
 
-Less likely, but if you instead reduce the array's size then the array restored from the older save will be bigger in size than necessary, but that's much less of a problem and can be ignored safely.
+Less likely, but if you instead reduce the array's size, then the array restored from the older save will be bigger in size than necessary, but that's much less of a problem and may be ignored.
 
 This is what happens with changes in dynamic arrays, but what about *changes in custom managed structs*? Assume in game version 1 you have:
 
@@ -141,7 +141,7 @@ managed struct MyStruct {
 ```
 
 If you load an older save from version 1 while running version 2, created objects of this type will load but will be one variable less in size. Trying to use the additional variable in script will result in an error. This is similar to the array case.
-The solution here is similar to the array solution: upon restoring the older save recreate all managed objects (they will be of the correct size), copy valid content from restored objects into them, and reassign pointers to these recreated objects. Again this is explained more in the ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed-structs).
+The solution here is similar to the array solution: upon restoring the older save recreate all managed objects (they will be of the correct size), copy valid content from restored objects into them, and reassign pointers to these recreated objects. Again, this is explained more in the ["Solutions" section](GameSavesCompatibility#solution-5-extending-dynamic-arrays-and-managed-structs).
 
 And again, if you remove a variable instead:
 
