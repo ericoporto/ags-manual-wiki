@@ -24,6 +24,9 @@ At the moment a Set does not let you directly access all of its internal data at
 
 Creates a new empty Set of the given properties. If you don't pass any options the Set is unsorted and case-insensitive. Note that you cannot change sorting style and case sensitivity later, you would have to create another Set and move values there.
 
+- Possible values for sortStyle: `eNonSorted`, `eSorted`.
+- Possible values for compareStyle: `eCaseInsensitive`, `eCaseSensitive`.
+
 Example:
 
     Set* mySet = Set.Create();
