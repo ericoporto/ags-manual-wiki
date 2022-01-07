@@ -24,6 +24,9 @@ To summarize, dictionaries make convenient storage for key/value pairs. If you d
 
 Creates a new empty Dictionary of the given properties. If you don't pass any options the Dictionary is unsorted and case-insensitive. Note that you cannot change sorting style and case sensitivity later, you would have to create another Dictionary and then re-add the values there.
 
+- Possible values for sortStyle: `eNonSorted`, `eSorted`.
+- Possible values for compareStyle: `eCaseInsensitive`, `eCaseSensitive`.
+
 Example:
 
     Dictionary* myDictionary = Dictionary.Create();
