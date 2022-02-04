@@ -66,13 +66,15 @@ soon as you are done with them.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
     DrawingSurface *backup = surface.CreateCopy();
+    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
     surface.DrawTriangle(0,0,160,100,0,200);
-    Wait(80);
-    surface.DrawSurface(backup);
-    backup.Release();
     surface.Release();
+    Wait(80);
+    surface = Room.GetDrawingSurfaceForBackground();
+    surface.DrawSurface(backup);
+    surface.Release();
+    backup.Release();
 
 will save a copy of the room background, draw a triangle onto it, wait
 for a while and then restore the original background.
