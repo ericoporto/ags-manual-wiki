@@ -37,3 +37,30 @@ Ctrl+Tab | Next tab
 Ctrl+Shift+Tab | Previous tab
 Tab | Indent selected lines
 Shift+Tab | Un-indent selected lines
+
+Additional shortcuts in the Script Editor
+
+Shortcut | Function
+--- | ---
+Ctrl+Keypad+ | Magnify text size
+Ctrl+Keypad- | Reduce text size
+Ctrl+Keypad/ | Restore text size to normal
+Ctrl+BackSpace | Delete to start of word
+Ctrl+Delete | Delete to end of word
+Ctrl+Shift+BackSpace | Delete to start of line
+Ctrl+Shift+Delete | Delete to end of line
+Ctrl+Home | Go to start of document
+Ctrl+Shift+Home | Extend selection to start of document
+Alt+Home | Go to start of display line
+Ctrl+End | Go to end of document
+Ctrl+Shift+End | Extend selection to end of document
+Ctrl+Up | Scroll up
+Ctrl+Down | Scroll down
+Ctrl+Shift+T | Line copy
+Ctrl+Shift+L | Line cut
+Ctrl+[ | Previous paragraph
+Ctrl+] | Next paragraph
+Ctrl+Left | Previous word
+Ctrl+Right | Next word
+Ctrl+/ | Previous word part
+Alt+Shift+Movement | Rectangular block selection
