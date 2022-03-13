@@ -45,16 +45,18 @@ We are working on removing existing limitations in the AGS, so some of the remai
 ### Changelog of lifted limits
 
 AGS v3.6:
-* 20 screen overlays at a time lifted
+- 20 screen overlays at a time lifted
+- Removed limit of simultaneous Button animations (was 15).
+- Removed limit of Character followers (was 30).
 
 AGS v3.5
 
-* packed sprites file (acsprset.spr) lifted from 2 GB limit
-* Imported sprites count limit raised from 30000 to 90000
-* Total number of sprites in game (includes both imported and Dynamic Sprites) lifted to around 2 billions of dynamic sprites
-* Font count limit of 30 removed
-* length limit on the Button lifted from 50 character
-* length limit on TextBox lifted from 200 lines
-* ListBox item count limit lifted from 200
-* hidden limit for DoOnceOnly token length lifted from 200 characters
-* local messages per room limit lifted from 100 (excluding script)
+- packed sprites file (acsprset.spr) lifted from 2 GB limit
+- Imported sprites count limit raised from 30000 to 90000
+- Total number of sprites in game (includes both imported and Dynamic Sprites) lifted to around 2 billions of dynamic sprites
+- Font count limit of 30 removed
+- length limit on the Button lifted from 50 character
+- length limit on TextBox lifted from 200 lines
+- ListBox item count limit lifted from 200
+- hidden limit for DoOnceOnly token length lifted from 200 characters
+- local messages per room limit lifted from 100 (excluding script)
