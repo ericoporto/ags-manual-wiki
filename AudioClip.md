@@ -113,6 +113,35 @@ be played afterwards.
 
 ---
 
+### `AudioClip.PlayOnChannel`
+
+    AudioChannel* AudioClip.PlayOnChannel(int channel, optional AudioPriority, optional RepeatStyle)
+
+Plays this audio clip, explicitly putting it on the particular channel, from 1 to 15. 
+
+This function disregards any audio type rules, so you may script your own channel logic. 
+
+If the selected audio channel is busy playing higher priority sounds, then this
+new audio clip will not be played.
+
+This command returns the AudioChannel instance that the new sound is
+playing on, or *null* if it did not play for any reason.
+
+Example:
+
+    aBeep.PlayOnChannel(2, eAudioPriorityHigh, eOnce);
+
+plays the *aBeep* audio clip on channel 2.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`AudioClip.Play`](AudioClip#audioclipplay),
+[`AudioClip.PlayFrom`](AudioClip#audioclipplayfrom),
+[`AudioClip.PlayQueued`](AudioClip#audioclipplayqueued),
+[`AudioClip.Stop`](AudioClip#audioclipstop)
+
+---
+
 ### `AudioClip.Stop`
 
     AudioClip.Stop()
