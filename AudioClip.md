@@ -117,7 +117,7 @@ be played afterwards.
 
     AudioChannel* AudioClip.PlayOnChannel(int channel, optional AudioPriority, optional RepeatStyle)
 
-Plays this audio clip, explicitly putting it on the particular channel, from 1 to 15. 
+Plays this audio clip, explicitly putting it on the particular channel, starting with 1 (as channel 0 is reserved for Speech). The maximal number of channels may be found on a [System limits](SystemLimits) page, or using [`System.AudioChannelCount`](System#systemaudiochannelcount) at runtime.
 
 This function disregards any audio type rules, so you may script your own channel logic. 
 
