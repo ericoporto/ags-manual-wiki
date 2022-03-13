@@ -14,7 +14,7 @@ similar, chances are this section will answer it.
 - 20 timers
 - 5 background frames per room
 - 20 mouse cursors
-- 8 audio channels
+- 16 audio channels
 - 126 different script modules due to bytecode format
 - unlimited words in the text parser dictionary
 - unlimited fonts
@@ -45,12 +45,12 @@ We are working on removing existing limitations in the AGS, so some of the remai
 ### Changelog of lifted limits
 
 AGS v3.6:
+- Audio channels number increased from 8 to 16.
 - 20 screen overlays at a time lifted
 - Removed limit of simultaneous Button animations (was 15).
 - Removed limit of Character followers (was 30).
 
 AGS v3.5
-
 - packed sprites file (acsprset.spr) lifted from 2 GB limit
 - Imported sprites count limit raised from 30000 to 90000
 - Total number of sprites in game (includes both imported and Dynamic Sprites) lifted to around 2 billions of dynamic sprites
