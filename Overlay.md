@@ -218,3 +218,57 @@ creates a text overlay, then gradually slides it down the screen.
 *See also:* [`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
 [`Overlay.X`](Overlay#overlayx),
 [`Overlay.Remove`](Overlay#overlayremove)
+
+---
+
+### `Overlay.Width`
+
+    readonly int Overlay.Width;
+
+Gets the width of this overlay.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy), [`Overlay.Height`](Overlay#overlayheight)
+
+---
+
+### `Overlay.Height`
+
+    readonly int Overlay.Height;
+
+Gets the height of this overlay.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy), [`Overlay.Width`](Overlay#overlaywidth)
+
+---
+
+### `Overlay.Transparency`
+
+    int Overlay.Transparency;
+
+Gets/sets the transparency of this overlay.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Object.Transparency`](Object#objecttransparency)
+[`Character.Transparency`](Character#charactertransparency),
+[`GUI.Transparency`](GUI#guitransparency)
+
+---
+
+### `Overlay.ZOrder`
+
+    int Overlay.ZOrder;
+
+Gets/sets the overlay's z-order relative to other overlays and on-screen objects.
+
+The Z-order setting is an arbitrary integer number that can be positive or negative. AGS draws
+the Overlays and GUIs in order, from the lowest numbered at the back to the highest numbered at the front.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`GUI.ZOrder`](GUI#guizorder)
+
