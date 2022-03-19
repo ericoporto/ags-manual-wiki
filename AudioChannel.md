@@ -4,6 +4,49 @@ The AudioChannel instance represents a currently playing audio file. You
 can use this instance to check the status of playing sounds, and adjust
 them.
 
+---
+
+### `AudioChannel.Pause`
+
+    AudioChannel.Pause()
+
+Pauses the playback on this channel
+
+Example:
+
+    AudioChannel *channel = aMusic.Play();
+    Display("After this message the audio will pause, but we may unpause soon")
+    channel.Pause();
+    Display("After this message the audio will keep playing")
+    channel.Resume();
+
+will start playing the *aMusic* audio clip, and then pause after the first message and resume after the second message.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`AudioChannel.Resume`](AudioChannel#audiochannelresume)
+
+---
+
+### `AudioChannel.Resume`
+
+    AudioChannel.Resume()
+
+Resumes the paused audio channel.
+
+Example:
+
+    AudioChannel *channel = aExplosion.Play();
+    Wait(20);
+    channel.Pause();
+    Wait(20);
+    channel.Resume();
+
+will start playing the *aExplosion* audio clip, wait 20 ticks, pause, wait 20 ticks in silence, then continue playing.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`AudioChannel.Pause`](AudioChannel#audiochannelpause)
 
 ---
 
@@ -138,6 +181,19 @@ will start playing the *aExplosion* audio clip, and display which
 channel it is playing on.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
+
+---
+
+### `AudioChannel.IsPaused`
+
+    readonly bool AudioChannel.IsPaused
+
+Gets whether this audio channel is currently paused. Returns
+*true* if it is, or *false* if it is not.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`AudioChannel.Pause`](AudioChannel#audiochannelpause), [`AudioChannel.Resume`](AudioChannel#audiochannelresume)
 
 ---
 
