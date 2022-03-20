@@ -2021,6 +2021,18 @@ uses the obsolete MoveCharacter function to move EGO to (100, 50)
 
 ---
 
+### `Character.IdleAnimationDelay`
+
+    int Character.IdleAnimationDelay
+
+Gets/sets the character's idle animation delay
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*SeeAlso:* [`Character.IdleView`](Character#characteridleview), [`Character.SetIdleView`](Character#charactersetidleview)
+
+---
+
 ### `Character.IdleView`
 
     readonly int Character.IdleView
@@ -2037,7 +2049,7 @@ Example:
 
 will display EGO's current idle view number.
 
-*SeeAlso:* [`SetIdleView`](Character#charactersetidleview)
+*SeeAlso:* [`Character.SetIdleView`](Character#charactersetidleview)
 
 ---
 
