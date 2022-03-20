@@ -241,7 +241,7 @@ The valid values for OPTION are listed in
 Example:
 
     if (GetGameOption(OPT_PIXELPERFECT) == 1) {
-      Display("pixel-perfect click deteciton is on!");
+      Display("pixel-perfect click detection is on!");
     }
 
 *See also:* [`SetGameOption`](Globalfunctions_General#setgameoption)

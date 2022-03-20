@@ -25,7 +25,7 @@ It's important to know the difference between "native resolution" and "window re
 
 **Q. I just started making a new game, but Editor throws an error at me: "The game is set to start in room -1 which does not exist". What does that mean?**
 
-A. Each game has a main character, aka "player character", and starts in the room this character is assigned to. Open your main character for editing and make sure its "StartingRoom" property is valid (ofcourse we assume that you've created at least one room already).
+A. Each game has a main character, aka "player character", and starts in the room this character is assigned to. Open your main character for editing and make sure its "StartingRoom" property is valid (of course we assume that you've created at least one room already).
 
 ---
 

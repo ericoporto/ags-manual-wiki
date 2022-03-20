@@ -58,7 +58,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 int Verbs.GoToCharacterEx(Character*chwhogoes, Character*ch, eDirection dir, int xoffset, int yoffset, bool NPCfacesplayer, int blocking);
 ```
 
-Goes to a character staying at the side defined by 'direction': 1 up, 2 right, 3 down, 4 left and it stays at xoffset or yofsset from the character.
+Goes to a character staying at the side defined by 'direction': 1 up, 2 right, 3 down, 4 left and it stays at xoffset or yoffset from the character.
 blocking: 0=non-blocking; 1=blocking; 2=semi-blocking
 Returns 1, if the character has reached it's goal and 0 if the movement has been canceled before.
 

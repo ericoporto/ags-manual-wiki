@@ -81,7 +81,7 @@ problem of the source font, you need to manually edit this fontsheet or just fin
 on the world wide web that works.
 
 When you play the game with the translation enabled and special characters of the
-language are replaced with ?? (2 questionmarks specifically), this means the encoding
+language are replaced with ?? (2 question marks specifically), this means the encoding
 of the .trs files uses 2 bytes for each character, so make sure you save and encode the
 .trs file to ANSI and NOT in unicode or UTF-8 encoding.
 

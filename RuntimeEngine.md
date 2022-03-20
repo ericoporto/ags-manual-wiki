@@ -78,7 +78,7 @@ Locations of two latter files differ between running platforms:
   * `control_enabled` = \[0; 1\] - enables or disables mouse control. Note that this setting may be overriden by control_when.
   * `speed_def` = \[string\] - determines how the cursor speed value is interpreted, possible modes are:
     * `absolute` - use precisely the speed value provided by config;
-    * `current_display` - keep cursor's speed by screen size relation by increasing actual cursor speed when running game in low resolution and decreasing when running in higher than the current user's dekstop resolution (this is default).
+    * `current_display` - keep cursor's speed by screen size relation by increasing actual cursor speed when running game in low resolution and decreasing when running in higher than the current user's desktop resolution (this is default).
   * `speed` = \[real\] - mouse cursor speed (default is 1.0).
 * **\[language\]** - language options
   * `translation` = \[string\] - name of the translation to use. A \<name\>.tra file should be present in the game directory.
