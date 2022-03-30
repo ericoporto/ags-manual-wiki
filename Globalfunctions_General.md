@@ -156,6 +156,8 @@ with what they do:
 
 Deletes the save game in save slot number SLOT. If there were no save then nothing happens.
 
+**IMPORTANT:** for historical reasons, for slots in the range of 1 and 50 this function also moves highest slot found in that range to fill the freed slot. For example, if there were slots 1, 2, 3, 4, 5 and DeleteSaveSlot removes slot 3, then save in slot 5 will be renamed to become slot 3.
+
 Example:
 
     DeleteSaveSlot (130);
