@@ -3,17 +3,17 @@
 The engine Setup program allows the player to customize certain game
 settings.
 
-**NOTE:** currently setup program is featured only for Windows.
+**NOTE:** currently a setup program is only available for Windows.
 
-The options in setup are divided into two parts: common and advanced.
-Advanced options could be accessed by pressing "Advanced" button.
+The options in the setup program are divided into two parts: _common_ and _advanced_.
+The advanced options can be accessed by clicking the "Advanced" button.
 
 ### Graphics settings
 
 **Driver**
 
-Lets player choose a graphics driver. Currently supported are Software
-renderer (old and slower one, but only driver that fully supports 8-bit
+Lets the player choose a graphics driver. Currently supported are Software
+renderer (the old and slower option, but the only driver that fully supports 8-bit
 games), Direct3D 9 and OpenGL (newer and faster drivers with hardware
 acceleration, but without proper palette-based effects support).
 
@@ -24,39 +24,39 @@ fullscreen.
 
 **Mode**
 
-Lets choose a fullscreen display mode (otherwise shows the approximate
+Lets the player choose a fullscreen display mode (otherwise shows the approximate
 size of window the game will be running in). The list of modes depends
-on graphic card and system capabilities.
+on the graphic card and the system's capabilities.
 
 **Fullscreen scale**
 **Windowed scale**
 
-These two options determine the way game will be scaled (when required)
+These two options determine the way the game will be scaled (when required)
 in fullscreen and windowed modes respectively:
 
 **None**. The game will be shown in its native resolution. Note that
-low-resolution games will be running in a tiniest window on modern
+low-resolution games will be running in a tiny window on modern
 monitors, so this choice is more suitable for high-resolution games.
 
 **Max round multiplier**. The game will be scaled up using a maximal
 round integer (2, 3, 4, etc) multiplier with which it still fits inside
 the screen.
 
-**Stretch to fit screen**. The game will be stretched to fill whole
-screen. Note that if the game's native aspect ratio is different from
-screen one's, the game image will appear deformed.
+**Stretch to fit screen**. The game will be stretched to fill the whole
+screen. Note that if the game's native aspect ratio is different from the
+screen's aspect ratio, the game graphics will appear deformed and indeed stretched.
 
 **Stretch to fit screen (preserve aspect ratio)**. The game will be
-stretched to screen borders while respecting game's native aspect ratio
-(width/height proportions). This ensures that game image will always
-look correct, but may cause black borders appear at the left&right or
-top&bottom sides of the screen.
+stretched to screen borders while respecting the game's native aspect ratio
+(width/height proportions). This ensures that the game graphics will always
+look correct, but the option can lead to black borders at the left & right or
+top & bottom sides of the screen.
 
 **Scaling method**
 
-Here player may choose a game scaling algorithm (nearest-neighbor is
+Here the player can choose a game scaling algorithm (nearest-neighbor is
 the simplest one). Some of the methods (notably Hqx) are restricted to
-which scaling multiplier they may use; if it is not enough to resize the
+which scaling multiplier the player selected; if the multiplier is not enough to resize the
 game on its own, the nearest-neighbor method will be applied
 additionally. The list of available filters depend on graphics driver
 selection.
@@ -65,54 +65,54 @@ selection.
 
 **Game language**
 
-Here player may choose one of the available game translations.
+Here the player selects one of the available game translations.
 
 ### Advanced graphics options
 
 **Vertical sync**
 
-This option enables vertical synchronization mode, which reduces
-"tearing" effect on game image, but may decrease the game running speed.
+This option enables vertical synchronization mode, which reduces the
+"tearing" effect on the game graphics, but the option may decrease the game running speed.
 
 **Use 85 Hz display**
 
 This option sets the monitor refresh rate to 85 Hz to run the game,
-which eliminates flicker. However, this does not work on all monitors,
+which eliminates flickering. However, this does not work on all monitors,
 and not at all on flat panel displays, which is why it is disabled by
 default.
 
 **Smooth scaled sprites**
 
 This option will apply anti-aliasing to scaled characters, in order to
-give a smoother look to the resizing. This can slow down the game
+give them a smoother look after the resizing. This can slow down the game
 though, so it is off by default.
 
 **Render sprites at screen resolution**
 
 When enabled, characters and objects are scaled in screen pixels rather
-than game pixels. What this means is that when low-resolution game is
-run in larger window, sprites will take advantage of this higher
+than game pixels. What this means is that when a low-resolution game is
+run in a larger window, the sprites will take advantage of this higher
 resolution and look less pixelated when scaled down. This option may be
-locked to certain state by the game itself (according to author's
-choice), in which case players will not be able to change it.
+locked to a certain state by the game itself (according to author's
+choice), in which case the player will not be able to change it.
 
 ### Sound options
 
 **Digital sound**
 
-Here player may choose the digital audio driver, or disable digital
+Here the player may choose the digital audio driver, or disable digital
 sound completely.
 
 **MIDI music**
 
-Here player may choose the MIDI music playback method, or disable MIDI
+Here the player may choose the MIDI music playback method, or disable MIDI
 music completely.
 
 **Enable threaded audio**
 
-When enabled, engine will process audio on a separate thread. This results in a much smoother playback, but may potentially break game's synchronization with the music (if it had one).
+When enabled, the engine will process audio on a separate thread. This results in a much smoother playback, but may potentially break the game's synchronization with the music (if it had one).
 
-**Use voice pack is available**
+**Use voice pack if available**
 
 When checked, this option enables voice speech in game (where
 available).
@@ -122,15 +122,15 @@ available).
 **Auto lock to window**
 
 If this option is enabled, the mouse will be locked inside game window
-whenever player clicks on it or switches into game. The locked mouse
-cannot leave game window, making it impossible to switch out from the
-game by mistake (by clicking on desktop, for example). Naturally, this
-option only has importance if game is run in windowed mode; when in
-fullscreen the mouse is always locked.
+whenever the player clicks on it or switches into game. The locked mouse
+cannot leave the game window, making it impossible to accidentally jump out of the
+game by mistake (by clicking on the desktop, for example). Naturally, this
+option is only important if the game is run in windowed mode; when the game runs in
+fullscreen mode, the mouse is always locked.
 
 **Mouse speed**
 
-This slider allows player to set up mouse cursor speed in game. It
+This slider allows the player to set up the mouse cursor speed in game. It
 should be noted that this parameter is only applied if the game is run
 in fullscreen mode.
 
@@ -139,7 +139,7 @@ in fullscreen mode.
 **Sprite cache max size**
 
 This option limits the maximum amount of memory that the game will use
-for its sprite cache. Sprite cache is used to keep a partition of all
+for its sprite cache. The sprite cache is used to keep a partition of all
 the game sprites loaded to the memory, thus reducing loading times
 between rooms and preventing slowdowns during game play. Of course,
 higher values make the game use more memory. Usually only
@@ -161,4 +161,4 @@ runtime data shared among all the users of this computer - in the default Window
 Players may enable this option and define their own location to store
 these game files.
 
-*See also:* [Default setup](Settingupthegame#default-setup)
+*See also:* [Default setup (Editor Pane)](Settingupthegame#default-setup), [Location of the Config Files on the System](RuntimeEngine) 
