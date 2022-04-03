@@ -165,3 +165,6 @@ Following OPTIONS are supported when running from command line:
 
 
 Command line arguments override options from configuration file where applicable.
+
+
+*See also:* [Default setup (Editor Pane)](Settingupthegame#default-setup), [Run-time engine setup](Setup)
