@@ -947,7 +947,10 @@ Example:
     cEgo.LoseInventory(iKey);
 
 will make the character EGO lose the inventory item iKey from the
-inventory tab
+inventory tab.
+
+**Note**: Make sure you check the [`Mouse.Mode`](Mouse#mousemode) after taking away and inventory item from a character, especially when the active cursor is the inventory item the player just lost.
+
 
 *See also:* [`Character.AddInventory`](Character#characteraddinventory),
 [`Character.InventoryQuantity`](Character#characterinventoryquantity)
