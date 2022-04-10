@@ -489,7 +489,7 @@ calls dialog_request, so you can use Said() calls to respond. See the
 
 ---
 
-### General settings
+### The General Settings panel
 
 The General Settings pane contains a list of all the various overall
 options that you can set for your game.
@@ -500,7 +500,10 @@ SetGameOption.
 The available settings are detailed in documentation in the [General Settings](GeneralSettings)
 page.
 
-
+Some settings you may want to adjust right at  the start of your game include
+**Developer name**, **Game name** and **Resolution**. Resolution is the most
+important option, which determines the size of game area visible on screen at
+any given time. This is also the minimal size that game rooms may have.
 
 ---
 
