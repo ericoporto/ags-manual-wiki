@@ -10,7 +10,7 @@ When a new version of AGS is released and comes with new API entries for additio
 
 In a nutshell, API switches let you control which parts of the API are active in your game.
 
-In the editor the API switches are found in the [General Settings](Settingupthegame#general-settings), in the "Backwards Compatibility" category. The relevant settings are:
+In the editor the API switches are found in the [General Settings](GeneralSettings), in the "Backwards Compatibility" category. The relevant settings are:
 
 * **Script API version** - defines the *topmost level* of the API. Default is the "Highest" level, which uses the topmost supported API by this version of AGS. Setting it to any version will lock the API at that level, disabling any additions (functions and properties) that were introduced to AGS Script later.
 * **Script compatibility level** - defines the *lowest level* of the API. Default is the "Highest" level, which again uses only functionality officially supported by the current version of AGS. Setting it to a lower version enables older functions that now are deprecated.
