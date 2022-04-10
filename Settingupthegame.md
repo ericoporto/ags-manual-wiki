@@ -20,7 +20,13 @@ If you want to use 8-bit, you need to set up the palette. This is
 because all sprite and background scene imports rely on the palette
 setup to be the same. You **CANNOT** use hi-color nor true-color
 sprites or backgrounds in a 256-color game.
-All this means, use 8-bit color only when you know what you are doing or when you intentionally want to punish yourself with lots of nerdy fumbling around on settings for colormodes that were not artist's decisions but actual hardware limitations of the time and every artist is glad these restrictions are no longer in place.
+
+All this means, use 8-bit color only when you know what you are doing or when
+you intentionally want to punish yourself with lots of nerdy fumbling around on
+settings for colormodes that were not artist's decisions but actual hardware
+limitations of the time and every artist is glad these restrictions are no
+longer in place.
+
 But you can do really cool color cycling effects only in 8-bit games,
 other than that this is really outdated technology, but it still works
 of course, and how it works is explained in the next paragraphs.
@@ -546,7 +552,14 @@ Additionally, following settings are available:
     the game's folder. Players will be able to modify
     this path in setup program.
 
-**IMPORTANT:** what you set on this page is a default game configuration, but it may be overriden by a user config. If you have run your game's setup program at least once and chose to save, that created a user config file [in its own location](RuntimeEngine#configuration-file-locations). Since then changing Default Setup won't be enough to affect your game, you'd also have to change user config by running setup program again. You may also delete user config file (that is safe thing to do), which will reset settings back to default config and let you test it out.
+**IMPORTANT:** what you set on this page is a default game configuration,
+but it may be overriden by a user config. If you have run your game's setup
+program at least once and chose to save, that created a user config file
+[in its own location](RuntimeEngine#configuration-file-locations). 
+Since then changing Default Setup won't be enough to affect your game,
+you'd also have to change user config by running setup program again.
+You may also delete user config file (that is safe thing to do), which
+will reset settings back to default config and let you test it out.
 
 **IMPORTANT:** the configuration file will only be recreated during next
 game compilation, so if you change these settings you will need to
@@ -647,7 +660,11 @@ Every font have following optional properties:
     lines of wrapped text. Setting this to 0 will make font use its own
     height as a vertical spacing. Having line spacing lower than font's
     height will make lines partially overlap.
--   **SizeMultiplier** - an integer scale multiplier applied to this font. Note that it is commonly makes sense to assign this for the bitmap fonts, as TTF fonts may be reimported with different font size. When set for a TTF font it will simply be initialized with a higher point-size in game.
+-   **SizeMultiplier** - an integer scale multiplier applied to this font. 
+    Note that it commonly makes sense to assign this for the bitmap fonts,
+    as TTF fonts may be reimported with different font size. 
+    When set for a TTF font it will simply be initialized with a higher
+    point-size in game.
 -   **VerticalOffset** - defines additional vertical offset applied to
     every drawn line of text (when using this font). This property is
     mainly meant to override particular font's misbehavior.
