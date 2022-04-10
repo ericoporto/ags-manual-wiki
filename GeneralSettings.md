@@ -30,7 +30,8 @@ SetGameOption.
     borders above and below. Today this is rather a compatibility option
     for importing old projects, because AGS does not have proper support
     for custom viewport size.
--   **Game file name** - your game's executable and/or data filename. This string will be used when creating game package files on disk.
+-   **Game file name** - your game's executable and/or data filename. 
+    This string will be used when creating game package files on disk.
 -   **Game name** - your game's title. This string will be displayed at
     the window title, and also added to the game's
     executable properties.
@@ -56,14 +57,50 @@ SetGameOption.
     runs in may still be larger or smaller, depending on choices player
     made in setup program, and in that case game's image will be
     stretched or shrunk accordingly.
+    
+## Information
+
+Most of this information is not used right now by the engine, but may be made
+accessible in future versions.
+
+-   **Developer website** - Your website.
+-   **Game description** - The game hook line.
+-   **Genre** - Your game genere.
+-   **Release date** - Date on which this game is first released.
+-   **Version** - a 4-piece version string of your game, made of numbers 
+    separated by three dots.
+
+## Android
+
+-   **App ID** - The Application ID, used in app stores. Also called package
+    name, it's usually looks like com.mystudio.mygame, and it's used in store 
+    URLs. It must have at least two segments (one or more dots), and each
+    segment must start with a letter.
+-   **App Version Code** - The version ID used by Google Play Store and others.
+    It must be a positive integer, and different from the last one uploaded.
+-   **App Version Name** - The version name visible to users in the stores,
+    can be any string. If you leave empty, AGS will use the version you set in
+    the Information group.
+-   **Build Format** - How your android app will be packaged. When testing locally,
+    always use ApkEmbedded. Google Play only accepts AAB. Use AabEmbedded if your
+    packaged game size is lower than 100MB, and Aab if your packaged game size
+    is lower than 500MB. Bigger game sizes are not possible right now under
+    current Play Store restrictions - AGS can build, but the submission will
+    get rejected.
 
 ## Backwards compatibility
 
--   **Allow relative asset resolutions** - if enabled then your game will scale sprites according to their resolution tags: sprites tagged as "low-res" will be scaled up in a "high-res" game (640x400 and higher), sprites tagged as "high-res" will be scaled down in a "low-res" game (less than 640x400). When disabled resolution tags will be ignored as all sprites displayed with their real size (this is default).
+-   **Allow relative asset resolutions** - if enabled then your game will scale 
+    sprites according to their resolution tags: sprites tagged as "low-res"
+    will be scaled up in a "high-res" game (640x400 and higher), sprites tagged
+    as "high-res" will be scaled down in a "low-res" game (less than 640x400).
+    When disabled resolution tags will be ignored as all sprites displayed with
+    their real size (this is default).
 -   **Enable mouse wheel support** - if enabled, on_mouse_click can be
     called with the values eMouseWheelNorth and eMouseWheelSouth, which
     signify the user scrolling their mouse wheel north or
     south, respectively.
+    
     **NOTE:** Not all mice have mouse wheels, therefore its suggested
     that your game should never require the mouse wheel in order to be
     playable - it should only be used as a handy extra.
@@ -106,6 +143,12 @@ SetGameOption.
 -   **Use old-style custom dialog options API** - switch to using
     pre-AGS 3.4.0 custom dialog options callbacks. The differences
     between old and new APIs [are explained in this topic](UpgradeTo34).
+-   **Use old-style keyboard handling** - Uses pre-unicode mode key codes in
+    `on_key_press` function, where regular keys were merged with Ctrl and Alt
+    modifiers. In newer games, it's recommended to leave this as false, and
+    either handle the additional 'mod' parameter or rely on `on_text_input`
+    function for properly handled characters when building text input
+    interfaces.
 
 ## Character movement
 
@@ -130,24 +173,43 @@ SetGameOption.
     commands, they will visibly turn around using their available loops.
     If this option is not set, they will immediately appear facing their
     new direction.
--   **Scale movement speed with room's mask resolution** - Character walking and object movement speeds will scale inversely in proportion to the current room's Mask Resolution. For example, having 1:2 mask resolution will multiply speed by 2. This is a backward compatible setting that should not be enabled without real need.
+-   **Scale movement speed with room's mask resolution** - Character walking
+    and object movement speeds will scale inversely in proportion to the
+    current room's Mask Resolution. For example, having 1:2 mask resolution
+    will multiply speed by 2. This is a backward compatible setting that should
+    not be enabled without real need.
 
 ## Compiler
 
--   **Attach game data to exe** (Windows only) - when enabled the main game data will be appended to "gamename.exe" file. This is how AGS games were packed traditionally, and is on by default. When disabled game data will be packed into the separate "gamename.ags" file and placed alongside with the game exe.<br>
-Disabling this option will make the game file structure more transparent and, for example, may help to prevent false positive reports from antiviruses that often don't like it when AGS engine reads data from exe.
+-   **Attach game data to exe** (Windows only) - when enabled the main game
+    data will be appended to "gamename.exe" file. This is how AGS games were
+    packed traditionally, and is on by default. When disabled game data will
+    be packed into the separate "gamename.ags" file and placed alongside with
+    the game exe.
+    Disabling this option will make the game file structure more transparent
+    and, for example, may help to prevent false positive reports from
+    antiviruses that often don't like it when AGS engine reads data from exe.
 -   **Build target platforms** - a checklist of platforms for which the
     game will be compiled.
--   **Compress the sprite file** - when enabled the sprites will be
-    compressed to reduce game size, at expense of performance.
 -   **Enabled Debug Mode** - whether the debug keys are active. When
     debug mode is on, you can press Ctrl-X to teleport to any room,
     Ctrl-S to give all inventory items, Ctrl-A to display walkable areas
     on the screen, and Ctrl-D to display statistics about the
     current room. When debug mode is off, these do nothing. See the
     [Debugging features](Debuggingfeatures) section for more.
+-   **Enable sprite storage optimization** - When possible save sprites in game
+    files in a format that requires less storage space. This may reduce the
+    compiled game size on disk, but effect may differ depending on number of
+    colors used in sprites, and other factors.
+-   **Package custom data folder(s)** - A comma-separated list of folders. The
+    contents of these folders will be added to the game resources, and you will
+    be able to access them by using the `$DATA$` token in file paths.
+    More details on this in [`File.Open`](File#fileopen).
 -   **Split resource files into X MB-sized chunks** - see
-    [here](DistGame#splitting-resource-files) for information.
+    [here](DistGame#splitting-resource-files) for information. 
+-   **Sprite file compression** - when enabled the sprites will be
+    compressed to reduce game size, at expense of performance. The performance
+    impact in desktop platforms is usually negligible.
 
 ## Dialog
 
@@ -272,10 +334,6 @@ Disabling this option will make the game file structure more transparent and, fo
 
 ## Saved Games
 
--   **Enhanced save games** - makes your game's saves compatible with
-    Windows Game Explorer. For detailed information please refer to:
-    [Enhanced Saved Games](IntegrationWithWindows#enhanced-save-games)<br>
-    [Windows Game Explorer](IntegrationWithWindows#windows-game-explorer)
 -   **Save games extension** - determines the special extension for your
     save files.
 -   **Save games folder name** - determines the name of folder created
@@ -288,6 +346,10 @@ Disabling this option will make the game file structure more transparent and, fo
     larger save game files, but it will mean that you can use a save
     game thumbnails GUI to make the save/load interface
     more professional.
+    
+There used to be an option for Save Game integration with Windows Vista, it
+was called **Enhanced save games**. Since this was removed in later versions of
+Windows, this option has been removed.
 
 ## Sound
 
@@ -318,6 +380,13 @@ Disabling this option will make the game file structure more transparent and, fo
 -   **Custom thought bubble GUI** - Determines which text window GUI is
     used for displaying thoughts with
     [`Think`](Character#characterthink).
+-   **TTF fonts adjustment defaults** - Automatic adjustment of the true-type
+    font metrics; primarily for backward compatibility.
+    
+    This option will be used as a default value for each new imported font, but
+    you may also customize it in the Font's properties.
+-   **TTF fonts height used in the game logic** - How the true-type font height
+    will be defined whenever it is required by the script of game logic.  
 -   **Write game text Right-to-Left** - in-game text will be written
     right-to-left, i.e. line breaks are worked out from the end of the
     sentence going backwards, and the last words are displayed first.
