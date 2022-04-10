@@ -276,7 +276,7 @@ higher display resolution and draw characters and objects less pixelated
 when they are scaled up or down (e.g. on walkable area with scaling).
 
 **IMPORTANT:** unless you have locked this parameter to certain value in
-your game's [General settings](Settingupthegame#general-settings), players may also change it
+your game's [General settings](GeneralSettings), players may also change it
 in the setup program. In such case it is suggested that you do not
 unconditionally modify this property in script, but rather provide a
 menu option for toggling it at runtime.
