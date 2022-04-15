@@ -14,6 +14,7 @@
 
 - [New Game templates](Templates)
 - [General Settings](GeneralSettings)
+- [Editor Preferences](EditorPreferences)
 - [Room Editor](EditorRoom)
 - [Character Editor](EditorCharacter)
 - [GUI Editor](EditingGUIs)
