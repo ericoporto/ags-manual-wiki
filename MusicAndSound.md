@@ -14,10 +14,8 @@ file at a time. If you attempt to play two MIDI music files simultaneously,
 the first one will be cut off when the second one starts playing.
 
 OGG is a digital music format similar
-to MP3, but achieving better compression and higher quality. More
-importantly, it is a totally free format so no royalty payments or
-licenses are required to use it. For more information and programs to
-encode your music to OGG, see https://www.vorbis.org/
+to MP3, but achieving better compression and higher quality. For more information 
+and programs to encode your music to OGG, see https://www.vorbis.org/
 
 **Audio in the Editor**
 
