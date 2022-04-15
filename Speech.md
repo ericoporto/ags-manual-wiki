@@ -91,6 +91,39 @@ used instead.
 
 ---
 
+### `Speech.PortraitOverlay`
+
+    static Overlay* Speech.PortraitOverlay
+
+Retrieves the portrait overlay of a current blocking speech. It's currently only available in eihter
+a `repeatedly_execute_always` or `late_repeatedly_execute_always`. It will return null if no
+portrait overlay is currently being shown.
+
+Example:
+
+    #define PORTRAIT_YMIN 5
+    #define PORTRAIT_YMAX 30
+    int plast = -1;
+    int pmove = 1;
+    function repeatedly_execute_always() {
+      if (Speech.PortraitOverlay != null) {
+        if (plast >= 0) Speech.PortraitOverlay.Y = plast;
+        Speech.PortraitOverlay.Y += pmove;
+        if (Speech.PortraitOverlay.Y < PORTRAIT_YMIN) pmove = 1;
+        if (Speech.PortraitOverlay.Y > PORTRAIT_YMAX) pmove = -1;
+        plast = Speech.PortraitOverlay.Y;
+      }
+    }
+
+Waves a speech portrait up and down
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:*
+[`Speech.TextOverlay`](#speechtextoverlay)
+
+---
+
 ### `Speech.PortraitXOffset`
 
     static int Speech.PortraitXOffset
@@ -232,6 +265,42 @@ Example:
     Speech.TextAlignment = eAlignRight;
 
 will align the speech text at the right side.
+
+---
+
+### `Speech.TextOverlay`
+
+    static Overlay* Speech.TextOverlay
+
+Retrieves the text overlay of a current blocking speech. It's currently only available in eihter a
+`repeatedly_execute_always` or `late_repeatedly_execute_always`. It will return null if no
+text overlay is currently being shown.
+
+It allows to detect appearance, removal, and change of the blocking speech.
+Additionally, calling Speech.TextOverlay.Remove() will work as a speech interrupt.
+
+Example:
+
+    Overlay* lastSpeech;
+ 
+    function late_repeatedly_execute_always() {
+      Overlay* curSpeech = Speech.TextOverlay;
+      if (lastSpeech == null && curSpeech != null) {
+        // speech has started
+      } else if (lastSpeech != null && curSpeech == null) {
+        // speech is over
+      } else if (lastSpeech != null && curSpeech != lastSpeech) {
+        // speech changed to the next line
+      }
+      lastSpeech = curSpeech;
+    }
+
+Detects when the blocking speech has begun, changed to the next line or is over.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:*
+[`Speech.PortraitOverlay`](#speechportraitoverlay)
 
 ---
 
