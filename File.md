@@ -33,6 +33,9 @@ directory.<br>
 `$APPDATADIR$`, which allows you to write/read files to a folder on the
 system which is accessible by and shared by all users. The example of
 their use is below.
+`$DATA$`, which allows you to read files that are packaged inside the
+game package, originally from a directory specified in the General Settings,
+in the `Package custom data folder(s)` option.
 
 Examples:
 
@@ -76,7 +79,8 @@ variables.
 *See also:* [`File.Close`](File#fileclose),
 [`File.Exists`](File#fileexists),
 [`File.ReadStringBack`](File#filereadstringback),
-[`File.WriteString`](File#filewritestring)
+[`File.WriteString`](File#filewritestring),
+[General Settings](GeneralSettings#compiler)
 
 ---
 
