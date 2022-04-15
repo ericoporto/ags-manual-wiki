@@ -115,7 +115,9 @@ will draw a circle in the center of the screen, of 50 pixels radius.
 *(Formerly known as `RawDrawImageTransparent`, which is now obsolete)*
 
     DrawingSurface.DrawImage(int x, int y, int slot, optional int transparency,
-                             optional int width, optional int height)
+                             optional int width, optional int height,
+                             optional int cut_x, optional  int cut_y, 
+                             optional int cut_width, optional int cut_height)
 
 Draws image SLOT from the sprite manager onto the surface at location
 (X,Y).
@@ -127,6 +129,9 @@ semi-transparent; using 0 means it will not be transparent.
 You can also resize the image as you draw it. In order to do this,
 simply specify a *width* and *height* that you wish to resize the image
 to when it is drawn.
+
+As of **AGS 3.6.0**, you can also cut the original image in a specific
+rectangle using it's x,y position and width and height.
 
 **NOTE:** This command only works if the image to be drawn is the same
 color depth as the surface that you are drawing onto.
@@ -346,10 +351,15 @@ will display the text in the center of the screen, starting from Y = 40.
 *(Formerly known as `RawDrawFrameTransparent`, which is now obsolete)*<br>
 *(Formerly known as `RawRestoreScreen`, which is now obsolete)*
 
-    DrawingSurface.DrawSurface(DrawingSurface *source, optional int transparency)
+    DrawingSurface.DrawSurface(DrawingSurface* source, optional int transparency,
+                              optional int x, optional int y, 
+                              optional int width, optional int height,
+                              optional int cut_x, optional  int cut_y, 
+                              optional int cut_width, optional int cut_height)
 
 Draws the specified surface on top of this surface, optionally using
-*transparency* percent transparency.
+*transparency* percent transparency. As of **AGS 3.6.0**, it also supports additional
+parameters to draw a piece of the surface onto a specific area in the destination surface.
 
 This allows you to perform day-to-night fading and other special
 effects.
