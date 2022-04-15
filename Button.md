@@ -22,10 +22,16 @@ that event it will be run, otherwise nothing happens.
 
 *(Formerly known as `AnimateButton`, which is now obsolete)*
 
-    Button.Animate(int view, int loop, int delay, RepeatStyle)
+    Button.Animate(int view, int loop, int delay, optional RepeatStyle, 
+                   optional BlockingStyle, optional Direction, 
+                   optional int frame)
 
 Animates a GUI button by playing the specified view loop on it. This
 could be useful for Sierra-style death animations and other effects.
+
+As of **AGS 3.6.0**, it also includes blocking style, direction and 
+starting frame parameters. Note that the default value for BlockingStyle 
+is eNoBlock.
 
 LOOP from VIEW will be played on the button. The DELAY specifies the
 speed of the animation - larger numbers are slower. This has the same
