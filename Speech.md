@@ -120,7 +120,7 @@ Waves a speech portrait up and down
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
 *See also:*
-[`Speech.TextOverlay`](#speechtextoverlay)
+[`Speech.TextOverlay`](Speech#speechtextoverlay)
 
 ---
 
@@ -300,7 +300,7 @@ Detects when the blocking speech has begun, changed to the next line or is over.
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
 *See also:*
-[`Speech.PortraitOverlay`](#speechportraitoverlay)
+[`Speech.PortraitOverlay`](Speech#speechportraitoverlay)
 
 ---
 
