@@ -782,23 +782,31 @@ uses the obsolete MoveObject function to move the Rock object to (100,
 
 ---
 
-### `Object.IgnoreScaling`
+### `Object.ManualScaling`
 
-    bool Object.IgnoreScaling
+*(Formerly known as `Object.IgnoreScaling`, which is now obsolete)*
 
-Gets/sets whether the object is affected by walkable area scaling. This
-is equivalent, **though opposite**, to the "Use walkable area scaling"
-checkbox in the Objects pane of the editor.
+    bool Object.ManualScaling
 
-If this is set to true, the object will always be the same size. If it
-is set to false, then the object will be stretched or shrunk as
+Gets/sets whether the object uses manually specified scaling instead of 
+using the walkable area scaling. This is equivalent, **though opposite**, 
+to the "UseRoomAreaScaling" property in the Objects pane of the editor.
+
+If it is set to false, then the object will be stretched or shrunk as
 appropriate on walkable areas.
+
+If this is set to true, the object scaling will instead be set by modifying
+it's Scaling property.
 
 Example:
 
-    oDoor.IgnoreScaling = true;
+    oDoor.ManualScaling = true;
 
 will tell the Door object not to be scaled on walkable areas.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Object.Scaling`](Object#objectscaling)
 
 ---
 
@@ -909,6 +917,23 @@ Example:
 will retrieve and then display object 0's name.
 
 *See also:* [`Game.GetLocationName`](Game#gamegetlocationname)
+
+---
+
+### `Object.Scaling`
+
+    int Object.Scaling
+
+Gets/sets the object's current scaling level. An object that has the 
+regular size has this property set to 100.
+
+You can only set the value of this property if ManualScaling is enabled
+for the object; otherwise, the scaling is determined automatically based 
+on the walkable area that the character is on.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Object.ManualScaling`](Object#objectmanualscaling)
 
 ---
 
