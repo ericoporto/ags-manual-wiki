@@ -949,7 +949,7 @@ Example:
 will make the character EGO lose the inventory item iKey from the
 inventory tab.
 
-**Note**: Make sure you check the [`Mouse.Mode`](Mouse#mousemode) after taking away and inventory item from a character, especially when the active cursor is the inventory item the player just lost.
+**Note**: Make sure you check the [`Mouse.Mode`](Mouse#mousemode) after taking away an inventory item from a character, especially when the active cursor is the inventory item the player just lost. Something like Mouse.Mode = eModeInteract; in the line after the LoseInventory command helps when you use the 2 click controls.
 
 
 *See also:* [`Character.AddInventory`](Character#characteraddinventory),
