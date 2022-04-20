@@ -443,6 +443,8 @@ FRAME of LOOP in VIEW. If you do not supply the loop or frame:
 You must use this command before calling Animate, so that AGS knows
 which view to animate the object with.
 
+**NOTE:** this may be unexpected, but calling this function will play any sound linked to the given frame. This is because SetView may also be used to manually switch between frames without using [Animate](Object#objectanimate) command.
+
 Example:
 
     object[3].SetView(14);
@@ -452,6 +454,9 @@ will change object 3's view to view number 14 while resetting to loop 0 and fram
 view 5, loop 2, frame 1.
 
 *See also:* [`Object.Animate`](Object#objectanimate)
+[`Object.Frame`](Object#objectframe)
+[`Object.Loop`](Object#objectloop)
+[`Object.View`](Object#objectview)
 
 ---
 
