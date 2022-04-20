@@ -436,8 +436,9 @@ will change object's 2 position to 50,100.
     Object.SetView(int view, optional int loop, optional int frame)
 
 Sets the object's view to VIEW, and changes the object's graphic to
-FRAME of LOOP in VIEW. If you do not supply the loop or frame, they will
-be left unchanged.
+FRAME of LOOP in VIEW. If you do not supply the loop or frame:
+* since **AGS 3.6.0**: the loop and/or frame are reset to 0;
+* in earlier versions they would be left at values they had before SetView was called.
 
 You must use this command before calling Animate, so that AGS knows
 which view to animate the object with.
@@ -445,12 +446,10 @@ which view to animate the object with.
 Example:
 
     object[3].SetView(14);
-    object[1].SetView(5, 2, 0);
+    object[1].SetView(5, 2, 1);
 
-will change object 3's view to view number 14, and change object 1 to
-view 5, loop 2, frame 0.
-
-*Note:* Since **AGS 3.6.0** and later versions, this function will also resets loop and frame to 0 by default if you don't specify their values.
+will change object 3's view to view number 14 while resetting to loop 0 and frame 0 of that view, and change object 1 to
+view 5, loop 2, frame 1.
 
 *See also:* [`Object.Animate`](Object#objectanimate)
 
