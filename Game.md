@@ -1,105 +1,5 @@
 ## `Game` functions
 
-### `Game.AudioClipCount`
-
-    readonly static int Game.AudioClipCount
-
-Returns the number of audio clips in the game.
-
-This is useful for script modules if you need to iterate through all the
-audio clips for some reason.
-
-*Compatibility:* Supported by **AGS 3.4.0** and later versions.
-
-*See also:* [`Game.AudioClips`](Game#gameaudioclips)
-
----
-
-### `Game.AudioClips`
-
-    readonly static int Game.AudioClips[int slot]
-
-Returns the AudioClip\* pointer by its index in game resources.
-
-Example:
-
-    int i = 0;
-    int music_count = 0;
-    while (i < Game.AudioClipCount)
-    {
-      if (Game.AudioClips[i].Type == eAudioTypeMusic)
-        music_count++;
-      i++;
-    }
-    Display("We have %d musical clips in our game", music_count);
-
-*Compatibility:* Supported by **AGS 3.4.0** and later versions.
-
-*See also:* [`Game.AudioClipCount`](Game#gameaudioclipcount)
-
----
-
-### `Game.BlockingWaitSkipped`
-
-    readonly static int Game.BlockingWaitSkipped
-
-Gets the code which describes how was the last blocking state skipped by a user (or autotimer).
-
-*Compatibility:* Supported by **AGS 3.6.0** and later versions.
-
-*See also:*
-[`WaitKey`](Globalfunctions_Wait#waitkey),
-[`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
-[`SkipWait`](Globalfunctions_Wait#skipwait)
-
----
-
-### `Game.Camera`
-
-    static readonly Camera* Game.Camera;
-
-Gets the primary camera. This is the default camera that is created automatically at the start of the game and cannot be deleted.
-
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-*See also:* [`Game.Cameras`](Game#gamecameras), [`Camera`](Camera), [`Camera.Create`](Camera#cameracreate), [`Camera.Delete`](Camera#cameradelete), [`Viewport.Camera`](Viewport#viewportcamera)
-
----
-
-### `Game.CameraCount`
-
-    static readonly int Game.CameraCount
-
-Gets the number of cameras.
-
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-*See also:* [`Game.Cameras`](Game#gamecameras)
-
----
-
-### `Game.Cameras`
-
-    static readonly Camera* Game.Cameras[int index];
-
-Returns the Camera instance by its index. There's always at least primary camera at the index 0, more could be created in script using [`Camera.Create`](Camera#cameracreate).
-
-**IMPORTANT:** with the current implementation when you delete a custom camera in the middle all the following cameras will be shifted towards beginning of array, changing their indexes.
-
-Example:
-
-    for (int i = 0; i < Game.CameraCount; i++) {
-        Game.Cameras[i].SetAt(0, 0);
-    }
-
-This script positions all existing cameras at the room's top-left corner.
-
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-*See also:* [`Game.Camera`](Game#gamecamera), [`Game.CameraCount`](Game#gamecameracount), [`Camera.Create`](Camera#cameracreate), [`Camera.Delete`](Camera#cameradelete), [`Viewport.Camera`](Viewport#viewportcamera)
-
----
-
 ### `Game.ChangeTranslation`
 
     static bool Game.ChangeTranslation(string newTranslationName)
@@ -139,41 +39,6 @@ will attempt to change the translation to Spanish
 
 ---
 
-### `Game.CharacterCount`
-
-*(Formerly part of `GetGameParameter`, which is now obsolete)*
-
-    readonly static int Game.CharacterCount
-
-Returns the number of characters in the game.
-
-This is useful for script modules if you need to iterate through all the
-characters for some reason.
-
-Example:
-
-    Display("The game has %d characters.", Game.CharacterCount);
-
----
-
-### `Game.DialogCount`
-
-    readonly static int Game.DialogCount
-
-Returns the number of dialogs in the game.
-
-This is useful for script modules if you need to iterate through all the
-dialogs for some reason. Valid dialogs are numbered from 0 to
-DialogCount - 1.
-
-Example:
-
-    Display("The game has %d dialogs.", Game.DialogCount);
-
-*Compatibility:* Supported by **AGS 3.0.2** and later versions.
-
----
-
 ### `Game.DoOnceOnly`
 
     static bool Game.DoOnceOnly(const string token)
@@ -203,39 +68,6 @@ Example:
 will give the player 5 points the first time this script is run.
 
 *See also:* [`GiveScore`](Globalfunctions_General#givescore)
-
----
-
-### `Game.FileName`
-
-    readonly static String Game.FileName
-
-Gets the filename that the game is running from. This will usually be
-the name of the EXE file, but could also be \"ac2game.dat\" if you are
-just running the game using ACWIN.EXE.
-
-Example:
-
-    Display("The main game file is: %s", Game.FileName);
-
-will display the game filename.
-
-*See also:* [`Game.Name`](Game#gamename)
-
----
-
-### `Game.FontCount`
-
-    readonly static int Game.FontCount
-
-Returns the number of fonts in the game.
-
-This is useful for script modules if you need to iterate through all the
-fonts for some reason.
-
-Example:
-
-    Display("The game has %d fonts.", Game.FontCount);
 
 ---
 
@@ -430,6 +262,301 @@ Example:
 
 ---
 
+### `Game.InputBox`
+
+*(Formerly known as global function `InputBox`, which is now obsolete)*
+
+    static String Game.InputBox(string prompt)
+
+Pops up a window asking the user to type in a string, with PROMPT as the
+text in the window. Whatever they type in will be returned from this
+function.
+
+This command displays a very basic input box, mainly useful for
+debugging purposes. Due to the size of the window, only small strings up
+to about 20 characters can be typed in.
+
+The recommended way to obtain user input is to create your own GUI with
+a text box on it, which allows you full customization of the look of the
+window.
+
+**TIP:** If you add a '!' character to the start of the prompt, then a
+Cancel button will be available in the input box. If the player presses
+this Cancel button (or the ESC key), a blank string is returned.
+
+Example:
+
+    String name = Game.InputBox("!What is your name?");
+
+will prompt the user for his name and store it in the string NAME. If
+the user presses Cancel, the NAME string will be blank.
+
+*See also:* [`String.AsInt`](String#stringasint)
+
+---
+
+### `Game.IsPluginLoaded`
+
+    static bool Game.IsPluginLoaded(const string name)
+
+Checks whether the plugin of the given *name* was present and loaded for
+the game.
+
+**IMPORTANT:** If the plugin exports its own script functions that you
+used in your game script, and not found when the game is launched, then
+the game won't start up at all, exiting with error. IsPluginLoaded may
+therefore be useful to check for plugins that are not interacted with
+from game script, but just run on their own.
+
+Example:
+
+    if (Game.IsPluginLoaded("my_plugin")) {
+      Display("My plugin is found and running!");
+    }
+
+will display a message if plugin is present.
+
+---
+
+### `Game.PlayVoiceClip`
+
+    static AudioChannel* Game.PlayVoiceClip(Character* c, int cue, bool as_speech)
+
+Plays a voice clip from the **speech.vox** in a non-blocking manner. It returns an AudioChannel pointer which you may use to control playback same way you control other clips, or null if it could not be started.
+
+Character and "cue" arguments are used to find actual clip, this works the same way as when you do `cEgo.Say("&10 speech text");` in which case "10" is a cue number. For more information about this see: [Voice speech](MusicAndSound#voice-speech).
+
+The "as_speech" argument tells whether playback has same effect on game as regular speech. At the moment this means that music volume will drop and restore after playback is finished. This parameter "as_speech" is TRUE by default and may be omitted.
+
+This command will be ignored if a regular blocking voice is currently playing. Also, both blocking and non-blocking voice will interrupt non-blocking voice-over if one was playing.
+
+**NOTE:** because of how audiochannels work internally right now voice is always played on the same channel 0, therefore you could also get it as `System.AudioChannels[0]`, but it may not be a good idea to rely on this because channel behavior may change in future.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See also:* [Voice speech](MusicAndSound#voice-speech), [`AudioChannel`](AudioChannel), [`AudioClip.Play`](AudioClip#audioclipplay), [`Character.Say`](Character#charactersay)
+
+---
+
+### `Game.SetSaveGameDirectory`
+
+    static bool Game.SetSaveGameDirectory(string directory)
+
+Changes the directory where save game files are stored to the supplied
+*directory*. If the directory does not exist, AGS will attempt to create
+it.
+
+You cannot use fully qualified directories with this command (e.g.
+`C:\Games\Cool\Saves`), because the player might have installed your
+game to any folder, and they might not be running Windows.
+
+Therefore, only two types of path are supported:<br>
+1. Relative paths (e.g. \"Saves\"). This will create a subfolder inside
+**default game save folder**<br>
+2. The special tag `$MYDOCS$` which allows you to explicitly create a
+different folder for your save games inside the user's documents
+folder.
+
+The actual folder referenced with `$MYDOCS$` is different on every
+platform: Windows XP: \"My Documents\"<br>
+Windows Vista and later: \"Saved Games\"<br>
+Linux: `$XDG_DATA_HOME`/ags<br>
+MacOS: game installation folder.
+
+Returns *true* if the save game directory has been changed successfully;
+*false* if not.
+
+**NOTE:** We advise you against using this function without strong need.
+In the most cases setting the \"Save games folder name\" property in the
+General Settings of the editor should be sufficient.
+
+Example:
+
+    Game.SetSaveGameDirectory("$MYDOCS$/My Cool Game Saves");
+
+will change the save game directory to \"My Cool Game Saves\" in My
+Documents, and create the folder if it does not exist (might be useful
+to do this in game_start).
+
+*See also:*
+[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
+[`RestoreGameDialog`](Globalfunctions_General#restoregamedialog)
+
+---
+
+### `Game.SimulateKeyPress`
+
+    static Game.SimulateKeyPress(eKeyCode key)
+
+Fires a keypress event. This is in all aspects identical to what would happen if a player pressed a key on keyboard. This function may be useful to simulate player actions in game, or create automatic demonstrations (like tutorials).
+
+**IMPORTANT:** because of how AGS engine and scripts work the game will react to this keypress not before current script function finishes. Any things that normally react to keys (such as skippable speech, cutscenes, and certain GUI controls) will be affected only at the following internal game update.
+
+Example:
+
+    Game.SimulateKeyPress(eKeySpace);
+
+This simulates a "space" key press.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See also:* [`Mouse.Click`](Mouse#mouseclick), [List of supported key codes](ASCIIcodes#ascii-code-table)
+
+---
+
+### `Game.AudioClipCount`
+
+    readonly static int Game.AudioClipCount
+
+Returns the number of audio clips in the game.
+
+This is useful for script modules if you need to iterate through all the
+audio clips for some reason.
+
+*Compatibility:* Supported by **AGS 3.4.0** and later versions.
+
+*See also:* [`Game.AudioClips`](Game#gameaudioclips)
+
+---
+
+### `Game.AudioClips`
+
+    readonly static int Game.AudioClips[int slot]
+
+Returns the AudioClip\* pointer by its index in game resources.
+
+Example:
+
+    int i = 0;
+    int music_count = 0;
+    while (i < Game.AudioClipCount)
+    {
+      if (Game.AudioClips[i].Type == eAudioTypeMusic)
+        music_count++;
+      i++;
+    }
+    Display("We have %d musical clips in our game", music_count);
+
+*Compatibility:* Supported by **AGS 3.4.0** and later versions.
+
+*See also:* [`Game.AudioClipCount`](Game#gameaudioclipcount)
+
+---
+
+### `Game.Camera`
+
+    static readonly Camera* Game.Camera;
+
+Gets the primary camera. This is the default camera that is created automatically at the start of the game and cannot be deleted.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See also:* [`Game.Cameras`](Game#gamecameras), [`Camera`](Camera), [`Camera.Create`](Camera#cameracreate), [`Camera.Delete`](Camera#cameradelete), [`Viewport.Camera`](Viewport#viewportcamera)
+
+---
+
+### `Game.CameraCount`
+
+    static readonly int Game.CameraCount
+
+Gets the number of cameras.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See also:* [`Game.Cameras`](Game#gamecameras)
+
+---
+
+### `Game.Cameras`
+
+    static readonly Camera* Game.Cameras[int index];
+
+Returns the Camera instance by its index. There's always at least primary camera at the index 0, more could be created in script using [`Camera.Create`](Camera#cameracreate).
+
+**IMPORTANT:** with the current implementation when you delete a custom camera in the middle all the following cameras will be shifted towards beginning of array, changing their indexes.
+
+Example:
+
+    for (int i = 0; i < Game.CameraCount; i++) {
+        Game.Cameras[i].SetAt(0, 0);
+    }
+
+This script positions all existing cameras at the room's top-left corner.
+
+*Compatibility:* Supported by **AGS 3.5.0** and later versions.
+
+*See also:* [`Game.Camera`](Game#gamecamera), [`Game.CameraCount`](Game#gamecameracount), [`Camera.Create`](Camera#cameracreate), [`Camera.Delete`](Camera#cameradelete), [`Viewport.Camera`](Viewport#viewportcamera)
+
+---
+
+### `Game.CharacterCount`
+
+*(Formerly part of `GetGameParameter`, which is now obsolete)*
+
+    readonly static int Game.CharacterCount
+
+Returns the number of characters in the game.
+
+This is useful for script modules if you need to iterate through all the
+characters for some reason.
+
+Example:
+
+    Display("The game has %d characters.", Game.CharacterCount);
+
+---
+
+### `Game.DialogCount`
+
+    readonly static int Game.DialogCount
+
+Returns the number of dialogs in the game.
+
+This is useful for script modules if you need to iterate through all the
+dialogs for some reason. Valid dialogs are numbered from 0 to
+DialogCount - 1.
+
+Example:
+
+    Display("The game has %d dialogs.", Game.DialogCount);
+
+*Compatibility:* Supported by **AGS 3.0.2** and later versions.
+
+---
+
+### `Game.FileName`
+
+    readonly static String Game.FileName
+
+Gets the filename that the game is running from. This will usually be
+the name of the EXE file, but could also be \"ac2game.dat\" if you are
+just running the game using ACWIN.EXE.
+
+Example:
+
+    Display("The main game file is: %s", Game.FileName);
+
+will display the game filename.
+
+*See also:* [`Game.Name`](Game#gamename)
+
+---
+
+### `Game.FontCount`
+
+    readonly static int Game.FontCount
+
+Returns the number of fonts in the game.
+
+This is useful for script modules if you need to iterate through all the
+fonts for some reason.
+
+Example:
+
+    Display("The game has %d fonts.", Game.FontCount);
+
+---
+
 ### `Game.GlobalMessages`
 
 *(Formerly known as global function `GetMessageText`, which is now
@@ -525,62 +652,6 @@ text is automatically removed from the screen.
 [`Game.MinimumTextDisplayTimeMs`](Game#gameminimumtextdisplaytimems),
 [`Game.TextReadingSpeed`](Game#gametextreadingspeed),
 [`Speech.SkipStyle`](Speech#speechskipstyle)
-
----
-
-### `Game.InputBox`
-
-*(Formerly known as global function `InputBox`, which is now obsolete)*
-
-    static String Game.InputBox(string prompt)
-
-Pops up a window asking the user to type in a string, with PROMPT as the
-text in the window. Whatever they type in will be returned from this
-function.
-
-This command displays a very basic input box, mainly useful for
-debugging purposes. Due to the size of the window, only small strings up
-to about 20 characters can be typed in.
-
-The recommended way to obtain user input is to create your own GUI with
-a text box on it, which allows you full customization of the look of the
-window.
-
-**TIP:** If you add a '!' character to the start of the prompt, then a
-Cancel button will be available in the input box. If the player presses
-this Cancel button (or the ESC key), a blank string is returned.
-
-Example:
-
-    String name = Game.InputBox("!What is your name?");
-
-will prompt the user for his name and store it in the string NAME. If
-the user presses Cancel, the NAME string will be blank.
-
-*See also:* [`String.AsInt`](String#stringasint)
-
----
-
-### `Game.IsPluginLoaded`
-
-    static bool Game.IsPluginLoaded(const string name)
-
-Checks whether the plugin of the given *name* was present and loaded for
-the game.
-
-**IMPORTANT:** If the plugin exports its own script functions that you
-used in your game script, and not found when the game is launched, then
-the game won't start up at all, exiting with error. IsPluginLoaded may
-therefore be useful to check for plugins that are not interacted with
-from game script, but just run on their own.
-
-Example:
-
-    if (Game.IsPluginLoaded("my_plugin")) {
-      Display("My plugin is found and running!");
-    }
-
-will display a message if plugin is present.
 
 ---
 
@@ -729,92 +800,6 @@ Example:
 will change the normal font to the font \"Special\".
 
 *See also:* [`Game.SpeechFont`](Game#gamespeechfont)
-
----
-
-### `Game.PlayVoiceClip`
-
-    static AudioChannel* Game.PlayVoiceClip(Character* c, int cue, bool as_speech)
-
-Plays a voice clip from the **speech.vox** in a non-blocking manner. It returns an AudioChannel pointer which you may use to control playback same way you control other clips, or null if it could not be started.
-
-Character and "cue" arguments are used to find actual clip, this works the same way as when you do `cEgo.Say("&10 speech text");` in which case "10" is a cue number. For more information about this see: [Voice speech](MusicAndSound#voice-speech).
-
-The "as_speech" argument tells whether playback has same effect on game as regular speech. At the moment this means that music volume will drop and restore after playback is finished. This parameter "as_speech" is TRUE by default and may be omitted.
-
-This command will be ignored if a regular blocking voice is currently playing. Also, both blocking and non-blocking voice will interrupt non-blocking voice-over if one was playing.
-
-**NOTE:** because of how audiochannels work internally right now voice is always played on the same channel 0, therefore you could also get it as `System.AudioChannels[0]`, but it may not be a good idea to rely on this because channel behavior may change in future.
-
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-*See also:* [Voice speech](MusicAndSound#voice-speech), [`AudioChannel`](AudioChannel), [`AudioClip.Play`](AudioClip#audioclipplay), [`Character.Say`](Character#charactersay)
-
----
-
-### `Game.SetSaveGameDirectory`
-
-    static bool Game.SetSaveGameDirectory(string directory)
-
-Changes the directory where save game files are stored to the supplied
-*directory*. If the directory does not exist, AGS will attempt to create
-it.
-
-You cannot use fully qualified directories with this command (e.g.
-`C:\Games\Cool\Saves`), because the player might have installed your
-game to any folder, and they might not be running Windows.
-
-Therefore, only two types of path are supported:<br>
-1. Relative paths (e.g. \"Saves\"). This will create a subfolder inside
-**default game save folder**<br>
-2. The special tag `$MYDOCS$` which allows you to explicitly create a
-different folder for your save games inside the user's documents
-folder.
-
-The actual folder referenced with `$MYDOCS$` is different on every
-platform: Windows XP: \"My Documents\"<br>
-Windows Vista and later: \"Saved Games\"<br>
-Linux: `$XDG_DATA_HOME`/ags<br>
-MacOS: game installation folder.
-
-Returns *true* if the save game directory has been changed successfully;
-*false* if not.
-
-**NOTE:** We advise you against using this function without strong need.
-In the most cases setting the \"Save games folder name\" property in the
-General Settings of the editor should be sufficient.
-
-Example:
-
-    Game.SetSaveGameDirectory("$MYDOCS$/My Cool Game Saves");
-
-will change the save game directory to \"My Cool Game Saves\" in My
-Documents, and create the folder if it does not exist (might be useful
-to do this in game_start).
-
-*See also:*
-[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
-[`RestoreGameDialog`](Globalfunctions_General#restoregamedialog)
-
----
-
-### `Game.SimulateKeyPress`
-
-    static Game.SimulateKeyPress(eKeyCode key)
-
-Fires a keypress event. This is in all aspects identical to what would happen if a player pressed a key on keyboard. This function may be useful to simulate player actions in game, or create automatic demonstrations (like tutorials).
-
-**IMPORTANT:** because of how AGS engine and scripts work the game will react to this keypress not before current script function finishes. Any things that normally react to keys (such as skippable speech, cutscenes, and certain GUI controls) will be affected only at the following internal game update.
-
-Example:
-
-    Game.SimulateKeyPress(eKeySpace);
-
-This simulates a "space" key press.
-
-*Compatibility:* Supported by **AGS 3.5.0** and later versions.
-
-*See also:* [`Mouse.Click`](Mouse#mouseclick), [List of supported key codes](ASCIIcodes#ascii-code-table)
 
 ---
 
@@ -1027,3 +1012,18 @@ views for some reason. Valid views are numbered from 1 to ViewCount.
 Example:
 
     Display("The game has %d views.", Game.ViewCount);
+
+---
+
+### `Game.BlockingWaitSkipped`
+
+    readonly static int Game.BlockingWaitSkipped
+
+Gets the code which describes how was the last blocking state skipped by a user (or autotimer).
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:*
+[`WaitKey`](Globalfunctions_Wait#waitkey),
+[`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
+[`SkipWait`](Globalfunctions_Wait#skipwait)
