@@ -1,4 +1,4 @@
-## `Game` functions
+## `Game` functions and properties
 
 ### `Game.ChangeTranslation`
 
