@@ -57,35 +57,6 @@ will play track 3 of the CD that's in the CD ROM drive.
 
 ---
 
-### `Game.IsAudioPlaying`
-
-*(Formerly known as `IsMusicPlaying`, which is now obsolete)*<br>
-*(Formerly known as `IsSoundPlaying`, which is now obsolete)*
-
-    static bool Game.IsAudioPlaying(optional AudioType)
-
-Returns *true* if there is currently audio playing of the specified
-type. If you don't supply an audio type, then *true* will be returned
-if there is any audio at all playing in the game.
-
-If no audio of the specified type is playing, returns *false*. You can
-use this to wait for some music to finish playing, for example.
-
-Example:
-
-    while (Game.IsAudioPlaying(eAudioTypeMusic))
-    {
-      Wait(1);
-    }
-
-waits for any currently playing music to finish.
-
-*Compatibility:* Supported by **AGS 3.2.0** and later versions.
-
-*See also:* [`Game.StopAudio`](Multimedia#gamestopaudio)
-
----
-
 ### `IsSpeechVoxAvailable`
 
     IsSpeechVoxAvailable()
@@ -217,74 +188,6 @@ versions.
 
 ---
 
-### `Game.SetAudioTypeSpeechVolumeDrop`
-
-*(Formerly known as `game.speech_music_drop`, which is now obsolete)*
-
-    static Game.SetAudioTypeSpeechVolumeDrop(AudioType, int volumeReduction)
-
-Changes the VolumeReductionWhileSpeechPlaying of the specified
-*AudioType*. This changes the setting, initially set in the Audio Types
-part of the editor. It specifies how much the volume of clips of this
-type will be reduced by while speech is playing.
-
-Specify 0 for no volume adjustment, up to 100 which will completely
-silence these audio clips while speech is playing.
-
-Example:
-
-    Game.SetAudioTypeSpeechVolumeDrop(eAudioTypeMusic, 25);
-
-will reduce the volume of Music audio clips by 25 percentage points
-while speech is playing.
-
-*Compatibility:* Supported by **AGS 3.2.0** and later versions.
-
-*See also:* [`Game.SetAudioTypeVolume`](Multimedia#gamesetaudiotypevolume)
-
----
-
-### `Game.SetAudioTypeVolume`
-
-*(Formerly known as `SetSoundVolume`, which is now obsolete)*
-
-    static Game.SetAudioTypeVolume(AudioType, int volume, ChangeVolumeType)
-
-Changes the default volume of the specified *AudioType*. This allows you
-to change the volume of all audio clips of a particular type, so that
-you can easily control sound and music volume separately, for example.
-
-VOLUME ranges from 0-100, where 100 is the loudest, and 0 will mute
-sound of that type completely.
-
-Possible values for *ChangeVolumeType* are:
-
-    eVolChangeExisting      change the volume of currently playing audio clips
-    eVolSetFutureDefault    change the default volume for clips of this type
-    eVolExistingAndFuture   change both currently playing and future audio
-
-Initially general AudioType volume is not set, meaning that all future
-audio will be playing using their own custom volumes. If you use the
-*eVolSetFutureDefault* or *eVolExistingAndFuture*, then the
-DefaultVolume property for all audio clips of this type will be
-overridden. This means that any DefaultVolume set up in the editor will
-be lost.
-
-Example:
-
-    Game.SetAudioTypeVolume(eAudioTypeMusic, 20, eVolExistingAndFuture);
-
-will change the volume of all currently playing and future music to
-`20%`.
-
-*Compatibility:* Supported by **AGS 3.2.0** and later versions.
-
-*See also:* [`SetSpeechVolume`](Multimedia#setspeechvolume),
-[`AudioClip.Play`](AudioClip#audioclipplay),
-[`System.Volume`](System#systemvolume)
-
----
-
 ### `SetSpeechVolume`
 
     SetSpeechVolume (int volume)
@@ -299,32 +202,4 @@ Example:
 
 will set the speech volume to 200.
 
-*See also:* [`Game.SetAudioTypeVolume`](Multimedia#gamesetaudiotypevolume)
-
----
-
-### `Game.StopAudio`
-
-*(Formerly known as `Game.StopSound`, which is now obsolete)*<br>
-*(Formerly known as `StopMusic`, which is now obsolete)*
-
-    static Game.StopAudio(optional AudioType)
-
-Stops all currently playing audio. If you pass no parameters, then all
-audio will be stopped. Alternatively, you can pass one of the AudioTypes
-which will only stop audio clips of that type.
-
-If there are any audio clips queued up with PlayQueued, they will also
-be canceled.
-
-Example:
-
-    Game.StopAudio();
-
-will stop all currently playing audio.
-
-*Compatibility:* Supported by **AGS 3.2.0** and later versions.
-
-*See also:* [`Game.IsAudioPlaying`](Multimedia#gameisaudioplaying),
-[`AudioClip.Play`](AudioClip#audioclipplay),
-[`AudioChannel.Stop`](AudioChannel#audiochannelstop)
+*See also:* [`Game.SetAudioTypeVolume`](Game#gamesetaudiotypevolume)
