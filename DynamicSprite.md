@@ -181,7 +181,7 @@ and at that point call Delete.
 
 Example:
 
-    DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(object[0].Graphic);
+    DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(10);
     sprite.Resize(20, 20);
     DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
     surface.DrawImage(100, 80, sprite.Graphic);
@@ -242,8 +242,9 @@ near the middle of the screen.
 
 Once the image is finished with, Delete should be called on it.
 
-*See also:* [`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete),
-[`DynamicSprite.CreateFromSaveGame`](DynamicSprite#dynamicspritecreatefromsavegame)
+*See also:* [`DynamicSprite.CreateFromExistingSprite`](DynamicSprite#dynamicspritecreatefromexistingsprite),
+[`DynamicSprite.CreateFromScreenshot`](DynamicSprite#dynamicspritecreatefromscreenshot),
+[`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete)
 
 ---
 
@@ -293,6 +294,7 @@ Once the GUI is disposed of, Delete should be called on the sprite.
 
 *See also:* [`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete),
 [`Game.GetSaveSlotDescription`](Game#gamegetsaveslotdescription),
+[`DynamicSprite.CreateFromExistingSprite`](DynamicSprite#dynamicspritecreatefromexistingsprite)
 [`DynamicSprite.CreateFromFile`](DynamicSprite#dynamicspritecreatefromfile),
 [`DynamicSprite.CreateFromScreenShot`](DynamicSprite#dynamicspritecreatefromscreenshot)
 
@@ -342,6 +344,7 @@ Once the GUI is disposed of, Delete should be called on the sprite.
 
 *See also:* [`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete),
 [`Game.GetSaveSlotDescription`](Game#gamegetsaveslotdescription),
+[`DynamicSprite.CreateFromExistingSprite`](DynamicSprite#dynamicspritecreatefromexistingsprite)
 [`DynamicSprite.CreateFromFile`](DynamicSprite#dynamicspritecreatefromfile),
 [`DynamicSprite.CreateFromSaveGame`](DynamicSprite#dynamicspritecreatefromsavegame)
 
@@ -436,14 +439,14 @@ HEIGHT in size will remain.
 
 Example:
 
-    DynamicSprite* sprite = DynamicSprite.CreateFromFile("CustomAvatar.bmp");
+    DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(10);
     sprite.Crop(10, 10, sprite.Width - 10, sprite.Height - 10);
     DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
     surface.DrawImage(100, 100, sprite.Graphic);
     surface.Release();
     sprite.Delete();
 
-will load the CustomAvatar.bmp image, cut off the left and top 10
+will create a dynamic sprite as a copy of sprite 10, cut off the left and top 10
 pixels, and then draw it onto the room background at (100,100).
 
 *See also:*
@@ -561,14 +564,14 @@ resize sprites every game loop; only do it when necessary.
 
 Example:
 
-    DynamicSprite* sprite = DynamicSprite.CreateFromFile("CustomAvatar.bmp");
+    DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(10);
     sprite.Resize(sprite.Width * 2, sprite.Height * 2);
     DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
     surface.DrawImage(100, 100, sprite.Graphic);
     surface.Release();
     sprite.Delete();
 
-will load the CustomAvatar.bmp image, stretch it to double its original
+will create a dynamic sprite as a copy of sprite 10, stretch it to double its original
 size, and then draw it onto the room background at (100,100).
 
 *See also:*
@@ -602,14 +605,14 @@ rotate sprites every game loop; only do it when necessary.
 
 Example:
 
-    DynamicSprite* sprite = DynamicSprite.CreateFromFile("CustomAvatar.bmp");
+    DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(10);
     sprite.Rotate(90);
     DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
     surface.DrawImage(100, 100, sprite.Graphic);
     surface.Release();
     sprite.Delete();
 
-will load the CustomAvatar.bmp image, rotate it 90 degrees clockwise,
+will create a dynamic sprite as a copy of sprite 10, rotate it 90 degrees clockwise,
 draw the result onto the screen, and then delete the image.
 
 *See also:* [`DynamicSprite.Flip`](DynamicSprite#dynamicspriteflip),
