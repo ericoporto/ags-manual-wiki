@@ -202,4 +202,4 @@ Example:
 
 will set the speech volume to 200.
 
-*See also:* [`Game.SetAudioTypeVolume`](Game#gamesetaudiotypevolume)
+*See also:* [`Game.SetAudioTypeVolume`](Game#gamesetaudiotypevolume), [`Game.SetAudioTypeSpeechVolumeDrop`](Game#SetAudioTypeSpeechVolumeDrop), [`Game.PlayVoiceClip`](Game#PlayVoiceClip)
