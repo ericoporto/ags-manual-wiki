@@ -430,7 +430,7 @@ will change the volume of all currently playing and future music to
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See also:* [`SetSpeechVolume`](Multimedia#setspeechvolume),
-[`Game.SetAudioTypeSpeechVolumeDrop`](Game#setaudiotypespeechvolumedrop),
+[`Game.SetAudioTypeSpeechVolumeDrop`](Game#gamesetaudiotypespeechvolumedrop),
 [`AudioClip.Play`](AudioClip#audioclipplay),
 [`System.Volume`](System#systemvolume)
 
