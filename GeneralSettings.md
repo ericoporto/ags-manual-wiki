@@ -110,7 +110,7 @@ accessible in future versions.
 -   **Enforce new style strings** - Puts the script compiler into strict
     mode, where it will not accept the old-style (pre-AGS 2.7)
     fixed-length strings.
--   **Enforce object-based scripting** - Puts the script compiler into
+-   **Enforce post-2.62 scripting** - Puts the script compiler into
     strict mode, where it will not accept the old-style (pre-AGS 2.7)
     script commands. This should preferably be ticked, since you should
     no longer be using the old commands.
