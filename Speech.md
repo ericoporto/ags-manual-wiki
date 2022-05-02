@@ -214,7 +214,7 @@ or a key.
 *See also:*
 [`Game.IgnoreUserInputAfterTextTimeoutMs`](Game#gameignoreuserinputaftertexttimeoutms),
 [`Game.TextReadingSpeed`](Game#gametextreadingspeed),
-[`Game.Speech.SkipKey`](Speech#speechskipkey)
+[`Speech.SkipKey`](Speech#speechskipkey)
 
 ---
 
