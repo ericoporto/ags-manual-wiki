@@ -326,6 +326,31 @@ will resize the *invMain* control to have a size of 160 x 100.
 
 ---
 
+### `GUIControl.Transparency`
+
+    int GUIControl.Transparency
+
+Gets/sets the GUIControl translucency, in percent.
+
+Setting this to 100 means the GUI is totally invisible, and lower values
+represent varying levels of translucency. Set it to 0 to stop the GUI
+being translucent.
+
+**NOTE:** Transparency only works in 16-bit and 32-bit color games.
+
+Some rounding is done internally when the transparency is stored --
+therefore, if you get the transparency after setting it, the value you
+get back might be one out. Therefore, using a loop with
+`gInventory.Transparency++;` is not recommended as it will probably end
+too quickly.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`GUI.Transparency`](GUI#guitransparency),
+[`Object.Transparency`](Object#objecttransparency)
+
+---
+
 ### `GUIControl.Visible`
 
     bool GUIControl.Visible

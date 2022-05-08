@@ -428,9 +428,6 @@ being translucent.
 
 **NOTE:** Transparency only works in 16-bit and 32-bit color games.
 
-**NOTE:** When using the DirectX 5 driver, a large transparent GUI can
-significantly slow down AGS.
-
 Some rounding is done internally when the transparency is stored --
 therefore, if you get the transparency after setting it, the value you
 get back might be one out. Therefore, using a loop with
@@ -451,7 +448,8 @@ Example:
 
 will gradually fade the INVENTORY GUI out until it is invisible.
 
-*See also:* [`Object.Transparency`](Object#objecttransparency)
+*See also:* [`GUIControl.Transparency`](GUIControl#guicontroltransparency),
+[`Object.Transparency`](Object#objecttransparency)
 
 ---
 
