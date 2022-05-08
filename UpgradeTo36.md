@@ -2,7 +2,9 @@
 
 AGS version 3.6 is another big change to AGS.
 First of all, this release presents a SDL2-based engine. For about 2 decades AGS engine was based on Allegro 4 graphic library, which was discontinued somewhere in the early 2010-ies, so this is overdue.
+
 Secondly, both the Editor and the Engine have full Unicode support now. This means that you may use any language whatsoever in scripts, object descriptions and custom properties, as well as translations, - so long as you also provide proper unicode fonts.
+
 Then, we have expanded a list of platforms that the Editor can directly build the game for: now this includes Android and Web (Emscripten).
 
 Below we'll look into these and other significant changes in more detail.
@@ -27,13 +29,14 @@ When in Unicode mode you may type your game texts in any language whatsoever. Th
 
 Mixing multiple languages, even in the same string, is totally fine (but requires having fonts that can display all of these languages).
 
-Where full unicode won't work (and not supposed to):
+Where unicode won't work (and not supposed to):
 * Script names of game objects: characters, guis, views, and so on;
 * Names of Custom properties and Global Variables;
-* Anything else in scripts: variables, function names and so on.
-All the above must be done strictly in latin alphabet.
+* Variable names and function names in script.
 
-String variables and functions in script should work seamlessly with unicode texts. Functions that work with characters were changed to have arguments and return values as `int`, to be able to pass any unicode character. This includes AppendChar(), ReplaceChar() and String.Char[] property. Also, `String.Format("%c", n)` will now be able to print unicode characters.
+All the above must be written strictly in latin alphabet.
+
+String variables and related functions should work seamlessly with unicode texts. Functions that work with characters were changed to have arguments and return values as `int`, to be able to pass any unicode character. This includes AppendChar(), ReplaceChar() and String.Char[] property. Also, `String.Format("%c", n)` will now be able to print unicode characters.
 
 The Translations are not affected by the game's setting and have a individual setting of their own. When you open TRS file made by the new version, it will have "#Encoding" option in the file's header. This is where you may write either "UTF-8" or "ASCII" by hand to tell the translation compiler (and the engine) how this translation should be interpreted. By default this should be "UTF-8", so you only need to change this if you need translation to be in ASCII for some reason.
 If you have imported an older project and TRS file does not have this option, then you may add one yourself. Just remember that TRS options must be preceded with a comment sign, like this:
@@ -57,6 +60,7 @@ The extended function definition now is:
     function on_key_press(eKeyCode key, int mod)
 
 The `mod` argument describes which key modifiers were enabled when this exact key was pressed. It's different from, for example, using `IsKeyPressed()` in `repeatedly_execute` callback, because engine may receive several key-presses between two game frames, while `IsKeyPressed` only tells the last state of the key. Using `mod` argument is 100% reliable.
+
 But the `mod` contains *set of flags*, and is slightly more complicated: as you should not use regular comparison (==, !=) with it, but bitwise operator (&):
 
     // these two conditions check that ctrl was pressed (these commands are equivalent)
