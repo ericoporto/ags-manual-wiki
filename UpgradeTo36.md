@@ -107,3 +107,17 @@ Similarily to the above, `dialog_options_key_press` had been expanded with the t
 And there's now `dialog_options_text_input` callback for receiving unicode chars during the custom dialog options state:
 
     function dialog_options_text_input(DialogOptionsRenderingInfo *info, int ch)
+
+### Deprecated / replaced script functions
+
+obsolete function | replace with
+-- | --
+Object.IgnoreScaling | Object.ManualScaling
+
+### System limits update
+
+* Max number of AudioChannels is now 16 (was 8).
+* Removed game Cursors limit (was 20).
+* Removed Overlays limit (was 20).
+* Removed limit of simultaneous Button animations (was 15).
+* Removed limit of Character followers (was 30).
