@@ -1,7 +1,7 @@
 ## Upgrading to AGS 3.6
 
 AGS version 3.6 is another big change to AGS.
-First of all, this release presents a SDL2-based engine. For about 2 decades AGS engine was based on Allegro 4 graphic library, which was discontinued somewhere in the early 2010s, so this is overdue.
+First of all, this release presents a SDL2-based engine. For about 2 decades the AGS engine was based on the Allegro 4 graphic library, which was discontinued somewhere in the early 2010s, so this is overdue.
 
 Secondly, both the Editor and the Engine have full Unicode support now. This means that you may use any language whatsoever in scripts, object descriptions, and custom properties, as well as translations, - so long as you also provide proper Unicode fonts.
 
@@ -15,9 +15,9 @@ AGS can now work in Unicode mode, but for backward compatibility, we have to sup
 
 When in Unicode mode, all game texts and text files, such as scripts, are saved in UTF-8 format.
 
-In the Editor the switch between two modes is called **"Text format"** and is located in "General Settings".
+In the Editor the switch between the two modes is called **"Text format"** and is located in "General Settings".
 
-**IMPORTANT:** This switch is an important choice and should not be played with at random. Whenever you change the text format Editor will convert all your game files by loading them and saving them back using a new mode. If all your game texts were using the standard Latin alphabet (English, etc), then you should not see any difference, but if you had texts with extended Latin characters or any other non-Latin languages, - these will be converted between ANSI and UTF-8. We strongly recommend doing a full project backup before doing this though.
+**IMPORTANT:** This switch is an important choice and should not be played with at random. Whenever you change the text format the Editor will convert all your game files by loading them and saving them back using a new mode. If all your game texts were using the standard Latin alphabet (English, etc), then you should not see any difference, but if you had texts with extended Latin characters or any other non-Latin languages, - these will be converted between ANSI and UTF-8. We strongly recommend doing a full project backup before doing this though.
 
 When in Unicode mode you may type your game texts in any language whatsoever. This refers to the following:
 * Human texts in-game options: such as object descriptions, and so on;
@@ -38,12 +38,12 @@ All the above must be written strictly in the Latin alphabet.
 
 String variables and related functions should work seamlessly with Unicode texts. Functions that work with characters were changed to have arguments and return values as `int`, to be able to pass any Unicode character. This includes AppendChar(), ReplaceChar() and String.Char[] property. Also, `String.Format("%c", n)` will now be able to print Unicode characters.
 
-The Translations are not affected by the game's setting and have an individual setting of their own. When you open TRS file made by the new version, it will have "#Encoding" option in the file's header. This is where you may write either "UTF-8" or "ASCII" by hand to tell the translation compiler (and the engine) how this translation should be interpreted. By default this should be "UTF-8", so you only need to change this if you need translation to be in ASCII for some reason.
-If you have imported an older project and TRS file does not have this option, then you may add one yourself. Just remember that TRS options must be preceded with a comment sign, like this:
+The Translations are not affected by the game's setting and have an individual setting of their own. When you open a TRS file made by the new version, it will have an "#Encoding" option in the file's header. This is where you may write either "UTF-8" or "ASCII" by hand to tell the translation compiler (and the engine) how this translation should be interpreted. By default this should be "UTF-8", so you only need to change this if you need the translation to be in ASCII for some reason.
+If you have imported an older project and the TRS file does not have this option, then you may add one yourself. Just remember that the TRS options must be preceded with a comment sign, like this:
 
     //#Encoding=UTF-8
 
-Don't forget to save TRS in UTF-8 with whatever text editor you are using, if you want it to keep Unicode texts intact.
+Don't forget to save the TRS in UTF-8 with whatever text editor you are using, if you want it to keep Unicode texts intact.
 
 The engine can run the game in both Unicode and ASCII modes. It uses a game setting to set up the mode on start, but when loading a translation it will switch to the translation's setting. This behavior is meant primarily to allow adding UTF-8 translations for older ASCII games.
 
@@ -61,7 +61,7 @@ The extended function definition now is:
 
 The `mod` argument describes which key modifiers were enabled when this exact key was pressed. It's different from, for example, using `IsKeyPressed()` in `repeatedly_execute` callback, because the engine may receive several key-presses between two game frames, while `IsKeyPressed` only tells the last state of the key. Using `mod` argument is 100% reliable.
 
-But the `mod` contains *set of flags*, and is slightly more complicated: as you should not use regular comparison (==, !=) with it, but bitwise operator (&):
+But the `mod` contains *set of flags*, and is slightly more complicated: as you should not use regular comparison (==, !=) with it, but a bitwise operator (&):
 
     // these two conditions check that ctrl was pressed (these commands are equivalent)
     if (mod & eKeyModCtrl)
