@@ -312,7 +312,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `SetRegionTint` | [`Region.Tint`](Region#regiontint) | |
 | `SetSkipSpeech` | [`Speech.SkipStyle`](Speech#speechskipstyle) | |
 | `SetSliderValue` | [`Slider.Value`](Slider#slidervalue) | |
-| `SetSoundVolume` | [`Game.SetAudioTypeVolume`](Multimedia#gamesetaudiotypevolume) | |
+| `SetSoundVolume` | [`Game.SetAudioTypeVolume`](Game#gamesetaudiotypevolume) | |
 | `SetSpeechFont` | [`Game.SpeechFont`](Game#gamespeechfont) | |
 | `SetSpeechStyle` | [`Speech.Style`](Speech#speechstyle) | |
 | `SetTalkingColor` | [`Character.SpeechColor`](Character#characterspeechcolor) | |
@@ -325,7 +325,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `StopAmbientSound` | [`AudioChannel.Stop`](AudioChannel#audiochannelstop) | |
 | `StopChannel` | [`AudioChannel.Stop`](AudioChannel#audiochannelstop) | |
 | `StopMoving` | [`Character.StopMoving`](Character#characterstopmoving) | |
-| `StopMusic` | [`Game.StopAudio`](Multimedia#gamestopaudio) | |
+| `StopMusic` | [`Game.StopAudio`](Game#gamestopaudio) | |
 | `StopObjectMoving` | [`Object.StopMoving`](Object#objectstopmoving) | |
 | `StrCaseComp` | [`String.CompareTo`](String#stringcompareto) | |
 | `StrCat` | [`String.Append`](String#stringappend) | |

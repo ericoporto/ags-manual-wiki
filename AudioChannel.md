@@ -160,7 +160,7 @@ stop it.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [`Game.StopAudio`](Multimedia#gamestopaudio)
+*See also:* [`Game.StopAudio`](Game#gamestopaudio)
 
 ---
 
