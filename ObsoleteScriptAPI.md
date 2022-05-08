@@ -75,9 +75,9 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `game.room_width` | [`Room.Width`](Room#roomwidth) | |
 | `game.skip_speech_specific_key` | [`Speech.SkipKey`](Speech#speechskipkey) | |
 | `game.skipping_cutscene` | [`Game.SkippingCutscene`](Game#gameskippingcutscene) | |
-| `game.speech_music_drop` | [`Game.SetAudioTypeSpeechVolumeDrop`](Multimedia#gamesetaudiotypespeechvolumedrop) | |
+| `game.speech_music_drop` | [`Game.SetAudioTypeSpeechVolumeDrop`](Game#gamesetaudiotypespeechvolumedrop) | |
 | `game.speech_text_align` | [`Speech.TextAlignment`](Speech#speechtextalignment) | |
-| `Game.StopSound` | [`Game.StopAudio`](Multimedia#gamestopaudio) | |
+| `Game.StopSound` | [`Game.StopAudio`](Game#gamestopaudio) | |
 | `game.talkanim_speed` | [`Speech.GlobalSpeechAnimationDelay`](Speech#speechglobalspeechanimationdelay) | |
 | `game.text_speed` | [`Game.TextReadingSpeed`](Game#gametextreadingspeed) | |
 | `game.top_inv_item` | [`InvWindow.TopItem`](InvWindow#invwindowtopitem) | |
