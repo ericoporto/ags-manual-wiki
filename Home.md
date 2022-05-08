@@ -7,7 +7,7 @@
 - [Introduction](Introduction)
 - [Tutorial](Tutorial)
 - [Frequently Asked Questions](FAQ)
-- [Upgrading to AGS 3.5](UpgradeTo35)
+- [Upgrading to AGS 3.6](UpgradeTo36)
 - [Upgrading from a previous version](UpgradingFromPreviousVersion)
 
 ## Editor
