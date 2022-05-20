@@ -18,11 +18,13 @@ Code | Description
 %d | Integer (use to display value of int and short variables)
 %0Xd | Integer left-padded with up to X zeros
 %s | String (use to display string variables)
-%c | Character (displays the ASCII character of the supplied value)
+%c | Character (displays the character corresponding to the supplied value)
 %f | Float (displays a float variable)
 %.Xf | Float to X decimal places
 %% | Display the percent character (i.e. no variable)
 [ | Inserts a new line into the message
+
+**NOTE:** Since AGS 3.6.0 the `%c` format code may display Unicode characters.
 
 Some examples:
 
