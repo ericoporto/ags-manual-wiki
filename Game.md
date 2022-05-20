@@ -498,7 +498,7 @@ This simulates a "space" key press.
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See also:* [`Mouse.Click`](Mouse#mouseclick), [List of supported key codes](ASCIIcodes#ascii-code-table)
+*See also:* [`Mouse.Click`](Mouse#mouseclick), [List of supported key codes](Keycodes#key-code-table)
 
 ---
 

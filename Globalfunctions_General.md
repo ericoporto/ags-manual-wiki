@@ -634,7 +634,7 @@ Tests whether the supplied key on the keyboard is currently pressed down
 or not. You could use this to move an object while the player holds an
 arrow key down, for instance.
 
-KEYCODE is one of the [ASCII codes](ASCIIcodes), with some
+KEYCODE is one of the [Key codes](Keycodes), with some
 limitations: since it tests the raw state of the key, you CANNOT pass
 the Ctrl+(A-Z) or Alt+(A-Z) codes (since they are key combinations). You
 can, however, use some extra codes which are listed at the bottom of the

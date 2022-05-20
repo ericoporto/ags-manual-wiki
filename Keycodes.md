@@ -1,10 +1,10 @@
-## ASCII code table
+## Key code table
 
 This section lists the keycodes which can be passed to
 [`on_key_press`](Globalfunctions_Event#on_key_press) and which keys
 they represent:
 
-AGS keycode | Key | ASCII code
+AGS keycode | Key | Numeric value
 --- | --- | ---
 `eKeyNone` | none | 0
 `eKeyCtrlA` | Ctrl+A | 1
@@ -136,7 +136,7 @@ The following extra codes can only be used with
 (i.e. [`on_key_press`](Globalfunctions_Event#on_key_press) is never
 called with these codes):
 
-AGS keycode | Key | ASCII code
+AGS keycode | Key | Numeric value
 --- | --- | ---
 `eKeyShiftLeft` | Left Shift | 403
 `eKeyShiftRight` | Right Shift | 404

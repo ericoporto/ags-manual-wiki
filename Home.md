@@ -40,7 +40,7 @@
 - [Scripting API](Scripting)
 - [Obsolete Script API](ObsoleteScriptAPI)
 - [Event Types](EventTypes)
-- [ASCII code table](ASCIIcodes)
+- [Key code table](Keycodes)
 - [Audio in script](AudioInScript)
 
 ## Legal Notice

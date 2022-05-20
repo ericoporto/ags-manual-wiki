@@ -114,7 +114,7 @@
 - [Event Types](EventTypes)
 - [System limits](SystemLimits)
 - [Keyboard Shortcuts](KeyboardShortcuts)
-- [ASCII code table](ASCIIcodes)
+- [Keycode table](Keycodes)
 
 ***Working on Legacy games***
 

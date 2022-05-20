@@ -80,8 +80,7 @@ on which event has occurred. The possible values of event are:
 
     on_key_press (eKeyCode keycode)
 
-Called whenever a key is pressed on the keyboard. KEYCODE holds the
-ASCII value of the key. A list of these values is [available here](ASCIIcodes).
+Called whenever a key is pressed on the keyboard. KEYCODE holds the value of the key. A list of these values is [available here](Keycodes).
 
 The `on_key_press` function can also be defined in individual room
 scripts. This allows the room script to intercept a key-press first,
