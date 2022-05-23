@@ -112,6 +112,37 @@ And there's now `dialog_options_text_input` callback for receiving unicode chars
 
     function dialog_options_text_input(DialogOptionsRenderingInfo *info, int ch)
 
+### New game package options
+
+AGS now allows to package custom files into your game, and read them in script. An option called "Package custom data folder" has been added to the [General Settings](GeneralSettings). This option accepts a comma-separated list of subfolder names, which should be found in your game project's folder. All of the files in these subfolders will be added to the game package under their relative paths (e.g. "UserData/myfile.dat").
+
+Any [File functions](File) that accept file paths can now refer to the game package files using new `$DATA$` location tag. Virtually any packaged file may be queried this way, whether custom or regular game resource. These files may only be opened for reading however, never for writing.
+
+For example, you may read your custom file from the package as:
+
+    File* f = File.Open("$DATA$/UserData/myfile.dat", eFileRead);
+
+### Multiple speech voxes
+
+AGS now supports having multiple speech vox files. This may be useful if you, for example, would like to provide separate voice-over packs for each language (translation) in your game. Creating additional voxes is done by creating subfolders in "Speech" folder and placing sound files there. AGS will then generate a file called "sp_NAME.vox" for each such subfolder, where "NAME" is subfolder's name.
+
+In script you may switch between the speech packs using new `Game.ChangeSpeechVox()` function. Its value is not linked with the textual translation, which is set by `Game.ChangeTranslation()`. You may enable voice-over matching the language of the text, or on contrary allow player to choose different languages for the text and for the voice. For example:
+
+    Game.ChangeTranslation("Spanish");
+    Game.ChangeSpeechVox("English");
+
+Above will change textual translation to "Spanish", and voice-over to "sp_english.vox" pack.
+
+### New sprite compression options
+
+First of all, the old "Compress the sprite file" option in [General Settings](GeneralSettings) has been replaced with "Sprite file compression", which lets to choose one of the supported compression types. Previous common sprite compression in AGS is called "RLE"; an "LZW" compression was added for selection. It's possible that this list will be extended in the future.
+
+Secondly, there's now a "Enable sprite storage optimization" option, which is enabled by default. This option permits the Editor to repack sprites in a different storage format, reducing their disk size whenever possible. This option may be used alongside with the sprite compression. Note that this _does not_ change how the sprites work in game, only how they are stored in the game files.
+
+### Multiplatform support extended
+
+Editor can now produce game builds for Android and Web (using Web/Emscripten port). Both require corresponding component installed alongside with the Editor. In addition, for Android builds you'd also have to install Android Studio and configure certain settings in [Editor's Preferences](EditorPreferences) and your game's [General Settings](GeneralSettings). For more information see [Distributing your game](DistGame).
+
 ### Deprecated / replaced script functions
 
 obsolete function | replace with
