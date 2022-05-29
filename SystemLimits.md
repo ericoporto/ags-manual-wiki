@@ -6,7 +6,7 @@ similar, chances are this section will answer it.
 
 ### System restrictions
 
-- 40 objects per room
+- 256 objects per room
 - 299 state-saving rooms per game
 - 300 inventory items
 - 90000 imported sprites
@@ -46,6 +46,7 @@ We are working on removing existing limitations in the AGS, so some of the remai
 
 AGS v3.6:
 - Audio channels number increased from 8 to 16.
+- Increased Room Objects limit to 256 (was 40).
 - 20 screen overlays at a time lifted
 - Removed limit of simultaneous Button animations (was 15).
 - Removed limit of Character followers (was 30).
