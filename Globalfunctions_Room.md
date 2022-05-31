@@ -127,7 +127,7 @@ will paint a rectangle for the walkable area 4.
 
 *See also:* [`GetDrawingSurfaceForWalkbehind`](Globalfunctions_Room#getdrawingsurfaceforwalkbehind),
 [`Hotspot.GetDrawingSurface`](Hotspot#hotspotgetdrawingsurface),
-[`Region.GetDrawingSurface`](Region#regiongetdrawingsurface),
+[`Region.GetDrawingSurface`](Region#regiongetdrawingsurface)
 
 ---
 
@@ -152,7 +152,7 @@ will paint a rectangle for the walk-behind 4.
 
 *See also:* [`GetDrawingSurfaceForWalkableArea`](Globalfunctions_Room#getdrawingsurfaceforwalkablearea),
 [`Hotspot.GetDrawingSurface`](Hotspot#hotspotgetdrawingsurface),
-[`Region.GetDrawingSurface`](Region#regiongetdrawingsurface),
+[`Region.GetDrawingSurface`](Region#regiongetdrawingsurface)
 
 ---
 
