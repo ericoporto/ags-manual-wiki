@@ -11,7 +11,7 @@ Below we'll look into these and other significant changes in more detail.
 
 ### Unicode support
 
-AGS can now work in Unicode mode, but for backward compatibility, we have to support ASCII mode too. We recommend using Unicode mode when starting new projects, regardless of the game language.
+AGS can now work in Unicode mode, but we also support ASCII mode for backward compatibility. We recommend using Unicode mode when starting new projects, regardless of the game language.
 
 When in Unicode mode, all game texts and text files, such as scripts, are saved in UTF-8 format.
 
@@ -143,6 +143,14 @@ Secondly, there's now a "Enable sprite storage optimization" option, which is en
 
 Editor can now produce game builds for Android and Web (using Web/Emscripten port). Both require corresponding component installed alongside with the Editor. In addition, for Android builds you'd also have to install Android Studio and configure certain settings in [Editor's Preferences](EditorPreferences) and your game's [General Settings](GeneralSettings). For more information see [Distributing your game](DistGame).
 
+### TTF fonts behavior
+
+Historically AGS applied a "fixup" to TTF fonts that shifted letters down when drawn, which in turn also increased their graphical height. This behavior is now optional, available purely for backwards compatibility, both as a global and per-font setting called "TTF font adjustment". This setting has two values: "Do nothing" and "Resize ascender to the nominal font height". We recommend having "Do nothing" at all times, except when using TTF fonts specifically created or adjusted for older versions of AGS.
+
+Another global setting is "TTF fonts height used in the game logic". This option tells which value to use when calculating text height, line spacing etc. Its value may be either "Nominal height" or "Full graphical height". The difference is that due to font library's behavior the font's graphical height may end up different (usually larger) that the nominal height the font is imported with. While "Nominal height" is a historical default, it's up to your preference which to use.
+
+One long time requested font feature is the automatic outline thickness. Automatic font outline has always been drawn 1px wide, but that was not enough for high-resolution games. Now fonts have a property "AutoOutlineThickness" which lets you set any outline width you need, and "AutoOutlineStyle" which toggles between "Squared" and "Rounded".
+
 ### Deprecated / replaced script functions
 
 obsolete function | replace with
@@ -152,6 +160,7 @@ Object.IgnoreScaling | Object.ManualScaling
 ### System limits update
 
 * Max number of AudioChannels is now 16 (was 8).
+* Max number of Room Objects per room is now 256 (was 40).
 * Removed game Cursors limit (was 20).
 * Removed Overlays limit (was 20).
 * Removed limit of simultaneous Button animations (was 15).
