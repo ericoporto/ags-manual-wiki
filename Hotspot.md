@@ -52,6 +52,31 @@ will display a message depending on what the mouse is on.
 
 ---
 
+### `Hotspot.GetDrawingSurface`
+
+    static DrawingSurface* Hotspot.GetDrawingSurface()
+
+Gets a drawing surface for the current room's 8-bit hotspot mask, which allows you to directly draw onto that mask. Note that this function is static and relates to all hotspots at once (not a particular hotspot), because all of them are painted on the same mask.
+
+After calling this method, use the various [DrawingSurface functions](https://github.com/adventuregamestudio/ags-manual/wiki/DrawingSurface) to modify the mask. Since this is a 8-bit mask, DrawingColor will match the hotspot's index. Color value 0 will refer to "no hotspot" (eraser), color value 1 to hotspot number 1, and so forth. Don't forget to call `Release()` on the surface when you are finished to update the room's state.
+
+Any changes you make will only last until the player leaves the room, at which point they will be lost. If you need to make long-lasting changes, you can use this method in the Player Enters Room event, which will recreate these changes whenever player returns back.
+
+Example:
+
+    DrawingSurface *surface = Hotspot.GetDrawingSurface();
+    surface.DrawingColor = 4;
+    surface.DrawRectangle(50, 50, 100, 100);
+    surface.Release();
+
+will paint a rectangle for the hotspot 4.
+
+*See also:* [`GetDrawingSurfaceForWalkbehind`](Globalfunctions_Room#getdrawingsurfaceforwalkbehind),
+[`GetDrawingSurfaceForWalkableArea`](Globalfunctions_Room#getdrawingsurfaceforwalkablearea),
+[`Region.GetDrawingSurface`](Region#regiongetdrawingsurface)
+
+---
+
 ### `Hotspot.GetProperty`
 
 *(Formerly known as `GetHotspotProperty`, which is now obsolete)*
