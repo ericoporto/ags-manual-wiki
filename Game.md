@@ -24,6 +24,7 @@ will attempt to change the voice pack to *sp_spanish.vox*.
 
 *See also:*
 [`Game.SpeechVoxFilename`](Game#gamespeechvoxfilename),
+[`IsSpeechVoxAvailable`](Multimedia#isspeechvoxavailable),
 [`Game.ChangeTranslation`](Globalfunctions_General#gamechangetranslation),
 [Translations](Translations), [Voice-speech](MusicAndSound#voice-speech)
 
@@ -1032,6 +1033,7 @@ Example:
 
 *See also:*
 [`Game.ChangeSpeechVox`](Game#gamechangespeechvox),
+[`IsSpeechVoxAvailable`](Multimedia#isspeechvoxavailable),
 [`Game.ChangeTranslation`](Game#gamechangetranslation),
 [`Game.TranslationFilename`](Game#gametranslationfilename),
 [Translation](Translations), [Voice-speech](MusicAndSound#voice-speech)
@@ -1137,6 +1139,7 @@ Example:
 [`Game.ChangeTranslation`](Game#gamechangetranslation),
 [`GetTranslation`](Globalfunctions_General#gettranslation),
 [`IsTranslationAvailable`](Globalfunctions_General#istranslationavailable),
+[`Game.SpeechVoxFilename`](Game#gamespeechvoxfilename),
 [Translation Manual](Translations)
 
 ---
