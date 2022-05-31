@@ -78,6 +78,9 @@ will display a message if the voice pack is not available.
 been renamed to avoid confusion.
 
 *See also:* [`AudioClip.IsAvailable`](AudioClip#audioclipisavailable)
+[`Game.ChangeSpeechVox`](Game#gamechangespeechvox),
+[`Game.SpeechVoxFilename`](Game#gamespeechvoxfilename),
+[Voice-speech](MusicAndSound#voice-speech)
 
 ---
 
