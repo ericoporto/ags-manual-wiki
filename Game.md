@@ -1,8 +1,35 @@
 ## `Game` functions and properties
 
+### `Game.ChangeSpeechVox`
+
+    static bool Game.ChangeSpeechVox(const string newVoxName)
+
+Changes the active voice pack to a file called *sp_<newvoxname>*, where "newvoxname" is passed as a function argument. E.g. if you have sp_francais.vox in your game file, then you can do Game.ChangeSpeechVox("francais") to switch to it. Passing a blank string will revert the game to the default voice pack called *speech.vox*.
+
+Returns *true* if the voice pack was changed successfully, or *false* if there was a problem (for example, you specified an invalid filename). In case of failure this function will also try to revert to the default pack.
+
+**NOTE:** the active voice pack is not tied to the active text translation. In your game you may have voice matching text, or separate languages for text and voices: e.g. French voice-over with English text.
+
+Example:
+
+    if (Game.ChangeSpeechVox("Spanish")) {
+      Display("Changed the voice-over to Spanish!");
+    } else {
+      Display("Unable to change the voice-over.");
+    }
+
+will attempt to change the voice pack to *sp_spanish.vox*.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:*
+[`Game.SpeechVoxFilename`](Game#gamespeechvoxfilename),
+[`Game.ChangeTranslation`](Globalfunctions_General#gamechangetranslation),
+[Translations](Translations), [Voice-speech](MusicAndSound#voice-speech)
+
 ### `Game.ChangeTranslation`
 
-    static bool Game.ChangeTranslation(string newTranslationName)
+    static bool Game.ChangeTranslation(const string newTranslationName)
 
 Changes the active translation to *newTranslationName*. This must be the
 file name without the extension, for example \"French\" or \"Spanish\".
@@ -35,7 +62,8 @@ will attempt to change the translation to Spanish
 [`Game.TranslationFilename`](Game#gametranslationfilename),
 [`GetTranslation`](Globalfunctions_General#gettranslation),
 [`IsTranslationAvailable`](Globalfunctions_General#istranslationavailable),
-[Translation Manual](Translations)
+[`Game.ChangeSpeechVox`](Globalfunctions_General#gamechangespeechvox),
+[Translations](Translations)
 
 ---
 
@@ -985,6 +1013,28 @@ Example:
 will change the speech font to \"Standard\".
 
 *See also:* [`Game.NormalFont`](Game#gamenormalfont)
+
+---
+
+### `Game.SpeechVoxFilename`
+
+    readonly static String Game.SpeechVoxFilename;
+
+Gets the name of the active voice package name. This is not equal to the full file name; assuming file is called "sp_name.vox", this function will return only the "name" part. If a default "speech.vox" is used (or no voice pack at all), a blank string is returned.
+
+Example:
+
+    if (Game.SpeechVoxFilename== "German") {
+      Display("You are using the German voice.");
+    }
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:*
+[`Game.ChangeSpeechVox`](Game#gamechangespeechvox),
+[`Game.ChangeTranslation`](Game#gamechangetranslation),
+[`Game.TranslationFilename`](Game#gametranslationfilename),
+[Translation](Translations), [Voice-speech](MusicAndSound#voice-speech)
 
 ---
 
