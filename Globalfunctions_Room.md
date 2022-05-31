@@ -106,6 +106,56 @@ will turn on object 2 if the background frame of the room is frame 4.
 
 ---
 
+### `GetDrawingSurfaceForWalkableArea`
+
+    DrawingSurface* GetDrawingSurfaceForWalkableArea()
+
+Gets a drawing surface for the current room's 8-bit walkable mask, which allows you to directly draw onto that mask.
+
+After calling this method, use the various [DrawingSurface functions](https://github.com/adventuregamestudio/ags-manual/wiki/DrawingSurface) to modify the mask. Since this is a 8-bit mask, DrawingColor will match the walkable area's index. Color value 0 will refer to "no area" (erase pathways), color value 1 to area number 1, and so forth. Don't forget to call `Release()` on the surface when you are finished to update the room's state.
+
+Any changes you make will only last until the player leaves the room, at which point they will be lost. If you need to make long-lasting changes, you can use this method in the Player Enters Room event, which will recreate these changes whenever player returns back.
+
+Example:
+
+    DrawingSurface *surface = GetDrawingSurfaceForWalkableArea();
+    surface.DrawingColor = 4;
+    surface.DrawRectangle(50, 50, 100, 100);
+    surface.Release();
+
+will paint a rectangle for the walkable area 4.
+
+*See also:* [`GetDrawingSurfaceForWalkbehind`](Globalfunctions_Room#getdrawingsurfaceforwalkbehind),
+[`Hotspot.GetDrawingSurface`](Hotspot#hotspotgetdrawingsurface),
+[`Region.GetDrawingSurface`](Region#regiongetdrawingsurface),
+
+---
+
+### `GetDrawingSurfaceForWalkbehind`
+
+    DrawingSurface* GetDrawingSurfaceForWalkbehind()
+
+Gets a drawing surface for the current room's 8-bit walk-behind mask, which allows you to directly draw onto that mask.
+
+After calling this method, use the various [DrawingSurface functions](https://github.com/adventuregamestudio/ags-manual/wiki/DrawingSurface) to modify the mask. Since this is a 8-bit mask, DrawingColor will match the walk-behind's index. Color value 0 will refer to "no area" (erase walk-behinds), color value 1 to walk-behind number 1, and so forth. Don't forget to call `Release()` on the surface when you are finished to update the room's state.
+
+Any changes you make will only last until the player leaves the room, at which point they will be lost. If you need to make long-lasting changes, you can use this method in the Player Enters Room event, which will recreate these changes whenever player returns back.
+
+Example:
+
+    DrawingSurface *surface = GetDrawingSurfaceForWalkbehind();
+    surface.DrawingColor = 4;
+    surface.DrawRectangle(50, 50, 100, 100);
+    surface.Release();
+
+will paint a rectangle for the walk-behind 4.
+
+*See also:* [`GetDrawingSurfaceForWalkableArea`](Globalfunctions_Room#getdrawingsurfaceforwalkablearea),
+[`Hotspot.GetDrawingSurface`](Hotspot#hotspotgetdrawingsurface),
+[`Region.GetDrawingSurface`](Region#regiongetdrawingsurface),
+
+---
+
 ### `GetScalingAt`
 
     GetScalingAt (int x, int y)
