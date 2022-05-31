@@ -64,6 +64,8 @@ Example:
 
 will paint a rectangle for the region 4.
 
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
 *See also:* [`GetDrawingSurfaceForWalkbehind`](Globalfunctions_Room#getdrawingsurfaceforwalkbehind),
 [`GetDrawingSurfaceForWalkableArea`](Globalfunctions_Room#getdrawingsurfaceforwalkablearea),
 [`Hotspot.GetDrawingSurface`](Hotspot#hotspotgetdrawingsurface)
