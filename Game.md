@@ -4,7 +4,7 @@
 
     static bool Game.ChangeSpeechVox(const string newVoxName)
 
-Changes the active voice pack to a file called *sp_<newvoxname>*, where "newvoxname" is passed as a function argument. E.g. if you have sp_francais.vox in your game file, then you can do Game.ChangeSpeechVox("francais") to switch to it. Passing a blank string will revert the game to the default voice pack called *speech.vox*.
+Changes the active voice pack to a file called *sp_newvoxname.vox*, where "newvoxname" is passed as a function argument. E.g. if you have _sp_francais.vox_ in your game file, then you can do Game.ChangeSpeechVox("francais") to switch to it. Passing a blank string will revert the game to the default voice pack called *speech.vox*.
 
 Returns *true* if the voice pack was changed successfully, or *false* if there was a problem (for example, you specified an invalid filename). In case of failure this function will also try to revert to the default pack.
 
