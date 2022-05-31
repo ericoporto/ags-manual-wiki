@@ -45,6 +45,31 @@ will display the message if there is any region under the mouse cursor.
 
 ---
 
+### `Region.GetDrawingSurface`
+
+    static DrawingSurface* Region.GetDrawingSurface()
+
+Gets a drawing surface for the current room's 8-bit regions mask, which allows you to directly draw onto that mask. Note that this function is static and relates to all regions at once (not a particular region), because all of them are painted on the same mask.
+
+After calling this method, use the various [DrawingSurface functions](DrawingSurface) to modify the mask. Since this is a 8-bit mask, DrawingColor will match the region's index. Color value 0 will refer to "no region" (eraser), color value 1 to region number 1, and so forth. Don't forget to call `Release()` on the surface when you are finished to update the room's state.
+
+Any changes you make will only last until the player leaves the room, at which point they will be lost. If you need to make long-lasting changes, you can use this method in the Player Enters Room event, which will recreate these changes whenever player returns back.
+
+Example:
+
+    DrawingSurface *surface = Region.GetDrawingSurface();
+    surface.DrawingColor = 4;
+    surface.DrawRectangle(50, 50, 100, 100);
+    surface.Release();
+
+will paint a rectangle for the region 4.
+
+*See also:* [`GetDrawingSurfaceForWalkbehind`](Globalfunctions_Room#getdrawingsurfaceforwalkbehind),
+[`GetDrawingSurfaceForWalkableArea`](Globalfunctions_Room#getdrawingsurfaceforwalkablearea),
+[`Hotspot.GetDrawingSurface`](Hotspot#hotspotgetdrawingsurface)
+
+---
+
 ### `Region.RunInteraction`
 
 *(Formerly known as `RunRegionInteraction`, which is now obsolete)*
