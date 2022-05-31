@@ -29,6 +29,7 @@
 [Other Features](OtherFeatures)
 
 - [Music and sound](MusicAndSound)
+- [Voice speech](VoiceSpeech)
 - [Distributing your game](DistGame)
 - [Backing up your game](BackingUpYourGame)
 - [The text parser](TextParser)

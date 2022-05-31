@@ -80,7 +80,7 @@ been renamed to avoid confusion.
 *See also:* [`AudioClip.IsAvailable`](AudioClip#audioclipisavailable)
 [`Game.ChangeSpeechVox`](Game#gamechangespeechvox),
 [`Game.SpeechVoxFilename`](Game#gamespeechvoxfilename),
-[Voice-speech](MusicAndSound#voice-speech)
+[Voice speech](VoiceSpeech)
 
 ---
 

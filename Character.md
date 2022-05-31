@@ -1113,7 +1113,7 @@ games, whilst playing the character's talking animation.
 [`Character.SayAt`](Character#charactersayat),
 [`Character.SayBackground`](Character#charactersaybackground),
 [`Character.Think`](Character#characterthink),
-[Voice speech](MusicAndSound#voice-speech)
+[Voice speech](VoiceSpeech)
 
 ---
 

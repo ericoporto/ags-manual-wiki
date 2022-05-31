@@ -26,7 +26,7 @@ will attempt to change the voice pack to *sp_spanish.vox*.
 [`Game.SpeechVoxFilename`](Game#gamespeechvoxfilename),
 [`IsSpeechVoxAvailable`](Multimedia#isspeechvoxavailable),
 [`Game.ChangeTranslation`](Globalfunctions_General#gamechangetranslation),
-[Translations](Translations), [Voice-speech](MusicAndSound#voice-speech)
+[Translations](Translations), [Voice speech](VoiceSpeech)
 
 ### `Game.ChangeTranslation`
 
@@ -382,7 +382,7 @@ will display a message if plugin is present.
 
 Plays a voice clip from the **speech.vox** in a non-blocking manner. It returns an AudioChannel pointer which you may use to control playback same way you control other clips, or null if it could not be started.
 
-Character and "cue" arguments are used to find actual clip, this works the same way as when you do `cEgo.Say("&10 speech text");` in which case "10" is a cue number. For more information about this see: [Voice speech](MusicAndSound#voice-speech).
+Character and "cue" arguments are used to find actual clip, this works the same way as when you do `cEgo.Say("&10 speech text");` in which case "10" is a cue number. For more information about this see: [Voice speech](VoiceSpeech).
 
 The "as_speech" argument tells whether playback has same effect on game as regular speech. At the moment this means that music volume will drop and restore after playback is finished. This parameter "as_speech" is TRUE by default and may be omitted.
 
@@ -392,7 +392,7 @@ This command will be ignored if a regular blocking voice is currently playing. A
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
-*See also:* [Voice speech](MusicAndSound#voice-speech), [`AudioChannel`](AudioChannel), [`AudioClip.Play`](AudioClip#audioclipplay), [`Character.Say`](Character#charactersay)
+*See also:* [Voice speech](VoiceSpeech), [`AudioChannel`](AudioChannel), [`AudioClip.Play`](AudioClip#audioclipplay), [`Character.Say`](Character#charactersay)
 
 ---
 
@@ -1036,7 +1036,7 @@ Example:
 [`IsSpeechVoxAvailable`](Multimedia#isspeechvoxavailable),
 [`Game.ChangeTranslation`](Game#gamechangetranslation),
 [`Game.TranslationFilename`](Game#gametranslationfilename),
-[Translation](Translations), [Voice-speech](MusicAndSound#voice-speech)
+[Translation](Translations), [Voice speech](VoiceSpeech)
 
 ---
 

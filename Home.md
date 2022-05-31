@@ -22,6 +22,7 @@
 - [View Editor](EditorView)
 - [Inventory Items Editor](EditorInventoryItems)
 - [Music and sound](MusicAndSound)
+- [Voice speech](VoiceSpeech)
 - [Script Modules](ScriptModules)
 - [System limits](SystemLimits)
 - [Plugins](Plugins)
