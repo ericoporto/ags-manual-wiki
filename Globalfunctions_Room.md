@@ -125,6 +125,8 @@ Example:
 
 will paint a rectangle for the walkable area 4.
 
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
 *See also:* [`GetDrawingSurfaceForWalkbehind`](Globalfunctions_Room#getdrawingsurfaceforwalkbehind),
 [`Hotspot.GetDrawingSurface`](Hotspot#hotspotgetdrawingsurface),
 [`Region.GetDrawingSurface`](Region#regiongetdrawingsurface)
@@ -149,6 +151,8 @@ Example:
     surface.Release();
 
 will paint a rectangle for the walk-behind 4.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
 *See also:* [`GetDrawingSurfaceForWalkableArea`](Globalfunctions_Room#getdrawingsurfaceforwalkablearea),
 [`Hotspot.GetDrawingSurface`](Hotspot#hotspotgetdrawingsurface),
