@@ -151,6 +151,28 @@ Another global setting is "TTF fonts height used in the game logic". This option
 
 One long time requested font feature is the automatic outline thickness. Automatic font outline has always been drawn 1px wide, but that was not enough for high-resolution games. Now fonts have a property "AutoOutlineThickness" which lets you set any outline width you need, and "AutoOutlineStyle" which toggles between "Squared" and "Rounded".
 
+### Improvement of Overlays
+
+Overlays in AGS are currently the only "game object" that may be created dynamically in script (there's also DynamicSprite, but it cannot be shown without being assigned to *something*). That, and them being a very simple kind of object not requiring extra setup, makes them useful to create temporary visual effects or creating a custom object from ground up. Previously, however, they had a number of restrictions, and these are now removed in AGS 3.6.0.
+
+1. Overlays are now unlimited in numbers. Previously there could be up to 20 simultaneous overlays.
+2. You can create both screen and room overlays. Room overlays are created using `Overlay.CreateRoomGraphical` and `Overlay.CreateRoomTextual`; they are like regular overlays but are positioned inside the room, in room coordinates, among room objects.
+3. Overlays now have ZOrder property, similar to GUI. The z-order may be used to sort overlays among themselves and other game objects on the same layer: the screen overlays are sorted among GUIs, while room overlays are sorted among room objects, characters and walk-behinds.
+4. Overlays now have Graphic property that lets you change overlay's sprite after it's created.
+5. Overlays now have Width and Height properties, that let you freely scale existing Overlay stretching or shrinking it, while new Transparency property lets to make them translucent, similar to other objects in game.
+
+Please refer to the corresponding page in Scripting API documentation to learn details about these and other [Overlay's functions and properties](Overlay).
+
+### Discontinued features
+
+There are few engine functionalities that were either removed completely, or disabled temporarily for technical reasons.
+
+First of all, _"Windows Game Explorer integration"_ **have been completely removed from AGS**. The Windows Game Explorer was never much popular, it seems, and it has been finally deprecated by Microsoft in Windows 10. The "enhanced save game" feature, that allowed Windows explorer to display some meta-data like screenshots for the AGS game saves, is deprecated since Windows 7. Therefore there's not much reason to keep this functionality in the engine. Note that it's still possible to register your game in the "Windows Game Explorer" by writing a custom tool or script that does that. We won't cover such operation in this manual though.
+
+_Hqx graphic filters_ are discontinued. They were previously only usable with the Software renderer, and had perfomance issues. In theory they may be returned later if there's a demand for them, and if implemented in a more perfomant way.
+
+_Windows-only DirectMedia video playback_ is discontinued. It allowed to play AVI/MPEG video files, but was implemented using DirectMedia interface, thus supported only on Windows and required player to have particular codecs installed on the system. It is probable that these video formats will be supported again at some point. OGG/OGV video format is the only one working at the moment, and we recommend using it for now.
+
 ### Deprecated / replaced script functions
 
 obsolete function | replace with
