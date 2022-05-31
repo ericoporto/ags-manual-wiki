@@ -145,11 +145,11 @@ Editor can now produce game builds for Android and Web (using Web/Emscripten por
 
 ### TTF fonts behavior
 
-Historically AGS applied a "fixup" to TTF fonts that shifted letters down when drawn, which in turn also increased their graphical height. This behavior is now optional, available purely for backwards compatibility, both as a global and per-font setting called "TTF font adjustment". This setting has two values: "Do nothing" and "Resize ascender to the nominal font height". We recommend having "Do nothing" at all times, except when using TTF fonts specifically created or adjusted for older versions of AGS.
+Historically AGS applied a "fixup" to TTF fonts, that shifted letters down when drawn, which, in turn, also increased their graphical height. This behavior is now optional, available purely for backwards compatibility, both as a global and per-font setting called "TTF font adjustment". This setting has two values: "Do nothing" and "Resize ascender to the nominal font height". We recommend having it set to "Do nothing" at all times, except when using TTF fonts specifically created or adjusted for older versions of AGS.
 
-Another global setting is "TTF fonts height used in the game logic". This option tells which value to use when calculating text height, line spacing etc. Its value may be either "Nominal height" or "Full graphical height". The difference is that due to font library's behavior the font's graphical height may end up different (usually larger) that the nominal height the font is imported with. While "Nominal height" is a historical default, it's up to your preference which to use.
+Another global setting is "TTF fonts height used in the game logic". This option sets which value to use when calculating text height, line spacing etc. Its value may be either "Nominal height" or "Full graphical height". The difference is, that due to the font library's behavior the font's graphical height may end up differently (usually larger) than the nominal height the font is imported with. While "Nominal height" is a historical default, it's up to your preference which setting to use.
 
-One long time requested font feature is the automatic outline thickness. Automatic font outline has always been drawn 1px wide, but that was not enough for high-resolution games. Now fonts have a property "AutoOutlineThickness" which lets you set any outline width you need, and "AutoOutlineStyle" which toggles between "Squared" and "Rounded".
+A long time requested font feature that is now available is the option to set the thickness of the automatically generated outline of the text. The automatic font outline has always been drawn 1px wide, but that was not enough for high-resolution games. Now fonts have a property called "AutoOutlineThickness" which lets you set any outline width you need, and "AutoOutlineStyle" which toggles between "Squared" and "Rounded" corners.
 
 ### Improvement of Overlays
 
