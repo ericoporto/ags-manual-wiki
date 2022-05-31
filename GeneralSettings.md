@@ -20,9 +20,7 @@ SetGameOption.
     palette-based games. See also: [Palette setup](Settingupthegame#palette-setup),
     [Palette functions](Globalfunctions_Palette)
 -   **Developer name** - this will add the provided string to the game's
-    executable properties, which will also be shown in
-    [Windows Game Explorer](IntegrationWithWindows#windows-game-explorer),
-    if you configure integration with one.
+    executable properties.
 -   **Enable letterbox mode** - only available if your game's resolution
     is 320x200 or 640x400. If you enable it, your game will run as
     320x240 and 640x480 game correspondingly, while keeping room
@@ -349,7 +347,7 @@ accessible in future versions.
     
 There used to be an option for Save Game integration with Windows Vista, it
 was called **Enhanced save games**. Since this was removed in later versions of
-Windows, this option has been removed.
+Windows, this option has been removed in AGS 3.6.0.
 
 ## Sound
 

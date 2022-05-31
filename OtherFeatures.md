@@ -13,6 +13,5 @@ tutorial.
 - [Lip sync](Lipsync)
 - [Debugging features](Debuggingfeatures)
 - [Auto-number speech files](AutonumberSpeechFiles)
-- [Integration with Windows](IntegrationWithWindows)
 - [Source Control integration](SourceControl)
 - [Game saves compatibility](GameSavesCompatibility)

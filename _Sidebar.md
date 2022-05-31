@@ -40,7 +40,6 @@
 - [New Game templates](Templates)
 - [Debugging features](Debuggingfeatures)
 - [Auto-number speech files](AutonumberSpeechFiles)
-- [Integration with Windows](IntegrationWithWindows)
 - [Source Control integration](SourceControl)
 
 ***Engine***
