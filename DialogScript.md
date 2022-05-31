@@ -71,6 +71,8 @@ The dialog commands available are:
 -   **option-on X**<br>
     Turns option X for the current topic on, including it in the list of
     choices to the player next time they are displayed.
+-   **run-script X**<br>
+    Calls [dialog_request](Globalfunctions_Event#dialog_request) event handler if one is present in the game script, passes `X` as an integer parameter.
 -   **return**<br>
     Stops the script and returns to the list of choices.
 -   **stop**<br>
