@@ -153,6 +153,8 @@ will append the new printed character to a label's text.
 
 **IMPORTANT:** this function only works when your game uses "new-style key handling mode". This mode is selected in the [General Settings](GeneralSettings#backwards-compatibility) with "Use old-style key handling" option in the "Backwards compatibility" group.
 
+*Compatibility:* supported since AGS 3.6.0.
+
 ---
 
 ### `repeatedly_execute`
