@@ -297,6 +297,13 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
         eInputAny      = 0xFFFF0000
     };
 
+The InputType enumeration consists of values that could be summed up in one integer variable to form a combination of input types. This may be used to store several "types" in one integer, pass them into a function, or return from a function. You may use bitwise operation to check if a variable contains one of the distinct types, for example:
+
+    if (type & eInputKeyboard)
+      // some code here
+
+will execute some code if *type* variable contains *at least* "eInputKeyboard".
+
 *Supported by:* AGS 3.6.0 and higher.
 
 *Used by:* [Wait functions](Globalfunctions_Wait)
