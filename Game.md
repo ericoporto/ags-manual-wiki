@@ -25,7 +25,7 @@ will attempt to change the voice pack to *sp_spanish.vox*.
 *See also:*
 [`Game.SpeechVoxFilename`](Game#gamespeechvoxfilename),
 [`IsSpeechVoxAvailable`](Multimedia#isspeechvoxavailable),
-[`Game.ChangeTranslation`](Globalfunctions_General#gamechangetranslation),
+[`Game.ChangeTranslation`](Game#gamechangetranslation),
 [Translations](Translations), [Voice speech](VoiceSpeech)
 
 ### `Game.ChangeTranslation`
@@ -63,7 +63,7 @@ will attempt to change the translation to Spanish
 [`Game.TranslationFilename`](Game#gametranslationfilename),
 [`GetTranslation`](Globalfunctions_General#gettranslation),
 [`IsTranslationAvailable`](Globalfunctions_General#istranslationavailable),
-[`Game.ChangeSpeechVox`](Globalfunctions_General#gamechangespeechvox),
+[`Game.ChangeSpeechVox`](Game#gamechangespeechvox),
 [Translations](Translations)
 
 ---
