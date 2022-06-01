@@ -1,12 +1,25 @@
 ## Global functions (Wait)
 
-
 Since AGS 3.6.0, All Wait related functions can return a **Skip Reason** on why they were skipped:
 
-- `0 =` ended by timeout or `SkipWait()`;
-- `> 0 =` keycode;
-- `< 0 =` negated mouse button code minus one (because of how mouse codes start with 0). In order to get mouse code do this: `MouseButton btn = -(result + 1)`;
+- `0` - ended by timeout or `SkipWait()`;
+- `!= 0` - an integer value which combines [InputType](StandardEnums#inputtype) and a key or button code corresponding to that input type; that describes what input device and which button on that device were used to skip this "wait".
 
+If you only need to find out whether WaitX ended with a timeout or a player's input, all you need is to compare it with `0`:
+
+    if (WaitMouseKey(100) == 0) {
+        Display("Time out!");
+    }
+
+    if (WaitMouse(100) != 0) {
+        Display("Skipped by a mouse click.");
+    }
+
+If you need to determine exact details of how the "wait" was skipped, you have to split returned value into `InputType` and a button code using [bitwise operations](ScriptKeywords#operators):
+
+    int result = WaitMouseKey(1000);
+    InputType type = result & eInputAny;
+    int code = result & 0xFFFF; // exact key or button code
 
 ---
 
@@ -50,22 +63,57 @@ wait for 2 seconds (80 game cycles) and then face right.
 
 ---
 
+### `WaitInput`
+
+    int WaitInput(InputType types, int timeout = -1)
+
+Pauses the script and lets the game continue until EITHER:
+
+- `timeout` loops have elapsed, or
+- the player presses a key or button on one of the devices listed in `types`
+
+The `types` may contain any combined values from the [`InputType` enum](StandardEnums#inputtype).
+
+If `timeout` is -1, it will Wait forever, until a key is pressed.
+
+Returns the **Skip Reason** of why it was skipped (see top of this page for more details):
+
+- `0` - ended by timeout;
+- `!= 0` - ended by player input;
+
+Example:
+
+    WaitInput(eInputKeyboard + eInputMouse, 200);
+
+will pause the script and wait until 5 seconds have passed (if game is 40 frames per second) or the player
+presses a key or clicks the mouse.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Wait`](Globalfunctions_Wait#wait), 
+[`WaitKey`](Globalfunctions_Wait#waitkey), 
+[`WaitMouse`](Globalfunctions_Wait#waitmouse),
+[`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
+[`Game.BlockingWaitSkipped`](Game#gameblockingwaitskipped),
+[`SkipWait`](Globalfunctions_Wait#skipwait)
+
+---
+
 ### `WaitKey`
 
     int WaitKey (int timeout = -1)
 
 Pauses the script and lets the game continue until EITHER:
 
-\(a) `timeout` loops have elapsed, or
-
-\(b) the player presses a key
+- `timeout` loops have elapsed, or
+- the player presses a key
 
 If `timeout` is -1, it will Wait forever, until a key is pressed.
 
 Returns the **Skip Reason** of why it was skipped (see top of this page for more details):
 
-- `0 =` ended by timeout;
-- `> 0 =` keycode;
+- `0` - ended by timeout;
+- `!= 0` - ended by key keycode;
 
 Example:
 
@@ -87,19 +135,16 @@ presses a key.
 
 Pauses the script and lets the game continue until EITHER:
 
-\(a) `timeout` loops have elapsed, or
-
-\(b) the player presses a key, or
-
-\(c) the player clicks a mouse button
+- `timeout` loops have elapsed, or
+- the player presses a key, or
+- the player clicks a mouse button
 
 If `timeout` is -1, it will Wait forever, until either a key is pressed or the mouse is clicked.
 
 Returns the **Skip Reason** of why it was skipped (see top of this page for more details):
 
-- `0 =` ended by timeout;
-- `> 0 =` keycode;
-- `< 0 =` negated mouse button code minus one (because of how mouse codes start with 0). In order to get mouse code do this: MouseButton btn = -(result + 1);
+- `0` - ended by timeout;
+- `!= 0` - ended by keycode or mouse click;
 
 Example:
 
@@ -121,16 +166,15 @@ presses a key or clicks the mouse.
 
 Pauses the script and lets the game continue until EITHER:
 
-\(a) `timeout` loops have elapsed, or
-
-\(b) the player clicks a mouse button
+- `timeout` loops have elapsed, or
+- the player clicks a mouse button
 
 If `timeout` is -1, it will Wait forever, until the mouse is clicked.
 
 Returns the **Skip Reason** of why it was skipped (see top of this page for more details):
 
-- 0 if the time elapsed, or 
-- `< 0 =` negated mouse button code minus one (because of how mouse codes start with 0). In order to get mouse code do this: MouseButton btn = -(result + 1);
+- `0` - if the time elapsed, or 
+- `!= 0` - ended by mouse click;
 
 Example:
 
@@ -138,7 +182,6 @@ Example:
 
 will pause the script and wait until 5 seconds have passed (if game is 40 frames per second) or the player
 presses clicks the mouse.
-
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
