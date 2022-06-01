@@ -13,6 +13,7 @@ STRICT_AUDIO | Defined if "Enforce new-style audio scripting" is enabled, not de
 LRPRECEDENCE | Defined if "Left-to-right operator precedence" is enabled, not defined otherwise
 AGS_NEW_STRINGS | Defined if AGS 2.71 or later (with new-String support), not defined otherwise
 NEW_DIALOGOPTS_API | Defined if "Use old-style dialog options rendering API" is disabled
+NEW_KEYINPUT_API | Defined if "Use old-style key handling" is disabled
 AGS_SUPPORTS_IFVER | Defined if AGS 2.72 or later (with `#ifver` support), not defined otherwise
 AGS_MAX_INV_ITEMS | The maximum number of inventory items
 AGS_MAX_OBJECTS | The maximum objects per room
