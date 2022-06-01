@@ -6,83 +6,6 @@ used in calls to various commands, and will usually pop up automatically
 in autocomplete. However, for times where autocomplete doesn't do the
 job, having a manual reference is invaluable:
 
-### `BlockingStyle`
-
-    enum BlockingStyle {
-      eBlock,
-      eNoBlock
-    };
-
-*Used by:* [`Character.Animate`](Character#characteranimate),
-[`Character.FaceCharacter`](Character#characterfacecharacter),
-[`Character.FaceLocation`](Character#characterfacelocation),
-[`Character.FaceObject`](Character#characterfaceobject),
-[`Character.Move`](Character#charactermove),
-[`Character.Walk`](Character#characterwalk),
-[`Character.WalkStraight`](Character#characterwalkstraight),
-[`Object.Animate`](Object#objectanimate),
-[`Object.Move`](Object#objectmove)
-
-### `CharacterDirection`
-
-    enum CharacterDirection {
-      eDirectionDown = 0,
-      eDirectionLeft,
-      eDirectionRight,
-      eDirectionUp,
-      eDirectionDownRight,
-      eDirectionUpRight,
-      eDirectionDownLeft,
-      eDirectionUpLeft,
-      eDirectionNone = SCR_NO_VALUE
-    };
-
-*Used by:* [`Character.ChangeRoom`](Character#characterchangeroom),
-[`Character.FaceDirection`](Character#characterfacedirection)
-
-### `Direction`
-
-    enum Direction {
-      eForwards,
-      eBackwards
-    };
-
-*Used by:* [`Character.Animate`](Character#characteranimate),
-[`Object.Animate`](Object#objectanimate)
-
-### `WalkWhere`
-
-    enum WalkWhere {
-      eAnywhere,
-      eWalkableAreas
-    };
-
-*Used by:* [`Character.Move`](Character#charactermove),
-[`Character.Walk`](Character#characterwalk),
-[`Object.Move`](Object#objectmove)
-
-### `StopMovementStyle`
-
-    enum StopMovementStyle
-    {
-      eKeepMoving = 0,
-      eStopMoving = 1
-    };
-
-*Used by:* [`Character.LockView`](Character#characterlockviewaligned),
-[`Character.LockViewFrame`](Character#characterlockviewoffset)
-
-### `RepeatStyle`
-
-    enum RepeatStyle {
-      eOnce,
-      eRepeat
-    };
-
-*Used by:* [`Button.Animate`](Button#buttonanimate),
-[`Character.Animate`](Character#characteranimate),
-[`Object.Animate`](Object#objectanimate)
-
 ### `Alignment`
 
     enum Alignment {
@@ -115,158 +38,49 @@ will execute some code if *align* variable contains "Left" in any combination (e
 
 *Used by:* [`Button.TextAlignment`](Button#buttontextalignment)
 
-### `HorizontalAlignment`
+### `AudioFileType`
 
-    enum HorizontalAlignment {
-      eAlignLeft          = 1,
-      eAlignCenter        = 2,
-      eAlignRight         = 4
+    enum AudioFileType {
+      eAudioFileOGG,
+      eAudioFileMP3,
+      eAudioFileWAV,
+      eAudioFileVOC,
+      eAudioFileMIDI,
+      eAudioFileMOD
     };
 
-Note that HorizontalAlignment's values match the first values of Alignment enumeration (eAlignTopLeft, eAlignTopCenter, eAlignTopRight).
+*Used by:* [`AudioClip.FileType`](AudioClip#audioclipfiletype)
 
-*Compatibility:* replaced old Alignment enumeration in AGS 3.5.0.
+### `AudioPriority`
 
-*Used by:*
-[`Character.LockViewAligned`](Character#characterlockviewaligned), [`DrawingSurface.DrawStringWrapped`](DrawingSurface#drawingsurfacedrawstringwrapped), [`Label.TextAlignment`](Label#labeltextalignment), [`ListBox.TextAlignment`](ListBox#listboxtextalignment), [`Speech.TextAlignment`](Speech#speechtextalignment)
-
-### `eFlipDirection`
-
-    enum eFlipDirection {
-      eFlipLeftToRight,
-      eFlipUpsideDown,
-      eFlipBoth
+    enum AudioPriority {
+      eAudioPriorityVeryLow = 1,
+      eAudioPriorityLow = 25,
+      eAudioPriorityNormal = 50,
+      eAudioPriorityHigh = 75,
+      eAudioPriorityVeryHigh = 100
     };
 
-*Used by:* [`DynamicSprite.Flip`](DynamicSprite#dynamicspriteflip)
+*Used by:* [`AudioClip.Play`](AudioClip#audioclipplay),
+[`AudioClip.PlayFrom`](AudioClip#audioclipplayfrom),
+[`AudioClip.PlayQueued`](AudioClip#audioclipplayqueued)
 
-### `TransitionStyle`
+### `BlockingStyle`
 
-    enum TransitionStyle {
-      eTransitionFade,
-      eTransitionInstant,
-      eTransitionDissolve,
-      eTransitionBoxout,
-      eTransitionCrossfade
+    enum BlockingStyle {
+      eBlock,
+      eNoBlock
     };
 
-*Used by:* [`SetScreenTransition`](Globalfunctions_Screen#setscreentransition),
-[`SetNextScreenTransition`](Globalfunctions_Screen#setnextscreentransition)
-
-### `MouseButton`
-
-    enum MouseButton {
-      eMouseLeft,
-      eMouseRight,
-      eMouseMiddle,
-      eMouseLeftInv,
-      eMouseMiddleInv,
-      eMouseRightInv,
-      eMouseWheelNorth,
-      eMouseWheelSouth
-    };
-
-*Used by:* [`Mouse.IsButtonDown`](Mouse#mouseisbuttondown)<br>
-*Passed into:* on_mouse_click
-
-### `EventType`
-
-    enum EventType {
-      eEventLeaveRoom,
-      eEventEnterRoomBeforeFadein,
-      eEventGotScore,
-      eEventGUIMouseDown,
-      eEventGUIMouseUp,
-      eEventAddInventory,
-      eEventLoseInventory,
-      eEventRestoreGame
-    };
-
-*Passed into:* on_event
-
-### `RoundDirection`
-
-    enum RoundDirection {
-      eRoundDown,
-      eRoundNearest,
-      eRoundUp
-    };
-
-*Used by:* [`FloatToInt`](Maths#floattoint)
-
-### `eSpeechStyle`
-
-    enum eSpeechStyle {
-      eSpeechLucasarts,
-      eSpeechSierra,
-      eSpeechSierraWithBackground,
-      eSpeechFullScreen
-    };
-
-*Used by:* [`Speech.Style`](Speech#speechstyle)
-
-### `SkipSpeechStyle`
-
-    enum SkipSpeechStyle {
-      eSkipNone         = -1,
-      eSkipKeyMouseTime = 0,
-      eSkipKeyTime      = 1,
-      eSkipTime         = 2,
-      eSkipKeyMouse     = 3,
-      eSkipMouseTime    = 4,
-      eSkipKey          = 5,
-      eSkipMouse        = 6
-    };
-
-*Used by:* [`Speech.SkipStyle`](Speech#speechskipstyle)
-
-### `eVoiceMode`
-
-    enum eVoiceMode {
-      eSpeechTextOnly,
-      eSpeechVoiceAndText,
-      eSpeechVoiceOnly
-    };
-
-*Used by:* [`Speech.VoiceMode`](Speech#speechvoicemode)
-
-### `DialogOptionState`
-
-    enum DialogOptionState {
-      eOptionOff,
-      eOptionOn,
-      eOptionOffForever
-    };
-
-*Used by:* [`Dialog.GetOptionState`](Dialog#dialoggetoptionstate),
-[`Dialog.SetOptionState`](Dialog#dialogsetoptionstate)
-
-### `CutsceneSkipType`
-
-    enum CutsceneSkipType {
-      eSkipESCOnly,
-      eSkipAnyKey,
-      eSkipMouseClick,
-      eSkipAnyKeyOrMouseClick,
-      eSkipESCOrRightButton,
-      eSkipScriptOnly
-    };
-
-*Used by:* [`StartCutscene`](Globalfunctions_General#startcutscene)
-
-### `eOperatingSystem`
-
-    enum eOperatingSystem {
-      eOSDOS,
-      eOSWindows,
-      eOSLinux,
-      eOSMacOS,
-      eOSAndroid,
-      eOSiOS,
-      eOSPSP
-    };
-
-*Used by:* [`System.OperatingSystem`](System#systemoperatingsystem)
+*Used by:* [`Character.Animate`](Character#characteranimate),
+[`Character.FaceCharacter`](Character#characterfacecharacter),
+[`Character.FaceLocation`](Character#characterfacelocation),
+[`Character.FaceObject`](Character#characterfaceobject),
+[`Character.Move`](Character#charactermove),
+[`Character.Walk`](Character#characterwalk),
+[`Character.WalkStraight`](Character#characterwalkstraight),
+[`Object.Animate`](Object#objectanimate),
+[`Object.Move`](Object#objectmove)
 
 ### `eCDAudioFunction`
 
@@ -284,6 +98,23 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
     };
 
 *Used by:* [`CDAudio`](Multimedia#cdaudio)
+
+### `CharacterDirection`
+
+    enum CharacterDirection {
+      eDirectionDown = 0,
+      eDirectionLeft,
+      eDirectionRight,
+      eDirectionUp,
+      eDirectionDownRight,
+      eDirectionUpRight,
+      eDirectionDownLeft,
+      eDirectionUpLeft,
+      eDirectionNone = SCR_NO_VALUE
+    };
+
+*Used by:* [`Character.ChangeRoom`](Character#characterchangeroom),
+[`Character.FaceDirection`](Character#characterfacedirection)
 
 ### `CursorMode`
 
@@ -314,6 +145,95 @@ removed, and *eMode* is added to the front.<br>
 [`Character.IsInteractionAvailable`](Character#characterisinteractionavailable),
 [`Character.RunInteraction`](Character#characterruninteraction)
 
+### `CutsceneSkipType`
+
+    enum CutsceneSkipType {
+      eSkipESCOnly,
+      eSkipAnyKey,
+      eSkipMouseClick,
+      eSkipAnyKeyOrMouseClick,
+      eSkipESCOrRightButton,
+      eSkipScriptOnly
+    };
+
+*Used by:* [`StartCutscene`](Globalfunctions_General#startcutscene)
+
+### `DialogOptionSayStyle`
+
+    enum DialogOptionSayStyle {
+      eSayUseOptionSetting,
+      eSayAlways,
+      eSayNever
+    };
+
+*Used by:* [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions)
+
+### `DialogOptionState`
+
+    enum DialogOptionState {
+      eOptionOff,
+      eOptionOn,
+      eOptionOffForever
+    };
+
+*Used by:* [`Dialog.GetOptionState`](Dialog#dialoggetoptionstate),
+[`Dialog.SetOptionState`](Dialog#dialogsetoptionstate)
+
+### `Direction`
+
+    enum Direction {
+      eForwards,
+      eBackwards
+    };
+
+*Used by:* [`Character.Animate`](Character#characteranimate),
+[`Object.Animate`](Object#objectanimate)
+
+### `EventType`
+
+    enum EventType {
+      eEventLeaveRoom,
+      eEventEnterRoomBeforeFadein,
+      eEventGotScore,
+      eEventGUIMouseDown,
+      eEventGUIMouseUp,
+      eEventAddInventory,
+      eEventLoseInventory,
+      eEventRestoreGame
+    };
+
+*Passed into:* on_event
+
+### `FileMode`
+
+    enum FileMode {
+      eFileRead,
+      eFileWrite,
+      eFileAppend
+    };
+
+*Used by:* [`File.Open`](File#fileopen)
+
+### `FileSeek`
+
+    enum FileSeek {
+      eSeekBegin = 0,
+      eSeekCurrent = 1,
+      eSeekEnd = 2
+    };
+
+*Used by:* [`File.Seek`](File#fileseek)
+
+### `eFlipDirection`
+
+    enum eFlipDirection {
+      eFlipLeftToRight,
+      eFlipUpsideDown,
+      eFlipBoth
+    };
+
+*Used by:* [`DynamicSprite.Flip`](DynamicSprite#dynamicspriteflip)
+
 ### `FontType`
 
     enum FontType {
@@ -339,85 +259,6 @@ to the front.<br>
 [`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
 [`Overlay.SetText`](Overlay#overlaysettext)
 
-### `LocationType`
-
-    enum LocationType {
-      eLocationNothing,
-      eLocationHotspot,
-      eLocationCharacter,
-      eLocationObject
-    };
-
-*Returned by:* [`GetLocationType`](Globalfunctions_General#getlocationtype)
-
-### `FileMode`
-
-    enum FileMode {
-      eFileRead,
-      eFileWrite,
-      eFileAppend
-    };
-
-*Used by:* [`File.Open`](File#fileopen)
-
-### `FileSeek`
-
-    enum FileSeek {
-      eSeekBegin = 0,
-      eSeekCurrent = 1,
-      eSeekEnd = 2
-    };
-
-*Used by:* [`File.Seek`](File#fileseek)
-
-### `DialogOptionSayStyle`
-
-    enum DialogOptionSayStyle {
-      eSayUseOptionSetting,
-      eSayAlways,
-      eSayNever
-    };
-
-*Used by:* [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions)
-
-### `VideoSkipStyle`
-
-    enum VideoSkipStyle {
-      eVideoSkipNotAllowed,
-      eVideoSkipEscKey,
-      eVideoSkipAnyKey,
-      eVideoSkipAnyKeyOrMouse
-    };
-
-*Used by:* [`PlayVideo`](Multimedia#playvideo)
-
-### `AudioFileType`
-
-    enum AudioFileType {
-      eAudioFileOGG,
-      eAudioFileMP3,
-      eAudioFileWAV,
-      eAudioFileVOC,
-      eAudioFileMIDI,
-      eAudioFileMOD
-    };
-
-*Used by:* [`AudioClip.FileType`](AudioClip#audioclipfiletype)
-
-### `AudioPriority`
-
-    enum AudioPriority {
-      eAudioPriorityVeryLow = 1,
-      eAudioPriorityLow = 25,
-      eAudioPriorityNormal = 50,
-      eAudioPriorityHigh = 75,
-      eAudioPriorityVeryHigh = 100
-    };
-
-*Used by:* [`AudioClip.Play`](AudioClip#audioclipplay),
-[`AudioClip.PlayFrom`](AudioClip#audioclipplayfrom),
-[`AudioClip.PlayQueued`](AudioClip#audioclipplayqueued)
-
 ### `GUIPopupStyle`
 
     enum GUIPopupStyle {
@@ -431,33 +272,31 @@ to the front.<br>
 
 *Used by:* [`GUI.PopupStyle`](GUI#guipopupstyle)
 
-### `StringCompareStyle`
+### `HorizontalAlignment`
 
-    enum StringCompareStyle {
-      eCaseInsensitive = 0,
-      eCaseSensitive = 1
+    enum HorizontalAlignment {
+      eAlignLeft          = 1,
+      eAlignCenter        = 2,
+      eAlignRight         = 4
     };
 
-*Supported by:* AGS 3.5.0 and higher.
+Note that HorizontalAlignment's values match the first values of Alignment enumeration (eAlignTopLeft, eAlignTopCenter, eAlignTopRight).
 
-*Used by:* [`Dictionary.Create`](Dictionary#dictionarycreate),
-[`Set.Create`](Set#setcreate),
-[`String.CompareTo`](String#stringcompareto),
-[`String.EndsWith`](String#stringendswith),
-[`String.Replace`](String#stringreplace),
-[`String.StartsWith`](String#stringstartswith)
+*Compatibility:* replaced old Alignment enumeration in AGS 3.5.0.
 
-### `SortStyle`
+*Used by:*
+[`Character.LockViewAligned`](Character#characterlockviewaligned), [`DrawingSurface.DrawStringWrapped`](DrawingSurface#drawingsurfacedrawstringwrapped), [`Label.TextAlignment`](Label#labeltextalignment), [`ListBox.TextAlignment`](ListBox#listboxtextalignment), [`Speech.TextAlignment`](Speech#speechtextalignment)
 
-    enum SortStyle {
-      eNonSorted = 0,
-      eSorted = 1
+### `LocationType`
+
+    enum LocationType {
+      eLocationNothing,
+      eLocationHotspot,
+      eLocationCharacter,
+      eLocationObject
     };
 
-*Supported by:* AGS 3.5.0 and higher.
-
-*Used by:* [`Dictionary.Create`](Dictionary#dictionarycreate),
-[`Set.Create`](Set#setcreate)
+*Returned by:* [`GetLocationType`](Globalfunctions_General#getlocationtype)
 
 ### `LogLevel`
 
@@ -475,3 +314,164 @@ to the front.<br>
 *Supported by:* AGS 3.6.0 and higher.
 
 *Used by:* [`System.Log`](System#systemlog)
+
+### `MouseButton`
+
+    enum MouseButton {
+      eMouseLeft,
+      eMouseRight,
+      eMouseMiddle,
+      eMouseLeftInv,
+      eMouseMiddleInv,
+      eMouseRightInv,
+      eMouseWheelNorth,
+      eMouseWheelSouth
+    };
+
+*Used by:* [`Mouse.IsButtonDown`](Mouse#mouseisbuttondown)<br>
+*Passed into:* on_mouse_click
+
+### `eOperatingSystem`
+
+    enum eOperatingSystem {
+      eOSDOS,
+      eOSWindows,
+      eOSLinux,
+      eOSMacOS,
+      eOSAndroid,
+      eOSiOS,
+      eOSPSP
+    };
+
+*Used by:* [`System.OperatingSystem`](System#systemoperatingsystem)
+
+### `RepeatStyle`
+
+    enum RepeatStyle {
+      eOnce,
+      eRepeat
+    };
+
+*Used by:* [`Button.Animate`](Button#buttonanimate),
+[`Character.Animate`](Character#characteranimate),
+[`Object.Animate`](Object#objectanimate)
+
+### `RoundDirection`
+
+    enum RoundDirection {
+      eRoundDown,
+      eRoundNearest,
+      eRoundUp
+    };
+
+*Used by:* [`FloatToInt`](Maths#floattoint)
+
+### `SkipSpeechStyle`
+
+    enum SkipSpeechStyle {
+      eSkipNone         = -1,
+      eSkipKeyMouseTime = 0,
+      eSkipKeyTime      = 1,
+      eSkipTime         = 2,
+      eSkipKeyMouse     = 3,
+      eSkipMouseTime    = 4,
+      eSkipKey          = 5,
+      eSkipMouse        = 6
+    };
+
+*Used by:* [`Speech.SkipStyle`](Speech#speechskipstyle)
+
+### `SortStyle`
+
+    enum SortStyle {
+      eNonSorted = 0,
+      eSorted = 1
+    };
+
+*Supported by:* AGS 3.5.0 and higher.
+
+*Used by:* [`Dictionary.Create`](Dictionary#dictionarycreate),
+[`Set.Create`](Set#setcreate)
+
+### `eSpeechStyle`
+
+    enum eSpeechStyle {
+      eSpeechLucasarts,
+      eSpeechSierra,
+      eSpeechSierraWithBackground,
+      eSpeechFullScreen
+    };
+
+*Used by:* [`Speech.Style`](Speech#speechstyle)
+
+### `StopMovementStyle`
+
+    enum StopMovementStyle
+    {
+      eKeepMoving = 0,
+      eStopMoving = 1
+    };
+
+*Used by:* [`Character.LockView`](Character#characterlockviewaligned),
+[`Character.LockViewFrame`](Character#characterlockviewoffset)
+
+### `StringCompareStyle`
+
+    enum StringCompareStyle {
+      eCaseInsensitive = 0,
+      eCaseSensitive = 1
+    };
+
+*Supported by:* AGS 3.5.0 and higher.
+
+*Used by:* [`Dictionary.Create`](Dictionary#dictionarycreate),
+[`Set.Create`](Set#setcreate),
+[`String.CompareTo`](String#stringcompareto),
+[`String.EndsWith`](String#stringendswith),
+[`String.Replace`](String#stringreplace),
+[`String.StartsWith`](String#stringstartswith)
+
+### `TransitionStyle`
+
+    enum TransitionStyle {
+      eTransitionFade,
+      eTransitionInstant,
+      eTransitionDissolve,
+      eTransitionBoxout,
+      eTransitionCrossfade
+    };
+
+*Used by:* [`SetScreenTransition`](Globalfunctions_Screen#setscreentransition),
+[`SetNextScreenTransition`](Globalfunctions_Screen#setnextscreentransition)
+
+### `VideoSkipStyle`
+
+    enum VideoSkipStyle {
+      eVideoSkipNotAllowed,
+      eVideoSkipEscKey,
+      eVideoSkipAnyKey,
+      eVideoSkipAnyKeyOrMouse
+    };
+
+*Used by:* [`PlayVideo`](Multimedia#playvideo)
+
+### `eVoiceMode`
+
+    enum eVoiceMode {
+      eSpeechTextOnly,
+      eSpeechVoiceAndText,
+      eSpeechVoiceOnly
+    };
+
+*Used by:* [`Speech.VoiceMode`](Speech#speechvoicemode)
+
+### `WalkWhere`
+
+    enum WalkWhere {
+      eAnywhere,
+      eWalkableAreas
+    };
+
+*Used by:* [`Character.Move`](Character#charactermove),
+[`Character.Walk`](Character#characterwalk),
+[`Object.Move`](Object#objectmove)
