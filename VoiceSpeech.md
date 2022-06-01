@@ -33,13 +33,34 @@ finished playing. If the player interrupts it by clicking the mouse or
 pressing a key, the text and voice will be stopped. Voice files must be
 placed in the "Speech" sub-directory of the game folder.
 
-**NOTE:** WAV, OGG and MP3 format files can be used for speech.
-
 **NOTE:** Speech file numbers are restricted to the positive range of 1 to 2147483647 (2 billion). This is a technical limitation based on how these are handled inside the engine, but we do not think it will ever become a problem to the user.
 
-Speech is compiled into a file called SPEECH.VOX and is separate from
-the rest of your game data so that you can offer it as an optional extra
-download to the player. The game will function correctly if the file is
-not present.
+### Voice packs
 
-*SeeAlso:* [`Speech.VoiceMode`](Speech#speechvoicemode)
+Any sound format supported by AGS can be used for speech as well.
+
+AGS uses separate voice packs to store the speech files. The default voice pack is compiled by placing files in the "Speech" sub-directory of the game folder, and is named "speech.vox".
+
+Since version 3.6.0 AGS also supports multiple alternate voice packs. These are compiled from *subdirectories* nested inside the "Speech", and are named "sp_DIRNAME.vox", where DIRNAME is a name of that subdirectory.
+The speech files in these alternate directories must have same names as files in the "Speech" itself. These extra packs may be used to provide voice-over for different languages.
+
+For example, if you have this folder structure in your game project:
+
+* Speech
+* * Francais
+* * MyLang
+
+then the editor will create following voxes:
+* speech.vox (with files only from the root "Speech" folder);
+* sp_francais.vox (with files from "Speech/Francais");
+* sp_mylang.vox (with files from "Speech/MyLang");
+
+**NOTE:** only top-level files are included into the voice pack, any further subfolders are ignored.
+
+Since AGS 3.6.0 engine supports switching to a different speech vox anytime. To do so, there's a new script function [Game.ChangeSpeechVox](Game#gamechangespeechvox).
+
+Note that the voice packs are considered optional, and your game will function correctly even without them, in which case it will display speech text but play no voice. This allows to offer them as an optional download for your players.
+If particular speech file is missing in the pack, that also should not cause game errors.
+
+*SeeAlso:* [`Game.ChangeSpeechVox`](Game#gamechangespeechvox),
+[`Speech.VoiceMode`](Speech#speechvoicemode)
