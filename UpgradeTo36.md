@@ -135,13 +135,13 @@ The commands above will change the textual translation to "Spanish", and the voi
 
 ### New sprite compression options
 
-First of all, the old "Compress the sprite file" option in [General Settings](GeneralSettings) has been replaced with "Sprite file compression", which lets to choose one of the supported compression types. Previous common sprite compression in AGS is called "RLE"; an "LZW" compression was added for selection. It's possible that this list will be extended in the future.
+First of all, the old "Compress the sprite file" option in [General Settings](GeneralSettings) has been replaced with "Sprite file compression", which lets you choose one of the supported compression types. The previously commonly used sprite compression in AGS is called "RLE"; the "LZW" compression method is now new to the selection. It's possible that this list will be extended in the future.
 
-Secondly, there's now a "Enable sprite storage optimization" option, which is enabled by default. This option permits the Editor to repack sprites in a different storage format, reducing their disk size whenever possible. This option may be used alongside with the sprite compression. Note that this _does not_ change how the sprites work in game, only how they are stored in the game files.
+Secondly, there's now an "Enable sprite storage optimization" option, which is enabled by default. This option permits the Editor to repack sprites in a different storage format, reducing their disk size whenever possible. This option may be used together with the sprite compression. Note that this _does not_ change how the sprites work in game, only how they are stored in the game files.
 
 ### Multiplatform support extended
 
-Editor can now produce game builds for Android and Web (using Web/Emscripten port). Both require corresponding component installed alongside with the Editor. In addition, for Android builds you'd also have to install Android Studio and configure certain settings in [Editor's Preferences](EditorPreferences) and your game's [General Settings](GeneralSettings). For more information see [Distributing your game](DistGame).
+The AGS Editor can now produce game builds for Android and Web (using Web/Emscripten port). Both require corresponding components installed alongside with the Editor. In addition, for Android builds you also have to install Android Studio and configure certain settings in the [Editor's Preferences](EditorPreferences) and your game's [General Settings](GeneralSettings). For more information see [Distributing your game](DistGame).
 
 ### TTF fonts behavior
 
