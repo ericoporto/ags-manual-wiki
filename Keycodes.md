@@ -1,8 +1,13 @@
 ## Key code table
 
-This section lists the keycodes which can be passed to
-[`on_key_press`](Globalfunctions_Event#on_key_press) and which keys
-they represent:
+In AGS script you have a `eKeyCode` enumeration that defines key codes. These key codes can be passed to
+[`on_key_press`](Globalfunctions_Event#on_key_press), as well as used in calls to [`IsKeyPressed`](Globalfunctions_General#iskeypressed).
+
+Historically AGS has Ctrl+X key combinations have their own distinct keycodes. At the same time, keycodes corresponding to the modifier keys (Shift, Ctrl and Alt) were never passed to the [`on_key_press`](Globalfunctions_Event#on_key_press) alone and were only allowed with [`IsKeyPressed`](Globalfunctions_General#iskeypressed).
+
+Starting from version 3.6.0 AGS supports two ["key handling modes"](UpgradeTo36#changes-to-key-input-handling). The old mode works as described above, according to the historical behavior. The new mode actually allows modifier keycodes in `on_key_press`, and disables combined keycodes like Ctrl+X: instead these are passed as two separate keycodes.
+
+Following section lists the members of this enum, and which keys they represent.
 
 AGS keycode | Key | Numeric value
 --- | --- | ---
@@ -123,6 +128,12 @@ AGS keycode | Key | Numeric value
 `eKeyEnd` | End | 379
 `eKeyDownArrow` | Down arrow | 380
 `eKeyPageDown` | Page down | 381
+`eKeyShiftLeft` | Left Shift | 403
+`eKeyShiftRight` | Right Shift | 404
+`eKeyCtrlLeft` | Left Ctrl | 405
+`eKeyCtrlRight` | Right Ctrl | 406
+`eKeyAltLeft` | Left Alt | 407
+`eKeyAltRight` | Right Alt | 420
 
 Use these keycodes in your
 [`on_key_press`](Globalfunctions_Event#on_key_press) function to
@@ -131,16 +142,32 @@ process player input. For example:
     if (keycode == eKeyA) Display("You pressed A");
     if (keycode == eKeyPlus) Display("You pressed the Plus key");
 
-The following extra codes can only be used with
-[`IsKeyPressed`](Globalfunctions_General#iskeypressed)
-(i.e. [`on_key_press`](Globalfunctions_Event#on_key_press) is never
-called with these codes):
+### Key modifiers
 
-AGS keycode | Key | Numeric value
---- | --- | ---
-`eKeyShiftLeft` | Left Shift | 403
-`eKeyShiftRight` | Right Shift | 404
-`eKeyCtrlLeft` | Left Ctrl | 405
-`eKeyCtrlRight` | Right Ctrl | 406
-none | Alt | 407
+In addition, there's separate `eKeyMod` enumeration with modifier "flags". These values are special so that they may be combined in one variable to make a list of modifiers (like, Shift + Ctrl). This enumeration is supported since AGS 3.6.0. Following is the list of possible values:
 
+AGS modifier | Mod | Numeric value | Hexadecimal value
+--- | --- | --- | ---
+`eKeyModShiftLeft` | Left Shift | 1 | 0x0001
+`eKeyModShiftRight` | Right Shift | 2 | 0x0002
+`eKeyModShift` | any Shift | 3 | 0x0003
+`eKeyModCtrlLeft` | Left Ctrl | 4 | 0x0004
+`eKeyModCtrlRight` | Right Ctrl | 8 | 0x0008
+`eKeyModCtrl` | any Ctrl | 12 | 0x000C
+`eKeyModAltLeft` | Left Alt | 16 | 0x0010
+`eKeyModAltRight` | Right Alt | 32 | 0x0020
+`eKeyModAlt` | any Alt | 48 | 0x0030
+`eKeyModNum` | Num Lock | 64 | 0x0040
+`eKeyModCaps` | Caps Lock | 128 | 0x0080
+
+You may use these mod codes in the extended variant of [`on_key_press`](Globalfunctions_Event#on_key_press) function to check which mod keys were pressed along with the primary key. Remember that since these mods are "flags", they should be tested using not the regular "comparison" operator `==`, but bitwise operators. For example:
+
+    if (keycode == eKeyA) {
+        if (mod & eKeyModCtrl) {
+            Display("Pressed Ctrl+A");
+        }
+    }
+
+    if (mod & eKeyModAlt == 0) {
+        Display("NO Alt was pressed this time");
+    }
