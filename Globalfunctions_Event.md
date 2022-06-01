@@ -78,15 +78,36 @@ on which event has occurred. The possible values of event are:
 
 ### `on_key_press`
 
-    on_key_press (eKeyCode keycode)
+    on_key_press (eKeyCode keycode, optional int mod)
 
-Called whenever a key is pressed on the keyboard. KEYCODE holds the value of the key. A list of these values is [available here](Keycodes).
+Called whenever a key is pressed on the keyboard. `keycode` holds the value of the key, while `mod` holds a combination of modifiers pressed alongside with that key. A list of these values is [available here](Keycodes).
+
+The `mod` argument is optional and may be omited. The `mod` contains *set of flags*, and is slightly more complicated than keycode: as you should not use regular comparison (`==`, `!=`) with it, but a bitwise operator (`&`):
+
+    // these two conditions check that ctrl was pressed (these commands are equivalent)
+    if (mod & eKeyModCtrl)
+    if (mod & eKeyModCtrl != 0)
+ 
+    // these two conditions check that ctrl was NOT pressed (again, two variants of the same check)
+    if (!(mod & eKeyModCtrl))
+    if (mod & eKeyModCtrl == 0)
 
 The `on_key_press` function can also be defined in individual room
 scripts. This allows the room script to intercept a key-press first,
 and then decide whether to pass it on to the global script or not. See
 the [`ClaimEvent`](Globalfunctions_General#claimevent) function for more
 details.
+
+Starting with version 3.6.0 AGS supports two "key handling" modes: a new-style and old-style (backwards compatible). This mode is selected in the [General Settings](GeneralSettings#backwards-compatibility) with "Use old-style key handling" option in the "Backwards compatibility" group.
+
+**New key mode:**
+ - all keys are passed into the `on_key_press` function as-is, one by one: for example, if you press Ctrl + Z, then you get **two** `on_key_press` calls, one with `eKeyCtrlLeft` and another with `eKeyZ` argument.
+
+**Old (classic) key mode:**
+ - lone mod keys (Ctrl, Alt, Shift) are not passed into the `on_key_press`; you may only test if these are pressed using [IsKeyPressed](Globalfunctions_General#iskeypressed).
+ - alphabet keys + ctrl combinations are merged into one key code for the `on_key_press` callback: e.g. `eKeyCodeCtrlA` and similar key codes.
+
+*Compatibility:* The `mod` argument is only supported since AGS 3.6.0.
 
 ---
 
@@ -113,6 +134,24 @@ scripts. This allows the room script to intercept a mouse-click first,
 and then decide whether to pass it on to the global script or not. See
 the [`ClaimEvent`](Globalfunctions_General#claimevent) function for
 more details.
+
+---
+
+### `on_text_input`
+
+    on_text_input(int ch)
+
+Called when the player's key presses form a printable character. The difference between this and `on_key_code` is that not every key corresponds to the printable char, and some chars may be created by pressing multiple keys (which also depends on the current system language).
+
+The `ch` argument contains a unicode character code, and may be used with the [String functions](String).
+
+For example:
+
+    MyLabel.Text = MyLabel.Text.AppendChar(ch);
+
+will append the new printed character to a label's text.
+
+**IMPORTANT:** this function only works when your game uses "new-style key handling mode". This mode is selected in the [General Settings](GeneralSettings#backwards-compatibility) with "Use old-style key handling" option in the "Backwards compatibility" group.
 
 ---
 
