@@ -141,7 +141,7 @@ more details.
 
     on_text_input(int ch)
 
-Called when the player's key presses form a printable character. The difference between this and `on_key_code` is that not every key corresponds to the printable char, and some chars may be created by pressing multiple keys (which also depends on the current system language).
+Called when the player's key presses form a printable character. The difference between this and `on_key_press` is that not every key corresponds to the printable char, and some chars may be created by pressing multiple keys (which also depends on the current system language).
 
 The `ch` argument contains a unicode character code, and may be used with the [String functions](String).
 
