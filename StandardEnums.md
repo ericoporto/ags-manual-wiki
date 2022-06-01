@@ -287,6 +287,20 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 *Used by:*
 [`Character.LockViewAligned`](Character#characterlockviewaligned), [`DrawingSurface.DrawStringWrapped`](DrawingSurface#drawingsurfacedrawstringwrapped), [`Label.TextAlignment`](Label#labeltextalignment), [`ListBox.TextAlignment`](ListBox#listboxtextalignment), [`Speech.TextAlignment`](Speech#speechtextalignment)
 
+### `InputType`
+
+    enum InputType
+    {
+        eInputNone     = 0x00000000,
+        eInputKeyboard = 0x00020000,
+        eInputMouse    = 0x00040000,
+        eInputAny      = 0xFFFF0000
+    };
+
+*Supported by:* AGS 3.6.0 and higher.
+
+*Used by:* [Wait functions](Globalfunctions_Wait)
+
 ### `LocationType`
 
     enum LocationType {
@@ -340,7 +354,9 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
       eOSMacOS,
       eOSAndroid,
       eOSiOS,
-      eOSPSP
+      eOSPSP,
+      eOSWeb,
+      eOSFreeBSD
     };
 
 *Used by:* [`System.OperatingSystem`](System#systemoperatingsystem)
