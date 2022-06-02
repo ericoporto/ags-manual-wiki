@@ -14,3 +14,4 @@ This section provides an extensive reference for AGS script capabilities and com
 - [Dialog Script](DialogScript)
 - [Object Oriented programming](OOProgramming)
 - [Understanding blocking scripts](BlockingScripts)
+- [Game events order](GameEventsOrder)
