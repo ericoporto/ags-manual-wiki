@@ -1,10 +1,16 @@
-## Global functions (Event Handlers)
+## Global event handlers
 
-In your global script file, some functions will have been
-automatically added when you created your game. These are global event
-handlers, and these functions are called when particular events occur.
-There are also some optional event handlers, which you can add if you
-would like specific additional events to be processed.
+In the AGS game there is a number of events, like starting the game, or pressing the key, that may be handled in script by adding a function with *predefined name*. These are called "global event handlers". If you add ones to your script, they will be called automatically whenever corresponding event occurs. All of these are optional, and may be omited if you don't need them.
+
+You may you add multiple functions of the same kind to multiple [script modules](ScriptModules), in which case they will be called in the order of modules in your game project. It's possible to stop propagating the event (skip remaining modules) by using [`ClaimEvent`](Globalfunctions_General#claimevent) function (refer to its article for explanation).
+
+Some of these functions may also be added to the room scripts. These are: `on_event`, `on_key_press`, `on_mouse_click`, `on_text_input`, `repeatedly_execute_always`, `late_repeatedly_execute_always`.
+
+Some functions will only work in the room script: `on_call`.
+
+*NOTE:* for historical reasons, function `repeatedly_execute` does not work in the room script, but there's a corresponding room event that may be linked to a custom function in the editor.
+
+---
 
 ### `dialog_request`
 
@@ -30,8 +36,6 @@ animations or do anything else which relies on a room being loaded
 ---
 
 ### `interface_click`
-
-*(This function is now obsolete)*
 
     interface_click (int interface, int button)
 
