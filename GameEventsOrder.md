@@ -6,7 +6,7 @@ The order of these actions within a single loop is consistent. When you start us
 
 Following is a sequence of actions which happen in a normal game loop:
 * [`repeatedly_execute_always`](Globalfunctions_Event#repeatedly_execute_always) function is called (if found in script).
-* *Main game update:* almost all in the game is updated: characters, room objects, and so forth.
+* *Main game update:* almost everything in the game is updated: characters, room objects, animations, and so forth.
 * [`late_repeatedly_execute_always`](Globalfunctions_Event#late_repeatedly_execute_always) function is called (if found in script).
 * Non-blocking screen shaking update (see [ShakeScreenBackground](Globalfunctions_Screen#shakescreenbackground)).
 * Mouse position update.
