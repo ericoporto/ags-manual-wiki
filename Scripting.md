@@ -1,14 +1,14 @@
 ## Scripting API
 
 - [Script API Overview](ScriptAPIOverview)
-- [repeatedly_execute / repeatedly_execute_always](RepExec)
-- [Custom dialog options rendering](CustomDialogOptions)
 - [Standard Constants](Constants)
 - [Standard Enumerated Types](StandardEnums)
 - [Standard Types](StandardTypes)
 - [GameState variables](Gamevariables)
 - [Global arrays](GlobalArrays)
-- [Global functions: event handlers](Globalfunctions_Event)
+- [Global event handlers](Globalfunctions_Event)
+- [repeatedly_execute / repeatedly_execute_always](RepExec)
+- [Custom dialog options rendering](CustomDialogOptions)
 - [Global functions: general](Globalfunctions_General)
 - [Global functions: message display](Globalfunctions_Message)
 - [Global functions: multimedia actions](Multimedia)
