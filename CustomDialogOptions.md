@@ -31,8 +31,9 @@ To write your custom dialog options code, you need to do the following:
     options, and also on some custom scroll arrows, for example.
 -   Optionally, add a `dialog_options_key_press` function. This is
     called by AGS if the player presses any key while custom dialog
-    options are shown on screen. You can use this to implement
+    options are shown on screen. It corresponds to the regular `on_key_press`, and you can use this to implement
     key-controlled selection of dialog option, for example.
+-   Optionally, add a `dialog_options_text_input` function. This is called by AGS if the player's key presses form a printable character. It corresponds to the regular `on_text_input`, and you can use this to handle a custom text input in your dialog options.
 -   Optionally, add a `dialog_options_repexec` function. This works
     similarly to general `repeatedly_execute` function, but is called
     only if custom dialog options are shown on screen. You may use this
@@ -49,6 +50,8 @@ somewhat different set of functions. There was no
 `dialog_options_repexec` and `dialog_options_key_press`, but you had to add `dialog_options_get_active`
 function instead in which you'd set an active dialog option (or none) on each game update, for example, depending on the cursor position. Mouse clicks were processed by the engine, and if an active option was set in `dialog_options_get_active` then it was run automatically.
 There is a compatibility switch in the General Settings called "Use old-style dialog options rendering API" that toggles between the old and new behavior. If you have imported older project and want to keep old dialog option scripts, then make sure it's enabled. If you wish to update your game to the new behavior, then turn it off.
+
+**COMPATIBILITY NOTE:** `dialog_options_text_input` will only work if you have "Use old-style key handling" option disabled in the "General Settings".
 
 **IMPORTANT:** When adding the functions to the script, they all take in
 a parameter of type [`DialogOptionsRenderingInfo`](DialogOptionsRenderingInfo).
@@ -175,7 +178,7 @@ to continually scan through all the options.
       }
     }
 
-    function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode)
+    function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode, int mod)
     {
       if (keycode == eKeyUpArrow)
       {
@@ -210,5 +213,6 @@ to continually scan through all the options.
 For more detail on the commands used here, see the [`DialogOptionsRenderingInfo`](DialogOptionsRenderingInfo) page.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.<br>
-dialog_options_repexec and dialog_options_key_press callbacks are supported since **AGS 3.4.0**.
-
+dialog_options_repexec and dialog_options_key_press callbacks are supported since **AGS 3.4.0**.<br>
+The optional `mod` argument in dialog_options_key_press is supported since **AGS 3.6.0**.<br>
+dialog_options_text_input callback is supported since **AGS 3.6.0**.<br>
