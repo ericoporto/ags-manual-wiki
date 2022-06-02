@@ -5,6 +5,7 @@ tutorial.
 
 - [Keyboard Shortcuts](KeyboardShortcuts)
 - [Distributing your game](DistGame)
+- [Building for Android](BuildAndroid)
 - [Backing up your game](BackingUpYourGame)
 - [The text parser](TextParser)
 - [Translations](Translations)
