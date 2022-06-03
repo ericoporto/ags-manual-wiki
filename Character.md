@@ -107,7 +107,7 @@ eForwards (the default) or eBackwards.
 Note that for compatibility reasons if direction is eBackwards the animation actually begins with the *previous frame*. If you pass frame 0 (the default) then it will begin with the last frame in the loop.
 
 *Volume* lets you specify the *relative* volume in percents (0-100) of the frame-linked sounds for the duration of this animation. It's 100 by default (which means - unchanged).
-**NOTE:** the *volume* parameter from `Character.Animate` does not replace `Character.AnimationVolume` property, but acts as a relative factor to it. In other words the final frame sound's volume will be equal to `sound volume * AnimationVolume % * volume param %`.
+**NOTE:** the *volume* parameter from `Character.Animate` does not replace `Character.AnimationVolume` property, but acts as a relative factor to it and character's scale if [`ScaleVolume`](Character#characterscalevolume) is also set. In other words the final frame sound's volume will be equal to `sound volume * AnimationVolume % * scaled volume % * volume param %`.
 
 Example:
 
@@ -1729,10 +1729,13 @@ will change the player character's animation speed to 4.
 
 Gets/sets the character's animation sound volume, which is a *relative* volume (0-100) of frame-linked sounds that play during character's animations.
 
+**NOTE:** all the volume properties in Character act as relative factors: these are `AnimationVolume`, "volume" parameter of [`Animate`](Character#characteranimate) function, and character's scale if [`ScaleVolume`](Character#characterscalevolume) is also set. The final frame sound's volume will be equal to `sound volume * AnimationVolume % * scaled volume %` in case of a normal view animation (walking, talking, etc), and `sound volume * AnimationVolume % * scaled volume % * Animate's volume param %` when `Animate` is called.
+
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
 *SeeAlso:* [`Character.Animate`](Character#characteranimate),
 [`Character.ChangeView`](Character#characterchangeview),
+[`Character.ScaleVolume`](Character#characterscalevolume),
 [`Character.View`](Character#characterview)
 
 ---
@@ -2390,14 +2393,17 @@ character's scaling level. At the normal `100%` zoom level the sounds
 will be played at normal volume, but will then get quieter and louder as
 appropriate in scaled walkable areas.
 
+**NOTE:** all the volume properties in Character act as relative factors: these are `AnimationVolume`, "volume" parameter of [`Animate`](Character#characteranimate) function, and character's scale if [`ScaleVolume`](Character#characterscalevolume) is also set. The final frame sound's volume will be equal to `sound volume * AnimationVolume % * scaled volume %` in case of a normal view animation (walking, talking, etc), and `sound volume * AnimationVolume % * scaled volume % * Animate's volume param %` when `Animate` is called.
+
 Example:
 
     cEgo.ScaleVolume = true;
 
 will mean that EGO's footstep sounds are adjusted in line with his
-scaling
+scaling.
 
 *See also:*
+[`Character.ScaleVolume`](Character#characterscalevolume),
 [`Character.ScaleMoveSpeed`](Character#characterscalemovespeed)
 
 ---
