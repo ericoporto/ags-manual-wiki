@@ -75,7 +75,7 @@ and then top left corner afterwards.
 *(Formerly known as `AnimateCharacterEx`, which is now obsolete)*
 
     Character.Animate(int loop, int delay, optional RepeatStyle,
-                      optional BlockingStyle, optional Direction, optional int frame)
+                      optional BlockingStyle, optional Direction, optional int frame, optional int volume)
 
 Starts the character animating, using loop number LOOP of his current
 view and optionally starting at FRAME. The overall speed of the animation is set with DELAY, where 0 is
@@ -106,7 +106,7 @@ eForwards (the default) or eBackwards.
 *Frame* lets you specify the starting frame, which should be one of the chosen loop's frame.<br>
 Note that for compatibility reasons if direction is eBackwards the animation actually begins with the *previous frame*. If you pass frame 0 (the default) then it will begin with the last frame in the loop.
 
-If the character is currently moving, it will be stopped.
+*Volume* lets you specify the *relative* volume in percents (0-100) of the frame-linked sounds for the duration of this animation. It's 100 by default (which means - unchanged).
 
 Example:
 
@@ -117,7 +117,8 @@ Example:
 will animate the character once using loop number 3 of view 5 backwards,
 and wait until the animation finishes before returning.
 
-*Compatibility:* Optional *frame* parameter is supported only by **AGS 3.5.0** and later versions.
+*Compatibility:* Optional *frame* parameter is supported only by **AGS 3.5.0** and later versions.<br>
+Optional *volume* parameter is supported only by **AGS 3.6.0** and later versions.
 
 *See also:* [`Button.Animate`](Button#buttonanimate),
 [`Object.Animate`](Object#objectanimate)
