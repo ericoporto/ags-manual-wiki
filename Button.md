@@ -4,42 +4,31 @@ Button is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GU
 
 ---
 
-### `Button.Click`
-
-    Button.Click()
-
-Forces Button's OnClick event. If there is a script function bound to
-that event it will be run, otherwise nothing happens.
-
-*Compatibility:* Supported by **AGS 3.4.0** and later versions.
-
-*See also:* [`GUI.Click`](GUI#guiclick),
-[`GUI.ProcessClick`](GUI#guiprocessclick)
-
----
-
 ### `Button.Animate`
 
 *(Formerly known as `AnimateButton`, which is now obsolete)*
 
     Button.Animate(int view, int loop, int delay, optional RepeatStyle, 
                    optional BlockingStyle, optional Direction, 
-                   optional int frame)
+                   optional int frame, optional int volume)
 
 Animates a GUI button by playing the specified view loop on it. This
 could be useful for Sierra-style death animations and other effects.
-
-As of **AGS 3.6.0**, it also includes blocking style, direction and 
-starting frame parameters. Note that the default value for BlockingStyle 
-is eNoBlock.
 
 LOOP from VIEW will be played on the button. The DELAY specifies the
 speed of the animation - larger numbers are slower. This has the same
 values you use with the [`Character.Animate`](Character#characteranimate) and [`Object.Animate`](Object#objectanimate) commands.
 
-REPEAT determines whether the animation will loop repeatedly, or just
-play once and stop with the last frame showing (eOnce or eRepeat are the
-possible values).
+The *RepeatStyle* parameter sets whether the animation will continuously repeat the cycling through the frames. This can be `eOnce`, in which case the animation will start from the first frame of LOOP, and go through each frame in turn until the last frame, where it will stop. If `RepeatStyle` is `eRepeat`, then when the last frame is reached, it will go back to the first frame and start over again with the animation.
+
+For *blocking* you can pass either `eBlock` (in which case the function will wait for the animation to finish before returning), or `eNoBlock` (in which case the animation will start to play, but your script will continue). The default is `eBlock`.
+
+*Direction* specifies which way the animation plays. You can either pass `eForwards` (the default) or `eBackwards`.
+
+*Frame* lets you specify the starting frame, which should be one of the chosen loop's frame.
+Note that for compatibility reasons if direction is eBackwards the animation actually begins with the previous frame. If you pass frame 0 (the default) then it will begin with the last frame in the loop.
+
+*Volume* lets you specify the relative volume in percents (0-100) of the frame-linked sounds for the duration of this animation. It's 100 by default (which means - unchanged).
 
 You can abort an animation at any time by setting the button's
 [NormalGraphic property](Button#buttonnormalgraphic), or starting a new animation on the same button.
@@ -59,6 +48,8 @@ Example:
 will animate the 'btnDeathAnim' button using loop 2 of view 6, with a
 delay of 4 cycles per frame, and repeat the animation continually.
 
+Compatibility: Parameters *BlockingStyle*, *Direction*, *frame* and *volume* are supported only by AGS 3.6.0 and later versions.
+
 *See also:* [`Button.Animating`](Button#buttonanimating),
 [`Button.Frame`](Button#buttonframe),
 [`Button.Loop`](Button#buttonloop),
@@ -66,6 +57,20 @@ delay of 4 cycles per frame, and repeat the animation continually.
 [`Button.NormalGraphic`](Button#buttonnormalgraphic),  
 [`Character.Animate`](Character#characteranimate),
 [`Object.Animate`](Object#objectanimate),
+
+---
+
+### `Button.Click`
+
+    Button.Click()
+
+Forces Button's OnClick event. If there is a script function bound to
+that event it will be run, otherwise nothing happens.
+
+*Compatibility:* Supported by **AGS 3.4.0** and later versions.
+
+*See also:* [`GUI.Click`](GUI#guiclick),
+[`GUI.ProcessClick`](GUI#guiprocessclick)
 
 ---
 
