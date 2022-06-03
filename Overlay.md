@@ -1,34 +1,90 @@
 ## `Overlay` functions and properties
 
+The overlays are simple sprite placeholders, they are created in script, and display images on screen. They cannot be interacted with by player, nor interact with other game objects. This makes them ideal for creating temporary visual effects. But they also may be used to script a custom object from ground up; that may involve some advanced scripting though.
+
+Overlays may be created as *screen overlays* and *room overlays*. This defines the visual layer they are positioned in, and which other game objects they are visually sorted with.
+
+---
+
 ### `Overlay.CreateGraphical`
 
 *(Formerly known as `CreateGraphicOverlay`, which is now obsolete)*
 
-    static Overlay* Overlay.CreateGraphical(int x, int y, int slot, bool transparent)
+    static Overlay* Overlay.CreateGraphical(int x, int y, int slot, optional bool transparent, optional bool clone)
 
-Creates a screen overlay containing a copy of the image from SLOT in the
-Sprite Manager. The image is placed at (X,Y) on the screen (these are
-screen co-ordinates, not room co-ordinates).
+Creates a *screen overlay* using an image from SLOT sprite. The image is placed at (X,Y) in the screen coordinates.
+
+The screen overlays are positioned in the screen graphic layer, and are visually sorted among other screen overlays and GUI using overlay's [ZOrder](Overlay#overlayzorder) property.
 
 If *transparent* is true then the overlay will be drawn in the same way
 as characters/objects, if it is false then a black rectangle will be
-painted behind the sprite.
+painted behind the sprite. Default value is "true".
+**NOTE:** for "historical reasons", *transparent* parameter works only in 8-bit games, and does not work in 16-bit and 32-bit games at all, so it's currently useless there.
 
-See the description of
-[`Overlay.CreateTextual`](Overlay#overlaycreatetextual) for more on
-overlays.
+If *clone* is true then the overlay will make a copy of the SLOT image, otherwise it will create a shared reference, similar to how room objects or characters do. Default value is "false". In practice this only makes a difference if you are creating an overlay from the [DynamicSprite](DynamicSprite): if you make a copy then the original dynamic sprite is safe to discard; also any changes to dynamic sprite will be applied to overlay only if it uses shared reference (no copy). If you create alot of overlays, sharing (non copying) may improve game's perfomance and decrease the memory requirements. For the same perfomance reasons regular sprites are never copied, regardless of this parameter's value (because they cannot be deleted or edited at runtime).
+
+**NOTE:** if you are using a [DynamicSprite](DynamicSprite) when creating an overlay, and *not* copying the image, then you have to make sure the sprite is not deleted so long as overlay stays on screen, or overlay's image will reset to sprite 0.
+
+**NOTE:** if the Overlay variable goes out of scope, the overlay will be removed. Hence, if you want the overlay to last on-screen outside of the
+script function where it was created, the `Overlay*` variable declaration needs to be at the top of the script and outside any script
+functions.
+
+**NOTE:** if the player goes to a different room all active overlays are removed automatically.
 
 Example:
 
-    Overlay* myOverlay = Overlay.CreateGraphical(100, 100, 300, true);
+    Overlay* myOverlay = Overlay.CreateGraphical(100, 100, 300);
     Wait(40);
     myOverlay.Remove();
 
-will create an overlay of the image stored in sprite manager's slot 300,
-at the coordinates 100,100. It will display for 1 second, then remove
-it.
+will create an overlay using sprite number 300, at the coordinates 100,100. It will display for 1 second, then remove it.
 
-*See also:* [`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
+*See also:* [`Overlay.CreateRoomGraphical`](Overlay#overlaycreateroomgraphical),
+[`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
+[`Overlay.CreateRoomTextual`](Overlay#overlaycreateroomtextual),
+[`Overlay.Remove`](Overlay#overlayremove),
+[`Overlay.Graphic`](Overlay#overlaygraphic)
+
+---
+
+### `Overlay.CreateRoomGraphical`
+
+    static Overlay* Overlay.CreateRoomGraphical(int x, int y, int slot, optional bool transparent, optional bool clone)
+
+Creates a *room overlay* using an image from SLOT sprite. The image is placed at (X,Y) in the screen coordinates.
+
+The room overlays are positioned in the room graphic layer, and are visually sorted among other room overlays, characters, room objects and walk-behinds using overlay's [ZOrder](Overlay#overlayzorder) property, similar to how other objects in rooms use `Baseline` property.
+
+All the parameters and use are identical to [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical) function, please refer to its description for more details.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical),
+[`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
+[`Overlay.CreateRoomTextual`](Overlay#overlaycreateroomtextual),
+[`Overlay.Remove`](Overlay#overlayremove),
+[`Overlay.Graphic`](Overlay#overlaygraphic)
+
+---
+
+### `Overlay.CreateRoomTextual`
+
+    static Overlay* Overlay.CreateRoomTextual(int x, int y, int width,
+                                          FontType font, int color, string text)
+
+Creates a *room overlay* containing the text you pass at the position specified. This overlay looks identical to the way speech text is
+displayed in conversations, except that with this command the text stays on the screen until either you remove it with the Remove command, or the
+player goes to a different room, in which case it is automatically removed.
+
+The room overlays are positioned in the room graphic layer, and are visually sorted among other room overlays, characters, room objects and walk-behinds using overlay's [ZOrder](Overlay#overlayzorder) property, similar to how other objects in rooms use `Baseline` property.
+
+All the parameters and use are identical to [`Overlay.CreateTextual`](Overlay#overlaycreatetextual) function, please refer to its description for more details.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical),
+[`Overlay.CreateRoomGraphical`](Overlay#overlaycreateroomgraphical),
+[`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
 [`Overlay.Remove`](Overlay#overlayremove)
 
 ---
@@ -40,12 +96,14 @@ it.
     static Overlay* Overlay.CreateTextual(int x, int y, int width,
                                           FontType font, int color, string text)
 
-Creates a screen overlay containing the text you pass at the position
+Creates a *screen overlay* containing the text you pass at the position
 specified. A screen overlay looks identical to the way speech text is
 displayed in conversations, except that with this command the text stays
 on the screen until either you remove it with the Remove command, or the
 player goes to a different room, in which case it is automatically
 removed.
+
+The screen overlays are positioned in the screen graphic layer, and are visually sorted among other screen overlays and GUI using overlay's [ZOrder](Overlay#overlayzorder) property.
 
 The X and Y parameters specify the upper-left corner of where the text
 will be written. WIDTH is the width, in pixels, of the text area. FONT
@@ -60,19 +118,13 @@ You can insert the value of variables into the message. For more
 information, see the [string formatting](StringFormats)
 section.
 
-**NOTE:** large overlays, in the same way as objects, can impact
-performance while displayed.
-
-**NOTE:** there is currently a maximum of 10 overlays displayed at any
-one time. Some other commands such as Say and SayBackground create
-overlays internally, so don't rely on being able to create 10 with
-CreateTextual.
-
-**NOTE:** if the Overlay object goes out of scope, the overlay will be
+**NOTE:** if the Overlay variable goes out of scope, the overlay will be
 removed. Hence, if you want the overlay to last on-screen outside of the
 script function where it was created, the `Overlay*` variable
 declaration needs to be at the top of the script and outside any script
 functions.
+
+**NOTE:** if the player goes to a different room all active overlays are removed automatically.
 
 Example:
 
@@ -87,6 +139,8 @@ removed.
 
 *See also:*
 [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical),
+[`Overlay.CreateRoomGraphical`](Overlay#overlaycreateroomgraphical),
+[`Overlay.CreateRoomTextual`](Overlay#overlaycreateroomtextual),
 [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy),
 [`Overlay.Remove`](Overlay#overlayremove)
 
@@ -141,6 +195,90 @@ and then replace the overlay with another one.
 
 ---
 
+### `Overlay.Graphic`
+
+    int Overlay.Graphic;
+
+Gets/sets the sprite slot number that the overlay is currently using. Textual overlays always return -1, as their image is generated and stored internally, and does not have a formal "number". Setting `Graphic` of a textual overlay will effectively change them to a graphical overlay.
+
+**NOTE:** unlike [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical), where you may choose whether to make an image's copy or a shared reference, setting `Graphic` will always make a shared reference to the sprite. If this is a [DynamicSprite](DynamicSprite), you have to make sure it is not deleted so long as overlay stays on screen, or overlay's image will reset to sprite 0.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical),
+[`Overlay.CreateRoomGraphical`](Overlay#overlaycreateroomgraphical),
+[`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy),
+[`Overlay.Width`](Overlay#overlaywidth),
+[`Overlay.Height`](Overlay#overlayheight)
+
+---
+
+### `Overlay.GraphicHeight`
+
+    readonly int Overlay.GraphicHeight;
+
+Gets the original height of the overlay's image. This property may be used to know the unscaled image's size (as [`Height`](Overlay#overlayheight) property scales it), which is useful if the original sprite was disposed, or for textual overlays that generate its own internal image.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy), [`Overlay.GraphicWidth`](Overlay#overlaygraphicwidth), [`Overlay.Height`](Overlay#overlayheight),
+[`Overlay.Width`](Overlay#overlaywidth)
+
+---
+
+### `Overlay.GraphicWidth`
+
+    readonly int Overlay.GraphicWidth;
+
+Gets the original width of the overlay's image. This property may be used to know the unscaled image's size (as [`Width`](Overlay#overlaywidth) property scales it), which is useful if the original sprite was disposed, or for textual overlays that generate its own internal image.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy), [`Overlay.GraphicHeight`](Overlay#overlaygraphicheight),
+[`Overlay.Width`](Overlay#overlaywidth),
+[`Overlay.Height`](Overlay#overlayheight)
+
+---
+
+### `Overlay.Height`
+
+    int Overlay.Height;
+
+Gets/sets the height of this overlay. Changing this property *will stretch or shrink* the overlay's image vertically. Works with both graphical and textual overlays.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy), [`Overlay.Width`](Overlay#overlaywidth)
+
+---
+
+### `Overlay.InRoom`
+
+    readonly bool Overlay.InRoom;
+
+Tells whether current overlay is a room (returns "true") or screen (if "false") overlay.
+
+*See also:* [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical),
+[`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
+[`Overlay.CreateRoomGraphical`](Overlay#overlaycreateroomgraphical),
+[`Overlay.CreateRoomTextual`](Overlay#overlaycreateroomtextual)
+
+---
+
+### `Overlay.Transparency`
+
+    int Overlay.Transparency;
+
+Gets/sets the transparency of this overlay.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Object.Transparency`](Object#objecttransparency)
+[`Character.Transparency`](Character#charactertransparency),
+[`GUI.Transparency`](GUI#guitransparency)
+
+---
+
 ### `Overlay.Valid`
 
 *(Formerly known as `IsOverlayValid`, which is now obsolete)*
@@ -162,6 +300,18 @@ Then, removes the overlay and prints Valid again (which will now be 0).
 
 *See also:* [`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
 [`Overlay.Remove`](Overlay#overlayremove)
+
+---
+
+### `Overlay.Width`
+
+    int Overlay.Width;
+
+Get/sets the width of this overlay. Changing this property *will stretch or shrink* the overlay's image horizontally. Works with both graphical and textual overlays.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy), [`Overlay.Height`](Overlay#overlayheight)
 
 ---
 
@@ -218,44 +368,6 @@ creates a text overlay, then gradually slides it down the screen.
 *See also:* [`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
 [`Overlay.X`](Overlay#overlayx),
 [`Overlay.Remove`](Overlay#overlayremove)
-
----
-
-### `Overlay.Width`
-
-    readonly int Overlay.Width;
-
-Gets the width of this overlay.
-
-*Compatibility:* Supported by **AGS 3.6.0** and later versions.
-
-*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy), [`Overlay.Height`](Overlay#overlayheight)
-
----
-
-### `Overlay.Height`
-
-    readonly int Overlay.Height;
-
-Gets the height of this overlay.
-
-*Compatibility:* Supported by **AGS 3.6.0** and later versions.
-
-*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy), [`Overlay.Width`](Overlay#overlaywidth)
-
----
-
-### `Overlay.Transparency`
-
-    int Overlay.Transparency;
-
-Gets/sets the transparency of this overlay.
-
-*Compatibility:* Supported by **AGS 3.6.0** and later versions.
-
-*See also:* [`Object.Transparency`](Object#objecttransparency)
-[`Character.Transparency`](Character#charactertransparency),
-[`GUI.Transparency`](GUI#guitransparency)
 
 ---
 
