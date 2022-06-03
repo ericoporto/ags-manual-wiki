@@ -6,7 +6,7 @@
 *(Formerly known as `AnimateObjectEx`, which is now obsolete)*
 
     Object.Animate(int loop, int delay, optional RepeatStyle,
-                   optional BlockingStyle, optional Direction, optional int frame)
+                   optional BlockingStyle, optional Direction, optional int frame, optional int volume)
 
 Starts the object animating, using loop number LOOP of its current view, and optionally starting at FRAME.
 The overall speed of the animation is set with DELAY, where 0 is the
@@ -35,6 +35,8 @@ eForwards (the default) or eBackwards.
 *Frame* lets you specify the starting frame, which should be one of the chosen loop's frame.<br>
 Note that for compatibility reasons if direction is eBackwards the animation actually begins with the *previous frame*. If you pass frame 0 (the default) then it will begin with the last frame in the loop.
 
+*Volume* lets you specify the relative volume in percents (0-100) of the frame-linked sounds for the duration of this animation. It's 100 by default (which means - unchanged).
+
 You need to use SetView at some stage before this command, in order to
 set up the object's current view.
 
@@ -48,7 +50,8 @@ play the animation once only. This happens in the background. Then,
 object 1 will animate backwards using loop 1 of its current view, at
 speed 3. The function won't return until the animation is finished.
 
-*Compatibility:* Optional *frame* parameter is supported only by **AGS 3.5.0** and later versions.
+*Compatibility:* Optional *frame* parameter is supported only by **AGS 3.5.0** and later versions.<br>
+Optional *volume* parameter is supported only by **AGS 3.6.0** and later versions.
 
 *See also:* [`Button.Animate`](Button#buttonanimate),
 [`Character.Animate`](Character#characteranimate),
