@@ -107,6 +107,7 @@ eForwards (the default) or eBackwards.
 Note that for compatibility reasons if direction is eBackwards the animation actually begins with the *previous frame*. If you pass frame 0 (the default) then it will begin with the last frame in the loop.
 
 *Volume* lets you specify the *relative* volume in percents (0-100) of the frame-linked sounds for the duration of this animation. It's 100 by default (which means - unchanged).
+**NOTE:** the *volume* parameter from `Character.Animate` does not replace `Character.AnimationVolume` property, but acts as a relative factor to it. In other words the final frame sound's volume will be equal to `sound volume * AnimationVolume % * volume param %`.
 
 Example:
 
