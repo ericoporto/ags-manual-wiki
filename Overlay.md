@@ -57,6 +57,11 @@ The room overlays are positioned in the room graphic layer, and are visually sor
 
 All the parameters and use are identical to [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical) function, please refer to its description for more details.
 
+**NOTE:** as overlays are a simplistic kind of object that does not have any automated behavior, it won't interact with anything inside the room, and won't change its z-order according to its Y coordinate automatically, unlike characters and room objects.
+If you'd like room overlay to change its "baseline" along with its vertical position, you will have to do something like this in global or room's "repeatedly execute" script function:
+
+    over.ZOrder = over.Y + over.Height;
+
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
 *See also:* [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical),
