@@ -4,9 +4,10 @@
 
 When you choose the "Build EXE" option in the Editor, a "Compiled" directory is created in your game's folder, where more subdirectories are created in turn.
 
-* "Compiled/Data" subfolder is always made. Here it serves as an intermediate storage, and contains the "raw" game data that cannot be used on its own, but may be run by an AGS engine executable (on any supported platform). From this folder these files will then be _copied into other subfolders_, one for each build target (platform) you selected in the project's General Settings.
-* "Compiled/Windows" subfolder will be created if you have "Windows" enabled as target platform. The folder will contain the game data merged with the engine executable for Windows, as well as a file called "winsetup.exe" which launches an integrated setup program.
-* "Compiled/Linux" subfolder will be created if you have "Linux" enabled as target platform. The folder will contain the game data merged with the engine executable and necessary third-party libraries for 32-bit and 64-bit Linux systems.
+- "Compiled/Data" subfolder is always made. Here it serves as an intermediate storage, and contains the "raw" game data that cannot be used on its own, but may be run by an AGS engine executable (on any supported platform). From this folder these files will then be _copied into other subfolders_, one for each build target (platform) you selected in the project's General Settings.
+- "Compiled/Windows" subfolder will be created if you have "Windows" enabled as target platform. The folder will contain the game data merged with the engine executable for Windows, as well as a file called "winsetup.exe" which launches an integrated setup program.
+- "Compiled/Linux" subfolder will be created if you have "Linux" enabled as target platform. The folder will contain the game data, the engine executable, and necessary third-party libraries for 32-bit and 64-bit Linux systems.
+- "Compiled/Web" subfolder will be created if you have "Web" enabled as target platform. The folder will contain the wasm + JS port of the engine, and the game data. You can test by serving the current directory, using some server (ex: `python -m http.server` if you have python), and opening it in a browser. Indie store websites usually accept you zip the contents of this directory and upload it as a web build.
 
 The contents of these subfolders can be now distributed to players with the corresponding operating systems. For example, if you want to
 distribute the Windows version of your game, you _only_ need the contents of the "Compiled/Windows" subfolder. For Linux the "Compiled/Linux" subfolder is sufficient.
