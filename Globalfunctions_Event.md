@@ -54,8 +54,11 @@ Called whenever certain game events occur. The value of DATA depends
 on which event has occurred. The possible values of event are:
 
     eEventEnterRoomBeforeFadein
-          called just before the room's 'Player Enters Room' event occurs
+          called just before the room's 'Enter Before Fade-in' event occurs
           DATA = new room number
+    eEventEnterRoomAfterFadein
+          called just before the room's 'Enter After Fade-in' event occurs
+          DATA = room number
     eEventLeaveRoom
           called just after the room's 'Player Leaves Room' event occurs
           DATA = room number they are leaving
