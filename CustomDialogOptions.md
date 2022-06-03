@@ -87,6 +87,18 @@ This function works similar to a general [`repeatedly_execute`](Globalfunctions_
 
 ---
 
+### `dialog_options_close`
+
+    dialog_options_close(DialogOptionsRenderingInfo *info)
+
+This function will be called right before the dialog options are removed from the screen. This is a place to perform a "cleanup" in case you need to dispose temporary resources (like dynamic sprites), hide GUIs, stop sounds, and so forth.
+
+**NOTE:** this is not the same as the end of the current dialog. Dialog options may be shown and hidden multiple times during the dialog, every time the game lets player to choose a dialog option.
+
+**Compatibility:** Supported by AGS 3.6.0 and above.
+
+---
+
 ### `dialog_options_get_active`
 
     dialog_options_get_active(DialogOptionsRenderingInfo *info)
