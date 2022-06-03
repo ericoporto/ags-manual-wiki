@@ -1722,6 +1722,20 @@ will change the player character's animation speed to 4.
 
 ---
 
+### `Character.AnimationVolume`
+
+    int Character.AnimationVolume
+
+Gets/sets the character's animation sound volume, which is a *relative* volume (0-100) of frame-linked sounds that play during character's animations.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*SeeAlso:* [`Character.Animate`](Character#characteranimate),
+[`Character.ChangeView`](Character#characterchangeview),
+[`Character.View`](Character#characterview)
+
+---
+
 ### `Character.Baseline`
 
 *(Formerly known as `SetCharacterBaseline`, which is now obsolete)*
