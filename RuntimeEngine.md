@@ -3,6 +3,8 @@
 The engine (also called the "interpreter") is what runs your game and is
 what the player will use.
 
+You can use any port of the AGS runtime on any available system to run an AGS game data.
+
 ### Configuration file locations
 
 For historical reasons the configuration file should be called `acsetup.cfg`.
@@ -125,6 +127,9 @@ Locations of two latter files differ between running platforms:
 
 
 ### Command line
+
+*Note:* On Windows, you **must** use `--console-attach` when you are on the `cmd.exe` or other windows prompt and want to 
+read the output of the ags runtime directly in the terminal, this means, printed in stdout.
 
 General usage: `ags [OPTIONS] [GAMEFILE PATH or GAME DIRECTORY]`
 (Where "ags" is the executable name)
