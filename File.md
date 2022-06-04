@@ -25,20 +25,22 @@ Example:
 
     File.Open("$CONFIGFILE$", eFileRead);
 
-Following *location tags* are supported:<br>
-`$INSTALLDIR$`, which allows you to explicitly read files in the game
-installation directory.<br>
-`$SAVEGAMEDIR$`, which allows you to write/read files in the save game
-directory.<br>
-`$APPDATADIR$`, which allows you to write/read files to a folder on the
-system which is accessible by and shared by all users. The example of
-their use is below.
-`$DATA$`, which allows you to read files that are packaged inside the
+Following *location tags* are supported:
+
+- `$DATA$`, which allows you to read files that are packaged inside the
 game package, originally from a directory specified in the General Settings,
-in the `Package custom data folder(s)` option.
+in the **Package custom data folder(s)** option, on the Compiler category.  
+- `$INSTALLDIR$`, which allows you to explicitly read files in the game
+installation directory.  
+- `$SAVEGAMEDIR$`, which allows you to write/read files in the save game
+directory.  
+- `$APPDATADIR$`, which allows you to write/read files to a folder on the
+system which is accessible by and shared by all users. The example of
+their use is below.  
 
 Examples:
 
+    File.Open("$DATA$/datadir/book.txt", eFileRead);
     File.Open("$INSTALLDIR$/game.dat", eFileRead);
     File.Open("$SAVEGAMEDIR$/userinfo.txt", eFileWrite);
     File.Open("$APPDATADIR$/scoretable.dat", eFileAppend);
