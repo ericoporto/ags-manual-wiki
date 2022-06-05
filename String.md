@@ -32,7 +32,7 @@ will display "HelloWorld".
 
 ### `String.AppendChar`
 
-    String.AppendChar(char extraChar)
+    String.AppendChar(int extraChar)
 
 Appends a single character to the end of the specified string, and
 returns the result.
@@ -51,6 +51,8 @@ Example:
     Display(mytext);
 
 will display "Hello".
+
+*Compatibility:* This functions can take an utf-8 char as `int` since **AGS 3.6.0** and later versions.
 
 *See also:* [`String.Append`](String#stringappend)
 
@@ -292,7 +294,7 @@ script!".
 *(Formerly known as global function `StrSetCharAt`, which is now
 obsolete)*
 
-    String.ReplaceCharAt(int index, char newChar)
+    String.ReplaceCharAt(int index, int newChar)
 
 Changes the character at INDEX in the string to NEWCHAR.
 
@@ -309,6 +311,8 @@ Example:
     Display("Old: %s, new: %s", newstring, changed);
 
 will display "Old: Hello, new: Hemlo".
+
+*Compatibility:* This functions can take an utf-8 char as `int` since **AGS 3.6.0** and later versions.
 
 *See also:* [`String.Chars`](String#stringchars),
 [`String.Replace`](String#stringreplace)
@@ -481,7 +485,7 @@ useful for processing strings input from the user.
 *(Formerly known as global function `StrGetCharAt`, which is now
 obsolete)*
 
-    readonly char String.Chars[position];
+    readonly int String.Chars[position];
 
 Returns the character at POSITION within the string.
 
@@ -500,6 +504,8 @@ Example:
     Display("The 4th character is: %c", text.Chars[3]);
 
 will display "The 4th character is: s".
+
+*Compatibility:* This attribute returns an utf-8 char as `int` since **AGS 3.6.0** and later versions.
 
 *See also:* [`String.Length`](String#stringlength),
 [`String.ReplaceCharAt`](String#stringreplacecharat)
