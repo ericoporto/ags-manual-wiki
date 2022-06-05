@@ -7,7 +7,7 @@ tutorial.
 - [Distributing your game](DistGame)
 - [Building for Android](BuildAndroid)
 - [Backing up your game](BackingUpYourGame)
-- [The text parser](TextParser)
+- [Text Parser](TextParser)
 - [Translations](Translations)
 - [Global variables](GlobalVariables)
 - [Custom Properties](CustomProperties)
