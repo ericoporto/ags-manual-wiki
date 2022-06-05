@@ -565,7 +565,7 @@ will reset settings back to default config and let you test it out.
 game compilation, so if you change these settings you will need to
 rebuild your game one more time to apply them.
 
-*See also:* [Run-time engine setup](Setup), [Config file locations](RuntimeEngine#configuration-file-locations)
+*See also:* [Run-time engine setup](Setup), [Config file locations](EngineConfigFile#configuration-file-locations)
 
 ---
 
