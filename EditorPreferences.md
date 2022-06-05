@@ -1,6 +1,6 @@
-# Editor Preferences
+## Editor Preferences
 
-## Android
+### Android
 
 - **ANDROID_HOME** - The path to your Android SDK directory usually 
   `C:\Users\user\AppData\Local\Android\Sdk`.
@@ -22,7 +22,7 @@
   usage even when it's not actively used. 
   If you are recurrently building for Android, consider turning it on to speed build times.
 
-## Editor Appearance
+### Editor Appearance
 
 - **Ask before closing multiple tabs** - Prompt dialog on closing multiple tabs.
 
@@ -38,24 +38,24 @@
 - **Show view preview by default in view editors** - Wheter view preview is always shown when a view
   editor is loaded.
 
-## Import Directory
+### Import Directory
 
 - **Import Directory** - When you import files, where do you want to look first?
 
-## Import of 8-bit background
+### Import of 8-bit background
 
 - **Remap palette of room backgrounds** - Remap palette of room background into allocated background
   palette slots (8-bit games only).
 
-## Misc
+### Misc
 
 - **Backup Warning Interval** - Interval of days the Editor will warn you should backup your game.
 
-## New Game Directory
+### New Game Directory
 
 - **New Game Directory** - When you create a new game, where do you want it to go?
 
-## Script Editor
+### Script Editor
 
 - **Indent Uses Tabs** - Should editor use tabs instead of spaces when indenting?
 
@@ -74,14 +74,14 @@
 - **Tab width** - How many space characters a tab width should be. This setting requires editor 
   restart to be applied.
 
-## Sprite Editor
+### Sprite Editor
 
 - **Default image editor** - When you double-click a sprite, what program do you want to use to edit
   it? This program must support PNG and BMP files.
 
 - **Default sprite import transparency** - Sprite transparency import method to use by default.
 
-## Test Game
+### Test Game
 
 - **Test Game Style** - A setting if the game should run in window or full-screen when you test it. 
 When using F5 game will always run in a window.
