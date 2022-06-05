@@ -41,7 +41,7 @@ Any sound format supported by AGS can be used for speech as well.
 
 AGS uses separate voice packs to store the speech files. The default voice pack is compiled by placing audio files in the "Speech" sub-directory of the game folder, and is named "speech.vox".
 
-Since version 3.6.0 AGS also supports multiple alternate voice packs. These are compiled from *subdirectories* nested inside the "Speech" folder, and are named "sp_DIRNAME.vox", where DIRNAME is the name of that subdirectory.
+Since version 3.6.0, AGS also supports multiple alternate voice packs. These are compiled from *subdirectories* nested inside the "Speech" folder, and are named "sp_DIRNAME.vox", where DIRNAME is the name of that subdirectory.
 The speech files in these alternate directories must have the same names as files in the "Speech" directory itself. These extra packs are used to provide voice-over for different languages.
 
 For example, if you have this folder structure in your game project:
@@ -57,7 +57,7 @@ then the editor will create following voxes:
 
 **NOTE:** only top-level files are included into the voice pack, any further subfolders are ignored.
 
-Since AGS 3.6.0 the engine supports switching to a different speech vox anytime. To do so, there's a new script function [Game.ChangeSpeechVox](Game#gamechangespeechvox).
+Since AGS 3.6.0, the engine supports switching to a different speech vox anytime. To do so, there's a new script function [Game.ChangeSpeechVox](Game#gamechangespeechvox).
 
 Note that the voice packs are considered optional, and your game will function correctly even without them, in case there is no voice pack, the game will display speech text but play no voice. This makes it possible for the game author to offer voice packs as an optional download for the players.
 If a particular speech file is missing from a voice pack, that will not not cause game errors and display just the text on screen.
