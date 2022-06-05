@@ -1,4 +1,4 @@
-# General settings
+## General settings
 
 The General Settings pane contains a list of all the various overall
 options that you can set for your game.
@@ -10,7 +10,7 @@ come back to it later.
 Many of these options can be changed at runtime with the script command
 SetGameOption.
 
-## Basic properties
+### Basic properties
 
 -   **Color Depth** - the number of colors your game will use. Default
     is 32-bit, which lets you use all the range of colors contemporary
@@ -56,7 +56,7 @@ SetGameOption.
     made in setup program, and in that case game's image will be
     stretched or shrunk accordingly.
     
-## Information
+### Information
 
 Most of this information is not used right now by the engine, but may be made
 accessible in future versions.
@@ -68,7 +68,7 @@ accessible in future versions.
 -   **Version** - a 4-piece version string of your game, made of numbers 
     separated by three dots.
 
-## Android
+### Android
 
 -   **App ID** - The Application ID, used in app stores. Also called package
     name, it's usually looks like com.mystudio.mygame, and it's used in store 
@@ -86,7 +86,7 @@ accessible in future versions.
     current Play Store restrictions - AGS can build, but the submission will
     get rejected.
 
-## Backwards compatibility
+### Backwards compatibility
 
 -   **Allow relative asset resolutions** - if enabled then your game will scale 
     sprites according to their resolution tags: sprites tagged as "low-res"
@@ -148,7 +148,7 @@ accessible in future versions.
     function for properly handled characters when building text input
     interfaces.
 
-## Character movement
+### Character movement
 
 -   **Automatically move the player in Walk mode** - normally, when you
     click the mouse in the Walk mode, the main character will move to
@@ -177,7 +177,7 @@ accessible in future versions.
     will multiply speed by 2. This is a backward compatible setting that should
     not be enabled without real need.
 
-## Compiler
+### Compiler
 
 -   **Attach game data to exe** (Windows only) - when enabled the main game
     data will be appended to "gamename.exe" file. This is how AGS games were
@@ -210,7 +210,7 @@ accessible in future versions.
     compressed to reduce game size, at expense of performance. The performance
     impact in desktop platforms is usually negligible.
 
-## Dialog
+### Dialog
 
 -   **Allow speech to be skipped by which events** - determines how and
     whether the player can skip speech in-game. This can be set to allow
@@ -301,7 +301,7 @@ accessible in future versions.
     in GUI's ID number, then instead the options will be displayed on
     the GUI you specify.
 
-## Inventory
+### Inventory
 
 -   **Display multiple icons for multiple items** - normally, if the
     player has two of an inventory item, the item will still only be
@@ -327,11 +327,11 @@ accessible in future versions.
     inventory cursor is always a cross-hair), disable this option and it
     won't be changed.
 
-## Rooms
+### Rooms
 
 -   **Default mask resolution** - sets default value for MaskResolution property which will be applied for each new room in your game. Mask resolution defines the factor between room masks' sizes and room background size. Common is 1:1, but you can choose other options for less precise masks, which may reduce data size and slightly improve performance in high-resolution games.
 
-## Saved Games
+### Saved Games
 
 -   **Save games extension** - determines the special extension for your
     save files.
@@ -350,14 +350,14 @@ There used to be an option for Save Game integration with Windows Vista, it
 was called **Enhanced save games**. Since this was removed in later versions of
 Windows, this option has been removed in AGS 3.6.0.
 
-## Sound
+### Sound
 
 -   **Play sound when the player gets points** - controls whether a
     sound effect is played when the player scores points. If so, you can
     set the sound number, which will play SOUNDx.WAV (or SOUNDx.MP3),
     where X is the number you set.
 
-## Text output
+### Text output
 
 -   **Always display text as speech** - if you select this option, then
     all normal text in the game will be displayed above the main
@@ -391,7 +391,7 @@ Windows, this option has been removed in AGS 3.6.0.
     sentence going backwards, and the last words are displayed first.
     This is used by languages such as Arabic and Hebrew.
 
-## Visual
+### Visual
 
 -   **Default transition when changing rooms** - defines what type of
     screen transition is used when moving from one room to another.
