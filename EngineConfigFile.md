@@ -89,8 +89,8 @@ Locations of two latter files differ between running platforms:
     - `load_latest_save = [0; 1]` - whether to load latest save on game launch.
     - `show_fps = [0; 1]` - whether to display fps counter on screen.
 - **\[log\]** - log options, allow to setup logging to the chosen OUTPUT with given log groups and verbosity levels.
-    - `[outputname\] = GROUP[:LEVEL][,GROUP[:LEVEL]][,...]`;
-    - `[outputname\] = +GROUPLIST[:LEVEL]`;
+    - `[outputname] = GROUP[:LEVEL][,GROUP[:LEVEL]][,...]`;
+    - `[outputname] = +GROUPLIST[:LEVEL]`;
       Groups may be defined either by name or by a LIST of one-letter IDs, preceded by '+', e.g. +ABCD:LEVEL. Verbosity may be defined either by name or a numeric ID.
         - `OUTPUTs` are:
             * `stdout`, `file`, `console` (where \"console\" is internal engine's console);
