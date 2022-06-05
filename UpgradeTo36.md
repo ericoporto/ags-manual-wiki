@@ -36,7 +36,7 @@ Where Unicode won't work (and is not supposed to):
 
 All the above must be written strictly in the Latin alphabet.
 
-String variables and related functions should work seamlessly with Unicode texts. Functions that work with characters were changed to have arguments and return values as `int`, to be able to pass any Unicode character. This includes AppendChar(), ReplaceChar() and String.Char[] property. Also, `String.Format("%c", n)` will now be able to print Unicode characters.
+String variables and related functions should work seamlessly with Unicode texts. Functions that work with characters were changed to have arguments and return values as `int`, to be able to pass any Unicode character. This includes `AppendChar()`, `ReplaceChar()` and `String.Char[]` property. Also, `String.Format("%c", n)` will now be able to print Unicode characters.
 
 The Translations are not affected by the game's setting and have an individual setting of their own. When you open a TRS file made by the new version, it will have an "#Encoding" option in the file's header. This is where you may write either "UTF-8" or "ASCII" by hand to tell the translation compiler (and the engine) how this translation should be interpreted. By default this should be "UTF-8", so you only need to change this if you need the translation to be in ASCII for some reason.
 If you have imported an older project and the TRS file does not have this option, then you may add one yourself. Just remember that the TRS options must be preceded with a comment sign, like this:
@@ -61,7 +61,7 @@ The extended function definition now is:
 
 The `mod` argument describes which key modifiers were enabled when this exact key was pressed. It's different from, for example, using `IsKeyPressed()` in `repeatedly_execute` callback, because the engine may receive several key-presses between two game frames, while `IsKeyPressed` only tells the last state of the key. Using `mod` argument is 100% reliable.
 
-But the `mod` contains *set of flags*, and is slightly more complicated: as you should not use regular comparison (==, !=) with it, but a bitwise operator (&):
+But the `mod` contains a *set of flags*, and is slightly more complicated: as you should not use regular comparison (==, !=) with it, but a bitwise operator (&):
 
     // these two conditions check that ctrl was pressed (these commands are equivalent)
     if (mod & eKeyModCtrl)
@@ -104,7 +104,7 @@ In the new mode each key pressed triggers `on_key_press`, and when the pressed k
 
 Its argument (`ch`) contains a Unicode character's code. It may be used, for example, to append to a String, or add to the text field or label.
 
-Similarily to the above, `dialog_options_key_press` had been expanded with the third `mod` argument:
+Similarly to the above, `dialog_options_key_press` had been expanded with the third `mod` argument:
 
     function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode, int mod)
 
@@ -141,13 +141,13 @@ Secondly, there's now an "Enable sprite storage optimization" option, which is e
 
 ### Multiplatform support extended
 
-The AGS Editor can now produce game builds for Android and Web (using Web/Emscripten port). Both require corresponding components installed alongside with the Editor. In addition, for Android builds you also have to install Android Studio and configure certain settings in the [Editor's Preferences](EditorPreferences) and your game's [General Settings](GeneralSettings). For more information see [Distributing your game](DistGame).
+The AGS Editor can now produce game builds for Android and Web (using Web/Emscripten port). Both require corresponding components installed alongside with the Editor. In addition, for Android builds you also have to install Android Studio and configure certain settings in the [Editor's Preferences](EditorPreferences) and your game's [General Settings](GeneralSettings). For more information see [Distributing your game](DistGame) and [Building for Android](BuildAndroid).
 
 ### TTF fonts behavior
 
 Historically AGS applied a "fixup" to TTF fonts, that shifted letters down when drawn, which, in turn, also increased their graphical height. This behavior is now optional, available purely for backwards compatibility, both as a global and per-font setting called "TTF font adjustment". This setting has two values: "Do nothing" and "Resize ascender to the nominal font height". We recommend having it set to "Do nothing" at all times, except when using TTF fonts specifically created or adjusted for older versions of AGS.
 
-Another global setting is "TTF fonts height used in the game logic". This option sets which value to use when calculating text height, line spacing etc. Its value may be either "Nominal height" or "Full graphical height". The difference is, that due to the font library's behavior the font's graphical height may end up differently (usually larger) than the nominal height the font is imported with. While "Nominal height" is a historical default, it's up to your preference which setting to use.
+Another global setting is "TTF fonts height used in the game logic". This option sets which value to use when calculating text height, line spacing etc. Its value may be either "Nominal height" or "Full graphical height". The difference is, that due to the font library's behavior, the font's graphical height may end up differently (usually larger) than the nominal height the font is imported with. While "Nominal height" is a historical default, it's up to your preference which setting to use.
 
 A long time requested font feature that is now available is the option to set the thickness of the automatically generated outline of the text. The automatic font outline has always been drawn 1px wide, but that was not enough for high-resolution games. Now fonts have a property called "AutoOutlineThickness" which lets you set any outline width you need, and "AutoOutlineStyle" which toggles between "Squared" and "Rounded" corners.
 
