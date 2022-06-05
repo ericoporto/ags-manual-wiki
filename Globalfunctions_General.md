@@ -132,18 +132,24 @@ with what they do:
         are required.
     1   Display interpreter version - the engine will display its version
         number and build date.
-    2   Walkable from here - fills in the parts of the screen where the player
-        can walk from their current location. This is useful if you think the
-        path-finder is not working properly. All walkable areas are drawn in
-        their respective colors, but with blocking areas at characters feet
-        removed.
+    2   The viewport fills with the visible room mask, where DATA allows you 
+        to select which mask: 
+        0 - none, 1 - hotspots, 2 - walkbehinds, 3 - walkable areas, 4 - regions. 
+        This command also works as a toggle switch, calling it with the same mask 
+        index will turn it off.
+        For the walkable areas, they are drawn with blocking areas at characters 
+        feet removed. This is useful if you think the path-finder is not working 
+        properly.
     3   Teleport - displays a dialog box asking for what room you want to go
         to, and then calls ChangeRoom to teleport you there. Useful for skipping
         parts of the game or going to a specific point to test something.
     4   Show FPS - toggles whether the current frames per second is displayed
         on the screen. Pass DATA as 1 to turn this on, 0 to turn it off.
     5   Character Walk Path - shows walking path for the character.
-        Pass DATA matching desired Character ID.
+        Pass DATA matching desired Character ID. 
+        Call Debug(5,n) again to toggle it off.
+
+_Compatibility:_ Using Debug(2,n) for different masks and Debug(5,n) as toggle is only supported by **AGS 3.6.0** and later versions.
 
 *See also:* [Debugging features](Debuggingfeatures),
 [`System.RuntimeInfo`](System#systemruntimeinfo)
