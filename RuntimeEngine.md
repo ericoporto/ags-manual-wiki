@@ -8,7 +8,7 @@ You can use any port of the AGS runtime on any available system to run an AGS ga
 ### Command line
 
 *Note:* On Windows, you **must** use `--console-attach` when you are on the `cmd.exe` or other windows prompt and want to 
-read the output of the ags runtime directly in the terminal, this means, printed in stdout.
+read the output of the ags runtime directly in the terminal, as printed in stdout.
 
 General usage: `ags [OPTIONS] [GAMEFILE PATH or GAME DIRECTORY]`
 (Where "ags" is the executable name)
