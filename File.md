@@ -29,7 +29,8 @@ Following *location tags* are supported:
 
 - `$DATA$`, which allows you to read files that are packaged inside the
 game package, originally from a directory specified in the General Settings,
-in the **Package custom data folder(s)** option, on the Compiler category.  
+in the **Package custom data folder(s)** option, on the Compiler category.
+  Files stored in this way can only be opened in read mode.  
 - `$INSTALLDIR$`, which allows you to explicitly read files in the game
 installation directory.  
 - `$SAVEGAMEDIR$`, which allows you to write/read files in the save game
