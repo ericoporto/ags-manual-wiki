@@ -202,6 +202,7 @@ accessible in future versions.
 -   **Package custom data folder(s)** - A comma-separated list of folders. The
     contents of these folders will be added to the game resources, and you will
     be able to access them by using the `$DATA$` token in file paths.
+    The top level directory name is preserved, to avoid file name collision.
     More details on this in [`File.Open`](File#fileopen).
 -   **Split resource files into X MB-sized chunks** - see
     [here](DistGame#splitting-resource-files) for information. 
