@@ -31,8 +31,9 @@
 ## Engine
 
 - [The run-time engine](RuntimeEngine)
-- [Graphics driver selection](GraphicsDriver)
+- [Engine Config File](EngineConfigFile)
 - [Engine Setup Program](Setup)
+- [Graphics driver selection](GraphicsDriver)
 
 ## Scripting
 
