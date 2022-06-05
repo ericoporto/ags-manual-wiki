@@ -1,4 +1,4 @@
-## The text parser
+## Text Parser
 
 You can now use a text parser in your games if you wish to, much as the
 older Sierra games did. Go to the "Text parser" pane in the editor.
