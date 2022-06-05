@@ -56,6 +56,7 @@ Font options let you define certain font substitutes for this particular transla
 - **NormalFont** - sets the font used for displaying messages on screen. This corresponds to the [`Game.NormalFont`](Game#gamenormalfont) script property. The value may be either the font's number or `DEFAULT` for no change.
 - **SpeechFont** - sets the font used for character speech. This corresponds to the [`Game.SpeechFont`](Game#gamespeechfont) script property. The value may be either the font's number or `DEFAULT` for no change.
 - **TextDirection** - sets the direction in which the text is written. This corresponds to calling the [`SetGameOption`](Globalfunctions_General#setgameoption) script function with the OPT_RIGHTTOLEFT argument. The value may be `LEFT` (for left-to-right), `RIGHT` (for right-to-left) or `DEFAULT`.
+- **Encoding** - sets the encoding hint that matches the encoding of the file. If you use UTF-8, the file must be saved with **UTF-8 without BOM** encoding. Your game can be set to a different encoding, just make sure that the font used supports the encoding used.
 
 Example:
 
@@ -66,6 +67,8 @@ Example:
 //#SpeechFont=DEFAULT
 // Text direction - DEFAULT, LEFT or RIGHT
 //#TextDirection=RIGHT
+// Text encoding hint - ASCII or UTF-8
+//#Encoding=UTF-8
 ```
 
 This would set NormalFont to font 4, leave SpeechFont unchanged, and switch text direction to Right-to-left mode.
@@ -81,9 +84,10 @@ problem of the source font, you need to manually edit this fontsheet or just fin
 on the world wide web that works.
 
 When you play the game with the translation enabled and special characters of the
-language are replaced with ?? (2 question marks specifically), this means the encoding
-of the .trs files uses 2 bytes for each character, so make sure you save and encode the
-.trs file to ANSI and NOT in unicode or UTF-8 encoding.
+language are replaced with ?? (2 question marks specifically), this means the actual encoding
+of the .trs files uses 2 bytes for each character, probably because you saved the file as
+UTF-8 and either set the encoding to ASCII or not set at all. If you wish to use ASCII, make 
+sure you save and encode the .trs file to ANSI and NOT in unicode or UTF-8 encoding.
 
 In some wordprocessors changing the encoding of the whole file to ANSI encoding changes the normal
 special characters to something even more unrecognisable, so you might have to run a
