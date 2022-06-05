@@ -221,7 +221,7 @@ This function may be useful when you need to find a walkable area relative to so
 
 Example:
 
-    if (GetWalkableAreaAtRoom(player.x, player.y) == 0)
+    if (GetWalkableAreaAtRoom(player.x, player.y) > 0)
         Display ("Player is standing on the walkable area.");
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
