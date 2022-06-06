@@ -509,7 +509,7 @@ page.
 Some settings you may want to adjust right at  the start of your game include
 **Developer name**, **Game name** and **Resolution**. Resolution is the most
 important option, which determines the size of game area visible on screen at
-any given time. This is also the minimal size that game rooms may have.
+any given time.
 
 ---
 
