@@ -61,21 +61,21 @@
 - GIF loading by Magick.Net (https://www.imagemagick.org/)
 - Docking panel suit by WeiFen Luo and contributors (http://dockpanelsuite.com/)
 - JSON handled with Newtonsoft.Json by James Newton-King (https://www.newtonsoft.com/json)
-- Engine supports graphics and sound using Allegro 4 game programming library by
+- Engine bitmap drawing using Allegro 4 game programming library by
   Shawn Hargreaves and many others (https://liballeg.org/)
+- Engine backend graphics, sound and inputs using SDL2 by
+  Sam Lantinga and many other (https://libsdl.org/)
+- Sound uses SDL_Sound and MojoAL, by
+  Ryan C. Gordon (https://github.com/icculus)
 - Hq2x and Hq3x scalers by Maxim Stepin
 - Hi-color fade out/in routines by Matthew Leverton
 - Sprite anti-aliasing code by Michael Bukin
 - TrueType font display uses ALFont by Javier Gonzalez and the
   FreeType project
 - Windows engine uses libcda CD player by Peter Wang.
-- MP3 player is almp3 by Javier Gonzalez and the FreeAmp team. It uses
-  the mpg123 MP3 decoder
 - OGG player is alogg by Javier Gonzalez, using the Ogg Vorbis
   decoder, which is available from https://www.xiph.org/
 - OGG Theora player is APEG by Chris Robinson, using the Ogg Theora
   decoder, which is available from https://www.xiph.org/
-- DUMB MOD/XM/S3M/IT player, (C) 2001-2005 Ben Davis, Robert J Ohannessian
-  and Julien Cugniere. You can get it from http://dumb.sourceforge.net/
 
 Thanks to all the AGS beta testers for all their suggestions and bug reports.
