@@ -77,10 +77,6 @@ image's alpha channel or not. If you select Yes, then the sprite will be
 drawn alpha blended in the game if it is used for a character, object,
 mouse cursor or GUI.
 
-Note that if you use alpha blending, any overall transparency that you
-set (such as Character.Transparency, Object.Transparency,
-GUI.Transparency) will be ignored.
-
 NOTE: Currently, alpha blended sprites cannot be antialiased, so if
 you have the Anti Alias Sprites option turned on in Setup, it will not
 be applied to alpha-blended characters.
