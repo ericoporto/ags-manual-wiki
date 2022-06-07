@@ -90,4 +90,6 @@ AGS sprite storage can be configured through **Enable sprite storage optimizatio
 
 When a sprite is imported, it gets and index number which can be used to refer to it through your game. This information, along with import settings for each sprite, are saved in your AGS game project. It will additionally, incrementally as you import sprites, add the file to your project sprite file, named `acsprset.spr`. You can at any time in your project switch your sprite file compression and storage settings and AGS will update it accordingly, so don't worry if you just realize you need compression at a later time in your project.
 
+### Project without a Sprite File
+
 It's recommended that all the graphic files you are importing in your project are placed in a directory inside of your AGS Game Project. By maintaining all files there, if you wish to not backup your `acsprset.spr` file, you can recreate it at any time by using the **File** `->` **Restore all sprites from sources** menu. 
