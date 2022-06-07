@@ -10,6 +10,8 @@ When you choose the "Build EXE" option in the Editor, a "Compiled" directory is 
 - **"Compiled/Web"** subfolder will be created if you have "Web" enabled as target platform. The folder will contain the wasm + JS port of the engine, and the game data. You can test by serving the current directory, using some server (ex: `python -m http.server` if you have python), and opening it in a browser. Indie store websites usually accept you zip the contents of this directory and upload it as a web build.
 - **"Compiled/Android"** subfolder will be created if you have "Android" enabled as target platform. This build has external requirements you must comply, and they are detailed in the [Building for Android](BuildAndroid) topic.
 
+_Note: Linux, Android and Web building require you have installed their specific components when installing the Editor, otherwise they won't be available_
+
 The contents of these subfolders can be now distributed to players with the corresponding operating systems. For example, if you want to
 distribute the Windows version of your game, you _only_ need the contents of the "Compiled/Windows" subfolder. For Linux the "Compiled/Linux" subfolder is sufficient.
 
