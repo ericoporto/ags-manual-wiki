@@ -183,41 +183,7 @@ You can delete a folder by right-clicking on it and selecting the
 "Delete" option; beware though that **this will also delete all the
 sprites in the folder**.
 
-**Tiled sprite import**
-
-You may have noticed a checkbox called "Tiled sprite import". Some
-people find this a useful way of importing many frames of a character's
-animation at once.
-
-In order for this to work, you need to have all your sprites lined up on
-your source bitmap at even intervals. Then, use the "Import from file"
-option and import it as usual. Check the "Tiled sprite import" box, and
-select the upper-left frame.
-
-When you click the left mouse button, the selection rectangle will
-become un-filled and now you can drag the mouse to define how many
-frames to import - they'll all be enclosed by selection rectangles. Once
-you have the correct number, click the left button again and they will
-all be imported.
-
-**Alpha blended sprites**
-
-AGS supports alpha blended sprites if your game is 32-bit color. In
-this case, you need to import a PNG image with an alpha channel (you
-cannot paste alpha-blended images from the clipboard).
-
-When you do so, AGS will prompt you asking whether you want to use the
-image's alpha channel or not. If you select Yes, then the sprite will be
-drawn alpha blended in the game if it is used for a character, object,
-mouse cursor or GUI.
-
-Note that if you use alpha blending, any overall transparency that you
-set (such as Character.Transparency, Object.Transparency,
-GUI.Transparency) will be ignored.
-
-NOTE: Currently, alpha blended sprites cannot be antialiased, so if
-you have the Anti Alias Sprites option turned on in Setup, it will not
-be applied to alpha-blended characters.
+For more information, see [Sprite Manager](EditorSprite) topic.
 
 ---
 
