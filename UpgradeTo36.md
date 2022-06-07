@@ -114,7 +114,7 @@ And there's now `dialog_options_text_input` callback for receiving unicode chars
 
 ### New game package options
 
-AGS now allows to package custom files into your game and read them in script. An option called "Package custom data folder" has been added to the [General Settings](GeneralSettings). This option accepts a comma-separated list of subfolder names, which should be found in your game project's folder. All of the files in these subfolders will be added to the game package under their relative paths (e.g. "UserData/myfile.dat").
+AGS now allows to package custom files into your game and read them in script. An option called "Package custom data folder" has been added to the [General Settings - Compiler](GeneralSettings#compiler). This option accepts a comma-separated list of subfolder names, which should be found in your game project's folder. All of the files in these subfolders will be added to the game package under their relative paths (e.g. "UserData/myfile.dat").
 
 Any [File functions](File) that accept file paths can now refer to the game package files using the new `$DATA$` location tag. Virtually any packaged file may be queried this way, whether custom or regular game resource. These files may only be opened for reading however, never for writing.
 
