@@ -4,20 +4,29 @@ Sound and music are an essential part of any gameplay experience, and
 AGS 3.2 and higher provides a re-written audio system giving you full
 control over your game audio.
 
-**File formats**
+### File formats
 
-AGS is able to play the following types of audio file: OGG, MP3, MIDI,
-WAV (uncompressed), MOD, XM, IT, S3M and VOC.
+AGS is able to play the following types of audio file:
 
-The only limitation to this is that AGS is only able to play one MIDI
-file at a time. If you attempt to play two MIDI music files simultaneously,
-the first one will be cut off when the second one starts playing.
+extension| Sound Format
+-------|--------
+`.ogg` | Ogg Vorbis
+`.wav` | Wave (8, 16, 24 and 32 bit)
+`.mp3` | MPEG-1 Audio Layer III
+`.voc` | Creative Labs Voice
+`.mid` | MIDI (requires Soundfont)
+`.mod` | ProTracker / NoiseTracker MOD
+`.xm`  | FastTracker II
+`.s3m` | ScreamTracker file
+`.it`  | Impulse Tracker
 
 OGG is a digital music format similar
 to MP3, but achieving better compression and higher quality. For more information 
 and programs to encode your music to OGG, see https://www.vorbis.org/
 
-**Audio in the Editor**
+If you use MIDI, the player will need a Soundfont and a Timidity config file to be able to play the music.
+
+### Audio in the Editor
 
 Look under the "Audio" branch in the project tree. Here you'll find
 sub-nodes called "Speech", "Types" and two default folders called
