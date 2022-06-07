@@ -36,6 +36,8 @@ If you want to distribute custom data with your game you can simply add the nece
 
 Note that any custom files put into the "Compiled/Data" folder will also be copied to all the final build targets (Windows, Linux, etc) when the game is built. At the moment this is the most convenient method of making sure the same custom data will be included for all target platforms. If you need the custom files to be present only with a particular distribution, like only for Windows, or only for Linux, then put the files into the corresponding platform subfolder instead.
 
+If instead you wish to pack additional files inside the game package itself, see **Package custom data folder(s)**, in [General Settings - Compiler](GeneralSettings#compiler).
+
 ### Warning on de-compiling the built game
 
 It is not possible to load the exe file back into the AGS Editor. This means two things when only the EXE file is available: (1) other people can't edit your game's data, and (2) you can't either. Always keep a backup of the other files produced (.CRM, GAME.AGF, etc) as they are what the Editor needs to be able to load your game for editing.
