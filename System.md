@@ -6,6 +6,10 @@
 
 Prints the message string in `format` to the log, with the defined LogLevel, to the group `script`.
 
+Example:
+
+    System.Log(eLogInfo, "Entering the Room %d", player.Room);
+
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
 *See also:* [The run-time engine](RuntimeEngine), [LogLevel Enum](StandardEnums#loglevel)
@@ -150,15 +154,16 @@ will turn the screen brightness up to `50%` higher than normal
     readonly static bool System.HardwareAcceleration;
 
 Returns whether the game is running with hardware acceleration (e.g.
-Direct3D or OpenGL). If this is the case then RawDrawing is likely to be slower,
-but alpha blending and large sprites are likely to be faster, than when
-the non-accelerated driver is used.
+Direct3D or OpenGL). If this is the case then changing on-screen images with [DrawingSurface](DrawingSurface) functions are likely to be slower,
+but sprite scaling, transparency and alpha blending effects, as well as just displaying larger sprites, are likely to be faster, than when the non-accelerated driver is used.
 
 **Cross-Platform Support**
 
 Windows: **Direct3D, OpenGL driver**<br>
 Linux: **OpenGL driver**<br>
-MacOS: **No**
+MacOS: **OpenGL driver**<br>
+Android: **OpenGL driver**<br>
+iOS: **OpenGL driver**
 
 Example:
 
@@ -243,13 +248,15 @@ will display a message if Num Lock is on.
 Returns which operating system the game is currently running under. It
 can be one of the following values:
 
-    eOSDOS
+    eOSDOS (exists, but no longer supported)
     eOSWindows
     eOSLinux
     eOSMacOS
     eOSAndroid
     eOSiOS
-    eOSPSP
+    eOSPSP (exists, but no longer supported)
+    eOSWeb
+    eOSFreeBSD
 
 Example:
 
@@ -480,15 +487,14 @@ will set the overall output volume to 80.
 
     static bool System.VSync;
 
-Gets/sets whether AGS waits for the vertical retrace before rendering
-each frame. This is off by default.
+Gets/sets whether AGS waits for the vertical retrace before rendering each frame.
 
-If you switch this on, it can help to reduce the "tearing" effect that
-you can get when the screen scrolls. However, doing so will lock the
-game frame rate to the monitor's refresh rate, which will mean you
-cannot reliably set a game speed higher than 60 fps.
+When vsync is on, it can help to reduce the "tearing" effect that you can get when the screen scrolls. However, doing so will lock the
+game frame rate to the monitor's refresh rate, which will mean you cannot reliably set a game speed higher than 60 fps.
 
-**NOTE:** This property has no effect with the Direct3D or OpenGL driver.
+Vertical sync is off by default. When the game starts engine reads vsync option value from the config file, if one exists.
+
+Not all renderers support changing vsync at runtime. If current one does not, then trying to change `System.VSync` will have no effect.
 
 Example:
 
@@ -496,7 +502,7 @@ Example:
       Display("Vertical retrace sync is enabled!");
     }
 
-will display a message if vsync is on
+will display a message if vsync is on.
 
 ---
 
