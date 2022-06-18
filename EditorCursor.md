@@ -1,4 +1,4 @@
-# Cursor Editor
+## Cursor Editor
 
 The Cursors node of the editor shows you the current mouse cursor modes available in the game. Each cursor mode performs a different action within the game. There's always a number of precreated cursors, which editor won't allow to remove, and you also may create more if necessary. Right clicking on the "Cursors" node itself allows you to create a new custom cursor. Creating a new cursor or double clicking an existing one will open it for edit.
 
