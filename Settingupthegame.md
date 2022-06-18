@@ -529,37 +529,7 @@ current fonts listed underneath. You can create a new font by
 right-clicking the "Fonts" node and choosing "New font". To overwrite an
 existing font, open it up and press the "Import over this font" button.
 
-Fonts can have outlines. For LucasArts-style speech, outlines are really
-a necessity since they stop the text blending into the background and
-becoming un-readable. To outline a font, either set the OutlineStyle to
-"Automatic" to have AGS do it for you, or you can use a specific font
-slot as the outline font (it will be drawn in black behind the main font
-when the main font is used).
-
-Every font have following optional properties:
-
--   **LineSpacing** - defines default difference (in pixels) between two
-    lines of wrapped text. Setting this to 0 will make font use its own
-    height as a vertical spacing. Having line spacing lower than font's
-    height will make lines partially overlap.
--   **SizeMultiplier** - an integer scale multiplier applied to this font. 
-    Note that it commonly makes sense to assign this for the bitmap fonts,
-    as TTF fonts may be reimported with different font size. 
-    When set for a TTF font it will simply be initialized with a higher
-    point-size in game.
--   **VerticalOffset** - defines additional vertical offset applied to
-    every drawn line of text (when using this font). This property is
-    mainly meant to override particular font's misbehavior.
-
-**NOTE:** If you go to your Windows Fonts folder, you will not be able
-to select any fonts to import, since double-clicking them will open them
-up in the Windows Font Viewer. Unfortunately there is nothing I can do
-about this, you must either type the filename in manually, or copy the
-font to another folder and import it from there.
-
-**NOTE:** Font 0 is used as the normal text font, and font 1 is used as
-the speech font. To use any additional fonts, you can set the
-Game.NormalFont and Game.SpeechFont properties in your script.
+Please refer to the [Font Preview](EditorFont) topic for more information on how the font may be imported and configured for runtime.
 
 Now you are ready to read more about scripting.
 
