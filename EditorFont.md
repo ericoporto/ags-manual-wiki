@@ -8,7 +8,7 @@ When a new font is created it clones the last one in the list. To overwrite an e
 
 AGS supports two kinds of fonts: TrueType (TTF) and bitmap fonts, which are: SCI fonts (Sierra's font format) and WFN fonts (extended bitmap font format).
 
-**NOTE:** On Windows you cannot import fonts directly from the Windows Fonts folder. Unfortunately there is nothing that can be done about this, you must manuallt copy the font to another folder and import it from there.
+**NOTE:** On Windows you cannot import fonts directly from the Windows Fonts folder. Unfortunately there is nothing that can be done about this, you must manually copy the font to another folder and import it from there.
 
 Fonts can have outlines. For LucasArts-style speech, outlines are really
 a necessity since they stop the text blending into the background and
