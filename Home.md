@@ -16,6 +16,7 @@
 - [Editor Preferences](EditorPreferences)
 - [General Settings](GeneralSettings)
 - [Default Setup](DefaultSetup)
+- [Colours Editor](ColoursEditor)
 - [Room Editor](EditorRoom)
 - [Character Editor](EditorCharacter)
 - [GUI Editor](EditingGUIs)
