@@ -20,6 +20,7 @@
 - [Room Editor](EditorRoom)
 - [Character Editor](EditorCharacter)
 - [GUI Editor](EditorGUI)
+- [Dialog Editor](EditorDialog)
 - [Sprite Manager](EditorSprite)
 - [View Editor](EditorView)
 - [Inventory Items Editor](EditorInventoryItems)
