@@ -531,6 +531,10 @@ existing font, open it up and press the "Import over this font" button.
 
 Please refer to the [Font Preview](EditorFont) topic for more information on how the font may be imported and configured for runtime.
 
+**NOTE:** By default font 0 is used as the normal text font for in-game messages, and font 1 is used as
+the speech font. To use any other fonts for these purposes, you can set the
+[Game.NormalFont](Game#gamenormalfont) and [Game.SpeechFont](Game#gamespeechfont) properties in your script.
+
 Now you are ready to read more about scripting.
 
 Next Reading: [Scripting Tutorial 1](ScriptingTutorialPart1)

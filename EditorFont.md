@@ -32,6 +32,3 @@ Every font have following optional properties:
     every drawn line of text (when using this font). This property is
     mainly meant to override particular font's misbehavior.
 
-**NOTE:** By default font 0 is used as the normal text font for in-game messages, and font 1 is used as
-the speech font. To use any other fonts for these purposes, you can set the
-[Game.NormalFont](Game#gamenormalfont) and [Game.SpeechFont](Game#gamespeechfont) properties in your script.
