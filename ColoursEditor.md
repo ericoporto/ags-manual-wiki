@@ -30,12 +30,12 @@ shift-clicking on the last slot in the range you want to select. You can
 then toggle the background status of all the selected slots at once.
 
 You can right-click in the palette grid to export the entire palette to
-a .PAL or PCX file which you can then use to read back into the Editor
-in a different game. If you choose to export to a pcx file, then a
+a .PAL or BMP file which you can then use to read back into the Editor
+in a different game. If you choose to export to a bmp file, then a
 screen shot of the Palette Editor will be saved as the picture. This way
 you can see all the game-wide colors in the file.
 
 The "Replace palette" option replaces the palette entries with those
-entries from the PAL or PCX file you choose. It can read standard
+entries from the PAL or BMP file you choose. It can read standard
 768-byte PAL files, SCI palette resources (renamed to extension .pal)
 and JASC PSP palette files.
