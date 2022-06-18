@@ -6,6 +6,10 @@ On the Explore Project panel, you can expand the Fonts node to show the fonts wh
 
 When a new font is created it clones the last one in the list. To overwrite an existing font, press the "Import over this font..." button.
 
+AGS supports two kinds of fonts: TrueType (TTF) and bitmap fonts, which are: SCI fonts (Sierra's font format) and WFN fonts (extended bitmap font format).
+
+**NOTE:** On Windows you cannot import fonts directly from the Windows Fonts folder. Unfortunately there is nothing that can be done about this, you must manuallt copy the font to another folder and import it from there.
+
 Fonts can have outlines. For LucasArts-style speech, outlines are really
 a necessity since they stop the text blending into the background and
 becoming un-readable. To outline a font, either set the OutlineStyle to
