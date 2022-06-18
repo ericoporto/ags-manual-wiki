@@ -1,4 +1,4 @@
-## Default setup
+## Default Setup
 
 The Default setup pane lets you create the default runtime configuration
 for your game. Since AGS 3.3.5 you cannot directly do that using game's
