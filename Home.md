@@ -19,7 +19,7 @@
 - [Colours Editor](ColoursEditor)
 - [Room Editor](EditorRoom)
 - [Character Editor](EditorCharacter)
-- [GUI Editor](EditingGUIs)
+- [GUI Editor](EditorGUI)
 - [Sprite Manager](EditorSprite)
 - [View Editor](EditorView)
 - [Inventory Items Editor](EditorInventoryItems)

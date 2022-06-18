@@ -18,7 +18,7 @@
 
 [Character Editor](EditorCharacter)
 
-[GUI Editor](EditingGUIs)
+[GUI Editor](EditorGUI)
 
 [Sprite Manager](EditorSprite)
 

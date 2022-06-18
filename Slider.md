@@ -2,7 +2,7 @@
 
 Slider is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
-*See also:* [Editing GUI Sliders](EditingGUIs#sliders)
+*See also:* [Editing GUI Sliders](EditorGUI#sliders)
 
 ---
 

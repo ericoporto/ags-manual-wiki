@@ -374,7 +374,7 @@ Windows, this option has been removed in AGS 3.6.0.
     output will look blurred and unreadable).
 -   **Custom text-windows GUI** - allows you to customize the standard
     text window appearance in the game, using the specified interface
-    element. See [here](EditingGUIs#customized-text-windows) for more
+    element. See [here](EditorGUI#customized-text-windows) for more
     information.
 -   **Custom thought bubble GUI** - Determines which text window GUI is
     used for displaying thoughts with
