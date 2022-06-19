@@ -156,6 +156,6 @@ A. When you are looking into your objects in the Room Editor, they are obviously
 
 ---
 
-**Q. Can I create games that use a text parser, similar to the classic Sierra adventure games, such as King’s Quest and Space Quest?**
+**Q. Can I create games that use a text parser, similar to the classic Sierra adventure games, such as King's Quest and Space Quest?**
 
 A: Yes, AGS allows for the development of games that use text parser input. It is possible to create games that use an "always on" text parser (used in AGI games, such as Kings Quest I) as well as a "pop up" text parser (used in SCI games such as Space Quest 3). See more in the [Text Parser](TextParser) topic in the manual.
