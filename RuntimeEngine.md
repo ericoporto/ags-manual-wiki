@@ -60,4 +60,4 @@ Following OPTIONS are supported when running from the command line:
 Command line arguments override options from either configuration file where applicable.
 
 
-*See also:* [Default setup (Editor Pane)](Settingupthegame#default-setup), [Run-time engine setup](Setup)
+*See also:* [Default setup (Editor Pane)](DefaultSetup), [Run-time engine setup](Setup)

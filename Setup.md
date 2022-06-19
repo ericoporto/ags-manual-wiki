@@ -161,4 +161,4 @@ runtime data shared among all the users of this computer - in the default Window
 Players may enable this option and define their own location to store
 these game files.
 
-*See also:* [Default setup (Editor Pane)](Settingupthegame#default-setup), [Location of the configuration file on the system and options](RuntimeEngine) 
+*See also:* [Default setup (Editor Pane)](DefaultSetup), [Location of the configuration file on the system and options](RuntimeEngine) 
