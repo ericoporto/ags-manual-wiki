@@ -49,9 +49,17 @@ OGG Theora player is APEG by Chris Robinson, using the Ogg Theora
 decoder, which is Copyright (C) 2002-2008 Xiph.Org Foundation and
 contributors.
 
-MP3 player is almp3 v2.0.4, by Javier Gonzalez and the MPG123 team. It
-uses the mpg123 MP3 decoder, and again is distributed under the terms of
-the GNU Lesser General Public License version 2.1.
+Audio decoding is SDL Sound, and mixing is MojoAL, both by Ryan C. Gordon,
+both distributed under the terms of the zlib License. SDL Sound MIDI
+decoding incorporates Timidity source code, which is dual-licensed under
+the Perl Artistic License or GNU Lesser General Public License 2.1.
+
+Backend of Audio, Graphics, input and additional systems is SDL2, by
+Sam Lantinga, and is distributed under the terms of the zlib License.
+
+Partial code from Allegro 4 is included for bitmap and text manipulation.
+Allegro4 is provided by The giftware license, created by a number of people 
+working in cooperation, and given freely as a gift.
 
 Copyright information on the various other modules AGS uses can be found
 in the [credits](Credits) section.
