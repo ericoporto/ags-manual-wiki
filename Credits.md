@@ -61,20 +61,20 @@
 - GIF loading by Magick.Net (https://www.imagemagick.org/)
 - Docking panel suit by WeiFen Luo and contributors (http://dockpanelsuite.com/)
 - JSON handled with Newtonsoft.Json by James Newton-King (https://www.newtonsoft.com/json)
-- Engine bitmap drawing using Allegro 4 game programming library by
-  Shawn Hargreaves and many others (https://liballeg.org/)
 - Engine backend graphics, sound and inputs using SDL2 by
   Sam Lantinga and many other (https://libsdl.org/)
 - Sound uses SDL_Sound and MojoAL, by
   Ryan C. Gordon (https://github.com/icculus)
-- Hi-color fade out/in routines by Matthew Leverton
-- Sprite anti-aliasing code by Michael Bukin
+- Engine bitmap drawing using Allegro 4 game programming library by
+  Shawn Hargreaves and many others (https://liballeg.org/)
 - TrueType font display uses ALFont by Javier Gonzalez and the
   FreeType project
-- Windows engine uses libcda CD player by Peter Wang.
+- Hi-color fade out/in routines by Matthew Leverton
+- Sprite anti-aliasing code by Michael Bukin
 - OGG player is alogg by Javier Gonzalez, using the Ogg Vorbis
   decoder, which is available from https://www.xiph.org/
 - OGG Theora player is APEG by Chris Robinson, using the Ogg Theora
   decoder, which is available from https://www.xiph.org/
+- Windows engine uses libcda CD player by Peter Wang.
 
 Thanks to all the AGS beta testers for all their suggestions and bug reports.
