@@ -9,6 +9,7 @@
   Benjamin Penney  
   Benoit Pierre  
   Bernhard Rosenkraenzer  
+  Cameron Cawley  
   Cristian Morales Vega  
   Edward Rudd  
   Erico Vieira Porto  
@@ -48,8 +49,7 @@
 
 - Windows editor original splash design by abstauber
 - Windows editor icons by Klaus
-- Blank Game template created by AGA
-- Sierra-style game template by Rui "Trovatore" Pires
+- Sierra-style game template by Rui "Trovatore" Pires, and updated by Morgan Willcock,
 - New BASS and Verb Coin game templates by Morgan Willcock,
   based on ideas by Bjorn Ludwig and Electroshokker respectively
 - Sierra-style, BASS and Verb Coin templates are sharing art by
@@ -67,7 +67,6 @@
   Sam Lantinga and many other (https://libsdl.org/)
 - Sound uses SDL_Sound and MojoAL, by
   Ryan C. Gordon (https://github.com/icculus)
-- Hq2x and Hq3x scalers by Maxim Stepin
 - Hi-color fade out/in routines by Matthew Leverton
 - Sprite anti-aliasing code by Michael Bukin
 - TrueType font display uses ALFont by Javier Gonzalez and the
