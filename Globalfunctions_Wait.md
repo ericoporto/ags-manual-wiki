@@ -17,7 +17,7 @@ If you only need to find out whether WaitX ended with a timeout or a player's in
 
 If you need to determine exact details of how the "wait" was skipped, you have to split returned value into `InputType`, key mod, and a button code using [bitwise operations](ScriptKeywords#operators):
 
-    int result = WaitMouseKey(1000);
+    int result = WaitMouseKey(100);
     InputType type = result & eInputAny;
     int keymod = result & eKeyModMask; // extract key mod flags
     int keycode = result & eKeyCodeMask; // extract key or button code
@@ -25,7 +25,7 @@ If you need to determine exact details of how the "wait" was skipped, you have t
 For example, this is how you may Wait until player presses either Space key or Left Mouse button:
 
     while (true) {
-        int result = WaitMouseKey(timeout);
+        int result = WaitMouseKey(-1);
         InputType type = result & eInputAny;
         int keycode = result & eKeyCodeMask;
         if ((type == eInputMouse && keycode == eMouseLeft) ||
@@ -37,7 +37,7 @@ For example, this is how you may Wait until player presses either Space key or L
 and this is how the key combinations may be tested (Ctrl + S in this case):
 
     while (true) {
-        int result = WaitKey(timeout);
+        int result = WaitKey(-1);
         int keycode = result & eKeyCodeMask;
         int keymod = result & eKeyModMask;
         if (keymod == eKeyModCtrl && keycode == eKeyS) {
