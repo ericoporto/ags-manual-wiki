@@ -3,7 +3,7 @@
 Since AGS 3.6.0, All Wait related functions can return a **Skip Reason** on why they were skipped:
 
 - `0` - ended by timeout or `SkipWait()`;
-- `!= 0` - an integer value which combines [InputType](StandardEnums#inputtype) and a key or button code corresponding to that input type; that describes what input device and which button on that device were used to skip this "wait".
+- `!= 0` - an integer value which combines [InputType](StandardEnums#inputtype), [KeyMod](Keycodes#key-modifiers), and a key or button code corresponding to that input type; that describes what input device and which button on that device were used to skip this "wait".
 
 If you only need to find out whether WaitX ended with a timeout or a player's input, all you need is to compare it with `0`:
 
@@ -15,11 +15,35 @@ If you only need to find out whether WaitX ended with a timeout or a player's in
         Display("Skipped by a mouse click.");
     }
 
-If you need to determine exact details of how the "wait" was skipped, you have to split returned value into `InputType` and a button code using [bitwise operations](ScriptKeywords#operators):
+If you need to determine exact details of how the "wait" was skipped, you have to split returned value into `InputType`, key mod, and a button code using [bitwise operations](ScriptKeywords#operators):
 
     int result = WaitMouseKey(1000);
     InputType type = result & eInputAny;
-    int code = result & 0xFFFF; // exact key or button code
+    int keymod = result & eKeyModMask; // extract key mod flags
+    int keycode = result & eKeyCodeMask; // extract key or button code
+
+For example, this is how you may Wait until player presses either Space key or Left Mouse button:
+
+    while (true) {
+        int result = WaitMouseKey(timeout);
+        InputType type = result & eInputAny;
+        int keycode = result & eKeyCodeMask;
+        if ((type == eInputMouse && keycode == eMouseLeft) ||
+            (type == eInputKey && keycode == eKeySpace)) {
+            break; // break the waiting loop
+        }
+    };
+
+and this is how the key combinations may be tested (Ctrl + S in this case):
+
+    while (true) {
+        int result = WaitKey(timeout);
+        int keycode = result & eKeyCodeMask;
+        int keymod = result & eKeyModMask;
+        if (keymod == eKeyModCtrl && keycode == eKeyS) {
+            break; // break the waiting loop
+        }
+    };
 
 ---
 
