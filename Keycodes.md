@@ -171,3 +171,18 @@ You may use these mod codes in the extended variant of [`on_key_press`](Globalfu
     if (mod & eKeyModAlt == 0) {
         Display("NO Alt was pressed this time");
     }
+
+
+In addition, there are two constants defining bitwise masks, one for key codes, and another for key modifiers:
+
+Constant | Meaning 
+-- | --
+eKeyCodeMask | all key codes
+eKeyModMask | all key mods
+
+If both key code and mods are combined in one integer variable, using bitwise operations, these masks may then be used to extract code and mods:
+
+    int combokey = eKeyA | eKeyModCtrlLeft;
+
+    int keycode = combokey & eKeyCodeMask; // keycode now contains only eKeyA
+    int keymod = combokey & eKeyModMask; // keymod now contains only eKeyModCtrlLeft
