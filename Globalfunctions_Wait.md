@@ -32,7 +32,7 @@ For example, this is how you may Wait until player presses either Space key or L
             (type == eInputKey && keycode == eKeySpace)) {
             break; // break the waiting loop
         }
-    };
+    }
 
 and this is how the key combinations may be tested (Ctrl + S in this case):
 
@@ -43,7 +43,7 @@ and this is how the key combinations may be tested (Ctrl + S in this case):
         if (keymod == eKeyModCtrl && keycode == eKeyS) {
             break; // break the waiting loop
         }
-    };
+    }
 
 ---
 
