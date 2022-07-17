@@ -146,19 +146,19 @@ process player input. For example:
 
 In addition, there's separate `eKeyMod` enumeration with modifier "flags". These values are special so that they may be combined in one variable to make a list of modifiers (like, Shift + Ctrl). This enumeration is supported since AGS 3.6.0. Following is the list of possible values:
 
-AGS modifier | Mod | Numeric value | Hexadecimal value
---- | --- | --- | ---
-`eKeyModShiftLeft` | Left Shift | 1 | 0x0001
-`eKeyModShiftRight` | Right Shift | 2 | 0x0002
-`eKeyModShift` | any Shift | 3 | 0x0003
-`eKeyModCtrlLeft` | Left Ctrl | 4 | 0x0004
-`eKeyModCtrlRight` | Right Ctrl | 8 | 0x0008
-`eKeyModCtrl` | any Ctrl | 12 | 0x000C
-`eKeyModAltLeft` | Left Alt | 16 | 0x0010
-`eKeyModAltRight` | Right Alt | 32 | 0x0020
-`eKeyModAlt` | any Alt | 48 | 0x0030
-`eKeyModNum` | Num Lock | 64 | 0x0040
-`eKeyModCaps` | Caps Lock | 128 | 0x0080
+AGS modifier | Mod |
+--- | --- 
+`eKeyModShiftLeft` | Left Shift 
+`eKeyModShiftRight` | Right Shift 
+`eKeyModShift` | any Shift 
+`eKeyModCtrlLeft` | Left Ctrl 
+`eKeyModCtrlRight` | Right Ctrl 
+`eKeyModCtrl` | any Ctrl 
+`eKeyModAltLeft` | Left Alt 
+`eKeyModAltRight` | Right Alt 
+`eKeyModAlt` | any Alt 
+`eKeyModNum` | Num Lock 
+`eKeyModCaps` | Caps Lock 
 
 You may use these mod codes in the extended variant of [`on_key_press`](Globalfunctions_Event#on_key_press) function to check which mod keys were pressed along with the primary key. Remember that since these mods are "flags", they should be tested using not the regular "comparison" operator `==`, but bitwise operators. For example:
 
