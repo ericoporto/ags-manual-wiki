@@ -29,7 +29,7 @@ For example, this is how you may Wait until player presses either Space key or L
         InputType type = result & eInputAny;
         int keycode = result & eKeyCodeMask;
         if ((type == eInputMouse && keycode == eMouseLeft) ||
-            (type == eInputKey && keycode == eKeySpace)) {
+            (type == eInputKeyboard && keycode == eKeySpace)) {
             break; // break the waiting loop
         }
     }
