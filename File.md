@@ -77,7 +77,10 @@ game, the File will not be usable and you'll have to open it again to
 continue any I/O. The safest practice is not to declare any global File
 variables.
 
-*Compatibility:* $CONFIGFILE$ tag supported by AGS 3.5.1 and later versions.
+*Compatibility:*
+
+$CONFIGFILE$ tag supported by AGS 3.5.1 and later versions.
+$DATA$ tag supported by AGS 3.6.0 and later versions.
 
 *See also:* [`File.Close`](File#fileclose),
 [`File.Exists`](File#fileexists),
