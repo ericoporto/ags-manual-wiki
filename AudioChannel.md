@@ -80,7 +80,29 @@ seek it back to the start.
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
-*See also:* [`AudioChannel.Position`](AudioChannel#audiochannelposition)
+*See also:* [`AudioChannel.SeekMs`](AudioChannel#audiochannelseekms), [`AudioChannel.Position`](AudioChannel#audiochannelposition), [`AudioChannel.PositionMs`](AudioChannel#audiochannelpositionms)
+
+---
+
+### `AudioChannel.SeekMs`
+
+    AudioChannel.SeekMs(int position)
+
+Seeks the audio clip that is currently playing on this channel to
+*position* in milliseconds.
+
+Example:
+
+    AudioChannel *channel = aMusic.Play();
+    Wait(40);
+    channel.SeekMs(10000);
+
+will start playing the *aMusic* audio clip, wait for a second, then
+jump to 10 seconds position and continue from there.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`AudioChannel.Seek`](AudioChannel#audiochannelseekms), [`AudioChannel.Position`](AudioChannel#audiochannelposition), [`AudioChannel.PositionMs`](AudioChannel#audiochannelpositionms)
 
 ---
 
@@ -323,7 +345,7 @@ What *position* represents depends on the FileType of the audio clip:
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[`AudioChannel.Seek`](AudioChannel#audiochannelseek) function.
+[`AudioChannel.Seek`](AudioChannel#audiochannelseek) or [`AudioChannel.SeekMs`](AudioChannel#audiochannelseekms) function.
 
 Example:
 
@@ -338,7 +360,8 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 
 *See also:*
 [`AudioChannel.PositionMs`](AudioChannel#audiochannelpositionms),
-[`AudioChannel.Seek`](AudioChannel#audiochannelseek)
+[`AudioChannel.Seek`](AudioChannel#audiochannelseek),
+[`AudioChannel.SeekMs`](AudioChannel#audiochannelseekms)
 
 ---
 
@@ -354,7 +377,7 @@ offset into the sound in milliseconds. MIDI files will always return 0.
 
 This property is read-only. If you want to change the current playback
 position within the audio file, use the
-[`AudioChannel.Seek`](AudioChannel#audiochannelseek) function.
+[`AudioChannel.Seek`](AudioChannel#audiochannelseek) or [`AudioChannel.SeekMs`](AudioChannel#audiochannelseekms) function.
 
 Example:
 
@@ -369,7 +392,9 @@ display its position.
 
 *See also:*
 [`AudioChannel.LengthMs`](AudioChannel#audiochannellengthms),
-[`AudioChannel.Position`](AudioChannel#audiochannelposition)
+[`AudioChannel.Position`](AudioChannel#audiochannelposition),
+[`AudioChannel.Seek`](AudioChannel#audiochannelseek),
+[`AudioChannel.SeekMs`](AudioChannel#audiochannelseekms)
 
 ---
 
