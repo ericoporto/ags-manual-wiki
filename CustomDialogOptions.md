@@ -145,8 +145,8 @@ This function is called as the player moves the mouse around the screen. This ne
             info.Surface.DrawingColor = dlg_opt_ncolor;
 
           info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
-                  eFontFont0, eAlignLeft, info.DialogToRender.GetOptionText(i));
-          ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontFont0, info.Width - 10);
+                  eFontNormal, eAlignLeft, info.DialogToRender.GetOptionText(i));
+          ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
         }
       }
     }
@@ -166,7 +166,7 @@ This function is called as the player moves the mouse around the screen. This ne
       {
         if (info.DialogToRender.GetOptionState(i) == eOptionOn)
         {
-          ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontFont0, info.Width - 10);
+          ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
           if ((mouse.y - info.Y) < ypos)
           {
             info.ActiveOptionID = i;
@@ -219,8 +219,8 @@ to continually scan through all the options.
             info.Surface.DrawingColor = dlg_opt_ncolor;
 
           info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
-              eFontFont0, eAlignLeft, info.DialogToRender.GetOptionText(i));
-          ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontFont0, info.Width - 10);
+              eFontNormal, eAlignLeft, info.DialogToRender.GetOptionText(i));
+          ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
         }
       }
     }
