@@ -236,6 +236,7 @@ will read a raw integer from file stats.txt and put it into the integer
 number.
 
 *See also:* [`File.ReadStringBack`](File#filereadstringback),
+[`File.WriteRawInt`](File#filewriterawint)
 [`File.ReadRawChar`](File#filereadrawchar)
 
 ---
@@ -394,6 +395,35 @@ will write the text "AB", followed by a carriage return character, to
 the file.
 
 *See also:* [`File.ReadRawChar`](File#filereadrawchar),
+[`File.WriteInt`](File#filewriteint)
+
+---
+
+### `File.WriteRawInt`
+
+
+    File.WriteRawInt(int value)
+
+Writes VALUE to the specified file, in raw mode so that
+other applications can read it back. If you are just creating a file for
+your game to read back in, use File.WriteInt instead because it offers
+additional protection. Only use this function if you need other
+applications to be able to read the file in.
+
+This command writes a single integer to the output file - therefore, VALUE
+can contain any value from -2147483648 to 2147483647.
+
+Example:
+
+    File *output = File.Open("$SAVEGAMEDIR$/stats.dat", eFileWrite);
+    output.WriteRawInt(51);
+    output.Close();
+
+will open the file stats.dat and write the integer number in it.
+
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
+*See also:* [`File.ReadRawInt`](File#filereadrawint),
 [`File.WriteInt`](File#filewriteint)
 
 ---
