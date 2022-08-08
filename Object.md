@@ -266,18 +266,12 @@ Example:
 
     Object.MergeIntoBackground()
 
-Merges the object into the background scene for this room. By doing
-this, the object becomes part of the background and so does not slow the
-game down. This is a 1-way operation - once the object has been merged,
-it cannot be changed back and the state of the room is permanently
-altered. Therefore you should only use this function if a game event has
-occurred that means the room is permanently changed.
+Merges the object into the background scene for this room. This means that the object's image will be painted onto the room background and then object is turned off **permanently** (will no longer be displayed and may not be interacted with). This is a 1-way operation - once the object has been merged,
+it cannot be changed back. Therefore you should only use this function if a game event has occurred that means the room is permanently changed.
 
-**NOTE:** after calling this function, you cannot use the object any
-more and it is permanently removed from the game.
+**NOTE:** this is an old function that was meant primarily for optimizing the game on ancient computers. Today it is not necessary. If you desire to make object not-interactable, the good solution is to make it not-clickable by setting [`Object.Clickable`](Object#objectclickable) property to `false`. Similar effect may be achieved by painting [object's graphic](Object#objectgraphic) onto the room background using its [DrawingSurface](Room#roomgetdrawingsurfaceforbackground), and then setting [`Object.Visible`](Object#objectvisible) to `false`.
 
-**NOTE:** objects can only be merged if the object graphic was imported
-at the same color depth as the background graphic.
+**NOTE:** objects can only be merged if the object graphic was imported at the same color depth as the background graphic.
 
 Example:
 
