@@ -80,17 +80,17 @@ Changes viewport's position on the screen.
 
 ### `Viewport.ScreenToRoomPoint`
 
-    Point* Viewport.ScreenToRoomPoint(int scrx, int scry, bool clipViewport = true);
+    Point* Viewport.ScreenToRoomPoint(int scrx, int scry, optional bool clipViewport);
 
 Returns the point in room corresponding to the given screen coordinates if seen through this viewport. Resulting Point struct will contain room x and y coordinates.
 
 Function does the conversion from screen to room's coordinate system, correctly taking into account viewport's location on screen, camera's position in the room and its transformation (scaling etc).
 
-If **clipViewport** is true then this function will only return a point if given screen coordinates are over viewport and return null otherwise. If **clipViewport** is false then viewport's bounds will be ignored.
+If **clipViewport** is false then viewport's bounds will be ignored and this function returns valid point all the time. If it is true then this function will only return a point if given screen coordinates are inside viewport's rectangle and return null otherwise. The default is false.
 
 Example:
 
-    Point* pt = myViewport.ScreenToRoomPoint(mouse.x, mouse.y);
+    Point* pt = myViewport.ScreenToRoomPoint(mouse.x, mouse.y, true);
     if (pt != null) {
       Display("Mouse cursor is over room location: (%d, %d).", pt.x, pt.y);
     } else {
