@@ -39,6 +39,7 @@
 - [Engine Config File](EngineConfigFile)
 - [Engine Setup Program](Setup)
 - [Graphics driver selection](GraphicsDriver)
+- [MIDI playback](MIDI-playback)
 
 ## Scripting
 
