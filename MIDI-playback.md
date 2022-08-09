@@ -17,7 +17,7 @@ http://www.gamers.org/pub/idgames/music/dgguspat.zip
 
 ### How to install Timidity
 
-The primary file is called "timidity.cfg" and it should be present in the following path:
+The primary file is called "timidity.cfg" and it should be present either along with the game (or engine's) executable, or in the following system path:
 
 **On Windows:**
 * C:\Timidity\Timidity.cfg
