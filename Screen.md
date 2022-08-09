@@ -16,6 +16,11 @@ Function does the conversion from room to screen's coordinate system, correctly 
 
 This is a convenience function which is used when you do not manage viewports yourself but just using default one. If you have more than one custom viewport in your room consider [`Viewport.RoomToScreenPoint`](Viewport#viewportroomtoscreenpoint) instead.
 
+Example:
+
+    Point* pt = Screen.RoomToScreenPoint(player.x, player.y);
+    Display("Player character is displayed at (%d, %d) on screen.", pt.x, pt.y);
+
 *See also:* [`Screen.ScreenToRoomPoint`](Screen#screenscreentoroompoint), [`Viewport.RoomToScreenPoint`](Viewport#viewportroomtoscreenpoint), [`Viewport.ScreenToRoomPoint`](Viewport#viewportscreentoroompoint)
 
 ---
@@ -29,6 +34,11 @@ Returns the point in room corresponding to the given screen coordinates. The con
 The **restrictToViewport** parameter tells what to do if no viewport is found under the cursor. If it's false, then in such case the conversion will be done through the primary viewport. If it's true, then this function returns null if no viewport is there. The default is false.
 
 Function does the conversion from screen to room's coordinate system, correctly taking into account viewport's location on screen, camera's position in the room and its transformation (scaling etc).
+
+Example:
+
+    Point* pt = Screen.ScreenToRoomPoint(mouse.x, mouse.y);
+    Display("Mouse cursor is over room location: (%d, %d).", pt.x, pt.y);
 
 *Compatibility:* **restrictToViewport** parameter is supported by **AGS 3.6.0** and later versions.
 
