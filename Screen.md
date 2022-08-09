@@ -26,11 +26,11 @@ This is a convenience function which is used when you do not manage viewports yo
 
 Returns the point in room corresponding to the given screen coordinates. The conversion is done if seen through the room viewport found under the cursor. Resulting Point struct will contain room x and y coordinates.
 
-The `restrictToViewport` parameter tells what to do if no viewport is found under the cursor. If it's *false*, then in such case the conversion will be done through the primary viewport. If it's *true*, then this function returns null if no viewport is there. The default is *false*.
+The **restrictToViewport** parameter tells what to do if no viewport is found under the cursor. If it's false, then in such case the conversion will be done through the primary viewport. If it's true, then this function returns null if no viewport is there. The default is false.
 
 Function does the conversion from screen to room's coordinate system, correctly taking into account viewport's location on screen, camera's position in the room and its transformation (scaling etc).
 
-*Compatibility:* `restrictToViewport` parameter is supported by **AGS 3.6.0** and later versions.
+*Compatibility:* **restrictToViewport** parameter is supported by **AGS 3.6.0** and later versions.
 
 *See also:* [`Screen.RoomToScreenPoint`](Screen#screenroomtoscreenpoint), [`Viewport.RoomToScreenPoint`](Viewport#viewportroomtoscreenpoint), [`Viewport.ScreenToRoomPoint`](Viewport#viewportscreentoroompoint), [`Viewport.Visible`](Viewport#viewportvisible), [`Viewport.ZOrder`](Viewport#viewportzorder)
 
