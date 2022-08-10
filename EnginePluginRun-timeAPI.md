@@ -229,19 +229,19 @@ Requests that the engine calls the plugin's `AGS_EngineOnEvent` function when th
 
 ##### IAGSEngine event AGSE_KEYPRESS
 
-triggered when the user presses a key on the keyboard
+triggered when the user presses a key on the keyboard.
 
 **data value:** ASCII value of keystroke, as text script on_key_press (but lower case a-z are passed as 97..122)
 
 ##### IAGSEngine event AGSE_MOUSECLICK
 
-triggered when the user clicks a mouse button
+triggered when the user clicks a mouse button.
 
 **data value:** mouse button pressed (1=left, 2=right, 3=middle)
 
 ##### IAGSEngine event AGSE_POSTSCREENDRAW
 
-triggered after the virtual screen has been drawn each frame, but before the mouse cursor is painted and it gets copied to the screen
+triggered every frame after the entire game has been drawn each frame, but before the mouse cursor is painted on top.
 
 **data value:** _\*\* See Note 1 below_
 
@@ -249,7 +249,7 @@ triggered after the virtual screen has been drawn each frame, but before the mou
 
 _(version 4 and later only)_
 
-triggered every frame after the room background has been drawn, but before anything else
+triggered every frame right after the room background has been drawn, but before anything else.
 
 **data value:** _\*\* See Note 1 below_
 
@@ -273,7 +273,7 @@ triggered when the game position is loaded. You then use the `FRead` function to
 
 _(version 6 and later only)_
 
-triggered once the screen has been constructed, but before the GUIs have been drawn on.
+triggered every frame once the room viewports have been constructed, but before the GUIs and screen overlays have been drawn over.
 
 **data value:** _\*\* See Note 1 below_
 
@@ -289,7 +289,7 @@ triggered when the player leaves the current room, after the Player Leaves Scree
 
 _(version 6 and later only)_
 
-triggered when the player enters a new room, before the screen fades in
+triggered when the player enters a new room, before the screen fades in.
 
 **data value:** new room number
 
@@ -313,7 +313,7 @@ triggered when the screen is about to fade in as the player changes rooms. If yo
 
 _(version 12 and later only)_
 
-triggered each frame after the mouse cursor is painted and immediately before the virtual screen is copied to the screen.
+triggered every frame after the mouse cursor is painted and immediately before the game is presented on the screen.
 
 **data value:** _\*\* See Note 1 below_
 
@@ -345,7 +345,7 @@ triggered whenever a sprite is loaded into memory. This allows you to modify spr
 
 _(version 21 and later only)_
 
-triggered every frame after the game logic has run but before anything is rendered to the pre-screen sprite cache
+triggered every frame after the game logic has run but before anything is drawn.
 
 **data value:** _(unused, currently 0)_
 
@@ -365,40 +365,34 @@ triggered after a save game has been restored. By the time this event occurs, al
 
 **data value:** _(unused, currently 0)_
 
+##### IAGSEngine event AGSE_POSTROOMDRAW
+
+_(version 26 and later only)_
+
+triggered every frame *per each room camera* once the room contents have been drawn. This event allows to draw over whole room graphic layer.
+
+**data value:** _\*\* See Note 1 below_
+
 _![Info icon](images/icon_info.png)_ Each frame (or _game loop_), AGS redraws the screen from scratch. The sequence is as follows:
 
-**DX5 driver**
-
 1.  Call `AGSE_PRERENDER`
 2.  Update in-memory cache of current character and object images
-3.  Draw current background scene
-4.  Call `AGSE_PRESCREENDRAW`
-5.  Draw cached objects and characters
-6.  Call `AGSE_PREGUIDRAW`
-7.  Draw screen overlays
-8.  Draw GUIs
-9.  Call `AGSE_POSTSCREENDRAW`
+3.  Begin constructing scene (Direct3D renderer calls `BeginScene`)
+4.  Per each room viewport-camera pair:
+
+    4.1.  Draw current background scene<br>
+    4.2.  Call `AGSE_PRESCREENDRAW`<br>
+    4.3.  Draw room objects, characters and room overlays<br>
+    4.4   Call `AGSE_POSTROOMDRAW`<br>
+
+7.  Call `AGSE_PREGUIDRAW`
+8.  Draw GUIs and screen overlays
+9. Call `AGSE_POSTSCREENDRAW`
 10. Draw mouse cursor and finalize.
 11. Call `AGSE_FINALSCREENDRAW`
-12. Paste the virtual screen to the real screen
+12. Ends constructing scene and presents new frame on screen (Direct3D renderer calls `EndScene`)
 
-**D3D9 driver**
-
-1.  Call `AGSE_PRERENDER`
-2.  Update in-memory cache of current character and object images
-3.  `Direct3DDevice9->BeginScene`
-4.  Draw current background scene
-5.  Call `AGSE_PRESCREENDRAW`
-6.  Draw cached objects and characters
-7.  Call `AGSE_PREGUIDRAW`
-8.  Draw screen overlays
-9.  Draw GUIs
-10. Call `AGSE_POSTSCREENDRAW`
-11. Draw mouse cursor and finalize.
-12. Call `AGSE_FINALSCREENDRAW`
-13. `Direct3DDevice9->EndScene`
-
-**\*\* Note 1**: The `data` parameter to these events is 0 when using the DX5 driver; when using the D3D9 driver it is a pointer to the IDirect3DDevice9 that is currently being used for rendering. You can render extra primitives by calling all the normal methods on this interface.  
+**\*\* Note 1**: The `data` parameter to these events is 0 when using the Software driver; when using the D3D9 driver it is a pointer to the IDirect3DDevice9 that is currently being used for rendering. You can render extra primitives by calling all the normal methods on this interface.  
 (Interface version 20 and above only).
 
 _Added in version: 2_
