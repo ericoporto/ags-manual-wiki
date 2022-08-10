@@ -5,8 +5,8 @@ The following predefined macros and constants are available in your scripts:
 Name | Description
 --- | ---
 DEBUG | Defined if the game is being compiled in debug mode, not defined otherwise
-SCRIPT_API_vXXX | Defined if corresponding version of script API is enabled (e.g. SCRIPT_API_v340)
-SCRIPT_COMPAT_vXXX | Defined if certain compatibility level is enabled (e.g. SCRIPT_COMPAT_v321)
+SCRIPT_API_vXXX | Defined if corresponding version of script API is enabled (see the [list](Constants#script-api-levels))
+SCRIPT_COMPAT_vXXX | Defined if certain compatibility level is enabled (see the [list](Constants#script-api-levels))
 STRICT | Defined if "Enforce Object Based Scripting" is enabled, not defined otherwise
 STRICT_STRINGS | Defined if "Enforce new-style strings" is enabled, not defined otherwise
 STRICT_AUDIO | Defined if "Enforce new-style audio scripting" is enabled, not defined otherwise
@@ -64,3 +64,20 @@ you could do:
 To get the actual number of things in the game rather than the AGS
 limit, use the
 [`Game.CharacterCount`](Game#gamecharactercount)-style properties.
+
+### Script API levels
+
+Following is the list of supported values for SCRIPT_API_vXXX and SCRIPT_COMPAT_vXXX. Normally they are called after the main 3-digit version (e.g. SCRIPT_API_v350), but some refer to a later update (e.g. SCRIPT_API_v3507). Some versions of AGS do not have any distinct API level, because there were no additions or changes to script API in them.
+
+API version | API level | Compatibility level
+--- | --- | ---
+3.3.0 | SCRIPT_API_v330 | SCRIPT_COMPAT_v330
+3.3.4 | SCRIPT_API_v334 | SCRIPT_COMPAT_v334
+3.3.5 | SCRIPT_API_v335 | SCRIPT_COMPAT_v335
+3.4.0 | SCRIPT_API_v340 | SCRIPT_COMPAT_v340
+3.4.1 | SCRIPT_API_v341 | SCRIPT_COMPAT_v341
+3.5.0 Alpha | SCRIPT_API_v350 | SCRIPT_COMPAT_v350
+3.5.0 Final | SCRIPT_API_v3507 | SCRIPT_COMPAT_v3507
+3.5.1 | SCRIPT_API_v351 | SCRIPT_COMPAT_v351
+3.6.0 Alpha | SCRIPT_API_v360 | SCRIPT_COMPAT_v360
+3.6.0 Final | SCRIPT_API_v36026 | SCRIPT_COMPAT_v36026
