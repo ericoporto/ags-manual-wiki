@@ -1350,6 +1350,8 @@ Replaces the font renderer that AGS is currently using to draw the specified fon
 
 This allows you to override AGS's built-in font rendering with your own system. For example, if you didn't want to use SCI or TTF fonts, this allows you to provide a custom implementation. See further down this page for a description of the `IAGSFontRenderer` interface.
 
+_![Warning](images/icon_warn.png)_ This function is superceded by [`ReplaceFontRenderer2`](EnginePluginRun-timeAPI#iagsenginereplacefontrenderer2). We recommend you use the new function, and implement the `IAGSFontRenderer2` interface instead.
+
 _Added in version: 23_
 
 #### IAGSEngine.GetRenderStageDesc
@@ -1386,6 +1388,60 @@ _![Info icon](images/icon_info.png)_ This function is only guaranteed to return 
 _![Warning](images/icon_warn.png)_ Plugin *must* fill the struct's Version field before passing it into the function.
 
 _Added in version: 25_
+
+#### IAGSEngine.GetGameInfo
+```
+void GetGameInfo(AGSGameInfo* ginfo)
+```
+
+Fills the provided `AGSGameInfo` struct with the game's description. `AGSGameInfo` is declared as:
+
+```
+// Game info
+struct AGSGameInfo {
+  // Which version of the plugin interface the struct corresponds to;
+  // this field must be filled by a plugin before passing the struct into the engine!
+  int Version;
+  // Game title (human-readable text)
+  char GameName[50];
+  // Game's GUID
+  char Guid[40];
+  // Random key identifying the game (deprecated)
+  int UniqueId;
+};
+```
+
+AGSGameInfo's first field is `Version`, which must be filled by the plugin itself *before* calling this function. This field's value corresponds to the required engine's interface and tells which struct's fields should be assigned by the engine. It should be 26 or higher for this function to have any effect at all.
+
+The rest of the fields are for informational purposes. GameName is a human-readable game's title, which is displayed on the game window's caption. Its value corresponds to the [`Game.Name`](Game#gamename) script property. Guid is a unique string identifying the game. UniqueId is a deprecated game's identifier, which was used in the older versions of AGS. It may be refered to in case Guid is empty.
+
+_![Warning](images/icon_warn.png)_ Plugin *must* fill the struct's Version field before passing it into the function.
+
+_Added in version: 26_
+
+#### IAGSEngine.ReplaceFontRenderer2
+```
+IAGSFontRenderer* ReplaceFontRenderer2(int fontNumber, IAGSFontRenderer2* newRenderer)
+```
+
+Replaces the font renderer that AGS is currently using to draw the specified font with one of your own. The previously used renderer is returned.
+
+This allows you to override AGS's built-in font rendering with your own custom implementation.
+
+This function supercedes [`ReplaceFontRenderer`](EnginePluginRun-timeAPI#iagsenginereplacefontrenderer) and allows to install an extended renderer type, which implements [`IAGSFontRenderer2`](EnginePluginRun-timeAPI#iagsfontrenderer2-interface) interface (see further down this page for its description).
+
+_![Info icon](images/icon_info.png)_ The old renderer is still returned as a pointer to the base interface `IAGSFontRenderer`. This is to keep things compatible in case someone sets an old interface, so that this pointer could be used to set it back if necessary (in which case you need to use `ReplaceFontRenderer`). The engine is capable of detecting when the pointer refers to one of the internal renderers, and convert it as necessary. If you would like to tell if the returned pointer refers to one of the plugin's own renderers, you may do so by comparing the memory addresses, for example.
+
+_Added in version: 26_
+
+#### IAGSEngine.NotifyFontUpdated
+```
+void NotifyFontUpdated(int fontNumber)
+```
+
+Notifies the engine about the certain font being modified. This is useful when you implement your own custom font loading and rendering (see [`ReplaceFontRenderer2`](EnginePluginRun-timeAPI#iagsenginereplacefontrenderer2)). When you tell the engine that the font has changed, it recalculates font metrics by quering the active font renderer about font's parameters, and forces game GUI to redraw.
+
+_Added in version: 26_
 
 ### IAGSScriptManagedObject interface
 
@@ -1522,3 +1578,54 @@ AGS calls this method prior to actually rendering text, and allows you to check 
 By default, you should implement this method so that it does nothing.
 
 _Added in version: 23_
+
+### IAGSFontRenderer2 interface
+
+The `IAGSFontRenderer2` interface is an extension to the `IAGSFontRenderer`, therefore contains all the parent's methods, but also adds a number of its own:
+
+#### IAGSFontRenderer2.GetVersion
+```
+int GetVersion();
+```
+
+Tells the engine API version to which this renderer implementation corresponds to. This is a very important method, as engine will use it to know what functionality of this interface is safe to use. The return value must not be lower than 26 (as this is the first version in which this interface was introduced).
+
+_![Warning](images/icon_warn.png)_ You must make sure your renderer returns a correct version, corresponding to which version of interface you implement, otherwise engine may try calling non-existing methods and crash.
+
+_Added in version: 26_
+
+#### IAGSFontRenderer2.GetRendererName
+```
+const char *GetRendererName();
+```
+
+Returns the name of this renderer implementation. This is for informational purposes only. Engine may use this method, for example, to print current active font renderer names into the log.
+
+_Added in version: 26_
+
+#### IAGSFontRenderer2.GetFontName
+```
+const char *GetFontName(int fontNumber);
+```
+
+Returns the name of the given font, if it's supported. Should return an empty string or null otherwise. This is for informational purposes only.
+
+_Added in version: 26_
+
+#### IAGSFontRenderer2.GetFontHeight
+```
+int GetFontHeight(int fontNumber);
+```
+
+Returns the font's height. This method supercedes `IAGSFontRenderer.GetTextHeight`, and does not require to pass a string. The returned height should be a maximal height the font may occupy.
+
+_Added in version: 26_
+
+#### IAGSFontRenderer2.GetLineSpacing
+```
+int GetLineSpacing(int fontNumber);
+```
+
+Returns the font's custom line spacing, if any. Return 0 to tell that the font does not have any particular line spacing set, in which case font's height will be used instead.
+
+_Added in version: 26_
