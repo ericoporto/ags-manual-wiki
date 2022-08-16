@@ -5,7 +5,7 @@ In AGS script you have a `eKeyCode` enumeration that defines key codes. These ke
 
 Historically AGS has Ctrl+X key combinations have their own distinct keycodes. At the same time, keycodes corresponding to the modifier keys (Shift, Ctrl and Alt) were never passed to the [`on_key_press`](Globalfunctions_Event#on_key_press) alone and were only allowed with [`IsKeyPressed`](Globalfunctions_General#iskeypressed).
 
-Starting from version 3.6.0 AGS supports two ["key handling modes"](UpgradeTo36#changes-to-key-input-handling). The old mode works as described above, according to the historical behavior. The new mode actually allows modifier keycodes in `on_key_press`, and disables combined keycodes like Ctrl+X: instead these are passed as two separate keycodes.
+Starting from version **3.6.0** AGS supports two ["key handling modes"](UpgradeTo36#changes-to-key-input-handling). The old mode works as described above, according to the historical behavior. The new mode actually allows modifier keycodes in `on_key_press`, and disables combined keycodes like Ctrl+X: instead these are passed as two separate keycodes.
 
 Following section lists the members of this enum, and which keys they represent.
 
@@ -142,9 +142,11 @@ process player input. For example:
     if (keycode == eKeyA) Display("You pressed A");
     if (keycode == eKeyPlus) Display("You pressed the Plus key");
 
+*Compatibility:* the mod key constants (eKeyShiftLeft to eKeyAltRight) are only supported since AGS 3.6.0. In previous versions you'd have to use corresponding numeric values.
+
 ### Key modifiers
 
-In addition, there's separate `eKeyMod` enumeration with modifier "flags". These values are special so that they may be combined in one variable to make a list of modifiers (like, Shift + Ctrl). This enumeration is supported since AGS 3.6.0. Following is the list of possible values:
+In addition, there's separate `eKeyMod` enumeration with modifier "flags". These values are special so that they may be combined in one variable to make a list of modifiers (like, Shift + Ctrl). This enumeration is supported since **AGS 3.6.0**. Following is the list of possible values:
 
 AGS modifier | Mod |
 --- | --- 
@@ -186,3 +188,5 @@ If both key code and mods are combined in one integer variable, using bitwise op
 
     int keycode = combokey & eKeyCodeMask; // keycode now contains only eKeyA
     int keymod = combokey & eKeyModMask; // keymod now contains only eKeyModCtrlLeft
+
+*Compatibility:* eKeyMod enumeration is only supported since AGS 3.6.0.
