@@ -54,6 +54,8 @@ dialog.
 lines signify that AGS should interpret the line as a normal scripting
 command rather than a dialog scripting command (see below).
 
+### Dialog commands
+
 The dialog commands available are:
 
 -   **goto-dialog X**<br>
@@ -78,7 +80,7 @@ The dialog commands available are:
 -   **stop**<br>
     Stops the conversation and returns the player to the game.
 
-**Substituting dialog speech with custom functions**
+### Substituting dialog speech with custom functions
 
 By default all of the character dialog lines are executed using the standard function Character.Say. Since AGS 3.5.0 it is possible to define a custom script function as a substitute instead. This is done using "Custom Say function in dialog scripts" option in the General Settings. Similarly, narration (which is by default done using Display script function) may be substituted with a custom one using "Custom Narrate function in dialog scripts".
 
@@ -100,7 +102,7 @@ If you still want to have player pronounce dialog option text, one of the soluti
 
 If you wonder how such function will work in dialogs, see the following topic below.
 
-**Using scripting commands in dialogs**
+### Using regular scripting commands in dialogs
 
 Often the provided dialog scripting commands won't be enough for what
 you want to do in the dialog. You might want to give the player an
