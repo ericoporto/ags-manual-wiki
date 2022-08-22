@@ -292,9 +292,9 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
     enum InputType
     {
         eInputNone     = 0x00000000,
-        eInputKeyboard = 0x00020000,
-        eInputMouse    = 0x00040000,
-        eInputAny      = 0xFFFF0000
+        eInputKeyboard = 0x02000000,
+        eInputMouse    = 0x04000000,
+        eInputAny      = 0xFF000000
     };
 
 The InputType enumeration consists of values that could be summed up in one integer variable to form a combination of input types. This may be used to store several "types" in one integer, pass them into a function, or return from a function. You may use bitwise operation to check if a variable contains one of the distinct types, for example:
