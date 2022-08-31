@@ -399,6 +399,8 @@ Gets/sets if the system mouse cursor is automatically locked in the game window 
 
 **NOTE:** the player may toggle mouse lock on and off anytime using **Ctrl + Alt** key combination; but that does not disable autolock on click.
 
+*Compatibility:* Supported by **AGS 3.6.0** and later versions.
+
 ---
 
 ### `Mouse.ControlEnabled`
