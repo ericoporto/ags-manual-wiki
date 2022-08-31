@@ -99,30 +99,6 @@ This will simulate user click at (100,100).
 
 ---
 
-### `Mouse.ControlEnabled`
-
-    static bool Mouse.ControlEnabled;
-
-Gets/sets if the mouse cursor movement has to be controlled by AGS
-engine; otherwise it is controlled by operation system. Note that in practice mouse is only controlled when the game is run in fullscreen mode.
-
-This setting may be useful to know if custom mouse speed setting is
-applied or not.
-
-Example:
-
-    sldMouseSpeed.Visible = Mouse.ControlEnabled;
-
-makes mouse speed slider visible only if the mouse is controlled by the
-game.
-
-*Compatibility:* Supported by **AGS 3.3.5** and later versions.<br>
-Settable since **AGS 3.5.0**.
-
-*See also:* [`Mouse.Speed`](Mouse#mousespeed)
-
----
-
 ### `Mouse.DisableMode`
 
 *(Formerly known as `DisableCursorMode`, which is now obsolete)*
@@ -351,43 +327,6 @@ will place the mouse cursor in the center of the screen.
 
 ---
 
-### `Mouse.Speed`
-
-    static float Mouse.Speed;
-
-Gets/sets in-game mouse cursor speed. 1.0 is default, values in the
-range 0-1 make cursor movement slower, values higher than 1 make cursor
-movement faster.
-
-Mouse speed changed this way will be saved to the configuration file
-when player exits the game. Next time game starts it will restore the
-last value you applied, unless player has modified it in the setup
-program.
-
-The custom mouse speed is only applied if mouse cursor movement is
-currently being controlled by the game, which is usually true only when
-game is run in fullscreen mode. Setting this property has no effect
-otherwise. You can use
-[`Mouse.ControlEnabled`](Mouse#mousecontrolenabled) to know if speed
-will be applied.
-
-**NOTE:** It is strongly advised to **NEVER** use this parameter to
-achieve gameplay effect (such as character's loss of coordination, and
-so forth).
-
-Example:
-
-    Mouse.Speed = IntToFloat(sldMouseSpeed.Value) / 10.0;
-
-converts slider control's position into mouse speed.
-
-*Compatibility:* Supported by **AGS 3.3.5** and later versions.
-
-*See also:* [`Mouse.ControlEnabled`](Mouse#mousecontrolenabled),
-[`Mouse.SetPosition`](Mouse#mousesetposition)
-
----
-
 ### `Mouse.Update`
 
 *(Formerly known as `RefreshMouse`, which is now obsolete)*
@@ -450,6 +389,30 @@ Cursors tab.
 
 ---
 
+### `Mouse.ControlEnabled`
+
+    static bool Mouse.ControlEnabled;
+
+Gets/sets if the mouse cursor movement has to be controlled by AGS
+engine; otherwise it is controlled by operation system. Note that in practice mouse is only controlled when the game is run in fullscreen mode.
+
+This setting may be useful to know if custom mouse speed setting is
+applied or not.
+
+Example:
+
+    sldMouseSpeed.Visible = Mouse.ControlEnabled;
+
+makes mouse speed slider visible only if the mouse is controlled by the
+game.
+
+*Compatibility:* Supported by **AGS 3.3.5** and later versions.<br>
+Settable since **AGS 3.5.0**.
+
+*See also:* [`Mouse.Speed`](Mouse#mousespeed)
+
+---
+
 ### `Mouse.Mode`
 
 *(Formerly known as `GetCursorMode`, which is now obsolete)*<br>
@@ -478,6 +441,43 @@ will execute the code only if the current cursor mode is MODE 0 (WALK).
 [`Mouse.SaveCursorUntilItLeaves`](Mouse#mousesavecursoruntilitleaves),
 [`Mouse.UseModeGraphic`](Mouse#mouseusemodegraphic),
 [`Mouse.SelectNextMode`](Mouse#mouseselectnextmode)
+
+---
+
+### `Mouse.Speed`
+
+    static float Mouse.Speed;
+
+Gets/sets in-game mouse cursor speed. 1.0 is default, values in the
+range 0-1 make cursor movement slower, values higher than 1 make cursor
+movement faster.
+
+Mouse speed changed this way will be saved to the configuration file
+when player exits the game. Next time game starts it will restore the
+last value you applied, unless player has modified it in the setup
+program.
+
+The custom mouse speed is only applied if mouse cursor movement is
+currently being controlled by the game, which is usually true only when
+game is run in fullscreen mode. Setting this property has no effect
+otherwise. You can use
+[`Mouse.ControlEnabled`](Mouse#mousecontrolenabled) to know if speed
+will be applied.
+
+**NOTE:** It is strongly advised to **NEVER** use this parameter to
+achieve gameplay effect (such as character's loss of coordination, and
+so forth).
+
+Example:
+
+    Mouse.Speed = IntToFloat(sldMouseSpeed.Value) / 10.0;
+
+converts slider control's position into mouse speed.
+
+*Compatibility:* Supported by **AGS 3.3.5** and later versions.
+
+*See also:* [`Mouse.ControlEnabled`](Mouse#mousecontrolenabled),
+[`Mouse.SetPosition`](Mouse#mousesetposition)
 
 ---
 
