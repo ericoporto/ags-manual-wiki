@@ -389,6 +389,18 @@ Cursors tab.
 
 ---
 
+### `Mouse.AutoLock`
+
+    static bool Mouse.AutoLock;
+
+Gets/sets if the system mouse cursor is automatically locked in the game window when the player clicks in it. The "locked" cursor will not be able to leave the bounds of the window. This is useful when playing a game in a windowed mode, preventing occasional misclicks outside that could lead to switching out of the game.
+
+**NOTE:** it is strongly advised to not set this property unconditionally, but instead make a menu option in game where player could set this to their preference.
+
+**NOTE:** the player may toggle mouse lock on and off anytime using **Ctrl + Alt** key combination; but that does not disable autolock on click.
+
+---
+
 ### `Mouse.ControlEnabled`
 
     static bool Mouse.ControlEnabled;
