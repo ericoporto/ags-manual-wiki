@@ -10,14 +10,14 @@ You also need to remember that currently in AGS a script may only see things dec
 
 All script functions are exported automatically, so they only need an import declaration to let other scripts know that they exist. This is done by declaring a function with an [`import`](ScriptKeywords#import) keyword. The best practice is to place them in the owner script's header.
 
-For example, suppose you have the following function in script MyScript:
+For example, suppose you have the following function in script MyScript.asc:
 
     function ScriptAFunction(int param1, int param2)
     {
         // some actions here
     }
 
-Then the import declaration in the MyScript's header should looks like:
+Then the import declaration in the MyScript's header (MyScript.ash) should looks like:
 
     import function ScriptAFunction(int param1, int param2);
 
@@ -27,11 +27,11 @@ The name, type and arguments of the function must be the same, otherwise there w
 
 Script variables are not exported by default, so that has to be done explicitly inside the script which has them declared, using the [`export`](ScriptKeywords#export) keyword.
 
-Let's suppose that you have the following variable inside MyScript:
+Let's suppose that you have the following variable inside MyScript.asc:
 
     int public_variable;
 
-If you want to share this variable with the other scripts, you have put the `export` statement *inside the same script where you have declared the variable* (MyScript), somewhere below the declaration:
+If you want to share this variable with the other scripts, you have put the `export` statement *inside the same script where you have declared the variable* (MyScript.asc), somewhere below the declaration:
 
     export public_variable;
 
@@ -41,7 +41,7 @@ You can export several variables in one statement if you separate their names wi
 
     export public_variable1, public_variable2;
 
-Now, import declaration in the MyScript's header should looks like:
+Now, import declaration in the MyScript's header (MyScript.ash) should looks like:
 
     import int public_variable;
 
@@ -58,9 +58,9 @@ Similar to the regular variable declaration, you can declare the import of sever
 
     import int var1, var2;
 
-**NOTE:** Most commonly import declarations are put in the header of the same script where these variables are defined. But in theory you may not do that and instead place imports inside each particular script where you intend to use these variables.
+**NOTE:** Most commonly import declarations are put in the *header* of the same script where these variables are defined. But in theory you may not do that and instead place imports inside each particular script where you intend to use these variables.
 
-So, for a final example, you have this in MyScript.asc:
+So, for a final example, you have this in **MyScript.asc**:
 
     int public_int1, public_int2;
     int arr[10];
@@ -68,7 +68,7 @@ So, for a final example, you have this in MyScript.asc:
     Character* RandomChar;
     export public_int1, public_int2, arr, someString, RandomChar;
 
-And in MyScript.ash:
+And in **MyScript.ash**:
 
     import int public_int1, public_int2;
     import int arr[10];
