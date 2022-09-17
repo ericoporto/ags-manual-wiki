@@ -278,7 +278,7 @@ default is 0, which is centered and will play at the same volume on both
 speakers. However you can adjust this between -100 (fully left) to 100
 (fully right) to adjust the balance between the speakers.
 
-**NOTE:** MIDI music files do not support panning.
+**IMPORTANT:** only mono clips support panning at the moment.
 
 Example:
 
