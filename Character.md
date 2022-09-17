@@ -139,19 +139,19 @@ Changes the room that the character is in.
 If you call this on the player character, then the game will move into
 the new room with them.
 
-**IMPORTANT:** This command does not change the room immediately;
-instead, it will perform the actual room change once your script
+**IMPORTANT:** For *player* character this command does not change the room immediately;
+instead, it will schedule the room change, and perform it only once your script
 function has finished (This is to avoid problems with unloading the
 script while it is still running). This means that you should not use
 any other commands which rely on the new room (object positionings, and
 so on) after this command within the same function.
 
-If you call this on a non-player character, then they are instantly
+If you call this on a *non-player* character, then they are instantly
 transported to the new room number.
 
 Optionally, you can include an X and Y co-ordinate (you must include
 either both or neither). If you do so, then the character will also be
-moved to the specified co-ordinates in the new room.
+moved to the specified co-ordinates in the new room. If you do not supply these parameters, then the character's latest X and Y position will be carried over.
 
 Optionally, you can also include direction parameter, that determines
 which direction this character will be facing after room change.
