@@ -4,16 +4,20 @@ The Camera struct lets you manage room cameras. Each camera may be considered a 
 
 Cameras have a variable size and position within the room. The camera's size (i.e. the viewing rectangle) is linked to how much of the room they can see, the larger the size the larger the visible portion of the room. The maximum camera size is determined by the dimensions of the room background, so it may not be larger than the room. It is not possible to move the camera beyond the edges of the room background, even by a pixel.
 
-By default there is a single camera, known as the "primary camera", and you may create more. Note that, although cameras display the room, in their current implementation they are considered global persistent objects and will automatically change rooms with the player's character.
+By default there is a single camera, known as the "primary camera". This camera may be accessed as [`Game.Camera`](Game#gamecamera). But you may create more cameras if necessary, using [`Camera.Create`](Camera#cameracreate).
 
 Cameras are linked to a Viewport using the [`Viewport.Camera`](Viewport#viewportcamera) property. A camera may be linked to any number of different Viewports, in which case all of the Viewports will display the same image of the room. When a camera is linked to a Viewport the camera's contents are stretched to fill Viewport's rectangle, the difference in size between the viewport and the camera determines the level of scaling that is applied:
 
 * If the camera is larger than the viewport the displayed image will be zoomed-out (scaled down)
 * If the camera is smaller than the viewport the displayed image will be zoomed-in (scaled up)
 
-By default each camera follows the player character, this is know as "auto-tracking". You may override this by disabling [`Camera.AutoTracking`](Camera#cameraautotracking) property.
+Camera's X, Y properties specify the position if its *top-left corner* in the room. Naturally, its bottom-right corner will be at (X + Width, Y + Height), while the center at (X + Width / 2, Y + Height / 2).
 
-**IMPORTANT:** Cameras are initialized with an automatic sizing mode that snaps the primary Viewport and the camera to the size of the game screen or size of a room background (whichever is *smaller*), each time that a new room is loaded. This is convenient if you want to rely on a common behavior. If you prefer to manage the sizing  yourself this behavior may be disabled using the [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload) property.
+By default each camera follows the player character, this is know as "auto-tracking". You may override this by disabling [`Camera.AutoTracking`](Camera#cameraautotracking) property. Also, auto-tracking is disabled whenever you manually set camera's position. In order to make it follow the player character again, set AutoTracking to true.
+
+**NOTE:** although cameras display the room, in their current implementation they are considered global persistent objects and will automatically change rooms with the player's character.
+
+**IMPORTANT:** Cameras are initialized with an automatic sizing mode that snaps the primary Viewport and the camera to the size of the game screen or size of a room background (whichever is *smaller*), each time that a new room is loaded. This is convenient if you want to rely on a standard camera behavior. If you prefer to manage the sizing  yourself this behavior may be disabled using the [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload) property.
 
 *Compatibility:* The Camera struct is supported by **AGS 3.5.0** and later versions.
 
@@ -25,8 +29,22 @@ By default each camera follows the player character, this is know as "auto-track
 
     static Camera* Camera.Create();
 
-Creates a new camera and returns a pointer which you may use to operate it. Any camera created like this may be also accessed at [`Game.Cameras`](Game#gamecameras) by index.
+Creates a new camera and returns a pointer which you may store in a variable (local or global one) and use to operate it. Any camera created like this is also added to the global array [`Game.Cameras`](Game#gamecameras) and may be also accessed by its index.
+
 The new camera will, by default, be located at the room's origin (0, 0) and be sized to fit either the game screen or the room background, whichever is *smaller*. It will also have auto-tracking enabled. You may change any of its properties later.
+
+You may always delete previously created cameras using [`Camera.Delete`](Camera#cameradelete) function.
+
+Example:
+
+    // Create a new camera
+    Camera* myCam = Camera.Create();
+    // Set this camera's size to half of the current room's size
+    myCam.SetSize(Room.Width / 2, Room.Height / 2);
+    // Set this camera's position to the center of the room
+    myCam.SetAt((Room.Width - myCam.Width) / 2, (Room.Height - myCam.Height) / 2);
+    // Assign the new camera to the primary viewport
+    Screen.Viewport.Camera = myCam;
 
 *See also:* [`Camera.Delete`](Camera#cameradelete), [`Game.Camera`](Game#gamecamera), [`Game.Cameras`](Game#gamecameras), [`Viewport.Camera`](Viewport#viewportcamera)
 
@@ -36,11 +54,35 @@ The new camera will, by default, be located at the room's origin (0, 0) and be s
 
     void Camera.Delete();
 
-Removes an existing camera.
+Removes an existing camera. This also removes this camera's pointer from [`Game.Cameras`](Game#gamecameras) array.
 
-**IMPORTANT:** The "primary camera" can be never removed and calling this function on it will have no effect.
+It's always *safe* to delete a camera. If this camera was linked to a Viewport on screen, then that Viewport will automatically unlink the deleted camera and will not show anything until a new camera is assigned to it.
 
 **IMPORTANT:** In the **Game.Cameras** array cameras are arranged in the order they were created. If you delete one from the middle all of the cameras with a higher index will be shifted towards the beginning of array.
+
+Example:
+
+    // Create and setup a temporary camera
+    Camera* myCam = Camera.Create();
+    myCam.SetSize(Room.Width / 2, Room.Height / 2);
+    myCam.SetAt(0, 0);
+    // Save the old camera in a temp variable
+    Camera* oldCam = Screen.Viewport.Camera;
+    // Assign the new camera to the primary viewport
+    Screen.Viewport.Camera = myCam;
+    
+    // Scroll the new camera across the room
+    while (myCam.X < (Room.Width - myCam.Width) ||
+           myCam.Y < (Room.Height - myCam.Height))
+    {
+        myCam.SetAt(myCam.X + 1, myCam.Y + 1);
+        Wait(1);
+    }
+    
+    // Delete the camera and reset the old camera back
+    myCam.Delete();
+    Screen.Viewport.Camera = oldCam;
+
 
 *See also:* [`Camera.Create`](Camera#cameracreate), [`Game.Camera`](Game#gamecamera), [`Game.Cameras`](Game#gamecameras)
 
@@ -51,6 +93,15 @@ Removes an existing camera.
     void Camera.SetAt(int x, int y);
 
 Changes the camera's position in the room and disables automatic tracking of the player character.
+
+**NOTE:** camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
+
+Example:
+
+    // Center the primary camera around the Pirate character's middle point
+    ViewFrame* curFrame = Game.GetViewFrame(cPirate.View, cPirate.Loop, cPirate.Frame);
+    Game.Camera.SetAt(cPirate.x, cPirate.y - Game.SpriteHeight[curFrame.Graphic] / 2);
+    
 
 *See also:* [`Camera.SetSize`](Camera#camerasetsize), [`Camera.AutoTracking`](Camera#cameraautotracking), [`Camera.X`](Camera#camerax), [`Camera.Y`](Camera#cameray), [`Camera.Width`](Camera#camerawidth), [`Camera.Height`](Camera#cameraheight)
 
@@ -64,6 +115,28 @@ Changes the camera's capture dimensions, in room coordinates.
 
 If the camera's size is larger than the Viewport it is drawn in, then the room will be scaled down (producing a zoomed-out effect). If the camera's size is smaller than the Viewport then the room will be scaled up (producing a zoomed-in effect).
 
+**NOTE:** camera's size can never exceed current room's size, if you try to set a higher width or height then it will be clamped. If game transits from a large room to a smaller room, any active cameras that exceed the new room's size will be shrunk automatically.
+
+Example 1:
+
+    // Make the camera show only half of the room's size
+    Game.Camera.SetSize(Room.Width / 2, Room.Height / 2);
+
+Example 2:
+
+    // Zoom camera in and then out
+    while (Game.Camera.Width > Room.Width / 4)
+    {
+        Game.Camera.SetSize(Game.Camera.Width - 2, Game.Camera.Height - 2);
+        Wait(4);
+    }
+    Wait(60);
+    while (Game.Camera.Width < Room.Width)
+    {
+        Game.Camera.SetSize(Game.Camera.Width + 2, Game.Camera.Height + 2);
+        Wait(4);
+    }
+
 *See also:* [`Camera.SetAt`](Camera#camerasetat), [`Camera.X`](Camera#camerax), [`Camera.Y`](Camera#cameray), [`Camera.Width`](Camera#camerawidth), [`Camera.Height`](Camera#cameraheight), [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload)
 
 ---
@@ -73,6 +146,17 @@ If the camera's size is larger than the Viewport it is drawn in, then the room w
     bool Camera.AutoTracking;
 
 Gets/sets whether this camera will automatically follow the player character's position in the room. When disabled, the camera retains its position until you change it using script commands or turn auto-tracking back on.
+
+Example:
+
+    // Scroll the camera across the room
+    while (Game.Camera.X < (Room.Width - Game.Camera.Width))
+    {
+        Game.Camera.X += 1;
+        Wait(1);
+    }
+    // Snap back to player character and begin tracking it again
+    Game.Camera.AutoTracking = true;
 
 *See also:* [`Camera.SetAt`](Camera#camerasetat), [`Camera.X`](Camera#camerax), [`Camera.Y`](Camera#cameray)
 
@@ -84,6 +168,8 @@ Gets/sets whether this camera will automatically follow the player character's p
 
 Gets/sets the camera's capture height in room coordinates.
 
+**NOTE:** camera's size can never exceed current room's size, if you try to set a higher width or height then it will be clamped. If game transits from a large room to a smaller room, any active cameras that exceed the new room's size will be shrunk automatically.
+
 *See also:* [`Camera.SetAt`](Camera#camerasetat), [`Camera.SetSize`](Camera#camerasetsize), [`Camera.X`](Camera#camerax), [`Camera.Y`](Camera#cameray), [`Camera.Width`](Camera#camerawidth), [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload)
 
 ---
@@ -93,6 +179,8 @@ Gets/sets the camera's capture height in room coordinates.
     int Camera.Width;
 
 Gets/sets the camera's capture width in room coordinates.
+
+**NOTE:** camera's size can never exceed current room's size, if you try to set a higher width or height then it will be clamped. If game transits from a large room to a smaller room, any active cameras that exceed the new room's size will be shrunk automatically.
 
 *See also:* [`Camera.SetAt`](Camera#camerasetat), [`Camera.SetSize`](Camera#camerasetsize), [`Camera.X`](Camera#camerax), [`Camera.Y`](Camera#cameray), [`Camera.Height`](Camera#cameraheight), [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload)
 
@@ -104,6 +192,17 @@ Gets/sets the camera's capture width in room coordinates.
 
 Gets/sets the X position of this camera in the room. Setting a value will also disable auto-tracking.
 
+**NOTE:** camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
+
+Example:
+
+    // Scroll the camera across the room horizontally
+    while (Game.Camera.X < (Room.Width - Game.Camera.Width))
+    {
+        Game.Camera.X += 1;
+        Wait(1);
+    }
+
 *See also:* [`Camera.SetAt`](Camera#camerasetat), [`Camera.SetSize`](Camera#camerasetsize), [`Camera.AutoTracking`](Camera#cameraautotracking), [`Camera.Y`](Camera#cameray), [`Camera.Width`](Camera#camerawidth), [`Camera.Height`](Camera#cameraheight)
 
 ---
@@ -113,5 +212,16 @@ Gets/sets the X position of this camera in the room. Setting a value will also d
     int Camera.Y;
 
 Gets/sets the Y position of this camera in the room. Setting a value will also disable auto-tracking.
+
+**NOTE:** camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
+
+Example:
+
+    // Scroll the camera across the room vertically
+    while (Game.Camera.Y < (Room.Height - Game.Camera.Height))
+    {
+        Game.Camera.Y += 1;
+        Wait(1);
+    }
 
 *See also:* [`Camera.SetAt`](Camera#camerasetat), [`Camera.SetSize`](Camera#camerasetsize), [`Camera.AutoTracking`](Camera#cameraautotracking), [`Camera.X`](Camera#camerax), [`Camera.Width`](Camera#camerawidth), [`Camera.Height`](Camera#cameraheight)
