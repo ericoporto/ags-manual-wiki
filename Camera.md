@@ -15,7 +15,7 @@ Camera's X, Y properties specify the position if its *top-left corner* in the ro
 
 By default each camera follows the player character, this is know as "auto-tracking". You may override this by disabling [`Camera.AutoTracking`](Camera#cameraautotracking) property. Also, auto-tracking is disabled whenever you manually set camera's position. In order to make it follow the player character again, set AutoTracking to true.
 
-**NOTE:** although cameras display the room, in their current implementation they are considered global persistent objects and will automatically change rooms with the player's character.
+**NOTE:** Although cameras display the room, in their current implementation they are considered global persistent objects and will automatically change rooms with the player's character.
 
 **IMPORTANT:** Cameras are initialized with an automatic sizing mode that snaps the primary Viewport and the camera to the size of the game screen or size of a room background (whichever is *smaller*), each time that a new room is loaded. This is convenient if you want to rely on a standard camera behavior. If you prefer to manage the sizing  yourself this behavior may be disabled using the [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload) property.
 
@@ -94,7 +94,7 @@ Example:
 
 Changes the camera's position in the room and disables automatic tracking of the player character.
 
-**NOTE:** camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
+**NOTE:** Camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
 
 Example:
 
@@ -115,7 +115,7 @@ Changes the camera's capture dimensions, in room coordinates.
 
 If the camera's size is larger than the Viewport it is drawn in, then the room will be scaled down (producing a zoomed-out effect). If the camera's size is smaller than the Viewport then the room will be scaled up (producing a zoomed-in effect).
 
-**NOTE:** camera's size can never exceed current room's size, if you try to set a higher width or height then it will be clamped. If game transits from a large room to a smaller room, any active cameras that exceed the new room's size will be shrunk automatically.
+**NOTE:** Camera's size can never exceed current room's size, if you try to set a higher width or height then it will be clamped. If game transits from a large room to a smaller room, any active cameras that exceed the new room's size will be shrunk automatically.
 
 Example 1:
 
@@ -168,7 +168,7 @@ Example:
 
 Gets/sets the camera's capture height in room coordinates.
 
-**NOTE:** camera's size can never exceed current room's size, if you try to set a higher width or height then it will be clamped. If game transits from a large room to a smaller room, any active cameras that exceed the new room's size will be shrunk automatically.
+**NOTE:** Camera's size can never exceed current room's size, if you try to set a higher width or height then it will be clamped. If game transits from a large room to a smaller room, any active cameras that exceed the new room's size will be shrunk automatically.
 
 *See also:* [`Camera.SetAt`](Camera#camerasetat), [`Camera.SetSize`](Camera#camerasetsize), [`Camera.X`](Camera#camerax), [`Camera.Y`](Camera#cameray), [`Camera.Width`](Camera#camerawidth), [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload)
 
@@ -180,7 +180,7 @@ Gets/sets the camera's capture height in room coordinates.
 
 Gets/sets the camera's capture width in room coordinates.
 
-**NOTE:** camera's size can never exceed current room's size, if you try to set a higher width or height then it will be clamped. If game transits from a large room to a smaller room, any active cameras that exceed the new room's size will be shrunk automatically.
+**NOTE:** Camera's size can never exceed current room's size, if you try to set a higher width or height then it will be clamped. If game transits from a large room to a smaller room, any active cameras that exceed the new room's size will be shrunk automatically.
 
 *See also:* [`Camera.SetAt`](Camera#camerasetat), [`Camera.SetSize`](Camera#camerasetsize), [`Camera.X`](Camera#camerax), [`Camera.Y`](Camera#cameray), [`Camera.Height`](Camera#cameraheight), [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload)
 
@@ -192,7 +192,7 @@ Gets/sets the camera's capture width in room coordinates.
 
 Gets/sets the X position of this camera in the room. Setting a value will also disable auto-tracking.
 
-**NOTE:** camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
+**NOTE:** Camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
 
 Example:
 
@@ -213,7 +213,7 @@ Example:
 
 Gets/sets the Y position of this camera in the room. Setting a value will also disable auto-tracking.
 
-**NOTE:** camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
+**NOTE:** Camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
 
 Example:
 
