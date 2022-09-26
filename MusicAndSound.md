@@ -89,7 +89,7 @@ plays the audio clip called *aExplosion*.
 
 **Priorities and channels**
 
-AGS currently has an 8-channel audio system, which means that up to 8
+AGS currently has an 16-channel audio system, which means that up to 16
 sounds can be playing at the same time. One channel is always reserved for the speech voice-over and you cannot change that, so you have 7 at your disposal. By default Audio Types reserve one channel for music and one for
 ambient sounds; thus leaving 5 available for other types, but you can change that to your needs.
 
