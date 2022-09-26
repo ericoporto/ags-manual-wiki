@@ -90,10 +90,10 @@ plays the audio clip called *aExplosion*.
 **Priorities and channels**
 
 AGS currently has an 16-channel audio system, which means that up to 16
-sounds can be playing at the same time. One channel is always reserved for the speech voice-over and you cannot change that, so you have 7 at your disposal. By default Audio Types reserve one channel for music and one for
-ambient sounds; thus leaving 5 available for other types, but you can change that to your needs.
+sounds can be playing at the same time. One channel is always reserved for the speech voice-over and you cannot change that, so you have 15 at your disposal. By default Audio Types reserve one channel for music and one for
+ambient sounds; thus leaving 13 available for other types, but you can change that to your needs.
 
-**NOTE:** Because total number of channels is a constant, AGS does not guarantee to reserve exactly as many channels as you set. Channels are reserved in the order of types in the project, so if you set "MaxChannels" to 5 for music and 5 for sounds, then at runtime the game will reserve 5 for music and only 2 remaining for sounds.
+**NOTE:** Because total number of channels is a constant, AGS does not guarantee to reserve exactly as many channels as you set. Channels are reserved in the order of types in the project, so if you set "MaxChannels" to 9 for music and 9 for sounds, then at runtime the game will reserve 9 for music and only 6 remaining for sounds.
 
 If you try to play an audio clip and there are no channels available,
 then an existing one will be stopped and the new one will take its
