@@ -3,7 +3,9 @@
 The engine (also called the "interpreter") is what runs your game and is
 what the player will use.
 
-You can use any port of the AGS runtime on any available system to run an AGS game data. Desktop systems, like Windows, Linux and MacOS offer a command line interface.
+You can use any port of the AGS runtime on any available system to run an AGS game data. 
+
+Desktop systems, like Windows, Linux and MacOS offer a command line interface.
 
 On Android, there's a special version of the runtime called AGS Player, and it's available with AGS releases. The web version of AGS, also can be used as a runtime, but currently it offers no graphical setup options. 
 
