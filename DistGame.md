@@ -88,7 +88,7 @@ You can make a "Loading..." style splash screen to be displayed while your game 
 Some people found that once their game became large, the single EXE file
 was slow to load due to anti-virus checkers scanning the whole file. AGS
 includes an option to split up the resource files into smaller chunks to
-avoid this happening. On the General Settings pane you'll notice a
+avoid this happening. On the [General Settings](GeneralSettings) pane you'll notice a
 setting "Split resource files into X Mb sized chunks".
 
 If you tick this, then type in a value such as 1 or 2, then save the
