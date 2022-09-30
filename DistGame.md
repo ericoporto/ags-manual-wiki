@@ -24,7 +24,7 @@ The main game data file naming format is **game.ags**, where "game" is the entry
 If you selected the option to split the resources files, you will also have several files named **game.001**, **game.002**, and so forth in the folder.
 
 Games with digital music will usually have another file called **audio.vox** in the compiled folder. The **audio.vox** contains audio clips that you have marked
-as "InSeperateVOX" in the editor. This allows you to have an optional audio download, if your game uses lots of sound files but you want to give the player the choice to down them separately to save bandwidth.
+as "InSeperateVOX" in the editor. This allows you to have an optional audio download, if your game uses lots of sound files but you want to give the player the choice to download them separately to save bandwidth.
 
 Games with digital speech voice-over will have a separate **speech.vox** file in the compiled game's folder. Again you can distribute the Voice Acting sound files separately as the filesize for your game grows fast when you have a lot of spoken words and include the speech files into the game.
 
