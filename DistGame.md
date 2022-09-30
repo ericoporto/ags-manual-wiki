@@ -4,7 +4,7 @@
 
 When you choose the "Build EXE" option in the Editor, a "Compiled" directory is created in your game's folder, where more subdirectories are created in turn.
 
-- **"Compiled/Data"** subfolder is always made. Here it serves as an intermediate storage, and contains the "raw" game data that cannot be used on its own, but may be run by an AGS engine executable (on any supported platform). From this folder these files will then be _copied into other subfolders_, one for each build target (platform) you selected in the project's General Settings.
+- **"Compiled/Data"** subfolder is always made. Here it serves as an intermediate storage, and contains the "raw" game data that cannot be used on its own, but may be run by an AGS engine executable (on any supported platform). From this folder these files will then be _copied into other subfolders_, one for each build target (platform) you selected in the project's [General Settings](GeneralSettings).
 - **"Compiled/Windows"** subfolder will be created if you have "Windows" enabled as target platform. The folder will contain the game data merged with the engine executable for Windows, as well as a file called "winsetup.exe" which launches an integrated setup program.
 - **"Compiled/Linux"** subfolder will be created if you have "Linux" enabled as target platform. The folder will contain the game data, the engine executable, and necessary third-party libraries for 32-bit and 64-bit Linux systems.
 - **"Compiled/Web"** subfolder will be created if you have "Web" enabled as target platform. The folder will contain the wasm + JS port of the engine, and the game data. You can test by serving the current directory, using some server (ex: `python -m http.server` if you have python), and opening it in a browser. Indie store websites usually accept you zip the contents of this directory and upload it as a web build.
@@ -19,7 +19,7 @@ The "Compiled/Data" folder should usually not be distributed. It still may come 
 
 ### Compiled game contents
 
-The main game data file naming format is **game.ags**, where "game" is the entry for the "Game file name" property set in the General Settings. When compiled for Windows the main game data is merged with the engine and results in a file called **game.exe** instead.
+The main game data file naming format is **game.ags**, where "game" is the entry for the "Game file name" property set in the [General Settings](GeneralSettings). When compiled for Windows the main game data is merged with the engine and results in a file called **game.exe** instead.
 
 If you selected the option to split the resources files, you will also have several files named **game.001**, **game.002**, and so forth in the folder.
 
