@@ -1,6 +1,6 @@
 ## General settings
 
-The General Settings pane contains a list of all the various overall
+The General Settings window contains various overall
 options that you can set for your game.
 
 Note that some things listed here are explained later in the
