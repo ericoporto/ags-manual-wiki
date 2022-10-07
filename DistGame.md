@@ -49,14 +49,19 @@ It is not possible to load the exe file back into the AGS Editor. This means two
 Due to the licenses of code used by AGS, the documentation of your game
 should acknowledge the following:
 
-* TrueType font display uses ALFont by Javier Gonzalez and the FreeType
-project. Distributed under the terms of the FreeType project license.
-* OGG player is alogg by Javier Gonzalez, using the Ogg Vorbis decoder,
-which is available from https://www.xiph.org/ Copyright (c) 2002-2008,
-Xiph.org Foundation
-* MP3 player is almp3, by Javier Gonzalez and the FreeAmp team. It uses
-the mpg123 MP3 decoder, and is distributed under the terms of the GNU
-Lesser General Public License version 2.1.
+- TrueType font display uses ALFont by Javier Gonzalez and the FreeType
+project, distributed under the terms of the FreeType project license.
+
+Additionally, an acknowledgment in the game documentation would be 
+appreciated but is not required but is not required on the following
+
+- Audio decoding is SDL Sound, and mixing is MojoAL, both by Ryan C. Gordon, 
+both distributed under the terms of the zlib License. 
+SDL Sound MIDI decoding incorporates Timidity source code, which is dual-licensed 
+under the Perl Artistic License or GNU Lesser General Public License 2.1.
+
+- Backend of Audio, Graphics, input and additional systems is SDL2, 
+by Sam Lantinga, distributed under the terms of the zlib License.
 
 You must also comply with the license for AGS:
 [Artistic License 2.0](https://opensource.org/licenses/artistic-license-2.0.php)
