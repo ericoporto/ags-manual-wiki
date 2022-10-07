@@ -72,8 +72,6 @@
   FreeType project
 - Hi-color fade out/in routines by Matthew Leverton
 - Sprite anti-aliasing code by Michael Bukin
-- OGG player is alogg by Javier Gonzalez, using the Ogg Vorbis
-  decoder, which is available from https://www.xiph.org/
 - OGG Theora player is APEG by Chris Robinson, using the Ogg Theora
   decoder, which is available from https://www.xiph.org/
 - Windows engine uses libcda CD player by Peter Wang.
