@@ -41,12 +41,8 @@ problems with the Plugin should be addressed to its author.
 TrueType font display uses ALFont by Javier Gonzalez and the FreeType
 project. Distributed under the terms of the FreeType Project license.
 
-OGG Vorbis player is alogg by Javier Gonzalez, using the Ogg Vorbis
-decoder, which is available from https://www.xiph.org/ . Copyright (c)
-2002, Xiph.org Foundation
-
-OGG Theora player is APEG by Chris Robinson, using the Ogg Theora
-decoder, which is Copyright (C) 2002-2008 Xiph.Org Foundation and
+OGG Theora player is APEG originally by Chris Robinson, using the Ogg Theora
+decoder and Ogg Vorbis, which is Copyright (C) Xiph.Org Foundation and
 contributors.
 
 Audio decoding is SDL Sound, and mixing is MojoAL, both by Ryan C. Gordon,
