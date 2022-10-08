@@ -356,6 +356,8 @@ Example:
 will start playing the *aExplosion* audio clip, wait for a second, then
 seek it ahead one second (if it is OGG/MP3/WAV).
 
+**NOTE:** For historical reasons this property works differently during skipped cutscene: in such case it will return a very large arbitrary number instead. This was originally done to avoid game script locking up in do/while loops that check for clip position reaching certain value, because it might never reach it when game is "fast-forwarding". If this is a problem for your script, make sure to test for [`Game.SkippingCutscene`](Game#gameskippingcutscene).
+
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See also:*
@@ -387,6 +389,8 @@ Example:
 
 will start playing the *aExplosion* audio clip, wait for a second, then
 display its position.
+
+**NOTE:** For historical reasons this property works differently during skipped cutscene: in such case it will return a very large arbitrary number instead. This was originally done to avoid game script locking up in do/while loops that check for clip position reaching certain value, because it might never reach it when game is "fast-forwarding". If this is a problem for your script, make sure to test for [`Game.SkippingCutscene`](Game#gameskippingcutscene).
 
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
