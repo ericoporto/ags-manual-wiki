@@ -1,6 +1,6 @@
 ## Standard Types
 
-Standard Types are managed structs available that can be used pass values to the script API, and return values. You can also use them in your scripts. For now, AGS only has point available.
+Standard Types are managed structs used for passing and returning values in the script API. You can also use them in your scripts. For now, AGS only has point available.
 
 ### Point
 
