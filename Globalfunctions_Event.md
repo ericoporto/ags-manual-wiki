@@ -81,6 +81,8 @@ on which event has occurred. The possible values of event are:
           called after a saved game has been restored
           DATA = save slot number
 
+*Compatibility:* `eEventEnterRoomAfterFadein` event type is only supported since AGS 3.6.0.
+
 ---
 
 ### `on_key_press`
