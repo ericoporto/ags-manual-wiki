@@ -1055,7 +1055,7 @@ cEgo.LoseInventory(iKey);
 will make the character EGO lose the inventory item iKey from the
 inventory tab.
 
-**Note**: Make sure you check the [`Mouse.Mode`](Mouse#mousemode) after taking away an inventory item from a character, especially when the active cursor is the inventory item the player just lost. Something like Mouse.Mode = eModeInteract; in the line after the LoseInventory command helps when you use the 2 click controls.
+**NOTE:** Make sure you check the [`Mouse.Mode`](Mouse#mousemode) after taking away an inventory item from a character, especially when the active cursor is the inventory item the player just lost. Something like Mouse.Mode = eModeInteract; in the line after the LoseInventory command helps when you use the 2 click controls.
 
 
 *See also:* [`Character.AddInventory`](Character#characteraddinventory),
@@ -1365,7 +1365,7 @@ effect.
 To disable character lighting and tinting effects, call
 [`RemoveTint`](Character#characterremovetint).
 
-**NOTE**: Setting a light level will disable any RGB tint set for the
+**NOTE:** Setting a light level will disable any RGB tint set for the
 character.
 
 **NOTE:** Character's individual light level OVERRIDES both ambient

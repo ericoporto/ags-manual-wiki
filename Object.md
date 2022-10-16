@@ -433,7 +433,7 @@ effect.
 To disable object lighting and tinting effects, call SetLightLevel with
 parameter *light_level* 0.
 
-**NOTE**: Setting a light level will disable any RGB tint set for the
+**NOTE:** Setting a light level will disable any RGB tint set for the
 object.
 
 **NOTE:** Object's individual light level OVERRIDES both ambient light
@@ -1038,7 +1038,7 @@ readonly String Object.Name;
 
 Gets the name of the object.
 
-**NOTE**: This property is read-only. It is not currently possible to
+**NOTE:** This property is read-only. It is not currently possible to
 change the name of an object at run-time.
 
 Example:

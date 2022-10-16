@@ -82,8 +82,8 @@ over a couple of properties in the Properties Grid:
     sometimes you'll have objects which you don't want the player to see
     until they've done something else in the game.
 
-![Note](images/icon_info.png) (**NOTE**: Having a large number of large objects on-screen can potentially cause the
-game to slow down. AGS imposes a limit of 40 objects per room.)
+**NOTE:** Having a large number of large objects on-screen can potentially cause the
+game to slow down. AGS imposes a limit of 40 objects per room.
 
 Right, now back to the pressing matter at hand - letting the player pick
 up the key.

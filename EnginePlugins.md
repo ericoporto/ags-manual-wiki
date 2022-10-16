@@ -4,7 +4,7 @@ AGS supports a plugin interface, whereby you can write your own add-ons if AGS d
 
 AGS supports two different types of plugins - plain API plugins, for writing plugins that add extra functionality to games and need to be included with the games at runtime; and .NET plugins, for enhancing the editor. Editor .NET plugins are explained on [this separate page](EditorPlugins); here we will continue talking about the plain API.
 
-_![Warning](images/icon_warn.png)_ Plugins are **non-portable**. This means that if you write a plugin, you will not be able to compile a Linux version of any game that uses the plugin, unless you supply a Linux version of it yourself, and same for other platforms.
+**IMPORTANT:** Plugins are **non-portable**. This means that if you write a plugin, you will not be able to compile a Linux version of any game that uses the plugin, unless you supply a Linux version of it yourself, and same for other platforms.
 
 **Supported compiler per platform**
 These follows the compilers used for the binaries of the Engine:

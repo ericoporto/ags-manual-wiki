@@ -269,7 +269,7 @@ WHAT | TYPE | Description
 5 | 3 | Use an inventory item on another
 5 | 4 | Other click on inventory
 
-**Note**: the "Character stands on hotspot" event does not trigger
+**NOTE:** the "Character stands on hotspot" event does not trigger
 this function, nor will it be triggered if there is an "Any click"
 event handler defined, nor if the player clicks on nothing (hotspot 0)
 

@@ -13,7 +13,7 @@ Your plugin should use this opportunity to register any text script functions th
 
 Once this function completes, the plugin will only regain program control when one of its text script functions is called, or when one of the hooks it registered is executed.
 
-_![Info icon](images/icon_info.png)_ This function is called before the graphics subsystem is started, so functions like GetScreenDimensions and GetGraphicsDriverID will not work if called from this event.
+**NOTE:** This function is called before the graphics subsystem is started, so functions like GetScreenDimensions and GetGraphicsDriverID will not work if called from this event.
 
 #### AGS_EngineShutdown
 ```cpp
@@ -36,7 +36,7 @@ Return 0 to tell the engine to continue processing the event as normal. Return 1
 
 For example, if you were handling a Keypress event, and you did something in response to the keystroke, you may wish to return 1 to stop anything else also dealing with the keystroke.
 
-_![Warning](images/icon_warn.png)_ Only return 1 when absolutely necessary since it may interfere with other plugins operation.
+**IMPORTANT:** Only return 1 when absolutely necessary since it may interfere with other plugins operation.
 
 #### AGS_EngineDebugHook
 ```cpp
@@ -68,9 +68,9 @@ If `driverID` is "D3D9", then the `data` parameter is a pointer to the `D3DPRESE
 
 If `driverID` is "DX5", then the `data` parameter will currently be passed as `NULL`.
 
-_![Info icon](images/icon_info.png)_ This event is called just as the graphics subsystem is starting, so functions that like GetScreenDimensions that rely on the screen being initialized will not work if called from this event.
+**NOTE:** This event is called just as the graphics subsystem is starting, so functions that like GetScreenDimensions that rely on the screen being initialized will not work if called from this event.
 
-_![Info icon](images/icon_info.png)_ This event can be called more than once. It is called every time AGS tries to initialize the screen, so if the first resolution is not supported for example then it will get called again as AGS retries.
+**NOTE:** This event can be called more than once. It is called every time AGS tries to initialize the screen, so if the first resolution is not supported for example then it will get called again as AGS retries.
 
 _(Supported by engine interface version 23 and above)_
 
@@ -78,7 +78,7 @@ _(Supported by engine interface version 23 and above)_
 
 This interface is provided to the plugin as the way of calling back to the editor. It provides the following methods.
 
-_![Warning](images/icon_warn.png)_ Very little error checking is performed on these functions for performance reasons, as they provide direct entry into AGS - therefore, mistakes in your code can crash the engine.
+**IMPORTANT:** Very little error checking is performed on these functions for performance reasons, as they provide direct entry into AGS - therefore, mistakes in your code can crash the engine.
 
 The text script currently supports `char`, `short` and `int` types. These are 1, 2 and 4 byte integers respectively. Text script strings are implemented as standard C-style `char*` pointers, but with preallocated buffers of 200 bytes per string. Therefore, if you write a function which takes a string from the text script, make sure that if you add anything to it you don't write past 200 characters, or problems will result.
 
@@ -138,7 +138,7 @@ RegisterScriptFunction ("GetLocationType", AddNumbers);
 ```cpp
 then any calls from the script to `GetLocationType` will be intercepted by your plugin (and in this case a stupid result returned).
 
-_![Warning](images/icon_warn.png)_ If you want to override built-in functions, make sure that yours have identical parameters, otherwise the stack could get messed up and crash the engine.
+**IMPORTANT:** If you want to override built-in functions, make sure that yours have identical parameters, otherwise the stack could get messed up and crash the engine.
 
 AGS 2.7 and later support object-based scripting. In order to export an object from your plugin, you'll need to include its struct definition in the RegisterScriptHeader editor call. Then, you export functions as follows:
 
@@ -160,7 +160,7 @@ _Added in version: 1_
 HWND GetWindowHandle ();
 ```
 
-_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+**IMPORTANT:** This function is only supported on Windows.
 
 Returns the window handle of the main game window.
 
@@ -175,9 +175,9 @@ Returns an ID string representing the current graphics driver. This can either b
 
 If the engine interface version is less than 19, this function is not available; however, in that case you can safely assume that the DX5 driver is in use since earlier versions of AGS only supported that driver.
 
-_![Warning](images/icon_warn.png)_ Your `AGS_EngineStartup` event is called before the graphics system is initialized. Therefore, you cannot call `GetGraphicsDriverID` from within `AGS_EngineStartup` as no driver is loaded at that point.
+**IMPORTANT:** Your `AGS_EngineStartup` event is called before the graphics system is initialized. Therefore, you cannot call `GetGraphicsDriverID` from within `AGS_EngineStartup` as no driver is loaded at that point.
 
-_![Info icon](images/icon_info.png)_ When the Direct3D driver is in use, the screen is redrawn each frame using 3D accelerated blits, and therefore there is no virtual screen. You can only manipulate the virtual screen when running with the DX5 driver.
+**NOTE:** When the Direct3D driver is in use, the screen is redrawn each frame using 3D accelerated blits, and therefore there is no virtual screen. You can only manipulate the virtual screen when running with the DX5 driver.
 
 _Added in version: 19_
 
@@ -186,7 +186,7 @@ _Added in version: 19_
 LPDIRECTDRAW2 GetDirectDraw2 ();
 ```
 
-_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+**IMPORTANT:** This function is only supported on Windows.
 
 Returns the main IDirectDraw2 interface that the game is using.
 
@@ -199,13 +199,13 @@ _Added in version: 1_
 LPDIRECTDRAWSURFACE2 GetBitmapSurface (BITMAP *bmp);
 ```
 
-_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+**IMPORTANT:** This function is only supported on Windows.
 
 Returns the IDirectDrawSurface2 interface associated with the specified bitmap.
 
 This function is only supported if the player is using the DX5 graphics driver.
 
-_![Warning](images/icon_warn.png)_ This is the Allegro BITMAP structure, not the Win32 GDI BITMAP. Do not try and use a win32 BITMAP with this function, as it will crash the system.
+**IMPORTANT:** This is the Allegro BITMAP structure, not the Win32 GDI BITMAP. Do not try and use a win32 BITMAP with this function, as it will crash the system.
 
 _Added in version: 1_
 
@@ -373,7 +373,7 @@ triggered every frame *per each room camera* once the room contents have been dr
 
 **data value:** _\*\* See Note 1 below_
 
-_![Info icon](images/icon_info.png)_ Each frame (or _game loop_), AGS redraws the screen from scratch. The sequence is as follows:
+**NOTE:** Each frame (or _game loop_), AGS redraws the screen from scratch. The sequence is as follows:
 
 1.  Call `AGSE_PRERENDER`
 2.  Update in-memory cache of current character and object images
@@ -429,15 +429,15 @@ Gets a reference to the linear bank of memory that contains the surface of `bmp`
 
 This function locks the surface for you, which means you **must** call ReleaseBitmapSurface to release it when you are done. Failure to do so will most likely hang the engine.
 
-_![Warning](images/icon_warn.png)_ If the bitmap color depth is 15/16 bit, the return value should be cast to `unsigned short**`.  
+**IMPORTANT:** If the bitmap color depth is 15/16 bit, the return value should be cast to `unsigned short**`.  
 If the bitmap color depth is 32 bit, the return value should be cast to `unsigned long**`.  
 If the bitmap color depth is 24 bit, the return value needs to be accessed in blocks of 3 bytes. The best method of doing this is left up to you.
 
-_![Warning](images/icon_warn.png)_ If you change any areas of the virtual screen bitmap via this raw surface, you should call `MarkRegionDirty` with the affected area, so that AGS redraws that part of the screen.
+**IMPORTANT:** If you change any areas of the virtual screen bitmap via this raw surface, you should call `MarkRegionDirty` with the affected area, so that AGS redraws that part of the screen.
 
-_![Warning](images/icon_warn.png)_ **Be careful** when using this surface, since writing outside it will crash the engine. Make sure you use `GetBitmapDimensions` to find out how big the bitmap is.
+**IMPORTANT:** **Be careful** when using this surface, since writing outside it will crash the engine. Make sure you use `GetBitmapDimensions` to find out how big the bitmap is.
 
-_![Warning](images/icon_warn.png)_ This function cannot be used with the real screen bitmap - it can only be used with the virtual screen and any other bitmaps you may have access to.
+**IMPORTANT:** This function cannot be used with the real screen bitmap - it can only be used with the virtual screen and any other bitmaps you may have access to.
 
 _Added in version: 3_
 
@@ -468,7 +468,7 @@ void DrawText (int x, int y, int font, int color, char *text);
 
 Writes the string `text` to the current virtual screen at (`x`, `y`), using game font number `font` in color `color`.
 
-_![Info icon](images/icon_info.png)_ The `x` and `y` parameters are in actual screen co-ordinates, unlike the text script commands which always use 320-scale co-ordinates. You will need to use `GetScreenDimensions` and multiply up the co-ordinates accordingly if you wish to draw to a specific location.
+**NOTE:** The `x` and `y` parameters are in actual screen co-ordinates, unlike the text script commands which always use 320-scale co-ordinates. You will need to use `GetScreenDimensions` and multiply up the co-ordinates accordingly if you wish to draw to a specific location.
 
 _Added in version: 3_
 
@@ -594,7 +594,7 @@ Updates the internally stored mouse co-ordinates, and checks for mouse clicks an
 
 Call this function if you have a long plugin function which takes more than half a second to execute, or if you need to get mouse and keypress events while still inside your function.
 
-_![Info icon](images/icon_info.png)_ AGS is single-threaded; this means that any background music has to be played by updating the buffer at regular intervals. Therefore, if your function takes a while to execute you should call this to make sure the music doesn't skip.
+**NOTE:** AGS is single-threaded; this means that any background music has to be played by updating the buffer at regular intervals. Therefore, if your function takes a while to execute you should call this to make sure the music doesn't skip.
 
 _Added in version: 5_
 
@@ -614,7 +614,7 @@ AGSCharacter * GetCharacter (int charid);
 
 Returns the character state struct for character `charid`. This struct is documented in the header file, but is mostly identical to the `character[]` text script variable.
 
-_![Warning](images/icon_warn.png)_ Beware when modifying character state structs. There are some caveats to watch out for, such as altering the X and Y values while the character is moving.  
+**IMPORTANT:** Beware when modifying character state structs. There are some caveats to watch out for, such as altering the X and Y values while the character is moving.  
 Also, remember that all view numbers stored are **1 less** than the numbers shown in the editor and used in the text script.
 
 _Added in version: 6_
@@ -626,7 +626,7 @@ AGSGameOptions * GetGameOptions ();
 
 Returns a reference to the game state structure. This is similar to the text script `game.` variables.
 
-_![Info icon](images/icon_info.png)_ One handy member here is the `AGSGameOptions.fast_forward` variable. This is set to 1 while a cut-scene is being skipped, so if you have any lengthy graphical effects you should not perform them if this is set. All operations which update any game state **must** still be performed however, or skipping the cut-scene will desync the game.
+**NOTE:** One handy member here is the `AGSGameOptions.fast_forward` variable. This is set to 1 while a cut-scene is being skipped, so if you have any lengthy graphical effects you should not perform them if this is set. All operations which update any game state **must** still be performed however, or skipping the cut-scene will desync the game.
 
 _Added in version: 6_
 
@@ -637,7 +637,7 @@ AGSColor * GetPalette ();
 
 Returns a reference to the current palette. This is an array of 256 elements of the `AGSColor` struct.
 
-_![Info icon](images/icon_info.png)_ In a game with animating backgrounds, the palette can change quite often, so you should generally only rely on the palette remaining consistent for the length of your function.
+**NOTE:** In a game with animating backgrounds, the palette can change quite often, so you should generally only rely on the palette remaining consistent for the length of your function.
 
 _Added in version: 6_
 
@@ -675,7 +675,7 @@ AGSObject * GetObject (int number);
 
 Returns the state structure for object `number`.
 
-_![Warning](images/icon_warn.png)_ Unlike the character structs, object state pointers are not constant throughout the game. Any time the room changes, these structs get reallocated. Therefore, do not keep a pointer that you get with this command after your function ends.
+**IMPORTANT:** Unlike the character structs, object state pointers are not constant throughout the game. Any time the room changes, these structs get reallocated. Therefore, do not keep a pointer that you get with this command after your function ends.
 
 _Added in version: 7_
 
@@ -688,7 +688,7 @@ Converts the room co-ordinates (`x`, `y`) into current viewport co-ordinates. Th
 
 When you call this function, the variables you pass will be converted to hold the equivalent viewport co-ordinates. These are real resolution-sized co-ordinates within the current viewable area of the screen.
 
-_![Info icon](images/icon_info.png)_ You should check the resulting co-ordinates with the screen size to determine whether they are currently visible on the screen.
+**NOTE:** You should check the resulting co-ordinates with the screen size to determine whether they are currently visible on the screen.
 
 _Added in version: 7_
 
@@ -710,9 +710,9 @@ BITMAP * GetSpriteGraphic (int slot);
 
 Returns the bitmap with the graphic for sprite slot number `slot`.
 
-_![Info icon](images/icon_info.png)_ This method will automatically load the sprite from disk into the sprite cache if it is not already present.
+**NOTE:** This method will automatically load the sprite from disk into the sprite cache if it is not already present.
 
-_![Warning](images/icon_warn.png)_ The AGS Sprite Cache may destroy any sprite from memory at any time. Therefore, **never** keep a pointer obtained with this command. Always call this method again if you need to perform multiple operations with the bitmap.
+**IMPORTANT:** The AGS Sprite Cache may destroy any sprite from memory at any time. Therefore, **never** keep a pointer obtained with this command. Always call this method again if you need to perform multiple operations with the bitmap.
 
 _Added in version: 7_
 
@@ -725,9 +725,9 @@ Creates a blank bitmap sized `width` x `height` pixels at `coldepth`-bit color. 
 
 Returns NULL if the bitmap could not be created. You should always check the return value to avoid crashes.
 
-_![Info icon](images/icon_info.png)_ To draw onto the bitmap either use `GetRawBitmapSurface`, or the `SetVirtualScreen` command followed by one of the drawing commands such as `DrawText` or `BlitBitmap`.
+**NOTE:** To draw onto the bitmap either use `GetRawBitmapSurface`, or the `SetVirtualScreen` command followed by one of the drawing commands such as `DrawText` or `BlitBitmap`.
 
-_![Warning](images/icon_warn.png)_ The bitmap will remain in memory until you explicitly free it with `FreeBitmap`. Use this command sparingly, as each bitmap you create eats into the engine's available memory.
+**IMPORTANT:** The bitmap will remain in memory until you explicitly free it with `FreeBitmap`. Use this command sparingly, as each bitmap you create eats into the engine's available memory.
 
 _Added in version: 7_
 
@@ -738,7 +738,7 @@ void FreeBitmap (BITMAP *bmp);
 
 Frees the bitmap `bmp` from memory.
 
-_![Warning](images/icon_warn.png)_ **Only** use this command with bitmaps you created with `CreateBlankBitmap`. Using it with an AGS system bitmap, such as one obtained with `GetVirtualScreen`, `GetScreen` or `GetSpriteGraphic` will crash the engine.
+**IMPORTANT:** **Only** use this command with bitmaps you created with `CreateBlankBitmap`. Using it with an AGS system bitmap, such as one obtained with `GetVirtualScreen`, `GetScreen` or `GetSpriteGraphic` will crash the engine.
 
 _Added in version: 7_
 
@@ -759,7 +759,7 @@ The walkable area, hotspot and region masks are the size of the current room, bu
 
 **All** of the masks are bitmaps with 8-bit color depth, irrespective of what color depth the game is running at.
 
-_![Warning](images/icon_warn.png)_ The area masks are re-allocated when the player changes rooms, so do **not** keep a pointer returned by this function longer than you need it.
+**IMPORTANT:** The area masks are re-allocated when the player changes rooms, so do **not** keep a pointer returned by this function longer than you need it.
 
 _Added in version: 8 (MASK_REGIONS requires version 11)._
 
@@ -797,9 +797,9 @@ Returns the memory address of the text script exported function `funcName`. This
 
 Returns NULL if you specify a function that doesn't exist.
 
-_![Warning](images/icon_warn.png)_ You **must** cast the result to the correct function type in order to call it - i.e. you must know how many parameters the function expects, and call it appropriately. Failure to do so will corrupt the stack and likely crash the engine.
+**IMPORTANT:** You **must** cast the result to the correct function type in order to call it - i.e. you must know how many parameters the function expects, and call it appropriately. Failure to do so will corrupt the stack and likely crash the engine.
 
-_![Warning](images/icon_warn.png)_ If you specify the name of an actual function in the script, for example repeatedly_execute, it will return an address - however, this will be a script address and attempting to call it will crash the game. **Only** use this feature to obtain the address of AGS's script functions as documented in the manual.
+**IMPORTANT:** If you specify the name of an actual function in the script, for example repeatedly_execute, it will return an address - however, this will be a script address and attempting to call it will crash the game. **Only** use this feature to obtain the address of AGS's script functions as documented in the manual.
 
 _Added in version: 9_
 
@@ -917,9 +917,9 @@ Plays a new sound on the sound channel number `channel`. `volume` can be from 0 
 | `PSND_MIDI`      | MIDI file                              |
 | `PSND_MOD`       | MOD/XM/S3M file                        |
 
-_![Info icon](images/icon_info.png)_ You should normally just use the PlaySound, PlaySoundEx and PlayMusic functions (via GetScriptFunctionAddress) to play sounds - only use this function in specific circumstances.
+**NOTE:** You should normally just use the PlaySound, PlaySoundEx and PlayMusic functions (via GetScriptFunctionAddress) to play sounds - only use this function in specific circumstances.
 
-_![Warning](images/icon_warn.png)_ Only one MIDI file, and one MOD/XM file can be playing at a time. You should generally keep away from these two sound types unless you are sure about what you are doing.
+**IMPORTANT:** Only one MIDI file, and one MOD/XM file can be playing at a time. You should generally keep away from these two sound types unless you are sure about what you are doing.
 
 _Added in version: 11_
 
@@ -930,7 +930,7 @@ void MarkRegionDirty(int left, int top, int right, int bottom);
 
 Marks the rectangle (`left`, `top`) - (`right`, `bottom`) on the virtual screen as dirty. Use this if you make any changes to the virtual screen via its raw bitmap surface, to tell AGS to repaint that area of the screen.
 
-_![Info icon](images/icon_info.png)_ All engine API functions such as `DrawText` and `BlitBitmap` call this automatically, so you only need to call it if you manually modify the bitmap surface.
+**NOTE:** All engine API functions such as `DrawText` and `BlitBitmap` call this automatically, so you only need to call it if you manually modify the bitmap surface.
 
 _Added in version: 12_
 
@@ -941,7 +941,7 @@ AGSMouseCursor* GetMouseCursor(int cursor);
 
 Returns the mouse cursor struct which AGS uses to store details about the specified cursor mode.
 
-_![Warning](images/icon_warn.png)_ The returned struct is read-only. You should not modify any members of it directly; rather, call the script functions such as `ChangeCursorGraphic` which ensure that the game state is updated properly.
+**IMPORTANT:** The returned struct is read-only. You should not modify any members of it directly; rather, call the script functions such as `ChangeCursorGraphic` which ensure that the game state is updated properly.
 
 _Added in version: 12_
 
@@ -1055,7 +1055,7 @@ _Added in version: 13_
 LPDIRECTSOUND GetDirectSound();
 ```
 
-_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+**IMPORTANT:** This function is only supported on Windows.
 
 Returns the main `IDirectSound` interface that the engine is using. This command does **not** `AddRef` the pointer it returns, so you don't need to Release it.
 
@@ -1123,7 +1123,7 @@ void SetSpriteAlphaBlended(int slot, int isAlphaBlended);
 
 Allows you to specify whether the sprite is alpha blended or not. This allows you to create dynamic 32-bit RGBA sprites. Pass `isAlphaBlended` as 1 to enable the sprite's alpha channel, or pass it as 0 to disable the alpha channel.
 
-_![Warning](images/icon_warn.png)_ This function should only be used with 32-bit dynamic sprites. Using it with sprites of lower color depths, or of sprites created in the AGS Editor, can have unpredictable results.
+**IMPORTANT:** This function should only be used with 32-bit dynamic sprites. Using it with sprites of lower color depths, or of sprites created in the AGS Editor, can have unpredictable results.
 
 _Added in version: 15_
 
@@ -1153,7 +1153,7 @@ Registers the specified managed object type with the script engine, and supplies
 
 See further down this page for a description of the `IAGSManagedObjectReader` interface.
 
-_![Warning](images/icon_warn.png)_ AGS only keeps a pointer to `typeName` and does not copy the string, so make sure you do not supply a temporary or local variable as the type name.
+**IMPORTANT:** AGS only keeps a pointer to `typeName` and does not copy the string, so make sure you do not supply a temporary or local variable as the type name.
 
 _Added in version: 15_
 
@@ -1212,7 +1212,7 @@ Increments the reference count of the specified object in the managed object poo
 
 Returns the new reference count of the object.
 
-_![Warning](images/icon_warn.png)_ Be **very careful** when using this function. If you adjust the reference count incorrectly, you could cause a memory leak or the game could crash.
+**IMPORTANT:** Be **very careful** when using this function. If you adjust the reference count incorrectly, you could cause a memory leak or the game could crash.
 
 _Added in version: 18_
 
@@ -1225,7 +1225,7 @@ Decrements the reference count of the specified object in the managed object poo
 
 Returns the new reference count of the object.
 
-_![Warning](images/icon_warn.png)_ Be **very careful** when using this function. If you adjust the reference count incorrectly, you could cause a memory leak or the game could crash.
+**IMPORTANT:** Be **very careful** when using this function. If you adjust the reference count incorrectly, you could cause a memory leak or the game could crash.
 
 _Added in version: 18_
 
@@ -1274,7 +1274,7 @@ void GetMovementPathWaypointLocation(int32 pathId, int32 waypoint, int32 *x, int
 
 Gets the X and Y co-ordinates of the specified waypoint on the specified path.
 
-_![Warning](images/icon_warn.png)_ No error checking is done on these functions for performance reasons, so make sure you supply a valid `pathId` and `waypoint`.
+**IMPORTANT:** No error checking is done on these functions for performance reasons, so make sure you supply a valid `pathId` and `waypoint`.
 
 _Added in version: 18_
 
@@ -1324,7 +1324,7 @@ _Added in version: 22_
 LPDIRECTINPUTDEVICE GetDirectInputKeyboard();
 ```
 
-_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+**IMPORTANT:** This function is only supported on Windows.
 
 Returns a pointer to the `IDirectInputDevice` interface that AGS is using to control the keyboard. This command does **not** `AddRef` the pointer it returns, so you don't need to Release it.
 
@@ -1335,7 +1335,7 @@ _Added in version: 23_
 LPDIRECTINPUTDEVICE GetDirectInputMouse();
 ```
 
-_![Warning](images/icon_warn.png)_ This function is only supported on Windows.
+**IMPORTANT:** This function is only supported on Windows.
 
 Returns a pointer to the `IDirectInputDevice` interface that AGS is using to control the mouse. This command does **not** `AddRef` the pointer it returns, so you don't need to Release it.
 
@@ -1350,7 +1350,7 @@ Replaces the font renderer that AGS is currently using to draw the specified fon
 
 This allows you to override AGS's built-in font rendering with your own system. For example, if you didn't want to use SCI or TTF fonts, this allows you to provide a custom implementation. See further down this page for a description of the `IAGSFontRenderer` interface.
 
-_![Warning](images/icon_warn.png)_ This function is superceded by [`ReplaceFontRenderer2`](EnginePluginRun-timeAPI#iagsenginereplacefontrenderer2). We recommend you use the new function, and implement the `IAGSFontRenderer2` interface instead.
+**IMPORTANT:** This function is superceded by [`ReplaceFontRenderer2`](EnginePluginRun-timeAPI#iagsenginereplacefontrenderer2). We recommend you use the new function, and implement the `IAGSFontRenderer2` interface instead.
 
 _Added in version: 23_
 
@@ -1379,13 +1379,13 @@ AGSRenderStageDesc's first field is `Version`, which must be filled by the plugi
 
 As of interface version 25 the only other meaningful field in `AGSRenderStageDesc` is `Matrixes` of type `AGSRenderMatrixes`. This is another struct that contains three arrays, 16 floating point values each. They represent three main transformation matrixes for the current render stage: World, View and Projection. The matrix format will correspond to the *internal format of the current renderer* that engine runs (OpenGL, Direct3D, and so on). Thus, if your plugin works with the same renderer as the engine it may safely use these matrixes with that renderer's functions.
 
-_![Info icon](images/icon_info.png)_ You may know which renderer is run by the engine if you call [`GetGraphicsDriverID`](EnginePluginRun-timeAPI#iagsenginegetgraphicsdriverid).
+**NOTE:** You may know which renderer is run by the engine if you call [`GetGraphicsDriverID`](EnginePluginRun-timeAPI#iagsenginegetgraphicsdriverid).
 
-_![Info icon](images/icon_info.png)_ Software renderer will always fill these matrixes with zeroes.
+**NOTE:** Software renderer will always fill these matrixes with zeroes.
 
-_![Info icon](images/icon_info.png)_ This function is only guaranteed to return useful data if you call it in one of the [render stage events](EnginePluginRun-timeAPI#iagsenginerequesteventhook).
+**NOTE:** This function is only guaranteed to return useful data if you call it in one of the [render stage events](EnginePluginRun-timeAPI#iagsenginerequesteventhook).
 
-_![Warning](images/icon_warn.png)_ Plugin *must* fill the struct's Version field before passing it into the function.
+**IMPORTANT:** Plugin *must* fill the struct's Version field before passing it into the function.
 
 _Added in version: 25_
 
@@ -1415,7 +1415,7 @@ AGSGameInfo's first field is `Version`, which must be filled by the plugin itsel
 
 The rest of the fields are for informational purposes. GameName is a human-readable game's title, which is displayed on the game window's caption. Its value corresponds to the [`Game.Name`](Game#gamename) script property. Guid is a unique string identifying the game. UniqueId is a deprecated game's identifier, which was used in the older versions of AGS. It may be refered to in case Guid is empty.
 
-_![Warning](images/icon_warn.png)_ Plugin *must* fill the struct's Version field before passing it into the function.
+**IMPORTANT:** Plugin *must* fill the struct's Version field before passing it into the function.
 
 _Added in version: 26_
 
@@ -1430,7 +1430,7 @@ This allows you to override AGS's built-in font rendering with your own custom i
 
 This function supercedes [`ReplaceFontRenderer`](EnginePluginRun-timeAPI#iagsenginereplacefontrenderer) and allows to install an extended renderer type, which implements [`IAGSFontRenderer2`](EnginePluginRun-timeAPI#iagsfontrenderer2-interface) interface (see further down this page for its description).
 
-_![Info icon](images/icon_info.png)_ The old renderer is still returned as a pointer to the base interface `IAGSFontRenderer`. This is to keep things compatible in case someone sets an old interface, so that this pointer could be used to set it back if necessary (in which case you need to use `ReplaceFontRenderer`). The engine is capable of detecting when the pointer refers to one of the internal renderers, and convert it as necessary. If you would like to tell if the returned pointer refers to one of the plugin's own renderers, you may do so by comparing the memory addresses, for example.
+**NOTE:** The old renderer is still returned as a pointer to the base interface `IAGSFontRenderer`. This is to keep things compatible in case someone sets an old interface, so that this pointer could be used to set it back if necessary (in which case you need to use `ReplaceFontRenderer`). The engine is capable of detecting when the pointer refers to one of the internal renderers, and convert it as necessary. If you would like to tell if the returned pointer refers to one of the plugin's own renderers, you may do so by comparing the memory addresses, for example.
 
 _Added in version: 26_
 
@@ -1526,7 +1526,7 @@ bool SupportsExtendedCharacters(int fontNumber);
 
 AGS will call this method to determine whether the specified font supports extended characters (i.e. characters with a ASCII value of 128 or above). Return `true` or `false`, depending on your implementation.
 
-_![Warning](images/icon_warn.png)_ If you return false from this function, AGS will not necessarily strip extended characters out of text. If you do not support extended characters, then you should implement the `EnsureTextValidForFont` method (below) to strip them out.
+**IMPORTANT:** If you return false from this function, AGS will not necessarily strip extended characters out of text. If you do not support extended characters, then you should implement the `EnsureTextValidForFont` method (below) to strip them out.
 
 _Added in version: 23_
 
@@ -1590,7 +1590,7 @@ int GetVersion();
 
 Tells the engine API version to which this renderer implementation corresponds to. This is a very important method, as engine will use it to know what functionality of this interface is safe to use. The return value must not be lower than 26 (as this is the first version in which this interface was introduced).
 
-_![Warning](images/icon_warn.png)_ You must make sure your renderer returns a correct version, corresponding to which version of interface you implement, otherwise engine may try calling non-existing methods and crash.
+**IMPORTANT:** You must make sure your renderer returns a correct version, corresponding to which version of interface you implement, otherwise engine may try calling non-existing methods and crash.
 
 _Added in version: 26_
 

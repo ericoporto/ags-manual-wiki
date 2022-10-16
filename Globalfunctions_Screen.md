@@ -72,7 +72,7 @@ way value | flip direction
 2 | vertical-flip (left-to-right)
 3 | both (upside-down and backwards)
 
-**NOTE**: This function is still a bit buggy - black parts of the screen
+**NOTE:** This function is still a bit buggy - black parts of the screen
 may show up wrong, and and pop-up messages will flip the screen back to
 normal.
 

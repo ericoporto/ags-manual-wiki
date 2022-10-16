@@ -134,12 +134,12 @@ same values that you would use in the editor.
 For the meaning of all the parameters, see
 [`SetAmbientTint`](Globalfunctions_General#setambienttint).
 
-**NOTE**: The tint will be reset when the player leaves the room, so you
+**NOTE:** The tint will be reset when the player leaves the room, so you
 need to use it in Player Enters Room if you want a permanent change.
 
 **NOTE:** This function only works in hi-color games.
 
-**NOTE**: To remove the region tint, set the LightLevel property to 0.
+**NOTE:** To remove the region tint, set the LightLevel property to 0.
 
 Example:
 
@@ -233,11 +233,11 @@ effect.
 
 To disable region lighting and tinting effects, set LightLevel to 0.
 
-**NOTE**: The light level will be reset to the editor settings when the
+**NOTE:** The light level will be reset to the editor settings when the
 player leaves the room, so you need to use it in Player Enters Room if
 you want a permanent change.
 
-**NOTE**: Setting a light level will disable any RGB tint set for the
+**NOTE:** Setting a light level will disable any RGB tint set for the
 region.
 
 **NOTE:** Region's light level does NOT override individual character

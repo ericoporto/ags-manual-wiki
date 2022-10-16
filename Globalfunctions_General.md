@@ -1189,7 +1189,7 @@ To turn light level off, call this command again but pass the
 tints on the screen, but does NOT override individual character and
 object light levels.
 
-**NOTE**: Setting an ambient light level will disable ambient RGB tint,
+**NOTE:** Setting an ambient light level will disable ambient RGB tint,
 if there one was previously set.
 
 Example:

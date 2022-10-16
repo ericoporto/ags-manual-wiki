@@ -341,7 +341,7 @@ set a view here, it will play intermittently while the character talks
 (it is drawn on top of the normal talking view). The default time
 between it playing is 3-4 seconds, but you can change this with the
 Character.BlinkInterval script property.<br>
-**NOTE**: the blinking view is currently only supported with
+**NOTE:** the blinking view is currently only supported with
 sierra-style speech.
 
 "UseRoomAreaLighting" allows you to tell AGS whether this character will

@@ -10,7 +10,7 @@ which allows you to inspect the `NormalView` and `SpeechView` for this character
 This is also where you select whether this particular character will be used as
 the player character.
 
-**Note**: Only one character can be the designated as the player character within
+**NOTE:** Only one character can be the designated as the player character within
 this panel since this will also determine which room the game starts in. Changing
 the player character during the game is possible by using the script function
 [`Character.SetAsPlayer`](Character#charactersetasplayer).

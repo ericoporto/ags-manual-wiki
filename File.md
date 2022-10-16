@@ -52,12 +52,12 @@ File.Open("$SAVEGAMEDIR$/userinfo.txt", eFileWrite);
 File.Open("$APPDATADIR$/scoretable.dat", eFileAppend);
 ```
 
-**IMPORTANT**: For security reasons, if you open the file for writing,
+**IMPORTANT:** For security reasons, if you open the file for writing,
 then you can ONLY work with files in either `$SAVEGAMEDIR$` or
 `$APPDATADIR$` locations. An attempt to write file in `$INSTALLDIR$`
 will result in failure, and *null* is returned. Similarily, if you try to open a file for writing using an absolute path, or relative path that points to location outside of the game directory, it will be automatically rejected, and *null* is returned.
 
-**IMPORTANT**: An attempt to write file into relative path *without specifying any location tag* will make AGS
+**IMPORTANT:** An attempt to write file into relative path *without specifying any location tag* will make AGS
 automatically remap such path into `$APPDATADIR$`. This is done for backward compatibility. To ensure that your script does exactly what you want, please use location tags.
 
 `File.Open` returns a File* pointer, which you should store in a variable of that type. You may then use that pointer to perform reading or writing operations. After finishing work you should close the file with the `Close` function. There are only a limited number of file handles,

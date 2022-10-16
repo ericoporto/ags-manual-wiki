@@ -3,10 +3,10 @@
 So, you've downloaded AGS. You want to make an adventure game. But where
 do you start?
 
-![Note](images/icon_info.png) (**NOTE**: Before we start, this tutorial was made using v3.5 of AGS.
+**NOTE:** Before we start, this tutorial was made using v3.5 of AGS.
 If you have a newer version, there may be minor inconsistencies in the
 screenshots where extra options have been added and so forth, but most
-of what's here should still apply).
+of what's here should still apply.
 
 ### Creating the game
 
@@ -33,8 +33,8 @@ The **"Sierra-style"** template is what we'll be using, as it has classic Sierra
 adventure game UI and comes with some default graphics to get you started
 quickly.
 
-![Note](images/icon_info.png) (**NOTE**: The **"Empty Game"** template is something you may want to use later on
-when you're familiar with AGS as it comes with no default graphics at all.)
+**NOTE:** The **"Empty Game"** template is something you may want to use later on
+when you're familiar with AGS as it comes with no default graphics at all.
 
 So, select **"Sierra-style"** and click **Next**.
 
@@ -72,7 +72,7 @@ various parts of your game.
 is where item-specific properties are accessed. It's not used in the
 Game Settings window, but we'll see it in action soon!
 3. Finally, the **Open Windows** tab bar at the top the AGS Editor allows you to have several windows open at once,
-and they are shown as tabs so that you can easily switch between them. (**NOTE**: You may use the Close button (X) at the end of the Open Windows tab bar to close a window once you're finished with it.)
+and they are shown as tabs so that you can easily switch between them. (**NOTE:** You may use the Close button (X) at the end of the Open Windows tab bar to close a window once you're finished with it.)
 
 Now, since we're on the Game Settings pane, let's briefly examine the various
 options we have in front of us. Make sure these options are enabled to
@@ -127,7 +127,7 @@ You can skip the next section and make your way down to ["Game Resolution"](acin
 
 #### Creating a 256-color game
 
-![Note](images/icon_info.png) (**NOTE**: If you are following this tutorial to continue to work on "Roger's Adventure" game, then do not adjust your game to be 256-color.)
+**NOTE:** If you are following this tutorial to continue to work on "Roger's Adventure" game, then do not adjust your game to be 256-color.
 
 - **Setting the Color Depth:** Back on the **General Settings** pane, check out the very top option in the
 list. It's called "Color depth", and all you have to do is change it to
@@ -173,8 +173,8 @@ option.
 Which colors you use is up to you, and your choice will likely depend
 on the color scheme you're going for with your graphics.
 
-![Note](images/icon_info.png) (**NOTE**: You should set up the palette as well as you can now, because changing
-it later may require you to re-import some graphics.)
+**NOTE:** You should set up the palette as well as you can now, because changing
+it later may require you to re-import some graphics.
 
 ### Game Resolution
 

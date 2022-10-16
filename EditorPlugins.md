@@ -2,7 +2,7 @@
 
 AGS allows external utilities to enhance the Editor's functionality by the use of .NET plugins. These plugins can be written in any .NET language including C#, VB.NET, Visual C++ .NET and more.
 
-![Note](images/icon_info.png) Note that .NET plugins are only supported for enhancing the editor functionality. Any plugins which need to be included with the game at run-time must be written with as plain DLLs using the Plugin API.
+**NOTE:** .NET plugins are only supported for enhancing the editor functionality. Any plugins which need to be included with the game at run-time must be written with as plain DLLs using the Plugin API.
 
 **NOTE:** .NET plugins require AGS 3.0 or later. They are not supported by AGS 2, and replace the old COM-based editor plugin API from AGS 2.x which is no longer supported.
 

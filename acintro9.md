@@ -31,9 +31,9 @@ list these ones briefly:
 All the other cursors are 'normal' cursors, in that you can use them
 for whatever purposes you want.
 
-![Note](images/icon_info.png) (**NOTE**: If you want to create a LucasArts-style game where the mouse
+**NOTE:** If you want to create a LucasArts-style game where the mouse
 cursor disappears during cutscenes, the easiest way to do it is
-simply to import a blank image over the Wait mouse cursor.)
+simply to import a blank image over the Wait mouse cursor.
 
 Selecting a cursor node from the Project Tree, you will see that the Cursors editor pane and Properties Grid is fairly self-explanatory.
 * **Appearance** -> **Image** - Set a graphic for the cursor from the Sprite Manager.
@@ -56,9 +56,9 @@ cover them briefly:
 	example, if during the game you disable the current cursor, AGS will
 	change to the next available Standard Mode.
 
-![Note](images/icon_info.png) (**NOTE**: You can right-click the **"Mouse cursors"** tree node and choose **"New Cursor"** to create additional cursors to the standard 10. If you do so however,
+**NOTE:** You can right-click the **"Mouse cursors"** tree node and choose **"New Cursor"** to create additional cursors to the standard 10. If you do so however,
 any extra cursors you create will not have events created for them,
-so you will have to handle their clicks using the "Any Click" events.)
+so you will have to handle their clicks using the "Any Click" events.
 
 ### Fonts
 
@@ -108,15 +108,15 @@ Where can you get a SCI font? Well, there are two ways:
 * You can get a Sierra SCI Font Pack on the
   [AGS website](https://www.adventuregamestudio.co.uk/site/ags/sci_fonts/).
 
-![Note](images/icon_info.png) (**NOTE**: If you go to your Windows Fonts folder to try and import a TTF font, you will
+**NOTE:** If you go to your Windows Fonts folder to try and import a TTF font, you will
 not be able to do so (double-clicking them will open them up in the Windows Font
 Viewer). Unfortunately this is down to how the Fonts folder is configured to act
 within Windows Explorer - you must either type the filename in manually, or copy
-the font to another folder and import it from there.)
+the font to another folder and import it from there.
 
-![Note](images/icon_info.png) (**NOTE**: By default, font 0 is used as the normal text font, and font 1 is used as the
+**NOTE:** By default, font 0 is used as the normal text font, and font 1 is used as the
 speech font. To use any additional fonts, the script properties
-`Game.NormalFont` and `Game.SpeechFont` can be used to change the active fonts.)
+`Game.NormalFont` and `Game.SpeechFont` can be used to change the active fonts.
 
 ### Conclusion
 

@@ -25,8 +25,8 @@ processed, as long as the condition is true. So, in this case, since
 counter starts as 1, the loop will be run 9 times, since on the tenth
 time counter will be 10 and therefore it will stop.
 
-![Note](images/icon_info.png) (**NOTE**: Be careful with while loops - it is possible to crash your game by
-using a badly written one.)
+**NOTE:** Be careful with while loops - it is possible to crash your game by
+using a badly written one.
 
 Consider this **poorly** written _while_ loop:
 
@@ -77,10 +77,10 @@ if ( (player.HasInventory(iFirstItem)) &&
 
 This makes use of the `&&` operator.
 
-![Note](images/icon_info.png) (**NOTE**: Notice that you need an extra pair
+**NOTE:** Notice that you need an extra pair
 of outer parenthesis, to contain the whole expression. Each part of the
 expression goes inside parenthesis, as normal, and they are joined with
-the `&&` symbol.)
+the `&&` symbol.
 
 You can extend this to as many checks as you like. For example, this
 will display the message if the *openedDoor* variable is currently set
@@ -264,7 +264,7 @@ function do_dance()
 This function runs view 10, loop 2, as the character's animation, waits
 until it finishes and then reverts to the default view.
 
-![Note](images/icon_info.png) (**NOTE**: If you're wondering where to place your custom functions, just
+**NOTE:** If you're wondering where to place your custom functions, just
 open up the **"Global Script"** **(AGS Editor -> File Menu -> Open GlobalScript.asc)** and write them
 in there. The function must be outside all other functions.
 

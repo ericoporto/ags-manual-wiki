@@ -70,8 +70,8 @@ These are the room *edges,* and they define how far the character needs
 to walk to be considered to have left the room. Click and drag them to
 position them appropriately.
 
-![Note](images/icon_info.png) (**NOTE**: Bear in mind that it's the character's
-**feet** that are to be considered with these lines when positioning.)
+**NOTE:** Bear in mind that it's the character's
+**feet** that are to be considered with these lines when positioning.
 
 ![I've lined up the top and right edges correctly](images/acintro2_05.png)
 
@@ -87,7 +87,7 @@ Next, we need to define the room's *walkable areas*, which define where
 characters are allowed to walk within the room. Open up the **"Show this room's"** Room drop-down
 list again, and select the **"Walkable areas"** text.
 
-![Note](images/icon_info.png) (**NOTE**: You may still see the "Edges" of the room displaying as they were turned to "visible" when you had that section opened. Clicking on the "Show this Room's" dropdown and clicking on the "eyeball" for "Edges" will make them hidden from your Room Background Preview area.
+**NOTE:** You may still see the "Edges" of the room displaying as they were turned to "visible" when you had that section opened. Clicking on the "Show this Room's" dropdown and clicking on the "eyeball" for "Edges" will make them hidden from your Room Background Preview area.
 
 ![Walkable areas mode](images/acintro2_06.png)
 
@@ -121,7 +121,7 @@ The next job we need to do is to define the walk-behind areas. These
 areas (called "priorities" by some other adventure game tools) tell the
 game where the character needs to be drawn behind the background.
 
-![Note](images/icon_info.png) (**NOTE**: If you are following along on the tutorial, unfortunately our example background does not have any walk-behinds to worry about. So, I will show you how you can work with walk-behinds as our previous tutorial did, using a background from Space Quest 4.)
+**NOTE:** If you are following along on the tutorial, unfortunately our example background does not have any walk-behinds to worry about. So, I will show you how you can work with walk-behinds as our previous tutorial did, using a background from Space Quest 4.
 
 Open up the **"Show this room's"** Room drop-down
 list again, and select the **"Walk-behinds"** text. Your walkable area will
@@ -163,7 +163,7 @@ in another color, and each area has its own baseline.
 
 ![Selecting a different walk-behind area](images/intro2_8.jpg)
 
-![Note](images/icon_info.png) (**NOTE**: Going forward this tutorial will return to the Space Hub background image.)
+**NOTE:** Going forward this tutorial will return to the Space Hub background image.
 
 **Trying out the game**
 
@@ -172,9 +172,9 @@ it a go. Press F5, or click "Run" on the Build menu. This will save your
 work and launch the game! Once loaded, you should see your room with the
 character in it.
 
-![Note](images/icon_info.png) (**NOTE**: When you use the Run command, the game will always run in a window.
+**NOTE:** When you use the Run command, the game will always run in a window.
 If you want to test the game full-screen, use the Ctrl+F5
-("Run without debugger") option.)
+("Run without debugger") option.
 
 Try to move the character around. If he won't move, he probably didn't
 start on a walkable area. If this is the case, expand the "Characters"
@@ -187,9 +187,9 @@ character to start, and reading the "Mouse Position" display.
 Once you've got that working, have a play walking the character around
 the screen, testing out the walkable and walk-behind areas.
 
-![Note](images/icon_info.png) (**NOTE**: The normal way of exiting the game is to press Ctrl+Q. It's possible
+**NOTE:** The normal way of exiting the game is to press Ctrl+Q. It's possible
 that during development of your game, you may create a script that
 causes the game to lock up - in this case, the emergency break key
-Alt+X will exit the game for you.)
+Alt+X will exit the game for you.
 
 Next Chapter: [Part 3 - Adding Interaction](acintro3)
