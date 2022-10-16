@@ -4,7 +4,9 @@
 
 *(Formerly known as global function `GetInvAt`, which is now obsolete)*
 
-    static InventoryItem* InventoryItem.GetAtScreenXY(int x, int y)
+```ags
+static InventoryItem* InventoryItem.GetAtScreenXY(int x, int y)
+```
 
 Returns the inventory item at SCREEN coordinates (X,Y). Note that this
 only detects inventory items on custom Inventory windows (that are
@@ -22,13 +24,15 @@ with the mouse cursor position variables.
 
 Example:
 
-    InventoryItem *item = InventoryItem.GetAtScreenXY(mouse.x, mouse.y);
-    if (item == null) {
-      Display("No inventory item at the mouse coordinates");
-    }
-    else {
-      Display("Inventory item number %d at the mouse.", item.ID);
-    }
+```ags
+InventoryItem *item = InventoryItem.GetAtScreenXY(mouse.x, mouse.y);
+if (item == null) {
+    Display("No inventory item at the mouse coordinates");
+}
+else {
+    Display("Inventory item number %d at the mouse.", item.ID);
+}
+```
 
 will display the number of the inv item that the mouse is over
 
@@ -41,7 +45,9 @@ will display the number of the inv item that the mouse is over
 
 *(Formerly known as `GetInvProperty`, which is now obsolete)*
 
-    InventoryItem.GetProperty(string property)
+```ags
+InventoryItem.GetProperty(string property)
+```
 
 Returns the custom property setting PROPERTY for the inventory item.
 
@@ -52,8 +58,10 @@ Use the equivalent GetTextProperty function to get a text property.
 
 Example:
 
-    if (inventory[1].GetProperty("Value") > 200)
-      Display("Inventory item 1's value is over 200!");
+```ags
+if (inventory[1].GetProperty("Value") > 200)
+    Display("Inventory item 1's value is over 200!");
+```
 
 will print the message if inventory item 1 has its "Value" property set
 to more than 200.
@@ -69,7 +77,9 @@ to more than 200.
 *(Formerly known as `InventoryItem.GetPropertyText`, which is now
 obsolete)*
 
-    String InventoryItem.GetTextProperty(string property)
+```ags
+String InventoryItem.GetTextProperty(string property)
+```
 
 Returns the custom property setting PROPERTY for the inventory item.
 
@@ -80,8 +90,10 @@ Use the equivalent GetProperty function to get a non-text property.
 
 Example:
 
-    String description = inventory[2].GetTextProperty("Description");
-    Display("Inv item 2's description: %s", description);
+```ags
+String description = inventory[2].GetTextProperty("Description");
+Display("Inv item 2's description: %s", description);
+```
 
 will retrieve inv item 2's "description" property and display it.
 
@@ -92,7 +104,9 @@ will retrieve inv item 2's "description" property and display it.
 
 ### `InventoryItem.SetProperty`
 
-    bool InventoryItem.SetProperty(const string property, int value)
+```ags
+bool InventoryItem.SetProperty(const string property, int value)
+```
 
 Sets the new *value* for the custom *property* for the specified
 inventory item. Returns TRUE if such property exists and FALSE on
@@ -107,7 +121,9 @@ value.
 
 Example:
 
-    iStone.SetProperty("Weight", 120);
+```ags
+iStone.SetProperty("Weight", 120);
+```
 
 will change Stone's "weight" custom property to 120.
 
@@ -120,7 +136,9 @@ will change Stone's "weight" custom property to 120.
 
 ### `InventoryItem.SetTextProperty`
 
-    bool InventoryItem.SetTextProperty(const string property, const string value)
+```ags
+bool InventoryItem.SetTextProperty(const string property, const string value)
+```
 
 Sets the new *value* text for the custom *property* for the specified
 inventory item. Returns TRUE if such property exists and FALSE on
@@ -133,7 +151,9 @@ Use the equivalent SetProperty function to set a non-text property.
 
 Example:
 
-    iKey.SetTextProperty("Description", "A rusty key");
+```ags
+iKey.SetTextProperty("Description", "A rusty key");
+```
 
 will change key's "description" property.
 
@@ -149,7 +169,9 @@ will change key's "description" property.
 *(Formerly known as `IsInventoryInteractionAvailable`, which is now
 obsolete)*
 
-    InventoryItem.IsInteractionAvailable(CursorMode)
+```ags
+InventoryItem.IsInteractionAvailable(CursorMode)
+```
 
 Checks whether there is an event handler defined for activating the
 inventory item in cursor mode MODE.
@@ -164,8 +186,10 @@ example.
 
 Example:
 
-    if (iKeyring.IsInteractionAvailable(eModeLookat) == 0)
-      Display("looking at this item would not do anything.");
+```ags
+if (iKeyring.IsInteractionAvailable(eModeLookat) == 0)
+    Display("looking at this item would not do anything.");
+```
 
 *See also:* [`IsInteractionAvailable`](Globalfunctions_General#isinteractionavailable),
 [`InventoryItem.RunInteraction`](InventoryItem#inventoryitemruninteraction)
@@ -176,15 +200,19 @@ Example:
 
 *(Formerly known as `RunInventoryInteraction`, which is now obsolete)*
 
-    InventoryItem.RunInteraction(CursorMode)
+```ags
+InventoryItem.RunInteraction(CursorMode)
+```
 
 Runs the event handler as if the player had clicked the mouse on the
 inventory item, using the specified cursor mode.
 
 Example:
 
-    if (button == eMouseLeftInv)
-      inventory[game.inv_activated].RunInteraction(mouse.Mode);
+```ags
+if (button == eMouseLeftInv)
+    inventory[game.inv_activated].RunInteraction(mouse.Mode);
+```
 
 will run the inventory event handler for the current cursor mode when
 the player clicks on the item (Handle Inv Clicks needs to be enabled for
@@ -199,7 +227,9 @@ this to work)
 
 ### `InventoryItem.CursorGraphic`
 
-    int InventoryItem.CursorGraphic
+```ags
+int InventoryItem.CursorGraphic
+```
 
 Gets/sets the sprite slot number of the inventory item's mouse cursor.
 This is the sprite used as the mouse cursor when this inventory item is
@@ -210,7 +240,9 @@ graphic for cursor" setting in General Settings is turned on.
 
 Example:
 
-    Display("The key's cursor graphic is %d", iKey.CursorGraphic);
+```ags
+Display("The key's cursor graphic is %d", iKey.CursorGraphic);
+```
 
 will display inventory item *iKey*'s cursor graphic.
 
@@ -225,7 +257,9 @@ will display inventory item *iKey*'s cursor graphic.
 *(Formerly known as `GetInvGraphic`, which is now obsolete)*<br>
 *(Formerly known as `SetInvItemPic`, which is now obsolete)*
 
-    int InventoryItem.Graphic
+```ags
+int InventoryItem.Graphic
+```
 
 Gets/sets the sprite slot number of the inventory item. You could use
 this with the Object.Graphic property as a means of the player
@@ -238,7 +272,9 @@ then the CursorGraphic will be changed too.
 
 Example:
 
-    int slot = player.ActiveInventory.Graphic;
+```ags
+int slot = player.ActiveInventory.Graphic;
+```
 
 will place the sprite number of the player's current inventory item into
 slot.
@@ -252,7 +288,9 @@ slot.
 
 ### `InventoryItem.ID`
 
-    readonly int InventoryItem.ID
+```ags
+readonly int InventoryItem.ID
+```
 
 Gets the inventory item's ID number. This is the item's number from the
 editor, and is useful with commands such as Character.AddInventory which
@@ -260,7 +298,9 @@ require an inventory number to add.
 
 Example:
 
-    AddInventory(EGO, iShovel.ID);
+```ags
+AddInventory(EGO, iShovel.ID);
+```
 
 uses the obsolete AddInventory command to add the shovel to EGO's
 inventory
@@ -277,7 +317,9 @@ inventory
 *(Formerly known as `InventoryItem.GetName`, which is now obsolete)*<br>
 *(Formerly known as `InventoryItem.SetName`, which is now obsolete)*
 
-    String InventoryItem.Name;
+```ags
+String InventoryItem.Name;
+```
 
 Gets/sets the name of the inventory item. This is the name which is
 initially set under the Game tab, Inventory mode of the AGS Editor.
@@ -292,7 +334,9 @@ truncated.
 
 Example:
 
-    Display("Active inventory: %s", player.ActiveInventory.Name);
+```ags
+Display("Active inventory: %s", player.ActiveInventory.Name);
+```
 
 will display the name of the player's current inventory item.
 

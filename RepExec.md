@@ -72,10 +72,12 @@ In main game scripts, you create your *repeatedly_execute* script
 function by just pasting it into the script as follows. In the
 GlobalScript.asc it is already created for you:
 
-    function repeatedly_execute()
-    {
-      // Put your script code here
-    }
+```ags
+function repeatedly_execute()
+{
+  // Put your script code here
+}
+```
 
 In rooms, it is slightly different. If you want to run some script that
 is specific to a particular room, open that room's Events Pane and
@@ -91,10 +93,12 @@ the script as above -- but you can also paste it into room scripts.
 Therefore the following will work in any script, whether it be a room or
 a global script.
 
-    function repeatedly_execute_always()
-    {
-      // Put your script code here
-    }
+```ags
+function repeatedly_execute_always()
+{
+  // Put your script code here
+}
+```
 
 Remember, of course, that RepExec or *repeatedly_execute_always*
 functions in a room script will only be run while the player is actually
@@ -105,38 +109,42 @@ in that room!
 Let's implement the two things we just talked about. Here's our hunger
 checking code:
 
-    function repeatedly_execute()
-    {
-      // increment our timer variable (we would have created this
-      // in the Global Variables editor)
-      hungerTimer++;
+```ags
+function repeatedly_execute()
+{
+  // increment our timer variable (we would have created this
+  // in the Global Variables editor)
+  hungerTimer++;
 
-      if (hungerTimer == 800)
-      {
-        Display("You are getting very hungry.");
-        player.LockView(RUBSTOMACH);
-        player.Animate(0, 5, eOnce, eBlock, eForwards);
-        player.UnlockView();
-      }
-    }
+  if (hungerTimer == 800)
+  {
+    Display("You are getting very hungry.");
+    player.LockView(RUBSTOMACH);
+    player.Animate(0, 5, eOnce, eBlock, eForwards);
+    player.UnlockView();
+  }
+}
+```
 
 and let's put the bird flying code in the room script, because we only
 want it to happen in that one room:
 
-    function repeatedly_execute_always()
+```ags
+function repeatedly_execute_always()
+{
+  if (!cBird.Moving)
+  {
+    if (cBird.x < 100)
     {
-      if (!cBird.Moving)
-      {
-        if (cBird.x < 100)
-        {
-          // if the bird is on the left hand side of the screen,
-          // start it moving towards the right
-          cBird.Walk(400, cBird.y, eNoBlock, eAnywhere);
-        }
-        else
-        {
-          // otherwise, move it towards the left
-          cBird.Walk(0, cBird.y, eNoBlock, eAnywhere);
-        }
-      }
+      // if the bird is on the left hand side of the screen,
+      // start it moving towards the right
+      cBird.Walk(400, cBird.y, eNoBlock, eAnywhere);
     }
+    else
+    {
+      // otherwise, move it towards the left
+      cBird.Walk(0, cBird.y, eNoBlock, eAnywhere);
+    }
+  }
+}
+```

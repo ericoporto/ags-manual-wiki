@@ -9,7 +9,9 @@ described in the linked page.
 
 ### `DialogOptionsRenderingInfo.RunActiveOption`
 
-    bool DialogOptionsRenderingInfo.RunActiveOption();
+```ags
+bool DialogOptionsRenderingInfo.RunActiveOption();
+```
 
 Runs the currently selected dialog option, the one set in
 ActiveOptionID, and returns **true** on success.
@@ -20,11 +22,13 @@ continue, most common places for such call are
 
 Example:
 
-    function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode key)
-    {
-      if (keycode == eKeyReturn)
-        info.RunActiveOption();
-    }
+```ags
+function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode key)
+{
+    if (keycode == eKeyReturn)
+    info.RunActiveOption();
+}
+```
 
 runs selected dialog option when player presses Enter/Return key.
 
@@ -37,7 +41,9 @@ runs selected dialog option when player presses Enter/Return key.
 
 ### `DialogOptionsRenderingInfo.Update`
 
-    void DialogOptionsRenderingInfo.Update();
+```ags
+void DialogOptionsRenderingInfo.Update();
+```
 
 Forces dialog options to redraw, eventually leading to be
 `dialog_options_render` function run.
@@ -60,7 +66,9 @@ current script ends.
 
 ### `DialogOptionsRenderingInfo.ActiveOptionID`
 
-    int DialogOptionsRenderingInfo.ActiveOptionID;
+```ags
+int DialogOptionsRenderingInfo.ActiveOptionID;
+```
 
 Gets/sets the currently active option on the dialog options screen. You
 set this in the `dialog_options_get_active` function to tell AGS which
@@ -77,10 +85,12 @@ options in the dialog.
 
 Example:
 
-    function dialog_options_get_active(DialogOptionsRenderingInfo *info)
-    {
-      info.ActiveOptionID = 1;
-    }
+```ags
+function dialog_options_get_active(DialogOptionsRenderingInfo *info)
+{
+    info.ActiveOptionID = 1;
+}
+```
 
 always selects the first option
 
@@ -94,7 +104,9 @@ always selects the first option
 
 ### `DialogOptionsRenderingInfo.DialogToRender`
 
-    Dialog* DialogOptionsRenderingInfo.DialogToRender;
+```ags
+Dialog* DialogOptionsRenderingInfo.DialogToRender;
+```
 
 Gets the dialog that needs to be rendered. You can loop through all the
 options in the dialog in order to decide what to display on the screen.
@@ -111,7 +123,9 @@ Example: For an example please see the
 
 ### `DialogOptionsRenderingInfo.HasAlphaChannel`
 
-    int DialogOptionsRenderingInfo.HasAlphaChannel;
+```ags
+int DialogOptionsRenderingInfo.HasAlphaChannel;
+```
 
 Gets/sets whether the dialog options's drawing surface will have alpha
 channel.
@@ -122,12 +136,14 @@ options.
 
 Example:
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
-    {
-      info.Width = 300;
-      info.Height = 150;
-      info.HasAlphaChannel = true;
-    }
+```ags
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+    info.Width = 300;
+    info.Height = 150;
+    info.HasAlphaChannel = true;
+}
+```
 
 creates a 300x150 size area with alpha channel to draw the dialog
 options in.
@@ -142,7 +158,9 @@ options in.
 
 ### `DialogOptionsRenderingInfo.Height`
 
-    int DialogOptionsRenderingInfo.Height;
+```ags
+int DialogOptionsRenderingInfo.Height;
+```
 
 Gets/sets the height of the area needed to draw the dialog options.
 
@@ -152,11 +170,13 @@ options.
 
 Example:
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
-    {
-      info.Width = 300;
-      info.Height = 150;
-    }
+```ags
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+    info.Width = 300;
+    info.Height = 150;
+}
+```
 
 creates a 300x150 size area to draw the dialog options in
 
@@ -169,7 +189,9 @@ creates a 300x150 size area to draw the dialog options in
 
 ### `DialogOptionsRenderingInfo.ParserTextBoxWidth`
 
-    int DialogOptionsRenderingInfo.ParserTextBoxWidth;
+```ags
+int DialogOptionsRenderingInfo.ParserTextBoxWidth;
+```
 
 Gets/sets the width of the text parser textbox on the dialog options. If
 the text parser is not enabled for this dialog, this setting will be
@@ -180,15 +202,17 @@ function.
 
 Example:
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
-    {
-      info.Width = 300;
-      info.Height = 150;
-      // Put the text parser at the bottom (if enabled)
-      info.ParserTextBoxX = 10;
-      info.ParserTextBoxY = 130;
-      info.ParserTextBoxWidth = 180;
-    }
+```ags
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+    info.Width = 300;
+    info.Height = 150;
+    // Put the text parser at the bottom (if enabled)
+    info.ParserTextBoxX = 10;
+    info.ParserTextBoxY = 130;
+    info.ParserTextBoxWidth = 180;
+}
+```
 
 positions the parser text box at (10,130) inside the 300x150 dialog
 options area
@@ -204,7 +228,9 @@ options area
 
 ### `DialogOptionsRenderingInfo.ParserTextBoxX`
 
-    int DialogOptionsRenderingInfo.ParserTextBoxX;
+```ags
+int DialogOptionsRenderingInfo.ParserTextBoxX;
+```
 
 Gets/sets the X-position of the text parser textbox on the dialog
 options. If the text parser is not enabled for this dialog, this setting
@@ -219,15 +245,17 @@ function.
 
 Example:
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
-    {
-      info.Width = 300;
-      info.Height = 150;
-      // Put the text parser at the bottom (if enabled)
-      info.ParserTextBoxX = 10;
-      info.ParserTextBoxY = 130;
-      info.ParserTextBoxWidth = 180;
-    }
+```ags
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+    info.Width = 300;
+    info.Height = 150;
+    // Put the text parser at the bottom (if enabled)
+    info.ParserTextBoxX = 10;
+    info.ParserTextBoxY = 130;
+    info.ParserTextBoxWidth = 180;
+}
+```
 
 positions the parser text box at (10,130) inside the 300x150 dialog
 options area
@@ -242,7 +270,9 @@ options area
 
 ### `DialogOptionsRenderingInfo.ParserTextBoxY`
 
-    int DialogOptionsRenderingInfo.ParserTextBoxY;
+```ags
+int DialogOptionsRenderingInfo.ParserTextBoxY;
+```
 
 Gets/sets the Y-position of the text parser textbox on the dialog
 options. If the text parser is not enabled for this dialog, this setting
@@ -257,15 +287,17 @@ function.
 
 Example:
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
-    {
-      info.Width = 300;
-      info.Height = 150;
-      // Put the text parser at the bottom (if enabled)
-      info.ParserTextBoxX = 10;
-      info.ParserTextBoxY = 130;
-      info.ParserTextBoxWidth = 180;
-    }
+```ags
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+    info.Width = 300;
+    info.Height = 150;
+    // Put the text parser at the bottom (if enabled)
+    info.ParserTextBoxX = 10;
+    info.ParserTextBoxY = 130;
+    info.ParserTextBoxWidth = 180;
+}
+```
 
 positions the parser text box at (10,130) inside the 300x150 dialog
 options area
@@ -279,7 +311,9 @@ options area
 
 ### `DialogOptionsRenderingInfo.Surface`
 
-    DrawingSurface* DialogOptionsRenderingInfo.Surface;
+```ags
+DrawingSurface* DialogOptionsRenderingInfo.Surface;
+```
 
 Gets the drawing surface that can be used to draw the dialog options.
 
@@ -295,10 +329,12 @@ requested in the `dialog_options_get_dimensions` function.
 
 Example:
 
-    function dialog_options_render(DialogOptionsRenderingInfo *info)
-    {
-      info.Surface.Clear(14);
-    }
+```ags
+function dialog_options_render(DialogOptionsRenderingInfo *info)
+{
+    info.Surface.Clear(14);
+}
+```
 
 clears the dialog options area to yellow.
 
@@ -310,7 +346,9 @@ clears the dialog options area to yellow.
 
 ### `DialogOptionsRenderingInfo.Width`
 
-    int DialogOptionsRenderingInfo.Width;
+```ags
+int DialogOptionsRenderingInfo.Width;
+```
 
 Gets/sets the width of the area needed to draw the dialog options.
 
@@ -320,11 +358,13 @@ options.
 
 Example:
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
-    {
-      info.Width = 300;
-      info.Height = 150;
-    }
+```ags
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+    info.Width = 300;
+    info.Height = 150;
+}
+```
 
 creates a 300x150 size area to draw the dialog options in
 
@@ -337,7 +377,9 @@ creates a 300x150 size area to draw the dialog options in
 
 ### `DialogOptionsRenderingInfo.X`
 
-    int DialogOptionsRenderingInfo.X;
+```ags
+int DialogOptionsRenderingInfo.X;
+```
 
 Gets/sets the horizontal co-ordinate of the top-left corner of the
 dialog options area.
@@ -348,13 +390,15 @@ options.
 
 Example:
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
-    {
-      info.X = 50;
-      info.Y = 20;
-      info.Width = 200;
-      info.Height = 150;
-    }
+```ags
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+    info.X = 50;
+    info.Y = 20;
+    info.Width = 200;
+    info.Height = 150;
+}
+```
 
 creates a 200x150 size area at (50, 20) to draw the dialog options in
 
@@ -367,7 +411,9 @@ creates a 200x150 size area at (50, 20) to draw the dialog options in
 
 ### `DialogOptionsRenderingInfo.Y`
 
-    int DialogOptionsRenderingInfo.Y;
+```ags
+int DialogOptionsRenderingInfo.Y;
+```
 
 Gets/sets the vertical co-ordinate of the top-left corner of the dialog
 options area.
@@ -378,13 +424,15 @@ options.
 
 Example:
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
-    {
-      info.X = 50;
-      info.Y = 20;
-      info.Width = 200;
-      info.Height = 150;
-    }
+```ags
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+    info.X = 50;
+    info.Y = 20;
+    info.Width = 200;
+    info.Height = 150;
+}
+```
 
 creates a 200x150 size area at (50, 20) to draw the dialog options in
 

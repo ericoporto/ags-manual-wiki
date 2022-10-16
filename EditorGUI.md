@@ -60,10 +60,12 @@ in a similar way to using character names. For example, if a GUI is called
 "gIconBar", you can use reference it in a script by using this name. For
 example, to configure the visibility of GUI when the game starts:
 
-    function game_start()
-    {
-        gIconBar.Visible = true;
-    }
+```ags
+function game_start()
+{
+    gIconBar.Visible = true;
+}
+```
 
 ---
 

@@ -4,8 +4,10 @@ With AGS you can link a line of dialog to a speech file, to enable
 "talkie"- style games. Suppose you have a dialog script with the
 following content:
 
+```agsdialog
     ego: "Hi! How are you?"
     michael: "I'm fine."
+```
 
 Normally this would display the words in the speech text above the
 characters heads. However, you can add the special character '&' to
@@ -18,13 +20,17 @@ padding of any kind), and EXT is the file extension.
 
 For example, if you have dialog script:
 
+```agsdialog
     ego: &10 "Hi! How are you?"
     michael: &7 "I'm fine."
+```
 
 or common script using Say script function:
 
+```ags
     cEgo.Say("&10 Hi! How are you?");
     cMichael.Say("&7 I'm fine.");
+```
 
 Both of those examples plays EGO10.WAV with the first line, and
 MICH7.WAV with the second. When a line of text has a voice linked to it,

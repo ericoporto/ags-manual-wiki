@@ -139,8 +139,10 @@ Use these keycodes in your
 [`on_key_press`](Globalfunctions_Event#on_key_press) function to
 process player input. For example:
 
-    if (keycode == eKeyA) Display("You pressed A");
-    if (keycode == eKeyPlus) Display("You pressed the Plus key");
+```ags
+if (keycode == eKeyA) Display("You pressed A");
+if (keycode == eKeyPlus) Display("You pressed the Plus key");
+```
 
 *Compatibility:* the mod key constants (eKeyShiftLeft to eKeyAltRight) are only supported since AGS 3.6.0. In previous versions you'd have to use corresponding numeric values.
 
@@ -164,15 +166,17 @@ AGS modifier | Mod |
 
 You may use these mod codes in the extended variant of [`on_key_press`](Globalfunctions_Event#on_key_press) function to check which mod keys were pressed along with the primary key. Remember that since these mods are "flags", they should be tested using not the regular "comparison" operator `==`, but bitwise operators. For example:
 
-    if (keycode == eKeyA) {
-        if (mod & eKeyModCtrl) {
-            Display("Pressed Ctrl+A");
-        }
+```ags
+if (keycode == eKeyA) {
+    if (mod & eKeyModCtrl) {
+        Display("Pressed Ctrl+A");
     }
+}
 
-    if (mod & eKeyModAlt == 0) {
-        Display("NO Alt was pressed this time");
-    }
+if (mod & eKeyModAlt == 0) {
+    Display("NO Alt was pressed this time");
+}
+```
 
 
 In addition, there are two constants defining bitwise masks, one for key codes, and another for key modifiers:
@@ -184,9 +188,11 @@ eKeyModMask | all key mods
 
 If both key code and mods are combined in one integer variable, using bitwise operations, these masks may then be used to extract code and mods:
 
-    int combokey = eKeyA | eKeyModCtrlLeft;
+```ags
+int combokey = eKeyA | eKeyModCtrlLeft;
 
-    int keycode = combokey & eKeyCodeMask; // keycode now contains only eKeyA
-    int keymod = combokey & eKeyModMask; // keymod now contains only eKeyModCtrlLeft
+int keycode = combokey & eKeyCodeMask; // keycode now contains only eKeyA
+int keymod = combokey & eKeyModMask; // keymod now contains only eKeyModCtrlLeft
+```
 
 *Compatibility:* eKeyMod enumeration is only supported since AGS 3.6.0.

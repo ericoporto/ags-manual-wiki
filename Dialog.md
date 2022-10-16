@@ -2,7 +2,9 @@
 
 ### `Dialog.DisplayOptions`
 
-    int Dialog.DisplayOptions(optional DialogOptionSayStyle)
+```ags
+int Dialog.DisplayOptions(optional DialogOptionSayStyle)
+```
 
 Presents the options for this dialog to the user and waits until they
 select one of them. The selected option number is returned.
@@ -31,15 +33,17 @@ the player's text. Therefore, you can call
 
 Example:
 
-    int result = dOldMan.DisplayOptions();
-    if (result == DIALOG_PARSER_SELECTED)
-    {
-      Display("They typed something into the parser!!");
-    }
-    else
-    {
-      Display("They chose dialog option %d.", result);
-    }
+```ags
+int result = dOldMan.DisplayOptions();
+if (result == DIALOG_PARSER_SELECTED)
+{
+    Display("They typed something into the parser!!");
+}
+else
+{
+    Display("They chose dialog option %d.", result);
+}
+```
 
 will show the options for dialog *dOldMan* and display a message
 depending on what the player selected.
@@ -56,7 +60,9 @@ depending on what the player selected.
 *(Formerly known as global function `GetDialogOption`, which is now
 obsolete)*
 
-    Dialog.GetOptionState(int option)
+```ags
+Dialog.GetOptionState(int option)
+```
 
 Finds out whether an option in a conversation is available to the player
 or not.
@@ -78,8 +84,10 @@ These are the same as the options passed to Dialog.SetOptionState.
 
 Example:
 
-    if (dJoeExcited.GetOptionState(2) != eOptionOn)
-      Display("It's turned off");
+```ags
+if (dJoeExcited.GetOptionState(2) != eOptionOn)
+    Display("It's turned off");
+```
 
 Will display a message if option 2 of dialog dJoeExcited is not
 currently switched on.
@@ -93,7 +101,9 @@ currently switched on.
 
 ### `Dialog.GetOptionText`
 
-    String Dialog.GetOptionText(int option)
+```ags
+String Dialog.GetOptionText(int option)
+```
 
 Returns the text for the specified dialog option.
 
@@ -102,8 +112,10 @@ highest option is for that topic.
 
 Example:
 
-    String optionText = dJoeBloggs.GetOptionText(3);
-    Display("Option 3 of dialog dJoeBloggs is %s!", optionText);
+```ags
+String optionText = dJoeBloggs.GetOptionText(3);
+Display("Option 3 of dialog dJoeBloggs is %s!", optionText);
+```
 
 will display the text for the third option of the dJoeBloggs dialog.
 
@@ -116,7 +128,9 @@ will display the text for the third option of the dJoeBloggs dialog.
 
 ### `Dialog.HasOptionBeenChosen`
 
-    bool Dialog.HasOptionBeenChosen(int option)
+```ags
+bool Dialog.HasOptionBeenChosen(int option)
+```
 
 Finds out whether the player has already chosen the specified option in
 this dialog. This is mainly useful when drawing your own custom dialog
@@ -128,8 +142,10 @@ highest option is for that topic.
 
 Example:
 
-    if (dJoeExcited.HasOptionBeenChosen(2))
-      Display("The player has chosen option 2 in dialog dJoeExcited!");
+```ags
+if (dJoeExcited.HasOptionBeenChosen(2))
+    Display("The player has chosen option 2 in dialog dJoeExcited!");
+```
 
 will display a message if the player has used option 2 of the dialog
 before.
@@ -143,7 +159,9 @@ before.
 
 ### `Dialog.ID`
 
-    readonly int Dialog.ID;
+```ags
+readonly int Dialog.ID;
+```
 
 Gets the dialog ID number from the editor.
 
@@ -152,7 +170,9 @@ that work with dialog ID numbers.
 
 Example:
 
-    Display("dFisherman is Dialog %d!", dFisherman.ID);
+```ags
+Display("dFisherman is Dialog %d!", dFisherman.ID);
+```
 
 will display the ID number of the dFisherman dialog
 
@@ -162,7 +182,9 @@ will display the ID number of the dFisherman dialog
 
 ### `Dialog.OptionCount`
 
-    readonly int Dialog.OptionCount;
+```ags
+readonly int Dialog.OptionCount;
+```
 
 Gets the number of options that this dialog has.
 
@@ -171,7 +193,9 @@ all the possible choices in the dialog.
 
 Example:
 
-    Display("dFisherman has %d options!", dFisherman.OptionCount);
+```ags
+Display("dFisherman has %d options!", dFisherman.OptionCount);
+```
 
 will display the number of options in the dFisherman dialog.
 
@@ -184,7 +208,9 @@ will display the number of options in the dFisherman dialog.
 
 ### `Dialog.SetHasOptionBeenChosen`
 
-    Dialog.SetHasOptionBeenChosen(int option, bool chosen)
+```ags
+Dialog.SetHasOptionBeenChosen(int option, bool chosen)
+```
 
 Changes whether an option in a conversation is marked as previously
 chosen by the player. The option is marked as chosen whenever player
@@ -197,8 +223,10 @@ highest option is for that topic.
 
 Example:
 
-    if (dDialog1.HasOptionBeenChosen(1))
-        dDialog1.SetHasOptionBeenChosen(1, false); // reset the option state
+```ags
+if (dDialog1.HasOptionBeenChosen(1))
+    dDialog1.SetHasOptionBeenChosen(1, false); // reset the option state
+```
 
 will mark option 1 of dialog dDialog1 as "not chosen yet".
 
@@ -214,7 +242,9 @@ will mark option 1 of dialog dDialog1 as "not chosen yet".
 *(Formerly known as global function `SetDialogOption`, which is now
 obsolete)*
 
-    Dialog.SetOptionState(int option, DialogOptionState)
+```ags
+Dialog.SetOptionState(int option, DialogOptionState)
+```
 
 Changes whether an option in a conversation is available to the player
 or not. This allows you to add extra options to a conversation once the
@@ -239,8 +269,10 @@ option-off-forever dialog commands.
 
 Example:
 
-    if (GetGlobalInt(10)==1)
-        dialog[4].SetOptionState(2, eOptionOn);
+```ags
+if (GetGlobalInt(10)==1)
+    dialog[4].SetOptionState(2, eOptionOn);
+```
 
 will enable option 2 of topic number 4 if the Global Integer 10 is 1.
 
@@ -252,7 +284,9 @@ will enable option 2 of topic number 4 if the Global Integer 10 is 1.
 
 ### `Dialog.ShowTextParser`
 
-    readonly bool Dialog.ShowTextParser;
+```ags
+readonly bool Dialog.ShowTextParser;
+```
 
 Gets whether this dialog shows a text box allowing the player to type in
 text.
@@ -261,10 +295,12 @@ This property is initially set in the Dialog Editor.
 
 Example:
 
-    if (dFisherman.ShowTextParser)
-    {
-      Display("dFisherman has a text box!");
-    }
+```ags
+if (dFisherman.ShowTextParser)
+{
+    Display("dFisherman has a text box!");
+}
+```
 
 will display a message if dFisherman has the option enabled
 
@@ -276,7 +312,9 @@ will display a message if dFisherman has the option enabled
 
 *(Formerly known as global function `RunDialog`, which is now obsolete)*
 
-    Dialog.Start()
+```ags
+Dialog.Start()
+```
 
 Starts a conversation from the specified topic.
 
@@ -289,7 +327,9 @@ script finishes.
 
 Example:
 
-    dMerchant.Start();
+```ags
+dMerchant.Start();
+```
 
 will start the conversation topic named dMerchant.
 
@@ -300,7 +340,9 @@ will start the conversation topic named dMerchant.
 
 ### `StopDialog`
 
-    StopDialog ()
+```ags
+StopDialog ()
+```
 
 This command can only be used from within the dialog_request function.
 It tells AGS that when dialog_request finishes, the whole conversation
@@ -311,11 +353,13 @@ the player has/does a certain thing.
 
 Example:
 
-     function dialog_request (int dr) {
-     if (dr==1) {
-       cEgo.AddInventory(iPoster);
-       StopDialog();
-     }
+```ags
+function dialog_request (int dr) {
+if (dr==1) {
+    cEgo.AddInventory(iPoster);
+    StopDialog();
+}
+```
 
 will give the player the inventory item 3 and then end the conversation.
 

@@ -41,14 +41,16 @@ You type the whole sentence (but NOT including any ignore words), and
 AGS will compare it to the user's string, considering all synonyms
 identical. For example (assuming our text box is called "txtUserInput"):
 
-      String input = txtUserInput.Text;
-      Parser.ParseText(input);
-      if (Parser.Said("look fence")) {
-        Display("It's an old wooden fence.");
-      }
-      if (Parser.Said("eat apple")) {
-        Display("You'd love to, but you don't have one.");
-      }
+```ags
+String input = txtUserInput.Text;
+Parser.ParseText(input);
+if (Parser.Said("look fence")) {
+  Display("It's an old wooden fence.");
+}
+if (Parser.Said("eat apple")) {
+  Display("You'd love to, but you don't have one.");
+}
+```
 
 There are a couple of special words you can use with the Said command.
 "anyword" will match any word that the user types in. For example,
@@ -56,9 +58,11 @@ Said("throw anyword away") will match if they type "throw dagger away",
 or "throw trash away". "rol" (short for Rest-of-Line) will match the
 rest of the user's input. So, you might want to do:
 
-    if (Parser.Said("kill rol")) {
-      Display("You're not a violent person.");
-    }
+```ags
+if (Parser.Said("kill rol")) {
+  Display("You're not a violent person.");
+}
+```
 
 This way if they try to kill anything they will get the generic
 response.
@@ -71,7 +75,9 @@ other. However, if the player has a headache tablet, for instance, then
 comma "," comes in - if you include a comma in your input, all synonyms
 of all words separated by the comma will match. So:
 
-    if (Parser.Said("eat,take tablet"))
+```ags
+if (Parser.Said("eat,take tablet"))
+```
 
 will match eat or take and all their synonyms, then tablet and its
 synonyms.
@@ -82,7 +88,9 @@ player to be able to type "look wall" and "look brick wall". Although
 this can be done with two OR'ed Said commands, AGS makes it easier. You
 can use \[brackets\] to signify an optional word. So:
 
-    if (Parser.Said("look [brick] wall"))
+```ags
+if (Parser.Said("look [brick] wall"))
+```
 
 will match "look wall" and "look brick wall".
 
@@ -93,16 +101,18 @@ on. Putting all this in your global script would make a big mess. So,
 enter the [`CallRoomScript`](Globalfunctions_General#callroomscript) function. Using
 this, you can do:
 
-      Parser.ParseText(input);
-      String badWord = Parser.SaidUnknownWord();
-      if (badWord != null)
-        Display("You can't use '%s' in this game.", badWord);
-      else if (Parser.Said("eat apple")) {
-        Display("You'd love to, but you don't have one.");
-      }
-      ... // other game-wide commands
-      else
-        CallRoomScript (1);
+```ags
+Parser.ParseText(input);
+String badWord = Parser.SaidUnknownWord();
+if (badWord != null)
+  Display("You can't use '%s' in this game.", badWord);
+else if (Parser.Said("eat apple")) {
+  Display("You'd love to, but you don't have one.");
+}
+... // other game-wide commands
+else
+  CallRoomScript (1);
+```
 
 Then, the room script can check for things that the player can do in the
 current room. See the [`CallRoomScript`](Globalfunctions_General#callroomscript)

@@ -4,7 +4,7 @@
 
 ### `Verbs.FreezePlayer`
 
-```
+```ags
 vpod Verbs.FreezePlayer();
 ```
 
@@ -17,7 +17,7 @@ Use this function to prevent the player from moving by the following movement fu
 
 ### `Verbs.UnfreezePlayer`
 
-```
+```ags
 void Verbs.UnfreezePlayer();
 ```
 
@@ -30,13 +30,13 @@ Use this function to undo the FreezePlayer function and let the characters move 
 
 ### `Verbs.SetPlayer`
 
-```
+```ags
 void SetPlayer(Character*ch);
 ```
 
 Usage:
 
-```
+```ags
 cEgo.SetPlayer();
 ```
 
@@ -46,13 +46,13 @@ Similar to the AGS function Character.SetAsPlayer(). The difference is, that mak
 
 ### `Verbs.EnterRoom`
 
-```
+```ags
 void EnterRoom(this Character*, int newRoom, int x, int y, eDirection dir, bool onWalkable);
 ```
 
 Usage:
 
-```
+```ags
 cEgo.EnterRoom(1,15,15,eDir_Left,true);
 ```
 

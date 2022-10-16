@@ -2,7 +2,9 @@
 
 ### `AbortGame`
 
-    AbortGame(string message, ...)
+```ags
+AbortGame(string message, ...)
+```
 
 Aborts the game and returns to the operating system.
 
@@ -19,10 +21,12 @@ game.
 
 Example:
 
-    function MakeWider(int newWidth) {
-      if (newWidth < 10)
-        AbortGame("newWidth expects a width of at least 10!");
-    }
+```ags
+function MakeWider(int newWidth) {
+    if (newWidth < 10)
+    AbortGame("newWidth expects a width of at least 10!");
+}
+```
 
 will abort the game if MakeWider is called with a parameter less than
 10.
@@ -33,7 +37,9 @@ SeeAlso: [`QuitGame`](Globalfunctions_General#quitgame)
 
 ### `CallRoomScript`
 
-    CallRoomScript (int value)
+```ags
+CallRoomScript (int value)
+```
 
 Calls the `on_call` function in the current room script. This is useful
 for things like the text parser, where you want to check for general
@@ -52,13 +58,15 @@ You write the on_call function into the room script (\"Edit script\"
 button on Room Settings pane), similar to the way you do dialog_request
 in the global script:
 
-    function on_call (int value) {
-      if (value == 1) {
-        // Check text input
-        if (Parser.Said("get apple"))
-          Display("No, leave the tree alone.");
-      }
+```ags
+function on_call (int value) {
+    if (value == 1) {
+    // Check text input
+    if (Parser.Said("get apple"))
+        Display("No, leave the tree alone.");
     }
+}
+```
 
 The function doesn't get called immediately; instead, the engine will
 run it in due course, probably during the next game loop, so you can't
@@ -75,7 +83,9 @@ SeeAlso: [The text parser documentation](TextParser), [`on_call`](Globalfunction
 
 ### `ClaimEvent`
 
-    ClaimEvent()
+```ags
+ClaimEvent()
+```
 
 This command is used in a room script or script module's
 *on_key_press* or *on_mouse_click* function, and it tells AGS not to
@@ -100,10 +110,12 @@ that point.
 
 Example:
 
-    if (keycode == ' ') {
-      Display("You pressed space in this room!");
-      ClaimEvent();
-    }
+```ags
+if (keycode == ' ') {
+    Display("You pressed space in this room!");
+    ClaimEvent();
+}
+```
 
 prevents the global script on_key_press from running if the player
 pressed the space bar.
@@ -114,7 +126,9 @@ SeeAlso: [Script events](Globalfunctions_Event)
 
 ### `Debug`
 
-    Debug (int command, int data)
+```ags
+Debug (int command, int data)
+```
 
 This function provides all the debug services in the system. It performs
 various different tasks, depending on the value of the COMMAND
@@ -158,7 +172,9 @@ _Compatibility:_ Using Debug(2,n) for different masks and Debug(5,n) as toggle i
 
 ### `DeleteSaveSlot`
 
-    DeleteSaveSlot (int slot)
+```ags
+DeleteSaveSlot (int slot)
+```
 
 Deletes the save game in save slot number SLOT. If there were no save then nothing happens.
 
@@ -166,7 +182,9 @@ Deletes the save game in save slot number SLOT. If there were no save then nothi
 
 Example:
 
-    DeleteSaveSlot (130);
+```ags
+DeleteSaveSlot (130);
+```
 
 deletes save game slot 130 (which we should have saved earlier).
 
@@ -177,7 +195,9 @@ deletes save game slot 130 (which we should have saved earlier).
 
 ### `DisableInterface`
 
-    DisableInterface ()
+```ags
+DisableInterface ()
+```
 
 Disables the player interface. This works the same way as it is disabled
 while an animation is running: the mouse cursor is changed to the Wait
@@ -192,7 +212,9 @@ disabled.
 
 Example:
 
-    DisableInterface();
+```ags
+DisableInterface();
+```
 
 will disable the user's interface.
 
@@ -203,7 +225,9 @@ will disable the user's interface.
 
 ### `EnableInterface`
 
-    EnableInterface ()
+```ags
+EnableInterface ()
+```
 
 Re-enables the player interface, which was previously disabled with the
 DisableInterface function. Everything which was disabled is returned to
@@ -211,7 +235,9 @@ normal.
 
 Example:
 
-    EnableInterface();
+```ags
+EnableInterface();
+```
 
 will enable the user's interface.
 
@@ -222,7 +248,9 @@ will enable the user's interface.
 
 ### `EndCutscene`
 
-    EndCutscene()
+```ags
+EndCutscene()
+```
 
 Marks the end of a cutscene. If the player skips the cutscene, the game
 will fast-forward to this point. This function returns 0 if the player
@@ -236,7 +264,9 @@ watched the cutscene, or 1 if they skipped it.
 
 ### `GetGameOption`
 
-    GetGameOption (option)
+```ags
+GetGameOption (option)
+```
 
 Gets the current setting of one of the game options, originally set in
 the AGS Editor Game Settings pane.
@@ -248,9 +278,11 @@ The valid values for OPTION are listed in
 
 Example:
 
-    if (GetGameOption(OPT_PIXELPERFECT) == 1) {
-      Display("pixel-perfect click detection is on!");
-    }
+```ags
+if (GetGameOption(OPT_PIXELPERFECT) == 1) {
+    Display("pixel-perfect click detection is on!");
+}
+```
 
 *See also:* [`SetGameOption`](Globalfunctions_General#setgameoption)
 
@@ -283,15 +315,19 @@ GP_NUMINVITEMS)
 
 ### `GetGameSpeed`
 
-    GetGameSpeed ()
+```ags
+GetGameSpeed ()
+```
 
 Returns the current game speed (number of cycles per second).
 
 Example:
 
-    if (GetGameSpeed() > 40) {
-      SetGameSpeed(40);
-    }
+```ags
+if (GetGameSpeed() > 40) {
+    SetGameSpeed(40);
+}
+```
 
 will always keep the game speed at 40 cycles per second (in case the
 user has raised it )
@@ -302,7 +338,9 @@ user has raised it )
 
 ### `GetGlobalInt`
 
-    GetGlobalInt (int index)
+```ags
+GetGlobalInt (int index)
+```
 
 Returns the value of global int INDEX.
 
@@ -312,9 +350,11 @@ name the variables.
 
 Example:
 
-    if (GetGlobalInt(20) == 1) {
-      // code here
-    }
+```ags
+if (GetGlobalInt(20) == 1) {
+    // code here
+}
+```
 
 will execute the code only if Global Integer 20 is 1.
 
@@ -325,7 +365,9 @@ will execute the code only if Global Integer 20 is 1.
 
 ### `GetGraphicalVariable`
 
-    GetGraphicalVariable (string variable_name);
+```ags
+GetGraphicalVariable (string variable_name);
+```
 
 Returns the value of the interaction editor VARIABLE_NAME variable.
 This allows your script to access the values of variables set in the
@@ -337,8 +379,10 @@ compatibility with AGS 2.x. When writing new code, use
 
 Example:
 
-    if (GetGraphicalVariable("climbed rock")==1)
-       { code here }
+```ags
+if (GetGraphicalVariable("climbed rock")==1)
+    { code here }
+```
 
 will execute the code only if interaction variable \"climbed rock\" is
 1.
@@ -350,7 +394,9 @@ will execute the code only if interaction variable \"climbed rock\" is
 
 ### `GetLocationType`
 
-    LocationType GetLocationType(int x, int y)
+```ags
+LocationType GetLocationType(int x, int y)
+```
 
 Returns what type of room thing is seen under the given screen coordinates (x, y): whether it is a character, object, hotspot or nothing at all. This may be useful, for example, if you want to process a mouse click differently depending on what the player clicks on.
 
@@ -369,8 +415,10 @@ The value returned is one of the following:
 
 Example:
 
-    if (GetLocationType(mouse.x,mouse.y) == eLocationCharacter)
-        mouse.Mode = eModeTalk;
+```ags
+if (GetLocationType(mouse.x,mouse.y) == eLocationCharacter)
+    mouse.Mode = eModeTalk;
+```
 
 will set the cursor mode to talk if the cursor is over a character.
 
@@ -382,7 +430,9 @@ will set the cursor mode to talk if the cursor is over a character.
 
 ### `GetPlayerCharacter`
 
-    GetPlayerCharacter ()
+```ags
+GetPlayerCharacter ()
+```
 
 **THIS COMMAND IS NOW OBSOLETE.**<br>
 The recommended replacement is to use the player character's ID
@@ -390,7 +440,9 @@ property, as follows:
 
 Example:
 
-    Display("The player character number is %d", player.ID);
+```ags
+Display("The player character number is %d", player.ID);
+```
 
 *See also:* [`Character.ID`](Character#characterid)
 
@@ -398,7 +450,9 @@ Example:
 
 ### `GetTextHeight`
 
-    GetTextHeight(string text, FontType font, int width)
+```ags
+GetTextHeight(string text, FontType font, int width)
+```
 
 Calculates the height on the screen that drawing TEXT in FONT within an
 area of WIDTH would take up.
@@ -413,8 +467,10 @@ used with the screen display commands.
 
 Example:
 
-    int height = GetTextHeight("The message on the GUI!", Game.NormalFont, 100);
-    gBottomLine.SetPosition(0, 200 - height);
+```ags
+int height = GetTextHeight("The message on the GUI!", Game.NormalFont, 100);
+gBottomLine.SetPosition(0, 200 - height);
+```
 
 will move the BOTTOMLINE GUI so that it can display the text within the
 screen.
@@ -426,7 +482,9 @@ screen.
 
 ### `GetTextWidth`
 
-    GetTextWidth(string text, FontType font)
+```ags
+GetTextWidth(string text, FontType font)
+```
 
 Returns the width on the screen that drawing TEXT in FONT on one line
 would take up.
@@ -439,11 +497,13 @@ with the screen display commands.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    int width = GetTextWidth("Hello!", Game.NormalFont);
-    surface.DrawString(160 - (width / 2), 100, Game.NormalFont, "Hello!");
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+int width = GetTextWidth("Hello!", Game.NormalFont);
+surface.DrawString(160 - (width / 2), 100, Game.NormalFont, "Hello!");
+surface.Release();
+```
 
 will print \"Hello!\" onto the middle of the background scene.
 
@@ -454,7 +514,9 @@ will print \"Hello!\" onto the middle of the background scene.
 
 ### `GetTranslation`
 
-    const string GetTranslation(string original)
+```ags
+const string GetTranslation(string original)
+```
 
 Gets the translated equivalent of the supplied string. You do not
 normally need to use this since the game translates most things for you.
@@ -464,10 +526,12 @@ translated automatically. So, you can do this instead.
 
 Example:
 
-    String buffer = Game.InputBox("Enter the password:");
-    if (buffer.CompareTo(GetTranslation("secret")) == 0) {
-      // it matched the current translation of "secret"
-    }
+```ags
+String buffer = Game.InputBox("Enter the password:");
+if (buffer.CompareTo(GetTranslation("secret")) == 0) {
+    // it matched the current translation of "secret"
+}
+```
 
 If there is no translation for the supplied string, it will be returned
 unchanged, so it is always safe to use this function.
@@ -482,7 +546,9 @@ unchanged, so it is always safe to use this function.
 
 ### `GiveScore`
 
-    GiveScore (int score)
+```ags
+GiveScore (int score)
+```
 
 Adds SCORE to the player's score. This is preferable to directly
 modifying the variable since it will play the score sound, update any
@@ -493,7 +559,9 @@ played.
 
 Example:
 
-    GiveScore(5);
+```ags
+GiveScore(5);
+```
 
 will give 5 points to the player.
 
@@ -503,14 +571,18 @@ will give 5 points to the player.
 
 ### `GetFontHeight`
 
-    int GetFontHeight (int font)
+```ags
+int GetFontHeight (int font)
+```
 
 Returns the given font's height, in pixels. This value may be used, for
 example, to calculate arrangement of text and GUI elements on screen.
 
 Example:
 
-    int h = GetFontHeight(eFontSpeech);
+```ags
+int h = GetFontHeight(eFontSpeech);
+```
 
 will store the speech font's height in the variable.
 
@@ -522,7 +594,9 @@ will store the speech font's height in the variable.
 
 ### `GetFontLineSpacing`
 
-    int GetFontLineSpacing (int font)
+```ags
+int GetFontLineSpacing (int font)
+```
 
 Returns the step between two lines of text for the specified font. If
 this value equals font's height, then each next line is rendered right
@@ -538,9 +612,11 @@ the line spacing value.
 
 Example:
 
-    int h = GetFontHeight(eFontSpeech);
-    int spacing = GetFontLineSpacing(eFontSpeech);
-    int gap = spacing - h;
+```ags
+int h = GetFontHeight(eFontSpeech);
+int spacing = GetFontLineSpacing(eFontSpeech);
+int gap = spacing - h;
+```
 
 will calculate the gap between two lines of text, that are drawn using
 speech font.
@@ -553,7 +629,9 @@ speech font.
 
 ### `InventoryScreen`
 
-    InventoryScreen ()
+```ags
+InventoryScreen ()
+```
 
 This command is obsolete.
 
@@ -566,7 +644,9 @@ Instead of using this command, you should create your own Inventory GUI.
 
 ### `IsGamePaused`
 
-    IsGamePaused ()
+```ags
+IsGamePaused ()
+```
 
 Returns *true* if the game is currently paused, or *false* otherwise.
 The game is paused when either the icon bar interface has been popped
@@ -576,7 +656,9 @@ updates take place.
 
 Example:
 
-    if (IsGamePaused()) UnPauseGame();
+```ags
+if (IsGamePaused()) UnPauseGame();
+```
 
 will unpause the game if it's paused.
 
@@ -586,7 +668,9 @@ will unpause the game if it's paused.
 
 ### `IsInterfaceEnabled`
 
-    IsInterfaceEnabled()
+```ags
+IsInterfaceEnabled()
+```
 
 Returns 1 if the player interface is currently enabled, 0 if it is
 disabled. The user interface is disabled while the cursor is set to the
@@ -595,8 +679,10 @@ other blocking action.
 
 Example:
 
-    if (IsInterfaceEnabled())
-        DisableInterface();
+```ags
+if (IsInterfaceEnabled())
+    DisableInterface();
+```
 
 will disable the user interface if it's enabled.
 
@@ -607,7 +693,9 @@ will disable the user interface if it's enabled.
 
 ### `IsInteractionAvailable`
 
-    int IsInteractionAvailable(int x, int y, int mode)
+```ags
+int IsInteractionAvailable(int x, int y, int mode)
+```
 
 Checks whether there is an interaction defined inside a room for clicking on the screen at (X, Y) in cursor mode MODE.
 Please note that x and y are *screen* coordinates, not room coordinates.
@@ -620,8 +708,10 @@ This function is useful for enabling options on a verb-coin style GUI, for examp
 
 Example:
 
-    if (IsInteractionAvailable(mouse.x, mouse.y, eModeLookat) == 0)
-      Display("looking here would not do anything.");
+```ags
+if (IsInteractionAvailable(mouse.x, mouse.y, eModeLookat) == 0)
+    Display("looking here would not do anything.");
+```
 
 *See also:*
 [`InventoryItem.IsInteractionAvailable`](InventoryItem#inventoryitemisinteractionavailable),
@@ -634,7 +724,9 @@ Example:
 
 ### `IsKeyPressed`
 
-    IsKeyPressed(eKeyCode)
+```ags
+IsKeyPressed(eKeyCode)
+```
 
 Tests whether the supplied key on the keyboard is currently pressed down
 or not. You could use this to move an object while the player holds an
@@ -656,8 +748,10 @@ interpreted as the number key rather than the arrow key.
 
 Example:
 
-    if (IsKeyPressed(eKeyUpArrow))
-      cEgo.Walk(cEgo.x, cEgo.y+3);
+```ags
+if (IsKeyPressed(eKeyUpArrow))
+    cEgo.Walk(cEgo.x, cEgo.y+3);
+```
 
 will move the character EGO upwards 3 pixels when the up arrow is
 pressed.
@@ -668,7 +762,9 @@ pressed.
 
 ### `IsTimerExpired`
 
-    bool IsTimerExpired(int timer_id)
+```ags
+bool IsTimerExpired(int timer_id)
+```
 
 Checks whether the timer TIMER_ID has expired. If the timeout set with
 SetTimer has elapsed, returns *true*. Otherwise, returns *false*.
@@ -679,9 +775,11 @@ until restarted.
 
 Example:
 
-    if (IsTimerExpired(1)) {
-      Display("Timer 1 expired");
-    }
+```ags
+if (IsTimerExpired(1)) {
+    Display("Timer 1 expired");
+}
+```
 
 will display a message when timer 1 expires.
 
@@ -691,7 +789,9 @@ will display a message when timer 1 expires.
 
 ### `IsTranslationAvailable`
 
-    IsTranslationAvailable ()
+```ags
+IsTranslationAvailable ()
+```
 
 Finds out whether the player is using a game translation or not.
 
@@ -709,7 +809,9 @@ Returns 1 if a translation is in use, 0 if not.
 
 **This function is now obsolete. Use Character.Walk instead**
 
-    MoveCharacterToHotspot (CHARID, int hotspot)
+```ags
+MoveCharacterToHotspot (CHARID, int hotspot)
+```
 
 Moves the character CHARID from its current location to the walk-to
 point for the specified hotspot. If the hotspot has no walk-to point,
@@ -720,7 +822,9 @@ the character has reached its destination.
 
 Example:
 
-    MoveCharacterToHotspot(EGO,6);
+```ags
+MoveCharacterToHotspot(EGO,6);
+```
 
 will move the character EGO to the hotspot's 6 \"walk to point\".
 
@@ -735,7 +839,9 @@ will move the character EGO to the hotspot's 6 \"walk to point\".
 
 **This function is now obsolete. Use Character.Walk instead**
 
-    MoveCharacterToObject (CHARID, int object)
+```ags
+MoveCharacterToObject (CHARID, int object)
+```
 
 Moves the character CHARID from its current location to a position just
 below the object OBJECT. This is useful for example, if you want the man
@@ -744,8 +850,10 @@ to the script until the character has reached its destination.
 
 Example:
 
-    MoveCharacterToObject (EGO, 0);
-    object[0].Visible = false;
+```ags
+MoveCharacterToObject (EGO, 0);
+object[0].Visible = false;
+```
 
 Will move the character EGO below object number 0, then turn off object
 0.
@@ -757,7 +865,9 @@ Will move the character EGO below object number 0, then turn off object
 
 ### `PauseGame`
 
-    PauseGame ()
+```ags
+PauseGame ()
+```
 
 Stops AGS processing character movement and animations. This has the
 same effect on the game as happens when a modal GUI is popped up. `PauseGame()`
@@ -767,7 +877,9 @@ call `UnPauseGame()` game twice too to resume game.
 To avoid this behavior make sure to only pause once:
 
 
-    if (!IsGamePaused()) PauseGame();
+```ags
+if (!IsGamePaused()) PauseGame();
+```
 
 
 Game processing will not resume until you call the UnPauseGame function
@@ -783,7 +895,9 @@ is paused.
 
 Example:
 
-    if (IsKeyPressed(32)) PauseGame();
+```ags
+if (IsKeyPressed(32)) PauseGame();
+```
 
 will pause the game if the player presses the space bar
 
@@ -793,7 +907,9 @@ will pause the game if the player presses the space bar
 
 ### `QuitGame`
 
-    QuitGame(int ask_first)
+```ags
+QuitGame(int ask_first)
+```
 
 Exits the game and returns to the operating system.
 
@@ -803,7 +919,9 @@ sure they want to quit.
 
 Example:
 
-    QuitGame(0);
+```ags
+QuitGame(0);
+```
 
 will quit the game without asking the player to confirm.
 
@@ -813,7 +931,9 @@ will quit the game without asking the player to confirm.
 
 ### `Random`
 
-    Random (int max)
+```ags
+Random (int max)
+```
 
 Returns a random number between 0 and MAX. This could be useful to do
 various effects in your game. MAX must be a positive value in range
@@ -827,10 +947,12 @@ then it can return 0, 1, 2 or 3.
 
 Example:
 
-    int ran=Random(2);
-    if (ran==0) cEgo.ChangeRoom(1);
-    else if (ran==1) cEgo.ChangeRoom(2);
-    else cEgo.ChangeRoom(3);
+```ags
+int ran=Random(2);
+if (ran==0) cEgo.ChangeRoom(1);
+else if (ran==1) cEgo.ChangeRoom(2);
+else cEgo.ChangeRoom(3);
+```
 
 will change the current room to room 1,2 or 3 depending on a random
 result.
@@ -839,13 +961,17 @@ result.
 
 ### `RestartGame`
 
-    RestartGame ()
+```ags
+RestartGame ()
+```
 
 Restarts the game from the beginning.
 
 Example:
 
-    if (IsKeyPressed(365)) RestartGame();
+```ags
+if (IsKeyPressed(365)) RestartGame();
+```
 
 will restart the game if the player presses the F7 key.
 
@@ -855,7 +981,9 @@ will restart the game if the player presses the F7 key.
 
 ### `RestoreGameDialog`
 
-    RestoreGameDialog ()
+```ags
+RestoreGameDialog ()
+```
 
 Displays the restore game dialog, where the player can select a
 previously saved game position to restore.
@@ -865,7 +993,9 @@ when the script function finishes executing.
 
 Example:
 
-    if (IsKeyPressed(363)) RestoreGameDialog();
+```ags
+if (IsKeyPressed(363)) RestoreGameDialog();
+```
 
 will bring up the restore game dialog if the player presses the F5 key.
 
@@ -876,7 +1006,9 @@ will bring up the restore game dialog if the player presses the F5 key.
 
 ### `RestoreGameSlot`
 
-    RestoreGameSlot (int slot)
+```ags
+RestoreGameSlot (int slot)
+```
 
 Restores the game position saved into slot number SLOT. If this slot number does not exist, an error message is displayed to
 the player but the game continues. To avoid the error, use the
@@ -888,7 +1020,9 @@ restored when the script function finishes executing.
 
 Example:
 
-    RestoreGameSlot(30);
+```ags
+RestoreGameSlot(30);
+```
 
 will restore game slot 30 if this slot number exists.
 
@@ -901,7 +1035,9 @@ will restore game slot 30 if this slot number exists.
 
 ### `RunAGSGame`
 
-    RunAGSGame (string filename, int mode, int data)
+```ags
+RunAGSGame (string filename, int mode, int data)
+```
 
 Quits the current game, and loads up FILENAME instead. FILENAME must be
 an AGS game EXE or AC2GAME.AGS file, and it must be in the current
@@ -935,7 +1071,9 @@ same point-version of AGS as the one you are launching it from. (version
 
 Example:
 
-    RunAGSGame ("MyGame.exe", 0, 51);
+```ags
+RunAGSGame ("MyGame.exe", 0, 51);
+```
 
 will run the MyGame game, passing it the value 51.
 
@@ -943,7 +1081,9 @@ will run the MyGame game, passing it the value 51.
 
 ### `SaveGameDialog`
 
-    SaveGameDialog ()
+```ags
+SaveGameDialog ()
+```
 
 Displays the save game dialog, where the player can save their current
 game position. If they select to save, then the game position will be
@@ -954,7 +1094,9 @@ be shown when the script function finishes executing.
 
 Example:
 
-    if (keycode == 361) SaveGameDialog();
+```ags
+if (keycode == 361) SaveGameDialog();
+```
 
 will bring up the save game dialog if the player presses the F3 key.
 
@@ -965,7 +1107,9 @@ will bring up the save game dialog if the player presses the F3 key.
 
 ### `SaveGameSlot`
 
-    SaveGameSlot (int slot, string description)
+```ags
+SaveGameSlot (int slot, string description)
+```
 
 Saves the current game position to the save game number specified by
 SLOT, using DESCRIPTION as the textual description of the save position.
@@ -977,7 +1121,9 @@ saved when the script function finishes executing.
 
 Example:
 
-    SaveGameSlot(30, "save game");
+```ags
+SaveGameSlot(30, "save game");
+```
 
 will save the current game position to slot 30 with the description
 \"Save game\".
@@ -990,7 +1136,9 @@ will save the current game position to slot 30 with the description
 
 ### `SaveScreenShot`
 
-    SaveScreenShot (string filename)
+```ags
+SaveScreenShot (string filename)
+```
 
 Takes a screen capture and saves it to disk. The FILENAME must end in
 either \".BMP\" or \".PCX\", as those are the types of files which can
@@ -1004,9 +1152,11 @@ driver.
 
 Example:
 
-    String input = Game.InputBox("Type the filename:");
-    input = input.Append(".pcx");
-    SaveScreenShot(input);
+```ags
+String input = Game.InputBox("Type the filename:");
+input = input.Append(".pcx");
+SaveScreenShot(input);
+```
 
 will prompt the player for a filename and then save the screenshot with
 the filename the player typed.
@@ -1018,7 +1168,9 @@ the filename the player typed.
 
 ### `SetAmbientLightLevel`
 
-    void SetAmbientLightLevel(int light_level);
+```ags
+void SetAmbientLightLevel(int light_level);
+```
 
 Sets an ambient light level that affects all objects and characters in
 the room that have their UseRoomAreaLighting property set to true.
@@ -1042,7 +1194,9 @@ if there one was previously set.
 
 Example:
 
-    SetAmbientLightLevel(50);
+```ags
+SetAmbientLightLevel(50);
+```
 
 will apply light level 50 to every character and object on screen (which
 do not have individual light levels).
@@ -1058,7 +1212,9 @@ do not have individual light levels).
 
 ### `SetAmbientTint`
 
-    SetAmbientTint(int red, int green, int blue, int saturation, int luminance)
+```ags
+SetAmbientTint(int red, int green, int blue, int saturation, int luminance)
+```
 
 Tints all objects and characters on the screen that have their UseRoomAreaLighting property set to true to (RED, GREEN, BLUE)
 with SATURATION percent saturation.
@@ -1088,7 +1244,9 @@ tints on the screen.
 
 Example:
 
-    SetAmbientTint(0, 0, 250, 30, 100);
+```ags
+SetAmbientTint(0, 0, 250, 30, 100);
+```
 
 will tint everything on the screen with a hint of blue.
 
@@ -1101,7 +1259,9 @@ will tint everything on the screen with a hint of blue.
 
 ### `SetGameOption`
 
-    SetGameOption (option, int value)
+```ags
+SetGameOption (option, int value)
+```
 
 Changes one of the game options, originally set in the AGS Editor Game
 Settings pane.
@@ -1143,7 +1303,9 @@ This command returns the old value of the setting.
 
 Example:
 
-    SetGameOption (OPT_PIXELPERFECT, 0);
+```ags
+SetGameOption (OPT_PIXELPERFECT, 0);
+```
 
 will disable pixel-perfect click detection.
 
@@ -1155,7 +1317,9 @@ will disable pixel-perfect click detection.
 
 ### `SetGameSpeed`
 
-    SetGameSpeed (int new_speed)
+```ags
+SetGameSpeed (int new_speed)
+```
 
 Sets the maximum game frame rate to NEW_SPEED frames per second, or as
 near as possible to that speed. The default frame rate is 40 fps, but
@@ -1179,7 +1343,9 @@ player's screen refresh).
 
 Example:
 
-    SetGameSpeed(80);
+```ags
+SetGameSpeed(80);
+```
 
 will set the game speed to 80.
 
@@ -1189,7 +1355,9 @@ will set the game speed to 80.
 
 ### `SetGlobalInt`
 
-    SetGlobalInt (int index, int value)
+```ags
+SetGlobalInt (int index, int value)
+```
 
 Sets the global int INDEX to VALUE. You can then retrieve this value
 from any other script using GetGlobalInt.
@@ -1202,7 +1370,9 @@ name the variables.
 
 Example:
 
-    SetGlobalInt(10,1);
+```ags
+SetGlobalInt(10,1);
+```
 
 will set the Global Integer 10 to 1.
 
@@ -1212,7 +1382,9 @@ will set the Global Integer 10 to 1.
 
 ### `SetGraphicalVariable`
 
-    SetGraphicalVariable(string variable_name, int value);
+```ags
+SetGraphicalVariable(string variable_name, int value);
+```
 
 Sets the interaction editor VARIABLE_NAME variable to VALUE. This
 allows your script to change the values of variables set in the
@@ -1224,7 +1396,9 @@ compatibility with AGS 2.x. When writing new code, use
 
 Example:
 
-    SetGraphicalVariable("climbed rock", 1);
+```ags
+SetGraphicalVariable("climbed rock", 1);
+```
 
 will set the interaction editor \"climbed rock\" variable to 1.
 
@@ -1234,7 +1408,9 @@ will set the interaction editor \"climbed rock\" variable to 1.
 
 ### `SetMultitaskingMode`
 
-    SetMultitaskingMode (int mode)
+```ags
+SetMultitaskingMode (int mode)
+```
 
 Allows you to set what happens when the user switches away from your
 game.
@@ -1259,7 +1435,9 @@ MacOS: **Yes**
 
 Example:
 
-    SetMultitaskingMode (1);
+```ags
+SetMultitaskingMode (1);
+```
 
 will mean that the game continues to run in the background.
 
@@ -1267,7 +1445,9 @@ will mean that the game continues to run in the background.
 
 ### `SetRestartPoint`
 
-    SetRestartPoint ()
+```ags
+SetRestartPoint ()
+```
 
 Changes the game restart point to the current position. This means that
 from now on, if the player chooses the Restart Game option, it will
@@ -1287,7 +1467,9 @@ background.
 
 ### `SetTextWindowGUI`
 
-    SetTextWindowGUI (int gui)
+```ags
+SetTextWindowGUI (int gui)
+```
 
 Changes the GUI used for text windows to the specified GUI. This
 overrides the \"text windows use GUI\" setting in the editor.
@@ -1297,7 +1479,9 @@ text box.
 
 Example:
 
-    SetTextWindowGUI (4);
+```ags
+SetTextWindowGUI (4);
+```
 
 will change Textwindow GUI 4 to be used for displaying text windows in
 future.
@@ -1306,7 +1490,9 @@ future.
 
 ### `SetTimer`
 
-    SetTimer (int timer_id, int timeout)
+```ags
+SetTimer (int timer_id, int timeout)
+```
 
 Starts timer TIMER_ID ticking - it will tick once every game loop
 (normally 40 times per second), until TIMEOUT loops, after which it will
@@ -1321,7 +1507,9 @@ There are 20 available timers, with TIMER_IDs from 1 to 20.
 
 Example:
 
-    SetTimer(1,1000);
+```ags
+SetTimer(1,1000);
+```
 
 will set the timer 1 to expire after 1000 game cycles.
 
@@ -1329,9 +1517,11 @@ Example 2:
 
 When you have a hard time keeping track of the timers only by number you can use [Macros](Preprocessor#define) to replace the descriptive name with the time number everywhere the descriptive name is use. To better keep track of these macros you could put them on top of the global script.
 
-    #define Delay_CustomAnimation 1
+```ags
+#define Delay_CustomAnimation 1
 
-    SetTimer(Delay_CustomAnimation, 2000);
+SetTimer(Delay_CustomAnimation, 2000);
+```
 
 this "names" timer 1 and sets it to expire after 2000 game cycles
 
@@ -1341,7 +1531,9 @@ this "names" timer 1 and sets it to expire after 2000 game cycles
 
 ### `SkipCutscene`
 
-    SkipCutscene()
+```ags
+SkipCutscene()
+```
 
 Explicitly commences skipping current cutscene. If game is not in a cutscene sequence or cutscene is already being skipped this function will do nothing.
 
@@ -1349,9 +1541,11 @@ SkipCutscene will work regardless of the StartCutscene parameters, but is most u
 
 Example:
 
-    if (Game.InSkippableCutscene && IsKeyPressed(eKeySpace)) {
-      SkipCutscene();
-    }
+```ags
+if (Game.InSkippableCutscene && IsKeyPressed(eKeySpace)) {
+    SkipCutscene();
+}
+```
 
 will check if game is inside a cutscene, and if player has pressed a space bar then commands to skip it.
 
@@ -1364,7 +1558,9 @@ will check if game is inside a cutscene, and if player has pressed a space bar t
 
 ### `SkipUntilCharacterStops`
 
-    SkipUntilCharacterStops(CHARID)
+```ags
+SkipUntilCharacterStops(CHARID)
+```
 
 Skips through the game until the specified character stops walking, a
 blocking script runs, or a message box is displayed.
@@ -1381,7 +1577,9 @@ nothing happens.
 
 Example: (in on_key_press)
 
-    if (keycode == eKeyEscape) SkipUntilCharacterStops(EGO);
+```ags
+if (keycode == eKeyEscape) SkipUntilCharacterStops(EGO);
+```
 
 This means that if the player presses ESC, the game will skip ahead
 until EGO finishes moving, or is interrupted by a Display command or a
@@ -1393,7 +1591,9 @@ blocking cutscene.
 
 ### `StartCutscene`
 
-    StartCutscene(CutsceneSkipType)
+```ags
+StartCutscene(CutsceneSkipType)
+```
 
 Marks the start of a cutscene. Once your script passes this point, the
 player can choose to skip a portion by pressing a key or the mouse
@@ -1435,7 +1635,9 @@ ESC the game could appear to hang.
 
 ### `UpdateInventory`
 
-    UpdateInventory ()
+```ags
+UpdateInventory ()
+```
 
 Updates the on-screen inventory display. If you add or remove inventory
 items manually (i.e. by using the InventoryQuantity array rather than the
@@ -1455,14 +1657,18 @@ the editor.
 
 ### `UnPauseGame`
 
-    UnPauseGame ()
+```ags
+UnPauseGame ()
+```
 
 Resumes the game.
 
 Example:
 
-    if (IsGamePaused() == 1)
-        UnPauseGame();
+```ags
+if (IsGamePaused() == 1)
+    UnPauseGame();
+```
 
 will unpause the game if it is paused.
 
@@ -1470,6 +1676,8 @@ will unpause the game if it is paused.
 than once, this won't work. To ignore this behavior, unpause as much
 as needed with the below snippet.
 
-    while (IsGamePaused()) UnPauseGame();
+```ags
+while (IsGamePaused()) UnPauseGame();
+```
 
 *See also:* [`PauseGame`](Globalfunctions_General#pausegame)

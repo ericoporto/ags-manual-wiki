@@ -109,14 +109,18 @@ the topic is first started - and so this is where we want our
 
 Dialog scripting is very simple. It takes the form:
 
-    SCRIPTNAME: "Text to say"
+```agsdialog
+SCRIPTNAME: "Text to say"
+```
 
 So, in between the "@S" and the "@1" lines, insert a couple of new
 lines, and type the following:
 
-    EGO: "Greetings!"
-    MERCHANT: "Hello there!"
-    return
+```agsdialog
+EGO: "Greetings!"
+MERCHANT: "Hello there!"
+return
+```
 
 Remember, these are the **script names** of the characters (but without
 the initial **"c"**). The **"return"** is essential, because it tells AGS to
@@ -128,22 +132,24 @@ appropriate option - for example, if the player clicks the **"Who are you?"** op
 
 Here is the finished script for this topic:
 
-    // Dialog script file
-    @S  // Dialog startup entry point
-    EGO: Greetings!
-    MERCHANT: Hello there!
-    return
-    @1
-    MERCHANT: My name is Derek, and I'm a local merchant.
-    MERCHANT: I can sell you all sorts of things.
-    return
-    @2
-    MERCHANT: I specialize in selling various random items.
-    MERCHANT: My jackets and fake eyeballs are popular.
-    goto-dialog dWares
-    @3
-    MERCHANT: Do pop by again sometime.
-    stop
+```agsdialog
+// Dialog script file
+@S  // Dialog startup entry point
+EGO: Greetings!
+MERCHANT: Hello there!
+return
+@1
+MERCHANT: My name is Derek, and I'm a local merchant.
+MERCHANT: I can sell you all sorts of things.
+return
+@2
+MERCHANT: I specialize in selling various random items.
+MERCHANT: My jackets and fake eyeballs are popular.
+goto-dialog dWares
+@3
+MERCHANT: Do pop by again sometime.
+stop
+```
 
 The *goto-dialog* command takes the player to another dialog - in this
 case, the new _"dWares"_ dialog we just created (with questions about the
@@ -161,21 +167,23 @@ options when they get bored of talking about his wares.
 
 Here's my completed script for dWares:
 
-    // Dialog script file
-    @S  // Dialog startup entry point
-    return
-    @1
-    MERCHANT: A fine leather jacket - for  you, just $200!
-    EGO: That's a bit expensive, isn't it?
-    MERCHANT: Not for this, sir. It's hand-made by my wife.
-    EGO: Oh. But no, thank you.
-    return
-    @2
-    MERCHANT: A perfect joke item, the eyeball is just $3.99.
-    return
-    @3
-    MERCHANT: Very well.
-    goto-previous
+```agsdialog
+// Dialog script file
+@S  // Dialog startup entry point
+return
+@1
+MERCHANT: A fine leather jacket - for  you, just $200!
+EGO: That's a bit expensive, isn't it?
+MERCHANT: Not for this, sir. It's hand-made by my wife.
+EGO: Oh. But no, thank you.
+return
+@2
+MERCHANT: A perfect joke item, the eyeball is just $3.99.
+return
+@3
+MERCHANT: Very well.
+goto-previous
+```
 
 As you can see, it's done very similarly to the first one. Notice the
 use of **"return"** in the startup entry point, to make sure that it doesn't
@@ -193,10 +201,12 @@ Now, still with the Merchant character tab open, go to their Events list. Using 
 skills from earlier on in this tutorial, add a command to initiate the
 dialog when the player talks to the Merchant **"Talk to Character"**. Now, we're all set!
 
-    function cMerchant_Talk()
-    {
-      dMerchant.Start();
-    }
+```ags
+function cMerchant_Talk()
+{
+    dMerchant.Start();
+}
+```
 
 ### Testing Your Work
 

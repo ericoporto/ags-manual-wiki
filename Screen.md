@@ -8,7 +8,9 @@ Screen is a new small struct that provides access to viewports and conversion be
 
 ### `Screen.RoomToScreenPoint`
 
-    static Point* Screen.RoomToScreenPoint(int rx, int ry);
+```ags
+static Point* Screen.RoomToScreenPoint(int rx, int ry);
+```
 
 Returns the point on screen corresponding to the given room coordinates if seen through **the primary viewport**. Resulting Point struct will contain screen x and y coordinates.
 
@@ -18,8 +20,10 @@ This is a convenience function which is used when you do not manage viewports yo
 
 Example:
 
-    Point* pt = Screen.RoomToScreenPoint(player.x, player.y);
-    Display("Player character is displayed at (%d, %d) on screen.", pt.x, pt.y);
+```ags
+Point* pt = Screen.RoomToScreenPoint(player.x, player.y);
+Display("Player character is displayed at (%d, %d) on screen.", pt.x, pt.y);
+```
 
 *See also:* [`Screen.ScreenToRoomPoint`](Screen#screenscreentoroompoint), [`Viewport.RoomToScreenPoint`](Viewport#viewportroomtoscreenpoint), [`Viewport.ScreenToRoomPoint`](Viewport#viewportscreentoroompoint)
 
@@ -27,7 +31,9 @@ Example:
 
 ### `Screen.ScreenToRoomPoint`
 
-    static Point* Screen.ScreenToRoomPoint(int sx, int sy, optional bool restrictToViewport);
+```ags
+static Point* Screen.ScreenToRoomPoint(int sx, int sy, optional bool restrictToViewport);
+```
 
 Returns the point in room corresponding to the given screen coordinates. The conversion is done if seen through the room viewport found under the cursor. Resulting Point struct will contain room x and y coordinates.
 
@@ -37,8 +43,10 @@ Function does the conversion from screen to room's coordinate system, correctly 
 
 Example:
 
-    Point* pt = Screen.ScreenToRoomPoint(mouse.x, mouse.y);
-    Display("Mouse cursor is over room location: (%d, %d).", pt.x, pt.y);
+```ags
+Point* pt = Screen.ScreenToRoomPoint(mouse.x, mouse.y);
+Display("Mouse cursor is over room location: (%d, %d).", pt.x, pt.y);
+```
 
 *Compatibility:* **restrictToViewport** parameter is supported by **AGS 3.6.0** and later versions.
 
@@ -48,7 +56,9 @@ Example:
 
 ### `Screen.AutoSizeViewportOnRoomLoad`
 
-    static bool Screen.AutoSizeViewportOnRoomLoad;
+```ags
+static bool Screen.AutoSizeViewportOnRoomLoad;
+```
 
 Gets/sets whether the game should automatically adjust primary viewport and primary camera to the size of the room background each time the new room is loaded. This setting is **enabled** by default, and is the standard viewport behavior in AGS.
 
@@ -67,7 +77,9 @@ If game is 320x200 and room is 400x200, then both viewport and camera will be re
 *(Replaces System.ScreenHeight, which is now obsolete)*<br>
 *(Replaces System.ViewportHeight, which is now obsolete)*
 
-    static readonly int Screen.Height;
+```ags
+static readonly int Screen.Height;
+```
 
 Gets the native height of the game screen in pixels, which matches game resolution you set in the Editor.
 
@@ -80,7 +92,9 @@ Gets the native height of the game screen in pixels, which matches game resoluti
 *(Replaces System.ScreenWidth, which is now obsolete)*<br>
 *(Replaces System.ViewportWidth, which is now obsolete)*
 
-    static readonly int Screen.Width;
+```ags
+static readonly int Screen.Width;
+```
 
 Gets the native width of the game screen in pixels, which matches game resolution you set in the Editor.
 
@@ -90,7 +104,9 @@ Gets the native width of the game screen in pixels, which matches game resolutio
 
 ### `Screen.Viewport`
 
-    static readonly Viewport *Screen.Viewport;
+```ags
+static readonly Viewport *Screen.Viewport;
+```
 
 Gets the primary room viewport. This is the default viewport that is created automatically at the start of the game and cannot be deleted.
 
@@ -100,7 +116,9 @@ Gets the primary room viewport. This is the default viewport that is created aut
 
 ### `Screen.ViewportCount`
 
-    static readonly int Screen.ViewportCount;
+```ags
+static readonly int Screen.ViewportCount;
+```
 
 Gets the number of viewports.
 
@@ -110,7 +128,9 @@ Gets the number of viewports.
 
 ### `Screen.Viewports`
 
-    static readonly Viewport* Screen.Viewports[int index];
+```ags
+static readonly Viewport* Screen.Viewports[int index];
+```
 
 Returns the Viewport instance by its index. There's always at least primary viewport at the index 0, more could be created in script using [`Viewport.Create`](Viewport#viewportcreate).
 
@@ -118,9 +138,11 @@ Returns the Viewport instance by its index. There's always at least primary view
 
 Example:
 
-    for (int i = 0; i < Screen.ViewportCount; i++) {
-        Screen.Viewports[i].Visible = false;
-    }
+```ags
+for (int i = 0; i < Screen.ViewportCount; i++) {
+    Screen.Viewports[i].Visible = false;
+}
+```
 
 Above disables (hides) all of the existing viewports.
 

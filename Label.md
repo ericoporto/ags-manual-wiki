@@ -8,7 +8,9 @@ Label is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GUI
 
 *(Formerly known as `SetLabelFont`, which is now obsolete)*
 
-    FontType Label.Font;
+```ags
+FontType Label.Font;
+```
 
 Gets/sets the font used to display the label's text. This is useful if
 you have a standard SCI font for your English version, but want to
@@ -16,9 +18,11 @@ change to a TTF font for foreign language versions.
 
 Example:
 
-    if (IsTranslationAvailable()) {
-      lblStatus.Font = eFontForeign;
-    }
+```ags
+if (IsTranslationAvailable()) {
+    lblStatus.Font = eFontForeign;
+}
+```
 
 will change label 'lblStatus' to use font "Foreign" if a game
 translation is in use.
@@ -35,7 +39,9 @@ translation is in use.
 *(Formerly known as `Label.GetText`, which is now obsolete)*<br>
 *(Formerly known as `Label.SetText`, which is now obsolete)*
 
-    String Label.Text;
+```ags
+String Label.Text;
+```
 
 Gets/sets the text displayed in the specified label. This allows you to
 change the text during the game, for example to create a LucasArts-style
@@ -43,7 +49,9 @@ status line.
 
 Example:
 
-    lblStatus.Text = Game.GetLocationName(mouse.x, mouse.y);
+```ags
+lblStatus.Text = Game.GetLocationName(mouse.x, mouse.y);
+```
 
 will display the name of the location the cursor is over on label
 'lblStatus'
@@ -57,7 +65,9 @@ will display the name of the location the cursor is over on label
 
 ### `Label.TextAlignment`
 
-    HorizontalAlignment Label.TextAlignment;
+```ags
+HorizontalAlignment Label.TextAlignment;
+```
 
 Gets/sets how the text is aligned relative to the label's rectangle. Note that currently label supports only horizontal alignment which could be eAlignLeft, eAlignRight and eAlignCenter.
 
@@ -72,13 +82,17 @@ Gets/sets how the text is aligned relative to the label's rectangle. Note that c
 
 *(Formerly known as `SetLabelColor`, which is now obsolete)*
 
-    int Label.TextColor;
+```ags
+int Label.TextColor;
+```
 
 Gets/sets the text color used to display the label's text.
 
 Example:
 
-    lblStatus.TextColor = 14;
+```ags
+lblStatus.TextColor = 14;
+```
 
 will change label 'lblStatus' to have yellow text.
 

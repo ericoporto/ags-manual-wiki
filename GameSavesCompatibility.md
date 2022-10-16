@@ -26,7 +26,7 @@ Changing the number (adding or removing) of almost all game objects will break p
 In addition to that, changing the *total size* of variables declared in the global scope of each script (*NOT* local function variables) will break older save states.<br>
 To elaborate on what "total size" is, imagine you have this declared in a script:
 
-```
+```ags
 int a;
 int b;
 int c;
@@ -34,7 +34,7 @@ int c;
 
 This adds up to make the total size of script variables 3 integers (or 3 * 4 bytes = 12 bytes). Now, if you change this to
 
-```
+```ags
 int vars[3];
 ```
 
@@ -82,7 +82,7 @@ However, there's a number of potential problems with that and these have to be r
 
 Consider a simple dynamic array:
 
-```
+```ags
 int dyn_arr[];
 
 function game_start() {
@@ -92,14 +92,14 @@ function game_start() {
 
 Let's assume you had this in game version 1, made a save, then increased the dynamic array's size in script to 200:
 
-```
-    dyn_arr = new int[200];
+```ags
+dyn_arr = new int[200];
 ```
 
 What will happen if you now compile game version 2 and then restore the old save? The game will restore the dynamic array with the previous size of 100. This means that if your new script will now try to access elements in the array beyond 100 (thinking that this array has 200 elements now), that will result in an "index out of range" error.
 Unfortunately at the time of writing this AGS manual page, you can't access the length of a dynamic arrays directly in script. But you can store their length somewhere else, for example, in a variable:
 
-```
+```ags
 int dyn_arr[];
 int arr_size;
 
@@ -117,7 +117,7 @@ Less likely, but if you instead reduce the array's size, then the array restored
 
 This is what happens with changes in dynamic arrays, but what about *changes in custom managed structs*? Assume in game version 1 you have:
 
-```
+```ags
 managed struct MyStruct {
     int a;
     int b;
@@ -132,7 +132,7 @@ function game_start() {
 
 Then in game version 2 you decided to add another variable:
 
-```
+```ags
 managed struct MyStruct {
     int a;
     int b;
@@ -145,7 +145,7 @@ The solution here is similar to the array solution: upon restoring the older sav
 
 And again, if you remove a variable instead:
 
-```
+```ags
 managed struct MyStruct {
     int a;
 };
@@ -155,7 +155,7 @@ in this case the older save will be restored, and the old variants of MyStruct w
 
 Finally, there's another potential problem. Let's look at this variant:
 
-```
+```ags
 managed struct MyStruct {
     int a;
     // int b;
@@ -199,7 +199,7 @@ If you must change the content of a room but do not want to break saves at all c
 
 This is done like this, for example:
 
-```
+```ags
 function on_event(EventType evt, int data) {
     if (evt == eEventRestoreGame) {
         if (player.Room == OLD_ROOM_NUMBER) {
@@ -222,7 +222,7 @@ Upon loading an old save you would need to test the length or another kind of "v
 
 Consider following example:
 
-```
+```ags
 #define GAME_VER_001_LENGTH 10
 #define GAME_VER_002_LENGTH 20
 
@@ -258,7 +258,7 @@ function on_event(EventType evt, int data) {
 
 A similar solution may be used for managed structs, although it may be bit more complicated to script but essentially it is the same thing.
 
-```
+```ags
 managed struct MyStruct {
     // variables from version 1
     int a;

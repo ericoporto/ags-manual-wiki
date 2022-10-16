@@ -2,13 +2,17 @@
 
 ### `System.Log`
 
-    static void System.Log(LogLevel level, const string format, ...)
+```ags
+static void System.Log(LogLevel level, const string format, ...)
+```
 
 Prints the message string in `format` to the log, with the defined LogLevel, to the group `script`.
 
 Example:
 
-    System.Log(eLogInfo, "Entering the Room %d", player.Room);
+```ags
+System.Log(eLogInfo, "Entering the Room %d", player.Room);
+```
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
@@ -18,7 +22,9 @@ Example:
 
 ### `System.SaveConfigToFile`
 
-    static void System.SaveConfigToFile()
+```ags
+static void System.SaveConfigToFile()
+```
 
 Writes current engine settings to the player's configuration file, so that they may be applied next time the game is launched.
 
@@ -32,7 +38,9 @@ This saves only the options that may be changed at runtime, such as translation 
 
 ### `System.AudioChannelCount`
 
-    readonly static int System.AudioChannelCount;
+```ags
+readonly static int System.AudioChannelCount;
+```
 
 Gets the number of Audio Channels available to the game (in the current
 version of AGS this is 8).
@@ -42,7 +50,9 @@ check what is playing on them.
 
 Example:
 
-    Display("There are %d audio channels.", System.AudioChannelCount);
+```ags
+Display("There are %d audio channels.", System.AudioChannelCount);
+```
 
 will display a message with the number of audio channels.
 
@@ -54,7 +64,9 @@ will display a message with the number of audio channels.
 
 ### `System.AudioChannels`
 
-    readonly static AudioChannel* System.AudioChannels[];
+```ags
+readonly static AudioChannel* System.AudioChannels[];
+```
 
 Gets the AudioChannel instance for the specified channel number. This
 allows you to query the audio channel and find out what is playing on
@@ -62,8 +74,10 @@ it.
 
 Example:
 
-    AudioChannel *channel = System.AudioChannels[2];
-    Display("Channel 2's current volume is %d.", channel.Volume);
+```ags
+AudioChannel *channel = System.AudioChannels[2];
+Display("Channel 2's current volume is %d.", channel.Volume);
+```
 
 will display a message with Audio Channel 2's current volume.
 
@@ -76,7 +90,9 @@ will display a message with Audio Channel 2's current volume.
 
 ### `System.CapsLock`
 
-    readonly static bool System.CapsLock;
+```ags
+readonly static bool System.CapsLock;
+```
 
 Gets whether Caps Lock is active on the player's system.
 
@@ -85,10 +101,12 @@ typing a password in, for example.
 
 Example:
 
-    if (System.CapsLock)
-    {
-      Display("The CAPS LOCK light is on.");
-    }
+```ags
+if (System.CapsLock)
+{
+    Display("The CAPS LOCK light is on.");
+}
+```
 
 will display a message if Caps Lock is on.
 
@@ -103,7 +121,9 @@ will display a message if Caps Lock is on.
 
 *(Formerly known as `system.color_depth`, which is now obsolete)*
 
-    readonly static int System.ColorDepth;
+```ags
+readonly static int System.ColorDepth;
+```
 
 Returns the color depth at which the game is running. This is the
 overall game color depth setting, and it is possible for individual
@@ -111,8 +131,10 @@ sprites or backgrounds to be different.
 
 Example:
 
-    Display("Game is running at: %d x %d, %d-bit color", System.ScreenWidth,
-                                      System.ScreenHeight, System.ColorDepth);
+```ags
+Display("Game is running at: %d x %d, %d-bit color", System.ScreenWidth,
+                                    System.ScreenHeight, System.ColorDepth);
+```
 
 will display the current resolution and color depth
 
@@ -123,7 +145,9 @@ will display the current resolution and color depth
 
 ### `System.Gamma`
 
-    static int System.Gamma;
+```ags
+static int System.Gamma;
+```
 
 Gets/sets the current screen Gamma level. This is 100 by default, and
 you can set it anywhere from 0 (pitch black) to 200 (double normal
@@ -138,9 +162,11 @@ adjust it to suit their system.
 
 Example:
 
-    if (System.SupportsGammaControl) {
-      System.Gamma = 150;
-    }
+```ags
+if (System.SupportsGammaControl) {
+    System.Gamma = 150;
+}
+```
 
 will turn the screen brightness up to `50%` higher than normal
 
@@ -151,7 +177,9 @@ will turn the screen brightness up to `50%` higher than normal
 
 ### `System.HardwareAcceleration`
 
-    readonly static bool System.HardwareAcceleration;
+```ags
+readonly static bool System.HardwareAcceleration;
+```
 
 Returns whether the game is running with hardware acceleration (e.g.
 Direct3D or OpenGL). If this is the case then changing on-screen images with [DrawingSurface](DrawingSurface) functions are likely to be slower,
@@ -167,9 +195,11 @@ iOS: **OpenGL driver**
 
 Example:
 
-    if (System.HardwareAcceleration) {
-      Display("Yay, we can draw loads of alpha blended sprites fast!");
-    }
+```ags
+if (System.HardwareAcceleration) {
+    Display("Yay, we can draw loads of alpha blended sprites fast!");
+}
+```
 
 will display a message if the game is being run with hardware
 acceleration
@@ -180,7 +210,9 @@ acceleration
 
 ### `System.HasInputFocus`
 
-    readonly static bool System.HasInputFocus;
+```ags
+readonly static bool System.HasInputFocus;
+```
 
 Tells whether the game window currently has input focus, meaning it is
 active and player can control the game.
@@ -191,19 +223,23 @@ know if that actually happened.
 
 Examples:
 
-    if (!System.HasInputFocus)
-      return;
+```ags
+if (!System.HasInputFocus)
+    return;
+```
 
 skips the rest of the function if player has switched out from the game.
 
-    function repeatedly_execute()
-    {
-      if (!System.HasInputFocus && IsGamePaused() == 0) {
-        PauseGame();
-      } else if (System.HasInputFocus && IsGamePaused() == 1) {
-        UnPauseGame();
-      }
+```ags
+function repeatedly_execute()
+{
+    if (!System.HasInputFocus && IsGamePaused() == 0) {
+    PauseGame();
+    } else if (System.HasInputFocus && IsGamePaused() == 1) {
+    UnPauseGame();
     }
+}
+```
 
 pauses game when player switches out, and unpauses it when player
 switches back to game.
@@ -216,7 +252,9 @@ switches back to game.
 
 ### `System.NumLock`
 
-    readonly static bool System.NumLock;
+```ags
+readonly static bool System.NumLock;
+```
 
 Gets whether Num Lock is active on the player's system.
 
@@ -225,10 +263,12 @@ using the numeric keypad arrow keys, for example.
 
 Example:
 
-    if (System.NumLock)
-    {
-      Display("The NUM LOCK light is on.");
-    }
+```ags
+if (System.NumLock)
+{
+    Display("The NUM LOCK light is on.");
+}
+```
 
 will display a message if Num Lock is on.
 
@@ -243,7 +283,9 @@ will display a message if Num Lock is on.
 
 *(Formerly known as `system.os`, which is now obsolete)*
 
-    readonly static eOperatingSystem System.OperatingSystem;
+```ags
+readonly static eOperatingSystem System.OperatingSystem;
+```
 
 Returns which operating system the game is currently running under. It
 can be one of the following values:
@@ -260,18 +302,22 @@ can be one of the following values:
 
 Example:
 
-    if (System.OperatingSystem == eOSWindows) {
-      Display("Running on Windows!");
-    }
-    else {
-      Display("Not running on Windows!");
-    }
+```ags
+if (System.OperatingSystem == eOSWindows) {
+    Display("Running on Windows!");
+}
+else {
+    Display("Not running on Windows!");
+}
+```
 
 ---
 
 ### `System.RenderAtScreenResolution`
 
-    static bool System.RenderAtScreenResolution;
+```ags
+static bool System.RenderAtScreenResolution;
+```
 
 Gets/sets whether sprites are rendered at screen resolution (if it's
 **true**) or native game resolution (if it's **false**).
@@ -294,7 +340,9 @@ menu option for toggling it at runtime.
 
 ### `System.RuntimeInfo`
 
-    readonly static String System.RuntimeInfo;
+```ags
+readonly static String System.RuntimeInfo;
+```
 
 Returns the string containing short description of the environment the
 game is currently running in, such as engine version, graphics mode, and
@@ -308,10 +356,12 @@ modes of the game.
 
 Example:
 
-    function on_key_press(eKeyCode keycode) {
-      if (keycode == eKeyCtrlV) {
-        Display(System.RuntimeInfo);
-    }
+```ags
+function on_key_press(eKeyCode keycode) {
+    if (keycode == eKeyCtrlV) {
+    Display(System.RuntimeInfo);
+}
+```
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
@@ -325,7 +375,9 @@ Example:
 
 *(Formerly known as `system.screen_height`, which is now obsolete)*
 
-    readonly static int System.ScreenHeight;
+```ags
+readonly static int System.ScreenHeight;
+```
 
 Returns the game's screen height in native coordinates, **not** accounting for the scaling applied by graphic renderer. Historically it also included a size of the black letterbox borders, making it a confusing parameter.
 
@@ -340,7 +392,9 @@ Returns the game's screen height in native coordinates, **not** accounting for t
 
 *(Formerly known as `system.screen_width`, which is now obsolete)*
 
-    readonly static int System.ScreenWidth;
+```ags
+readonly static int System.ScreenWidth;
+```
 
 Returns the game's screen width in native coordinates, **not** accounting for the scaling applied by graphic renderer. Historically it also included a size of the black widescreen side borders, making it a confusing parameter.
 
@@ -351,7 +405,9 @@ Returns the game's screen width in native coordinates, **not** accounting for th
 
 ### `System.ScrollLock`
 
-    readonly static bool System.ScrollLock;
+```ags
+readonly static bool System.ScrollLock;
+```
 
 Gets whether Scroll Lock is active on the player's system.
 
@@ -361,10 +417,12 @@ you use it for any other purpose in your game.
 
 Example:
 
-    if (System.ScrollLock)
-    {
-      Display("The SCROLL LOCK light is on.");
-    }
+```ags
+if (System.ScrollLock)
+{
+    Display("The SCROLL LOCK light is on.");
+}
+```
 
 will display a message if Scroll Lock is on.
 
@@ -377,7 +435,9 @@ will display a message if Scroll Lock is on.
 
 ### `System.SupportsGammaControl`
 
-    readonly static bool System.SupportsGammaControl;
+```ags
+readonly static bool System.SupportsGammaControl;
+```
 
 Gets whether the player's PC supports changing the screen's gamma
 control settings.
@@ -394,9 +454,11 @@ MacOS: **No**
 
 Example:
 
-    if (System.SupportsGammaControl) {
-      Display("We can change the system gamma level!");
-    }
+```ags
+if (System.SupportsGammaControl) {
+    Display("We can change the system gamma level!");
+}
+```
 
 will display a message if the system supports changing the gamma
 
@@ -408,7 +470,9 @@ will display a message if the system supports changing the gamma
 
 *(Formerly known as `system.version`, which is now obsolete)*
 
-    readonly static String System.Version;
+```ags
+readonly static String System.Version;
+```
 
 Returns the AGS engine version number. This could be useful from within
 script modules in order to use features available on a particular engine
@@ -418,7 +482,9 @@ The string returned is the full version number, for example "2.71.833".
 
 Example:
 
-    Display("AGS version: %s", System.Version);
+```ags
+Display("AGS version: %s", System.Version);
+```
 
 will display the AGS version number
 
@@ -430,7 +496,9 @@ will display the AGS version number
 
 *(Formerly known as `system.viewport_height`, which is now obsolete)*
 
-    readonly static int System.ViewportHeight;
+```ags
+readonly static int System.ViewportHeight;
+```
 
 Returns the game's screen height in native coordinates, **not** accounting for the scaling applied by graphic renderer.
 Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [`Viewport.Height`](Viewport#viewportheight) is **not** a direct equivalent.
@@ -446,7 +514,9 @@ Note that before AGS 3.5.0 there was no differentiation between "game's viewport
 
 *(Formerly known as `system.viewport_width`, which is now obsolete)*
 
-    readonly static int System.ViewportWidth;
+```ags
+readonly static int System.ViewportWidth;
+```
 
 Returns the game's screen width in native coordinates, **not** accounting for the scaling applied by graphic renderer.
 Note that before AGS 3.5.0 there was no differentiation between "game's viewport" (as in - full game's screen) and "room viewport", that's why [`Viewport.Width`](Viewport#viewportwidth) is **not** a direct equivalent.
@@ -461,7 +531,9 @@ Note that before AGS 3.5.0 there was no differentiation between "game's viewport
 *(Formerly known as `SetDigitalMasterVolume`, which is now obsolete)*<br>
 *(Formerly known as `SetMusicMasterVolume`, which is now obsolete)*
 
-    static int System.Volume;
+```ags
+static int System.Volume;
+```
 
 Gets/sets the overall system volume, from 0 to 100. This is the master
 volume control, that affects all audio in the game. You would usually
@@ -470,7 +542,9 @@ from some sort of Control Panel GUI.
 
 Example:
 
-    System.Volume = 80;
+```ags
+System.Volume = 80;
+```
 
 will set the overall output volume to 80.
 
@@ -485,7 +559,9 @@ will set the overall output volume to 80.
 
 *(Formerly known as `system.vsync`, which is now obsolete)*
 
-    static bool System.VSync;
+```ags
+static bool System.VSync;
+```
 
 Gets/sets whether AGS waits for the vertical retrace before rendering each frame.
 
@@ -498,9 +574,11 @@ Not all renderers support changing vsync at runtime. If current one does not, th
 
 Example:
 
-    if (System.VSync) {
-      Display("Vertical retrace sync is enabled!");
-    }
+```ags
+if (System.VSync) {
+    Display("Vertical retrace sync is enabled!");
+}
+```
 
 will display a message if vsync is on.
 
@@ -510,7 +588,9 @@ will display a message if vsync is on.
 
 *(Formerly known as `system.windowed`, which is now obsolete)*
 
-    static bool System.Windowed;
+```ags
+static bool System.Windowed;
+```
 
 Gets/sets whether the game is running in a window (*true*) or
 full-screen (*false*).
@@ -520,19 +600,23 @@ alternate window mode. If it fails, it will return to previous one.
 
 Example:
 
-    if (System.Windowed) {
-      Display("Game is running in a window!");
-    }
+```ags
+if (System.Windowed) {
+    Display("Game is running in a window!");
+}
+```
 
 will display a message if the game is running in a window
 
 Example:
 
-    function on_key_press(eKeyCode keycode) {
-      if (keycode == eKeyEscape) {
-        System.Windowed = !System.Windowed;
-      }
+```ags
+function on_key_press(eKeyCode keycode) {
+    if (keycode == eKeyEscape) {
+    System.Windowed = !System.Windowed;
     }
+}
+```
 
 will switch from windowed to fullscreen mode and vice-versa whenever
 player presses Escape key.

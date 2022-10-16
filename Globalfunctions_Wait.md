@@ -7,49 +7,59 @@ Since AGS 3.6.0, All Wait related functions can return a **Skip Reason** on why 
 
 If you only need to find out whether WaitX ended with a timeout or a player's input, all you need is to compare it with `0`:
 
-    if (WaitMouseKey(100) == 0) {
-        Display("Time out!");
-    }
+```ags
+if (WaitMouseKey(100) == 0) {
+    Display("Time out!");
+}
 
-    if (WaitMouse(100) != 0) {
-        Display("Skipped by a mouse click.");
-    }
+if (WaitMouse(100) != 0) {
+    Display("Skipped by a mouse click.");
+}
+```
 
 If you need to determine exact details of how the "wait" was skipped, you have to split returned value into `InputType`, key mod, and a button code using [bitwise operations](ScriptKeywords#operators):
 
-    int result = WaitMouseKey(100);
-    InputType type = result & eInputAny;
-    int keymod = result & eKeyModMask; // extract key mod flags
-    int keycode = result & eKeyCodeMask; // extract key or button code
+```ags
+int result = WaitMouseKey(100);
+InputType type = result & eInputAny;
+int keymod = result & eKeyModMask; // extract key mod flags
+int keycode = result & eKeyCodeMask; // extract key or button code
+```
 
 For example, this is how you may Wait until player presses either Space key or Left Mouse button:
 
-    while (true) {
-        int result = WaitMouseKey(-1);
-        InputType type = result & eInputAny;
-        int keycode = result & eKeyCodeMask;
-        if ((type == eInputMouse && keycode == eMouseLeft) ||
-            (type == eInputKeyboard && keycode == eKeySpace)) {
-            break; // break the waiting loop
-        }
+```ags
+while (true) {
+    int result = WaitMouseKey(-1);
+    InputType type = result & eInputAny;
+    int keycode = result & eKeyCodeMask;
+    if ((type == eInputMouse && keycode == eMouseLeft) ||
+        (type == eInputKeyboard && keycode == eKeySpace)) {
+        break; // break the waiting loop
     }
+}
+```
 
 and this is how the key combinations may be tested (Ctrl + S in this case):
 
-    while (true) {
-        int result = WaitKey(-1);
-        int keycode = result & eKeyCodeMask;
-        int keymod = result & eKeyModMask;
-        if (keymod == eKeyModCtrl && keycode == eKeyS) {
-            break; // break the waiting loop
-        }
+```ags
+while (true) {
+    int result = WaitKey(-1);
+    int keycode = result & eKeyCodeMask;
+    int keymod = result & eKeyModMask;
+    if (keymod == eKeyModCtrl && keycode == eKeyS) {
+        break; // break the waiting loop
     }
+}
+```
 
 ---
 
 ### `SkipWait`
 
-    void SkipWait ()
+```ags
+void SkipWait ()
+```
 
 Cancels current Wait function, regardless of its type, if one was active at the moment.
 
@@ -64,7 +74,9 @@ Cancels current Wait function, regardless of its type, if one was active at the 
 
 ### `Wait`
 
-    void Wait (int time)
+```ags
+void Wait (int time)
+```
 
 Pauses the script and lets the game continue for TIME loops. There are
 normally 40 loops/second (unless you change it with SetGameSpeed), so
@@ -73,9 +85,11 @@ run while the Wait function is in the background.
 
 Example:
 
-    cEgo.Walk(120, 140, eBlock, eWalkableAreas);
-    Wait(80);
-    cEgo.FaceLocation(1000,100);
+```ags
+cEgo.Walk(120, 140, eBlock, eWalkableAreas);
+Wait(80);
+cEgo.FaceLocation(1000,100);
+```
 
 will move the character EGO to 120,140, wait until he gets there then
 wait for 2 seconds (80 game cycles) and then face right.
@@ -89,7 +103,9 @@ wait for 2 seconds (80 game cycles) and then face right.
 
 ### `WaitInput`
 
-    int WaitInput(InputType types, int timeout = -1)
+```ags
+int WaitInput(InputType types, int timeout = -1)
+```
 
 Pauses the script and lets the game continue until EITHER:
 
@@ -107,7 +123,9 @@ Returns the **Skip Reason** of why it was skipped (see top of this page for more
 
 Example:
 
-    WaitInput(eInputKeyboard + eInputMouse, 200);
+```ags
+WaitInput(eInputKeyboard + eInputMouse, 200);
+```
 
 will pause the script and wait until 5 seconds have passed (if game is 40 frames per second) or the player
 presses a key or clicks the mouse.
@@ -125,7 +143,9 @@ presses a key or clicks the mouse.
 
 ### `WaitKey`
 
-    int WaitKey (int timeout = -1)
+```ags
+int WaitKey (int timeout = -1)
+```
 
 Pauses the script and lets the game continue until EITHER:
 
@@ -141,7 +161,9 @@ Returns the **Skip Reason** of why it was skipped (see top of this page for more
 
 Example:
 
-    WaitKey(200);
+```ags
+WaitKey(200);
+```
 
 will pause the script and wait until 5 seconds have passed or the player
 presses a key.
@@ -155,7 +177,9 @@ presses a key.
 
 ### `WaitMouseKey`
 
-    int WaitMouseKey (int timeout = -1)
+```ags
+int WaitMouseKey (int timeout = -1)
+```
 
 Pauses the script and lets the game continue until EITHER:
 
@@ -172,7 +196,9 @@ Returns the **Skip Reason** of why it was skipped (see top of this page for more
 
 Example:
 
-    WaitMouseKey(200);
+```ags
+WaitMouseKey(200);
+```
 
 will pause the script and wait until 5 seconds have passed or the player
 presses a key or clicks the mouse.
@@ -186,7 +212,9 @@ presses a key or clicks the mouse.
 
 ### `WaitMouse`
 
-    int WaitMouseKey (int timeout = -1)
+```ags
+int WaitMouseKey (int timeout = -1)
+```
 
 Pauses the script and lets the game continue until EITHER:
 
@@ -202,7 +230,9 @@ Returns the **Skip Reason** of why it was skipped (see top of this page for more
 
 Example:
 
-    WaitMouse(200);
+```ags
+WaitMouse(200);
+```
 
 will pause the script and wait until 5 seconds have passed (if game is 40 frames per second) or the player
 presses clicks the mouse.

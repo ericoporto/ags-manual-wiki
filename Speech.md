@@ -5,7 +5,9 @@
 *(Formerly known as `game.close_mouth_end_speech_time`, which is now
 obsolete)*
 
-    static int Speech.AnimationStopTimeMargin
+```ags
+static int Speech.AnimationStopTimeMargin
+```
 
 Gets/sets the time margin at which the character talking animation
 should stop before before speech time ends. This property is specified
@@ -16,7 +18,9 @@ disabled.
 
 Example:
 
-    Speech.AnimationStopTimeMargin = 40;
+```ags
+Speech.AnimationStopTimeMargin = 40;
+```
 
 will stop talking animation 40 game loops (1 second with the default
 game speed) before speech time ends.
@@ -28,7 +32,9 @@ game speed) before speech time ends.
 
 ### `Speech.CustomPortraitPlacement`
 
-    static bool Speech.CustomPortraitPlacement
+```ags
+static bool Speech.CustomPortraitPlacement
+```
 
 Enables/disables the custom speech portrait placement. When set to
 **true** the character portraits are positioned at screen coordinates
@@ -48,7 +54,9 @@ used.
 
 ### `Speech.DisplayPostTimeMs`
 
-    static int Speech.DisplayPostTimeMs
+```ags
+static int Speech.DisplayPostTimeMs
+```
 
 Gets/sets the extra time the speech will stay on screen after its base
 time runs out. Commonly the time the speech lines and portrait stay on
@@ -71,7 +79,9 @@ and is set to zero by default.
 
 *(Formerly known as `game.talkanim_speed`, which is now obsolete)*
 
-    static int Speech.GlobalSpeechAnimationDelay
+```ags
+static int Speech.GlobalSpeechAnimationDelay
+```
 
 Gets/sets global speech animation delay which affects every character in
 game. This property is specified in **game loops** and is set to 5 by
@@ -93,7 +103,9 @@ used instead.
 
 ### `Speech.PortraitOverlay`
 
-    static Overlay* Speech.PortraitOverlay
+```ags
+static Overlay* Speech.PortraitOverlay
+```
 
 Retrieves the portrait overlay of a current blocking speech. It's currently only available in eihter
 a `repeatedly_execute_always` or `late_repeatedly_execute_always`. It will return null if no
@@ -101,19 +113,21 @@ portrait overlay is currently being shown.
 
 Example:
 
-    #define PORTRAIT_YMIN 5
-    #define PORTRAIT_YMAX 30
-    int plast = -1;
-    int pmove = 1;
-    function repeatedly_execute_always() {
-      if (Speech.PortraitOverlay != null) {
-        if (plast >= 0) Speech.PortraitOverlay.Y = plast;
-        Speech.PortraitOverlay.Y += pmove;
-        if (Speech.PortraitOverlay.Y < PORTRAIT_YMIN) pmove = 1;
-        if (Speech.PortraitOverlay.Y > PORTRAIT_YMAX) pmove = -1;
-        plast = Speech.PortraitOverlay.Y;
-      }
+```ags
+#define PORTRAIT_YMIN 5
+#define PORTRAIT_YMAX 30
+int plast = -1;
+int pmove = 1;
+function repeatedly_execute_always() {
+    if (Speech.PortraitOverlay != null) {
+    if (plast >= 0) Speech.PortraitOverlay.Y = plast;
+    Speech.PortraitOverlay.Y += pmove;
+    if (Speech.PortraitOverlay.Y < PORTRAIT_YMIN) pmove = 1;
+    if (Speech.PortraitOverlay.Y > PORTRAIT_YMAX) pmove = -1;
+    plast = Speech.PortraitOverlay.Y;
     }
+}
+```
 
 Waves a speech portrait up and down
 
@@ -126,7 +140,9 @@ Waves a speech portrait up and down
 
 ### `Speech.PortraitXOffset`
 
-    static int Speech.PortraitXOffset
+```ags
+static int Speech.PortraitXOffset
+```
 
 Gets/sets the character's speech portrait **horizontal** offset relative
 to screen side. The actual x coordinate of the portrait is calculated
@@ -147,7 +163,9 @@ side and respected portrait's border.
 
 ### `Speech.PortraitY`
 
-    static int Speech.PortraitY
+```ags
+static int Speech.PortraitY
+```
 
 Gets/sets the character's speech portrait **y** coordinate on screen.
 
@@ -167,7 +185,9 @@ Gets/sets the character's speech portrait **y** coordinate on screen.
 *(Formerly known as `game.skip_speech_specific_key`, which is now
 obsolete)*
 
-    static eKeyCode Speech.SkipKey
+```ags
+static eKeyCode Speech.SkipKey
+```
 
 Gets/sets special key which can skip speech text. This makes all other
 keys ignored when speech is displayed on screen, unless eKeyNone is
@@ -178,7 +198,9 @@ speech skip style is enabled.
 
 Example:
 
-    Speech.SkipKey = eKeySpace;
+```ags
+Speech.SkipKey = eKeySpace;
+```
 
 will assign the "space" key to skip the speech.
 
@@ -190,7 +212,9 @@ will assign the "space" key to skip the speech.
 
 *(Formerly known as `SetSkipSpeech`, which is now obsolete)*
 
-    static SkipSpeechStyle Speech.SkipStyle
+```ags
+static SkipSpeechStyle Speech.SkipStyle
+```
 
 Gets/sets how the player can skip speech lines.
 
@@ -206,7 +230,9 @@ The accepted values are
 
 Example:
 
-    Speech.SkipStyle = eSkipTime;
+```ags
+Speech.SkipStyle = eSkipTime;
+```
 
 will make the player unable to skip the text by pressing a mouse button
 or a key.
@@ -222,7 +248,9 @@ or a key.
 
 *(Formerly known as `SetSpeechStyle`, which is now obsolete)*
 
-    static eSpeechStyle Speech.Style
+```ags
+static eSpeechStyle Speech.Style
+```
 
 Gets/sets the way in which speech text is displayed. This modifies the
 setting originally set in the editor. SpeechStyle can be:
@@ -238,7 +266,9 @@ setting originally set in the editor. SpeechStyle can be:
 
 Example:
 
-    Speech.Style = eSpeechSierra;
+```ags
+Speech.Style = eSpeechSierra;
+```
 
 will change the speech style to a close up portrait of the character.
 
@@ -248,7 +278,9 @@ will change the speech style to a close up portrait of the character.
 
 *(Formerly known as `game.speech_text_align`, which is now obsolete)*
 
-    static Alignment Speech.TextAlignment
+```ags
+static Alignment Speech.TextAlignment
+```
 
 Sets how text in LucasArts-style speech is aligned.
 
@@ -262,7 +294,9 @@ The default is eAlignCentre.
 
 Example:
 
-    Speech.TextAlignment = eAlignRight;
+```ags
+Speech.TextAlignment = eAlignRight;
+```
 
 will align the speech text at the right side.
 
@@ -270,7 +304,9 @@ will align the speech text at the right side.
 
 ### `Speech.TextOverlay`
 
-    static Overlay* Speech.TextOverlay
+```ags
+static Overlay* Speech.TextOverlay
+```
 
 Retrieves the text overlay of a current blocking speech. It's currently only available in eihter a
 `repeatedly_execute_always` or `late_repeatedly_execute_always`. It will return null if no
@@ -281,19 +317,21 @@ Additionally, calling Speech.TextOverlay.Remove() will work as a speech interrup
 
 Example:
 
-    Overlay* lastSpeech;
- 
-    function late_repeatedly_execute_always() {
-      Overlay* curSpeech = Speech.TextOverlay;
-      if (lastSpeech == null && curSpeech != null) {
-        // speech has started
-      } else if (lastSpeech != null && curSpeech == null) {
-        // speech is over
-      } else if (lastSpeech != null && curSpeech != lastSpeech) {
-        // speech changed to the next line
-      }
-      lastSpeech = curSpeech;
+```ags
+Overlay* lastSpeech;
+
+function late_repeatedly_execute_always() {
+    Overlay* curSpeech = Speech.TextOverlay;
+    if (lastSpeech == null && curSpeech != null) {
+    // speech has started
+    } else if (lastSpeech != null && curSpeech == null) {
+    // speech is over
+    } else if (lastSpeech != null && curSpeech != lastSpeech) {
+    // speech changed to the next line
     }
+    lastSpeech = curSpeech;
+}
+```
 
 Detects when the blocking speech has begun, changed to the next line or is over.
 
@@ -306,7 +344,9 @@ Detects when the blocking speech has begun, changed to the next line or is over.
 
 ### `Speech.UseGlobalSpeechAnimationDelay`
 
-    static bool Speech.UseGlobalSpeechAnimationDelay
+```ags
+static bool Speech.UseGlobalSpeechAnimationDelay
+```
 
 Gets/sets whether speech animation delay should use global setting, as
 opposed to individual character's setting. The actual global delay value
@@ -314,7 +354,9 @@ is specified with **Speech.GlobalSpeechAnimationDelay**.
 
 Example:
 
-    Speech.UseGlobalSpeechAnimationDelay = true;
+```ags
+Speech.UseGlobalSpeechAnimationDelay = true;
+```
 
 will make the game use global speech animation delay.
 
@@ -330,7 +372,9 @@ will make the game use global speech animation delay.
 
 *(Formerly known as `SetVoiceMode`, which is now obsolete)*
 
-    static eVoiceMode Speech.VoiceMode
+```ags
+static eVoiceMode Speech.VoiceMode
+```
 
 Gets/sets whether voice and/or text captions are used in the game.
 
@@ -352,8 +396,10 @@ sound card and so may not understand what is going on.
 
 Example:
 
-    if (IsSpeechVoxAvailable()==1)
-        Speech.VoiceMode = eSpeechVoiceAndText;
+```ags
+if (IsSpeechVoxAvailable()==1)
+    Speech.VoiceMode = eSpeechVoiceAndText;
+```
 
 will set the voice mode to voice and text if the voice pack is
 available.

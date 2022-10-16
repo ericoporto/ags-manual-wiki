@@ -40,10 +40,12 @@ with the name that you gave it. Simple! So, for example if you add an
 int global variable called "myVariable", then in your script you can
 just do things like this:
 
-    if (myVariable == 3)
-    {
-      myVariable = 4;
-    }
+```ags
+if (myVariable == 3)
+{
+  myVariable = 4;
+}
+```
 
 or
 

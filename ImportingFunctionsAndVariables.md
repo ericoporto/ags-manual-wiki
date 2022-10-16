@@ -12,14 +12,18 @@ All script functions are exported automatically, so they only need an import dec
 
 For example, suppose you have the following function in script MyScript.asc:
 
-    function ScriptAFunction(int param1, int param2)
-    {
-        // some actions here
-    }
+```ags
+function ScriptAFunction(int param1, int param2)
+{
+    // some actions here
+}
+```
 
 Then the import declaration in the MyScript's header (MyScript.ash) should looks like:
 
-    import function ScriptAFunction(int param1, int param2);
+```ags
+import function ScriptAFunction(int param1, int param2);
+```
 
 The name, type and arguments of the function must be the same, otherwise there will be errors either during compilation or at runtime.
 
@@ -29,51 +33,67 @@ Script variables are not exported by default, so that has to be done explicitly 
 
 Let's suppose that you have the following variable inside MyScript.asc:
 
-    int public_variable;
+```ags
+int public_variable;
+```
 
 If you want to share this variable with the other scripts, you have put the `export` statement *inside the same script where you have declared the variable* (MyScript.asc), somewhere below the declaration:
 
-    export public_variable;
+```ags
+export public_variable;
+```
 
 The `export` statement needs _only the variable's name_ and nothing else. It must *not* be put inside a function.
 
 You can export several variables in one statement if you separate their names with commas, for example:
 
-    export public_variable1, public_variable2;
+```ags
+export public_variable1, public_variable2;
+```
 
 Now, import declaration in the MyScript's header (MyScript.ash) should looks like:
 
-    import int public_variable;
+```ags
+import int public_variable;
+```
 
 Both *the name and type* must match the variable's own declaration exactly.<br>
 This bit is important. If the variable is `int` then it should be imported as `int`, if it's of the type `Character*` then the import should also be declared as `Character*`.
 
 Imported arrays must have the *correct size*, for example if you have `int arr[10];` then the import declaration must be:
 
-    import int arr[10];
+```ags
+import int arr[10];
+```
 
 (NOTE: the export command still requires its name *only*: `export arr;`)
 
 Similar to the regular variable declaration, you can declare the import of several variables _of the same type_ in one statement if you separate them by commas:
 
-    import int var1, var2;
+```ags
+import int var1, var2;
+```
 
 **NOTE:** Most commonly import declarations are put in the *header* of the same script where these variables are defined. But in theory you may not do that and instead place imports inside each particular script where you intend to use these variables.
 
 So, for a final example, you have this in **MyScript.asc**:
 
-    int public_int1, public_int2;
-    int arr[10];
-    String someString;
-    Character* RandomChar;
-    export public_int1, public_int2, arr, someString, RandomChar;
+```ags
+int public_int1, public_int2;
+int arr[10];
+String someString;
+Character* RandomChar;
+export public_int1, public_int2, arr, someString, RandomChar;
+```
 
 And in **MyScript.ash**:
 
-    import int public_int1, public_int2;
-    import int arr[10];
-    import String public_str;
-    import Character* RandomChar;
+```ags
+import int public_int1, public_int2;
+import int arr[10];
+import String public_str;
+import Character* RandomChar;
+```
 
 To sum this up, the import declaration lets other scripts see this variable, and the export command actually connects existing variables to that declaration.
 

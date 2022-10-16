@@ -25,18 +25,22 @@ declares a new 32-bit integer called my_variable
 **WARNING:** When using the *float* data type, you may find that the ==
 and != operators don't seem to work properly. For example:
 
-    float result = 2.0 * 3.0;
-    if (result == 6.0) {
-      Display("Result is 6!");
-    }
+```ags
+float result = 2.0 * 3.0;
+if (result == 6.0) {
+  Display("Result is 6!");
+}
+```
 
 may not always work. This is due to the nature of floating point
 variables, and the solution is to code like this:
 
-    float result = 2.0 * 3.0;
-    if ((result > 5.99) && (result < 6.01)) {
-      Display("Result is 6!");
-    }
+```ags
+float result = 2.0 * 3.0;
+if ((result > 5.99) && (result < 6.01)) {
+  Display("Result is 6!");
+}
+```
 
 The way floating point numbers are stored means that 6 might actually be
 stored as 6.000001 or 5.999999; this is a common gotcha to all
@@ -54,15 +58,19 @@ For example, suppose you wanted to store a health variable for all the
 different characters in the game. One way would be to declare several
 different variables like this:
 
-    int egoHealth;
-    int badGuyHealth;
-    int swordsmanHealth;
+```ags
+int egoHealth;
+int badGuyHealth;
+int swordsmanHealth;
+```
 
 but that quickly gets messy and difficult to keep up to date, since you
 need to use different script code to update each one. So instead, you
 can do this at the top of your script:
 
-    int health[50];
+```ags
+int health[50];
+```
 
 This example declares 50 int variables, all called *health*.<br>
 You access each separate variable via its **index** (the number in the
@@ -72,9 +80,11 @@ index, your game will exit with an error.
 
 Here's an example of using the array:
 
-    health[3] = 50;
-    health[4] = 100;
-    health[player.ID] = 10;
+```ags
+health[3] = 50;
+health[4] = 100;
+health[player.ID] = 10;
+```
 
 this sets Health 3 to 50, Health 4 to 100, and the Health index that
 corresponds to the player character's ID number to 10.  
@@ -145,12 +155,14 @@ of AGS the user of your module is using.
 
 For this purpose there are two directives:
 
-    #ifver 2.72
-    // do stuff for 2.72 and above
-    #endif
-    #ifnver 2.72
-    // do stuff for 2.71 and below
-    #endif
+```ags
+#ifver 2.72
+// do stuff for 2.72 and above
+#endif
+#ifnver 2.72
+// do stuff for 2.71 and below
+#endif
+```
 
 Note that this ability was only added in 2.72, so you cannot use the
 `#ifver` checks if you want your module to work with earlier versions
@@ -178,12 +190,14 @@ then *statements2* are run instead.
 
 For example:
 
-    if (GetGlobalInt(5) == 10) {
-      Display("Globalint 5 is 10.");
-    }
-    else {
-      Display("Globalint 5 is not 10.");
-    }
+```ags
+if (GetGlobalInt(5) == 10) {
+  Display("Globalint 5 is 10.");
+}
+else {
+  Display("Globalint 5 is not 10.");
+}
+```
 
 In this example, the first message will be displayed if the return value
 from `GetGlobalInt(5)` is 10, and the second message will be displayed
@@ -192,15 +206,17 @@ if it is not.
 **if** statements can be nested inside **else** statements to produce an
 "else if" effect. For example:
 
-    if (GetGlobalInt(5) == 1) {
-      Display("Globalint 5 is 1.");
-    }
-    else if (GetGlobalInt(5) == 2) {
-      Display("Globalint 5 is 2.");
-    }
-    else {
-      Display("Globalint 5 is not 1 or 2.");
-    }
+```ags
+if (GetGlobalInt(5) == 1) {
+  Display("Globalint 5 is 1.");
+}
+else if (GetGlobalInt(5) == 2) {
+  Display("Globalint 5 is 2.");
+}
+else {
+  Display("Globalint 5 is not 1 or 2.");
+}
+```
 
 ---
 
@@ -235,21 +251,23 @@ one value in a series to compare it against.
 
 Example:
 
-    switch (player)
-    {
-        case cEgo:
-            Display("Hello, my name is Ego.");
-            break;
-        case cJohn:
-            Display("Greetings, I am John.");
-            break;
-        case cMary:
-            Display("Hi there, I am Mary.");
-            break;
-        default:
-            Display("This might be a bug!");
-            break;
-    }
+```ags
+switch (player)
+{
+    case cEgo:
+        Display("Hello, my name is Ego.");
+        break;
+    case cJohn:
+        Display("Greetings, I am John.");
+        break;
+    case cMary:
+        Display("Hi there, I am Mary.");
+        break;
+    default:
+        Display("This might be a bug!");
+        break;
+}
+```
 
 In the above example, if the player is cEgo, the game will display "Hello, my
 name is Ego." If the player is cJohn, the game will display "Greetings, I am
@@ -263,17 +281,19 @@ end of the **switch** block or a **break** statement is encountered.
 
 A **switch** statement that demonstrates this:
 
-    switch (player)
-    {
-        case cJohn:
-        case cMary:
-            player.Say("I like oranges.")
-            break;
-        case cEgo:
-            player.Say("I like apples.");
-        default:
-            player.Say("I would like some berries.");
-    }
+```ags
+switch (player)
+{
+    case cJohn:
+    case cMary:
+        player.Say("I like oranges.")
+        break;
+    case cEgo:
+        player.Say("I like apples.");
+    default:
+        player.Say("I would like some berries.");
+}
+```
 
 In the above example, if the player is either cJohn or cMary, s/he will
 say "I like oranges.". If the player is cEgo, he will say "I like
@@ -285,15 +305,17 @@ A *match_expression* can be any valid AGS expression, including a
 function call. The following construction can be useful when implementing
 responses to parser values:
 
-    switch (true)
-    {
-        case Parser.Said("take ball"):
-            player.AddInventory(iBall);
-            break;
-        case Parser.Said("drop ball"):
-            player.LoseInventory(iBall);
-            break;
-    }
+```ags
+switch (true)
+{
+    case Parser.Said("take ball"):
+        player.AddInventory(iBall);
+        break;
+    case Parser.Said("drop ball"):
+        player.LoseInventory(iBall);
+        break;
+}
+```
 
 In this situation, the *match_expression*s are the results of Parser.Said(). If
 *Player.Said("take ball")* is *true*, the ball is added to the player's
@@ -312,9 +334,11 @@ Runs *statements* continuously, while *expression* is true.
 
 For example:
 
-    while (cEgo.Moving) {
-      Wait(1);
-    }
+```ags
+while (cEgo.Moving) {
+  Wait(1);
+}
+```
 
 will run the script `Wait(1);` repeatedly, as long as `cEgo.Moving` is
 not zero. Once it is zero, the **while** statement will exit at the end
@@ -335,11 +359,13 @@ means that the statements will be executed at least once.
 
 For example:
 
-    do
-    {
-      cEgo.Move(cEgo.x + 1, cEgo.y);
-    }
-    while (IsKeyPressed(eKeyRightArrow));
+```ags
+do
+{
+  cEgo.Move(cEgo.x + 1, cEgo.y);
+}
+while (IsKeyPressed(eKeyRightArrow));
+```
 
 will run the script `cEgo.Move(cEgo.x + 1, cEgo.y);` once, and then
 continue run it repeatedly, as long as the right arrow key is pressed by
@@ -372,19 +398,23 @@ either [`break`](ScriptKeywords#break) or [`return`](ScriptKeywords#return).
 
 For example:
 
-    for (int i = 0; i < Game.CharacterCount; i++)
-    {
-      Display("My name is %s", character[i].Name);
-    }
+```ags
+for (int i = 0; i < Game.CharacterCount; i++)
+{
+  Display("My name is %s", character[i].Name);
+}
+```
 
 will look over every character in game and display their names.
 
 Another example (note missing initialization and iteration):
 
-    for (; cEgo.x < 100;)
-    {
-      Wait(1);
-    }
+```ags
+for (; cEgo.x < 100;)
+{
+  Wait(1);
+}
+```
 
 This will repeat `Wait(1);` until cEgo character does not move beyond
 coordinate x = 100.
@@ -401,12 +431,14 @@ continues running from the next line after loop or switch.
 
 For example:
 
-    while (cEgo.Moving) {
-      if (IsKeyPressed(eKeyEscape))
-        break;
+```ags
+while (cEgo.Moving) {
+  if (IsKeyPressed(eKeyEscape))
+    break;
 
-      Wait(1);
-    }
+  Wait(1);
+}
+```
 
 will run the script `Wait(1);` repeatedly, as long as `cEgo.Moving` is
 not zero. If player presses Escape key, the loop is terminated
@@ -425,15 +457,17 @@ kind of loop, the *iteration* statement is executed right before that.
 
 For example:
 
-    for (int i = 0; i < 100; i++)
-    {
-      // multiple statements here
+```ags
+for (int i = 0; i < 100; i++)
+{
+  // multiple statements here
 
-      if (i > 50)
-        continue;
+  if (i > 50)
+    continue;
 
-      // more statements following
-    }
+  // more statements following
+}
+```
 
 will run first part of the loop statements always, and second part only
 when `i <= 50`.
@@ -452,14 +486,18 @@ For example, suppose that you quite often want to play a sound and add
 an inventory item at the same time. You could write both commands each
 time, or you could define a custom function:
 
-    function AddInvAndPlaySound(InventoryItem* item) {
-      player.AddInventory(item);
-      aInventorySound.Play();
-    }
+```ags
+function AddInvAndPlaySound(InventoryItem* item) {
+  player.AddInventory(item);
+  aInventorySound.Play();
+}
+```
 
 then, elsewhere in your code you can simply call:
 
-    AddInvAndPlaySound(iKey);
+```ags
+AddInvAndPlaySound(iKey);
+```
 
 to add inventory item *iKey* and play the sound.
 
@@ -473,7 +511,9 @@ You can make *int* parameters optional if there is a default value that
 the user doesn't need to supply. To do this, change the script header
 *import* declaration like this:
 
-    import function TestFunction(int stuff, int things = 5);
+```ags
+import function TestFunction(int stuff, int things = 5);
+```
 
 that declares a function with a mandatory *stuff* parameter, and an
 optional *things* parameter. If the caller does not supply the second
@@ -499,22 +539,26 @@ If the function is declared with return type other than **void** (or
 simply like `function`), then the **return** statement **has** to
 specify **return value**.
 
-    int GetHowManyTradeGoodsShopkeeperHas() {
-      return 2;
-    }
+```ags
+int GetHowManyTradeGoodsShopkeeperHas() {
+  return 2;
+}
+```
 
 Alternatively, when function is not supposed to have any return value,
 sometimes you may want to break out of current function before it ends
 naturally:
 
-    function DoThisAndOptionallyThat(bool do_all) {
-      // multiple statements here
+```ags
+function DoThisAndOptionallyThat(bool do_all) {
+  // multiple statements here
 
-      if (!do_all)
-        return; // quit the function prematurely
+  if (!do_all)
+    return; // quit the function prematurely
 
-      // more statements following
-    }
+  // more statements following
+}
+```
 
 ---
 
@@ -528,38 +572,46 @@ your script more structured and readable. For example, suppose that
 wanted to store some information on weapons that the player could carry.
 You could declare the variables like this:
 
-    int swordDamage;
-    int swordPrice;
-    String swordName;
+```ags
+int swordDamage;
+int swordPrice;
+String swordName;
+```
 
 but that quickly gets out of hand and leaves you with tons of variables
 to keep track of. This is where structs come in:
 
-    struct Weapon {
-      int damage;
-      int price;
-      String name;
-    };
+```ags
+struct Weapon {
+  int damage;
+  int price;
+  String name;
+};
+```
 
 Now, you can declare a struct in one go, like so:
 
-    Weapon sword;
-    sword.damage = 10;
-    sword.price = 50;
-    sword.name = "Fine sword";
+```ags
+Weapon sword;
+sword.damage = 10;
+sword.price = 50;
+sword.name = "Fine sword";
+```
 
 Much neater and better organized. You can also combine structs with
 [arrays](ScriptKeywords#arrays):
 
-    // at top of script
-    Weapon weapons[10];
-    // inside script function
-    weapons[0].damage = 10;
-    weapons[0].price = 50;
-    weapons[0].name = "Fine sword";
-    weapons[1].damage = 20;
-    weapons[1].price = 80;
-    weapons[1].name = "Poison dagger";
+```ags
+// at top of script
+Weapon weapons[10];
+// inside script function
+weapons[0].damage = 10;
+weapons[0].price = 50;
+weapons[0].name = "Fine sword";
+weapons[1].damage = 20;
+weapons[1].price = 80;
+weapons[1].name = "Poison dagger";
+```
 
 structs are essential if you have complex data that you need to store in
 your scripts.
@@ -591,15 +643,19 @@ types (or dynamic arrays).
 
 Example:
 
-    managed struct Apple {
-      int color;
-      int freshness;
-    };
+```ags
+managed struct Apple {
+  int color;
+  int freshness;
+};
+```
 
 This declares managed struct. To declare a pointer to such struct you
 do:
 
-    Apple* my_apple;
+```ags
+Apple* my_apple;
+```
 
 This creates a pointer variable `my_apple` of managed type `Apple`.
 
@@ -608,44 +664,58 @@ is assigned **null** value now. If you try to access struct members
 using `my_apple` now, you will get errors. To create an actual object
 you need to use a [`new`](ScriptKeywords#new) keyword:
 
-    my_apple = new Apple;
+```ags
+my_apple = new Apple;
+```
 
 The object is now created in the dynamic memory pool, and variable
 `my_apple` **points** to it. This lets us access object contents:
 
-    my_apple.color = Game.GetColorFromRGB(255, 0, 0);
-    my_apple.freshness = 100;
+```ags
+my_apple.color = Game.GetColorFromRGB(255, 0, 0);
+my_apple.freshness = 100;
+```
 
 You may copy pointer to another variable of same type:
 
-    Apple* apple2 = my_apple;
+```ags
+Apple* apple2 = my_apple;
+```
 
 This does **not** copy object itself, only its address in dynamic pool,
 meaning both variables - `my_apple` and `apple2` - point to same object!
 
 You may write a function that take such pointer as parameter:
 
-    function DisplayAppleDescription(Apple* apple) {
-      String s = String.Format("Apple has color %d and freshness %d", apple.color, apple.freshness);
-      Display(s);
-    }
+```ags
+function DisplayAppleDescription(Apple* apple) {
+  String s = String.Format("Apple has color %d and freshness %d", apple.color, apple.freshness);
+  Display(s);
+}
+```
 
 and then call it like:
 
-    DisplayAppleDescription(my_apple);
+```ags
+DisplayAppleDescription(my_apple);
+```
 
 You may write a function that returns pointer to apple:
 
-    Apple* CreateYellowApple(int fresh) {
-      Apple* apple = new Apple;
-      apple.color = Game.GetColorFromRGB(255, 0, 255);
-      apple.freshness = fresh;
-      return apple;
-    }
+```ags
+Apple* CreateYellowApple(int fresh) {
+  Apple* apple = new Apple;
+  apple.color = Game.GetColorFromRGB(255, 0, 255);
+  apple.freshness = fresh;
+  return apple;
+}
+```
 
 and then use such function just like:
 
-    Apple *my_apple = CreateYellowApple(50);
+```ags
+Apple *my_apple = CreateYellowApple(50);
+```
 
 **When does the dynamic object gets destroyed?** After you created
 dynamic object as described above, it will exist in memory as long as
@@ -668,21 +738,23 @@ to *pointer_variable*.
 
 Example:
 
-    // Here we declare a managed struct for Apple
-    managed struct Apple {
-      int color;
-      int freshness;
-    };
+```ags
+// Here we declare a managed struct for Apple
+managed struct Apple {
+  int color;
+  int freshness;
+};
 
-    // ...and declare a global pointer to Apple
-    Apple* SomeApple;
+// ...and declare a global pointer to Apple
+Apple* SomeApple;
 
-    // At the game start we create a new dynamic object of Apple type
-    // and assign its address to the pointer variable
-    function game_start()
-    {
-      SomeApple = new Apple;
-    }
+// At the game start we create a new dynamic object of Apple type
+// and assign its address to the pointer variable
+function game_start()
+{
+  SomeApple = new Apple;
+}
+```
 
 *See also:* [`managed`](ScriptKeywords#managed), [Pointers in AGS](Pointers)
 
@@ -703,34 +775,38 @@ one time -- a bit like the contents of a list box.
 For example, if you have a script function, *doStuff*, that can perform
 3 different operations, you could do this:
 
-    function doStuff(int param) {
-      if (param == 1) {
-        // do something
-      }
-      else if (param == 2) {
-        // do something else
-      }
-      // etc
-    }
+```ags
+function doStuff(int param) {
+  if (param == 1) {
+    // do something
+  }
+  else if (param == 2) {
+    // do something else
+  }
+  // etc
+}
+```
 
 but it's hard to read, and when calling the function from elsewhere in
 your script, it's not clear what 1 or 2 means. That's where enums come
 in:
 
-    enum DoStuffOption {
-      BakeCake,
-      DoLaundry
-    };
+```ags
+enum DoStuffOption {
+  BakeCake,
+  DoLaundry
+};
 
-    function doStuff(DoStuffOption param) {
-      if (param == BakeCake) {
-        // do something
-      }
-      else if (param == DoLaundry) {
-        // do something else
-      }
-      // etc
-    }
+function doStuff(DoStuffOption param) {
+  if (param == BakeCake) {
+    // do something
+  }
+  else if (param == DoLaundry) {
+    // do something else
+  }
+  // etc
+}
+```
 
 and then the calling code looks like:<br>
 `doStuff(BakeCake);`<br>
@@ -758,18 +834,22 @@ inside member functions to refer to the current struct. For example:
 
 Suppose you had this in your script header:
 
-    struct MyStruct {
-      int myValue;
+```ags
+struct MyStruct {
+  int myValue;
 
-      import function MyMethod();
-    };
+  import function MyMethod();
+};
+```
 
 Then, in your main script, you could put this:
 
-    function MyStruct::MyMethod()
-    {
-      this.myValue = 5;
-    }
+```ags
+function MyStruct::MyMethod()
+{
+  this.myValue = 5;
+}
+```
 
 The `MyStruct::MyMethod` tells AGS that you are defining the function
 *MyMethod* which belongs to the struct *MyStruct* (the `::` operator
@@ -795,8 +875,10 @@ to provide your room scripts with access to parts of your global script.
 
 For example:
 
-    import int counter;
-    import function add_numbers (int, int);
+```ags
+import int counter;
+import function add_numbers (int, int);
+```
 
 This imports an integer variable `counter` and the function
 `add_numbers` from the global script to enable the current script to
@@ -819,11 +901,13 @@ getter and setter functions.
 
 For example:
 
-    struct Weapon
-    {
-        protected int damage;
-        import attribute int Damage;
-    };
+```ags
+struct Weapon
+{
+    protected int damage;
+    import attribute int Damage;
+};
+```
 
 Please see the [Object Oriented programming](OOProgramming) page for more
 details.
@@ -839,8 +923,10 @@ if declared using the [`import`](ScriptKeywords#import) keyword in those scripts
 
 For example:
 
-    export my_variable;
-    export counter, strength;
+```ags
+export my_variable;
+export counter, strength;
+```
 
 This exports three variables (*my_variable*, *counter*, and *strength*) to be
 available for import.
@@ -856,8 +942,10 @@ its value cannot be changed.
 
 For example:
 
-    readonly int zero;
-    readonly int months = 12;
+```ags
+readonly int zero;
+readonly int months = 12;
+```
 
 ---
 
@@ -872,11 +960,13 @@ restricted.
 
 For example:
 
-    struct Weapon
-    {
-        writeprotected int Damage;
-        import bool SetDamage(int damage);
-    };
+```ags
+struct Weapon
+{
+    writeprotected int Damage;
+    import bool SetDamage(int damage);
+};
+```
 
 ---
 
@@ -890,11 +980,13 @@ functions) using the [`this`](ScriptKeywords#this) keyword.
 
 For example:
 
-    struct Weapon
-    {
-        protected int Damage;
-        import bool SetDamage(int damage);
-    };
+```ags
+struct Weapon
+{
+    protected int Damage;
+    import bool SetDamage(int damage);
+};
+```
 
 ---
 
@@ -928,13 +1020,15 @@ mean that the game will hang rather than abort.
 
 For example:
 
-    function noloopcheck initialize_array() {
-      char bigarray[200000];
-      int a = 0;
-      while (a < 200000) {
-        bigarray[a] = 1;
-        a++;
-      }
-    }
+```ags
+function noloopcheck initialize_array() {
+  char bigarray[200000];
+  int a = 0;
+  while (a < 200000) {
+    bigarray[a] = 1;
+    a++;
+  }
+}
+```
 
 without the "noloopcheck" keyword here, AGS would abort that script.

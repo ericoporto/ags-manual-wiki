@@ -2,16 +2,20 @@
 
 ### `Room.Exists`
 
-    static bool Room.Exists(int room)
+```ags
+static bool Room.Exists(int room)
+```
 
 Returns true if the specified room exists in the game.
 
 Example:
 
-    if(Room.Exists(10))
-    {
-      player.ChangeRoom(10);
-    }
+```ags
+if(Room.Exists(10))
+{
+    player.ChangeRoom(10);
+}
+```
 
 If room 10 is valid, go to that room.
 
@@ -19,7 +23,9 @@ If room 10 is valid, go to that room.
 
 ### `Room.GetDrawingSurfaceForBackground`
 
-    static DrawingSurface* Room.GetDrawingSurfaceForBackground(optional int backgroundNumber)
+```ags
+static DrawingSurface* Room.GetDrawingSurfaceForBackground(optional int backgroundNumber)
+```
 
 Gets a drawing surface for a room background, which allows you to
 directly draw onto the room's background image. You can provide a
@@ -42,10 +48,12 @@ necessary.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawLine(0, 0, 50, 50);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawLine(0, 0, 50, 50);
+surface.Release();
+```
 
 draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
@@ -61,7 +69,9 @@ background, then releases the image.
 *(Formerly known as global function `GetRoomProperty`, which is now
 obsolete)*
 
-    Room.GetProperty(string property)
+```ags
+Room.GetProperty(string property)
+```
 
 Returns the custom property setting of the PROPERTY for the current
 room.
@@ -76,8 +86,10 @@ current room can be checked.
 
 Example:
 
-    if (Room.GetProperty("CanBeAttackedHere"))
-      Display("An evil monster lunges at you!");
+```ags
+if (Room.GetProperty("CanBeAttackedHere"))
+    Display("An evil monster lunges at you!");
+```
 
 will print the message if the current room has its "CanBeAttackedHere"
 box ticked.
@@ -91,7 +103,9 @@ box ticked.
 *(Formerly known as global function `GetRoomPropertyText`, which is now
 obsolete)*
 
-    static String Room.GetTextProperty(string property)
+```ags
+static String Room.GetTextProperty(string property)
+```
 
 Returns the custom property setting of the PROPERTY for the current
 room.
@@ -106,8 +120,10 @@ current room can be checked.
 
 Example:
 
-    String description = Room.GetTextProperty("Description");
-    Display("The room's description: %s", description);
+```ags
+String description = Room.GetTextProperty("Description");
+Display("The room's description: %s", description);
+```
 
 will retrieve the room's "description" property then display it.
 
@@ -117,7 +133,9 @@ will retrieve the room's "description" property then display it.
 
 ### `Room.SetProperty`
 
-    static bool Room.SetProperty(const string property, int value)
+```ags
+static bool Room.SetProperty(const string property, int value)
+```
 
 Sets the new *value* for the custom *property* for the specified room.
 Returns TRUE if such property exists and FALSE on failure.
@@ -134,7 +152,9 @@ current room.
 
 Example:
 
-    Room.SetProperty("Darkness", 10);
+```ags
+Room.SetProperty("Darkness", 10);
+```
 
 will change room's "Darkness" custom property to 10.
 
@@ -146,7 +166,9 @@ will change room's "Darkness" custom property to 10.
 
 ### `Room.SetTextProperty`
 
-    bool Room.SetTextProperty(const string property, const string value)
+```ags
+bool Room.SetTextProperty(const string property, const string value)
+```
 
 Sets the new *value* text for the custom *property* for the specified
 room. Returns TRUE if such property exists and FALSE on failure.
@@ -161,7 +183,9 @@ current room.
 
 Example:
 
-    Room.SetTextProperty("Description", "The Throne Room");
+```ags
+Room.SetTextProperty("Description", "The Throne Room");
+```
 
 will change room's "description" property.
 
@@ -176,7 +200,9 @@ will change room's "description" property.
 *(Formerly known as global function `ProcessClick`, which is now
 obsolete)*
 
-    static void Room.ProcessClick(int x, int y, CursorMode)
+```ags
+static void Room.ProcessClick(int x, int y, CursorMode)
+```
 
 Simulates clicking the mouse on the location (X,Y) on the screen, in the specified cursor mode. This "click" has special behavior in that it **only affects Room elements and characters** under given coordinates.
 Any interactions attached to the first object found on given coordinates and matching the given cursor mode will be executed. Any non-room objects (GUI) will be **ignored**. Even if the coordinates happen to lie on a button, the simulated click will "pass through" that button as if it was not present.
@@ -187,7 +213,9 @@ The available cursor modes are the ones you define on your Cursors tab (but with
 
 Example:
 
-    Room.ProcessClick(100, 50, eModeLookat);
+```ags
+Room.ProcessClick(100, 50, eModeLookat);
+```
 
 will simulate a click in the Look mode on screen co-ordinates (100, 50).
 
@@ -200,14 +228,18 @@ will simulate a click in the Look mode on screen co-ordinates (100, 50).
 
 ### `Room.BottomEdge`
 
-    readonly static int Room.BottomEdge
+```ags
+readonly static int Room.BottomEdge
+```
 
 Returns the Y co-ordinate of the bottom edge of the room, as set in the
 Room Settings pane of the editor.
 
 Example:
 
-    Display("The current room's bottom edge is at %d.", Room.BottomEdge);
+```ags
+Display("The current room's bottom edge is at %d.", Room.BottomEdge);
+```
 
 *See also:* [`Room.LeftEdge`](Room#roomleftedge),
 [`Room.RightEdge`](Room#roomrightedge),
@@ -217,7 +249,9 @@ Example:
 
 ### `Room.ColorDepth`
 
-    readonly static int Room.ColorDepth
+```ags
+readonly static int Room.ColorDepth
+```
 
 Returns the color depth of the room's background scene. This is
 important if you want to use DrawImage, since any sprites that you draw
@@ -225,7 +259,9 @@ must be the same color depth as the room itself.
 
 Example:
 
-    Display("The current room background is %d-bit color.", Room.ColorDepth);
+```ags
+Display("The current room background is %d-bit color.", Room.ColorDepth);
+```
 
 *See also:*
 [`DrawingSurface.DrawImage`](DrawingSurface#drawingsurfacedrawimage)
@@ -236,13 +272,17 @@ Example:
 
 *(Formerly known as `game.room_height`, which is now obsolete)*
 
-    readonly static int Room.Height
+```ags
+readonly static int Room.Height
+```
 
 Returns the height of the room.
 
 Example:
 
-    Display("The current room size is %d x %d.", Room.Width, Room.Height);
+```ags
+Display("The current room size is %d x %d.", Room.Width, Room.Height);
+```
 
 *See also:* [`Room.Width`](Room#roomwidth)
 
@@ -250,14 +290,18 @@ Example:
 
 ### `Room.LeftEdge`
 
-    readonly static int Room.LeftEdge
+```ags
+readonly static int Room.LeftEdge
+```
 
 Returns the X co-ordinate of the left edge of the room, as set in the
 Room Settings pane of the editor.
 
 Example:
 
-    Display("The current room's left edge is at %d.", Room.LeftEdge);
+```ags
+Display("The current room's left edge is at %d.", Room.LeftEdge);
+```
 
 *See also:* [`Room.BottomEdge`](Room#roombottomedge),
 [`Room.RightEdge`](Room#roomrightedge),
@@ -270,7 +314,9 @@ Example:
 *(Formerly known as global function `GetMessageText`, which is now
 obsolete)*
 
-    readonly static String Room.Messages[int message]
+```ags
+readonly static String Room.Messages[int message]
+```
 
 Gets the text of the specified room message. This is useful if you want
 to store, for example, a room description in Message 1 in each room --
@@ -282,8 +328,10 @@ Otherwise, the message contents will be returned.
 
 Example:
 
-    String message1 = Room.Messages[1];
-    Display("Message 1 says: %s", message1);
+```ags
+String message1 = Room.Messages[1];
+Display("Message 1 says: %s", message1);
+```
 
 will print the contents of room message 1.
 
@@ -291,7 +339,9 @@ will print the contents of room message 1.
 
 ### `Room.MusicOnLoad`
 
-    readonly static int Room.MusicOnLoad
+```ags
+readonly static int Room.MusicOnLoad
+```
 
 **This property is now obsolete.** It is still accessible for backwards
 compatibility with old games.
@@ -302,7 +352,9 @@ set for this room, returns 0.
 
 Example:
 
-    Display("The current room plays music %d when the player enters.", Room.MusicOnLoad);
+```ags
+Display("The current room plays music %d when the player enters.", Room.MusicOnLoad);
+```
 
 ---
 
@@ -310,26 +362,34 @@ Example:
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly static int Room.ObjectCount
+```ags
+readonly static int Room.ObjectCount
+```
 
 Returns the number of objects in the room.
 
 Example:
 
-    Display("The current room contains %d objects.", Room.ObjectCount);
+```ags
+Display("The current room contains %d objects.", Room.ObjectCount);
+```
 
 ---
 
 ### `Room.RightEdge`
 
-    readonly static int Room.RightEdge
+```ags
+readonly static int Room.RightEdge
+```
 
 Returns the X co-ordinate of the right edge of the room, as set in the
 Room Settings pane of the editor.
 
 Example:
 
-    Display("The current room's right edge is at %d.", Room.RightEdge);
+```ags
+Display("The current room's right edge is at %d.", Room.RightEdge);
+```
 
 *See also:* [`Room.BottomEdge`](Room#roombottomedge),
 [`Room.LeftEdge`](Room#roomleftedge),
@@ -339,14 +399,18 @@ Example:
 
 ### `Room.TopEdge`
 
-    readonly static int Room.TopEdge
+```ags
+readonly static int Room.TopEdge
+```
 
 Returns the Y co-ordinate of the top edge of the room, as set in the
 Room Settings pane of the editor.
 
 Example:
 
-    Display("The current room's top edge is at %d.", Room.TopEdge);
+```ags
+Display("The current room's top edge is at %d.", Room.TopEdge);
+```
 
 *See also:* [`Room.BottomEdge`](Room#roombottomedge),
 [`Room.LeftEdge`](Room#roomleftedge),
@@ -358,13 +422,17 @@ Example:
 
 *(Formerly known as `game.room_width`, which is now obsolete)*
 
-    readonly static int Room.Width
+```ags
+readonly static int Room.Width
+```
 
 Returns the width of the room.
 
 Example:
 
-    Display("The current room size is %d x %d.", Room.Width, Room.Height);
+```ags
+Display("The current room size is %d x %d.", Room.Width, Room.Height);
+```
 
 *See also:* [`Room.Height`](Room#roomheight)
 

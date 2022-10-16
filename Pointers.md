@@ -27,16 +27,22 @@ There are various methods to overcome this problem, and pointers could be the mo
 
 Then, pointers are more direct way to use objects, read and set their properties. For example, if there's an array of objects, like `character[]` is an array of all Characters in your game, then to address a particular character you'd have to use this array and a character index, like this:
 
-    character[4].Walk(100, 100);
+```ags
+character[4].Walk(100, 100);
+```
 
 Because using numbers like this may be inconvenient for various reasons, and easier to forget what they mean, you could create an integer variable to store that index there `int MY_FRIEND = 4;`, or define a named constant `#define MY_FRIEND 4`, then use it like:
 
-    character[MY_FRIEND].Walk(100, 100);
+```ags
+character[MY_FRIEND].Walk(100, 100);
+```
 
 That seem more explicit, but still looks bit complicated.
 On another hand you could create a pointer `Character* cMyFriend;` and assign it to character from array at the start of the game: `cMyFriend = character[4];`, and then use like:
 
-    cMyFriend.Walk(100, 100);
+```ags
+cMyFriend.Walk(100, 100);
+```
 
 Not only you do not need to refer to array anymore, but you now only use one "symbol" to refer to the character (the pointer) instead of two or more symbols (array, index, and so on).
 
@@ -48,51 +54,63 @@ How to use pointers?
 
 Let's look at an example. If you want to write a string to a file you do this:
 
-    File* file = File.Open("temp.txt", eFileWrite);
-    file.WriteString("Test!");
-    file.Close();
+```ags
+File* file = File.Open("temp.txt", eFileWrite);
+file.WriteString("Test!");
+file.Close();
+```
 
 Here File.Open returns a pointer to a "file object", which is then used to do file operations. Looks fairly simple, the only slightly confusing part is
 getting used to declaring the variable as `File*` with an asterisk; but that's something you'll get used to quite quickly, and all the examples in the manual should point you in the right direction.
 
 Let's look at another example. Suppose you want a variable that contains the current hotspot that the mouse is over:
 
-    // top of global script
-    Hotspot *mouseOverHotspot;
+```ags
+// top of global script
+Hotspot *mouseOverHotspot;
 
-    // repeatedly_execute
-    mouseOverHotspot = Hotspot.GetAtScreenXY(mouse.x, mouse.y);
+// repeatedly_execute
+mouseOverHotspot = Hotspot.GetAtScreenXY(mouse.x, mouse.y);
+```
 
 Above script declares a pointer to Hotspot and assigns it to a hotspot found under mouse on each game tick.
 
 Now, what if you want to know whether the mouse is over your Door hotspot:
 
-    if (mouseOverHotspot == hDoor) {
-      Display("Mouse over the door");
-    }
+```ags
+if (mouseOverHotspot == hDoor) {
+    Display("Mouse over the door");
+}
+```
 
 Above compares values of two pointers, this will only be successful if both *point to same object*.
 
 If you'd like or have to use an index from hotspots array instead, you can still use it like this:
 
-    if (mouseOverHotspot == hotspot[2]) {
-      Display("Mouse over the door");
-    }
+```ags
+if (mouseOverHotspot == hotspot[2]) {
+    Display("Mouse over the door");
+}
+```
 
 **IMPORTANT:** So far so good, but there's still one thing that must be told, and that one is a bit of a downer. Unlike other variables, which always have some data, pointers may have a state where they do not point to any object. This kind of value is defined by a keyword `null`, and pointers in this state are called "null pointer".
 The problem with "null pointers" is that trying to use object's data or functions with them would result in program error. Good news is that you may find this out, comparing them to null. If you have a custom pointer variable, which in theory (according to your script's logic) may happen to not be assigned, then it's best to check if it's null or not before using it.
 
 Suppose you want to find a character under a mouse and display their name on a GUI label:
 
-    Character* chUnderMouse = Character.GetAtScreenXY(mouse.x, mouse.y);
-    lblCharacterName.Text = chUnderMouse.Name;
+```ags
+Character* chUnderMouse = Character.GetAtScreenXY(mouse.x, mouse.y);
+lblCharacterName.Text = chUnderMouse.Name;
+```
 
 What would happen if there's no character under mouse? Character.GetAtScreenXY will return "null" value, it gets assigned to chUnderMouse, and as soon as program tries to get character's name, it will throw an error, because it cannot get Name from "nothing". This is how we prevent this:
 
-    Character* chUnderMouse = Character.GetAtScreenXY(mouse.x, mouse.y);
-    if (chUnderMouse != null) {
-        lblCharacterName.Text = chUnderMouse.Name;
-    }
+```ags
+Character* chUnderMouse = Character.GetAtScreenXY(mouse.x, mouse.y);
+if (chUnderMouse != null) {
+    lblCharacterName.Text = chUnderMouse.Name;
+}
+```
 
 So, that concludes our introduction to pointers. Hopefully you've got an
 understanding of what they are and what they do; if there's anything you
@@ -106,12 +124,16 @@ AGS pointers work in a very similar way to object variables in Java and
 C#. The main difference is that AGS pointers are declared in the
 C-style manner with an asterisk t represent the pointer. So:
 
-    Hotspot *hs;
+```ags
+Hotspot *hs;
+```
 
 would declare a variable *hs* which points to a Hotspot. This would be
 equivalent to the following in Java or C#:
 
-    Hotspot hs;
+```ags
+Hotspot hs;
+```
 
 In AGS, pointers are used to point to various built-in types, such as
 Hotspots, Inventory Items, Characters and so on, or custom user structs declared with `managed` keyword, but not regular structs.
@@ -134,13 +156,15 @@ You can save this pointer into a pointer variable, and then call its
 methods as you would in Java or C#. The following examples are all
 valid:
 
-    File *theFile = File.Open("test.dat", eFileWrite);
-    if (theFile == null) Display("It's null!");
-    File *file2 = theFile;
-    if (theFile == file2) Display("They're the same file!");
-    theFile = null;
-    file2.WriteInt(10);
-    file2.Close();
+```ags
+File *theFile = File.Open("test.dat", eFileWrite);
+if (theFile == null) Display("It's null!");
+File *file2 = theFile;
+if (theFile == file2) Display("They're the same file!");
+theFile = null;
+file2.WriteInt(10);
+file2.Close();
+```
 
 ---
 

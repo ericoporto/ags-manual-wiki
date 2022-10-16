@@ -7,7 +7,9 @@ obsolete)*<br>
 *(Formerly known as global function `AddInventoryToCharacter`, which is
 now obsolete)*
 
-    Character.AddInventory(InventoryItem *item, optional int addAtIndex)
+```ags
+Character.AddInventory(InventoryItem *item, optional int addAtIndex)
+```
 
 Adds one quantity of the specified item to the character's inventory. This ensures that
 the item gets added to the character's inventory list, and that any
@@ -27,7 +29,9 @@ Calling the function multiple times will increase the InventoryQuantity for the 
 
 Example:
 
-    cEgo.AddInventory(iKey);
+```ags
+cEgo.AddInventory(iKey);
+```
 
 will give inventory item iKey to character EGO.
 
@@ -42,7 +46,9 @@ will give inventory item iKey to character EGO.
 
 *(Formerly known as `MoveCharacterPath`, which is now obsolete)*
 
-    Character.AddWaypoint(int x, int y)
+```ags
+Character.AddWaypoint(int x, int y)
+```
 
 Tells the character to move to (X,Y) directly, after it has finished its
 current move. This function allows you to queue up a series of moves for
@@ -56,9 +62,11 @@ leave again.
 
 Example:
 
-    cSomeguy.Walk(160, 100);
-    cSomeguy.AddWaypoint(50, 150);
-    cSomeguy.AddWaypoint(50, 50);
+```ags
+cSomeguy.Walk(160, 100);
+cSomeguy.AddWaypoint(50, 150);
+cSomeguy.AddWaypoint(50, 50);
+```
 
 tells character SOMEGUY to first of all walk to the center of the screen
 normally (obeying walkable areas), then move to the bottom left corner
@@ -74,8 +82,10 @@ and then top left corner afterwards.
 *(Formerly known as `AnimateCharacter`, which is now obsolete)*<br>
 *(Formerly known as `AnimateCharacterEx`, which is now obsolete)*
 
-    Character.Animate(int loop, int delay, optional RepeatStyle,
-                      optional BlockingStyle, optional Direction, optional int frame, optional int volume)
+```ags
+Character.Animate(int loop, int delay, optional RepeatStyle,
+                    optional BlockingStyle, optional Direction, optional int frame, optional int volume)
+```
 
 Starts the character animating, using loop number LOOP of his current
 view and optionally starting at FRAME. The overall speed of the animation is set with DELAY, where 0 is
@@ -111,9 +121,11 @@ Note that for compatibility reasons if direction is eBackwards the animation act
 
 Example:
 
-    cEgo.LockView(5);
-    cEgo.Animate(3, 1, 0, eBlock, eBackwards);
-    cEgo.UnlockView();
+```ags
+cEgo.LockView(5);
+cEgo.Animate(3, 1, 0, eBlock, eBackwards);
+cEgo.UnlockView();
+```
 
 will animate the character once using loop number 3 of view 5 backwards,
 and wait until the animation finishes before returning.
@@ -132,7 +144,9 @@ Optional *volume* parameter is supported only by **AGS 3.6.0** and later version
 *(Formerly known as `NewRoomEx`, which is now obsolete)*<br>
 *(Formerly known as `NewRoomNPC`, which is now obsolete)*
 
-    Character.ChangeRoom(int room_number, optional int x, optional int y, optional CharacterDirection direction)
+```ags
+Character.ChangeRoom(int room_number, optional int x, optional int y, optional CharacterDirection direction)
+```
 
 Changes the room that the character is in.
 
@@ -158,7 +172,9 @@ which direction this character will be facing after room change.
 
 Example:
 
-    player.ChangeRoom(4, 100, 50, eDirectionRight);
+```ags
+player.ChangeRoom(4, 100, 50, eDirectionRight);
+```
 
 will move the player character to room 4 and also place him at
 coordinates 100,50. This will also mean that the game moves into room 4.
@@ -173,7 +189,9 @@ coordinates 100,50. This will also mean that the game moves into room 4.
 
 ### `Character.ChangeRoomAutoPosition`
 
-    Character.ChangeRoomAutoPosition(int room_number, optional int newPosition)
+```ags
+Character.ChangeRoomAutoPosition(int room_number, optional int newPosition)
+```
 
 Changes the room that the character is in, and positions him along one
 of the room edges.
@@ -201,7 +219,9 @@ so on) after this command within the same function.
 
 Example:
 
-    player.ChangeRoomAutoPosition(4, 2100);
+```ags
+player.ChangeRoomAutoPosition(4, 2100);
+```
 
 will move the player character to room 4 and place him half way down the
 right hand side of the screen. This will also mean that the game moves
@@ -215,7 +235,9 @@ into room 4.
 
 *(Formerly known as `ChangeCharacterView`, which is now obsolete)*
 
-    Character.ChangeView(int view)
+```ags
+Character.ChangeView(int view)
+```
 
 Changes the normal view number of the character to *view*. This is
 useful if, for example, you want the character to change the clothes
@@ -228,7 +250,9 @@ the character's normal walking view.
 
 Example:
 
-    cEgo.ChangeView(5);
+```ags
+cEgo.ChangeView(5);
+```
 
 will make the EGO character use view number 5 as his walking view.
 
@@ -242,7 +266,9 @@ will make the EGO character use view number 5 as his walking view.
 *(Formerly known as global function `FaceCharacter`, which is now
 obsolete)*
 
-    Character.FaceCharacter(Character* toFace, optional BlockingStyle)
+```ags
+Character.FaceCharacter(Character* toFace, optional BlockingStyle)
+```
 
 Turns the graphic of the character so that it looks like he is facing
 character TOFACE. This involves changing the current loop to the
@@ -265,7 +291,9 @@ Wait(1);
 
 Example:
 
-    cEgo.FaceCharacter(cMan);
+```ags
+cEgo.FaceCharacter(cMan);
+```
 
 will make the character EGO face the character MAN
 
@@ -279,7 +307,9 @@ will make the character EGO face the character MAN
 
 ### `Character.FaceDirection`
 
-    Character.FaceDirection(CharacterDirection direction, BlockingStyle=eBlock)
+```ags
+Character.FaceDirection(CharacterDirection direction, BlockingStyle=eBlock)
+```
 
 Turns the graphic of the character so that it looks like he is facing
 direction *direction*. This involves changing the current loop to the
@@ -302,7 +332,9 @@ Wait(1);
 
 Example:
 
-    cEgo.FaceDirection(eDirectionUpRight);
+```ags
+cEgo.FaceDirection(eDirectionUpRight);
+```
 
 will make the character EGO face up-right.
 
@@ -321,7 +353,9 @@ will make the character EGO face up-right.
 *(Formerly known as global function `FaceLocation`, which is now
 obsolete)*
 
-    Character.FaceLocation(int x, int y, optional BlockingStyle)
+```ags
+Character.FaceLocation(int x, int y, optional BlockingStyle)
+```
 
 Similar to the FaceCharacter function, except that this faces the
 character to room co-ordinates (X,Y). This allows him to face not only
@@ -346,7 +380,9 @@ Wait(1);
 
 Example:
 
-    cEgo.FaceLocation(cEgo.x + 50, cEgo.y);
+```ags
+cEgo.FaceLocation(cEgo.x + 50, cEgo.y);
+```
 
 will make the character face to the east.
 
@@ -360,7 +396,9 @@ will make the character face to the east.
 
 ### `Character.FaceObject`
 
-    Character.FaceObject(Object* object, optional BlockingStyle)
+```ags
+Character.FaceObject(Object* object, optional BlockingStyle)
+```
 
 Similar to the FaceCharacter function, except that this faces the
 character to object OBJECT in the current room.
@@ -382,7 +420,9 @@ Wait(1);
 
 Example:
 
-    player.FaceObject(object[2]);
+```ags
+player.FaceObject(object[2]);
+```
 
 will make the player character face object 2.
 
@@ -401,8 +441,10 @@ obsolete)*<br>
 *(Formerly known as global function `FollowCharacterEx`, which is now
 obsolete)*
 
-    Character.FollowCharacter(Character* chartofollow, optional int dist,
-                              optional int eagerness)
+```ags
+Character.FollowCharacter(Character* chartofollow, optional int dist,
+                            optional int eagerness)
+```
 
 Tells the character to follow CHARTOFOLLOW around, wherever he goes. You
 could use this command to have a group of main characters who go around
@@ -447,7 +489,9 @@ on `game.following_room_timer`.
 
 Example:
 
-    cMan.FollowCharacter(cEgo, 5, 80);
+```ags
+cMan.FollowCharacter(cEgo, 5, 80);
+```
 
 will make character MAN follow character EGO standing about 5 pixels
 near him and waiting for a while before he makes his move.
@@ -459,7 +503,9 @@ near him and waiting for a while before he makes his move.
 
 ### `Character.GetAtRoomXY`
 
-    static Character* Character.GetAtRoomXY(int x, int y)
+```ags
+static Character* Character.GetAtRoomXY(int x, int y)
+```
 
 Checks if there is a character at ROOM co-ordinates (X,Y). Returns the character if there is, or null if there is not.
 
@@ -467,10 +513,12 @@ NOTE: Any characters with the "Clickable" property set to false will not be seen
 
 Example:
 
-    Character* target = Character.GetAtRoomXY(oBullet.x, oBullet.y);
-    if (target != null) {
-      Display("Character %s is hit by a bullet", target.Name);
-    }
+```ags
+Character* target = Character.GetAtRoomXY(oBullet.x, oBullet.y);
+if (target != null) {
+    Display("Character %s is hit by a bullet", target.Name);
+}
+```
 
 will display the message if the room object oBullet is over any character.
 
@@ -489,7 +537,9 @@ will display the message if the room object oBullet is over any character.
 *(Formerly known as global function `GetCharacterAt`, which is now
 obsolete)*
 
-    static Character* Character.GetAtScreenXY(int x, int y)
+```ags
+static Character* Character.GetAtScreenXY(int x, int y)
+```
 
 Checks if there is a character at SCREEN co-ordinates (X,Y). Returns the
 character if there is, or null if there is not. See the description of
@@ -500,9 +550,11 @@ be seen by this function.
 
 Example:
 
-    if (Character.GetAtScreenXY(mouse.x, mouse.y) == cEgo) {
-      Display("The mouse is over the main character");
-    }
+```ags
+if (Character.GetAtScreenXY(mouse.x, mouse.y) == cEgo) {
+    Display("The mouse is over the main character");
+}
+```
 
 will display the message if the mouse cursor is over the EGO character
 
@@ -518,7 +570,9 @@ will display the message if the mouse cursor is over the EGO character
 
 *(Formerly known as `GetCharacterProperty`, which is now obsolete)*
 
-    Character.GetProperty(string property)
+```ags
+Character.GetProperty(string property)
+```
 
 Returns the custom property setting of the PROPERTY for the specified
 character.
@@ -530,8 +584,10 @@ Use the equivalent GetTextProperty function to get a text property.
 
 Example:
 
-    if (cEgo.GetProperty("Value") > 200)
-      Display("EGO's value is over 200!");
+```ags
+if (cEgo.GetProperty("Value") > 200)
+    Display("EGO's value is over 200!");
+```
 
 will print the message if EGO has its "Value" property set to more than
 200.
@@ -546,7 +602,9 @@ will print the message if EGO has its "Value" property set to more than
 *(Formerly known as `GetCharacterPropertyText`, which is now obsolete)*<br>
 *(Formerly known as `Character.GetPropertyText`, which is now obsolete)*
 
-    String Character.GetTextProperty(string property)
+```ags
+String Character.GetTextProperty(string property)
+```
 
 Returns the custom property setting of the PROPERTY for the specified
 character.
@@ -558,8 +616,10 @@ Use the equivalent GetProperty function to get a non-text property.
 
 Example:
 
-    String description = cEgo.GetTextProperty("Description");
-    Display("EGO's description: %s", description);
+```ags
+String description = cEgo.GetTextProperty("Description");
+Display("EGO's description: %s", description);
+```
 
 will retrieve EGO's "description" property and display it.
 
@@ -569,7 +629,9 @@ will retrieve EGO's "description" property and display it.
 
 ### `Character.SetProperty`
 
-    bool Character.SetProperty(const string property, int value)
+```ags
+bool Character.SetProperty(const string property, int value)
+```
 
 Sets the new *value* for the custom *property* for the specified
 character. Returns TRUE if such property exists and FALSE on failure.
@@ -583,7 +645,9 @@ value.
 
 Example:
 
-    cEgo.SetProperty("XPLevel", 10);
+```ags
+cEgo.SetProperty("XPLevel", 10);
+```
 
 will change EGO character's "XPLevel" custom property to 10.
 
@@ -596,7 +660,9 @@ will change EGO character's "XPLevel" custom property to 10.
 
 ### `Character.SetTextProperty`
 
-    bool Character.SetTextProperty(const string property, const string value)
+```ags
+bool Character.SetTextProperty(const string property, const string value)
+```
 
 Sets the new *value* text for the custom *property* for the specified
 character. Returns TRUE if such property exists and FALSE on failure.
@@ -608,7 +674,9 @@ Use the equivalent SetProperty function to set a non-text property.
 
 Example:
 
-    cEgo.SetTextProperty("Description", "I am handsome!");
+```ags
+cEgo.SetTextProperty("Description", "I am handsome!");
+```
 
 will change EGO's "description" property.
 
@@ -620,7 +688,9 @@ will change EGO's "description" property.
 
 ### `Character.HasExplicitLight`
 
-    readonly bool Character.HasExplicitTint
+```ags
+readonly bool Character.HasExplicitTint
+```
 
 Returns *true* if the character has a light set explicitly with the
 [`Character.SetLightLevel`](Character#charactersetlightlevel) command.
@@ -638,7 +708,9 @@ light.
 
 ### `Character.HasInventory`
 
-    bool Character.HasInventory(InventoryItem *item)
+```ags
+bool Character.HasInventory(InventoryItem *item)
+```
 
 Checks whether the character currently has the specified inventory item.
 Returns *true* if they do, or *false* if they don't.
@@ -648,10 +720,12 @@ example, *iPoster*).
 
 Example:
 
-    if (player.HasInventory(iKey))
-    {
-      Display("The player has the key!!");
-    }
+```ags
+if (player.HasInventory(iKey))
+{
+    Display("The player has the key!!");
+}
+```
 
 will display a message if the player has the key.
 
@@ -667,7 +741,9 @@ will display a message if the player has the key.
 
 *(Formerly known as `AreCharactersColliding`, which is now obsolete)*
 
-    Character.IsCollidingWithChar(Character* otherChar)
+```ags
+Character.IsCollidingWithChar(Character* otherChar)
+```
 
 Checks if the character is touching OTHERCHAR. This function just checks
 the baseline of both characters, so if one is standing a fair distance
@@ -677,8 +753,10 @@ Returns 1 if the characters feet are touching, 0 otherwise.
 
 Example:
 
-    if (cEgo.IsCollidingWithChar(cMan) == 1)
-       { colliding code here }
+```ags
+if (cEgo.IsCollidingWithChar(cMan) == 1)
+    { colliding code here }
+```
 
 will execute the colliding code only if the characters EGO and MAN are
 colliding.
@@ -694,7 +772,9 @@ colliding.
 
 *(Formerly known as `AreCharObjColliding`, which is now obsolete)*
 
-    Character.IsCollidingWithObject(Object* obj)
+```ags
+Character.IsCollidingWithObject(Object* obj)
+```
 
 Checks whether the character's feet (i.e. the bottom third of the
 character) are touching OBJ. This can be used to determine if the
@@ -704,9 +784,11 @@ Returns 1 if they are, and 0 if they are not.
 
 Example:
 
-    if (cEgo.IsCollidingWithObject(object[3]) == 1) {
-      // colliding code here
-    }
+```ags
+if (cEgo.IsCollidingWithObject(object[3]) == 1) {
+    // colliding code here
+}
+```
 
 will execute the colliding code only if the character EGO and the object
 number 3 are colliding.
@@ -720,7 +802,9 @@ number 3 are colliding.
 
 ### `Character.LightLevel`
 
-    readonly int Character.LightLevel
+```ags
+readonly int Character.LightLevel
+```
 
 If the character has an individual light set explicitly with the
 [`Character.SetLightLevel`](Character#charactersetlightlevel) command,
@@ -741,7 +825,9 @@ light.
 
 *(Formerly known as `SetCharacterView`, which is now obsolete)*
 
-    Character.LockView(int view, optional StopMovementStyle)
+```ags
+Character.LockView(int view, optional StopMovementStyle)
+```
 
 Sets the character's view to VIEW. This can be used to perform
 animations with characters, for example bending down to pick something
@@ -760,9 +846,11 @@ to take control back.
 
 Example:
 
-    cEgo.LockView(12);
-    cEgo.Animate(0, 0, eOnce, eBlock, eForwards);
-    cEgo.UnlockView();
+```ags
+cEgo.LockView(12);
+cEgo.Animate(0, 0, eOnce, eBlock, eForwards);
+cEgo.UnlockView();
+```
 
 will change the character's EGO view to view 12, perform an animation
 using loop 0, wait until the animation finishes and then return the
@@ -784,7 +872,9 @@ only by **AGS 3.4.1** and later versions.
 
 *(Formerly known as `SetCharacterViewEx`, which is now obsolete)*
 
-    Character.LockViewAligned(int view, int loop, Alignment, optional StopMovementStyle)
+```ags
+Character.LockViewAligned(int view, int loop, Alignment, optional StopMovementStyle)
+```
 
 Sets the character's view to VIEW, and sets the character's current
 frame to the first frame in LOOP of VIEW.
@@ -822,9 +912,11 @@ allow the program to take control back.
 
 Example:
 
-    cEgo.LockViewAligned(12, 1, eAlignLeft);
-    cEgo.Animate(1, 5, eOnce, eBlock, eForwards);
-    cEgo.UnlockView();
+```ags
+cEgo.LockViewAligned(12, 1, eAlignLeft);
+cEgo.Animate(1, 5, eOnce, eBlock, eForwards);
+cEgo.UnlockView();
+```
 
 will change the character's EGO view to view 12, perform an animation
 using loop 1, wait until the animation finishes and then return the
@@ -843,7 +935,9 @@ only by **AGS 3.4.1** and later versions.
 
 *(Formerly known as `SetCharacterFrame`, which is now obsolete)*
 
-    Character.LockViewFrame(int view, int loop, int frame, optional StopMovementStyle)
+```ags
+Character.LockViewFrame(int view, int loop, int frame, optional StopMovementStyle)
+```
 
 Sets the character's graphic to frame FRAME of loop LOOP of view number
 VIEW. This is useful if you don't want an animation, but just want to
@@ -859,9 +953,11 @@ character will keep moving). The default is eStopMoving.
 
 Example:
 
-    cEgo.LockViewFrame(AGHAST, 2, 4);
-    Wait(40);
-    cEgo.UnlockView();
+```ags
+cEgo.LockViewFrame(AGHAST, 2, 4);
+Wait(40);
+cEgo.UnlockView();
+```
 
 will change EGO to have frame 4 of loop 2 in the AGHAST view, wait for a
 second, then return him to normal.
@@ -879,7 +975,9 @@ only by **AGS 3.4.1** and later versions.
 
 *(Formerly known as `SetCharacterViewOffset`, which is now obsolete)*
 
-    Character.LockViewOffset(int view, int xOffset, int yOffset, optional StopMovementStyle)
+```ags
+Character.LockViewOffset(int view, int xOffset, int yOffset, optional StopMovementStyle)
+```
 
 Sets the character's view to VIEW, in the same way as LockView does.
 However, it also adds a specified offset to all the character's frames
@@ -913,9 +1011,11 @@ to take control back.
 
 Example:
 
-    cEgo.LockViewOffset(12, 1, -1);
-    cEgo.Animate(1, 5, eOnce, eBlock, eForwards);
-    cEgo.UnlockView();
+```ags
+cEgo.LockViewOffset(12, 1, -1);
+cEgo.Animate(1, 5, eOnce, eBlock, eForwards);
+cEgo.UnlockView();
+```
 
 will change EGO's view to view 12 and animate using loop 1, meanwhile
 all frames will be shifted 1 pixel right and 1 pixel up.
@@ -935,7 +1035,9 @@ only by **AGS 3.4.1** and later versions.
 obsolete)*<br>
 *(Formerly known as `LoseInventoryFromCharacter`, which is now obsolete)*
 
-    Character.LoseInventory(InventoryItem *item)
+```ags
+Character.LoseInventory(InventoryItem *item)
+```
 
 Removes one quantity of the specified inventory item from the character's inventory. If
 they do not have the item, nothing happens.
@@ -946,7 +1048,9 @@ The parameter is the inventory item's Script O-Name from the editor.
 
 Example:
 
-    cEgo.LoseInventory(iKey);
+```ags
+cEgo.LoseInventory(iKey);
+```
 
 will make the character EGO lose the inventory item iKey from the
 inventory tab.
@@ -961,8 +1065,10 @@ inventory tab.
 
 ### `Character.Move`
 
-    Character.Move(int x, int y, optional BlockingStyle,
-                                 optional WalkWhere);
+```ags
+Character.Move(int x, int y, optional BlockingStyle,
+                                optional WalkWhere);
+```
 
 Starts the character moving from its current location to (X,Y), but does
 not play the character's walking animation.
@@ -976,7 +1082,9 @@ In the vast majority of cases, you will use **Character.Walk** instead.
 
 Example:
 
-    cEgo.Move(155, 122, eBlock);
+```ags
+cEgo.Move(155, 122, eBlock);
+```
 
 will make the character move to 155,122 without playing his walking
 animation. The script will not continue until the character has reached
@@ -997,7 +1105,9 @@ his destination.
 
 *(Formerly known as `MoveToWalkableArea`, which is now obsolete)*
 
-    Character.PlaceOnWalkableArea()
+```ags
+Character.PlaceOnWalkableArea()
+```
 
 Places the character in the nearest walkable area to its current
 location. If the character is already on a walkable area, nothing
@@ -1010,9 +1120,11 @@ eEventEnterRoomBeforeFadein to use whenever a player enters a room.
 
 Example:
 
-    cEgo.x = Random(320);
-    cEgo.y = Random(200);
-    cEgo.PlaceOnWalkableArea();
+```ags
+cEgo.x = Random(320);
+cEgo.y = Random(200);
+cEgo.PlaceOnWalkableArea();
+```
 
 will move character EGO to a random position but make sure that he is on
 a walkable area.
@@ -1021,16 +1133,20 @@ a walkable area.
 
 ### `Character.RemoveTint`
 
-    Character.RemoveTint()
+```ags
+Character.RemoveTint()
+```
 
 Undoes the effects of calling Tint, and returns the character to using
 the room's ambient tint.
 
 Example:
 
-    player.Tint(0, 250, 0, 30, 100);
-    Wait(40);
-    player.RemoveTint();
+```ags
+player.Tint(0, 250, 0, 30, 100);
+Wait(40);
+player.RemoveTint();
+```
 
 will tint the player character green for a second, then turn it back to
 normal.
@@ -1043,7 +1159,9 @@ normal.
 
 ### `Character.IsInteractionAvailable`
 
-    Character.IsInteractionAvailable(CursorMode)
+```ags
+Character.IsInteractionAvailable(CursorMode)
+```
 
 Checks whether there is an event handler defined for activating the
 character in cursor mode MODE.
@@ -1055,8 +1173,10 @@ been run.
 
 Example:
 
-    if (cNPC.IsInteractionAvailable(eModeTalkto) == 0)
-      Display("speaking with this character would not do anything.");
+```ags
+if (cNPC.IsInteractionAvailable(eModeTalkto) == 0)
+    Display("speaking with this character would not do anything.");
+```
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
@@ -1069,7 +1189,9 @@ Example:
 
 *(Formerly known as `RunCharacterInteraction`, which is now obsolete)*
 
-    Character.RunInteraction(CursorMode)
+```ags
+Character.RunInteraction(CursorMode)
+```
 
 Fires the event script as if the player had clicked the mouse on the
 character in the specified cursor mode. This is one of the mouse cursor
@@ -1077,7 +1199,9 @@ modes, as defined in your Cursors tab in the editor.
 
 Example:
 
-    cMan.RunInteraction(eModeTalk);
+```ags
+cMan.RunInteraction(eModeTalk);
+```
 
 will execute the code defined in the MAN's "TALK TO CHARACTER" event.
 
@@ -1092,7 +1216,9 @@ will execute the code defined in the MAN's "TALK TO CHARACTER" event.
 
 *(Formerly known as `DisplaySpeech`, which is now obsolete)*
 
-    Character.Say(string message)
+```ags
+Character.Say(string message)
+```
 
 Displays the text MESSAGE as speech above the character's head. The text
 will remain on screen for a limited time, and the user may or may not be
@@ -1106,7 +1232,9 @@ section.
 
 Example:
 
-    cEgo.Say("My name is ego");
+```ags
+cEgo.Say("My name is ego");
+```
 
 will display the message above the character's EGO head like the LEC
 games, whilst playing the character's talking animation.
@@ -1123,7 +1251,9 @@ games, whilst playing the character's talking animation.
 
 *(Formerly known as `DisplaySpeechAt`, which is now obsolete)*
 
-    SayAt(int x, int y, int width, string message)
+```ags
+SayAt(int x, int y, int width, string message)
+```
 
 Similar to [`Say`](Character#charactersay), except that the text is
 displayed with its top left corner at (X,Y), in an area WIDTH wide.
@@ -1136,7 +1266,9 @@ so on if appropriate.
 
 Example:
 
-    cEgo.SayAt(220, 20, 100, "My name is ego");
+```ags
+cEgo.SayAt(220, 20, 100, "My name is ego");
+```
 
 will display the message in the top right corner of the screen, whilst
 playing the character's talking animation.
@@ -1150,7 +1282,9 @@ playing the character's talking animation.
 
 *(Formerly known as `DisplaySpeechBackground`, which is now obsolete)*
 
-    Overlay* Character.SayBackground(string message)
+```ags
+Overlay* Character.SayBackground(string message)
+```
 
 Similar to Say, except that this function returns immediately and the
 game continues while the character is talking. This allows you to have
@@ -1172,7 +1306,9 @@ is used (unless you set the global variable
 
 Example:
 
-    cMan.SayBackground("Hey, why won't you talk to me?");
+```ags
+cMan.SayBackground("Hey, why won't you talk to me?");
+```
 
 will display the message above character MAN's head without pausing the
 game.
@@ -1185,7 +1321,9 @@ game.
 
 *(Formerly known as `SetPlayerCharacter`, which is now obsolete)*
 
-    Character.SetAsPlayer()
+```ags
+Character.SetAsPlayer()
+```
 
 Changes the character which the player controls to the specified
 character. This function will also cause the room to change to the room
@@ -1197,7 +1335,9 @@ be updated to point to the specified character.
 
 Example:
 
-    cMan.SetAsPlayer();
+```ags
+cMan.SetAsPlayer();
+```
 
 will change the character that the player controls to character MAN and
 also change to the room that MAN is in, if he is not in the current
@@ -1210,7 +1350,9 @@ room.
 
 ### `Character.SetLightLevel`
 
-    void Character.SetLightLevel(int light_level)
+```ags
+void Character.SetLightLevel(int light_level)
+```
 
 Sets individual light level for this character.
 
@@ -1231,7 +1373,9 @@ light level and local region light level.
 
 Example:
 
-    cEgo.SetLightLevel(100);
+```ags
+cEgo.SetLightLevel(100);
+```
 
 This will give character EGO maximal individual brightness.
 
@@ -1248,7 +1392,9 @@ This will give character EGO maximal individual brightness.
 
 *(Formerly known as `SetCharacterIdle`, which is now obsolete)*
 
-    Character.SetIdleView(int idleview, int delay)
+```ags
+Character.SetIdleView(int idleview, int delay)
+```
 
 Changes the character's idle view to IDLEVIEW, with a timeout of DELAY
 seconds of inactivity before it is played. Inactivity is defined as when
@@ -1270,7 +1416,9 @@ need to move it to another view number.
 
 Example:
 
-    cEgo.SetIdleView(12, 30);
+```ags
+cEgo.SetIdleView(12, 30);
+```
 
 will change/set the character EGO's idle view to 12. The idle view will
 be played if the character is idle for 30 seconds.
@@ -1282,7 +1430,9 @@ be played if the character is idle for 30 seconds.
 *(Formerly known as `SetCharacterSpeed`, which is now obsolete)*<br>
 *(Formerly known as `SetCharacterSpeedEx`, which is now obsolete)*
 
-    Character.SetWalkSpeed(int x_speed, int y_speed)
+```ags
+Character.SetWalkSpeed(int x_speed, int y_speed)
+```
 
 Changes the character to have a walking speed of X_SPEED in the
 horizontal direction and Y_SPEED in the vertical direction. The values
@@ -1298,7 +1448,9 @@ so you must stop him first.
 
 Example:
 
-    cEgo.SetWalkSpeed(10, 10);
+```ags
+cEgo.SetWalkSpeed(10, 10);
+```
 
 will change the character EGO's speed to 10.
 
@@ -1315,17 +1467,21 @@ will change the character EGO's speed to 10.
 
 *(Formerly known as global function `StopMoving`, which is now obsolete)*
 
-    Character.StopMoving()
+```ags
+Character.StopMoving()
+```
 
 Stops the character moving and sets its graphic to the standing frame of
 the current loop.
 
 Example:
 
-    if (cEgo.x > 299)
-    {
-      cEgo.StopMoving();
-    }
+```ags
+if (cEgo.x > 299)
+{
+    cEgo.StopMoving();
+}
+```
 
 will stop the character when he reaches the coordinate x=300.
 
@@ -1338,7 +1494,9 @@ will stop the character when he reaches the coordinate x=300.
 
 *(Formerly known as `DisplayThought`, which is now obsolete)*
 
-    Character.Think(string message, ...)
+```ags
+Character.Think(string message, ...)
+```
 
 Displays the text MESSAGE as a thought above the specified character's
 head. The text will remain on screen for a limited time, and the user
@@ -1373,7 +1531,9 @@ section.
 
 Example:
 
-    cEgo.Think("I wonder what's for dinner.");
+```ags
+cEgo.Think("I wonder what's for dinner.");
+```
 
 will display the message above EGO's head and play the character's
 thinking animation.
@@ -1390,8 +1550,10 @@ thinking animation.
 
 ### `Character.Tint`
 
-    Character.Tint(int red, int green, int blue,
-                   int saturation, int luminance)
+```ags
+Character.Tint(int red, int green, int blue,
+                int saturation, int luminance)
+```
 
 Tints the character on the screen to (RED, GREEN, BLUE) with SATURATION
 percent saturation.
@@ -1413,7 +1575,9 @@ sprites.
 
 Example:
 
-    cEgo.Tint(0, 250, 0, 30, 100);
+```ags
+cEgo.Tint(0, 250, 0, 30, 100);
+```
 
 will tint the EGO character green.
 
@@ -1426,7 +1590,9 @@ will tint the EGO character green.
 
 ### `Character.TintBlue`
 
-    readonly int Character.TintBlue
+```ags
+readonly int Character.TintBlue
+```
 
 Gets the *Blue* setting for the character's current tint.
 
@@ -1449,7 +1615,9 @@ property is false, then this value is meaningless.
 
 ### `Character.TintGreen`
 
-    readonly int Character.TintGreen
+```ags
+readonly int Character.TintGreen
+```
 
 Gets the *Green* setting for the character's current tint.
 
@@ -1472,7 +1640,9 @@ property is false, then this value is meaningless.
 
 ### `Character.TintRed`
 
-    readonly int Character.TintRed
+```ags
+readonly int Character.TintRed
+```
 
 Gets the *Red* setting for the character's current tint.
 
@@ -1495,7 +1665,9 @@ property is false, then this value is meaningless.
 
 ### `Character.TintSaturation`
 
-    readonly int Character.TintSaturation
+```ags
+readonly int Character.TintSaturation
+```
 
 Gets the *saturation* setting for the character's current tint.
 
@@ -1518,7 +1690,9 @@ property is false, then this value is meaningless.
 
 ### `Character.TintLuminance`
 
-    readonly int Character.TintLuminance
+```ags
+readonly int Character.TintLuminance
+```
 
 Gets the *luminance* setting for the character's current tint.
 
@@ -1543,7 +1717,9 @@ property is false, then this value is meaningless.
 
 *(Formerly known as `ReleaseCharacterView`, which is now obsolete)*
 
-    Character.UnlockView(StopMovementStyle=eStopMoving)
+```ags
+Character.UnlockView(StopMovementStyle=eStopMoving)
+```
 
 Allows the engine to automatically control the character's view, as
 normal. Use this once you have finished doing the animation which you
@@ -1556,9 +1732,11 @@ character will keep moving). The default is eStopMoving.
 
 Example:
 
-    cEgo.LockView(12);
-    cEgo.Animate(0, 0, eOnce, eBlock, eForwards);
-    cEgo.UnlockView();
+```ags
+cEgo.LockView(12);
+cEgo.Animate(0, 0, eOnce, eBlock, eForwards);
+cEgo.UnlockView();
+```
 
 will play an animation using loop 0 of view 12, then return the
 character to its normal view.
@@ -1576,8 +1754,10 @@ only by **AGS 3.4.1** and later versions.
 *(Formerly known as `MoveCharacterBlocking`, which is now obsolete)*<br>
 *(Formerly known as `MoveCharacterDirect`, which is now obsolete)*
 
-    Character.Walk(int x, int y, optional BlockingStyle,
-                                 optional WalkWhere);
+```ags
+Character.Walk(int x, int y, optional BlockingStyle,
+                                optional WalkWhere);
+```
 
 Starts the character moving from its current location to (X,Y), whilst
 playing his walking animation.
@@ -1607,7 +1787,9 @@ destination, use the [`Moving`](Character#charactermoving) property.
 
 Example:
 
-    cEgo.Walk(155, 122, eBlock);
+```ags
+cEgo.Walk(155, 122, eBlock);
+```
 
 will make the character walk to 155,122. The script will not continue
 until the character has reached his destination.
@@ -1625,7 +1807,9 @@ until the character has reached his destination.
 
 *(Formerly known as `MoveCharacterStraight`, which is now obsolete)*
 
-    Character.WalkStraight(int x, int y, optional BlockingStyle);
+```ags
+Character.WalkStraight(int x, int y, optional BlockingStyle);
+```
 
 Moves the character from its current location towards (X,Y) in a
 straight line as far as is possible before hitting a non-walkable area.
@@ -1641,7 +1825,9 @@ not resume until the character finishes moving.
 
 Example:
 
-    cEgo.WalkStraight(166, 78);
+```ags
+cEgo.WalkStraight(166, 78);
+```
 
 will move the character EGO in a straight line towards co ordinates
 166,78 until he hits a non walkable area.
@@ -1655,7 +1841,9 @@ will move the character EGO in a straight line towards co ordinates
 *(Formerly known as `SetActiveInventory`, which is now obsolete)*<br>
 *(Formerly known as `character[].activeinv`, which is now obsolete)*
 
-    InventoryItem* Character.ActiveInventory
+```ags
+InventoryItem* Character.ActiveInventory
+```
 
 Gets/sets the character's current active inventory item. Setting it will
 update the mouse cursor if appropriate.
@@ -1668,7 +1856,9 @@ To deselect the current inventory, set it to *null*.
 
 Example:
 
-    cEgo.ActiveInventory = iKey;
+```ags
+cEgo.ActiveInventory = iKey;
+```
 
 will make the inventory item iKey active (before you use it make sure
 that the player has the inventory item)
@@ -1679,7 +1869,9 @@ that the player has the inventory item)
 
 *(Formerly known as `character[].animating`, which is now obsolete)*
 
-    readonly bool Character.Animating
+```ags
+readonly bool Character.Animating
+```
 
 Returns 1 if the character is currently animating.<br>
 Returns 0 if the character has finished its animation.
@@ -1689,8 +1881,10 @@ This property is read-only. To change character animation, use the
 
 Example:
 
-    cEgo.Animate(5, 0);
-    while (cEgo.Animating) Wait(1);
+```ags
+cEgo.Animate(5, 0);
+while (cEgo.Animating) Wait(1);
+```
 
 will animate EGO and wait until the animation finishes.
 
@@ -1708,13 +1902,17 @@ you wouldn't need to do this.
 
 *(Formerly known as `character[].animspeed`, which is now obsolete)*
 
-    int Character.AnimationSpeed;
+```ags
+int Character.AnimationSpeed;
+```
 
 Gets/sets the character's animation delay, as set in the editor.
 
 Example:
 
-    player.AnimationSpeed = 4;
+```ags
+player.AnimationSpeed = 4;
+```
 
 will change the player character's animation speed to 4.
 
@@ -1725,7 +1923,9 @@ will change the player character's animation speed to 4.
 
 ### `Character.AnimationVolume`
 
-    int Character.AnimationVolume
+```ags
+int Character.AnimationVolume
+```
 
 Gets/sets the character's animation sound volume, which is a *relative* volume (0-100) of frame-linked sounds that play during character's animations.
 
@@ -1744,7 +1944,9 @@ Gets/sets the character's animation sound volume, which is a *relative* volume (
 
 *(Formerly known as `SetCharacterBaseline`, which is now obsolete)*
 
-    int Character.Baseline
+```ags
+int Character.Baseline
+```
 
 Gets/sets the character's baseline. This allows you to set a specific
 base line for the character, which works similarly to walk-behind area
@@ -1755,7 +1957,9 @@ Setting it to 0 will make character go back to using its y coordinate as the bas
 
 Example:
 
-    cEgo.Baseline = 120;
+```ags
+cEgo.Baseline = 120;
+```
 
 will move the character's baseline (which can be used for testing
 collisions, or for walk-behinds) to a line positioned at y coordinate =
@@ -1770,7 +1974,9 @@ collisions, or for walk-behinds) to a line positioned at y coordinate =
 
 *(Formerly part of `SetCharacterBlinkView`, which is now obsolete)*
 
-    int Character.BlinkInterval
+```ags
+int Character.BlinkInterval
+```
 
 Gets/sets the character's blinking interval, which specifies how long
 the game waits between playing the blinking animation. This is specified
@@ -1782,8 +1988,10 @@ This property has no effect if no
 
 Example:
 
-    cEgo.BlinkView = 10;
-    cEgo.BlinkInterval = 160;
+```ags
+cEgo.BlinkView = 10;
+cEgo.BlinkInterval = 160;
+```
 
 will change the character EGO's blink view to view 10, and play the
 animation every 4 seconds.
@@ -1797,7 +2005,9 @@ animation every 4 seconds.
 
 *(Formerly part of `SetCharacterBlinkView`, which is now obsolete)*
 
-    int Character.BlinkView
+```ags
+int Character.BlinkView
+```
 
 Gets/sets the character's blinking view. To stop the character from
 blinking, set this to -1.
@@ -1807,8 +2017,10 @@ often the blinking animation is played.
 
 Example:
 
-    cEgo.BlinkView = 10;
-    cEgo.BlinkInterval = 160;
+```ags
+cEgo.BlinkView = 10;
+cEgo.BlinkInterval = 160;
+```
 
 will change the character EGO's blink view to view 10, and play the
 animation every 4 seconds.
@@ -1821,7 +2033,9 @@ animation every 4 seconds.
 
 ### `Character.BlinkWhileThinking`
 
-    bool Character.BlinkWhileThinking
+```ags
+bool Character.BlinkWhileThinking
+```
 
 Gets/sets whether the character can blink while thinking. By default
 this is set to true, but if your blinking animation only goes with the
@@ -1830,7 +2044,9 @@ from blinking while Thinking by setting this to false.
 
 Example:
 
-    cEgo.BlinkWhileThinking = false;
+```ags
+cEgo.BlinkWhileThinking = false;
+```
 
 will stop EGO from blinking while his thinking animation is playing.
 
@@ -1841,7 +2057,9 @@ will stop EGO from blinking while his thinking animation is playing.
 
 ### `Character.BlockingHeight`
 
-    int Character.BlockingHeight
+```ags
+int Character.BlockingHeight
+```
 
 Gets/sets the character's blocking height.
 
@@ -1859,7 +2077,9 @@ effectively removes by standing on it.
 
 Example:
 
-    cEgo.BlockingHeight = 20;
+```ags
+cEgo.BlockingHeight = 20;
+```
 
 will make EGO block 20 pixels high (10 above and 10 below his baseline)
 
@@ -1871,7 +2091,9 @@ will make EGO block 20 pixels high (10 above and 10 below his baseline)
 
 ### `Character.BlockingWidth`
 
-    int Character.BlockingWidth
+```ags
+int Character.BlockingWidth
+```
 
 Gets/sets the character's blocking width.
 
@@ -1889,7 +2111,9 @@ effectively removes by standing on it.
 
 Example:
 
-    cEgo.BlockingWidth = 50;
+```ags
+cEgo.BlockingWidth = 50;
+```
 
 will make EGO block 50 pixels wide (25 pixels to the left of his X
 co-ordinate, and 25 to the right)
@@ -1904,7 +2128,9 @@ co-ordinate, and 25 to the right)
 
 *(Formerly known as `SetCharacterClickable`, which is now obsolete)*
 
-    bool Character.Clickable
+```ags
+bool Character.Clickable
+```
 
 Gets/sets whether the character is recognized as something which the
 player can interact with. This allows you to modify the "Clickable"
@@ -1917,7 +2143,9 @@ whatever is behind them (as with the old LucasArts games).
 
 Example:
 
-    cMan.Clickable = 0;
+```ags
+cMan.Clickable = 0;
+```
 
 will make the game ignore clicks on the character MAN.
 
@@ -1930,7 +2158,9 @@ will make the game ignore clicks on the character MAN.
 
 ### `Character.DestinationX`
 
-    readonly int Character.DestinationX
+```ags
+readonly int Character.DestinationX
+```
 
 Gets the X coordinate of the character's final moving destination. If
 character is not walking or moving it is equal to its current position.
@@ -1946,7 +2176,9 @@ character is not walking or moving it is equal to its current position.
 
 ### `Character.DestinationY`
 
-    readonly int Character.DestinationY
+```ags
+readonly int Character.DestinationY
+```
 
 Gets the Y coordinate of the character's final moving destination. If
 character is not walking or moving it is equal to its current position.
@@ -1964,7 +2196,9 @@ character is not walking or moving it is equal to its current position.
 
 *(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
-    bool Character.DiagonalLoops
+```ags
+bool Character.DiagonalLoops
+```
 
 Gets/sets whether diagonal walking loops are used for the character. If
 this is set to *true*, then loops 4-7 will be used as diagonal walking
@@ -1973,7 +2207,9 @@ directions and you can use loops 4-7 for other purposes.
 
 Example:
 
-    cEgo.DiagonalLoops = true;
+```ags
+cEgo.DiagonalLoops = true;
+```
 
 will enable diagonal walking loops for character EGO.
 
@@ -1983,14 +2219,18 @@ will enable diagonal walking loops for character EGO.
 
 *(Formerly known as `character[].frame`, which is now obsolete)*
 
-    int Character.Frame
+```ags
+int Character.Frame
+```
 
 Gets/sets the character's current frame number. Usually you won't change
 this directly, but will use the Animate command to play an animation.
 
 Example:
 
-    Display("EGO currently using frame %d.", cEgo.Frame);
+```ags
+Display("EGO currently using frame %d.", cEgo.Frame);
+```
 
 displays EGO's current frame number within his view.
 
@@ -2002,7 +2242,9 @@ displays EGO's current frame number within his view.
 
 ### `Character.HasExplicitTint`
 
-    readonly bool Character.HasExplicitTint
+```ags
+readonly bool Character.HasExplicitTint
+```
 
 Returns *true* if the character has a tint set explicitly with the
 [`Character.Tint`](Character#charactertint) command.
@@ -2013,10 +2255,12 @@ tint.
 
 Example:
 
-    if (player.HasExplicitTint)
-    {
-      player.RemoveTint();
-    }
+```ags
+if (player.HasExplicitTint)
+{
+    player.RemoveTint();
+}
+```
 
 removes the player's tint if it currently has one.
 
@@ -2029,7 +2273,9 @@ removes the player's tint if it currently has one.
 
 ### `Character.ID`
 
-    readonly int Character.ID
+```ags
+readonly int Character.ID
+```
 
 Gets the character's ID number. This is the character's number from the
 editor, and is useful if you need to interoperate with legacy code that
@@ -2037,7 +2283,9 @@ uses the character's number rather than name.
 
 Example:
 
-    MoveCharacter(cEgo.ID, 100, 50);
+```ags
+MoveCharacter(cEgo.ID, 100, 50);
+```
 
 uses the obsolete MoveCharacter function to move EGO to (100, 50)
 
@@ -2045,7 +2293,9 @@ uses the obsolete MoveCharacter function to move EGO to (100, 50)
 
 ### `Character.IdleAnimationDelay`
 
-    int Character.IdleAnimationDelay
+```ags
+int Character.IdleAnimationDelay
+```
 
 Gets/sets the character's idle animation delay
 
@@ -2057,7 +2307,9 @@ Gets/sets the character's idle animation delay
 
 ### `Character.IdleView`
 
-    readonly int Character.IdleView
+```ags
+readonly int Character.IdleView
+```
 
 Gets the character's current idle view. If the character doesn't have
 one, returns -1.
@@ -2067,7 +2319,9 @@ This property is read-only; to change the view, use the
 
 Example:
 
-    Display("EGO's idle view is currently view %d.", cEgo.IdleView);
+```ags
+Display("EGO's idle view is currently view %d.", cEgo.IdleView);
+```
 
 will display EGO's current idle view number.
 
@@ -2079,7 +2333,9 @@ will display EGO's current idle view number.
 
 *(Formerly known as `SetCharacterIgnoreLight`, which is now obsolete)*
 
-    bool Character.IgnoreLighting
+```ags
+bool Character.IgnoreLighting
+```
 
 Allows you to dynamically modify the "ignore lighting" checkbox for the
 character. If this is set to 0, the character will be affected by region
@@ -2088,7 +2344,9 @@ ignore all region lighting.
 
 Example:
 
-    cEgo.IgnoreLighting = 1;
+```ags
+cEgo.IgnoreLighting = 1;
+```
 
 will make the character look the same no matter if he stands on regions
 with different light levels.
@@ -2102,7 +2360,9 @@ with different light levels.
 *(Formerly known as `SetCharacterIgnoreWalkbehinds`, which is now
 obsolete)*
 
-    bool Character.IgnoreWalkbehinds
+```ags
+bool Character.IgnoreWalkbehinds
+```
 
 Gets/sets whether the character is affected by walkbehind areas. Passing
 *false* (the default setting) means that the character will be placed
@@ -2120,7 +2380,9 @@ character as an overlay to display rain or snow onto a scene.
 
 *(Formerly known as `character[].inv`, which is now obsolete)*
 
-    int Character.InventoryQuantity[]
+```ags
+int Character.InventoryQuantity[]
+```
 
 Gets/sets the quantity of the specified inventory item that the
 character currently has. The array index is the inventory item number,
@@ -2141,7 +2403,9 @@ function instead.
 
 Example:
 
-    Display("The player has $%d.", player.InventoryQuantity[iCash.ID]);
+```ags
+Display("The player has $%d.", player.InventoryQuantity[iCash.ID]);
+```
 
 will display how many inventory items of type iCash the player has.
 
@@ -2156,14 +2420,18 @@ will display how many inventory items of type iCash the player has.
 
 *(Formerly known as `character[].loop`, which is now obsolete)*
 
-    int Character.Loop
+```ags
+int Character.Loop
+```
 
 Gets/sets the character's current loop number. Usually you won't change
 this directly, but will use the Animate command to play an animation.
 
 Example:
 
-    Display("EGO currently using loop %d.", cEgo.Loop);
+```ags
+Display("EGO currently using loop %d.", cEgo.Loop);
+```
 
 displays EGO's current loop number within his view.
 
@@ -2178,7 +2446,9 @@ displays EGO's current loop number within his view.
 *(Formerly known as `Character.IgnoreScaling`, which is now obsolete)*<br>
 *(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
-    bool Character.ManualScaling
+```ags
+bool Character.ManualScaling
+```
 
 Gets/sets whether the character's scaling level is determined by the
 walkable area that he is walking on, or whether it is set manually by
@@ -2193,8 +2463,10 @@ areas.
 
 Example:
 
-    cEgo.ManualScaling = true;
-    cEgo.Scaling = 50;
+```ags
+cEgo.ManualScaling = true;
+cEgo.Scaling = 50;
+```
 
 will tell EGO to ignore walkable area scaling levels and be fixed to
 `50%` zoom level.
@@ -2205,7 +2477,9 @@ will tell EGO to ignore walkable area scaling levels and be fixed to
 
 ### `Character.MovementLinkedToAnimation`
 
-    bool Character.MovementLinkedToAnimation
+```ags
+bool Character.MovementLinkedToAnimation
+```
 
 Gets/sets whether the character's movement is linked to their animation.
 By default this is *true*, which means that when the character is
@@ -2221,9 +2495,11 @@ and was a game-wide setting.
 
 Example:
 
-    player.MovementLinkedToAnimation = false;
-    player.Walk(50, 100, eBlock);
-    player.MovementLinkedToAnimation = true;
+```ags
+player.MovementLinkedToAnimation = false;
+player.Walk(50, 100, eBlock);
+player.MovementLinkedToAnimation = true;
+```
 
 will turn off movement-linked animation for the player character, walk
 him to (50,100), then turn it back on again.
@@ -2240,7 +2516,9 @@ him to (50,100), then turn it back on again.
 
 *(Formerly known as `character[].walking`, which is now obsolete)*
 
-    readonly bool Character.Moving
+```ags
+readonly bool Character.Moving
+```
 
 Returns *true* if the character is currently moving, or *false* if not.
 
@@ -2250,8 +2528,10 @@ This property is read-only; to change the character's movement, use the
 
 Example:
 
-    cEgo.Walk(125, 40);
-    while (cEgo.Moving) Wait(1);
+```ags
+cEgo.Walk(125, 40);
+while (cEgo.Moving) Wait(1);
+```
 
 will move EGO to 125,40 and return control to the player when he gets
 there.
@@ -2269,7 +2549,9 @@ there.
 
 *(Formerly known as `character[].name`, which is now obsolete)*
 
-    String Character.Name
+```ags
+String Character.Name
+```
 
 Gets/sets the name of the character, as set in the AGS Editor. This is
 the full name, not the script name.
@@ -2279,7 +2561,9 @@ the name it will be truncated to that length.
 
 Example:
 
-    Display("You are controlling %s.", player.Name);
+```ags
+Display("You are controlling %s.", player.Name);
+```
 
 will display the name of the player character
 
@@ -2289,7 +2573,9 @@ will display the name of the player character
 
 *(Formerly known as `character[].defview`, which is now obsolete)*
 
-    readonly int Character.NormalView
+```ags
+readonly int Character.NormalView
+```
 
 Gets the character's normal view. This is the character's standard
 walking view, that is used when his view is not locked to something
@@ -2300,9 +2586,11 @@ This property is read-only; to change it, use the
 
 Example:
 
-    if (cEgo.View == cEgo.NormalView) {
-      Display("EGO is not animating, not talking and not idle.");
-    }
+```ags
+if (cEgo.View == cEgo.NormalView) {
+    Display("EGO is not animating, not talking and not idle.");
+}
+```
 
 will display a message if EGO is currently displayed using his normal
 view.
@@ -2316,7 +2604,9 @@ view.
 
 *(Formerly known as `character[].prevroom`, which is now obsolete)*
 
-    readonly int Character.PreviousRoom
+```ags
+readonly int Character.PreviousRoom
+```
 
 Gets the room number that the character was previously in. If the
 character is still in the room that they started in, this will be -1.
@@ -2328,7 +2618,9 @@ This is a read-only property. It is set automatically by
 
 Example:
 
-    Display("EGO's previous room was %d.", cEgo.PreviousRoom);
+```ags
+Display("EGO's previous room was %d.", cEgo.PreviousRoom);
+```
 
 will display the EGO character's previous room.
 
@@ -2338,7 +2630,9 @@ will display the EGO character's previous room.
 
 *(Formerly known as `character[].room`, which is now obsolete)*
 
-    readonly int Character.Room
+```ags
+readonly int Character.Room
+```
 
 Gets the room number that the character is currently in.
 
@@ -2347,7 +2641,9 @@ This is a read-only property. It is set by
 
 Example:
 
-    Display("EGO is in room %d.", cEgo.Room);
+```ags
+Display("EGO is in room %d.", cEgo.Room);
+```
 
 will display the EGO character's current room.
 
@@ -2357,7 +2653,9 @@ will display the EGO character's current room.
 
 *(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
-    bool Character.ScaleMoveSpeed
+```ags
+bool Character.ScaleMoveSpeed
+```
 
 Gets/sets whether the character's movement speed is adjusted in line
 with his current scaling level. This allows you to modify the "Adjust
@@ -2370,7 +2668,9 @@ at his normal speed.
 
 Example:
 
-    cEgo.ScaleMoveSpeed = true;
+```ags
+cEgo.ScaleMoveSpeed = true;
+```
 
 will mean that EGO's speed is adjusted in line with his scaling
 
@@ -2380,7 +2680,9 @@ will mean that EGO's speed is adjusted in line with his scaling
 
 ### `Character.ScaleVolume`
 
-    bool Character.ScaleVolume
+```ags
+bool Character.ScaleVolume
+```
 
 Gets/sets whether the character's volume is adjusted in line with his
 current scaling level. This allows you to modify the "Adjust volume with
@@ -2397,7 +2699,9 @@ appropriate in scaled walkable areas.
 
 Example:
 
-    cEgo.ScaleVolume = true;
+```ags
+cEgo.ScaleVolume = true;
+```
 
 will mean that EGO's footstep sounds are adjusted in line with his
 scaling.
@@ -2410,7 +2714,9 @@ scaling.
 
 ### `Character.Scaling`
 
-    int Character.Scaling
+```ags
+int Character.Scaling
+```
 
 Gets/sets the character's current scaling level.
 
@@ -2425,8 +2731,10 @@ the walkable area that the character is on.
 
 Example:
 
-    cEgo.ManualScaling = true;
-    cEgo.Scaling = 50;
+```ags
+cEgo.ManualScaling = true;
+cEgo.Scaling = 50;
+```
 
 will tell EGO to ignore walkable area scaling levels and be fixed to
 `50%` zoom level.
@@ -2439,7 +2747,9 @@ will tell EGO to ignore walkable area scaling levels and be fixed to
 
 *(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
-    bool Character.Solid
+```ags
+bool Character.Solid
+```
 
 Gets/sets whether the character can be walked through by other
 characters.
@@ -2451,7 +2761,9 @@ him.
 
 Example:
 
-    cEgo.Solid = true;
+```ags
+cEgo.Solid = true;
+```
 
 will mean that EGO blocks the path other characters.
 
@@ -2463,7 +2775,9 @@ will mean that EGO blocks the path other characters.
 
 ### `Character.Speaking`
 
-    readonly bool Character.Speaking
+```ags
+readonly bool Character.Speaking
+```
 
 Returns true if the character is currently talking, or false if not.
 
@@ -2478,9 +2792,11 @@ late_repeatedly_execute_always handlers.
 
 Example:
 
-    if ((cEgo.Speaking) && (!cEgo.Animating)) {
-      cEgo.Animate(3, 5, eRepeat, eNoBlock);
-    }
+```ags
+if ((cEgo.Speaking) && (!cEgo.Animating)) {
+    cEgo.Animate(3, 5, eRepeat, eNoBlock);
+}
+```
 
 will animate the character using loop 3 while they are talking (only
 useful with Sierra-style speech).
@@ -2495,7 +2811,9 @@ useful with Sierra-style speech).
 
 ### `Character.SpeakingFrame`
 
-    readonly int Character.SpeakingFrame
+```ags
+readonly int Character.SpeakingFrame
+```
 
 Returns the current frame number of the character's talking animation.
 This is useful when using Sierra-style speech, if you want to
@@ -2513,11 +2831,13 @@ late_repeatedly_execute_always handlers.
 
 Example:
 
-    if (cEgo.Speaking) {
-      if (cEgo.SpeakingFrame == 0) {
-        cMan.Move(cMan.x + 10, cMan.y, eNoBlock, eAnywhere);
-      }
+```ags
+if (cEgo.Speaking) {
+    if (cEgo.SpeakingFrame == 0) {
+    cMan.Move(cMan.x + 10, cMan.y, eNoBlock, eAnywhere);
     }
+}
+```
 
 will move cMan to the right every time the talking animation loops back
 to Frame 0.
@@ -2529,7 +2849,9 @@ to Frame 0.
 
 ### `Character.SpeechAnimationDelay`
 
-    int Character.SpeechAnimationDelay;
+```ags
+int Character.SpeechAnimationDelay;
+```
 
 Gets/sets the character's speech animation delay, as set in the editor.
 This specifies how many game loops each frame of the character's speech
@@ -2543,7 +2865,9 @@ the Speech.GlobalSpeechAnimationDelay property value is used instead.
 
 Example:
 
-    player.SpeechAnimationDelay = 4;
+```ags
+player.SpeechAnimationDelay = 4;
+```
 
 will change the player character's speech animation speed to 4.
 
@@ -2562,7 +2886,9 @@ will change the player character's speech animation speed to 4.
 
 *(Formerly known as `SetTalkingColor`, which is now obsolete)*
 
-    int Character.SpeechColor
+```ags
+int Character.SpeechColor
+```
 
 Gets/sets the character's speech text color. This is set by default in
 the editor.
@@ -2573,7 +2899,9 @@ from the Palette Editor.
 
 Example:
 
-    cEgo.SpeechColor = 14;
+```ags
+cEgo.SpeechColor = 14;
+```
 
 will change the character's EGO talking color to yellow.
 
@@ -2586,7 +2914,9 @@ will change the character's EGO talking color to yellow.
 *(Formerly known as `SetCharacterSpeechView`, which is now obsolete)*<br>
 *(Formerly known as `character[].talkview`, which is now obsolete)*
 
-    int Character.SpeechView
+```ags
+int Character.SpeechView
+```
 
 Gets/sets the character's talking view. If you change it, the new view
 number will be used as the character's talking view in all future
@@ -2596,7 +2926,9 @@ You can set this to -1 to disable the character's speech view.
 
 Example:
 
-    cEgo.SpeechView = 10;
+```ags
+cEgo.SpeechView = 10;
+```
 
 will change the character EGO's speech view to view 10.
 
@@ -2609,7 +2941,9 @@ will change the character EGO's speech view to view 10.
 
 ### `Character.Thinking`
 
-    readonly bool Character.Thinking
+```ags
+readonly bool Character.Thinking
+```
 
 Returns true if the character is currently thinking, or false if not.
 
@@ -2623,13 +2957,15 @@ late_repeatedly_execute_always handlers.
 
 Example:
 
-    function repeatedly_execute_always()
-    {
-      if (cEgo.Thinking) {
-        cEgo.Transparency = 50;
-      else
-        cEgo.Transparency = 0;
-    }
+```ags
+function repeatedly_execute_always()
+{
+    if (cEgo.Thinking) {
+    cEgo.Transparency = 50;
+    else
+    cEgo.Transparency = 0;
+}
+```
 
 this will keep character semi-transparent while he is thinking.
 
@@ -2645,7 +2981,9 @@ this will keep character semi-transparent while he is thinking.
 
 ### `Character.ThinkingFrame`
 
-    readonly int Character.ThinkingFrame
+```ags
+readonly int Character.ThinkingFrame
+```
 
 Returns the current frame number of the character's thinking animation.
 This is useful when using Sierra-style speech, if you want to
@@ -2663,11 +3001,13 @@ late_repeatedly_execute_always handlers.
 
 Example:
 
-    if (cEgo.Thinking) {
-      if (cEgo.ThinkingFrame == 0) {
-        cMan.Move(cMan.x + 10, cMan.y, eNoBlock, eAnywhere);
-      }
+```ags
+if (cEgo.Thinking) {
+    if (cEgo.ThinkingFrame == 0) {
+    cMan.Move(cMan.x + 10, cMan.y, eNoBlock, eAnywhere);
     }
+}
+```
 
 will move cMan to the right every time the thinking animation loops back
 to Frame 0.
@@ -2683,14 +3023,18 @@ to Frame 0.
 
 *(Formerly known as `character[].thinkview`, which is now obsolete)*
 
-    int Character.ThinkView
+```ags
+int Character.ThinkView
+```
 
 Gets/sets the character's thinking view. This is used to animate the
 character when a thought is being displayed.
 
 Example:
 
-    cEgo.ThinkView = 14;
+```ags
+cEgo.ThinkView = 14;
+```
 
 will change the character EGO's thinking view to 14.
 
@@ -2702,7 +3046,9 @@ will change the character EGO's thinking view to 14.
 
 *(Formerly known as `SetCharacterTransparency`, which is now obsolete)*
 
-    int Character.Transparency
+```ags
+int Character.Transparency
+```
 
 Gets/sets the character's transparency. This is specified as a
 percentage, from 0 to 100. 100 means fully transparent (i.e. invisible),
@@ -2725,12 +3071,14 @@ example below:
 
 Example:
 
-    int trans = cEgo.Transparency;
-    while (trans < 100) {
-      trans++;
-      cEgo.Transparency = trans;
-      Wait(1);
-    }
+```ags
+int trans = cEgo.Transparency;
+while (trans < 100) {
+    trans++;
+    cEgo.Transparency = trans;
+    Wait(1);
+}
+```
 
 will gradually fade out the character from its current transparency
 level to being fully invisible.
@@ -2743,7 +3091,9 @@ level to being fully invisible.
 
 *(Formerly part of `SetCharacterProperty`, which is now obsolete)*
 
-    bool Character.TurnBeforeWalking
+```ags
+bool Character.TurnBeforeWalking
+```
 
 Gets/sets whether the character turns to face his new direction before
 walking. This is equivalent (though opposite) to the editor "Do not turn
@@ -2756,7 +3106,9 @@ walking.
 
 Example:
 
-    cEgo.TurnBeforeWalking = 1;
+```ags
+cEgo.TurnBeforeWalking = 1;
+```
 
 will tell EGO to turn to face his new direction before setting off,
 whenever he walks.
@@ -2765,7 +3117,9 @@ whenever he walks.
 
 ### `Character.View`
 
-    readonly int Character.View
+```ags
+readonly int Character.View
+```
 
 Gets the view that the character is currently displayed using.
 
@@ -2774,7 +3128,9 @@ LockView functions.
 
 Example:
 
-    Display("EGO's view is currently view %d.", cEgo.View);
+```ags
+Display("EGO's view is currently view %d.", cEgo.View);
+```
 
 will display EGO's current view number.
 
@@ -2788,7 +3144,9 @@ will display EGO's current view number.
 
 ### `Character.WalkSpeedX`
 
-    readonly int Character.WalkSpeedX;
+```ags
+readonly int Character.WalkSpeedX;
+```
 
 Gets the character's walking speed in the X direction. If using uniform
 movement, this will be the same as the Y walking speed.
@@ -2798,7 +3156,9 @@ SetWalkSpeed function.
 
 Example:
 
-    Display("player's x speed: %d", player.WalkSpeedX);
+```ags
+Display("player's x speed: %d", player.WalkSpeedX);
+```
 
 will display the player's X speed.
 
@@ -2809,7 +3169,9 @@ will display the player's X speed.
 
 ### `Character.WalkSpeedY`
 
-    readonly int Character.WalkSpeedY;
+```ags
+readonly int Character.WalkSpeedY;
+```
 
 Gets the character's walking speed in the Y direction. If using uniform
 movement, this will be the same as the X walking speed.
@@ -2819,7 +3181,9 @@ SetWalkSpeed function.
 
 Example:
 
-    Display("player's y speed: %d", player.WalkSpeedY);
+```ags
+Display("player's y speed: %d", player.WalkSpeedY);
+```
 
 will display the player's Y speed.
 
@@ -2830,7 +3194,9 @@ will display the player's Y speed.
 
 ### `Character.x`
 
-    int Character.x;
+```ags
+int Character.x;
+```
 
 Gets/sets the character's current X co-ordinate. This is expressed in
 normal room co-ordinates, and specifies the bottom-center of the
@@ -2842,7 +3208,9 @@ co-ordinates.
 
 Example:
 
-    Display("The player is at %d,%d.", player.x, player.y);
+```ags
+Display("The player is at %d,%d.", player.x, player.y);
+```
 
 displays the player character's current coordinates.
 
@@ -2853,7 +3221,9 @@ displays the player character's current coordinates.
 
 ### `Character.y`
 
-    int Character.y;
+```ags
+int Character.y;
+```
 
 Gets/sets the character's current Y co-ordinate. This is expressed in
 normal room co-ordinates, and specifies the bottom-center of the
@@ -2865,7 +3235,9 @@ co-ordinates.
 
 Example:
 
-    Display("The player is at %d,%d.", player.x, player.y);
+```ags
+Display("The player is at %d,%d.", player.x, player.y);
+```
 
 displays the player character's current coordinates.
 
@@ -2876,7 +3248,9 @@ displays the player character's current coordinates.
 
 ### `Character.z`
 
-    int Character.z;
+```ags
+int Character.z;
+```
 
 Gets/sets the character's current Z position. This allows the character
 to levitate off the ground, whilst still retaining its normal Y
@@ -2887,10 +3261,12 @@ make the character float.
 
 Example:
 
-    while (player.z < 20) {
-      player.z++;
-      Wait(1);
-    }
+```ags
+while (player.z < 20) {
+    player.z++;
+    Wait(1);
+}
+```
 
 gradually levitates the character up to 20 pixels.
 

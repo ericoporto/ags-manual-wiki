@@ -16,7 +16,7 @@ The consequence of all the above is that if you keep the AudioChannel* pointer r
 
 This effect can be demonstrated by the following example. Make sure that your sound type has "MaxChannels" set to "1", then add the following script to the first room's "after fade-in event":
 
-```
+```ags
 function room_AfterFadeIn() {
     AudioChannel* chan = aSound1.Play();
     aSound2.Play();

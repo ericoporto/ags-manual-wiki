@@ -8,9 +8,11 @@ Button is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GU
 
 *(Formerly known as `AnimateButton`, which is now obsolete)*
 
-    Button.Animate(int view, int loop, int delay, optional RepeatStyle, 
-                   optional BlockingStyle, optional Direction, 
-                   optional int frame, optional int volume)
+```ags
+Button.Animate(int view, int loop, int delay, optional RepeatStyle, 
+                optional BlockingStyle, optional Direction, 
+                optional int frame, optional int volume)
+```
 
 Animates a GUI button by playing the specified view loop on it. This
 could be useful for Sierra-style death animations and other effects.
@@ -43,7 +45,9 @@ marked as "Flipped" will in fact be drawn normally when on a button.
 
 Example:
 
-    btnDeathAnim.Animate(6, 2, 4, eRepeat);
+```ags
+btnDeathAnim.Animate(6, 2, 4, eRepeat);
+```
 
 will animate the 'btnDeathAnim' button using loop 2 of view 6, with a
 delay of 4 cycles per frame, and repeat the animation continually.
@@ -62,7 +66,9 @@ Compatibility: Parameters *BlockingStyle*, *Direction*, *frame* and *volume* are
 
 ### `Button.Click`
 
-    Button.Click()
+```ags
+Button.Click()
+```
 
 Forces Button's OnClick event. If there is a script function bound to
 that event it will be run, otherwise nothing happens.
@@ -76,7 +82,9 @@ that event it will be run, otherwise nothing happens.
 
 ### `Button.Animating`
 
-    readonly bool Button.Animating
+```ags
+readonly bool Button.Animating
+```
 
 Returns true if the specified button is currently animating, or false
 otherwise.
@@ -86,8 +94,10 @@ This property is read-only. To change button's animation, use the
 
 Example:
 
-    btnDeathAnim.Animate(6, 2, 4, eRepeat);
-    while (btnDeathAnim.Animating) Wait(1);
+```ags
+btnDeathAnim.Animate(6, 2, 4, eRepeat);
+while (btnDeathAnim.Animating) Wait(1);
+```
 
 will animate button and wait until the animation finishes.
 
@@ -103,7 +113,9 @@ will animate button and wait until the animation finishes.
 
 ### `Button.Frame`
 
-    readonly int Button.Frame
+```ags
+readonly int Button.Frame
+```
 
 Gets the frame number that the animated button is currently set to. If
 the button is not currently animated, this will be 0 (in which case the
@@ -123,7 +135,9 @@ This property is read-only. To change button's animation, use the
 
 ### `Button.Loop`
 
-    readonly int Button.Loop
+```ags
+readonly int Button.Loop
+```
 
 Gets the loop that the animated button is currently set to. If the
 button is not currently animated, this will be 0 (in which case the
@@ -143,7 +157,9 @@ This property is read-only. To change button's animation, use the
 
 ### `Button.View`
 
-    readonly int Button.View
+```ags
+readonly int Button.View
+```
 
 Gets the view that the animated button is currently set to. If the
 button is not currently animated, this will be 0 (in which case the
@@ -163,7 +179,9 @@ This property is read-only. To change button's animation, use the
 
 ### `Button.ClipImage`
 
-    bool Button.ClipImage;
+```ags
+bool Button.ClipImage;
+```
 
 Gets/sets whether the button clips its image to the button boundaries.
 
@@ -179,7 +197,9 @@ confusion when it happens.
 
 Example:
 
-    btnOK.ClipImage = true;
+```ags
+btnOK.ClipImage = true;
+```
 
 sets the *btnOK* button so that its image will be restrained to the
 button's clickable area.
@@ -190,7 +210,9 @@ button's clickable area.
 
 ### `Button.Font`
 
-    FontType Button.Font
+```ags
+FontType Button.Font
+```
 
 Gets/sets the font used by the button to display text.
 
@@ -199,7 +221,9 @@ in the AGS Editor.
 
 Example:
 
-    btnOK.Font = eFontMain;
+```ags
+btnOK.Font = eFontMain;
+```
 
 will change the *btnOK* button to use Font "Main".
 
@@ -212,7 +236,9 @@ will change the *btnOK* button to use Font "Main".
 
 *(Formerly part of `GetButtonPic`, which is now obsolete)*
 
-    readonly int Button.Graphic;
+```ags
+readonly int Button.Graphic;
+```
 
 Gets the current image on a GUI button. If a value less than 1 is
 returned, then no image is currently displayed on the button.
@@ -224,7 +250,9 @@ of the [`NormalGraphic`](Button#buttonnormalgraphic),
 
 Example:
 
-    Display("The button is currently using sprite %d.", btnPlay.Graphic);
+```ags
+Display("The button is currently using sprite %d.", btnPlay.Graphic);
+```
 
 will display btnPlay's current sprite number.
 
@@ -240,14 +268,18 @@ will display btnPlay's current sprite number.
 *(Formerly part of `GetButtonPic`, which is now obsolete)*<br>
 *(Formerly part of `SetButtonPic`, which is now obsolete)*
 
-    int Button.MouseOverGraphic;
+```ags
+int Button.MouseOverGraphic;
+```
 
 Gets/sets the button's mouse-over sprite. This can be -1, which
 indicates that the button does not have a mouse-over graphic.
 
 Example:
 
-    Display("The button's mouse-over image is sprite %d.", btnPlay.MouseOverGraphic);
+```ags
+Display("The button's mouse-over image is sprite %d.", btnPlay.MouseOverGraphic);
+```
 
 will display btnPlay's mouse-over sprite number.
 
@@ -262,7 +294,9 @@ will display btnPlay's mouse-over sprite number.
 *(Formerly part of `GetButtonPic`, which is now obsolete)*<br>
 *(Formerly part of `SetButtonPic`, which is now obsolete)*
 
-    int Button.NormalGraphic;
+```ags
+int Button.NormalGraphic;
+```
 
 Gets/sets the button's normal sprite (i.e. the graphic used when the
 button is not pushed and the mouse is not over it).
@@ -272,7 +306,9 @@ size to match the size of the new sprite.
 
 Example:
 
-    Display("The button's normal image is sprite %d.", btnPlay.NormalGraphic);
+```ags
+Display("The button's normal image is sprite %d.", btnPlay.NormalGraphic);
+```
 
 will display btnPlay's normal sprite number.
 
@@ -289,7 +325,9 @@ will display btnPlay's normal sprite number.
 *(Formerly part of `GetButtonPic`, which is now obsolete)*<br>
 *(Formerly part of `SetButtonPic`, which is now obsolete)*
 
-    int Button.PushedGraphic;
+```ags
+int Button.PushedGraphic;
+```
 
 Gets/sets the button's pushed sprite (i.e. the graphic used when the
 button is pushed in by the user). This can be -1, which indicates that
@@ -297,7 +335,9 @@ the button does not have a pushed image.
 
 Example:
 
-    Display("The button's pushed image is sprite %d.", btnPlay.PushedGraphic);
+```ags
+Display("The button's pushed image is sprite %d.", btnPlay.PushedGraphic);
+```
 
 will display btnPlay's pushed sprite number.
 
@@ -313,14 +353,18 @@ will display btnPlay's pushed sprite number.
 *(Formerly known as `Button.GetText`, which is now obsolete)*<br>
 *(Formerly known as `Button.SetText`, which is now obsolete)*
 
-    String Button.Text;
+```ags
+String Button.Text;
+```
 
 Gets/sets the text displayed on the button.
 
 Example:
 
-    Display("Button displayed: %s", btnController.Text);
-    btnController.Text = "Enable jibble";
+```ags
+Display("Button displayed: %s", btnController.Text);
+btnController.Text = "Enable jibble";
+```
 
 will display the old text, then change button btnController to read
 'Enable jibble'.
@@ -332,7 +376,9 @@ will display the old text, then change button btnController to read
 
 ### `Button.TextAlignment`
 
-    Alignment Button.TextAlignment;
+```ags
+Alignment Button.TextAlignment;
+```
 
 Gets/sets how the text is aligned relative to the button's rectangle.
 
@@ -346,7 +392,9 @@ If the button is displaying an image rather than text, then this property has no
 
 ### `Button.TextColor`
 
-    int Button.TextColor;
+```ags
+int Button.TextColor;
+```
 
 Gets/sets the text color used to display the button's text.
 
@@ -355,7 +403,9 @@ property has no effect.
 
 Example:
 
-    btnRestart.TextColor = 15;
+```ags
+btnRestart.TextColor = 15;
+```
 
 will change button 'btnRestart' to have white text.
 

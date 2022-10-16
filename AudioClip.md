@@ -15,7 +15,9 @@ commands in this section allow to play them.
 *(Formerly known as `PlaySoundEx`, which is now obsolete)*<br>
 *(Formerly known as `SetMusicRepeat`, which is now obsolete)*
 
-    AudioChannel* AudioClip.Play(optional AudioPriority, optional RepeatStyle)
+```ags
+AudioChannel* AudioClip.Play(optional AudioPriority, optional RepeatStyle)
+```
 
 Plays the audio clip.
 
@@ -38,7 +40,9 @@ playing on, or *null* if it did not play for any reason.
 
 Example:
 
-    aExplosion.Play();
+```ags
+aExplosion.Play();
+```
 
 plays the *aExplosion* audio clip.
 
@@ -53,8 +57,10 @@ plays the *aExplosion* audio clip.
 
 ### `AudioClip.PlayFrom`
 
-    AudioChannel* AudioClip.PlayFrom(int position, optional AudioPriority,
-                                     optional RepeatStyle)
+```ags
+AudioChannel* AudioClip.PlayFrom(int position, optional AudioPriority,
+                                    optional RepeatStyle)
+```
 
 Plays the audio clip, starting from *position*. For the meaning of the
 position, see the [`AudioChannel.Seek`](AudioChannel#audiochannelseek) help
@@ -66,7 +72,9 @@ for more information.
 
 Example:
 
-    aExplosion.PlayFrom(1000);
+```ags
+aExplosion.PlayFrom(1000);
+```
 
 plays the *aExplosion* audio clip, starting from a 1 second offset (if
 it is OGG/MP3).
@@ -81,7 +89,9 @@ it is OGG/MP3).
 
 *(Formerly known as `PlayMusicQueued`, which is now obsolete)*
 
-    AudioChannel* AudioClip.PlayQueued(optional AudioPriority, optional RepeatStyle)
+```ags
+AudioChannel* AudioClip.PlayQueued(optional AudioPriority, optional RepeatStyle)
+```
 
 Plays the audio clip, or queues it to be played later if it cannot be
 played now.
@@ -101,8 +111,10 @@ be played.
 
 Example:
 
-    aExplosion.Play();
-    aAftermath.PlayQueued();
+```ags
+aExplosion.Play();
+aAftermath.PlayQueued();
+```
 
 plays the *aExplosion* audio clip, and queues the *aAftermath* sound to
 be played afterwards.
@@ -115,7 +127,9 @@ be played afterwards.
 
 ### `AudioClip.PlayOnChannel`
 
-    AudioChannel* AudioClip.PlayOnChannel(int channel, optional AudioPriority, optional RepeatStyle)
+```ags
+AudioChannel* AudioClip.PlayOnChannel(int channel, optional AudioPriority, optional RepeatStyle)
+```
 
 Plays this audio clip, explicitly putting it on the particular channel, starting with 1 (as channel 0 is reserved for Speech). The maximal number of channels may be found on a [System limits](SystemLimits) page, or using [`System.AudioChannelCount`](System#systemaudiochannelcount) at runtime.
 
@@ -129,7 +143,9 @@ playing on, or *null* if it did not play for any reason.
 
 Example:
 
-    aBeep.PlayOnChannel(2, eAudioPriorityHigh, eOnce);
+```ags
+aBeep.PlayOnChannel(2, eAudioPriorityHigh, eOnce);
+```
 
 plays the *aBeep* audio clip on channel 2.
 
@@ -144,15 +160,19 @@ plays the *aBeep* audio clip on channel 2.
 
 ### `AudioClip.Stop`
 
-    AudioClip.Stop()
+```ags
+AudioClip.Stop()
+```
 
 Stops all currently playing instances of this audio clip.
 
 Example:
 
-    aExplosion.Play();
-    Wait(40);
-    aExplosion.Stop();
+```ags
+aExplosion.Play();
+Wait(40);
+aExplosion.Stop();
+```
 
 plays the *aExplosion* audio clip, waits 1 second and then stops it
 again.
@@ -165,19 +185,23 @@ again.
 
 ### `AudioClip.ID`
 
-    readonly int AudioClip.ID
+```ags
+readonly int AudioClip.ID
+```
 
 Gets the ID of this audio clip. This could be used for diagnostic purposes as well to find same clip in the Game.AudioClips[] array.
 
 Example:
 
-    for (int i = 0; i < System.AudioChannelCount; i++) {
-      AudioClip *clip = System.AudioChannels[i].PlayingClip;
-      if (clip != null)
-        Display("Channel %d has clip %d playing", i, clip.ID);
-      else
-        Display("Channel %d has no clip on it at the moment", i);
-    }
+```ags
+for (int i = 0; i < System.AudioChannelCount; i++) {
+    AudioClip *clip = System.AudioChannels[i].PlayingClip;
+    if (clip != null)
+    Display("Channel %d has clip %d playing", i, clip.ID);
+    else
+    Display("Channel %d has no clip on it at the moment", i);
+}
+```
 
 will display information about clips playing on each audio channel.
 
@@ -189,7 +213,9 @@ will display information about clips playing on each audio channel.
 
 ### `AudioClip.FileType`
 
-    readonly AudioFileType AudioClip.FileType;
+```ags
+readonly AudioFileType AudioClip.FileType;
+```
 
 Gets the file type of this audio clip. This is useful in conjunction
 with the PlayFrom and Seek commands to determine what the position
@@ -197,10 +223,12 @@ offset represents.
 
 Example:
 
-    if (aExplosion.FileType == eAudioFileMIDI)
-    {
-      Display("Explosion is a MIDI file!");
-    }
+```ags
+if (aExplosion.FileType == eAudioFileMIDI)
+{
+    Display("Explosion is a MIDI file!");
+}
+```
 
 displays a message if aExplosion is a MIDI file
 
@@ -216,7 +244,9 @@ displays a message if aExplosion is a MIDI file
 
 *(Formerly known as `IsMusicVoxAvailable`, which is now obsolete)*
 
-    readonly bool AudioClip.IsAvailable;
+```ags
+readonly bool AudioClip.IsAvailable;
+```
 
 Gets whether this audio clip is available on the player's system.
 
@@ -229,10 +259,12 @@ will silently fail if it cannot find the audio clip to play.
 
 Example:
 
-    if (aExplosion.IsAvailable)
-    {
-      aExplosion.Play();
-    }
+```ags
+if (aExplosion.IsAvailable)
+{
+    aExplosion.Play();
+}
+```
 
 checks if the aExplosion audio clip is available, and if so plays it.
 
@@ -244,7 +276,9 @@ checks if the aExplosion audio clip is available, and if so plays it.
 
 ### `AudioClip.Type`
 
-    readonly AudioType AudioClip.Type;
+```ags
+readonly AudioType AudioClip.Type;
+```
 
 Gets the type of this audio clip, as initially set in the editor.
 
@@ -253,10 +287,12 @@ and Music.
 
 Example:
 
-    if (aExplosion.Type == eAudioTypeMusic)
-    {
-      Display("Explosion is music!");
-    }
+```ags
+if (aExplosion.Type == eAudioTypeMusic)
+{
+    Display("Explosion is music!");
+}
+```
 
 displays a message if the *aExplosion* clip is music.
 

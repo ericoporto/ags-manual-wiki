@@ -4,7 +4,9 @@
 
 *(Formerly known as `ChangeCursorGraphic`, which is now obsolete)*
 
-    Mouse.ChangeModeGraphic(CursorMode, int slot)
+```ags
+Mouse.ChangeModeGraphic(CursorMode, int slot)
+```
 
 Changes the specified mouse cursor mode's cursor graphic to SLOT. This
 allows you to dynamically change what a mouse cursor looks like.
@@ -16,7 +18,9 @@ of using this function.
 
 Example:
 
-    mouse.ChangeModeGraphic(eModeLookat, 120);
+```ags
+mouse.ChangeModeGraphic(eModeLookat, 120);
+```
 
 will change the cursor's graphic for look mode to the image that's
 imported in the sprite's manager slot 120.
@@ -33,7 +37,9 @@ imported in the sprite's manager slot 120.
 
 *(Formerly known as `ChangeCursorHotspot`, which is now obsolete)*
 
-    Mouse.ChangeModeHotspot(CursorMode, int x, int y)
+```ags
+Mouse.ChangeModeHotspot(CursorMode, int x, int y)
+```
 
 Permanently changes the specified mouse cursor mode's hotspot on the
 cursor graphic to (X,Y). This is the offset into the graphic where the
@@ -42,7 +48,9 @@ graphic.
 
 Example:
 
-    mouse.ChangeModeHotspot(eModeWalkto, 10, 10);
+```ags
+mouse.ChangeModeHotspot(eModeWalkto, 10, 10);
+```
 
 will change the cursor's hotspot for walk mode to coordinates 10,10.
 
@@ -54,7 +62,9 @@ will change the cursor's hotspot for walk mode to coordinates 10,10.
 
 ### `Mouse.ChangeModeView`
 
-    Mouse.ChangeModeView(CursorMode, int view)
+```ags
+Mouse.ChangeModeView(CursorMode, int view)
+```
 
 Changes the specified mouse cursor mode's animation view to VIEW.
 
@@ -65,7 +75,9 @@ animation while the game is running.
 
 Example:
 
-    mouse.ChangeModeView(eModeLookat, ROLLEYES);
+```ags
+mouse.ChangeModeView(eModeLookat, ROLLEYES);
+```
 
 will change the Look cursor's view to ROLLEYES.
 
@@ -77,7 +89,9 @@ will change the Look cursor's view to ROLLEYES.
 
 ### `Mouse.Click`
 
-    static void Click(MouseButton)
+```ags
+static void Click(MouseButton)
+```
 
 Fires mouse click event at current mouse position (at mouse.x /
 mouse.y). This is in all aspects identical to what would happen if a
@@ -87,8 +101,10 @@ simulate player actions in game, or create automatic demonstrations
 
 Example:
 
-    Mouse.SetPosition(100, 100);
-    Mouse.Click(eMouseLeft);
+```ags
+Mouse.SetPosition(100, 100);
+Mouse.Click(eMouseLeft);
+```
 
 This will simulate user click at (100,100).
 
@@ -103,7 +119,9 @@ This will simulate user click at (100,100).
 
 *(Formerly known as `DisableCursorMode`, which is now obsolete)*
 
-    Mouse.DisableMode(int mode)
+```ags
+Mouse.DisableMode(int mode)
+```
 
 Disables the mouse cursor MODE. Any attempts to set the cursor to this
 mode while it is disabled (such as using UseModeGraphic) will fail. This
@@ -115,7 +133,9 @@ the next enabled standard cursor.
 
 Example:
 
-    mouse.DisableMode(eModeWalkto);
+```ags
+mouse.DisableMode(eModeWalkto);
+```
 
 will make the walk mode unavailable until it's enabled again.
 
@@ -128,14 +148,18 @@ will make the walk mode unavailable until it's enabled again.
 
 *(Formerly known as `EnableCursorMode`, which is now obsolete)*
 
-    Mouse.EnableMode(int mode)
+```ags
+Mouse.EnableMode(int mode)
+```
 
 Re-enables the mouse cursor mode MODE. This function also enables any
 interface buttons which were disabled by the DisableMode command.
 
 Example:
 
-    mouse.EnableMode(eModeWalkto);
+```ags
+mouse.EnableMode(eModeWalkto);
+```
 
 will enable cursor mode walk which was disabled before.
 
@@ -146,15 +170,19 @@ will enable cursor mode walk which was disabled before.
 
 ### `Mouse.IsModeEnabled`
 
-    static bool Mouse.IsModeEnabled(int mode)
+```ags
+static bool Mouse.IsModeEnabled(int mode)
+```
 
 Returns whether the specified mouse cursor is currently enabled.
 
 Example:
 
-    if (mouse.IsModeEnabled(eModeWalkto)) {
-      mouse.Mode = eModeWalkto;
-    }
+```ags
+if (mouse.IsModeEnabled(eModeWalkto)) {
+    mouse.Mode = eModeWalkto;
+}
+```
 
 will change the the "WalkTo" cursor mode, but only if it's currently
 enabled.
@@ -166,7 +194,9 @@ enabled.
 
 ### `Mouse.GetModeGraphic`
 
-    static int Mouse.GetModeGraphic(CursorMode)
+```ags
+static int Mouse.GetModeGraphic(CursorMode)
+```
 
 Returns the sprite slot number of the specified mouse cursor mode.
 
@@ -175,7 +205,9 @@ ChangeModeGraphic but be able to remember what it was before.
 
 Example:
 
-    Display("The current mouse cursor sprite is %d.", mouse.GetModeGraphic(mouse.Mode));
+```ags
+Display("The current mouse cursor sprite is %d.", mouse.GetModeGraphic(mouse.Mode));
+```
 
 will display the sprite slot number of the current mouse cursor.
 
@@ -188,7 +220,9 @@ will display the sprite slot number of the current mouse cursor.
 *(Formerly known as global function `IsButtonDown`, which is now
 obsolete)*
 
-    Mouse.IsButtonDown(MouseButton)
+```ags
+Mouse.IsButtonDown(MouseButton)
+```
 
 Tests whether the user has the specified mouse button down. BUTTON must
 either be eMouseLeft, eMouseRight or eMouseMiddle.
@@ -198,16 +232,18 @@ could be used to test the length of a mouse click and similar effects.
 
 Example:
 
-    int timer=0;  // (at top of script file)
-    if (mouse.IsButtonDown(eMouseRight)) {
-      if (timer == 40) {
-        Display("You pressed the right button for 1 sec");
-        timer = 0;
-      }
-      else {
-        timer++;
-      }
+```ags
+int timer=0;  // (at top of script file)
+if (mouse.IsButtonDown(eMouseRight)) {
+    if (timer == 40) {
+    Display("You pressed the right button for 1 sec");
+    timer = 0;
     }
+    else {
+    timer++;
+    }
+}
+```
 
 will display the message if the player presses the right button for 1
 sec.
@@ -224,7 +260,9 @@ versions.<br>
 
 *(Formerly known as `SaveCursorForLocationChange`, which is now obsolete)*
 
-    Mouse.SaveCursorUntilItLeaves()
+```ags
+Mouse.SaveCursorUntilItLeaves()
+```
 
 Saves the current mouse cursor, and restores it when the mouse leaves
 the current hotspot, object or character.
@@ -238,8 +276,10 @@ cursor, or the new cursor will be saved by this command.
 
 Example:
 
-    mouse.SaveCursorUntilItLeaves();
-    mouse.Mode = eModeTalk;
+```ags
+mouse.SaveCursorUntilItLeaves();
+mouse.Mode = eModeTalk;
+```
 
 will change the cursor mode to Talk for as long as the mouse is over the
 current object
@@ -252,7 +292,9 @@ current object
 
 *(Formerly known as `SetNextCursorMode`, which is now obsolete)*
 
-    Mouse.SelectNextMode()
+```ags
+Mouse.SelectNextMode()
+```
 
 Selects the next enabled mouse cursor mode. This is useful for
 Sierra-style right-click cycling through modes. This function will
@@ -265,7 +307,9 @@ Use Inventory mode if the player has an active inventory item.
 
 ### `Mouse.SelectPreviousMode`
 
-    Mouse.SelectPreviousMode()
+```ags
+Mouse.SelectPreviousMode()
+```
 
 Selects the previous enabled mouse cursor mode. This is useful for
 Sierra-style right-click cycling through modes. This function will
@@ -280,7 +324,9 @@ the Use Inventory mode if the player has an active inventory item.
 
 *(Formerly known as `SetMouseBounds`, which is now obsolete)*
 
-    Mouse.SetBounds(int left, int top, int right, int bottom)
+```ags
+Mouse.SetBounds(int left, int top, int right, int bottom)
+```
 
 Restricts the area where the mouse can move on screen. The four
 parameters are the relevant pixel co-ordinates of that edge of the
@@ -294,7 +340,9 @@ the screen, at which point the cursor bounds will be reset.
 
 Example:
 
-    mouse.SetBounds(160, 100, 320, 200);
+```ags
+mouse.SetBounds(160, 100, 320, 200);
+```
 
 will restrict the mouse cursor to the bottom-right quarter of the
 screen of a game that has screen resolution of 320x200.
@@ -307,7 +355,9 @@ screen of a game that has screen resolution of 320x200.
 
 *(Formerly known as `SetMousePosition`, which is now obsolete)*
 
-    Mouse.SetPosition(int x, int y)
+```ags
+Mouse.SetPosition(int x, int y)
+```
 
 Moves the mouse pointer to screen co-ordinates (X,Y). They are in the
 usual range (0, 0) - (Screen.Width,Screen.Height). The mouse.x and mouse.y variables
@@ -319,7 +369,9 @@ too often during the game.
 
 Example:
 
-    mouse.SetPosition(Screen.Width/2, Screen.Height/2);
+```ags
+mouse.SetPosition(Screen.Width/2, Screen.Height/2);
+```
 
 will place the mouse cursor in the center of the screen.
 
@@ -331,7 +383,9 @@ will place the mouse cursor in the center of the screen.
 
 *(Formerly known as `RefreshMouse`, which is now obsolete)*
 
-    Mouse.Update();
+```ags
+Mouse.Update();
+```
 
 Updates the global variables "mouse.x" and "mouse.y" with the current
 position of the mouse. Normally, these variables are set just before
@@ -342,9 +396,11 @@ the variables.
 
 Example:
 
-    Display("The mouse was at: %d, %d.", mouse.x, mouse.y);
-    mouse.Update();
-    Display("The mouse is now at: %d, %d.", mouse.x, mouse.y);
+```ags
+Display("The mouse was at: %d, %d.", mouse.x, mouse.y);
+mouse.Update();
+Display("The mouse is now at: %d, %d.", mouse.x, mouse.y);
+```
 
 will display the mouse position just before each dialog box is displayed
 
@@ -354,7 +410,9 @@ will display the mouse position just before each dialog box is displayed
 
 *(Formerly known as `SetDefaultCursor`, which is now obsolete)*
 
-    Mouse.UseDefaultGraphic()
+```ags
+Mouse.UseDefaultGraphic()
+```
 
 Changes the appearance of the mouse cursor to the default for the
 current cursor mode. Use this to restore the cursor picture after you
@@ -368,7 +426,9 @@ changed it with the UseModeGraphic function.
 
 *(Formerly known as `SetMouseCursor`, which is now obsolete)*
 
-    Mouse.UseModeGraphic(CursorMode)
+```ags
+Mouse.UseModeGraphic(CursorMode)
+```
 
 Changes the appearance of the mouse cursor to use the specified cursor.
 Unlike the Mouse.Mode property, this does not change the mode used if
@@ -377,7 +437,9 @@ cursor temporarily.
 
 Example:
 
-    mouse.UseModeGraphic(eModeWait);
+```ags
+mouse.UseModeGraphic(eModeWait);
+```
 
 will change the mouse cursor to the cursor 'Wait' specified in the
 Cursors tab.
@@ -391,7 +453,9 @@ Cursors tab.
 
 ### `Mouse.AutoLock`
 
-    static bool Mouse.AutoLock;
+```ags
+static bool Mouse.AutoLock;
+```
 
 Gets/sets if the system mouse cursor is automatically locked in the game window when the player clicks in it. The "locked" cursor will not be able to leave the bounds of the window. This is useful when playing a game in a windowed mode, preventing occasional misclicks outside that could lead to switching out of the game.
 
@@ -405,7 +469,9 @@ Gets/sets if the system mouse cursor is automatically locked in the game window 
 
 ### `Mouse.ControlEnabled`
 
-    static bool Mouse.ControlEnabled;
+```ags
+static bool Mouse.ControlEnabled;
+```
 
 Gets/sets if the mouse cursor movement has to be controlled by AGS
 engine; otherwise it is controlled by operation system. Note that in practice mouse is only controlled when the game is run in fullscreen mode.
@@ -415,7 +481,9 @@ applied or not.
 
 Example:
 
-    sldMouseSpeed.Visible = Mouse.ControlEnabled;
+```ags
+sldMouseSpeed.Visible = Mouse.ControlEnabled;
+```
 
 makes mouse speed slider visible only if the mouse is controlled by the
 game.
@@ -432,7 +500,9 @@ Settable since **AGS 3.5.0**.
 *(Formerly known as `GetCursorMode`, which is now obsolete)*<br>
 *(Formerly known as `SetCursorMode`, which is now obsolete)*
 
-    int Mouse.Mode;
+```ags
+int Mouse.Mode;
+```
 
 Gets/sets the current mode of the mouse cursor. This is one of the
 cursor modes from your Cursors tab (but with eMode prepended). For
@@ -444,10 +514,12 @@ Mode used if the player clicks on a hotspot.
 
 Example:
 
-    if (mouse.Mode == eModeWalkto)
-    {
-       // code here
-    }
+```ags
+if (mouse.Mode == eModeWalkto)
+{
+    // code here
+}
+```
 
 will execute the code only if the current cursor mode is MODE 0 (WALK).
 
@@ -460,7 +532,9 @@ will execute the code only if the current cursor mode is MODE 0 (WALK).
 
 ### `Mouse.Speed`
 
-    static float Mouse.Speed;
+```ags
+static float Mouse.Speed;
+```
 
 Gets/sets in-game mouse cursor speed. 1.0 is default, values in the
 range 0-1 make cursor movement slower, values higher than 1 make cursor
@@ -484,7 +558,9 @@ so forth).
 
 Example:
 
-    Mouse.Speed = IntToFloat(sldMouseSpeed.Value) / 10.0;
+```ags
+Mouse.Speed = IntToFloat(sldMouseSpeed.Value) / 10.0;
+```
 
 converts slider control's position into mouse speed.
 
@@ -500,7 +576,9 @@ converts slider control's position into mouse speed.
 *(Formerly known as `HideMouseCursor`, which is now obsolete)*<br>
 *(Formerly known as `ShowMouseCursor`, which is now obsolete)*
 
-    bool Mouse.Visible;
+```ags
+bool Mouse.Visible;
+```
 
 Gets/sets whether the mouse cursor is visible. This is initially true by
 default, but setting this to false is useful for briefly hiding the
@@ -513,9 +591,11 @@ cursor becomes invisible.
 
 Example:
 
-    mouse.Visible = false;
-    Wait(40);
-    mouse.Visible = true;
+```ags
+mouse.Visible = false;
+Wait(40);
+mouse.Visible = true;
+```
 
 hides the mouse, waits for a second, then turns it back on again
 

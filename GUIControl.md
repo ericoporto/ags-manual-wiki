@@ -11,7 +11,9 @@ has its own specific section.
 
 *(Formerly known as `GetGUIObjectAt`, which is now obsolete)*
 
-    static GUIControl* GUIControl.GetAtScreenXY(int x, int y)
+```ags
+static GUIControl* GUIControl.GetAtScreenXY(int x, int y)
+```
 
 Checks whether there is a GUI control at screen co-ordinates (X,Y).
 Returns the control object if there is, or null if there is not. You
@@ -19,17 +21,19 @@ probably want to use this in conjunction with GetGUIAtLocation.
 
 Example:
 
-    GUIControl *theControl = GUIControl.GetAtScreenXY(mouse.x, mouse.y);
-    if (theControl == lstSaveGames) {
-      Display("The mouse is over the Save Games list box.");
-    }
-    else if (theControl == null) {
-      Display("The mouse is not over a control.");
-    }
-    else {
-      GUI *onGui = theControl.OwningGUI;
-      Display("The mouse is over control %d on GUI %d.", theControl.ID, onGui.ID);
-    }
+```ags
+GUIControl *theControl = GUIControl.GetAtScreenXY(mouse.x, mouse.y);
+if (theControl == lstSaveGames) {
+    Display("The mouse is over the Save Games list box.");
+}
+else if (theControl == null) {
+    Display("The mouse is not over a control.");
+}
+else {
+    GUI *onGui = theControl.OwningGUI;
+    Display("The mouse is over control %d on GUI %d.", theControl.ID, onGui.ID);
+}
+```
 
 will display what control the mouse is over.
 
@@ -39,12 +43,14 @@ will display what control the mouse is over.
 
 ### `GUIControl.AsType`
 
-    Button*  GUIControl.AsButton;
-    InvWindow* GUIControl.AsInvWindow;
-    Label*   GUIControl.AsLabel;
-    ListBox* GUIControl.AsListBox;
-    Slider*  GUIControl.AsSlider;
-    TextBox* GUIControl.AsTextBox;
+```ags
+Button*  GUIControl.AsButton;
+InvWindow* GUIControl.AsInvWindow;
+Label*   GUIControl.AsLabel;
+ListBox* GUIControl.AsListBox;
+Slider*  GUIControl.AsSlider;
+TextBox* GUIControl.AsTextBox;
+```
 
 Converts a generic GUIControl\* pointer into a variable of the correct
 type, and returns it. If the control is not of the requested type,
@@ -52,13 +58,15 @@ returns *null*.
 
 Example:
 
-    Button *theButton = gIconbar.Controls[2].AsButton;
-    if (theButton == null) {
-      Display("Control 2 is not a button!!!!");
-    }
-    else {
-      theButton.NormalGraphic = 44;
-    }
+```ags
+Button *theButton = gIconbar.Controls[2].AsButton;
+if (theButton == null) {
+    Display("Control 2 is not a button!!!!");
+}
+else {
+    theButton.NormalGraphic = 44;
+}
+```
 
 attempts to set Button 2 on GUI ICONBAR to have NormalGraphic 44, but if
 that control is not a button, prints a message.
@@ -69,7 +77,9 @@ that control is not a button, prints a message.
 
 ### `GUIControl.BringToFront`
 
-    GUIControl.BringToFront()
+```ags
+GUIControl.BringToFront()
+```
 
 Brings this control to the front of the Z-order. This allows you to
 rearrange the display order of controls within the GUI.
@@ -80,7 +90,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnBigButton.BringToFront();
+```ags
+btnBigButton.BringToFront();
+```
 
 will move the *btnBigButton* button to be in front of all other controls
 on the GUI.
@@ -92,7 +104,9 @@ on the GUI.
 
 ### `GUIControl.Clickable`
 
-    bool GUIControl.Clickable
+```ags
+bool GUIControl.Clickable
+```
 
 Gets/sets whether the GUI control is clickable.
 
@@ -117,7 +131,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnSaveGame.Clickable = false;
+```ags
+btnSaveGame.Clickable = false;
+```
 
 will make the *btnSaveGame* button non-clickable.
 
@@ -129,7 +145,9 @@ will make the *btnSaveGame* button non-clickable.
 
 *(Formerly known as `SetGUIObjectEnabled`, which is now obsolete)*
 
-    bool GUIControl.Enabled
+```ags
+bool GUIControl.Enabled
+```
 
 Enables or disables a GUI control.
 
@@ -155,7 +173,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnSaveGame.Enabled = false;
+```ags
+btnSaveGame.Enabled = false;
+```
 
 will disable the *btnSaveGame* button.
 
@@ -166,7 +186,9 @@ will disable the *btnSaveGame* button.
 
 ### `GUIControl.Height`
 
-    int GUIControl.Height;
+```ags
+int GUIControl.Height;
+```
 
 Gets/sets the height of the GUI control. This allows you to dynamically
 resize GUI controls while the game is running.
@@ -177,7 +199,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnConfirm.Height = 20;
+```ags
+btnConfirm.Height = 20;
+```
 
 makes the *btnConfirm* button 20 pixels high.
 
@@ -188,7 +212,9 @@ makes the *btnConfirm* button 20 pixels high.
 
 ### `GUIControl.ID`
 
-    readonly int GUIControl.ID
+```ags
+readonly int GUIControl.ID
+```
 
 Gets the GUI control's ID number. This is the control's object number
 from the GUI editor, and is useful if you need to interoperate with
@@ -200,8 +226,10 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    SetGUIObjectEnabled(lstSaves.OwningGUI.ID, lstSaves.ID, 1);
-    lstSaves.Enabled = false;
+```ags
+SetGUIObjectEnabled(lstSaves.OwningGUI.ID, lstSaves.ID, 1);
+lstSaves.Enabled = false;
+```
 
 uses the obsolete SetGUIObjectEnabled function to enable the lstSaves
 list box, and then uses the equivalent modern property to disable it.
@@ -213,7 +241,9 @@ list box, and then uses the equivalent modern property to disable it.
 
 ### `GUIControl.OwningGUI`
 
-    readonly GUI* GUIControl.OwningGUI
+```ags
+readonly GUI* GUIControl.OwningGUI
+```
 
 Gets the GUI control's owning GUI, which is the GUI that contains the
 control.
@@ -227,10 +257,12 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    GUI *thegui = lstSaves.OwningGUI;
-    thegui.Visible = false;
+```ags
+GUI *thegui = lstSaves.OwningGUI;
+thegui.Visible = false;
 
-    lstSaves.OwningGUI.Visible = true;
+lstSaves.OwningGUI.Visible = true;
+```
 
 turns off the GUI that contains the lstSaves list box, then turns it on
 again using the niftier full pathing approach.
@@ -242,7 +274,9 @@ again using the niftier full pathing approach.
 
 ### `GUIControl.SendToBack`
 
-    GUIControl.SendToBack()
+```ags
+GUIControl.SendToBack()
+```
 
 Sends this control to the back of the Z-order. This allows you to
 rearrange the display order of controls within the GUI.
@@ -253,7 +287,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnBigButton.SendToBack();
+```ags
+btnBigButton.SendToBack();
+```
 
 will move the *btnBigButton* button to be behind all other controls on
 the GUI.
@@ -268,7 +304,9 @@ the GUI.
 
 *(Formerly known as `SetGUIObjectPosition`, which is now obsolete)*
 
-    GUIControl.SetPosition(int x, int y)
+```ags
+GUIControl.SetPosition(int x, int y)
+```
 
 Moves the top-left corner of the GUI control to be at (X,Y). These
 co-ordinates are relative to the GUI which contains the control.
@@ -283,7 +321,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnConfirm.SetPosition(40, 10);
+```ags
+btnConfirm.SetPosition(40, 10);
+```
 
 will move the *btnConfirm* button to be positioned at (40,10) within the
 GUI.
@@ -300,7 +340,9 @@ GUI.
 
 *(Formerly known as `SetGUIObjectSize`, which is now obsolete)*
 
-    GUIControl.SetSize(int width, int height)
+```ags
+GUIControl.SetSize(int width, int height)
+```
 
 Adjusts the specified GUI control to have the new size WIDTH x HEIGHT.
 
@@ -315,7 +357,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    invMain.SetSize(160, 100);
+```ags
+invMain.SetSize(160, 100);
+```
 
 will resize the *invMain* control to have a size of 160 x 100.
 
@@ -328,7 +372,9 @@ will resize the *invMain* control to have a size of 160 x 100.
 
 ### `GUIControl.Transparency`
 
-    int GUIControl.Transparency
+```ags
+int GUIControl.Transparency
+```
 
 Gets/sets the GUIControl translucency, in percent.
 
@@ -353,7 +399,9 @@ too quickly.
 
 ### `GUIControl.Visible`
 
-    bool GUIControl.Visible
+```ags
+bool GUIControl.Visible
+```
 
 Gets/sets whether the GUI control is visible. This is *true* by default,
 but you can set it to *false* in order to temporarily remove the GUI
@@ -368,7 +416,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnSaveGame.Visible = false;
+```ags
+btnSaveGame.Visible = false;
+```
 
 will make the *btnSaveGame* button invisible.
 
@@ -378,7 +428,9 @@ will make the *btnSaveGame* button invisible.
 
 ### `GUIControl.Width`
 
-    int GUIControl.Width;
+```ags
+int GUIControl.Width;
+```
 
 Gets/sets the width of the GUI control. This allows you to dynamically
 resize GUI controls while the game is running.
@@ -389,7 +441,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnConfirm.Width = 110;
+```ags
+btnConfirm.Width = 110;
+```
 
 makes the *btnConfirm* button 110 pixels wide.
 
@@ -400,7 +454,9 @@ makes the *btnConfirm* button 110 pixels wide.
 
 ### `GUIControl.X`
 
-    int GUIControl.X;
+```ags
+int GUIControl.X;
+```
 
 Gets/sets the X position of the GUI control. This specifies its left
 edge, and is relative to the GUI which contains the control.
@@ -414,7 +470,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnConfirm.X = 10;
+```ags
+btnConfirm.X = 10;
+```
 
 will move the *btnConfirm* button to be positioned 10 pixels from the
 left of its GUI.
@@ -426,7 +484,9 @@ left of its GUI.
 
 ### `GUIControl.Y`
 
-    int GUIControl.Y;
+```ags
+int GUIControl.Y;
+```
 
 Gets/sets the Y position of the GUI control. This specifies its top
 edge, and is relative to the GUI which contains the control.
@@ -440,7 +500,9 @@ Inherited by the Button, InvWindow, Label, ListBox, Slider and TextBox.
 
 Example:
 
-    btnConfirm.Y = 20;
+```ags
+btnConfirm.Y = 20;
+```
 
 will move the *btnConfirm* button to be positioned 20 pixels from the
 top of its GUI.
@@ -452,7 +514,9 @@ top of its GUI.
 
 ### `GUIControl.ZOrder`
 
-    int GUIControl.ZOrder;
+```ags
+int GUIControl.ZOrder;
+```
 
 Gets/sets the control's Z-order relative to other controls within the
 same owning GUI. This allows you to precisely arrange the display order

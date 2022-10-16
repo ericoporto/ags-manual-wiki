@@ -10,7 +10,9 @@ Overlays may be created as *screen overlays* and *room overlays*. This defines t
 
 *(Formerly known as `CreateGraphicOverlay`, which is now obsolete)*
 
-    static Overlay* Overlay.CreateGraphical(int x, int y, int slot, optional bool transparent, optional bool clone)
+```ags
+static Overlay* Overlay.CreateGraphical(int x, int y, int slot, optional bool transparent, optional bool clone)
+```
 
 Creates a *screen overlay* using an image from SLOT sprite. The image is placed at (X,Y) in the screen coordinates.
 
@@ -33,9 +35,11 @@ functions.
 
 Example:
 
-    Overlay* myOverlay = Overlay.CreateGraphical(100, 100, 300);
-    Wait(40);
-    myOverlay.Remove();
+```ags
+Overlay* myOverlay = Overlay.CreateGraphical(100, 100, 300);
+Wait(40);
+myOverlay.Remove();
+```
 
 will create an overlay using sprite number 300, at the coordinates 100,100. It will display for 1 second, then remove it.
 
@@ -49,7 +53,9 @@ will create an overlay using sprite number 300, at the coordinates 100,100. It w
 
 ### `Overlay.CreateRoomGraphical`
 
-    static Overlay* Overlay.CreateRoomGraphical(int x, int y, int slot, optional bool transparent, optional bool clone)
+```ags
+static Overlay* Overlay.CreateRoomGraphical(int x, int y, int slot, optional bool transparent, optional bool clone)
+```
 
 Creates a *room overlay* using an image from SLOT sprite. The image is placed at (X,Y) in the screen coordinates.
 
@@ -60,7 +66,9 @@ All the parameters and use are identical to [`Overlay.CreateGraphical`](Overlay#
 **NOTE:** as overlays are a simplistic kind of object that does not have any automated behavior, it won't interact with anything inside the room, and won't change its z-order according to its Y coordinate automatically, unlike characters and room objects.
 If you'd like room overlay to change its "baseline" along with its vertical position, you will have to do something like this in global or room's "repeatedly execute" script function:
 
-    over.ZOrder = over.Y + over.Height;
+```ags
+over.ZOrder = over.Y + over.Height;
+```
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
@@ -74,8 +82,10 @@ If you'd like room overlay to change its "baseline" along with its vertical posi
 
 ### `Overlay.CreateRoomTextual`
 
-    static Overlay* Overlay.CreateRoomTextual(int x, int y, int width,
-                                          FontType font, int color, string text)
+```ags
+static Overlay* Overlay.CreateRoomTextual(int x, int y, int width,
+                                        FontType font, int color, string text)
+```
 
 Creates a *room overlay* containing the text you pass at the position specified. This overlay looks identical to the way speech text is
 displayed in conversations, except that with this command the text stays on the screen until either you remove it with the Remove command, or the
@@ -98,8 +108,10 @@ All the parameters and use are identical to [`Overlay.CreateTextual`](Overlay#ov
 
 *(Formerly known as `CreateTextOverlay`, which is now obsolete)*
 
-    static Overlay* Overlay.CreateTextual(int x, int y, int width,
-                                          FontType font, int color, string text)
+```ags
+static Overlay* Overlay.CreateTextual(int x, int y, int width,
+                                        FontType font, int color, string text)
+```
 
 Creates a *screen overlay* containing the text you pass at the position
 specified. A screen overlay looks identical to the way speech text is
@@ -133,9 +145,11 @@ functions.
 
 Example:
 
-    Overlay* myOverlay = Overlay.CreateTextual(50,80,120, Game.SpeechFont, 15,"This is a text overlay");
-    Wait(40);
-    myOverlay.Remove();
+```ags
+Overlay* myOverlay = Overlay.CreateTextual(50,80,120, Game.SpeechFont, 15,"This is a text overlay");
+Wait(40);
+myOverlay.Remove();
+```
 
 will display a 120 pixels text area with its upper left corner at
 coordinates 50,80 containing the string "This is a text overlay" using
@@ -155,16 +169,20 @@ removed.
 
 *(Formerly known as `RemoveOverlay`, which is now obsolete)*
 
-    Overlay.Remove()
+```ags
+Overlay.Remove()
+```
 
 Removes the specified overlay from the screen. Use this when you are
 done using the overlay.
 
 Example:
 
-    Overlay* myOverlay = Overlay.CreateTextual(50,80,120,2,15,"This is a text overlay");
-    Wait(200);
-    myOverlay.Remove();
+```ags
+Overlay* myOverlay = Overlay.CreateTextual(50,80,120,2,15,"This is a text overlay");
+Wait(200);
+myOverlay.Remove();
+```
 
 will create a text overlay , wait for 200 game cycles (about 5 seconds)
 and then remove the overlay from the screen.
@@ -177,7 +195,9 @@ and then remove the overlay from the screen.
 
 *(Formerly known as `SetTextOverlay`, which is now obsolete)*
 
-    Overlay.SetText(int width, FontType font, int color, string text, ...)
+```ags
+Overlay.SetText(int width, FontType font, int color, string text, ...)
+```
 
 Replaces the specified overlay with a new one, at the same co-ordinates
 but with the new specified text, width, font and color.
@@ -188,9 +208,11 @@ section.
 
 Example:
 
-    Overlay* myOverlay = Overlay.CreateTextual(50,80,120,Game.SpeechFont,15,"This is a text overlay");
-    Wait(200);
-    myOverlay.SetText(120,Game.SpeechFont,15,"This is another text overlay");
+```ags
+Overlay* myOverlay = Overlay.CreateTextual(50,80,120,Game.SpeechFont,15,"This is a text overlay");
+Wait(200);
+myOverlay.SetText(120,Game.SpeechFont,15,"This is another text overlay");
+```
 
 will create a text overlay , wait for 200 game cycles (about 5 seconds)
 and then replace the overlay with another one.
@@ -202,7 +224,9 @@ and then replace the overlay with another one.
 
 ### `Overlay.Graphic`
 
-    int Overlay.Graphic;
+```ags
+int Overlay.Graphic;
+```
 
 Gets/sets the sprite slot number that the overlay is currently using. Textual overlays always return -1, as their image is generated and stored internally, and does not have a formal "number". Setting `Graphic` of a textual overlay will effectively change them to a graphical overlay.
 
@@ -220,7 +244,9 @@ Gets/sets the sprite slot number that the overlay is currently using. Textual ov
 
 ### `Overlay.GraphicHeight`
 
-    readonly int Overlay.GraphicHeight;
+```ags
+readonly int Overlay.GraphicHeight;
+```
 
 Gets the original height of the overlay's image. This property may be used to know the unscaled image's size (as [`Height`](Overlay#overlayheight) property scales it), which is useful if the original sprite was disposed, or for textual overlays that generate its own internal image.
 
@@ -233,7 +259,9 @@ Gets the original height of the overlay's image. This property may be used to kn
 
 ### `Overlay.GraphicWidth`
 
-    readonly int Overlay.GraphicWidth;
+```ags
+readonly int Overlay.GraphicWidth;
+```
 
 Gets the original width of the overlay's image. This property may be used to know the unscaled image's size (as [`Width`](Overlay#overlaywidth) property scales it), which is useful if the original sprite was disposed, or for textual overlays that generate its own internal image.
 
@@ -247,7 +275,9 @@ Gets the original width of the overlay's image. This property may be used to kno
 
 ### `Overlay.Height`
 
-    int Overlay.Height;
+```ags
+int Overlay.Height;
+```
 
 Gets/sets the height of this overlay. Changing this property *will stretch or shrink* the overlay's image vertically. Works with both graphical and textual overlays.
 
@@ -259,7 +289,9 @@ Gets/sets the height of this overlay. Changing this property *will stretch or sh
 
 ### `Overlay.InRoom`
 
-    readonly bool Overlay.InRoom;
+```ags
+readonly bool Overlay.InRoom;
+```
 
 Tells whether current overlay is a room (returns "true") or screen (if "false") overlay.
 
@@ -272,7 +304,9 @@ Tells whether current overlay is a room (returns "true") or screen (if "false") 
 
 ### `Overlay.Transparency`
 
-    int Overlay.Transparency;
+```ags
+int Overlay.Transparency;
+```
 
 Gets/sets the transparency of this overlay.
 
@@ -288,17 +322,21 @@ Gets/sets the transparency of this overlay.
 
 *(Formerly known as `IsOverlayValid`, which is now obsolete)*
 
-    readonly bool Overlay.Valid;
+```ags
+readonly bool Overlay.Valid;
+```
 
 Checks whether the overlay is a current overlay or not. Returns 1 if it
 is, 0 if it isn't.
 
 Example:
 
-    Overlay* myOverlay = Overlay.CreateTextual(50,80,120,2,15,"This is a text overlay");
-    Display("Overlay valid before: %d", myOverlay.Valid);
-    myOverlay.Remove();
-    Display("Overlay valid after: %d", myOverlay.Valid);
+```ags
+Overlay* myOverlay = Overlay.CreateTextual(50,80,120,2,15,"This is a text overlay");
+Display("Overlay valid before: %d", myOverlay.Valid);
+myOverlay.Remove();
+Display("Overlay valid after: %d", myOverlay.Valid);
+```
 
 creates an overlay, and prints out the Valid property (which will be 1).
 Then, removes the overlay and prints Valid again (which will now be 0).
@@ -310,7 +348,9 @@ Then, removes the overlay and prints Valid again (which will now be 0).
 
 ### `Overlay.Width`
 
-    int Overlay.Width;
+```ags
+int Overlay.Width;
+```
 
 Get/sets the width of this overlay. Changing this property *will stretch or shrink* the overlay's image horizontally. Works with both graphical and textual overlays.
 
@@ -324,7 +364,9 @@ Get/sets the width of this overlay. Changing this property *will stretch or shri
 
 *(Formerly known as `MoveOverlay`, which is now obsolete)*
 
-    int Overlay.X;
+```ags
+int Overlay.X;
+```
 
 Gets/sets the X co-ordinate of the overlay (i.e. the left hand side of
 the overlay).
@@ -333,12 +375,14 @@ This allows you to dynamically move overlays around the screen.
 
 Example:
 
-    Overlay* testOverlay = Overlay.CreateTextual(50,80,120,2,15,"This is a text overlay");
-    while (testOverlay.X < 100) {
-      testOverlay.X++;
-      Wait(1);
-    }
-    testOverlay.Remove();
+```ags
+Overlay* testOverlay = Overlay.CreateTextual(50,80,120,2,15,"This is a text overlay");
+while (testOverlay.X < 100) {
+    testOverlay.X++;
+    Wait(1);
+}
+testOverlay.Remove();
+```
 
 creates a text overlay, then gradually slides it across the screen.
 
@@ -352,7 +396,9 @@ creates a text overlay, then gradually slides it across the screen.
 
 *(Formerly known as `MoveOverlay`, which is now obsolete)*
 
-    int Overlay.Y;
+```ags
+int Overlay.Y;
+```
 
 Gets/sets the Y co-ordinate of the overlay (i.e. the top edge of the
 overlay).
@@ -361,12 +407,14 @@ This allows you to dynamically move overlays around the screen.
 
 Example:
 
-    Overlay* testOverlay = Overlay.CreateTextual(50,50,120,2,15,"This is a text overlay");
-    while (testOverlay.Y < 100) {
-      testOverlay.Y++;
-      Wait(1);
-    }
-    testOverlay.Remove();
+```ags
+Overlay* testOverlay = Overlay.CreateTextual(50,50,120,2,15,"This is a text overlay");
+while (testOverlay.Y < 100) {
+    testOverlay.Y++;
+    Wait(1);
+}
+testOverlay.Remove();
+```
 
 creates a text overlay, then gradually slides it down the screen.
 
@@ -378,7 +426,9 @@ creates a text overlay, then gradually slides it down the screen.
 
 ### `Overlay.ZOrder`
 
-    int Overlay.ZOrder;
+```ags
+int Overlay.ZOrder;
+```
 
 Gets/sets the overlay's z-order relative to other overlays and on-screen objects.
 

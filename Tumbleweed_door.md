@@ -4,7 +4,7 @@ This template implements a clever door scripting system, which is a real time-sa
 It uses a hotspot for the closed door and a non-clickable object, to show the opened door.
 If you enter a room the first time, you have to set up its containing doors:
 
-```
+```ags
 function room_FirstLoad()
 {
         // Lock door on startup when entering the room
@@ -16,7 +16,7 @@ function room_FirstLoad()
 This will set up a door with the id 20 to the state 2, locked. With "Doors.InitObject", you connect the object, displaying a sprite of an opened door, with the door ID.
 Now let's take a look at your hotspot's function:
 
-```
+```ags
 function hDoor_AnyClick()
 {
         if (Doors.AnyClick(20, oDoor.ID, 61, 104, eDir_Left, 1, 115, 135, eDir_Down)==0) Verbs.Unhandled();
@@ -30,7 +30,7 @@ If you want to have the script to show the correct default actions, you also nee
 so look for a function, called VariableExtensions.
 In Verbs.VariableExtensions, look at this line:
 
-```
+```ags
 if (r==1 && h == 1)
 Verbs.OpenCloseExtension (20);
 ```
@@ -44,7 +44,7 @@ To define the messages, the player character says, when approaching a door, you 
 
 ### `Verbs.SetDoorState`
 
-```
+```ags
 void Doors.SetDoorState(int door_id, int value);
 ```
 
@@ -63,7 +63,7 @@ A door can have 3 different states:
 
 ### `Verbs.GetDoorState`
 
-```
+```ags
 int Doors.GetDoorState(int door_id);
 ```
 
@@ -81,7 +81,7 @@ Returns the current state of a door.
 
 ### `Verbs.InitObject`
 
-```
+```ags
 void Doors.InitObject(int door_id, int act_object);
 ```
 
@@ -95,7 +95,7 @@ Otherwise, the object will be shown. The object stays unclickable all the time.
 
 ### `Verbs.AnyClick`
 
-```
+```ags
 int Doors.AnyClick(int door_id, int act_object, int x, int y, eDirection dir, int nr_room, int nr_x, int nr_y, eDirection nr_dir);
 ```
 
@@ -121,7 +121,7 @@ You need Doors.AnyClickSpecial for that.
 
 ### `Verbs.AnyClickSpecial`
 
-```
+```ags
 int Doors.AnyClickSpecial(int door_id, int act_object, int x, int y, eDirection dir, int nr_room, int nr_x, int nr_y, eDirection nr_dir, AudioClip *opensound, AudioClip *closesound, int key, int closevalue);
 ```
 

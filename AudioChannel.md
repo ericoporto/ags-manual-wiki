@@ -8,17 +8,21 @@ them.
 
 ### `AudioChannel.Pause`
 
-    AudioChannel.Pause()
+```ags
+AudioChannel.Pause()
+```
 
 Pauses the playback on this channel
 
 Example:
 
-    AudioChannel *channel = aMusic.Play();
-    Display("After this message the audio will pause, but we may unpause soon")
-    channel.Pause();
-    Display("After this message the audio will keep playing")
-    channel.Resume();
+```ags
+AudioChannel *channel = aMusic.Play();
+Display("After this message the audio will pause, but we may unpause soon")
+channel.Pause();
+Display("After this message the audio will keep playing")
+channel.Resume();
+```
 
 will start playing the *aMusic* audio clip, and then pause after the first message and resume after the second message.
 
@@ -30,17 +34,21 @@ will start playing the *aMusic* audio clip, and then pause after the first messa
 
 ### `AudioChannel.Resume`
 
-    AudioChannel.Resume()
+```ags
+AudioChannel.Resume()
+```
 
 Resumes the paused audio channel.
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    Wait(20);
-    channel.Pause();
-    Wait(20);
-    channel.Resume();
+```ags
+AudioChannel *channel = aExplosion.Play();
+Wait(20);
+channel.Pause();
+Wait(20);
+channel.Resume();
+```
 
 will start playing the *aExplosion* audio clip, wait 20 ticks, pause, wait 20 ticks in silence, then continue playing.
 
@@ -56,7 +64,9 @@ will start playing the *aExplosion* audio clip, wait 20 ticks, pause, wait 20 ti
 *(Formerly known as `SeekMODPattern`, which is now obsolete)*<br>
 *(Formerly known as `SeekMP3PosMillis`, which is now obsolete)*
 
-    AudioChannel.Seek(int position)
+```ags
+AudioChannel.Seek(int position)
+```
 
 Seeks the audio clip that is currently playing on this channel to
 *position*.
@@ -71,9 +81,11 @@ What *position* represents depends on the FileType of the audio clip:
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    Wait(40);
-    channel.Seek(0);
+```ags
+AudioChannel *channel = aExplosion.Play();
+Wait(40);
+channel.Seek(0);
+```
 
 will start playing the *aExplosion* audio clip, wait for a second, then
 seek it back to the start.
@@ -86,16 +98,20 @@ seek it back to the start.
 
 ### `AudioChannel.SeekMs`
 
-    AudioChannel.SeekMs(int position)
+```ags
+AudioChannel.SeekMs(int position)
+```
 
 Seeks the audio clip that is currently playing on this channel to
 *position* in milliseconds.
 
 Example:
 
-    AudioChannel *channel = aMusic.Play();
-    Wait(40);
-    channel.SeekMs(10000);
+```ags
+AudioChannel *channel = aMusic.Play();
+Wait(40);
+channel.SeekMs(10000);
+```
 
 will start playing the *aMusic* audio clip, wait for a second, then
 jump to 10 seconds position and continue from there.
@@ -110,7 +126,9 @@ jump to 10 seconds position and continue from there.
 
 *(Formerly part of `PlayAmbientSound`, which is now obsolete)*
 
-    AudioChannel.SetRoomLocation(int x, int y)
+```ags
+AudioChannel.SetRoomLocation(int x, int y)
+```
 
 Sets the currently playing audio to be a directional sound, emanating
 from (x,y).
@@ -128,8 +146,10 @@ return this channel to playing at its normal volume.
 
 Example:
 
-    AudioChannel *channel = aMachine.Play();
-    channel.SetRoomLocation(oMachine.X, oMachine.Y);
+```ags
+AudioChannel *channel = aMachine.Play();
+channel.SetRoomLocation(oMachine.X, oMachine.Y);
+```
 
 will start playing the *aMachine* audio clip, and set it at the location
 of the *oMachine* room object.
@@ -143,7 +163,9 @@ of the *oMachine* room object.
 
 ### `AudioChannel.Speed`
 
-    int AudioChannel.Speed
+```ags
+int AudioChannel.Speed
+```
 
 Gets/sets the playing audio clip's playback speed. The value is defined
 in clip's milliseconds per second: 1000 is default, meaning 1000 of
@@ -153,8 +175,10 @@ audio clips only.
 
 Example:
 
-    AudioChannel *channel = aFunnyTalk.Play();
-    channel.Speed = 2000;
+```ags
+AudioChannel *channel = aFunnyTalk.Play();
+channel.Speed = 2000;
+```
 
 plays *aFunnyTalk* clip at the double speed.
 
@@ -167,15 +191,19 @@ plays *aFunnyTalk* clip at the double speed.
 *(Formerly known as `StopAmbientSound`, which is now obsolete)*<br>
 *(Formerly known as `StopChannel`, which is now obsolete)*
 
-    AudioChannel.Stop()
+```ags
+AudioChannel.Stop()
+```
 
 Stops the sound that is currently playing on this audio channel.
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    Wait(40);
-    channel.Stop();
+```ags
+AudioChannel *channel = aExplosion.Play();
+Wait(40);
+channel.Stop();
+```
 
 will start playing the *aExplosion* audio clip, wait for a second, then
 stop it.
@@ -188,7 +216,9 @@ stop it.
 
 ### `AudioChannel.ID`
 
-    readonly int AudioChannel.ID
+```ags
+readonly int AudioChannel.ID
+```
 
 Gets the Channel ID of this audio channel. You will not normally need to
 use this, but it can be used for inter-operating with legacy commands
@@ -196,8 +226,10 @@ such as StopChannel.
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    Display("Explosion playing on channel %d", channel.ID);
+```ags
+AudioChannel *channel = aExplosion.Play();
+Display("Explosion playing on channel %d", channel.ID);
+```
 
 will start playing the *aExplosion* audio clip, and display which
 channel it is playing on.
@@ -208,7 +240,9 @@ channel it is playing on.
 
 ### `AudioChannel.IsPaused`
 
-    readonly bool AudioChannel.IsPaused
+```ags
+readonly bool AudioChannel.IsPaused
+```
 
 Gets whether this audio channel is currently paused. Returns
 *true* if it is, or *false* if it is not.
@@ -223,16 +257,20 @@ Gets whether this audio channel is currently paused. Returns
 
 *(Formerly known as `IsChannelPlaying`, which is now obsolete)*
 
-    readonly bool AudioChannel.IsPlaying
+```ags
+readonly bool AudioChannel.IsPlaying
+```
 
 Gets whether this audio channel is currently playing a sound. Returns
 *true* if it is, or *false* if it is not.
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    while (channel.IsPlaying) Wait(1);
-    Display("Finished playing the explosion");
+```ags
+AudioChannel *channel = aExplosion.Play();
+while (channel.IsPlaying) Wait(1);
+Display("Finished playing the explosion");
+```
 
 will start playing the *aExplosion* audio clip, and wait until it
 finishes.
@@ -245,7 +283,9 @@ finishes.
 
 ### `AudioChannel.LengthMs`
 
-    readonly int AudioChannel.LengthMs
+```ags
+readonly int AudioChannel.LengthMs
+```
 
 Gets the length of the audio playing on this channel, in milliseconds.
 
@@ -256,8 +296,10 @@ If this channel is not currently playing any audio, returns 0.
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    Display("The Explosion sound is %d ms long.", channel.LengthMs);
+```ags
+AudioChannel *channel = aExplosion.Play();
+Display("The Explosion sound is %d ms long.", channel.LengthMs);
+```
 
 will start playing the *aExplosion* audio clip, then display its length.
 
@@ -269,7 +311,9 @@ will start playing the *aExplosion* audio clip, then display its length.
 
 ### `AudioChannel.Panning`
 
-    int AudioChannel.Panning
+```ags
+int AudioChannel.Panning
+```
 
 Gets/sets the panning of this audio channel.
 
@@ -282,8 +326,10 @@ speakers. However you can adjust this between -100 (fully left) to 100
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    channel.Panning = -100;
+```ags
+AudioChannel *channel = aExplosion.Play();
+channel.Panning = -100;
+```
 
 will start playing the *aExplosion* audio clip on the left speaker only.
 
@@ -297,7 +343,9 @@ will start playing the *aExplosion* audio clip on the left speaker only.
 
 *(Formerly known as `GetCurrentMusic`, which is now obsolete)*
 
-    readonly AudioClip* AudioChannel.PlayingClip
+```ags
+readonly AudioClip* AudioChannel.PlayingClip
+```
 
 Gets the audio clip that is playing on this channel. This allows you to
 find out the type of the clip, and other information.
@@ -306,15 +354,17 @@ Returns *null* if there is no sound currently playing on this channel.
 
 Example:
 
-    AudioChannel *channel = System.AudioChannels[2];
-    if (channel.PlayingClip == null)
-    {
-      Display("Nothing is playing on channel 2");
-    }
-    else
-    {
-      Display("Channel 2 is playing a clip of type %d", channel.PlayingClip.Type);
-    }
+```ags
+AudioChannel *channel = System.AudioChannels[2];
+if (channel.PlayingClip == null)
+{
+    Display("Nothing is playing on channel 2");
+}
+else
+{
+    Display("Channel 2 is playing a clip of type %d", channel.PlayingClip.Type);
+}
+```
 
 will display what is currently playing on audio channel 2.
 
@@ -331,7 +381,9 @@ will display what is currently playing on audio channel 2.
 *(Formerly known as `GetMODPattern`, which is now obsolete)*<br>
 *(Formerly known as `GetMP3PosMillis`, which is now obsolete)*
 
-    readonly int AudioChannel.Position
+```ags
+readonly int AudioChannel.Position
+```
 
 Gets the current position of the audio playing on this channel.
 
@@ -349,9 +401,11 @@ position within the audio file, use the
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    Wait(40);
-    channel.Seek(channel.Position + 1000);
+```ags
+AudioChannel *channel = aExplosion.Play();
+Wait(40);
+channel.Seek(channel.Position + 1000);
+```
 
 will start playing the *aExplosion* audio clip, wait for a second, then
 seek it ahead one second (if it is OGG/MP3/WAV).
@@ -369,7 +423,9 @@ seek it ahead one second (if it is OGG/MP3/WAV).
 
 ### `AudioChannel.PositionMs`
 
-    readonly int AudioChannel.PositionMs
+```ags
+readonly int AudioChannel.PositionMs
+```
 
 Gets the current position of the audio playing on this channel, in
 milliseconds.
@@ -383,9 +439,11 @@ position within the audio file, use the
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    Wait(40);
-    Display("After 1 second, offset is %d ms.", channel.PositionMs);
+```ags
+AudioChannel *channel = aExplosion.Play();
+Wait(40);
+Display("After 1 second, offset is %d ms.", channel.PositionMs);
+```
 
 will start playing the *aExplosion* audio clip, wait for a second, then
 display its position.
@@ -407,7 +465,9 @@ display its position.
 *(Formerly known as `SetChannelVolume`, which is now obsolete)*<br>
 *(Formerly known as `SetMusicVolume`, which is now obsolete)*
 
-    int AudioChannel.Volume
+```ags
+int AudioChannel.Volume
+```
 
 Gets/sets the volume of this audio channel, from 0 to 100. This allows
 you to dynamically adjust the volume of a playing sound.
@@ -427,9 +487,11 @@ playing.
 
 Example:
 
-    AudioChannel *channel = aExplosion.Play();
-    Wait(40);
-    channel.Volume = 20;
+```ags
+AudioChannel *channel = aExplosion.Play();
+Wait(40);
+channel.Volume = 20;
+```
 
 will start playing the *aExplosion* audio clip, wait for a second, then
 reduce its volume.

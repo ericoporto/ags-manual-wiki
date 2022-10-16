@@ -2,7 +2,9 @@
 
 ### `CyclePalette`
 
-    CyclePalette (int start, int end)
+```ags
+CyclePalette (int start, int end)
+```
 
 This is used for special effects, like the flowing colors on the Space
 Quest 4 title screen, and the Sierra logo of the later Sierra games. The
@@ -17,7 +19,9 @@ then the colors will rotate in the opposite direction.
 
 Example:
 
-    CyclePalette(10,200);
+```ags
+CyclePalette(10,200);
+```
 
 will cause the palette indexes from 10 to 200 cycle around one slot and
 give a color effect.
@@ -29,7 +33,9 @@ give a color effect.
 
 ### `SetPalRGB`
 
-    SetPalRGB (int slot, int red, int green, int blue)
+```ags
+SetPalRGB (int slot, int red, int green, int blue)
+```
 
 Changes the RGB components of one of the palette slots. The palette is
 initially set up in the Palette Editor, but you can override it during
@@ -47,7 +53,9 @@ it can cause strange colors in the game.
 
 Example:
 
-    SetPalRGB(10,63,63,21);
+```ags
+SetPalRGB(10,63,63,21);
+```
 
 will change palette slot number 10 from light green to yellow
 
@@ -59,7 +67,9 @@ will change palette slot number 10 from light green to yellow
 
 ### `UpdatePalette`
 
-    UpdatePalette()
+```ags
+UpdatePalette()
+```
 
 Commits the changes you made to the game palette. The script global
 variable `palette[]` stores the state of all the colors of the palette.
@@ -68,8 +78,10 @@ The values range from 0 to 63.
 
 Example:
 
-    palette[16].r = 60;
-    UpdatePalette();
+```ags
+palette[16].r = 60;
+UpdatePalette();
+```
 
 will make the black color turn bright red. When you actually change the
 variable, nothing happens. Call this function to update the screen.

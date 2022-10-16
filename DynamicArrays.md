@@ -32,7 +32,7 @@ On another hand, you cannot have dynamic arrays inside "managed" structs as thei
 
 If you have dynamic array of managed pointers, then after creation all of these pointers will be null. You must also assign individual elements one by one. For example, when you want to fill an array with already existing game objects:
 
-```
+```ags
 Character *groupOfChars[] = new Character[4];
 groupOfChars[0] = cRoger;
 groupOfChars[1] = cMary;
@@ -42,7 +42,7 @@ groupOfChars[3] = cVillager;
 
 Similarily, when you want to create completely new objects:
 
-```
+```ags
 DynamicSprite *sprites[] = new DynamicSprite[4];
 sprites[0] = DynamicSprite.Create(10, 10);
 sprites[1] = DynamicSprite.Create(20, 20);
@@ -52,7 +52,7 @@ sprites[3] = DynamicSprite.Create(50, 10);
 
 Accessing individual elements is as simple as with regular array:
 
-```
+```ags
 int health = characterHealth[5];
 int charX = groupOfChars[3].x;
 sprites[1].Flip(eFlipLeftToRight);
@@ -60,7 +60,7 @@ sprites[1].Flip(eFlipLeftToRight);
 
 You don't *have* to fill all the array indexes of course, you may as well leave some empty (null). Just remember to keep track of that, and if your script may access empty indexes make sure to check if the element is null or not before using it:
 
-```
+```ags
 for (int i = 0; i < numSprites; i++) {
     if (sprites[i] != null) {
         sprites[i].Flip(eFlipLeftToRight);
@@ -77,7 +77,7 @@ Dynamic arrays cannot be resized on their own. If later you require a bigger arr
 
 For example:
 
-```
+```ags
 int arrOfInts[]; // declare a dynamic array of ints
 
 function game_start() {
@@ -99,7 +99,7 @@ Same solution may work when you want to reduce an array to a smaller size, excep
 
 Like most of the dynamically created objects in AGS, dynamic arrays exist so long as it is assigned to at least one pointer. If you have one pointer to array, and you change its value or assign it to null, then the dynamic array will get deleted automatically:
 
-```
+```ags
 int arrOfInts[];
 arrOfInts = new int[100]; // create and assign an array of 100 ints
 arrOfInts = new int[200]; // assign a new array of 200 ints; the previous one is lost and gets deleted
@@ -108,7 +108,7 @@ arrOfInts = null; // now the second array is also lost and get deleted
 
 Note that if you store a dynamic array in a local function variable, that variable will get removed as soon as function ends, and if array was not reassigned to any global pointer, then it also gets deleted automatically.
 
-```
+```ags
 function func() {
     int arrOfInts[] = new int[100];
     <...> // do something with this array
@@ -117,7 +117,7 @@ function func() {
 
 The array will not be deleted if you *return* it from the function; so long as the returned array is assigned to a pointer of course:
 
-```
+```ags
 int[] func_makearr(int size) {
     int arrOfInts[] = new int[size];
     return arrOfInts; // not deleted just yet

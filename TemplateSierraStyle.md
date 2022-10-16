@@ -19,18 +19,22 @@ functions.
 
 Example:
 
-    // configure the player for arcade action
-    KeyboardMovement.Mode = eKeyboardMovementModePressing;
-    KeyboardMovement.KeyUp = eKeyW;
-    KeyboardMovement.KeyDown = eKeyS;
-    KeyboardMovement.KeyLeft = eKeyA;
-    KeyboardMovement.KeyRight = eKeyD;
+```ags
+// configure the player for arcade action
+KeyboardMovement.Mode = eKeyboardMovementModePressing;
+KeyboardMovement.KeyUp = eKeyW;
+KeyboardMovement.KeyDown = eKeyS;
+KeyboardMovement.KeyLeft = eKeyA;
+KeyboardMovement.KeyRight = eKeyD;
+```
 
 ---
 
 ### `KeyboardMovement.Mode`
 
-    KeyboardMovementMode KeyboardMovement.Mode
+```ags
+KeyboardMovementMode KeyboardMovement.Mode
+```
 
 Sets the keyboard movement mode. Possible values are:
 
@@ -42,7 +46,9 @@ Sets the keyboard movement mode. Possible values are:
 
 ### `KeyboardMovement.KeyUp`
 
-    eKeyCode KeyboardMovement.KeyUp
+```ags
+eKeyCode KeyboardMovement.KeyUp
+```
 
 Assigns the key used to move the player upwards.
 
@@ -50,7 +56,9 @@ Assigns the key used to move the player upwards.
 
 ### `KeyboardMovement.KeyDown`
 
-    eKeyCode KeyboardMovement.KeyDown
+```ags
+eKeyCode KeyboardMovement.KeyDown
+```
 
 Assigns the key used to move the player downwards.
 
@@ -58,7 +66,9 @@ Assigns the key used to move the player downwards.
 
 ### `KeyboardMovement.KeyLeft`
 
-    eKeyCode KeyboardMovement.KeyLeft
+```ags
+eKeyCode KeyboardMovement.KeyLeft
+```
 
 Assigns the key used to move the player to the left.
 
@@ -66,7 +76,9 @@ Assigns the key used to move the player to the left.
 
 ### `KeyboardMovement.KeyRight`
 
-    eKeyCode KeyboardMovement.KeyRight
+```ags
+eKeyCode KeyboardMovement.KeyRight
+```
 
 Assigns the key used to move the player to the right.
 

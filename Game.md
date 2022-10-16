@@ -2,7 +2,9 @@
 
 ### `Game.ChangeSpeechVox`
 
-    static bool Game.ChangeSpeechVox(const string newVoxName)
+```ags
+static bool Game.ChangeSpeechVox(const string newVoxName)
+```
 
 Changes the active voice pack to a file called *sp_newvoxname.vox*, where "newvoxname" is passed as a function argument. E.g. if you have _sp_francais.vox_ in your game file, then you can do Game.ChangeSpeechVox("francais") to switch to it. Passing a blank string will revert the game to the default voice pack called *speech.vox*.
 
@@ -12,11 +14,13 @@ Returns *true* if the voice pack was changed successfully, or *false* if there w
 
 Example:
 
-    if (Game.ChangeSpeechVox("Spanish")) {
-      Display("Changed the voice-over to Spanish!");
-    } else {
-      Display("Unable to change the voice-over.");
-    }
+```ags
+if (Game.ChangeSpeechVox("Spanish")) {
+    Display("Changed the voice-over to Spanish!");
+} else {
+    Display("Unable to change the voice-over.");
+}
+```
 
 will attempt to change the voice pack to *sp_spanish.vox*.
 
@@ -30,7 +34,9 @@ will attempt to change the voice pack to *sp_spanish.vox*.
 
 ### `Game.ChangeTranslation`
 
-    static bool Game.ChangeTranslation(const string newTranslationName)
+```ags
+static bool Game.ChangeTranslation(const string newTranslationName)
+```
 
 Changes the active translation to *newTranslationName*. This must be the
 file name without the extension, for example \"French\" or \"Spanish\".
@@ -46,14 +52,16 @@ translation).
 
 Example:
 
-    if (Game.ChangeTranslation("Spanish") == true)
-    {
-      Display("Changed the translation to Spanish!");
-    }
-    else
-    {
-      Display("Unable to change the translation");
-    }
+```ags
+if (Game.ChangeTranslation("Spanish") == true)
+{
+    Display("Changed the translation to Spanish!");
+}
+else
+{
+    Display("Unable to change the translation");
+}
+```
 
 will attempt to change the translation to Spanish
 
@@ -70,7 +78,9 @@ will attempt to change the translation to Spanish
 
 ### `Game.DoOnceOnly`
 
-    static bool Game.DoOnceOnly(const string token)
+```ags
+static bool Game.DoOnceOnly(const string token)
+```
 
 This function gives you an easy way of making some code run only the
 first time that the player encounters it. It is commonly used for
@@ -90,9 +100,11 @@ Returns *true* the first time that it is called with this token, and
 
 Example:
 
-    if (Game.DoOnceOnly("open cupboard")) {
-      GiveScore(5);
-    }
+```ags
+if (Game.DoOnceOnly("open cupboard")) {
+    GiveScore(5);
+}
+```
 
 will give the player 5 points the first time this script is run.
 
@@ -104,7 +116,9 @@ will give the player 5 points the first time this script is run.
 
 *(Formerly known as `RawSetColorRGB`, which is now obsolete)*
 
-    static int Game.GetColorFromRGB(int red, int green, int blue)
+```ags
+static int Game.GetColorFromRGB(int red, int green, int blue)
+```
 
 Gets the AGS Color Number for the specified RGB color. The red, green
 and blue components are values from 0 to 255. This function gives you a
@@ -118,10 +132,12 @@ scanned to find the nearest matching color.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = Game.GetColorFromRGB(0, 255, 0);
-    surface.DrawLine(0, 0, 50, 50);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = Game.GetColorFromRGB(0, 255, 0);
+surface.DrawLine(0, 0, 50, 50);
+surface.Release();
+```
 
 will draw a bright green line onto the room background
 
@@ -134,7 +150,9 @@ will draw a bright green line onto the room background
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    static int Game.GetFrameCountForLoop(int view, int loop)
+```ags
+static int Game.GetFrameCountForLoop(int view, int loop)
+```
 
 Returns the number of frames in the specified loop of the specified
 view.
@@ -144,8 +162,10 @@ view.
 
 Example:
 
-    int frameCount = Game.GetFrameCountForLoop(SWIMMING, 2);
-    Display("Loop 2 in SWIMMING view has %d frames.", frameCount);
+```ags
+int frameCount = Game.GetFrameCountForLoop(SWIMMING, 2);
+Display("Loop 2 in SWIMMING view has %d frames.", frameCount);
+```
 
 *See also:*
 [`Game.GetLoopCountForView`](Game#gamegetloopcountforview),
@@ -159,7 +179,9 @@ Example:
 *(Formerly known as global function `GetLocationName`, which is now
 obsolete)*
 
-    static String Game.GetLocationName(int x, int y)
+```ags
+static String Game.GetLocationName(int x, int y)
+```
 
 Returns the name of whatever is seen in the room under the given screen coordinates (x, y).
 
@@ -175,8 +197,10 @@ the player moves the cursor over them.
 
 Example:
 
-    String location = Game.GetLocationName(mouse.x, mouse.y);
-    lblDescription.Text = location;
+```ags
+String location = Game.GetLocationName(mouse.x, mouse.y);
+lblDescription.Text = location;
+```
 
 will get the name of whatever the mouse is over into the string variable and then assign to a label lblDescription.
 
@@ -191,7 +215,9 @@ will get the name of whatever the mouse is over into the string variable and the
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    static int Game.GetLoopCountForView(int view)
+```ags
+static int Game.GetLoopCountForView(int view)
+```
 
 Returns the number of loops in the specified view.
 
@@ -200,8 +226,10 @@ Returns the number of loops in the specified view.
 
 Example:
 
-    int loops = Game.GetLoopCountForView(SWIMMING);
-    Display("The SWIMMING view (view %d) has %d loops.", SWIMMING, loops);
+```ags
+int loops = Game.GetLoopCountForView(SWIMMING);
+Display("The SWIMMING view (view %d) has %d loops.", SWIMMING, loops);
+```
 
 *See also:*
 [`Game.GetRunNextSettingForLoop`](Game#gamegetrunnextsettingforloop),
@@ -214,7 +242,9 @@ Example:
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    static bool Game.GetRunNextSettingForLoop(int view, int loop)
+```ags
+static bool Game.GetRunNextSettingForLoop(int view, int loop)
+```
 
 Returns whether the specified loop in the specified view has the \"Run
 the next loop after this one\" option checked.
@@ -224,12 +254,14 @@ the next loop after this one\" option checked.
 
 Example:
 
-    if (Game.GetRunNextSettingForLoop(SWIMMING, 5) == true) {
-      Display("Loop 5 in view SWIMMING does have Run Next Loop set.");
-    }
-    else {
-      Display("Loop 5 in view SWIMMING does not have Run Next Loop set.");
-    }
+```ags
+if (Game.GetRunNextSettingForLoop(SWIMMING, 5) == true) {
+    Display("Loop 5 in view SWIMMING does have Run Next Loop set.");
+}
+else {
+    Display("Loop 5 in view SWIMMING does not have Run Next Loop set.");
+}
+```
 
 *See also:*
 [`Game.GetLoopCountForView`](Game#gamegetloopcountforview),
@@ -243,7 +275,9 @@ Example:
 *(Formerly known as global function `GetSaveSlotDescription`, which is now
 obsolete)*
 
-    static String Game.GetSaveSlotDescription(int slot)
+```ags
+static String Game.GetSaveSlotDescription(int slot)
+```
 
 Gets the text description of save game slot SLOT.
 
@@ -251,7 +285,9 @@ If the slot number provided does not exist, returns *null*.
 
 Example:
 
-    String description = Game.GetSaveSlotDescription(10);
+```ags
+String description = Game.GetSaveSlotDescription(10);
+```
 
 will get the description of save slot 10 into the variable.
 
@@ -266,7 +302,9 @@ will get the description of save slot 10 into the variable.
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    static ViewFrame* Game.GetViewFrame(int view, int loop, int frame)
+```ags
+static ViewFrame* Game.GetViewFrame(int view, int loop, int frame)
+```
 
 Returns a *ViewFrame* instance for the specified frame in the specified
 loop of the specified view.
@@ -279,8 +317,10 @@ as its graphic, its frame-linked sound setting, and so forth.
 
 Example:
 
-    ViewFrame *frame = Game.GetViewFrame(SWIMMING, 2, 3);
-    Display("Frame 3 in loop 2 of view SWIMMING has sprite slot %d.", frame.Graphic);
+```ags
+ViewFrame *frame = Game.GetViewFrame(SWIMMING, 2, 3);
+Display("Frame 3 in loop 2 of view SWIMMING has sprite slot %d.", frame.Graphic);
+```
 
 *See also:*
 [`Game.GetLoopCountForView`](Game#gamegetloopcountforview),
@@ -295,7 +335,9 @@ Example:
 
 *(Formerly known as global function `InputBox`, which is now obsolete)*
 
-    static String Game.InputBox(string prompt)
+```ags
+static String Game.InputBox(string prompt)
+```
 
 Pops up a window asking the user to type in a string, with PROMPT as the
 text in the window. Whatever they type in will be returned from this
@@ -315,7 +357,9 @@ this Cancel button (or the ESC key), a blank string is returned.
 
 Example:
 
-    String name = Game.InputBox("!What is your name?");
+```ags
+String name = Game.InputBox("!What is your name?");
+```
 
 will prompt the user for his name and store it in the string NAME. If
 the user presses Cancel, the NAME string will be blank.
@@ -329,7 +373,9 @@ the user presses Cancel, the NAME string will be blank.
 *(Formerly known as `IsMusicPlaying`, which is now obsolete)*<br>
 *(Formerly known as `IsSoundPlaying`, which is now obsolete)*
 
-    static bool Game.IsAudioPlaying(optional AudioType)
+```ags
+static bool Game.IsAudioPlaying(optional AudioType)
+```
 
 Returns *true* if there is currently audio playing of the specified
 type. If you don't supply an audio type, then *true* will be returned
@@ -340,10 +386,12 @@ use this to wait for some music to finish playing, for example.
 
 Example:
 
-    while (Game.IsAudioPlaying(eAudioTypeMusic))
-    {
-      Wait(1);
-    }
+```ags
+while (Game.IsAudioPlaying(eAudioTypeMusic))
+{
+    Wait(1);
+}
+```
 
 waits for any currently playing music to finish.
 
@@ -355,7 +403,9 @@ waits for any currently playing music to finish.
 
 ### `Game.IsPluginLoaded`
 
-    static bool Game.IsPluginLoaded(const string name)
+```ags
+static bool Game.IsPluginLoaded(const string name)
+```
 
 Checks whether the plugin of the given *name* was present and loaded for
 the game.
@@ -368,9 +418,11 @@ from game script, but just run on their own.
 
 Example:
 
-    if (Game.IsPluginLoaded("my_plugin")) {
-      Display("My plugin is found and running!");
-    }
+```ags
+if (Game.IsPluginLoaded("my_plugin")) {
+    Display("My plugin is found and running!");
+}
+```
 
 will display a message if plugin is present.
 
@@ -378,7 +430,9 @@ will display a message if plugin is present.
 
 ### `Game.PlayVoiceClip`
 
-    static AudioChannel* Game.PlayVoiceClip(Character* c, int cue, bool as_speech)
+```ags
+static AudioChannel* Game.PlayVoiceClip(Character* c, int cue, bool as_speech)
+```
 
 Plays a voice clip from the **speech.vox** in a non-blocking manner. It returns an AudioChannel pointer which you may use to control playback same way you control other clips, or null if it could not be started.
 
@@ -400,7 +454,9 @@ This command will be ignored if a regular blocking voice is currently playing. A
 
 *(Formerly known as `game.speech_music_drop`, which is now obsolete)*
 
-    static Game.SetAudioTypeSpeechVolumeDrop(AudioType, int volumeReduction)
+```ags
+static Game.SetAudioTypeSpeechVolumeDrop(AudioType, int volumeReduction)
+```
 
 Changes the VolumeReductionWhileSpeechPlaying of the specified
 *AudioType*. This changes the setting, initially set in the Audio Types
@@ -412,7 +468,9 @@ silence these audio clips while speech is playing.
 
 Example:
 
-    Game.SetAudioTypeSpeechVolumeDrop(eAudioTypeMusic, 25);
+```ags
+Game.SetAudioTypeSpeechVolumeDrop(eAudioTypeMusic, 25);
+```
 
 will reduce the volume of Music audio clips by 25 percentage points
 while speech is playing.
@@ -427,7 +485,9 @@ while speech is playing.
 
 *(Formerly known as `SetSoundVolume`, which is now obsolete)*
 
-    static Game.SetAudioTypeVolume(AudioType, int volume, ChangeVolumeType)
+```ags
+static Game.SetAudioTypeVolume(AudioType, int volume, ChangeVolumeType)
+```
 
 Changes the default volume of the specified *AudioType*. This allows you
 to change the volume of all audio clips of a particular type, so that
@@ -438,9 +498,11 @@ sound of that type completely.
 
 Possible values for *ChangeVolumeType* are:
 
-    eVolChangeExisting      change the volume of currently playing audio clips
-    eVolSetFutureDefault    change the default volume for clips of this type
-    eVolExistingAndFuture   change both currently playing and future audio
+```ags
+eVolChangeExisting      change the volume of currently playing audio clips
+eVolSetFutureDefault    change the default volume for clips of this type
+eVolExistingAndFuture   change both currently playing and future audio
+```
 
 Initially general AudioType volume is not set, meaning that all future
 audio will be playing using their own custom volumes. If you use the
@@ -451,7 +513,9 @@ be lost.
 
 Example:
 
-    Game.SetAudioTypeVolume(eAudioTypeMusic, 20, eVolExistingAndFuture);
+```ags
+Game.SetAudioTypeVolume(eAudioTypeMusic, 20, eVolExistingAndFuture);
+```
 
 will change the volume of all currently playing and future music to
 `20%`.
@@ -467,7 +531,9 @@ will change the volume of all currently playing and future music to
 
 ### `Game.SetSaveGameDirectory`
 
-    static bool Game.SetSaveGameDirectory(string directory)
+```ags
+static bool Game.SetSaveGameDirectory(string directory)
+```
 
 Changes the directory where save game files are stored to the supplied
 *directory*. If the directory does not exist, AGS will attempt to create
@@ -499,7 +565,9 @@ General Settings of the editor should be sufficient.
 
 Example:
 
-    Game.SetSaveGameDirectory("$MYDOCS$/My Cool Game Saves");
+```ags
+Game.SetSaveGameDirectory("$MYDOCS$/My Cool Game Saves");
+```
 
 will change the save game directory to \"My Cool Game Saves\" in My
 Documents, and create the folder if it does not exist (might be useful
@@ -513,7 +581,9 @@ to do this in game_start).
 
 ### `Game.SimulateKeyPress`
 
-    static Game.SimulateKeyPress(eKeyCode key)
+```ags
+static Game.SimulateKeyPress(eKeyCode key)
+```
 
 Fires a keypress event. This is in all aspects identical to what would happen if a player pressed a key on keyboard. This function may be useful to simulate player actions in game, or create automatic demonstrations (like tutorials).
 
@@ -521,7 +591,9 @@ Fires a keypress event. This is in all aspects identical to what would happen if
 
 Example:
 
-    Game.SimulateKeyPress(eKeySpace);
+```ags
+Game.SimulateKeyPress(eKeySpace);
+```
 
 This simulates a "space" key press.
 
@@ -536,7 +608,9 @@ This simulates a "space" key press.
 *(Formerly known as `Game.StopSound`, which is now obsolete)*<br>
 *(Formerly known as `StopMusic`, which is now obsolete)*
 
-    static Game.StopAudio(optional AudioType)
+```ags
+static Game.StopAudio(optional AudioType)
+```
 
 Stops all currently playing audio. If you pass no parameters, then all
 audio will be stopped. Alternatively, you can pass one of the AudioTypes
@@ -547,7 +621,9 @@ be canceled.
 
 Example:
 
-    Game.StopAudio();
+```ags
+Game.StopAudio();
+```
 
 will stop all currently playing audio.
 
@@ -561,7 +637,9 @@ will stop all currently playing audio.
 
 ### `Game.AudioClipCount`
 
-    readonly static int Game.AudioClipCount
+```ags
+readonly static int Game.AudioClipCount
+```
 
 Returns the number of audio clips in the game.
 
@@ -576,21 +654,25 @@ audio clips for some reason.
 
 ### `Game.AudioClips`
 
-    readonly static int Game.AudioClips[int slot]
+```ags
+readonly static int Game.AudioClips[int slot]
+```
 
 Returns the AudioClip\* pointer by its index in game resources.
 
 Example:
 
-    int i = 0;
-    int music_count = 0;
-    while (i < Game.AudioClipCount)
-    {
-      if (Game.AudioClips[i].Type == eAudioTypeMusic)
-        music_count++;
-      i++;
-    }
-    Display("We have %d musical clips in our game", music_count);
+```ags
+int i = 0;
+int music_count = 0;
+while (i < Game.AudioClipCount)
+{
+    if (Game.AudioClips[i].Type == eAudioTypeMusic)
+    music_count++;
+    i++;
+}
+Display("We have %d musical clips in our game", music_count);
+```
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
@@ -600,7 +682,9 @@ Example:
 
 ### `Game.Camera`
 
-    static readonly Camera* Game.Camera;
+```ags
+static readonly Camera* Game.Camera;
+```
 
 Gets the primary camera. This is the default camera that is created automatically at the start of the game and cannot be deleted.
 
@@ -612,7 +696,9 @@ Gets the primary camera. This is the default camera that is created automaticall
 
 ### `Game.CameraCount`
 
-    static readonly int Game.CameraCount
+```ags
+static readonly int Game.CameraCount
+```
 
 Gets the number of cameras.
 
@@ -624,7 +710,9 @@ Gets the number of cameras.
 
 ### `Game.Cameras`
 
-    static readonly Camera* Game.Cameras[int index];
+```ags
+static readonly Camera* Game.Cameras[int index];
+```
 
 Returns the Camera instance by its index. There's always at least primary camera at the index 0, more could be created in script using [`Camera.Create`](Camera#cameracreate).
 
@@ -632,9 +720,11 @@ Returns the Camera instance by its index. There's always at least primary camera
 
 Example:
 
-    for (int i = 0; i < Game.CameraCount; i++) {
-        Game.Cameras[i].SetAt(0, 0);
-    }
+```ags
+for (int i = 0; i < Game.CameraCount; i++) {
+    Game.Cameras[i].SetAt(0, 0);
+}
+```
 
 This script positions all existing cameras at the room's top-left corner.
 
@@ -648,7 +738,9 @@ This script positions all existing cameras at the room's top-left corner.
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly static int Game.CharacterCount
+```ags
+readonly static int Game.CharacterCount
+```
 
 Returns the number of characters in the game.
 
@@ -657,13 +749,17 @@ characters for some reason.
 
 Example:
 
-    Display("The game has %d characters.", Game.CharacterCount);
+```ags
+Display("The game has %d characters.", Game.CharacterCount);
+```
 
 ---
 
 ### `Game.DialogCount`
 
-    readonly static int Game.DialogCount
+```ags
+readonly static int Game.DialogCount
+```
 
 Returns the number of dialogs in the game.
 
@@ -673,7 +769,9 @@ DialogCount - 1.
 
 Example:
 
-    Display("The game has %d dialogs.", Game.DialogCount);
+```ags
+Display("The game has %d dialogs.", Game.DialogCount);
+```
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
@@ -681,7 +779,9 @@ Example:
 
 ### `Game.FileName`
 
-    readonly static String Game.FileName
+```ags
+readonly static String Game.FileName
+```
 
 Gets the filename that the game is running from. This will usually be
 the name of the EXE file, but could also be \"ac2game.dat\" if you are
@@ -689,7 +789,9 @@ just running the game using ACWIN.EXE.
 
 Example:
 
-    Display("The main game file is: %s", Game.FileName);
+```ags
+Display("The main game file is: %s", Game.FileName);
+```
 
 will display the game filename.
 
@@ -699,7 +801,9 @@ will display the game filename.
 
 ### `Game.FontCount`
 
-    readonly static int Game.FontCount
+```ags
+readonly static int Game.FontCount
+```
 
 Returns the number of fonts in the game.
 
@@ -708,7 +812,9 @@ fonts for some reason.
 
 Example:
 
-    Display("The game has %d fonts.", Game.FontCount);
+```ags
+Display("The game has %d fonts.", Game.FontCount);
+```
 
 ---
 
@@ -717,7 +823,9 @@ Example:
 *(Formerly known as global function `GetMessageText`, which is now
 obsolete)*
 
-    readonly static String Game.GlobalMessages[int message]
+```ags
+readonly static String Game.GlobalMessages[int message]
+```
 
 Gets the text of the specified global message. The message number is one
 of the global message numbers from 500 to 999.
@@ -730,8 +838,10 @@ obsolete. You will not need to use this property in new games.
 
 Example:
 
-    String message = Game.GlobalMessages[997];
-    Display("Global message 997 says: %s", message);
+```ags
+String message = Game.GlobalMessages[997];
+Display("Global message 997 says: %s", message);
+```
 
 will display global message 997.
 
@@ -742,7 +852,9 @@ will display global message 997.
 *(Formerly known as `GetGlobalString`, which is now obsolete)*<br>
 *(Formerly known as `SetGlobalString`, which is now obsolete)*
 
-    static String Game.GlobalStrings[index]
+```ags
+static String Game.GlobalStrings[index]
+```
 
 Gets/sets global string *index*. Global strings provide you with an easy
 way to share string variables between scripts. There are 50 available
@@ -750,8 +862,10 @@ global strings, with *index* values from 0 to 49.
 
 Example:
 
-    Game.GlobalStrings[15] = "Joe";
-    Display("Global string 15 is now: %s", Game.GlobalStrings[15]);
+```ags
+Game.GlobalStrings[15] = "Joe";
+Display("Global string 15 is now: %s", Game.GlobalStrings[15]);
+```
 
 will set global string 15 to contain \"Joe\".
 
@@ -764,7 +878,9 @@ will set global string 15 to contain \"Joe\".
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly static int Game.GUICount
+```ags
+readonly static int Game.GUICount
+```
 
 Returns the number of GUIs in the game.
 
@@ -774,13 +890,17 @@ GUIs for some reason. Valid GUIs are numbered from 0 to GUICount minus
 
 Example:
 
-    Display("The game has %d GUIs.", Game.GUICount);
+```ags
+Display("The game has %d GUIs.", Game.GUICount);
+```
 
 ---
 
 ### `Game.IgnoreUserInputAfterTextTimeoutMs`
 
-    static int Game.IgnoreUserInputAfterTextTimeoutMs;
+```ags
+static int Game.IgnoreUserInputAfterTextTimeoutMs;
+```
 
 Gets/sets the length of time for which user input is ignored after some
 text is automatically removed from the screen.
@@ -796,7 +916,9 @@ to 500 by default.
 
 Example:
 
-    Game.IgnoreUserInputAfterTextTimeoutMs = 1000;
+```ags
+Game.IgnoreUserInputAfterTextTimeoutMs = 1000;
+```
 
 will tell AGS to ignore mouse clicks and key presses for 1 second after
 text is automatically removed from the screen.
@@ -814,7 +936,9 @@ text is automatically removed from the screen.
 
 *(Formerly known as `game.in_cutscene`, which is now obsolete)*
 
-    static bool Game.InSkippableCutscene
+```ags
+static bool Game.InSkippableCutscene
+```
 
 Returns whether the game is currently between a StartCutscene and
 EndCutscene, and therefore whether the player is able to skip over this
@@ -831,10 +955,12 @@ could be useful for script modules.
 
 Example:
 
-    if (Game.InSkippableCutscene)
-    {
-      Display("The player might never see this message!");
-    }
+```ags
+if (Game.InSkippableCutscene)
+{
+    Display("The player might never see this message!");
+}
+```
 
 will display a message if we are within a cutscene
 
@@ -850,7 +976,9 @@ will display a message if we are within a cutscene
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly static int Game.InventoryItemCount
+```ags
+readonly static int Game.InventoryItemCount
+```
 
 Returns the number of inventory items in the game. This is the total
 number of items that you created in the Inventory Items pane of the
@@ -858,13 +986,17 @@ editor, not how many the player is currently carrying.
 
 Example:
 
-    Display("The game has %d inventory items.", Game.InventoryItemCount);
+```ags
+Display("The game has %d inventory items.", Game.InventoryItemCount);
+```
 
 ---
 
 ### `Game.MinimumTextDisplayTimeMs`
 
-    static int Game.MinimumTextDisplayTimeMs;
+```ags
+static int Game.MinimumTextDisplayTimeMs;
+```
 
 Gets/sets the minimum length of time that text is displayed on the
 screen. AGS automatically adjusts the length of time that text is
@@ -882,7 +1014,9 @@ General Settings are set not to allow text to be automatically removed.
 
 Example:
 
-    Game.MinimumTextDisplayTimeMs = 2000;
+```ags
+Game.MinimumTextDisplayTimeMs = 2000;
+```
 
 will ensure that even the shortest \"Hi!\" text line will be displayed
 for at least 2 seconds
@@ -898,7 +1032,9 @@ for at least 2 seconds
 
 ### `Game.MouseCursorCount`
 
-    readonly static int Game.MouseCursorCount
+```ags
+readonly static int Game.MouseCursorCount
+```
 
 Returns the number of mouse cursors in the game.
 
@@ -907,13 +1043,17 @@ cursors for some reason.
 
 Example:
 
-    Display("The game has %d cursors.", Game.MouseCursorCount);
+```ags
+Display("The game has %d cursors.", Game.MouseCursorCount);
+```
 
 ---
 
 ### `Game.Name`
 
-    static String Game.Name
+```ags
+static String Game.Name
+```
 
 Gets/sets the game's name. This is initially set in the General
 Settings pane of the editor, but you can change it at run-time in order
@@ -921,7 +1061,9 @@ to change the window title of your game.
 
 Example:
 
-    Display("The game name is: %s", Game.Name);
+```ags
+Display("The game name is: %s", Game.Name);
+```
 
 will display the game name.
 
@@ -934,7 +1076,9 @@ will display the game name.
 *(Formerly known as global function `SetNormalFont`, which is now
 obsolete)*
 
-    static FontType Game.NormalFont
+```ags
+static FontType Game.NormalFont
+```
 
 Gets/sets the font used for all in-game text, except speech. The font
 number must be a valid number from the Fonts pane of the editor.
@@ -950,7 +1094,9 @@ The Normal Font is font 0 by default.
 
 Example:
 
-    Game.NormalFont = eFontSpecial;
+```ags
+Game.NormalFont = eFontSpecial;
+```
 
 will change the normal font to the font \"Special\".
 
@@ -962,7 +1108,9 @@ will change the normal font to the font \"Special\".
 
 *(Formerly known as `game.skipping_cutscene`, which is now obsolete)*
 
-    static bool Game.SkippingCutscene
+```ags
+static bool Game.SkippingCutscene
+```
 
 Returns whether the player has elected to skip the current cutscene.
 This will return true if the game is between a StartCutscene and
@@ -977,12 +1125,14 @@ code that don't need to be run if the cutscene is being skipped over.
 
 Example:
 
-    if (!Game.SkippingCutscene)
-    {
-      aScaryMusic.Play();
-      Wait(100);
-      Game.StopAudio();
-    }
+```ags
+if (!Game.SkippingCutscene)
+{
+    aScaryMusic.Play();
+    Wait(100);
+    Game.StopAudio();
+}
+```
 
 will only attempt to play the music if the player is not skipping the
 cutscene.
@@ -1000,7 +1150,9 @@ cutscene.
 *(Formerly known as global function `SetSpeechFont`, which is now
 obsolete)*
 
-    static FontType Game.SpeechFont;
+```ags
+static FontType Game.SpeechFont;
+```
 
 Gets/sets the font used for character speech. The font number you supply
 must be a valid number from the Fonts pane of the editor.
@@ -1009,7 +1161,9 @@ The Speech Font is font 1 by default.
 
 Example:
 
-    Game.SpeechFont = eFontStandard;
+```ags
+Game.SpeechFont = eFontStandard;
+```
 
 will change the speech font to \"Standard\".
 
@@ -1019,15 +1173,19 @@ will change the speech font to \"Standard\".
 
 ### `Game.SpeechVoxFilename`
 
-    readonly static String Game.SpeechVoxFilename;
+```ags
+readonly static String Game.SpeechVoxFilename;
+```
 
 Gets the name of the active voice package name. This is not equal to the full file name; assuming file is called "sp_name.vox", this function will return only the "name" part. If a default "speech.vox" is used (or no voice pack at all), a blank string is returned.
 
 Example:
 
-    if (Game.SpeechVoxFilename== "German") {
-      Display("You are using the German voice.");
-    }
+```ags
+if (Game.SpeechVoxFilename== "German") {
+    Display("You are using the German voice.");
+}
+```
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
@@ -1044,7 +1202,9 @@ Example:
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly static int Game.SpriteHeight[int slot]
+```ags
+readonly static int Game.SpriteHeight[int slot]
+```
 
 Returns the height of the specified sprite.
 
@@ -1053,8 +1213,10 @@ If an invalid sprite slot is supplied, 0 will be returned.
 
 Example:
 
-    Display("Object 0's sprite is sized %d x %d.", Game.SpriteWidth[object[0].Graphic],
-                                                   Game.SpriteHeight[object[0].Graphic]);
+```ags
+Display("Object 0's sprite is sized %d x %d.", Game.SpriteWidth[object[0].Graphic],
+                                                Game.SpriteHeight[object[0].Graphic]);
+```
 
 *See also:* [`Game.SpriteWidth`](Game#gamespritewidth)
 
@@ -1064,7 +1226,9 @@ Example:
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly static int Game.SpriteWidth[int slot]
+```ags
+readonly static int Game.SpriteWidth[int slot]
+```
 
 Returns the width of the specified sprite.
 
@@ -1073,8 +1237,10 @@ If an invalid sprite slot is supplied, 0 will be returned.
 
 Example:
 
-    Display("Object 0's sprite is sized %d x %d.", Game.SpriteWidth[object[0].Graphic],
-                                                   Game.SpriteHeight[object[0].Graphic]);
+```ags
+Display("Object 0's sprite is sized %d x %d.", Game.SpriteWidth[object[0].Graphic],
+                                                Game.SpriteHeight[object[0].Graphic]);
+```
 
 *See also:* [`Game.SpriteHeight`](Game#gamespriteheight)
 
@@ -1084,7 +1250,9 @@ Example:
 
 *(Formerly known as `game.text_speed`, which is now obsolete)*
 
-    static int Game.TextReadingSpeed;
+```ags
+static int Game.TextReadingSpeed;
+```
 
 Gets/sets the speed at which AGS assumes the player can read text, and
 therefore how long speech stays on the screen before it is automatically
@@ -1103,7 +1271,9 @@ General Settings are set not to allow text to be automatically removed.
 
 Example:
 
-    Game.TextReadingSpeed = 7;
+```ags
+Game.TextReadingSpeed = 7;
+```
 
 sets the text reading speed to half the default, which will leave speech
 on-screen for twice as long as usual.
@@ -1121,7 +1291,9 @@ on-screen for twice as long as usual.
 
 *(Formerly known as `GetTranslationName`, which is now obsolete)*
 
-    readonly static String Game.TranslationFilename;
+```ags
+readonly static String Game.TranslationFilename;
+```
 
 Gets the name of the current translation filename (without the \".tra\"
 extension). This may be useful if you want to use a different graphic
@@ -1131,9 +1303,11 @@ If no translation is in use, a blank string is returned.
 
 Example:
 
-    if (Game.TranslationFilename == "German") {
-      Display("You are using the German translation.");
-    }
+```ags
+if (Game.TranslationFilename == "German") {
+    Display("You are using the German translation.");
+}
+```
 
 *See also:*
 [`Game.ChangeTranslation`](Game#gamechangetranslation),
@@ -1146,7 +1320,9 @@ Example:
 
 ### `Game.UseNativeCoordinates`
 
-    readonly static bool Game.UseNativeCoordinates
+```ags
+readonly static bool Game.UseNativeCoordinates
+```
 
 Returns whether the game is using native co-ordinates. If native
 co-ordinates are in use, then all X, Y, Top, Bottom, Width and Height
@@ -1164,14 +1340,16 @@ run-time.
 
 Example:
 
-    if (Game.UseNativeCoordinates)
-    {
-      Display("The player is at %d, %d -- REALLY!", player.x, player.y);
-    }
-    else
-    {
-      Display("The player is at %d, %d in the old-school system", player.x, player.y);
-    }
+```ags
+if (Game.UseNativeCoordinates)
+{
+    Display("The player is at %d, %d -- REALLY!", player.x, player.y);
+}
+else
+{
+    Display("The player is at %d, %d in the old-school system", player.x, player.y);
+}
+```
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
@@ -1181,7 +1359,9 @@ Example:
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly static int Game.ViewCount
+```ags
+readonly static int Game.ViewCount
+```
 
 Returns the number of views in the game.
 
@@ -1190,13 +1370,17 @@ views for some reason. Valid views are numbered from 1 to ViewCount.
 
 Example:
 
-    Display("The game has %d views.", Game.ViewCount);
+```ags
+Display("The game has %d views.", Game.ViewCount);
+```
 
 ---
 
 ### `Game.BlockingWaitSkipped`
 
-    readonly static int Game.BlockingWaitSkipped
+```ags
+readonly static int Game.BlockingWaitSkipped
+```
 
 Gets the code which describes how was the last blocking state skipped by a user (or autotimer).
 

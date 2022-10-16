@@ -5,8 +5,10 @@
 *(Formerly known as `AnimateObject`, which is now obsolete)*<br>
 *(Formerly known as `AnimateObjectEx`, which is now obsolete)*
 
-    Object.Animate(int loop, int delay, optional RepeatStyle,
-                   optional BlockingStyle, optional Direction, optional int frame, optional int volume)
+```ags
+Object.Animate(int loop, int delay, optional RepeatStyle,
+                optional BlockingStyle, optional Direction, optional int frame, optional int volume)
+```
 
 Starts the object animating, using loop number LOOP of its current view, and optionally starting at FRAME.
 The overall speed of the animation is set with DELAY, where 0 is the
@@ -42,8 +44,10 @@ set up the object's current view.
 
 Example:
 
-    object[0].Animate(2, 5);
-    object[1].Animate(1, 3, eOnce, eBlock, eBackwards);
+```ags
+object[0].Animate(2, 5);
+object[1].Animate(1, 3, eOnce, eBlock, eBackwards);
+```
 
 will animate object 0 using loop 2 of its current view, at speed 5, and
 play the animation once only. This happens in the background. Then,
@@ -63,16 +67,20 @@ Optional *volume* parameter is supported only by **AGS 3.6.0** and later version
 
 ### `Object.GetAtRoomXY`
 
-    static Object* Object.GetAtRoomXY(int x, int y)
+```ags
+static Object* Object.GetAtRoomXY(int x, int y)
+```
 
 Checks if there is a room object at ROOM co-ordinates (X,Y). Returns
 the object if there is, or *null* if there is not.
 
 Example:
 
-    if (Object.GetAtRoomXY(oBullet.x, oBullet.y) == oWall) {
-      Display("A bullet hits the wall.");
-    }
+```ags
+if (Object.GetAtRoomXY(oBullet.x, oBullet.y) == oWall) {
+    Display("A bullet hits the wall.");
+}
+```
 
 will display the message if the object oBullet is over the object oWall.
 
@@ -90,7 +98,9 @@ will display the message if the object oBullet is over the object oWall.
 
 *(Formerly known as global function `GetObjectAt`, which is now obsolete)*
 
-    static Object* Object.GetAtScreenXY(int x, int y)
+```ags
+static Object* Object.GetAtScreenXY(int x, int y)
+```
 
 Checks if there is a room object at SCREEN co-ordinates (X,Y). Returns
 the object if there is, or *null* if there is not.
@@ -99,9 +109,11 @@ See the description of GetLocationName for more on screen co-ordinates.
 
 Example:
 
-    if (Object.GetAtScreenXY(mouse.x, mouse.y) == oRock) {
-      Display("Clicked on the rock.");
-    }
+```ags
+if (Object.GetAtScreenXY(mouse.x, mouse.y) == oRock) {
+    Display("Clicked on the rock.");
+}
+```
 
 will display the message if there is the object oRock under the mouse cursor.
 
@@ -113,7 +125,9 @@ will display the message if there is the object oRock under the mouse cursor.
 
 *(Formerly known as `GetObjectProperty`, which is now obsolete)*
 
-    Object.GetProperty(string property)
+```ags
+Object.GetProperty(string property)
+```
 
 Returns the custom property setting of the PROPERTY for the specified
 object.
@@ -125,8 +139,10 @@ Use the equivalent GetTextProperty function to get a text property.
 
 Example:
 
-    if (object[0].GetProperty("Value") > 200)
-      Display("Object 0's value is over 200!");
+```ags
+if (object[0].GetProperty("Value") > 200)
+    Display("Object 0's value is over 200!");
+```
 
 will print the message if object 0 has its "Value" property set to more
 than 200.
@@ -140,7 +156,9 @@ than 200.
 *(Formerly known as `GetObjectPropertyText`, which is now obsolete)*<br>
 *(Formerly known as `Object.GetPropertyText`, which is now obsolete)*
 
-    String Object.GetTextProperty(string property)
+```ags
+String Object.GetTextProperty(string property)
+```
 
 Returns the custom property setting of the PROPERTY for the specified
 object.
@@ -152,8 +170,10 @@ Use the equivalent GetProperty function to get a non-text property.
 
 Example:
 
-    String description = object[0].GetTextProperty("Description");
-    Display("Object 0's description: %s", description);
+```ags
+String description = object[0].GetTextProperty("Description");
+Display("Object 0's description: %s", description);
+```
 
 will retrieve Object 0's "description" property then display it.
 
@@ -163,7 +183,9 @@ will retrieve Object 0's "description" property then display it.
 
 ### `Object.SetProperty`
 
-    bool Object.SetProperty(const string property, int value)
+```ags
+bool Object.SetProperty(const string property, int value)
+```
 
 Sets the new *value* for the custom *property* for the specified room
 object. Returns TRUE if such property exists and FALSE on failure.
@@ -177,7 +199,9 @@ value.
 
 Example:
 
-    oTable.SetProperty("ItemCapacity", 5);
+```ags
+oTable.SetProperty("ItemCapacity", 5);
+```
 
 will change Table's "ItemCapacity" custom property to 5.
 
@@ -189,7 +213,9 @@ will change Table's "ItemCapacity" custom property to 5.
 
 ### `Object.SetTextProperty`
 
-    void Object.SetTextProperty(const string property, const string value)
+```ags
+void Object.SetTextProperty(const string property, const string value)
+```
 
 Sets the new *value* text for the custom *property* for the specified
 room object.
@@ -201,7 +227,9 @@ Use the equivalent SetProperty function to set a non-text property.
 
 Example:
 
-    oTable.SetTextProperty("Description", "A dull furniture");
+```ags
+oTable.SetTextProperty("Description", "A dull furniture");
+```
 
 will change table's "description" property.
 
@@ -215,7 +243,9 @@ will change table's "description" property.
 
 *(Formerly known as `AreObjectsColliding`, which is now obsolete)*
 
-    bool Object.IsCollidingWithObject(Object* obj2)
+```ags
+bool Object.IsCollidingWithObject(Object* obj2)
+```
 
 Checks if the specified object and OBJ2 are touching each other. Returns
 *true* if they are, and *false* if they are not.
@@ -225,10 +255,12 @@ pixel-perfect click detection is turned on.
 
 Example:
 
-    if (object[2].IsCollidingWithObject(object[3]))
-    {
-      Display("object 2 and 3 are colliding!");
-    }
+```ags
+if (object[2].IsCollidingWithObject(object[3]))
+{
+    Display("object 2 and 3 are colliding!");
+}
+```
 
 will display the message if the objects 2 and 3 are colliding.
 
@@ -238,7 +270,9 @@ will display the message if the objects 2 and 3 are colliding.
 
 ### `Object.IsInteractionAvailable`
 
-    Object.IsInteractionAvailable(CursorMode)
+```ags
+Object.IsInteractionAvailable(CursorMode)
+```
 
 Checks whether there is an event handler defined for activating the room
 object in cursor mode MODE.
@@ -250,8 +284,10 @@ been run.
 
 Example:
 
-    if (oDoor.IsInteractionAvailable(eModeInteract) == 0)
-      Display("interacting with this door would not do anything.");
+```ags
+if (oDoor.IsInteractionAvailable(eModeInteract) == 0)
+    Display("interacting with this door would not do anything.");
+```
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
@@ -264,7 +300,9 @@ Example:
 
 *(Formerly known as `MergeObject`, which is now obsolete)*
 
-    Object.MergeIntoBackground()
+```ags
+Object.MergeIntoBackground()
+```
 
 Merges the object into the background scene for this room. This means that the object's image will be painted onto the room background and then object is turned off **permanently** (will no longer be displayed and may not be interacted with). This is a 1-way operation - once the object has been merged,
 it cannot be changed back. Therefore you should only use this function if a game event has occurred that means the room is permanently changed.
@@ -275,7 +313,9 @@ it cannot be changed back. Therefore you should only use this function if a game
 
 Example:
 
-    object[3].MergeIntoBackground();
+```ags
+object[3].MergeIntoBackground();
+```
 
 will merge the object's image into the room's background image and make
 the object unusable.
@@ -287,8 +327,10 @@ the object unusable.
 *(Formerly known as `MoveObject`, which is now obsolete)*<br>
 *(Formerly known as `MoveObjectDirect`, which is now obsolete)*
 
-    Object.Move(int x, int y, int speed, optional BlockingStyle,
-                optional WalkWhere);
+```ags
+Object.Move(int x, int y, int speed, optional BlockingStyle,
+            optional WalkWhere);
+```
 
 Starts the object moving from its current location to (X,Y). It will
 move at speed SPEED, which uses the same scale as the character Walk
@@ -309,7 +351,9 @@ from its current location to (X,Y), ignoring the room walkable areas.
 
 Example:
 
-    object[2].Move(125, 40, 4, eBlock);
+```ags
+object[2].Move(125, 40, 4, eBlock);
+```
 
 will move object 2 to 125,40 and return control to the player when the
 object gets there.
@@ -324,16 +368,20 @@ object gets there.
 
 *(Formerly known as `RemoveObjectTint`, which is now obsolete)*
 
-    Object.RemoveTint()
+```ags
+Object.RemoveTint()
+```
 
 Undoes the effects of calling Tint, and returns the object to using the
 room's ambient tint.
 
 Example:
 
-    object[1].Tint(0, 250, 0, 30, 100);
-    Wait(40);
-    object[1].RemoveTint();
+```ags
+object[1].Tint(0, 250, 0, 30, 100);
+Wait(40);
+object[1].RemoveTint();
+```
 
 will tint object 1 green for a second, then turn it back to normal.
 
@@ -345,14 +393,18 @@ will tint object 1 green for a second, then turn it back to normal.
 
 *(Formerly known as `RunObjectInteraction`, which is now obsolete)*
 
-    Object.RunInteraction(CursorMode)
+```ags
+Object.RunInteraction(CursorMode)
+```
 
 Runs the event handler as if the player had clicked the mouse on the
 object in the current room, using the specified cursor mode.
 
 Example:
 
-    object[3].RunInteraction(eModeInteract);
+```ags
+object[3].RunInteraction(eModeInteract);
+```
 
 will execute the code defined in object 3's "Interact with object" event
 handler.
@@ -366,7 +418,9 @@ handler.
 
 ### `Object.SetLightLevel`
 
-    void Object.SetLightLevel(int light_level)
+```ags
+void Object.SetLightLevel(int light_level)
+```
 
 Sets individual light level for this room object.
 
@@ -387,7 +441,9 @@ level and local region light level.
 
 Example:
 
-    oLamp.LightLevel = 100;
+```ags
+oLamp.LightLevel = 100;
+```
 
 This will give the lamp maximal individual brightness.
 
@@ -404,7 +460,9 @@ This will give the lamp maximal individual brightness.
 
 *(Formerly known as `SetObjectPosition`, which is now obsolete)*
 
-    Object.SetPosition(int x, int y)
+```ags
+Object.SetPosition(int x, int y)
+```
 
 Changes the object's position to (X,Y). These co-ordinates specify the
 lower-left hand corner of the object.
@@ -416,7 +474,9 @@ separately, but provides a more convenient way of doing so.
 
 Example:
 
-    object[2].SetPosition(50, 100);
+```ags
+object[2].SetPosition(50, 100);
+```
 
 will change object's 2 position to 50,100.
 
@@ -430,7 +490,9 @@ will change object's 2 position to 50,100.
 *(Formerly known as `SetObjectFrame`, which is now obsolete)*<br>
 *(Formerly known as `SetObjectView`, which is now obsolete)*
 
-    Object.SetView(int view, optional int loop, optional int frame)
+```ags
+Object.SetView(int view, optional int loop, optional int frame)
+```
 
 Sets the object's view to VIEW, and changes the object's graphic to
 FRAME of LOOP in VIEW. If you do not supply the loop or frame:
@@ -444,8 +506,10 @@ which view to animate the object with.
 
 Example:
 
-    object[3].SetView(14);
-    object[1].SetView(5, 2, 1);
+```ags
+object[3].SetView(14);
+object[1].SetView(5, 2, 1);
+```
 
 will change object 3's view to view number 14 while resetting to loop 0 and frame 0 of that view, and change object 1 to
 view 5, loop 2, frame 1.
@@ -459,16 +523,20 @@ view 5, loop 2, frame 1.
 
 ### `Object.StopAnimating`
 
-    Object.StopAnimating()
+```ags
+Object.StopAnimating()
+```
 
 Stops the object from animating. It will remain on its current frame
 until you change it or start a new animation.
 
 Example:
 
-    if (object[2].Animating) {
-      object[2].StopAnimating();
-    }
+```ags
+if (object[2].Animating) {
+    object[2].StopAnimating();
+}
+```
 
 will stop object 2 animating if it currently is doing so.
 
@@ -481,16 +549,20 @@ will stop object 2 animating if it currently is doing so.
 
 *(Formerly known as `StopObjectMoving`, which is now obsolete)*
 
-    Object.StopMoving()
+```ags
+Object.StopMoving()
+```
 
 Stops the object from moving. It will remain in its current position
 until any further commands are issued.
 
 Example:
 
-    if (object[2].Moving) {
-      object[2].StopMoving();
-    }
+```ags
+if (object[2].Moving) {
+    object[2].StopMoving();
+}
+```
 
 will stop object 2 moving if it currently is doing so.
 
@@ -504,8 +576,10 @@ will stop object 2 moving if it currently is doing so.
 
 *(Formerly known as `SetObjectTint`, which is now obsolete)*
 
-    Object.Tint(int red, int green, int blue,
-                int saturation, int luminance)
+```ags
+Object.Tint(int red, int green, int blue,
+            int saturation, int luminance)
+```
 
 Tints the object on the screen to (RED, GREEN, BLUE) with SATURATION
 percent saturation.
@@ -526,7 +600,9 @@ sprites.
 
 Example:
 
-    object[1].Tint(0, 250, 0, 30, 100);
+```ags
+object[1].Tint(0, 250, 0, 30, 100);
+```
 
 will tint object 1 green.
 
@@ -539,7 +615,9 @@ will tint object 1 green.
 
 *(Formerly known as `IsObjectAnimating`, which is now obsolete)*
 
-    readonly bool Object.Animating
+```ags
+readonly bool Object.Animating
+```
 
 Returns 1 if the specified object is currently animating.<br>
 Returns 0 if the object has finished its animation.
@@ -549,8 +627,10 @@ This property is read-only. To change object animation, use the
 
 Example:
 
-    object[2].Animate(5, 0);
-    while (object[2].Animating) Wait(1);
+```ags
+object[2].Animate(5, 0);
+while (object[2].Animating) Wait(1);
+```
 
 will animate object 2 and wait until the animation finishes.
 
@@ -569,7 +649,9 @@ you wouldn't need to do this.
 *(Formerly known as `GetObjectBaseline`, which is now obsolete)*<br>
 *(Formerly known as `SetObjectBaseline`, which is now obsolete)*
 
-    int Object.Baseline
+```ags
+int Object.Baseline
+```
 
 Gets/sets the object's baseline. This allows you to modify the line you
 can set in the editor. You can disable the baseline (and revert to using
@@ -583,7 +665,9 @@ the object's Y co-ordinate.
 
 Example:
 
-    object[4].Baseline = 100;
+```ags
+object[4].Baseline = 100;
+```
 
 will change object's 4 baseline to a line positioned at y coordinate
 100.
@@ -596,7 +680,9 @@ will change object's 4 baseline to a line positioned at y coordinate
 
 ### `Object.BlockingHeight`
 
-    int Object.BlockingHeight
+```ags
+int Object.BlockingHeight
+```
 
 Gets/sets the object's blocking height.
 
@@ -614,7 +700,9 @@ removes by being there.
 
 Example:
 
-    oRock.BlockingHeight = 20;
+```ags
+oRock.BlockingHeight = 20;
+```
 
 will make the Rock object block 20 pixels high (10 above and 10 below
 its baseline)
@@ -626,7 +714,9 @@ its baseline)
 
 ### `Object.BlockingWidth`
 
-    int Character.BlockingWidth
+```ags
+int Character.BlockingWidth
+```
 
 Gets/sets the object's blocking width.
 
@@ -644,7 +734,9 @@ removes by being there.
 
 Example:
 
-    oRock.BlockingWidth = 50;
+```ags
+oRock.BlockingWidth = 50;
+```
 
 will make the Rock object block 50 pixels wide (25 pixels to the left of
 its center, and 25 to the right)
@@ -658,7 +750,9 @@ its center, and 25 to the right)
 
 *(Formerly known as `SetObjectClickable`, which is now obsolete)*
 
-    bool Object.Clickable
+```ags
+bool Object.Clickable
+```
 
 Gets/sets whether the object is recognized as something which the player
 can interact with.
@@ -671,7 +765,9 @@ it to be clicked on by the player.
 
 Example:
 
-    object[2].Clickable = 0;
+```ags
+object[2].Clickable = 0;
+```
 
 will make object 2 ignore clicks from the player.
 
@@ -687,7 +783,9 @@ will make object 2 ignore clicks from the player.
 
 ### `Object.Frame`
 
-    readonly int Object.Frame
+```ags
+readonly int Object.Frame
+```
 
 Gets the frame number that the object is currently set to. If the object
 is not currently assigned a view, this will be 0 (in which case the
@@ -698,7 +796,9 @@ functions.
 
 Example:
 
-    Display("Object oDoor's frame is currently %d.", oDoor.Frame);
+```ags
+Display("Object oDoor's frame is currently %d.", oDoor.Frame);
+```
 
 will display the oDoor object's current frame number
 
@@ -713,7 +813,9 @@ will display the oDoor object's current frame number
 *(Formerly known as `GetObjectGraphic`, which is now obsolete)*<br>
 *(Formerly known as `SetObjectGraphic`, which is now obsolete)*
 
-    int Object.Graphic
+```ags
+int Object.Graphic
+```
 
 Gets/sets the sprite slot number that the object is currently displayed
 as. You can get the slot number from the Sprite Manager. If the object
@@ -722,7 +824,9 @@ Graphic, then the animation will be stopped.
 
 Example:
 
-    object[2].Graphic = 100;
+```ags
+object[2].Graphic = 100;
+```
 
 will change the object 2's image to the image stored in the sprite
 manager's slot 100.
@@ -733,7 +837,9 @@ manager's slot 100.
 
 ### `Object.HasExplicitLight`
 
-    readonly bool Object.HasExplicitTint
+```ags
+readonly bool Object.HasExplicitTint
+```
 
 Returns *true* if the object has a light set explicitly with the
 [`Object.SetLightLevel`](Object#objectsetlightlevel) command.
@@ -751,7 +857,9 @@ light.
 
 ### `Object.HasExplicitTint`
 
-    readonly bool Object.HasExplicitTint
+```ags
+readonly bool Object.HasExplicitTint
+```
 
 Returns *true* if the object has a tint set explicitly with the
 [`Object.Tint`](Object#objecttint) command.
@@ -768,7 +876,9 @@ tinted by [`SetAmbientTint`](Globalfunctions_General#setambienttint) or a region
 
 ### `Object.ID`
 
-    readonly int Object.ID
+```ags
+readonly int Object.ID
+```
 
 Gets the object's ID number. This is the object's number from the
 editor, and is useful if you need to interoperate with legacy code that
@@ -776,7 +886,9 @@ uses the object's number rather than name.
 
 Example:
 
-    MoveObject(oRock.ID, 100, 50, 5);
+```ags
+MoveObject(oRock.ID, 100, 50, 5);
+```
 
 uses the obsolete MoveObject function to move the Rock object to (100,
 50) at speed 5.
@@ -787,7 +899,9 @@ uses the obsolete MoveObject function to move the Rock object to (100,
 
 *(Formerly known as `Object.IgnoreScaling`, which is now obsolete)*
 
-    bool Object.ManualScaling
+```ags
+bool Object.ManualScaling
+```
 
 Gets/sets whether the object uses manually specified scaling instead of 
 using the walkable area scaling. This is equivalent, **though opposite**, 
@@ -801,7 +915,9 @@ it's Scaling property.
 
 Example:
 
-    oDoor.ManualScaling = true;
+```ags
+oDoor.ManualScaling = true;
+```
 
 will tell the Door object not to be scaled on walkable areas.
 
@@ -817,7 +933,9 @@ will tell the Door object not to be scaled on walkable areas.
 
 *(Formerly known as `SetObjectIgnoreWalkbehinds`, which is now obsolete)*
 
-    bool Object.IgnoreWalkbehinds
+```ags
+bool Object.IgnoreWalkbehinds
+```
 
 Sets whether the object is affected by walkbehind areas. Setting this to
 *false* (the default setting) means that the object will be placed
@@ -835,7 +953,9 @@ baseline wouldn't work.
 
 ### `Object.LightLevel`
 
-    readonly int Object.LightLevel
+```ags
+readonly int Object.LightLevel
+```
 
 If the object has an individual light set explicitly with the
 [`Object.SetLightLevel`](Object#objectsetlightlevel) command, this
@@ -853,7 +973,9 @@ property returns the light level value. Otherwise it returns 0.
 
 ### `Object.Loop`
 
-    readonly int Object.Loop
+```ags
+readonly int Object.Loop
+```
 
 Gets the loop that the object is currently set to. If the object is not
 currently assigned a view, this will be 0 (in which case the Graphic
@@ -864,7 +986,9 @@ functions.
 
 Example:
 
-    Display("Object oDoor's loop is currently %d.", oDoor.Loop);
+```ags
+Display("Object oDoor's loop is currently %d.", oDoor.Loop);
+```
 
 will display the oDoor object's current loop number
 
@@ -878,7 +1002,9 @@ will display the oDoor object's current loop number
 
 *(Formerly known as `IsObjectMoving`, which is now obsolete)*
 
-    readonly bool Object.Moving
+```ags
+readonly bool Object.Moving
+```
 
 Returns 1 if the object is currently moving, or 0 if not.
 
@@ -888,8 +1014,10 @@ This property is read-only; to change the object's movement, use the
 
 Example:
 
-    object[2].Move(125,40,3);
-    while (object[2].Moving) Wait(1);
+```ags
+object[2].Move(125,40,3);
+while (object[2].Moving) Wait(1);
+```
 
 will move object 2 to 125,40 and return control to the player when the
 object gets there.
@@ -904,7 +1032,9 @@ object gets there.
 *(Formerly known as `GetObjectName`, which is now obsolete)*<br>
 *(Formerly known as `Object.GetName`, which is now obsolete)*
 
-    readonly String Object.Name;
+```ags
+readonly String Object.Name;
+```
 
 Gets the name of the object.
 
@@ -913,7 +1043,9 @@ change the name of an object at run-time.
 
 Example:
 
-    Display("Object 0's name is %s.", object[0].Name);
+```ags
+Display("Object 0's name is %s.", object[0].Name);
+```
 
 will retrieve and then display object 0's name.
 
@@ -923,7 +1055,9 @@ will retrieve and then display object 0's name.
 
 ### `Object.Scaling`
 
-    int Object.Scaling
+```ags
+int Object.Scaling
+```
 
 Gets/sets the object's current scaling level. An object that has the 
 regular size has this property set to 100.
@@ -940,7 +1074,9 @@ on the walkable area that the character is on.
 
 ### `Object.Solid`
 
-    bool Object.Solid
+```ags
+bool Object.Solid
+```
 
 Gets/sets whether the object can be walked through by characters.
 
@@ -953,7 +1089,9 @@ objects from moving through them.
 
 Example:
 
-    oSmallrock.Solid = true;
+```ags
+oSmallrock.Solid = true;
+```
 
 will mean that the Smallrock object blocks the path of characters.
 
@@ -964,7 +1102,9 @@ will mean that the Smallrock object blocks the path of characters.
 
 ### `Object.TintBlue`
 
-    readonly int Object.TintBlue
+```ags
+readonly int Object.TintBlue
+```
 
 Gets the *Blue* setting for the object's current tint.
 
@@ -987,7 +1127,9 @@ false, then this value is meaningless.
 
 ### `Object.TintGreen`
 
-    readonly int Object.TintGreen
+```ags
+readonly int Object.TintGreen
+```
 
 Gets the *Green* setting for the object's current tint.
 
@@ -1010,7 +1152,9 @@ false, then this value is meaningless.
 
 ### `Object.TintRed`
 
-    readonly int Object.TintRed
+```ags
+readonly int Object.TintRed
+```
 
 Gets the *Red* setting for the object's current tint.
 
@@ -1033,7 +1177,9 @@ false, then this value is meaningless.
 
 ### `Object.TintSaturation`
 
-    readonly int Object.TintSaturation
+```ags
+readonly int Object.TintSaturation
+```
 
 Gets the *saturation* setting for the object's current tint.
 
@@ -1056,7 +1202,9 @@ false, then this value is meaningless.
 
 ### `Object.TintLuminance`
 
-    readonly int Object.TintLuminance
+```ags
+readonly int Object.TintLuminance
+```
 
 Gets the *luminance* setting for the object's current tint.
 
@@ -1081,7 +1229,9 @@ false, then this value is meaningless.
 
 *(Formerly known as `SetObjectTransparency`, which is now obsolete)*
 
-    int Object.Transparency
+```ags
+int Object.Transparency
+```
 
 Gets/sets the object's transparency level.
 
@@ -1105,12 +1255,14 @@ example below:
 
 Example:
 
-    int trans = object[0].Transparency;
-    while (trans < 100) {
-      trans++;
-      object[0].Transparency = trans;
-      Wait(1);
-    }
+```ags
+int trans = object[0].Transparency;
+while (trans < 100) {
+    trans++;
+    object[0].Transparency = trans;
+    Wait(1);
+}
+```
 
 will gradually fade out the object from its current transparency level
 to being fully invisible.
@@ -1122,7 +1274,9 @@ to being fully invisible.
 
 ### `Object.View`
 
-    readonly int Object.View
+```ags
+readonly int Object.View
+```
 
 Gets the view that the object is currently set to. This is either the
 view number, or 0 if the object is not currently assigned a view (in
@@ -1133,7 +1287,9 @@ function. To remove the view, set the Graphic property to a sprite slot.
 
 Example:
 
-    Display("Object oDoor's view is currently view %d.", oDoor.View);
+```ags
+Display("Object oDoor's view is currently view %d.", oDoor.View);
+```
 
 will display the oDoor object's current view number
 
@@ -1150,7 +1306,9 @@ will display the oDoor object's current view number
 *(Formerly known as `ObjectOff`, which is now obsolete)*<br>
 *(Formerly known as `ObjectOn`, which is now obsolete)*
 
-    bool Object.Visible
+```ags
+bool Object.Visible
+```
 
 Gets/sets the visible state of the object. If this is 1 (true), the
 object is switched on and visible in the room. If you set this to 0
@@ -1158,7 +1316,9 @@ object is switched on and visible in the room. If you set this to 0
 
 Example:
 
-    object[5].Visible = false;
+```ags
+object[5].Visible = false;
+```
 
 will make object number 5 in the current room disappear.
 
@@ -1171,7 +1331,9 @@ will make object number 5 in the current room disappear.
 
 *(Formerly known as `GetObjectX`, which is now obsolete)*
 
-    int Object.X
+```ags
+int Object.X
+```
 
 Gets/sets the X co-ordinate of the object.
 
@@ -1179,7 +1341,9 @@ Gets/sets the X co-ordinate of the object.
 
 Example:
 
-    Display("Object 1's X co-ordinate is %d.", object[1].X);
+```ags
+Display("Object 1's X co-ordinate is %d.", object[1].X);
+```
 
 will display the X co-ordinate of object 1.
 
@@ -1194,7 +1358,9 @@ will display the X co-ordinate of object 1.
 
 *(Formerly known as `GetObjectY`, which is now obsolete)*
 
-    int Object.Y
+```ags
+int Object.Y
+```
 
 Gets/sets the Y co-ordinate of the object, which is the bottom of the
 object's image.
@@ -1208,7 +1374,9 @@ sprite is drawn from the Y co-ordinate at (Object.Y - Height) to
 
 Example:
 
-    Display("Object 1's Y co-ordinate is %d.", object[1].Y);
+```ags
+Display("Object 1's Y co-ordinate is %d.", object[1].Y);
+```
 
 will display the Y co-ordinate of object 1.
 

@@ -4,19 +4,23 @@
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly bool ViewFrame.Flipped
+```ags
+readonly bool ViewFrame.Flipped
+```
 
 Gets whether the frame was set to Flipped in the editor.
 
 Example:
 
-    ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
-    if (frame.Flipped) {
-      Display("This frame is flipped");
-    }
-    else {
-      Display("This frame is not flipped");
-    }
+```ags
+ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
+if (frame.Flipped) {
+    Display("This frame is flipped");
+}
+else {
+    Display("This frame is not flipped");
+}
+```
 
 *See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
 [`ViewFrame.Graphic`](ViewFrame#viewframegraphic)
@@ -27,15 +31,19 @@ Example:
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly int ViewFrame.Frame
+```ags
+readonly int ViewFrame.Frame
+```
 
 Returns the frame number represented by this ViewFrame.
 
 Example:
 
-    ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
-    Display("This ViewFrame is view %d, loop %d, frame %d",
-      frame.View, frame.Loop, frame.Frame);
+```ags
+ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
+Display("This ViewFrame is view %d, loop %d, frame %d",
+    frame.View, frame.Loop, frame.Frame);
+```
 
 *See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
 [`ViewFrame.Loop`](ViewFrame#viewframeloop),
@@ -47,14 +55,18 @@ Example:
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    int ViewFrame.Graphic
+```ags
+int ViewFrame.Graphic
+```
 
 Gets/sets the sprite slot number that this view frame displays.
 
 Example:
 
-    ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
-    Display("This frame uses sprite %d", frame.Graphic);
+```ags
+ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
+Display("This frame uses sprite %d", frame.Graphic);
+```
 
 *See also:* [`Game.GetViewFrame`](Game#gamegetviewframe)
 
@@ -66,7 +78,9 @@ Example:
 *(Formerly known as `SetFrameSound`, which is now obsolete)*<br>
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    AudioClip* ViewFrame.LinkedAudio
+```ags
+AudioClip* ViewFrame.LinkedAudio
+```
 
 Gets/sets the audio clip that plays when this frame comes around in
 animations.
@@ -75,15 +89,17 @@ If there is no linked sound, this should be *null*.
 
 Example:
 
-    ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
-    if (frame.LinkedAudio == null)
-    {
-      Display("This frame has no frame-linked audio.");
-    }
-    else
-    {
-      frame.LinkedAudio.Play();
-    }
+```ags
+ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
+if (frame.LinkedAudio == null)
+{
+    Display("This frame has no frame-linked audio.");
+}
+else
+{
+    frame.LinkedAudio.Play();
+}
+```
 
 checks view WALKING to see if frame 4 in loop 2 has a linked audio clip;
 if so, plays it.
@@ -98,15 +114,19 @@ if so, plays it.
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly int ViewFrame.Loop
+```ags
+readonly int ViewFrame.Loop
+```
 
 Returns the loop number represented by this ViewFrame.
 
 Example:
 
-    ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
-    Display("This ViewFrame is view %d, loop %d, frame %d",
-      frame.View, frame.Loop, frame.Frame);
+```ags
+ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
+Display("This ViewFrame is view %d, loop %d, frame %d",
+    frame.View, frame.Loop, frame.Frame);
+```
 
 *See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
 [`ViewFrame.Frame`](ViewFrame#viewframeframe),
@@ -118,15 +138,19 @@ Example:
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly int ViewFrame.Speed
+```ags
+readonly int ViewFrame.Speed
+```
 
 Gets the speed setting of the view frame. This is 0 by default but may
 have been changed in the AGS Editor.
 
 Example:
 
-    ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
-    Display("This frame has speed %d.", frame.Speed);
+```ags
+ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
+Display("This frame has speed %d.", frame.Speed);
+```
 
 *See also:* [`Game.GetViewFrame`](Game#gamegetviewframe)
 
@@ -136,15 +160,19 @@ Example:
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
 
-    readonly int ViewFrame.View
+```ags
+readonly int ViewFrame.View
+```
 
 Returns the view number represented by this ViewFrame.
 
 Example:
 
-    ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
-    Display("This ViewFrame is view %d, loop %d, frame %d",
-      frame.View, frame.Loop, frame.Frame);
+```ags
+ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
+Display("This ViewFrame is view %d, loop %d, frame %d",
+    frame.View, frame.Loop, frame.Frame);
+```
 
 *See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
 [`ViewFrame.Loop`](ViewFrame#viewframeloop),

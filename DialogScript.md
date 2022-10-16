@@ -16,7 +16,9 @@ NAME (not full name), followed by a colon, then a space, and then what
 you want them to say. For example, if my main character's script name is
 EGO, I would write
 
-    ego: "I am very happy today because it's my birthday."
+```agsdialog
+ego: "I am very happy today because it's my birthday."
+```
 
 The character name is used by the system to choose the correct color
 for the text.
@@ -37,12 +39,14 @@ displayed.
 To signal the end of the script for this option, place a "return"
 command on the last line of it. For example,
 
-    @1
-    ego: "Hello. How are you?"
-    narrator: The man looks you in the eye.
-    otherman: ...
-    otherman: "I'm fine."
-    return
+```agsdialog
+@1
+ego: "Hello. How are you?"
+narrator: The man looks you in the eye.
+otherman: ...
+otherman: "I'm fine."
+return
+```
 
 "return" tells AGS to go back and display the choices again to the
 player. If you use "stop" instead of return, then the conversation is
@@ -96,8 +100,10 @@ or<br>
 **IMPORTANT:** There's currently a limitation that, if Say checkbox for dialog options is checked, it will use regular `Character.Say` despite defining a custom Say function.<br>
 If you still want to have player pronounce dialog option text, one of the solutions is to add a call to your custom speech function as the first line in every dialog option script:
 
-    @X
-      player.MySay(this.GetOptionText( X )); \\ where X is the actual option index
+```agsdialog
+@X
+    player.MySay(this.GetOptionText( X )); \\ where X is the actual option index
+```
 
 
 If you wonder how such function will work in dialogs, see the following topic below.
@@ -111,13 +117,15 @@ inventory item or add some points to their score, for example.
 AGS now lets you put normal scripting commands in your dialog script, by
 indenting the line with spaces or tabs. For example:
 
-    @1
-    ego: "Hello. How are you?"
-    narrator: The man looks you in the eye.
-      player.AddInventory(iKey);
-      Display("This line is displayed from a normal script command");
-    otherman: "I'm fine."
-    return
+```agsdialog
+@1
+ego: "Hello. How are you?"
+narrator: The man looks you in the eye.
+    player.AddInventory(iKey);
+    Display("This line is displayed from a normal script command");
+otherman: "I'm fine."
+return
+```
 
 Here, you can see dialog script commands being used, but also then a
 couple of normal scripting commands have been inserted, on indented
@@ -131,13 +139,15 @@ tokens `RUN_DIALOG_GOTO_PREVIOUS`, `RUN_DIALOG_RETURN` and
 `RUN_DIALOG_STOP_DIALOG` are available which you can `return` from
 inside a script block. For example:
 
-    @1
-    ego: "Hello. How are you?"
-    narrator: The man looks you in the eye.
-      if (player.HasInventory(iKey)) {
-        player.Say("Actually, I'd better go.");
-        return RUN_DIALOG_STOP_DIALOG;
-      }
-    otherman: "Here's a key for you."
-    return
+```agsdialog
+@1
+ego: "Hello. How are you?"
+narrator: The man looks you in the eye.
+    if (player.HasInventory(iKey)) {
+    player.Say("Actually, I'd better go.");
+    return RUN_DIALOG_STOP_DIALOG;
+    }
+otherman: "Here's a key for you."
+return
+```
 

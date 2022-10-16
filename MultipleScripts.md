@@ -31,13 +31,17 @@ As an example, suppose you want to have a special *AddNumbers* function
 in a module. You'd create a new script, then put this in its header file
 (.ASH):
 
-    import function AddNumbers(int a, int b);
+```ags
+import function AddNumbers(int a, int b);
+```
 
 Then, in the script file (.ASC) you could put:
 
-    function AddNumbers(int a, int b) {
-      return a + b;
-    }
+```ags
+function AddNumbers(int a, int b) {
+  return a + b;
+}
+```
 
 That's the basic principle behind using multiple scripts!
 

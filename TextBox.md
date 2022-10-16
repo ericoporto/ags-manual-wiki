@@ -8,7 +8,9 @@ TextBox is a subclass of [`GUIControl`](GUIControl) and therefore inherits all G
 
 *(Formerly known as `SetTextBoxFont`, which is now obsolete)*
 
-    FontType TextBox.Font
+```ags
+FontType TextBox.Font
+```
 
 Gets/sets the font used by the specified text box. This might be useful
 if you need a player input text box to use a different font with foreign
@@ -16,7 +18,9 @@ language translations, for example.
 
 Example:
 
-    txtUserInput.Font = eFontNormal;
+```ags
+txtUserInput.Font = eFontNormal;
+```
 
 will change the *txtUserInput* text box to use Font "Normal".
 
@@ -27,7 +31,9 @@ will change the *txtUserInput* text box to use Font "Normal".
 
 ### `TextBox.ShowBorder`
 
-    bool TextBox.ShowBorder
+```ags
+bool TextBox.ShowBorder
+```
 
 Gets/sets whether the text box's border is shown.
 
@@ -44,7 +50,9 @@ Border is drawn using color from TextColor property.
 *(Formerly known as `TextBox.GetText`, which is now obsolete)*<br>
 *(Formerly known as `TextBox.SetText`, which is now obsolete)*
 
-    String TextBox.Text;
+```ags
+String TextBox.Text;
+```
 
 Gets/sets the text box contents. This might be useful to reset the text
 box to blank after the user has typed something in, or to fill in a
@@ -52,7 +60,9 @@ default value.
 
 Example:
 
-    txtUserInput.Text = "";
+```ags
+txtUserInput.Text = "";
+```
 
 will clear the txtUserInput text box.
 
@@ -64,14 +74,18 @@ will clear the txtUserInput text box.
 
 ### `TextBox.TextColor`
 
-    int TextBox.TextColor;
+```ags
+int TextBox.TextColor;
+```
 
 Gets/sets the text color used to draw the text box. This affects both
 the text in the text box, and also the text box's border.
 
 Example:
 
-    txtInput.TextColor = 14;
+```ags
+txtInput.TextColor = 14;
+```
 
 will change text box 'txtInput' to have yellow text.
 

@@ -20,7 +20,9 @@ copies of the image and upload it to video memory if appropriate.
 
 *(Formerly known as `RawClearScreen`, which is now obsolete)*
 
-    DrawingSurface.Clear(optional int color)
+```ags
+DrawingSurface.Clear(optional int color)
+```
 
 Clears the surface to the specified COLOR (this is a number you can
 find in the Colors pane of the editor). The current contents of the
@@ -31,11 +33,13 @@ the surface will be cleared to be fully transparent.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.Clear(14);
-    surface.DrawingColor = 13;
-    surface.DrawCircle(160,100,50);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.Clear(14);
+surface.DrawingColor = 13;
+surface.DrawCircle(160,100,50);
+surface.Release();
+```
 
 clears the room background to be fully yellow, then draws a pink circle
 in the middle of it.
@@ -49,7 +53,9 @@ in the middle of it.
 
 *(Formerly known as `RawSaveScreen`, which is now obsolete)*
 
-    DrawingSurface* DrawingSurface.CreateCopy()
+```ags
+DrawingSurface* DrawingSurface.CreateCopy()
+```
 
 Makes a backup copy of the current surface, in order that it can be
 restored later. This could be useful to back up a background scene
@@ -66,15 +72,17 @@ soon as you are done with them.
 
 Example:
 
-    DrawingSurface *backup = surface.CreateCopy();
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawTriangle(0,0,160,100,0,200);
-    surface.Release();
-    Wait(80);
-    surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawSurface(backup);
-    surface.Release();
-    backup.Release();
+```ags
+DrawingSurface *backup = surface.CreateCopy();
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawTriangle(0,0,160,100,0,200);
+surface.Release();
+Wait(80);
+surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawSurface(backup);
+surface.Release();
+backup.Release();
+```
 
 will save a copy of the room background, draw a triangle onto it, wait
 for a while and then restore the original background.
@@ -88,17 +96,21 @@ for a while and then restore the original background.
 
 *(Formerly known as `RawDrawCircle`, which is now obsolete)*
 
-    DrawingSurface.DrawCircle(int x, int y, int radius)
+```ags
+DrawingSurface.DrawCircle(int x, int y, int radius)
+```
 
 Draws a filled circle of radius RADIUS with its center at (X,Y) in the
 current drawing color.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawCircle(160,100,50);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawCircle(160,100,50);
+surface.Release();
+```
 
 will draw a circle in the center of the screen, of 50 pixels radius.
 
@@ -114,10 +126,12 @@ will draw a circle in the center of the screen, of 50 pixels radius.
 *(Formerly known as `RawDrawImageResized`, which is now obsolete)*<br>
 *(Formerly known as `RawDrawImageTransparent`, which is now obsolete)*
 
-    DrawingSurface.DrawImage(int x, int y, int slot, optional int transparency,
-                             optional int width, optional int height,
-                             optional int cut_x, optional  int cut_y, 
-                             optional int cut_width, optional int cut_height)
+```ags
+DrawingSurface.DrawImage(int x, int y, int slot, optional int transparency,
+                            optional int width, optional int height,
+                            optional int cut_x, optional  int cut_y, 
+                            optional int cut_width, optional int cut_height)
+```
 
 Draws image SLOT from the sprite manager onto the surface at location
 (X,Y).
@@ -145,9 +159,11 @@ outside the current visible area.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawImage(100, 100, oDoor.Graphic, 40);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawImage(100, 100, oDoor.Graphic, 40);
+surface.Release();
+```
 
 will draw the *oDoor* object's graphic onto the room background at (100,
 100), at `40%` transparency.
@@ -164,8 +180,10 @@ will draw the *oDoor* object's graphic onto the room background at (100,
 
 *(Formerly known as `RawDrawLine`, which is now obsolete)*
 
-    DrawingSurface.DrawLine(int from_x, int from_y, int to_x, int to_y,
-                            optional int thickness)
+```ags
+DrawingSurface.DrawLine(int from_x, int from_y, int to_x, int to_y,
+                        optional int thickness)
+```
 
 Draws a line from (FROM_X, FROM_Y) to (TO_X, TO_Y) in the surface's
 current drawing color.
@@ -179,10 +197,12 @@ outside the current visible area.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawLine(0, 0, 160, 100);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawLine(0, 0, 160, 100);
+surface.Release();
+```
 
 will draw a line from the left top of the screen (0,0) to the middle of
 the screen (160,100);
@@ -199,8 +219,10 @@ the screen (160,100);
 
 *(Formerly known as `RawPrintMessageWrapped`, which is now obsolete)*
 
-    DrawingSurface.DrawMessageWrapped(int x, int y, int width,
-                                      FontType font, int message_number)
+```ags
+DrawingSurface.DrawMessageWrapped(int x, int y, int width,
+                                    FontType font, int message_number)
+```
 
 Draws the room message MESSAGE_NUMBER onto the surface at (x,y), using
 the specified FONT.
@@ -214,10 +236,12 @@ The text will be printed using the current drawing color.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawMessageWrapped(80, 40, 160, Game.NormalFont, 10);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawMessageWrapped(80, 40, 160, Game.NormalFont, 10);
+surface.Release();
+```
 
 will display message 10 in the center of the screen, starting from Y =
 40.
@@ -231,7 +255,9 @@ will display message 10 in the center of the screen, starting from Y =
 
 ### `DrawingSurface.DrawPixel`
 
-    DrawingSurface.DrawPixel(int x, int y)
+```ags
+DrawingSurface.DrawPixel(int x, int y)
+```
 
 Draws a single pixel onto the surface at (X,Y) in the current color.
 The pixel thickness respects the
@@ -243,10 +269,12 @@ an image. Only use it for single pixel adjustments.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawPixel(50, 50);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawPixel(50, 50);
+surface.Release();
+```
 
 draws a yellow pixel in the top left of the room background
 
@@ -262,7 +290,9 @@ draws a yellow pixel in the top left of the room background
 
 *(Formerly known as `RawDrawRectangle`, which is now obsolete)*
 
-    DrawingSurface.DrawRectangle(int x1, int y1, int x2, int y2)
+```ags
+DrawingSurface.DrawRectangle(int x1, int y1, int x2, int y2)
+```
 
 Draws a filled rectangle in the current color with its top-left corner
 at (x1,y1) and its bottom right corner at (x2, y2)
@@ -273,10 +303,12 @@ outside the current visible area.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawRectangle(0, 0, 160, 100);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawRectangle(0, 0, 160, 100);
+surface.Release();
+```
 
 will draw a rectangle over the top left hand quarter of the screen.
 
@@ -290,7 +322,9 @@ will draw a rectangle over the top left hand quarter of the screen.
 
 *(Formerly known as `RawPrint`, which is now obsolete)*
 
-    DrawingSurface.DrawString(int x, int y, FontType font, string text, ...)
+```ags
+DrawingSurface.DrawString(int x, int y, FontType font, string text, ...)
+```
 
 Draws the *text* onto the surface at (x, y), using the supplied font
 number. The text will be drawn in the current drawing color.
@@ -301,10 +335,12 @@ section.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawString(0, 100, Game.NormalFont, "Text written into the background!");
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawString(0, 100, Game.NormalFont, "Text written into the background!");
+surface.Release();
+```
 
 will write some text onto the middle-left of the room background
 
@@ -316,9 +352,11 @@ will write some text onto the middle-left of the room background
 
 ### `DrawingSurface.DrawStringWrapped`
 
-    DrawingSurface.DrawStringWrapped(int x, int y, int width,
-                                     FontType font, Alignment,
-                                     const string text)
+```ags
+DrawingSurface.DrawStringWrapped(int x, int y, int width,
+                                    FontType font, Alignment,
+                                    const string text)
+```
 
 Draws the *text* onto the surface at (x,y), using the specified FONT.
 
@@ -330,10 +368,12 @@ The text will be printed using the current drawing color.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawStringWrapped(80, 40, 160, Game.NormalFont, eAlignCentre, "Hello, my name is Bob.");
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawStringWrapped(80, 40, 160, Game.NormalFont, eAlignCentre, "Hello, my name is Bob.");
+surface.Release();
+```
 
 will display the text in the center of the screen, starting from Y = 40.
 
@@ -351,11 +391,13 @@ will display the text in the center of the screen, starting from Y = 40.
 *(Formerly known as `RawDrawFrameTransparent`, which is now obsolete)*<br>
 *(Formerly known as `RawRestoreScreen`, which is now obsolete)*
 
-    DrawingSurface.DrawSurface(DrawingSurface* source, optional int transparency,
-                              optional int x, optional int y, 
-                              optional int width, optional int height,
-                              optional int cut_x, optional  int cut_y, 
-                              optional int cut_width, optional int cut_height)
+```ags
+DrawingSurface.DrawSurface(DrawingSurface* source, optional int transparency,
+                            optional int x, optional int y, 
+                            optional int width, optional int height,
+                            optional int cut_x, optional  int cut_y, 
+                            optional int cut_width, optional int cut_height)
+```
 
 Draws the specified surface on top of this surface, optionally using
 *transparency* percent transparency. As of **AGS 3.6.0**, it also supports additional
@@ -376,11 +418,13 @@ otherwise the backgrounds will converge too quickly.
 
 Example:
 
-    DrawingSurface *mainBackground = Room.GetDrawingSurfaceForBackground(0);
-    DrawingSurface *nightBackground = Room.GetDrawingSurfaceForBackground(1);
-    mainBackground.DrawSurface(nightBackground, 50);
-    mainBackground.Release();
-    nightBackground.Release();
+```ags
+DrawingSurface *mainBackground = Room.GetDrawingSurfaceForBackground(0);
+DrawingSurface *nightBackground = Room.GetDrawingSurfaceForBackground(1);
+mainBackground.DrawSurface(nightBackground, 50);
+mainBackground.Release();
+nightBackground.Release();
+```
 
 this will draw background frame 1 onto frame 0 at 50`%` opacity.
 
@@ -394,7 +438,9 @@ this will draw background frame 1 onto frame 0 at 50`%` opacity.
 
 *(Formerly known as `RawDrawTriangle`, which is now obsolete)*
 
-    DrawingSurface.DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3)
+```ags
+DrawingSurface.DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3)
+```
 
 Draws a filled triangle in the current color with corners at the points
 (x1,y1), (x2,y2) and (x3,y3).
@@ -403,10 +449,12 @@ Well, don't look at me, you might find it useful for something :-)
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawTriangle(0,0,160,100,0,200);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawTriangle(0,0,160,100,0,200);
+surface.Release();
+```
 
 will draw a triangle with corners at the points (0,0),(160,100),(0,200).
 
@@ -419,7 +467,9 @@ will draw a triangle with corners at the points (0,0),(160,100),(0,200).
 
 ### `DrawingSurface.Release`
 
-    DrawingSurface.Release()
+```ags
+DrawingSurface.Release()
+```
 
 Tells AGS that you have finished drawing onto this surface, and that AGS
 can now upload the changed image into video memory.
@@ -429,10 +479,12 @@ instance. To do any further drawing, you need to get the surface again.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawLine(0, 0, 50, 50);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawLine(0, 0, 50, 50);
+surface.Release();
+```
 
 draws a yellow diagonal line across the top-left of the current room
 background, then releases the image.
@@ -447,7 +499,9 @@ background, then releases the image.
 
 *(Formerly known as `RawSetColor`, which is now obsolete)*
 
-    int DrawingSurface.DrawingColor
+```ags
+int DrawingSurface.DrawingColor
+```
 
 Gets/sets the current drawing color on this surface. Set this before
 using commands like [`DrawLine`](DrawingSurface#drawingsurfacedrawline), which
@@ -460,12 +514,14 @@ surface.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    surface.DrawingColor = 14;
-    surface.DrawLine(0, 0, 160, 100);
-    surface.DrawingColor = Game.GetColorFromRGB(255, 255, 255);
-    surface.DrawLine(0, 199, 160, 100);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawingColor = 14;
+surface.DrawLine(0, 0, 160, 100);
+surface.DrawingColor = Game.GetColorFromRGB(255, 255, 255);
+surface.DrawLine(0, 199, 160, 100);
+surface.Release();
+```
 
 will draw a yellow line from the left top of the screen (0,0) to the
 middle of the screen (160,100), and a white line from the bottom left to
@@ -481,7 +537,9 @@ the middle.
 
 ### `DrawingSurface.GetPixel`
 
-    int DrawingSurface.GetPixel(int x, int y)
+```ags
+int DrawingSurface.GetPixel(int x, int y)
+```
 
 Returns the AGS Color Number of the pixel at (X,Y) on the surface.
 
@@ -498,9 +556,11 @@ process an entire image.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    Display("The color of the middle pixel is %d.", surface.GetPixel(160, 100));
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+Display("The color of the middle pixel is %d.", surface.GetPixel(160, 100));
+surface.Release();
+```
 
 displays the pixel color of the center pixel on the screen.
 
@@ -515,15 +575,19 @@ displays the pixel color of the center pixel on the screen.
 
 ### `DrawingSurface.Height`
 
-    readonly int DrawingSurface.Height
+```ags
+readonly int DrawingSurface.Height
+```
 
 Gets the height of the surface.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    Display("The background is %d x %d!", surface.Width, surface.Height);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+Display("The background is %d x %d!", surface.Width, surface.Height);
+surface.Release();
+```
 
 displays the size of the surface to the player
 
@@ -537,7 +601,9 @@ displays the size of the surface to the player
 
 **This property is obsolete since AGS 3.5.0 and not recommended for use at all.**
 
-    bool DrawingSurface.UseHighResCoordinates
+```ags
+bool DrawingSurface.UseHighResCoordinates
+```
 
 Gets/sets whether you want to use high-resolution co-ordinates with this
 surface.
@@ -560,15 +626,19 @@ Since AGS 3.5.0 this property is ignored unless you have backwards-compatible "A
 
 ### `DrawingSurface.Width`
 
-    readonly int DrawingSurface.Width
+```ags
+readonly int DrawingSurface.Width
+```
 
 Gets the width of the surface.
 
 Example:
 
-    DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-    Display("The background is %d x %d!", surface.Width, surface.Height);
-    surface.Release();
+```ags
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+Display("The background is %d x %d!", surface.Width, surface.Height);
+surface.Release();
+```
 
 displays the size of the surface to the player
 

@@ -14,7 +14,9 @@ Some functions will only work in the room script: `on_call`.
 
 ### `dialog_request`
 
-    dialog_request (int parameter)
+```ags
+dialog_request (int parameter)
+```
 
 Called when a dialog script line "run-script" is processed. PARAMETER
 is the value of the number following the "run-script" on that line of
@@ -24,7 +26,9 @@ the dialog script.
 
 ### `game_start`
 
-    game_start ()
+```ags
+game_start ()
+```
 
 Called at the start of the game, before the first room is loaded. You
 would typically use this to set up the initial positions of
@@ -37,7 +41,9 @@ animations or do anything else which relies on a room being loaded
 
 ### `interface_click`
 
-    interface_click (int interface, int button)
+```ags
+interface_click (int interface, int button)
+```
 
 Called when the player clicks on a button on a GUI which has its
 action set as "Run script". INTERFACE is the number of the GUI which
@@ -48,38 +54,40 @@ GUI.
 
 ### `on_event`
 
-    on_event (EventType event, int data)
+```ags
+on_event (EventType event, int data)
+```
 
 Called whenever certain game events occur. The value of DATA depends
 on which event has occurred. The possible values of event are:
 
     eEventEnterRoomBeforeFadein
-          called just before the room's 'Enter Before Fade-in' event occurs
-          DATA = new room number
+            called just before the room's 'Enter Before Fade-in' event occurs
+            DATA = new room number
     eEventEnterRoomAfterFadein
-          called just before the room's 'Enter After Fade-in' event occurs
-          DATA = room number
+            called just before the room's 'Enter After Fade-in' event occurs
+            DATA = room number
     eEventLeaveRoom
-          called just after the room's 'Player Leaves Room' event occurs
-          DATA = room number they are leaving
+            called just after the room's 'Player Leaves Room' event occurs
+            DATA = room number they are leaving
     eEventGotScore
-          called whenever the player's score changes
-          DATA = number of points they've received
+            called whenever the player's score changes
+            DATA = number of points they've received
     eEventGUIMouseDown
-          called when a mouse button is pressed down over a GUI
-          DATA = GUI number
+            called when a mouse button is pressed down over a GUI
+            DATA = GUI number
     eEventGUIMouseUp
-          called when a mouse button is released over a GUI
-          DATA = GUI number
+            called when a mouse button is released over a GUI
+            DATA = GUI number
     eEventAddInventory
-          called when the player has just added an inventory item
-          DATA = inventory item number that was added
+            called when the player has just added an inventory item
+            DATA = inventory item number that was added
     eEventLoseInventory
-          called when the player has just lost an inventory item
-          DATA = inventory item number that was lost
+            called when the player has just lost an inventory item
+            DATA = inventory item number that was lost
     eEventRestoreGame
-          called after a saved game has been restored
-          DATA = save slot number
+            called after a saved game has been restored
+            DATA = save slot number
 
 *Compatibility:* `eEventEnterRoomAfterFadein` event type is only supported since AGS 3.6.0.
 
@@ -87,19 +95,24 @@ on which event has occurred. The possible values of event are:
 
 ### `on_key_press`
 
-    on_key_press (eKeyCode keycode, optional int mod)
+```ags
+on_key_press (eKeyCode keycode, optional int mod)
+```
 
 Called whenever a key is pressed on the keyboard. `keycode` holds the value of the key, while `mod` holds a combination of modifiers pressed alongside with that key. A list of these values is [available here](Keycodes).
 
 The `mod` argument is optional and may be omited. The `mod` contains *set of flags*, and is slightly more complicated than keycode: as you should not use regular comparison (`==`, `!=`) with it, but a bitwise operator (`&`):
 
-    // these two conditions check that ctrl was pressed (these commands are equivalent)
-    if (mod & eKeyModCtrl)
-    if (mod & eKeyModCtrl != 0)
- 
-    // these two conditions check that ctrl was NOT pressed (again, two variants of the same check)
-    if (!(mod & eKeyModCtrl))
-    if (mod & eKeyModCtrl == 0)
+```ags
+// these two conditions check that ctrl was pressed (these commands are equivalent)
+if (mod & eKeyModCtrl)
+if (mod & eKeyModCtrl != 0)
+
+
+// these two conditions check that ctrl was NOT pressed (again, two variants of the same check)
+if (!(mod & eKeyModCtrl))
+if (mod & eKeyModCtrl == 0)
+```
 
 The `on_key_press` function can also be defined in individual room
 scripts. This allows the room script to intercept a key-press first,
@@ -122,7 +135,9 @@ Starting with version 3.6.0 AGS supports two "key handling" modes: a new-style a
 
 ### `on_mouse_click`
 
-    on_mouse_click (MouseButton button)
+```ags
+on_mouse_click (MouseButton button)
+```
 
 Called when the player clicks a mouse button. BUTTON is either
 `eMouseLeft`, `eMouseRight`, or `eMouseMiddle`, depending on which
@@ -148,7 +163,9 @@ more details.
 
 ### `on_text_input`
 
-    on_text_input(int ch)
+```ags
+on_text_input(int ch)
+```
 
 Called when the player's key presses form a printable character. The difference between this and `on_key_press` is that not every key corresponds to the printable char, and some chars may be created by pressing multiple keys (which also depends on the current system language).
 
@@ -156,7 +173,9 @@ The `ch` argument contains a unicode character code, and may be used with the [S
 
 For example:
 
-    MyLabel.Text = MyLabel.Text.AppendChar(ch);
+```ags
+MyLabel.Text = MyLabel.Text.AppendChar(ch);
+```
 
 will append the new printed character to a label's text.
 
@@ -168,7 +187,9 @@ will append the new printed character to a label's text.
 
 ### `repeatedly_execute`
 
-    repeatedly_execute()
+```ags
+repeatedly_execute()
+```
 
 Called every game cycle (normally 40 times per second). Additional
 information is [available here](RepExec).
@@ -177,7 +198,9 @@ information is [available here](RepExec).
 
 ### `repeatedly_execute_always`
 
-    repeatedly_execute_always()
+```ags
+repeatedly_execute_always()
+```
 
 Called every game cycle, even when a blocking routine (e.g speech or
 cutscene) is in progress. You **cannot** call any blocking functions
@@ -189,7 +212,9 @@ Additional information is [available here](RepExec).
 
 ### `late_repeatedly_execute_always`
 
-    late_repeatedly_execute_always()
+```ags
+late_repeatedly_execute_always()
+```
 
 Called every game cycle, even when a blocking routine (e.g. speech or
 cutscene) is in progress. You **cannot** call any blocking functions
@@ -201,7 +226,9 @@ updated, but before the game screen is redrawn.
 
 ### `unhandled_event`
 
-    unhandled_event (int what, int type)
+```ags
+unhandled_event (int what, int type)
+```
 
 Called when an event occurs, but no corresponding event handler has
 been configured. This is typically used to display a default "I can't
@@ -250,7 +277,9 @@ event handler defined, nor if the player clicks on nothing (hotspot 0)
 
 ### `on_call`
 
-    on_call (int value)
+```ags
+on_call (int value)
+```
 
 This callback can only be declared on Room Script.
 

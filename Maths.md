@@ -2,7 +2,9 @@
 
 ### `FloatToInt`
 
-    int FloatToInt(float value, optional RoundDirection)
+```ags
+int FloatToInt(float value, optional RoundDirection)
+```
 
 Converts the supplied floating point value into an integer.
 
@@ -15,9 +17,11 @@ point number in.
 
 Example:
 
-    Display("Round down: %d", FloatToInt(10.7));
-    Display("Round up: %d", FloatToInt(10.7, eRoundUp));
-    Display("Round nearest: %d", FloatToInt(10.7, eRoundNearest));
+```ags
+Display("Round down: %d", FloatToInt(10.7));
+Display("Round up: %d", FloatToInt(10.7, eRoundUp));
+Display("Round nearest: %d", FloatToInt(10.7, eRoundNearest));
+```
 
 displays the integer value of 10.7, rounded in the three different ways.
 
@@ -27,7 +31,9 @@ displays the integer value of 10.7, rounded in the three different ways.
 
 ### `IntToFloat`
 
-    float IntToFloat(int value)
+```ags
+float IntToFloat(int value)
+```
 
 Converts the supplied integer value into a floating point number.
 
@@ -36,7 +42,9 @@ are not supported.
 
 Example:
 
-    float number = IntToFloat(10);
+```ags
+float number = IntToFloat(10);
+```
 
 loads 10.0 into the variable *number*.
 
@@ -46,7 +54,9 @@ loads 10.0 into the variable *number*.
 
 ### `Maths.ArcCos`
 
-    float Maths.ArcCos(float value)
+```ags
+float Maths.ArcCos(float value)
+```
 
 Calculates the arc-cosine, in radians, of the specified value.
 
@@ -55,7 +65,9 @@ To convert an angle in radians to degrees, use
 
 Example:
 
-    float angle = Maths.ArcCos(1.0);
+```ags
+float angle = Maths.ArcCos(1.0);
+```
 
 calculates the arc-cosine of 1.0 and places it into variable *angle*.
 
@@ -66,7 +78,9 @@ calculates the arc-cosine of 1.0 and places it into variable *angle*.
 
 ### `Maths.ArcSin`
 
-    float Maths.ArcSin(float value)
+```ags
+float Maths.ArcSin(float value)
+```
 
 Calculates the arc-sine, in radians, of the specified value.
 
@@ -75,7 +89,9 @@ To convert an angle in radians to degrees, use
 
 Example:
 
-    float angle = Maths.ArcSin(0.5);
+```ags
+float angle = Maths.ArcSin(0.5);
+```
 
 calculates the arc-sine of 0.5 and places it into variable *angle*.
 
@@ -86,7 +102,9 @@ calculates the arc-sine of 0.5 and places it into variable *angle*.
 
 ### `Maths.ArcTan`
 
-    float Maths.ArcTan(float value)
+```ags
+float Maths.ArcTan(float value)
+```
 
 Calculates the arc-tan, in radians, of the specified value.
 
@@ -95,7 +113,9 @@ To convert an angle in radians to degrees, use
 
 Example:
 
-    float angle = Maths.ArcTan(0.5);
+```ags
+float angle = Maths.ArcTan(0.5);
+```
 
 calculates the arc-tan of 0.5 and places it into variable *angle*.
 
@@ -107,7 +127,9 @@ calculates the arc-tan of 0.5 and places it into variable *angle*.
 
 ### `Maths.ArcTan2`
 
-    float Maths.ArcTan2(float y, float x)
+```ags
+float Maths.ArcTan2(float y, float x)
+```
 
 Calculates the arctangent of y/x. This is well defined for every point
 other than the origin, even if x equals 0 and y does not equal 0. The
@@ -118,7 +140,9 @@ To convert an angle in radians to degrees, use
 
 Example:
 
-    float angle = Maths.ArcTan2(-862.42, 78.5149);
+```ags
+float angle = Maths.ArcTan2(-862.42, 78.5149);
+```
 
 calculates the arc-tan of -862.42 / 78.5149 and places it into variable
 *angle*.
@@ -130,7 +154,9 @@ calculates the arc-tan of -862.42 / 78.5149 and places it into variable
 
 ### `Maths.Cos`
 
-    float Maths.Cos(float radians)
+```ags
+float Maths.Cos(float radians)
+```
 
 Calculates the cosine of the specified angle (in radians).
 
@@ -139,7 +165,9 @@ To convert an angle in degrees to radians, use
 
 Example:
 
-    float cosine = Maths.Cos(Maths.DegreesToRadians(360.0));
+```ags
+float cosine = Maths.Cos(Maths.DegreesToRadians(360.0));
+```
 
 calculates the cosine of 360 degrees (which is 1.0) and places it into
 variable *cosine*.
@@ -153,7 +181,9 @@ variable *cosine*.
 
 ### `Maths.Cosh`
 
-    float Maths.Cosh(float radians)
+```ags
+float Maths.Cosh(float radians)
+```
 
 Calculates the hyperbolic cosine of the specified angle (in radians).
 
@@ -162,7 +192,9 @@ To convert an angle in degrees to radians, use
 
 Example:
 
-    float hcos = Maths.Cosh(Maths.DegreesToRadians(360.0));
+```ags
+float hcos = Maths.Cosh(Maths.DegreesToRadians(360.0));
+```
 
 calculates the hyperbolic cosine of 360 degrees and places it into
 variable *hcos*.
@@ -177,7 +209,9 @@ variable *hcos*.
 
 ### `Maths.DegreesToRadians`
 
-    float Maths.DegreesToRadians(float degrees)
+```ags
+float Maths.DegreesToRadians(float degrees)
+```
 
 Converts the supplied angle in degrees, to the equivalent angle in
 radians.
@@ -188,7 +222,9 @@ degrees.
 
 Example:
 
-    float cosine = Maths.Cos(Maths.DegreesToRadians(360.0));
+```ags
+float cosine = Maths.Cos(Maths.DegreesToRadians(360.0));
+```
 
 calculates the cosine of 360 degrees (which is 1.0) and places it into
 variable *cosine*.
@@ -201,7 +237,9 @@ variable *cosine*.
 
 ### `Maths.Exp`
 
-    float Maths.Exp(float x)
+```ags
+float Maths.Exp(float x)
+```
 
 Returns the exponential value of the floating-point parameter, x
 
@@ -211,7 +249,9 @@ returns 0.
 
 Example:
 
-    float expValue = Maths.Exp(2.302585093);
+```ags
+float expValue = Maths.Exp(2.302585093);
+```
 
 calculates Exp of 2.302585093 (which should be 10) and places it into
 the variable.
@@ -225,7 +265,9 @@ the variable.
 
 ### `Maths.Log`
 
-    float Maths.Log(float x)
+```ags
+float Maths.Log(float x)
+```
 
 Returns the natural logarithm (base e) of x.
 
@@ -233,7 +275,9 @@ x must be a positive non-zero number.
 
 Example:
 
-    float logVal = Maths.Log(9000.0);
+```ags
+float logVal = Maths.Log(9000.0);
+```
 
 calculates Log of 9000 (which should be 9.104980) and places it into the
 variable.
@@ -247,7 +291,9 @@ variable.
 
 ### `Maths.Log10`
 
-    float Maths.Log10(float x)
+```ags
+float Maths.Log10(float x)
+```
 
 Returns the base-10 logarithm of x.
 
@@ -255,7 +301,9 @@ x must be a positive non-zero number.
 
 Example:
 
-    float logVal = Maths.Log(9000.0);
+```ags
+float logVal = Maths.Log(9000.0);
+```
 
 calculates Log10 of 9000 (which should be 3.954243) and places it into
 the variable.
@@ -269,7 +317,9 @@ the variable.
 
 ### `Maths.RadiansToDegrees`
 
-    float Maths.RadiansToDegrees(float radians)
+```ags
+float Maths.RadiansToDegrees(float radians)
+```
 
 Converts the supplied angle in radians, to the equivalent angle in
 degrees.
@@ -280,7 +330,9 @@ functions back to degrees.
 
 Example:
 
-    float halfCircle = Maths.RadiansToDegrees(Maths.Pi);
+```ags
+float halfCircle = Maths.RadiansToDegrees(Maths.Pi);
+```
 
 converts *PI* radians into degrees (which is 180).
 
@@ -292,7 +344,9 @@ converts *PI* radians into degrees (which is 180).
 
 ### `Maths.RaiseToPower`
 
-    float Maths.RaiseToPower(float base, float exponent)
+```ags
+float Maths.RaiseToPower(float base, float exponent)
+```
 
 Calculates the value of *base* raised to the power *exponent*.
 
@@ -300,7 +354,9 @@ This means that *base* is multiplied by itself *exponent* times.
 
 Example:
 
-    float value = Maths.RaiseToPower(4.0, 3.0);
+```ags
+float value = Maths.RaiseToPower(4.0, 3.0);
+```
 
 calculates 4 to the power 3 (which is 64).
 
@@ -310,7 +366,9 @@ calculates 4 to the power 3 (which is 64).
 
 ### `Maths.Sin`
 
-    float Maths.Sin(float radians)
+```ags
+float Maths.Sin(float radians)
+```
 
 Calculates the sine of the specified angle (in radians).
 
@@ -319,7 +377,9 @@ To convert an angle in degrees to radians, use
 
 Example:
 
-    float sine = Maths.Sin(Maths.DegreesToRadians(360.0));
+```ags
+float sine = Maths.Sin(Maths.DegreesToRadians(360.0));
+```
 
 calculates the sine of 360 degrees (which is 0) and places it into
 variable *sine*.
@@ -333,7 +393,9 @@ variable *sine*.
 
 ### `Maths.Sinh`
 
-    float Maths.Sinh(float radians)
+```ags
+float Maths.Sinh(float radians)
+```
 
 Calculates the hyperbolic sine of the specified angle (in radians).
 
@@ -342,7 +404,9 @@ To convert an angle in degrees to radians, use
 
 Example:
 
-    float hsine = Maths.Sinh(Maths.DegreesToRadians(360.0));
+```ags
+float hsine = Maths.Sinh(Maths.DegreesToRadians(360.0));
+```
 
 calculates the hyperbolic sine of 360 degrees and places it into
 variable *hsine*.
@@ -358,7 +422,9 @@ variable *hsine*.
 
 ### `Maths.Sqrt`
 
-    float Maths.Sqrt(float value)
+```ags
+float Maths.Sqrt(float value)
+```
 
 Calculates the square root of the supplied value.
 
@@ -367,7 +433,9 @@ The square root is the number which, when multiplied by itself, equals
 
 Example:
 
-    Display("The square root of 4 is %d!", FloatToInt(Maths.Sqrt(4.0)));
+```ags
+Display("The square root of 4 is %d!", FloatToInt(Maths.Sqrt(4.0)));
+```
 
 displays the square root of 4 (rounded down to the nearest integer).
 
@@ -379,7 +447,9 @@ displays the square root of 4 (rounded down to the nearest integer).
 
 ### `Maths.Tan`
 
-    float Maths.Tan(float radians)
+```ags
+float Maths.Tan(float radians)
+```
 
 Calculates the tangent of the specified angle (in radians).
 
@@ -388,7 +458,9 @@ To convert an angle in degrees to radians, use
 
 Example:
 
-    float tan = Maths.Tan(Maths.DegreesToRadians(45.0));
+```ags
+float tan = Maths.Tan(Maths.DegreesToRadians(45.0));
+```
 
 calculates the tan of 45 degrees (which is 1.0) and places it into
 variable *tan*.
@@ -402,7 +474,9 @@ variable *tan*.
 
 ### `Maths.Tanh`
 
-    float Maths.Tanh(float radians)
+```ags
+float Maths.Tanh(float radians)
+```
 
 Calculates the hyperbolic tangent of the specified angle (in radians).
 
@@ -411,7 +485,9 @@ To convert an angle in degrees to radians, use
 
 Example:
 
-    float htan = Maths.Tanh(Maths.DegreesToRadians(45.0));
+```ags
+float htan = Maths.Tanh(Maths.DegreesToRadians(45.0));
+```
 
 calculates the hyperbolic tan of 45 degrees and places it into variable
 *htan*.
@@ -427,13 +503,17 @@ calculates the hyperbolic tan of 45 degrees and places it into variable
 
 ### `Maths.Pi`
 
-    readonly float Maths.Pi
+```ags
+readonly float Maths.Pi
+```
 
 Gets the value of Pi (defined as 3.14159265358979323846).
 
 Example:
 
-    Display("Pi is %f!", Maths.Pi);
+```ags
+Display("Pi is %f!", Maths.Pi);
+```
 
 displays the value of Pi.
 

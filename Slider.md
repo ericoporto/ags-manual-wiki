@@ -8,7 +8,9 @@ Slider is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GU
 
 ### `Slider.BackgroundGraphic`
 
-    int Slider.BackgroundGraphic;
+```ags
+int Slider.BackgroundGraphic;
+```
 
 Gets/sets the sprite used to draw the slider background. This image is
 tiled along the length of the slider.
@@ -18,7 +20,9 @@ slider background.
 
 Example:
 
-    Display("sldHealth's background is sprite %d", sldHealth.BackgroundGraphic);
+```ags
+Display("sldHealth's background is sprite %d", sldHealth.BackgroundGraphic);
+```
 
 displays the *sldHealth* slider's background image
 
@@ -30,7 +34,9 @@ displays the *sldHealth* slider's background image
 
 ### `Slider.HandleGraphic`
 
-    int Slider.HandleGraphic;
+```ags
+int Slider.HandleGraphic;
+```
 
 Gets/sets the sprite used to draw the handle on the slider. The handle
 represents the slider's current position, and can be dragged around by
@@ -41,7 +47,9 @@ handle.
 
 Example:
 
-    Display("sldHealth's handle is sprite %d", sldHealth.HandleGraphic);
+```ags
+Display("sldHealth's handle is sprite %d", sldHealth.HandleGraphic);
+```
 
 displays the *sldHealth* slider's handle image
 
@@ -55,14 +63,18 @@ displays the *sldHealth* slider's handle image
 
 ### `Slider.HandleOffset`
 
-    int Slider.HandleOffset;
+```ags
+int Slider.HandleOffset;
+```
 
 Gets/sets the offset at which the handle image is drawn. This value is
 initially set up in the editor.
 
 Example:
 
-    sldHealth.HandleOffset = 2;
+```ags
+sldHealth.HandleOffset = 2;
+```
 
 sets the *sldHealth* slider's handle to be drawn an extra 2 pixels to
 the right.
@@ -75,7 +87,9 @@ the right.
 
 ### `Slider.Max`
 
-    int Slider.Max;
+```ags
+int Slider.Max;
+```
 
 Gets/sets the maximum value of the specified GUI slider.
 
@@ -86,7 +100,9 @@ An error occurs if you try to set the Max to a lower value than the Min.
 
 Example:
 
-    sldHealth.Max = 200;
+```ags
+sldHealth.Max = 200;
+```
 
 sets the maximum value of the *sldHealth* slider to 200.
 
@@ -97,7 +113,9 @@ sets the maximum value of the *sldHealth* slider to 200.
 
 ### `Slider.Min`
 
-    int Slider.Min;
+```ags
+int Slider.Min;
+```
 
 Gets/sets the minimum value of the specified GUI slider.
 
@@ -109,7 +127,9 @@ Max.
 
 Example:
 
-    sldHealth.Min = 0;
+```ags
+sldHealth.Min = 0;
+```
 
 sets the minimum value of the *sldHealth* slider to 0.
 
@@ -123,7 +143,9 @@ sets the minimum value of the *sldHealth* slider to 0.
 *(Formerly known as `GetSliderValue`, which is now obsolete)*<br>
 *(Formerly known as `SetSliderValue`, which is now obsolete)*
 
-    int Slider.Value;
+```ags
+int Slider.Value;
+```
 
 Gets/sets the value of the specified GUI slider. You would usually use
 this in the slider's OnChange event handler to find out what value the
@@ -134,7 +156,9 @@ settings for the slider, as set up in the GUI editor.
 
 Example:
 
-    System.Volume = sldVolume.Value;
+```ags
+System.Volume = sldVolume.Value;
+```
 
 will set the audio volume to the value of the slider *sldVolume*.
 

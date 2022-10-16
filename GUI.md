@@ -4,7 +4,9 @@
 
 *(Formerly known as `CentreGUI`, which is now obsolete)*
 
-    GUI.Centre()
+```ags
+GUI.Centre()
+```
 
 Centers the specified GUI in the middle of the screen. Useful if you've
 been moving it around with SetPosition and just want to return it to the
@@ -12,7 +14,9 @@ center.
 
 Example:
 
-    gControlpanel.Centre();
+```ags
+gControlpanel.Centre();
+```
 
 will center the CONTROLPANEL GUI in the middle of the screen.
 
@@ -22,7 +26,9 @@ will center the CONTROLPANEL GUI in the middle of the screen.
 
 ### `GUI.Click`
 
-    GUI.Click()
+```ags
+GUI.Click()
+```
 
 Forces GUI's OnClick event. If there is a script function bound to that
 event it will be run, otherwise nothing happens.
@@ -34,7 +40,9 @@ GUI element that happen to be at the given coordinates".
 
 Example:
 
-    gMainMenu.Click();
+```ags
+gMainMenu.Click();
+```
 
 triggers OnClick event for gMainMenu.
 
@@ -49,7 +57,9 @@ triggers OnClick event for gMainMenu.
 
 *(Formerly known as `GetGUIAt`, which is now obsolete)*
 
-    static GUI* GUI.GetAtScreenXY(int x, int y)
+```ags
+static GUI* GUI.GetAtScreenXY(int x, int y)
+```
 
 Checks whether there is currently a GUI at screen co-ordinates (X,Y). If
 there is, returns its GUI. If two GUIs overlap, the front-most one will
@@ -65,16 +75,18 @@ Non-Clickable (i.e. the "Clickable" checkbox not checked).
 
 Example:
 
-    GUI *theGui = GUI.GetAtScreenXY(mouse.x, mouse.y);
-    if (theGui == gInventory) {
-      Display("Inventory GUI at mouse location.");
-    }
-    else if (theGui == null) {
-      Display("No GUI at mouse location");
-    }
-    else {
-      Display("GUI %d at mouse location.", theGui.ID);
-    }
+```ags
+GUI *theGui = GUI.GetAtScreenXY(mouse.x, mouse.y);
+if (theGui == gInventory) {
+    Display("Inventory GUI at mouse location.");
+}
+else if (theGui == null) {
+    Display("No GUI at mouse location");
+}
+else {
+    Display("GUI %d at mouse location.", theGui.ID);
+}
+```
 
 will display the number of the GUI that the mouse is over.
 
@@ -86,7 +98,9 @@ will display the number of the GUI that the mouse is over.
 
 ### `GUI.ProcessClick`
 
-    static void GUI.ProcessClick(int x, int y, CursorMode)
+```ags
+static void GUI.ProcessClick(int x, int y, CursorMode)
+```
 
 Simulates clicking the mouse on the location (X,Y) on the screen, in the
 specified cursor mode. This "click" has special behavior in that it
@@ -101,7 +115,9 @@ eModeLookat, etc.
 
 Example:
 
-    ProcessClick(100, 50, eModePointer);
+```ags
+ProcessClick(100, 50, eModePointer);
+```
 
 will simulate clicking the mouse on co-ordinates (100, 50) in the
 Pointer mode, which will ignore anything but interface.
@@ -117,7 +133,9 @@ Pointer mode, which will ignore anything but interface.
 
 *(Formerly known as `SetGUIPosition`, which is now obsolete)*
 
-    GUI.SetPosition(int x, int y)
+```ags
+GUI.SetPosition(int x, int y)
+```
 
 Moves the top-left corner of GUI to the new location (X,Y) on the
 screen. This allows you to dynamically move GUIs around on the screen
@@ -126,7 +144,9 @@ room co-ordinates, and use the same scale as in the editor.
 
 Example:
 
-    gMyGui.SetPosition(mouse.x, mouse.y);
+```ags
+gMyGui.SetPosition(mouse.x, mouse.y);
+```
 
 will move the GUI to the position where the cursor is.
 
@@ -142,7 +162,9 @@ will move the GUI to the position where the cursor is.
 
 *(Formerly known as `SetGUISize`, which is now obsolete)*
 
-    GUI.SetSize(int width, int height)
+```ags
+GUI.SetSize(int width, int height)
+```
 
 Changes the GUI to have the new size WIDTH x HEIGHT
 
@@ -154,7 +176,9 @@ The size is in the normal 320x200-resolution pixels. Setting the size to
 
 Example:
 
-    gIconbar.SetSize(160, 100);
+```ags
+gIconbar.SetSize(160, 100);
+```
 
 changes the ICONBAR GUI to be the size of half the screen
 
@@ -168,14 +192,18 @@ changes the ICONBAR GUI to be the size of half the screen
 
 ### `GUI.AsTextWindow`
 
-    readonly TextWindowGUI* GUI.AsTextWindow
+```ags
+readonly TextWindowGUI* GUI.AsTextWindow
+```
 
 If this GUI is of TextWindow type then returns the TextWindowGUI interface which could be used to access specific properties; otherwise returns null.
 
 Example:
 
-    TextWindowGUI *tw = gMyTextGui.AsTextWindow;
-    tw.TextColor = Game.GetColorFromRGB(255, 0, 0);
+```ags
+TextWindowGUI *tw = gMyTextGui.AsTextWindow;
+tw.TextColor = Game.GetColorFromRGB(255, 0, 0);
+```
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
@@ -185,7 +213,9 @@ Example:
 
 ### `GUI.BackgroundColor`
 
-    int GUI.BackgroundColor
+```ags
+int GUI.BackgroundColor
+```
 
 Gets/sets the background color.
 
@@ -203,7 +233,9 @@ This property is ignored if the GUI.BackgroundGraphic is assigned a sprite numbe
 
 *(Formerly known as `SetGUIBackgroundPic`, which is now obsolete)*
 
-    int GUI.BackgroundGraphic
+```ags
+int GUI.BackgroundGraphic
+```
 
 Gets/sets the background image of the GUI.
 
@@ -218,7 +250,9 @@ When this property is assigned a sprite number other than 0 GUI.BackgroundColor 
 
 ### `GUI.BorderColor`
 
-    int GUI.BorderColor
+```ags
+int GUI.BorderColor
+```
 
 Gets/sets the border color.
 
@@ -236,7 +270,9 @@ Not applicable to TextWindow GUIs. This property is ignored if the GUI.Backgroun
 
 *(Formerly known as `SetGUIClickable`, which is now obsolete)*
 
-    bool GUI.Clickable
+```ags
+bool GUI.Clickable
+```
 
 Gets/sets whether the GUI is clickable or not. This allows you to modify
 the "Clickable" checkbox from the GUI Editor.
@@ -251,7 +287,9 @@ underneath.
 
 Example:
 
-    gStatusline.Clickable = false;
+```ags
+gStatusline.Clickable = false;
+```
 
 sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
@@ -261,7 +299,9 @@ sets the STATUSLINE GUI to no longer respond to mouse clicks.
 
 ### `GUI.ControlCount`
 
-    readonly int GUI.ControlCount;
+```ags
+readonly int GUI.ControlCount;
+```
 
 Gets the number of controls on the GUI. You won't normally need to use
 this property, but in some circumstances you may wish to iterate through
@@ -269,11 +309,13 @@ all the GUI's controls, and this allows you to determine where to stop.
 
 Example:
 
-    int i = 0;
-    while (i < gInventory.ControlCount) {
-      gInventory.Controls[i].Enabled = false;
-      i++;
-    }
+```ags
+int i = 0;
+while (i < gInventory.ControlCount) {
+    gInventory.Controls[i].Enabled = false;
+    i++;
+}
+```
 
 disables all controls on the INVENTORY GUI.
 
@@ -283,7 +325,9 @@ disables all controls on the INVENTORY GUI.
 
 ### `GUI.Controls`
 
-    GUIControl* GUI.Controls[index]
+```ags
+GUIControl* GUI.Controls[index]
+```
 
 Provides an array which allows you to access controls on the GUI by
 their index. You should not normally need to do this, since accessing
@@ -299,14 +343,16 @@ AsListBox, etc methods on it.
 
 Example:
 
-    GUIControl *control = gInventory.Controls[4];
-    if (control == null) {
-      Display("The inventory GUI doesn't have a control number 4.");
-    }
-    else {
-      control.Enabled = true;
-      control.AsListBox.AddItem("New item!!");
-    }
+```ags
+GUIControl *control = gInventory.Controls[4];
+if (control == null) {
+    Display("The inventory GUI doesn't have a control number 4.");
+}
+else {
+    control.Enabled = true;
+    control.AsListBox.AddItem("New item!!");
+}
+```
 
 gets list box number 4 from the INVENTORY GUI, and then adds an item to
 it. If control 4 isn't a listbox, you will get a Null Reference error.
@@ -318,7 +364,9 @@ it. If control 4 isn't a listbox, you will get a Null Reference error.
 
 ### `GUI.Height`
 
-    int GUI.Height
+```ags
+int GUI.Height
+```
 
 Gets/sets the height of the GUI. This allows you to dynamically change
 the size of the GUI on the screen.
@@ -327,7 +375,9 @@ The height is specified in the normal 320-resolution style.
 
 Example:
 
-    Display("The icon bar GUI is %d pixels high.", gIconbar.Height);
+```ags
+Display("The icon bar GUI is %d pixels high.", gIconbar.Height);
+```
 
 displays the height of the ICONBAR GUI.
 
@@ -338,7 +388,9 @@ displays the height of the ICONBAR GUI.
 
 ### `GUI.ID`
 
-    readonly int GUI.ID
+```ags
+readonly int GUI.ID
+```
 
 Gets the GUI's ID number. This is the GUI's number from the editor, and
 is useful if you need to interoperate with legacy code that uses the
@@ -346,8 +398,10 @@ GUI's number rather than object name.
 
 Example:
 
-    SetGUIClickable(gIconbar.ID, 1);
-    gIconbar.Clickable = false;
+```ags
+SetGUIClickable(gIconbar.ID, 1);
+gIconbar.Clickable = false;
+```
 
 uses the obsolete SetGUIClickable function to make the ICONBAR GUI
 clickable, and then uses the equivalent modern property to stop it being
@@ -359,7 +413,9 @@ clickable.
 
 ### `GUI.PopupStyle`
 
-    readonly GUIPopupStyle GUI.PopupStyle
+```ags
+readonly GUIPopupStyle GUI.PopupStyle
+```
 
 Gets the style of GUI behavior on screen. Possible values are:
 
@@ -386,7 +442,9 @@ to be set as `Be hidden`.
 
 ### `GUI.PopupYPos`
 
-    int GUI.PopupYPos
+```ags
+int GUI.PopupYPos
+```
 
 Gets/sets the Y co-ordinate at which the GUI will appear when using MouseYPos popup style. The GUI will be automatically shown when the mouse cursor's Y coordinate is *equal or lower* than GUI.PopupYPos (closer to the screen top) and hidden when it is *greater*.
 
@@ -400,7 +458,9 @@ This property is ignored if GUI has a different style.
 
 ### `GUI.Shown`
 
-    readonly bool GUI.Shown
+```ags
+readonly bool GUI.Shown
+```
 
 Tells whether GUI is currently active on screen.
 
@@ -418,7 +478,9 @@ In the common circumstances this property's value is equivalent to checking [`GU
 
 *(Formerly known as `SetGUITransparency`, which is now obsolete)*
 
-    int GUI.Transparency
+```ags
+int GUI.Transparency
+```
 
 Gets/sets the GUI translucency, in percent.
 
@@ -439,12 +501,14 @@ below:
 
 Example:
 
-    int trans = gInventory.Transparency;
-    while (trans < 100) {
-      trans++;
-      gInventory.Transparency = trans;
-      Wait(1);
-    }
+```ags
+int trans = gInventory.Transparency;
+while (trans < 100) {
+    trans++;
+    gInventory.Transparency = trans;
+    Wait(1);
+}
+```
 
 will gradually fade the INVENTORY GUI out until it is invisible.
 
@@ -461,7 +525,9 @@ will gradually fade the INVENTORY GUI out until it is invisible.
 *(Formerly known as `InterfaceOn`, which is now obsolete)*<br>
 *(Formerly known as `IsGUIOn`, which is now obsolete)*
 
-    bool GUI.Visible
+```ags
+bool GUI.Visible
+```
 
 Gets/sets whether the GUI is visible or not. This property has behaves
 differently depending on the GUI popup style.
@@ -483,7 +549,9 @@ then the GUI will be allowed to be popped up.
 
 Example:
 
-    gSettings.Visible = true;
+```ags
+gSettings.Visible = true;
+```
 
 will turn on the SETTINGS GUI.
 
@@ -493,7 +561,9 @@ will turn on the SETTINGS GUI.
 
 ### `GUI.Width`
 
-    int GUI.Width
+```ags
+int GUI.Width
+```
 
 Gets/sets the width of the GUI. This allows you to dynamically change
 the size of the GUI on the screen.
@@ -502,7 +572,9 @@ The width is specified in the normal 320-resolution style.
 
 Example:
 
-    gInventory.Width += 5;
+```ags
+gInventory.Width += 5;
+```
 
 makes the INVENTORY GUI 5 pixels wider.
 
@@ -513,7 +585,9 @@ makes the INVENTORY GUI 5 pixels wider.
 
 ### `GUI.X`
 
-    int GUI.X
+```ags
+int GUI.X
+```
 
 Gets/sets the X position of the GUI. This allows you to dynamically
 change the position of the GUI on the screen.
@@ -524,7 +598,9 @@ co-ordinates, and are in the normal 320-resolution style.
 
 Example:
 
-    gMyGui.X += 5;
+```ags
+gMyGui.X += 5;
+```
 
 moves the GUI right 5 pixels.
 
@@ -535,7 +611,9 @@ moves the GUI right 5 pixels.
 
 ### `GUI.Y`
 
-    int GUI.Y
+```ags
+int GUI.Y
+```
 
 Gets/sets the Y position of the GUI. This allows you to dynamically
 change the position of the GUI on the screen.
@@ -547,7 +625,9 @@ co-ordinates, not room co-ordinates, and are in the normal
 
 Example:
 
-    gMyGui.Y += 5;
+```ags
+gMyGui.Y += 5;
+```
 
 moves the GUI down 5 pixels.
 
@@ -560,7 +640,9 @@ moves the GUI down 5 pixels.
 
 *(Formerly known as `SetGUIZOrder`, which is now obsolete)*
 
-    int GUI.ZOrder
+```ags
+int GUI.ZOrder
+```
 
 Gets/sets the z-order of the GUI. This allows you to dynamically change
 the ordering of GUIs on the screen.
@@ -570,7 +652,9 @@ the GUIs in order, from the lowest numbered at the back to the highest numbered 
 
 Example:
 
-    gStatusline.ZOrder = 0;
+```ags
+gStatusline.ZOrder = 0;
+```
 
 sets the STATUSLINE GUI to be behind all other GUIs.
 

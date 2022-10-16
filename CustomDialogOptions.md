@@ -35,8 +35,10 @@ not behave correctly.
 
 ### `dialog_options_get_dimensions`
 
-    dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
-    
+```ags
+dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+```
+
 This is the first function that will be called before dialog options are shown. It is meant to find out which part of the screen you will be drawing onto. Do that by setting the X, Y, Width and Height properties of the `info` struct. Only when the width and height are greater than 0 will the custom dialog system be activated.
 
 **NOTE:** you may also use this function to set other things up, not only `DialogOptionsRenderingInfo`.
@@ -45,7 +47,9 @@ This is the first function that will be called before dialog options are shown. 
 
 ### `dialog_options_render`
 
-    dialog_options_render(DialogOptionsRenderingInfo *info)
+```ags
+dialog_options_render(DialogOptionsRenderingInfo *info)
+```
 
 This function is called right before the dialog options are shown or updated on screen. The `info` struct will supply a [`DrawingSurface`](DrawingSurface) which may be accessed using `info.Surface` property, and which you may draw upon.
 
@@ -53,7 +57,9 @@ This function is called right before the dialog options are shown or updated on 
 
 ### `dialog_options_mouse_click`
 
-    dialog_options_mouse_click(DialogOptionsRenderingInfo *info, MouseButton button)
+```ags
+dialog_options_mouse_click(DialogOptionsRenderingInfo *info, MouseButton button)
+```
 
 This function is called if the player clicks the mouse anywhere on dialog options. It corresponds to the regular [`on_mouse_click`](Globalfunctions_Event#on_mouse_click). You might want to use this to process clicks on dialog options, and also on some custom elements like scroll arrows, for example.
 
@@ -61,7 +67,9 @@ This function is called if the player clicks the mouse anywhere on dialog option
 
 ### `dialog_options_key_press`
 
-    dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode, int mod)
+```ags
+dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode, int mod)
+```
 
 This function is called if the player presses any key while custom dialog options are shown on screen. It corresponds to the regular [`on_key_press`](Globalfunctions_Event#on_key_press), and you can use this to implement key-controlled selection of dialog option, for example.
 
@@ -71,7 +79,9 @@ This function is called if the player presses any key while custom dialog option
 
 ### `dialog_options_text_input`
 
-    dialog_options_text_input(DialogOptionsRenderingInfo *info, int ch)
+```ags
+dialog_options_text_input(DialogOptionsRenderingInfo *info, int ch)
+```
 
 This function is called if the player's key presses form a printable character. It corresponds to the regular [`on_text_input`](Globalfunctions_Event#on_text_input), and you can use this to handle a custom text input in your dialog options.
 
@@ -81,7 +91,9 @@ This function is called if the player's key presses form a printable character. 
 
 ### `dialog_options_repexec`
 
-    dialog_options_repexec(DialogOptionsRenderingInfo *info)
+```ags
+dialog_options_repexec(DialogOptionsRenderingInfo *info)
+```
 
 This function works similar to a general [`repeatedly_execute`](Globalfunctions_Event#repeatedly_execute) function, but is called only while the dialog options are shown on the screen. You may use this to update the dialog options state, for example, for determining which option the mouse is currently hovering over, or scripting timed actions.
 
@@ -89,7 +101,9 @@ This function works similar to a general [`repeatedly_execute`](Globalfunctions_
 
 ### `dialog_options_close`
 
-    dialog_options_close(DialogOptionsRenderingInfo *info)
+```ags
+dialog_options_close(DialogOptionsRenderingInfo *info)
+```
 
 This function will be called right before the dialog options are removed from the screen. This is a place to perform a "cleanup" in case you need to dispose temporary resources (like dynamic sprites), hide GUIs, stop sounds, and so forth.
 
@@ -101,7 +115,9 @@ This function will be called right before the dialog options are removed from th
 
 ### `dialog_options_get_active`
 
-    dialog_options_get_active(DialogOptionsRenderingInfo *info)
+```ags
+dialog_options_get_active(DialogOptionsRenderingInfo *info)
+```
 
 *Compatibility:* `dialog_options_get_active` is a deprecated function that works only if you have "Use old-style dialog options rendering API" enabled in General Settings. In a modern script use `dialog_options_repexec` instead.
 
@@ -111,76 +127,78 @@ This function is called as the player moves the mouse around the screen. This ne
 
 ### Example A. Classic mouse controls
 
-    int dlg_opt_color = 14;
-    int dlg_opt_acolor = 13;
-    int dlg_opt_ncolor = 4;
+```ags
+int dlg_opt_color = 14;
+int dlg_opt_acolor = 13;
+int dlg_opt_ncolor = 4;
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+  // Create a 200x200 dialog options area at (50,100)
+  info.X = 50;
+  info.Y = 100;
+  info.Width = 200;
+  info.Height = 200;
+  // Enable alpha channel for the drawing surface
+  info.HasAlphaChannel = true;
+  // Put the text parser at the bottom (if enabled)
+  info.ParserTextBoxX = 10;
+  info.ParserTextBoxY = 160;
+  info.ParserTextBoxWidth = 180;
+}
+
+function dialog_options_render(DialogOptionsRenderingInfo *info)
+{
+  info.Surface.Clear(dlg_opt_color);
+  int ypos = 0;
+  // Render all the options that are enabled
+  for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
+  {
+    if (info.DialogToRender.GetOptionState(i) == eOptionOn)
     {
-      // Create a 200x200 dialog options area at (50,100)
-      info.X = 50;
-      info.Y = 100;
-      info.Width = 200;
-      info.Height = 200;
-      // Enable alpha channel for the drawing surface
-      info.HasAlphaChannel = true;
-      // Put the text parser at the bottom (if enabled)
-      info.ParserTextBoxX = 10;
-      info.ParserTextBoxY = 160;
-      info.ParserTextBoxWidth = 180;
+      if (info.ActiveOptionID == i)
+        info.Surface.DrawingColor = dlg_opt_acolor;
+      else
+        info.Surface.DrawingColor = dlg_opt_ncolor;
+
+      info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
+              eFontNormal, eAlignLeft, info.DialogToRender.GetOptionText(i));
+      ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
     }
+  }
+}
 
-    function dialog_options_render(DialogOptionsRenderingInfo *info)
+function dialog_options_repexec(DialogOptionsRenderingInfo *info)
+{
+  info.ActiveOptionID = 0;
+  if (mouse.y < info.Y || mouse.y >= info.Y + info.Height ||
+      mouse.x < info.X || mouse.x >= info.X + info.Width)
+  {
+    return; // return if the mouse is outside UI bounds
+  }
+
+  int ypos = 0;
+  // Find the option that corresponds to where the mouse cursor is
+  for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
+  {
+    if (info.DialogToRender.GetOptionState(i) == eOptionOn)
     {
-      info.Surface.Clear(dlg_opt_color);
-      int ypos = 0;
-      // Render all the options that are enabled
-      for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
+      ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
+      if ((mouse.y - info.Y) < ypos)
       {
-        if (info.DialogToRender.GetOptionState(i) == eOptionOn)
-        {
-          if (info.ActiveOptionID == i)
-            info.Surface.DrawingColor = dlg_opt_acolor;
-          else
-            info.Surface.DrawingColor = dlg_opt_ncolor;
-
-          info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
-                  eFontNormal, eAlignLeft, info.DialogToRender.GetOptionText(i));
-          ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
-        }
+        info.ActiveOptionID = i;
+        return;
       }
     }
+  }
+}
 
-    function dialog_options_repexec(DialogOptionsRenderingInfo *info)
-    {
-      info.ActiveOptionID = 0;
-      if (mouse.y < info.Y || mouse.y >= info.Y + info.Height ||
-          mouse.x < info.X || mouse.x >= info.X + info.Width)
-      {
-        return; // return if the mouse is outside UI bounds
-      }
-
-      int ypos = 0;
-      // Find the option that corresponds to where the mouse cursor is
-      for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
-      {
-        if (info.DialogToRender.GetOptionState(i) == eOptionOn)
-        {
-          ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
-          if ((mouse.y - info.Y) < ypos)
-          {
-            info.ActiveOptionID = i;
-            return;
-          }
-        }
-      }
-    }
-
-    function dialog_options_mouse_click(DialogOptionsRenderingInfo *info, MouseButton button)
-    {
-      if (info.ActiveOptionID > 0)
-        info.RunActiveOption();
-    }
+function dialog_options_mouse_click(DialogOptionsRenderingInfo *info, MouseButton button)
+{
+  if (info.ActiveOptionID > 0)
+    info.RunActiveOption();
+}
+```
 
 The examples above are slightly naive; in reality you would probably
 want to track the Y position of each option in a variable to save having
@@ -190,69 +208,71 @@ to continually scan through all the options.
 
 ### Example B. Keyboard controls
 
-    int dlg_opt_color = 14;
-    int dlg_opt_acolor = 13;
-    int dlg_opt_ncolor = 4;
+```ags
+int dlg_opt_color = 14;
+int dlg_opt_acolor = 13;
+int dlg_opt_ncolor = 4;
 
-    function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
+{
+  // Create a 200x200 dialog options area at (50,100)
+  info.X = 50;
+  info.Y = 100;
+  info.Width = 200;
+  info.Height = 200;
+  info.ActiveOptionID = 1; // set to first option
+}
+
+function dialog_options_render(DialogOptionsRenderingInfo *info)
+{
+  info.Surface.Clear(dlg_opt_color);
+  int ypos = 0;
+  // Render all the options that are enabled
+  for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
+  {
+    if (info.DialogToRender.GetOptionState(i) == eOptionOn)
     {
-      // Create a 200x200 dialog options area at (50,100)
-      info.X = 50;
-      info.Y = 100;
-      info.Width = 200;
-      info.Height = 200;
-      info.ActiveOptionID = 1; // set to first option
+      if (info.ActiveOptionID == i)
+        info.Surface.DrawingColor = dlg_opt_acolor;
+      else
+        info.Surface.DrawingColor = dlg_opt_ncolor;
+
+      info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
+          eFontNormal, eAlignLeft, info.DialogToRender.GetOptionText(i));
+      ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
     }
+  }
+}
 
-    function dialog_options_render(DialogOptionsRenderingInfo *info)
+function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode, int mod)
+{
+  if (keycode == eKeyUpArrow)
+  {
+    // check all options upwards until found an active one
+    for (int next_opt = info.ActiveOptionID - 1; next_opt >= 1; next_opt--)
     {
-      info.Surface.Clear(dlg_opt_color);
-      int ypos = 0;
-      // Render all the options that are enabled
-      for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
+      if (info.DialogToRender.GetOptionState(next_opt) == eOptionOn)
       {
-        if (info.DialogToRender.GetOptionState(i) == eOptionOn)
-        {
-          if (info.ActiveOptionID == i)
-            info.Surface.DrawingColor = dlg_opt_acolor;
-          else
-            info.Surface.DrawingColor = dlg_opt_ncolor;
-
-          info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
-              eFontNormal, eAlignLeft, info.DialogToRender.GetOptionText(i));
-          ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
-        }
-      }
-    }
-
-    function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode, int mod)
-    {
-      if (keycode == eKeyUpArrow)
-      {
-        // check all options upwards until found an active one
-        for (int next_opt = info.ActiveOptionID - 1; next_opt >= 1; next_opt--)
-        {
-          if (info.DialogToRender.GetOptionState(next_opt) == eOptionOn)
-          {
-            info.ActiveOptionID = next_opt;
-            break;
-          }
-        }
-      }
-      else if (keycode == eKeyDownArrow)
-      {
-        // check all options downwards until found an active one
-        for (int next_opt = info.ActiveOptionID + 1; next_opt <= info.DialogToRender.OptionCount; next_opt++)
-        {
-          if (info.DialogToRender.GetOptionState(next_opt) == eOptionOn)
-          {
-            info.ActiveOptionID = next_opt;
-            break;
-          }
-        }
-      }
-      else if (keycode == eKeyReturn || keycode == eKeySpace)
-      {
-        info.RunActiveOption();
+        info.ActiveOptionID = next_opt;
+        break;
       }
     }
+  }
+  else if (keycode == eKeyDownArrow)
+  {
+    // check all options downwards until found an active one
+    for (int next_opt = info.ActiveOptionID + 1; next_opt <= info.DialogToRender.OptionCount; next_opt++)
+    {
+      if (info.DialogToRender.GetOptionState(next_opt) == eOptionOn)
+      {
+        info.ActiveOptionID = next_opt;
+        break;
+      }
+    }
+  }
+  else if (keycode == eKeyReturn || keycode == eKeySpace)
+  {
+    info.RunActiveOption();
+  }
+}
+```

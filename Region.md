@@ -4,7 +4,9 @@
 
 *(Formerly known as global function `GetRegionAt`, which is now obsolete)*
 
-    static Region* Region.GetAtRoomXY(int x, int y)
+```ags
+static Region* Region.GetAtRoomXY(int x, int y)
+```
 
 Returns the region at ROOM co-ordinates (X,Y). If there is no region
 there, or if invalid co-ordinates are specified, the Region\*
@@ -12,9 +14,11 @@ representing region 0 will be returned.
 
 Example:
 
-    if (Region.GetAtRoomXY(player.x, player.y) == region[0]) {
-      Display("The player is not currently standing on a region.");
-    }
+```ags
+if (Region.GetAtRoomXY(player.x, player.y) == region[0]) {
+    Display("The player is not currently standing on a region.");
+}
+```
 
 *See also:* [`Region.GetAtScreenXY`](Region#regiongetatscreenxy), [`Character.GetAtRoomXY`](Character#charactergetatroomxy),
 [`Hotspot.GetAtRoomXY`](Hotspot#hotspotgetatroomxy),
@@ -24,7 +28,9 @@ Example:
 
 ### `Region.GetAtScreenXY`
 
-    static Region* Region.GetAtScreenXY(int x, int y)
+```ags
+static Region* Region.GetAtScreenXY(int x, int y)
+```
 
 Returns the region at SCREEN co-ordinates (X,Y). If there is no region
 there, or if invalid co-ordinates are specified, the Region\*
@@ -32,10 +38,12 @@ representing region 0 will be returned.
 
 Example:
 
-    Region* r = Region.GetAtScreenXY(mouse.x, mouse.y);
-    if (r != region[0]) {
-      Display("The mouse is over region %d", r.ID);
-    }
+```ags
+Region* r = Region.GetAtScreenXY(mouse.x, mouse.y);
+if (r != region[0]) {
+    Display("The mouse is over region %d", r.ID);
+}
+```
 
 will display the message if there is any region under the mouse cursor.
 
@@ -47,7 +55,9 @@ will display the message if there is any region under the mouse cursor.
 
 ### `Region.GetDrawingSurface`
 
-    static DrawingSurface* Region.GetDrawingSurface()
+```ags
+static DrawingSurface* Region.GetDrawingSurface()
+```
 
 Gets a drawing surface for the current room's 8-bit regions mask, which allows you to directly draw onto that mask. Note that this function is static and relates to all regions at once (not a particular region), because all of them are painted on the same mask.
 
@@ -57,10 +67,12 @@ Any changes you make will only last until the player leaves the room, at which p
 
 Example:
 
-    DrawingSurface *surface = Region.GetDrawingSurface();
-    surface.DrawingColor = 4;
-    surface.DrawRectangle(50, 50, 100, 100);
-    surface.Release();
+```ags
+DrawingSurface *surface = Region.GetDrawingSurface();
+surface.DrawingColor = 4;
+surface.DrawRectangle(50, 50, 100, 100);
+surface.Release();
+```
 
 will paint a rectangle for the region 4.
 
@@ -76,7 +88,9 @@ will paint a rectangle for the region 4.
 
 *(Formerly known as `RunRegionInteraction`, which is now obsolete)*
 
-    Region.RunInteraction(int event)
+```ags
+Region.RunInteraction(int event)
+```
 
 Runs the event handler as if the EVENT for the region had been
 activated.
@@ -90,7 +104,9 @@ take a cursor mode. Instead, it uses an event type as follows:
 
 Example:
 
-    region[4].RunInteraction(1);
+```ags
+region[4].RunInteraction(1);
+```
 
 will run the actions defined in the event handler script for "Player
 walks onto region" for region 4.
@@ -105,7 +121,9 @@ walks onto region" for region 4.
 
 *(Formerly known as `SetRegionTint`, which is now obsolete)*
 
-    Region.Tint(int red, int green, int blue, int amount, optional int luminance)
+```ags
+Region.Tint(int red, int green, int blue, int amount, optional int luminance)
+```
 
 Changes the region to have RGB tint (RED, GREEN, BLUE) with AMOUNT
 percent saturation.
@@ -125,7 +143,9 @@ need to use it in Player Enters Room if you want a permanent change.
 
 Example:
 
-    region[2].Tint(180, 20, 20, 50);
+```ags
+region[2].Tint(180, 20, 20, 50);
+```
 
 will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 
@@ -142,7 +162,9 @@ will set region 2's RGB tint to (180, 20, 20) with 50`%` opacity.
 *(Formerly known as `DisableRegion`, which is now obsolete)*<br>
 *(Formerly known as `EnableRegion`, which is now obsolete)*
 
-    bool Region.Enabled
+```ags
+bool Region.Enabled
+```
 
 Enables/disables the specified region. If you set this to false, then
 all areas of the screen that were previously part of the region now act
@@ -155,7 +177,9 @@ events will not get run.
 
 Example:
 
-    region[3].Enabled = false;
+```ags
+region[3].Enabled = false;
+```
 
 will disable region number 3.
 
@@ -167,14 +191,18 @@ will disable region number 3.
 
 ### `Region.ID`
 
-    readonly int Region.ID
+```ags
+readonly int Region.ID
+```
 
 Gets the region number of this region. This allows you to interoperate
 with old script using the number-based region functions.
 
 Example:
 
-    Display("Region 3 is number %d.", region[3].ID);
+```ags
+Display("Region 3 is number %d.", region[3].ID);
+```
 
 displays region 3's number (which will be 3).
 
@@ -186,7 +214,9 @@ displays region 3's number (which will be 3).
 
 *(Formerly known as `SetAreaLightLevel`, which is now obsolete)*
 
-    int Region.LightLevel
+```ags
+int Region.LightLevel
+```
 
 Gets/sets the region's light level. This does the same thing as the
 Light Level textbox in the editor, but allows you to change it at
@@ -215,8 +245,10 @@ and object light levels.
 
 Example:
 
-    if (GetGlobalInt(10)==1)
-        region[2].LightLevel = 100;
+```ags
+if (GetGlobalInt(10)==1)
+    region[2].LightLevel = 100;
+```
 
 will set region 2's level light to 100 if the Global Integer 10 is 1.
 
@@ -229,7 +261,9 @@ will set region 2's level light to 100 if the Global Integer 10 is 1.
 
 ### `Region.TintEnabled`
 
-    readonly bool Region.TintEnabled
+```ags
+readonly bool Region.TintEnabled
+```
 
 Gets whether the region currently has an RGB tint enabled for it.
 
@@ -241,9 +275,11 @@ TintSaturation and TintLuminance properties are invalid.
 
 Example:
 
-    if (region[4].TintEnabled) {
-      Display("Region 4 is tinted!!");
-    }
+```ags
+if (region[4].TintEnabled) {
+    Display("Region 4 is tinted!!");
+}
+```
 
 will display a message if region 4 is tinted
 
@@ -253,7 +289,9 @@ will display a message if region 4 is tinted
 
 ### `Region.TintBlue`
 
-    readonly int Region.TintBlue
+```ags
+readonly int Region.TintBlue
+```
 
 Gets the *Blue* setting for the region's current tint.
 
@@ -265,11 +303,13 @@ property is false, then this value is meaningless.
 
 Example:
 
-    if (region[4].TintEnabled) {
-      Display("Region 4 is tinted RGB (%d,%d,%d) Saturation %d.",
-              region[4].TintRed, region[4].TintGreen,
-              region[4].TintBlue, region[4].TintSaturation);
-    }
+```ags
+if (region[4].TintEnabled) {
+    Display("Region 4 is tinted RGB (%d,%d,%d) Saturation %d.",
+            region[4].TintRed, region[4].TintGreen,
+            region[4].TintBlue, region[4].TintSaturation);
+}
+```
 
 will display a message with the region's tints.
 
@@ -283,7 +323,9 @@ will display a message with the region's tints.
 
 ### `Region.TintGreen`
 
-    readonly int Region.TintGreen
+```ags
+readonly int Region.TintGreen
+```
 
 Gets the *Green* setting for the region's current tint.
 
@@ -295,11 +337,13 @@ property is false, then this value is meaningless.
 
 Example:
 
-    if (region[4].TintEnabled) {
-      Display("Region 4 is tinted RGB (%d,%d,%d) Saturation %d.",
-              region[4].TintRed, region[4].TintGreen,
-              region[4].TintBlue, region[4].TintSaturation);
-    }
+```ags
+if (region[4].TintEnabled) {
+    Display("Region 4 is tinted RGB (%d,%d,%d) Saturation %d.",
+            region[4].TintRed, region[4].TintGreen,
+            region[4].TintBlue, region[4].TintSaturation);
+}
+```
 
 will display a message with the region's tints.
 
@@ -314,7 +358,9 @@ will display a message with the region's tints.
 
 ### `Region.TintRed`
 
-    readonly int Region.TintRed
+```ags
+readonly int Region.TintRed
+```
 
 Gets the *Red* setting for the region's current tint.
 
@@ -326,11 +372,13 @@ property is false, then this value is meaningless.
 
 Example:
 
-    if (region[4].TintEnabled) {
-      Display("Region 4 is tinted RGB (%d,%d,%d) Saturation %d.",
-              region[4].TintRed, region[4].TintGreen,
-              region[4].TintBlue, region[4].TintSaturation);
-    }
+```ags
+if (region[4].TintEnabled) {
+    Display("Region 4 is tinted RGB (%d,%d,%d) Saturation %d.",
+            region[4].TintRed, region[4].TintGreen,
+            region[4].TintBlue, region[4].TintSaturation);
+}
+```
 
 will display a message with the region's tints.
 
@@ -345,7 +393,9 @@ will display a message with the region's tints.
 
 ### `Region.TintSaturation`
 
-    readonly int Region.TintSaturation
+```ags
+readonly int Region.TintSaturation
+```
 
 Gets the *saturation* setting for the region's current tint.
 
@@ -357,11 +407,13 @@ property is false, then this value is meaningless.
 
 Example:
 
-    if (region[4].TintEnabled) {
-      Display("Region 4 is tinted RGB (%d,%d,%d) Saturation %d.",
-              region[4].TintRed, region[4].TintGreen,
-              region[4].TintBlue, region[4].TintSaturation);
-    }
+```ags
+if (region[4].TintEnabled) {
+    Display("Region 4 is tinted RGB (%d,%d,%d) Saturation %d.",
+            region[4].TintRed, region[4].TintGreen,
+            region[4].TintBlue, region[4].TintSaturation);
+}
+```
 
 will display a message with the region's tints.
 
@@ -376,7 +428,9 @@ will display a message with the region's tints.
 
 ### `Region.TintLuminance`
 
-    readonly int Region.TintLuminance
+```ags
+readonly int Region.TintLuminance
+```
 
 Gets the *luminance* setting for the region's current tint.
 

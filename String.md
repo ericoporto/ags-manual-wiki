@@ -4,7 +4,9 @@
 
 *(Formerly known as global function `StrCat`, which is now obsolete)*
 
-    String.Append(string str2)
+```ags
+String.Append(string str2)
+```
 
 Appends the string `str2` to the end of the specified string, and returns
 the result.
@@ -18,9 +20,11 @@ what you probably want instead is:<br>
 
 Example:
 
-    String mytext = "Hello";
-    mytext = mytext.Append("World");
-    Display(mytext);
+```ags
+String mytext = "Hello";
+mytext = mytext.Append("World");
+Display(mytext);
+```
 
 will display "HelloWorld".
 
@@ -32,7 +36,9 @@ will display "HelloWorld".
 
 ### `String.AppendChar`
 
-    String.AppendChar(int extraChar)
+```ags
+String.AppendChar(int extraChar)
+```
 
 Appends a single character to the end of the specified string, and
 returns the result.
@@ -46,9 +52,11 @@ what you probably want instead is:<br>
 
 Example:
 
-    String mytext = "Hell";
-    mytext = mytext.AppendChar('o');
-    Display(mytext);
+```ags
+String mytext = "Hell";
+mytext = mytext.AppendChar('o');
+Display(mytext);
+```
 
 will display "Hello".
 
@@ -64,7 +72,9 @@ will display "Hello".
 obsolete)*<br>
 *(Formerly known as global function `StrComp`, which is now obsolete)*
 
-    String.CompareTo(string str2, optional bool caseSensitive)
+```ags
+String.CompareTo(string str2, optional bool caseSensitive)
+```
 
 Compares the specified string to `str2`. *caseSensitive* determines
 whether "Dog" and "dog" are equivalent; case sensitivity is off by
@@ -79,20 +89,22 @@ to just use the == operator.
 
 Example:
 
-    String mytext = "Hello";
-    if (mytext.CompareTo("hello") == 0) {
-      Display("Strings match with case sensitivity off!");
-    }
-    else {
-      Display("Strings don't match with case sensitivity off!");
-    }
+```ags
+String mytext = "Hello";
+if (mytext.CompareTo("hello") == 0) {
+    Display("Strings match with case sensitivity off!");
+}
+else {
+    Display("Strings don't match with case sensitivity off!");
+}
 
-    if (mytext == "hello") {
-      Display("Strings match with case sensitivity on!");
-    }
-    else {
-      Display("Strings don't match with case sensitivity on!");
-    }
+if (mytext == "hello") {
+    Display("Strings match with case sensitivity on!");
+}
+else {
+    Display("Strings don't match with case sensitivity on!");
+}
+```
 
 will display "Strings match with case sensitivity off!", and then
 "Strings don't match with case sensitivity on!".
@@ -103,16 +115,20 @@ will display "Strings match with case sensitivity off!", and then
 
 *(Formerly known as global function `StrCopy`, which is now obsolete)*
 
-    String.Copy()
+```ags
+String.Copy()
+```
 
 Returns a new copy of the specified string. You should not normally need
 to use this, since strings can be assigned using the = operator.
 
 Example:
 
-    String mystring = "This is a test string.";
-    String newstring = mystring.Copy();
-    Display(newstring);
+```ags
+String mystring = "This is a test string.";
+String newstring = mystring.Copy();
+Display(newstring);
+```
 
 will display "This is a test string".
 
@@ -120,7 +136,9 @@ will display "This is a test string".
 
 ### `String.EndsWith`
 
-    bool String.EndsWith(string lookForText, optional bool caseSensitive)
+```ags
+bool String.EndsWith(string lookForText, optional bool caseSensitive)
+```
 
 Returns *true* if this string ends with *lookForText*, or *false* if
 not.
@@ -130,11 +148,13 @@ that the function will only return *true* for an exact-case match.
 
 Example:
 
-    String myString = "Hello from the script!";
-    if (myString.EndsWith("script!"))
-    {
-      Display("Ends with script!");
-    }
+```ags
+String myString = "Hello from the script!";
+if (myString.EndsWith("script!"))
+{
+    Display("Ends with script!");
+}
+```
 
 will display the "Ends with script!" message.
 
@@ -149,7 +169,9 @@ will display the "Ends with script!" message.
 
 *(Formerly known as global function `StrFormat`, which is now obsolete)*
 
-    static String.Format(string fmt, ...)
+```ags
+static String.Format(string fmt, ...)
+```
 
 Processes the string FMT in the same way as the Display function does
 but instead of displaying it on the screen, returns the result as a new
@@ -164,8 +186,10 @@ existing string variable, but use `String.Format()` instead.
 
 Example:
 
-    int health=10;
-    String text = String.Format("%d", health);
+```ags
+int health=10;
+String text = String.Format("%d", health);
+```
 
 will create a text string containing "10".
 
@@ -179,7 +203,9 @@ will create a text string containing "10".
 obsolete)*<br>
 *(Formerly known as `String.Contains`, which is now obsolete)*
 
-    String.IndexOf(string needle)
+```ags
+String.IndexOf(string needle)
+```
 
 Checks to see if NEEDLE is contained within the specified string.
 Returns the character position of the match if it is, or -1 if it is
@@ -190,15 +216,17 @@ This function is not case sensitive; i.e. testing "test string" for
 
 Example:
 
-    String haystack = "The haystack had a needle in it somewhere.";
-    int result = haystack.IndexOf("a needle");
+```ags
+String haystack = "The haystack had a needle in it somewhere.";
+int result = haystack.IndexOf("a needle");
 
-    if (result == -1) {
-      Display("The string didn't contain the needle.");
-    }
-    else {
-      Display("a needle was found starting at character %d in the string.", result);
-    }
+if (result == -1) {
+    Display("The string didn't contain the needle.");
+}
+else {
+    Display("a needle was found starting at character %d in the string.", result);
+}
+```
 
 *See also:* [`String.EndsWith`](String#stringendswith),
 [`String.StartsWith`](String#stringstartswith)
@@ -207,12 +235,16 @@ Example:
 
 ### `String.IsNullOrEmpty`
 
-    static bool String.IsNullOrEmpty(String stringToCheck)
+```ags
+static bool String.IsNullOrEmpty(String stringToCheck)
+```
 
 Returns whether the supplied string is null or empty. This is simply
 shorthand for the following:
 
-    if ((stringToCheck == null) || (stringToCheck == ""))
+```ags
+if ((stringToCheck == null) || (stringToCheck == ""))
+```
 
 in other words, you can easily use this to check whether a string has
 any text in it or not.
@@ -223,11 +255,13 @@ the example.
 
 Example:
 
-    String myString;
-    if (String.IsNullOrEmpty(myString))
-    {
-      myString = "Some text";
-    }
+```ags
+String myString;
+if (String.IsNullOrEmpty(myString))
+{
+    myString = "Some text";
+}
+```
 
 will set the myString variable to "Some text" if it is null or empty
 (which it is).
@@ -241,7 +275,9 @@ will set the myString variable to "Some text" if it is null or empty
 *(Formerly known as global function `StrToLowerCase`, which is now
 obsolete)*
 
-    String.LowerCase()
+```ags
+String.LowerCase()
+```
 
 Returns a lower case version of the specified string.
 
@@ -250,9 +286,11 @@ modify the original string.
 
 Example:
 
-    String mystring = "THIS is a test string";
-    String lowercased = mystring.LowerCase();
-    Display("Old: %s, new: %s", mystring, lowercased);
+```ags
+String mystring = "THIS is a test string";
+String lowercased = mystring.LowerCase();
+Display("Old: %s, new: %s", mystring, lowercased);
+```
 
 will display "Old: THIS is a test string, new: this is a test string".
 
@@ -262,8 +300,10 @@ will display "Old: THIS is a test string, new: this is a test string".
 
 ### `String.Replace`
 
-    String.Replace(string lookForText, string replaceWithText,
-                   optional bool caseSensitive)
+```ags
+String.Replace(string lookForText, string replaceWithText,
+                optional bool caseSensitive)
+```
 
 Creates a copy of this string, with all instances of *lookForText*
 replaced with the *replaceWithText*.
@@ -276,9 +316,11 @@ modify the original string.
 
 Example:
 
-    String original = "Hello from the script!";
-    String changed = original.Replace("hello", "goodbye");
-    Display("Old: %s, new: %s", original, changed);
+```ags
+String original = "Hello from the script!";
+String changed = original.Replace("hello", "goodbye");
+Display("Old: %s, new: %s", original, changed);
+```
 
 will display "Old: Hello from the script!, new: goodbye from the
 script!".
@@ -294,7 +336,9 @@ script!".
 *(Formerly known as global function `StrSetCharAt`, which is now
 obsolete)*
 
-    String.ReplaceCharAt(int index, int newChar)
+```ags
+String.ReplaceCharAt(int index, int newChar)
+```
 
 Changes the character at INDEX in the string to NEWCHAR.
 
@@ -306,9 +350,11 @@ modify the original string.
 
 Example:
 
-    String mystring = "Hello";
-    String changed = mystring.ReplaceCharAt(2, 'm');
-    Display("Old: %s, new: %s", newstring, changed);
+```ags
+String mystring = "Hello";
+String changed = mystring.ReplaceCharAt(2, 'm');
+Display("Old: %s, new: %s", newstring, changed);
+```
 
 will display "Old: Hello, new: Hemlo".
 
@@ -321,7 +367,9 @@ will display "Old: Hello, new: Hemlo".
 
 ### `String.StartsWith`
 
-    bool String.StartsWith(string lookForText, optional bool caseSensitive)
+```ags
+bool String.StartsWith(string lookForText, optional bool caseSensitive)
+```
 
 Returns *true* if this string starts with *lookForText*, or *false* if
 not.
@@ -331,11 +379,13 @@ that the function will only return *true* for an exact-case match.
 
 Example:
 
-    String myString = "Hello from the script!";
-    if (myString.StartsWith("hello"))
-    {
-      Display("Starts with hello!");
-    }
+```ags
+String myString = "Hello from the script!";
+if (myString.StartsWith("hello"))
+{
+    Display("Starts with hello!");
+}
+```
 
 will display the "Starts with hello!" message.
 
@@ -348,7 +398,9 @@ will display the "Starts with hello!" message.
 
 ### `String.Substring`
 
-    String.Substring(int index, int length)
+```ags
+String.Substring(int index, int length)
+```
 
 Returns part of the string, starting from character *index* and *length*
 characters long.
@@ -359,9 +411,11 @@ retrieve.
 
 Example:
 
-    String mystring = "Hello World!";
-    String substring = mystring.Substring(3, 5);
-    Display("Original: %s, Substring: %s", mystring, substring);
+```ags
+String mystring = "Hello World!";
+String substring = mystring.Substring(3, 5);
+Display("Original: %s, Substring: %s", mystring, substring);
+```
 
 will display "Original: Hello World!, Substring: lo Wo".
 
@@ -372,7 +426,9 @@ will display "Original: Hello World!, Substring: lo Wo".
 
 ### `String.Truncate`
 
-    String.Truncate(int length)
+```ags
+String.Truncate(int length)
+```
 
 Returns a version of the string that has been truncated down to *length*
 characters.
@@ -382,9 +438,11 @@ modify the original string.
 
 Example:
 
-    String mystring = "Hello World!";
-    String truncated = mystring.Truncate(4);
-    Display("Original: %s, Truncated: %s", mystring, truncated);
+```ags
+String mystring = "Hello World!";
+String truncated = mystring.Truncate(4);
+Display("Original: %s, Truncated: %s", mystring, truncated);
+```
 
 will display "Original: Hello World!, Truncated: Hell".
 
@@ -398,7 +456,9 @@ will display "Original: Hello World!, Truncated: Hell".
 *(Formerly known as global function `StrToUpperCase`, which is now
 obsolete)*
 
-    String.UpperCase()
+```ags
+String.UpperCase()
+```
 
 Returns an upper case version of the specified string.
 
@@ -407,9 +467,11 @@ modify the original string.
 
 Example:
 
-    String mystring = "THIS is a test string";
-    String uppercased = mystring.UpperCase();
-    Display("Old: %s, new: %s", mystring, uppercased);
+```ags
+String mystring = "THIS is a test string";
+String uppercased = mystring.UpperCase();
+Display("Old: %s, new: %s", mystring, uppercased);
+```
 
 will display "Old: THIS is a test string, new: THIS IS A TEST STRING".
 
@@ -419,19 +481,23 @@ will display "Old: THIS is a test string, new: THIS IS A TEST STRING".
 
 ### `String.AsFloat`
 
-    readonly float String.AsFloat;
+```ags
+readonly float String.AsFloat;
+```
 
 Converts the string into a float, and returns that value. Returns 0.0 if
 the string does not contain a number.
 
 Example:
 
-    String text1, text2;
-    float number1,number2;
-    text1 = "57.362";
-    text2 = "Hello";
-    number1 = text1.AsFloat;
-    number2 = text2.AsFloat;
+```ags
+String text1, text2;
+float number1,number2;
+text1 = "57.362";
+text2 = "Hello";
+number1 = text1.AsFloat;
+number2 = text2.AsFloat;
+```
 
 will set number1 value to 57.362 and number2 value to 0.0 This function
 is useful for processing strings input from the user.
@@ -449,7 +515,9 @@ is useful for processing strings input from the user.
 
 *(Formerly known as global function `StringToInt`, which is now obsolete)*
 
-    readonly int String.AsInt;
+```ags
+readonly int String.AsInt;
+```
 
 Converts the string into an integer, and returns that value. Returns
 zero if the string does not present a number.
@@ -461,12 +529,14 @@ in the middle, it will not work.
 
 Example:
 
-    String text1, text2;
-    int number1,number2;
-    text1 = "53";
-    text2 = "Hello";
-    number1 = text1.AsInt;
-    number2 = text2.AsInt;
+```ags
+String text1, text2;
+int number1,number2;
+text1 = "53";
+text2 = "Hello";
+number1 = text1.AsInt;
+number2 = text2.AsInt;
+```
 
 will set number1 value to 53 and number2 value to 0. This function is
 useful for processing strings input from the user.
@@ -485,7 +555,9 @@ useful for processing strings input from the user.
 *(Formerly known as global function `StrGetCharAt`, which is now
 obsolete)*
 
-    readonly int String.Chars[position];
+```ags
+readonly int String.Chars[position];
+```
 
 Returns the character at POSITION within the string.
 
@@ -500,8 +572,10 @@ the characters in the string, use
 
 Example:
 
-    String text = "This is my string.";
-    Display("The 4th character is: %c", text.Chars[3]);
+```ags
+String text = "This is my string.";
+Display("The 4th character is: %c", text.Chars[3]);
+```
 
 will display "The 4th character is: s".
 
@@ -516,14 +590,18 @@ will display "The 4th character is: s".
 
 *(Formerly known as global function `StrLen`, which is now obsolete)*
 
-    readonly int String.Length;
+```ags
+readonly int String.Length;
+```
 
 Returns the length of the string, in characters.
 
 Example:
 
-    String text = "This is my string.";
-    Display("Length: %d", text.Length);
+```ags
+String text = "This is my string.";
+Display("Length: %d", text.Length);
+```
 
 will display "Length: 18".
 

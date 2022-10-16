@@ -217,33 +217,45 @@ accessible in future versions.
     the mouse and/or keyboard, or neither, to skip speech in the game.
 -   **Custom Narrate function in dialog scripts** - determines which function will be used to substitute standard narration in dialog scripts. For example, if you have
 
-        narrator: The man looks you in the eye.
+    ```agsdialog
+    narrator: The man looks you in the eye.
+    ```
 
     in a dialog script, then normally this is replaced by
 
-        Display("The man looks you in the eye");
+    ```ags
+    Display("The man looks you in the eye");
+    ```
 
     during compilation. With the above setting you can provide *the name* of your custom function that you've defined in your script. Such function must have one of the following prototype forms:
 
-        function CustomNarrate1(const string text);
-        function CustomNarrate2(String text);
+    ```ags
+    function CustomNarrate1(const string text);
+    function CustomNarrate2(String text);
+    ```
 
     The return value is actually not essential and may be any type.<br>
     If the field is left empty then the standard Display function is used.
 -   **Custom Say function in dialog scripts** - determines which function will be used to substitute standard character cues in dialog scripts. For example, if you have something like
 
-        Roger: Hello, my name is Roger.
+    ```agsdialog
+    Roger: Hello, my name is Roger.
+    ```
 
     in a dialog script, then normally this is replaced by
 
-        cRoger.Say("Hello, my name is Roger.");
+    ```ags
+    cRoger.Say("Hello, my name is Roger.");
+    ```
 
     during compilation. With the above setting you can provide *the name* of your custom function that you've defined in your script. Such function must have one of the following prototype forms:
 
-        function CustomSay1(Character *c, const string text);
-        function CustomSay2(Character *c, String text);
-        function CustomSay3(this Character*, const string text);
-        function CustomSay4(this Character*, String text);
+    ```ags
+    function CustomSay1(Character *c, const string text);
+    function CustomSay2(Character *c, String text);
+    function CustomSay3(this Character*, const string text);
+    function CustomSay4(this Character*, String text);
+    ```
 
     Last two variants are [extender functions](ExtenderFunctions) for Character struct.<br>
     The return value is actually not essential and may be any type.<br>

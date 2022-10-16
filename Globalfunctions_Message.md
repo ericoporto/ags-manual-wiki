@@ -2,7 +2,9 @@
 
 ### `Display`
 
-    Display (string message, ...)
+```ags
+Display (string message, ...)
+```
 
 Displays a message to the screen. It will be displayed in the standard
 message box, and centered in the middle of the screen.
@@ -13,8 +15,10 @@ section.
 
 Example:
 
-    int my_counter;
-    Display ("The counter is currently set to %d.", my_counter);
+```ags
+int my_counter;
+Display ("The counter is currently set to %d.", my_counter);
+```
 
 will replace the '`%d`' with the value of the variable "my_counter".
 
@@ -34,7 +38,9 @@ usually used for responses to the player looking at things.
 
 ### `DisplayAt`
 
-    DisplayAt(int x, int y, int width, string message, ...)
+```ags
+DisplayAt(int x, int y, int width, string message, ...)
+```
 
 Identical to the "Display" function, only this allows you to define the
 position and size of the window where the text is displayed. The X and Y
@@ -54,7 +60,9 @@ information.
 
 Example:
 
-    DisplayAt (50,50,100, "This is a message");
+```ags
+DisplayAt (50,50,100, "This is a message");
+```
 
 will display the message at coordinates 50,50 in a box 100 pixels wide.
 
@@ -65,7 +73,9 @@ will display the message at coordinates 50,50 in a box 100 pixels wide.
 
 ### `DisplayAtY`
 
-    DisplayAtY (int y, string message)
+```ags
+DisplayAtY (int y, string message)
+```
 
 Similar to the Display function, except that this will display the
 message box at the specified Y location on the screen. The Y defines the
@@ -74,7 +84,9 @@ will be automatically calculated as usual.
 
 Example:
 
-    DisplayAt (50, "This is a message");
+```ags
+DisplayAt (50, "This is a message");
+```
 
 will display the message at y coordinate 50.
 
@@ -85,7 +97,9 @@ will display the message at y coordinate 50.
 
 ### `DisplayMessage`
 
-    DisplayMessage (int message_number)
+```ags
+DisplayMessage (int message_number)
+```
 
 Identical to the Display function, but this uses a message text defined
 in the AGS Editor rather than in the script. It will either use a message
@@ -93,7 +107,9 @@ from the current room, or a global message (if message_number >= 500).
 
 Example:
 
-    DisplayMessage(220);
+```ags
+DisplayMessage(220);
+```
 
 will display the message 220 of the Room message editor.
 
@@ -104,7 +120,9 @@ will display the message 220 of the Room message editor.
 
 ### `DisplayMessageAtY`
 
-    DisplayMessageAtY (int message_number, int yposition)
+```ags
+DisplayMessageAtY (int message_number, int yposition)
+```
 
 Identical to the DisplayMessage function, except that the text box is
 positioned with its top at YPOSITION, the same way as DisplayAtY works.
@@ -115,7 +133,9 @@ you can place the message above or below it.
 
 Example:
 
-    DisplayMessageAtY(527, 200);
+```ags
+DisplayMessageAtY(527, 200);
+```
 
 will display global message 527, in the lower half of the screen.
 
@@ -126,7 +146,9 @@ will display global message 527, in the lower half of the screen.
 
 ### `DisplayTopBar`
 
-    DisplayTopBar(int y, int text_color, int back_color, string titleText, string message, ...)
+```ags
+DisplayTopBar(int y, int text_color, int back_color, string titleText, string message, ...)
+```
 
 Displays a message in a text window, with a caption bar on top of it.
 
@@ -163,7 +185,9 @@ to a specific number to use that font instead.
 
 Example:
 
-    DisplayTopBar(25, 8, 7, "Evil wizard", "Get out of my house and never return!");
+```ags
+DisplayTopBar(25, 8, 7, "Evil wizard", "Get out of my house and never return!");
+```
 
 will display "Get out of my house and never return!" in the message box,
 with the caption bar reading "Evil wizard". The message box will have

@@ -5,7 +5,7 @@ To archive this, these functions are called inside an if-clause.
 
 Example:
 
-```
+```ags
 if(Verbs.MovePlayer(20,20)) Display("The player has reached the destination.");
 ```
 
@@ -16,7 +16,7 @@ If the movement is being canceled by a mouseclick, the message doesn't appear.
 
 ### `Verbs.MovePlayer`
 
-```
+```ags
 int Verbs.MovePlayer(int x, int y);
 ```
 
@@ -28,7 +28,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 
 ### `Verbs.MovePlayerEx`
 
-```
+```ags
 int Verbs.MovePlayerEx(int x, int y, WalkWhere direct);
 ```
 
@@ -40,7 +40,7 @@ Returns 1, if the character hasn't canceled the movement and 0 if the movement h
 
 ### `Verbs.GoToCharacter`
 
-```
+```ags
 int Verbs.GoToCharacter(Character*charid, eDirection dir, bool NPCfacesplayer, int blocking);
 ```
 
@@ -54,7 +54,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 
 ### `Verbs.GoToCharacterEx`
 
-```
+```ags
 int Verbs.GoToCharacterEx(Character*chwhogoes, Character*ch, eDirection dir, int xoffset, int yoffset, bool NPCfacesplayer, int blocking);
 ```
 
@@ -70,7 +70,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 
 ### `Verbs.NPCGoToCharacter`
 
-```
+```ags
 int Verbs.NPCGoToCharacter(Character*charidwhogoes, Character*charidtogoto, eDirection dir, bool NPCfacesplayer, int blocking);
 ```
 
@@ -84,7 +84,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 
 ### `Verbs.AnyClickMove`
 
-```
+```ags
 int Verbs.AnyClickMove(int x, int y, eDirection dir);
 ```
 
@@ -93,7 +93,7 @@ Returns 1, if the character has reached it's goal and 0 if the movement has been
 You can use this kind of functions (including the movePlayer function which is called by this function),
 to check if the player actually reached it's destination. For example:
 
-```
+```ags
 if (Verbs.AnyClickMove(130,110,eDir_Left) == 1 ) player.Say("I've reached the place.");
 ```
 
@@ -107,7 +107,7 @@ So the Message is only displayed, if the movement hasn't been canceled.
 
 ### `Verbs.AnyClickWalk`
 
-```
+```ags
 int Verbs.AnyClickWalk(int x, int y, eDirection dir);
 ```
 
@@ -122,7 +122,7 @@ This function is almost similar to AnyClickMove. But it's only called, if the cu
 
 ### `Verbs.AnyClickWalkLook`
 
-```
+```ags
 int Verbs.AnyClickWalkLook(int x, int y, eDirection dir, String lookat);
 ```
 
@@ -135,7 +135,7 @@ This function moves the player character to the given location, turns it to the 
 
 ### `Verbs.AnyClickWalkLookPick`
 
-```
+```ags
 int Verbs.AnyClickWalkLookPick(int x, int y, eDirection dir, String lookat, int objectID, InventoryItem*item, AudioClip *sound);
 ```
 
@@ -151,14 +151,14 @@ The function return 0 if the action has been canceled, before the player has rea
 
 ### `Verbs.AnyClickUseInv`
 
-```
+```ags
 int Verbs.AnyClickUseInv (InventoryItem*item, int x, int y, eDirection dir);
 ```
 
 This function moves the player to the given destination. It returns 0, if the action is unhandled, 1 is returned,
 if the action is handled, but has been canceled. 2 is returned, if everything went fine. A possible usage is:
 
-```
+```ags
 if (Verbs.AnyClickUseInv(iWrench,100,130,eDir_Left) == 2 ) player.Say("I will now repair this pipe.");
 ```
 
@@ -170,7 +170,7 @@ if (Verbs.AnyClickUseInv(iWrench,100,130,eDir_Left) == 2 ) player.Say("I will no
 
 ### `Verbs.GoTo`
 
-```
+```ags
 int Verbs.GoTo(int blocking);
 ```
 
@@ -186,7 +186,7 @@ blocking: 0=non-blocking; 1=blocking; 2=semi-blocking (default)
 
 ### `Verbs.WalkOffScreen`
 
-```
+```ags
 void Verbs.WalkOffScreen();
 ```
 
@@ -199,7 +199,7 @@ Handles the action of hotspots or objects with the exit extension ('>e'). Take a
 
 ### `Verbs.SetApproachingChar`
 
-```
+```ags
 void Verbs.SetApproachingChar(bool enable);
 ```
 

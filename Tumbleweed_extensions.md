@@ -42,7 +42,7 @@ But with the use-extension, it is getting opened by a single left-click. The exi
 
 ### `Verbs.RemoveExtension`
 
-```
+```ags
 void Verbs.RemoveExtension();
 ```
 
@@ -52,7 +52,7 @@ Used to remove the extension from a location (Hotspots, Objects etc.), so it doe
 
 ### `Verbs.AddExtension`
 
-```
+```ags
 void Verbs.AddExtension(char extension);
 ```
 
@@ -62,7 +62,7 @@ Used to add a default extension in case the location doesn't have one.
 
 ### `Verbs.Extension`
 
-```
+```ags
 char Verbs.Extension();
 ```
 
@@ -72,7 +72,7 @@ Returns the first extension of a location.
 
 ### `Verbs.ExtensionEx`
 
-```
+```ags
 char Verbs.ExtensionEx(int index, String name);
 ```
 
@@ -82,7 +82,7 @@ Returns the n-th extension of the given string. This is currently used for exit 
 
 ### `Verbs.OpenCloseExtension`
 
-```
+```ags
 void Verbs.OpenCloseExtension(int door_id);
 ```
 
@@ -92,7 +92,7 @@ Used in combination with the door scripts. This function returns a close extensi
 
 ### `Verbs.VariableExtensions`
 
-```
+```ags
 void Verbs.VariableExtensions();
 ```
 

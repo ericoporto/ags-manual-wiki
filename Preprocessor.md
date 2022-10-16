@@ -13,15 +13,21 @@ There are two common use of macro:
 
 First, as a placeholder in your script which value could be easily changed. For example, if you put this somewhere in the beginning of a script:
 
-    #define TINT_COLOR 255, 0, 255
+```ags
+#define TINT_COLOR 255, 0, 255
+```
 
 and then use this macro in some function calls like
 
-    TintScreen(TINT_COLOR);
+```ags
+TintScreen(TINT_COLOR);
+```
 
 the compiler will see this as
 
-    TintScreen(255, 0, 255);
+```ags
+TintScreen(255, 0, 255);
+```
 
 Now you may experiment adjusting the macro's value in its declaration, without having to search for actual script commands every time. This may be very convenient if you have multiple experimental values in your game which you are not sure about yet, or one value which is used in many places.
 
@@ -36,13 +42,13 @@ This is explained further in a paragraphs about [`#ifdef`](Preprocessor#ifdef-if
 
 ### ifdef, ifndef, endif
 
-```
+```ags
 #ifdef <macro>
   // script
 #endif
 ```
 
-```
+```ags
 #ifndef <macro>
   // script
 #endif
@@ -56,13 +62,13 @@ This is explained further in a paragraphs about [`#ifdef`](Preprocessor#ifdef-if
 
 ### ifver, ifnver
 
-```
+```ags
 #ifver <editor-version>
   // script
 #endif
 ```
 
-```
+```ags
 #ifnver <version>
   // script
 #endif
@@ -74,13 +80,15 @@ This is explained further in a paragraphs about [`#ifdef`](Preprocessor#ifdef-if
 
 For example:
 
-    #ifver 3.5.0
-        Display("This script was compiled in AGS 3.5.0 or higher");
-    #endif
+```ags
+#ifver 3.5.0
+    Display("This script was compiled in AGS 3.5.0 or higher");
+#endif
+```
 
 This keyword was introduced primarily to let script module authors to be able to keep different variants of code supported by older and newer versions of AGS. For example, if you were writing a script module, you may need to check which version of AGS the user of your module is using, for example:
 
-```
+```ags
 #ifver 2.72
 // do stuff for 2.72 and above
 #endif
@@ -103,13 +111,17 @@ This command throws a user-defined compilation error if met in an enabled part o
 
 Suppose you are writing a script module A which depends on another script module B. You let users know that in case they forgot to include module B, so that they get a comprehensible message instead of cryptic "undefined function" and similar errors. Thankfully module B has this macro declared in its header:
 
-    #define AWESOME_MODULE
+```ags
+#define AWESOME_MODULE
+```
 
 Then you could do this in your module's script:
 
-    #ifndef AWESOME_MODULE
-        #error This script requires "Awesome Module", please include it in the game
-    #endif
+```ags
+#ifndef AWESOME_MODULE
+    #error This script requires "Awesome Module", please include it in the game
+#endif
+```
 
 ---
 

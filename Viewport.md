@@ -23,7 +23,9 @@ Viewport's X, Y properties specify the position if its top-left corner on the ga
 
 ### `Viewport.Create`
 
-    static Viewport* Viewport.Create()
+```ags
+static Viewport* Viewport.Create()
+```
 
 Creates a new viewport and returns a pointer which you may store in a variable (local or global one) and use to operate it. Any viewport created like this may be also accessed by [`Screen.Viewports`](Screen#screenviewports) by its index.
 
@@ -33,14 +35,16 @@ You may always delete previously created viewport using [`Viewport.Delete`](View
 
 Example:
 
-    // Create a new viewport and a new camera
-    Viewport* myView = Viewport.Create();
-    Camera* myCam = Camera.Create();
-    // Set the viewport to half the screen size, centered and camera to half the room's
-    myView.SetPosition(Screen.Width / 4, Screen.Height / 4, Screen.Width / 2, Screen.Height / 2);
-    myCam.SetSize(Room.Width / 2, Room.Height / 2);
-    // Make sure that the new viewport is on top of the primary one
-    myView.ZOrder = Screen.Viewport.ZOrder + 1;
+```ags
+// Create a new viewport and a new camera
+Viewport* myView = Viewport.Create();
+Camera* myCam = Camera.Create();
+// Set the viewport to half the screen size, centered and camera to half the room's
+myView.SetPosition(Screen.Width / 4, Screen.Height / 4, Screen.Width / 2, Screen.Height / 2);
+myCam.SetSize(Room.Width / 2, Room.Height / 2);
+// Make sure that the new viewport is on top of the primary one
+myView.ZOrder = Screen.Viewport.ZOrder + 1;
+```
 
 *See also:* [`Viewport.Camera`](Viewport#viewportcamera), [`Viewport.Delete`](Viewport#viewportdelete), [`Screen.Viewport`](Screen#screenviewport), [`Screen.Viewports`](Screen#screenviewports)
 
@@ -48,7 +52,9 @@ Example:
 
 ### `Viewport.Delete`
 
-    void Viewport.Delete();
+```ags
+void Viewport.Delete();
+```
 
 Removes an existing viewport. This also removes this viewport's pointer from [`Screen.Viewports`](Screen#screenviewports) array.
 
@@ -58,27 +64,29 @@ It's always safe to delete a viewport, even if it's the last viewport remaining:
 
 Example:
 
-    // Create and setup a temporary viewport
-    Viewport* myView = Viewport.Create();
-    myView.SetPosition(0, 0, Screen.Width / 4, Screen.Height / 4);
-    myView.ZOrder = Screen.Viewport.ZOrder + 1;
-    // Assign the existing primary camera to this viewport
-    myView.Camera = Game.Camera;
-    // Hide the primary viewport
-    Screen.Viewport.Visible = false;
+```ags
+// Create and setup a temporary viewport
+Viewport* myView = Viewport.Create();
+myView.SetPosition(0, 0, Screen.Width / 4, Screen.Height / 4);
+myView.ZOrder = Screen.Viewport.ZOrder + 1;
+// Assign the existing primary camera to this viewport
+myView.Camera = Game.Camera;
+// Hide the primary viewport
+Screen.Viewport.Visible = false;
 
-    // Scroll the new viewport across the screen
-    while (myView.X < (Screen.Width - myView.Width) ||
-           myView.Y < (Screen.Height - myView.Height))
-    {
-        myView.X += 1;
-        myView.Y += 1;
-        Wait(1);
-    }
+// Scroll the new viewport across the screen
+while (myView.X < (Screen.Width - myView.Width) ||
+        myView.Y < (Screen.Height - myView.Height))
+{
+    myView.X += 1;
+    myView.Y += 1;
+    Wait(1);
+}
 
-    // Delete the viewport and show the primary viewport again
-    myView.Delete();
-    Screen.Viewport.Visible = true;
+// Delete the viewport and show the primary viewport again
+myView.Delete();
+Screen.Viewport.Visible = true;
+```
 
 *See also:* [`Viewport.Create`](Viewport#viewportcreate), [`Screen.Viewport`](Screen#screenviewport), [`Screen.Viewports`](Screen#screenviewports)
 
@@ -86,19 +94,23 @@ Example:
 
 ### `Viewport.GetAtScreenXY`
 
-    static Viewport* Viewport.GetAtScreenXY(int x, int y)
+```ags
+static Viewport* Viewport.GetAtScreenXY(int x, int y)
+```
 
 Finds if there's any viewport at the specified screen coordinates and returns the topmost one. Hidden viewports will not be tested, but those without camera will still be. If no viewport was found under provided coordinates then this function returns null.
 
 Example:
 
-    Viewport* view = Viewport.GetAtScreenXY(mouse.x, mouse.y);
-    if (view != null)
-    {
-        view.Visible = false;
-        Wait(1);
-        view.Visible = true;
-    }
+```ags
+Viewport* view = Viewport.GetAtScreenXY(mouse.x, mouse.y);
+if (view != null)
+{
+    view.Visible = false;
+    Wait(1);
+    view.Visible = true;
+}
+```
 
 will find a viewport under the mouse cursor, and if there's one then make it "blink".
 
@@ -106,7 +118,9 @@ will find a viewport under the mouse cursor, and if there's one then make it "bl
 
 ### `Viewport.RoomToScreenPoint`
 
-    Point* Viewport.RoomToScreenPoint(int roomx, int roomy, bool clipViewport = true);
+```ags
+Point* Viewport.RoomToScreenPoint(int roomx, int roomy, bool clipViewport = true);
+```
 
 Returns the point on screen corresponding to the given room coordinates if seen through this viewport. Resulting Point struct will contain screen x and y coordinates.
 
@@ -116,12 +130,14 @@ If **clipViewport** is true then this function will only return a point if given
 
 Example:
 
-    Point* pt = myViewport.RoomToScreenPoint(player.x, player.y);
-    if (pt != null) {
-      Display("Player character is displayed at (%d, %d) on screen.", pt.x, pt.y);
-    } else {
-      Display("Player character is currently offscreen.");
-    }
+```ags
+Point* pt = myViewport.RoomToScreenPoint(player.x, player.y);
+if (pt != null) {
+    Display("Player character is displayed at (%d, %d) on screen.", pt.x, pt.y);
+} else {
+    Display("Player character is currently offscreen.");
+}
+```
 
 *See also:* [`Viewport.ScreenToRoomPoint`](Viewport#viewportscreentoroompoint), [`Screen.RoomToScreenPoint`](Screen#screenroomtoscreenpoint), [`Screen.ScreenToRoomPoint`](Screen#screenscreentoroompoint)
 
@@ -129,14 +145,18 @@ Example:
 
 ### `Viewport.SetPosition`
 
-    void Viewport.SetPosition(int x, int y, int width, int height);
+```ags
+void Viewport.SetPosition(int x, int y, int width, int height);
+```
 
 Changes viewport's position on the screen. Offscreen positons are valid, if a viewport is entirely offscreen it will simply not be drawn.
 
 Example:
 
-    Screen.Viewport.SetPosition(Screen.Width / 4, Screen.Height / 4, Screen.Width / 2, Screen.Height / 2);
-    
+```ags
+Screen.Viewport.SetPosition(Screen.Width / 4, Screen.Height / 4, Screen.Width / 2, Screen.Height / 2);
+```
+
 will set the primary viewport to half the screen size, aligned in the center.
 
 *See also:* [`Viewport.X`](Viewport#viewportx), [`Viewport.Y`](Viewport#viewporty), [`Viewport.Width`](Viewport#viewportwidth), [`Viewport.Height`](Viewport#viewportheight), [`Viewport.ZOrder`](Viewport#viewportzorder), [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload)
@@ -145,7 +165,9 @@ will set the primary viewport to half the screen size, aligned in the center.
 
 ### `Viewport.ScreenToRoomPoint`
 
-    Point* Viewport.ScreenToRoomPoint(int scrx, int scry, optional bool clipViewport);
+```ags
+Point* Viewport.ScreenToRoomPoint(int scrx, int scry, optional bool clipViewport);
+```
 
 Returns the point in room corresponding to the given screen coordinates if seen through this viewport. Resulting Point struct will contain room x and y coordinates.
 
@@ -155,12 +177,14 @@ If **clipViewport** is false then viewport's bounds will be ignored and this fun
 
 Example:
 
-    Point* pt = myViewport.ScreenToRoomPoint(mouse.x, mouse.y, true);
-    if (pt != null) {
-      Display("Mouse cursor is over room location: (%d, %d).", pt.x, pt.y);
-    } else {
-      Display("Mouse cursor is currently outside the viewport.");
-    }
+```ags
+Point* pt = myViewport.ScreenToRoomPoint(mouse.x, mouse.y, true);
+if (pt != null) {
+    Display("Mouse cursor is over room location: (%d, %d).", pt.x, pt.y);
+} else {
+    Display("Mouse cursor is currently outside the viewport.");
+}
+```
 
 *See also:* [`Viewport.RoomToScreenPoint`](Viewport#viewportscreentoroompoint), [`Screen.RoomToScreenPoint`](Screen#screenroomtoscreenpoint), [`Screen.ScreenToRoomPoint`](Screen#screenscreentoroompoint)
 
@@ -168,7 +192,9 @@ Example:
 
 ### `Viewport.Camera`
 
-    Camera *Viewport.Camera;
+```ags
+Camera *Viewport.Camera;
+```
 
 Gets/sets the camera to be displayed in this viewport. Changing cameras is safe anytime, and the looks inside viewport will be changed during next drawing frame.
 
@@ -176,9 +202,11 @@ Setting Viewport.Camera to null will make an empty viewport, which does not disp
 
 Example:
 
-    Camera* myCam = Camera.Create();
-    myCam.SetSize(Room.Width / 2, Room.Height / 2);
-    Screen.Viewport.Camera = myCam;
+```ags
+Camera* myCam = Camera.Create();
+myCam.SetSize(Room.Width / 2, Room.Height / 2);
+Screen.Viewport.Camera = myCam;
+```
 
 Will create a new camera, half of the room's size, and assign it to the primary viewport.
 
@@ -188,7 +216,9 @@ Will create a new camera, half of the room's size, and assign it to the primary 
 
 ### `Viewport.Height`
 
-    int Viewport.Height;
+```ags
+int Viewport.Height;
+```
 
 Gets/sets the viewport's height in screen coordinates.
 
@@ -198,7 +228,9 @@ Gets/sets the viewport's height in screen coordinates.
 
 ### `Viewport.Visible`
 
-    bool Viewport.Visible;
+```ags
+bool Viewport.Visible;
+```
 
 Gets/sets whether the viewport is enabled and drawn on screen.
 
@@ -206,7 +238,9 @@ Gets/sets whether the viewport is enabled and drawn on screen.
 
 ### `Viewport.Width`
 
-    int Viewport.Width;
+```ags
+int Viewport.Width;
+```
 
 Gets/sets the viewport's width in screen coordinates.
 
@@ -216,18 +250,22 @@ Gets/sets the viewport's width in screen coordinates.
 
 ### `Viewport.X`
 
-    int Viewport.X;
+```ags
+int Viewport.X;
+```
 
 Gets/sets the X position on the screen where this viewport is located.
 
 Example:
 
-    while (Screen.Viewport.X < Screen.Width)
-    {
-        Screen.Viewport.X += 1;
-        Wait(1);
-    }
-    
+```ags
+while (Screen.Viewport.X < Screen.Width)
+{
+    Screen.Viewport.X += 1;
+    Wait(1);
+}
+```
+
 will pan viewport right until it's completely offscreen.
 
 *See also:* [`Viewport.SetPosition`](Viewport#viewportsetposition), [`Viewport.Y`](Viewport#viewporty), [`Viewport.Width`](Viewport#viewportwidth), [`Viewport.Height`](Viewport#viewportheight), [`Viewport.ZOrder`](Viewport#viewportzorder), [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload)
@@ -236,18 +274,22 @@ will pan viewport right until it's completely offscreen.
 
 ### `Viewport.Y`
 
-    int Viewport.Y;
+```ags
+int Viewport.Y;
+```
 
 Gets/sets the Y position on the screen where this viewport is located.
 
 Example:
 
-    while (Screen.Viewport.Y < Screen.Height)
-    {
-        Screen.Viewport.Y += 1;
-        Wait(1);
-    }
-    
+```ags
+while (Screen.Viewport.Y < Screen.Height)
+{
+    Screen.Viewport.Y += 1;
+    Wait(1);
+}
+```
+
 will pan viewport down until it's completely offscreen.
 
 *See also:* [`Viewport.SetPosition`](Viewport#viewportsetposition), [`Viewport.X`](Viewport#viewportx), [`Viewport.Width`](Viewport#viewportwidth), [`Viewport.Height`](Viewport#viewportheight), [`Viewport.ZOrder`](Viewport#viewportzorder), [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload)
@@ -256,7 +298,9 @@ will pan viewport down until it's completely offscreen.
 
 ### `Viewport.ZOrder`
 
-    int Viewport.ZOrder;
+```ags
+int Viewport.ZOrder;
+```
 
 Gets/sets the viewport's z-order relative to other viewports. This will be taken into account if multiple viewports overlap to define which should be displayed above and which below.
 
@@ -264,9 +308,11 @@ The z-order is an arbitrary number and only have meaning in comparison with othe
 
 Example:
 
-    Viewport* myView = Viewport.Create();
-    myView.ZOrder = Screen.Viewport.ZOrder + 1;
-    
+```ags
+Viewport* myView = Viewport.Create();
+myView.ZOrder = Screen.Viewport.ZOrder + 1;
+```
+
 will create a new viewport and place is on top of the primary one.
 
 *See also:* [`Viewport.SetPosition`](Viewport#viewportsetposition), [`Viewport.X`](Viewport#viewportx), [`Viewport.Y`](Viewport#viewporty), [`Viewport.Width`](Viewport#viewportwidth), [`Viewport.Height`](Viewport#viewportheight)

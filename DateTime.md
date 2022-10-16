@@ -4,7 +4,9 @@
 
 *(Formerly known as `GetTime`, which is now obsolete)*
 
-    readonly static DateTime* DateTime.Now;
+```ags
+readonly static DateTime* DateTime.Now;
+```
 
 Gets the current system time. You could use this for timing a loop, or
 for effects like telling the player to go to bed, and so on.
@@ -18,9 +20,11 @@ called DateTime.Now.
 
 Example:
 
-    DateTime *dt = DateTime.Now;
-    Display("The date is: %02d/%02d/%04d", dt.DayOfMonth, dt.Month, dt.Year);
-    Display("The time is: %02d:%02d:%02d", dt.Hour, dt.Minute, dt.Second);
+```ags
+DateTime *dt = DateTime.Now;
+Display("The date is: %02d/%02d/%04d", dt.DayOfMonth, dt.Month, dt.Year);
+Display("The time is: %02d:%02d:%02d", dt.Hour, dt.Minute, dt.Second);
+```
 
 will display the current date and time in 24-hour format
 
@@ -36,7 +40,9 @@ will display the current date and time in 24-hour format
 
 ### `DateTime.DayOfMonth`
 
-    readonly int DateTime.DayOfMonth;
+```ags
+readonly int DateTime.DayOfMonth;
+```
 
 Gets the day of the month represented by the DateTime object. This will
 be from 1 to 31, representing the current day within the month.
@@ -49,7 +55,9 @@ Example: For an example, see [`DateTime.Now`](DateTime#datetimenow).
 
 ### `DateTime.Hour`
 
-    readonly int DateTime.Hour;
+```ags
+readonly int DateTime.Hour;
+```
 
 Gets the hour represented by the DateTime object. This will be from 0 to
 23, representing the hour in 24-hour format.
@@ -62,7 +70,9 @@ Example: For an example, see [`DateTime.Now`](DateTime#datetimenow).
 
 ### `DateTime.Minute`
 
-    readonly int DateTime.Minute;
+```ags
+readonly int DateTime.Minute;
+```
 
 Gets the minute represented by the DateTime object. This will be from 0
 to 59, representing the minute in 24-hour format.
@@ -75,7 +85,9 @@ Example: For an example, see [`DateTime.Now`](DateTime#datetimenow).
 
 ### `DateTime.Month`
 
-    readonly int DateTime.Month;
+```ags
+readonly int DateTime.Month;
+```
 
 Gets the month represented by the DateTime object. This will be from 1
 to 12, representing the month of the year.
@@ -90,7 +102,9 @@ Example: For an example, see [`DateTime.Now`](DateTime#datetimenow).
 
 *(Formerly known as `GetRawTime`, which is now obsolete)*
 
-    readonly int DateTime.RawTime;
+```ags
+readonly int DateTime.RawTime;
+```
 
 This function returns the raw system time, as the number of seconds
 since January 1970. While this value is not useful in itself, you can
@@ -106,11 +120,13 @@ when they were not playing.
 
 Example:
 
-    DateTime *dt = DateTime.Now;
-    int start_time = dt.RawTime;
-    Wait(120);
-    dt = DateTime.Now;
-    Display("After the wait it is now %d seconds later.", dt.RawTime - start_time);
+```ags
+DateTime *dt = DateTime.Now;
+int start_time = dt.RawTime;
+Wait(120);
+dt = DateTime.Now;
+Display("After the wait it is now %d seconds later.", dt.RawTime - start_time);
+```
 
 should display that 3 seconds have elapsed.
 
@@ -121,7 +137,9 @@ should display that 3 seconds have elapsed.
 
 ### `DateTime.Second`
 
-    readonly int DateTime.Second;
+```ags
+readonly int DateTime.Second;
+```
 
 Gets the second represented by the DateTime object. This will be from 0
 to 59, representing the second.
@@ -134,7 +152,9 @@ Example: For an example, see [`DateTime.Now`](DateTime#datetimenow).
 
 ### `DateTime.Year`
 
-    readonly int DateTime.Year;
+```ags
+readonly int DateTime.Year;
+```
 
 Gets the year represented by the DateTime object. This is the full year,
 for example *2005*.

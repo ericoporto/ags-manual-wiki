@@ -8,7 +8,9 @@ ListBox is a subclass of [`GUIControl`](GUIControl) and therefore inherits all G
 
 *(Formerly known as `ListBoxAdd`, which is now obsolete)*
 
-    ListBox.AddItem(string newitem)
+```ags
+ListBox.AddItem(string newitem)
+```
 
 Adds NEWITEM to the specified list box. The item will be appended to the
 end of the list.
@@ -19,8 +21,10 @@ added.
 
 Example:
 
-    String input = txtUserInput.Text;
-    lstChoices.AddItem(input);
+```ags
+String input = txtUserInput.Text;
+lstChoices.AddItem(input);
+```
 
 will take the input from the user and add it to the listbox.
 
@@ -36,13 +40,17 @@ will take the input from the user and add it to the listbox.
 
 *(Formerly known as `ListBoxClear`, which is now obsolete)*
 
-    ListBox.Clear()
+```ags
+ListBox.Clear()
+```
 
 Removes all items from the specified list box.
 
 Example:
 
-    lstNoteBook.Clear();
+```ags
+lstNoteBook.Clear();
+```
 
 will remove all the items from listbox *lstNoteBook*.
 
@@ -54,7 +62,9 @@ will remove all the items from listbox *lstNoteBook*.
 
 *(Formerly known as `ListBoxDirList`, which is now obsolete)*
 
-    ListBox.FillDirList(string filemask)
+```ags
+ListBox.FillDirList(string filemask)
+```
 
 Fills the list box with a list of filenames matching FILEMASK in the
 current directory. This could be useful if you have various data files
@@ -73,7 +83,9 @@ system which is accessible by and shared by all users.
 
 Example:
 
-    lstSaveGames.FillDirList("agssave.*");
+```ags
+lstSaveGames.FillDirList("agssave.*");
+```
 
 will fill the listbox with the list of the saved games. Note that
 actually for this task you would use FillSaveGameList instead.
@@ -88,7 +100,9 @@ actually for this task you would use FillSaveGameList instead.
 
 *(Formerly known as `ListBoxSaveGameList`, which is now obsolete)*
 
-    ListBox.FillSaveGameList()
+```ags
+ListBox.FillSaveGameList()
+```
 
 Fills the specified listbox with the save game list, sorted correctly
 with the most recent game at the top of the list.
@@ -97,8 +111,10 @@ The [`SaveGameSlots`](ListBox#listboxsavegameslots) property is updated
 to contain the save game slot number for each index in the list, so that
 you can do:
 
-    int index = lstSaveGames.SelectedIndex;
-    RestoreGameSlot(lstSaveGames.SaveGameSlots[index]);
+```ags
+int index = lstSaveGames.SelectedIndex;
+RestoreGameSlot(lstSaveGames.SaveGameSlots[index]);
+```
 
 **NOTE:** The save game list can only hold 50 save games. If
 ListBox.ItemCount returns 50 and you are doing a Save dialog box, you
@@ -108,7 +124,9 @@ allows using slots of higher number for other purposes.
 
 Example:
 
-    lstSaveGames.FillSaveGameList();
+```ags
+lstSaveGames.FillSaveGameList();
+```
 
 will fill listbox *lstSaveGames* with the list of the saved games.
 
@@ -121,7 +139,9 @@ will fill listbox *lstSaveGames* with the list of the saved games.
 
 ### `ListBox.GetItemAtLocation`
 
-    ListBox.GetItemAtLocation(int x, int y)
+```ags
+ListBox.GetItemAtLocation(int x, int y)
+```
 
 Determines which item in the list box is at the screen co-ordinates
 (X,Y). This allows you to find out which item the mouse is hovering
@@ -133,14 +153,16 @@ box.
 
 Example:
 
-    int index = lstOptions.GetItemAtLocation(mouse.x, mouse.y);
-    if (index < 0) {
-      Display("The mouse is not over an item!");
-    }
-    else {
-      String selectedItem = lstOptions.Items[index];
-      Display("The mouse is over item '%s'.", selectedItem);
-    }
+```ags
+int index = lstOptions.GetItemAtLocation(mouse.x, mouse.y);
+if (index < 0) {
+    Display("The mouse is not over an item!");
+}
+else {
+    String selectedItem = lstOptions.Items[index];
+    Display("The mouse is over item '%s'.", selectedItem);
+}
+```
 
 will display the item text that the mouse is currently hovering over.
 
@@ -150,7 +172,9 @@ will display the item text that the mouse is currently hovering over.
 
 ### `ListBox.InsertItemAt`
 
-    ListBox.InsertItemAt(int index, string newitem)
+```ags
+ListBox.InsertItemAt(int index, string newitem)
+```
 
 Inserts NEWITEM into the specified list box. The item will be inserted
 **before** the specified index.
@@ -164,9 +188,11 @@ added.
 
 Example:
 
-    lstChoices.AddItem("First item");
-    lstChoices.AddItem("Second item");
-    lstChoices.InsertItemAt(1, "Third item");
+```ags
+lstChoices.AddItem("First item");
+lstChoices.AddItem("Second item");
+lstChoices.InsertItemAt(1, "Third item");
+```
 
 will insert the Third Item in between the First and Second items.
 
@@ -179,7 +205,9 @@ will insert the Third Item in between the First and Second items.
 
 *(Formerly known as `ListBoxRemove`, which is now obsolete)*
 
-    ListBox.RemoveItem(int item)
+```ags
+ListBox.RemoveItem(int item)
+```
 
 Removes ITEM from the specified list box. ITEM is the list index of the
 item to remove, starting with 0 for the top item.
@@ -193,9 +221,11 @@ ListBox.SelectedIndex and related functions while using this command.
 
 Example:
 
-    lstTest.AddItem("First item");
-    lstTest.AddItem("Second item");
-    lstTest.RemoveItem(0);
+```ags
+lstTest.AddItem("First item");
+lstTest.AddItem("Second item");
+lstTest.RemoveItem(0);
+```
 
 the list box will now just contain "Second item".
 
@@ -206,14 +236,18 @@ the list box will now just contain "Second item".
 
 ### `ListBox.ScrollDown`
 
-    ListBox.ScrollDown()
+```ags
+ListBox.ScrollDown()
+```
 
 Scrolls the list box down one row. If it is already at the bottom,
 nothing happens.
 
 Example:
 
-    lstTest.ScrollDown();
+```ags
+lstTest.ScrollDown();
+```
 
 will scroll the *lstTest* list box down one row.
 
@@ -223,14 +257,18 @@ will scroll the *lstTest* list box down one row.
 
 ### `ListBox.ScrollUp`
 
-    ListBox.ScrollUp()
+```ags
+ListBox.ScrollUp()
+```
 
 Scrolls the list box up one row. If it is already at the top, nothing
 happens.
 
 Example:
 
-    lstTest.ScrollUp();
+```ags
+lstTest.ScrollUp();
+```
 
 will scroll the *lstTest* list box up one row.
 
@@ -240,13 +278,17 @@ will scroll the *lstTest* list box up one row.
 
 ### `ListBox.Font`
 
-    FontType ListBox.Font
+```ags
+FontType ListBox.Font
+```
 
 Gets/sets the font used by the specified list box.
 
 Example:
 
-    lstSaveGames.Font = eFontSpeech;
+```ags
+lstSaveGames.Font = eFontSpeech;
+```
 
 will change the *lstSaveGames* list box to use Font "Speech".
 
@@ -259,7 +301,9 @@ will change the *lstSaveGames* list box to use Font "Speech".
 
 **This property is obsolete since AGS 3.5.0. Use [`ListBox.ShowBorder`](ListBox#listboxshowborder) instead.**
 
-    bool ListBox.HideBorder
+```ags
+bool ListBox.HideBorder
+```
 
 Gets/sets whether the list box's border is _hidden_.
 
@@ -269,7 +313,9 @@ Gets/sets whether the list box's border is _hidden_.
 
 **This property is obsolete since AGS 3.5.0. Use [`ListBox.ShowScrollArrows`](ListBox#listboxshowscrollarrows) instead.**
 
-    bool ListBox.HideScrollArrows
+```ags
+bool ListBox.HideScrollArrows
+```
 
 Gets/sets whether the built-in up/down scroll arrows are _hidden_.
 
@@ -279,7 +325,9 @@ Gets/sets whether the built-in up/down scroll arrows are _hidden_.
 
 *(Formerly known as `ListBoxGetNumItems`, which is now obsolete)*
 
-    readonly int ListBox.ItemCount
+```ags
+readonly int ListBox.ItemCount
+```
 
 Gets the number of items in the specified listbox. Valid item indexes
 range from 0 to (numItems - 1).
@@ -289,7 +337,9 @@ and RemoveItem methods.
 
 Example:
 
-    int saves = lstSaveGames.ItemCount;
+```ags
+int saves = lstSaveGames.ItemCount;
+```
 
 will pass the number of saved games to the int saves.
 
@@ -303,7 +353,9 @@ will pass the number of saved games to the int saves.
 *(Formerly known as `ListBox.GetItemText`, which is now obsolete)*<br>
 *(Formerly known as `ListBox.SetItemText`, which is now obsolete)*
 
-    String ListBox.Items[index]
+```ags
+String ListBox.Items[index]
+```
 
 Gets/sets the text of the list box item at INDEX.
 
@@ -316,7 +368,9 @@ If you want to add a new item to the listbox, use the
 
 Example:
 
-    String selectedItemText = lstOptions.Items[lstOptions.SelectedIndex];
+```ags
+String selectedItemText = lstOptions.Items[lstOptions.SelectedIndex];
+```
 
 will get the text of the selected item in the list box.
 
@@ -328,7 +382,9 @@ will get the text of the selected item in the list box.
 
 ### `ListBox.RowCount`
 
-    readonly int ListBox.RowCount
+```ags
+readonly int ListBox.RowCount
+```
 
 Gets the number of rows that can be shown within the list box. This
 depends on the size of the list box, and **does not** depend on how many
@@ -339,7 +395,9 @@ of the list box.
 
 Example:
 
-    Display("You can currently see %d items from the listbox's contents", lstSaveGames.RowCount);
+```ags
+Display("You can currently see %d items from the listbox's contents", lstSaveGames.RowCount);
+```
 
 will display the number of rows that the listbox can display.
 
@@ -353,7 +411,9 @@ will display the number of rows that the listbox can display.
 
 *(Formerly known as global array `savegameindex`, which is now obsolete)*
 
-    readonly int ListBox.SaveGameSlots[];
+```ags
+readonly int ListBox.SaveGameSlots[];
+```
 
 Contains the corresponding save game slot for each item in the list.
 
@@ -367,8 +427,10 @@ this array.
 
 Example:
 
-    int index = lstSaveGames.SelectedIndex;
-    RestoreGameSlot(lstSaveGames.SaveGameSlots[index]);
+```ags
+int index = lstSaveGames.SelectedIndex;
+RestoreGameSlot(lstSaveGames.SaveGameSlots[index]);
+```
 
 will restore the currently selected game in the list, assuming
 FillSaveGameList had been used previously.
@@ -381,13 +443,17 @@ FillSaveGameList had been used previously.
 
 ### `ListBox.SelectedBackColor`
 
-    int ListBox.SelectedBackColor
+```ags
+int ListBox.SelectedBackColor
+```
 
 Gets/sets the fill color of the selection rectangle drawn around the selected item.
 
 Example:
 
-    lstSaveGames.SelectedBackColor = Game.GetColorFromRGB(0, 148, 255);
+```ags
+lstSaveGames.SelectedBackColor = Game.GetColorFromRGB(0, 148, 255);
+```
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
@@ -400,7 +466,9 @@ Example:
 *(Formerly known as `ListBoxGetSelected`, which is now obsolete)*<br>
 *(Formerly known as `ListBoxSetSelected`, which is now obsolete)*
 
-    int ListBox.SelectedIndex
+```ags
+int ListBox.SelectedIndex
+```
 
 Gets/sets the index into the list of the currently selected item. The
 first item is 0, second is 1, and so on. If no item is selected, this is
@@ -411,7 +479,9 @@ items).
 
 Example:
 
-    String selectedText = lstOptions.Items[lstOptions.SelectedIndex];
+```ags
+String selectedText = lstOptions.Items[lstOptions.SelectedIndex];
+```
 
 will get the text of the selected item in the listbox.
 
@@ -419,13 +489,17 @@ will get the text of the selected item in the listbox.
 
 ### `ListBox.SelectedTextColor`
 
-    int ListBox.SelectedTextColor
+```ags
+int ListBox.SelectedTextColor
+```
 
 Gets/sets the text color used for the selected item.
 
 Example:
 
-    lstSaveGames.SelectedTextColor = Game.GetColorFromRGB(255, 255, 80);
+```ags
+lstSaveGames.SelectedTextColor = Game.GetColorFromRGB(255, 255, 80);
+```
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
@@ -437,7 +511,9 @@ Example:
 
 *(Formerly known as `ListBox.HideBorder`, which is now obsolete)*
 
-    bool ListBox.ShowBorder
+```ags
+bool ListBox.ShowBorder
+```
 
 Gets/sets whether the list box's border is shown.
 
@@ -456,7 +532,9 @@ Note that hiding the border will also implicitly hide the up/down scroll arrows 
 
 *(Formerly known as `ListBox.HideScrollArrows`, which is now obsolete)*
 
-    bool ListBox.ShowScrollArrows
+```ags
+bool ListBox.ShowScrollArrows
+```
 
 Gets/sets whether the built-in up/down scroll arrows are shown.
 
@@ -479,7 +557,9 @@ you want the border to be shown but the arrows hidden.
 
 ### `ListBox.TextAlignment`
 
-    HorizontalAlignment ListBox.TextAlignment
+```ags
+HorizontalAlignment ListBox.TextAlignment
+```
 
 Gets/sets the way a text is aligned inside an item's rectangle. Currently only horizontal alignment is supported, that is: eAlignLeft, eAlignCenter and eAlignRight.
 
@@ -491,13 +571,17 @@ Gets/sets the way a text is aligned inside an item's rectangle. Currently only h
 
 ### `ListBox.TextColor`
 
-    int ListBox.TextColor
+```ags
+int ListBox.TextColor
+```
 
 Gets/sets the text color used by default, that is - for the non-selected items. Note that the same color is also used for the listbox's border and and scroll arrows.
 
 Example:
 
-    lstSaveGames.TextColor = Game.GetColorFromRGB(80, 80, 200);
+```ags
+lstSaveGames.TextColor = Game.GetColorFromRGB(80, 80, 200);
+```
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
@@ -509,7 +593,9 @@ Example:
 
 *(Formerly known as `ListBoxSetTopItem`, which is now obsolete)*
 
-    int ListBox.TopItem
+```ags
+int ListBox.TopItem
+```
 
 Gets/sets the top item in the list box. The top item is the first item
 that is visible within the list box, so changing this effectively
@@ -519,7 +605,9 @@ Indexes for TopItem start from 0 for the first item in the list.
 
 Example:
 
-    lstSaveGames.TopItem = 0;
+```ags
+lstSaveGames.TopItem = 0;
+```
 
 will automatically scroll listbox *lstSaveGames* back to the top of the
 list.
@@ -528,7 +616,9 @@ list.
 
 ### `ListBox.Translated`
 
-    bool ListBox.Translated
+```ags
+bool ListBox.Translated
+```
 
 Gets/sets whether the list box's items are translated to the selected
 game language at runtime.

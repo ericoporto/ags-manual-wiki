@@ -2,7 +2,9 @@
 
 ### `FadeIn`
 
-    FadeIn (int speed)
+```ags
+FadeIn (int speed)
+```
 
 Fades in from a black screen to the current palette. This is used to
 restore the screen after a FadeOut call. SPEED is from 1 (slowest) to 64
@@ -12,9 +14,11 @@ restore the screen after a FadeOut call. SPEED is from 1 (slowest) to 64
 
 Example:
 
-    FadeOut(30);
-    Wait(40);
-    FadeIn(10);
+```ags
+FadeOut(30);
+Wait(40);
+FadeIn(10);
+```
 
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
@@ -26,7 +30,9 @@ in again.
 
 ### `FadeOut`
 
-    FadeOut (int speed)
+```ags
+FadeOut (int speed)
+```
 
 Fades the screen out to black. SPEED is the speed of the fade, from 1
 (slowest) to 64 (instant). You can restore the screen with FadeIn.
@@ -35,9 +41,11 @@ Fades the screen out to black. SPEED is the speed of the fade, from 1
 
 Example:
 
-    FadeOut(30);
-    Wait(40);
-    FadeIn(10);
+```ags
+FadeOut(30);
+Wait(40);
+FadeIn(10);
+```
 
 will fade the screen to black, wait 1 sec (40 game cycles) and then fade
 in again.
@@ -49,7 +57,9 @@ in again.
 
 ### `FlipScreen`
 
-    FlipScreen (int way)
+```ags
+FlipScreen (int way)
+```
 
 Flips the screen round either the horizontal or vertical axis, or both.
 This function is for special effects only - all co-ordinates remain the
@@ -68,7 +78,9 @@ normal.
 
 Example:
 
-    FlipScreen(1);
+```ags
+FlipScreen(1);
+```
 
 will flip the screen upside down.
 
@@ -76,7 +88,9 @@ will flip the screen upside down.
 
 ### `SetFadeColor`
 
-    SetFadeColor(int red, int green, int blue)
+```ags
+SetFadeColor(int red, int green, int blue)
+```
 
 Changes the color which the screen fades out to, to have the specified
 RGB value. Each of the parameters can range from 0-255. The default is
@@ -88,7 +102,9 @@ In/Out.
 
 Example:
 
-    SetFadeColor(200, 0, 0);
+```ags
+SetFadeColor(200, 0, 0);
+```
 
 will mean that next time the screen fades out, it fades to red instead
 of black.
@@ -100,7 +116,9 @@ SeeAlso: [`FadeIn`](Globalfunctions_Screen#fadein), [`FadeOut`](Globalfunctions_
 
 ### `SetNextScreenTransition`
 
-    SetNextScreenTransition(TransitionStyle)
+```ags
+SetNextScreenTransition(TransitionStyle)
+```
 
 Sets the room transition type to *TransitionStyle*, but ONLY for the
 next room change. After that, it will revert back to the normal
@@ -111,8 +129,10 @@ For the possible values for TransitionStyle, see
 
 Example:
 
-    SetNextScreenTransition(eTransitionBoxout);
-    cEgo.ChangeRoom(10);
+```ags
+SetNextScreenTransition(eTransitionBoxout);
+cEgo.ChangeRoom(10);
+```
 
 will go to room 10 with a box-out effect, but then return to the normal
 transition type from then on.
@@ -123,7 +143,9 @@ SeeAlso: [`SetScreenTransition`](Globalfunctions_Screen#setscreentransition)
 
 ### `SetScreenTransition`
 
-    SetScreenTransition(TransitionStyle)
+```ags
+SetScreenTransition(TransitionStyle)
+```
 
 Changes the default screen transition. TransitionStyle can be one of the
 following:
@@ -139,7 +161,9 @@ function again.
 
 Example:
 
-    SetScreenTransition(eTransitionFade);
+```ags
+SetScreenTransition(eTransitionFade);
+```
 
 will change the room transitions to Fade.
 
@@ -149,14 +173,18 @@ SeeAlso: [`SetNextScreenTransition`](Globalfunctions_Screen#setnextscreentransit
 
 ### `ShakeScreen`
 
-    ShakeScreen (int amount)
+```ags
+ShakeScreen (int amount)
+```
 
 Shakes the screen to simulate, for example, an earthquake. AMOUNT is how
 much the screen shakes: 1 is hardly anything, and 25 is a lot.
 
 Example:
 
-    ShakeScreen(5);
+```ags
+ShakeScreen(5);
+```
 
 will shake the screen a little.
 
@@ -166,7 +194,9 @@ will shake the screen a little.
 
 ### `ShakeScreenBackground`
 
-    ShakeScreenBackground (int delay, int amount, int length)
+```ags
+ShakeScreenBackground (int delay, int amount, int length)
+```
 
 Shakes the screen to simulate, for example, an earthquake. The game is
 not paused while the screen shakes - it will continue in the background.
@@ -186,7 +216,9 @@ calling this command with the LENGTH parameter as zero.
 
 Example:
 
-    ShakeScreenBackground (4, 10, 80);
+```ags
+ShakeScreenBackground (4, 10, 80);
+```
 
 will shake the screen a little for 2 seconds.
 
@@ -196,7 +228,9 @@ will shake the screen a little for 2 seconds.
 
 ### `TintScreen`
 
-    TintScreen (int red, int green, int blue)
+```ags
+TintScreen (int red, int green, int blue)
+```
 
 Tints the screen with the specified RGB values. RED, GREEN and BLUE
 range from 1 to 100.
@@ -217,6 +251,8 @@ use it, you should provide an option for the player to turn it off.
 
 Example:
 
-    TintScreen (100, 50, 50);
+```ags
+TintScreen (100, 50, 50);
+```
 
 will tint a heavy dose of red.

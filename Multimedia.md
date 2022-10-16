@@ -2,7 +2,9 @@
 
 ### `CDAudio`
 
-    CDAudio (eCDAudioFunction, int param)
+```ags
+CDAudio (eCDAudioFunction, int param)
+```
 
 This function allows you to play and control an audio CD in your game.
 Different tasks are performed, depending on the value of the
@@ -51,7 +53,9 @@ MacOS: **No**
 
 Example:
 
-    CDAudio(eCDPlayTrack, 3);
+```ags
+CDAudio(eCDPlayTrack, 3);
+```
 
 will play track 3 of the CD that's in the CD ROM drive.
 
@@ -59,7 +63,9 @@ will play track 3 of the CD that's in the CD ROM drive.
 
 ### `IsSpeechVoxAvailable`
 
-    IsSpeechVoxAvailable()
+```ags
+IsSpeechVoxAvailable()
+```
 
 Returns whether the SPEECH.VOX file is being used by the game. This
 could be useful if you have an optional speech download pack, and you
@@ -69,8 +75,10 @@ Returns 1 if the speech files are available, 0 if not.
 
 Example:
 
-    if (IsSpeechVoxAvailable()==0)
-        Display ("You don't have the voice pack");
+```ags
+if (IsSpeechVoxAvailable()==0)
+    Display ("You don't have the voice pack");
+```
 
 will display a message if the voice pack is not available.
 
@@ -86,7 +94,9 @@ been renamed to avoid confusion.
 
 ### `PlayFlic`
 
-    PlayFlic (int flic_number, int options)
+```ags
+PlayFlic (int flic_number, int options)
+```
 
 Plays a FLI or FLC animation. The game checks for FLICx.FLC and
 FLICx.FLI (where X is FLIC_NUMBER) and if it finds one, plays it.
@@ -102,7 +112,9 @@ OPTIONS has these meanings:
 
 Example:
 
-    PlayFlic(2, 1);
+```ags
+PlayFlic(2, 1);
+```
 
 will play flic2 and the player will be able to skip the flic by pressing
 the ESC key.
@@ -113,7 +125,9 @@ the ESC key.
 
 ### `PlaySilentMIDI`
 
-    PlaySilentMIDI (int music_number)
+```ags
+PlaySilentMIDI (int music_number)
+```
 
 This command is obsolete.
 
@@ -127,7 +141,9 @@ simulate this effect.
 
 ### `PlayVideo`
 
-    PlayVideo (string filename, VideoSkipStyle, int flags)
+```ags
+PlayVideo (string filename, VideoSkipStyle, int flags)
+```
 
 Plays a supported video file. The game is paused while the video plays.
 
@@ -152,7 +168,9 @@ FLC/FLI video with the [`PlayFlic`](Multimedia#playflic) command instead.
 
 Example:
 
-    PlayVideo("Intro.ogv", eVideoSkipEscKey, 11);
+```ags
+PlayVideo("Intro.ogv", eVideoSkipEscKey, 11);
+```
 
 will play the video "Intro.ogv", allowing the player to skip with ESC if
 they've seen it before. The video will be stretched to fullscreen, maintaining aspect ration; but it's audio track will be muted, while game sounds will continue to play.
@@ -188,7 +206,9 @@ Flag +20 (play both game and video's audio) is supported by **AGS 3.6.0** and la
 
 ### `SetSpeechVolume`
 
-    SetSpeechVolume (int volume)
+```ags
+SetSpeechVolume (int volume)
+```
 
 Sets the volume for in-game speech. VOLUME ranges from 0-255, where 255
 is the loudest. The default speech volume is 255 so this function can
@@ -196,7 +216,9 @@ only be used to reduce the volume.
 
 Example:
 
-    SetSpeechVolume(200);
+```ags
+SetSpeechVolume(200);
+```
 
 will set the speech volume to 200.
 

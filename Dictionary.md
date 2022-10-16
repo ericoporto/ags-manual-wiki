@@ -20,7 +20,9 @@ To summarize, dictionaries make convenient storage for key/value pairs. If you d
 
 ### `Dictionary.Create`
 
-    static Dictionary* Dictionary.Create(SortStyle sortStyle, StringCompareStyle compareStyle)
+```ags
+static Dictionary* Dictionary.Create(SortStyle sortStyle, StringCompareStyle compareStyle)
+```
 
 Creates a new empty Dictionary of the given properties. If you don't pass any options the Dictionary is unsorted and case-insensitive. Note that you cannot change sorting style and case sensitivity later, you would have to create another Dictionary and then re-add the values there.
 
@@ -29,13 +31,17 @@ Creates a new empty Dictionary of the given properties. If you don't pass any op
 
 Example:
 
-    Dictionary* myDictionary = Dictionary.Create();
+```ags
+Dictionary* myDictionary = Dictionary.Create();
+```
 
 ---
 
 ### `Dictionary.Clear`
 
-    void Dictionary.Clear()
+```ags
+void Dictionary.Clear()
+```
 
 Removes all items from the dictionary.
 
@@ -43,17 +49,21 @@ Removes all items from the dictionary.
 
 ### `Dictionary.Contains`
 
-    bool Dictionary.Contains(String key)
+```ags
+bool Dictionary.Contains(String key)
+```
 
 Returns true if the key is in the dictionary, otherwise - false.
 
 Example:
 
-    Dictionary* myDictionary = Dictionary.Create();
-    myDictionary.Set("my-key","my-value");
-    if(myDictionary.Contains("my-key")){
-      Display("has my key!");
-    }
+```ags
+Dictionary* myDictionary = Dictionary.Create();
+myDictionary.Set("my-key","my-value");
+if(myDictionary.Contains("my-key")){
+    Display("has my key!");
+}
+```
 
 This will add "my-key" key, assign "my-value" to that key and then test whether that key was added successfully.
 
@@ -64,15 +74,19 @@ This will add "my-key" key, assign "my-value" to that key and then test whether 
 
 ### `Dictionary.Get`
 
-    String Dictionary.Get(String key)
+```ags
+String Dictionary.Get(String key)
+```
 
 Gets the value for the given key. Returns null if such a key does not exist.
 
 Example:
 
-    Dictionary* myDictionary = Dictionary.Create();
-    myDictionary.Set("a-key","a-value");
-    String myValue = myDictionary.Get("a-key");
+```ags
+Dictionary* myDictionary = Dictionary.Create();
+myDictionary.Set("a-key","a-value");
+String myValue = myDictionary.Get("a-key");
+```
 
 Here _myValue_ variable will be assigned "a-value" from the dictionary.
 
@@ -82,7 +96,9 @@ Here _myValue_ variable will be assigned "a-value" from the dictionary.
 
 ### `Dictionary.GetKeysAsArray`
 
-    String[] Dictionary.GetKeysAsArray()
+```ags
+String[] Dictionary.GetKeysAsArray()
+```
 
 Creates a dynamic array filled with keys in the same order as they are stored in the Dictionary.
 
@@ -92,12 +108,14 @@ Returns null if this Dictionary is empty.
 
 Example:
 
-    Dictionary* myDictionary = Dictionary.Create();
-    myDictionary.Set("my-key1","my-value1");
-    myDictionary.Set("my-key2","my-value2");
-    String keys[] = myDictionary.GetKeysAsArray();
-    for (int i = 0; i < myDictionary.ItemCount; i++)
-      Display("#%d: %s", i, keys[i]);
+```ags
+Dictionary* myDictionary = Dictionary.Create();
+myDictionary.Set("my-key1","my-value1");
+myDictionary.Set("my-key2","my-value2");
+String keys[] = myDictionary.GetKeysAsArray();
+for (int i = 0; i < myDictionary.ItemCount; i++)
+    Display("#%d: %s", i, keys[i]);
+```
 
 In the above example the keys will be displayed on screen one by one, preceded by their index.
 
@@ -107,7 +125,9 @@ In the above example the keys will be displayed on screen one by one, preceded b
 
 ### `Dictionary.GetValuesAsArray`
 
-    String[] Dictionary.GetValuesAsArray()
+```ags
+String[] Dictionary.GetValuesAsArray()
+```
 
 Creates a dynamic array filled with values in the same order as they are stored in the Dictionary.
 
@@ -117,12 +137,14 @@ Returns null if this Dictionary is empty.
 
 Example:
 
-    Dictionary* myDictionary = Dictionary.Create();
-    myDictionary.Set("my-key1","my-value1");
-    myDictionary.Set("my-key2","my-value2");
-    String values[] = myDictionary.GetValuesAsArray();
-    for (int i = 0; i < myDictionary.ItemCount; i++)
-      Display("#%d: %s", i, values[i]);
+```ags
+Dictionary* myDictionary = Dictionary.Create();
+myDictionary.Set("my-key1","my-value1");
+myDictionary.Set("my-key2","my-value2");
+String values[] = myDictionary.GetValuesAsArray();
+for (int i = 0; i < myDictionary.ItemCount; i++)
+    Display("#%d: %s", i, values[i]);
+```
 
 In the above example the values will be displayed on screen one by one, preceded by their index.
 
@@ -132,7 +154,9 @@ In the above example the values will be displayed on screen one by one, preceded
 
 ### `Dictionary.Remove`
 
-    bool Dictionary.Remove(String key)
+```ags
+bool Dictionary.Remove(String key)
+```
 
 Removes a key/value pair from the dictionary, returns true on success and false if there was no such key.
 
@@ -142,7 +166,9 @@ Removes a key/value pair from the dictionary, returns true on success and false 
 
 ### `Dictionary.Set`
 
-    bool Dictionary.Set(String key, String value)
+```ags
+bool Dictionary.Set(String key, String value)
+```
 
 Assigns a value to the given key. If the key did not exist then it will be created, otherwise the old value for this key will be overwritten with a new one.
 
@@ -153,7 +179,9 @@ Assigns a value to the given key. If the key did not exist then it will be creat
 
 ### `Dictionary.CompareStyle`
 
-    StringCompareStyle Dictionary.CompareStyle
+```ags
+StringCompareStyle Dictionary.CompareStyle
+```
 
 Returns the string comparison method for this dictionary, which determines whether its keys are case-sensitive.
 
@@ -163,7 +191,9 @@ Returns the string comparison method for this dictionary, which determines wheth
 
 ### `Dictionary.ItemCount`
 
-    int Dictionary.ItemCount
+```ags
+int Dictionary.ItemCount
+```
 
 Gets the number of key/value pairs currently in the dictionary.
 
@@ -171,7 +201,9 @@ Gets the number of key/value pairs currently in the dictionary.
 
 ### `Dictionary.SortStyle`
 
-    SortStyle Dictionary.SortStyle
+```ags
+SortStyle Dictionary.SortStyle
+```
 
 Returns the key sorting method for this dictionary.
 

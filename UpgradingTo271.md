@@ -10,12 +10,16 @@ manipulate them.
 
 For example, in 2.7 and previous versions, you had to do this:
 
-    string text;
-    StrCopy(text, "This is my text");
+```ags
+string text;
+StrCopy(text, "This is my text");
+```
 
 in 2.71, you can now do:
 
-    String text = "This is my text";
+```ags
+String text = "This is my text";
+```
 
 Furthermore, the == and != operators can be used to compare strings for
 equality (equivalent to using StrComp but much more intuitive). An
@@ -27,8 +31,10 @@ now been replaced with new ones that return a string instead. Where
 properties have been created, you should be able to use them like any
 other property, so:
 
-    lblLabel.Text = "Hello";
-    String buttonValue = btnOK.Text;
+```ags
+lblLabel.Text = "Hello";
+String buttonValue = btnOK.Text;
+```
 
 and so on.
 
@@ -43,8 +49,10 @@ confusion. The manual will show you which functions require this.
 Rather than using old functions like StrCat and StrContains, you now
 call the functions directly on the strings:
 
-    String text = "Hello";
-    text = text.Append("World");
+```ags
+String text = "Hello";
+text = text.Append("World");
+```
 
 will mean that *text* now contains "HelloWorld".<br>
 Note the **text =** in that expression. Functions like Append will

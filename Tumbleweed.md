@@ -39,7 +39,7 @@ Using this template you only need one the any click event.
 Inside these functions you distinguish between the different interactions.
 So a typical any_click function looks like this:
 
-```
+```ags
 function cup_AnyClick()
 {
         // LOOK AT
@@ -71,7 +71,7 @@ So you see, everything is inside a single function, instead 4 separate functions
 Also instead of checking the cursor modes, the function `Verbs.UsedAction` is
 called to determine the event/action. The current defined actions are:
 
-```
+```ags
 eGA_LookAt, eGA_TalkTo, eGA_GiveTo, eGA_PickUp, eGA_Use, eGA_Open, eGA_Close, eGA_Push, eGA_Pull,eGA_UseInv, eGA_Default and eMG_WalkTo
 ```
 
@@ -115,7 +115,7 @@ Extensions are also explained in the function reference.
 The last thing you should know about, is the global variable "ItemGiven". If you like to give an item to a character, use this variable to check,
 which item has been given. For example:
 
-```
+```ags
 if (Verbs.UsedAction(eGA_GiveTo))
 {
         if (ItemGiven == iCup)
@@ -196,7 +196,7 @@ Now switch over to the events (that little flash) and add the `Usermode_1` hotsp
 Eventually you'll end in the room script with a function called `hExit_Mode8`.
 In that function, all you have to do is to script the room change. e.g.
 
-```
+```ags
 player.EnterRoom(1, 76, 111, eDir_Right, true);
 ```
 
@@ -241,7 +241,7 @@ If you like to create your game in a different language than English, you need
 to setup a different default language. In the TemplateSettings.asc module you'll
 find the line:
 
-```
+```ags
 Verbs.VerbGuiOptions[eVerbGuiTemplateLanguage] = eLangEN;
 ```
 

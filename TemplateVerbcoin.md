@@ -23,25 +23,29 @@ used for displaying the VerbCoin and managing the inventory window.
 
 Example:
 
-    // setup VerbCoin GUI and buttons
-    VerbCoin.InterfaceGui = gVerbCoin;
-    VerbCoin.RegisterButton(btnLook, eVerbCoinPositionNorth, eModeLookat, "Look at");
-    VerbCoin.RegisterButton(btnTalk, eVerbCoinPositionEast, eModeTalkto, "Talk to");
-    VerbCoin.RegisterButton(btnInteract, eVerbCoinPositionSouth, eModeInteract, "Use");
-    VerbCoin.RegisterButton(btnPickup, eVerbCoinPositionWest, eModePickup, "Pick up");
-  
-    // select the inventory GUI and action label
-    VerbCoin.InventoryGui = gInventory;
-    VerbCoin.ActionLabel = lblAction;
-  
-    // disable buttons where click events would be unhandled
-    VerbCoin.ButtonAutoDisable = true;
+```ags
+// setup VerbCoin GUI and buttons
+VerbCoin.InterfaceGui = gVerbCoin;
+VerbCoin.RegisterButton(btnLook, eVerbCoinPositionNorth, eModeLookat, "Look at");
+VerbCoin.RegisterButton(btnTalk, eVerbCoinPositionEast, eModeTalkto, "Talk to");
+VerbCoin.RegisterButton(btnInteract, eVerbCoinPositionSouth, eModeInteract, "Use");
+VerbCoin.RegisterButton(btnPickup, eVerbCoinPositionWest, eModePickup, "Pick up");
+
+// select the inventory GUI and action label
+VerbCoin.InventoryGui = gInventory;
+VerbCoin.ActionLabel = lblAction;
+
+// disable buttons where click events would be unhandled
+VerbCoin.ButtonAutoDisable = true;
+```    
 
 ---
 
 ### `VerbCoin.Radius`
 
-    int VerbCoin.Radius
+```ags
+int VerbCoin.Radius
+```
 
 Sets the radius used when drawing the circle that renders the VerbCoin.
 
@@ -49,7 +53,9 @@ Sets the radius used when drawing the circle that renders the VerbCoin.
 
 ### `VerbCoin.BackgroundTransparency`
 
-    int VerbCoin.BackgroundTransparency
+```ags
+int VerbCoin.BackgroundTransparency
+```
 
 Sets the background transparency level (from 0 to 100) for the VerbCoin
 
@@ -57,7 +63,9 @@ Sets the background transparency level (from 0 to 100) for the VerbCoin
 
 ### `VerbCoin.BackgroundColor`
 
-    int VerbCoin.BackgroundColor
+```ags
+int VerbCoin.BackgroundColor
+```
 
 Sets the background color (0 to 65535) for the VerbCoin.
 
@@ -65,7 +73,9 @@ Sets the background color (0 to 65535) for the VerbCoin.
 
 ### `VerbCoin.BorderColor`
 
-    int VerbCoin.BorderColor
+```ags
+int VerbCoin.BorderColor
+```
 
 Sets the border color (0 to 65535) for the VerbCoin
 
@@ -73,7 +83,9 @@ Sets the border color (0 to 65535) for the VerbCoin
 
 ### `VerbCoin.BorderWidth`
 
-    int VerbCoin.BorderWidth;
+```ags
+int VerbCoin.BorderWidth;
+```
 
 Sets the border width for the VerbCoin.
 
@@ -81,7 +93,9 @@ Sets the border width for the VerbCoin.
 
 ### `VerbCoin.OnClick`
 
-    VerbCoin.OnClick(GUIControl* control, MouseButton button);
+```ags
+VerbCoin.OnClick(GUIControl* control, MouseButton button);
+```
 
 Since click handlers can currently only be implemented in the global
 script, this function is used to pass the event back into the VerbCoin
@@ -91,7 +105,9 @@ module.
 
 ### `VerbCoin.RegisterButton`
 
-    VerbCoin.RegisterButton(GUIControl* control, VerbCoinPosition position, CursorMode mode, String verbtext);
+```ags
+VerbCoin.RegisterButton(GUIControl* control, VerbCoinPosition position, CursorMode mode, String verbtext);
+```
 
 Registers a button for use with the VerbCoin. The design is currently
 4-point, so valid positions are:
@@ -110,7 +126,9 @@ description could be 'use'.
 
 ### `VerbCoin.InterfaceGui`
 
-    GUI* VerbCoin.InterfaceGui
+```ags
+GUI* VerbCoin.InterfaceGui
+```
 
 Registers the [`GUI`](GUI) used for the VerbCoin.
 
@@ -118,7 +136,9 @@ Registers the [`GUI`](GUI) used for the VerbCoin.
 
 ### `VerbCoin.InventoryGui`
 
-    GUI* VerbCoin.InventoryGui
+```ags
+GUI* VerbCoin.InventoryGui
+```
 
 Registers the [`GUI`](GUI) used for the inventory window.
 
@@ -126,7 +146,9 @@ Registers the [`GUI`](GUI) used for the inventory window.
 
 ### `VerbCoin.ActionLabel`
 
-    Label* VerbCoin.ActionLabel
+```ags
+Label* VerbCoin.ActionLabel
+```
 
 Registers the [`Label`](Label) used to display text descriptions.
 
@@ -134,7 +156,9 @@ Registers the [`Label`](Label) used to display text descriptions.
 
 ### `VerbCoin.Enable`
 
-    VerbCoin.Enable();
+```ags
+VerbCoin.Enable();
+```
 
 Enables the VerbCoin interface.
 
@@ -142,7 +166,9 @@ Enables the VerbCoin interface.
 
 ### `VerbCoin.Disable`
 
-    VerbCoin.Disable();
+```ags
+VerbCoin.Disable();
+```
 
 Disables the VerbCoin interface.
 
@@ -150,7 +176,9 @@ Disables the VerbCoin interface.
 
 ### `VerbCoin.IsEnabled`
 
-    VerbCoin.IsEnabled();
+```ags
+VerbCoin.IsEnabled();
+```
 
 Returns true if the VerbCoin interface is currently enabled, else
 returns false.
@@ -159,7 +187,9 @@ returns false.
 
 ### `VerbCoin.Open`
 
-    VerbCoin.Open();
+```ags
+VerbCoin.Open();
+```
 
 Opens the VerbCoin interface (i.e. show its GUI).
 
@@ -167,7 +197,9 @@ Opens the VerbCoin interface (i.e. show its GUI).
 
 ### `VerbCoin.Close`
 
-    VerbCoin.Close();
+```ags
+VerbCoin.Close();
+```
 
 Closes the VerbCoin interface (i.e. hide its GUI)
 
@@ -175,7 +207,9 @@ Closes the VerbCoin interface (i.e. hide its GUI)
 
 ### `VerbCoin.IsOpen`
 
-    VerbCoin.IsOpen();
+```ags
+VerbCoin.IsOpen();
+```
 
 Returns true if the VerbCoin interface is currently open, else
 returns false.
@@ -184,7 +218,9 @@ returns false.
 
 ### `VerbCoin.CleanUp`
 
-    VerbCoin.CleanUp();
+```ags
+VerbCoin.CleanUp();
+```
 
 Deletes the dynamic sprite which is used in rendering the VerbCoin
 user interface. This would typically only be done immediately before
@@ -195,7 +231,9 @@ still being allocated.
 
 ### `VerbCoin.ButtonAutoDisable`
 
-    bool VerbCoin.ButtonAutoDisable
+```ags
+bool VerbCoin.ButtonAutoDisable
+```
 
 Sets whether VerbCoin buttons should be disabled, if clicking them
 would result in an unhandled event.

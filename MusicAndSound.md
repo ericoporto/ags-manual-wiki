@@ -83,7 +83,9 @@ The same applies to the folder for sounds and sound effects, add subfolders to i
 The script to play an audio clip in the game is very simple. For
 example:
 
-    aExplosion.Play();
+```ags
+aExplosion.Play();
+```
 
 plays the audio clip called *aExplosion*.
 
@@ -112,7 +114,9 @@ the editor -- you might want to decide it at run-time in the script. For
 this reason the *Play* command has an optional parameter which allows
 you to explicitly specify the priority when you play it, for example:
 
-    aExplosion.Play(eAudioPriorityLow);
+```ags
+aExplosion.Play(eAudioPriorityLow);
+```
 
 **NOTE:** having only one channel reserved for an audio type and all clips having same priority by default will make any new played sound of that type replace the previous one automatically. This may be useful, for example, to ensure that only one music clip is playing at the same time in your game.
 
@@ -130,8 +134,10 @@ When you use the Play() command, AGS returns to you an AudioChannel\*
 instance representing the channel on which the sound is playing. You can
 store this to a global variable and access it later on. For example:
 
-    AudioChannel* chan = aExplosion.Play();
-    chan.Volume = 20;
+```ags
+AudioChannel* chan = aExplosion.Play();
+chan.Volume = 20;
+```
 
 This will start the *aExplosion* audio clip playing, and then change its
 volume to `20%`.
@@ -150,10 +156,12 @@ it like this:
 
 later on, elsewhere in the script, you can change the volume by doing:
 
-    if (longWindedSound != null)
-    {
-      longWindedSound.Volume = 20;
-    }
+```ags
+if (longWindedSound != null)
+{
+    longWindedSound.Volume = 20;
+}
+```
 
 Note the check for null here -- this makes sure that your game won't
 crash if the sound isn't playing (it might have finished, or not have

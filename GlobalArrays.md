@@ -17,7 +17,7 @@ Arrays that contain game objects contain them in the order of their respective I
 
 Abstract example:
 
-```
+```ags
 int saved_id;
 ...
 saved_id = cChar.ID;
@@ -27,7 +27,7 @@ Character* found_char = character[saved_id];
 
 Naturally, when you know the array's size it's possible to iterate over it, for example when you want to perform an action on all of these objects, or when you want to find one of the objects in the game array by certain rules:
 
-```
+```ags
 for (int i = 0; i < Game.CharacterCount; i++) {
     Character* c = character[i];
     Display("Character number %d got name %s", i, c.Name);

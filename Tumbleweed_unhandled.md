@@ -10,13 +10,13 @@ The messages itself are defined outside of this function, initially in TemplateS
 
 ### `Verbs.Unhandled`
 
-```
+```ags
 void Verbs.Unhandled(int door_script);
 ```
 
 Use this function at the end of your any_click functions in order to cause default reactions. For example:
 
-```
+```ags
 function cChar_AnyClick()
 {
         if (Verbs.UsedAction(eGA_LookAt)) player.Say("He looks like he is hungry.");

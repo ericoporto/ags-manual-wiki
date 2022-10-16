@@ -13,10 +13,12 @@ You may find it useful to have a sequence of commands that are executed
 more than once. AGS supports this, using the `while` keyword. Its format
 is virtually identical to `if`:
 
-    int counter = 1;
-    while (counter < 10) {
-      counter ++;
-    }
+```ags
+int counter = 1;
+while (counter < 10) {
+  counter ++;
+}
+```
 
 This means that the body of the `while` statement is repeatedly
 processed, as long as the condition is true. So, in this case, since
@@ -28,10 +30,12 @@ using a badly written one.)
 
 Consider this **poorly** written _while_ loop:
 
-    int counter = 1;
-    while (counter > 0) {
-      counter ++;
-    }
+```ags
+int counter = 1;
+while (counter > 0) {
+  counter ++;
+}
+```
 
 Here, *counter* starts off as 1, so the loop will run. Then, it will
 increase to 2. Since it is still greater than 0, the loop will run
@@ -48,24 +52,28 @@ For example, suppose that you want to display a message if the player
 has **two** specific inventory items. You could do this, and put **two**
 *if* statements inside each other:
 
-    if (player.HasInventory(iFirstItem))
-    {
-      if (player.HasInventory(iSecondItem))
-      {
-        Display ("You have both the items!");
-      }
-    }
+```ags
+if (player.HasInventory(iFirstItem))
+{
+  if (player.HasInventory(iSecondItem))
+  {
+    Display ("You have both the items!");
+  }
+}
+```
 
 #### AND Expressions
 
 However, this is quite unwieldy and if you have a lot of conditions it
 will look rather messy. So, AGS lets you do it this way:
 
-    if ( (player.HasInventory(iFirstItem)) &&
-         (player.HasInventory(iSecondItem)) )
-    {
-      Display ("You have both the items!");
-    }
+```ags
+if ( (player.HasInventory(iFirstItem)) &&
+      (player.HasInventory(iSecondItem)) )
+{
+  Display ("You have both the items!");
+}
+```
 
 This makes use of the `&&` operator.
 
@@ -78,10 +86,12 @@ You can extend this to as many checks as you like. For example, this
 will display the message if the *openedDoor* variable is currently set
 to true, and the variable *timer* is between 5 and 10.
 
-    if ((openedDoor == true) && (timer > 5) && (timer < 10))
-    {
-      Display ("It's all working out fine.");
-    }
+```ags
+if ((openedDoor == true) && (timer > 5) && (timer < 10))
+{
+  Display ("It's all working out fine.");
+}
+```
 
 #### OR Expressions
 
@@ -89,11 +99,13 @@ Sometimes you will want to do some processing if one **or** another
 condition is true. For example, you might want to let the player open a
 door if he has either the door key or a chainsaw.
 
-    if ((player.HasInventory(iDoorKey)) ||
-        (player.HasInventory(iChainsaw)) )
-    {
-      player.ChangeRoom(10);
-    }
+```ags
+if ((player.HasInventory(iDoorKey)) ||
+    (player.HasInventory(iChainsaw)) )
+{
+  player.ChangeRoom(10);
+}
+```
 
 The operator here is the double-vertical-bar `||` operator. It works
 similarly to the `&&` operator, but it will process the commands inside it
@@ -105,22 +117,26 @@ Sometimes, you want the script to take one course of action if a
 variable is set, and another course of action if it isn't. Initially,
 you might think you would do this:
 
-    if (timer == 5) {
-     // do something
-    }
-    if (timer != 5) {
-     // do something else
-    }
+```ags
+if (timer == 5) {
+  // do something
+}
+if (timer != 5) {
+  // do something else
+}
+```
 
 That would work -- however, there is a neater way, using the `else`
 keyword:
 
-    if (timer == 5) {
-     // do something
-    }
-    else {
-     // do something else
-    }
+```ags
+if (timer == 5) {
+  // do something
+}
+else {
+  // do something else
+}
+```
 
 This also allows you to modify the variable inside the first block of
 code, without affecting whether the second block gets run or not.
@@ -128,41 +144,45 @@ code, without affecting whether the second block gets run or not.
 You can do as many tests as you like, using the `else if` keyword. So,
 a complete piece of code could look like this:
 
-    if (timer == 5) {
-     // do something
-    }
-    else if (timer == 6) {
-     // do something different
-    }
-    else {
-     // do this if it's not 5 or 6
-    }
+```ags
+if (timer == 5) {
+  // do something
+}
+else if (timer == 6) {
+  // do something different
+}
+else {
+  // do this if it's not 5 or 6
+}
+```
 
 Relating to the [Home Sign Hotspot from the Tutorial](acintro3), we can write it slightly more efficiently by using Else statements:
 
-    // room script file
-    int myCounter = 0;
-    
-    function hSignHome_Look()
-    {
-      if (myCounter == 0)
-      {
-        Display("The sign says 'EWOH'. I have no idea what that could mean.");
-      }
-      else if (myCounter == 1)
-      {
-        Display("Oh it says 'Home'.");
-      }
-      else if (myCounter >=2)
-      {
-        Display("I guess that way leads towards my home.");
-      }
-    
-      if (myCounter < 3)
-      {
-        myCounter += 1;
-      }
-    }
+```ags
+// room script file
+int myCounter = 0;
+
+function hSignHome_Look()
+{
+  if (myCounter == 0)
+  {
+    Display("The sign says 'EWOH'. I have no idea what that could mean.");
+  }
+  else if (myCounter == 1)
+  {
+    Display("Oh it says 'Home'.");
+  }
+  else if (myCounter >=2)
+  {
+    Display("I guess that way leads towards my home.");
+  }
+
+  if (myCounter < 3)
+  {
+    myCounter += 1;
+  }
+}
+```
 
 ### Your Own Functions
 
@@ -174,10 +194,12 @@ go about it.
 Remember in [Scripting Tutorial 1](ScriptingTutorialPart1#commands-explained), we learned about function **parameters** and how they could be *int*, *string*, etc. Well, you write your own functions
 like this:
 
-    function dialog_request(int param)
-    {
-     // contents of function go here
-    }
+```ags
+function dialog_request(int param)
+{
+  // contents of function go here
+}
+```
 
 You start with the keyword `function`, then follow it by the function
 name, and then parenthesis listing the parameter types and names. For
@@ -203,17 +225,19 @@ then a semicolon.
 I think a couple of examples are in order. First of all, let's show a
 fixed function, `on_event`:
 
-    function on_event (EventType event, int data)
+```ags
+function on_event (EventType event, int data)
+{
+  if (event == eEventGotScore)
+  {
+    if (data == 5)
     {
-     if (event == eEventGotScore)
-     {
-       if (data == 5)
-       {
-         aSpecialScoreSound.Play();
-       }
-       Display("You just got %d points!", data);
-     }
+      aSpecialScoreSound.Play();
     }
+    Display("You just got %d points!", data);
+  }
+}
+```
 
 With this script, whenever the player scores points, they will get a
 message telling them so. Also, if they happen to get 5 points at once,
@@ -228,12 +252,14 @@ Now, suppose we have a special animation of the player doing a dance,
 and we want to be able to play it from various points in the script. By
 far the easiest way to do this would be to put it in a function:
 
-    function do_dance()
-    {
-     cEgo.LockView(10);
-     cEgo.Animate(2, 5);
-     cEgo.UnlockView();
-    }
+```ags
+function do_dance()
+{
+  cEgo.LockView(10);
+  cEgo.Animate(2, 5);
+  cEgo.UnlockView();
+}
+```
 
 This function runs view 10, loop 2, as the character's animation, waits
 until it finishes and then reverts to the default view.
@@ -245,7 +271,9 @@ in there. The function must be outside all other functions.
 Now, elsewhere in your script, when you want the player to dance, just
 do:
 
-    do_dance();
+```ags
+do_dance();
+```
 
 **Returning a value**
 
@@ -253,12 +281,14 @@ You may have noticed that some of the built-in functions, such as
 IsGamePaused, return a value to the script. You can do this from your
 own functions, using the `return` keyword. So:
 
-    function add(int a, int b)
-    {
-     int result;
-     result = a + b;
-     return result;
-    }
+```ags
+function add(int a, int b)
+{
+  int result;
+  result = a + b;
+  return result;
+}
+```
 
 This function adds the two numbers together and returns the result (a
 useless function in practice since the + operator does the same thing,
@@ -266,7 +296,9 @@ but it demonstrates the point).
 
 Another part of your script could then do:
 
-    total = add(5, 10);
+```ags
+total = add(5, 10);
+```
 
 **Using functions from room scripts**
 

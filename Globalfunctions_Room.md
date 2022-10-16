@@ -2,7 +2,9 @@
 
 ### `AreThingsOverlapping`
 
-    AreThingsOverlapping(int thing1, int thing2)
+```ags
+AreThingsOverlapping(int thing1, int thing2)
+```
 
 Checks whether two characters or objects are overlapping each other on
 screen. This simply carries out a quick rectangular check on the two
@@ -22,9 +24,11 @@ calling Object.IsCollidingWithObject.
 
 Example:
 
-    if (AreThingsOverlapping(1002, EGO)) {
-      // code here
-    }
+```ags
+if (AreThingsOverlapping(1002, EGO)) {
+    // code here
+}
+```
 
 will run the code if object 2 is overlapping EGO. This could be useful
 if object 2 was a bullet, for instance.
@@ -37,7 +41,9 @@ if object 2 was a bullet, for instance.
 
 ### `DisableGroundLevelAreas`
 
-    DisableGroundLevelAreas(int disableTints)
+```ags
+DisableGroundLevelAreas(int disableTints)
+```
 
 Disables all ground-level events. This means that all Region events, the
 Player Stands On Hotspot event, and the room edges become disabled.
@@ -57,7 +63,9 @@ as 0, then just the events will be turned off.
 
 Example:
 
-    DisableGroundLevelAreas(0);
+```ags
+DisableGroundLevelAreas(0);
+```
 
 will disable all ground-level events, but leave light levels working
 
@@ -69,7 +77,9 @@ will disable all ground-level events, but leave light levels working
 
 ### `EnableGroundLevelAreas`
 
-    EnableGroundLevelAreas()
+```ags
+EnableGroundLevelAreas()
+```
 
 Re-enables all ground-level events. This is used to reverse the effects
 of using the DisableGroundLevelAreas command, and will return things to
@@ -77,7 +87,9 @@ normal.
 
 Example:
 
-    EnableGroundLevelAreas();
+```ags
+EnableGroundLevelAreas();
+```
 
 will re-enable all ground-level events.
 
@@ -89,7 +101,9 @@ will re-enable all ground-level events.
 
 ### `GetBackgroundFrame`
 
-    GetBackgroundFrame()
+```ags
+GetBackgroundFrame()
+```
 
 Returns the number of the current background being displayed. In a room
 without animating backgrounds, this will always return 0. Otherwise, the
@@ -97,8 +111,10 @@ current frame number is returned from 0 to 4.
 
 Example:
 
-    if (GetBackgroundFrame()==4)
-      object[2].Visible = true;
+```ags
+if (GetBackgroundFrame()==4)
+    object[2].Visible = true;
+```
 
 will turn on object 2 if the background frame of the room is frame 4.
 
@@ -108,7 +124,9 @@ will turn on object 2 if the background frame of the room is frame 4.
 
 ### `GetDrawingSurfaceForWalkableArea`
 
-    DrawingSurface* GetDrawingSurfaceForWalkableArea()
+```ags
+DrawingSurface* GetDrawingSurfaceForWalkableArea()
+```
 
 Gets a drawing surface for the current room's 8-bit walkable mask, which allows you to directly draw onto that mask.
 
@@ -118,10 +136,12 @@ Any changes you make will only last until the player leaves the room, at which p
 
 Example:
 
-    DrawingSurface *surface = GetDrawingSurfaceForWalkableArea();
-    surface.DrawingColor = 4;
-    surface.DrawRectangle(50, 50, 100, 100);
-    surface.Release();
+```ags
+DrawingSurface *surface = GetDrawingSurfaceForWalkableArea();
+surface.DrawingColor = 4;
+surface.DrawRectangle(50, 50, 100, 100);
+surface.Release();
+```
 
 will paint a rectangle for the walkable area 4.
 
@@ -135,7 +155,9 @@ will paint a rectangle for the walkable area 4.
 
 ### `GetDrawingSurfaceForWalkbehind`
 
-    DrawingSurface* GetDrawingSurfaceForWalkbehind()
+```ags
+DrawingSurface* GetDrawingSurfaceForWalkbehind()
+```
 
 Gets a drawing surface for the current room's 8-bit walk-behind mask, which allows you to directly draw onto that mask.
 
@@ -145,10 +167,12 @@ Any changes you make will only last until the player leaves the room, at which p
 
 Example:
 
-    DrawingSurface *surface = GetDrawingSurfaceForWalkbehind();
-    surface.DrawingColor = 4;
-    surface.DrawRectangle(50, 50, 100, 100);
-    surface.Release();
+```ags
+DrawingSurface *surface = GetDrawingSurfaceForWalkbehind();
+surface.DrawingColor = 4;
+surface.DrawRectangle(50, 50, 100, 100);
+surface.Release();
+```
 
 will paint a rectangle for the walk-behind 4.
 
@@ -162,7 +186,9 @@ will paint a rectangle for the walk-behind 4.
 
 ### `GetScalingAt`
 
-    GetScalingAt (int x, int y)
+```ags
+GetScalingAt (int x, int y)
+```
 
 Returns the room area scaling at room co-ordinates (X,Y).
 
@@ -171,8 +197,10 @@ setting.
 
 Example:
 
-    if (GetScalingAt(player.x, player.y) == 100)
-        Display ("The player is currently at normal size.");
+```ags
+if (GetScalingAt(player.x, player.y) == 100)
+    Display ("The player is currently at normal size.");
+```
 
 *See also:* [`GetWalkableAreaAt`](Globalfunctions_Room#getwalkableareaat),
 [`SetAreaScaling`](Globalfunctions_Room#setareascaling)
@@ -183,7 +211,9 @@ Example:
 
 **This function is obsolete since AGS 3.5.0. Use [`Game`](Game#gamecamera).[`Camera.X`](Camera#camerax) instead.**
 
-    GetViewportX()
+```ags
+GetViewportX()
+```
 
 Returns the X-position of the main camera's rectangle in a room. This
 allows you to find out what part of the room the player is looking at.
@@ -194,7 +224,9 @@ allows you to find out what part of the room the player is looking at.
 
 **This function is obsolete since AGS 3.5.0. Use [`Game`](Game#gamecamera).[`Camera.Y`](Camera#cameray) instead.**
 
-    GetViewportY()
+```ags
+GetViewportY()
+```
 
 Returns the Y-position of the main camera's rectangle in a room. This
 allows you to find out what part of the room the player is looking at.
@@ -205,7 +237,9 @@ allows you to find out what part of the room the player is looking at.
 
 **This function is obsolete since AGS 3.5.0. Use equivalent [`GetWalkableAreaAtScreen`](Globalfunctions_Room#getwalkableareaatscreen) instead.**
 
-    int GetWalkableAreaAt(int x, int y)
+```ags
+int GetWalkableAreaAt(int x, int y)
+```
 
 Returns the ID of the walkable area at *screen* co-ordinates (X, Y). If there is no walkable area there, or if invalid co-ordinates are specified, returns 0.
 
@@ -213,7 +247,9 @@ Returns the ID of the walkable area at *screen* co-ordinates (X, Y). If there is
 
 ### `GetWalkableAreaAtRoom`
 
-    int GetWalkableAreaAtRoom(int x, int y)
+```ags
+int GetWalkableAreaAtRoom(int x, int y)
+```
 
 Returns the ID of the walkable area at *room* co-ordinates (X, Y). If there is no walkable area there, or if invalid co-ordinates are specified, returns 0.
 
@@ -221,8 +257,10 @@ This function may be useful when you need to find a walkable area relative to so
 
 Example:
 
-    if (GetWalkableAreaAtRoom(player.x, player.y) > 0)
-        Display ("Player is standing on the walkable area.");
+```ags
+if (GetWalkableAreaAtRoom(player.x, player.y) > 0)
+    Display ("Player is standing on the walkable area.");
+```
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
@@ -234,7 +272,9 @@ Example:
 
 ### `GetWalkableAreaAtScreen`
 
-    int GetWalkableAreaAtScreen(int x, int y)
+```ags
+int GetWalkableAreaAtScreen(int x, int y)
+```
 
 Returns the ID of the walkable area at *screen* co-ordinates (X, Y). If there is no walkable area there, or if invalid co-ordinates are specified, returns 0.
 
@@ -244,8 +284,10 @@ This function is convenient when you need to find a walkable area relative to so
 
 Example:
 
-    if (GetWalkableAreaAtScreen(mouse.x, mouse.y) == 0)
-        Display ("You can't walk there.");
+```ags
+if (GetWalkableAreaAtScreen(mouse.x, mouse.y) == 0)
+    Display ("You can't walk there.");
+```
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
@@ -257,7 +299,9 @@ Example:
 
 ### `HasPlayerBeenInRoom`
 
-    HasPlayerBeenInRoom(int room_number)
+```ags
+HasPlayerBeenInRoom(int room_number)
+```
 
 Checks whether the player has ever been in ROOM_NUMBER (i.e. has the
 'First Time Player Enters Room' event there ever been run). Returns 1 if
@@ -273,9 +317,11 @@ and it will always return 0 if you ask it about a non-state saving room
 
 Example:
 
-    if (HasPlayerBeenInRoom(14)) {
-      Display("The player has been to room 14 before.");
-    }
+```ags
+if (HasPlayerBeenInRoom(14)) {
+    Display("The player has been to room 14 before.");
+}
+```
 
 will display a message if the player has been to room 14.
 
@@ -287,7 +333,9 @@ will display a message if the player has been to room 14.
 
 **This function is obsolete since AGS 3.5.0. Use [`Game`](Game#gamecamera).[`Camera.AutoTracking`](Camera#cameraautotracking) instead.**
 
-    ReleaseViewport()
+```ags
+ReleaseViewport()
+```
 
 Releases the lock on the main camera, allowing it to automatically
 scroll around following the player character as normal.
@@ -296,7 +344,9 @@ scroll around following the player character as normal.
 
 ### `RemoveWalkableArea`
 
-    RemoveWalkableArea (int areanum)
+```ags
+RemoveWalkableArea (int areanum)
+```
 
 Removes the walkable areas in color AREANUM from the current room. You
 can put the area back with RestoreWalkableArea.
@@ -308,7 +358,9 @@ command in the "Player enters room" event when they return.
 
 Example:
 
-    RemoveWalkableArea(5);
+```ags
+RemoveWalkableArea(5);
+```
 
 will make the walking area 5 unwalkable.
 
@@ -318,7 +370,9 @@ will make the walking area 5 unwalkable.
 
 ### `ResetRoom`
 
-    ResetRoom (int room_number)
+```ags
+ResetRoom (int room_number)
+```
 
 Discards all the data that the engine has in memory about when the
 player last visited ROOM_NUMBER, and resets it as if they'd never been
@@ -336,7 +390,9 @@ in).
 
 Example:
 
-    ResetRoom(0);
+```ags
+ResetRoom(0);
+```
 
 will reset the intro room so it can be played again if the player wants
 to.
@@ -347,13 +403,17 @@ to.
 
 ### `RestoreWalkableArea`
 
-    RestoreWalkableArea (int areanum)
+```ags
+RestoreWalkableArea (int areanum)
+```
 
 Makes the area AREANUM walkable again.
 
 Example:
 
-    RestoreWalkableArea(4);
+```ags
+RestoreWalkableArea(4);
+```
 
 will make the walking area 4 walkable again.
 
@@ -363,7 +423,9 @@ will make the walking area 4 walkable again.
 
 ### `SetAreaScaling`
 
-    SetAreaScaling(int area, int min, int max)
+```ags
+SetAreaScaling(int area, int min, int max)
+```
 
 Changes walkable area number AREA's scaling.
 
@@ -381,7 +443,9 @@ area.
 
 Example:
 
-    SetAreaScaling(5, 120, 170);
+```ags
+SetAreaScaling(5, 120, 170);
+```
 
 will set walkable area 5 to use continuous scaling from 120 to 170
 percent.
@@ -393,7 +457,9 @@ percent.
 
 ### `SetBackgroundFrame`
 
-    SetBackgroundFrame (int frame)
+```ags
+SetBackgroundFrame (int frame)
+```
 
 Locks the background to frame number FRAME of an animating-background
 screen. (Values for FRAME are from 0 to 4). This allows you to use the
@@ -410,8 +476,10 @@ The frame lock is released when the game changes rooms.
 
 Example:
 
-    if (GetGlobalInt(20)==1)
-        SetBackgroundFrame(4);
+```ags
+if (GetGlobalInt(20)==1)
+    SetBackgroundFrame(4);
+```
 
 will change the current room's background frame to 4 if the global
 integer 20 is 1.
@@ -424,7 +492,9 @@ integer 20 is 1.
 
 **This function is obsolete since AGS 3.5.0. Use [`Game`](Game#gamecamera).[`Camera.SetAt`](Camera#camerasetat) instead.**
 
-    SetViewport(int x, int y)
+```ags
+SetViewport(int x, int y)
+```
 
 Locks the main camera to having the top-left hand corner at (X,Y) in
 a scrolling room. This allows you to manually pan across a scrolling
@@ -437,7 +507,9 @@ changes rooms.
 
 ### `SetWalkBehindBase`
 
-    SetWalkBehindBase (int area, int baseline)
+```ags
+SetWalkBehindBase (int area, int baseline)
+```
 
 Changes the walk-behind AREA to have new BASELINE. This effectively
 allows you to turn walk-behinds on and off, although you can do other
@@ -453,7 +525,9 @@ in front of it, otherwise he will be drawn behind it.
 
 Example:
 
-    SetWalkBehindBase (3,0);
+```ags
+SetWalkBehindBase (3,0);
+```
 
 will disable the walkbehind area number 3.
 

@@ -28,15 +28,17 @@ Code | Description
 
 Some examples:
 
-    int life = 42;
-    float twoPi = Maths.Pi * 2.0;
-    String message = "A string variable";
+```ags
+int life = 42;
+float twoPi = Maths.Pi * 2.0;
+String message = "A string variable";
 
-    Display("A normal string with no variables.");
-    Display("The meaning of life is %d.", life);
-    Display("The meaning of life in 3 digits is %03d.", life);
-    Display("2 times Pi is %f.", twoPi);
-    Display("The message says: %s.", message);
+Display("A normal string with no variables.");
+Display("The meaning of life is %d.", life);
+Display("The meaning of life in 3 digits is %03d.", life);
+Display("2 times Pi is %f.", twoPi);
+Display("The message says: %s.", message);
+```
 
 would display:
 
@@ -48,10 +50,12 @@ would display:
 
 You can display as many variables as you like in one line:
 
-    int life = 42;
-    float twoPi = Maths.Pi * 2.0;
+```ags
+int life = 42;
+float twoPi = Maths.Pi * 2.0;
 
-    Display("Life is %d, 2 x Pi = %f, and my dinner is %s.", life, twoPi, "awful");
+Display("Life is %d, 2 x Pi = %f, and my dinner is %s.", life, twoPi, "awful");
+```
 
 but, **be very careful** that you supply the right number of variables
 to correspond with the tags you use in the text. If you don't supply

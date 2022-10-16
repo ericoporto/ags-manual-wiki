@@ -11,10 +11,12 @@ message to the player when they click the **"Look"** icon on a hotspot.
 Assuming that you've done the main [AGS Tutorial](acintro1), you should already have
 created a script that looks like this:
 
-    function hSignHome_Look()
-    {
-      Display("The sign says 'EWOH'. I have no idea what that could mean.");
-    }
+```ags
+function hSignHome_Look()
+{
+  Display("The sign says 'EWOH'. I have no idea what that could mean.");
+}
+```
 
 Let's look at this in detail. "*function*" tells AGS that this is a
 block of script code that will run when an event occurs. "*hSignHome_Look*"
@@ -48,10 +50,12 @@ part of the manual, which also tells you how to use them.
 We want to display a message to the player, so we used the *Display*
 function. Looking this up in the manual gives us the definition:
 
-    Display (string message, ...)
-      Displays a message to the screen. It will be displayed in
-      the standard message box, and centered in the middle of
-      the screen. (description continues...)
+```ags
+Display (string message, ...)
+  Displays a message to the screen. It will be displayed in
+  the standard message box, and centered in the middle of
+  the screen. (description continues...)
+```
 
 The key point here is the part of the first line inside the parentheses.
 This is called the **parameter list** and defines what parameters you
@@ -95,7 +99,9 @@ important, as without the semicolon the script won't compile. Also, note
 that we DO NOT write the parameter type (e.g. "string" or "int"). So, we
 can add this line to our script:
 
-    Display("The sign says 'EWOH'. I have no idea what that could mean.");
+```ags
+Display("The sign says 'EWOH'. I have no idea what that could mean.");
+```
 
 This is what we already did in the main tutorial, but having examined it
 in more detail it should now make more sense why we've done it this way.
@@ -121,7 +127,9 @@ Editor will automatically pop up a list of the available commands:
 You then choose the appropriate command, and place any parameters in
 brackets, like we did above with the Display command. For example:
 
-    cEgo.AddInventory(iKey);
+```ags
+cEgo.AddInventory(iKey);
+```
 
 This will add the Key to the EGO character's inventory. If you look up
 *AddInventory* in the manual, you'll find it takes two parameters, an
@@ -150,8 +158,10 @@ easily make this happen.
 
 Our final script will look like this:
 
-    Display("The sign says 'EWOH'. I have no idea what that could mean.");
-    cEgo.AddInventory(iPoster);
+```ags
+Display("The sign says 'EWOH'. I have no idea what that could mean.");
+cEgo.AddInventory(iPoster);
+```
 
 Note that the script system is case sensitive, so writing for example
 `addinventory(iposter);` will not work.
@@ -159,8 +169,10 @@ Note that the script system is case sensitive, so writing for example
 The script commands are processed from top to bottom in the order that
 you write them, so writing something like:
 
-    Display("Why did the chicken cross the road?");
-    Display("Because he was bored.");
+```ags
+Display("Why did the chicken cross the road?");
+Display("Because he was bored.");
+```
 
 will mean that the player gets the two messages in the order you
 specified.
@@ -187,7 +199,9 @@ variable name, then a semicolon. The type is either "int", "String"
 (note the capital S) or "float", and the name can be anything you like -
 it is what you will use to refer to it later. For example:
 
-    int myCounter;
+```ags
+int myCounter;
+```
 
 The variable name can only contain letters A-Z, a-z and the underscore
 _ character.
@@ -199,7 +213,9 @@ store in it.
 Initially, your variable will have the value 0. Optionally, you can set
 the starting value within the declaration, like this:
 
-    int myCounter = 5;
+```ags
+int myCounter = 5;
+```
 
 which would set it to contain the value 5 initially instead.
 
@@ -214,17 +230,19 @@ So, to declare a variable for use by one of the room interaction
 scripts, you need to place the definition **above** the main function
 body.  So, it should look something like this:
 
-    // room script file
-    int myCounter;
+```ags
+// room script file
+int myCounter;
 
-    //...(other event scripts)
+//...(other event scripts)
 
-    function hSignHome_Look()
-    {
-      Display("The sign says 'EWOH'. I have no idea what that could mean.");
-    }
+function hSignHome_Look()
+{
+  Display("The sign says 'EWOH'. I have no idea what that could mean.");
+}
 
-    //...(rest of file follows)
+//...(rest of file follows)
+```
 
 No script commands can be used outside functions (or AGS wouldn't know
 when to run them!) - only variable declarations are allowed there.
@@ -235,7 +253,9 @@ You can change the value of a variable very easily in the script -
 simply write the variable name, the equals sign, then the new value,
 followed by the semicolon. So:
 
-    myCounter = 10;
+```ags
+myCounter = 10;
+```
 
 will change the value of our variable to be 10.
 
@@ -243,7 +263,9 @@ You can add to and subtract from a variable using the += and -=
 operators. So, to add 3 to the current value of myCounter, do the
 following:
 
-    myCounter += 3;
+```ags
+myCounter += 3;
+```
 
 **Checking variables**
 
@@ -251,10 +273,12 @@ Obviously we need a way to find out what value our variable contains,
 otherwise it's useless. We do this using conditional statements, called
 *if* statements. An if statement looks like this:
 
-    if (myCounter == 5)
-    {
-      myCounter = 0;
-    }
+```ags
+if (myCounter == 5)
+{
+  myCounter = 0;
+}
+```
 
 what this means is that if *myCounter* contains the value 5, then the
 script inside the { } brackets will be run (which in this case changes
@@ -287,29 +311,31 @@ the first time they look it will describe it, then if they look again
 they get a different message describing something in more detail. Our
 code will want to look something like this:
 
-    // room script file
-    int myCounter = 0;
-    
-    function hSignHome_Look()
-    {
-      if (myCounter == 0)
-      {
-        Display("The sign says 'EWOH'. I have no idea what that could mean.");
-      }
-      if (myCounter == 1)
-      {
-        Display("Oh it says 'Home'.");
-      }
-      if (myCounter >=2)
-      {
-        Display("I guess that way leads towards my home.");
-      }
-    
-      if (myCounter < 3)
-      {
-        myCounter += 1;
-      }
-    }
+```ags
+// room script file
+int myCounter = 0;
+
+function hSignHome_Look()
+{
+  if (myCounter == 0)
+  {
+    Display("The sign says 'EWOH'. I have no idea what that could mean.");
+  }
+  if (myCounter == 1)
+  {
+    Display("Oh it says 'Home'.");
+  }
+  if (myCounter >=2)
+  {
+    Display("I guess that way leads towards my home.");
+  }
+
+  if (myCounter < 3)
+  {
+    myCounter += 1;
+  }
+}
+```
 
 *myCounter* starts off set to 0, so the first time this script is called
 it will run the first Display command, but not the others. Then, since 0
@@ -334,22 +360,28 @@ their manual descriptions for more information.
 When reading function descriptions in the manual, you will notice that
 some of them say they return a value. For example,
 
-    IsGamePaused ()
-      Returns 1 if the game is currently paused, or 0 otherwise.
+```ags
+IsGamePaused ()
+  Returns 1 if the game is currently paused, or 0 otherwise.
+```
 
 You use these much as you would use a literal value such as "9". For
 example, you can do:
 
-    // Put the return value into our variable
-    myCounter = IsGamePaused();
+```ags
+// Put the return value into our variable
+myCounter = IsGamePaused();
+```
 
 (OR)
 
-    // Test the return value directly
-    if (IsGamePaused() == 0)
-    {
-      myCounter += 5;
-    }
+```ags
+// Test the return value directly
+if (IsGamePaused() == 0)
+{
+  myCounter += 5;
+}
+```
 
 Be sure to remember the parenthesis () after the function name.
 
@@ -362,18 +394,22 @@ Firstly, the ++ and -- operators increase and decrease the variable by
 1, respectively. So, the last part of our previous script could have
 been written:
 
-    if (myCounter < 3)
-    {
-      myCounter++;
-    }
+```ags
+if (myCounter < 3)
+{
+  myCounter++;
+}
+```
 
 Also, the { } braces are only needed if you are using more than one
 command inside them. Since we have only one command, the
 "my_counter++;" line, we can remove the { } completely and just be left
 with:
 
-    if (myCounter < 3)
-      myCounter++;
+```ags
+if (myCounter < 3)
+  myCounter++;
+```
 
 However, this can lead to mistakes in scripts that are hard to spot, so
 I would advise always using braces just to be safe.
@@ -381,13 +417,17 @@ I would advise always using braces just to be safe.
 Finally, if you want to test whether a value is zero or not, you can
 just write it as follows:
 
-    if (myCounter)
-      Display("counter is non-zero");
+```ags
+if (myCounter)
+  Display("counter is non-zero");
+```
 
 which is equivalent to:
 
-    if (myCounter != 0)
-      Display("counter is non-zero");
+```ags
+if (myCounter != 0)
+  Display("counter is non-zero");
+```
 
 ### Summary
 

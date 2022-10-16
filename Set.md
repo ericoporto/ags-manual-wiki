@@ -20,7 +20,9 @@ At the moment a Set does not let you directly access all of its internal data at
 
 ### `Set.Create`
 
-    static Set* Set.Create(SortStyle sortStyle, StringCompareStyle compareStyle)
+```ags
+static Set* Set.Create(SortStyle sortStyle, StringCompareStyle compareStyle)
+```
 
 Creates a new empty Set of the given properties. If you don't pass any options the Set is unsorted and case-insensitive. Note that you cannot change sorting style and case sensitivity later, you would have to create another Set and move values there.
 
@@ -29,20 +31,26 @@ Creates a new empty Set of the given properties. If you don't pass any options t
 
 Example:
 
-    Set* mySet = Set.Create();
+```ags
+Set* mySet = Set.Create();
+```
 
 ---
 
 ### `Set.Add`
 
-    bool Set.Add(String item)
+```ags
+bool Set.Add(String item)
+```
 
 Adds an item to the Set. Returns false if the Set already contained the item, otherwise returns true.
 
 Example:
 
-    mySet.Add("item1");
-    bool wasAdded = mySet.Add("item1"); // wasAdded will be false
+```ags
+mySet.Add("item1");
+bool wasAdded = mySet.Add("item1"); // wasAdded will be false
+```
 
 *See also:* [`Contains`](Set#setcontains), [`Remove`](Set#setremove)
 
@@ -50,7 +58,9 @@ Example:
 
 ### `Set.Clear`
 
-    void Set.Clear()
+```ags
+void Set.Clear()
+```
 
 Removes all items from the Set.
 
@@ -58,17 +68,21 @@ Removes all items from the Set.
 
 ### `Set.Contains`
 
-    bool Set.Contains(String item)
+```ags
+bool Set.Contains(String item)
+```
 
 Returns whether an item is already in a Set.
 
 Example:
 
-    Set* mySet = Set.Create();
-    mySet.Add("test");
-    if (mySet.Contains("test")) {
-      Display("Test passed!");
-    }
+```ags
+Set* mySet = Set.Create();
+mySet.Add("test");
+if (mySet.Contains("test")) {
+    Display("Test passed!");
+}
+```
 
 *See also:* [`Add`](Set#setadd), [`Remove`](Set#setremove)
 
@@ -76,7 +90,9 @@ Example:
 
 ### `Set.GetItemsAsArray`
 
-    String[] GetItemsAsArray()
+```ags
+String[] GetItemsAsArray()
+```
 
 Creates a dynamic array filled with items in same order as they are stored in the Set.
 
@@ -84,12 +100,14 @@ Returns null if this Set is empty.
 
 Example:
 
-    Set* mySet = Set.Create();
-    mySet.Add("test");
-    mySet.Add("test2");
-    String items[] = mySet.GetItemsAsArray();
-    for (int i = 0; i < mySet.ItemCount; i++)
-      Display("#%d: %s", i, items[i]);
+```ags
+Set* mySet = Set.Create();
+mySet.Add("test");
+mySet.Add("test2");
+String items[] = mySet.GetItemsAsArray();
+for (int i = 0; i < mySet.ItemCount; i++)
+    Display("#%d: %s", i, items[i]);
+```
 
 In the above example the items will be displayed on screen one by one, preceded by their index.
 
@@ -99,7 +117,9 @@ In the above example the items will be displayed on screen one by one, preceded 
 
 ### `Set.Remove`
 
-    bool Set.Remove(String item)
+```ags
+bool Set.Remove(String item)
+```
 
 Removes an item from the Set. Returns false if there was no such item, otherwise returns true.
 
@@ -109,7 +129,9 @@ Removes an item from the Set. Returns false if there was no such item, otherwise
 
 ### `Set.CompareStyle`
 
-    StringCompareStyle Set.CompareStyle
+```ags
+StringCompareStyle Set.CompareStyle
+```
 
 Returns the string comparison method for this Set.
 
@@ -119,7 +141,9 @@ Returns the string comparison method for this Set.
 
 ### `Set.ItemCount`
 
-    int Set.ItemCount
+```ags
+int Set.ItemCount
+```
 
 Returns the number of items currently in the Set.
 
@@ -127,7 +151,9 @@ Returns the number of items currently in the Set.
 
 ### `Set.SortStyle`
 
-    SortStyle Set.SortStyle
+```ags
+SortStyle Set.SortStyle
+```
 
 Returns the sorting method for this Set.
 

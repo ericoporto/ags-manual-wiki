@@ -7,7 +7,7 @@ If you like to customize your game or get it translated, you need to take a clos
 
 ### `Verbs.TranslateAction`
 
-```
+```ags
 void Verbs.TranslateAction(int action, int tr_lang);
 ```
 
@@ -17,7 +17,7 @@ This function defines the text for the verb buttons, e.g. if you click on the ta
 
 ### `Verbs.AdjustLanguage`
 
-```
+```ags
 void Verbs.AdjustLanguage();
 ```
 
@@ -26,7 +26,7 @@ It sets up everything related to the verb buttons, so you need to take a look at
 It is also import to understand, how this function works, if you want to get you game translated.
 If you take a closer look at this function, you will notice the following lines:
 
-```
+```ags
 Verbs.SetActionButtons(eGA_Open,    0, 59, 60, 'q');
 Verbs.SetActionButtons(eGA_Close,   1, 61, 62, 'a');
 Verbs.SetActionButtons(eGA_GiveTo,  2, 63, 64, 'z');
@@ -45,7 +45,7 @@ The parameters define the following:
 
 This line
 
-```
+```ags
 Verbs.SetActionButtons(eGA_GiveTo,  2, 63, 64, 'z');
 ```
 
@@ -79,7 +79,7 @@ in AdjustGUIText().
 
 ### `Verbs.AdjustGUIText`
 
-```
+```ags
 void Verbs.AdjustGUIText();
 ```
 

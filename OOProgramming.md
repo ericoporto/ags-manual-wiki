@@ -6,22 +6,24 @@ properties instead of making them directly readable/writable.
 
 For example:
 
-    struct Weapon
-    {
-        protected int damage;
-        import int GetDamage();
-        import void SetDamage(int);
-    };
+```ags
+struct Weapon
+{
+    protected int damage;
+    import int GetDamage();
+    import void SetDamage(int);
+};
 
-    int Weapon::GetDamage()
-    {
-        return this.damage;
-    }
+int Weapon::GetDamage()
+{
+    return this.damage;
+}
 
-    void Weapon::SetDamage(int damage)
-    {
-        this.damage = damage;
-    }
+void Weapon::SetDamage(int damage)
+{
+    this.damage = damage;
+}
+```
 
 Why would you want to do this you ask? Let's say for example that you want to
 make sure that the damage property of your Weapons is always a positive (or 0)
@@ -34,11 +36,13 @@ you wouldn't even be able to authenticate the data using repeatedly_execute
 By encapsulating the property you can make sure that the user is supplying a
 valid value before storing it into the instance:
 
-    void Weapon::SetDamage(int damage)
-    {
-        if (damage < 0) damage = 0;
-        this.damage = damage;
-    }
+```ags
+void Weapon::SetDamage(int damage)
+{
+    if (damage < 0) damage = 0;
+    this.damage = damage;
+}
+```
 
 Now if the user supplies an invalid value for the damage it will be replaced
 with 0. This makes sure that the damage does not get set to a negative value.
@@ -57,7 +61,9 @@ modification scope of struct members.
 To be consistent with Java and C#, the protection level is always specified
 first. For example:
 
-    protected import static function my_function();
+```ags
+protected import static function my_function();
+```
 
 ### Defining attributes
 
@@ -79,23 +85,25 @@ struct member used to store the data.
 
 For example:
 
-    struct Weapon
-    {
-        protected int damage; // this is our actual property to store the damage
-        import attribute int Damage; // this is our attribute
-        import int get_Damage();
-        import void set_Damage(int damage);
-    };
+```ags
+struct Weapon
+{
+    protected int damage; // this is our actual property to store the damage
+    import attribute int Damage; // this is our attribute
+    import int get_Damage();
+    import void set_Damage(int damage);
+};
 
-    int Weapon::get_Damage()
-    {
-        return this.damage;
-    }
+int Weapon::get_Damage()
+{
+    return this.damage;
+}
 
-    void Weapon::set_Damage(int damage)
-    {
-        this.damage = damage;
-    }
+void Weapon::set_Damage(int damage)
+{
+    this.damage = damage;
+}
+```
 
 It is also possible to use the attribute keyword to encapsulate array access,
 this time by using a getter named geti_XXX and and setter named seti_XXX. Since
@@ -104,48 +112,52 @@ declare the actual property with a static size.
 
 For example:
 
-    #define MAX_PEOPLE_COUNT 20 // max 20 people
+```ags
+#define MAX_PEOPLE_COUNT 20 // max 20 people
  
-    struct People
-    {
-        protected String names[MAX_PEOPLE_COUNT];
-        import attribute String Names[];
-        import String geti_Names(int index);
-        import void seti_Names(int index, String name);
-        readonly import attribute int Count;
-        import int get_Count();
-    };
+struct People
+{
+    protected String names[MAX_PEOPLE_COUNT];
+    import attribute String Names[];
+    import String geti_Names(int index);
+    import void seti_Names(int index, String name);
+    readonly import attribute int Count;
+    import int get_Count();
+};
 
-    String People::geti_Names(int index)
-    {
-        if ((index < 0) || (index >= MAX_PEOPLE_COUNT)) return null; // invalid index
-        return this.names[index];
-    }
+String People::geti_Names(int index)
+{
+    if ((index < 0) || (index >= MAX_PEOPLE_COUNT)) return null; // invalid index
+    return this.names[index];
+}
 
-    void People::seti_Names(int index, String name)
-    {
-        if ((index < 0) || (index >= MAX_PEOPLE_COUNT)) return;
-        if (String.IsNullOrEmpty(name)) name = "John Doe";
-        this.names[index] = name;
-    }
+void People::seti_Names(int index, String name)
+{
+    if ((index < 0) || (index >= MAX_PEOPLE_COUNT)) return;
+    if (String.IsNullOrEmpty(name)) name = "John Doe";
+    this.names[index] = name;
+}
 
-    int People::get_Count()
-    {
-        return PEOPLE_COUNT;
-    }
+int People::get_Count()
+{
+    return PEOPLE_COUNT;
+}
+```
 
 ### Access with extender functions
 
 By default getter and setter methods will show in autocomplete data within the
 script editor, unless explicitly disabled per definition:
 
-    struct Weapon
-    {
-        protected int damage;
-        import attribute int Damage;
-        import int get_Damage(); // $AUTOCOMPLETEIGNORE$
-        import void set_Damage(int damage); // $AUTOCOMPLETEIGNORE$
-    };
+```ags
+struct Weapon
+{
+    protected int damage;
+    import attribute int Damage;
+    import int get_Damage(); // $AUTOCOMPLETEIGNORE$
+    import void set_Damage(int damage); // $AUTOCOMPLETEIGNORE$
+};
+```
 
 This hides them within the script editor but it still means that the functions
 are globally accessible and we have to reference them in the script header. By
@@ -155,54 +167,60 @@ to have the functions ignored for autocomplete purposes.
 
 Example script header:
 
-    // Script.ash
+```ags
+// Script.ash
 
-    struct Weapon
-    {
-        protected int damage;
-        import attribute int Damage;
-    };
+struct Weapon
+{
+    protected int damage;
+    import attribute int Damage;
+};
+```
 
 Example script:
 
-    // Script.asc
+```ags
+// Script.asc
 
-    int get_Damage(this Weapon*)
-    {
-        return this.damage;
-    }
+int get_Damage(this Weapon*)
+{
+    return this.damage;
+}
 
-    void set_Damage(this Weapon*, int damage)
-    {
-        if (damage < 0) damage = 0;
-        this.damage = damage;
-    }
+void set_Damage(this Weapon*, int damage)
+{
+    if (damage < 0) damage = 0;
+    this.damage = damage;
+}
+```
 
 ### Static attributes
 
 Using an attribute will actually allow you to simulate defining static properties
 within a struct.
 
-    struct Some
-    {
-        import static attribute int Thing;
-    };
+```ags
+struct Some
+{
+    import static attribute int Thing;
+};
 
-    // since the attribute is static, adding a property to the struct doesn't make sense
-    int Some_Thing;
+// since the attribute is static, adding a property to the struct doesn't make sense
+int Some_Thing;
 
-    // even though it's static we can still use extenders to define the accessors;
-    // but note how we use "static Some" here instead of "this Some*", as no this pointer
-    // may be available in a static method.
-    int get_Thing(static Some)
-    {
-        return Some_Thing;
-    }
+// even though it's static we can still use extenders to define the accessors;
+// but note how we use "static Some" here instead of "this Some*", as no this pointer
+// may be available in a static method.
+int get_Thing(static Some)
+{
+    return Some_Thing;
+}
 
-    void set_Thing(static Some, int thing)
-    {
-        Some_Thing = thing;
-    }
-    
-    // Meanwhile, in some other script...
-    Some.Thing = 42;
+void set_Thing(static Some, int thing)
+{
+    Some_Thing = thing;
+}
+
+// Meanwhile, in some other script...
+Some.Thing = 42;
+```

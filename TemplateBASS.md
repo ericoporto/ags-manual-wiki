@@ -19,20 +19,24 @@ to 0 means that the GUI will never appear.
 
 Example:
 
-    // register a GUI to use for the inventory bar
-    TwoClickHandler.InventoryGui = gInventoryBar;
-    // register a Label to use for action text
-    TwoClickHandler.ActionLabel = lblAction;
-    // select the reversed button mode (left-click to look, right-click to use)
-    TwoClickHandler.ReversedClicks = true;
-    // Set the popup threshold for the inventory bar
-    TwoClickHandler.PopupProportional = 0.5;        // 50% of the GUI height or
-    TwoClickHandler.PopupDistance = 50;             // 50 pixels
+```ags
+// register a GUI to use for the inventory bar
+TwoClickHandler.InventoryGui = gInventoryBar;
+// register a Label to use for action text
+TwoClickHandler.ActionLabel = lblAction;
+// select the reversed button mode (left-click to look, right-click to use)
+TwoClickHandler.ReversedClicks = true;
+// Set the popup threshold for the inventory bar
+TwoClickHandler.PopupProportional = 0.5;        // 50% of the GUI height or
+TwoClickHandler.PopupDistance = 50;             // 50 pixels
+```
 ---
 
 ### `TwoClickHandler.InventoryGui`
 
-    GUI* TwoClickHandler.InventoryGui
+```ags
+GUI* TwoClickHandler.InventoryGui
+```
 
 Assigns the [`GUI`](GUI) which will be used for the inventory.
 
@@ -40,7 +44,9 @@ Assigns the [`GUI`](GUI) which will be used for the inventory.
 
 ### `TwoClickHandler.ActionLabel`
 
-    Label* TwoClickHandler.ActionLabel
+```ags
+Label* TwoClickHandler.ActionLabel
+```
 
 Assigns the [`Label`](Label) which will be used to display text descriptions.
 
@@ -48,7 +54,9 @@ Assigns the [`Label`](Label) which will be used to display text descriptions.
 
 ### `TwoClickHandler.ReversedClicks`
 
-    bool TwoClickHandler.ReversedClicks
+```ags
+bool TwoClickHandler.ReversedClicks
+```
 
 Sets how left and right clicks are processed.
 
@@ -61,7 +69,9 @@ The default value is `false`.
 
 ### `TwoClickHandler.PopupProportional`
 
-    float TwoClickHandler.PopupProportional
+```ags
+float TwoClickHandler.PopupProportional
+```
 
 Show and hide the inventory GUI when the mouse cursor y value is less than this
 proportion of the GUI height. For example, if the inventory GUI has a height of
@@ -74,7 +84,9 @@ The default value is `0.75`.
 
 ### `TwoClickHandler.PopupDistance`
 
-    int TwoClickHandler.PopupDistance
+```ags
+int TwoClickHandler.PopupDistance
+```
 
 Show and hide the inventory when the mouse cursor y value is less than this
 value.
@@ -85,7 +97,9 @@ The default value is `0` (effectively disabled in favor of PopupProportional).
 
 ### `TwoClickHandler.Close`
 
-    TwoClickHandler.Close();
+```ags
+TwoClickHandler.Close();
+```
 
 Hide the inventory GUI if it being shown. If the inventory GUI is already
 hidden then this function does nothing. This would typically only be called
