@@ -150,7 +150,7 @@ based on whether portrait is to be displayed at the left or right side
 of the screen. This property specifies the distance between the screen
 side and respected portrait's border.
 
-**NOTE:**The property is only used when the
+**NOTE:** The property is only used when the
 **Speech.CustomPortraitPlacement** is set to **true**.
 
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
@@ -169,7 +169,7 @@ static int Speech.PortraitY
 
 Gets/sets the character's speech portrait **y** coordinate on screen.
 
-**NOTE:**The property is only used when the
+**NOTE:** The property is only used when the
 **Speech.CustomPortraitPlacement** is set to **true**.
 
 *Compatibility:* Supported by **AGS 3.3.0** and later versions.
@@ -193,7 +193,7 @@ Gets/sets special key which can skip speech text. This makes all other
 keys ignored when speech is displayed on screen, unless eKeyNone is
 assigned, in which case any key can be used again.
 
-**NOTE:**The specified key will only skip speech if the appropriate
+**NOTE:** The specified key will only skip speech if the appropriate
 speech skip style is enabled.
 
 Example:
