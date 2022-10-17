@@ -58,7 +58,7 @@ supports two such data formats: **PAMELA** and **Papagayo**.
 ### PAMELA
 
 Download PAMELA application by the following link:  
-http://www-personal.monash.edu.au/~myless/catnap/pamela/
+https://www-personal.monash.edu.au/~myless/catnap/pamela/
 
 Set up the phenomes in Pamela so that there are only 10 (or as many
 talking frames as you have) available choices. Then, in the Lip Sync
