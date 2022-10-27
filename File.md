@@ -60,6 +60,8 @@ will result in failure, and *null* is returned. Similarily, if you try to open a
 **IMPORTANT:** An attempt to write file into relative path *without specifying any location tag* will make AGS
 automatically remap such path into `$APPDATADIR$`. This is done for backward compatibility. To ensure that your script does exactly what you want, please use location tags.
 
+**NOTE:** You are allowed to have subdirectories in the path. If the file is opened for writing, AGS will be responsible for creating these subdirectories. If it fails to do so for any reason, the the file won't be opened.
+
 `File.Open` returns a File* pointer, which you should store in a variable of that type. You may then use that pointer to perform reading or writing operations. After finishing work you should close the file with the `Close` function. There are only a limited number of file handles,
 and forgetting to close the file can lead to problems later on.
 
