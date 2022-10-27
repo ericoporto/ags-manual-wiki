@@ -89,6 +89,7 @@ variables.
 
 *Compatibility:*
 
+Subdirectories are created when opening a file for writing by AGS 3.5.0 and later versions.
 $CONFIGFILE$ tag supported by AGS 3.5.1 and later versions.
 $DATA$ tag supported by AGS 3.6.0 and later versions.
 
