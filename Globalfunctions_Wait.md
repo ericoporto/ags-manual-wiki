@@ -1,6 +1,10 @@
 ## Global functions (Wait)
 
-Since AGS 3.6.0, All Wait related functions can return a **Skip Reason** on why they were skipped:
+`Wait*` functions block the execution of a current script for certain duration, and optionally let player skip the waiting with a key or mouse clicks. After wait is over, the script continues as usual. `Wait` works almost everywhere, except for [`(late_)repeatedly_execute_always`](https://github.com/adventuregamestudio/ags-manual/wiki/Globalfunctions_Event#repeatedly_execute_always) functions.
+
+**Before AGS 3.6.0**, Wait* functions would return '0' if the waiting ended with a timeout, or '1' if it was skipped by a player.
+
+**Since AGS 3.6.0**, Wait* functions do return a more sophisticated **Skip Reason** on why they were skipped:
 
 - `0` - ended by timeout or `SkipWait()`;
 - `!= 0` - an integer value which combines [InputType](StandardEnums#inputtype), [KeyMod](Keycodes#key-modifiers), and a key or button code corresponding to that input type; that describes what input device and which button on that device were used to skip this "wait".
@@ -168,6 +172,8 @@ WaitKey(200);
 will pause the script and wait until 5 seconds have passed or the player
 presses a key.
 
+*Compatibility:* infinite timeout and complex skip reason are only supported by **AGS 3.6.0** and later versions.
+
 *See also:* [`Wait`](Globalfunctions_Wait#wait),
 [`WaitMouse`](Globalfunctions_Wait#waitmouse),
 [`WaitMouseKey`](Globalfunctions_Wait#waitmousekey),
@@ -202,6 +208,8 @@ WaitMouseKey(200);
 
 will pause the script and wait until 5 seconds have passed or the player
 presses a key or clicks the mouse.
+
+*Compatibility:* infinite timeout and complex skip reason are only supported by **AGS 3.6.0** and later versions.
 
 *See also:* [`Wait`](Globalfunctions_Wait#wait), 
 [`WaitKey`](Globalfunctions_Wait#waitkey),
