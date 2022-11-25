@@ -797,6 +797,18 @@ Returns the memory address of the text script exported function `funcName`. This
 
 Returns NULL if you specify a function that doesn't exist.
 
+The `funcName` is formed using following syntax:
+* For regular, global functions: `FunctionName^N`;
+* For struct's member functions: `StructName::FunctionName^N`;
+* For struct's attribute: `StructName::get_AttributeName`, `StructName::set_AttributeName`.
+* For struct's indexed (array) attribute: `StructName::geti_AttributeName`, `StructName::seti_AttributeName`.
+
+The `^N` suffix is specifying the expected number of arguments, and is useful if there are several variants of the same function with shorter and longer argument list. It may be omitted, but that is only safe if the script function does not have variants.
+
+Attribute's getters and setters do not need `^N`, because their argument list is always exact:
+* Regular attribute's getter has no args; setter has 1 arg: the new value;
+* Indexed attribute's getter has 1 arg, which is the index; setter has 2 args: the index and the new value.
+
 **IMPORTANT:** You **must** cast the result to the correct function type in order to call it - i.e. you must know how many parameters the function expects, and call it appropriately. Failure to do so will corrupt the stack and likely crash the engine.
 
 **IMPORTANT:** If you specify the name of an actual function in the script, for example repeatedly_execute, it will return an address - however, this will be a script address and attempting to call it will crash the game. **Only** use this feature to obtain the address of AGS's script functions as documented in the manual.
