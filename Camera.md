@@ -1,12 +1,14 @@
 ## `Camera` functions and properties
 
-The Camera struct lets you manage room cameras. Each camera may be considered a rectangular viewer that looks into the room and captures what it sees. This captured image may then be translated somewhere else. Right now AGS only supports drawing what a camera can see within a [`Viewport`](Viewport), but its uses may be extended in the future.
+The Camera struct lets you manage room cameras. To put it simply, the cameras allow the player to see inside the room. Each camera captures some rectangular area in a room, and this captured image may then be displayed on screen. Right now AGS only supports drawing what a camera can see within a [`Viewport`](Viewport), but its uses may be extended in the future.
 
-Cameras have a variable size and position within the room. The camera's size (i.e. the viewing rectangle) is linked to how much of the room they can see, the larger the size the larger the visible portion of the room. The maximum camera size is determined by the dimensions of the room background, so it may not be larger than the room. It is not possible to move the camera beyond the edges of the room background, even by a pixel.
+Cameras have a variable size and position within the room. The camera's size (the width and height of the rectangle) determines how much of the room they capture: the larger the size - the larger the visible portion of the room. The maximum camera size is limited by the dimensions of the room background, so it may not be larger than the room. It is also not possible to move the camera beyond the edges of the room background.
 
 By default there is a single camera, known as the "primary camera". This camera may be accessed as [`Game.Camera`](Game#gamecamera). But you may create more cameras if necessary, using [`Camera.Create`](Camera#cameracreate).
 
-Cameras are linked to a Viewport using the [`Viewport.Camera`](Viewport#viewportcamera) property. A camera may be linked to any number of different Viewports, in which case all of the Viewports will display the same image of the room. When a camera is linked to a Viewport the camera's contents are stretched to fill Viewport's rectangle, the difference in size between the viewport and the camera determines the level of scaling that is applied:
+Camera is linked to a Viewport using the [`Viewport.Camera`](Viewport#viewportcamera) property. By default, the "primary camera" is linked to the "primary viewport" ([`Screen.Viewport`](Screen#screenviewport)), but that may be changed if necessary. Moreover, a camera may be linked to any number of different Viewports, in which case all of the Viewports will display the same image of the room.
+
+When a camera is linked to a Viewport the camera's contents are stretched to fill Viewport's rectangle, the difference in size between the viewport and the camera determines the level of scaling that is applied:
 
 * If the camera is larger than the viewport the displayed image will be zoomed-out (scaled down)
 * If the camera is smaller than the viewport the displayed image will be zoomed-in (scaled up)
@@ -14,6 +16,20 @@ Cameras are linked to a Viewport using the [`Viewport.Camera`](Viewport#viewport
 Camera's X, Y properties specify the position if its *top-left corner* in the room. Naturally, its bottom-right corner will be at (X + Width, Y + Height), while the center at (X + Width / 2, Y + Height / 2).
 
 By default each camera follows the player character, this is know as "auto-tracking". You may override this by disabling [`Camera.AutoTracking`](Camera#cameraautotracking) property. Also, auto-tracking is disabled whenever you manually set camera's position. In order to make it follow the player character again, set AutoTracking to true.
+
+Moving a camera around the room (also known as "camera scrolling" or "room scrolling") is done simply by changing its X and Y properties, or using [SetAt](Camera#camerasetat) function. The common example is:
+
+```ags
+Game.Camera.X = 0;
+while (Game.Camera.X < (Room.Width - Game.Camera.Width))
+{
+    Game.Camera.X += 1;
+    Wait(1); // Wait is necessary to let the engine redraw the game
+}
+
+```
+
+Above script will scroll the camera from the leftmost to the rightmost room border.
 
 **NOTE:** Although cameras display the room, in their current implementation they are considered global persistent objects and will automatically change rooms with the player's character.
 
@@ -40,14 +56,22 @@ You may always delete previously created cameras using [`Camera.Delete`](Camera#
 Example:
 
 ```ags
-// Create a new camera
+// Create a new viewport and a new camera, and link them together
+Viewport* myView = Viewport.Create();
 Camera* myCam = Camera.Create();
-// Set this camera's size to half of the current room's size
+myView.Camera = myCam;
+// Set the viewport to half the screen size, centered and camera to half the room's
+myView.SetPosition(Screen.Width / 4, Screen.Height / 4, Screen.Width / 2, Screen.Height / 2);
+// Make sure that the new viewport is on top of the primary one
+myView.ZOrder = Screen.Viewport.ZOrder + 1;
+// Set the camera to half of the room size, placed at the right-bottom of the room
 myCam.SetSize(Room.Width / 2, Room.Height / 2);
-// Set this camera's position to the center of the room
-myCam.SetAt((Room.Width - myCam.Width) / 2, (Room.Height - myCam.Height) / 2);
-// Assign the new camera to the primary viewport
-Screen.Viewport.Camera = myCam;
+myCam.SetAt(Room.Width - myCam.Width, Room.Height - myCam.Height);
+// Wait a little (or play a cutscene, and so on)
+Wait(100);
+// Delete temporary camera and viewport
+myCam.Delete();
+myView.Delete();
 ```
 
 *See also:* [`Camera.Delete`](Camera#cameradelete), [`Game.Camera`](Game#gamecamera), [`Game.Cameras`](Game#gamecameras), [`Viewport.Camera`](Viewport#viewportcamera)
@@ -66,32 +90,6 @@ It's always *safe* to delete a camera. If this camera was linked to a Viewport o
 
 **IMPORTANT:** In the **Game.Cameras** array cameras are arranged in the order they were created. If you delete one from the middle all of the cameras with a higher index will be shifted towards the beginning of array.
 
-Example:
-
-```ags
-// Create and setup a temporary camera
-Camera* myCam = Camera.Create();
-myCam.SetSize(Room.Width / 2, Room.Height / 2);
-myCam.SetAt(0, 0);
-// Save the old camera in a temp variable
-Camera* oldCam = Screen.Viewport.Camera;
-// Assign the new camera to the primary viewport
-Screen.Viewport.Camera = myCam;
-
-// Scroll the new camera across the room
-while (myCam.X < (Room.Width - myCam.Width) ||
-        myCam.Y < (Room.Height - myCam.Height))
-{
-    myCam.SetAt(myCam.X + 1, myCam.Y + 1);
-    Wait(1);
-}
-
-// Delete the camera and reset the old camera back
-myCam.Delete();
-Screen.Viewport.Camera = oldCam;
-```
-
-
 *See also:* [`Camera.Create`](Camera#cameracreate), [`Game.Camera`](Game#gamecamera), [`Game.Cameras`](Game#gamecameras)
 
 ---
@@ -106,12 +104,25 @@ Changes the camera's position in the room and disables automatic tracking of the
 
 **NOTE:** Camera can never cross the room's bounds (and can never be larger than the current room). If you try to move the camera outside of the room, its position will be automatically snapped to the nearest position inside the room.
 
-Example:
+Example 1:
 
 ```ags
 // Center the primary camera around the Pirate character's middle point
 ViewFrame* curFrame = Game.GetViewFrame(cPirate.View, cPirate.Loop, cPirate.Frame);
 Game.Camera.SetAt(cPirate.x, cPirate.y - Game.SpriteHeight[curFrame.Graphic] / 2);
+```
+
+Example 2:
+
+```ags
+// Scroll the camera across the room
+while (Game.Camera.X < (Room.Width - Game.Camera.Width))
+{
+    Game.Camera.X += 1;
+    Wait(1);
+}
+// Snap back to player character and begin tracking it again
+Game.Camera.AutoTracking = true;
 ```
 
 *See also:* [`Camera.SetSize`](Camera#camerasetsize), [`Camera.AutoTracking`](Camera#cameraautotracking), [`Camera.X`](Camera#camerax), [`Camera.Y`](Camera#cameray), [`Camera.Width`](Camera#camerawidth), [`Camera.Height`](Camera#cameraheight)
@@ -165,19 +176,6 @@ bool Camera.AutoTracking;
 ```
 
 Gets/sets whether this camera will automatically follow the player character's position in the room. When disabled, the camera retains its position until you change it using script commands or turn auto-tracking back on.
-
-Example:
-
-```ags
-// Scroll the camera across the room
-while (Game.Camera.X < (Room.Width - Game.Camera.Width))
-{
-    Game.Camera.X += 1;
-    Wait(1);
-}
-// Snap back to player character and begin tracking it again
-Game.Camera.AutoTracking = true;
-```
 
 *See also:* [`Camera.SetAt`](Camera#camerasetat), [`Camera.X`](Camera#camerax), [`Camera.Y`](Camera#cameray)
 
