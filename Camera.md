@@ -151,16 +151,23 @@ Game.Camera.SetSize(Room.Width / 2, Room.Height / 2);
 Example 2:
 
 ```ags
-// Zoom camera in and then out
+// Zoom camera in and then out, keeping the aspect ratio.
+int w = Game.Camera.Width;
+int h = Game.Camera.Height;
+float aspect_ratio = IntToFloat(h) / IntToFloat(w);
 while (Game.Camera.Height > Room.Height / 4)
 {
-    Game.Camera.SetSize(Game.Camera.Width - 2, Game.Camera.Height - 2);
+    w -= 2;
+    h = FloatToInt(IntToFloat(w) * aspect_ratio, eRoundNearest);
+    Game.Camera.SetSize(w, h);
     Wait(1);
 }
 Wait(60);
 while (Game.Camera.Height < Room.Height)
 {
-    Game.Camera.SetSize(Game.Camera.Width + 2, Game.Camera.Height + 2);
+    w += 2;
+    h = FloatToInt(IntToFloat(w) * aspect_ratio, eRoundNearest);
+    Game.Camera.SetSize(w, h);
     Wait(1);
 }
 ```
