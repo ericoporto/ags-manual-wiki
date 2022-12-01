@@ -155,13 +155,13 @@ Example 2:
 while (Game.Camera.Height > Room.Height / 4)
 {
     Game.Camera.SetSize(Game.Camera.Width - 2, Game.Camera.Height - 2);
-    Wait(4);
+    Wait(1);
 }
 Wait(60);
 while (Game.Camera.Height < Room.Height)
 {
     Game.Camera.SetSize(Game.Camera.Width + 2, Game.Camera.Height + 2);
-    Wait(4);
+    Wait(1);
 }
 ```
 
