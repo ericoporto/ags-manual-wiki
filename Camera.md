@@ -152,13 +152,13 @@ Example 2:
 
 ```ags
 // Zoom camera in and then out
-while (Game.Camera.Width > Room.Width / 4)
+while (Game.Camera.Height > Room.Height / 4)
 {
     Game.Camera.SetSize(Game.Camera.Width - 2, Game.Camera.Height - 2);
     Wait(4);
 }
 Wait(60);
-while (Game.Camera.Width < Room.Width)
+while (Game.Camera.Height < Room.Height)
 {
     Game.Camera.SetSize(Game.Camera.Width + 2, Game.Camera.Height + 2);
     Wait(4);
