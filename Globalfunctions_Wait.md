@@ -1,6 +1,6 @@
 ## Global functions (Wait)
 
-`Wait*` functions block the execution of a current script for certain duration, and optionally let player skip the waiting with a key or mouse clicks. After wait is over, the script continues as usual. `Wait` works almost everywhere, except for [`(late_)repeatedly_execute_always`](https://github.com/adventuregamestudio/ags-manual/wiki/Globalfunctions_Event#repeatedly_execute_always) functions.
+`Wait*` functions block the execution of a current script for certain duration, and optionally let player skip the waiting with a key or mouse clicks. After wait is over, the script continues as usual. `Wait` works almost everywhere, except for [`(late_)repeatedly_execute_always`](Globalfunctions_Event#repeatedly_execute_always) functions.
 
 **Before AGS 3.6.0**, Wait* functions would return '0' if the waiting ended with a timeout, or '1' if it was skipped by a player.
 
