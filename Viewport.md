@@ -1,17 +1,17 @@
 ## `Viewport` functions and properties
 
-Viewport struct lets you manage screen viewports. You may think of them as of "windows" through which player sees the current room. Viewport is defined by its position on the game screen, in screen coordinates, and has linked Camera which contents it displays.
+Viewport struct lets you manage screen viewports. Viewports are used to display contents of a [Camera](Camera). You may think that the viewport is a "TV screen" that shows the image that the camera have captured in the room. Viewport is defined by a rectangle on the game screen, in screen coordinates, and a [Camera link](Viewport#viewportcamera).
 
 By default there is a single viewport called "primary viewport". This viewport may be accessed as [`Screen.Viewport`](Screen#screenviewport). But you may create more using [`Viewport.Create`](Viewport#viewportcreate).
 
 Viewport has a link to camera through a [`Viewport.Camera`](Viewport#viewportcamera) property. Same camera may be linked to multiple viewports at once. If no camera is linked then a viewport is not displayed at all. Viewports are allowed to go partially or fully offscreen, which may be useful to create transition effects, for example. Viewports may overlap, in which case their order of display is defined by [`ZOrder`](Viewport#viewportzorder) property.
 
-By default viewport covers whole game screen, but you may change that anytime. Camera's contents are stretched to fill viewport's rectangle, and because of that the difference between viewport's and camera's sizes create zoom effect (scaling):
+By default viewport covers whole game screen, but you may change that anytime using Width and Height properties, and also [SetPosition](Viewport#viewportsetposition) function. Camera's contents are stretched to fill viewport's rectangle, and because of that the difference between viewport's and camera's sizes create zoom effect (scaling):
 
 * If the camera is larger than the viewport the displayed image will be zoomed-out (scaled down)
 * If the camera is smaller than the viewport the displayed image will be zoomed-in (scaled up)
 
-Viewport's X, Y properties specify the position if its top-left corner on the game screen.
+Viewport's X, Y properties specify the position if its top-left corner on the game screen. You may use these to move the viewport around the screen.
 
 **IMPORTANT:** The game starts in automatic viewport mode that snaps primary viewport and camera to the size of the game screen or size of a room background, whatever is *smaller*, each time new room is loaded. This is convenient in case you want to rely on a common behavior. If you prefer to customize viewports yourself standard behavior may be disabled using [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload) property.
 
@@ -36,14 +36,22 @@ You may always delete previously created viewport using [`Viewport.Delete`](View
 Example:
 
 ```ags
-// Create a new viewport and a new camera
+// Create a new viewport and a new camera, and link them together
 Viewport* myView = Viewport.Create();
 Camera* myCam = Camera.Create();
+myView.Camera = myCam;
 // Set the viewport to half the screen size, centered and camera to half the room's
 myView.SetPosition(Screen.Width / 4, Screen.Height / 4, Screen.Width / 2, Screen.Height / 2);
-myCam.SetSize(Room.Width / 2, Room.Height / 2);
 // Make sure that the new viewport is on top of the primary one
 myView.ZOrder = Screen.Viewport.ZOrder + 1;
+// Set the camera to half of the room size, placed at the right-bottom of the room
+myCam.SetSize(Room.Width / 2, Room.Height / 2);
+myCam.SetAt(Room.Width - myCam.Width, Room.Height - myCam.Height);
+// Wait a little (or play a cutscene, and so on)
+Wait(100);
+// Delete temporary camera and viewport
+myCam.Delete();
+myView.Delete();
 ```
 
 *See also:* [`Viewport.Camera`](Viewport#viewportcamera), [`Viewport.Delete`](Viewport#viewportdelete), [`Screen.Viewport`](Screen#screenviewport), [`Screen.Viewports`](Screen#screenviewports)
@@ -61,32 +69,6 @@ Removes an existing viewport. This also removes this viewport's pointer from [`S
 It's always safe to delete a viewport, even if it's the last viewport remaining: in such case the room will simply be not displayed on screen. You may create another viewport later and make the room show up again.
 
 **IMPORTANT:** in **Screen.Viewports** array viewports are arranged in the order they were created. When you delete one in the middle all the following viewports will be shifted towards beginning of array.
-
-Example:
-
-```ags
-// Create and setup a temporary viewport
-Viewport* myView = Viewport.Create();
-myView.SetPosition(0, 0, Screen.Width / 4, Screen.Height / 4);
-myView.ZOrder = Screen.Viewport.ZOrder + 1;
-// Assign the existing primary camera to this viewport
-myView.Camera = Game.Camera;
-// Hide the primary viewport
-Screen.Viewport.Visible = false;
-
-// Scroll the new viewport across the screen
-while (myView.X < (Screen.Width - myView.Width) ||
-        myView.Y < (Screen.Height - myView.Height))
-{
-    myView.X += 1;
-    myView.Y += 1;
-    Wait(1);
-}
-
-// Delete the viewport and show the primary viewport again
-myView.Delete();
-Screen.Viewport.Visible = true;
-```
 
 *See also:* [`Viewport.Create`](Viewport#viewportcreate), [`Screen.Viewport`](Screen#screenviewport), [`Screen.Viewports`](Screen#screenviewports)
 
@@ -151,13 +133,37 @@ void Viewport.SetPosition(int x, int y, int width, int height);
 
 Changes viewport's position on the screen. Offscreen positons are valid, if a viewport is entirely offscreen it will simply not be drawn.
 
-Example:
+Example 1:
 
 ```ags
+// Set the primary viewport to half the screen size, aligned in the center.
 Screen.Viewport.SetPosition(Screen.Width / 4, Screen.Height / 4, Screen.Width / 2, Screen.Height / 2);
 ```
 
-will set the primary viewport to half the screen size, aligned in the center.
+Example 2:
+
+```ags
+// Shrink the viewport towards the center of the screen,
+// and then enlarge it back, while keeping the aspect ratio.
+int w = Screen.Viewport.Width;
+int h = Screen.Viewport.Height;
+float aspect_ratio = IntToFloat(h) / IntToFloat(w);
+while (h > Screen.Height / 4)
+{
+    w -= 2;
+    h = FloatToInt(IntToFloat(w) * aspect_ratio, eRoundNearest);
+    Screen.Viewport.SetPosition((Screen.Width - w) / 2, (Screen.Height - h) / 2, w, h);
+    Wait(1);
+}
+Wait(60);
+while (h < Screen.Height)
+{
+    w += 2;
+    h = FloatToInt(IntToFloat(w) * aspect_ratio, eRoundNearest);
+    Screen.Viewport.SetPosition((Screen.Width - w) / 2, (Screen.Height - h) / 2, w, h);
+    Wait(1);
+}
+```
 
 *See also:* [`Viewport.X`](Viewport#viewportx), [`Viewport.Y`](Viewport#viewporty), [`Viewport.Width`](Viewport#viewportwidth), [`Viewport.Height`](Viewport#viewportheight), [`Viewport.ZOrder`](Viewport#viewportzorder), [`Screen.AutoSizeViewportOnRoomLoad`](Screen#screenautosizeviewportonroomload)
 
