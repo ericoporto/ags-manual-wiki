@@ -41,6 +41,8 @@ placed in the "Speech" sub-directory of the game folder.
 
 **NOTE:** Speech file numbers are restricted to the positive range of 1 to 2147483647 (2 billion). This is a technical limitation based on how these are handled inside the engine, but we do not think that running out of numbers to use will ever become a problem to the user.
 
+Since AGS 3.5.0 you can play voice clips directly using function [Game.PlayVoiceClip](Game#gameplayvoiceclip).
+
 ### Voice packs
 
 Any sound format supported by AGS can be used for speech as well.
