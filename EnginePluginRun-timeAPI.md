@@ -753,9 +753,7 @@ Returns a reference to the requested mask for the current room. `which` is one o
 `MASK_HOTSPOT`  
 `MASK_REGIONS`
 
-The walk-behind mask is exactly the same size as the room, and is at the current resolution. For example, a 320x200 room, being run at 640x400 in the engine, will give you a 640x400 bitmap.
-
-The walkable area, hotspot and region masks are the size of the current room, but at the 320x200 resolution.
+The walk-behind mask is exactly the same size as the room. The walkable area, hotspot and region masks can be the size of the current room if a Mask Resolution of 1:1 was set in the Editor when making the game, but it can be smaller if a different resolution was set.
 
 **All** of the masks are bitmaps with 8-bit color depth, irrespective of what color depth the game is running at.
 
