@@ -6,27 +6,29 @@ similar, chances are this section will answer it.
 
 ### System restrictions
 
-- 256 objects per room
-- 299 state-saving rooms per game
-- 300 inventory items
 - 90000 imported sprites
-- 30 options per dialog topic
-- 20 timers
+- 300 inventory items
+- 999 rooms per game, 300 of which may be state-saving (0-299)
 - 5 background frames per room
+- 256 objects per room
+- 49 hotspots per room (50 with "no hotspot" area)
+- 15 walkable areas per room (16 with "non-walkable" area)
+- 15 walk-behinds per room (16 with "no walk-behind" area)
+- 15 regions per room (16 with "no region" area)
+- 30 options per dialog topic
 - 20 mouse cursors
+- 20 timers
 - 16 audio channels
 - 126 different script modules due to bytecode format
-- unlimited words in the text parser dictionary
-- unlimited fonts
 - unlimited characters
 - unlimited dialog topics
-- unlimited views
+- unlimited fonts
 - unlimited GUIs
 - unlimited controls on each GUI
-- unlimited loops per view
-- unlimited frames per loop
+- unlimited views (animation sets), loops in view, and frames in loop
+- unlimited words in the text parser dictionary
 - unlimited custom properties
-- unlimited screen overlays at a time
+- unlimited screen overlays at runtime
 
 ### Additional considerations
 
