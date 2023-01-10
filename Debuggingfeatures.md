@@ -50,6 +50,18 @@ the game speed and spot any slow-running rooms).
 
 This command only works if Debug Mode is enabled in your Game Settings.
 
+### The DEBUG constant
+The `DEBUG` constant is only defined when the game is compiled in Debug Mode, and can
+be used to change the behavior of your scripts:
+```ags
+#ifdef DEBUG
+    // only display this when the game is compiled in debug mode
+    Display("Debugging information");
+#endif
+```
+This feature can be used to display extra debugging tools, or also wrap debug-specific code
+that shouldn't be compiled for production mode.
+
 ### Current room information
 
 Pressing Ctrl+D displays some information about the current room. It
