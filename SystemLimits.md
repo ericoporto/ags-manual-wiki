@@ -34,7 +34,7 @@ similar, chances are this section will answer it.
 
 - In AGS integers and floats are 32-bit
     - Integers are signed and can be from -2147483648 to +2147483647 (from $-2^{31}$ to $+2^{31}-1$)
-    - Floats are [a bit more complicated](https://en.wikipedia.org/wiki/Single-precision_floating-point_format): an [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) 32-bit base-2 floating-point variable has a maximum value of $(2 − 2^{-23}) × 2^{127} ≈ 3.4028235 × 10^{38}$. A float is then be able to hold integer values between $2^{-127}$ and $2^{127}$.
+    - Floats are [a bit more complicated](https://en.wikipedia.org/wiki/Single-precision_floating-point_format): an [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) 32-bit base-2 floating-point variable has a maximum value of $(2 − 2^{-23}) × 2^{127} ≈ 3.4028235 × 10^{38}$. A float is then be able to hold integer values between $-2^{127}$ and $2^{127}$.
 
 Following code will print all integers from 2^24 (=16777216) to 2^127 (=170141183460469231731687303715884105728), assuming that debugPrint() writes to a text file:
 
