@@ -30,9 +30,52 @@ similar, chances are this section will answer it.
 - unlimited custom properties
 - unlimited screen overlays at runtime
 
-### Additional considerations
+#### Integers and Floats limits
 
-- In AGS integers and floats are 32-bit. Integers can be from -2147483648 to +2147483647, and floats are a bit more complicated, so it's better to test them.
+- In AGS integers and floats are 32-bit
+    - Integers are signed and can be from -2147483648 to +2147483647 (from $-2^{31}$ to $+2^{31}-1$)
+    - Floats are [a bit more complicated](https://en.wikipedia.org/wiki/Single-precision_floating-point_format): an [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) 32-bit base-2 floating-point variable has a maximum value of $(2 − 2^{-23}) × 2^{127} ≈ 3.4028235 × 10^{38}$. A float should then be able to hold integer values between $2^{-149}$ and $2^{127}$.
+
+Following code will print all integers from 2^24 (=16777216) to 2^127 (=170141183460469231731687303715884105728), assuming that debugPrint() writes to a text file:
+
+```
+for (int i = 24; i <=127; i++) {
+  float exponent = IntToFloat(i); 
+  float result = Maths.RaiseToPower (2.0, exponent);
+  debugPrint(String.Format("2^%d = %.0f", i,  result), false); // "%.0f" will print a float without any decimal digit, simulating an integer
+}
+```
+
+Please note that direct conversion (casting) is not allowed in scripts, hence conversion from/to int/float must be explicit, using IntToFloat() or FloatToInt().
+
+
+Result:
+
+* 2^24 = 16777216     
+* 2^25 = 33554432     
+* 2^26 = 67108864     
+* 2^27 = 134217728    
+* 2^28 = 268435456    
+* 2^29 = 536870912    
+* 2^30 = 1073741824   
+* 2^31 = 2147483648   
+* 2^32 = 4294967296   
+* 2^33 = 8589934592   
+* 2^34 = 17179869184  
+* 2^35 = 34359738368  
+* 2^36 = 68719476736  
+* 2^37 = 137438953472 
+* 2^38 = 274877906944 
+* 2^39 = 549755813888 
+* 2^40 = 1099511627776
+* ...
+* 2^125 = 42535295865117307932921825928971026432 
+* 2^126 = 85070591730234615865843651857942052864 
+* 2^127 = 170141183460469231731687303715884105728
+
+Same values are allowed as negative, so the full range of "integers as floats" is: from $-2^{127}$ to $2^{127}$ .
+
+### Additional considerations
 
 - You should be able to have up to 15 parameters to a function.
 
