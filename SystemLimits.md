@@ -30,9 +30,14 @@ similar, chances are this section will answer it.
 - unlimited custom properties
 - unlimited screen overlays at runtime
 
-### Additional considerations
+### Integers and Floats limits 
 
-- In AGS integers and floats are 32-bit. Integers can be from -2147483648 to +2147483647, and floats are a bit more complicated, so it's better to test them.
+In AGS integers and floats are 32-bit.
+- Integers are signed and can be from -2147483648 to +2147483647 (from `-2^31` to `2^31-1`)
+- Floats are [a bit more complicated](https://en.wikipedia.org/wiki/Single-precision_floating-point_format): an [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) 32-bit base-2 floating-point variable has a maximum value of `2 − 2^(-23) × 2^127 ≈ 3.4028235 × 10^38`. 
+- A float should then be able to hold integer values between -16777216 and 16777216 (from `-2^24` to `2^24`).
+
+### Additional considerations
 
 - You should be able to have up to 15 parameters to a function.
 
