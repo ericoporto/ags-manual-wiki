@@ -644,11 +644,16 @@ moves the GUI down 5 pixels.
 int GUI.ZOrder
 ```
 
-Gets/sets the z-order of the GUI. This allows you to dynamically change
-the ordering of GUIs on the screen.
+Gets/sets the drawing z-order of the GUI. This allows you to dynamically change the ordering of GUIs on the screen.
 
-The Z-order setting is an arbitrary integer number that can be positive or negative. AGS draws
-the GUIs in order, from the lowest numbered at the back to the highest numbered at the front.
+Z-order setting is an arbitrary integer number that can be positive or negative. It tells how the overlapping objects should be sorted.
+Those with lower z-order are drawn at the back, and those with higher z-order are drawn at the front.
+
+The GUIs are sorted among themselves and screen Overlays, and thus their ZOrder is relative to other GUIs z-order and Overlays z-order values.
+
+**NOTE:** If two or more GUIs have equal ZOrder, their relative order is then defined by their IDs: lower IDs are drawn at the back and higher IDs at the front.
+*This is different from other kinds of game objects* which do not depend on their IDs at all when being sorted on screen.
+Normally we don't recommend relying on this though, and suggest setting explicit ZOrder for the scenes where multiple GUIs may overlap each other.
 
 Example:
 

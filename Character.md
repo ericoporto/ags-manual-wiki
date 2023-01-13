@@ -1955,6 +1955,8 @@ and object baselines.
 The baseline can be from 1 to the height of the room.
 Setting it to 0 will make character go back to using its y coordinate as the baseline.
 
+**IMPORTANT:** If two or more Character (or other objects) have equal Baseline, their draw order is **undefined**, and should not be relied upon. This is because of how sprite sorting is done in the engine.
+
 Example:
 
 ```ags

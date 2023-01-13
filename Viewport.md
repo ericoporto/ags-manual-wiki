@@ -310,7 +310,9 @@ int Viewport.ZOrder;
 
 Gets/sets the viewport's z-order relative to other viewports. This will be taken into account if multiple viewports overlap to define which should be displayed above and which below.
 
-The z-order is an arbitrary number and only have meaning in comparison with other viewport's setting. Similarly to [`GUI.ZOrder`](GUI#guizorder), the lower value puts viewport to the back and higher value to the top.
+The z-order is an arbitrary number and only have meaning in comparison with other viewport's setting. The lower value puts viewport to the back and higher value to the top.
+
+**IMPORTANT:** If two or more Viewports have equal ZOrder, their draw order is **undefined**, and should not be relied upon. This is because of how draw sort is done in the engine.
 
 Example:
 

@@ -663,6 +663,8 @@ from 1 to 200 unless you have a taller than usual room.
 If you want to get the baseline and it returns 0, then the baseline is
 the object's Y co-ordinate.
 
+**IMPORTANT:** If two or more Objects (or Characters, and so on) have equal Baseline, their draw order is **undefined**, and should not be relied upon. This is because of how sprite sorting is done in the engine.
+
 Example:
 
 ```ags

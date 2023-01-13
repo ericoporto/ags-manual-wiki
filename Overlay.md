@@ -430,12 +430,19 @@ creates a text overlay, then gradually slides it down the screen.
 int Overlay.ZOrder;
 ```
 
-Gets/sets the overlay's z-order relative to other overlays and on-screen objects.
+Gets/sets the Overlay's drawing z-order. This allows you to dynamically change the ordering of Overlays on the screen.
 
-The Z-order setting is an arbitrary integer number that can be positive or negative. AGS draws
-the Overlays and GUIs in order, from the lowest numbered at the back to the highest numbered at the front.
+Z-order setting is an arbitrary integer number that can be positive or negative. It tells how the overlapping objects should be sorted.
+Those with lower z-order are drawn at the back, and those with higher z-order are drawn at the front.
+
+The *screen* Overlays are sorted among themselves and GUI, and thus their ZOrder is relative to other screen Overlays z-orders and GUIs z-order values.
+
+The *room* Overlays are sorted among themselves and other in-room elements, such as: room objects, characters and walk-behinds. Their ZOrder is relative to Character's and Object's Baseline setting (or Y coordinate, if Baseline is 0).
+
+**IMPORTANT:** If two or more Overlays (or other objects) have equal ZOrder, their draw order is **undefined**, and should not be relied upon. This is because of how sprite sorting is done in the engine.
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
-*See also:* [`GUI.ZOrder`](GUI#guizorder)
-
+*See also:* [`GUI.ZOrder`](GUI#guizorder),
+[`Character.Baseline`](Character#characterbaseline),
+[`Object.Baseline`](Object#objectbaseline)

@@ -534,7 +534,7 @@ Setting `GUIControl.ZOrder = 0;` will do same thing as calling
 same thing as calling `GUIControl.BringToFront()`.
 
 If you try to set inappropriate ZOrder, the nearest acceptable one will
-be applied instead.
+be applied instead. This also means that two controls cannot have equal ZOrder.
 
 **Applies To**
 
