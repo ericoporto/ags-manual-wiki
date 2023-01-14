@@ -67,4 +67,3 @@ AGS v3.5
 - length limit on TextBox lifted from 200 lines
 - ListBox item count limit lifted from 200
 - hidden limit for DoOnceOnly token length lifted from 200 characters
-- local messages per room limit lifted from 100 (excluding script)
