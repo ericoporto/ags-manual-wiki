@@ -6,29 +6,33 @@ similar, chances are this section will answer it.
 
 ### System restrictions
 
-- 90000 imported sprites
-- 300 inventory items
-- 999 rooms per game, 300 of which may be state-saving (0-299)
-- 5 background frames per room
-- 256 objects per room
-- 49 hotspots per room (50 with "no hotspot" area)
-- 15 walkable areas per room (16 with "non-walkable" area)
-- 15 walk-behinds per room (16 with "no walk-behind" area)
-- 15 regions per room (16 with "no region" area)
-- 30 options per dialog topic
-- 20 mouse cursors
-- 20 timers
-- 16 audio channels
-- 126 different script modules due to bytecode format
-- unlimited characters
-- unlimited dialog topics
-- unlimited fonts
-- unlimited GUIs
-- unlimited controls on each GUI
-- unlimited views (animation sets), loops in view, and frames in loop
-- unlimited words in the text parser dictionary
-- unlimited custom properties
-- unlimited screen overlays at runtime
+| Item | 3.5.0 | 3.5.1 | 3.6.0 |
+|-|-|-|-|
+| Imported sprites | 90000 | < | < |
+| Dynamic sprites (at runtime) | 2+ billion | < | < |
+| Characters | unlimited | < | < |
+| Cursors | 20 | 20 | **unlimited** |
+| Fonts | unlimited | < | < |
+| GUI | unlimited | < | < |
+| Controls per GUI | unlimited | < | < |
+| Inventory items | 300 | < | <  |
+| Overlays (at runtime) | 20 | 20 | **unlimited** |
+| Views (animation sets) | unlimited  | < | < |
+| Total rooms per game | 1000 | < | < |
+| State-saving rooms per game | 300 | < | < |
+| Background frames per room | 5 | < | < |
+| Room Objects per room | 40 | 40 | **256** |
+| Hotspots per room | 49 | < | < |
+| Walkable areas per room | 15 | < | < |
+| Walk-behinds per room | 15 | < | < |
+| Regions per room | 15 | < | < |
+| Dialog topics | unlimited | < | < |
+| Options per dialog topic | 30 | < | < |
+| Custom properties | unlimited | < | < |
+| Runtime timers | 20 | < | < |
+| Audio channels | 8 | 8 | **16** |
+| Script modules (limited by the bytecode format) | 126 | < | < |
+| Dynamic array size | 1 million | **2+ billion** | **2+ billion** |
 
 ### Integers and Floats limits 
 
@@ -48,22 +52,3 @@ In AGS integers and floats are 32-bit.
 - There is a total overall limit on the number of functions that can be exported by all plugins added together, which in theory it would be possible for a single plugin to exceed. It's in the region of a couple of hundred though, so it shouldn't be an issue. It wouldn't be too difficult to increase, if the need arose.
 
 We are working on removing existing limitations in the AGS, so some of the remaining restrictions might be loosened or eliminated in the following updates.
-
-### Changelog of lifted limits
-
-AGS v3.6:
-- Audio channels number increased from 8 to 16.
-- Increased Room Objects limit to 256 (was 40).
-- 20 screen overlays at a time lifted
-- Removed limit of simultaneous Button animations (was 15).
-- Removed limit of Character followers (was 30).
-
-AGS v3.5
-- packed sprites file (acsprset.spr) lifted from 2 GB limit
-- Imported sprites count limit raised from 30000 to 90000
-- Total number of sprites in game (includes both imported and Dynamic Sprites) lifted to around 2 billions of dynamic sprites
-- Font count limit of 30 removed
-- length limit on the Button lifted from 50 character
-- length limit on TextBox lifted from 200 lines
-- ListBox item count limit lifted from 200
-- hidden limit for DoOnceOnly token length lifted from 200 characters
