@@ -89,6 +89,21 @@ on which event has occurred. The possible values of event are:
             called after a saved game has been restored
             DATA = save slot number
 
+For example:
+```ags
+function on_event(int event, int data)
+{
+    if (event == eEventEnterRoomBeforeFadein)
+    {
+        // do something on each room enter, before screen fades in
+    }
+    else if (event == eEventRestoreGame)
+    {
+        // do something each time right after a save was restored
+    }
+}
+```
+
 *Compatibility:* `eEventEnterRoomAfterFadein` event type is only supported since AGS 3.6.0.
 
 ---
