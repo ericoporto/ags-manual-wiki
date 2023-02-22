@@ -260,6 +260,8 @@ accessible in future versions.
     Last two variants are [extender functions](ExtenderFunctions) for Character struct.<br>
     The return value is actually not essential and may be any type.<br>
     If the field is left empty then the standard Character.Say function is used.
+
+    **IMPORTANT**: this setting currently does not work with the "Say" checkbox in the dialog options list. The workaround is to duplicate option's text as a first cue in the dialog script.
 -   **Dialog bullet point image** - defines the number of sprite to use
     as a bullet image before each dialog option.
 -   **Gap between dialog options** - defines the gap between the options
