@@ -178,15 +178,26 @@ DeleteSaveSlot (int slot)
 
 Deletes the save game in save slot number SLOT. If there were no save then nothing happens.
 
-**IMPORTANT:** for historical reasons, for slots in the range of 1 and 50 this function also moves highest slot found in that range to fill the freed slot. For example, if there were slots 1, 2, 3, 4, 5 and DeleteSaveSlot removes slot 3, then save in slot 5 will be renamed to become slot 3.
+**IMPORTANT:** for historical reasons, when deleting slots in the range of 1 to 50, this function also moves highest slot found in that range to fill the freed slot. For example, if there were slots 1, 2, 3, 4, 5 and DeleteSaveSlot removes slot 3, then save in slot 5 will be renamed to become slot 3.
 
-Example:
+Example 1:
 
 ```ags
 DeleteSaveSlot (130);
 ```
 
 deletes save game slot 130 (which we should have saved earlier).
+
+Example 2:
+
+```ags
+for (int i = 999; i >= 0; i--)
+{
+    DeleteSaveSlot(i);
+}
+```
+
+deletes all the saves. This deletes in an opposite order to counter the problem with slots in the range 1-50 mentioned above.
 
 *See also:* [`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
 [`SaveGameSlot`](Globalfunctions_General#savegameslot)
