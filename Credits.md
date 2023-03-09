@@ -11,6 +11,7 @@
   Bernhard Rosenkraenzer  
   Cameron Cawley  
   Cristian Morales Vega  
+  Dominik Mierzejewski  
   Donovan Watteau  
   Edward Rudd  
   Erico Vieira Porto  
