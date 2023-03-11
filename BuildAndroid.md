@@ -22,6 +22,9 @@ this is usually something like `C:\Users\USERNAME\AppData\Local\Android\Sdk`.
 
    AGS requires SDK 29, select it and click OK. 
    If instead you have only the latest API automatically selected here, it's alright.
+   
+   In newer versions of Android Studio, for the command-line sdkmanager used by AGS Editor, you need
+   also to select SDK Tools, and select "Android SDK Command-line Tools" for installation.
 
 ![](images/android_install_step03.png)
 
