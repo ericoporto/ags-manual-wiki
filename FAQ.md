@@ -38,9 +38,11 @@ the character starts is on a walkable area.
 
 ---
 
-**Q. I am looking/interacting with an object but nothing happens, but I have it on the script file.**
+**Q. I have a function for a Room event or an object interaction, but commands inside do not work.**
 
-A. In the AGS Room Editor, under the object properties, in events, the field should be filled with the function to execute, wiring the room element to the script. If it's empty, clicking on the three dots button (...) the respective script will be open with the a new function for you to fill the details. If it has a value, clicking on the same button will direct you to it on the respective script file. This is true for all events, so for example a 'room_Load' script function won't trigger if it's not wired on the room events. It's usually easier to click on the three dots button of the event you want to develop in the Room Editor, which will generate the function on the script file for you to fill up.
+A. In AGS the Room events and Object (Character, GUI, and so on) interactions must be "wired" to the script using the event grid. This is true for all events, so for example a 'room_Load' script function won't trigger if it's not wired on the room events.
+
+Open the Editor, load the room or select the object, then under the object properties, in events, the field should be filled with the function to execute. If it's empty, clicking on the three dots button (...) the respective script will be open with the a new function for you to fill the details. If it has a value, clicking on the same button will direct you to it on the respective script file. Optionally, you may type or copy the existing function's name into the field. But it's usually easier to click on the three dots button of the event you want to implement, which will generate the function in the script file for you.
 
 ---
 
