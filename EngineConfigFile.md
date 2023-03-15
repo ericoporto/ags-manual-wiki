@@ -23,7 +23,7 @@ Locations of two latter files differ between running platforms:
 
 - **\[graphics\]** - display mode and various graphics options
     - `driver = [string]` - id of the graphics renderer to use. Supported names are:
-        * `D3D9` - Direct3D9 (MS Windows version only);
+        * `D3D9` - Direct3D9 (MS Windows only);
         * `OGL` - OpenGL;
         * `Software` - software renderer.
     - `software_driver = [string]` - *optional* id of the SDL2 driver to use for the final output in software mode, leave empty for default. IDs are provided by SDL2, not all of these will work on any system:
@@ -36,16 +36,15 @@ Locations of two latter files differ between running platforms:
     - `screen_width = [integer]` - if screen_def is 'explicit', defines display mode width; otherwise ignored.
     - `screen_height = [integer]` - if screen_def is 'explicit', defines display mode height; otherwise ignored.
     - `match_device_ratio = [0; 1]` - when looking for appropriate fullscreen mode, prioritize ones which have the same aspect ratio as the current device/desktop mode.
-    - `game_scale_fs = [string | integer]` - game scaling rule for fullscreen mode, and...
-    - `game_scale_win = [string | integer]` - game scaling rule for windowed mode, where
-        * any integer number - a positive number acts as upscale multiplier, a negative number acts as downscale divisor;
-        * `max_round` - deduce the maximal integer multiplier that fits into the current desktop/device size;
+    - `game_scale_fs = [string]` - game scaling rule for fullscreen mode, and...
+    - `game_scale_win = [string]` - game scaling rule for windowed mode, where
+        * `round` - deduce the maximal integer multiplier that fits into the current desktop/device size;
         * `stretch` - stretch to current desktop/device size;
         * `proportional` - similar to stretch, but keep the game's aspect ratio.
     - `filter = [string]` - id of the scaling filter to use. Supported filter names are:
         * `none` - run in native game size;
         * `stdscale` - nearest-neighbour scaling;
-        * `linear` - anti-aliased scaling; only usable with hardware-accelerated renderer.
+        * `linear` - anti-aliased scaling; not usable with software renderer.
     - `refresh = [integer]` - refresh rate for the display mode.
     - `render_at_screenres = [0; 1]` - whether the sprites are transformed and rendered in native game's or current display resolution;
     - `supersampling = [integer]` - super-sampling multiplier, default is 1, used with `render_at_screenres = 0` (currently supported only by OpenGL renderer);
