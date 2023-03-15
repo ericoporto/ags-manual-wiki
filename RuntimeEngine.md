@@ -26,8 +26,22 @@ Following OPTIONS are supported when running from the command line:
 * `--console-attach` - write the output to the parent process's console (Windows only).
 * `--fps` - display fps counter.
 * `--fullscreen` - run in fullscreen mode.
-* `--gfxdriver <name>` - use specified graphics driver (see list above).
-* `--gfxfilter <name> [ <game_scaling> ]` - use specified graphics filter and scaling factor (see explanation above).
+* `--gfxdriver <name>` - use specified graphics driver:
+  * d3d9 - Direct3D9 (MS Windows only);
+  * ogl - OpenGL;
+  * software - software renderer.
+* `--gfxfilter \<name\> [ \<game_scaling\> ]` - use specified graphics filter and scaling factor.
+  * filter names:
+    * none - run in native game size;
+    * stdscale - nearest-neighbour scaling;
+    * linear - anti-aliased scaling; not usable with software renderer.
+  * game scaling:
+    * proportional, round, stretch,
+    * or an explicit integer multiplier (applied only to the windowed mode).
+  * Examples:
+    * `--gfxfilter stdscale 2` - applies round x2 scaling (window twice the size of the game);
+    * `--gfxfilter stdscale round` - applies max round scaling;
+    * `--gfxfilter stdscale proportional` - applies max stretch while keeping aspect ratio.
 * `--loadsavedgame <filepath>` - load savegame on startup.
 * `--localuserconf` - read and write the user config in the game's directory rather than using the standard system path. The game directory must be writable.
 * `--log-OUTPUT=GROUP[:LEVEL][,GROUP[:LEVEL]][,...]`;
