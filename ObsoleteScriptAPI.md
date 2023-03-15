@@ -46,7 +46,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `DisplaySpeechAt` | [`Character.SayAt`](Character#charactersayat) | |
 | `DisplaySpeechBackground` | [`Character.SayBackground`](Character#charactersaybackground) | |
 | `DisplayThought` | [`Character.Think`](Character#characterstopmoving) | |
-| [`DrawingSurface.UseHighResCoordinates`](DrawingSurface#drawingsurfaceusehighrescoordinates) | This property was used to multiply by 2 the coordinates in 640x400 resolution games. | 3.5.0 |
+| [`DrawingSurface.UseHighResCoordinates`](DrawingSurface#drawingsurfaceusehighrescoordinates) | This property was used to multiply the coordinates by 2 in 640x400/480 resolution games. | 3.5.0 |
 | `EnableCursorMode` | [`Mouse.EnableMode`](Mouse#mouseenablemode) | |
 | `EnableHotspot` | [`Hotspot.Enabled`](Hotspot#hotspotenabled) | |
 | `EnableRegion` | [`Region.Enabled`](Region#regionenabled) | |
@@ -89,16 +89,16 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `GetCurrentMusic` | [`AudioChannel.PlayingClip`](AudioChannel#audiochannelplayingclip) | |
 | `GetCursorMode` | [`Mouse.Mode`](Mouse#mousemode) | |
 | `GetDialogOption` | [`Dialog.GetOptionState`](Dialog#dialoggetoptionstate) | |
-| `GetGameParameter(GP_FRAMExxx)` | [`Game.GetViewFrame`](Globalfunctions_General#getgameparameter) | |
-| `GetGameParameter(GP_ISFRAMEFLIPPED)` | [`Game.GetViewFrame`](Globalfunctions_General#getgameparameter) | |
-| `GetGameParameter(GP_NUMCHARACTERS)` | [`Game.CharacterCount`](Globalfunctions_General#getgameparameter) | |
-| `GetGameParameter(GP_NUMFRAMES)` | [`Game.GetFrameCountForLoop`](Globalfunctions_General#getgameparameter) | |
-| `GetGameParameter(gp_numguis)` | [`Game.GUICount`](Globalfunctions_General#getgameparameter) | |
-| `GetGameParameter(GP_NUMINVITEMS)` | [`Game.InventoryItemCount`](Globalfunctions_General#getgameparameter) | |
-| `GetGameParameter(GP_NUMLOOPS)` | [`Game.GetLoopCountForView`](Globalfunctions_General#getgameparameter) | |
-| `GetGameParameter(gp_numobjects)` | [`Room.ObjectCount`](Globalfunctions_General#getgameparameter) | |
-| `GetGameParameter(gp_spriteheight)` | [`Game.SpriteHeight`](Globalfunctions_General#getgameparameter) | |
-| `GetGameParameter(gp_spritewidth)` | [`Game.SpriteWidth`](Globalfunctions_General#getgameparameter) | |
+| `GetGameParameter(GP_FRAMExxx)` | [`Game.GetViewFrame`](Game#gamegetviewframe) | |
+| `GetGameParameter(GP_ISFRAMEFLIPPED)` | [`Game.GetViewFrame`](Game#gamegetviewframe) | |
+| `GetGameParameter(GP_NUMCHARACTERS)` | [`Game.CharacterCount`](Game#gamecharactercount) | |
+| `GetGameParameter(GP_NUMFRAMES)` | [`Game.GetFrameCountForLoop`](Game#gamegetframecountforloop) | |
+| `GetGameParameter(gp_numguis)` | [`Game.GUICount`](Game#gameguicount) | |
+| `GetGameParameter(GP_NUMINVITEMS)` | [`Game.InventoryItemCount`](Game#gameinventoryitemcount) | |
+| `GetGameParameter(GP_NUMLOOPS)` | [`Game.GetLoopCountForView`](Game#gamegetloopcountforview) | |
+| `GetGameParameter(gp_numobjects)` | [`Room.ObjectCount`](Room#roomobjectcount) | |
+| `GetGameParameter(gp_spriteheight)` | [`Game.SpriteHeight`](Game#gamespriteheight) | |
+| `GetGameParameter(gp_spritewidth)` | [`Game.SpriteWidth`](Game#gamespritewidth) | |
 | `GetGlobalInt` | [`Global Variables`](GlobalVariables) | |
 | `GetGlobalString` | [`Global Variables`](GlobalVariables) | |
 | `GetGraphicalVariable` | [`Global Variables`](GlobalVariables) | |
@@ -128,7 +128,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `GetObjectPropertyText` | [`Object.GetTextProperty`](Object#objectgettextproperty) | |
 | `GetObjectX` | [`Object.X`](Object#objectx) | |
 | `GetObjectY` | [`Object.Y`](Object#objecty) | |
-| `GetPlayerCharacter` | [`player.ID`](Globalfunctions_General#getplayercharacter) | |
+| `GetPlayerCharacter` | Use `player` pointer | |
 | `GetRawTime` | [`DateTime.RawTime`](DateTime#datetimerawtime) | |
 | `GetRegionAt` | [`Region.GetAtRoomXY`](Region#regiongetatroomxy) | |
 | `GetRoomProperty` | [`Room.GetProperty`](Room#roomgetproperty) | |
@@ -138,9 +138,9 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `GetTextBoxText` | [`TextBox.Text`](TextBox#textboxtext) | |
 | `GetTime` | [`DateTime.Now`](DateTime#datetimenow) | |
 | `GetTranslationName` | [`Game.TranslationFilename`](Game#gametranslationfilename) | |
-| `GetViewportX` | [`Game.Camera.X`](Globalfunctions_Room#getviewportx) | |
-| `GetViewportY` | [`Game.Camera.Y`](Globalfunctions_Room#getviewporty) | |
-| `GetWalkableAreaAt` | [`GetWalkableAreaAtScreen`](Globalfunctions_Room#getwalkableareaat) | |
+| `GetViewportX` | [`Game.Camera.X`](Camera#camerax) | |
+| `GetViewportY` | [`Game.Camera.Y`](Camera#cameray) | |
+| `GetWalkableAreaAt` | [`GetWalkableAreaAtScreen`](Globalfunctions_Room#getwalkableareaatscreen) | |
 | `GUIOff` | [`GUI.Visible`](GUI#guivisible) | |
 | `GUIOn` | [`GUI.Visible`](GUI#guivisible) | |
 | `HideMouseCursor` | [`Mouse.Visible`](Mouse#mousevisible) | |
@@ -152,7 +152,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `InventoryItem.GetName` | [`InventoryItem.Name`](InventoryItem#inventoryitemname) | |
 | `InventoryItem.GetPropertyText` | [`InventoryItem.GetTextProperty`](InventoryItem#inventoryitemgettextproperty) | |
 | `InventoryItem.SetName` | [`InventoryItem.Name`](InventoryItem#inventoryitemname) | |
-| `InventoryScreen` | [`create your own Inventory GUI`](Globalfunctions_General#inventoryscreen) | |
+| `InventoryScreen` | [create your own Inventory GUI](EditorGUI) | |
 | `IsButtonDown` | [`Mouse.IsButtonDown`](Mouse#mouseisbuttondown) | |
 | `IsChannelPlaying` | [`AudioChannel.IsPlaying`](AudioChannel#audiochannelisplaying) | |
 | `IsGUIOn` | [`GUI.Visible`](GUI#guivisible) | |
@@ -188,8 +188,8 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `MoveCharacterDirect` | [`Character.Walk`](Character#characterwalk) | |
 | `MoveCharacterPath` | [`Character.AddWaypoint`](Character#characteraddwaypoint) | |
 | `MoveCharacterStraight` | [`Character.WalkStraight`](Character#characterwalkstraight) | |
-| `MoveCharacterToHotspot` | [`Character.Walk`](Globalfunctions_General#movecharactertohotspot) | |
-| `MoveCharacterToObject` | [`Character.Walk`](Globalfunctions_General#movecharactertoobject) | |
+| `MoveCharacterToHotspot` | [`Character.Walk`](Character#characterwalk) and [`Hotspot.WalkToX/Y`](Hotspot#hotspotwalktox) | |
+| `MoveCharacterToObject` | [`Character.Walk`](Character#characterwalk) and [`Object.X/Y`](Object#objectx) | |
 | `MoveObject` | [`Object.Move`](Object#objectmove) | |
 | `MoveObjectDirect` | [`Object.Move`](Object#objectmove) | |
 | `MoveOverlay` | [`Overlay.X`](Overlay#overlayx) | |
@@ -228,7 +228,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `RawSetColorRGB` | [`Game.GetColorFromRGB`](Game#gamegetcolorfromrgb) | |
 | `RefreshMouse` | [`Mouse.Update`](Mouse#mouseupdate) | |
 | `ReleaseCharacterView` | [`Character.UnlockView`](Character#characterunlockview) | |
-| `ReleaseViewport` | [`Game.Camera.AutoTracking`](Globalfunctions_Room#releaseviewport) | |
+| `ReleaseViewport` | [`Game.Camera.AutoTracking`](Camera#cameraautotracking) | |
 | `RemoveObjectTint` | [`Object.RemoveTint`](Object#objectremovetint) | |
 | `RemoveOverlay` | [`Overlay.Remove`](Overlay#overlayremove) | |
 | [`Room.MusicOnLoad`](Room#roommusiconload) | Use [`AudioClip.Play`](AudioClip#audioclipplay) on the room Load event | |
@@ -319,7 +319,7 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `SetTextBoxFont` | [`TextBox.Font`](TextBox#textboxfont) | |
 | `SetTextBoxText` | [`TextBox.Text`](TextBox#textboxtext) | |
 | `SetTextOverlay` | [`Overlay.SetText`](Overlay#overlaysettext) | |
-| [`SetViewport`](Globalfunctions_Room#setviewport) | [`Game.Camera.SetAt`](Game#gamecamera) | 3.5.0 |
+| [`SetViewport`](Globalfunctions_Room#setviewport) | [`Game.Camera.SetAt`](Camera#camerasetat) | 3.5.0 |
 | `SetVoiceMode` | [`Speech.VoiceMode`](Speech#speechvoicemode) | |
 | `ShowMouseCursor` | [`Mouse.Visible`](Mouse#mousevisible) | |
 | `StopAmbientSound` | [`AudioChannel.Stop`](AudioChannel#audiochannelstop) | |
