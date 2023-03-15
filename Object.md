@@ -1061,12 +1061,14 @@ will retrieve and then display object 0's name.
 int Object.Scaling
 ```
 
-Gets/sets the object's current scaling level. An object that has the 
+Gets/sets the object's current scaling level, in percents. The permitted value range is 1 to 32767. An object that has the 
 regular size has this property set to 100.
 
-You can only set the value of this property if ManualScaling is enabled
+You can only set the value of this property if [`Object.ManualScaling`](Object#objectmanualscaling) is enabled
 for the object; otherwise, the scaling is determined automatically based 
-on the walkable area that the character is on.
+on the walkable area that the object is on.
+
+This property returns the actual current scaling at any given moment, whether it was set by you or acquired from the walkable area.
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
