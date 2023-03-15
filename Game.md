@@ -856,8 +856,13 @@ will display global message 997.
 static String Game.GlobalStrings[index]
 ```
 
-Gets/sets global string *index*. Global strings provide you with an easy
-way to share string variables between scripts. There are 50 available
+Gets/sets global string *index*.
+
+**NOTE:** GlobalStrings are now considered obsolete. Consider using
+[global variables](GlobalVariables) instead, which allow you to
+name the variables.
+
+Global strings provided a way to share string variables between scripts. There are 50 available
 global strings, with *index* values from 0 to 49.
 
 Example:
@@ -869,7 +874,8 @@ Display("Global string 15 is now: %s", Game.GlobalStrings[15]);
 
 will set global string 15 to contain \"Joe\".
 
-*See also:* [`GetGlobalInt`](Globalfunctions_General#getglobalint),
+*See also:* [Global variables](GlobalVariables),
+[`GetGlobalInt`](Globalfunctions_General#getglobalint),
 [`SetGlobalInt`](Globalfunctions_General#setglobalint)
 
 ---

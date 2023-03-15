@@ -477,12 +477,10 @@ The frame lock is released when the game changes rooms.
 Example:
 
 ```ags
-if (GetGlobalInt(20)==1)
-    SetBackgroundFrame(4);
+SetBackgroundFrame(4);
 ```
 
-will change the current room's background frame to 4 if the global
-integer 20 is 1.
+will change the current room's background frame to 4.
 
 *See also:* [`GetBackgroundFrame`](Globalfunctions_Room#getbackgroundframe)
 

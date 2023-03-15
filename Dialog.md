@@ -270,11 +270,10 @@ option-off-forever dialog commands.
 Example:
 
 ```ags
-if (GetGlobalInt(10)==1)
-    dialog[4].SetOptionState(2, eOptionOn);
+dFriend1.SetOptionState(2, eOptionOn);
 ```
 
-will enable option 2 of topic number 4 if the Global Integer 10 is 1.
+will enable option 2 of topic number 4.
 
 *See also:* [`Dialog.GetOptionState`](Dialog#dialoggetoptionstate),
 [`Dialog.Start`](Dialog#dialogstart),

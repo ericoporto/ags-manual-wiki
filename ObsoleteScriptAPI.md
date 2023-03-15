@@ -99,9 +99,9 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `GetGameParameter(gp_numobjects)` | [`Room.ObjectCount`](Globalfunctions_General#getgameparameter) | |
 | `GetGameParameter(gp_spriteheight)` | [`Game.SpriteHeight`](Globalfunctions_General#getgameparameter) | |
 | `GetGameParameter(gp_spritewidth)` | [`Game.SpriteWidth`](Globalfunctions_General#getgameparameter) | |
-| `GetGlobalInt` | [`Global Variables`](Globalfunctions_General#getglobalint) | |
-| `GetGlobalString` | [`Game.GlobalStrings`](Game#gameglobalstrings) | |
-| `GetGraphicalVariable` | [`Global Variables`](Globalfunctions_General#getgraphicalvariable) | |
+| `GetGlobalInt` | [`Global Variables`](GlobalVariables) | |
+| `GetGlobalString` | [`Global Variables`](GlobalVariables) | |
+| `GetGraphicalVariable` | [`Global Variables`](GlobalVariables) | |
 | `GetGUIAt` | [`GUI.GetAtScreenXY`](GUI#guigetatscreenxy) | |
 | `GetGUIObjectAt` | [`GUIControl.GetAtScreenXY`](GUIControl#guicontrolgetatscreenxy) | |
 | `GetHotspotAt` | [`Hotspot.GetAtScreenXY`](Hotspot#hotspotgetatscreenxy) | |
@@ -273,9 +273,9 @@ As new versions of AGS are released this sometimes bring changes to the script c
 | `SetDialogOption` | [`Dialog.SetOptionState`](Dialog#dialogsetoptionstate) | |
 | `SetDigitalMasterVolume` | [`System.Volume`](System#systemvolume) | |
 | `SetFrameSound` | [`ViewFrame.LinkedAudio`](ViewFrame#viewframelinkedaudio) | |
-| `SetGlobalInt` | [`Global Variables`](Globalfunctions_General#setglobalint) | |
-| `SetGlobalString` | [`Game.GlobalStrings`](Game#gameglobalstrings) | |
-| `SetGraphicalVariable` | [`Global Variables`](Globalfunctions_General#setgraphicalvariable) | |
+| `SetGlobalInt` | [`Global Variables`](GlobalVariables) | |
+| `SetGlobalString` | [`Global Variables`](GlobalVariables) | |
+| `SetGraphicalVariable` | [`Global Variables`](GlobalVariables) | |
 | `SetGUIBackgroundPic` | [`GUI.BackgroundGraphic`](GUI#guibackgroundgraphic) | |
 | `SetGUIClickable` | [`GUI.Clickable`](GUI#guiclickable) | |
 | `SetGUIObjectEnabled` | [`GUIControl.Enabled`](GUIControl#guicontrolenabled) | |

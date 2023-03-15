@@ -351,9 +351,8 @@ Sometimes, you may want to set a variable value that can be shared
 between a room script and your global script. There are two ways to do
 this -- you can export the variable from the global script and then
 import it in the script header, but that's a bit advanced for this
-tutorial. A simpler way is to use one of the 300 GlobalInts, which use
-the script functions SetGlobalInt and GetGlobalInt to access them. See
-their manual descriptions for more information.
+tutorial (see the article about [importing and exporting variables](ImportingFunctionsAndVariables#exporting-and-importing-a-variable) for that).
+A simpler way is to use [Global Variables pane](GlobalVariables) in the Editor, where you may add variables of any built-in types.
 
 ### Functions that return a value
 

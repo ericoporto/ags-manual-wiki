@@ -48,8 +48,7 @@ relevant to it.
 
 The on_call function will be called in the current room script, with
 its `value` parameter having the value you pass here. This allows it to
-distinguish between different tasks, and saves you having to use a
-GlobalInt to tell it what to do.
+distinguish between different tasks. If you need to pass more values, or values of different types, you may have to resort to [Global variables](GlobalVariables).
 
 If the current room has no on_call function, nothing will happen. No
 error will occur.
@@ -369,7 +368,8 @@ if (GetGlobalInt(20) == 1) {
 
 will execute the code only if Global Integer 20 is 1.
 
-*See also:* [`SetGlobalInt`](Globalfunctions_General#setglobalint),
+*See also:* [Global variables](GlobalVariables),
+[`SetGlobalInt`](Globalfunctions_General#setglobalint),
 [`Game.GlobalStrings`](Game#gameglobalstrings)
 
 ---
@@ -398,7 +398,8 @@ if (GetGraphicalVariable("climbed rock")==1)
 will execute the code only if interaction variable \"climbed rock\" is
 1.
 
-*See also:* [`GetGlobalInt`](Globalfunctions_General#getglobalint),
+*See also:* [Global variables](GlobalVariables),
+[`GetGlobalInt`](Globalfunctions_General#getglobalint),
 [`SetGraphicalVariable`](Globalfunctions_General#setgraphicalvariable)
 
 ---
@@ -1387,7 +1388,8 @@ SetGlobalInt(10,1);
 
 will set the Global Integer 10 to 1.
 
-*See also:* [`GetGlobalInt`](Globalfunctions_General#getglobalint)
+*See also:* [Global variables](GlobalVariables),
+[`GetGlobalInt`](Globalfunctions_General#getglobalint)
 
 ---
 
@@ -1413,7 +1415,8 @@ SetGraphicalVariable("climbed rock", 1);
 
 will set the interaction editor \"climbed rock\" variable to 1.
 
-*See also:* [`GetGraphicalVariable`](Globalfunctions_General#getgraphicalvariable)
+*See also:* [Global variables](GlobalVariables),
+[`GetGraphicalVariable`](Globalfunctions_General#getgraphicalvariable)
 
 ---
 

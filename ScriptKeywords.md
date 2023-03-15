@@ -191,30 +191,30 @@ then *statements2* are run instead.
 For example:
 
 ```ags
-if (GetGlobalInt(5) == 10) {
-  Display("Globalint 5 is 10.");
+if (player.Room == 10) {
+  Display("Player is in the room 10.");
 }
 else {
-  Display("Globalint 5 is not 10.");
+  Display("Player is NOT in the room 10.");
 }
 ```
 
 In this example, the first message will be displayed if the return value
-from `GetGlobalInt(5)` is 10, and the second message will be displayed
+from `player.Room` is 10, and the second message will be displayed
 if it is not.
 
 **if** statements can be nested inside **else** statements to produce an
 "else if" effect. For example:
 
 ```ags
-if (GetGlobalInt(5) == 1) {
-  Display("Globalint 5 is 1.");
+if (player.Room == 1) {
+  Display("Player is in the room 1.");
 }
-else if (GetGlobalInt(5) == 2) {
-  Display("Globalint 5 is 2.");
+else if (player.Room == 2) {
+  Display("Player is in the room 2.");
 }
 else {
-  Display("Globalint 5 is not 1 or 2.");
+  Display("Player in neither in room 1 nor room 2.");
 }
 ```
 

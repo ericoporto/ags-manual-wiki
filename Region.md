@@ -246,11 +246,10 @@ and object light levels.
 Example:
 
 ```ags
-if (GetGlobalInt(10)==1)
-    region[2].LightLevel = 100;
+region[2].LightLevel = 100;
 ```
 
-will set region 2's level light to 100 if the Global Integer 10 is 1.
+will set region 2's level light to 100.
 
 *See also:* [`Region.Tint`](Region#regiontint),
 [`SetAmbientLightLevel`](Globalfunctions_General#setambientlightlevel),
