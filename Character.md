@@ -2454,8 +2454,7 @@ bool Character.ManualScaling
 
 Gets/sets whether the character's scaling level is determined by the
 walkable area that he is walking on, or whether it is set manually by
-the script. This is equivalent to the "Ignore room area scaling"
-checkbox in the editor.
+the script. This is equivalent, though opposite, to the "UseRoomAreaScaling" property in the Character pane of the editor.
 
 If this is set to *true*, then the character's scaling level is set
 manually by the [`Scaling`](Character#characterscaling) property (by
@@ -2720,15 +2719,14 @@ scaling.
 int Character.Scaling
 ```
 
-Gets/sets the character's current scaling level.
-
-This property can always be read, and returns the character's current
-zoom level. The default value is 100 if they are not currently scaled.
+Gets/sets the character's current scaling level, in percents. The permitted value range is 1 to 32767. A character that has the regular size has this property set to 100.
 
 You can only set the value of this property if
 [`ManualScaling`](Character#charactermanualscaling) is enabled for the
 character; otherwise, the scaling is determined automatically based on
 the walkable area that the character is on.
+
+This property returns the actual current scaling at any given moment, whether it was set by you or acquired from the walkable area.
 
 Example:
 
