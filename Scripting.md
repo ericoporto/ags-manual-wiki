@@ -4,7 +4,7 @@
 - [Standard Constants](Constants)
 - [Standard Enumerated Types](StandardEnums)
 - [Standard Types](StandardTypes)
-- [GameState variables](Gamevariables)
+- [Game variables](Gamevariables)
 - [Global arrays](GlobalArrays)
 - [Global event handlers](Globalfunctions_Event)
 - [repeatedly_execute / repeatedly_execute_always](RepExec)
