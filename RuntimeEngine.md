@@ -45,9 +45,17 @@ Following OPTIONS are supported when running from the command line:
 * `--loadsavedgame <filepath>` - load savegame on startup.
 * `--localuserconf` - read and write the user config in the game's directory rather than using the standard system path. The game directory must be writable.
 * `--log-OUTPUT=GROUP[:LEVEL][,GROUP[:LEVEL]][,...]`;
-* `--log-OUTPUT=+GROUPLIST[:LEVEL]` - setup logging to the chosen OUTPUT with the given log groups and verbosity levels (see explanation above).
+* `--log-OUTPUT=+GROUPLIST[:LEVEL]` - setup logging to the chosen OUTPUT with the given log groups and verbosity levels;
+  Groups may be defined either by name or by a LIST of one-letter IDs, preceded by '+', e.g. +ABCD:LEVEL. Verbosity may be defined either by name or a numeric ID.
+  * `OUTPUTs` are:
+    * `stdout`, `file`, `console` (where \"console\" is internal engine's console);
+  * `GROUPs` are:
+    * `all`, `main` (m), `game` (g), `manobj` (o), `sdl` (l), `script` (s), `sprcache` (c);
+  * `LEVELs` are:
+    * `all`, `alert` (1), `fatal` (2), `error` (3), `warn` (4), `info` (5), `debug` (6);
   * Examples:
     * `--log-file=all:warn`
+    * `--log-file=main:warn,game:all`
     * `--log-stdout=+mg:debug`
 * `--log-file-path=PATH` - define a custom path for the log file.
 * `--no-message-box` - disable alerts as modal message boxes (Windows only).
