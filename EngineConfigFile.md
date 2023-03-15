@@ -105,6 +105,7 @@ Locations of two latter files differ between running platforms:
             * `all`, `alert` (1), `fatal` (2), `error` (3), `warn` (4), `info` (5), `debug` (6);
         - Examples:
             * `file=all:warn`
+            * `file=main:warn,game:all`
             * `stdout=+mg:debug`
     - `file-path = [string]` - custom path to the log file.
     - `sdl = LEVEL` - setup SDL's own logging level, defined either by name or numeric ID:
