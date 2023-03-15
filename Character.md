@@ -2723,8 +2723,7 @@ int Character.Scaling
 Gets/sets the character's current scaling level.
 
 This property can always be read, and returns the character's current
-zoom level, which will be between 5 and 200 (the default being 100 if
-they are not currently scaled).
+zoom level. The default value is 100 if they are not currently scaled.
 
 You can only set the value of this property if
 [`ManualScaling`](Character#charactermanualscaling) is enabled for the
@@ -2740,6 +2739,9 @@ cEgo.Scaling = 50;
 
 will tell EGO to ignore walkable area scaling levels and be fixed to
 `50%` zoom level.
+
+*Compatibility:* Since **AGS 3.6.0** this property's value can be in the range between 1 and 32767.
+In the previous versions this property could only have values in the range between 5 and 200.
 
 *SeeAlso:* [`Character.ManualScaling`](Character#charactermanualscaling)
 
