@@ -20,7 +20,7 @@ By selecting a background on the `Display Background` combo box, you can select
 which background of a room to display: Main Background, frame 2, 3, 4, 5. With
 one background selected, click `Change...` button to replace the background
 image with a new image. If a room has more than one background, by default, they
-are animated.
+are animated. To prevent that assign "BackgroundAnimtionEnabled" to "False" in the room properties. Also, you may lock background to a particular frame in script using [`SetBackgroundFrame`](Globalfunctions_Room#setbackgroundframe) command.
 
 **NOTE:** If the background images are replaced with ones of a different size
 this will clear all of the mask (hotspot, walkbehind, region, and walkable)
@@ -132,4 +132,4 @@ preferred external image editor.
 indexed color palette, where color 0 signifies transparency and colors 1-15 are
 used as the respective hotspot/walk-behind/walkable area numbers
 
-*See also:* [`Room`](Room)
+*See also:* [`Room`](Room), [Global functions (room actions)](Globalfunctions_Room)
