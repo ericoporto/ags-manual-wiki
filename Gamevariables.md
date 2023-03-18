@@ -40,7 +40,7 @@ game.screenshot_width | The width of screenshot images when saved into save game
 game.show_single_dialog_option | If only a single dialog option is available, show it anyway (default=0)
 game.sierra_inv_color | The background color of the sierra-style inventory.
 game.skip_display | Setting for how Display() messages are skipped; valid values are same as for Speech.SkipStyle (default 3).
-game.skip_speech_specific_key | OBSOLETE, see [Speech.SkipKey](Speech#speechskipkey) instead.
+game.skip_speech_specific_key | OBSOLETE, see [`Speech.SkipKey`](Speech#speechskipkey) instead.
 game.speech_bubble_width | Maximum width of the thought bubble text window (default 100)
 game.speech_text_align | OBSOLETE, see [`Speech.TextAlignment`](Speech#speechtextalignment) instead.
 game.speech_text_gui | The textwindow GUI number used for sierra-style speech.
