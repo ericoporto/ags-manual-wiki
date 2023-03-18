@@ -26,8 +26,7 @@ will be run:
 That's fine, and when it finishes running the thread becomes idle again.
 
 But, suppose that within repeatedly_execute, you make a call to the
-Character.Say command. Say (or *DisplaySpeech* in old-style scripting)
-is a blocking command and does not return until the character finishes
+Character.Say command. Say is a blocking command and does not return until the character finishes
 talking:
 
 ![](images/threads3.gif)

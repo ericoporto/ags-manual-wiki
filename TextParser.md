@@ -28,7 +28,7 @@ existing one and add a synonym.
 
 So, how do you use the text parser? Well, you'll need a text box GUI
 control somewhere in order for the user to type in their input, or you
-could just use the InputBox command (but it has quite a short line
+could just use the [Game.InputBox](Game#gameinputbox) command (but it has quite a short line
 length).
 
 When the user has typed in their text (you'll probably know this by the

@@ -16,7 +16,7 @@ game.anim_background_speed | The current room's animating background speed - sam
 game.auto_use_walkto_points | Default 1; set to 0 to stop AGS automatically using hotspot walk-to points.
 game.bgspeech_game_speed | If 0 (default), background speech stays on the screen for the same amount of time, no matter what the game speed. If 1, the amount of time it stays is relative to the game speed.
 game.bgspeech_stay_on_display | If 0 (default), background speech is removed when a Say command happens; if 1, it isn't.
-game.close_mouth_end_speech_time | At the end of speech text, the speech animation will stop for this number of game loops. Default 10. No affect in voice mode.
+game.close_mouth_end_speech_time | OBSOLETE, see [`Speech.AnimationStopTimeMargin`](Speech#speechanimationstoptimemargin) instead.
 game.debug_mode | Whether we are in debug mode or not.
 game.dialog_options_highlight_color | Color used to draw the active (selected) dialog option
 game.dialog_options_x | Offset into dialog options GUI to compensate for borders
@@ -40,9 +40,9 @@ game.screenshot_width | The width of screenshot images when saved into save game
 game.show_single_dialog_option | If only a single dialog option is available, show it anyway (default=0)
 game.sierra_inv_color | The background color of the sierra-style inventory.
 game.skip_display | Setting for how Display() messages are skipped; valid values are same as for Speech.SkipStyle (default 3).
-game.skip_speech_specific_key | Default 0. You can set it to a keycode, in which case only that key can skip speech text.
+game.skip_speech_specific_key | OBSOLETE, see [Speech.SkipKey](Speech#speechskipkey) instead.
 game.speech_bubble_width | Maximum width of the thought bubble text window (default 100)
-game.speech_text_align | Sets how text in LucasArts-style speech is aligned. Same possible values as game.text_align, default eAlignCentre
+game.speech_text_align | OBSOLETE, see [`Speech.TextAlignment`](Speech#speechtextalignment) instead.
 game.speech_text_gui | The textwindow GUI number used for sierra-style speech.
 game.text_align | Sets how text in message boxes and Sierra-style speech is aligned:<br>eAlignLeft: text aligned to left within message box (default)<br>eAlignCentre: text is centered within the message box<br>eAlignRight: text is right-aligned within the message box<br>These options do not affect LucasArts-style speech, which is always centered.
 game.text_shadow_color | Color used for speech text shadow (default 16).

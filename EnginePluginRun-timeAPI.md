@@ -766,7 +766,7 @@ _Added in version: 8 (MASK_REGIONS requires version 11)._
 AGSViewFrame* GetViewFrame (int view, int loop, int frame);
 ```
 
-Returns the view frame structure for the specified frame. `view` is the number you get from the editor (that's used in `SetCharacterView` and so forth), not the view minus 1.
+Returns the view frame structure for the specified frame. `view` is the number you get from the editor (that's used in `Character.ChangeView` and so forth), not the view minus 1.
 
 - **Interface version 10 and later:**
   If `frame` is not valid (e.g. there aren't that many frames in the specified loop), returns NULL.
@@ -927,7 +927,7 @@ Plays a new sound on the sound channel number `channel`. `volume` can be from 0 
 | `PSND_MIDI`      | MIDI file                              |
 | `PSND_MOD`       | MOD/XM/S3M file                        |
 
-**NOTE:** You should normally just use the PlaySound, PlaySoundEx and PlayMusic functions (via GetScriptFunctionAddress) to play sounds - only use this function in specific circumstances.
+**NOTE:** You should normally just use the [`AudioClip.Play`](AudioClip#audioclipplay) function (via GetScriptFunctionAddress) to play sounds - only use this function in specific circumstances.
 
 **IMPORTANT:** Only one MIDI file, and one MOD/XM file can be playing at a time. You should generally keep away from these two sound types unless you are sure about what you are doing.
 
@@ -951,7 +951,7 @@ AGSMouseCursor* GetMouseCursor(int cursor);
 
 Returns the mouse cursor struct which AGS uses to store details about the specified cursor mode.
 
-**IMPORTANT:** The returned struct is read-only. You should not modify any members of it directly; rather, call the script functions such as `ChangeCursorGraphic` which ensure that the game state is updated properly.
+**IMPORTANT:** The returned struct is read-only. You should not modify any members of it directly; rather, call the script functions such as [`Mouse.ChangeModeGraphic`](Mouse#mousechangemodegraphic) which ensure that the game state is updated properly.
 
 _Added in version: 12_
 
