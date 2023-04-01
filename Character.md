@@ -1118,6 +1118,10 @@ make sure the character can move if a ChangeRoom with co-ordinates has
 been issued to get there. You could also use this in on_event for
 eEventEnterRoomBeforeFadein to use whenever a player enters a room.
 
+**NOTE:** `PlaceOnWalkableArea` ignores any parts of the room beyond room Edges. This was done so, because Edges usually serve like an area boundaries and may trigger player leaving the room.
+
+**NOTE:** `PlaceOnWalkableArea` is searching for valid walkable areas not pixel by pixel, but in intervals of 5 pixels. This was originally done for performance reasons. Because of that it may fail if walkable areas are too thin.
+
 Example:
 
 ```ags
