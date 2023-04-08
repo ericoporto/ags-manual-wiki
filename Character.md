@@ -2791,7 +2791,7 @@ This property is read-only. It will **only** return true for the active
 talking character; that is, it will not return true for any characters
 talking with the SayBackground command.
 
-**IMPORTANT:** `Speaking` will only return a valid value if the character has a SpeechView set. It will always return `false` otherwise, even while the speech text is displayed.
+**IMPORTANT:** Character.Speaking will only return a valid value if the character has a SpeechView set. It will always return `false` otherwise, even while the speech text is displayed.
 
 Since this property will only be true while the character is speaking,
 and speaking is a blocking command, this property will probably only be
