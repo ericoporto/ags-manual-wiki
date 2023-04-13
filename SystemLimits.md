@@ -41,6 +41,9 @@ In AGS integers and floats are 32-bit.
 - Floats are [a bit more complicated](https://en.wikipedia.org/wiki/Single-precision_floating-point_format): an [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) 32-bit base-2 floating-point variable has a maximum value of `(2 − 2^(-23)) × 2^127 ≈ 3.4028235 × 10^38`. 
 - A float should then be able to reliably represent integer values between -16777216 and 16777216 (from `-2^24` to `2^24`).
 
+In brief, integers have a strict min and max limit, by exceeding which they "wrap" their values (from positive to negative and vice-versa).
+Floats, on other hand, do not have a "hard" limit, instead they begin to loose precision as their integer part reaches high numbers. Occasional "even" values may still get stored correctly, but majority of values between them are not guaranteed to be precise.
+
 ### Additional considerations
 
 - You should be able to have up to 15 parameters to a function.
