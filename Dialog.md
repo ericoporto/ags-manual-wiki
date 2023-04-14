@@ -354,9 +354,10 @@ Example:
 
 ```ags
 function dialog_request (int dr) {
-if (dr==1) {
-    cEgo.AddInventory(iPoster);
-    StopDialog();
+    if (dr==1) {
+        cEgo.AddInventory(iPoster);
+        StopDialog();
+    }
 }
 ```
 
