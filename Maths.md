@@ -15,6 +15,20 @@ RoundDirection can be either *eRoundDown* (the default), *eRoundUp* or
 *eRoundNearest*, which specifies what direction to round the floating
 point number in.
 
+* eRoundDown - finds the nearest integer which is <= value. For example:
+    * +1.5 = +1,
+    * -1.5 = -2;
+* eRoundUp - finds the nearest integer which is >= value. For example:
+    * +1.5 = +2,
+    * -1.5 = -1;
+* eRoundNearest - finds the actual nearest integer. Middle cases are rounded away from zero. For example:
+    * +1.2 = +1,
+    * +1.8 = +2,
+    * +1.5 = +2,
+    * -1.2 = -1,
+    * -1.8 = -2,
+    * -1.5 = -2.
+
 Example:
 
 ```ags
@@ -23,7 +37,10 @@ Display("Round up: %d", FloatToInt(10.7, eRoundUp));
 Display("Round nearest: %d", FloatToInt(10.7, eRoundNearest));
 ```
 
-displays the integer value of 10.7, rounded in the three different ways.
+displays:
+* Round down: 10
+* Round up: 11
+* Round nearest: 11
 
 *See also:* [`IntToFloat`](Maths#inttofloat)
 
