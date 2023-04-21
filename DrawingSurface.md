@@ -445,8 +445,6 @@ DrawingSurface.DrawTriangle(int x1, int y1, int x2, int y2, int x3, int y3)
 Draws a filled triangle in the current color with corners at the points
 (x1,y1), (x2,y2) and (x3,y3).
 
-Well, don't look at me, you might find it useful for something :-)
-
 Example:
 
 ```ags
