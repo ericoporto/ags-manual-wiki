@@ -8,31 +8,31 @@ similar, chances are this section will answer it.
 
 | Item | 3.5.0 | 3.5.1 | 3.6.0 |
 |-|-|-|-|
-| Imported sprites | 90000 | 90000 | 90000 |
-| Dynamic sprites (at runtime) | 2+ billion | 2+ billion| 2+ billion |
+| Audio channels | 8 | 8 | **16** |
+| Background frames per room | 5 | 5 | 5 |
 | Characters | unlimited | unlimited  | unlimited |
 | Cursors | 20 | 20 | **unlimited** |
+| Custom properties | unlimited | unlimited | unlimited |
+| Dialog options per topic | 30 | 30 | 30 |
+| Dialog topics | unlimited | unlimited | unlimited |
+| Dynamic array elements | 1 million | **2+ billion** | **2+ billion** |
 | Fonts | unlimited | unlimited | unlimited |
 | GUI | unlimited | unlimited | unlimited |
-| Controls per GUI | unlimited | unlimited | unlimited |
+| GUI Controls per GUI | unlimited | unlimited | unlimited |
+| Hotspots per room | 49 | 49 | 49 |
 | Inventory items | 300 | 300 | 300 |
 | Overlays (at runtime) | 20 | 20 | **unlimited** |
-| Views (animation sets) | unlimited  | unlimited  | unlimited  |
-| Rooms per game, total | 1000 | 1000 | 1000 |
-| State-saving rooms | 300 | 300 | 300 |
-| Background frames per room | 5 | 5 | 5 |
-| Room Objects per room | 40 | 40 | **256** |
-| Hotspots per room | 49 | 49 | 49 |
-| Walkable areas per room | 15 | 15 | 15 |
-| Walk-behinds per room | 15 | 15 | 15 |
 | Regions per room | 15 | 15 | 15 |
-| Dialog topics | unlimited | unlimited | unlimited |
-| Dialog options per topic | 30 | 30 | 30 |
-| Custom properties | unlimited | unlimited | unlimited |
+| Rooms, total | 1000 | 1000 | 1000 |
+| Rooms, state-saving | 300 | 300 | 300 |
+| Room Objects per room | 40 | 40 | **256** |
+| Script modules | 126 | 126 | 126 |
+| Sprites, imported | 90000 | 90000 | 90000 |
+| Sprites, dynamic | 2+ billion | 2+ billion| 2+ billion |
 | Timers (at runtime) | 20 | 20 | 20 |
-| Audio channels | 8 | 8 | **16** |
-| Script modules (limited by the bytecode format) | 126 | 126 | 126 |
-| Dynamic array size | 1 million | **2+ billion** | **2+ billion** |
+| Views (animation sets) | unlimited  | unlimited  | unlimited  |
+| Walk-behinds per room | 15 | 15 | 15 |
+| Walkable areas per room | 15 | 15 | 15 |
 
 ### Integers and Floats limits 
 
