@@ -34,6 +34,8 @@ similar, chances are this section will answer it.
 | Walk-behinds per room | 15 | 15 | 15 |
 | Walkable areas per room | 15 | 15 | 15 |
 
+*See also:* [Constants](Constants)
+
 ### Integers and Floats limits 
 
 In AGS integers and floats are 32-bit.
