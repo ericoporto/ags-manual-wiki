@@ -33,6 +33,10 @@
 - [Plugins](Plugins)
 - [Other Features](OtherFeatures)
 
+## Game features
+
+- [Inventory Items](InventoryItems)
+
 ## Engine
 
 - [The run-time engine](RuntimeEngine)
