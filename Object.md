@@ -1038,10 +1038,9 @@ object gets there.
 readonly String Object.Name;
 ```
 
-Gets the name of the object.
+Gets/sets the name of the object.
 
-**NOTE:** This property is read-only. It is not currently possible to
-change the name of an object at run-time.
+**NOTE:** This property may be changed only in AGS versions 3.6.0 or higher. It is read-only in earlier versions.
 
 Example:
 
