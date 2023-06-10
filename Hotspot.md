@@ -324,13 +324,12 @@ displays hDoor's hotspot number, and then displays hotspot 3's number
 *(Formerly known as `Hotspot.GetName`, which is now obsolete)*
 
 ```ags
-readonly String Hotspot.Name;
+String Hotspot.Name;
 ```
 
-Gets the name of the hotspot.
+Gets/sets the name of the hotspot.
 
-This property is read-only; it is currently not possible to change
-hotspot names at run-time.
+**NOTE:** This property may be changed only in AGS versions 3.6.0 or higher. It is read-only in earlier versions.
 
 Example:
 
