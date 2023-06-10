@@ -1035,7 +1035,7 @@ object gets there.
 *(Formerly known as `Object.GetName`, which is now obsolete)*
 
 ```ags
-readonly String Object.Name;
+String Object.Name;
 ```
 
 Gets/sets the name of the object.
