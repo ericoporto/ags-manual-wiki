@@ -881,29 +881,26 @@ Will move the character EGO below object number 0, then turn off object
 PauseGame ()
 ```
 
-Stops AGS processing character movement and animations. This has the
-same effect on the game as happens when a modal GUI is popped up. `PauseGame()`
-works as a counter, so if you call it twice, you will need to
-call `UnPauseGame()` game twice too to resume game.
+Stops AGS processing movement and animations. This has the same effect on the game as happens when a modal GUI is popped up.
 
-To avoid this behavior make sure to only pause once:
+When the game is paused, game cycles will continue to run but no animations or movement will be performed, and timers will not count down. Apart from that, your scripts will continue to run as normal.
 
+To be precise, following is paused by this function:
+* Timers (ones set by [SetTimer](Globalfunctions_General#settimer)),
+* Character walking and animating, idle view timing,
+* Object moving and animating,
+* Overlay timing (for auto removal),
+* Speech timing and animation.
 
-```ags
-if (!IsGamePaused()) PauseGame();
-```
+As you may notice, GUI and Audio are not paused at all. PauseGame was historically purposed to pause the Room, while having some kind of the GUI menus and background music running. If you want to also suspend (and later unsuspend) these, you would have to script that yourself.
 
+**NOTE:** `PauseGame()` works as a counter, so if you call it twice, you will need to call `UnPauseGame()` game twice too to resume game. To avoid this behavior make sure to only pause once:
 
-Game processing will not resume until you call the UnPauseGame function
-as needed.
+    ```ags
+    if (!IsGamePaused()) PauseGame();
+    ```
 
-**NOTE:** When the game is paused, game cycles will continue to run but
-no animations or movement will be performed, and timers will not count
-down. Apart from that, your scripts will continue to run as normal.
-
-**NOTE:** GUI button animations will not be paused by this command, so
-that you can run animations on a pop-up GUI while the rest of the game
-is paused.
+Game processing will not resume until you call the UnPauseGame function as needed.
 
 Example:
 
