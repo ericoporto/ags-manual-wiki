@@ -674,7 +674,8 @@ if (IsGamePaused()) UnPauseGame();
 
 will unpause the game if it's paused.
 
-*See also:* [`GUI.Visible`](GUI#guivisible)
+*See also:* [`PauseGame`](Globalfunctions_General#pausegame), [`UnPauseGame`](Globalfunctions_General#unpausegame),
+[`GUI.Visible`](GUI#guivisible)
 
 ---
 
@@ -910,7 +911,7 @@ if (IsKeyPressed(32)) PauseGame();
 
 will pause the game if the player presses the space bar
 
-*See also:* [`UnPauseGame`](Globalfunctions_General#unpausegame)
+*See also:* [`UnPauseGame`](Globalfunctions_General#unpausegame), [`IsGamePaused`](Globalfunctions_General#isgamepaused)
 
 ---
 
@@ -1691,4 +1692,4 @@ as needed with the below snippet.
 while (IsGamePaused()) UnPauseGame();
 ```
 
-*See also:* [`PauseGame`](Globalfunctions_General#pausegame)
+*See also:* [`PauseGame`](Globalfunctions_General#pausegame), [`IsGamePaused`](Globalfunctions_General#isgamepaused)
