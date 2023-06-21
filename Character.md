@@ -1221,32 +1221,50 @@ will execute the code defined in the MAN's "TALK TO CHARACTER" event.
 *(Formerly known as `DisplaySpeech`, which is now obsolete)*
 
 ```ags
-Character.Say(string message)
+Character.Say(string message, ...)
 ```
 
-Displays the text MESSAGE as speech above the character's head. The text
-will remain on screen for a limited time, and the user may or may not be
-able to click it away depending on the setting of "Player can't skip
-speech text". The text displayed by this function looks identical to
-that used by the dialog system.
+Plays speech by the given character. The actual look and behavior of a speech depends on the speech style settings, which may be configured in [General Settings](GeneralSettings#dialog) or [Speech functions](Speech) in script.
 
-You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats)
-section.
+If a character has a valid Speech View assigned to it, that view will be used to animate either character itself or character's portrait.
 
-Example:
+**Lucasarts style**: displays the text above the character's head, animates character using Speech View.
+**Sierra style**, with or without background: displays character's portrait and speech in fixed position at the top of the screen. Animates portrait using Speech View.
+**WholeScreen style**: covers whole room with a black overlay, and displays character's portrait and speech in the middle. Animates portrait using Speech View.
+
+The text will remain on screen for a limited time, and the player may or may not be able to click it away depending on the setting of "Allow speech to be skipped" and runtime property [Speech.SkipStyle](Speech#speechskipstyle).
+
+`Character.Say` supports playing a voice file. For that you need to precede the text with `&N`, where N is a voice clip's number. For more information, see the [Voice speech](VoiceSpeech) section.
+
+This function is used by the dialog scrips by default, using it in normal script is fully equivalent to having "charname: message" in the dialog.
+
+You can insert the value of variables into the message. For more information, see the [string formatting](StringFormats) section.
+
+Examples:
 
 ```ags
-cEgo.Say("My name is ego");
+cEgo.Say("My name is Ego.");
 ```
 
-will display the message above the character's EGO head like the LEC
-games, whilst playing the character's talking animation.
+Will display a simple text.
+
+```
+cEgo.Say("My age is %d", age_variable);
+```
+
+Will display a text and print some variable in it.
+
+```
+cEgo.Say("&5 Hear me talking.");
+```
+
+Will display a text and play voice clip named "EGO5".
 
 *See also:* [`Display`](Globalfunctions_Message#display),
 [`Character.SayAt`](Character#charactersayat),
 [`Character.SayBackground`](Character#charactersaybackground),
 [`Character.Think`](Character#characterthink),
+[`Speech`](Speech)
 [Voice speech](VoiceSpeech)
 
 ---
