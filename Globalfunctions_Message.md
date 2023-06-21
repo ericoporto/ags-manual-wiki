@@ -13,6 +13,9 @@ You can insert the value of variables into the message. For more
 information, see the [string formatting](StringFormats)
 section.
 
+`Display` supports playing a voice file. For that you need to precede the text with `&N`, where N is a voice clip's number.
+You may choose which character's clips will be played by assigning character's ID to `game.narrator_speech` variable. Alternatively, you may assign `NARRATOR` constant, which will tell it to use clips named "NARR*". For more information, see the [Voice speech](VoiceSpeech) section.
+
 Example:
 
 ```ags
