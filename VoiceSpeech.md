@@ -39,6 +39,11 @@ finished playing. If the player interrupts it by clicking the mouse or
 pressing a key, the text and voice will be stopped. Voice files must be
 placed in the "Speech" sub-directory of the game folder.
 
+Script functions that support playing voice clips using this style are:
+* [Character.Say](Character#charactersay), [Character.SayAt](Character#charactersayat);
+* [Character.Think](Character#characterthink);
+* [Display](Display#display) and family ([DisplayAt](Display#displayat), [DisplayAtY](Display#displayaty), and so forth). Display functions are using `game.narrator_speech` variable to know which character's clips to use.
+
 **NOTE:** Speech file numbers are restricted to the positive range of 1 to 2147483647 (2 billion). This is a technical limitation based on how these are handled inside the engine, but we do not think that running out of numbers to use will ever become a problem to the user.
 
 Since AGS 3.5.0 you can play voice clips directly using function [Game.PlayVoiceClip](Game#gameplayvoiceclip).
