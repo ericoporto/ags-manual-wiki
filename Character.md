@@ -1228,9 +1228,9 @@ Plays speech by the given character. The actual look and behavior of a speech de
 
 If a character has a valid Speech View assigned to it, that view will be used to animate either character itself or character's portrait.
 
-**Lucasarts style**: displays the text above the character's head, animates character using Speech View.
-**Sierra style**, with or without background: displays character's portrait and speech in fixed position at the top of the screen. Animates portrait using Speech View.
-**WholeScreen style**: covers whole room with a black overlay, and displays character's portrait and speech in the middle. Animates portrait using Speech View.
+* **Lucasarts style**: displays the text above the character's head, animates character using Speech View.
+* **Sierra style**, with or without background: displays character's portrait and speech in fixed position at the top of the screen. Animates portrait using Speech View.
+* **WholeScreen style**: covers whole room with a black overlay, and displays character's portrait and speech in the middle. Animates portrait using Speech View.
 
 The text will remain on screen for a limited time, and the player may or may not be able to click it away depending on the setting of "Allow speech to be skipped" and runtime property [Speech.SkipStyle](Speech#speechskipstyle).
 
