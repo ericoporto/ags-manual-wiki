@@ -326,11 +326,11 @@ player's inventory.
 
 ### while
 
-**while (** *expression* **)** `{`<br>
+**while (** *condition* **)** `{`<br>
 *statements*<br>
 `}`
 
-Runs *statements* continuously, while *expression* is true.
+Runs *statements* continuously, while *condition* is true.
 
 For example:
 
@@ -350,11 +350,11 @@ of the loop.
 
 **do** `{`<br>
 *statements*<br>
-`}` **while (** *expression* **);**
+`}` **while (** *condition* **);**
 
 Similarly to [`while`](ScriptKeywords#while) runs *statements*
-continuously, so long as *expression* is true, but unlike **while** it
-checks the expression AFTER executing statements, not before. This also
+continuously, so long as *condition* is true, but unlike **while** it
+checks the condition AFTER executing statements, not before. This also
 means that the statements will be executed at least once.
 
 For example:
@@ -375,14 +375,14 @@ player.
 
 ### for
 
-**for (** \[*initialization*\]**;** \[*expression*\]**;**
+**for (** \[*initialization*\]**;** \[*condition*\]**;**
 \[*iteration*\] **)** `{`<br>
 *statements*<br>
 `}`
 
 This loop command first performs *initialization* statements, then runs
 *statements* inside curved brackets continuously. Each time before
-executing these statements it checks whether *expression* is true, and
+executing these statements it checks whether *condition* is true, and
 if not - ends the loop. Each time after statements were executed it
 additionally runs *iteration* statements.
 
@@ -391,7 +391,7 @@ existing variable values. If a new variable is declared in
 *initialization* - such variable will exist and may be used only inside
 the loop. *Iteration* step is usually meant to "move" to the next step,
 by changing some variable value. Every part of the command header -
-*initialization*, *expression* and *iteration* - is optional: there may
+*initialization*, *condition* and *iteration* - is optional: there may
 be **for** command without initialization, or without iteration, or even
 without conditional expression (in which case loop should be ended with
 either [`break`](ScriptKeywords#break) or [`return`](ScriptKeywords#return).
