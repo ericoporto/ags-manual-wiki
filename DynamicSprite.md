@@ -43,7 +43,7 @@ in the game.
 Example:
 
 ```ags
-// Declare a variable in a global scope (outside of the function)
+// Declare a variable in a global scope (outside of any function)
 DynamicSprite* globalSprite;
 
 // Then in a function...
@@ -133,7 +133,7 @@ in the game.
 Example:
 
 ```ags
-// Declare a variable in a global scope (outside of the function)
+// Declare a variable in a global scope (outside of any function)
 DynamicSprite* globalSprite;
 
 // Then in a function...
@@ -185,7 +185,7 @@ in the game.
 Example:
 
 ```ags
-// Declare a variable in a global scope (outside of the function)
+// Declare a variable in a global scope (outside of any function)
 DynamicSprite* globalSprite;
 
 DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(myObject.Graphic);
