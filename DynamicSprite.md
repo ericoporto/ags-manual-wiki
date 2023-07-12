@@ -1,5 +1,26 @@
 ## `DynamicSprite` functions and properties
 
+DynamicSprite lets you create a new sprite dynamically at runtime,
+either a new blank sprite, a copy of the existing one, or load one from a file.
+DynamicSprites may be modified in various ways, and drawn upon. The latter is done by
+retrieving a [`DrawingSurface`](DrawingSurface) with [`GetDrawingSurface()`](DynamicSprite#dynamicspritegetdrawingsurface) function.
+
+Each new DynamicSprite is assigned an arbitrary ID, which may be read with [`Graphic`](DynamicSprite#dynamicspritegraphic) property.
+This ID lets you assign DynamicSprite to any property that normally accepts a sprite number, or pass into any function that
+accepts a sprite number as a parameter.
+
+**IMPORTANT:** DynamicSprite exist so long as it is assigned to at least one `DynamicSprite*` variable in your script.
+As soon as there's no variable that has a reference to it, the sprite is disposed.
+This also means that if you only have a local `DynamicSprite*` variable, then the sprite will be disposed
+when the function ends. If you want to keep the sprite, then you should store it in a global variable for as long as you need it.
+
+You may also call [`Delete`](DynamicSprite#dynamicspritedelete) function anytime to explicitly remove the sprite's image from memory.
+
+**IMPORTANT:** Assigning DynamicSprite's ID to another object (such as `Button.NormalGraphic`, for example)
+does not count as a reference. If DynamicSprite is deleted while its ID is assigned to another object's property,
+that property will be reset to 0 for safety reasons.
+
+
 ### `DynamicSprite.Create`
 
 ```ags
@@ -18,17 +39,6 @@ If the game color depth is lower than 32-bit, then the
 Use the [`Graphic`](DynamicSprite#dynamicspritegraphic) property of the
 DynamicSprite to interface with other commands and to use the new sprite
 in the game.
-
-**IMPORTANT:** This command loads an extra sprite into memory which is
-not controlled by the normal AGS sprite cache and will not be
-automatically disposed of. Therefore, when you are finished with the
-image you **MUST** call Delete on it to free its memory.
-
-**IMPORTANT:** If the DynamicSprite instance is released from memory
-(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
-the sprite will also be removed from memory. Make sure that you keep a
-global variable pointer to the sprite until you are finished with it,
-and at that point call Delete.
 
 Example:
 
@@ -77,17 +87,6 @@ Use the [`Graphic`](DynamicSprite#dynamicspritegraphic) property of the
 DynamicSprite to interface with other commands and to use the new sprite
 in the game.
 
-**IMPORTANT:** This command loads an extra sprite into memory which is
-not controlled by the normal AGS sprite cache and will not be
-automatically disposed of. Therefore, when you are finished with the
-image you **MUST** call Delete on it to free its memory.
-
-**IMPORTANT:** If the DynamicSprite instance is released from memory
-(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
-the sprite will also be removed from memory. Make sure that you keep a
-global variable pointer to the sprite until you are finished with it,
-and at that point call Delete.
-
 Example:
 
 ```ags
@@ -126,17 +125,6 @@ match up with what the drawing surface expects.
 Use the [`Graphic`](DynamicSprite#dynamicspritegraphic) property of the
 DynamicSprite to interface with other commands and to use the new sprite
 in the game.
-
-**IMPORTANT:** This command loads an extra sprite into memory which is
-not controlled by the normal AGS sprite cache and will not be
-automatically disposed of. Therefore, when you are finished with the
-image you **MUST** call Delete on it to free its memory.
-
-**IMPORTANT:** If the DynamicSprite instance is released from memory
-(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
-the sprite will also be removed from memory. Make sure that you keep a
-global variable pointer to the sprite until you are finished with it,
-and at that point call Delete.
 
 Example:
 
@@ -182,16 +170,9 @@ compatibility reasons, and is useful because it allows you to strip the
 alpha channel in order to do whole image transparency. This parameter
 has no effect with sprites that do not have an alpha channel.
 
-**IMPORTANT:** This command loads an extra sprite into memory which is
-not controlled by the normal AGS sprite cache and will not be
-automatically disposed of. Therefore, when you are finished with the
-image you **MUST** call Delete on it to free its memory.
-
-**IMPORTANT:** If the DynamicSprite instance is released from memory
-(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
-the sprite will also be removed from memory. Make sure that you keep a
-global variable pointer to the sprite until you are finished with it,
-and at that point call Delete.
+Use the [`Graphic`](DynamicSprite#dynamicspritegraphic) property of the
+DynamicSprite to interface with other commands and to use the new sprite
+in the game.
 
 Example:
 
@@ -234,16 +215,9 @@ in the game.
 **NOTE:** Since AGS 3.4.1 you can use location tokens in filename, like
 with [`File.Open`](File#fileopen) and similar commands.
 
-**IMPORTANT:** This command loads an extra sprite into memory which is
-not controlled by the normal AGS sprite cache and will not be
-automatically disposed of. Therefore, when you are finished with the
-image you **MUST** call Delete on it to free its memory.
-
-**IMPORTANT:** If the DynamicSprite instance is released from memory
-(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
-the sprite will also be removed from memory. Make sure that you keep a
-global variable pointer to the sprite until you are finished with it,
-and at that point call Delete.
+Use the [`Graphic`](DynamicSprite#dynamicspritegraphic) property of the
+DynamicSprite to interface with other commands and to use the new sprite
+in the game.
 
 Example:
 
@@ -287,16 +261,9 @@ game didn't include one).
 In order for this to work, the "Save screenshots in save games" option
 must be ticked in the main Game Settings pane.
 
-**IMPORTANT:** This command loads an extra sprite into memory which is
-not controlled by the normal AGS sprite cache and will not be
-automatically disposed of. Therefore, when you are finished with the
-image you **MUST** call Delete on it to free its memory.
-
-**IMPORTANT:** If the DynamicSprite instance is released from memory
-(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
-the sprite will also be removed from memory. Make sure that you keep a
-global variable pointer to the sprite until you are finished with it,
-and at that point call Delete.
+Use the [`Graphic`](DynamicSprite#dynamicspritegraphic) property of the
+DynamicSprite to interface with other commands and to use the new sprite
+in the game.
 
 Example:
 
@@ -342,16 +309,9 @@ slot positions.
 **NOTE:** This command can be slow when using the Direct3D graphics
 driver.
 
-**IMPORTANT:** This command loads an extra sprite into memory which is
-not controlled by the normal AGS sprite cache and will not be
-automatically disposed of. Therefore, when you are finished with the
-image you **MUST** call Delete on it to free its memory.
-
-**IMPORTANT:** If the DynamicSprite instance is released from memory
-(i.e. there is no longer a DynamicSprite\* variable pointing to it), then
-the sprite will also be removed from memory. Make sure that you keep a
-global variable pointer to the sprite until you are finished with it,
-and at that point call Delete.
+Use the [`Graphic`](DynamicSprite#dynamicspritegraphic) property of the
+DynamicSprite to interface with other commands and to use the new sprite
+in the game.
 
 Example:
 
