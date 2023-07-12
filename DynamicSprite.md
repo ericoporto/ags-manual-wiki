@@ -43,16 +43,20 @@ in the game.
 Example:
 
 ```ags
+// Declare a variable in a global scope (outside of the function)
+DynamicSprite* globalSprite;
+
+// Then in a function...
 DynamicSprite* sprite = DynamicSprite.Create(50, 30);
 DrawingSurface *surface = sprite.GetDrawingSurface();
 surface.DrawingColor = 14;
 surface.DrawPixel(25, 15);
 surface.Release();
-sprite.Delete();
+oMyObject.Graphic = sprite.Graphic;
+globalSprite = sprite; // keep the sprite in a global variable
 ```
 
-creates a 50x30 sprite, draws a white dot in the middle, then deletes
-the sprite.
+creates a 50x30 sprite, draws a white dot in the middle, then assigns to a global variable to keep the sprite, and sets this sprite's ID to an Object.
 
 *See also:* [`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete),
 [`DynamicSprite.Graphic`](DynamicSprite#dynamicspritegraphic),
@@ -97,8 +101,8 @@ surface.Release();
 sprite.Delete();
 ```
 
-creates a copy of the center 60x60 area on the background, and draws it
-onto the top left corner of the background image.
+creates a copy of the center 60x60 area of the current room's background, and draws it
+onto the top left corner of the background image. Then disposes the temporary sprite.
 
 *See also:* [`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete)
 
@@ -129,16 +133,20 @@ in the game.
 Example:
 
 ```ags
-DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(object[0].Graphic);
+// Declare a variable in a global scope (outside of the function)
+DynamicSprite* globalSprite;
+
+// Then in a function...
+DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(oMyObject.Graphic);
 DrawingSurface *surface = sprite.GetDrawingSurface();
 DynamicSprite *newSprite = DynamicSprite.CreateFromDrawingSurface(surface, 0, 0, 10, 10);
 surface.Release();
 sprite.Delete();
-object[0].Graphic = newSprite.Graphic;
+oMyObject.Graphic = newSprite.Graphic;
+globalSprite = newSprite; // keep the sprite in a global variable
 ```
 
-changes object 0's image to be just the top-left corner of what it
-previously was.
+changes object's image to be just the top-left corner of what it previously was.
 
 *Compatibility:* Supported by **AGS 3.0.2** and later versions.
 
@@ -177,16 +185,19 @@ in the game.
 Example:
 
 ```ags
-DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(10);
-sprite.Resize(20, 20);
+// Declare a variable in a global scope (outside of the function)
+DynamicSprite* globalSprite;
+
+DynamicSprite* sprite = DynamicSprite.CreateFromExistingSprite(myObject.Graphic);
 DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-surface.DrawImage(100, 80, sprite.Graphic);
+surface.DrawingColor = 14;
+surface.DrawLine(0, 0, surface.Width, surface.Height);
 surface.Release();
-sprite.Delete();
+oMyObject.Graphic = newSprite.Graphic;
+globalSprite = newSprite; // keep the sprite in a global variable
 ```
 
-creates a copy of object 0's current sprite, resizes it down to 20x20,
-and then draws the result onto the background.
+creates a copy of object's current sprite, draws a line across, and assigns back to the same object.
 
 *See also:* [`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete),
 [`DynamicSprite.Resize`](DynamicSprite#dynamicspriteresize)
@@ -232,7 +243,7 @@ if (sprite != null) {
 ```
 
 will load the file "CustomAvatar.bmp" and if successful draw the image
-near the middle of the screen.
+near the middle of the background.
 
 Once the image is finished with, Delete should be called on it.
 
@@ -316,19 +327,15 @@ in the game.
 Example:
 
 ```ags
-// at top of script, outside event functions
-DynamicSprite *buttonSprite;
-
-// inside an event function
-buttonSprite = DynamicSprite.CreateFromScreenShot(80, 50);
-if (buttonSprite != null) {
-    btnScrnshot.NormalGraphic = buttonSprite.Graphic;
-}
+DynamicSprite* ds = DynamicSprite.CreateFromScreenShot(50, 50);
+DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
+surface.DrawImage(100, 100, ds.Graphic);
+surface.Release();
+ds.Delete();
 ```
 
-places a screen grab of the current game session onto btnScrnshot.
-
-Once the GUI is disposed of, Delete should be called on the sprite.
+takes a screen shot, and draws it onto the background scene at
+(100,100).
 
 *See also:* [`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete),
 [`Game.GetSaveSlotDescription`](Game#gamegetsaveslotdescription),
@@ -753,16 +760,21 @@ value can then be passed to other functions and properties, such as
 
 Example:
 
+
 ```ags
-DynamicSprite* ds = DynamicSprite.CreateFromScreenShot(50, 50);
-DrawingSurface *surface = Room.GetDrawingSurfaceForBackground();
-surface.DrawImage(100, 100, ds.Graphic);
-surface.Release();
-ds.Delete();
+// at top of script, outside event functions
+DynamicSprite *buttonSprite;
+
+// inside an event function
+buttonSprite = DynamicSprite.CreateFromScreenShot(80, 50);
+if (buttonSprite != null) {
+    btnScrnshot.NormalGraphic = buttonSprite.Graphic;
+}
 ```
 
-takes a screen shot, and draws it onto the background scene at
-(100,100).
+places a screen grab of the current game session onto btnScrnshot.
+
+Once the GUI is disposed of, Delete should be called on the sprite.
 
 *See also:*
 [`DynamicSprite.CreateFromScreenShot`](DynamicSprite#dynamicspritecreatefromscreenshot),
