@@ -173,25 +173,28 @@ will display the "Ends with script!" message.
 static String.Format(string fmt, ...)
 ```
 
-Processes the string FMT in the same way as the Display function does
-but instead of displaying it on the screen, returns the result as a new
-string.
+Processes the string FMT, optionally inserting values into the placeholders inside FMT, and returns the resulting string.
+You can insert the numeric or text, as well as value of variables into the string.
+Besides other purposes, this function is the method for converting numbers into the text.
 
-You can insert the value of variables into the message. For more
-information, see the [string formatting](StringFormats)
-section.
+For more information on how to work with format string, see the [string formatting](StringFormats) section.
 
 **NOTE:** This function is static, which means you do not call it on an
 existing string variable, but use `String.Format()` instead.
 
-Example:
+Examples:
 
 ```ags
-int health=10;
-String text = String.Format("%d", health);
-```
+// create a text string containing "10".
+String text = String.Format("%d", 10);
 
-will create a text string containing "10".
+// create a text string with health stats in it
+int health, max_health;
+String text = String.Format("Health: %d / %d", health, max_health);
+
+// create a text string with character's name
+String text = String.Format("Hello, my name is %s", player.Name);
+```
 
 *See also:* [`Display`](Globalfunctions_Message#display)
 
