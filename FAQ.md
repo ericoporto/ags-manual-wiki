@@ -125,7 +125,7 @@ A. In repeatedly_execute function test whether an object is [`animating`](Object
 
 **Q. How do I put a variable on a GUI label?**
 
-A. [`String.Format`](String#stringformat) script function allows to create a string with variable printed in it. You may then use that string anywhere, for example, assign to a label's Text property, for example:
+A. [`String.Format`](String#stringformat) script function allows to create a string with variable printed in it. You may then use that string anywhere, such as assign it to a label's Text property, for example:
 
     myLabel.Text = String.Format("Coins: %d / %d", current_coins, total_coins);
 
