@@ -125,16 +125,15 @@ A. In repeatedly_execute function test whether an object is [`animating`](Object
 
 **Q. How do I put a variable on a GUI label?**
 
-A. [`String.Format`](String#stringformat) script function allows to create a string with variable printed in it. You may then use that string anywhere, for example, assign to a label's Text property.
+A. [`String.Format`](String#stringformat) script function allows to create a string with variable printed in it. You may then use that string anywhere, for example, assign to a label's Text property, for example:
+
+    myLabel.Text = String.Format("Coins: %d / %d", current_coins, total_coins);
 
 ---
 
 **Q. My game EXE file seems to have disappeared.**
 
-A. Because this file is your entire game, including the room files, when
-you save a room in the Room Editor it will delete the exe file (because
-the room contained in the exe is out of date). To get it back, simply
-build the game again by using the "Build EXE" command on the Build menu.
+A. For some reasons AGS Editor deletes a game exe from Compiled/Windows folder each time when you make a test run (F5). To get this compiled exe back, simply build the game again by using the "Build EXE" command on the Build menu.
 
 ---
 
