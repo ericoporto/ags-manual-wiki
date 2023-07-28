@@ -59,7 +59,7 @@ Above will make character run a custom animation and display a speech (using Bac
 
 **NOTE:** just like with any other functions that your write, remember to declare the function as *import* in the script header, if you like it to be usable in other scripts throughout your game. See ["Importing a function"](ImportingFunctionsAndVariables#exporting-and-importing-a-function) for more details.
 
-**Static extenders**
+### Static extenders
 
 Since AGS 3.4.0 you may also create static extender functions, that is
 functions that are called directly from a *type*, rather than an actual *object* of that type.
