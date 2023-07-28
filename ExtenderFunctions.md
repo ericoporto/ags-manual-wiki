@@ -1,11 +1,23 @@
 ## Extender functions
 
-Suppose that you wanted to add a new function, "Scream", to characters
-which would make them cry out "AARRRGGGHHH". Because the Character type
-is defined within AGS, it's not possible for you to just add a method to
-it.
+Extender functions allow you to "add" new functions to existing types, including built-in AGS types, which lets you call them as if they were part of that type.
 
-That's where Extender Functions come in. Here's an example:
+Let's look at the following example:
+
+```ags
+function Scream(Character *c)
+{
+    c.Say("AAAAARRRRGGGGHHHHHH!!!!");
+}
+```
+
+This is a regular function that accepts a Character as a parameter, and makes it say something. You would call this function as:
+
+```ags
+    Scream(cEgo); // pass cEgo character as a function parameter
+```
+
+Now, the *extender function* would instead be declared like:
 
 ```ags
 function Scream(this Character*)
@@ -14,32 +26,43 @@ function Scream(this Character*)
 }
 ```
 
-This adds a new "Scream" function to the Character type, so that in your
-script code elsewhere you can do things like:
+Notice the [`this`](ScriptKeywords#this) keyword. It means that we are addressing a character, *from which* we called this function.
+
+The extender function may now be called as:
 
 ```ags
-player.Scream();
-character[EGO].Scream();
-cJohn.Scream();
+    cEgo.Scream(); // call the function Scream from character cEgo
 ```
 
-and so on.
+Extender functions exist purely for convenience (in programming this is called "syntax sugar"). They do not add any new abilities, rather than to be able to call the function from an object instead of passing this object as a parameter. They use `this` keyword to address the object they were called from. Besides that, extender functions are just like ordinary functions: they may have multiple parameters, and return some value.
 
-**Where do I put this code?**
-
-In the script header, you'd put:
+The common use-case for extender functions is writing custom behavior for built-in types. Consider following, more sophisticated example:
 
 ```ags
-import function Scream(this Character*);
+function SayAndAnimate(this Character*, String text, int view, int loop)
+{
+    this.LockView(view);
+    this.Animate(loop, 4, eRepeat, eNoBlock);
+    Overlay *bg_speech = this.SayBackground(text);
+    while (bg_speech.IsValid)
+    {
+        Wait(1); // keep updating the game
+    }
+    this.UnlockView();
+}
+```
+```ags
+    player.SayAndAnimate("Hello, my name is Roger.", VROGERANIMS, 5);
 ```
 
-and then put the main function in the script file. This will then allow
-it to be used by other scripts.
+Above will make character run a custom animation and display a speech (using Background speech to keep animation going in this example, but there may be other solutions to this).
+
+**NOTE:** just like with any other functions that your write, remember to declare the function as *import* in the script header, if you like it to be usable in other scripts throughout your game. See ["Importing a function"](ImportingFunctionsAndVariables#exporting-and-importing-a-function) for more details.
 
 **Static extenders**
 
 Since AGS 3.4.0 you may also create static extender functions, that is
-functions that are called from type, rather than an actual object.
+functions that are called directly from a *type*, rather than an actual *object* of that type.
 Static extender declaration is a bit different, for example:
 
 ```ags
@@ -49,12 +72,6 @@ int AbsInt(static Maths, int value)
     return -value;
   return value;
 }
-```
-
-You declare the function's import in the script header:
-
-```ags
-import int AbsInt(static Maths, int value);
 ```
 
 and you use such function as:
