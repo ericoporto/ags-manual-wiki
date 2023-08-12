@@ -1526,10 +1526,10 @@ may or may not be able to click it away depending on the setting of
 "Player can't skip speech text".
 
 How this function displays the text depends on a few things: the Speech
-Style setting, the 'Thought uses bubble GUI' setting, and whether the
+Style setting, the "Custom thought bubble GUI" setting, and whether the
 character has a thinking animation or not.
 
-If the "Thought uses bubble GUI" setting is not checked, then the
+If the "Custom thought bubble GUI" setting is not set, then the
 thought will be displayed in the same way as normal speech - the
 difference being that the character's thinking animation will play (or
 no animation if they don't have one).
@@ -1538,7 +1538,7 @@ If you are using Sierra-style speech and the character doesn't have a
 thinking animation, the thought bubble will be displayed in
 LucasArts-style.
 
-If the "Thought uses bubble GUI" setting has been set, then the thought
+If the "Custom thought bubble GUI" setting has been set, then the thought
 will be displayed like normal speech, except that the bubble GUI will be
 used for the window background. In LucasArts-style speech this means
 above the character's head, in Sierra-style it will be done along the
