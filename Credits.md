@@ -48,6 +48,7 @@
   Tobias Hansen  
   Tom Vandepoele  
   Tzach Shabtay
+  Walter Agazzi
 
 - Windows editor original splash design by abstauber
 - Windows editor icons by Klaus
