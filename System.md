@@ -43,7 +43,7 @@ readonly static int System.AudioChannelCount;
 ```
 
 Gets the number of Audio Channels available to the game (in the current
-version of AGS this is 8).
+version of AGS this is 16).
 
 This is useful if you want to loop through all the audio channels and
 check what is playing on them.
