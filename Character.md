@@ -2010,6 +2010,8 @@ about every 2 seconds.
 This property has no effect if no
 [`BlinkView`](Character#characterblinkview) has been set.
 
+**NOTE:** blinking animation works only for Sierra-style or QFG4-style speech, when the SpeechView is displaying a character's portrait.
+
 Example:
 
 ```ags
@@ -2039,6 +2041,8 @@ blinking, set this to -1.
 The [`BlinkInterval`](Character#characterblinkinterval) property sets how
 often the blinking animation is played.
 
+**NOTE:** blinking animation works only for Sierra-style or QFG4-style speech, when the SpeechView is displaying a character's portrait.
+
 Example:
 
 ```ags
@@ -2065,6 +2069,8 @@ Gets/sets whether the character can blink while thinking. By default
 this is set to true, but if your blinking animation only goes with the
 talking animation and not the thinking one, you can stop the character
 from blinking while Thinking by setting this to false.
+
+**NOTE:** blinking animation works only for Sierra-style or QFG4-style speech, when the ThinkView is displaying a character's portrait.
 
 Example:
 
