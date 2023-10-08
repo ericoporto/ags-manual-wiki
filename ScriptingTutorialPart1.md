@@ -14,7 +14,7 @@ created a script that looks like this:
 ```ags
 function hSignHome_Look()
 {
-  Display("The sign says 'EWOH'. I have no idea what that could mean.");
+    Display("The sign says 'EWOH'. I have no idea what that could mean.");
 }
 ```
 
@@ -50,7 +50,7 @@ part of the manual, which also tells you how to use them.
 We want to display a message to the player, so we used the *Display*
 function. Looking this up in the manual gives us the definition:
 
-```ags
+```
 Display (string message, ...)
   Displays a message to the screen. It will be displayed in
   the standard message box, and centered in the middle of
@@ -238,7 +238,7 @@ int myCounter;
 
 function hSignHome_Look()
 {
-  Display("The sign says 'EWOH'. I have no idea what that could mean.");
+    Display("The sign says 'EWOH'. I have no idea what that could mean.");
 }
 
 //...(rest of file follows)
@@ -276,7 +276,7 @@ otherwise it's useless. We do this using conditional statements, called
 ```ags
 if (myCounter == 5)
 {
-  myCounter = 0;
+    myCounter = 0;
 }
 ```
 
@@ -317,23 +317,23 @@ int myCounter = 0;
 
 function hSignHome_Look()
 {
-  if (myCounter == 0)
-  {
-    Display("The sign says 'EWOH'. I have no idea what that could mean.");
-  }
-  if (myCounter == 1)
-  {
-    Display("Oh it says 'Home'.");
-  }
-  if (myCounter >=2)
-  {
-    Display("I guess that way leads towards my home.");
-  }
+    if (myCounter == 0)
+    {
+        Display("The sign says 'EWOH'. I have no idea what that could mean.");
+    }
+    if (myCounter == 1)
+    {
+        Display("Oh it says 'Home'.");
+    }
+    if (myCounter >=2)
+    {
+        Display("I guess that way leads towards my home.");
+    }
 
-  if (myCounter < 3)
-  {
-    myCounter += 1;
-  }
+    if (myCounter < 3)
+    {
+        myCounter += 1;
+    }
 }
 ```
 
@@ -359,7 +359,7 @@ A simpler way is to use [Global Variables pane](GlobalVariables) in the Editor, 
 When reading function descriptions in the manual, you will notice that
 some of them say they return a value. For example,
 
-```ags
+```
 IsGamePaused ()
   Returns 1 if the game is currently paused, or 0 otherwise.
 ```
@@ -378,7 +378,7 @@ myCounter = IsGamePaused();
 // Test the return value directly
 if (IsGamePaused() == 0)
 {
-  myCounter += 5;
+    myCounter += 5;
 }
 ```
 
@@ -396,7 +396,7 @@ been written:
 ```ags
 if (myCounter < 3)
 {
-  myCounter++;
+    myCounter++;
 }
 ```
 
@@ -407,7 +407,7 @@ with:
 
 ```ags
 if (myCounter < 3)
-  myCounter++;
+    myCounter++;
 ```
 
 However, this can lead to mistakes in scripts that are hard to spot, so
@@ -418,14 +418,14 @@ just write it as follows:
 
 ```ags
 if (myCounter)
-  Display("counter is non-zero");
+    Display("counter is non-zero");
 ```
 
 which is equivalent to:
 
 ```ags
 if (myCounter != 0)
-  Display("counter is non-zero");
+    Display("counter is non-zero");
 ```
 
 ### Summary

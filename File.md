@@ -298,8 +298,8 @@ Example:
 File *input = File.Open("$SAVEGAMEDIR$/error.log", eFileRead);
 if (input != null) {
     while (!input.EOF) {
-    String line = input.ReadRawLineBack();
-    Display("%s", line);
+        String line = input.ReadRawLineBack();
+        Display("%s", line);
     }
     input.Close();
 }

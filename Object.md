@@ -7,7 +7,7 @@
 
 ```ags
 Object.Animate(int loop, int delay, optional RepeatStyle,
-                optional BlockingStyle, optional Direction, optional int frame, optional int volume)
+               optional BlockingStyle, optional Direction, optional int frame, optional int volume)
 ```
 
 Starts the object animating, using loop number LOOP of its current view, and optionally starting at FRAME.

@@ -16,7 +16,7 @@ is virtually identical to `if`:
 ```ags
 int counter = 1;
 while (counter < 10) {
-  counter ++;
+    counter ++;
 }
 ```
 
@@ -33,7 +33,7 @@ Consider this **poorly** written _while_ loop:
 ```ags
 int counter = 1;
 while (counter > 0) {
-  counter ++;
+    counter ++;
 }
 ```
 
@@ -55,10 +55,10 @@ has **two** specific inventory items. You could do this, and put **two**
 ```ags
 if (player.HasInventory(iFirstItem))
 {
-  if (player.HasInventory(iSecondItem))
-  {
-    Display ("You have both the items!");
-  }
+    if (player.HasInventory(iSecondItem))
+    {
+        Display ("You have both the items!");
+    }
 }
 ```
 
@@ -69,9 +69,9 @@ will look rather messy. So, AGS lets you do it this way:
 
 ```ags
 if ( (player.HasInventory(iFirstItem)) &&
-      (player.HasInventory(iSecondItem)) )
+     (player.HasInventory(iSecondItem)) )
 {
-  Display ("You have both the items!");
+    Display ("You have both the items!");
 }
 ```
 
@@ -89,7 +89,7 @@ to true, and the variable *timer* is between 5 and 10.
 ```ags
 if ((openedDoor == true) && (timer > 5) && (timer < 10))
 {
-  Display ("It's all working out fine.");
+    Display ("It's all working out fine.");
 }
 ```
 
@@ -103,7 +103,7 @@ door if he has either the door key or a chainsaw.
 if ((player.HasInventory(iDoorKey)) ||
     (player.HasInventory(iChainsaw)) )
 {
-  player.ChangeRoom(10);
+    player.ChangeRoom(10);
 }
 ```
 
@@ -119,10 +119,10 @@ you might think you would do this:
 
 ```ags
 if (timer == 5) {
-  // do something
+    // do something
 }
 if (timer != 5) {
-  // do something else
+    // do something else
 }
 ```
 
@@ -131,10 +131,10 @@ keyword:
 
 ```ags
 if (timer == 5) {
-  // do something
+    // do something
 }
 else {
-  // do something else
+    // do something else
 }
 ```
 
@@ -146,13 +146,13 @@ a complete piece of code could look like this:
 
 ```ags
 if (timer == 5) {
-  // do something
+    // do something
 }
 else if (timer == 6) {
-  // do something different
+    // do something different
 }
 else {
-  // do this if it's not 5 or 6
+    // do this if it's not 5 or 6
 }
 ```
 
@@ -164,23 +164,23 @@ int myCounter = 0;
 
 function hSignHome_Look()
 {
-  if (myCounter == 0)
-  {
-    Display("The sign says 'EWOH'. I have no idea what that could mean.");
-  }
-  else if (myCounter == 1)
-  {
-    Display("Oh it says 'Home'.");
-  }
-  else if (myCounter >=2)
-  {
-    Display("I guess that way leads towards my home.");
-  }
+    if (myCounter == 0)
+    {
+        Display("The sign says 'EWOH'. I have no idea what that could mean.");
+    }
+    else if (myCounter == 1)
+    {
+        Display("Oh it says 'Home'.");
+    }
+    else if (myCounter >=2)
+    {
+        Display("I guess that way leads towards my home.");
+    }
 
-  if (myCounter < 3)
-  {
-    myCounter += 1;
-  }
+    if (myCounter < 3)
+    {
+        myCounter += 1;
+    }
 }
 ```
 
@@ -197,7 +197,7 @@ like this:
 ```ags
 function dialog_request(int param)
 {
-  // contents of function go here
+    // contents of function go here
 }
 ```
 
@@ -228,14 +228,14 @@ fixed function, `on_event`:
 ```ags
 function on_event (EventType event, int data)
 {
-  if (event == eEventGotScore)
-  {
-    if (data == 5)
+    if (event == eEventGotScore)
     {
-      aSpecialScoreSound.Play();
+        if (data == 5)
+        {
+            aSpecialScoreSound.Play();
+        }
+        Display("You just got %d points!", data);
     }
-    Display("You just got %d points!", data);
-  }
 }
 ```
 
@@ -255,9 +255,9 @@ far the easiest way to do this would be to put it in a function:
 ```ags
 function do_dance()
 {
-  cEgo.LockView(10);
-  cEgo.Animate(2, 5);
-  cEgo.UnlockView();
+    cEgo.LockView(10);
+    cEgo.Animate(2, 5);
+    cEgo.UnlockView();
 }
 ```
 
@@ -284,9 +284,9 @@ own functions, using the `return` keyword. So:
 ```ags
 function add(int a, int b)
 {
-  int result;
-  result = a + b;
-  return result;
+    int result;
+    result = a + b;
+    return result;
 }
 ```
 

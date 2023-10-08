@@ -111,7 +111,7 @@ Note that if you store a dynamic array in a local function variable, that variab
 ```ags
 function func() {
     int arrOfInts[] = new int[100];
-    <...> // do something with this array
+    // do something with this array
 } // as soon as function ends the array gets deleted
 ```
 

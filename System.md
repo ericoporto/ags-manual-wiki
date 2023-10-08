@@ -133,7 +133,7 @@ Example:
 
 ```ags
 Display("Game is running at: %d x %d, %d-bit color", System.ScreenWidth,
-                                    System.ScreenHeight, System.ColorDepth);
+        System.ScreenHeight, System.ColorDepth);
 ```
 
 will display the current resolution and color depth
@@ -234,9 +234,9 @@ skips the rest of the function if player has switched out from the game.
 function repeatedly_execute()
 {
     if (!System.HasInputFocus && IsGamePaused() == 0) {
-    PauseGame();
+        PauseGame();
     } else if (System.HasInputFocus && IsGamePaused() == 1) {
-    UnPauseGame();
+        UnPauseGame();
     }
 }
 ```
@@ -359,7 +359,8 @@ Example:
 ```ags
 function on_key_press(eKeyCode keycode) {
     if (keycode == eKeyCtrlV) {
-    Display(System.RuntimeInfo);
+        Display(System.RuntimeInfo);
+    }
 }
 ```
 
@@ -613,7 +614,7 @@ Example:
 ```ags
 function on_key_press(eKeyCode keycode) {
     if (keycode == eKeyEscape) {
-    System.Windowed = !System.Windowed;
+        System.Windowed = !System.Windowed;
     }
 }
 ```

@@ -55,8 +55,8 @@ The `DEBUG` constant is only defined when the game is compiled in Debug Mode, an
 be used to change the behavior of your scripts:
 ```ags
 #ifdef DEBUG
-    // only display this when the game is compiled in debug mode
-    Display("Debugging information");
+// only display this when the game is compiled in debug mode
+Display("Debugging information");
 #endif
 ```
 This feature can be used to display extra debugging tools, or also wrap debug-specific code

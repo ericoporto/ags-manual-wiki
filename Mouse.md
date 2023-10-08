@@ -236,11 +236,11 @@ Example:
 int timer=0;  // (at top of script file)
 if (mouse.IsButtonDown(eMouseRight)) {
     if (timer == 40) {
-    Display("You pressed the right button for 1 sec");
-    timer = 0;
+        Display("You pressed the right button for 1 sec");
+        timer = 0;
     }
     else {
-    timer++;
+        timer++;
     }
 }
 ```

@@ -28,8 +28,8 @@ For example, if you have dialog script:
 or common script using Say script function:
 
 ```ags
-    cEgo.Say("&10 Hi! How are you?");
-    cMichael.Say("&7 I'm fine.");
+cEgo.Say("&10 Hi! How are you?");
+cMichael.Say("&7 I'm fine.");
 ```
 
 Both of those examples plays EGO10.WAV with the first line, and

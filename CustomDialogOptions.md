@@ -134,69 +134,69 @@ int dlg_opt_ncolor = 4;
 
 function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
 {
-  // Create a 200x200 dialog options area at (50,100)
-  info.X = 50;
-  info.Y = 100;
-  info.Width = 200;
-  info.Height = 200;
-  // Enable alpha channel for the drawing surface
-  info.HasAlphaChannel = true;
-  // Put the text parser at the bottom (if enabled)
-  info.ParserTextBoxX = 10;
-  info.ParserTextBoxY = 160;
-  info.ParserTextBoxWidth = 180;
+    // Create a 200x200 dialog options area at (50,100)
+    info.X = 50;
+    info.Y = 100;
+    info.Width = 200;
+    info.Height = 200;
+    // Enable alpha channel for the drawing surface
+    info.HasAlphaChannel = true;
+    // Put the text parser at the bottom (if enabled)
+    info.ParserTextBoxX = 10;
+    info.ParserTextBoxY = 160;
+    info.ParserTextBoxWidth = 180;
 }
 
 function dialog_options_render(DialogOptionsRenderingInfo *info)
 {
-  info.Surface.Clear(dlg_opt_color);
-  int ypos = 0;
-  // Render all the options that are enabled
-  for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
-  {
-    if (info.DialogToRender.GetOptionState(i) == eOptionOn)
+    info.Surface.Clear(dlg_opt_color);
+    int ypos = 0;
+    // Render all the options that are enabled
+    for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
     {
-      if (info.ActiveOptionID == i)
-        info.Surface.DrawingColor = dlg_opt_acolor;
-      else
-        info.Surface.DrawingColor = dlg_opt_ncolor;
+        if (info.DialogToRender.GetOptionState(i) == eOptionOn)
+        {
+            if (info.ActiveOptionID == i)
+                info.Surface.DrawingColor = dlg_opt_acolor;
+            else
+                info.Surface.DrawingColor = dlg_opt_ncolor;
 
-      info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
-              eFontNormal, eAlignLeft, info.DialogToRender.GetOptionText(i));
-      ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
+            info.Surface.DrawStringWrapped(5, ypos, info.Width - 10, eFontNormal, eAlignLeft,
+                                           info.DialogToRender.GetOptionText(i));
+            ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
+        }
     }
-  }
 }
 
 function dialog_options_repexec(DialogOptionsRenderingInfo *info)
 {
-  info.ActiveOptionID = 0;
-  if (mouse.y < info.Y || mouse.y >= info.Y + info.Height ||
-      mouse.x < info.X || mouse.x >= info.X + info.Width)
-  {
-    return; // return if the mouse is outside UI bounds
-  }
-
-  int ypos = 0;
-  // Find the option that corresponds to where the mouse cursor is
-  for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
-  {
-    if (info.DialogToRender.GetOptionState(i) == eOptionOn)
+    info.ActiveOptionID = 0;
+    if (mouse.y < info.Y || mouse.y >= info.Y + info.Height ||
+        mouse.x < info.X || mouse.x >= info.X + info.Width)
     {
-      ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
-      if ((mouse.y - info.Y) < ypos)
-      {
-        info.ActiveOptionID = i;
-        return;
-      }
+        return; // return if the mouse is outside UI bounds
     }
-  }
+
+    int ypos = 0;
+    // Find the option that corresponds to where the mouse cursor is
+    for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
+    {
+        if (info.DialogToRender.GetOptionState(i) == eOptionOn)
+        {
+            ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
+            if ((mouse.y - info.Y) < ypos)
+            {
+                info.ActiveOptionID = i;
+                return;
+            }
+        }
+    }
 }
 
 function dialog_options_mouse_click(DialogOptionsRenderingInfo *info, MouseButton button)
 {
-  if (info.ActiveOptionID > 0)
-    info.RunActiveOption();
+    if (info.ActiveOptionID > 0)
+        info.RunActiveOption();
 }
 ```
 
@@ -215,64 +215,64 @@ int dlg_opt_ncolor = 4;
 
 function dialog_options_get_dimensions(DialogOptionsRenderingInfo *info)
 {
-  // Create a 200x200 dialog options area at (50,100)
-  info.X = 50;
-  info.Y = 100;
-  info.Width = 200;
-  info.Height = 200;
-  info.ActiveOptionID = 1; // set to first option
+    // Create a 200x200 dialog options area at (50,100)
+    info.X = 50;
+    info.Y = 100;
+    info.Width = 200;
+    info.Height = 200;
+    info.ActiveOptionID = 1; // set to first option
 }
 
 function dialog_options_render(DialogOptionsRenderingInfo *info)
 {
-  info.Surface.Clear(dlg_opt_color);
-  int ypos = 0;
-  // Render all the options that are enabled
-  for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
-  {
-    if (info.DialogToRender.GetOptionState(i) == eOptionOn)
+    info.Surface.Clear(dlg_opt_color);
+    int ypos = 0;
+    // Render all the options that are enabled
+    for (int i = 1; i <= info.DialogToRender.OptionCount; i++)
     {
-      if (info.ActiveOptionID == i)
-        info.Surface.DrawingColor = dlg_opt_acolor;
-      else
-        info.Surface.DrawingColor = dlg_opt_ncolor;
+        if (info.DialogToRender.GetOptionState(i) == eOptionOn)
+        {
+            if (info.ActiveOptionID == i)
+                info.Surface.DrawingColor = dlg_opt_acolor;
+            else
+                info.Surface.DrawingColor = dlg_opt_ncolor;
 
-      info.Surface.DrawStringWrapped(5, ypos, info.Width - 10,
-          eFontNormal, eAlignLeft, info.DialogToRender.GetOptionText(i));
-      ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
+            info.Surface.DrawStringWrapped(5, ypos, info.Width - 10, eFontNormal, eAlignLeft,
+                                           info.DialogToRender.GetOptionText(i));
+            ypos += GetTextHeight(info.DialogToRender.GetOptionText(i), eFontNormal, info.Width - 10);
+        }
     }
-  }
 }
 
 function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode keycode, int mod)
 {
-  if (keycode == eKeyUpArrow)
-  {
-    // check all options upwards until found an active one
-    for (int next_opt = info.ActiveOptionID - 1; next_opt >= 1; next_opt--)
+    if (keycode == eKeyUpArrow)
     {
-      if (info.DialogToRender.GetOptionState(next_opt) == eOptionOn)
-      {
-        info.ActiveOptionID = next_opt;
-        break;
-      }
+        // check all options upwards until found an active one
+        for (int next_opt = info.ActiveOptionID - 1; next_opt >= 1; next_opt--)
+        {
+            if (info.DialogToRender.GetOptionState(next_opt) == eOptionOn)
+            {
+                info.ActiveOptionID = next_opt;
+                break;
+            }
+        }
     }
-  }
-  else if (keycode == eKeyDownArrow)
-  {
-    // check all options downwards until found an active one
-    for (int next_opt = info.ActiveOptionID + 1; next_opt <= info.DialogToRender.OptionCount; next_opt++)
+    else if (keycode == eKeyDownArrow)
     {
-      if (info.DialogToRender.GetOptionState(next_opt) == eOptionOn)
-      {
-        info.ActiveOptionID = next_opt;
-        break;
-      }
+        // check all options downwards until found an active one
+        for (int next_opt = info.ActiveOptionID + 1; next_opt <= info.DialogToRender.OptionCount; next_opt++)
+        {
+            if (info.DialogToRender.GetOptionState(next_opt) == eOptionOn)
+            {
+                info.ActiveOptionID = next_opt;
+                break;
+            }
+        }
     }
-  }
-  else if (keycode == eKeyReturn || keycode == eKeySpace)
-  {
-    info.RunActiveOption();
-  }
+    else if (keycode == eKeyReturn || keycode == eKeySpace)
+    {
+        info.RunActiveOption();
+    }
 }
 ```

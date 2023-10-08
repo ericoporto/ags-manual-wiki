@@ -75,7 +75,7 @@ GlobalScript.asc it is already created for you:
 ```ags
 function repeatedly_execute()
 {
-  // Put your script code here
+    // Put your script code here
 }
 ```
 
@@ -96,7 +96,7 @@ a global script.
 ```ags
 function repeatedly_execute_always()
 {
-  // Put your script code here
+    // Put your script code here
 }
 ```
 
@@ -112,17 +112,17 @@ checking code:
 ```ags
 function repeatedly_execute()
 {
-  // increment our timer variable (we would have created this
-  // in the Global Variables editor)
-  hungerTimer++;
+    // increment our timer variable (we would have created this
+    // in the Global Variables editor)
+    hungerTimer++;
 
-  if (hungerTimer == 800)
-  {
-    Display("You are getting very hungry.");
-    player.LockView(RUBSTOMACH);
-    player.Animate(0, 5, eOnce, eBlock, eForwards);
-    player.UnlockView();
-  }
+    if (hungerTimer == 800)
+    {
+        Display("You are getting very hungry.");
+        player.LockView(RUBSTOMACH);
+        player.Animate(0, 5, eOnce, eBlock, eForwards);
+        player.UnlockView();
+    }
 }
 ```
 
@@ -132,19 +132,19 @@ want it to happen in that one room:
 ```ags
 function repeatedly_execute_always()
 {
-  if (!cBird.Moving)
-  {
-    if (cBird.x < 100)
+    if (!cBird.Moving)
     {
-      // if the bird is on the left hand side of the screen,
-      // start it moving towards the right
-      cBird.Walk(400, cBird.y, eNoBlock, eAnywhere);
+        if (cBird.x < 100)
+        {
+            // if the bird is on the left hand side of the screen,
+            // start it moving towards the right
+            cBird.Walk(400, cBird.y, eNoBlock, eAnywhere);
+        }
+        else
+        {
+            // otherwise, move it towards the left
+            cBird.Walk(0, cBird.y, eNoBlock, eAnywhere);
+        }
     }
-    else
-    {
-      // otherwise, move it towards the left
-      cBird.Walk(0, cBird.y, eNoBlock, eAnywhere);
-    }
-  }
 }
 ```

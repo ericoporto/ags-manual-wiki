@@ -59,7 +59,7 @@ plays the *aExplosion* audio clip.
 
 ```ags
 AudioChannel* AudioClip.PlayFrom(int position, optional AudioPriority,
-                                    optional RepeatStyle)
+                                 optional RepeatStyle)
 ```
 
 Plays the audio clip, starting from *position*. For the meaning of the
@@ -197,9 +197,9 @@ Example:
 for (int i = 0; i < System.AudioChannelCount; i++) {
     AudioClip *clip = System.AudioChannels[i].PlayingClip;
     if (clip != null)
-    Display("Channel %d has clip %d playing", i, clip.ID);
+        Display("Channel %d has clip %d playing", i, clip.ID);
     else
-    Display("Channel %d has no clip on it at the moment", i);
+        Display("Channel %d has no clip on it at the moment", i);
 }
 ```
 

@@ -305,7 +305,7 @@ will display "Old: THIS is a test string, new: this is a test string".
 
 ```ags
 String.Replace(string lookForText, string replaceWithText,
-                optional bool caseSensitive)
+               optional bool caseSensitive)
 ```
 
 Creates a copy of this string, with all instances of *lookForText*

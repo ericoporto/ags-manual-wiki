@@ -45,10 +45,10 @@ identical. For example (assuming our text box is called "txtUserInput"):
 String input = txtUserInput.Text;
 Parser.ParseText(input);
 if (Parser.Said("look fence")) {
-  Display("It's an old wooden fence.");
+    Display("It's an old wooden fence.");
 }
 if (Parser.Said("eat apple")) {
-  Display("You'd love to, but you don't have one.");
+    Display("You'd love to, but you don't have one.");
 }
 ```
 
@@ -60,7 +60,7 @@ rest of the user's input. So, you might want to do:
 
 ```ags
 if (Parser.Said("kill rol")) {
-  Display("You're not a violent person.");
+    Display("You're not a violent person.");
 }
 ```
 
@@ -105,13 +105,12 @@ this, you can do:
 Parser.ParseText(input);
 String badWord = Parser.SaidUnknownWord();
 if (badWord != null)
-  Display("You can't use '%s' in this game.", badWord);
-else if (Parser.Said("eat apple")) {
-  Display("You'd love to, but you don't have one.");
-}
-... // other game-wide commands
+    Display("You can't use '%s' in this game.", badWord);
+else if (Parser.Said("eat apple"))
+    Display("You'd love to, but you don't have one.");
+// other game-wide commands
 else
-  CallRoomScript (1);
+    CallRoomScript(1);
 ```
 
 Then, the room script can check for things that the player can do in the

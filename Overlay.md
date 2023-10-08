@@ -84,7 +84,7 @@ over.ZOrder = over.Y + over.Height;
 
 ```ags
 static Overlay* Overlay.CreateRoomTextual(int x, int y, int width,
-                                        FontType font, int color, string text)
+                                          FontType font, int color, string text)
 ```
 
 Creates a *room overlay* containing the text you pass at the position specified. This overlay looks identical to the way speech text is
@@ -110,7 +110,7 @@ All the parameters and use are identical to [`Overlay.CreateTextual`](Overlay#ov
 
 ```ags
 static Overlay* Overlay.CreateTextual(int x, int y, int width,
-                                        FontType font, int color, string text)
+                                      FontType font, int color, string text)
 ```
 
 Creates a *screen overlay* containing the text you pass at the position

@@ -42,7 +42,7 @@ Example:
 ```ags
 ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
 Display("This ViewFrame is view %d, loop %d, frame %d",
-    frame.View, frame.Loop, frame.Frame);
+        frame.View, frame.Loop, frame.Frame);
 ```
 
 *See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
@@ -125,7 +125,7 @@ Example:
 ```ags
 ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
 Display("This ViewFrame is view %d, loop %d, frame %d",
-    frame.View, frame.Loop, frame.Frame);
+        frame.View, frame.Loop, frame.Frame);
 ```
 
 *See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),
@@ -171,7 +171,7 @@ Example:
 ```ags
 ViewFrame *frame = Game.GetViewFrame(WALKING, 2, 4);
 Display("This ViewFrame is view %d, loop %d, frame %d",
-    frame.View, frame.Loop, frame.Frame);
+        frame.View, frame.Loop, frame.Frame);
 ```
 
 *See also:* [`Game.GetViewFrame`](Game#gamegetviewframe),

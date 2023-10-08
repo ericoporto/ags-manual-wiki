@@ -14,7 +14,7 @@ function Scream(Character *c)
 This is a regular function that accepts a Character as a parameter, and makes it say something. You would call this function as:
 
 ```ags
-    Scream(cEgo); // pass cEgo character as a function parameter
+Scream(cEgo); // pass cEgo character as a function parameter
 ```
 
 Now, the *extender function* would instead be declared like:
@@ -22,7 +22,7 @@ Now, the *extender function* would instead be declared like:
 ```ags
 function Scream(this Character*)
 {
-  this.Say("AAAAARRRRGGGGHHHHHH!!!!");
+    this.Say("AAAAARRRRGGGGHHHHHH!!!!");
 }
 ```
 
@@ -31,7 +31,7 @@ Notice the [`this`](ScriptKeywords#this) keyword. It means that we are addressin
 The extender function may now be called as:
 
 ```ags
-    cEgo.Scream(); // call the function Scream from character cEgo
+cEgo.Scream(); // call the function Scream from character cEgo
 ```
 
 Extender functions exist purely for convenience (in programming this is called "syntax sugar"). They do not add any new abilities, rather than to be able to call the function from an object instead of passing this object as a parameter. They use `this` keyword to address the object they were called from. Besides that, extender functions are just like ordinary functions: they may have multiple parameters, and return some value.
@@ -52,7 +52,7 @@ function SayAndAnimate(this Character*, String text, int view, int loop)
 }
 ```
 ```ags
-    player.SayAndAnimate("Hello, my name is Roger.", VROGERANIMS, 5);
+player.SayAndAnimate("Hello, my name is Roger.", VROGERANIMS, 5);
 ```
 
 Above will make character run a custom animation and display a speech (using Background speech to keep animation going in this example, but there may be other solutions to this).
@@ -68,9 +68,9 @@ Static extender declaration is a bit different, for example:
 ```ags
 int AbsInt(static Maths, int value)
 {
-  if (value < 0)
-    return -value;
-  return value;
+    if (value < 0)
+        return -value;
+    return value;
 }
 ```
 

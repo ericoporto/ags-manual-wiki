@@ -10,8 +10,8 @@ Button is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GU
 
 ```ags
 Button.Animate(int view, int loop, int delay, optional RepeatStyle, 
-                optional BlockingStyle, optional Direction, 
-                optional int frame, optional int volume)
+               optional BlockingStyle, optional Direction, 
+               optional int frame, optional int volume)
 ```
 
 Animates a GUI button by playing the specified view loop on it. This

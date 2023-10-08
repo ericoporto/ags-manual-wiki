@@ -84,7 +84,7 @@ and then top left corner afterwards.
 
 ```ags
 Character.Animate(int loop, int delay, optional RepeatStyle,
-                    optional BlockingStyle, optional Direction, optional int frame, optional int volume)
+                  optional BlockingStyle, optional Direction, optional int frame, optional int volume)
 ```
 
 Starts the character animating, using loop number LOOP of his current
@@ -443,7 +443,7 @@ obsolete)*
 
 ```ags
 Character.FollowCharacter(Character* chartofollow, optional int dist,
-                            optional int eagerness)
+                          optional int eagerness)
 ```
 
 Tells the character to follow CHARTOFOLLOW around, wherever he goes. You
@@ -755,7 +755,9 @@ Example:
 
 ```ags
 if (cEgo.IsCollidingWithChar(cMan) == 1)
-    { colliding code here }
+{
+    // Colliding code goes here.
+}
 ```
 
 will execute the colliding code only if the characters EGO and MAN are
@@ -1067,7 +1069,7 @@ inventory tab.
 
 ```ags
 Character.Move(int x, int y, optional BlockingStyle,
-                                optional WalkWhere);
+               optional WalkWhere);
 ```
 
 Starts the character moving from its current location to (X,Y), but does
@@ -1574,7 +1576,7 @@ thinking animation.
 
 ```ags
 Character.Tint(int red, int green, int blue,
-                int saturation, int luminance)
+               int saturation, int luminance)
 ```
 
 Tints the character on the screen to (RED, GREEN, BLUE) with SATURATION
@@ -1778,7 +1780,7 @@ only by **AGS 3.4.1** and later versions.
 
 ```ags
 Character.Walk(int x, int y, optional BlockingStyle,
-                                optional WalkWhere);
+               optional WalkWhere);
 ```
 
 Starts the character moving from its current location to (X,Y), whilst
@@ -2866,7 +2868,7 @@ Example:
 ```ags
 if (cEgo.Speaking) {
     if (cEgo.SpeakingFrame == 0) {
-    cMan.Move(cMan.x + 10, cMan.y, eNoBlock, eAnywhere);
+        cMan.Move(cMan.x + 10, cMan.y, eNoBlock, eAnywhere);
     }
 }
 ```
@@ -2992,10 +2994,10 @@ Example:
 ```ags
 function repeatedly_execute_always()
 {
-    if (cEgo.Thinking) {
-    cEgo.Transparency = 50;
+    if (cEgo.Thinking)
+        cEgo.Transparency = 50;
     else
-    cEgo.Transparency = 0;
+        cEgo.Transparency = 0;
 }
 ```
 
@@ -3036,7 +3038,7 @@ Example:
 ```ags
 if (cEgo.Thinking) {
     if (cEgo.ThinkingFrame == 0) {
-    cMan.Move(cMan.x + 10, cMan.y, eNoBlock, eAnywhere);
+        cMan.Move(cMan.x + 10, cMan.y, eNoBlock, eAnywhere);
     }
 }
 ```

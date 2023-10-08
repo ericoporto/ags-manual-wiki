@@ -10,15 +10,15 @@ Firstly, so that you can get an idea of the changes, here's an example
 of some old-style script commands and their new equivalents:
 
 ```ags
-    AnimateObjectEx(0,2,0,0,0,1);
-    ListBoxAdd(3, 5, "New item");
+AnimateObjectEx(0,2,0,0,0,1);
+ListBoxAdd(3, 5, "New item");
 ```
 
 becomes:
 
 ```ags
-    oWaterfall.Animate(2, 0, eOnce, eForwards, eBlock);
-    lstTest.AddItem("New item");
+oWaterfall.Animate(2, 0, eOnce, eForwards, eBlock);
+lstTest.AddItem("New item");
 ```
 
 Just from looking at that example the advantages should be obvious; the

@@ -26,7 +26,7 @@ Example:
 function dialog_options_key_press(DialogOptionsRenderingInfo *info, eKeyCode key)
 {
     if (keycode == eKeyReturn)
-    info.RunActiveOption();
+        info.RunActiveOption();
 }
 ```
 

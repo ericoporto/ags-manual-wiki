@@ -25,7 +25,7 @@ that property will be reset to 0 for safety reasons.
 
 ```ags
 static DynamicSprite* DynamicSprite.Create(int width, int height,
-                                            optional bool hasAlphaChannel)
+                                           optional bool hasAlphaChannel)
 ```
 
 Creates a new blank dynamic sprite of the specified size. It will
@@ -67,9 +67,9 @@ creates a 50x30 sprite, draws a white dot in the middle, then assigns to a globa
 ### `DynamicSprite.CreateFromBackground`
 
 ```ags
-static DynamicSprite* DynamicSprite.CreateFromBackground
-                        (optional int frame, optional int x, optional int y,
-                        optional int width, optional int height)
+static DynamicSprite* DynamicSprite.CreateFromBackground(
+    optional int frame, optional int x, optional int y,
+    optional int width, optional int height)
 ```
 
 Creates a new dynamic sprite containing a copy of the specified room
@@ -112,8 +112,8 @@ onto the top left corner of the background image. Then disposes the temporary sp
 
 ```ags
 static DynamicSprite* DynamicSprite.CreateFromDrawingSurface(
-                        DrawingSurface* surface, int x, int y,
-                        int width, int height)
+    DrawingSurface* surface, int x, int y,
+    int width, int height)
 ```
 
 Creates a new dynamic sprite containing a copy of the specified portion
@@ -158,7 +158,7 @@ changes object's image to be just the top-left corner of what it previously was.
 
 ```ags
 static DynamicSprite* DynamicSprite.CreateFromExistingSprite(
-                        int slot, optional bool preserveAlphaChannel)
+    int slot, optional bool preserveAlphaChannel)
 ```
 
 Creates a new dynamic sprite containing a copy of the specified sprite
@@ -258,8 +258,8 @@ Once the image is finished with, Delete should be called on it.
 *(Formerly known as `LoadSaveSlotScreenshot`, which is now obsolete)*
 
 ```ags
-static DynamicSprite* DynamicSprite.CreateFromSaveGame
-                        (int saveSlot, int width, int height)
+static DynamicSprite* DynamicSprite.CreateFromSaveGame(
+    int saveSlot, int width, int height)
 ```
 
 Loads the screenshot for save game SAVESLOT into memory, resizing it to
@@ -305,8 +305,8 @@ Once the GUI is disposed of, Delete should be called on the sprite.
 ### `DynamicSprite.CreateFromScreenShot`
 
 ```ags
-static DynamicSprite* DynamicSprite.CreateFromScreenShot
-                        (optional int width, optional int height)
+static DynamicSprite* DynamicSprite.CreateFromScreenShot(
+    optional int width, optional int height)
 ```
 
 Creates a new DynamicSprite instance with a copy of the current screen

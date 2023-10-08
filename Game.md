@@ -668,7 +668,7 @@ int music_count = 0;
 while (i < Game.AudioClipCount)
 {
     if (Game.AudioClips[i].Type == eAudioTypeMusic)
-    music_count++;
+        music_count++;
     i++;
 }
 Display("We have %d musical clips in our game", music_count);
@@ -1221,7 +1221,7 @@ Example:
 
 ```ags
 Display("Object 0's sprite is sized %d x %d.", Game.SpriteWidth[object[0].Graphic],
-                                                Game.SpriteHeight[object[0].Graphic]);
+        Game.SpriteHeight[object[0].Graphic]);
 ```
 
 *See also:* [`Game.SpriteWidth`](Game#gamespritewidth)
@@ -1245,7 +1245,7 @@ Example:
 
 ```ags
 Display("Object 0's sprite is sized %d x %d.", Game.SpriteWidth[object[0].Graphic],
-                                                Game.SpriteHeight[object[0].Graphic]);
+        Game.SpriteHeight[object[0].Graphic]);
 ```
 
 *See also:* [`Game.SpriteHeight`](Game#gamespriteheight)

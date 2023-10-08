@@ -39,7 +39,7 @@ Then, in the script file (.ASC) you could put:
 
 ```ags
 function AddNumbers(int a, int b) {
-  return a + b;
+    return a + b;
 }
 ```
 

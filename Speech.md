@@ -120,11 +120,11 @@ int plast = -1;
 int pmove = 1;
 function repeatedly_execute_always() {
     if (Speech.PortraitOverlay != null) {
-    if (plast >= 0) Speech.PortraitOverlay.Y = plast;
-    Speech.PortraitOverlay.Y += pmove;
-    if (Speech.PortraitOverlay.Y < PORTRAIT_YMIN) pmove = 1;
-    if (Speech.PortraitOverlay.Y > PORTRAIT_YMAX) pmove = -1;
-    plast = Speech.PortraitOverlay.Y;
+        if (plast >= 0) Speech.PortraitOverlay.Y = plast;
+        Speech.PortraitOverlay.Y += pmove;
+        if (Speech.PortraitOverlay.Y < PORTRAIT_YMIN) pmove = 1;
+        if (Speech.PortraitOverlay.Y > PORTRAIT_YMAX) pmove = -1;
+        plast = Speech.PortraitOverlay.Y;
     }
 }
 ```
@@ -323,11 +323,11 @@ Overlay* lastSpeech;
 function late_repeatedly_execute_always() {
     Overlay* curSpeech = Speech.TextOverlay;
     if (lastSpeech == null && curSpeech != null) {
-    // speech has started
+        // speech has started
     } else if (lastSpeech != null && curSpeech == null) {
-    // speech is over
+        // speech is over
     } else if (lastSpeech != null && curSpeech != lastSpeech) {
-    // speech changed to the next line
+        // speech changed to the next line
     }
     lastSpeech = curSpeech;
 }

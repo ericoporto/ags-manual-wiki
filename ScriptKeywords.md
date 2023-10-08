@@ -28,7 +28,7 @@ and != operators don't seem to work properly. For example:
 ```ags
 float result = 2.0 * 3.0;
 if (result == 6.0) {
-  Display("Result is 6!");
+    Display("Result is 6!");
 }
 ```
 
@@ -38,7 +38,7 @@ variables, and the solution is to code like this:
 ```ags
 float result = 2.0 * 3.0;
 if ((result > 5.99) && (result < 6.01)) {
-  Display("Result is 6!");
+    Display("Result is 6!");
 }
 ```
 
@@ -192,10 +192,10 @@ For example:
 
 ```ags
 if (player.Room == 10) {
-  Display("Player is in the room 10.");
+    Display("Player is in the room 10.");
 }
 else {
-  Display("Player is NOT in the room 10.");
+    Display("Player is NOT in the room 10.");
 }
 ```
 
@@ -208,13 +208,13 @@ if it is not.
 
 ```ags
 if (player.Room == 1) {
-  Display("Player is in the room 1.");
+    Display("Player is in the room 1.");
 }
 else if (player.Room == 2) {
-  Display("Player is in the room 2.");
+    Display("Player is in the room 2.");
 }
 else {
-  Display("Player in neither in room 1 nor room 2.");
+    Display("Player in neither in room 1 nor room 2.");
 }
 ```
 
@@ -336,7 +336,7 @@ For example:
 
 ```ags
 while (cEgo.Moving) {
-  Wait(1);
+    Wait(1);
 }
 ```
 
@@ -362,7 +362,7 @@ For example:
 ```ags
 do
 {
-  cEgo.Move(cEgo.x + 1, cEgo.y);
+    cEgo.Move(cEgo.x + 1, cEgo.y);
 }
 while (IsKeyPressed(eKeyRightArrow));
 ```
@@ -401,7 +401,7 @@ For example:
 ```ags
 for (int i = 0; i < Game.CharacterCount; i++)
 {
-  Display("My name is %s", character[i].Name);
+    Display("My name is %s", character[i].Name);
 }
 ```
 
@@ -412,7 +412,7 @@ Another example (note missing initialization and iteration):
 ```ags
 for (; cEgo.x < 100;)
 {
-  Wait(1);
+    Wait(1);
 }
 ```
 
@@ -433,10 +433,10 @@ For example:
 
 ```ags
 while (cEgo.Moving) {
-  if (IsKeyPressed(eKeyEscape))
-    break;
+    if (IsKeyPressed(eKeyEscape))
+        break;
 
-  Wait(1);
+    Wait(1);
 }
 ```
 
@@ -460,12 +460,12 @@ For example:
 ```ags
 for (int i = 0; i < 100; i++)
 {
-  // multiple statements here
+    // multiple statements here
 
-  if (i > 50)
-    continue;
+    if (i > 50)
+        continue;
 
-  // more statements following
+    // more statements following
 }
 ```
 
@@ -488,8 +488,8 @@ time, or you could define a custom function:
 
 ```ags
 function AddInvAndPlaySound(InventoryItem* item) {
-  player.AddInventory(item);
-  aInventorySound.Play();
+    player.AddInventory(item);
+    aInventorySound.Play();
 }
 ```
 
@@ -541,7 +541,7 @@ specify **return value**.
 
 ```ags
 int GetHowManyTradeGoodsShopkeeperHas() {
-  return 2;
+    return 2;
 }
 ```
 
@@ -551,12 +551,12 @@ naturally:
 
 ```ags
 function DoThisAndOptionallyThat(bool do_all) {
-  // multiple statements here
+    // multiple statements here
 
-  if (!do_all)
-    return; // quit the function prematurely
+    if (!do_all)
+        return; // quit the function prematurely
 
-  // more statements following
+    // more statements following
 }
 ```
 
@@ -583,9 +583,9 @@ to keep track of. This is where structs come in:
 
 ```ags
 struct Weapon {
-  int damage;
-  int price;
-  String name;
+    int damage;
+    int price;
+    String name;
 };
 ```
 
@@ -645,8 +645,8 @@ Example:
 
 ```ags
 managed struct Apple {
-  int color;
-  int freshness;
+    int color;
+    int freshness;
 };
 ```
 
@@ -689,8 +689,8 @@ You may write a function that take such pointer as parameter:
 
 ```ags
 function DisplayAppleDescription(Apple* apple) {
-  String s = String.Format("Apple has color %d and freshness %d", apple.color, apple.freshness);
-  Display(s);
+    String s = String.Format("Apple has color %d and freshness %d", apple.color, apple.freshness);
+    Display(s);
 }
 ```
 
@@ -704,10 +704,10 @@ You may write a function that returns pointer to apple:
 
 ```ags
 Apple* CreateYellowApple(int fresh) {
-  Apple* apple = new Apple;
-  apple.color = Game.GetColorFromRGB(255, 0, 255);
-  apple.freshness = fresh;
-  return apple;
+    Apple* apple = new Apple;
+    apple.color = Game.GetColorFromRGB(255, 0, 255);
+    apple.freshness = fresh;
+    return apple;
 }
 ```
 
@@ -741,8 +741,8 @@ Example:
 ```ags
 // Here we declare a managed struct for Apple
 managed struct Apple {
-  int color;
-  int freshness;
+    int color;
+    int freshness;
 };
 
 // ...and declare a global pointer to Apple
@@ -752,7 +752,7 @@ Apple* SomeApple;
 // and assign its address to the pointer variable
 function game_start()
 {
-  SomeApple = new Apple;
+    SomeApple = new Apple;
 }
 ```
 
@@ -777,13 +777,13 @@ For example, if you have a script function, *doStuff*, that can perform
 
 ```ags
 function doStuff(int param) {
-  if (param == 1) {
-    // do something
-  }
-  else if (param == 2) {
-    // do something else
-  }
-  // etc
+    if (param == 1) {
+        // do something
+    }
+    else if (param == 2) {
+        // do something else
+    }
+    // etc
 }
 ```
 
@@ -793,18 +793,18 @@ in:
 
 ```ags
 enum DoStuffOption {
-  BakeCake,
-  DoLaundry
+    BakeCake,
+    DoLaundry
 };
 
 function doStuff(DoStuffOption param) {
-  if (param == BakeCake) {
-    // do something
-  }
-  else if (param == DoLaundry) {
-    // do something else
-  }
-  // etc
+    if (param == BakeCake) {
+        // do something
+    }
+    else if (param == DoLaundry) {
+        // do something else
+    }
+    // etc
 }
 ```
 
@@ -836,9 +836,9 @@ Suppose you had this in your script header:
 
 ```ags
 struct MyStruct {
-  int myValue;
+    int myValue;
 
-  import function MyMethod();
+    import function MyMethod();
 };
 ```
 
@@ -847,7 +847,7 @@ Then, in your main script, you could put this:
 ```ags
 function MyStruct::MyMethod()
 {
-  this.myValue = 5;
+    this.myValue = 5;
 }
 ```
 
@@ -1022,12 +1022,12 @@ For example:
 
 ```ags
 function noloopcheck initialize_array() {
-  char bigarray[200000];
-  int a = 0;
-  while (a < 200000) {
-    bigarray[a] = 1;
-    a++;
-  }
+    char bigarray[200000];
+    int a = 0;
+    while (a < 200000) {
+        bigarray[a] = 1;
+        a++;
+    }
 }
 ```
 

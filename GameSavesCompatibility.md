@@ -242,11 +242,11 @@ function on_event(EventType evt, int data) {
             int new_vars[] = new int[GAME_VER_002_LENGTH];
             // copy restored array with old data into our new array
             for (int i = 0; i < GAME_VER_001_LENGTH; i++) {
-                 new_vars[i] = MyVariables[i];
+                new_vars[i] = MyVariables[i];
             }
             // set default values for the rest (replace with your code as appropriate)
             for (int i = GAME_VER_001_LENGTH; i < GAME_VER_002_LENGTH; i++) {
-                 new_vars[i] = 0;
+                new_vars[i] = 0;
             }
             // finally replace pointer and version number
             MyVariables = new_vars;

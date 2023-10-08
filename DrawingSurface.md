@@ -128,9 +128,9 @@ will draw a circle in the center of the screen, of 50 pixels radius.
 
 ```ags
 DrawingSurface.DrawImage(int x, int y, int slot, optional int transparency,
-                            optional int width, optional int height,
-                            optional int cut_x, optional  int cut_y, 
-                            optional int cut_width, optional int cut_height)
+                         optional int width, optional int height,
+                         optional int cut_x, optional  int cut_y, 
+                         optional int cut_width, optional int cut_height)
 ```
 
 Draws image SLOT from the sprite manager onto the surface at location
@@ -221,7 +221,7 @@ the screen (160,100);
 
 ```ags
 DrawingSurface.DrawMessageWrapped(int x, int y, int width,
-                                    FontType font, int message_number)
+                                  FontType font, int message_number)
 ```
 
 Draws the room message MESSAGE_NUMBER onto the surface at (x,y), using
@@ -354,8 +354,8 @@ will write some text onto the middle-left of the room background
 
 ```ags
 DrawingSurface.DrawStringWrapped(int x, int y, int width,
-                                    FontType font, Alignment,
-                                    const string text)
+                                 FontType font, Alignment,
+                                 const string text)
 ```
 
 Draws the *text* onto the surface at (x,y), using the specified FONT.
@@ -393,10 +393,10 @@ will display the text in the center of the screen, starting from Y = 40.
 
 ```ags
 DrawingSurface.DrawSurface(DrawingSurface* source, optional int transparency,
-                            optional int x, optional int y, 
-                            optional int width, optional int height,
-                            optional int cut_x, optional  int cut_y, 
-                            optional int cut_width, optional int cut_height)
+                           optional int x, optional int y, 
+                           optional int width, optional int height,
+                           optional int cut_x, optional  int cut_y, 
+                           optional int cut_width, optional int cut_height)
 ```
 
 Draws the specified surface on top of this surface, optionally using

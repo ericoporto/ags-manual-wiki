@@ -42,25 +42,25 @@ So a typical any_click function looks like this:
 ```ags
 function cup_AnyClick()
 {
-        // LOOK AT
-        if(Verbs.UsedAction(eGA_LookAt)) {
-                player.Say("It's a blue cup.");
-        }
-        // USE
-        else if(Verbs.UsedAction(eGA_Use)) {
-                player.Say("I'd rather pick it up.");
-        }
-        // PICKUP
-        else if(Verbs.UsedAction(eGA_PickUp)) {
-                player.Say("Okay.");
-                Verbs.AnyClickWalkLookPick(108, 100, eDir_Up, "You are now mine.",oCup.ID, iCup);
-        }
-        //USE INV
-        else if(Verbs.UsedAction(eGA_UseInv)) {
-                Verbs.Unhandled();
-        }
-        // don't forget this
-        else Verbs.Unhandled();
+    // LOOK AT
+    if (Verbs.UsedAction(eGA_LookAt)) {
+        player.Say("It's a blue cup.");
+    }
+    // USE
+    else if (Verbs.UsedAction(eGA_Use)) {
+        player.Say("I'd rather pick it up.");
+    }
+    // PICKUP
+    else if (Verbs.UsedAction(eGA_PickUp)) {
+        player.Say("Okay.");
+        Verbs.AnyClickWalkLookPick(108, 100, eDir_Up, "You are now mine.",oCup.ID, iCup);
+    }
+    //USE INV
+    else if (Verbs.UsedAction(eGA_UseInv)) {
+        Verbs.Unhandled();
+    }
+    // don't forget this
+    else Verbs.Unhandled();
 }
 ```
 
@@ -118,17 +118,17 @@ which item has been given. For example:
 ```ags
 if (Verbs.UsedAction(eGA_GiveTo))
 {
-        if (ItemGiven == iCup)
-        {
-                player.Say("Do you want this Cup?");
-                cBman.Say("No, thank you.");
-        }
-        else if (ItemGiven == iKey)
-        {
-                player.Say("Is that your key?");
-                cBman.Say("Of course. You have it from me.");
-        }
-        else Verbs.Unhandled();
+    if (ItemGiven == iCup)
+    {
+        player.Say("Do you want this Cup?");
+        cBman.Say("No, thank you.");
+    }
+    else if (ItemGiven == iKey)
+    {
+        player.Say("Is that your key?");
+        cBman.Say("Of course. You have it from me.");
+    }
+    else Verbs.Unhandled();
 }
 else Verbs.Unhandled();
 ```

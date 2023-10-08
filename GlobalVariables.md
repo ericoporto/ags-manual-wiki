@@ -43,7 +43,7 @@ just do things like this:
 ```ags
 if (myVariable == 3)
 {
-  myVariable = 4;
+    myVariable = 4;
 }
 ```
 

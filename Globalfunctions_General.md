@@ -24,7 +24,7 @@ Example:
 ```ags
 function MakeWider(int newWidth) {
     if (newWidth < 10)
-    AbortGame("newWidth expects a width of at least 10!");
+        AbortGame("newWidth expects a width of at least 10!");
 }
 ```
 
@@ -60,9 +60,9 @@ in the global script:
 ```ags
 function on_call (int value) {
     if (value == 1) {
-    // Check text input
-    if (Parser.Said("get apple"))
-        Display("No, leave the tree alone.");
+        // Check text input
+        if (Parser.Said("get apple"))
+            Display("No, leave the tree alone.");
     }
 }
 ```
@@ -392,7 +392,9 @@ Example:
 
 ```ags
 if (GetGraphicalVariable("climbed rock")==1)
-    { code here }
+{
+    // Code here.
+}
 ```
 
 will execute the code only if interaction variable \"climbed rock\" is

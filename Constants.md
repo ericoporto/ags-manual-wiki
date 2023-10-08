@@ -27,12 +27,12 @@ You can check for whether a macro is defined or not by using the
 
 ```ags
 #ifndef STRICT
-    // only compile the MoveCharacter command if not using object-based scripting
-    MoveCharacter(EGO, 30, 40);
+// only compile the MoveCharacter command if not using object-based scripting
+MoveCharacter(EGO, 30, 40);
 #endif
 #ifdef DEBUG
-    // only display this when the game is compiled in debug mode
-    Display("Debugging information");
+// only display this when the game is compiled in debug mode
+Display("Debugging information");
 #endif
 ```
 

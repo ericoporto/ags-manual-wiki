@@ -19,8 +19,8 @@ Use this function at the end of your any_click functions in order to cause defau
 ```ags
 function cChar_AnyClick()
 {
-        if (Verbs.UsedAction(eGA_LookAt)) player.Say("He looks like he is hungry.");
-        else Verbs.Unhandled();
+    if (Verbs.UsedAction(eGA_LookAt)) player.Say("He looks like he is hungry.");
+    else Verbs.Unhandled();
 }
 ```
 

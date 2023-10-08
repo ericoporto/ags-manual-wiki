@@ -44,13 +44,13 @@ This is explained further in a paragraphs about [`#ifdef`](Preprocessor#ifdef-if
 
 ```ags
 #ifdef <macro>
-  // script
+// script
 #endif
 ```
 
 ```ags
 #ifndef <macro>
-  // script
+// script
 #endif
 ```
 
@@ -64,13 +64,13 @@ This is explained further in a paragraphs about [`#ifdef`](Preprocessor#ifdef-if
 
 ```ags
 #ifver <editor-version>
-  // script
+// script
 #endif
 ```
 
 ```ags
 #ifnver <version>
-  // script
+// script
 #endif
 ```
 
@@ -82,7 +82,7 @@ For example:
 
 ```ags
 #ifver 3.5.0
-    Display("This script was compiled in AGS 3.5.0 or higher");
+Display("This script was compiled in AGS 3.5.0 or higher");
 #endif
 ```
 
@@ -119,7 +119,7 @@ Then you could do this in your module's script:
 
 ```ags
 #ifndef AWESOME_MODULE
-    #error This script requires "Awesome Module", please include it in the game
+#error This script requires "Awesome Module", please include it in the game
 #endif
 ```
 

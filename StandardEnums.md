@@ -10,22 +10,22 @@ job, having a manual reference is invaluable:
 
 ```ags
 enum Alignment {
-  eAlignNone          = 0,
-  eAlignTopLeft       = 1,
-  eAlignTopCenter     = 2,
-  eAlignTopRight      = 4,
-  eAlignMiddleLeft    = 8,
-  eAlignMiddleCenter  = 16,
-  eAlignMiddleRight   = 32,
-  eAlignBottomLeft    = 64,
-  eAlignBottomCenter  = 128,
-  eAlignBottomRight   = 256,
-  eAlignHasLeft       = 73,
-  eAlignHasRight      = 292,
-  eAlignHasTop        = 7,
-  eAlignHasBottom     = 448,
-  eAlignHasHorCenter  = 146,
-  eAlignHasVerCenter  = 56
+    eAlignNone          = 0,
+    eAlignTopLeft       = 1,
+    eAlignTopCenter     = 2,
+    eAlignTopRight      = 4,
+    eAlignMiddleLeft    = 8,
+    eAlignMiddleCenter  = 16,
+    eAlignMiddleRight   = 32,
+    eAlignBottomLeft    = 64,
+    eAlignBottomCenter  = 128,
+    eAlignBottomRight   = 256,
+    eAlignHasLeft       = 73,
+    eAlignHasRight      = 292,
+    eAlignHasTop        = 7,
+    eAlignHasBottom     = 448,
+    eAlignHasHorCenter  = 146,
+    eAlignHasVerCenter  = 56
 };
 ```
 
@@ -33,7 +33,7 @@ The Alignment enumeration consists of values that could be summed up in one inte
 
 ```ags
 if (align & eAlignHasLeft)
-  // some code here
+    // some code here
 ```
 
 will execute some code if *align* variable contains "Left" in any combination (eAlignTopLeft, eAlignMiddleLeft or eAlignBottomLeft).
@@ -46,12 +46,12 @@ will execute some code if *align* variable contains "Left" in any combination (e
 
 ```ags
 enum AudioFileType {
-  eAudioFileOGG,
-  eAudioFileMP3,
-  eAudioFileWAV,
-  eAudioFileVOC,
-  eAudioFileMIDI,
-  eAudioFileMOD
+    eAudioFileOGG,
+    eAudioFileMP3,
+    eAudioFileWAV,
+    eAudioFileVOC,
+    eAudioFileMIDI,
+    eAudioFileMOD
 };
 ```
 
@@ -61,11 +61,11 @@ enum AudioFileType {
 
 ```ags
 enum AudioPriority {
-  eAudioPriorityVeryLow = 1,
-  eAudioPriorityLow = 25,
-  eAudioPriorityNormal = 50,
-  eAudioPriorityHigh = 75,
-  eAudioPriorityVeryHigh = 100
+    eAudioPriorityVeryLow = 1,
+    eAudioPriorityLow = 25,
+    eAudioPriorityNormal = 50,
+    eAudioPriorityHigh = 75,
+    eAudioPriorityVeryHigh = 100
 };
 ```
 
@@ -77,8 +77,8 @@ enum AudioPriority {
 
 ```ags
 enum BlockingStyle {
-  eBlock,
-  eNoBlock
+    eBlock,
+    eNoBlock
 };
 ```
 
@@ -96,16 +96,16 @@ enum BlockingStyle {
 
 ```ags
 enum eCDAudioFunction {
-  eCDIsDriverPresent,
-  eCDGetPlayingStatus,
-  eCDPlayTrack,
-  eCDPausePlayback,
-  eCDResumePlayback,
-  eCDGetNumTracks,
-  eCDEject,
-  eCDCloseTray,
-  eCDGetCDDriveCount,
-  eCDSelectActiveCDDrive
+    eCDIsDriverPresent,
+    eCDGetPlayingStatus,
+    eCDPlayTrack,
+    eCDPausePlayback,
+    eCDResumePlayback,
+    eCDGetNumTracks,
+    eCDEject,
+    eCDCloseTray,
+    eCDGetCDDriveCount,
+    eCDSelectActiveCDDrive
 };
 ```
 
@@ -115,15 +115,15 @@ enum eCDAudioFunction {
 
 ```ags
 enum CharacterDirection {
-  eDirectionDown = 0,
-  eDirectionLeft,
-  eDirectionRight,
-  eDirectionUp,
-  eDirectionDownRight,
-  eDirectionUpRight,
-  eDirectionDownLeft,
-  eDirectionUpLeft,
-  eDirectionNone = SCR_NO_VALUE
+    eDirectionDown = 0,
+    eDirectionLeft,
+    eDirectionRight,
+    eDirectionUp,
+    eDirectionDownRight,
+    eDirectionUpRight,
+    eDirectionDownLeft,
+    eDirectionUpLeft,
+    eDirectionNone = SCR_NO_VALUE
 };
 ```
 
@@ -134,9 +134,9 @@ enum CharacterDirection {
 
 ```ags
 enum CursorMode {
-  eModeXXXX,
-  eModeXXXX,
-  ...
+    eModeXXXX,
+    eModeXXXX,
+    // ...
 };
 ```
 
@@ -165,12 +165,12 @@ removed, and *eMode* is added to the front.<br>
 
 ```ags
 enum CutsceneSkipType {
-  eSkipESCOnly,
-  eSkipAnyKey,
-  eSkipMouseClick,
-  eSkipAnyKeyOrMouseClick,
-  eSkipESCOrRightButton,
-  eSkipScriptOnly
+    eSkipESCOnly,
+    eSkipAnyKey,
+    eSkipMouseClick,
+    eSkipAnyKeyOrMouseClick,
+    eSkipESCOrRightButton,
+    eSkipScriptOnly
 };
 ```
 
@@ -180,9 +180,9 @@ enum CutsceneSkipType {
 
 ```ags
 enum DialogOptionSayStyle {
-  eSayUseOptionSetting,
-  eSayAlways,
-  eSayNever
+    eSayUseOptionSetting,
+    eSayAlways,
+    eSayNever
 };
 ```
 
@@ -192,9 +192,9 @@ enum DialogOptionSayStyle {
 
 ```ags
 enum DialogOptionState {
-  eOptionOff,
-  eOptionOn,
-  eOptionOffForever
+    eOptionOff,
+    eOptionOn,
+    eOptionOffForever
 };
 ```
 
@@ -205,8 +205,8 @@ enum DialogOptionState {
 
 ```ags
 enum Direction {
-  eForwards,
-  eBackwards
+    eForwards,
+    eBackwards
 };
 ```
 
@@ -217,14 +217,14 @@ enum Direction {
 
 ```ags
 enum EventType {
-  eEventLeaveRoom,
-  eEventEnterRoomBeforeFadein,
-  eEventGotScore,
-  eEventGUIMouseDown,
-  eEventGUIMouseUp,
-  eEventAddInventory,
-  eEventLoseInventory,
-  eEventRestoreGame
+    eEventLeaveRoom,
+    eEventEnterRoomBeforeFadein,
+    eEventGotScore,
+    eEventGUIMouseDown,
+    eEventGUIMouseUp,
+    eEventAddInventory,
+    eEventLoseInventory,
+    eEventRestoreGame
 };
 ```
 
@@ -234,9 +234,9 @@ enum EventType {
 
 ```ags
 enum FileMode {
-  eFileRead,
-  eFileWrite,
-  eFileAppend
+    eFileRead,
+    eFileWrite,
+    eFileAppend
 };
 ```
 
@@ -246,9 +246,9 @@ enum FileMode {
 
 ```ags
 enum FileSeek {
-  eSeekBegin = 0,
-  eSeekCurrent = 1,
-  eSeekEnd = 2
+    eSeekBegin = 0,
+    eSeekCurrent = 1,
+    eSeekEnd = 2
 };
 ```
 
@@ -258,9 +258,9 @@ enum FileSeek {
 
 ```ags
 enum eFlipDirection {
-  eFlipLeftToRight,
-  eFlipUpsideDown,
-  eFlipBoth
+    eFlipLeftToRight,
+    eFlipUpsideDown,
+    eFlipBoth
 };
 ```
 
@@ -270,9 +270,9 @@ enum eFlipDirection {
 
 ```ags
 enum FontType {
-  eFontXXXX,
-  eFontXXXX,
-  ...
+    eFontXXXX,
+    eFontXXXX,
+    // ...
 };
 ```
 
@@ -297,10 +297,10 @@ to the front.<br>
 
 ```ags
 enum GUIPopupStyle {
-  eGUIPopupNormal = 0,
-  eGUIPopupMouseYPos = 1,
-  eGUIPopupModal = 2,
-  eGUIPopupPersistent = 3
+    eGUIPopupNormal = 0,
+    eGUIPopupMouseYPos = 1,
+    eGUIPopupModal = 2,
+    eGUIPopupPersistent = 3
 };
 ```
 
@@ -312,9 +312,9 @@ enum GUIPopupStyle {
 
 ```ags
 enum HorizontalAlignment {
-  eAlignLeft          = 1,
-  eAlignCenter        = 2,
-  eAlignRight         = 4
+    eAlignLeft          = 1,
+    eAlignCenter        = 2,
+    eAlignRight         = 4
 };
 ```
 
@@ -341,7 +341,7 @@ The InputType enumeration consists of values that could be summed up in one inte
 
 ```ags
 if (type & eInputKeyboard)
-  // some code here
+    // some code here
 ```
 
 will execute some code if *type* variable contains *at least* "eInputKeyboard".
@@ -354,10 +354,10 @@ will execute some code if *type* variable contains *at least* "eInputKeyboard".
 
 ```ags
 enum LocationType {
-  eLocationNothing,
-  eLocationHotspot,
-  eLocationCharacter,
-  eLocationObject
+    eLocationNothing,
+    eLocationHotspot,
+    eLocationCharacter,
+    eLocationObject
 };
 ```
 
@@ -386,14 +386,14 @@ enum LogLevel
 
 ```ags
 enum MouseButton {
-  eMouseLeft,
-  eMouseRight,
-  eMouseMiddle,
-  eMouseLeftInv,
-  eMouseMiddleInv,
-  eMouseRightInv,
-  eMouseWheelNorth,
-  eMouseWheelSouth
+    eMouseLeft,
+    eMouseRight,
+    eMouseMiddle,
+    eMouseLeftInv,
+    eMouseMiddleInv,
+    eMouseRightInv,
+    eMouseWheelNorth,
+    eMouseWheelSouth
 };
 ```
 
@@ -404,15 +404,15 @@ enum MouseButton {
 
 ```ags
 enum eOperatingSystem {
-  eOSDOS,
-  eOSWindows,
-  eOSLinux,
-  eOSMacOS,
-  eOSAndroid,
-  eOSiOS,
-  eOSPSP,
-  eOSWeb,
-  eOSFreeBSD
+    eOSDOS,
+    eOSWindows,
+    eOSLinux,
+    eOSMacOS,
+    eOSAndroid,
+    eOSiOS,
+    eOSPSP,
+    eOSWeb,
+    eOSFreeBSD
 };
 ```
 
@@ -422,8 +422,8 @@ enum eOperatingSystem {
 
 ```ags
 enum RepeatStyle {
-  eOnce,
-  eRepeat
+    eOnce,
+    eRepeat
 };
 ```
 
@@ -435,9 +435,9 @@ enum RepeatStyle {
 
 ```ags
 enum RoundDirection {
-  eRoundDown,
-  eRoundNearest,
-  eRoundUp
+    eRoundDown,
+    eRoundNearest,
+    eRoundUp
 };
 ```
 
@@ -447,14 +447,14 @@ enum RoundDirection {
 
 ```ags
 enum SkipSpeechStyle {
-  eSkipNone         = -1,
-  eSkipKeyMouseTime = 0,
-  eSkipKeyTime      = 1,
-  eSkipTime         = 2,
-  eSkipKeyMouse     = 3,
-  eSkipMouseTime    = 4,
-  eSkipKey          = 5,
-  eSkipMouse        = 6
+    eSkipNone         = -1,
+    eSkipKeyMouseTime = 0,
+    eSkipKeyTime      = 1,
+    eSkipTime         = 2,
+    eSkipKeyMouse     = 3,
+    eSkipMouseTime    = 4,
+    eSkipKey          = 5,
+    eSkipMouse        = 6
 };
 ```
 
@@ -464,8 +464,8 @@ enum SkipSpeechStyle {
 
 ```ags
 enum SortStyle {
-  eNonSorted = 0,
-  eSorted = 1
+    eNonSorted = 0,
+    eSorted = 1
 };
 ```
 
@@ -478,10 +478,10 @@ enum SortStyle {
 
 ```ags
 enum eSpeechStyle {
-  eSpeechLucasarts,
-  eSpeechSierra,
-  eSpeechSierraWithBackground,
-  eSpeechFullScreen
+    eSpeechLucasarts,
+    eSpeechSierra,
+    eSpeechSierraWithBackground,
+    eSpeechFullScreen
 };
 ```
 
@@ -492,8 +492,8 @@ enum eSpeechStyle {
 ```ags
 enum StopMovementStyle
 {
-  eKeepMoving = 0,
-  eStopMoving = 1
+    eKeepMoving = 0,
+    eStopMoving = 1
 };
 ```
 
@@ -504,8 +504,8 @@ enum StopMovementStyle
 
 ```ags
 enum StringCompareStyle {
-  eCaseInsensitive = 0,
-  eCaseSensitive = 1
+    eCaseInsensitive = 0,
+    eCaseSensitive = 1
 };
 ```
 
@@ -522,11 +522,11 @@ enum StringCompareStyle {
 
 ```ags
 enum TransitionStyle {
-  eTransitionFade,
-  eTransitionInstant,
-  eTransitionDissolve,
-  eTransitionBoxout,
-  eTransitionCrossfade
+    eTransitionFade,
+    eTransitionInstant,
+    eTransitionDissolve,
+    eTransitionBoxout,
+    eTransitionCrossfade
 };
 ```
 
@@ -537,10 +537,10 @@ enum TransitionStyle {
 
 ```ags
 enum VideoSkipStyle {
-  eVideoSkipNotAllowed,
-  eVideoSkipEscKey,
-  eVideoSkipAnyKey,
-  eVideoSkipAnyKeyOrMouse
+    eVideoSkipNotAllowed,
+    eVideoSkipEscKey,
+    eVideoSkipAnyKey,
+    eVideoSkipAnyKeyOrMouse
 };
 ```
 
@@ -550,9 +550,9 @@ enum VideoSkipStyle {
 
 ```ags
 enum eVoiceMode {
-  eSpeechTextOnly,
-  eSpeechVoiceAndText,
-  eSpeechVoiceOnly
+    eSpeechTextOnly,
+    eSpeechVoiceAndText,
+    eSpeechVoiceOnly
 };
 ```
 
@@ -562,8 +562,8 @@ enum eVoiceMode {
 
 ```ags
 enum WalkWhere {
-  eAnywhere,
-  eWalkableAreas
+    eAnywhere,
+    eWalkableAreas
 };
 ```
 

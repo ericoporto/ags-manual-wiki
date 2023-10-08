@@ -7,9 +7,9 @@ If you enter a room the first time, you have to set up its containing doors:
 ```ags
 function room_FirstLoad()
 {
-        // Lock door on startup when entering the room
-        Doors.SetDoorState(20, 2);
-        Doors.InitObject(20, oDoor.ID);
+    // Lock door on startup when entering the room
+    Doors.SetDoorState(20, 2);
+    Doors.InitObject(20, oDoor.ID);
 }
 ```
 
@@ -19,7 +19,8 @@ Now let's take a look at your hotspot's function:
 ```ags
 function hDoor_AnyClick()
 {
-        if (Doors.AnyClick(20, oDoor.ID, 61, 104, eDir_Left, 1, 115, 135, eDir_Down)==0) Verbs.Unhandled();
+    if (Doors.AnyClick(20, oDoor.ID, 61, 104, eDir_Left, 1, 115, 135, eDir_Down) == 0)
+        Verbs.Unhandled();
 }
 ```
 
@@ -31,8 +32,8 @@ so look for a function, called VariableExtensions.
 In Verbs.VariableExtensions, look at this line:
 
 ```ags
-if (r==1 && h == 1)
-Verbs.OpenCloseExtension (20);
+if (r == 1 && h == 1)
+    Verbs.OpenCloseExtension(20);
 ```
 
 This tells the script, that Room 1 contains a hotspot with the id 1. This is connected to a door a door with the id 20.
