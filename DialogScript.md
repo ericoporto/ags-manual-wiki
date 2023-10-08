@@ -144,8 +144,8 @@ inside a script block. For example:
 ego: "Hello. How are you?"
 narrator: The man looks you in the eye.
     if (player.HasInventory(iKey)) {
-    player.Say("Actually, I'd better go.");
-    return RUN_DIALOG_STOP_DIALOG;
+        player.Say("Actually, I'd better go.");
+        return RUN_DIALOG_STOP_DIALOG;
     }
 otherman: "Here's a key for you."
 return
