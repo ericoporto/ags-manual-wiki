@@ -21,6 +21,7 @@ AGS_MAX_HOTSPOTS | The maximum hotspots per room
 AGS_MAX_REGIONS | The maximum regions per room
 MAX_LISTBOX_SAVED_GAMES | Limit of save files filled into ListBox when using [`FillSaveGameList`](ListBox#listboxfillsavegamelist)
 PALETTE_SIZE | Size of game palette, for 256-color mode
+SCR_NO_VALUE | Used as a parameter by some functions to specify "no value" or "use default value"
 
 You can check for whether a macro is defined or not by using the
 `#ifdef` and `#ifndef` keywords:
