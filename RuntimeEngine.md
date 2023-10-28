@@ -27,32 +27,32 @@ Following OPTIONS are supported when running from the command line:
 * `--fps` - display fps counter.
 * `--fullscreen` - run in fullscreen mode.
 * `--gfxdriver <name>` - use specified graphics driver:
-  * d3d9 - Direct3D9 (MS Windows only);
-  * ogl - OpenGL;
+  * d3d9 - Direct3D9 (MS Windows only)
+  * ogl - OpenGL
   * software - software renderer.
-* `--gfxfilter \<name\> [ \<game_scaling\> ]` - use specified graphics filter and scaling factor.
+* `--gfxfilter <name> [<game_scaling>]` - use specified graphics filter and scaling factor.
   * filter names:
-    * none - run in native game size;
-    * stdscale - nearest-neighbour scaling;
+    * none - run in native game size
+    * stdscale - nearest-neighbour scaling
     * linear - anti-aliased scaling; not usable with software renderer.
   * game scaling:
     * proportional, round, stretch,
     * or an explicit integer multiplier (applied only to the windowed mode).
   * Examples:
-    * `--gfxfilter stdscale 2` - applies round x2 scaling (window twice the size of the game);
-    * `--gfxfilter stdscale round` - applies max round scaling;
+    * `--gfxfilter stdscale 2` - applies round x2 scaling (window twice the size of the game)
+    * `--gfxfilter stdscale round` - applies max round scaling
     * `--gfxfilter stdscale proportional` - applies max stretch while keeping aspect ratio.
 * `--loadsavedgame <filepath>` - load savegame on startup.
 * `--localuserconf` - read and write the user config in the game's directory rather than using the standard system path. The game directory must be writable.
-* `--log-OUTPUT=GROUP[:LEVEL][,GROUP[:LEVEL]][,...]`;
-* `--log-OUTPUT=+GROUPLIST[:LEVEL]` - setup logging to the chosen OUTPUT with the given log groups and verbosity levels;
+* `--log-OUTPUT=GROUP[:LEVEL][,GROUP[:LEVEL]][,...]`
+* `--log-OUTPUT=+GROUPLIST[:LEVEL]` - setup logging to the chosen OUTPUT with the given log groups and verbosity levels
   Groups may be defined either by name or by a LIST of one-letter IDs, preceded by '+', e.g. +ABCD:LEVEL. Verbosity may be defined either by name or a numeric ID.
   * `OUTPUTs` are:
-    * `stdout`, `file`, `console` (where \"console\" is internal engine's console);
+    * `stdout`, `file`, `console` (where "console" is internal engine's console)
   * `GROUPs` are:
-    * `all`, `main` (m), `game` (g), `manobj` (o), `sdl` (l), `script` (s), `sprcache` (c);
+    * `all`, `main` (m), `game` (g), `manobj` (o), `sdl` (l), `script` (s), `sprcache` (c)
   * `LEVELs` are:
-    * `all`, `alert` (1), `fatal` (2), `error` (3), `warn` (4), `info` (5), `debug` (6);
+    * `all`, `alert` (1), `fatal` (2), `error` (3), `warn` (4), `info` (5), `debug` (6)
   * Examples:
     * `--log-file=all:warn`
     * `--log-file=main:warn,game:all`
