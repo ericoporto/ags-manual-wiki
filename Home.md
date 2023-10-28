@@ -30,6 +30,7 @@
 - [Voice speech](VoiceSpeech)
 - [Script Modules](ScriptModules)
 - [System limits](SystemLimits)
+- [Log Panel](EditorLogPanel)
 - [Plugins](Plugins)
 - [Other Features](OtherFeatures)
 

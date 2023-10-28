@@ -22,6 +22,12 @@
   usage even when it's not actively used. 
   If you are recurrently building for Android, consider turning it on to speed build times.
 
+### Debug Log
+
+- **Log Font** - Font used in the debug log panel.
+
+- **Log Font Size** - Size of the font used in the debug log panel.
+
 ### Editor Appearance
 
 - **Ask before closing multiple tabs** - Prompt dialog on closing multiple tabs.
