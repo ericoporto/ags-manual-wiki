@@ -9,6 +9,16 @@ Desktop systems, like Windows, Linux and MacOS offer a command line interface.
 
 On Android, there's a special version of the runtime called AGS Player, and it's available with AGS releases. The web version of AGS, also can be used as a runtime, but currently it offers no graphical setup options. 
 
+### How the engine finds the game data
+
+The engine will look for game data in the following order if no specific game path is specified through command line.
+
+1. Game data attached to exe.
+2. If nothing is attached to exe, then the search is made over the directory. 
+3. If there are multiple game files in the directory, usually the first in alphabetical order will get hooked up. This includes both `.ags` game files and game files attached to other exe files.
+
+This search order means, if you are shipping a game, make sure that only one game file is in the same directory as the engine.
+
 ### Command line
 
 *Note:* On Windows, you **must** use `--console-attach` when you are on the `cmd.exe` or other windows prompt and want to 
