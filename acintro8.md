@@ -97,10 +97,9 @@ new options and type them in. In the Properties Grid, change the Name from
 
 ![Our second dialog choices](images/acintro8_04.png)
 
-Now, go back to the first dialog **"dMerchant"** tab (select it in the Editor Tab bar), and let's
-have a look at the script. This is **not** the same type of script that
-we've used for our Events like picking up the key. It's a much simpler
-dialog-only scripting language.
+Now, go back to the first dialog **"dMerchant"** tab (select it in the Editor Tab bar), and let's have a look at the script.
+
+This is **not** the same type of script that we've used for our Events like picking up the key. It's a much simpler dialog-only scripting language. It's still possible to use regular AGS Script code, you just have to make sure the line starts with at least one space character.
 
 Each of the **"@"** lines is an **entry point**. These define the different
 places where your script can start. The "@S" entry point happens when
@@ -237,7 +236,7 @@ found out all the vital information. See the manual reference for more.
 
 #### Sierra-style system dialogs
 
-As mentioned earlier, there is a simple way to have Sierra-style dialogs. Iif there is only one option enabled for a topic, then the game selects
+As mentioned earlier, there is a simple way to have Sierra-style dialogs. If there is only one option enabled for a topic, then the game selects
 it automatically. You can use this to make Sierra-style conversations,
 because the options will never be shown to the player in this case.
 
