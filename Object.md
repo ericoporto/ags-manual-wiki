@@ -121,6 +121,44 @@ will display the message if there is the object oRock under the mouse cursor.
 
 ---
 
+### `Object.GetByName`
+
+```ags
+static Object* Object.GetByName(string scriptName)
+```
+
+Retrieves an object by its script name (e.g.: `"oBlueCup"`), which is a unique identifier for objects.
+Returns the pointer to the object with the specified script name, if it exists in the current room, or null otherwise.
+
+This can be useful when you can't save a pointer and an ID may not be interesting, as when saving something that references an object by scriptname in a text file or a custom property.
+
+Example:
+
+```ags
+void on_event(EventType event, int data) {
+  if(event == eEventEnterRoomBeforeFadein) {
+
+    String hauntedObjectName = player.GetTextProperty("haunted-object");
+
+    Object* hauntedObject = Object.GetByName(hauntedObjectName);
+    if (hauntedObject != null) {
+      // Do something special if the room has an object the player haunts
+      hauntedObject.Transparency = 50;
+      hauntedObject.Clickable = false;
+    }
+  }
+}
+```
+
+In this example, the player has a custom property that stores the script name of room objects it's haunted by,
+and if a room has said object, that object becomes haunted - in the example it just becomes "ghostly": non-clickable and transparent.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Object.GetAtRoomXY`](Object#objectgetatroomxy), [`Object.GetAtScreenXY`](Object#objectgetatscreenxy)
+
+---
+
 ### `Object.GetProperty`
 
 *(Formerly known as `GetObjectProperty`, which is now obsolete)*
@@ -1070,6 +1108,34 @@ Display("Object 0's name is %s.", object[0].Name);
 will retrieve and then display object 0's name.
 
 *See also:* [`Game.GetLocationName`](Game#gamegetlocationname)
+
+---
+
+### `Object.ScriptName`
+
+```ags
+readonly String Object.ScriptName;
+```
+
+Gets the script name of the object. This is useful for debugging, and for printing in the log.
+
+Additionally, if you need to store the object in some text form, so it can be retrieved later, by using `Object.GetByName()`.
+
+Example:
+
+```ags
+function Touch(this Object*)
+{
+  System.Log(eLogInfo, "You touched %s.", this.ScriptName);
+  // Do things when object is touched
+}
+```
+
+In this example all objects gain a new method `Touch`, that can be called using `oName.Touch()`, that will log the script name of the touched object.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Object.GetByName`](Object#objectgetbyname),  [`Object.Name`](Object#objectname)
 
 ---
 
