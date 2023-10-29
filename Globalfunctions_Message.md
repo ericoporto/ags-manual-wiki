@@ -77,13 +77,16 @@ will display the message at coordinates 50,50 in a box 100 pixels wide.
 ### `DisplayAtY`
 
 ```ags
-DisplayAtY (int y, string message)
+DisplayAtY (int y, string message, ...)
 ```
 
 Similar to the Display function, except that this will display the
 message box at the specified Y location on the screen. The Y defines the
 co-ordinate of the top of the message box. The horizontal positioning
 will be automatically calculated as usual.
+
+As of **AGS 3.6.1**, you can insert the value of variables into the message. 
+For more information, see the [string formatting](StringFormats) section.
 
 Example:
 

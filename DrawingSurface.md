@@ -355,7 +355,7 @@ will write some text onto the middle-left of the room background
 ```ags
 DrawingSurface.DrawStringWrapped(int x, int y, int width,
                                  FontType font, Alignment,
-                                 const string text)
+                                 const string text, ...)
 ```
 
 Draws the *text* onto the surface at (x,y), using the specified FONT.
@@ -365,6 +365,9 @@ the point that the text will wrap at. You can use the *alignment*
 parameter to determine how the text is horizontally aligned.
 
 The text will be printed using the current drawing color.
+
+As of **AGS 3.6.1**, you can insert the value of variables into the message. 
+For more information, see the [string formatting](StringFormats) section.
 
 Example:
 

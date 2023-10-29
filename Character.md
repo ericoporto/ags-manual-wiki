@@ -1276,7 +1276,7 @@ Will display a text and play voice clip named "EGO5".
 *(Formerly known as `DisplaySpeechAt`, which is now obsolete)*
 
 ```ags
-SayAt(int x, int y, int width, string message)
+SayAt(int x, int y, int width, string message, ...)
 ```
 
 Similar to [`Say`](Character#charactersay), except that the text is
@@ -1285,6 +1285,9 @@ displayed with its top left corner at (X,Y), in an area WIDTH wide.
 You can use this function to write the character's speech text anywhere
 you like, and AGS will still play the character's talking animation and
 so on if appropriate.
+
+As of **AGS 3.6.1**, you can insert the value of variables into the message. 
+For more information, see the [string formatting](StringFormats) section.
 
 **NOTE:** This function does not support Whole-Screen speech.
 
@@ -1307,7 +1310,7 @@ playing the character's talking animation.
 *(Formerly known as `DisplaySpeechBackground`, which is now obsolete)*
 
 ```ags
-Overlay* Character.SayBackground(string message)
+Overlay* Character.SayBackground(string message, ...)
 ```
 
 Similar to Say, except that this function returns immediately and the
@@ -1327,6 +1330,9 @@ removed and replaced with the new MESSAGE.
 All background speech is automatically removed when a normal Say command
 is used (unless you set the global variable
 [`game.bgspeech_stay_on_display`](Gamevariables) to 1).
+
+As of **AGS 3.6.1**, you can insert the value of variables into the message. 
+For more information, see the [string formatting](StringFormats) section.
 
 Example:
 
