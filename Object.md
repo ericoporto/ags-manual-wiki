@@ -644,6 +644,25 @@ you wouldn't need to do this.
 
 ---
 
+### `Object.AnimationVolume`
+
+```ags
+int Object.AnimationVolume
+```
+
+Gets/sets the object's animation sound volume, which is a *relative* volume (0-100) of frame-linked sounds that play during object's animations.
+
+**NOTE:** all the volume properties in Object act as relative factors: these are `AnimationVolume`, "volume" parameter of [`Animate`](Object#objectanimate) function.
+The final frame sound's volume will be equal to `sound volume * AnimationVolume % * Animate's volume param %` when `Animate` is called.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*SeeAlso:* [`Object.Animate`](Object#objectanimate),
+[`Object.SetView`](Object#objectsetview),
+[`Object.View`](Object#objectview)
+
+---
+
 ### `Object.Baseline`
 
 *(Formerly known as `GetObjectBaseline`, which is now obsolete)*<br>
