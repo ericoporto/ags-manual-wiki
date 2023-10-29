@@ -224,9 +224,15 @@ enum EventType {
     eEventGUIMouseUp,
     eEventAddInventory,
     eEventLoseInventory,
-    eEventRestoreGame
+    eEventRestoreGame,
+    eEventEnterRoomAfterFadein,
+    eEventLeaveRoomAfterFadeout,
+    eEventGameSaved
 };
 ```
+
+*Compatibility:* the `eEventEnterRoomAfterFadein` is supported by **AGS 3.6.0** and later versions.
+The `eEventLeaveRoomAfterFadeout` and `eEventGameSaved` is supported by **AGS 3.6.1** and later versions.
 
 *Passed into:* on_event
 
