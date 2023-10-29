@@ -101,6 +101,25 @@ $DATA$ tag supported by AGS 3.6.0 and later versions.
 
 ---
 
+### `File.ResolvePath`
+
+```ags
+static String File.ResolvePath(string filename)
+```
+
+Resolves the script path into the system filepath, this should be used only for diagnostic purposes.
+
+This will process all tokens and all rules described in `File.Open` and return the resulting path,
+which can be helpful when debugging or when you want to present this information somewhere to help
+debugging some problem in the game. This resolved path should not be re-used in subsequent `File.Open`
+calls.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`File.Open`](File#fileopen), [`File.Path`](File#filepath)
+
+---
+
 ### `File.Close`
 
 *(Formerly known as `FileClose`, which is now obsolete)*
@@ -619,6 +638,33 @@ there was a problem.
 
 *See also:* [`File.EOF`](File#fileeof),
 [`File.ReadStringBack`](File#filereadstringback)
+
+---
+
+### `File.Path`
+
+```ags
+readonly String File.Path
+```
+
+Gets the path to opened file.
+
+Example:
+
+```ags
+File *output = File.Open("$SAVEGAMEDIR$/custom_save.txt", eFileWrite);
+if(output) {
+  System.Log(eLogInfo, "Opened \"%s\" for writing.", output.Path);
+  output.WriteRawLine("won=false");
+  output.Close();
+}
+```
+
+Will write the full absolute path of the file in the debug log.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`File.Open`](File#fileopen), [`File.ResolvePath`](File#fileresolvepath)
 
 ---
 
