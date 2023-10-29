@@ -108,7 +108,35 @@ if (Game.DoOnceOnly("open cupboard")) {
 
 will give the player 5 points the first time this script is run.
 
-*See also:* [`GiveScore`](Globalfunctions_General#givescore)
+*See also:* [`Game.ResetDoOnceOnly`](Game#gameresetdoonceonly), [`GiveScore`](Globalfunctions_General#givescore)
+
+---
+
+### `Game.ResetDoOnceOnly`
+
+```ags
+static void Game.ResetDoOnceOnly()
+```
+
+This function resets all the token states from `Game.DoOnceOnly("example token")` calls.
+
+Example:
+
+```ags
+if (Game.DoOnceOnly("say hi once")) {
+    Display("Hi!");
+}
+Game.ResetDoOnceOnly()
+if (Game.DoOnceOnly("say hi once")) {
+    Display("Hi again!");
+}
+```
+
+will say hi twice, and also reset ALL do once only tokens.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Game.DoOnceOnly`](Game#gamedoonceonly)
 
 ---
 
