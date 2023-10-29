@@ -6,6 +6,34 @@ commands in this section allow to play them.
 
 ---
 
+### `AudioClip.GetByName`
+
+```ags
+static AudioClip* AudioClip.GetByName(string scriptName)
+```
+
+Retrieves an audio clip by its script name (e.g.: `"aExplosion"`), which is a unique identifier for audio clips.
+Returns a pointer to the audio clip with the specified script name, or null if it does not exist.
+
+This is useful for accessing audio clips based on their script names, if these are retrieved from text files, custom text properties, or from player input for some debug purpose.
+
+Example:
+
+```ags
+AudioClip* explosionClip = AudioClip.GetByName("aExplosion");
+if (explosionClip != null) {
+    explosionClip.Play();
+}
+```
+
+Retrieves the audio clip with the script name "aExplosion" and play it if it exists.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`AudioClip.ScriptName`](AudioClip#audioclipscriptname), [`AudioClip.Play`](AudioClip#audioclipplay)
+
+---
+
 ### `AudioClip.Play`
 
 *(Formerly known as `PlayAmbientSound`, which is now obsolete)*<br>
@@ -271,6 +299,36 @@ checks if the aExplosion audio clip is available, and if so plays it.
 *Compatibility:* Supported by **AGS 3.2.0** and later versions.
 
 *See also:* [`AudioClip.Play`](AudioClip#audioclipplay)
+
+---
+
+### `AudioClip.ScriptName`
+
+```ags
+readonly String AudioClip.ScriptName
+```
+
+Gets the script name of the audio clip, a unique identifier for audio clips.
+
+This can be used for debugging or referencing specific audio clips in text properties or text files.
+
+Example:
+
+```ags
+function CustomPlay(this AudioClip*)
+{
+  this.Play();
+  String clipName = this.ScriptName;
+  System.Log(eLogInfo, "Playing audio clip: %s", clipName);
+}
+```
+
+Playing a clip using the `CustomPlay()` method, like `aExampleClip.CustomPlay()`, will log it's script name for debugging purposes.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`AudioClip.GetByName`](AudioClip#audioclipgetbyname),
+[`Game.AudioClips`](Game#gameaudioclips)
 
 ---
 
