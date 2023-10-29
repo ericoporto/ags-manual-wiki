@@ -1,6 +1,6 @@
 ## Log Panel
 
-The Log Panel in AGS Editor can be useful for understanding and troubleshooting issues in your game, when the debugger alone isn’t enough. It provides a runtime log that includes warning messages and other notifications raised by the AGS engine or your own messages in your own scripts.
+The Log Panel in AGS Editor can be useful for understanding and troubleshooting issues in your game, when the debugger alone isn't enough. It provides a runtime log that includes warning messages and other notifications raised by the AGS engine or your own messages in your own scripts.
 
 The Log Panel displays messages from three Log Groups:
 
