@@ -1,5 +1,7 @@
 ## Anonymous usage information
 
+**NOTE:** this feature is temporarily disabled.
+
 AGS contains an option to send anonymous usage information to the AGS
 website. But what is it all about and why would you want to do so?
 
