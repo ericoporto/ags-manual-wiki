@@ -22,11 +22,16 @@ acceleration, but without proper palette-based effects support).
 If checked, the game will be run in windowed mode, as opposed to
 fullscreen.
 
-**Mode**
+**Fullscreen as borderless window**
 
-Lets the player choose a fullscreen display mode (otherwise shows the approximate
-size of window the game will be running in). The list of modes depends
-on the graphic card and the system's capabilities.
+If checked, fullscreen will use a borderless window, keeping the current display resolution.
+This is preferred in modern systems.
+
+**Fullscreen mode**
+
+If _Fullscreen as borderless window_ is unchecked, it will instead use exclusive fullscreen, and
+this options will let you select which resolution the display will adjust to. The list of modes
+depends on the graphic card and the system's capabilities.
 
 **Fullscreen scale**
 **Windowed scale**
@@ -34,19 +39,19 @@ on the graphic card and the system's capabilities.
 These two options determine the way the game will be scaled (when required)
 in fullscreen and windowed modes respectively:
 
-**None**. The game will be shown in its native resolution. Note that
+- **None**. (Windowed only) The game will be shown in its native resolution. Note that
 low-resolution games will be running in a tiny window on modern
 monitors, so this choice is more suitable for high-resolution games.
 
-**Max round multiplier**. The game will be scaled up using a maximal
+- **Max round multiplier**. The game will be scaled up using a maximal
 round integer (2, 3, 4, etc) multiplier with which it still fits inside
 the screen.
 
-**Stretch to fit screen**. The game will be stretched to fill the whole
+- **Fill whole screen**. The game will be stretched to fill the whole
 screen. Note that if the game's native aspect ratio is different from the
 screen's aspect ratio, the game graphics will appear deformed and indeed stretched.
 
-**Stretch to fit screen (preserve aspect ratio)**. The game will be
+- **Stretch, preserving aspect ratio**. The game will be
 stretched to screen borders while respecting the game's native aspect ratio
 (width/height proportions). This ensures that the game graphics will always
 look correct, but the option can lead to black borders at the left & right or
@@ -54,12 +59,10 @@ top & bottom sides of the screen.
 
 **Scaling method**
 
-Here the player can choose a game scaling algorithm (nearest-neighbor is
-the simplest one). Some of the methods (notably Hqx) are restricted to
-which scaling multiplier the player selected; if the multiplier is not enough to resize the
-game on its own, the nearest-neighbor method will be applied
-additionally. The list of available filters depend on graphics driver
-selection.
+Here the player can choose a game scaling algorithm, and the list of available filters depend on
+graphics driver selection. Currently OpenGL and Direct3D 9 both supports 
+Nearest Neighbour (used more often in pixelart games) and Linear interpolation (used more often with
+high resolution games).
 
 ### Gameplay settings
 
@@ -76,7 +79,7 @@ This option enables vertical synchronization mode, which reduces the
 
 **Use 85 Hz display**
 
-This option sets the monitor refresh rate to 85 Hz to run the game,
+This is a legacy option that sets the monitor refresh rate to 85 Hz to run the game,
 which eliminates flickering. However, this does not work on all monitors,
 and not at all on flat panel displays, which is why it is disabled by
 default.
@@ -98,24 +101,19 @@ choice), in which case the player will not be able to change it.
 
 ### Sound options
 
-**Digital sound**
+**Audio Driver**
 
 Here the player may choose the digital audio driver, or disable digital
 sound completely.
-
-**MIDI music**
-
-Here the player may choose the MIDI music playback method, or disable MIDI
-music completely.
-
-**Enable threaded audio**
-
-When enabled, the engine will process audio on a separate thread. This results in a much smoother playback, but may potentially break the game's synchronization with the music (if it had one).
 
 **Use voice pack if available**
 
 When checked, this option enables voice speech in game (where
 available).
+
+**Sound cache (RAM)**
+
+This is a cache for small sounds, to reduce disk access in sounds that are reused in game.
 
 ### Mouse options
 
@@ -136,7 +134,7 @@ in fullscreen mode.
 
 ### Other advanced settings
 
-**Sprite cache max size**
+**Sprite cache (RAM) max size**
 
 This option limits the maximum amount of memory that the game will use
 for its sprite cache. The sprite cache is used to keep a partition of all
@@ -145,6 +143,14 @@ between rooms and preventing slowdowns during game play. Of course,
 higher values make the game use more memory. Usually only
 high-resolution games with long animations need to have this value
 increased.
+
+**Texture cache (VRAM) max size**
+
+This option limits the maximum amount of video memory that the game will use for its texture cache.
+The texture cache is used to keep sprites that are pushed to the GPU in video memory, and reduce the
+need to convert images from the sprite cache to the video memory to present them on screen. The limits
+here may be affected by other things in the computer that are using video memory, and GPU available
+memory.
 
 **Custom game saves path**
 
