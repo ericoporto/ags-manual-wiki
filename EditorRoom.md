@@ -12,7 +12,26 @@ make up a room. This includes:
 
 **NOTE:** Currently only one room can be open for editing at a time
 
-![Editor Room](images/EditorRoom_1.png)
+![Editor Room](images/EditorRoom_1.png
+
+### Controls
+
+**Pan**
+
+If your room is large enough that scrollbars are shown and required to move around
+in the room, you can also pan by either holding spacebar and left-click dragging the room background,
+or alternatively holding your mouse middle click button.
+
+**Zoom**
+
+In the upper top of the room bar there is a zoom slider than can be used to adjust the zoom,
+but alternatively holding ctrl and using the mouse scrollwheel (or scroll gesture in some touchpads)
+will also adjust zoom.
+
+**Context Menu**
+Right clicking should bring the context menu. 
+It will usually contain the "Copy mouse coordinates to clipboard" entry, but it can contain
+additional options depending on active layer or what is right clicked - like a character or an object.
 
 ### Background
 
