@@ -146,6 +146,8 @@ increased.
 
 **Texture cache (VRAM) max size**
 
+*Available since AGS 3.6.1.*
+
 This option limits the maximum amount of video memory that the game will use for its texture cache.
 The texture cache is used to keep sprites that are pushed to the GPU in video memory, and reduce the
 need to convert images from the sprite cache to the video memory to present them on screen. The limits
