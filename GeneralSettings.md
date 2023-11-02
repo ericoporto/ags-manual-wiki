@@ -55,6 +55,9 @@ SetGameOption.
     runs in may still be larger or smaller, depending on choices player
     made in setup program, and in that case game's image will be
     stretched or shrunk accordingly.
+-   **Text format** - the format your game texts will be in. The contemporary default is "Unicode", which lets you have practically any language in the game. Another choice is "ASCII / ANSI" mode, but this is left strictly for backwards compatibility, e.g. for when upgrading old projects, and not recommended to be used in new projects at all, as that will make multi-language support in your game much more complicated.
+
+    **NOTE:** please be aware that when switching **Text format** the Editor will convert all the game files (scripts, etc) to a new text encoding and re-save them. Normally this should be safe, but probably a good idea to make a project backup before doing this.
     
 ### Information
 
