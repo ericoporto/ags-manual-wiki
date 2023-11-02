@@ -29,8 +29,9 @@ but alternatively holding ctrl and using the mouse scrollwheel (or scroll gestur
 will also adjust zoom.
 
 **Context Menu**
-Right clicking should bring the context menu. 
-It will usually contain the "Copy mouse coordinates to clipboard" entry, but it can contain
+
+Right clicking should bring the context menu. There is a special case for area editing modes (Hotspots, Walkable areas, and alike) in which right click works as a "eraser"; in these modes context menu is called by a Shift + RMB combination.
+The context menu will usually contain the "Copy mouse coordinates to clipboard" command, but it can contain
 additional options depending on active layer or what is right clicked - like a character or an object.
 
 ### Background
