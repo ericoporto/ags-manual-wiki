@@ -81,15 +81,25 @@ NOTE: Currently, alpha blended sprites cannot be antialiased, so if
 you have the Anti Alias Sprites option turned on in Setup, it will not
 be applied to alpha-blended characters.
 
+### Updating sprites
+
+When you import a sprite all the import settings are saved as sprite's properties. This includes the path to the source image file (if you imported from a file; no path is saved if you imported from a clipboard, for instance). It's strongly recommended to keep the source files along with the game, as they will let you to update your sprites easily, and also let fully restore the sprites in game (see the explanation below). Another thing that we recommend is to store the source images inside the project folder, for example, in a subfolder called "Sprites", or any other convenient name. That is because AGS can remember these paths as relative, and if you move your project elsewhere (onto another PC), or share it with your team members, these paths will be kept relative and so sprites may be still updated and restored from these files. If the image files are located outside of the project folder, then they will be remembered using absolute paths, which may become inconvenient.
+
+All the import settings (including source path!) may be edited by hand at any later time by selecting a sprite and refering to the "Properties" panel. The import settings are found in the "Import" category. Multiple sprites may be adjusted at once too, although in that case the "Properties" grid will display only those values that match in all selected sprites, and blank field for the rest.
+
+In order to update the sprite(s) open a context menu and select command "Replace sprite(s) from source". That will reload the images from the source files using latest Import settings.
+
+It is also possible to fully reimport all sprites at once using existing settings, would the sprite images be missing, or corrupted for any reason. This is done by either using "File" `->` "Restore all sprites from sources" menu command, or a "Restore all sprites from sources" command from the Sprite Manager's context menu.
+
 ### Sprite Storage
 
-AGS sprite storage can be configured through **Enable sprite storage optimization** and **Sprite file compression** in [General Settings, in Compiler category](GeneralSettings#compiler).
+In AGS project sprites are stored in two separate parts. The sprite's properties, including import settings, are saved in the project's main document (`Game.agf`), while the images themselves are saved in a file called `acsprset.spr` (also called "spritefile").
+
+Sprite storage can be configured through **Enable sprite storage optimization** and **Sprite file compression** in [General Settings, in Compiler category](GeneralSettings#compiler).
 
 - **Enable sprite storage optimization**, stores sprites in a format that requires less space.
-- **Sprite file compression**, can be configured to no compression, RLE or LZW.
+- **Sprite file compression**, can be set to no compression, RLE or LZW.
 
-When a sprite is imported, it gets and index number which can be used to refer to it through your game. This information, along with import settings for each sprite, are saved in your AGS game project. It will additionally, incrementally as you import sprites, add the file to your project sprite file, named `acsprset.spr`. You can at any time in your project switch your sprite file compression and storage settings and AGS will update it accordingly, so don't worry if you just realize you need compression at a later time in your project.
+All of these options *do not* affect how sprites look in game, and may be changed or reverted anytime, so don't worry if you realized that you need sprite compression at a later time.
 
-### Project without a Sprite File
-
-It's recommended that all the graphic files you are importing in your project are placed in a directory inside of your AGS Game Project. By maintaining all files there, if you wish to not backup your `acsprset.spr` file, you can recreate it at any time by using the **File** `->` **Restore all sprites from sources** menu. 
+If you have all the source files for your sprites available along with your project, then it is possible to fully recreate `acsprset.spr` as described in a section above ("File" `->` "Restore all sprites from sources" menu command). This also means that you might exclude `acsprset.spr` file when copying or moving your project elsewhere, like sharing with your team, or putting the project under source control. Remember: this is a good option only if you have sources available. Sprites imported from a clipboard do not have file source and cannot be restored like that.
