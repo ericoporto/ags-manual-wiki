@@ -103,6 +103,7 @@ Locations of two latter files differ between running platforms:
     - `clear_cache_on_room_change = [0; 1]` - whether to clear sprite cache on every room change.
     - `load_latest_save = [0; 1]` - whether to load latest save on game launch.
     - `show_fps = [0; 1]` - whether to display fps counter on screen.
+    - `titletext = [string]` - the title of the winsetup window.
 - **\[log\]** - log options, allow to setup logging to the chosen OUTPUT with given log groups and verbosity levels.
     - `[outputname] = GROUP[:LEVEL][,GROUP[:LEVEL]][,...]`;
     - `[outputname] = +GROUPLIST[:LEVEL]`;
