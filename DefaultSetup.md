@@ -1,13 +1,12 @@
 ## Default Setup
 
-The Default setup pane lets you create the default runtime configuration
-for your game. Since AGS 3.3.5 you cannot directly do that using game's
-setup utility (winsetup.exe) anymore, because it modifies config file in
-the user's personal documents folder instead of game folder. For that
-reason you should be doing it from this Editor's page now.
+The Default Setup pane lets you create the default runtime configuration for your game. This configuration is saved as "acsetup.cfg" into the Compiled folder.
 
-Most of the options here correspond to the ones you may find in the
-setup utility. For their meaning please refer to [related topic](Setup).
+Since *AGS 3.6.0* the config file in the Compiled folder is created by merging "Default Setup" properties with an optional "acsetup.cfg" file found in the game project's folder, if one is present. This is done to allow game developers provide their own custom settings. In such case the custom file also overrides any options matching ones in Default Setup pane.
+
+For information on possible "acsetup.cfg" contents please refer to the [related topic](EngineConfigFile).
+
+**NOTE:** please be aware that the default game's config cannot be modified using game's [setup utility](Setup) (aka "winsetup.exe"), because that program modifies config file in the user's personal documents folder instead. The setup utility may be useful to quickly test various options, but config file for your game's distribution will be created from "Default Setup" pane anyway.
 
 Additionally, following settings are available:
 
