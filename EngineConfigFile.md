@@ -28,6 +28,16 @@ Locations of two latter files differ between running platforms:
         * `Software` - software renderer.
     - `software_driver = [string]` - *optional* id of the SDL2 driver to use for the final output in software mode, leave empty for default. IDs are provided by SDL2, not all of these will work on any system:
         * `direct3d`, `opengl`, `opengles`, `opengles2`, `metal`, `software`.
+    - `fullscreen = [string]` - a fullscreen mode definition, which may be one of the following:
+      - `WxH` - explicit window size (e.g. `1280x720`);
+      - `xS` - integer game scaling factor (e.g. `x4`);
+      - `desktop` - use current system's desktop resolution;
+      - `native` - use game's native resolution;
+      - `full_window` - a borderless window covering whole desktop, as opposed to the exclusive fullscreen mode;
+      - `default` - use engine defaults, which is `full_window`.
+    - `window = [string]` - a windowed mode definition; the options are same as for the `fullscreen`, except for `full_window`, and following differences:
+      - `desktop` - will try to create largest possible resizing window, while keeping game scaling style (see `game_scale_win`);
+      - `default` - use engine defaults, which is `desktop`.
     - `windowed = [0; 1]` - when enabled, runs game in windowed mode.
     - `screen_def = [string]` - determines how display mode is deduced:
         * `explicit` - use screen_width and screen_height parameters;
