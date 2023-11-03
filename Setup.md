@@ -33,8 +33,7 @@ If _Fullscreen as borderless window_ is unchecked, it will instead use exclusive
 this options will let you select which resolution the display will adjust to. The list of modes
 depends on the graphic card and the system's capabilities.
 
-**Fullscreen scale**
-**Windowed scale**
+**Fullscreen scale** and **Windowed scale**
 
 These two options determine the way the game will be scaled (when required)
 in fullscreen and windowed modes respectively:
@@ -86,9 +85,8 @@ default.
 
 **Smooth scaled sprites**
 
-This option will apply anti-aliasing to scaled characters, in order to
-give them a smoother look after the resizing. This can slow down the game
-though, so it is off by default.
+This option will apply anti-aliasing to scaled game objects, such as , in order to
+give them a smoother look after the resizing. This may affect game aesthetics, and also can slow the game down when using "Software" graphics driver, so it is off by default.
 
 **Render sprites at screen resolution**
 
