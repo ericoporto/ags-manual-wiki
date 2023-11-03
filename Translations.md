@@ -16,7 +16,7 @@ A new file will be created in the game folder, called NAME.TRS, where NAME is th
 
 You can now work on translating these texts yourself or give this file to your translators. The idea is to fill in each blank line with the corresponding translation of the original line above it. If this empty line is left blank, it will simply not be translated and display the original line in the game.
 
-**IMPORTANT:** make sure that the TRS file is saved in a correct encoding. If you want to have Unicode texts in your game then save it as UTF-8 (specifically: UTF-8 without BOM). Otherwise save it as ASCII. You would also have to add a Encoding hint to the translation options, see the ["Additional options"](#additional-options) section about this.
+**IMPORTANT:** make sure that the TRS file is saved in a correct encoding. If you want to have Unicode texts in your game then save it as UTF-8 (specifically: UTF-8 without BOM). Otherwise save it as ASCII. You would also have to add a Encoding hint to the translation options, see the ["Additional options"](Translations#additional-options) section about this.
 
 **IMPORTANT:** there are few ways to break your translation file and make it unusable for AGS. The following points are essential to keep in mind:
 - DO NOT remove or replace original text lines, they are necessary to find matches.

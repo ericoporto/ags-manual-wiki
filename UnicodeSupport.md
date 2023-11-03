@@ -2,7 +2,7 @@
 
 Starting with v3.6.0 AGS has a full Unicode support, which means that it may have texts virtually in any language in the game, and even texts in multiple languages displayed simultaneously, so long as you provide appropriate fonts.
 
-**NOTE:** AGS still has a ASCII mode for backwards compatibility, but it's recommended to not use it without a very good reason. See a [corresponding section](#using-ascii-mode) below for details.
+**NOTE:** AGS still has a ASCII mode for backwards compatibility, but it's recommended to not use it without a very good reason. See a [corresponding section](UnicodeSupport#using-ascii-mode) below for details.
 
 When in Unicode mode, all game texts and text files, such as scripts, are saved in UTF-8 format (to be technically precise: it's UTF-8 without BOM).
 
