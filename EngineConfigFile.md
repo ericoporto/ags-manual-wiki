@@ -39,20 +39,12 @@ Locations of two latter files differ between running platforms:
       - `desktop` - will try to create largest possible resizing window, while keeping game scaling style (see `game_scale_win`);
       - `default` - use engine defaults, which is `desktop`.
     - `windowed = [0; 1]` - when enabled, runs game in windowed mode.
-    - `screen_def = [string]` - determines how display mode is deduced:
-        * `explicit` - use screen_width and screen_height parameters;
-        * `scaling` - sets display mode equal to scaled game size;
-        * `max` - sets display mode equal to device/desktop size.
-    - `screen_width = [integer]` - if screen_def is 'explicit', defines display mode width; otherwise ignored.
-    - `screen_height = [integer]` - if screen_def is 'explicit', defines display mode height; otherwise ignored.
-    - `match_device_ratio = [0; 1]` - when looking for appropriate fullscreen mode, prioritize ones which have the same aspect ratio as the current device/desktop mode.
     - `game_scale_fs = [string]` - game scaling rule for fullscreen mode, and...
     - `game_scale_win = [string]` - game scaling rule for windowed mode, where
         * `round` - deduce the maximal integer multiplier that fits into the current desktop/device size;
         * `stretch` - stretch to current desktop/device size;
         * `proportional` - similar to stretch, but keep the game's aspect ratio.
     - `filter = [string]` - id of the scaling filter to use. Supported filter names are:
-        * `none` - run in native game size;
         * `stdscale` - nearest-neighbour scaling;
         * `linear` - anti-aliased scaling; not usable with software renderer.
     - `refresh = [integer]` - refresh rate for the display mode.
@@ -85,11 +77,11 @@ Locations of two latter files differ between running platforms:
         * `current_display` - keep cursor's speed by screen size relation by increasing actual cursor speed when running game in low resolution and decreasing when running in higher than the current user's dekstop resolution (this is default).
     - `speed = [real]` - mouse cursor speed (default is 1.0).
 - **\[touch\]** - touch input options
-  - emul_mouse_mode = \[string | integer\] - touch-to-mouse emulation (whether touch input should emulate the mouse input and how):
-    * off (0) - disabled;
-    * one_finger (1) - one finger maps directly to left click;
-    * two_fingers (2) - tap 1 finger for left click, hold 1st finger and tap 2nd for right click, double tap 1 finger for drag mode.
-  - emul_mouse_relative = \[0; 1\] - enable or disable relative emulated mouse movement.
+  - `emul_mouse_mode = [string | integer]` - touch-to-mouse emulation (whether touch input should emulate the mouse input and how):
+    * `off` (0) - disabled;
+    * `one_finger` (1) - one finger maps directly to left click;
+    * `two_fingers` (2) - tap 1 finger for left click, hold 1st finger and tap 2nd for right click, double tap 1 finger for drag mode.
+  - `emul_mouse_relative = [0; 1]` - enable or disable relative emulated mouse movement.
 - **\[language\]** - language options
     - `translation = [string]` - name of the translation to use. A \<name\>.tra file should be present in the game directory.
 - **\[misc\]** - various options
@@ -102,6 +94,7 @@ Locations of two latter files differ between running platforms:
     - `cachemax = [integer]` - size of the engine's sprite cache, in kilobytes. Default is 131072 (128 MB).
     - `clear_cache_on_room_change = [0; 1]` - whether to clear sprite cache on every room change.
     - `load_latest_save = [0; 1]` - whether to load latest save on game launch.
+    - `background = [0; 1]` - whether the game should continue to run in background, when the window does not have an input focus (does not work in exclusive fullscreen mode).
     - `show_fps = [0; 1]` - whether to display fps counter on screen.
     - `titletext = [string]` - the title of the winsetup window.
 - **\[log\]** - log options, allow to setup logging to the chosen OUTPUT with given log groups and verbosity levels.
@@ -135,10 +128,10 @@ Locations of two latter files differ between running platforms:
     - `upscale = [0; 1]` - run game in the "upscale mode". The earlier versions of AGS provided support for "upscaling" low-res games to hi-res. The script API has means for detecting if the game is running upscaled, and game developer could use this opportunity to setup game accordingly (e.g. assign hi-res fonts, etc). This options works **only** for games created before AGS 3.1.0 with low-res native resolution, such as 320x200 or 320x240, and it may somewhat improve
       game looks.
 - **\[disabled\]** - special instructions for the setup program hinting to disable particular options or lock some in the certain state. Ignored by the engine.
+    - `filters = [0; 1]` - tells to lock "Graphics filter" selection in a default state;
+    - `<filter id>` - tells to remove particular graphics filter from the selection list;
     - `antialias = [0; 1]` - tells to lock "Smooth scaled sprites" in a default state;
     - `render_at_screenres = [0; 1]` - tells to lock "Render sprites in screen resolution" in a default state;
     - `speechvox = [0; 1]` - tells to lock "Use digital speech pack" in a default state;
-    - `filters = [0; 1]` - tells to lock "Graphics filter" selection in a default state;
-    - `<filter id>` - tells to remove particular graphics filter from the selection list;
     - `translation = [0; 1]` - tells to lock "Game language" in a default state;
  
