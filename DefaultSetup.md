@@ -2,7 +2,7 @@
 
 The Default Setup pane lets you create the default runtime configuration for your game. This configuration is saved as "acsetup.cfg" into the Compiled folder.
 
-Since *AGS 3.6.0* the config file in the Compiled folder is created by merging "Default Setup" properties with an optional "acsetup.cfg" file found in the game project's folder, if one is present. This is done to allow game developers provide their own custom settings. In such case the custom file also overrides any options matching ones in Default Setup pane.
+Since *AGS 3.6.0* the config file in the Compiled folder is created by merging "Default Setup" properties with an optional "acsetup.cfg" file found in the game project's folder, if one is present. This is done to allow game developers provide their own custom settings. In such case the values from "Default Setup" have higher priority, but it does not delete other, custom settings.
 
 For information on possible "acsetup.cfg" contents please refer to the [related topic](EngineConfigFile).
 
