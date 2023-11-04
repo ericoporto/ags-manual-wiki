@@ -58,7 +58,6 @@ rebuild your game one more time to apply them.
 -   **Anti-alias scaled sprites** - this option will apply anti-aliasing to scaled game objects, such as Characters, Room Objects and Overlays, in order to give them a smoother look after the resizing. This is *NOT* applied to DynamicSprite's operations though.
 -   **Fullscreen as borderless window** - if enabled, then in fullscreen mode the game will create a borderless window covering whole desktop, instead of changing display resolution. This is preferred on modern systems.
 -   **Fullscreen scaling style** - this option determines the way the game will be scaled when in fullscreen mode. Available options are:
-
     - **Max round multiplier**. The game will be scaled up using a maximal round integer (2, 3, 4, etc) multiplier with which it still fits inside
 the window.
     - **Fill whole screen**. The game will be stretched to fill the whole window. Note that if the game's native aspect ratio is different from the
@@ -68,7 +67,6 @@ screen's aspect ratio, the game graphics will appear deformed and indeed stretch
 top & bottom sides of the screen.
 
 -   **Graphics driver** - lets choose a graphics driver. Currently supported are:
-
     - **Software**. The classic and slower option, but the only driver that fully supports 8-bit games with palette effects.
     - **Direct3D 9**.
     - **OpenGL**.
@@ -78,7 +76,6 @@ top & bottom sides of the screen.
     **NOTE:** this option may be locked to a certain state in [General Settings](GeneralSettings), in which the game config won't affect it.
 
 -   **Rotation mode** - instruct the mobile device which rotation mode to use when running your game. Available choices are:
-
     - **Unlocked**. Will depend on physical device's orientation.
     - **Portrait**. Always run in the "portrait" mode.
     - **Landscape**. Always run in the "landscape" mode.
@@ -87,7 +84,6 @@ top & bottom sides of the screen.
 -   **Start in windowed mode** - when enabled starts the game in windowed mode, as opposed to fullscreen.
 -   **Vertical sync** - enables or disables vertical sync.
 -   **Windowed scaling style** - this option determines the way the game will be scaled when in windowed mode. Available options are matching those of "Fullscreen scaling style", and there's one extra one:
-
     - **Custom round multiplier** - lets you input an explicit game scaling multiplier.
 
 ### Misc
@@ -101,7 +97,6 @@ top & bottom sides of the screen.
 ### Touch
 
 -   **Touch to Mouse Emulation** - defines the touch control scheme for devices with touch screen. Available options are:
-
     - **Off**. Completely disabled.
     - **One finger**. In this mode only one finger is detected at once, and touch directly corresponds to holding LMB down.
     - **Two fingers**. In this mode up to 2 fingers are detected. One finger tap is treated as LMB click; one finger held and second finger tap is treated as RMB click. Dragging a finger is treated as mouse move without pressing any buttons. Double tap + drag simulates moving mouse with LMB held down.
