@@ -120,10 +120,14 @@ occurs every time the player enters the room, AFTER the screen has
 faded-in. Suitable for displaying text descriptions and so on, that you
 want the player to see.
 
-Player leaves room
+Player leaves room (before fade out)
 
 occurs when the player leaves the screen, just before the screen fades
 out.
+
+Player leaves room (after fade out)
+
+occurs when the player leaves the screen, AFTER the screen has faded-out.
 
 ---
 
