@@ -41,6 +41,36 @@ will display the number of the inv item that the mouse is over
 
 ---
 
+### `InventoryItem.GetByName`
+
+```ags
+static InventoryItem* InventoryItem.GetByName(string scriptName)
+```
+
+Retrieves a pointer to an inventory item that has a matching script name, or null if it does not exist. The script name is a unique identifier for the inventory item.
+
+This is useful if the inventory item has to be retrieved from text files, custom text properties, or from player input for some debug purpose.
+
+Example:
+
+```ags
+String invItemName = Game.InputBox("Script Name of the item");
+InventoryItem* item = InventoryItem.GetByName(invItemName);
+if (item != null) {
+    // If invItemName is an item that exists like "iKey"
+    player.AddInventory(item);
+}
+```
+
+In the example, we have some elements that can be used to build a debug functionality, so the player gets the wanted item by it's script name.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`InventoryItem.ScriptName`](InventoryItem#inventoryitemscriptname),
+[`InventoryItem.GetAtScreenXY`](InventoryItem#inventoryitemgetatscreenxy)
+
+---
+
 ### `InventoryItem.GetProperty`
 
 *(Formerly known as `GetInvProperty`, which is now obsolete)*
@@ -345,3 +375,30 @@ will display the name of the player's current inventory item.
 [`InventoryItem.Graphic`](InventoryItem#inventoryitemgraphic),
 [`Game.GetLocationName`](Game#gamegetlocationname)
 
+---
+
+### `InventoryItem.ScriptName`
+
+```ags
+readonly String InventoryItem.ScriptName;
+```
+
+Gets the script name of the inventory item.
+
+This is a unique identifier for inventory items and can be used for debugging or referencing specific inventory items in text properties or text files.
+
+Example:
+
+```ags
+InventoryItem* activeItem = player.ActiveInventory;
+if(activeItem != null) {
+  Display("Active inventory item's script name: %s", activeItem.ScriptName);
+}
+```
+
+Displays the script name of the player's current inventory item.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:*
+[`InventoryItem.GetByName`](InventoryItem#inventoryitemgetbyname)
