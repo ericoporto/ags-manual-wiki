@@ -60,6 +60,33 @@ will display a message depending on what the mouse is on.
 
 ---
 
+### `Hotspot.GetByName`
+
+```ags
+static Hotspot* Hotspot.GetByName(string scriptName)
+```
+
+Returns a pointer to the hotspot with the specified script name, or null if it does not exist.
+
+This function is useful for accessing hotspots based on their script names, which can be useful for dynamically referencing hotspots in your game.
+
+Example:
+
+```ags
+Hotspot* pressurePlateHotspot = Hotspot.GetByName("hPressurePlate");
+if (pressurePlateHotspot != null) {
+    // Do something with the pressure plate hotspot
+}
+```
+
+Retrieves the hotspot with the script name "hPressurePlate" and performs an action with it if it exists.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Hotspot.ScriptName`](Hotspot#hotspotscriptname)
+
+---
+
 ### `Hotspot.GetDrawingSurface`
 
 ```ags
@@ -340,6 +367,33 @@ Display("Hotspot 3's name is %s.", hotspot[3].Name);
 will retrieve and then display hotspot 3's name.
 
 *See also:* [`Game.GetLocationName`](Game#gamegetlocationname)
+
+---
+
+### `Hotspot.ScriptName`
+
+```ags
+readonly String Hotspot.ScriptName
+```
+
+Gets the script name of the hotspot, which serves as a unique identifier for hotspots.
+
+This can be useful for debugging or referencing specific hotspots in text properties or text files.
+
+Example:
+
+```ags
+Hotspot* hspot = Hotspot.GetAtScreenXY(mouse.x, mouse.y);
+if (hspot != null && hspot.ScriptName == "hOcean") {
+    Display("I can't swim, better stay away from the ocean");
+}
+```
+
+Here, we do a check that can be performed in a global script instead, so any room with an `hOcean` gets the same response.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Hotspot.GetByName`](Hotspot#hotspotgetbyname)
 
 ---
 
