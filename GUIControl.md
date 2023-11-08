@@ -41,6 +41,49 @@ will display what control the mouse is over.
 
 ---
 
+### `GUIControl.GetByName`
+
+```ags
+static GUIControl* GUIControl.GetByName(string scriptName)
+```
+
+Returns a pointer to the GUI control with the specified script name, or null if it does not exist.
+
+Example:
+
+```ags
+function ReadAndUpdateGUIControl() {
+    File *input = File.Open("$SAVEGAMEDIR$/guicontrol_info.txt", eFileRead);
+    if (input == null) {
+        Display("Error opening file.");
+        return;
+    }
+
+    String controlName = input.ReadStringBack();
+    int controlX = input.ReadInt();
+    int controlY = input.ReadInt();
+
+    input.Close();
+
+    GUIControl *controlToUpdate = GUIControl.GetByName(controlName);
+    if (controlToUpdate != null) {
+        controlToUpdate.SetPosition(controlX, controlY);
+        Display("GUI control '%s' updated.", controlName);
+    } else {
+        Display("GUI control '%s' not found.", controlName);
+    }
+}
+```
+
+This is an example of a function to read the control information from a file previously created by AGS.
+The file contains the name of a control and it's position, the function reads it and updates the control.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`GUIControl.ScriptName`](GUIControl#guicontrolscriptname), [`GUIControl.SetPosition`](GUIControl#guicontrolsetposition)
+
+---
+
 ### `GUIControl.AsType`
 
 ```ags
@@ -509,6 +552,35 @@ top of its GUI.
 
 *See also:* [`GUIControl.SetPosition`](GUIControl#guicontrolsetposition),
 [`GUIControl.X`](GUIControl#guicontrolx)
+
+---
+
+### `GUIControl.ScriptName`
+
+```ags
+readonly String GUIControl.ScriptName
+```
+
+Gets the script name of the GUI control, a unique identifier for GUI controls.
+
+Example:
+
+```ags
+function ActivateControl(const string controlName)
+{
+    GUIControl* control = GUIControl.GetByName(controlName);
+    if (control != null) {
+        control.Visible = true;
+        System.Log(eLogInfo, "Activated control: %s", control.ScriptName);
+    }
+}
+```
+
+Activating a control by calling `ActivateControl("btnOptions")` will log its script name for debugging purposes and make it visible if it exists.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`GUIControl.GetByName`](GUIControl#guicontrolgetbyname), [`GUIControl.Visible`](GUIControl#guicontrolvisible)
 
 ---
 
