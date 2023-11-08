@@ -21,15 +21,8 @@ SetGameOption.
     [Palette functions](Globalfunctions_Palette)
 -   **Developer name** - this will add the provided string to the game's
     executable properties.
--   **Enable letterbox mode** - only available if your game's resolution
-    is 320x200 or 640x400. If you enable it, your game will run as
-    320x240 and 640x480 game correspondingly, while keeping room
-    viewport size at 320x200 or 640x400, and adding black horizontal
-    borders above and below. Today this is rather a compatibility option
-    for importing old projects, because AGS does not have proper support
-    for custom viewport size.
 -   **Game file name** - your game's executable and/or data filename. 
-    This string will be used when creating game package files on disk.
+    This name will be used when creating game package files on disk.
 -   **Game name** - your game's title. This string will be displayed at
     the window title, and also added to the game's
     executable properties.
@@ -121,6 +114,12 @@ accessible in future versions.
     or as 5 - (4 - 3), thus giving different results. You should always
     use parenthesis to clarify expressions like this, so that the
     operator precedence doesn't affect the result.
+-   **Old-style letterbox mode** - only available if your game's resolution
+    is 320x200 or 640x400. If you enable it, your game will run as
+    320x240 and 640x480 game correspondingly, while keeping room
+    viewport size at 320x200 or 640x400, and adding black horizontal
+    borders above and below. Today this is strictly a compatibility option
+    for importing old projects, because since v3.5.0 AGS supports custom room viewports in script.
 -   **Script API version** - defines the topmost level of built-in
     script content that you want to enable for your project. It is
     suggested to leave this at the "Highest" value, unless you are
@@ -210,8 +209,11 @@ accessible in future versions.
 -   **Split resource files into X MB-sized chunks** - see
     [here](DistGame#splitting-resource-files) for information. 
 -   **Sprite file compression** - when enabled the sprites will be
-    compressed to reduce game size, at expense of performance. The performance
-    impact in desktop platforms is usually negligible.
+    compressed to reduce game size. In theory this may affect runtime performance (sprite loading times), but the actual effect depends on multiple factors including specifics of the system the game is running on, so not easy to predict. On desktop platforms the difference in speed is usually negligible. AGS provides few compression types, and the best choice may depend on the sort of sprites you are using in your game on average.
+
+    - **None** - no compression will be used. This setting is not recommended for the game release.
+    - **RLE** - this compression type is best suited for low-resolution and low-detailed graphics with limited number of colors.
+    - **LZW** - this compression type is better suited for high-resolution and highly detailed graphics.
 
 ### Dialog
 
@@ -267,6 +269,7 @@ accessible in future versions.
     **IMPORTANT**: this setting currently does not work with the "Say" checkbox in the dialog options list. The workaround is to duplicate option's text as a first cue in the dialog script.
 -   **Dialog bullet point image** - defines the number of sprite to use
     as a bullet image before each dialog option.
+-   **Game-wide speech animation delay** - defines a game-wide speech animation delay to use instead of individual character settings. This setting is only available if **"Use game-wide speech animation delay"** is enabled.
 -   **Gap between dialog options** - defines the gap between the options
     displayed to the player in a conversation. Normally this is 0, which
     means the options are right below each other. Changing it to 1 or 2
@@ -329,6 +332,9 @@ accessible in future versions.
     automatically add a marker to inventory item cursors to help the
     player see where the active hotspot is on the cursor. May either
     draw simple crosshair using told colors, or use specified sprite.
+-   **Inventory item cursor hotspot marker crosshair color** - the primary color of the item cursor hotspot marker.
+-   **Inventory item cursor hotspot marker dot color** - the secondary color of the item cursor hotspot marker.
+-   **Inventory item cursor hotspot marker sprite** - the sprite number to use for the item cursor hotspot marker.
 -   **Override built-in inventory window click handling** - AGS has some
     built-in processing of Inventory Window GUI controls, whereby a
     right-click will Look at the item, and a left click will select it
@@ -364,15 +370,14 @@ accessible in future versions.
     more professional.
     
 There used to be an option for Save Game integration with Windows Vista, it
-was called **Enhanced save games**. Since this was removed in later versions of
-Windows, this option has been removed in AGS 3.6.0.
+was called **Enhanced save games**. Since this feature support was removed in modern versions of
+Windows, this option has been removed since AGS 3.6.0 as well.
 
 ### Sound
 
 -   **Play sound when the player gets points** - controls whether a
     sound effect is played when the player scores points. If so, you can
-    set the sound number, which will play SOUNDx.WAV (or SOUNDx.MP3),
-    where X is the number you set.
+    select an audio clip here (but you have to have some imported in your game before doing this).
 
 ### Text output
 
