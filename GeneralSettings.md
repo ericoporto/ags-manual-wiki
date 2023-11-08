@@ -418,6 +418,12 @@ Windows, this option has been removed in AGS 3.6.0.
     "Proper alpha blending" choice is meant for full alpha blending
     support, other options exist for compatibility with older versions
     of AGS only.
+-   **GUI controls clip their contents** - determines whether the GUI controls will clip their graphical content, such as text, preventing it from being drawn outside of their rectangle. This setting has few exceptions, please see notes below.
+
+    **NOTE**:
+    - Button images are clipped using individual button's property called "ClipImage".
+    - Label with a wrapped text will only ever display next line if there's at least 1 extra pixel of height available past the line spacing.
+    - Sliders DO NOT clip as of AGS 3.6.0. This is left so for the time being, because the positions of their elements historically is calculated to be outside of their bounds.
 -   **Pixel-perfect click detection** - normally, when the player clicks
     the mouse, AGS just checks to see if the cursor is within the
     rectangular area of each character and object on the screen.
