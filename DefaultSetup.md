@@ -92,7 +92,9 @@ top & bottom sides of the screen.
 
 ### Performance
 
--   **Sprite cache size (in megabytes)** - this option limits the maximum amount of memory that the game will use for its sprite cache. The sprite cache is used to keep a partition of all the game sprites loaded to the memory, thus reducing loading times between rooms and preventing slowdowns during game play. Of course, higher values make the game use more memory. Usually only high-resolution games with long animations need to have this value increased.
+-   **Sound cache size (in megabytes)** - this option defines the maximum amount of memory that the game will use for caching sounds. Engine has a rule to cache only "small" sound files, typically ones below 1 MB in size, so this cache is mostly meant for small frequent sound effects, such as footsteps and similar.
+-   **Sprite cache size (in megabytes)** - this option defines the maximum amount of memory that the game will use for its sprite cache. The sprite cache is used to keep a partition of all the game sprites loaded to the memory, thus reducing loading times between rooms and preventing slowdowns during game play. Of course, higher values make the game use more memory. Usually only high-resolution games with long animations need to have this value increased.
+-   **Texture cache size (in megabytes)** - this option defines the maximum amount of **video memory** (of the player's graphics card) that will be used by the texture cache. The texture cache keeps frequently used textures created from sprites by non-Software graphics drivers (Direct3D, OpenGL), and may significantly improve performance in high-resolution games.
 
 ### Touch
 
