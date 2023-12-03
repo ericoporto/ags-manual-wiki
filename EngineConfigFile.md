@@ -93,7 +93,7 @@ Locations of two latter files differ between running platforms:
     - `user_data_dir = [string]` - custom path to savedgames location.
     - `shared_data_dir = [string]` - custom path to shared appdata location.
     - `antialias = [0; 1]` - anti-alias scaled sprites.
-    - `clear_cache_on_room_change = [0; 1]` - whether to clear sprite cache on every room change.
+    - `clear_cache_on_room_change = [0; 1]` - whether to clear all resource caches (sprite, texture, sound) on every room change.
     - `load_latest_save = [0; 1]` - whether to load latest save on game launch.
     - `background = [0; 1]` - whether the game should continue to run in background, when the window does not have an input focus (does not work in exclusive fullscreen mode).
     - `show_fps = [0; 1]` - whether to display fps counter on screen.
