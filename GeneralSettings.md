@@ -215,6 +215,7 @@ accessible in future versions.
     - **None** - no compression will be used. This setting is not recommended for the game release.
     - **RLE** - this compression type is best suited for low-resolution and low-detailed graphics with limited number of colors.
     - **LZW** - this compression type is better suited for high-resolution and highly detailed graphics.
+    - **Deflate** - high level compression, also used in PNG and ZIP formats.
 
 ### Dialog
 
