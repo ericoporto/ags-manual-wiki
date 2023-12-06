@@ -211,11 +211,14 @@ obsolete)*
 static String Game.GetLocationName(int x, int y)
 ```
 
-Returns the name of whatever is seen in the room under the given screen coordinates (x, y).
+Returns the name of whatever is seen in the room under the given screen coordinates (x, y). This includes following:
+- Characters,
+- Hotspots,
+- Room Objects,
+- Inventory Items.
 
-It's important to know that this will work only if there's a room viewport found on screen at that point, otherwise this function will fail and return a blank string.
-
-Also, this function is "blocked" by any interactable non-room object, such as GUI, and will return blank string if one is found under these screen coordinates.
+If there are multiple suitable objects under these coordinates, this function will select the one that is drawn topmost.
+If there is no suitable object, then function will return a blank string.
 
 **NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM co-ordinates. This means that this function is suitable
 for use with the mouse cursor position variables.
