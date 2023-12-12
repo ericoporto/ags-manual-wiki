@@ -19,11 +19,11 @@ it using the "Walkable Areas" mode to anywhere from `10%` (one-tenth
 size) to `200%` (double size).
 
 The scaling settings can affect all characters and objects in the game.
-For characters, it is on by default but you can disable the scaling for
+For characters, it is on by default, but you can disable the scaling for
 an individual character by setting the "UseRoomAreaScaling" option in
 that character's properties.
 
-For objects, it is off by default but you can make a specific object
+For objects, it is off by default, but you can make a specific object
 obey scaling levels by setting its "UseRoomAreaScaling" option.
 
 If you set the "UseContinuousScaling" option, then rather than just
@@ -113,7 +113,7 @@ The default is 5, which cycles background every 5 frames.
 palette (unless you select "Share palette with main background" before
 importing). This means that when the current frame switches in-game, the
 palette will get reset - therefore you can't use special palette effects
-such as CyclePalette or SetPalRGB on screens with animating backgrounds.)
+such as CyclePalette or SetPalRGB on screens with animating backgrounds.
 
 ---
 
@@ -122,7 +122,7 @@ such as CyclePalette or SetPalRGB on screens with animating backgrounds.)
 You can control the brightness of your characters, courtesy of the
 "LightLevel" setting for room Regions.
 
-By default this is `100%`, but you can change it from `0% to 200%`. This
+By default, this is `100%`, but you can change it from `0% to 200%`. This
 number is the light level in the current walkable area. Smaller numbers
 are darker, so that `0%` is pitch black and `200%` is very bright.
 

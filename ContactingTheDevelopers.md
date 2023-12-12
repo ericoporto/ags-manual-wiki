@@ -17,7 +17,7 @@ work, please check the following:
     new feature has been added then it will be described there, if it
     has not yet been added to this manual.
 -   That you are using the most recent version of AGS. Use the "Check
-    For Updates" option on the Help menu to make sure you're up to date.
+    For Updates" option on the Help menu to make sure you're up-to-date.
 -   If you are receiving an error message, please write down the EXACT
     message and any other information which you think is appropriate.
     PLEASE WRITE THE EXACT ERROR MESSAGE TEXT, don't just say "I get a
@@ -25,7 +25,7 @@ work, please check the following:
 -   If you are getting lock-ups or techno-garbage printouts, please try
     to give a situation which causes the problem. For instance, if you
     notice that it only happens on certain screens, or only if there is
-    an object, etc then please state that - it makes replying a lot
+    an object, etc. then please state that - it makes replying a lot
     easier and faster.
 
 Whatever the problem, if you can't solve it then post to the Technical
@@ -38,7 +38,7 @@ question will then be searchable so that people in future can find out
 the answer without having to ask again!
 
 *NOTE:* If you want to provide your game as an attachment to demonstrate
-a problem you are having, PLEASE COMPRESS IT using WinZip, PKZIP, etc
+a problem you are having, PLEASE COMPRESS IT using WinZip, PKZIP, etc.
 and send it as a zip file.
 
 **REMEMBER:** When you post a question to the forums, give it at least

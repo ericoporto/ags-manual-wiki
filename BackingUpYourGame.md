@@ -7,7 +7,7 @@ up?
 When taking a backup, make sure you copy **ALL** the files listed below:
 
 -   **GAME.AGF** - this is the main data file for your game and contains
-    almost all of the game settings. Without it, your game is lost.
+    almost all the game settings. Without it, your game is lost.
 -   **ACSPRSET.SPR** - this is your game's sprite file, containing all
     the sprites from the sprite manager.
 -   **ROOM\*.CRM** - all the ROOM\*.CRM files are your room files, and

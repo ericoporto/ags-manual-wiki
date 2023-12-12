@@ -42,7 +42,7 @@ the character starts is on a walkable area.
 
 A. In AGS the Room events and Object (Character, GUI, and so on) interactions must be "wired" to the script using the event grid. This is true for all events, so for example a 'room_Load' script function won't trigger if it's not wired on the room events.
 
-Open the Editor, load the room or select the object, then under the object properties, in events, the field should be filled with the function to execute. If it's empty, clicking on the three dots button (...) the respective script will be open with the a new function for you to fill the details. If it has a value, clicking on the same button will direct you to it on the respective script file. Optionally, you may type or copy the existing function's name into the field. But it's usually easier to click on the three dots button of the event you want to implement, which will generate the function in the script file for you.
+Open the Editor, load the room or select the object, then under the object properties, in events, the field should be filled with the function to execute. If it's empty, clicking on the three dots button (...) the respective script will be open with the new function for you to fill the details. If it has a value, clicking on the same button will direct you to it on the respective script file. Optionally, you may type or copy the existing function's name into the field. But it's usually easier to click on the three dots button of the event you want to implement, which will generate the function in the script file for you.
 
 ---
 
@@ -95,7 +95,7 @@ A. Sure, create your own custom function in script, put these commands there, an
 
 **Q. I created a script function, but I get "function is undefined" error trying to call it elsewhere.**
 
-A. If you have a function written in script file `my_script_A.asc`, and you want to call it from a different script file `my_script_B.asc`, you need to correctly declare it as import on it's header `my_script_A.ash`. Additionally, make sure the function is declared/defined above your call in script or placed in a higher script module, move function up if necessary.
+A. If you have a function written in script file `my_script_A.asc`, and you want to call it from a different script file `my_script_B.asc`, you need to correctly declare it as import on its header `my_script_A.ash`. Additionally, make sure the function is declared/defined above your call in script or placed in a higher script module, move function up if necessary.
 
 ---
 
@@ -133,7 +133,7 @@ A. [`String.Format`](String#stringformat) script function allows to create a str
 
 **Q. My game EXE file seems to have disappeared.**
 
-A. For some reasons AGS Editor deletes a game exe from Compiled/Windows folder each time when you make a test run (F5). To get this compiled exe back, simply build the game again by using the "Build EXE" command on the Build menu.
+A. For some reason AGS Editor deletes a game exe from Compiled/Windows folder each time when you make a test run (F5). To get this compiled exe back, simply build the game again by using the "Build EXE" command on the Build menu.
 
 ---
 
@@ -153,7 +153,7 @@ But if you're in a real hurry, go to game's General Settings and set "Script com
 
 **Q. How should I name my views, objects, ...**
 
-A. When you are looking into your objects in the Room Editor, they are obviously an object. When you are referencing them on script, you can get lost. It's a good and common practice when using AGS to precede the name of an element with a lower case letter of it's type, make it easier to find them in the Editor with auto complete (ctrl+space) and the consistency will make easier to remember. So for a view, something like `vRogerWalking` is a good name, and the `v` at start tells you it's a view; A character with real name Joe, is a good idea to have the script name be cJoe, now the `c` reminds of character; a GUI for a lever puzzle could be called `gLeverPuzzle`; An object that is a flower as `oFlower`; A hotspot of the exit door as hExitDoor.
+A. When you are looking into your objects in the Room Editor, they are obviously an object. When you are referencing them on script, you can get lost. It's a good and common practice when using AGS to precede the name of an element with a lower case letter of its type, make it easier to find them in the Editor with auto complete (ctrl+space) and the consistency will make easier to remember. So for a view, something like `vRogerWalking` is a good name, and the `v` at start tells you it's a view; A character with real name Joe, is a good idea to have the script name be cJoe, now the `c` reminds of character; a GUI for a lever puzzle could be called `gLeverPuzzle`; An object that is a flower as `oFlower`; A hotspot of the exit door as hExitDoor.
 
 ---
 

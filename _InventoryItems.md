@@ -1,6 +1,6 @@
 ## Inventory Items
 
-Inventory items represent things that a character may acquire and use: a physical object, an idea, a useable skill, and so forth, depending on game mechanics that you want to have. Each character in the game has their own overall "inventory" which is the set of items or skills they are carrying. They can be made visible in the game, or simply work behind the scenes.
+Inventory items represent things that a character may acquire and use: a physical object, an idea, an usable skill, and so forth, depending on game mechanics that you want to have. Each character in the game has their own overall "inventory" which is the set of items or skills they are carrying. They can be made visible in the game, or simply work behind the scenes.
 
 In technical terms, inventory items are a built-in game object with a built-in corresponding script class.
 
