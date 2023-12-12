@@ -1,5 +1,32 @@
 ## `Dialog` functions and properties
 
+### `Dialog.GetByName`
+
+```ags
+static Dialog* Dialog.GetByName(string scriptName)
+```
+
+Retrieves a pointer to the dialog by its script name (e.g.: `"dDogDialog"`), or null if it does not exist.
+
+This function is useful for accessing dialogs based on their script names, like when they are obtained from external sources.
+
+Example:
+
+```ags
+Dialog* dogDialog = Dialog.GetByName("dDogDialog");
+if (dogDialog != null) {
+    dogDialog.Start();
+}
+```
+
+Retrieves the dialog with the script name "dDogDialog" and starts the conversation if it exists.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Dialog.ScriptName`](Dialog#dialogscriptname), [`Dialog.Start`](Dialog#dialogstart)
+
+---
+
 ### `Dialog.DisplayOptions`
 
 ```ags
@@ -203,6 +230,35 @@ will display the number of options in the dFisherman dialog.
 
 *See also:* [`Dialog.GetOptionText`](Dialog#dialoggetoptiontext),
 [`Dialog.GetOptionState`](Dialog#dialoggetoptionstate)
+
+---
+
+### `Dialog.ScriptName`
+
+```ags
+readonly String Dialog.ScriptName;
+```
+
+Gets the script name of the dialog, which serves as a unique identifier.
+
+This property is useful for debugging or referencing specific dialogs in text properties or text files.
+
+Example:
+
+```ags
+function CustomDialogStart(this Dialog*)
+{
+  this.Start();
+  String dialogName = this.ScriptName;
+  System.Log(eLogInfo, "Starting dialog: %s", dialogName);
+}
+```
+
+Starting a dialog using the `CustomDialogStart()` method, like `dExampleDialog.CustomDialogStart()`, will log its script name for debugging purposes.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Dialog.GetByName`](Dialog#dialoggetbyname), [`Dialog.Start`](Dialog#dialogstart)
 
 ---
 
