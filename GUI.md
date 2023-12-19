@@ -99,28 +99,20 @@ will display the number of the GUI that the mouse is over.
 ### `GUI.ProcessClick`
 
 ```ags
-static void GUI.ProcessClick(int x, int y, CursorMode)
+static void GUI.ProcessClick(int x, int y, MouseButton)
 ```
 
-Simulates clicking the mouse on the location (X,Y) on the screen, in the
-specified cursor mode. This "click" has special behavior in that it
-**only affects GUI and GUI controls** under given coordinates. Any
-conditions attached to the first interface elements on given coordinates
-will be executed. Other game elements (room objects, hotspots,
-characters) will be **ignored**.
-
-The available cursor modes are the ones you define on your Cursors tab
-(but with eMode prepended to them). Usually these are eModeWalkto,
-eModeLookat, etc.
+Simulates clicking the mouse on GUI on the location (X,Y) using the specified mouse button. This "click" has special behavior in that it
+**only affects GUI and GUI controls**. The click will be received by a topmost control or parent GUI under given coordinates. If that control or GUI has functions attached to their events, these will be executed as in case of a normal player's click.
+If there's no GUIs under the coordinates, then nothing will happen. Any other game elements (room objects, hotspots, characters) are not affected by this.
 
 Example:
 
 ```ags
-ProcessClick(100, 50, eModePointer);
+ProcessClick(100, 50, eMouseLeft);
 ```
 
-will simulate clicking the mouse on co-ordinates (100, 50) in the
-Pointer mode, which will ignore anything but interface.
+will simulate clicking the mouse on co-ordinates (100, 50) with the left mouse button. Only GUIs will receive this click.
 
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
