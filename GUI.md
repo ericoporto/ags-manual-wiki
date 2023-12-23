@@ -295,21 +295,18 @@ sets the STATUSLINE GUI to no longer respond to mouse clicks.
 readonly int GUI.ControlCount;
 ```
 
-Gets the number of controls on the GUI. You won't normally need to use
-this property, but in some circumstances you may wish to iterate through
-all the GUI's controls, and this allows you to determine where to stop.
+Gets the number of controls on the GUI. This is useful if you wish to iterate through
+all the GUI's controls, then this property would allow you to determine where to stop.
 
 Example:
 
 ```ags
-int i = 0;
-while (i < gInventory.ControlCount) {
-    gInventory.Controls[i].Enabled = false;
-    i++;
+for (int i = 0; i < gMyGUI.ControlCount; i++) {
+    gMyGUI.Controls[i].Enabled = false;
 }
 ```
 
-disables all controls on the INVENTORY GUI.
+disables all controls on the gMyGUI GUI.
 
 *See also:* [`GUI.Controls`](GUI#guicontrols)
 
@@ -321,33 +318,28 @@ disables all controls on the INVENTORY GUI.
 GUIControl* GUI.Controls[index]
 ```
 
-Provides an array which allows you to access controls on the GUI by
-their index. You should not normally need to do this, since accessing
-the controls by their name is far easier; however, if you need to
-interoperate with legacy code that uses the control number, this can
-come in useful.
+Provides an array which allows you to access controls on the GUI by their index. This may be useful when you need to iterate through all the GUI's controls. And also if, for some reason, you cannot use actual control's name or GUIControl* pointer, and have to use a numeric ID instead.
 
-Returns the GUIControl object for the specified control index, or *null*
-if you give an invalid control index.
+Returns the GUIControl object for the specified control index, or *null* if you give an invalid control index.
 
-You can cast the GUIControl to the appropriate type using the AsButton,
-AsListBox, etc methods on it.
+You can cast the GUIControl to the appropriate type using the AsButton, AsLabel, etc methods on it.
 
 Example:
 
 ```ags
-GUIControl *control = gInventory.Controls[4];
-if (control == null) {
-    Display("The inventory GUI doesn't have a control number 4.");
-}
-else {
-    control.Enabled = true;
-    control.AsListBox.AddItem("New item!!");
+for (int i = 0; i < gMyGUI.ControlCount; i++) {
+    gMyGUI.Controls[i].Enabled = false;
 }
 ```
 
-gets list box number 4 from the INVENTORY GUI, and then adds an item to
-it. If control 4 isn't a listbox, you will get a Null Reference error.
+disables all controls on the gMyGUI GUI.
+
+```ags
+int control_number = Random(gMyGUI.ControlCount - 1);
+gMyGUI.Controls[control_number].Visible = false;
+```
+
+Makes a random control on gMyGUI invisible.
 
 *See also:* [`GUIControl.As\*`](GUIControl#guicontrolastype),
 [`GUI.ControlCount`](GUI#guicontrolcount)
