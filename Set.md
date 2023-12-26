@@ -94,14 +94,14 @@ if (mySet.Contains("test")) {
 String[] GetItemsAsArray()
 ```
 
-Creates a dynamic array filled with items in same order as they are stored in the Set.
+Creates a dynamic array filled with items in same order as they are stored in the Set, set by `SortStyle` when the Set is created.
 
 Returns null if this Set is empty.
 
 Example:
 
 ```ags
-Set* mySet = Set.Create();
+Set* mySet = Set.Create(eSorted);
 mySet.Add("test");
 mySet.Add("test2");
 String items[] = mySet.GetItemsAsArray();
