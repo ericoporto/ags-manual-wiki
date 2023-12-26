@@ -100,7 +100,7 @@ Here _myValue_ variable will be assigned "a-value" from the dictionary.
 String[] Dictionary.GetKeysAsArray()
 ```
 
-Creates a dynamic array filled with keys in the same order as they are stored in the Dictionary.
+Creates a dynamic array filled with keys in the same order as they are stored in the Dictionary, set by `SortStyle` when the Dictionary is created.
 
 **IMPORTANT:** this returns a *copy* of Dictionary contents existing at the time of function call. If you change Dictionary later, that won't affect previously created key array and you would have to call this function again.
 
@@ -109,7 +109,7 @@ Returns null if this Dictionary is empty.
 Example:
 
 ```ags
-Dictionary* myDictionary = Dictionary.Create();
+Dictionary* myDictionary = Dictionary.Create(eSorted);
 myDictionary.Set("my-key1","my-value1");
 myDictionary.Set("my-key2","my-value2");
 String keys[] = myDictionary.GetKeysAsArray();
@@ -129,7 +129,7 @@ In the above example the keys will be displayed on screen one by one, preceded b
 String[] Dictionary.GetValuesAsArray()
 ```
 
-Creates a dynamic array filled with values in the same order as they are stored in the Dictionary.
+Creates a dynamic array filled with values in the same order as they are stored in the Dictionary, set by `SortStyle` when the Dictionary is created.
 
 **IMPORTANT:** this returns a *copy* of Dictionary contents existing at the time of function call. If you change Dictionary later, that won't affect previously created values array and you would have to call this function again.
 
@@ -138,7 +138,7 @@ Returns null if this Dictionary is empty.
 Example:
 
 ```ags
-Dictionary* myDictionary = Dictionary.Create();
+Dictionary* myDictionary = Dictionary.Create(eSorted);
 myDictionary.Set("my-key1","my-value1");
 myDictionary.Set("my-key2","my-value2");
 String values[] = myDictionary.GetValuesAsArray();
