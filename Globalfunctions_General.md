@@ -899,9 +899,9 @@ As you may notice, GUI and Audio are not paused at all. PauseGame was historical
 
 **NOTE:** `PauseGame()` works as a counter, so if you call it twice, you will need to call `UnPauseGame()` game twice too to resume game. To avoid this behavior make sure to only pause once:
 
-    ```ags
-    if (!IsGamePaused()) PauseGame();
-    ```
+```ags
+if (!IsGamePaused()) PauseGame();
+```
 
 Game processing will not resume until you call the UnPauseGame function as needed.
 
