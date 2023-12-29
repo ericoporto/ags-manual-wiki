@@ -123,7 +123,7 @@ calculates the arc-sine of 0.5 and places it into variable *angle*.
 float Maths.ArcTan(float value)
 ```
 
-Calculates the arc-tan, in radians, of the specified value.
+Calculates the arc-tan, in radians, of the specified value. Return value is in range -PI/2 to +PI/2.
 
 To convert an angle in radians to degrees, use
 [`Maths.RadiansToDegrees`](Maths#mathsradianstodegrees).
@@ -150,7 +150,7 @@ float Maths.ArcTan2(float y, float x)
 
 Calculates the arctangent of y/x. This is well defined for every point
 other than the origin, even if x equals 0 and y does not equal 0. The
-result is returned in radians.
+result is returned in radians. Return value is in range -PI to +PI.
 
 To convert an angle in radians to degrees, use
 [`Maths.RadiansToDegrees`](Maths#mathsradianstodegrees).
