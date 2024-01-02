@@ -110,11 +110,13 @@ Where GetByName() function may come useful is situation in which you a) do not k
 Example:
 
 ```ags
-File *file = File.Open("$SAVEGAMEDIR$/guiconfig.dat", eFileRead);
-if (file)
-{
-    while (!file.EOF)
-    {
+function ReadGUIConfig() {
+    File *file = File.Open("$SAVEGAMEDIR$/guiconfig.dat", eFileRead);
+    if (file == null) {
+        return;
+    }
+
+    while (!file.EOF) {
         String name = file.ReadStringBack();
         int x = file.ReadInt();
         int y = file.ReadInt();
@@ -126,10 +128,12 @@ if (file)
             gui.Y = y;
         }
     }
+
+    file.Close();
 }
 ```
 
-Above opens a custom file called "guiconfig.dat" for reading, reads gui positions, and tries to move game guis to these.
+Above function opens a custom file called "guiconfig.dat" for reading, reads gui positions, and tries to move game guis to these.
 
 *Compatibility:* Supported by **AGS 3.6.1** and later versions.
 
