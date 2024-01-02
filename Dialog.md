@@ -6,20 +6,22 @@
 static Dialog* Dialog.GetByName(string scriptName)
 ```
 
-Retrieves a pointer to the dialog by its script name (e.g.: `"dDogDialog"`), or null if it does not exist.
+Returns a pointer to the Dialog with the specified script name, or null if it does not exist.
 
-This function is useful for accessing dialogs based on their script names, like when they are obtained from external sources.
+Normally you do not need to use this, as there will be a automatically created global script variable for each Dialog which got a script name.
+Where GetByName() function may come useful is situation in which you a) do not know exact name, b) had to store object's reference in a string for some reason. Good examples of this are saving object's name in a [custom property](CustomProperties), or a [file](File), then reading it back.
 
 Example:
 
 ```ags
-Dialog* dogDialog = Dialog.GetByName("dDogDialog");
+String dialogName = cNPC.GetTextProperty("MyDialog");
+Dialog* dogDialog = Dialog.GetByName(dialogName);
 if (dogDialog != null) {
     dogDialog.Start();
 }
 ```
 
-Retrieves the dialog with the script name "dDogDialog" and starts the conversation if it exists.
+Retrieves a dialog name from the character's custom property, and gets a pointer to an actual Dialog using that name, then runs it.
 
 *Compatibility:* Supported by **AGS 3.6.1** and later versions.
 
@@ -241,7 +243,7 @@ readonly String Dialog.ScriptName;
 
 Gets the script name of the dialog, which serves as a unique identifier.
 
-This property is useful for debugging or referencing specific dialogs in text properties or text files.
+This may be useful if you have a pointer to some dialog stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each dialog in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
 
 Example:
 
