@@ -15,9 +15,9 @@ Example:
 
 ```ags
 String dialogName = cNPC.GetTextProperty("MyDialog");
-Dialog* dogDialog = Dialog.GetByName(dialogName);
-if (dogDialog != null) {
-    dogDialog.Start();
+Dialog* dlg = Dialog.GetByName(dialogName);
+if (dlg != null) {
+    dlg.Start();
 }
 ```
 
