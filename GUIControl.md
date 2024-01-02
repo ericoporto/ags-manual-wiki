@@ -49,11 +49,14 @@ static GUIControl* GUIControl.GetByName(string scriptName)
 
 Returns a pointer to the GUI control with the specified script name, or null if it does not exist.
 
+Normally you do not need to use this, as there will be a automatically created global script variable for each control which got a script name.
+Where GetByName() function may come useful is situation in which you a) do not know exact name, b) had to store object's reference in a string for some reason. Good examples of this are saving object's name in a [custom property](CustomProperties), or a [file](File), then reading it back.
+
 Example:
 
 ```ags
 function ReadAndUpdateGUIControl() {
-    File *input = File.Open("$SAVEGAMEDIR$/guicontrol_info.txt", eFileRead);
+    File *input = File.Open("$SAVEGAMEDIR$/guicontrol_info.dat", eFileRead);
     if (input == null) {
         Display("Error opening file.");
         return;
@@ -561,7 +564,9 @@ top of its GUI.
 readonly String GUIControl.ScriptName
 ```
 
-Gets the script name of the GUI control, a unique identifier for GUI controls.
+Gets the script name of the GUI Control, which serves as a unique identifier, as set in the AGS Editor.
+
+This may be useful if you have a pointer to some dialog stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each control in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
 
 Example:
 
