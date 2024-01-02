@@ -564,6 +564,30 @@ will display the message if the mouse cursor is over the EGO character
 [`Region.GetAtScreenXY`](Region#regiongetatscreenxy),
 [`Game.GetLocationName`](Game#gamegetlocationname)
 
+### `Character.GetByName`
+
+```ags
+static Character* Character.GetByName(string scriptName)
+```
+
+Returns a pointer to the Character with the specified script name, or null if it does not exist.
+
+Normally you do not need to use this, as there will be a automatically created global script variable for each Character which got a script name.
+Where GetByName() function may come useful is situation in which you a) do not know exact name, b) had to store object's reference in a string for some reason. Good examples of this are saving object's name in a [custom property](CustomProperties), or a [file](File), then reading it back.
+
+Example:
+
+```ags
+String companionName = player.GetTextProperty("Companion");
+Character *companion = Character.GetByName(companionName);
+```
+
+Retrieves the player's companion name from its custom property, and gets a pointer to an actual Character using that name.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Character.ScriptName`](Character#characterscriptname)
+
 ---
 
 ### `Character.GetProperty`
@@ -2602,7 +2626,9 @@ Example:
 Display("You are controlling %s.", player.Name);
 ```
 
-will display the name of the player character
+will display the name of the player character.
+
+*See also:* [`Character.ScriptName`](Character#characterscriptname)
 
 ---
 
@@ -2778,6 +2804,23 @@ will tell EGO to ignore walkable area scaling levels and be fixed to
 In the previous versions this property could only have values in the range between 5 and 200.
 
 *SeeAlso:* [`Character.ManualScaling`](Character#charactermanualscaling)
+
+---
+
+### `Character.ScriptName`
+
+*(Formerly known as `character[].scrname`, which is now obsolete)*
+
+```ags
+readonly String Character.ScriptName
+```
+
+Gets the script name of the character, as set in the AGS Editor. This may be useful if you have a pointer to some character stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each character in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Character.Name`](Character#charactername),
+[`Character.GetByName`](Character#getbyname)
 
 ---
 
