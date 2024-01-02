@@ -66,20 +66,26 @@ will display a message depending on what the mouse is on.
 static Hotspot* Hotspot.GetByName(string scriptName)
 ```
 
-Returns a pointer to the hotspot with the specified script name, or null if it does not exist.
+Returns a pointer to the Hotspot with the specified script name, or null if it does not exist.
 
-This function is useful for accessing hotspots based on their script names, which can be useful for dynamically referencing hotspots in your game.
+Normally you do not need to use this, as there will be a automatically created global script variable for each Hotspot which got a script name.
+Where GetByName() function may come useful is situation in which you a) do not know exact name, b) had to store object's reference in a string for some reason. Good examples of this are saving object's name in a [custom property](CustomProperties), or a [file](File), then reading it back.
 
 Example:
 
 ```ags
-Hotspot* pressurePlateHotspot = Hotspot.GetByName("hPressurePlate");
-if (pressurePlateHotspot != null) {
-    // Do something with the pressure plate hotspot
+function OpenDoor(Object *obj) {
+    obj.SetView(VDOORANIMATION);
+    obj.Animate(1, 4, eOnce, eBlock);
+    String exitName = obj.GetTextProperty("LinkedExit");
+    Hotspot* exitHotspot = Hotspot.GetByName(exitName);
+    if (exitHotspot != null) {
+        exitHotspot.Enabled = true;
+    }
 }
 ```
 
-Retrieves the hotspot with the script name "hPressurePlate" and performs an action with it if it exists.
+Animates a "door" object, retrieves "exit" hotspot related to that door, and enables it.
 
 *Compatibility:* Supported by **AGS 3.6.1** and later versions.
 
@@ -376,20 +382,18 @@ will retrieve and then display hotspot 3's name.
 readonly String Hotspot.ScriptName
 ```
 
-Gets the script name of the hotspot, which serves as a unique identifier for hotspots.
+Gets the script name of the hotspot, which serves as a unique identifier, as set in the AGS Editor.
 
-This can be useful for debugging or referencing specific hotspots in text properties or text files.
+This may be useful if you have a pointer to some hotspot stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each hotspot in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
 
 Example:
 
-```ags
-Hotspot* hspot = Hotspot.GetAtScreenXY(mouse.x, mouse.y);
-if (hspot != null && hspot.ScriptName == "hOcean") {
-    Display("I can't swim, better stay away from the ocean");
+```
+function InteractHotspot(Hotspot *h) {
+    System.Log(eLogInfo, "Interacted with hotspot %s", h.ScriptName);
+    h.RunInteraction(eModeInteract);
 }
 ```
-
-Here, we do a check that can be performed in a global script instead, so any room with an `hOcean` gets the same response.
 
 *Compatibility:* Supported by **AGS 3.6.1** and later versions.
 
