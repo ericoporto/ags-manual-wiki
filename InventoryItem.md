@@ -47,9 +47,10 @@ will display the number of the inv item that the mouse is over
 static InventoryItem* InventoryItem.GetByName(string scriptName)
 ```
 
-Retrieves a pointer to an inventory item that has a matching script name, or null if it does not exist. The script name is a unique identifier for the inventory item.
+Returns a pointer to the InventoryItem with the specified script name, or null if it does not exist.
 
-This is useful if the inventory item has to be retrieved from text files, custom text properties, or from player input for some debug purpose.
+Normally you do not need to use this, as there will be a automatically created global script variable for each InventoryItem which got a script name.
+Where GetByName() function may come useful is situation in which you a) do not know exact name, b) had to store object's reference in a string for some reason. Good examples of this are saving object's name in a [custom property](CustomProperties), or a [file](File), then reading it back.
 
 Example:
 
@@ -383,9 +384,9 @@ will display the name of the player's current inventory item.
 readonly String InventoryItem.ScriptName;
 ```
 
-Gets the script name of the inventory item.
+Gets the script name of the inventory item, which serves as a unique identifier, as set in the AGS Editor.
 
-This is a unique identifier for inventory items and can be used for debugging or referencing specific inventory items in text properties or text files.
+This may be useful if you have a pointer to some item stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each item in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
 
 Example:
 
