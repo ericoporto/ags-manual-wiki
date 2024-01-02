@@ -2815,7 +2815,9 @@ In the previous versions this property could only have values in the range betwe
 readonly String Character.ScriptName
 ```
 
-Gets the script name of the character, as set in the AGS Editor. This may be useful if you have a pointer to some character stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each character in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
+Gets the script name of the character, which serves as a unique identifier, as set in the AGS Editor.
+
+This may be useful if you have a pointer to some character stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each character in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
 
 *Compatibility:* Supported by **AGS 3.6.1** and later versions.
 
