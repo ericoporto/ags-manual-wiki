@@ -96,6 +96,47 @@ will display the number of the GUI that the mouse is over.
 
 ---
 
+### `GUI.GetByName`
+
+```ags
+static GUI* GUI.GetByName(string scriptName)
+```
+
+Returns a pointer to the GUI with the specified script name, or null if it does not exist.
+
+Normally you do not need to use this, as there will be a automatically created global script variable for each GUI which got a script name.
+Where GetByName() function may come useful is situation in which you a) do not know exact name, b) had to store object's reference in a string for some reason. Good examples of this are saving object's name in a [custom property](CustomProperties), or a [file](File), then reading it back.
+
+Example:
+
+```ags
+File *file = File.Open("$SAVEGAMEDIR$/guiconfig.dat", eFileRead);
+if (file)
+{
+    while (!file.EOF)
+    {
+        String name = file.ReadStringBack();
+        int x = file.ReadInt();
+        int y = file.ReadInt();
+
+        GUI *gui = GUI.GetByName(name);
+        if (gui != null)
+        {
+            gui.X = x;
+            gui.Y = y;
+        }
+    }
+}
+```
+
+Above opens a custom file called "guiconfig.dat" for reading, reads gui positions, and tries to move game guis to these.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`GUI.ScriptName`](GUI#guiscriptname)
+
+---
+
 ### `GUI.ProcessClick`
 
 ```ags
@@ -455,6 +496,22 @@ In the common circumstances this property's value is equivalent to checking [`GU
 *Compatibility:* Supported by **AGS 3.5.1** and later versions.
 
 *See also:* [`GUI.PopupStyle`](GUI#guipopupstyle), [`GUI.Visible`](GUI#guivisible)
+
+---
+
+### `GUI.ScriptName`
+
+```ags
+readonly String GUI.ScriptName;
+```
+
+Gets the script name of the gui, which serves as a unique identifier, as set in the AGS Editor.
+
+This may be useful if you have a pointer to some gui stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each gui in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`GUI.GetByName`](GUI#guigetbyname)
 
 ---
 
