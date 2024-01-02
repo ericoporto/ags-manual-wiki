@@ -12,21 +12,24 @@ commands in this section allow to play them.
 static AudioClip* AudioClip.GetByName(string scriptName)
 ```
 
-Retrieves an audio clip by its script name (e.g.: `"aExplosion"`), which is a unique identifier for audio clips.
-Returns a pointer to the audio clip with the specified script name, or null if it does not exist.
+Returns a pointer to the AudioClip with the specified script name, or null if it does not exist.
 
-This is useful for accessing audio clips based on their script names, if these are retrieved from text files, custom text properties, or from player input for some debug purpose.
+Normally you do not need to use this, as there will be a automatically created global script variable for each AudioClip which got a script name.
+Where GetByName() function may come useful is situation in which you a) do not know exact name, b) had to store object's reference in a string for some reason. Good examples of this are saving object's name in a [custom property](CustomProperties), or a [file](File), then reading it back.
 
 Example:
 
 ```ags
-AudioClip* explosionClip = AudioClip.GetByName("aExplosion");
-if (explosionClip != null) {
-    explosionClip.Play();
+function PlayDefaultSound(Object *obj) {
+    String soundName = obj.GetTextProperty("default-sound");
+    AudioClip *clip = AudioClip.GetByName(soundName);
+    if (clip != null) {
+        clip.Play();
+    }
 }
 ```
 
-Retrieves the audio clip with the script name "aExplosion" and play it if it exists.
+Retrieves the audio clip with the script name stored in an object's custom property, and plays it.
 
 *Compatibility:* Supported by **AGS 3.6.1** and later versions.
 
@@ -308,9 +311,9 @@ checks if the aExplosion audio clip is available, and if so plays it.
 readonly String AudioClip.ScriptName
 ```
 
-Gets the script name of the audio clip, a unique identifier for audio clips.
+Gets the script name of the audio clip, which serves as a unique identifier, as set in the AGS Editor.
 
-This can be used for debugging or referencing specific audio clips in text properties or text files.
+This may be useful if you have a pointer to some clip stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each clip in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
 
 Example:
 
@@ -318,8 +321,7 @@ Example:
 function CustomPlay(this AudioClip*)
 {
   this.Play();
-  String clipName = this.ScriptName;
-  System.Log(eLogInfo, "Playing audio clip: %s", clipName);
+  System.Log(eLogInfo, "Playing audio clip: %s", this.ScriptName);
 }
 ```
 
