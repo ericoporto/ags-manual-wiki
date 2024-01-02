@@ -566,7 +566,7 @@ readonly String GUIControl.ScriptName
 
 Gets the script name of the GUI Control, which serves as a unique identifier, as set in the AGS Editor.
 
-This may be useful if you have a pointer to some dialog stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each control in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
+This may be useful if you have a pointer to some dialog stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each control in the game, but sometimes you may want to save its script name as a text either to display it somewhere for testing purposes, or keep as a reference. You may later use [GUIControl.GetByName](GUIControl#guicontrolgetbyname) function to retrieve the control by the previously saved script name.
 
 Example:
 

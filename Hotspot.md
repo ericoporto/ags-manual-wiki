@@ -384,7 +384,7 @@ readonly String Hotspot.ScriptName
 
 Gets the script name of the hotspot, which serves as a unique identifier, as set in the AGS Editor.
 
-This may be useful if you have a pointer to some hotspot stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each hotspot in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
+This may be useful if you have a pointer to some hotspot stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each hotspot in the game, but sometimes you may want to save its script name as a text either to display it somewhere for testing purposes, or keep as a reference. You may later use [Hotspot.GetByName](Hotspot#hotspotgetbyname) function to retrieve the hotspot by the previously saved script name.
 
 Example:
 

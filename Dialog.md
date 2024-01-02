@@ -243,7 +243,7 @@ readonly String Dialog.ScriptName;
 
 Gets the script name of the dialog, which serves as a unique identifier.
 
-This may be useful if you have a pointer to some dialog stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each dialog in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
+This may be useful if you have a pointer to some dialog stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each dialog in the game, but sometimes you may want to save its script name as a text either to display it somewhere for testing purposes, or keep as a reference. You may later use [Dialog.GetByName](Dialog#dialoggetbyname) function to retrieve the dialog by the previously saved script name.
 
 Example:
 
