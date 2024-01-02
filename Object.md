@@ -127,10 +127,10 @@ will display the message if there is the object oRock under the mouse cursor.
 static Object* Object.GetByName(string scriptName)
 ```
 
-Retrieves an object by its script name (e.g.: `"oBlueCup"`), which is a unique identifier for objects.
-Returns the pointer to the object with the specified script name, if it exists in the current room, or null otherwise.
+Returns a pointer to the Object with the specified script name, or null if it does not exist.
 
-This can be useful when you can't save a pointer and an ID may not be interesting, as when saving something that references an object by scriptname in a text file or a custom property.
+Normally you do not need to use this, as there will be a automatically created global script variable for each Object which got a script name.
+Where GetByName() function may come useful is situation in which you a) do not know exact name, b) had to store object's reference in a string for some reason. Good examples of this are saving object's name in a [custom property](CustomProperties), or a [file](File), then reading it back.
 
 Example:
 
@@ -155,7 +155,7 @@ and if a room has said object, that object becomes haunted - in the example it j
 
 *Compatibility:* Supported by **AGS 3.6.1** and later versions.
 
-*See also:* [`Object.GetAtRoomXY`](Object#objectgetatroomxy), [`Object.GetAtScreenXY`](Object#objectgetatscreenxy)
+*See also:* [`Object.ScriptName`](Object#objectscriptname), [`Object.GetAtRoomXY`](Object#objectgetatroomxy), [`Object.GetAtScreenXY`](Object#objectgetatscreenxy)
 
 ---
 
@@ -1117,9 +1117,9 @@ will retrieve and then display object 0's name.
 readonly String Object.ScriptName;
 ```
 
-Gets the script name of the object. This is useful for debugging, and for printing in the log.
+Gets the script name of the Object, which serves as a unique identifier, as set in the AGS Editor.
 
-Additionally, if you need to store the object in some text form, so it can be retrieved later, by using `Object.GetByName()`.
+This may be useful if you have a pointer to some object stored in your variable, and want to know what it actually is. Normally you don't need a script name, as you have an automatic global variable for each object in the game, but sometimes you may want to display it somewhere for testing purposes, or save as text for the reference.
 
 Example:
 
