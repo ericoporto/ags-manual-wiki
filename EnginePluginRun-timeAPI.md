@@ -1453,6 +1453,53 @@ Notifies the engine about the certain font being modified. This is useful when y
 
 _Added in version: 26_
 
+#### IAGSEngine.ResolveFilePath
+
+```cpp
+size_t ResolveFilePath(const char *script_path, char *buf, size_t buf_len);
+```
+
+Resolves a script path to a system filepath, same way as script command File.Open does. Caller should provide an output buffer and buffer's length in bytes. Returns a number of bytes written into the buffer, or 0 on failure. Passing NULL instead of a buffer pointer will make function calculate and return length necessary to store a resulting path (in bytes).
+
+_Added in version: 27_
+
+#### IAGSEngine.OpenFileStream
+
+```cpp
+IAGSStream* OpenFileStream(const char *script_path, int file_mode, int work_mode);
+```
+
+Opens a data stream, resolving a script path and returns IAGSStream object pointer, or NULL on failure. Script path may contain same location tokens as script command File.Open. File mode should contain one of the AGSSTREAM_FILE_* values, work mode should contain flag set of the AGSSTREAM_MODE_* values.
+The returned stream object is owned by the caller, and must be deleted by calling its Dispose() method.
+
+**IMPORTANT:** Plugin *must* call IAGSStream.Dispose() for streams returned by OpenFileStream() when these are no longer needed, otherwise stream objects will remain in memory undeleted.
+
+File mode may be one of the following values:
+* `AGSSTREAM_FILE_OPEN` - Opens existing file, fails if there's no such file.
+* `AGSSTREAM_FILE_CREATE` - Opens existing file, but creates one if it did not exist.
+* `AGSSTREAM_FILE_CREATEALWAYS` - Always creates a new blank file.
+
+Work mode is a combination of following values:
+* `AGSSTREAM_MODE_READ` - Stream supports reading data.
+* `AGSSTREAM_MODE_WRITE` - Stream supports writing data.
+* `AGSSTREAM_MODE_SEEK` - Stream supports seeking (that is - changing cursor position).
+
+**NOTE:** only `AGSSTREAM_MODE_READ` and `AGSSTREAM_MODE_WRITE` are essential to be used with the `OpenFileStream()`. `AGSSTREAM_MODE_SEEK` value is ignored, and only used by [`IAGSStream::GetMode()`](EnginePluginRun-timeAPI#iagsstreamgetmode) to indicate seekable streams.
+
+_Added in version: 28_
+
+#### IAGSEngine.GetFileStreamByHandle
+
+```cpp
+IAGSStream* GetFileStreamByHandle(int32 fhandle);
+```
+
+Returns IAGSStream object identified by the given stream handle, or NULL if handle is invalid. This lets to retrieve IAGSStream object from a handle received in a event callback, such as AGSE_SAVEGAME and AGSE_RESTOREGAME. The returned stream's ownership is NOT passed to the caller, and should be kept and used only in the duration of the event callback.
+
+**IMPORTANT:**: A stream received from GetFileStreamByHandle() should NOT be closed or disposed, doing so will lead to errors in the engine.
+
+_Added in version: 28_
+
 ### IAGSScriptManagedObject interface
 
 The `IAGSScriptManagedObject` interface is implemented for objects which the plugin wants to return to the game script. It allows a callback mechanism for AGS to request various operations on the object. You must implement the following:
@@ -1639,3 +1686,152 @@ int GetLineSpacing(int fontNumber);
 Returns the font's custom line spacing, if any. Return 0 to tell that the font does not have any particular line spacing set, in which case font's height will be used instead.
 
 _Added in version: 26_
+
+### IAGSStream interface
+
+The `IAGSStream` interface represents an open stream for reading or writing data. This interface may be implemented by the engine or plugin. The interface has following methods:
+
+#### IAGSStream.GetMode
+```cpp
+int GetMode();
+```
+
+Tells which mode the stream is working in. The mode defines supported i/o operations, such as reading, writing, seeking. Returns combination of AGSSTREAM_MODE_* flags. Invalid or non-functional streams return 0.
+
+See [`IAGSEngine.OpenFileStream`](EnginePluginRun-timeAPI#iagsengineopenfilestream) for the list of potential mode values.
+
+_Added in version: 28_
+
+#### IAGSStream.GetPath
+```cpp
+const char *GetPath();
+```
+
+Returns an optional stream's source description. This may be a file path, or a resource name, or anything of that kind, and is meant purely for diagnostic purposes.
+
+**NOTE:** you should not rely on this method to return anything in particular. It is allowed to return empty string, or NULL pointer.
+
+_Added in version: 28_
+
+#### IAGSStream.EOS
+```cpp
+bool EOS();
+```
+
+Tells whether this stream's position is at its end. Unlike standard C `feof` this does not wait for a read attempt past the stream end, and reports positive when stream's position = length.
+
+_Added in version: 28_
+
+#### IAGSStream.GetError
+```cpp
+bool GetError();
+```
+
+Tells if there were errors during previous i/o operation(s). The call to GetError() *resets* the error record, so if there are two consecutive GetError() calls, the second will always return "no error".
+
+**NOTE:** this method is mostly intended for the cases when the stream is being used to read many chunks of data in a loop, or read data periodically with waits in between. In such case you may call GetError periodically too, to find out whether stream operations are still being successful.
+
+_Added in version: 28_
+
+#### IAGSStream.GetLength
+```cpp
+int64_t GetLength();
+```
+
+Returns the total stream's length in bytes.
+
+_Added in version: 28_
+
+#### IAGSStream.GetPosition
+```cpp
+int64_t GetPosition();
+```
+
+Returns stream's position. Position is valid in range 0 to (length-1).
+
+_Added in version: 28_
+
+#### IAGSStream.Read
+```cpp
+size_t Read(void *buffer, size_t len)
+```
+
+Reads number of bytes into the provided buffer. Returns number of bytes that were actually copied. If return value is less than `len` parameter, that means that either end of stream is reached, or there has been an error.
+
+_Added in version: 28_
+
+#### IAGSStream.ReadByte
+```cpp
+int32_t ReadByte()
+```
+
+Reads a single byte and returns either its value (0-255), or -1 on end of stream or error. This method is intended for getting data byte-by-byte.
+
+_Added in version: 28_
+
+#### IAGSStream.Write
+```cpp
+size_t Write(const void *buffer, size_t len)
+```
+
+Writes number of bytes, copying them from the provided buffer. Returns number of bytes that were actually written. If return value is less than `len` parameter, that means that there has been an error.
+
+_Added in version: 28_
+
+#### IAGSStream.WriteByte
+```cpp
+int32_t WriteByte(uint8_t b)
+```
+
+Writes a single byte (0-255) and returns either its value, or -1 on error. This method is intended for putting data byte-by-byte.
+
+_Added in version: 28_
+
+#### IAGSStream.Seek
+```cpp
+int64_t Seek(int64_t offset, int origin)
+```
+
+Moves stream cursor to the requested offset, counting from the "origin", where "origin" defined by AGSSTREAM_SEEK_* constants:
+* `AGSSTREAM_SEEK_SET` - offset from beginning of the stream, basically, from 0. Offset must be strictly positive.
+* `AGSSTREAM_SEEK_CUR` - offset relative to the current position. Offset may be either positive (go forward) or negative (go backward).
+* `AGSSTREAM_SEEK_END` - offset from end of stream. Offset must be strictly negative.
+
+Returns new stream position, or -1 on error.
+
+**NOTE:** seeking to forbidden positions (outside of valid stream range) is not counted as error. In such case the stream will simply clamp the destination offset to the valid range and return the actual position it ended on. Error is only reported if there was a failure to seek at all. Stream's implementation guarantees that stream's position remains unchanged in case of error.
+
+_Added in version: 28_
+
+#### IAGSStream.Flush
+```cpp
+bool Flush()
+```
+
+Flushes stream, forcing it to write any buffered data to the underlying device. Does nothing in read-only mode. Returns if operation was successful.
+
+Some streams may have a internal memory buffer where they keep recently written data instead of passing them to the device (file, etc) right away. This is done for performance reasons. In such case the written data may not get to the device until the internal buffer is full. There are situations where you may want to force the stream to write to device at once. For example, if you are writing a log, you would like the log messages to appear in the file instantly, so that you could read them. This is where you need to use Flush().
+
+**NOTE:** when stream is being closed, it is also flushed automatically, so you don't have to call it yourself then.
+
+_Added in version: 28_
+
+#### IAGSStream.Close
+```cpp
+void Close()
+```
+
+Flushes and closes the stream, but does not delete the stream object just yet. Usually you do not have to call this, and should use Dispose() to close and delete stream object instead.
+
+_Added in version: 28_
+
+#### IAGSStream.Dispose
+```cpp
+void Dispose()
+```
+
+Flushes, closes the stream, and deletes the stream object, freeing all the associated memory.
+
+After calling this the IAGSStream pointer becomes INVALID and should not be used (unless assigned a new stream object later on).
+
+_Added in version: 28_
