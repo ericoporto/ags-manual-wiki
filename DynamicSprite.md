@@ -615,18 +615,23 @@ DynamicSprite.Rotate(int angle, optional int width, optional int height)
 
 Rotates the dynamic sprite by the specified *angle*. The angle is in
 degrees, and must lie between 1 and 359. The image will be rotated
-clockwise by the specified angle.
+clockwise by the specified angle. For a counter-clockwise rotation - convert the angle to a clockwise one using formula: "angle = ((-counter_angle) + 360)".
 
 Optionally, you can specify the width and height of the rotated image.
 By default, AGS will automatically calculate the new size required to
 hold the rotated image, but you can override this by passing the
-parameters in.
+parameters in. Note that specifying a width/height does not stretch the image, it just
+allows you to set the final sprite dimensions. The rotated image will be centered in the sprite.
 
-Note that specifying a width/height does not stretch the image, it just
-allows you to set the image dimensions to crop the rotation.
+**NOTE:** Sprite may have to be resized in order to accomodate rotated image. This is not because the image is scaled, but because after rotation original image's corners may be positioned "outside" of the initial rectangle. Because sprite is resized, and image is centered in it, it may look like image is moving towards right-bottom. To counter that effect when you draw this sprite somewhere, you have change the sprite's position, subtracting a difference of half its width and height, for example:
 
-**NOTE:** Rotating is a relatively slow operation, so do not attempt to
-rotate sprites every game loop; only do it when necessary.
+    int x = (Game.SpriteWidth[original_sprnum] - sprite.Width) / 2;
+    int y = (Game.SpriteHeight[original_sprnum] - sprite.Height]) / 2;
+    surface.DrawImage(x, y, sprite.Graphic);
+
+**NOTE:** Rotating is a "lossy" operation. This means that each time you rotate a sprite it will loose a bit of image quality (except when rotated by 90, 180 and 270 degrees). High-resolution sprites will loose quality slower in general, but will nevertheless. If you have to rotate a sprite multiple times, the solution is to keep the original sprite and rotate its new copy to a new angle each time, instead of rotating same sprite over and over again.
+
+**NOTE:** Rotating is a relatively slow operation, try keeping a number of sprites rotated each game loop low, and do it only when necessary.
 
 Example:
 
