@@ -1327,7 +1327,7 @@ Otherwise, `buffer` will simply be set to a copy of `fileName`.
 
 You should allocate `buffer` at least as `MAX_PATH` bytes long.
 
-**IMPORTANT:** this function is considered unsafe to use, and is deprecated since interface version 27. Prefer to use [ResolveFilePath](IAGSEngine#iagsengineresolvefilepath) instead.
+**IMPORTANT:** this function is considered unsafe to use, and is deprecated since interface version 27. Prefer to use [ResolveFilePath](EnginePluginRun-timeAPI#iagsengineresolvefilepath) instead.
 
 _Added in version: 22_
 
