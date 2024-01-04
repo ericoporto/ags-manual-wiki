@@ -2822,7 +2822,7 @@ This may be useful if you have a pointer to some character stored in your variab
 *Compatibility:* Supported by **AGS 3.6.1** and later versions.
 
 *See also:* [`Character.Name`](Character#charactername),
-[`Character.GetByName`](Character#getbyname)
+[`Character.GetByName`](Character#charactergetbyname)
 
 ---
 
