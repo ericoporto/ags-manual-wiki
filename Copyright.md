@@ -57,6 +57,11 @@ Partial code from Allegro 4 is included for bitmap and text manipulation.
 Allegro4 is provided by The giftware license, created by a number of people 
 working in cooperation, and given freely as a gift.
 
+Deflate compression algorithm for sprites and any other game data is performed
+using Miniz compression library, which is Copyright (C) 2013-2014 RAD Game Tools
+and Valve Software and (C) 2010-2014 Rich Geldreich and Tenacious Software LLC,
+distributed under the terms of the MIT License.
+
 Copyright information on the various other modules AGS uses can be found
 in the [credits](Credits) section.
 
