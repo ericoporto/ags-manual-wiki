@@ -28,10 +28,10 @@ every time the player enters the screen, and it happens BEFORE the
 screen has faded in, which allows you to change object graphics and do
 other things to the screen which the player won't notice.
 
-*NOTE: This event is ONLY meant for adjusting things such as object and
+**NOTE:** This event is ONLY meant for adjusting things such as object and
 character placement. Do NOT use this event for any sort of automated
 intro to the room - use the "Enters Room After Fade In" event for that
-instead.*
+instead.
 
 **Enters room after fade-in**
 
