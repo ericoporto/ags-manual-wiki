@@ -1322,10 +1322,12 @@ void GetPathToFileInCompiledFolder(const char *fileName, char *buffer)
 
 Fills in `buffer` with a path that you can use to open the specified file that resides in the Compiled folder.
 
-If the game is running under the debugger, `buffer` will end up containing `Compiled_fileName_` .
+If the game is running under the debugger, `buffer` will end up containing `Compiled/fileName` .
 Otherwise, `buffer` will simply be set to a copy of `fileName`.
 
-You should allocate `buffer` as `MAX_PATH` bytes long.
+You should allocate `buffer` at least as `MAX_PATH` bytes long.
+
+**IMPORTANT:** this function is considered unsafe to use, and is deprecated since interface version 27. Prefer to use [ResolveFilePath](IAGSEngine#iagsengineresolvefilepath) instead.
 
 _Added in version: 22_
 
