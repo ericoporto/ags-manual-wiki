@@ -125,18 +125,20 @@ will display a message if Caps Lock is on.
 readonly static int System.ColorDepth;
 ```
 
-Returns the color depth at which the game is running. This is the
-overall game color depth setting, and it is possible for individual
-sprites or backgrounds to be different.
+Returns the **native** game's color depth. This is the overall game color depth setting, and it is possible for individual sprites or backgrounds to be different (although not recommended).
+
+**NOTE:** Be aware that for historical reasons, and similar to [`System.ScreenHeight`](System#systemscreenheight) and [`System.ScreenWidth`](System#systemscreenwidth), this is NOT the final color depth of a display mode, but the internal color depth of a game. For instance, a game may have a 8-bit or 16-bit native color depth, but be displayed in a 32-bit mode, for example.
+
+The native color depth may be useful to know, for example, when you are writing a script module performing raw drawing: then you'd know which ranges of colors will work.
 
 Example:
 
 ```ags
-Display("Game is running at: %d x %d, %d-bit color", System.ScreenWidth,
+Display("Game's native resolution is: %d x %d, %d-bit color", System.ScreenWidth,
         System.ScreenHeight, System.ColorDepth);
 ```
 
-will display the current resolution and color depth
+will display the game's native resolution and color depth.
 
 *See also:* [`System.ScreenHeight`](System#systemscreenheight),
 [`System.ScreenWidth`](System#systemscreenwidth)
