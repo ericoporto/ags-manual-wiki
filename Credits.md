@@ -74,6 +74,9 @@
   FreeType project
 - Hi-color fade out/in routines by Matthew Leverton
 - Sprite anti-aliasing code by Michael Bukin
+- Deflate compression algorithm for sprites and any other game data is performed
+using Miniz library, which is Copyright (C) 2013-2014 RAD Game Tools
+and Valve Software and (C) 2010-2014 Rich Geldreich and Tenacious Software LLC
 - OGG Theora player is APEG by Chris Robinson, using the Ogg Theora
   decoder, which is available from https://www.xiph.org/
 - Windows engine uses libcda CD player by Peter Wang.
