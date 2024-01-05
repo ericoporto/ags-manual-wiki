@@ -135,7 +135,7 @@ RegisterScriptFunction ("AddNumbers", AddNumbers);
 Note that it is possible to override the built-in functions with this command. If you do, for example,
 ```cpp
 RegisterScriptFunction ("GetLocationType", AddNumbers);
-```cpp
+```
 then any calls from the script to `GetLocationType` will be intercepted by your plugin (and in this case a stupid result returned).
 
 **IMPORTANT:** If you want to override built-in functions, make sure that yours have identical parameters, otherwise the stack could get messed up and crash the engine.
