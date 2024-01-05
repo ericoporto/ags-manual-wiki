@@ -66,7 +66,7 @@ Called by AGS just before the graphics driver is initialized. This allows you to
 
 If `driverID` is "D3D9", then the `data` parameter is a pointer to the `D3DPRESENT_PARAMETERS` structure that AGS is about to pass into CreateDevice. If you need to enable extra features such as the Auto Depth Stencil, then you can do so by changing the member variables at this point.
 
-If `driverID` is "DX5", then the `data` parameter will currently be passed as `NULL`.
+For other graphic drivers then the `data` parameter will currently be passed as `NULL`.
 
 **NOTE:** This event is called just as the graphics subsystem is starting, so functions that like GetScreenDimensions that rely on the screen being initialized will not work if called from this event.
 
@@ -413,9 +413,11 @@ _Added in version: 2_
 BITMAP * GetVirtualScreen ();
 ```
 
-Returns a reference to the virtual screen bitmap (as an _Allegro_ BITMAP). The virtual screen is what all drawing routines will draw onto, and usually points to a screen-sized memory bitmap that the engine paints on to construct each frame. Once it is finished, the whole thing is copied to the real screen. This is done to prevent the screen flickering as various things are painted on.
+Returns a reference to the virtual screen bitmap (as an _Allegro_ BITMAP) which you may draw upon.
 
-This function is only supported if the player is using the DX5 graphics driver.
+There's a lot of difference depending on a active graphics renderer. If the game is being run using Software renderer, then this function will return the actual virtual screen of the game, with all the game frame drawn on it. In such case you might both "read" game frame's contents from it, and perform blending by combining pixels of your images with the game's image underneath.
+
+On the other hand, if this is a texture-based renderer (Direct3D, OpenGL), then this function will return a "stage screen", which is an empty screen filled with nothing but transparent pixels. After you are done drawing on it, this "stage screen" will be added to the collection of textures to be rendered. The position of this texture among other sprites depends on the render stage event you called this function upon, such as AGSE_PRESCREENDRAW, AGSE_PREGUIDRAW and so forth.
 
 _Added in version: 3_
 
@@ -455,9 +457,9 @@ _Added in version: 3_
 void GetScreenDimensions (int *width, int *height, int *coldepth);
 ```
 
-Fills in the supplied variables with the current display mode that the engine is running at. You can pass any of the parameters as NULL if you don't want to know them.
+Fills in the supplied variables with the game's **native** screen resolution. You can pass any of the parameters as NULL if you don't want to know them. Color depth is reported in bits (8, 16 or 32).
 
-`coldepth` is either 8, 15, 16, 24 or 32 and reflects the actual color depth that the game is running at.
+**NOTE:** this is native resolution of the game, NOTE the final display mode. For example, 320x200 games may be run scaled up to 1920x1080, and 8-bit and 16-bit games may be displayed in 32-bit display mode. This function only tells the game's internal parameters, and therefore is mostly useful if your plugin is doing drawing over a "virtual screen" bitmap (see [GetVirtualScreen()](EnginePluginRun-timeAPI#iagsenginegetvirtualscreen)).
 
 _Added in version: 3_
 
