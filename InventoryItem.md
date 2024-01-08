@@ -353,15 +353,11 @@ String InventoryItem.Name;
 ```
 
 Gets/sets the name of the inventory item. This is the name which is
-initially set under the Game tab, Inventory mode of the AGS Editor.
+initially set in Inventory item's properties in the AGS Editor.
 
 You can change this property if for example you want to change a 'bowl'
 to a 'bowl with water in' but want to use the same inventory item for
 it.
-
-Note that the maximum length for the name of an inventory item is 24
-characters - if the name you set is longer than this, it will be
-truncated.
 
 Example:
 
@@ -370,6 +366,8 @@ Display("Active inventory: %s", player.ActiveInventory.Name);
 ```
 
 will display the name of the player's current inventory item.
+
+*Compatibility:* inventory item's name was limited to 24 characters prior to **AGS 3.6.1**.
 
 *See also:*
 [`InventoryItem.GetAtScreenXY`](InventoryItem#inventoryitemgetatscreenxy),
