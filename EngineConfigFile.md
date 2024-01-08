@@ -103,7 +103,7 @@ Locations of two latter files differ between running platforms:
     - `[outputname] = +GROUPLIST[:LEVEL]`;
       Groups may be defined either by name or by a LIST of one-letter IDs, preceded by '+', e.g. +ABCD:LEVEL. Verbosity may be defined either by name or a numeric ID.
         - `OUTPUTs` are:
-            * `stdout`, `file`, `console` (where \"console\" is internal engine's console);
+            * `stdout`, `file`, `debugger` (external debugging program);
         - `GROUPs` are:
             * `all`, `main` (m), `game` (g), `manobj` (o), `sdl` (l), `script` (s), `sprcache` (c);
         - `LEVELs` are:
