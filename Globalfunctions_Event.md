@@ -110,7 +110,10 @@ function on_event(int event, int data)
 }
 ```
 
-*Compatibility:* `eEventEnterRoomAfterFadein` event type is only supported since AGS 3.6.0.
+*Compatibility:*
+ - `eEventEnterRoomAfterFadein` event type is only supported since AGS 3.6.0.
+ - `eEventLeaveRoomAfterFadeout` event type  is only supported since AGS 3.6.1.
+ - `eEventGameSaved` event type  is only supported since AGS 3.6.1.
 
 ---
 
