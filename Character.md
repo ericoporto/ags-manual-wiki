@@ -2617,9 +2617,6 @@ String Character.Name
 Gets/sets the name of the character, as set in the AGS Editor. This is
 the full name, not the script name.
 
-Note that character names are limited to 40 characters, so if you set
-the name it will be truncated to that length.
-
 Example:
 
 ```ags
@@ -2627,6 +2624,8 @@ Display("You are controlling %s.", player.Name);
 ```
 
 will display the name of the player character.
+
+*Compatibility:* character's name was limited to 40 characters prior to **AGS 3.6.1**.
 
 *See also:* [`Character.ScriptName`](Character#characterscriptname)
 
