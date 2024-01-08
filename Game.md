@@ -112,34 +112,6 @@ will give the player 5 points the first time this script is run.
 
 ---
 
-### `Game.ResetDoOnceOnly`
-
-```ags
-static void Game.ResetDoOnceOnly()
-```
-
-This function resets all the token states from `Game.DoOnceOnly("example token")` calls.
-
-Example:
-
-```ags
-if (Game.DoOnceOnly("say hi once")) {
-    Display("Hi!");
-}
-Game.ResetDoOnceOnly()
-if (Game.DoOnceOnly("say hi once")) {
-    Display("Hi again!");
-}
-```
-
-will say hi twice, and also reset ALL do once only tokens.
-
-*Compatibility:* Supported by **AGS 3.6.1** and later versions.
-
-*See also:* [`Game.DoOnceOnly`](Game#gamedoonceonly)
-
----
-
 ### `Game.GetColorFromRGB`
 
 *(Formerly known as `RawSetColorRGB`, which is now obsolete)*
@@ -478,6 +450,70 @@ This command will be ignored if a regular blocking voice is currently playing. A
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
 
 *See also:* [Voice speech](VoiceSpeech), [`AudioChannel`](AudioChannel), [`AudioClip.Play`](AudioClip#audioclipplay), [`Character.Say`](Character#charactersay)
+
+---
+
+### `Game.PrecacheSprite`
+
+```ags
+static void Game.PrecacheSprite(int sprnum)
+```
+
+Loads a sprite into memory, prepares a texture (if necessary for the current graphics driver), and stores them in the engine's memory cache for later use.
+
+This function is meant for preloading sprites and precreating textures that will be used during the next scene for displaying room objects or playing animations. Normally AGS loads sprites automatically, but sometimes loading is not fast enough and may cause visible slowdowns. In such cases you may use PrecacheSprite as a workaround and load certain sprites before the scene begins. For the best results this should be done during some kind of "Loading" screens, or in "Room enter before fade-in" events.
+
+**IMPORTANT:** this function uses the standard sprite and texture caches, and its efficiency depends on the sizes of these caches. If player's config assigns low cache size, the preloaded sprites may exceed that limit, and previously loaded items will get unloaded. Keep this in mind when precaching many sprites at once, and perhaps set higher cache values in default game config.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Game.PrecacheView`](Game#gameprecacheview)
+
+---
+
+### `Game.PrecacheView`
+
+```ags
+static void Game.PrecacheView(int view, int first_loop, int last_loop)
+```
+
+Loads all sprites used in the view's frames, in the range from *first_loop* to *last_loop* (inclusive), prepares textures for them (if necessary for the current graphics driver), and stores them in the engine's memory cache for later use.
+
+This function is similar to [PrecacheSprite](Game#gameprecachesprite), but simplifies loading a full animation into the cache. Everything said about PrecacheSprite applies to PrecacheView too.
+
+**IMPORTANT:** this function uses the standard sprite and texture caches, and its efficiency depends on the sizes of these caches. If player's config assigns low cache size, the preloaded sprites may exceed that limit, and previously loaded items will get unloaded. Keep this in mind when precaching many sprites at once, and perhaps set higher cache values in default game config.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Game.PrecacheSprite`](Game#gameprecachesprite)
+
+---
+
+### `Game.ResetDoOnceOnly`
+
+```ags
+static void Game.ResetDoOnceOnly()
+```
+
+This function resets all the token states from `Game.DoOnceOnly("example token")` calls.
+
+Example:
+
+```ags
+if (Game.DoOnceOnly("say hi once")) {
+    Display("Hi!");
+}
+Game.ResetDoOnceOnly()
+if (Game.DoOnceOnly("say hi once")) {
+    Display("Hi again!");
+}
+```
+
+will say hi twice, and also reset ALL do once only tokens.
+
+*Compatibility:* Supported by **AGS 3.6.1** and later versions.
+
+*See also:* [`Game.DoOnceOnly`](Game#gamedoonceonly)
 
 ---
 
