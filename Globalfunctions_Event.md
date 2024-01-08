@@ -68,7 +68,10 @@ on which event has occurred. The possible values of event are:
             called just before the room's 'Enter After Fade-in' event occurs
             DATA = room number
     eEventLeaveRoom
-            called just after the room's 'Player Leaves Room' event occurs
+            called just after the room's 'Player Leaves Room' event occurs, before the fade-out
+            DATA = room number they are leaving
+    eEventLeaveRoomAfterFadeout
+            called when leaving a room, right after fade-out, but while room is still in memory
             DATA = room number they are leaving
     eEventGotScore
             called whenever the player's score changes
@@ -87,6 +90,9 @@ on which event has occurred. The possible values of event are:
             DATA = inventory item number that was lost
     eEventRestoreGame
             called after a saved game has been restored
+            DATA = save slot number
+    eEventGameSaved
+            called after a game was saved
             DATA = save slot number
 
 For example:
