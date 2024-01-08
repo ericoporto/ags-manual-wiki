@@ -13,6 +13,7 @@
   Cristian Morales Vega  
   Dominik Mierzejewski  
   Donovan Watteau  
+  Edmundo Ruiz Ghanem  
   Edward Rudd  
   Erico Vieira Porto  
   Ferdinand Thiessen  
