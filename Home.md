@@ -7,7 +7,7 @@
 - [Introduction](Introduction)
 - [Tutorial](Tutorial)
 - [Frequently Asked Questions](FAQ)
-- [Upgrading to AGS 3.6](UpgradeTo36)
+- [Upgrading to AGS 3.6.1](UpgradeTo361)
 - [Upgrading from a previous version](UpgradingFromPreviousVersion)
 
 ## Editor
@@ -26,11 +26,11 @@
 - [Inventory Items Editor](EditorInventoryItems)
 - [View Editor](EditorView)
 - [Sprite Manager](EditorSprite)
+- [Log Panel](EditorLogPanel)
 - [Music and sound](MusicAndSound)
 - [Voice speech](VoiceSpeech)
 - [Script Modules](ScriptModules)
 - [System limits](SystemLimits)
-- [Log Panel](EditorLogPanel)
 - [Plugins](Plugins)
 - [Other Features](OtherFeatures)
 
