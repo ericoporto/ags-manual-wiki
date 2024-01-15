@@ -211,6 +211,8 @@ Please note that this function accepts *screen* coordinates and not *room* coord
 
 The available cursor modes are the ones you define on your Cursors tab (but with eMode prepended to them). Usually these are eModeWalkto, eModeLookat, etc.
 
+**NOTE:** When looking up for an object under coordinates, ProcessClick is affected by the game setting ["Pixel-perfect click detection"](GeneralSettings#visual). It's possible to change this behavior in script by changing OPT_PIXELPERFECT option (see [SetGameOption](Globalfunctions_General#setgameoption)).
+
 Example:
 
 ```ags
