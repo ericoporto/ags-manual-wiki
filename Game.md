@@ -198,6 +198,8 @@ for use with the mouse cursor position variables.
 This function may allow you, for instance, to create the LucasArts-style status lines reading \"Look at xxx\" as
 the player moves the cursor over them.
 
+**NOTE:** When looking up for an object under coordinates, GetLocationName is affected by the game setting ["Pixel-perfect click detection"](GeneralSettings#visual). It's possible to change this behavior in script by changing OPT_PIXELPERFECT option (see [SetGameOption](Globalfunctions_General#setgameoption)).
+
 Example:
 
 ```ags
