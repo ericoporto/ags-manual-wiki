@@ -431,14 +431,9 @@ Windows, this option has been removed since AGS 3.6.0 as well.
     - Button images are clipped using individual button's property called "ClipImage".
     - Label with a wrapped text will only ever display next line if there's at least 1 extra pixel of height available past the line spacing.
     - Sliders DO NOT clip as of AGS 3.6.0. This is left so for the time being, because the positions of their elements historically are calculated to be outside of their bounds.
--   **Pixel-perfect click detection** - normally, when the player clicks
-    the mouse, AGS just checks to see if the cursor is within the
-    rectangular area of each character and object on the screen.
-    However, if this option is checked, then it will further check
-    whether the player clicked on an actual pixel of the object graphic,
-    or whether it was a transparent part of the graphic. If this option
-    is enabled and they click on a transparent pixel, then the hotspot
-    behind the object will be activated instead.
+-   **Pixel-perfect click detection** - tells how the AGS should detect when there's an object or character under cursor, or when you run a script command that looks for an object under certain coordinates. By default AGS checks if the coordinates are within a rectangular area of each character and object on the screen (this is also called "bounding box"). However, if this option is enabled, then it will further check whether the coordinates are on an actual non-transparent pixel of the object graphic. With Pixel-perfect mode the fully transparent pixels will be ignored (sort of "clicked through").
+
+    **NOTE:** currently Pixel-perfect mode works only for objects and characters, and nothing else in game.
 -   **Sprite alpha rendering style** - determines which rendering method
     to use in 32-bit games when an image is drawn over
     [drawing surface](DrawingSurface). The "Proper alpha
