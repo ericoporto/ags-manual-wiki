@@ -509,7 +509,9 @@ static Character* Character.GetAtRoomXY(int x, int y)
 
 Checks if there is a character at ROOM co-ordinates (X,Y). Returns the character if there is, or null if there is not.
 
-NOTE: Any characters with the "Clickable" property set to false will not be seen by this function.
+**NOTE:** Any characters with the "Clickable" property set to false will not be seen by this function.
+
+**NOTE:** When looking up for an object under coordinates, GetAtRoomXY is affected by the game setting ["Pixel-perfect click detection"](GeneralSettings#visual). It's possible to change this behavior in script by changing OPT_PIXELPERFECT option (see [SetGameOption](Globalfunctions_General#setgameoption)).
 
 Example:
 
@@ -545,8 +547,10 @@ Checks if there is a character at SCREEN co-ordinates (X,Y). Returns the
 character if there is, or null if there is not. See the description of
 GetLocationName for more on screen co-ordinates.
 
-NOTE: Any characters with the "Clickable" property set to false will not
+**NOTE:** Any characters with the "Clickable" property set to false will not
 be seen by this function.
+
+**NOTE:** When looking up for an object under coordinates, GetAtScreenXY is affected by the game setting ["Pixel-perfect click detection"](GeneralSettings#visual). It's possible to change this behavior in script by changing OPT_PIXELPERFECT option (see [SetGameOption](Globalfunctions_General#setgameoption)).
 
 Example:
 
