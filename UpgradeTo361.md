@@ -1,6 +1,6 @@
 ## Upgrading to AGS 3.6.1
 
-3.6.1 is a minor update, focusing on performance and convenience of existing features, but there are few things that should be mentioned in regards to moving your existing game projects from previous versions.
+3.6.1 is a minor update, focusing on performance and convenience of existing features. There are no breaking changes to the game settings or script, but there are few things that should be mentioned.
 
 ### Log Panel in the Editor
 
