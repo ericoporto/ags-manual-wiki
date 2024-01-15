@@ -418,14 +418,16 @@ It's important to know that this will work only if there's a room viewport found
 
 Also, this function is "blocked" by any interactable non-room object, such as GUI, and will return "nothing" as well if one is found under these screen coordinates.
 
-**NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM co-ordinates. This means that this function is suitable for use with the mouse cursor position variables.
-
 The value returned is one of the following:
 
     eLocationNothing    nothing, GUI or inventory
     eLocationHotspot    a hotspot
     eLocationCharacter  a character
     eLocationObject     an object
+
+**NOTE:** The co-ordinates are SCREEN co-ordinates, NOT ROOM co-ordinates. This means that this function is suitable for use with the mouse cursor position variables.
+
+**NOTE:** When looking up for an object under coordinates, GetLocationType is affected by the game setting ["Pixel-perfect click detection"](GeneralSettings#visual). It's possible to change this behavior in script by changing OPT_PIXELPERFECT option (see [SetGameOption](Globalfunctions_General#setgameoption)).
 
 Example:
 
@@ -720,6 +722,8 @@ This function is very similar to Room.ProcessClick, except that rather than carr
 Function will fail and return 0 if there's no room viewport on screen at the given coordinates. On the other hand it ignores any non-room objects such as GUI, and "clicks through" any GUI that covers room at this location.
 
 This function is useful for enabling options on a verb-coin style GUI, for example.
+
+**NOTE:** When looking up for an object under coordinates, IsInteractionAvailable is affected by the game setting ["Pixel-perfect click detection"](GeneralSettings#visual). It's possible to change this behavior in script by changing OPT_PIXELPERFECT option (see [SetGameOption](Globalfunctions_General#setgameoption)).
 
 Example:
 
