@@ -43,18 +43,40 @@ translation is in use.
 String Label.Text;
 ```
 
-Gets/sets the text displayed in the specified label. This allows you to
-change the text during the game, for example to create a LucasArts-style
-status line.
+Gets/sets the text displayed in the specified label.
+
+Examples:
+
+```ags
+lblGameChapter.Text = "Chapter 2";
+```
+will display "Chapter 2" text on label 'lblGameChapter'.
+
+```ags
+lblHotspotName.Text = Game.GetLocationName(mouse.x, mouse.y);
+```
+will display the name of the location the cursor is over on label 'lblHotspotName'
+
+```ags
+lblScore.Text = String.Format("Game score: %d out of %d", cur_score, total_score);
+```
+will display a [formatted string](StringFormats) with game score variable values on label 'lblScore'.
+
+Besides a regular text, or text formatted with String.Format, you can add some special values called "tokens" which will be replaced and automatically updated during the game. Multiple tokens may be present on a single label. The following tokens are currently supported, and will be substituted by actual values at runtime:
+
+Token | Description
+--- | ---
+`@GAMENAME@` | The game's name, from General Settings or Game.Name property
+`@OVERHOTSPOT@` | The name of the location (hotspot, object, etc) which the cursor is over
+`@SCORE@` | The player's current score
+`@SCORETEXT@` | The text "Score: X of XX" with the relevant numbers filled in
+`@TOTALSCORE@` | The maximum possible score, specified on the General Settings pane
 
 Example:
 
 ```ags
-lblStatus.Text = Game.GetLocationName(mouse.x, mouse.y);
+lblStatus.Text = "You have @SCORE@ out of @TOTALSCORE@ points.";
 ```
-
-will display the name of the location the cursor is over on label
-'lblStatus'
 
 *See also:* [`Button.NormalGraphic`](Button#buttonnormalgraphic),
 [`Button.Text`](Button#buttontext),
