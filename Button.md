@@ -362,12 +362,28 @@ Gets/sets the text displayed on the button.
 Example:
 
 ```ags
-Display("Button displayed: %s", btnController.Text);
 btnController.Text = "Enable jibble";
 ```
 
-will display the old text, then change button btnController to read
-'Enable jibble'.
+Will change button btnController to read "Enable jibble".
+
+Besides a regular text, there are few special text values, called "tokens". If you assign any of these to the Button, it will update its looks automatically during the game. Currently supported are 3 tokens, that make button display selected inventory item's graphic (that is - inventory item assigned as [`player.ActiveInventory`](Character#characteractiveinventory)). They differ in a way item's graphic is aligned:
+
+Token | Description
+--- | ---
+`(INV)` | Stretch to fit the button
+`(INVNS)` | Draw centered at actual size
+`(INVSHR)` | Stretch if too big, draw in actual size if not
+
+Please note that any of these work only if you assign some normal graphic to the button, in which case the inventory item is drawn on top of it.
+
+Example:
+
+```ags
+btnSelectedInv.Text = "(INVNS)";
+```
+
+Will make button btnSelectedInv display active inventory item's graphic, or just its normal graphic when no inventory item is selected.
 
 *See also:* [`Button.NormalGraphic`](Button#buttonnormalgraphic),
 [`Label.Text`](Label#labeltext)
