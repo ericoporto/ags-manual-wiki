@@ -2666,6 +2666,18 @@ view.
 
 ---
 
+### `Character.on`
+
+```ags
+int Character.on
+```
+
+Gets/sets whether the character is enabled and visible. This lets you disable any character anytime, including player character. When disabled a character will not be drawn on screen and not updated (not animating, not moving, etc). Disabled characters may still be modified and have their coordinates changed by setting their corresponding properties directly, and also moved to another room with [ChangeRoom](Character#characterchangeroom) function.
+
+Rooms have a property called "ShowPlayerCharacter", which is enabled by default. If this property is disabled, then player character will have their `on` property set to 0 when such room is loaded, and restored it to 1 when leaving that room.
+
+---
+
 ### `Character.PreviousRoom`
 
 *(Formerly known as `character[].prevroom`, which is now obsolete)*
