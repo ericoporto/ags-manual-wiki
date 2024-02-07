@@ -12,7 +12,7 @@ make up a room. This includes:
 
 **NOTE:** Currently only one room can be open for editing at a time
 
-![Editor Room](images/EditorRoom_1.png
+![Editor Room](images/EditorRoom_1.png)
 
 ### Controls
 
