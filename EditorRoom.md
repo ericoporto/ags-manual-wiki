@@ -111,6 +111,17 @@ Positional changes on the properties of an element (e.g. its x or y position)
 will instantly be updated in the room area, which is useful for pixel
 positioning.
 
+### Room Properties
+
+-   **Description** - this is an optional room description, which may also serve as a room's name.
+-   **Number** - room's number is it's ID. Changing this property will renumber the room and rename its files.
+-   **BackgroundAnimationDelay** - the delay between room background frames switch, in game ticks. This value only has a meaning when room has multiple backgrounds, and **BackgroundAnimationEnabled** is turned on.
+-   **BackgroundAnimationEnabled** - whether the background frames will switch automatically over time. This value only has a meaning when room has multiple backgrounds.
+-   **MaskResolution** - defines the ratio of masks (walkable, hotspot and region) vs room background size. Default is 1:1, but few other choice are available, like 1:2, 1:3 and 1:4. The higher the last number is, the less precise the mask is. This setting exists mostly for the backwards compatibility, or for exotic scenarios where you may want to have hotspot or walkable area to have lower resolution than the room itself. Note that walk-behind mask is not affected by this, and always has 1:1 ratio with the room background.
+-   **PlayerCharacterView** - when set to a non-zero value, the player character will be changed to this View when the room is loaded. Note that you may also use script command ["ChangeView"](Character#characterchangeview) for the same purpose.
+-   **Properties** - lets you configure room's Custom Properties. Please see [respective topic](CustomProperties) for more information on this subject.
+-   **ShowPlayerCharacter** - if set to FALSE, then the player character will be disabled (turned invisible and immobile) when the room is loaded. Also the standard "WalkTo" cursor mode will be disabled. Note that you may achieve similar effect using property ["Character.on"](Character#characteron) and function ["Mouse.DisableMode"](Mouse#mousedisablemode) in script.
+
 ### Edges
 
 Edges are moved by clicking and dragging them, once their layer is selected. If
