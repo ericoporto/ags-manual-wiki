@@ -170,8 +170,7 @@ int AudioChannel.Speed
 Gets/sets the playing audio clip's playback speed. The value is defined
 in clip's milliseconds per second: 1000 is default, meaning 1000 of
 clip's ms in 1 real second (scale 1:1). Set < 1000 for slower play
-and > 1000 for faster play. **NOTE:** currently works for MP3 and OGG
-audio clips only.
+and > 1000 for faster play.
 
 Example:
 
@@ -182,7 +181,7 @@ channel.Speed = 2000;
 
 plays *aFunnyTalk* clip at the double speed.
 
-*Compatibility:* Supported by **AGS 3.4.0** and later versions.
+*Compatibility:* Supported by **AGS 3.4.0** and later versions. Prior to **AGS 3.6.0** was working only for MP3 and OGG clips.
 
 ---
 
