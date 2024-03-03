@@ -108,6 +108,8 @@ Operator | Description | Example
 `%` | Remainder | `a = b % c;`
 `+` | Add | `a = b + c;`
 `-` | Subtract | `a = b - c;`
+`++` | Increment by 1 | `a++;`
+`--` | Decrement by 1 | `a--;`
 `<<` | Bitwise Left Shift | `a = b << c;`
 `>>` | Bitwise Right Shift | `a = b >> c;`
 `&` | Bitwise AND | `a = b & c;`
