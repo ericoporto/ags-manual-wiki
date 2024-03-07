@@ -56,6 +56,12 @@ A. There are some different immediate suspects here.
 
 ---
 
+**Q. Mouse clicks do not seem to work in my game, no matter what I click on!**
+
+A. Make sure that there's no big transparent GUI covering the game screen. In AGS transparent pixels on GUIs do not let clicks through, unless you set that GUI's Clickable property to "false". If that's the case, but that GUI has interactive controls on it (such as buttons), then either shrink GUI to only have enough size for those controls to fit, or make several smaller GUIs and organize controls on them.
+
+---
+
 **Q. When I enter a certain room, I just get a black screen.**
 
 A. Make sure that you haven't used a blocking script command such as "Display", "Character.Say", "Character.Walk" or similar in the
