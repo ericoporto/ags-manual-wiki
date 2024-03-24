@@ -209,11 +209,11 @@ deletes all the saves. This deletes in an opposite order to counter the problem 
 DisableInterface ()
 ```
 
-Disables the player interface. This works the same way as it is disabled
-while an animation is running: the mouse cursor is changed to the Wait
-cursor, and mouse clicks will not be sent through to the
-\"on_mouse_click\" function. Also, all interface buttons will be
-disabled.
+Disables the player interface. This has two main effects:
+- all GUI (both parent and controls) will be disabled and not react on mouse events.
+- mouse clicks will not be sent through to the \"on_mouse_click\" function.
+
+While disabled, GUIs may change their looks depending on the setting ["When player interface is disabled, GUI should"](https://github.com/adventuregamestudio/ags-manual/wiki/GeneralSettings#visual).
 
 **NOTE:** AGS keeps a count of the number of times DisableInterface is
 called. Every call to DisableInterface must be matched by a later call
@@ -690,9 +690,10 @@ IsInterfaceEnabled()
 ```
 
 Returns 1 if the player interface is currently enabled, 0 if it is
-disabled. The user interface is disabled while the cursor is set to the
-Wait cursor - i.e. while the character is performing a blocking Walk, or
-other blocking action.
+disabled. There are following reasons why it may be disabled:
+- DisableInterface function was called in script;
+- the game is currently running any blocking action (such as Display, Say or Walk);
+- the game is in a certain state, such as displaying dialog options.
 
 Example:
 
