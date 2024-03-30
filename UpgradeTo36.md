@@ -178,6 +178,10 @@ Overlays in AGS are currently the only "game objects" that can be created dynami
 
 Please refer to the corresponding page under Scripting API documentation to learn details about these and other [Overlay's functions and properties](Overlay).
 
+### MIDI playback
+
+While MIDI music files are still supported, on Windows engine is no longer using a synthesizer provided by the operating system. Regardless of the OS, players will have to install a Soundfont and Timidity config if they want to hear MIDI soundtrack. Please refer to [MIDI Playback](MIDI-playback) article for more details.
+
 ### Discontinued features
 
 There are a few engine functionalities that were either removed completely, or disabled temporarily for technical reasons.
