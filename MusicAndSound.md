@@ -24,7 +24,7 @@ OGG is a digital music format similar
 to MP3, but achieving better compression and higher quality. For more information 
 and programs to encode your music to OGG, see https://www.vorbis.org/
 
-If you use MIDI, the player will need a Soundfont and a Timidity config file to be able to play the music.
+If you use MIDI, your players will have to install a Soundfont and a Timidity config file to be able to play the music. Please see [MIDI playback](MIDI-playback) for details.
 
 ### Audio in the Editor
 
