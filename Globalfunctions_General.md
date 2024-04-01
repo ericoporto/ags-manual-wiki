@@ -213,7 +213,7 @@ Disables the player interface. This has two main effects:
 - all GUI (both parent and controls) will be disabled and not react on mouse events.
 - mouse clicks will not be sent through to the \"on_mouse_click\" function.
 
-While disabled, GUIs may change their looks depending on the setting ["When player interface is disabled, GUI should"](https://github.com/adventuregamestudio/ags-manual/wiki/GeneralSettings#visual).
+While disabled, GUIs may change their looks depending on the setting ["When player interface is disabled, GUI should"](GeneralSettings#visual).
 
 **NOTE:** AGS keeps a count of the number of times DisableInterface is
 called. Every call to DisableInterface must be matched by a later call
