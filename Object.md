@@ -542,7 +542,7 @@ FRAME of LOOP in VIEW. If you do not supply the loop or frame:
 You must use this command before calling Animate, so that AGS knows
 which view to animate the object with.
 
-**NOTE:** this may be unexpected, but calling this function will play any sound linked to the given frame. This is because SetView may also be used to manually switch between frames without using [Animate](Object#objectanimate) command.
+**NOTE:** prior to **AGS 3.6.1** calling this function would play any sound linked to the given frame. This behavior is disabled in **3.6.1**, because it's causing a duplicate sound playback when SetView is followed by Animate.
 
 Example:
 
