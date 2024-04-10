@@ -125,8 +125,7 @@ The screen overlays are positioned in the screen graphic layer, and are visually
 The X and Y parameters specify the upper-left corner of where the text
 will be written. WIDTH is the width, in pixels, of the text area. FONT
 is the font number from the editor to use (0 is the normal font, 1 is
-the speech font). COLOR is the text color - use one of the colors from
-1 to 15. Finally, TEXT is obviously the text that gets displayed.
+the speech font). COLOR is the text color. Finally, TEXT is obviously the text that gets displayed.
 
 The function returns the Overlay, which you use later to reposition and
 remove the overlay.
