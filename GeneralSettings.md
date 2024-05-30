@@ -202,11 +202,9 @@ accessible in future versions.
     files in a format that requires less storage space. This may reduce the
     compiled game size on disk, but effect may differ depending on number of
     colors used in sprites, and other factors.
--   **Package custom data folder(s)** - A comma-separated list of folders. The
-    contents of these folders will be added to the game resources, and you will
-    be able to access them by using the `$DATA$` token in file paths.
-    The top level directory name is preserved, to avoid file name collision.
-    More details on this in [`File.Open`](File#fileopen).
+-   **Package custom data folder(s)** - A comma-separated list of folders, relative to the game project folder. These folders and their **direct** file contents will be added to the game package when the game is compiled, and you will be able to refer them in script commands using the `$DATA$` location tag.<br>
+    For instance, if you'd like to add files from a subfolder "MyData", then insert "MyData" in this field, and access these as `"$DATA$/MyData/somefile.dat"` in script. If you'd like to have three subfolders "MyData1", "MyData2" and "MyData3" added, then insert a string "MyData1, MyData2, MyData3" into this property.<br>
+    For further details on  see [`File.Open`](File#fileopen).
 -   **Split resource files into X MB-sized chunks** - see
     [here](DistGame#splitting-resource-files) for information. 
 -   **Sprite file compression** - when enabled the sprites will be
