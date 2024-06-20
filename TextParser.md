@@ -116,3 +116,30 @@ else
 Then, the room script can check for things that the player can do in the
 current room. See the [`CallRoomScript`](Globalfunctions_General#callroomscript)
 description for more information.
+
+### Multi-words
+
+Multi-words are words which contain spaces, for example "blue key", "box of matches"
+or "stone hammer". While you can add them to the parser and use in Said commands just
+like regular words, keep in mind the parser will **always match the longest word**
+it finds which can lead to complications if you have words that prefix each other.
+
+Imagine you have the words "red", "blue" and "key" in your parser:
+```ags
+Parser.Said("take red,blue key")
+```
+will match both "take red key" and "take blue key" inputs.
+
+If you later add the word "blue key" to the parser, the same command
+
+```ags
+Parser.Said("take red,blue key")
+```
+
+will only match "take red" and "take blue key" (and won't match "take red key" anymore!)
+since the parser will recognize "blue key" as a single word and a synonym (via the
+comma syntax) to "red"; this is likely not what you'd want.
+
+To avoid this risk prefer using one-word synonyms for your multi-words (for example
+add "blue-key" as a synonym of "blue key" to the parser and use the former in your Said
+commands so that it's always clear where word boundaries are).
