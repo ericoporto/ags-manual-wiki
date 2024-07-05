@@ -5,6 +5,7 @@ The following predefined macros and constants are available in your scripts:
 Name | Description
 --- | ---
 DEBUG | Defined if the game is being compiled in debug mode, not defined otherwise
+UNICODE | Defined if the game is being saved in Unicode text format.
 SCRIPT_API_vXXX | Defined if corresponding version of script API is enabled (see the [list](Constants#script-api-levels))
 SCRIPT_COMPAT_vXXX | Defined if certain compatibility level is enabled (see the [list](Constants#script-api-levels))
 STRICT | Defined if "Enforce Object Based Scripting" is enabled, not defined otherwise
@@ -92,3 +93,4 @@ API version | API level | Compatibility level
 3.5.1 | SCRIPT_API_v351 | SCRIPT_COMPAT_v351
 3.6.0 Alpha | SCRIPT_API_v360 | SCRIPT_COMPAT_v360
 3.6.0 Final | SCRIPT_API_v36026 | SCRIPT_COMPAT_v36026
+3.6.1 | SCRIPT_API_v361 | SCRIPT_COMPAT_v361
