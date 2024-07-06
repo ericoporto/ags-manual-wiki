@@ -145,7 +145,7 @@ functions.
 Example:
 
 ```ags
-Overlay* myOverlay = Overlay.CreateTextual(50,80,120, Game.SpeechFont, 15,"This is a text overlay");
+Overlay* myOverlay = Overlay.CreateTextual(50, 80, 120, Game.SpeechFont, 15, "This is a text overlay");
 Wait(40);
 myOverlay.Remove();
 ```
@@ -154,6 +154,12 @@ will display a 120 pixels text area with its upper left corner at
 coordinates 50,80 containing the string "This is a text overlay" using
 the speech font and white color. It will be displayed for 1 second, then
 removed.
+
+As it's been said, textual Overlays are displayed in the way similar to the current speech style ([`Speech.Style`](Speech#speechstyle)). This means that if speech style is "eSpeechLucasarts" or "eSpeechSierra", then overlays only have a text, but no background. If speech style is "eSpeechSierraWithBackground", then overlays have a text and a background box.
+
+Following [game variables](https://github.com/adventuregamestudio/ags-manual/wiki/Gamevariables) affect the textual overlay's look:
+* `game.speech_text_gui` - defines a GUI to use as a background (in "eSpeechSierraWithBackground" style only);
+* `game.text_align` - defines text alignment (eAlignLeft, eAlignCentre, eAlignRight).
 
 *See also:*
 [`Overlay.CreateGraphical`](Overlay#overlaycreategraphical),
