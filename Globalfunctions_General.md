@@ -498,6 +498,8 @@ displayed.
 The height is returned in screen pixels, so it can be
 used with the screen display commands.
 
+**NOTE:** There's a historical mistake in this function, which was kept for backwards compatibility until today. When GetTextHeight calculates line wrapping within a given width, it reduces "width" parameter by 1. For a correct result, pass "width + 1" instead (where "width" is the value that you like to have).
+
 Example:
 
 ```ags
