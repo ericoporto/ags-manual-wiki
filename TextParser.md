@@ -68,7 +68,7 @@ This way if they try to kill anything they will get the generic
 response.
 
 Sometimes, you want to accept two different words that are not synonyms
-as the same thing. For example, the words "take" and "eat" normally have
+as the same thing. Let's call these *"alternatives"*. For example, the words "take" and "eat" normally have
 totally different meanings, so you wouldn't make them synonyms of each
 other. However, if the player has a headache tablet, for instance, then
 "take tablet" and "eat tablet" would both be valid. This is where the
@@ -79,7 +79,7 @@ of all words separated by the comma will match. So:
 if (Parser.Said("eat,take tablet"))
 ```
 
-will match eat or take and all their synonyms, then tablet and its
+will match "eat" or "take" and all their synonyms, then "tablet" and its
 synonyms.
 
 Another fairly common task with a parser is to check for optional words
@@ -137,7 +137,7 @@ Parser.Said("take red,blue key")
 ```
 
 will only match "take red" and "take blue key" (and won't match "take red key" anymore!)
-since the parser will recognize "blue key" as a single word and a synonym (via the
+since the parser will recognize "blue key" as a single word and an *alternative* (via the
 comma syntax) to "red"; this is likely not what you'd want.
 
 To avoid this risk prefer using one-word synonyms for your multi-words (for example
