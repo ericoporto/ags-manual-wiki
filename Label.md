@@ -2,6 +2,10 @@
 
 Label is a subclass of [`GUIControl`](GUIControl) and therefore inherits all GUIControl's functions and properties in addition to its own, which are listed below.
 
+**Compatibility notes:**
+
+Prior to **AGS 3.6.0** Labels added 1 pixel to the font's linespacing property (see [`GetFontLineSpacing`](Globalfunctions_General#getfontlinespacing)) when drawing multiple text lines. Starting with 3.6.0 they use strictly font's linespacing value.
+
 ---
 
 ### `Label.Font`
