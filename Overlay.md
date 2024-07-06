@@ -157,7 +157,7 @@ removed.
 
 As it's been said, textual Overlays are displayed in the way similar to the current speech style ([`Speech.Style`](Speech#speechstyle)). This means that if speech style is "eSpeechLucasarts" or "eSpeechSierra", then overlays only have a text, but no background. If speech style is "eSpeechSierraWithBackground", then overlays have a text and a background box.
 
-Following [game variables](https://github.com/adventuregamestudio/ags-manual/wiki/Gamevariables) affect the textual overlay's look:
+Following [game variables](Gamevariables) affect the textual overlay's look:
 * `game.speech_text_gui` - defines a GUI to use as a background (in "eSpeechSierraWithBackground" style only);
 * `game.text_align` - defines text alignment (eAlignLeft, eAlignCentre, eAlignRight).
 
