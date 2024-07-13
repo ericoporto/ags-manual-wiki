@@ -122,7 +122,7 @@ positioning.
 -   **Properties** - lets you configure room's Custom Properties. Please see [respective topic](CustomProperties) for more information on this subject.
 -   **ShowPlayerCharacter** - if set to FALSE, then the player character will be disabled (turned invisible and immobile) when the room is loaded. Also the standard "WalkTo" cursor mode will be disabled. Note that you may achieve similar effect using property ["Character.on"](Character#characteron) and function ["Mouse.DisableMode"](Mouse#mousedisablemode) in script.
 
-### Roon Events
+### Room Events
 
 -   **Enters room before fade-in** - (`RoomLoad`) triggers when the player enters the room, before the fade-in animation has played.
 -   **Enters room after fade-in** - (`RoomAfterFadeIn`) triggers when the player enters the room, after the fade-in animation has played. 
