@@ -98,7 +98,7 @@ int value = arr[ARR_WIDTH * row + col];
 ```
 This initialises an array of the size of ARR_WIDTH x ARR_HEIGHT, and you can access individual cells using the code shown.
 
-Finally, if you are coming to AGS from other coding languages, you may be used to mass assignments of an array, like int x[10]=[0,1,2,3,4,5,6,7,8,9];. This unfortunately is not currently possible in AGS, you would have to assign each cell's value individually.
+Finally, if you are coming to AGS from other coding languages, you may be used to mass assignments of an array, like int x[10]={0,1,2,3,4,5,6,7,8,9};. This unfortunately is not currently possible in AGS, you would have to assign each cell's value individually.
 
 *See also:* [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct)
 
