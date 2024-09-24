@@ -90,15 +90,7 @@ this sets Health 3 to 50, Health 4 to 100, and the Health index that
 corresponds to the player character's ID number to 10.  
 You need to do this inside a function.
 
-You currently cannot have 2D (or 3D) arrays natively in AGS, but there is a way to work around that:
-
-```ags
-int arr[ARR_WIDTH * ARR_HEIGHT];
-int value = arr[ARR_WIDTH * row + col];
-```
-This initialises an array of the size of ARR_WIDTH x ARR_HEIGHT, and you can access individual cells using the code shown.
-
-Finally, if you are coming to AGS from other coding languages, you may be used to mass assignments of an array, like int x[10]={0,1,2,3,4,5,6,7,8,9};. This unfortunately is not currently possible in AGS, you would have to assign each cell's value individually.
+AGS Script currently doesn’t support 2D arrays or initialization of a sequence of values in a single assignment.
 
 *See also:* [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct)
 
