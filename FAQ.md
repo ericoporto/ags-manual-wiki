@@ -19,7 +19,7 @@ A. Yes, and such games were made with AGS in the past. But you should know that 
 **Q. What resolution should I make my game in?**
 
 A. AGS games are not different from any other games. Think on what resolution would match your chosen game design and graphic style. Experiment, make few test games to find out what's best fit.<br>
-It's important to know the difference between "native resolution" and "window resolution". Your game itself may be as small as 320 x 200, but AGS allows players to stretch the game window to any size, scaling your game up (or down, although that usually is not a good thing), without any extra effort from you. So if you want to use "old-school" low-res graphics you don't have to worry about how to display your game on larger monitors.
+It's important to know the difference between "native resolution" and "window resolution". For example, your may make a game at 320 x 200, but AGS allows players to stretch the game window to any size, scaling your game up (or down, although that usually is not a good thing), without any extra effort from you. So if you want to use "old-school" low-res graphics you don't have to worry about how to display your game on larger monitors.
 
 ---
 
