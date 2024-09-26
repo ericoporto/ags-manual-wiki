@@ -110,7 +110,7 @@ for (int i = 0; i < 50; i++) {
 }
 ```
 
-Both examples reset every element of "health" array to a zero. See [while](ScriptKeywords#while) and [for](ScriptKeywords#for) keywords for more information on loops.
+Both examples reset every element of "health" array to a zero.
 
 *See also:* [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct), [while](ScriptKeywords#while), [for](ScriptKeywords#for)
 
@@ -161,7 +161,7 @@ void SetMapColumn(int col, int value) {
 
 // Get
 int GetMapValue(int col, int row)  {
-    return map[ARR_WIDTH * row + col];
+    return map[row * ARR_WIDTH + col];
 }
 ```
 
