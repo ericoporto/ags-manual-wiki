@@ -159,7 +159,7 @@ void SetMapColumn(int col, int value) {
     }
 }
 
-// Get
+// Get a map value at particular row and column
 int GetMapValue(int col, int row)  {
     return map[row * ARR_WIDTH + col];
 }
