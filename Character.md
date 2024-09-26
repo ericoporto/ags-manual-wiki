@@ -1464,10 +1464,6 @@ character is swimming and they need to tread water when idle.
 
 Pass IDLEVIEW as -1 to disable the idle view completely.
 
-**NOTE:** The DELAY is actually relative to the game speed. Setting this
-to 1 means a one second delay at the default 40 fps, but if you have
-adjusted the game speed then the delay will be adjusted accordingly.
-
 **NOTE:** Due to a quirk in AGS, you cannot set the Idle View to view 1.
 In the unlikely event that you created your idle view in View 1, you'll
 need to move it to another view number.
