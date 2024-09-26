@@ -90,9 +90,80 @@ this sets Health 3 to 50, Health 4 to 100, and the Health index that
 corresponds to the player character's ID number to 10.  
 You need to do this inside a function.
 
-AGS Script currently doesn’t support 2D arrays or initialization of a sequence of values in a single assignment.
+**NOTE:** AGS currently doesn't support initialization of a range of elements in a single assignment, like many programming languages do.
 
-*See also:* [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct)
+Oftentimes you may want to do certain action over each element of array, or particular range of elements, such as each element from 5th to 10th, for example. Because array's index may be taken from a variable too (like *health[index]*), the standard way of doing so is using **loops**:
+
+```ags
+int i;
+while (i < 50) {
+    health[i] = 0;
+    i++;
+}
+```
+
+or 
+
+```ags
+for (int i = 0; i < 50; i++) {
+    health[i] = 0;
+}
+```
+
+Both examples reset every element of "health" array to a zero. See [while](ScriptKeywords#while) and [for](ScriptKeywords#for) keywords for more information on loops.
+
+*See also:* [Dynamic arrays](DynamicArrays), [Structs](ScriptKeywords#struct), [while](ScriptKeywords#while), [for](ScriptKeywords#for)
+
+---
+
+### Multidimensional arrays
+
+AGS Script currently **DOESN'T** natively support multi-dimensional arrays (2D and higher).
+
+There's, however, a classic method of emulating 2D array using a 1D array, if you create 1D array of size equal to "ARR_WIDTH * ARR_HEIGHT". You may then access its elements using following formula:
+
+    value = array[row * ARR_WIDTH + col];
+
+where "row" and "col" are indexes of row and column respectively. You may think of these as Y and X coordinates, if you prefer.
+
+This method works with both regular arrays and [dynamic arrays](DynamicArrays).
+
+For example:
+
+```ags
+#define MAP_WIDTH   50
+#define MAP_HEIGHT  20
+#define MAP_SIZE    1000 // this is MAP_WIDTH * MAP_HEIGHT
+
+int map[MAP_SIZE];
+
+// Fill whole map with random values from min_value to max_value (inclusive)
+void InitRandomMap(int min_value, int max_value) {
+    // here we do not care about rows and columns, so iterate this array as a "linear" (1D) array
+    for (int i = 0; i < MAP_SIZE; i++) {
+        map[i] = Random(max_value - min_value) + min_value;
+    }
+}
+
+// Fill particular row with identical values
+void SetMapRow(int row, int value) {
+    for (int col = 0; col < ARR_WIDTH; col++) {
+        map[row * ARR_WIDTH + col] = value;
+    }
+}
+
+// Fill particular column with identical values
+void SetMapColumn(int col, int value) {
+    for (int row = 0; row < ARR_HEIGHT; row++) {
+        map[row * ARR_WIDTH + col] = value;
+    }
+}
+
+// Get
+int GetMapValue(int col, int row)  {
+    return map[ARR_WIDTH * row + col];
+}
+```
 
 ---
 
