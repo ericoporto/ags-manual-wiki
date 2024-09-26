@@ -15,7 +15,7 @@ Adds one quantity of the specified item to the character's inventory. This ensur
 the item gets added to the character's inventory list, and that any
 on-screen inventory display gets updated if appropriate.
 
-The first parameter is the inventory item's Script O-Name from the
+The first parameter is the inventory item's Script Name from the
 editor (for example, *iPoster*).
 
 By default, the new item is added to the end of the character's
@@ -743,7 +743,7 @@ bool Character.HasInventory(InventoryItem *item)
 Checks whether the character currently has the specified inventory item.
 Returns *true* if they do, or *false* if they don't.
 
-The parameter is the inventory item's Script O-Name from the editor (for
+The parameter is the inventory item's Script Name from the editor (for
 example, *iPoster*).
 
 Example:
@@ -1074,7 +1074,7 @@ they do not have the item, nothing happens.
 
 To completely remove an item of quantity greater than one will require calling the function InventoryQuantity times.
 
-The parameter is the inventory item's Script O-Name from the editor.
+The parameter is the inventory item's Script Name from the editor.
 
 Example:
 
