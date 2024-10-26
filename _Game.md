@@ -24,6 +24,8 @@ Note that the player character does not have to be seen on screen at all. It mig
 
 Therefore, AGS game requires at least 1 Room and 1 Character (set as "player character") to run. Everything else is optional.
 
+See Also: [AGS Tutorial](StartingOff)
+
 ### Game genre and gameplay
 
 AGS itself does not define game's genre, and does not restrict the game to the certain genre or gameplay style. It only provides you with tools, and let you use them as you see fit. Rooms are also not restricted to the certain role or look. It's all about what do you put into the game and how do you script it. It's possible to have multiple different genres in the same game in different rooms, and it is also possible to have a single room which dynamically changes its looks and behavior as the game progresses.
