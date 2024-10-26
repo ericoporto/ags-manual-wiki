@@ -18,17 +18,21 @@ Scripts are written in a scripting language, called simply "AGS Script". This ma
 
 In AGS the game's flow is based on Rooms. Room is a scene where any game activity takes place. The game may consist of one or many rooms, but only one Room may be loaded and active at the current time. All inactive rooms are unloaded, and only keep their saved states from the last time they were visited. When game switches to another room, the previous one saves its state in game's memory and gets unloaded. If a room was visited once before, then, upon loading it again, its state is restored. That's the default behavior, but you may also override it and make it so that the room does not keep its state, and resets each time it is visited again.
 
-Characters are another essential element of the game. In AGS one of the characters must be assigned as a "playable character" (or "player character"). The idea is that the "player character" is the one which player controls by default, but, more importantly, it's this character that allows to switch rooms: engine always loads the room in which the player character is located. Rooms are changed by moving the player character elsewhere.
+Characters are another essential element of the game. In AGS one of the characters must be assigned as a "playable character" (or "player character"). The idea is that the "player character" is the one which player controls by default, but, more importantly, it's this character that allows to change rooms: engine always loads the room in which the player character is located. Rooms are changed by moving the player character elsewhere.
 
 Note that the player character does not have to be seen on screen at all. It might as well be made invisible, either temporarily or for the whole game. Only its *presence* is necessary for the game to know which room to load.
 
-Therefore, AGS game requires at least 1 Room and 1 Character (set as "player character") to run. Everything else is optional.
+While the starting "player character" is set in the Editor, you may select virtually *any other* character as playable during gameplay using a script command. This allows, for example, to have multiple playable characters in game, switching between them as the story progresses, or letting player to switch at will.
+
+NOTE: AGS game requires at least 1 Room and 1 Character (set as "player character") to run. Everything else is optional.
 
 See Also: [AGS Tutorial](StartingOff)
 
 ### Game genre and gameplay
 
-AGS itself does not define game's genre, and does not restrict the game to the certain genre or gameplay style. It only provides you with tools, and let you use them as you see fit. Rooms are also not restricted to the certain role or look. It's all about what do you put into the game and how do you script it. It's possible to have multiple different genres in the same game in different rooms, and it is also possible to have a single room which dynamically changes its looks and behavior as the game progresses.
+AGS engine was originally designed focused on the classic "point-and-click" adventure game genre. For that reason many of its elements are primarily purposed to serve their roles in such adventure game.
+
+At the same time, AGS itself does not define your game's genre, and does not restrict the game to the single genre or gameplay style. It only provides you with tools, and lets you use them as you see fit. Rooms are also not restricted to the certain role or look. It's all about what do you put into the game and how do you script it. It is fairly possible to have multiple different genres featured in the same game in different rooms, and it is also possible to have a single room which dynamically changes its looks and behavior as the game progresses.
 
 Game elements have their standard uses, what they were meant for, but also may be used in custom, alternate ways when necessary. Same thing may often be achieved in various ways, ones more efficient than others. It's essential to learn what types of objects are there, what they can do, which commands does the scripting language provide. The more you know about them, the easier it will be to find a good way to create your game.
 
