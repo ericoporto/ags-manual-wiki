@@ -5,5 +5,5 @@ Following list should later be moved to Home.md:
 ## Game features
 
 - [Game](_Feature_Game)
-- [Room](_Feature_Room)
+- [Rooms](_Feature_Rooms)
 - [Inventory Items](_Feature_InventoryItems)
