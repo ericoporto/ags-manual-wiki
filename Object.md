@@ -712,26 +712,34 @@ The final frame sound's volume will be equal to `sound volume * AnimationVolume 
 int Object.Baseline
 ```
 
-Gets/sets the object's baseline. This allows you to modify the line you
-can set in the editor. You can disable the baseline (and revert to using
-the base of the object's image on the screen) by setting it to 0.
+Gets/sets the object's baseline. This allows you to set a specific
+base line for the object which works as its z-order value when sorting characters, room objects and walk-behinds on screen.
 
-Otherwise, set it to the Y screen co-ordinate you want to use, normally
-from 1 to 200 unless you have a taller than usual room.
+The baseline's value can be from 1 to the height of the room.
+Setting it to 0 (or lower) will make object go back to using its current Y coordinate as the baseline (that's the default).
 
-If you want to get the baseline and it returns 0, then the baseline is
-the object's Y co-ordinate.
+If you want to get the effective object's baseline, and Baseline's property value is 0, then the baseline is the object's Y co-ordinate.
 
 **IMPORTANT:** If two or more Objects (or Characters, and so on) have equal Baseline, their draw order is **undefined**, and should not be relied upon. This is because of how sprite sorting is done in the engine.
 
-Example:
+Example 1:
 
 ```ags
-object[4].Baseline = 100;
+oDoor.Baseline = 100;
 ```
 
-will change object's 4 baseline to a line positioned at y coordinate
+will change oDoor object's baseline to a line positioned at y coordinate
 100.
+
+Example 2:
+
+```ags
+int zorder = oDoor.Baseline;
+if (zorder == 0)
+    zorder = oDoor.y;
+```
+
+will find out the object's effective z-order in the room.
 
 *See also:* [`Character.Baseline`](Character#characterbaseline),
 [`Object.Y`](Object#objecty),

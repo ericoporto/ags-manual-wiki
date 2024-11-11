@@ -2003,15 +2003,16 @@ int Character.Baseline
 ```
 
 Gets/sets the character's baseline. This allows you to set a specific
-base line for the character, which works similarly to walk-behind area
-and object baselines.
+base line for the character, which works as its z-order value when sorting characters, room objects and walk-behinds on screen.
 
-The baseline can be from 1 to the height of the room.
-Setting it to 0 will make character go back to using its y coordinate as the baseline.
+The baseline's value can be from 1 to the height of the room.
+Setting it to 0 (or lower) will make character go back to using its current y coordinate as the baseline (that's the default).
+
+If you want to get the effective character's baseline, and Baseline's property value is 0, then the baseline is the character's Y co-ordinate.
 
 **IMPORTANT:** If two or more Character (or other objects) have equal Baseline, their draw order is **undefined**, and should not be relied upon. This is because of how sprite sorting is done in the engine.
 
-Example:
+Example 1:
 
 ```ags
 cEgo.Baseline = 120;
@@ -2020,6 +2021,16 @@ cEgo.Baseline = 120;
 will move the character's baseline (which can be used for testing
 collisions, or for walk-behinds) to a line positioned at y coordinate =
 120.
+
+Example 2:
+
+```ags
+int zorder = cEgo.Baseline;
+if (zorder == 0)
+    zorder = cEgo.y;
+```
+
+will find out the character's effective z-order in the room.
 
 *See also:* [`Object.Baseline`](Object#objectbaseline),
 [`SetWalkBehindBase`](Globalfunctions_Room#setwalkbehindbase)
