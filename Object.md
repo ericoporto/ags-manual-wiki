@@ -376,6 +376,9 @@ Starts the object moving from its current location to (X,Y). It will
 move at speed SPEED, which uses the same scale as the character Walk
 Speed values in the AGS Editor.
 
+Speed value may be either positive or negative.
+Positive values mean a speed of N pixels per game frame, while negative values mean a speed of 1/N pixels per game frame (that is - N game frames spent for a single pixel).
+
 If *BlockingStyle* is eNoBlock (the default), then control returns to
 the script immediately, and the object will move in the background.
 

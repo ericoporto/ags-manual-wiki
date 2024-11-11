@@ -298,10 +298,9 @@ walking.
 walking, the game will cycle through the rest of the frames in the loop.
 
 The "MovementSpeed" option allows you to control how fast the character
-moves when walking. Here, a larger number means he walks faster. If you
+moves when walking. This value is in pixels per a single game update. A larger number would make a character walk faster, a lower number makes it slower. If you
 find that a movement speed of 1 is still too fast, you can use negative
-numbers (e.g. -3) which will move even more slowly. The lower you go, the
-slower the movement speed.
+numbers (e.g. -3) which is interpreted as 1/N pixels per a game update (or N game updates to pass a single pixel).
 
 The "SpeechColor" option specifies which color is used for the text
 when this character is talking. It effects all messages that are said by

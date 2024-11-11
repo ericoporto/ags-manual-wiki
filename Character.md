@@ -1493,9 +1493,12 @@ horizontal direction and Y_SPEED in the vertical direction. The values
 used for X_SPEED and Y_SPEED are identical to those set in the AGS
 Editor for walking speed.
 
+Speed values may be either positive or negative.
+Positive values mean a speed of N pixels per game frame, while negative values mean a speed of 1/N pixels per game frame (that is - N game frames spent for a single pixel).
+
 X_SPEED and Y_SPEED can be identical, in which case the character
-moves with the same speed in any direction. (the editor calls this
-"Uniform movement speed")
+moves with the same speed in any direction (the editor calls this
+"Uniform movement speed").
 
 **NOTE:** This function CANNOT be called while the character is moving,
 so you must stop him first.
@@ -1506,7 +1509,7 @@ Example:
 cEgo.SetWalkSpeed(10, 10);
 ```
 
-will change the character EGO's speed to 10.
+will change the character EGO's speed to 10 pixels per game frame.
 
 *See also:*
 [`Character.AnimationSpeed`](Character#characteranimationspeed),
