@@ -15,10 +15,6 @@ ListBox.AddItem(string newitem)
 Adds NEWITEM to the specified list box. The item will be appended to the
 end of the list.
 
-**NOTE:** List boxes have a limit of 200 items. If you try to add more
-than that, this function will return *false* and the item will not be
-added.
-
 Example:
 
 ```ags
@@ -27,6 +23,8 @@ lstChoices.AddItem(input);
 ```
 
 will take the input from the user and add it to the listbox.
+
+*Compatibility:* prior to **AGS 3.5.0** ListBox had a limit of 200 items; they are not limited anymore.
 
 *See also:* [`ListBox.Clear`](ListBox#listboxclear),
 [`ListBox.FillDirList`](ListBox#listboxfilldirlist),
@@ -182,10 +180,6 @@ Inserts NEWITEM into the specified list box. The item will be inserted
 Listbox indexes go from 0 (the first item) to ItemCount - 1 (the last
 item). The new item will be inserted before the index you specify.
 
-**NOTE:** List boxes have a limit of 200 items. If you try to add more
-than that, this function will return *false* and the item will not be
-added.
-
 Example:
 
 ```ags
@@ -195,6 +189,8 @@ lstChoices.InsertItemAt(1, "Third item");
 ```
 
 will insert the Third Item in between the First and Second items.
+
+*Compatibility:* prior to **AGS 3.5.0** ListBox had a limit of 200 items; they are not limited anymore.
 
 *See also:* [`ListBox.AddItem`](ListBox#listboxadditem),
 [`ListBox.RemoveItem`](ListBox#listboxremoveitem)
