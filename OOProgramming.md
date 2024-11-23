@@ -67,11 +67,6 @@ protected import static function my_function();
 
 ### Defining attributes
 
-**Note:** You cannot use an attribute in the same script where the getter
-and setter methods are defined. If you try, you'll get an error like this:
-
-    Error: is_script_import: NULL pointer passed
-
 The keyword attribute is actually comparable to the C# idea of properties,
 though the actual implementation is of course different. An attribute gives us
 the ability to encapsulate our properties so we can protect our data without
