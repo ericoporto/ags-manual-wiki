@@ -204,10 +204,31 @@ Overlay.SetPosition(int x, int y, int width = 0, int height = 0)
 
 Sets this overlay's position, and optionally its size.
 
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
 *See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy),
 [`Overlay.Width`](Overlay#overlaywidth),
 [`Overlay.Height`](Overlay#overlayheight),
 [`Overlay.SetSize`](Overlay#overlaysetsize)
+
+---
+
+### `Overlay.SetSize
+
+```ags
+Overlay.SetSize(int width, int height)
+```
+
+Changes the size of the overlay. Works with both graphical and textual overlays.
+
+When the size is set *will stretch or shrink* the overlay's image, both horizontally and vertically.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy),
+[`Overlay.Width`](Overlay#overlaywidth),
+[`Overlay.Height`](Overlay#overlayheight),
+[`Overlay.SetPosition`](Overlay#overlaysetposition)
 
 ---
 
@@ -239,23 +260,6 @@ and then replace the overlay with another one.
 
 *See also:* [`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
 [`Overlay.Remove`](Overlay#overlayremove)
-
----
-
-### `Overlay.SetSize
-
-```ags
-Overlay.SetSize(int width, int height)
-```
-
-Changes the size of the overlay. Works with both graphical and textual overlays.
-
-When the size is set *will stretch or shrink* the overlay's image, both horizontally and vertically.
-
-*See also:* [`Overlay.X`](Overlay#overlayx), [`Overlay.Y`](Overlay#overlayy),
-[`Overlay.Width`](Overlay#overlaywidth),
-[`Overlay.Height`](Overlay#overlayheight),
-[`Overlay.SetPosition`](Overlay#overlaysetposition)
 
 ---
 
