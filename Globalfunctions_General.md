@@ -1018,11 +1018,14 @@ will restart the game if the player presses the F7 key.
 ### `RestoreGameDialog`
 
 ```ags
-RestoreGameDialog ()
+RestoreGameDialog (int min_slot = 1, int max_slot = 100)
 ```
 
 Displays the restore game dialog, where the player can select a
 previously saved game position to restore.
+
+You can also pass `min_slot` and `max_slot` to select the range of save slots
+that will be shown in the dialog.
 
 The dialog is not displayed immediately; instead, it will be displayed
 when the script function finishes executing.
@@ -1034,6 +1037,8 @@ if (IsKeyPressed(363)) RestoreGameDialog();
 ```
 
 will bring up the restore game dialog if the player presses the F5 key.
+
+*Compatibility:* Optional *min_slot* and *max_slot* parameters are supported only by **AGS 3.6.2** and later versions.
 
 *See also:* [`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
 [`SaveGameDialog`](Globalfunctions_General#savegamedialog)
@@ -1118,12 +1123,15 @@ will run the MyGame game, passing it the value 51.
 ### `SaveGameDialog`
 
 ```ags
-SaveGameDialog ()
+SaveGameDialog (int min_slot = 1, int max_slot = 100)
 ```
 
 Displays the save game dialog, where the player can save their current
 game position. If they select to save, then the game position will be
 saved.
+
+You can also pass `min_slot` and `max_slot` to select the range of save slots
+that will be shown in the dialog.
 
 **NOTE:** The dialog will not be displayed immediately; instead, it will
 be shown when the script function finishes executing.
@@ -1135,6 +1143,8 @@ if (keycode == 361) SaveGameDialog();
 ```
 
 will bring up the save game dialog if the player presses the F3 key.
+
+*Compatibility:* Optional *min_slot* and *max_slot* parameters are supported only by **AGS 3.6.2** and later versions.
 
 *See also:* [`RestoreGameDialog`](Globalfunctions_General#restoregamedialog),
 [`SaveGameSlot`](Globalfunctions_General#savegameslot)
