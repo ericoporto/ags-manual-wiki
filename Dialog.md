@@ -74,7 +74,7 @@ static readonly attribute Dialog* Dialog.CurrentDialog
 Gets the currently running dialog. Returns `null` if no dialog is currently active.
 
 **NOTE:** in dialog is a specific state of the AGS Engine, it means a dialog script created in the editor is being ran. It's not the same as any character speaking.
-You can use `Speech.TextOverlay` to detect if any character is speaking and then check each character's Speaking property if you need to know which character is speaking.
+Use `Speech.SpeakingCharacter` to detect if any and which character is speaking.
 
 Example:
 
@@ -100,7 +100,8 @@ In this example, the script checks whether a dialog is active, and show or hide 
 
 **See also:** [`Dialog.Start`](Dialog#dialogstart),
 [`Speech.TextOverlay`](Speech#speechtextoverlay),
-[`Character.Speaking`](Character#characterspeaking)
+[`Character.Speaking`](Character#characterspeaking),
+[`Speech.SpeakingCharacter`](Speech#speechspeakingcharacter)
 
 ---
 
