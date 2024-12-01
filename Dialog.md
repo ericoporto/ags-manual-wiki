@@ -32,7 +32,7 @@ Retrieves a dialog name from the character's custom property, and gets a pointer
 ### `Dialog.AreOptionsDisplayed`
 
 ```ags
-static readonly attribute bool Dialog.AreOptionsDisplayed;
+static readonly attribute bool Dialog.AreOptionsDisplayed
 ```
 
 Returns `true` if dialog options are currently displayed on the screen, or false otherwise.
@@ -68,7 +68,7 @@ In this example, whenever there is a transition from options being displayed or 
 ### `Dialog.CurrentDialog`
 
 ```ags
-static readonly attribute Dialog* Dialog.CurrentDialog;
+static readonly attribute Dialog* Dialog.CurrentDialog
 ```
 
 Gets the currently running dialog. Returns `null` if no dialog is currently active.
@@ -107,7 +107,7 @@ In this example, the script checks whether a dialog is active, and show or hide 
 ### `Dialog.ExecutedOption`
 
 ```ags
-static readonly attribute int Dialog.ExecutedOption;
+static readonly attribute int Dialog.ExecutedOption
 ```
 
 Gets the currently executed dialog option, or `-1` if none is being executed.
