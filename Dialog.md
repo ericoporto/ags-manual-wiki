@@ -40,7 +40,7 @@ Gets the currently running dialog. Returns `null` if no dialog is currently acti
 **NOTE:** in dialog is a specific state of the AGS Engine, it means a dialog script created in the editor is being ran. It's not the same as any character speaking.
 You can use `Speech.TextOverlay` to detect if any character is speaking and then check each character's Speaking property if you need to know which character is speaking.
 
-**Example:**
+Example:
 
 ```ags
 void repeatedly_execute_always()
@@ -60,11 +60,40 @@ void repeatedly_execute_always()
 
 In this example, the script checks whether a dialog is active, and show or hide a GUI that contains decorative frames.
 
-**Compatibility:** Supported by **AGS 3.6.2** and later versions.
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
 **See also:** [`Dialog.Start`](Dialog#dialogstart),
 [`Speech.TextOverlay`](Speech#speechtextoverlay),
 [`Character.Speaking`](Character#characterspeaking)
+
+---
+
+### `Dialog.ExecutedOption`
+
+```ags
+static readonly attribute int Dialog.ExecutedOption;
+```
+
+Gets the currently executed dialog option, or `-1` if none is being executed.
+
+Example:
+
+```ags
+void repeatedly_execute_always()
+{
+    if (Dialog.ExecutedOption != -1)
+    {
+        System.Log(eLogInfo, "Currently executed dialog option: %d", Dialog.ExecutedOption);
+    }
+}
+```
+
+This example checks if a dialog option is being executed and logs its number.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+**See also:** [`Dialog.GetOptionText`](Dialog#dialoggetoptiontext), 
+[`Dialog.GetOptionState`](Dialog#dialoggetoptionstate)
 
 ---
 
