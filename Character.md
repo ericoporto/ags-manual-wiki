@@ -1131,6 +1131,35 @@ his destination.
 
 ---
 
+### `Character.MoveStraight`
+
+```ags
+Character.MoveStraight(int x, int y, optional BlockingStyle);
+```
+
+Moves the character in a straight line as far as possible towards the co-ordinates, without walking animation. Useful for keyboard movement. This move ignores walkable areas.
+
+Starts the character moving from its current location to (X,Y), but does
+not play the character's walking animation.
+
+The parameters to this command are identical to the [`Character.WalkStraight`](Character#characterwalkstraight) command -- see that page for more details. The only difference is that *WalkStraight* plays the walking animation whereas *MoveStraight* does not.
+
+Example:
+
+```ags
+cEgo.MoveStraight(155, 122, eBlock);
+```
+
+will make the character move to 155,122 without playing his walking animation in a straight line.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`Character.WalkStraight`](Character#characterwalkstraight),
+ [`Character.Move`](Character#charactermove)
+ [`Character.Walk`](Character#characterwalk)
+
+---
+
 ### `Character.PlaceOnWalkableArea`
 
 *(Formerly known as `MoveToWalkableArea`, which is now obsolete)*
