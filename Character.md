@@ -3209,19 +3209,48 @@ Gets/sets whether the character turns to face his new direction before
 walking. This is equivalent (though opposite) to the editor "Do not turn
 before walking" tick-box.
 
-If you set this to 1, the character will turn on the spot to face his
-new direction before setting off on a walk. If you set this to 0, the
+If you set this to `true`, the character will turn on the spot to face his
+new direction before setting off on a walk. If you set this to `false`, the
 character will instantly face in the correct direction and start
 walking.
 
 Example:
 
 ```ags
-cEgo.TurnBeforeWalking = 1;
+cEgo.TurnBeforeWalking = true;
 ```
 
 will tell EGO to turn to face his new direction before setting off,
 whenever he walks.
+
+*SeeAlso:* [`Character.TurnWhenFacing`](Character#characterturnwhenfacing)
+
+---
+
+### `Character.TurnWhenFacing`
+
+```ags
+bool Character.TurnWhenFacing
+```
+
+Gets/sets whether the character turns on the spot when ordered to face the new standing direction.
+
+If you set this to `true`, any time you tell the the character to face other direction, they will turn on the spot to face this
+new direction. If you set this to `false`, the character will instantly face in the set direction.
+
+Example:
+
+```ags
+cEgo.TurnWhenFacing= true;
+cEgo.FaceDirection(eDirectionLeft, eBlock);
+cEgo.FaceDirection(eDirectionRight, eBlock);
+```
+
+will tell EGO to turn to face left, and then turn again until they face right.
+
+*Compatibility*: Supported by **AGS 3.6.2** and later versions.
+
+*SeeAlso:* [`Character.TurnBeforeWalking`](Character#characterturnbeforewalking)
 
 ---
 
