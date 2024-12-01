@@ -29,6 +29,45 @@ Retrieves a dialog name from the character's custom property, and gets a pointer
 
 ---
 
+### `Dialog.CurrentDialog`
+
+```ags
+static readonly attribute Dialog* Dialog.CurrentDialog;
+```
+
+Gets the currently running dialog. Returns `null` if no dialog is currently active.
+
+**NOTE:** in dialog is a specific state of the AGS Engine, it means a dialog script created in the editor is being ran. It's not the same as any character speaking.
+You can use `Speech.TextOverlay` to detect if any character is speaking and then check each character's Speaking property if you need to know which character is speaking.
+
+**Example:**
+
+```ags
+void repeatedly_execute_always()
+{
+	if (Dialog.CurrentDialog != null)
+	{
+		// a dialog is running, show our custom frames
+		gDialogBorders.Visible = true;
+	}
+	else
+	{
+		// there is no dialog, let's hide our custom frames
+		gDialogBorders.Visible = false;
+	}
+}
+```
+
+In this example, the script checks whether a dialog is active, and show or hide a GUI that contains decorative frames.
+
+**Compatibility:** Supported by **AGS 3.6.2** and later versions.
+
+**See also:** [`Dialog.Start`](Dialog#dialogstart),
+[`Speech.TextOverlay`](Speech#speechtextoverlay),
+[`Character.Speaking`](Character#characterspeaking)
+
+---
+
 ### `Dialog.DisplayOptions`
 
 ```ags
