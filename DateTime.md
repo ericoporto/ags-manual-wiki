@@ -38,6 +38,41 @@ will display the current date and time in 24-hour format
 
 ---
 
+### `DateTime.CreateFromDate`
+
+```ags
+static DateTime* DateTime.CreateFromDate(int year, int month, int day, int hour = 0, int minute = 0, int second = 0);
+```
+
+Returns a DateTime set as created.
+It returns invalid object if year is below 1970 or above 2038, or any other value is invalid.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`DateTime.Now`](DateTime#datetimenow),
+[`DateTime.CreateFromRawTime`](DateTime#datetimecreatefromrawtime)
+
+---
+
+### `DateTime.CreateFromRawTime`
+
+```ags
+static DateTime* DateTime.CreateFromRawTime(int rawTime);
+```
+
+Creates DateTime object from the provided raw time value (in seconds). 
+It returns invalid object if rawTime is negative
+
+**NOTE:** the raw time mentioned here is sometimes also known as UNIX time, in 32-bit.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`DateTime.RawTime`](DateTime#datetimerawtime),
+[`DateTime.Now`](DateTime#datetimenow),
+[`DateTime.CreateFromDate`](DateTime#datetimecreatefromdate)
+
+---
+
 ### `DateTime.DayOfMonth`
 
 ```ags
