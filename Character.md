@@ -2893,8 +2893,6 @@ This property is read-only. It will **only** return true for the active
 talking character; that is, it will not return true for any characters
 talking with the SayBackground command.
 
-**IMPORTANT:** Character.Speaking will only return a valid value if the character has a SpeechView set. It will always return `false` otherwise, even while the speech text is displayed.
-
 Since this property will only be true while the character is speaking,
 and speaking is a blocking command, this property will probably only be
 useful to access from the repeatedly_execute_always or
@@ -2910,6 +2908,8 @@ if ((cEgo.Speaking) && (!cEgo.Animating)) {
 
 will animate the character using loop 3 while they are talking (only
 useful with Sierra-style speech).
+
+*Compatibility*: Character.Speaking used to always return `false` if the character had no SpeechView set prior to **AGS 3.6.2**.
 
 *See also:* [`Character.Animating`](Character#characteranimating),
 [`Character.Moving`](Character#charactermoving),
