@@ -244,6 +244,27 @@ or a key.
 
 ---
 
+### `Speech.SpeakingCharacter`
+
+```ags
+static readonly attribute Character* Speech.SpeakingCharacter
+```
+
+Gets the currently speaking Character (only works for blocking speech).
+It returns null if no character is speaking in a blocking speech.
+
+Differently from checking any character speaking using `Speech.TextOverlay`,
+this also works for a blocking voice only speech, and it tells which character is speaking.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:*
+[`Dialog.CurrentDialog`](Dialog#dialogcurrentdialog),
+[`Speech.TextOverlay`](Speech#speechtextoverlay),
+[`Character.Speaking`](Character#characterspeaking)
+
+---
+
 ### `Speech.Style`
 
 *(Formerly known as `SetSpeechStyle`, which is now obsolete)*
