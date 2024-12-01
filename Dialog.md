@@ -29,6 +29,42 @@ Retrieves a dialog name from the character's custom property, and gets a pointer
 
 ---
 
+### `Dialog.AreOptionsDisplayed`
+
+```ags
+static readonly attribute bool Dialog.AreOptionsDisplayed;
+```
+
+Returns `true` if dialog options are currently displayed on the screen, or false otherwise.
+
+Example:
+
+```ags
+bool _previousOptionsDisplayed;
+
+void repeatedly_execute_always()
+{
+    if (Dialog.AreOptionsDisplayed && !_previousOptionsDisplayed)
+    {
+        System.Log(eLogInfo, "Dialog options are currently displayed.");
+    }
+    else if(!Dialog.AreOptionsDisplayed && _previousOptionsDisplayed)
+    {
+        System.Log(eLogInfo, "No dialog options are visible right now.");
+    }
+    _previousOptionsDisplayed = Dialog.AreOptionsDisplayed;
+}
+```
+
+In this example, whenever there is a transition from options being displayed or them not being displayed, it logs the new state of dialog options being shown.
+
+**Compatibility:** Supported by **AGS 3.6.2** and later versions.
+
+**See also:** [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions), [`Dialog.Start`](Dialog#dialogstart)
+```
+
+---
+
 ### `Dialog.CurrentDialog`
 
 ```ags
@@ -45,16 +81,16 @@ Example:
 ```ags
 void repeatedly_execute_always()
 {
-	if (Dialog.CurrentDialog != null)
-	{
-		// a dialog is running, show our custom frames
-		gDialogBorders.Visible = true;
-	}
-	else
-	{
-		// there is no dialog, let's hide our custom frames
-		gDialogBorders.Visible = false;
-	}
+    if (Dialog.CurrentDialog != null)
+    {
+        // a dialog is running, show our custom frames
+        gDialogBorders.Visible = true;
+    }
+    else
+    {
+        // there is no dialog, let's hide our custom frames
+        gDialogBorders.Visible = false;
+    }
 }
 ```
 
