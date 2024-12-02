@@ -60,8 +60,8 @@ In this example, whenever there is a transition from options being displayed or 
 
 **Compatibility:** Supported by **AGS 3.6.2** and later versions.
 
-**See also:** [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions), [`Dialog.Start`](Dialog#dialogstart)
-```
+**See also:** [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions), 
+[`Dialog.Start`](Dialog#dialogstart)
 
 ---
 
