@@ -92,15 +92,16 @@ lblStatus.Text = "You have @SCORE@ out of @TOTALSCORE@ points.";
 ### `Label.TextAlignment`
 
 ```ags
-HorizontalAlignment Label.TextAlignment;
+Alignment Label.TextAlignment;
 ```
 
-Gets/sets how the text is aligned relative to the label's rectangle. Note that currently label supports only horizontal alignment which could be eAlignLeft, eAlignRight and eAlignCenter.
+Gets/sets how the text is aligned relative to the label's rectangle.
 
 *See also:* [Standard Enumerated Types](StandardEnums), [`Label.Font`](Label#labelfont),
 [`Label.Text`](Label#labeltext)
 
 *Compatibility:* Supported by **AGS 3.5.0** and later versions.
+This property used to have the type HorizontalAlignment prior to **AGS 3.6.2**.
 
 ---
 
