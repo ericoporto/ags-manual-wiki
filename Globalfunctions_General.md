@@ -1154,13 +1154,16 @@ will bring up the save game dialog if the player presses the F3 key.
 ### `SaveGameSlot`
 
 ```ags
-SaveGameSlot (int slot, string description)
+SaveGameSlot (int slot, string description, optional int sprite)
 ```
 
 Saves the current game position to the save game number specified by
 SLOT, using DESCRIPTION as the textual description of the save position.
 Be careful using this function, because you could overwrite one of the
 player's save slots if you aren't careful.
+
+You can optionally pass a number of an arbitrary sprite to write into this
+save, instead of a standard screenshot.
 
 **NOTE:** The game will not be saved immediately; instead, it will be
 saved when the script function finishes executing.
@@ -1173,6 +1176,8 @@ SaveGameSlot(30, "save game");
 
 will save the current game position to slot 30 with the description
 \"Save game\".
+
+*Compatibility:* Optional *sprite* parameter is supported only by **AGS 3.6.2** and later versions.
 
 *See also:* [`DeleteSaveSlot`](Globalfunctions_General#deletesaveslot),
 [`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
