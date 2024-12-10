@@ -179,7 +179,7 @@ they've seen it before. The video will be stretched to fullscreen, maintaining a
 
 As of AGS 3.6.0 PlayVideo can only play OGG Theora (*.ogv). The benefit of this format is that no extra codecs or drivers have to be installed on the user's system in order to play them. OGG Theora videos are automatically included into the game package when you compile the game. For that you need to make sure that file has a .OGV extension and is _placed in your game project folder_.
 
-There are multiple tools out there that may convert another video to OGV. For instance, a good converter for Theora is [ffmpeg2theora](https://v2v.cc/~j/ffmpeg2theora/).
+There are multiple tools out there that may convert another video to OGV. For instance, a good converter for Theora is [ffmpeg](https://ffmpeg.org/) ([Guide](https://trac.ffmpeg.org/wiki/TheoraVorbisEncodingGuide)).
 
 **NOTE:** _Prior to 3.6.0_ there has been a mistake in AGS, because of which the OGG videos could be positioned on screen with a slight negative offset, cutting few rows or columns of pixels. If you are still using AGS 3.5.1 or lower, you have to make sure that your video's frame sizes are multipliers of 16 and actual image placed aligned to the center. For example, if you want 320x200 video then increase canvas to 320x208 and place image at offset (0, 4). This is not a problem anymore in 3.6.0 or later versions.
 
