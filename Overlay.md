@@ -196,7 +196,7 @@ and then remove the overlay from the screen.
 
 ---
 
-### `Overlay.SetPosition
+### `Overlay.SetPosition`
 
 ```ags
 Overlay.SetPosition(int x, int y, int width = 0, int height = 0)
@@ -213,7 +213,7 @@ Sets this overlay's position, and optionally its size.
 
 ---
 
-### `Overlay.SetSize
+### `Overlay.SetSize`
 
 ```ags
 Overlay.SetSize(int width, int height)
