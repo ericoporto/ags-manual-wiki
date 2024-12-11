@@ -427,3 +427,65 @@ will change button 'btnRestart' to have white text.
 
 *See also:* [`Button.NormalGraphic`](Button#buttonnormalgraphic)
 
+---
+
+### `Button.TextPaddingHorizontal`
+
+```ags
+int Button.TextPaddingHorizontal;
+```
+
+Gets/sets amount of padding, restricting the text from left and right.
+This property helps to position the text within the button.
+
+Padding here is the space in pixels between the text and the edges of the button.
+
+Example:
+
+```ags
+btnSettings.TextPaddingHorizontal = 5;
+```
+
+will ensure there is 5 pixels of space on both sides of the text within the button.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`Button.TextPaddingVertical`](Button#buttontextpaddingvertical)
+
+---
+
+### `Button.TextPaddingVertical`
+
+```ags
+int Button.TextPaddingVertical;
+```
+
+Gets/sets amount of padding, restricting the text from top and bottom.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`Button.TextPaddingHorizontal`](Button#buttontextpaddinghorizontal)
+
+---
+
+### `Button.WrapText`
+
+```ags
+bool Button.WrapText;
+```
+
+Gets/sets whether the button will wrap its text.
+
+**NOTE:** If the text contains linebreaks (e.g., `\n`), set this property to `true` to honor those breaks.
+
+Example:
+
+```ags
+btnRiddle.Text = "Click me for a hint\nWhat has keys but can't open locks?";
+btnRiddle.WrapText = true;
+```
+
+Here the button btnRiddle has a text that requires wrap set to true to display correctly.
+We can imagine clicking it gives a piano sound.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
