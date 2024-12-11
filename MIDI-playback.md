@@ -6,7 +6,7 @@ MIDI is handled differently from other sound formats. MIDI files do not contain 
 
 **NOTE:** Prior to **AGS 3.6.0** MIDI playback on Windows would use a software-based synthesizer that was provided with the operating system. This is no longer the case; the following requirements now apply to Windows too.
 
-In addition to the MIDI data and in order to generate audio, Timidity also requires Gravis Ultrasound compatible (GUS) patches files. These files provide a mapping between the MIDI data being passed in and synthesizer voices which generate audio output. The location of the patch files and the MIDI instruments which they may represent are determined through the presence of a Timidity configuration file.
+In addition to the MIDI data and in order to generate audio, Timidity also requires Gravis Ultrasound compatible (GUS) patch files. These files provide a mapping between the MIDI data being passed in and synthesizer voices which generate audio output. The location of the patch files and the MIDI instruments which they may represent are determined through the presence of a Timidity configuration file.
 
 ### Where to get patch files
 
