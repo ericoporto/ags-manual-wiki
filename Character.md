@@ -497,7 +497,8 @@ will make character MAN follow character EGO standing about 5 pixels
 near him and waiting for a while before he makes his move.
 
 *See also:*
-[`game.following_room_timer`](Gamevariables)
+[`game.following_room_timer`](Gamevariables),
+[`Character.Following`](Character#characterfollowing)
 
 ---
 
@@ -2317,6 +2318,35 @@ cEgo.DiagonalLoops = true;
 ```
 
 will enable diagonal walking loops for character EGO.
+
+---
+
+### `Character.Following`
+
+```ags
+readonly Character* Character.Following
+```
+
+Gets the character this character is following.
+
+Example:
+
+```ags
+void room_AfterFadeIn()
+{
+  cAlter.FollowCharacter(cEgo);
+  if(cAlter.Following == cEgo)
+  {
+    cAlter.Say("I am following %s!", cEgo.Name);
+  }
+}
+```
+
+Will have Alter saying "I am following Roger!", or whatever is `cEgo`'s name, and also follow him.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`Character.FollowCharacter`](Character#characterfollowcharacter)
 
 ---
 
