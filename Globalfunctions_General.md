@@ -28,8 +28,7 @@ function MakeWider(int newWidth) {
 }
 ```
 
-will abort the game if MakeWider is called with a parameter less than
-10.
+will abort the game if MakeWider is called with a parameter less than 10.
 
 SeeAlso: [`QuitGame`](Globalfunctions_General#quitgame)
 
@@ -894,8 +893,7 @@ MoveCharacterToObject (EGO, 0);
 object[0].Visible = false;
 ```
 
-Will move the character EGO below object number 0, then turn off object
-0.
+Will move the character EGO below object number 0, then turn off object 0.
 
 *See also:* [`Character.Walk`](Character#characterwalk),
 [`MoveCharacterToHotspot`](Globalfunctions_General#movecharactertohotspot)
@@ -1085,7 +1083,7 @@ an AGS game EXE or AC2GAME.AGS file, and it must be in the current
 directory.
 
 MODE specifies various options about how you want to run the game.
-Currently the supported values are:
+Currently, the supported values are:
 
     0   Current game is completely exited, new game runs as if it had been launched separately
     1   GlobalInt values are preserved and are not set to 0 for the new game.
@@ -1241,7 +1239,7 @@ tints on the screen, but does NOT override individual character and
 object light levels.
 
 **NOTE:** Setting an ambient light level will disable ambient RGB tint,
-if there one was previously set.
+if there was one previously set.
 
 Example:
 
@@ -1539,8 +1537,7 @@ Example:
 SetTextWindowGUI (4);
 ```
 
-will change Textwindow GUI 4 to be used for displaying text windows in
-future.
+will change `TextWindow` GUI 4 to be used for displaying text windows in future.
 
 ---
 
