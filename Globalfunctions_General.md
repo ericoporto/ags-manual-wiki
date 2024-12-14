@@ -604,6 +604,49 @@ will print \"Hello!\" onto the middle of the background scene.
 
 ---
 
+### `GetTimerPos`
+
+```ags
+int  GetTimerPos(int timerID)
+```
+
+Returns the current time value for the specified timer `timerID`.
+It will return 0 if the timer is not running, and 1 if it's expiring.
+
+**NOTE:** This function will throw an error if `timerID` is invalid, i.e., less than 1 or greater than 20.
+
+Example:
+
+```ags
+function room_AfterFadeIn()
+{
+  SetTimer(1, 10);
+}
+
+function room_RepExec()
+{
+  int timeLeft = GetTimerPos(1);
+  if (timeLeft == 0)
+  {
+    System.Log(eLogInfo, "Timer 1 is not running");
+  }
+  else if (timeLeft == 1)
+  {
+    System.Log(eLogInfo, "Timer 1 is about to expire!");
+  }
+}
+```
+
+This will wait 10 game ticks and then log that the timer is about to expire
+and keep logging that the timer is not running.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`SetTimer`](Globalfunctions_General#settimer),
+[`IsTimerExpired`](Globalfunctions_General#istimerexpired)
+
+---
+
 ### `GetTranslation`
 
 ```ags
@@ -821,7 +864,8 @@ if (IsTimerExpired(1)) {
 
 will display a message when timer 1 expires.
 
-*See also:* [`SetTimer`](Globalfunctions_General#settimer)
+*See also:* [`SetTimer`](Globalfunctions_General#settimer),
+[`GetTimerPos`](Globalfunctions_General#gettimerpos)
 
 ---
 
@@ -1578,7 +1622,8 @@ SetTimer(Delay_CustomAnimation, 2000);
 
 this "names" timer 1 and sets it to expire after 2000 game cycles
 
-*See also:* [`IsTimerExpired`](Globalfunctions_General#istimerexpired)
+*See also:* [`IsTimerExpired`](Globalfunctions_General#istimerexpired),
+[`GetTimerPos`](Globalfunctions_General#gettimerpos)
 
 ---
 
