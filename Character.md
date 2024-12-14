@@ -731,7 +731,7 @@ light.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*SeeAlso:* [`Character.SetLightLevel`](Character#charactersetlightlevel)
+*See also:* [`Character.SetLightLevel`](Character#charactersetlightlevel)
 
 ---
 
@@ -847,7 +847,7 @@ light.
 
 *Compatibility:* Supported by **AGS 3.4.1** and later versions.
 
-*SeeAlso:* [`Character.SetLightLevel`](Character#charactersetlightlevel),
+*See also:* [`Character.SetLightLevel`](Character#charactersetlightlevel),
 [`SetAmbientLightLevel`](Globalfunctions_General#setambientlightlevel)
 
 ---
@@ -2020,7 +2020,7 @@ Gets/sets the character's animation sound volume, which is a *relative* volume (
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
-*SeeAlso:* [`Character.Animate`](Character#characteranimate),
+*See also:* [`Character.Animate`](Character#characteranimate),
 [`Character.ChangeView`](Character#characterchangeview),
 [`Character.ScaleVolume`](Character#characterscalevolume),
 [`Character.View`](Character#characterview)
@@ -2369,7 +2369,7 @@ Display("EGO currently using frame %d.", cEgo.Frame);
 
 displays EGO's current frame number within his view.
 
-*SeeAlso:* [`Character.Animate`](Character#characteranimate),
+*See also:* [`Character.Animate`](Character#characteranimate),
 [`Character.Loop`](Character#characterloop),
 [`Character.View`](Character#characterview)
 
@@ -2401,7 +2401,7 @@ removes the player's tint if it currently has one.
 
 *Compatibility:* Supported by **AGS 3.1.0** and later versions.
 
-*SeeAlso:* [`Character.Tint`](Character#charactertint),
+*See also:* [`Character.Tint`](Character#charactertint),
 [`Character.RemoveTint`](Character#characterremovetint)
 
 ---
@@ -2436,7 +2436,7 @@ Gets/sets the character's idle animation delay
 
 *Compatibility:* Supported by **AGS 3.6.0** and later versions.
 
-*SeeAlso:* [`Character.IdleView`](Character#characteridleview), [`Character.SetIdleView`](Character#charactersetidleview)
+*See also:* [`Character.IdleView`](Character#characteridleview), [`Character.SetIdleView`](Character#charactersetidleview)
 
 ---
 
@@ -2460,7 +2460,7 @@ Display("EGO's idle view is currently view %d.", cEgo.IdleView);
 
 will display EGO's current idle view number.
 
-*SeeAlso:* [`Character.SetIdleView`](Character#charactersetidleview)
+*See also:* [`Character.SetIdleView`](Character#charactersetidleview)
 
 ---
 
@@ -2570,7 +2570,7 @@ Display("EGO currently using loop %d.", cEgo.Loop);
 
 displays EGO's current loop number within his view.
 
-*SeeAlso:* [`Character.Animate`](Character#characteranimate),
+*See also:* [`Character.Animate`](Character#characteranimate),
 [`Character.Frame`](Character#characterframe),
 [`Character.View`](Character#characterview)
 
@@ -2605,7 +2605,7 @@ cEgo.Scaling = 50;
 will tell EGO to ignore walkable area scaling levels and be fixed to
 `50%` zoom level.
 
-*SeeAlso:* [`Character.Scaling`](Character#characterscaling)
+*See also:* [`Character.Scaling`](Character#characterscaling)
 
 ---
 
@@ -2887,7 +2887,7 @@ will tell EGO to ignore walkable area scaling levels and be fixed to
 *Compatibility:* Since **AGS 3.6.0** this property's value can be in the range between 1 and 32767.
 In the previous versions this property could only have values in the range between 5 and 200.
 
-*SeeAlso:* [`Character.ManualScaling`](Character#charactermanualscaling)
+*See also:* [`Character.ManualScaling`](Character#charactermanualscaling)
 
 ---
 
@@ -3282,7 +3282,7 @@ cEgo.TurnBeforeWalking = true;
 will tell EGO to turn to face his new direction before setting off,
 whenever he walks.
 
-*SeeAlso:* [`Character.TurnWhenFacing`](Character#characterturnwhenfacing)
+*See also:* [`Character.TurnWhenFacing`](Character#characterturnwhenfacing)
 
 ---
 
@@ -3309,7 +3309,7 @@ will tell EGO to turn to face left, and then turn again until they face right.
 
 *Compatibility*: Supported by **AGS 3.6.2** and later versions.
 
-*SeeAlso:* [`Character.TurnBeforeWalking`](Character#characterturnbeforewalking)
+*See also:* [`Character.TurnBeforeWalking`](Character#characterturnbeforewalking)
 
 ---
 
@@ -3332,7 +3332,7 @@ Display("EGO's view is currently view %d.", cEgo.View);
 
 will display EGO's current view number.
 
-*SeeAlso:* [`Character.ChangeView`](Character#characterchangeview),
+*See also:* [`Character.ChangeView`](Character#characterchangeview),
 [`Character.Frame`](Character#characterframe),
 [`Character.LockView`](Character#characterlockview),
 [`Character.Loop`](Character#characterloop),
