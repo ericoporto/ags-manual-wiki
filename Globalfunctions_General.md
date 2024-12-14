@@ -615,7 +615,8 @@ It will return 0 if the timer is not running, and 1 if it's expiring.
 
 This function will throw an error if `timerID` is invalid, i.e., less than 1 or greater than 20.
 
-**NOTE:** the time left will return 1 until a call to `IsTimerExpired` is done on the same `timerID`.
+**NOTE:** the time left will return 1 until a call to `IsTimerExpired` is done on the same `timerID`, 
+or alternatively, `SetTimer(timerID, 0)` is used to stop the timer.
 
 Example:
 
