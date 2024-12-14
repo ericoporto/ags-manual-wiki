@@ -613,26 +613,31 @@ int  GetTimerPos(int timerID)
 Returns the current time value for the specified timer `timerID`.
 It will return 0 if the timer is not running, and 1 if it's expiring.
 
-**NOTE:** This function will throw an error if `timerID` is invalid, i.e., less than 1 or greater than 20.
+This function will throw an error if `timerID` is invalid, i.e., less than 1 or greater than 20.
+
+**NOTE:** the time left will return 1 until a call to `IsTimerExpired` is done on the same `timerID`.
 
 Example:
 
 ```ags
+#define TIMER_ID 1
+
 function room_AfterFadeIn()
 {
-  SetTimer(1, 10);
+  SetTimer(TIMER_ID, 10);
 }
 
 function room_RepExec()
 {
-  int timeLeft = GetTimerPos(1);
+  int timeLeft = GetTimerPos(TIMER_ID);
   if (timeLeft == 0)
   {
-    System.Log(eLogInfo, "Timer 1 is not running");
+    System.Log(eLogInfo, "Timer %d is not running", TIMER_ID);
   }
   else if (timeLeft == 1)
   {
-    System.Log(eLogInfo, "Timer 1 is about to expire!");
+    System.Log(eLogInfo, "Timer %d is about to expire!", TIMER_ID);
+    IsTimerExpired(TIMER_ID); // if we don't call this, the timer will be kept at 1 tick value
   }
 }
 ```
