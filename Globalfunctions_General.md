@@ -271,6 +271,64 @@ watched the cutscene, or 1 if they skipped it.
 
 ---
 
+### `GetFontHeight`
+
+```ags
+int GetFontHeight (int font)
+```
+
+Returns the given font's height, in pixels. This value may be used, for
+example, to calculate arrangement of text and GUI elements on screen.
+
+Example:
+
+```ags
+int h = GetFontHeight(eFontSpeech);
+```
+
+will store the speech font's height in the variable.
+
+*Compatibility:* Supported by **AGS 3.4.1** and later versions.
+
+*See also:* [`GetFontLineSpacing`](Globalfunctions_General#getfontlinespacing)
+
+---
+
+### `GetFontLineSpacing`
+
+```ags
+int GetFontLineSpacing (int font)
+```
+
+Returns the step between two lines of text for the specified font. If
+this value equals font's height, then each next line is rendered right
+after previous one with no space in between. If the line spacing is
+lower than font's height, then the lines of text are partially
+overlapping.
+
+**NOTE:** this is the distance between the **top** of the first line and
+the **top** of the next line, and **not** distance between bottom of
+first line and top of next one. If you need to calculate the **gap**
+between the lines, then subtract [font's height](Globalfunctions_General#getfontheight) from
+the line spacing value.
+
+Example:
+
+```ags
+int h = GetFontHeight(eFontSpeech);
+int spacing = GetFontLineSpacing(eFontSpeech);
+int gap = spacing - h;
+```
+
+will calculate the gap between two lines of text, that are drawn using
+speech font.
+
+*Compatibility:* Supported by **AGS 3.4.1** and later versions.
+
+*See also:* [`GetFontHeight`](Globalfunctions_General#getfontheight)
+
+---
+
 ### `GetGameOption`
 
 ```ags
@@ -600,64 +658,6 @@ GiveScore(5);
 will give 5 points to the player.
 
 *See also:* [`Game.DoOnceOnly`](Game#gamedoonceonly)
-
----
-
-### `GetFontHeight`
-
-```ags
-int GetFontHeight (int font)
-```
-
-Returns the given font's height, in pixels. This value may be used, for
-example, to calculate arrangement of text and GUI elements on screen.
-
-Example:
-
-```ags
-int h = GetFontHeight(eFontSpeech);
-```
-
-will store the speech font's height in the variable.
-
-*Compatibility:* Supported by **AGS 3.4.1** and later versions.
-
-*See also:* [`GetFontLineSpacing`](Globalfunctions_General#getfontlinespacing)
-
----
-
-### `GetFontLineSpacing`
-
-```ags
-int GetFontLineSpacing (int font)
-```
-
-Returns the step between two lines of text for the specified font. If
-this value equals font's height, then each next line is rendered right
-after previous one with no space in between. If the line spacing is
-lower than font's height, then the lines of text are partially
-overlapping.
-
-**NOTE:** this is the distance between the **top** of the first line and
-the **top** of the next line, and **not** distance between bottom of
-first line and top of next one. If you need to calculate the **gap**
-between the lines, then subtract [font's height](Globalfunctions_General#getfontheight) from
-the line spacing value.
-
-Example:
-
-```ags
-int h = GetFontHeight(eFontSpeech);
-int spacing = GetFontLineSpacing(eFontSpeech);
-int gap = spacing - h;
-```
-
-will calculate the gap between two lines of text, that are drawn using
-speech font.
-
-*Compatibility:* Supported by **AGS 3.4.1** and later versions.
-
-*See also:* [`GetFontHeight`](Globalfunctions_General#getfontheight)
 
 ---
 
