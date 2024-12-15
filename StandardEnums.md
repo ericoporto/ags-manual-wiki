@@ -602,7 +602,8 @@ enum SaveGameSortStyle
 
 *Compatibility:* supported by **AGS 3.6.2** and higher.
 
-*Used by:* [`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist)
+*Used by:* [`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
+[`ListBox.FillSaveGameSlots`](ListBox#listboxfillsavegameslots)
 
 ---
 
@@ -639,7 +640,8 @@ enum SortDirection
 *Compatibility:* supported by **AGS 3.6.2** and higher.
 
 *Used by* [`ListBox.FillDirList`](ListBox#listboxfilldirlist),
-[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist)
+[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
+[`ListBox.FillSaveGameSlots`](ListBox#listboxfillsavegameslots)
 
 ---
 
