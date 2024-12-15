@@ -238,6 +238,41 @@ enum Direction {
 
 ---
 
+### `EngineValueID`
+
+```ags
+enum EngineValueID
+{
+  ENGINE_VALUE_UNDEFINED = 0,         // formality...
+  ENGINE_VALUE_SI_VALUENAME,          // get engine value's own name, by its index
+  ENGINE_VALUE_S_ENGINE_NAME,
+  ENGINE_VALUE_S_ENGINE_VERSION,      // N.N.N.N (with an optional custom tag)
+  ENGINE_VALUE_S_ENGINE_VERSION_FULL, // full, with bitness, endianess and any tag list
+  ENGINE_VALUE_S_DISPLAY_MODE_STR,
+  ENGINE_VALUE_S_GFXRENDERER,
+  ENGINE_VALUE_S_GFXFILTER,
+  ENGINE_VALUE_I_SPRCACHE_MAXNORMAL,  // sprite cache capacity limit (in KB)
+  ENGINE_VALUE_I_SPRCACHE_NORMAL,     // sprite cache capacity filled (in KB)
+  ENGINE_VALUE_I_SPRCACHE_LOCKED,     // amount of locked sprites (in KB)
+  ENGINE_VALUE_I_SPRCACHE_EXTERNAL,   // amount of external sprites, that means dynamic sprites (in KB)
+  ENGINE_VALUE_I_TEXCACHE_MAXNORMAL,  // texture cache capacity limit (in KB)
+  ENGINE_VALUE_I_TEXCACHE_NORMAL,     // texture cache capacity filled (in KB)
+  ENGINE_VALUE_I_FPS_MAX,             // max fps, this is set by SetGameSpeed
+  ENGINE_VALUE_I_FPS,                 // real average fps (updates along with the game run)
+  ENGINE_VALUE_LAST                   // in case user wants to iterate them
+};
+```
+
+The `EngineValueID` follows the pattern `ENGINE_VALUE_<I,II,S,SI>_NAME`, where
+
+- `I` - integer,
+- `S` - string,
+- `SI` - indexed string.
+
+*Compatibility:* supported by **AGS 3.6.2** and higher.
+
+---
+
 ### `EventType`
 
 ```ags
