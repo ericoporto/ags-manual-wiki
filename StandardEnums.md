@@ -339,6 +339,8 @@ enum FileSortStyle
 
 *Compatibility:* supported by **AGS 3.6.2** and higher.
 
+*Used by* [`ListBox.FillDirList`](ListBox#listboxfilldirlist)
+
 ---
 
 ### `eFlipDirection`
@@ -600,6 +602,8 @@ enum SaveGameSortStyle
 
 *Compatibility:* supported by **AGS 3.6.2** and higher.
 
+*Used by:* [`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist)
+
 ---
 
 ### `SkipSpeechStyle`
@@ -633,6 +637,9 @@ enum SortDirection
 ```
 
 *Compatibility:* supported by **AGS 3.6.2** and higher.
+
+*Used by* [`ListBox.FillDirList`](ListBox#listboxfilldirlist),
+[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist)
 
 ---
 
