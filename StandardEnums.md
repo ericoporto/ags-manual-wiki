@@ -326,6 +326,21 @@ enum FileSeek {
 
 ---
 
+### `FileSortStyle`
+
+```ags
+enum FileSortStyle
+{
+  eFileSort_None,
+  eFileSort_Name,
+  eFileSort_Time
+};
+```
+
+*Compatibility:* supported by **AGS 3.6.2** and higher.
+
+---
+
 ### `eFlipDirection`
 
 ```ags
@@ -571,6 +586,22 @@ enum RoundDirection {
 
 ---
 
+### `SaveGameSortStyle`
+
+```ags
+enum SaveGameSortStyle
+{
+  eSaveGameSort_None,
+  eSaveGameSort_Number,
+  eSaveGameSort_Time,
+  eSaveGameSort_Description
+};
+```
+
+*Compatibility:* supported by **AGS 3.6.2** and higher.
+
+---
+
 ### `SkipSpeechStyle`
 
 ```ags
@@ -587,6 +618,21 @@ enum SkipSpeechStyle {
 ```
 
 *Used by:* [`Speech.SkipStyle`](Speech#speechskipstyle)
+
+---
+
+### `SortDirection`
+
+```ags
+enum SortDirection
+{
+  eSortNoDirection,
+  eSortAscending,
+  eSortDescending
+};
+```
+
+*Compatibility:* supported by **AGS 3.6.2** and higher.
 
 ---
 
