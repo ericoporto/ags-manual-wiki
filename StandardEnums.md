@@ -38,7 +38,7 @@ if (align & eAlignHasLeft)
 
 will execute some code if *align* variable contains "Left" in any combination (eAlignTopLeft, eAlignMiddleLeft or eAlignBottomLeft).
 
-*Compatibility:* new version of Alignment enum was introduced in AGS 3.5.0. Previous Alignment was renamed into HorizontalAlignment.
+*Compatibility:* new version of Alignment enum was introduced in **AGS 3.5.0**. Previous Alignment was renamed into HorizontalAlignment.
 
 *Used by:* [`Button.TextAlignment`](Button#buttontextalignment)
 
@@ -317,7 +317,7 @@ enum GUIPopupStyle {
 };
 ```
 
-*Supported by:* AGS 3.5.0 and higher.
+*Compatibility:* supported by **AGS 3.5.0** and higher.
 
 *Used by:* [`GUI.PopupStyle`](GUI#guipopupstyle)
 
@@ -333,7 +333,7 @@ enum HorizontalAlignment {
 
 Note that HorizontalAlignment's values match the first values of Alignment enumeration (eAlignTopLeft, eAlignTopCenter, eAlignTopRight).
 
-*Compatibility:* replaced old Alignment enumeration in AGS 3.5.0.
+*Compatibility:* replaced old Alignment enumeration in **AGS 3.5.0**.
 
 *Used by:*
 [`Character.LockViewAligned`](Character#characterlockviewaligned), [`DrawingSurface.DrawStringWrapped`](DrawingSurface#drawingsurfacedrawstringwrapped), [`Label.TextAlignment`](Label#labeltextalignment), [`ListBox.TextAlignment`](ListBox#listboxtextalignment), [`Speech.TextAlignment`](Speech#speechtextalignment)
@@ -359,7 +359,7 @@ if (type & eInputKeyboard)
 
 will execute some code if *type* variable contains *at least* "eInputKeyboard".
 
-*Supported by:* AGS 3.6.0 and higher.
+*Compatibility:* supported by **AGS 3.6.0** and higher.
 
 *Used by:* [Wait functions](Globalfunctions_Wait)
 
@@ -391,7 +391,7 @@ enum LogLevel
 ```
 
 
-*Supported by:* AGS 3.6.0 and higher.
+*Compatibility:* supported by **AGS 3.6.0** and higher.
 
 *Used by:* [`System.Log`](System#systemlog)
 
@@ -482,7 +482,7 @@ enum SortStyle {
 };
 ```
 
-*Supported by:* AGS 3.5.0 and higher.
+*Compatibility:* supported by **AGS 3.5.0** and higher.
 
 *Used by:* [`Dictionary.Create`](Dictionary#dictionarycreate),
 [`Set.Create`](Set#setcreate)
@@ -522,7 +522,7 @@ enum StringCompareStyle {
 };
 ```
 
-*Supported by:* AGS 3.5.0 and higher.
+*Compatibility:* supported by **AGS 3.5.0** and higher.
 
 *Used by:* [`Dictionary.Create`](Dictionary#dictionarycreate),
 [`Set.Create`](Set#setcreate),
