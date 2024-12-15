@@ -61,12 +61,14 @@ will remove all the items from listbox *lstNoteBook*.
 *(Formerly known as `ListBoxDirList`, which is now obsolete)*
 
 ```ags
-ListBox.FillDirList(string filemask)
+void ListBox.FillDirList(string filemask, optional FileSortStyle fileSortStyle, optional SortDirection sortDirection)
 ```
 
 Fills the list box with a list of filenames matching FILEMASK in the
 current directory. This could be useful if you have various data files
 and the player can choose which one to load.
+
+You can optionally use `fileSortStyle` and `sortDirection` to set how the list of files set to the list box should be sorted.
 
 FILEMASK is a standard Windows search expression such as `"*.dat"` or
 `"data*.*"`
@@ -88,9 +90,13 @@ lstSaveGames.FillDirList("agssave.*");
 will fill the listbox with the list of the saved games. Note that
 actually for this task you would use FillSaveGameList instead.
 
+*Compatibility:* Optional `fileSortStyle` and `sortDirection` parameters are supported only by **AGS 3.6.2** and later versions.
+
 *See also:* [`ListBox.AddItem`](ListBox#listboxadditem),
 [`ListBox.Clear`](ListBox#listboxclear),
-[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist)
+[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
+[`FileSortStyle`](StandardEnums#filesortstyle),
+[`SortDirection`](StandardEnums#sortdirection)
 
 ---
 
@@ -99,11 +105,19 @@ actually for this task you would use FillSaveGameList instead.
 *(Formerly known as `ListBoxSaveGameList`, which is now obsolete)*
 
 ```ags
-ListBox.FillSaveGameList()
+bool ListBox.FillSaveGameList(optional int min_slot, optional int max_slot, optional SaveGameSortStyle saveSortStyle, optional SortDirection sortDirection)
 ```
 
 Fills the specified listbox with the save game list, sorted correctly
 with the most recent game at the top of the list.
+
+You can optionally pass `min_slot` and `max_slot` to select the range of save slots
+that can be added to the list box.
+
+You can also optionally use `saveSortStyle` and `sortDirection` to set how the list
+of save games set to the list box should be sorted.
+
+This function returns true if all slots in the set range (1 to 100 if no range passed) are occupied.
 
 The [`SaveGameSlots`](ListBox#listboxsavegameslots) property is updated
 to contain the save game slot number for each index in the list, so that
@@ -128,10 +142,36 @@ lstSaveGames.FillSaveGameList();
 
 will fill listbox *lstSaveGames* with the list of the saved games.
 
+*Compatibility:* Optional `min_slot`, `max_slot`, `saveSortStyle` and `sortDirection` parameters are supported only by **AGS 3.6.2** and later versions.
+
 *See also:* [`ListBox.FillDirList`](ListBox#listboxfilldirlist),
 [`ListBox.ItemCount`](ListBox#listboxitemcount),
 [`ListBox.SaveGameSlots`](ListBox#listboxsavegameslots),
-[`ListBox.SelectedIndex`](ListBox#listboxselectedindex)
+[`ListBox.SelectedIndex`](ListBox#listboxselectedindex),
+[`SaveGameSortStyle`](StandardEnums#savegamesortstyle),
+[`SortDirection`](StandardEnums#sortdirection)
+
+---
+
+### `ListBox.FillSaveGameSlots`
+
+```ags
+void ListBox.FillSaveGameSlots(int save_slots[], optional SaveGameSortStyle saveSortStyle, optional SortDirection sortDirection)
+```
+
+Fills the list box with the current user's saved games using the array of slot indexes.
+This array must be non-empty.
+
+You can optionally use `saveSortStyle` and `sortDirection` to set how the list
+of save games set to the list box should be sorted.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`ListBox.FillDirList`](ListBox#listboxfilldirlist),
+[`ListBox.ItemCount`](ListBox#listboxitemcount),
+[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
+[`SaveGameSortStyle`](StandardEnums#savegamesortstyle),
+[`SortDirection`](StandardEnums#sortdirection)
 
 ---
 
