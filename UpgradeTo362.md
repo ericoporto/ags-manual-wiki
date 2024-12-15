@@ -2,7 +2,24 @@
 
 3.6.2 is a second update for the 3.6 version, this time it focuses on convenience of user interface and filling certain gaps in the existing scripting API. There are no breaking changes to the game settings or script.
 
-One major addition that should be noted in particular is the minimal support for loading game saves made in older versions of your game.
+One major addition that should be noted in particular is the minimal support for loading game saves made in older versions of your game (seek for it below in the corresponding section).
+
+### Event handler functions can be in any script module
+
+Previously in AGS when you tied a object or room event to a function in script, such function could only be located in GlobalScript.
+With 3.6.2 you can now select which script module to use. This selection is made on Events tab of a Property Grid, where you will see a "Script Module" dropdown list.
+This allows you to neatly organize event functions in your project scripts, and not clutter GlobalScript from all kind of things.
+Note that GUI Controls inherit script module of their parent GUI, and everything in room (room objects, hotspots, etc) will always use the same room script.
+
+Please be aware that changing this selection does not automatically move any existing functions from one module to another: you will have to move them by hand. But any functions generated for events by clicking "..." button will end up in the selected script module.
+
+### Expanded voice clip names
+
+Previously the voice clips had to be named with only first 4 letters from a Character's script name, e.g. "ROGE1.ogg" in case character's name is "cRoger". This could have become a problem if you have several characters which begin with the same 4 letters.
+
+Starting with 3.6.2 the voice clips are to be named using full script name (except the preceding 'c' symbol). If Character's script name is "cRoger" then the voice clips have to be called "Roger<N>" (where <N> is a number), if a script name is "cVeryLongCharacterName" then they have to be called "VeryLongCharacterName<N>", and so forth.
+
+The classic behavior may be re-enabled by a switch in "Backwards Compatibility" section of "General Settings". This is useful in case you are upgrading an older project and do not want to rename all the voice clips.
 
 ### Loading old saves feature
 
@@ -77,12 +94,3 @@ There are 3 general uses for this feature:
 1. Reducing save file size. This is the simplest case. If your game has an excess use of DynamicSprites, that are created at runtime, you may wish to not write them into the save file to reduce the usage of disk space (in case player makes alot of saves). Instead these sprites can be recreated after a game is restored, or whenever they are required.
 2. When you design your game in such way that certain things should not be reset when restoring a save. For instance, if you exclude Audio from saves, then anything currently playing will continue to play even after loading a saved game.
 3. Reduce number of things that may make saves incompatible. If something is not a part of game save, then changing that cannot make older saves invalid. There are things in game that may be reinitialized or recreated in script rather than loading their states from a save. Good example are GUIs, Views and DynamicSprites.
-
-### Event handler function can be in any script module
-
-Previously in AGS when you tied a object or room event to a function in script, such function could only be located in GlobalScript.
-With 3.6.2 you can now select which script module to use. This selection is made on Events tab of a Property Grid, where you will see a "Script Module" dropdown list.
-This allows you to neatly organize event functions in your project scripts, and not clutter GlobalScript from all kind of things.
-Note that GUI Controls inherit script module of their parent GUI, and everything in room (room objects, hotspots, etc) will always use the same room script.
-
-Please be aware that changing this selection does not automatically move any existing functions from one module to another: you will have to move them by hand. But any functions generated for events by clicking "..." button will end up in the selected script module.
