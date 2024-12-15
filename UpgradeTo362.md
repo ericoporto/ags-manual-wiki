@@ -17,7 +17,12 @@ Please be aware that changing this selection does not automatically move any exi
 
 Previously the voice clips had to be named with only first 4 letters from a Character's script name, e.g. "ROGE1.ogg" in case character's name is "cRoger". This could have become a problem if you have several characters which begin with the same 4 letters.
 
-Starting with 3.6.2 the voice clips are to be named using full script name (except the preceding 'c' symbol). If Character's script name is "cRoger" then the voice clips have to be called "Roger<N>" (where <N> is a number), if a script name is "cVeryLongCharacterName" then they have to be called "VeryLongCharacterName<N>", and so forth.
+Starting with 3.6.2 the voice clips are to be named using full script name (except the preceding 'c' symbol) and an extra dot between name and a number. This dot is to be able to distinguish clip numbers from any numbers found in the character name itself.
+
+For example:
+* If Character's script name is "cRoger" then the voice clips have to be called like "Roger.1.ogg";
+* If a script name is "cVeryLongCharacterName" then they have to be called like "VeryLongCharacterName.1.ogg";
+* If a script name is "cRandomGuy5" then they have to be called like "RandomGuy5.1.ogg" (notice that extra dot makes the clip number stand out).
 
 The classic behavior may be re-enabled by a switch in "Backwards Compatibility" section of "General Settings". This is useful in case you are upgrading an older project and do not want to rename all the voice clips.
 
