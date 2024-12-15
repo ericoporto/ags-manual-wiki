@@ -276,6 +276,7 @@ enum eFlipDirection {
 
 ```ags
 enum FontType {
+    eNullFont
     eFontXXXX,
     eFontXXXX,
     // ...
@@ -284,7 +285,13 @@ enum FontType {
 
 The FontType enumeration is generated automatically based on your fonts.
 The font name is taken, all its spaces are removed, and *eFont* is added
-to the front.<br>
+to the front.
+
+The `eNullFont` is a special value that can be used in place of an existing font,
+and instead will draw no text, and return 0 size for the text.
+
+*Compatibility:* the `eNullFont` is supported by **AGS 3.6.2** and later versions.
+
 *Used by:* [`Button.Font`](Button#buttonfont),
 [`DrawingSurface.DrawMessageWrapped`](DrawingSurface#drawingsurfacedrawmessagewrapped),
 [`DrawingSurface.DrawString`](DrawingSurface#drawingsurfacedrawstring),
