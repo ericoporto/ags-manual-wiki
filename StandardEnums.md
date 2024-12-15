@@ -6,6 +6,8 @@ used in calls to various commands, and will usually pop up automatically
 in autocomplete. However, for times where autocomplete doesn't do the
 job, having a manual reference is invaluable:
 
+---
+
 ### `Alignment`
 
 ```ags
@@ -42,6 +44,8 @@ will execute some code if *align* variable contains "Left" in any combination (e
 
 *Used by:* [`Button.TextAlignment`](Button#buttontextalignment)
 
+---
+
 ### `AudioFileType`
 
 ```ags
@@ -56,6 +60,8 @@ enum AudioFileType {
 ```
 
 *Used by:* [`AudioClip.FileType`](AudioClip#audioclipfiletype)
+
+---
 
 ### `AudioPriority`
 
@@ -72,6 +78,8 @@ enum AudioPriority {
 *Used by:* [`AudioClip.Play`](AudioClip#audioclipplay),
 [`AudioClip.PlayFrom`](AudioClip#audioclipplayfrom),
 [`AudioClip.PlayQueued`](AudioClip#audioclipplayqueued)
+
+---
 
 ### `BlockingStyle`
 
@@ -92,6 +100,8 @@ enum BlockingStyle {
 [`Object.Animate`](Object#objectanimate),
 [`Object.Move`](Object#objectmove)
 
+---
+
 ### `eCDAudioFunction`
 
 ```ags
@@ -110,6 +120,8 @@ enum eCDAudioFunction {
 ```
 
 *Used by:* [`CDAudio`](Multimedia#cdaudio)
+
+---
 
 ### `CharacterDirection`
 
@@ -130,6 +142,8 @@ enum CharacterDirection {
 *Used by:* [`Character.ChangeRoom`](Character#characterchangeroom),
 [`Character.FaceDirection`](Character#characterfacedirection)
 
+---
+
 ### `CursorMode`
 
 ```ags
@@ -142,7 +156,8 @@ enum CursorMode {
 
 The CursorMode enumeration is generated automatically based on your
 mouse cursors. The cursor mode name is taken, all its spaces are
-removed, and *eMode* is added to the front.<br>
+removed, and *eMode* is added to the front.
+
 *Used by:* [`IsInteractionAvailable`](Globalfunctions_General#isinteractionavailable),
 [`Room.ProcessClick`](Room#roomprocessclick),
 [`Mouse.ChangeModeGraphic`](Mouse#mousechangemodegraphic),
@@ -161,6 +176,8 @@ removed, and *eMode* is added to the front.<br>
 [`Character.IsInteractionAvailable`](Character#characterisinteractionavailable),
 [`Character.RunInteraction`](Character#characterruninteraction)
 
+---
+
 ### `CutsceneSkipType`
 
 ```ags
@@ -176,6 +193,8 @@ enum CutsceneSkipType {
 
 *Used by:* [`StartCutscene`](Globalfunctions_General#startcutscene)
 
+---
+
 ### `DialogOptionSayStyle`
 
 ```ags
@@ -187,6 +206,8 @@ enum DialogOptionSayStyle {
 ```
 
 *Used by:* [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions)
+
+---
 
 ### `DialogOptionState`
 
@@ -201,6 +222,8 @@ enum DialogOptionState {
 *Used by:* [`Dialog.GetOptionState`](Dialog#dialoggetoptionstate),
 [`Dialog.SetOptionState`](Dialog#dialogsetoptionstate)
 
+---
+
 ### `Direction`
 
 ```ags
@@ -212,6 +235,8 @@ enum Direction {
 
 *Used by:* [`Character.Animate`](Character#characteranimate),
 [`Object.Animate`](Object#objectanimate)
+
+---
 
 ### `EventType`
 
@@ -236,6 +261,8 @@ The `eEventLeaveRoomAfterFadeout` and `eEventGameSaved` is supported by **AGS 3.
 
 *Passed into:* on_event
 
+---
+
 ### `FileMode`
 
 ```ags
@@ -247,6 +274,8 @@ enum FileMode {
 ```
 
 *Used by:* [`File.Open`](File#fileopen)
+
+---
 
 ### `FileSeek`
 
@@ -260,6 +289,8 @@ enum FileSeek {
 
 *Used by:* [`File.Seek`](File#fileseek)
 
+---
+
 ### `eFlipDirection`
 
 ```ags
@@ -271,6 +302,8 @@ enum eFlipDirection {
 ```
 
 *Used by:* [`DynamicSprite.Flip`](DynamicSprite#dynamicspriteflip)
+
+---
 
 ### `FontType`
 
@@ -306,6 +339,8 @@ and instead will draw no text, and return 0 size for the text.
 [`Overlay.CreateTextual`](Overlay#overlaycreatetextual),
 [`Overlay.SetText`](Overlay#overlaysettext)
 
+---
+
 ### `GUIPopupStyle`
 
 ```ags
@@ -320,6 +355,8 @@ enum GUIPopupStyle {
 *Compatibility:* supported by **AGS 3.5.0** and higher.
 
 *Used by:* [`GUI.PopupStyle`](GUI#guipopupstyle)
+
+---
 
 ### `HorizontalAlignment`
 
@@ -337,6 +374,8 @@ Note that HorizontalAlignment's values match the first values of Alignment enume
 
 *Used by:*
 [`Character.LockViewAligned`](Character#characterlockviewaligned), [`DrawingSurface.DrawStringWrapped`](DrawingSurface#drawingsurfacedrawstringwrapped), [`Label.TextAlignment`](Label#labeltextalignment), [`ListBox.TextAlignment`](ListBox#listboxtextalignment), [`Speech.TextAlignment`](Speech#speechtextalignment)
+
+---
 
 ### `InputType`
 
@@ -363,6 +402,8 @@ will execute some code if *type* variable contains *at least* "eInputKeyboard".
 
 *Used by:* [Wait functions](Globalfunctions_Wait)
 
+---
+
 ### `LocationType`
 
 ```ags
@@ -375,6 +416,8 @@ enum LocationType {
 ```
 
 *Returned by:* [`GetLocationType`](Globalfunctions_General#getlocationtype)
+
+---
 
 ### `LogLevel`
 
@@ -395,6 +438,8 @@ enum LogLevel
 
 *Used by:* [`System.Log`](System#systemlog)
 
+---
+
 ### `MouseButton`
 
 ```ags
@@ -410,8 +455,11 @@ enum MouseButton {
 };
 ```
 
-*Used by:* [`Mouse.IsButtonDown`](Mouse#mouseisbuttondown)<br>
+*Used by:* [`Mouse.IsButtonDown`](Mouse#mouseisbuttondown)
+
 *Passed into:* on_mouse_click
+
+---
 
 ### `eOperatingSystem`
 
@@ -430,6 +478,8 @@ enum eOperatingSystem {
 ```
 
 *Used by:* [`System.OperatingSystem`](System#systemoperatingsystem)
+
+---
 
 ### `RenderLayer`
 
@@ -455,6 +505,8 @@ The `RenderLayer` enum can be combined like flags, using bitwise operators.
 *Used by:* [`DyanmicSprite.CreateFromScreenShot`](DynamicSprite#dynamicspritecreatefromscreenshot),
 [`SetGameOption`](Globalfunctions_General#setgameoption)
 
+---
+
 ### `RepeatStyle`
 
 ```ags
@@ -468,6 +520,8 @@ enum RepeatStyle {
 [`Character.Animate`](Character#characteranimate),
 [`Object.Animate`](Object#objectanimate)
 
+---
+
 ### `RoundDirection`
 
 ```ags
@@ -479,6 +533,8 @@ enum RoundDirection {
 ```
 
 *Used by:* [`FloatToInt`](Maths#floattoint)
+
+---
 
 ### `SkipSpeechStyle`
 
@@ -497,6 +553,8 @@ enum SkipSpeechStyle {
 
 *Used by:* [`Speech.SkipStyle`](Speech#speechskipstyle)
 
+---
+
 ### `SortStyle`
 
 ```ags
@@ -511,6 +569,8 @@ enum SortStyle {
 *Used by:* [`Dictionary.Create`](Dictionary#dictionarycreate),
 [`Set.Create`](Set#setcreate)
 
+---
+
 ### `eSpeechStyle`
 
 ```ags
@@ -524,6 +584,8 @@ enum eSpeechStyle {
 
 *Used by:* [`Speech.Style`](Speech#speechstyle)
 
+---
+
 ### `StopMovementStyle`
 
 ```ags
@@ -536,6 +598,8 @@ enum StopMovementStyle
 
 *Used by:* [`Character.LockView`](Character#characterlockviewaligned),
 [`Character.LockViewFrame`](Character#characterlockviewoffset)
+
+---
 
 ### `StringCompareStyle`
 
@@ -555,6 +619,8 @@ enum StringCompareStyle {
 [`String.Replace`](String#stringreplace),
 [`String.StartsWith`](String#stringstartswith)
 
+---
+
 ### `TransitionStyle`
 
 ```ags
@@ -570,6 +636,8 @@ enum TransitionStyle {
 *Used by:* [`SetScreenTransition`](Globalfunctions_Screen#setscreentransition),
 [`SetNextScreenTransition`](Globalfunctions_Screen#setnextscreentransition)
 
+---
+
 ### `VideoSkipStyle`
 
 ```ags
@@ -583,6 +651,8 @@ enum VideoSkipStyle {
 
 *Used by:* [`PlayVideo`](Multimedia#playvideo)
 
+---
+
 ### `eVoiceMode`
 
 ```ags
@@ -594,6 +664,8 @@ enum eVoiceMode {
 ```
 
 *Used by:* [`Speech.VoiceMode`](Speech#speechvoicemode)
+
+---
 
 ### `WalkWhere`
 
