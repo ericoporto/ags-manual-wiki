@@ -431,6 +431,30 @@ enum eOperatingSystem {
 
 *Used by:* [`System.OperatingSystem`](System#systemoperatingsystem)
 
+### `RenderLayer`
+
+```ags
+enum RenderLayer {
+  eRenderLayerNone      = 0x00000000,
+  eRenderLayerEngine    = 0x00000001,
+  eRenderLayerCursor    = 0x00000002,
+  eRenderLayerUI        = 0x00000004,
+  eRenderLayerRoom      = 0x00000008,
+  eRenderLayerAll       = 0xFFFFFFFF
+};
+```
+
+The `RenderLayer` enum allows to be specific to what elements should be rendered in a screen capture.
+This allows you to, as an example, create a screenshot of only the room layer and not include any GUI or cursor on top.
+The Engine layer is for things like the in-engine FPS counter.
+
+The `RenderLayer` enum can be combined like flags, using bitwise operators.
+
+*Compatibility:* supported by **AGS 3.6.2** and higher.
+
+*Used by:* [`DyanmicSprite.CreateFromScreenShot`](DynamicSprite#dynamicspritecreatefromscreenshot),
+[`SetGameOption`](Globalfunctions_General#setgameoption)
+
 ### `RepeatStyle`
 
 ```ags
