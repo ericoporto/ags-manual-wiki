@@ -26,6 +26,26 @@ For example:
 
 The classic behavior may be re-enabled by a switch in "Backwards Compatibility" section of "General Settings". This is useful in case you are upgrading an older project and do not want to rename all the voice clips.
 
+### Dynamic array's Length attribute
+
+Dynamic arrays do have a Length pseudo-attribute which allows to get their length without storing it in another variable.
+
+For a simple example:
+```ags
+int[] CreateSomeArray(int how_long)
+{
+    return new int[how_long];
+}
+
+function game_start()
+{
+    int array[] = CreateSomeArray(100);
+    Display("My array has a length of %d", array.Length);
+}
+```
+
+In addition you are now allowed to create empty dynamic arrays (of 0 length). This may be useful if you must return a dynamic array that has no elements but do not want to return "null" and bother with null pointer checks.
+
 ### Loading old saves feature
 
 Since the early days of AGS there have been this problem that if you change something in your game, there's a high chance that these changes will make previously made saves incompatible. This is not a big issue while you're developing the game, but may become one after you release it, since often you may have to patch or update your game. The problem is thoroughly discussed in the dedicated article: [Game saves compatibility](GameSavesCompatibility).
