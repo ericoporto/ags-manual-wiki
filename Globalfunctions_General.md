@@ -750,32 +750,6 @@ will unpause the game if it's paused.
 
 ---
 
-### `IsInterfaceEnabled`
-
-```ags
-IsInterfaceEnabled()
-```
-
-Returns 1 if the player interface is currently enabled, 0 if it is
-disabled. There are following reasons why it may be disabled:
-- DisableInterface function was called in script;
-- the game is currently running any blocking action (such as Display, Say or Walk);
-- the game is in a certain state, such as displaying dialog options.
-
-Example:
-
-```ags
-if (IsInterfaceEnabled())
-    DisableInterface();
-```
-
-will disable the user interface if it's enabled.
-
-*See also:* [`DisableInterface`](Globalfunctions_General#disableinterface),
-[`EnableInterface`](Globalfunctions_General#enableinterface)
-
----
-
 ### `IsInteractionAvailable`
 
 ```ags
@@ -806,6 +780,32 @@ if (IsInteractionAvailable(mouse.x, mouse.y, eModeLookat) == 0)
 [`Object.IsInteractionAvailable`](Object#objectisinteractionavailable),
 [`Character.IsInteractionAvailable`](Character#characterisinteractionavailable),
 [`Room.ProcessClick`](Room#roomprocessclick)
+
+---
+
+### `IsInterfaceEnabled`
+
+```ags
+IsInterfaceEnabled()
+```
+
+Returns 1 if the player interface is currently enabled, 0 if it is
+disabled. There are following reasons why it may be disabled:
+- DisableInterface function was called in script;
+- the game is currently running any blocking action (such as Display, Say or Walk);
+- the game is in a certain state, such as displaying dialog options.
+
+Example:
+
+```ags
+if (IsInterfaceEnabled())
+    DisableInterface();
+```
+
+will disable the user interface if it's enabled.
+
+*See also:* [`DisableInterface`](Globalfunctions_General#disableinterface),
+[`EnableInterface`](Globalfunctions_General#enableinterface)
 
 ---
 
