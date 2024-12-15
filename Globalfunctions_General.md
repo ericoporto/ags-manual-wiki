@@ -164,7 +164,8 @@ with what they do:
 _Compatibility:_ Using Debug(2,n) for different masks and Debug(5,n) as toggle is only supported by **AGS 3.6.0** and later versions.
 
 *See also:* [Debugging features](Debuggingfeatures),
-[`System.RuntimeInfo`](System#systemruntimeinfo)
+[`System.RuntimeInfo`](System#systemruntimeinfo),
+[`System.DisplayFPS`](System#systemdisplayfps)
 
 ---
 

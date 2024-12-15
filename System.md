@@ -145,6 +145,24 @@ will display the game's native resolution and color depth.
 
 ---
 
+### `System.DisplayFPS`
+
+```ags
+static bool System.DisplayFPS;
+```
+
+Gets/sets whether the current frames per second is displayed on the screen.
+This is useful for debugging purposes and quickly understanding performance impacts from different scripting approaches.
+
+**NOTE:** if a command line flag that forces displaying fps is passed,
+this property will always be true, setting it will be ignored.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`Debug`](Globalfunctions_General#debug)
+
+---
+
 ### `System.Gamma`
 
 ```ags
