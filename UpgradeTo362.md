@@ -6,11 +6,11 @@ One major addition that should be noted in particular is the minimal support for
 
 ### Event handler functions can be in any script module
 
-Previously in AGS when you tied a object or room event to a function in script, such function could only be located in GlobalScript.
+Previously in AGS when you tied an object or room event to a function in script, such function could only be located in GlobalScript.
 With 3.6.2 you can now select which script module to use. This selection is made on Events tab of a Property Grid, where you will see a "Script Module" dropdown list.
 This allows you to neatly organize event functions in your project scripts, and not clutter GlobalScript with all kinds of things.
 
-Note that GUI Controls inherit script module of their parent GUI, and everything in room (room objects, hotspots, etc) will always use the same room script.
+Note that GUI Controls inherit script module of their parent GUI, and everything in room (room objects, hotspots, etc.) will always use the same room script.
 
 Please be aware that changing this selection does not automatically move any existing functions from one module to another: you will have to move them by hand. But any new functions generated for events by clicking "..." button will end up in the selected script module.
 
@@ -45,7 +45,7 @@ function game_start()
 }
 ```
 
-In addition you are now allowed to create empty dynamic arrays (of 0 length). This may be useful if you must return a dynamic array that has no elements but do not want to return "null" and bother with null pointer checks.
+In addition, you are now allowed to create empty dynamic arrays (of 0 length). This may be useful if you must return a dynamic array that has no elements but do not want to return "null" and bother with null pointer checks.
 
 ### Loading old saves feature
 
@@ -57,13 +57,13 @@ The new 3.6.2 engine introduces a number of options that let solve, or at least 
 
 This means that the engine can load saves if they have equal or less count of Characters, Dialogs, GUI, controls on each given GUI, variables in script, and so forth, compared to the current game. Please be aware that *only quantity* of data is compared. Engine still cannot distinguish the order in which the items were saved. This means that if you change their order (such as order of IDs of items, or order of variables in a script), then engine won't be able to detect that, and will apply loaded items from the save into wrong positions.
 
-There are two exceptions from this rule at the moment: script modules and plugins. Script modules and plugins are identified by their names, and so long as the name matches the script data will be correctly loaded from save. Engine also skips the data for module or plugin if one is not present in the game anymore.
+There are two exceptions to this rule at the moment: script modules and plugins. Script modules and plugins are identified by their names, and so long as the name matches the script data will be correctly loaded from save. Engine also skips the data for module or plugin if one is not present in the game anymore.
 
 The loading of "incompatible" saves is not done automatically though, it has to be triggered by adding a certain function to your scripts. This function is called "validate_restored_save" (please read further below).
 
 An extra note should be made for those of the recently added objects that are *not* found in a save. All of these are going to be *reset to their initial states*, the ones they have when player launches your game.
 
-Please remember that the engine can do only that much: load what is available from the save. It's up to you to fixup anything after save is restored, such as correcting restored objects or initializing objects that were not restored. The good place to do this is, for example, a ["on_event" function](Globalfunctions_Event#on_event) which receives eEventRestoreGame event.
+Please remember that the engine can do only that much: load what is available from the save. It's up to you to fixup anything after save is restored, such as correcting restored objects or initializing objects that were not restored. The good place to do this is, for example, an ["on_event" function](Globalfunctions_Event#on_event) which receives eEventRestoreGame event.
 
 #### 2. Validating restored saves.
 
@@ -77,14 +77,14 @@ function validate_restored_save(RestoredSaveInfo* saveInfo)
 
 Whenever engine meets a save that is not entirely compatible with the current game, it will check if this function is present, and then run it. The function receives a RestoredSaveInfo object as a parameter, and this struct contains brief summary of the restored game, such as its description text, the version of the engine it was saved in, and numbers of global game objects (Characters, Inventory items, and so on) found inside.
 
-RestoredSaveInfo has a boolean property named "Cancel", which must be set in this function to tell whether you confirm or cancel the use of this save. By default Cancel begins set to "true", meaning that if you don't do anything then the engine will cancel restoring this save.
+RestoredSaveInfo has a boolean property named "Cancel", which must be set in this function to tell whether you confirm or cancel the use of this save. By default, Cancel begins set to "true", meaning that if you don't do anything then the engine will cancel restoring this save.
 
 The purpose of this function is to let you decide whether save may still be allowed to load or not.
 
 #### 3. Prescanning save slots.
 
 If engine is told to load an incompatible save and fails it then will usually just stop the game. This is quite frustrating for the players.
-In version 3.6.2 there's a new script command called `Game.ScanSaveSlots()`. This function lets you *test* a range of saves and return only validated ones. When checking the saves it will also try calling "validate_restored_save" for saves with less data in them.
+In version 3.6.2 there's a new script command called `Game.ScanSaveSlots()`. This function lets you *test* a range of saves and return only validated ones. When checking the saves it will also try calling "validate_restored_save" for saves with fewer data in them.
 Scanning saves allows you to take precaution and avoid displaying invalid saves in game menus, or reject loading a save before it crashes the game.
 
 ### Restricting the data read or written in a save
@@ -117,6 +117,6 @@ function game_start()
 Above will *exclude* audio playback state, GUI state, and Dynamic Sprites from the saves, and don't read them back from a save even if it happens to contain them.
 
 There are 3 general uses for this feature:
-1. Reducing save file size. This is the simplest case. If your game has an excess use of DynamicSprites, that are created at runtime, you may wish to not write them into the save file to reduce the usage of disk space (in case player makes alot of saves). Instead these sprites can be recreated after a game is restored, or whenever they are required.
+1. Reducing save file size. This is the simplest case. If your game has an excess use of DynamicSprites, that are created at runtime, you may wish to not write them into the save file to reduce the usage of disk space (in case player makes a lot of saves). Instead, these sprites can be recreated after a game is restored, or whenever they are required.
 2. When you design your game in such way that certain things should not be reset when restoring a save. For instance, if you exclude Audio from saves, then anything currently playing will continue to play even after loading a saved game.
 3. Reduce number of things that may make saves incompatible. If something is not a part of game save, then changing that cannot make older saves invalid. There are things in game that may be reinitialized or recreated in script rather than loading their states from a save. Good example are GUIs, Views and DynamicSprites.
