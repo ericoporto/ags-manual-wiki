@@ -306,12 +306,17 @@ Once the GUI is disposed of, Delete should be called on the sprite.
 
 ```ags
 static DynamicSprite* DynamicSprite.CreateFromScreenShot(
-    optional int width, optional int height)
+    optional int width, optional int height, optional RenderLayer layer)
 ```
 
 Creates a new DynamicSprite instance with a copy of the current screen
 in it, resized to WIDTH x HEIGHT. If you do not supply the width or
 height, then a full screen sized sprite will be created.
+
+You can optionally pass a layer parameter that is a flag parameter
+that can take any bitwise combination of RenderLayer type. You can
+use this parameter to do a screenshot without include GUIs or mouse
+cursor.
 
 This command can be useful if you're creating a save game screenshots
 GUI, in order to display the current game position as well as the saved
@@ -337,7 +342,10 @@ ds.Delete();
 takes a screen shot, and draws it onto the background scene at
 (100,100).
 
-*See also:* [`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete),
+*Compatibility:* Optional `layer` parameter is supported only by **AGS 3.6.2** and later versions.
+
+*See also:* [`RenderLayer`](StandardEnums#renderlayer),
+[`DynamicSprite.Delete`](DynamicSprite#dynamicspritedelete),
 [`Game.GetSaveSlotDescription`](Game#gamegetsaveslotdescription),
 [`DynamicSprite.CreateFromExistingSprite`](DynamicSprite#dynamicspritecreatefromexistingsprite)
 [`DynamicSprite.CreateFromFile`](DynamicSprite#dynamicspritecreatefromfile),
