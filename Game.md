@@ -303,6 +303,37 @@ will get the description of save slot 10 into the variable.
 
 ---
 
+### `Game.GetSaveSlotTime`
+
+```ags
+static DateTime* Game.GetSaveSlotTime(int slot)
+```
+
+Gets the write time of the specified save game slot.
+
+Example:
+
+```ags
+  int save_slot = 1;
+  DateTime* dt = Game.GetSaveSlotTime(save_slot);
+  if(dt == null) {
+    Display("Save slot '%d' not found", save_slot);
+  }
+
+  Display("Save slot '%d' was created in\n%02d/%02d/%04d, at %02d:%02d:%02d",
+    save_slot, dt.DayOfMonth, dt.Month, dt.Year, dt.Hour, dt.Minute, dt.Second);
+```
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:*
+[`Game.GetSaveSlotDescription`](Game#gamegetsaveslotdescription),
+[`DynamicSprite.CreateFromSaveGame`](DynamicSprite#dynamicspritecreatefromsavegame),
+[`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
+[`SaveGameSlot`](Globalfunctions_General#savegameslot)
+
+---
+
 ### `Game.GetViewFrame`
 
 *(Formerly part of `GetGameParameter`, which is now obsolete)*
