@@ -122,6 +122,32 @@ SeeAlso: [Script events](Globalfunctions_Event)
 
 ---
 
+### `CopySaveSlot`
+
+```ags
+void CopySaveSlot (int old_slot, int new_slot)
+```
+
+Copies the save game from one slot to another, overwriting a save if one was already present at a new slot.
+
+Example:
+
+```ags
+CopySaveSlot(2, 5);
+```
+
+Copies the save slot 2 (which we should have saved earlier), over the save slot 5.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`MoveSaveSlot`](Globalfunctions_General#movesaveslot),
+[`DeleteSaveSlot`](Globalfunctions_General#deletesaveslot),
+[`SaveGameSlot`](Globalfunctions_General#savegameslot),
+[`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
+[`SaveGameDialog`](Globalfunctions_General#savegamedialog)
+
+---
+
 ### `Debug`
 
 ```ags
@@ -199,7 +225,9 @@ for (int i = 999; i >= 0; i--)
 deletes all the saves. This deletes in an opposite order to counter the problem with slots in the range 1-50 mentioned above.
 
 *See also:* [`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
-[`SaveGameSlot`](Globalfunctions_General#savegameslot)
+[`SaveGameSlot`](Globalfunctions_General#savegameslot),
+[`CopySaveSlot`](Globalfunctions_General#copysaveslot),
+[`MoveSaveSlot`](Globalfunctions_General#movesaveslot)
 
 ---
 
@@ -948,6 +976,35 @@ Will move the character EGO below object number 0, then turn off object 0.
 
 *See also:* [`Character.Walk`](Character#characterwalk),
 [`MoveCharacterToHotspot`](Globalfunctions_General#movecharactertohotspot)
+
+---
+
+### `MoveSaveSlot`
+
+```ags
+void MoveSaveSlot (int old_slot, int new_slot)
+```
+
+Moves the save game from one slot to another, overwriting a save if one was already present at a new slot.
+This is the same as renaming the file used by the old slot with the name it would have (or that has),
+the file in the new slot.
+
+Example:
+
+```ags
+MoveSaveSlot(2, 5);
+```
+
+Moves the save slot 2 (which we should have saved earlier), over the save slot 5.
+The save slot 2 won't be found anymore in its previous slot.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`CopySaveSlot`](Globalfunctions_General#copysaveslot),
+[`DeleteSaveSlot`](Globalfunctions_General#deletesaveslot),
+[`SaveGameSlot`](Globalfunctions_General#savegameslot),
+[`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
+[`SaveGameDialog`](Globalfunctions_General#savegamedialog)
 
 ---
 
