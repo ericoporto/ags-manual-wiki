@@ -303,6 +303,57 @@ will get the description of save slot 10 into the variable.
 
 ---
 
+### `Game.GetSaveSlots`
+
+```ags
+static int[] Game.GetSaveSlots(int min_slot, int max_slot, optional SaveGameSortStyle saveSortStyle, optional SortDirection sortDirection)
+```
+
+Returns a dynamic array of existing save slot numbers found in the requested range, optionally sorted using certain style and direction.
+By default the sorting order is unspecified.
+If no matching saves were found, returns an empty array (which Length is 0).
+
+*SaveGameSortStyle* determines which save's property will be used when sorting the list of saves. It can be:
+* eSaveGameSort_None - don't sort, the order will be unspecified;
+* eSaveGameSort_Number - sort by the save slot number;
+* eSaveGameSort_Time - sort by the save time (the time this save slot was last written at);
+* eSaveGameSort_Description - sort by the save's description.
+
+*SortDirection* determines the order of sorting:
+* eSortNoDirection - unspecified;
+* eSortAscending;
+* eSortDescending.
+
+Example 1:
+
+```ags
+int slotsFound[] = Game.GetSaveSlots(1, 100, eSaveGameSort_Time, eSortDescending);
+if (slotsFound.Length > 0)
+{
+    RestoreGameSlot(slotsFound[0]);
+}
+```
+
+finds the most recent slot number in the range of 1 to 100, if any is found then restores that save.
+
+Example 2:
+
+```ags
+int slotsFound[] = Game.GetSaveSlots(1, 100, eSaveGameSort_Time, eSortDescending);
+listBox1.FillSaveGameSlots(slotsFound);
+```
+
+gets an array of save slots from Game.GetSaveSlots and then inserts them into the ListBox using FillSaveGameSlots function.
+Note that you if you do that, you don't have to provide sorting style for FillSaveGameSlots, as the slots will already be sorted
+by GetSaveSlots.
+
+*See also:* [`Game.ScanSaveSlots`](Game#gamescansaveslots),
+[`File.GetFiles`](File#filegetfiles),
+[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
+[`ListBox.FillSaveGameSlots`](ListBox#listboxfillsavegameslots)
+
+---
+
 ### `Game.GetSaveSlotTime`
 
 ```ags

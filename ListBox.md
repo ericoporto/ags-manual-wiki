@@ -166,8 +166,8 @@ Prior to **AGS 3.6.2** this function would only search for save slots between 0 
 void ListBox.FillSaveGameSlots(int save_slots[], optional SaveGameSortStyle saveSortStyle, optional SortDirection sortDirection)
 ```
 
-Fills the list box with the current user's saved games using the array of slot indexes.
-This array must be non-empty.
+Fills the list box with the current user's saved games using the array of slot indexes, optionally sorted using certain style and direction.
+This array must be non-empty. By default the sorting order is unspecified.
 
 You can optionally use `saveSortStyle` and `sortDirection` to set how the list
 of save games set to the list box should be sorted. See their explanation in the description to [`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist).
