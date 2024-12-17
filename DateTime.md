@@ -45,7 +45,9 @@ static DateTime* DateTime.CreateFromDate(int year, int month, int day, int hour 
 ```
 
 Returns a DateTime set as created.
-It returns invalid object if year is below 1970 or above 2038, or any other value is invalid.
+
+Because of how DateTime is implemented in AGS engine, it only supports a range of dates between January 1970 to January 2038 (inclusive).
+It returns invalid object if year is below 1970 or above 2038, or if any other value is invalid.
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
@@ -61,9 +63,11 @@ static DateTime* DateTime.CreateFromRawTime(int rawTime);
 ```
 
 Creates DateTime object from the provided raw time value (in seconds). 
-It returns invalid object if rawTime is negative
+It returns invalid object if rawTime is negative.
 
-**NOTE:** the raw time mentioned here is sometimes also known as UNIX time, in 32-bit.
+This function may be useful, for example, if you write "raw time" from a DateTime.Now in a file, and load it back later.
+
+**NOTE:** the raw time mentioned here is sometimes also known as UNIX time, stored as a 32-bit signed integer.
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
