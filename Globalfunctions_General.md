@@ -675,21 +675,23 @@ Example:
 
 function room_AfterFadeIn()
 {
-  SetTimer(TIMER_ID, 10);
+    SetTimer(TIMER_ID, 10);
 }
 
 function room_RepExec()
 {
-  int timeLeft = GetTimerPos(TIMER_ID);
-  if (timeLeft == 0)
-  {
-    System.Log(eLogInfo, "Timer %d is not running", TIMER_ID);
-  }
-  else if (timeLeft == 1)
-  {
-    System.Log(eLogInfo, "Timer %d is about to expire!", TIMER_ID);
-    IsTimerExpired(TIMER_ID); // if we don't call this, the timer will be kept at 1 tick value
-  }
+    int timeLeft = GetTimerPos(TIMER_ID);
+    if (timeLeft == 0)
+    {
+        System.Log(eLogInfo, "Timer %d is not running", TIMER_ID);
+    }
+    else if (timeLeft == 1)
+    {
+        System.Log(eLogInfo, "Timer %d is about to expire!", TIMER_ID);
+        // since we don't use IsTimerExpired, we must stop the timer ourselves
+        // or the timer will be kept at 1 tick value
+        SetTimer(TIMER_ID, 0);
+    }
 }
 ```
 
