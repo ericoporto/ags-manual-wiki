@@ -604,6 +604,63 @@ will say hi twice, and also reset ALL do once only tokens.
 
 ---
 
+### `Game.ScanSaveSlots`
+
+```ags
+static void Game.ScanSaveSlots(int valid_slots[], int min_slot, int max_slot, optional SaveGameSortStyle saveSortStyle, optional SortDirection sortDirection, optional int user_param);
+```
+
+Scans any existing save slots in the requested range, tests each of them for validity, and fills ones that passed the test into the provided *valid_slots* dynamic array. Optionally sorts the result using certain style and direction.
+
+**IMPORTANT:** for technical reasons this function does not do the scanning immediately, instead it waits until the current script completes. After it's done scanning engine will send a `eEventSavesScanComplete` event, which you should receive and handle in [`on_event`](Globalfunctions_Event#on_event) script function. For this reason the dynamic array should be a global variable, not local variable, if you'd like to be able to read the results inside `on_event`.
+Multiple calls to Game.ScanSaveSlots within the same script function *are allowed* (see more details below).
+
+This function is purposed to test which saves are valid to be restored by the current game. The validation is a two-step process:
+
+First the engine checks whether it is capable of reading the save at all. If a save is of unsupported format, or cannot be read for any reason, then it will be immediately skipped.
+
+Second step is more complicated. This is where the engine will compare the amounts of data of each kind found in the current game and this save: numbers of Characters, GUIs, controls per each GUI, script variables, and so forth. If the save has more data than the game, then such save will be skipped. If the save has *equal or less* data than the game, then the engine will try to run a special function in script called "validate_restored_save".
+
+If such function is NOT present, then the saves with *less* data are skipped, and saves with *equal* amounts of data are automatically accepted.
+
+If function "validate_restored_save" is present in script, then it's run for saves with *equal or less* data. This function must tell the engine whether to accept or skip this save. How to write such function is explained in the respective article: [`validate_restored_save`](Globalfunctions_Event#validate_restored_save).
+
+The resulting list of accepted save slots is filled into the *valid_slots* dynamic array. *valid_slots* array must be created by user prior to calling Game.ScanSaveSlots, it is not created nor resized by the function itself! If array is not large enough to accomodate all the found and accepted saves, function fills only as much as possible and stops.
+
+After the process is completed, this way or another, engine sends a eEventSavesScanComplete event, which may be handled in the [`on_event`](Globalfunctions_Event#on_event) script function.
+
+You can pass an optional *user_param* value into ScanSaveSlots, in which case it will be sent along with the eEventSavesScanComplete event as its only parameter. This lets to distinguish different calls to ScanSaveSlots in case when you'd like to make multiple calls within a single script for some reason.
+
+You can optionally use *saveSortStyle* and *sortDirection* to set how the resulting list of save slots will be sorted. See their explanation in the description to [`Game.GetSaveSlots`](Game#gamegetsaveslots).
+
+Example:
+
+```ags
+int saveScanResult[];
+
+function ScanSaveGames()
+{
+    saveScanResult = new int[100];
+    Game.ScanSaveSlots(saveScanResult, 1, 100, eSaveGameSort_Time, eSortDescending);
+}
+
+function on_event(EventType event, int data1, int data2)
+{
+    if (event == eEventSavesScanComplete)
+    {
+        listBoxWithSaves.FillSaveGameSlots(saveScanResult);
+    }
+}
+```
+
+will scan saves in range from 1 to 100, sort resulting saves list by time, and fill it into some ListBox.
+
+*See also:* [`Game.GetSaveSlots`](Game#gamegetsaveslots),
+[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
+[`ListBox.FillSaveGameSlots`](ListBox#listboxfillsavegameslots)
+
+---
+
 ### `Game.SetAudioTypeSpeechVolumeDrop`
 
 *(Formerly known as `game.speech_music_drop`, which is now obsolete)*
