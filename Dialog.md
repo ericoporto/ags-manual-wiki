@@ -35,33 +35,44 @@ Retrieves a dialog name from the character's custom property, and gets a pointer
 static readonly attribute bool Dialog.AreOptionsDisplayed
 ```
 
-Returns `true` if dialog options are currently displayed on the screen, or false otherwise.
+Returns `true` if dialog options are currently displayed on the screen, or `false` otherwise.
 
 Example:
 
 ```ags
-bool _previousOptionsDisplayed;
+function on_event(EventType evt, int data1, int data2)
+{
+    if (evt == eEventDialogOptionsOpen)
+    {
+        player.LockView(VIEW_IDLE_WHILE_DIALOG);
+    }
+    else if (evt == eEventDialogOptionsClose)
+    {
+        player.UnlockView();
+    }
+}
 
 void repeatedly_execute_always()
 {
-    if (Dialog.AreOptionsDisplayed && !_previousOptionsDisplayed)
+    if (Dialog.AreOptionsDisplayed)
     {
-        System.Log(eLogInfo, "Dialog options are currently displayed.");
+        if (!player.Animating && (Random(100) < 2))
+        {
+            player.Animate(player.Loop, 4, eOnce, eNoBlock);
+        }
     }
-    else if(!Dialog.AreOptionsDisplayed && _previousOptionsDisplayed)
-    {
-        System.Log(eLogInfo, "No dialog options are visible right now.");
-    }
-    _previousOptionsDisplayed = Dialog.AreOptionsDisplayed;
 }
 ```
 
-In this example, whenever there is a transition from options being displayed or them not being displayed, it logs the new state of dialog options being shown.
+In this example the player character will be locked to a view VIEW_IDLE_WHILE_DIALOG when the dialog options are about to be shown on screen, and randomly play animations while they are displayed. When the dialog options are hidden the player character's view will be unlocked.
 
 **Compatibility:** Supported by **AGS 3.6.2** and later versions.
 
-**See also:** [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions), 
-[`Dialog.Start`](Dialog#dialogstart)
+**See also:** [`Dialog.Start`](Dialog#dialogstart),
+[`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions), 
+[`Dialog.CurrentDialog`](Dialog#currentdialog),
+[`Dialog.ExecutedOption`](Dialog#dialogexecutedoption),
+[`on_event`](Globalfunctions_Event#on_event)
 
 ---
 
@@ -73,35 +84,57 @@ static readonly attribute Dialog* Dialog.CurrentDialog
 
 Gets the currently running dialog. Returns `null` if no dialog is currently active.
 
-**NOTE:** in dialog is a specific state of the AGS Engine, it means a dialog script created in the editor is being ran. It's not the same as any character speaking.
-Use `Speech.SpeakingCharacter` to detect if any and which character is speaking.
+"In dialog" is a specific state of the AGS Engine, it means that a Dialog have been run by calling [`Dialog.Start()`](Dialog#dialogstart). This refers to:
+* dialog script is running, either an opening or any of the option's scripts;
+* dialog options are displayed;
+
+If, on another hand, you want to know when a particular character is speaking, then use [`Speech.SpeakingCharacter`](Speech#speechspeakingcharacter) instead.
+
+Current dialog may change multiple times during the conversation if you have other dialogs started from the dialog script. CurrentDialog will return `null` only when the last dialog has finished and the game returns to the normal state.
 
 Example:
 
 ```ags
+function on_event(EventType evt, int data1, int data2)
+{
+    if (evt == eEventDialogStart)
+    {
+        if (data1 == dShopkeeper.ID)
+        {
+            SetTimer(1, 300);
+        }
+    }
+    else if (evt == eEventDialogStop)
+    {
+        if (data1 == dShopkeeper.ID)
+        {
+            SetTimer(1, 0);
+        }
+    }
+}
+
 void repeatedly_execute_always()
 {
-    if (Dialog.CurrentDialog != null)
+    if (Dialog.CurrentDialog == dShopkeeper)
     {
-        // a dialog is running, show our custom frames
-        gDialogBorders.Visible = true;
-    }
-    else
-    {
-        // there is no dialog, let's hide our custom frames
-        gDialogBorders.Visible = false;
+        if (IsTimerExpired(1))
+        {
+            cThief.ChangeRoom(1, 10, 100);
+            cThief.Walk(320, 100, eNoBlock, eAnywhere);
+        }
     }
 }
 ```
 
-In this example, the script checks whether a dialog is active, and show or hide a GUI that contains decorative frames.
+In this example, the script starts a timer whenever the dShopkeeper dialog starts, and keeps checking for that timer's expiration while it's running. If a timer expires while in dialog, the cThief character will appear in the room and walk across the room. The timer will be cancelled if dialog ended earlier.
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
 **See also:** [`Dialog.Start`](Dialog#dialogstart),
-[`Speech.TextOverlay`](Speech#speechtextoverlay),
-[`Character.Speaking`](Character#characterspeaking),
-[`Speech.SpeakingCharacter`](Speech#speechspeakingcharacter)
+[`Dialog.AreOptionsDisplayed`](Dialog#dialogareoptionsdisplayed),
+[`Dialog.ExecutedOption`](Dialog#dialogexecutedoption),
+[`Speech.SpeakingCharacter`](Speech#speechspeakingcharacter),
+[`on_event`](Globalfunctions_Event#on_event)
 
 ---
 
@@ -113,23 +146,33 @@ static readonly attribute int Dialog.ExecutedOption
 
 Gets the currently executed dialog option, or `-1` if none is being executed.
 
+**NOTE:** dialog option indexes start with 1, and index 0 refers to the dialog entry (marked with '@S' in dialog script).
+
 Example:
 
 ```ags
 void repeatedly_execute_always()
 {
-    if (Dialog.ExecutedOption != -1)
+    if (Dialog.CurrentDialog == dAnxiousTalk && Dialog.ExecutedOption > 0)
     {
-        System.Log(eLogInfo, "Currently executed dialog option: %d", Dialog.ExecutedOption);
+        if (!cAnxiousMan.Speaking && !cAnxiousMan.Moving && !cAnxiousMan.Animating)
+        {
+            if (cAnxiousMan.x < 100)
+                cAnxiousMan.Walk(cAnxiousMan.x + 100, cAnxiousMan.y, eNoBlock);
+            else
+                cAnxiousMan.Walk(cAnxiousMan.x - 100, cAnxiousMan.y, eNoBlock);
+        }
+        player.FaceCharacter(cAnxiousMan);
     }
 }
 ```
 
-This example checks if a dialog option is being executed and logs its number.
+This script will make a cAnxiousMan character continuously walk back and forth during conversation, except the time when he's speaking himself or plays any custom animation.
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
-**See also:** [`Dialog.GetOptionText`](Dialog#dialoggetoptiontext), 
+**See also:** [`Dialog.CurrentDialog`](Dialog#currentdialog),
+[`Dialog.GetOptionText`](Dialog#dialoggetoptiontext), 
 [`Dialog.GetOptionState`](Dialog#dialoggetoptionstate)
 
 ---
@@ -495,7 +538,8 @@ dMerchant.Start();
 
 will start the conversation topic named dMerchant.
 
-*See also:* [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions),
+*See also:* [`Dialog.Stop`](Dialog#dialogstop),
+[`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions),
 [`Dialog.SetOptionState`](Dialog#dialogsetoptionstate)
 
 ---
@@ -506,12 +550,11 @@ will start the conversation topic named dMerchant.
 StopDialog ()
 ```
 
-This command can only be used from within the dialog_request function.
-It tells AGS that when dialog_request finishes, the whole conversation
-should stop rather than continuing with the dialog script.
+This command can only be used either in dialog script or from within the "dialog_request" function, and schedules end of a conversation.
+If called in dialog script it will make conversation stop after current option's script completes.
+If called in "dialog_request" function it will make conversation stop right after "dialog_request" function finishes.
 
-You can use this function to end the conversation depending on whether
-the player has/does a certain thing.
+You can use this function to end the conversation depending on whether the player has/does a certain thing.
 
 Example:
 
@@ -524,7 +567,8 @@ function dialog_request (int dr) {
 }
 ```
 
-will give the player the inventory item 3 and then end the conversation.
+will give the player the inventory item iPoster and then end the conversation.
 
-*See also:* [`Dialog.SetOptionState`](Dialog#dialogsetoptionstate)
-
+*See also:* [`Dialog.Start`](Dialog#dialogstart),
+[`Dialog.SetOptionState`](Dialog#dialogsetoptionstate),
+[`dialog_request`](Globalfunctions_Event#dialog_request)
