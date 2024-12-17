@@ -1138,26 +1138,25 @@ his destination.
 Character.MoveStraight(int x, int y, optional BlockingStyle);
 ```
 
-Moves the character in a straight line as far as possible towards the co-ordinates, without walking animation. Useful for keyboard movement. This move ignores walkable areas.
+Moves the character from its current location towards (X,Y) in a straight line as far as is possible before hitting a non-walkable area, without playing a walking animation.
 
-Starts the character moving from its current location to (X,Y), but does
-not play the character's walking animation.
+This is useful for keyboard movement, since it guarantees that the character will move in a straight line in the direction specified.
 
-The parameters to this command are identical to the [`Character.WalkStraight`](Character#characterwalkstraight) command -- see that page for more details. The only difference is that *WalkStraight* plays the walking animation whereas *MoveStraight* does not.
+*blocking* determines whether the function waits for the character to finish moving before your script resumes. eNoBlock is the default.
 
 Example:
 
 ```ags
-cEgo.MoveStraight(155, 122, eBlock);
+cEgo.MoveStraight(cEgo.x + 10, cEgo.y + 10, eBlock);
 ```
 
-will make the character move to 155,122 without playing his walking animation in a straight line.
+will make the character move in a straight line 10 pixels towards bottom-right, unless hitting a non-walkable area earlier, without playing his walking animation.
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
-*See also:* [`Character.WalkStraight`](Character#characterwalkstraight),
- [`Character.Move`](Character#charactermove)
- [`Character.Walk`](Character#characterwalk)
+*See also:* [`Character.Move`](Character#charactermove),
+ [`Character.Walk`](Character#characterwalk),
+ [`Character.WalkStraight`](Character#characterwalkstraight)
 
 ---
 
@@ -1900,26 +1899,23 @@ Character.WalkStraight(int x, int y, optional BlockingStyle);
 
 Moves the character from its current location towards (X,Y) in a
 straight line as far as is possible before hitting a non-walkable area.
-This is useful for use with the arrow keys for character movement, since
+This is useful for keyboard movement, since
 it guarantees that the character will move in a straight line in the
 direction specified.
 
-*blocking* determines whether the function waits for the character to
-finish moving before your script resumes. eNoBlock is the default (which
-means your script resumes straight away, and the character moves in the
-background). You can also pass eBlock, in which case your script will
-not resume until the character finishes moving.
+*blocking* determines whether the function waits for the character to finish moving before your script resumes. eNoBlock is the default.
 
 Example:
 
 ```ags
-cEgo.WalkStraight(166, 78);
+cEgo.WalkStraight(cEgo.x + 10, cEgo.y + 10, eBlock);
 ```
 
-will move the character EGO in a straight line towards co ordinates
-166,78 until he hits a non walkable area.
+will make the character walk in a straight line 10 pixels towards bottom-right, unless hitting a non-walkable area earlier.
 
-*See also:* [`Character.Walk`](Character#characterwalk)
+*See also:* [`Character.Move`](Character#charactermove),
+ [`Character.MoveStraight`](Character#charactermovestraight)
+ [`Character.Walk`](Character#characterwalk)
 
 ---
 
@@ -2335,14 +2331,11 @@ Example:
 void room_AfterFadeIn()
 {
   cAlter.FollowCharacter(cEgo);
-  if(cAlter.Following == cEgo)
-  {
-    cAlter.Say("I am following %s!", cEgo.Name);
-  }
+  cAlter.Say("I am following %s!", cAlter.Following.Name);
 }
 ```
 
-Will have Alter saying "I am following Roger!", or whatever is `cEgo`'s name, and also follow him.
+Will have cAlter follow cEgo and say "I am following Ego!", or whatever `cEgo`'s name is.
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
@@ -2968,7 +2961,7 @@ if ((cEgo.Speaking) && (!cEgo.Animating)) {
 will animate the character using loop 3 while they are talking (only
 useful with Sierra-style speech).
 
-*Compatibility*: Character.Speaking used to always return `false` if the character had no SpeechView set prior to **AGS 3.6.2**.
+*Compatibility*: Prior to **AGS 3.6.2** Character.Speaking used to always return `false` if the character had no SpeechView set.
 
 *See also:* [`Character.Animating`](Character#characteranimating),
 [`Character.Moving`](Character#charactermoving),
