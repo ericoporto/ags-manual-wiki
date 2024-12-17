@@ -203,8 +203,6 @@ DeleteSaveSlot (int slot)
 
 Deletes the save game in save slot number SLOT. If there were no save then nothing happens.
 
-**IMPORTANT:** for historical reasons, when deleting slots in the range of 1 to 50, this function also moves highest slot found in that range to fill the freed slot. For example, if there were slots 1, 2, 3, 4, 5 and DeleteSaveSlot removes slot 3, then save in slot 5 will be renamed to become slot 3.
-
 Example 1:
 
 ```ags
@@ -222,7 +220,30 @@ for (int i = 999; i >= 0; i--)
 }
 ```
 
-deletes all the saves. This deletes in an opposite order to counter the problem with slots in the range 1-50 mentioned above.
+Deletes all the saves.
+
+**IMPORTANT:** before **AGS 3.6.2**, when deleting slots in the range of 1 to 50, this function used to move the highest slot found in that range to fill the freed slot. For example, if there were slots 1, 2, 3, 4, 5 and DeleteSaveSlot removes slot 3, then save in slot 5 will be renamed to become slot 3. This behavior has since been removed!
+
+Example 3:
+
+```ags
+void DeleteSaveSlotAndPull(int slot)
+{
+  DeleteSaveSlot(slot);
+  int maxSaveGames = 50;
+  for (int i = maxSaveGames; i > slnum; i--) {
+    if(Game.GetSaveSlotDescription(i) != null) {
+      // pulls the highest save game to fill in the gap
+      MoveSaveSlot(i, slot);
+      break;
+    }
+  }
+}
+```
+
+This reproduces the old behavior of DeleteSaveSlot that has been removed.
+
+*Compatibility:* Since **AGS 3.6.2** and later versions, this function no longer moves the highest slot found in 50-1 range to fill the deleted slot.
 
 *See also:* [`RestoreGameSlot`](Globalfunctions_General#restoregameslot),
 [`SaveGameSlot`](Globalfunctions_General#savegameslot),
