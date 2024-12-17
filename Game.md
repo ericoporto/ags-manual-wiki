@@ -314,14 +314,17 @@ Gets the write time of the specified save game slot.
 Example:
 
 ```ags
-  int save_slot = 1;
-  DateTime* dt = Game.GetSaveSlotTime(save_slot);
-  if(dt == null) {
-    Display("Save slot '%d' not found", save_slot);
-  }
-
-  Display("Save slot '%d' was created in\n%02d/%02d/%04d, at %02d:%02d:%02d",
-    save_slot, dt.DayOfMonth, dt.Month, dt.Year, dt.Hour, dt.Minute, dt.Second);
+    int save_slot = 1;
+    DateTime* dt = Game.GetSaveSlotTime(save_slot);
+    if(dt == null)
+    {
+        Display("Save slot '%d' not found", save_slot);
+    }
+    else
+    {
+        Display("Save slot '%d' was created in\n%02d/%02d/%04d, at %02d:%02d:%02d",
+            save_slot, dt.DayOfMonth, dt.Month, dt.Year, dt.Hour, dt.Minute, dt.Second);
+    }
 ```
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
