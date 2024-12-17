@@ -231,7 +231,7 @@ void DeleteSaveSlotAndPull(int slot)
 {
   DeleteSaveSlot(slot);
   int maxSaveGames = 50;
-  for (int i = maxSaveGames; i > slnum; i--) {
+  for (int i = maxSaveGames; i > slot; i--) {
     if(Game.GetSaveSlotDescription(i) != null) {
       // pulls the highest save game to fill in the gap
       MoveSaveSlot(i, slot);
