@@ -1,5 +1,64 @@
 ## `System` functions and properties
 
+### `System.GetEngineInteger`
+
+```ags
+static int System.GetEngineInteger(EngineValueID value, optional int index)
+```
+
+Gets a runtime engine value represented as integer by the given identifier.
+
+This function, along with [`System.GetEngineString`](System#systemgetenginestring), is meant primarily for diagnostic and debugging purposes. It lets you to find out certain information about the engine's state and configuration.
+
+The list of values that it can return is represented by the [`EngineValueID`](StandardEnums#enginevalueid) enum. The value IDs follow certain pattern, which lets distinguish numeric values from string ones:
+* - `ENGINE_VALUE_I_*` - this ID refers to a simple numeric value;
+* - `ENGINE_VALUE_II_*` - this ID refers to an array of numeric values, and you are supposed to pass an index together with this value ID.
+
+Example:
+
+```ags
+function repeatedly_execute_always()
+{
+    int maxSpriteCache = System.GetEngineInteger(ENGINE_VALUE_I_SPRCACHE_MAXNORMAL);
+    int curSpriteCache = System.GetEngineInteger(ENGINE_VALUE_I_SPRCACHE_NORMAL);
+    lblSpriteCache.Text = String.Format("Sprite cache filled: %d / %d (%d %%)",
+        curSpriteCache, maxSpriteCache, curSpriteCache * 100 / maxSpriteCache);
+}
+```
+
+Above script will get maximal and currently filled amount of the engine's sprite cache, and print them to the Label.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`System.GetEngineString`](System#systemgetenginestring),
+[EngineValueID Enum](StandardEnums#enginevalueid)
+
+### `System.GetEngineString`
+
+```ags
+static String System.GetEngineString(EngineValueID value, optional int index)
+```
+
+Gets a runtime engine value represented as string by the given identifier.
+
+This function, along with [`System.GetEngineInteger`](System#systemgetengineinteger), is meant primarily for diagnostic and debugging purposes. It lets you to find out certain information about the engine's state and configuration.
+
+The list of values that it can return is represented by the [`EngineValueID`](StandardEnums#enginevalueid) enum. The value IDs follow certain pattern, which lets distinguish numeric values from string ones:
+* - `ENGINE_VALUE_S_*` - this ID refers to a simple string value;
+* - `ENGINE_VALUE_SI_*` - this ID refers to an array of string values, and you are supposed to pass an index together with this value ID.
+
+Example:
+
+```ags
+String engineVersion = System.GetEngineString(ENGINE_VALUE_S_ENGINE_VERSION);
+Display("Running on AGS engine %s", engineVersion);
+```
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`System.GetEngineInteger`](System#systemgetengineinteger),
+[EngineValueID Enum](StandardEnums#enginevalueid)
+
 ### `System.Log`
 
 ```ags

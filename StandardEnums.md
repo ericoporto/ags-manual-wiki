@@ -267,6 +267,7 @@ The `EngineValueID` follows the pattern `ENGINE_VALUE_<I,II,S,SI>_NAME`, where
 
 - `I` - integer,
 - `S` - string,
+- `II` - indexed integer,
 - `SI` - indexed string.
 
 *Compatibility:* supported by **AGS 3.6.2** and higher.
