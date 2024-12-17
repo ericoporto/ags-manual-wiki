@@ -184,6 +184,8 @@ static bool File.Exists(string filename)
 
 Checks if the specified file exists on the file system.
 
+*filename* may include any file tags or location tags, which are described for [`File.Open`](File#fileopen).
+
 **NOTE:** This is a static function, therefore you don't need an open
 File pointer to use it. See the example below.
 
@@ -204,6 +206,45 @@ will create the file "temp.tmp" if it doesn't exist
 
 *See also:* [`File.Delete`](File#filedelete),
 [`File.Open`](File#fileopen)
+
+---
+
+### `File.GetFiles`
+
+```ags
+static String[] File.GetFiles(string fileMask, optional FileSortStyle fileSortStyle, optional SortDirection sortDirection)
+```
+
+Returns a dynamic array of filenames that match the specified file mask, optionally sorted using certain style and direction.
+If no matching files were found, returns an empty array (which Length is 0).
+
+*fileMask* may include any file tags or location tags, which are described for [`File.Open`](File#fileopen).
+
+*FileSortStyle* determines which file property will be used when sorting the list of filenames. It can be:
+* eFileSort_None - don't sort, the order will be unspecified;
+* eFileSort_Name - sort by name (this sort is case insensitive for cross-platform compatibility);
+* eFileSort_Time - sort by write time (time when this file was created or last written to).
+
+*SortDirection* determines the order of sorting:
+* eSortNoDirection - unspecified;
+* eSortAscending;
+* eSortDescending.
+
+Example:
+
+```ags
+String files[] = File.GetFiles("$SAVEGAMEDIR$/*.dat", eFileSort_Time, eSortDescending);
+if (files.Length > 0)
+{
+    Display("Last saved custom dat file is: %s", files[0]);
+}
+```
+
+will search the save game directory for all files matching "*.dat" pattern, ordered by a time of writing in reverse order, and display the name of the most recently written one.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`ListBox.FillDirList`](ListBox#listboxfilldirlist)
 
 ---
 
