@@ -216,7 +216,10 @@ static String[] File.GetFiles(string fileMask, optional FileSortStyle fileSortSt
 ```
 
 Returns a dynamic array of filenames that match the specified file mask, optionally sorted using certain style and direction.
+By default it sorts files by their names in ascending order.
 If no matching files were found, returns an empty array (which Length is 0).
+
+*fileMask* is a standard wildcard search expression such as `"*.dat"` or `"data*.*"`
 
 *fileMask* may include any file tags or location tags, which are described for [`File.Open`](File#fileopen).
 
