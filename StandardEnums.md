@@ -243,23 +243,23 @@ enum Direction {
 ```ags
 enum EngineValueID
 {
-  ENGINE_VALUE_UNDEFINED = 0,         // formality...
-  ENGINE_VALUE_SI_VALUENAME,          // get engine value's own name, by its index
-  ENGINE_VALUE_S_ENGINE_NAME,
-  ENGINE_VALUE_S_ENGINE_VERSION,      // N.N.N.N (with an optional custom tag)
-  ENGINE_VALUE_S_ENGINE_VERSION_FULL, // full, with bitness, endianess and any tag list
-  ENGINE_VALUE_S_DISPLAY_MODE_STR,
-  ENGINE_VALUE_S_GFXRENDERER,
-  ENGINE_VALUE_S_GFXFILTER,
-  ENGINE_VALUE_I_SPRCACHE_MAXNORMAL,  // sprite cache capacity limit (in KB)
-  ENGINE_VALUE_I_SPRCACHE_NORMAL,     // sprite cache capacity filled (in KB)
-  ENGINE_VALUE_I_SPRCACHE_LOCKED,     // amount of locked sprites (in KB)
-  ENGINE_VALUE_I_SPRCACHE_EXTERNAL,   // amount of external sprites, that means dynamic sprites (in KB)
-  ENGINE_VALUE_I_TEXCACHE_MAXNORMAL,  // texture cache capacity limit (in KB)
-  ENGINE_VALUE_I_TEXCACHE_NORMAL,     // texture cache capacity filled (in KB)
-  ENGINE_VALUE_I_FPS_MAX,             // max fps, this is set by SetGameSpeed
-  ENGINE_VALUE_I_FPS,                 // real average fps (updates along with the game run)
-  ENGINE_VALUE_LAST                   // in case user wants to iterate them
+    ENGINE_VALUE_UNDEFINED = 0,         // formality...
+    ENGINE_VALUE_SI_VALUENAME,          // get engine value's own name, by its index
+    ENGINE_VALUE_S_ENGINE_NAME,
+    ENGINE_VALUE_S_ENGINE_VERSION,      // N.N.N.N (with an optional custom tag)
+    ENGINE_VALUE_S_ENGINE_VERSION_FULL, // full, with bitness, endianess and any tag list
+    ENGINE_VALUE_S_DISPLAY_MODE_STR,
+    ENGINE_VALUE_S_GFXRENDERER,
+    ENGINE_VALUE_S_GFXFILTER,
+    ENGINE_VALUE_I_SPRCACHE_MAXNORMAL,  // sprite cache capacity limit (in KB)
+    ENGINE_VALUE_I_SPRCACHE_NORMAL,     // sprite cache capacity filled (in KB)
+    ENGINE_VALUE_I_SPRCACHE_LOCKED,     // amount of locked sprites (in KB)
+    ENGINE_VALUE_I_SPRCACHE_EXTERNAL,   // amount of external sprites, that means dynamic sprites (in KB)
+    ENGINE_VALUE_I_TEXCACHE_MAXNORMAL,  // texture cache capacity limit (in KB)
+    ENGINE_VALUE_I_TEXCACHE_NORMAL,     // texture cache capacity filled (in KB)
+    ENGINE_VALUE_I_FPS_MAX,             // max fps, this is set by SetGameSpeed
+    ENGINE_VALUE_I_FPS,                 // real average fps (updates along with the game run)
+    ENGINE_VALUE_LAST                   // in case user wants to iterate them
 };
 ```
 
@@ -270,6 +270,9 @@ The `EngineValueID` follows the pattern `ENGINE_VALUE_<I,II,S,SI>_NAME`, where
 - `SI` - indexed string.
 
 *Compatibility:* supported by **AGS 3.6.2** and higher.
+
+*Used by:* [`System.GetEngineInteger`](System#systemgetengineinteger),
+[`System.GetEngineString`](System#systemgetenginestring)
 
 ---
 
@@ -331,15 +334,16 @@ enum FileSeek {
 ```ags
 enum FileSortStyle
 {
-  eFileSort_None,
-  eFileSort_Name,
-  eFileSort_Time
+    eFileSort_None,
+    eFileSort_Name,
+    eFileSort_Time
 };
 ```
 
 *Compatibility:* supported by **AGS 3.6.2** and higher.
 
-*Used by* [`ListBox.FillDirList`](ListBox#listboxfilldirlist)
+*Used by* [`File.GetFiles`](File#filegetfiles),
+[`ListBox.FillDirList`](ListBox#listboxfilldirlist)
 
 ---
 
@@ -537,16 +541,16 @@ enum eOperatingSystem {
 
 ```ags
 enum RenderLayer {
-  eRenderLayerNone      = 0x00000000,
-  eRenderLayerEngine    = 0x00000001,
-  eRenderLayerCursor    = 0x00000002,
-  eRenderLayerUI        = 0x00000004,
-  eRenderLayerRoom      = 0x00000008,
-  eRenderLayerAll       = 0xFFFFFFFF
+    eRenderLayerNone      = 0x00000000,
+    eRenderLayerEngine    = 0x00000001,
+    eRenderLayerCursor    = 0x00000002,
+    eRenderLayerUI        = 0x00000004,
+    eRenderLayerRoom      = 0x00000008,
+    eRenderLayerAll       = 0xFFFFFFFF
 };
 ```
 
-The `RenderLayer` enum allows to be specific to what elements should be rendered in a screen capture.
+The `RenderLayer` enum lets specify which elements should be rendered in a screen capture.
 This allows you to, as an example, create a screenshot of only the room layer and not include any GUI or cursor on top.
 The Engine layer is for things like the in-engine FPS counter.
 
@@ -554,7 +558,7 @@ The `RenderLayer` enum can be combined like flags, using bitwise operators.
 
 *Compatibility:* supported by **AGS 3.6.2** and higher.
 
-*Used by:* [`DyanmicSprite.CreateFromScreenShot`](DynamicSprite#dynamicspritecreatefromscreenshot),
+*Used by:* [`DynamicSprite.CreateFromScreenShot`](DynamicSprite#dynamicspritecreatefromscreenshot),
 [`SetGameOption`](Globalfunctions_General#setgameoption)
 
 ---
@@ -593,16 +597,18 @@ enum RoundDirection {
 ```ags
 enum SaveGameSortStyle
 {
-  eSaveGameSort_None,
-  eSaveGameSort_Number,
-  eSaveGameSort_Time,
-  eSaveGameSort_Description
+    eSaveGameSort_None,
+    eSaveGameSort_Number,
+    eSaveGameSort_Time,
+    eSaveGameSort_Description
 };
 ```
 
 *Compatibility:* supported by **AGS 3.6.2** and higher.
 
-*Used by:* [`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
+*Used by:* [`Game.GetSaveSlots`](Game#gamegetsaveslots),
+[`Game.ScanSaveSlots`](Game#gamescansaveslots),
+[`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
 [`ListBox.FillSaveGameSlots`](ListBox#listboxfillsavegameslots)
 
 ---
@@ -631,9 +637,9 @@ enum SkipSpeechStyle {
 ```ags
 enum SortDirection
 {
-  eSortNoDirection,
-  eSortAscending,
-  eSortDescending
+    eSortNoDirection,
+    eSortAscending,
+    eSortDescending
 };
 ```
 
