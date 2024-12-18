@@ -11,8 +11,8 @@ Gets a runtime engine value represented as integer by the given identifier.
 This function, along with [`System.GetEngineString`](System#systemgetenginestring), is meant primarily for diagnostic and debugging purposes. It lets you to find out certain information about the engine's state and configuration.
 
 The list of values that it can return is represented by the [`EngineValueID`](StandardEnums#enginevalueid) enum. The value IDs follow certain pattern, which lets distinguish numeric values from string ones:
-* - `ENGINE_VALUE_I_*` - this ID refers to a simple numeric value;
-* - `ENGINE_VALUE_II_*` - this ID refers to an array of numeric values, and you are supposed to pass an index together with this value ID.
+- `ENGINE_VALUE_I_*` - this ID refers to a simple numeric value;
+- `ENGINE_VALUE_II_*` - this ID refers to an array of numeric values, and you are supposed to pass an index together with this value ID.
 
 Example:
 
@@ -44,8 +44,8 @@ Gets a runtime engine value represented as string by the given identifier.
 This function, along with [`System.GetEngineInteger`](System#systemgetengineinteger), is meant primarily for diagnostic and debugging purposes. It lets you to find out certain information about the engine's state and configuration.
 
 The list of values that it can return is represented by the [`EngineValueID`](StandardEnums#enginevalueid) enum. The value IDs follow certain pattern, which lets distinguish numeric values from string ones:
-* - `ENGINE_VALUE_S_*` - this ID refers to a simple string value;
-* - `ENGINE_VALUE_SI_*` - this ID refers to an array of string values, and you are supposed to pass an index together with this value ID.
+- `ENGINE_VALUE_S_*` - this ID refers to a simple string value;
+- `ENGINE_VALUE_SI_*` - this ID refers to an array of string values, and you are supposed to pass an index together with this value ID.
 
 Example:
 
