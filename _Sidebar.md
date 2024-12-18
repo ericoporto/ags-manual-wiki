@@ -184,5 +184,10 @@
 ***Misc***
 
 - [AnonymousUsageInfo](AnonymousUsageInfo)
-- [\_InventoryItems](_InventoryItems)
+
+**Hidden**
+
 - [\_GameFeatures](_GameFeatures)
+  - [\Feature_InventoryItems](_Feature_InventoryItems.md)
+  - [\Feature_Rooms](_Feature_Rooms.md)
+  - [\Feature_Game](_Feature_Game.md)
