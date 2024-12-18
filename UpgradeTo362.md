@@ -47,6 +47,40 @@ function game_start()
 
 In addition, you are now allowed to create empty dynamic arrays (of 0 length). This may be useful if you must return a dynamic array that has no elements but do not want to return "null" and bother with null pointer checks.
 
+### Restricting the data read or written in a save
+
+Engine now allows you to specify which sort of data you do not want to put into saves, or load from them (regardless of whether they have it or not).
+
+This is not directly related to restoring old saves, but may as well be used to workaround compatibility issues when doing so. It has other uses as well.
+
+Restricting of data is done using `SetGameOption()` command with `OPT_SAVECOMPONENTSIGNORE` option id. The list of data that you can skip is defined by the `SaveComponentSelection` enumeration in script. This enum includes following values, that may be combined together:
+
+```ags
+    eSaveCmp_Audio,
+    eSaveCmp_Dialogs,
+    eSaveCmp_GUI,
+    eSaveCmp_Cursors,
+    eSaveCmp_Views,
+    eSaveCmp_DynamicSprites,
+    eSaveCmp_Plugins
+```
+
+An example of use:
+
+```ags
+function game_start()
+{
+    SetGameOption(OPT_SAVECOMPONENTSIGNORE, eSaveCmp_Audio + eSaveCmp_GUI + eSaveCmp_DynamicSprites);
+}
+```
+
+Above will *exclude* audio playback state, GUI state, and Dynamic Sprites from the saves, and don't read them back from a save even if it happens to contain them.
+
+There are 3 general uses for this feature:
+1. Reducing save file size. This is the simplest case. If your game has an excess use of DynamicSprites, that are created at runtime, you may wish to not write them into the save file to reduce the usage of disk space (in case player makes a lot of saves). Instead, these sprites can be recreated after a game is restored, or whenever they are required.
+2. When you design your game in such way that certain things should not be reset when restoring a save. For instance, if you exclude Audio from saves, then anything currently playing will continue to play even after loading a saved game.
+3. Reduce number of things that may make saves incompatible. If something is not a part of game save, then changing that cannot make older saves invalid. There are things in game that may be reinitialized or recreated in script rather than loading their states from a save. Good example are GUIs, Views and DynamicSprites.
+
 ### Loading old saves feature
 
 Since the early days of AGS there have been this problem that if you change something in your game, there's a high chance that these changes will make previously made saves incompatible. This is not a big issue while you're developing the game, but may become one after you release it, since often you may have to patch or update your game. The problem is thoroughly discussed in the dedicated article: [Game saves compatibility](GameSavesCompatibility).
@@ -86,37 +120,3 @@ The purpose of this function is to let you decide whether save may still be allo
 If engine is told to load an incompatible save and fails it then will usually just stop the game. This is quite frustrating for the players.
 In version 3.6.2 there's a new script command called `Game.ScanSaveSlots()`. This function lets you *test* a range of saves and return only validated ones. When checking the saves it will also try calling "validate_restored_save" for saves with fewer data in them.
 Scanning saves allows you to take precaution and avoid displaying invalid saves in game menus, or reject loading a save before it crashes the game.
-
-### Restricting the data read or written in a save
-
-Engine now allows you to specify which sort of data you do not want to put into saves, or load from them (regardless of whether they have it or not).
-
-This is not directly related to restoring old saves, but may as well be used to workaround compatibility issues when doing so. It has other uses as well.
-
-Restricting of data is done using `SetGameOption()` command with `OPT_SAVECOMPONENTSIGNORE` option id. The list of data that you can skip is defined by the `SaveComponentSelection` enumeration in script. This enum includes following values, that may be combined together:
-
-```ags
-    eSaveCmp_Audio,
-    eSaveCmp_Dialogs,
-    eSaveCmp_GUI,
-    eSaveCmp_Cursors,
-    eSaveCmp_Views,
-    eSaveCmp_DynamicSprites,
-    eSaveCmp_Plugins
-```
-
-An example of use:
-
-```ags
-function game_start()
-{
-    SetGameOption(OPT_SAVECOMPONENTSIGNORE, eSaveCmp_Audio + eSaveCmp_GUI + eSaveCmp_DynamicSprites);
-}
-```
-
-Above will *exclude* audio playback state, GUI state, and Dynamic Sprites from the saves, and don't read them back from a save even if it happens to contain them.
-
-There are 3 general uses for this feature:
-1. Reducing save file size. This is the simplest case. If your game has an excess use of DynamicSprites, that are created at runtime, you may wish to not write them into the save file to reduce the usage of disk space (in case player makes a lot of saves). Instead, these sprites can be recreated after a game is restored, or whenever they are required.
-2. When you design your game in such way that certain things should not be reset when restoring a save. For instance, if you exclude Audio from saves, then anything currently playing will continue to play even after loading a saved game.
-3. Reduce number of things that may make saves incompatible. If something is not a part of game save, then changing that cannot make older saves invalid. There are things in game that may be reinitialized or recreated in script rather than loading their states from a save. Good example are GUIs, Views and DynamicSprites.
