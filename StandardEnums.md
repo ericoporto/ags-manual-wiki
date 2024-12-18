@@ -579,6 +579,28 @@ enum RepeatStyle {
 
 ---
 
+### `RestoredSaveResult`
+
+```ags
+enum RestoredSaveResult
+{
+    eRestoredSave_ClearData   = 0x01,
+    eRestoredSave_MissingData = 0x08,
+    eRestoredSave_ExtraData   = 0x10,
+    eRestoredSave_Prescan     = 0x20
+};
+```
+
+The `RestoredSaveResult` enum is used to specify the result of reading a save.
+
+The `RestoredSaveResult` enum can be combined like flags, using bitwise operators.
+
+*Compatibility:* supported by **AGS 3.6.2** and higher.
+
+*Used by:* [`validate_restored_save`](Globalfunctions_Event#validate_restored_save)
+
+---
+
 ### `RoundDirection`
 
 ```ags
@@ -611,6 +633,34 @@ enum SaveGameSortStyle
 [`Game.ScanSaveSlots`](Game#gamescansaveslots),
 [`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
 [`ListBox.FillSaveGameSlots`](ListBox#listboxfillsavegameslots)
+
+---
+
+### `SaveComponentSelection`
+
+```ags
+enum SaveComponentSelection
+{
+    eSaveCmp_None           = 0,
+    eSaveCmp_Audio          = 0x00000002,
+    eSaveCmp_Dialogs        = 0x00000008,
+    eSaveCmp_GUI            = 0x00000010,
+    eSaveCmp_Cursors        = 0x00000040,
+    eSaveCmp_Views          = 0x00000080,
+    eSaveCmp_DynamicSprites = 0x00000100,
+    eSaveCmp_Plugins        = 0x00002000
+};
+```
+
+The `SaveComponentSelection` enum lets specify which parts of the save should be skipped when writing or restoring a game save.
+This allows you to, as an example, keep certain things persistent in your game, unaffected by player saving and loading their story progress.
+
+The `SaveComponentSelection` enum can be combined like flags, using bitwise operators.
+
+*Compatibility:* supported by **AGS 3.6.2** and higher.
+
+*Used by:* [`SetGameOption`](Globalfunctions_General#setgameoption),
+[`validate_restored_save`](Globalfunctions_Event#validate_restored_save)
 
 ---
 
