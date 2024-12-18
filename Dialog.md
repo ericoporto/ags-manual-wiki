@@ -70,7 +70,7 @@ In this example the player character will be locked to a view VIEW_IDLE_WHILE_DI
 
 **See also:** [`Dialog.Start`](Dialog#dialogstart),
 [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions), 
-[`Dialog.CurrentDialog`](Dialog#currentdialog),
+[`Dialog.CurrentDialog`](Dialog#dialogcurrentdialog),
 [`Dialog.ExecutedOption`](Dialog#dialogexecutedoption),
 [`on_event`](Globalfunctions_Event#on_event)
 
