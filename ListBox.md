@@ -150,7 +150,7 @@ will fill listbox *lstSaveGames* with the list of the saved games.
 Prior to **AGS 3.6.2** this function would only search for save slots between 0 and 99, but would only list first 50 found.
 
 *See also:* [`ListBox.FillDirList`](ListBox#listboxfilldirlist),
-[`ListBox.FillSaveGameSlots`](ListBox#listboxffillsavegameslots),
+[`ListBox.FillSaveGameSlots`](ListBox#listboxfillsavegameslots),
 [`ListBox.ItemCount`](ListBox#listboxitemcount),
 [`ListBox.SaveGameSlots`](ListBox#listboxsavegameslots),
 [`ListBox.SelectedIndex`](ListBox#listboxselectedindex),

@@ -171,7 +171,7 @@ This script will make a cAnxiousMan character continuously walk back and forth d
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
-**See also:** [`Dialog.CurrentDialog`](Dialog#currentdialog),
+**See also:** [`Dialog.CurrentDialog`](Dialog#dialogcurrentdialog),
 [`Dialog.GetOptionText`](Dialog#dialoggetoptiontext), 
 [`Dialog.GetOptionState`](Dialog#dialoggetoptionstate)
 
@@ -538,7 +538,7 @@ dMerchant.Start();
 
 will start the conversation topic named dMerchant.
 
-*See also:* [`Dialog.Stop`](Dialog#dialogstop),
+*See also:* [`StopDialog`](Dialog#stopdialog),
 [`Dialog.DisplayOptions`](Dialog#dialogdisplayoptions),
 [`Dialog.SetOptionState`](Dialog#dialogsetoptionstate)
 
