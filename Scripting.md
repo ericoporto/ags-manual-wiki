@@ -8,6 +8,7 @@
 - [Global arrays](GlobalArrays)
 - [Global event handlers](Globalfunctions_Event)
 - [repeatedly_execute / repeatedly_execute_always](RepExec)
+- [validate_restored_save](ValidateRestoredSave)
 - [Custom dialog options rendering](CustomDialogOptions)
 - [Global functions: general](Globalfunctions_General)
 - [Global functions: message display](Globalfunctions_Message)

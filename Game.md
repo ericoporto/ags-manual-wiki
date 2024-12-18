@@ -619,11 +619,11 @@ This function is purposed to test which saves are valid to be restored by the cu
 
 First the engine checks whether it is capable of reading the save at all. If a save is of unsupported format, or cannot be read for any reason, then it will be immediately skipped.
 
-Second step is more complicated. This is where the engine will compare the amounts of data of each kind found in the current game and this save: numbers of Characters, GUIs, controls per each GUI, script variables, and so forth. If the save has more data than the game, then such save will be skipped. If the save has *equal or less* data than the game, then the engine will try to run a special function in script called "validate_restored_save".
+Second step is more complicated. This is where the engine will compare the amounts of data of each kind found in the current game and this save: numbers of Characters, GUIs, controls per each GUI, script variables, and so forth. If the save has more data than the game, then such save will be skipped. If the save has *equal or less* data than the game, then the engine will try to run a special function in script called ["validate_restored_save"](ValidateRestoredSave).
 
 If such function is NOT present, then the saves with *less* data are skipped, and saves with *equal* amounts of data are automatically accepted.
 
-If function "validate_restored_save" is present in script, then it's run for saves with *equal or less* data. This function must tell the engine whether to accept or skip this save. How to write such function is explained in the respective article: [`validate_restored_save`](Globalfunctions_Event#validate_restored_save).
+If function "validate_restored_save" is present in script, then it's run for saves with *equal or less* data. This function must tell the engine whether to accept or skip this save. How to write such function is explained in the [respective article](ValidateRestoredSave).
 
 The resulting list of accepted save slots is filled into the *valid_slots* dynamic array. *valid_slots* array must be created by user prior to calling Game.ScanSaveSlots, it is not created nor resized by the function itself! If array is not large enough to accomodate all the found and accepted saves, function fills only as much as possible and stops.
 
@@ -657,7 +657,8 @@ will scan saves in range from 1 to 100, sort resulting saves list by time, and f
 
 *See also:* [`Game.GetSaveSlots`](Game#gamegetsaveslots),
 [`ListBox.FillSaveGameList`](ListBox#listboxfillsavegamelist),
-[`ListBox.FillSaveGameSlots`](ListBox#listboxfillsavegameslots)
+[`ListBox.FillSaveGameSlots`](ListBox#listboxfillsavegameslots),
+[`validate_restored_save`](ValidateRestoredSave)
 
 ---
 
