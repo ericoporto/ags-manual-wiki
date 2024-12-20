@@ -19,6 +19,17 @@ The engine will look for game data in the following order if no specific game pa
 
 This search order means, if you are shipping a game, make sure that only one game file is in the same directory as the engine.
 
+### Game saves
+
+Depending on a OS, game saves default location will differ:
+* **Linux**, **FreeBSD**:
+    * `$XDG_DATA_HOME/ags/GAMENAME/`
+    * NOTE: if `$XDG_DATA_HOME` is not defined, then `$HOME/.local/share` is used instead.
+* *MacOSX*:
+    * `Users/<username>/Library/Application Support/GAMENAME/`
+* **Windows**:
+    * `%USERPROFILE%/Saved Games/GAMENAME/`
+
 ### Command line
 
 *Note:* On Windows, you **must** use `--console-attach` when you are on the `cmd.exe` or other windows prompt and want to 
