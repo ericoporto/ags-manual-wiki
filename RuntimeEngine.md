@@ -25,7 +25,7 @@ Depending on a OS, game saves default location will differ:
 * **Linux**, **FreeBSD**:
     * `$XDG_DATA_HOME/ags/GAMENAME/`
     * NOTE: if `$XDG_DATA_HOME` is not defined, then `$HOME/.local/share` is used instead.
-* *MacOSX*:
+* **MacOSX**:
     * `Users/<username>/Library/Application Support/GAMENAME/`
 * **Windows**:
     * `%USERPROFILE%/Saved Games/GAMENAME/`
