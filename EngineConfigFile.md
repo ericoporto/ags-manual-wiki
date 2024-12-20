@@ -11,10 +11,13 @@ The engine supports three configuration files that are read in the following ord
 3. Current user's game config file, applied only for the game of particular title. This config file is also the one supposed to be written to when the engine or setup application modifies game configuration.
 
 Locations of two latter files differ between running platforms:
-* **Linux**:
+* **Linux**, **FreeBSD**:
     * user's global config: `$XDG_DATA_HOME/ags/acsetup.cfg`
     * user's game config: `$XDG_DATA_HOME/ags/GAMENAME/acsetup.cfg`
     * NOTE: if `$XDG_DATA_HOME` is not defined, then `$HOME/.local/share` is used instead.
+* **MacOSX**:
+    * user's global config: `Users/<username>/Library/Application Support/uk.co.adventuregamestudio/acsetup.cfg`
+    * user's game config: `Users/<username>/Library/Application Support/GAMENAME/acsetup.cfg`
 * **Windows**:
     * user's global config: `%USERPROFILE%/Saved Games/Adventure Game Studio/acsetup.cfg`
     * user's game config: `%USERPROFILE%/Saved Games/GAMENAME/acsetup.cfg`
