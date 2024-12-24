@@ -359,6 +359,33 @@ int File.ReadBytes(char bytes[], int index, int count);
 Reads up to "count" number of bytes and stores them in a provided dynamic array, starting with certain index.
 Returns actual number of read bytes.
 
+Example:
+
+```ags
+void room_AfterFadeIn()
+{
+  String filename = "$SAVEGAMEDIR$/example.dat";
+  File* f = File.Open(filename, eFileRead);
+  if(f == null) {
+    Display("Error opening file '%s' for reading", filename);
+    return;
+  }
+  
+  int buf_len = 7;
+  char buffer[] = new char[buf_len];
+  
+  int read = f.ReadBytes(buffer, 0, buf_len);
+  f.Close();
+  
+  buffer[buf_len-1] = 0; // for safety
+  
+  Display("Read '%d' bytes\nbuffer got '%s'.", read, buffer);
+}
+```
+
+In this example, it reads a file `"example.dat"`,
+that has data that can be interpreted as text, from `File.WriteBytes` example.
+
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
 *See also:* [`File.WriteBytes`](File#filewritebytes)
