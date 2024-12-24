@@ -11,6 +11,10 @@ If there's already a file with the new name then it will be overwritten.
 Any directory necessary is also created.
 Returns false in any failure and true if it succeeds.
 
+**NOTE:** You can only write to `$INSTALLDIR$`, `$SAVEGAMEDIR$` and `$APPDATADIR$`, 
+so `new_filename` parameter must start with one of those.
+See `File.Open` documentation for more information.
+
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
 *See also:* [`File.Open`](File#fileopen), 
@@ -146,6 +150,10 @@ Renames an existing file.
 If there's already a file with the new name then it will be overwritten.
 Any directory necessary is also created.
 Returns false in any failure and true if it succeeds.
+
+**NOTE:** You can only write to `$INSTALLDIR$`, `$SAVEGAMEDIR$` and `$APPDATADIR$`,
+so both parameters must start with one of those.
+See `File.Open` documentation for more information.
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
