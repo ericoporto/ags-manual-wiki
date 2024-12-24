@@ -174,6 +174,24 @@ Returns false in any failure and true if it succeeds.
 so both parameters must start with one of those.
 See `File.Open` documentation for more information.
 
+Example:
+
+```ags
+void room_AfterFadeIn()
+{
+  String filename = "$SAVEGAMEDIR$/game_config.ini";
+  String bkp = filename.Append(".bkp");
+  bool success = File.Rename(filename, bkp);
+  if (success) {
+    Display("File renamed successfully.");
+  } else {
+    Display("Failed to rename the file.");
+  }
+}
+```
+
+In this example, a file is renamed as a backup, possibly in antecipation to a new write to disk.
+
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
 *See also:* [`File.Open`](File#fileopen),
