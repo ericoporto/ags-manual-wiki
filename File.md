@@ -32,6 +32,25 @@ static DateTime* File.GetFileTime(const string filename);
 Retrieves specified file's last write time.
 Returns null if file does not exist.
 
+Example:
+
+```ags
+void room_AfterFadeIn()
+{
+  String filename = "$SAVEGAMEDIR$/game_config.ini";
+  DateTime *dt = File.GetFileTime(filename);
+  if (dt == null) {
+    Display("File '%s' not found.", filename);
+  } else {
+    Display("File '%s' was last modified on: %02d-%02d-%04d %02d:%02d:%02d", 
+      filename, dt.DayOfMonth, dt.Month, dt.Year, dt.Hour, dt.Minute, dt.Second);
+  }
+}
+```
+
+This example looks for a custom config file placed in the save game directory
+and tells its modified time if the file exists.
+
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
 *See also:* [`File.Open`](File#fileopen),
