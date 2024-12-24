@@ -350,6 +350,21 @@ will search the save game directory for all files matching "*.dat" pattern, orde
 
 ---
 
+### `File.ReadBytes`
+
+```ags
+int File.ReadBytes(char bytes[], int index, int count);
+```
+
+Reads up to "count" number of bytes and stores them in a provided dynamic array, starting with certain index.
+Returns actual number of read bytes.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`File.WriteBytes`](File#filewritebytes)
+
+---
+
 ### `File.ReadInt`
 
 *(Formerly known as `FileReadInt`, which is now obsolete)*
@@ -567,6 +582,51 @@ will open the file test.dat, read `first_value`, skip 256 bytes, read
 *Compatibility:* Supported by **AGS 3.4.0** and later versions.
 
 *See also:* [`File.Position`](File#fileposition)
+
+---
+
+### `File.WriteBytes`
+
+```ags
+int File.WriteBytes(char bytes[], int index, int count);
+```
+
+Writes up to "count" number of bytes from the provided dynamic array, starting with certain index.
+Returns actual number of written bytes.
+
+Example:
+
+```ags
+void room_AfterFadeIn()
+{
+  String filename = "$SAVEGAMEDIR$/example.dat";
+  File* f = File.Open(filename, eFileWrite);
+  if(f == null) {
+    Display("Error opening file '%s' for writing", filename);
+    return;
+  }
+  
+  int buf_len = 6;
+  char buffer[] = new char[buf_len];
+  buffer[0] = 'H';
+  buffer[1] = 'e';
+  buffer[2] = 'l';
+  buffer[3] = 'l';
+  buffer[4] = 'o';
+  buffer[5] = '!';
+  
+  int written = f.WriteBytes(buffer, 0, buf_len);
+  f.Close();
+  
+  Display("Wrote '%d' bytes", written);
+}
+```
+
+Writes the string `"Hello!"` using write bytes to a file named `"example.dat"`.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`File.ReadBytes`](File#filereadbytes)
 
 ---
 
