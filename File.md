@@ -338,7 +338,7 @@ the file.
 *(Formerly known as `FileReadRawChar`, which is now obsolete)*
 
 ```ags
-File.ReadRawChar()
+int File.ReadRawChar()
 ```
 
 Reads a raw character from the input file and returns it. This function
@@ -362,12 +362,29 @@ string 'buffer'.
 
 ---
 
+### `File.ReadRawFloat`
+
+```ags
+float File.ReadRawFloat()
+```
+
+Reads the next raw 32-bit float from the file.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`File.ReadStringBack`](File#filereadstringback),
+[`File.WriteRawFloat`](File#filewriterawfloat),
+[`File.ReadRawInt`](File#filereadrawint),
+[`File.ReadRawChar`](File#filereadrawchar)
+
+---
+
 ### `File.ReadRawInt`
 
 *(Formerly known as `FileReadRawInt`, which is now obsolete)*
 
 ```ags
-File.ReadRawInt()
+int File.ReadRawInt()
 ```
 
 Reads a raw 32-bit integer from the input file and returns it to the
@@ -541,7 +558,7 @@ will open the file stats.dat and write the integer number in it.
 *(Formerly known as `FileWriteRawChar`, which is now obsolete)*
 
 ```ags
-File.WriteRawChar(int value)
+void File.WriteRawChar(int value)
 ```
 
 Writes a single character to the specified file, in raw mode so that
@@ -571,11 +588,28 @@ the file.
 
 ---
 
+### `File.WriteRawFloat`
+
+```ags
+void File.WriteRawFloat(float value)
+```
+
+Writes a raw 32-bit float to the file.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`File.ReadStringBack`](File#filereadstringback),
+[`File.ReadRawFloat`](File#filereadrawfloat),
+[`File.WriteRawInt`](File#filewriterawint),
+[`File.WriteRawChar`](File#filewriterawchar)
+
+---
+
 ### `File.WriteRawInt`
 
 
 ```ags
-File.WriteRawInt(int value)
+void File.WriteRawInt(int value)
 ```
 
 Writes VALUE to the specified file, in raw mode so that
