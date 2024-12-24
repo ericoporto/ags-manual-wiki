@@ -1,5 +1,40 @@
 ## `File` functions and properties
 
+### `File.Copy`
+
+```ags
+static bool File.Copy(const string old_filename, const string new_filename);
+```
+
+Creates a copy of an existing file.
+If there's already a file with the new name then it will be overwritten.
+Any directory necessary is also created.
+Returns false in any failure and true if it succeeds.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`File.Open`](File#fileopen), 
+[`File.Path`](File#filepath),
+[`File.Rename`](File#filerename)
+
+---
+
+### `File.GetFileTime`
+
+```ags
+static DateTime* File.GetFileTime(const string filename);
+```
+
+Retrieves specified file's last write time.
+Returns null if file does not exist.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`File.Open`](File#fileopen),
+[`File.Path`](File#filepath)
+
+---
+
 ### `File.Open`
 
 *(Formerly known as `FileOpen`, which is now obsolete)*
@@ -98,6 +133,25 @@ $DATA$ tag supported by AGS 3.6.0 and later versions.
 [`File.ReadStringBack`](File#filereadstringback),
 [`File.WriteString`](File#filewritestring),
 [General Settings](GeneralSettings#compiler)
+
+---
+
+### `File.Rename`
+
+```ags
+static bool File.Rename(const string old_filename, const string new_filename);
+```
+
+Renames an existing file.
+If there's already a file with the new name then it will be overwritten.
+Any directory necessary is also created.
+Returns false in any failure and true if it succeeds.
+
+*Compatibility:* Supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`File.Open`](File#fileopen),
+[`File.Path`](File#filepath),
+[`File.Copy`](File#filecopy)
 
 ---
 
