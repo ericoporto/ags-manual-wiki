@@ -55,7 +55,7 @@ GUI.
 ### `on_event`
 
 ```ags
-on_event (EventType event, int data)
+on_event (EventType event, int data1, int data2)
 ```
 
 Called whenever certain game events occur. The value of DATA depends
@@ -63,41 +63,58 @@ on which event has occurred. The possible values of event are:
 
     eEventEnterRoomBeforeFadein
             called just before the room's 'Enter Before Fade-in' event occurs
-            DATA = new room number
+            DATA1 = new room number
     eEventEnterRoomAfterFadein
             called just before the room's 'Enter After Fade-in' event occurs
-            DATA = room number
+            DATA1 = room number
     eEventLeaveRoom
             called just after the room's 'Player Leaves Room' event occurs, before the fade-out
-            DATA = room number they are leaving
+            DATA1 = room number they are leaving
     eEventLeaveRoomAfterFadeout
             called when leaving a room, right after fade-out, but while room is still in memory
-            DATA = room number they are leaving
+            DATA1 = room number they are leaving
     eEventGotScore
             called whenever the player's score changes
-            DATA = number of points they've received
+            DATA1 = number of points they've received
     eEventGUIMouseDown
             called when a mouse button is pressed down over a GUI
-            DATA = GUI number
+            DATA1 = GUI number
     eEventGUIMouseUp
             called when a mouse button is released over a GUI
-            DATA = GUI number
+            DATA1 = GUI number
     eEventAddInventory
             called when the player has just added an inventory item
-            DATA = inventory item number that was added
+            DATA1 = inventory item number that was added
     eEventLoseInventory
             called when the player has just lost an inventory item
-            DATA = inventory item number that was lost
+            DATA1 = inventory item number that was lost
     eEventRestoreGame
             called after a saved game has been restored
-            DATA = save slot number
+            DATA1 = save slot number
     eEventGameSaved
             called after a game was saved
-            DATA = save slot number
+            DATA1 = save slot number
+    eEventDialogStart
+            called once the dialog state is started, but not when another topic is run
+            DATA1 = dialog ID
+    eEventDialogStop
+            called once it exits the dialog state
+            DATA1 = the last dialog ID before exiting dialog state, may be different from one in eEventDialogStart
+    eEventDialogRun
+            called anytime a dialog entry is ran
+            DATA1 = dialog ID
+            DATA2 = entry ID, where starting entry (@S) is 0, and user-made options begin with 1
+    eEventDialogOptionsOpen
+            called when dialog options appear
+            DATA1 = dialog ID
+    eEventDialogOptionsClose
+            called when dialog options close
+            DATA1 = dialog ID
+            DATA2 = entry ID, the option chosen
 
 For example:
 ```ags
-function on_event(int event, int data)
+function on_event(int event, int data1, int data2)
 {
     if (event == eEventEnterRoomBeforeFadein)
     {
@@ -114,6 +131,11 @@ function on_event(int event, int data)
  - `eEventEnterRoomAfterFadein` event type is only supported since AGS 3.6.0.
  - `eEventLeaveRoomAfterFadeout` event type  is only supported since AGS 3.6.1.
  - `eEventGameSaved` event type  is only supported since AGS 3.6.1.
+ - `eEventDialogStart` event type  is only supported since AGS 3.6.2.
+ - `eEventDialogStop` event type  is only supported since AGS 3.6.2.
+ - `eEventDialogRun` event type  is only supported since AGS 3.6.2.
+ - `eEventDialogOptionsOpen` event type  is only supported since AGS 3.6.2.
+ - `eEventDialogOptionsClose` event type  is only supported since AGS 3.6.2.
 
 ---
 
