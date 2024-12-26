@@ -87,19 +87,19 @@ Since the early days of AGS there have been this problem that if you change some
 
 The new 3.6.2 engine introduces a number of options that let solve, or at least partially compensate this problem.
 
-### 1. Support for loading saves with *less* content for any given type of data.
+### Support for loading saves with *less* content for any given type of data.
 
 This means that the engine can load saves if they have equal or less count of Characters, Dialogs, GUI, controls on each given GUI, variables in script, and so forth, compared to the current game. Please be aware that *only quantity* of data is compared. Engine still cannot distinguish the order in which the items were saved. This means that if you change their order (such as order of IDs of items, or order of variables in a script), then engine won't be able to detect that, and will apply loaded items from the save into wrong positions.
 
 There are two exceptions to this rule at the moment: script modules and plugins. Script modules and plugins are identified by their names, and so long as the name matches the script data will be correctly loaded from save. Engine also skips the data for module or plugin if one is not present in the game anymore.
 
-The loading of "incompatible" saves is not done automatically though, it has to be triggered by adding a certain function to your scripts. This function is called "validate_restored_save" (please read further below).
+The loading of "incompatible" saves is not done automatically though, it has to be triggered by adding a certain function to your scripts. This function is called ["validate_restored_save"](ValidateRestoredSave) (please read further below).
 
 An extra note should be made for those of the recently added objects that are *not* found in a save. All of these are going to be *reset to their initial states*, the ones they have when player launches your game.
 
 Please remember that the engine can do only that much: load what is available from the save. It's up to you to fixup anything after save is restored, such as correcting restored objects or initializing objects that were not restored. The good place to do this is, for example, an ["on_event" function](Globalfunctions_Event#on_event) which receives eEventRestoreGame event.
 
-### 2. Validating restored saves.
+### Validating restored saves.
 
 In order to "validate" an "incompatible" save either when restoring one or when prescanning one (see explanation of prescanning below) you must add a function called "validate_restored_save" into one of your game scripts. The function is defined as:
 
@@ -115,8 +115,10 @@ RestoredSaveInfo has a boolean property named "Cancel", which must be set in thi
 
 The purpose of this function is to let you decide whether save may still be allowed to load or not.
 
-### 3. Prescanning save slots.
+For more detailed explanation, please see ["validate_restored_save"](ValidateRestoredSave).
+
+### Prescanning save slots.
 
 If engine is told to load an incompatible save and fails it then will usually just stop the game. This is quite frustrating for the players.
-In version 3.6.2 there's a new script command called `Game.ScanSaveSlots()`. This function lets you *test* a range of saves and return only validated ones. When checking the saves it will also try calling "validate_restored_save" for saves with fewer data in them.
+In version 3.6.2 there's a new script command called [`Game.ScanSaveSlots()`](Game#gamescansaveslots). This function lets you *test* a range of saves and return only validated ones. When checking the saves it will also try calling "validate_restored_save" for saves with fewer data in them.
 Scanning saves allows you to take precaution and avoid displaying invalid saves in game menus, or reject loading a save before it crashes the game.
