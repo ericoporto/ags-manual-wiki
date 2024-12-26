@@ -16,9 +16,11 @@ This function may be called in two cases:
 
 If we take a look at the `RestoredSaveInfo` struct, most of its properties tell the numbers of different kinds of data: `CharacterCount`, `GUICount`, and so on, - they are self-descriptive for the most part.
 
-Besides these there are 3 properties that have special meaning:
+Besides these there are several properties that have special meaning:
 
-*RestoredSaveInfo.Result* - contains a combination of [RestoredSaveResult values](StandardEnums#restoredsaveresult). These indicate if the save contains mismatching data. This property also can tell that this call is a part of save "prescan", in which case no save is actually loaded, and engine is only testing one.
+*RestoredSaveInfo.IsPrescan* - tells whether "validate_restored_save" was called as a part of save scanning. This means that no restored data was applied to the game, and only a save summary was gathered for validation.
+
+*RestoredSaveInfo.HasExtraData* and *RestoredSaveInfo.HasMissingData* - these indicate if the save contains mismatching data.
 
 *RestoredSaveInfo.Cancel* - by setting this value to `true` or `false` you decide whether to accept or cancel the save. Note that if there's any data mismatch, then Cancel will be set to `true` by default: that means that if you do not set it yourself, then the save will be cancelled automatically.
 
@@ -32,14 +34,14 @@ Following is a relatively simple example of how such function could be implement
 function validate_restored_save(RestoredSaveInfo* info)
 {
     // We do not support saves with extra data.
-    if ((info.Result & eRestoredSave_ExtraData) != 0)
+    if (info.HasExtraData)
     {
         info.Cancel = true;
         return;
     }
 
     // If there's no missing data, then simply accept it and return.
-    if ((info.Result & eRestoredSave_MissingData) == 0)
+    if (info.HasMissingData)
     {
         info.Cancel = false;
         return;
@@ -59,7 +61,7 @@ function validate_restored_save(RestoredSaveInfo* info)
     
     // If this is a "prescan" run, then this save is not getting loaded right away,
     // so we should not upgrade any game data, so return.
-    if ((info.Result & eRestoredSave_Prescan) != 0)
+    if (info.IsPrescan)
     {
         return;
     }
