@@ -660,7 +660,7 @@ The `SaveComponentSelection` enum can be combined like flags, using bitwise oper
 *Compatibility:* supported by **AGS 3.6.2** and higher.
 
 *Used by:* [`SetGameOption`](Globalfunctions_General#setgameoption),
-[`validate_restored_save`](ValidateRestoredSave)
+[`RestoredSaveInfo`](RestoredSaveInfo)
 
 ---
 

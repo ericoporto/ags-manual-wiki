@@ -8,7 +8,7 @@ Starting with version 3.6.2 the engine potentially allows to restore older saves
 
 For that reason we have introduced a function named "validate_restored_save", which you may write in your game script if you would like to support restoring older saves with less data. If you do not plan that in your game, then you do not have to add one.
 
-The purpose of "validate_restored_save" is to receive a struct `RestoredSaveInfo` which contains a summary about the save, and lets game developer decide whether to accept or cancel this save.
+The purpose of "validate_restored_save" is to receive a struct [`RestoredSaveInfo`](RestoredSaveInfo) which contains a summary about the save, and lets game developer decide whether to accept or cancel this save.
 
 This function may be called in two cases:
 * when a save is being restored by the engine, and data mismatch was detected;
@@ -24,7 +24,7 @@ Besides these there are several properties that have special meaning:
 
 *RestoredSaveInfo.Cancel* - by setting this value to `true` or `false` you decide whether to accept or cancel the save. Note that if there's any data mismatch, then Cancel will be set to `true` by default: that means that if you do not set it yourself, then the save will be cancelled automatically.
 
-*RestoredSaveInfo.RetryWithoutComponents* - by setting this value to a combination of [SaveComponentSelection values](StandardEnums#savecomponentselection) you can instruct the engine to reload the same save, only this time it should skip certain types of data completely. This choice may be a last resort when the save is so outdated that some parts of it cannot be applied.
+*RestoredSaveInfo.RetryWithoutComponents* - by setting this value to a combination of [SaveComponentSelection values](StandardEnums#savecomponentselection) you can instruct the engine to reload the same save, only this time it should skip certain types of data completely. This choice may be the last resort when the save is so outdated that some parts of it cannot be applied.
 
 In the most common case in this function you inspect the provided save's summary and set RestoredSaveInfo.Cancel to either `true` or `false`, judging by the summary values. What else you do in this function is completely up to you. For example, you may modify certain things in game after restoring an old save. Or you may schedule this for later, when you receive [`eEventRestoreGame`](Globalfunctions_Event#on_event).
 
@@ -77,4 +77,8 @@ function validate_restored_save(RestoredSaveInfo* info)
 }
 ```
 
-*See also:* [`Game.ScanSaveSlots`](Game#gamescansaveslots)
+*Compatibility:* `validate_restored_save` is supported by **AGS 3.6.2** and later versions.
+
+*See also:* [`RestoredSaveInfo`](RestoredSaveInfo),
+[`Game.ScanSaveSlots`](Game#gamescansaveslots)
+
