@@ -274,14 +274,24 @@ Gets the size of the global script's data present in this save. This corresponds
 int RestoredSaveInfo.ScriptModuleCount;
 ```
 
-Gets the number of script modules (except for the global script) present in this save.
+Gets the number of script modules present in this save (not counting the global script, nor the room scripts).
 
 ---
 
-### `RestoredSaveInfo.ScriptModuleDataSize`
+### `RestoredSaveInfo.ScriptModuleNames`
 
 ```ags
-int RestoredSaveInfo.ScriptModuleDataSize[int index];
+int RestoredSaveInfo.ScriptModuleNames[int index];
 ```
 
-Gets the size of each of the script module's data present in this save. This corresponds to the total number of bytes used by all the respective script's variables.
+Gets the name of each of the script modules in this save (except for the global script).
+
+---
+
+### `RestoredSaveInfo.ScriptModuleDataSizes`
+
+```ags
+int RestoredSaveInfo.ScriptModuleDataSizes[int index];
+```
+
+Gets the size of each of the script module's data present in this save (except for the global script). This corresponds to the total number of bytes used by all the respective script's variables.
