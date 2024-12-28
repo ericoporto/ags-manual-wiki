@@ -28,6 +28,20 @@ Character, etc), and custom structs declared as `managed`. But currently you can
 
 On another hand, you cannot have dynamic arrays inside "managed" structs as their members, but can have them anywhere else.
 
+### Array's Length
+
+Dynamic array's length is its number of elements. In AGS you can access this value using a `Length` property:
+
+```ags
+characterHealth = new int[Game.CharacterCount];
+<...>
+// later in script
+int len = characterHealth.Length;
+```
+
+*Compatibility:* The dynamic array's Length property is supported by **AGS 3.6.2** and later versions.
+In previous versions you would have to store created array's length in a separate integer variable.
+
 ### Filling a dynamic array
 
 If you have dynamic array of managed pointers, then after creation all of these pointers will be null. You must also assign individual elements one by one. For example, when you want to fill an array with already existing game objects:
@@ -61,7 +75,7 @@ sprites[1].Flip(eFlipLeftToRight);
 You don't *have* to fill all the array indexes of course, you may as well leave some empty (null). Just remember to keep track of that, and if your script may access empty indexes make sure to check if the element is null or not before using it:
 
 ```ags
-for (int i = 0; i < numSprites; i++) {
+for (int i = 0; i < sprites.Length; i++) {
     if (sprites[i] != null) {
         sprites[i].Flip(eFlipLeftToRight);
     }
@@ -86,7 +100,7 @@ function game_start() {
 
 function resize_array() {
     int tempArr[] = new int[200]; // create array of 200 ints and save it in a temp var
-    for (i = 0; i < 100; i++) {
+    for (i = 0; i < arrOfInts.Length && i < 200; i++) {
         tempArr[i] = arrOfInts[i]; // copy contents of the old array
     }
     arrOfInts = tempArr; // assign new array to your usual variable
