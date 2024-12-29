@@ -58,10 +58,13 @@ This function is called right before the dialog options are shown or updated on 
 ### `dialog_options_mouse_click`
 
 ```ags
-dialog_options_mouse_click(DialogOptionsRenderingInfo *info, MouseButton button)
+dialog_options_mouse_click(DialogOptionsRenderingInfo *info, MouseButton button, int mx, int my)
 ```
 
 This function is called if the player clicks the mouse anywhere on dialog options. It corresponds to the regular [`on_mouse_click`](Globalfunctions_Event#on_mouse_click). You might want to use this to process clicks on dialog options, and also on some custom elements like scroll arrows, for example.
+
+The `mx` and `my` parameters contain mouse's position at the time of click. They are more reliable than using global variables `mouse.x` and `mouse.y`, because this function may be called with a small delay when the mouse have already moved away a bit.
+These parameters contain position in *screen coordinates*, as sometimes it may be necessary to know if player clicked outside of the dialog options bounds. Subtract [DialogOptionsRenderInfo.X](DialogOptionsRenderingInfo#dialogoptionsrenderinginfox) and Y property values from these to tell the relative position.
 
 ---
 
