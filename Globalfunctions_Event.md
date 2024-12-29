@@ -55,10 +55,10 @@ GUI.
 ### `on_event`
 
 ```ags
-on_event (EventType event, int data1, int data2)
+on_event (EventType event, int data1, int data2, int data3, int data4)
 ```
 
-Called whenever certain game events occur. The value of DATA depends
+Called whenever certain game events occur. The values of DATA1 to DATA4 arguments depend
 on which event has occurred. The possible values of event are:
 
     eEventEnterRoomBeforeFadein
@@ -79,9 +79,15 @@ on which event has occurred. The possible values of event are:
     eEventGUIMouseDown
             called when a mouse button is pressed down over a GUI
             DATA1 = GUI number
+            DATA2 = mouse button id; see [MouseButton enum](StandardEnums#mousebutton)
+            DATA3 = mouse x position, at the time of pressing button down
+            DATA4 = mouse y position
     eEventGUIMouseUp
             called when a mouse button is released over a GUI
             DATA1 = GUI number
+            DATA2 = mouse button id; see [MouseButton enum](StandardEnums#mousebutton)
+            DATA3 = mouse x position, at the time of releasing a button
+            DATA4 = mouse y position
     eEventAddInventory
             called when the player has just added an inventory item
             DATA1 = inventory item number that was added
@@ -112,6 +118,8 @@ on which event has occurred. The possible values of event are:
             DATA1 = dialog ID
             DATA2 = entry ID, the option chosen
 
+**NOTE:** when you write this function in your script, you do not have to declare it with all 4 "data" arguments, you may put only first 1 or 2 instead, and the engine will correctly discard unused parameters without error. This also helps when you upgrade older projects to the latest version of AGS.
+
 For example:
 ```ags
 function on_event(int event, int data1, int data2)
@@ -128,6 +136,7 @@ function on_event(int event, int data1, int data2)
 ```
 
 *Compatibility:*
+ - The `data2`, `data3` and `data4` arguments are only supported since AGS 3.6.2.
  - `eEventEnterRoomAfterFadein` event type is only supported since AGS 3.6.0.
  - `eEventLeaveRoomAfterFadeout` event type  is only supported since AGS 3.6.1.
  - `eEventGameSaved` event type  is only supported since AGS 3.6.1.
@@ -136,6 +145,8 @@ function on_event(int event, int data1, int data2)
  - `eEventDialogRun` event type  is only supported since AGS 3.6.2.
  - `eEventDialogOptionsOpen` event type  is only supported since AGS 3.6.2.
  - `eEventDialogOptionsClose` event type  is only supported since AGS 3.6.2.
+ - `eEventGUIMouseDown` event type has 4 parameters since AGS 3.6.2, and only 1 parameter before that.
+ - `eEventGUIMouseUp` event type has 4 parameters since AGS 3.6.2, and only 1 parameter before that.
 
 ---
 
@@ -182,13 +193,14 @@ Starting with version 3.6.0 AGS supports two "key handling" modes: a new-style a
 ### `on_mouse_click`
 
 ```ags
-on_mouse_click (MouseButton button)
+on_mouse_click (MouseButton button, int mx, int my)
 ```
 
 Called when the player clicks a mouse button. BUTTON is either
 `eMouseLeft`, `eMouseRight`, or `eMouseMiddle`, depending on which
-button was clicked. The `mouse.x` and `mouse.y` global variables
-contain the mouse's position.
+button was clicked. The `mx` and `my` parameters contain the mouse's position at the time of a click.
+
+**NOTE:** it is an old tradition to use global variables `mouse.x` and `mouse.y` in this function to get the mouse's position. But that method is not  entirely reliable, as `on_mouse_click` may be called with certain delay, when the mouse cursor has already moved a bit. Starting with AGS 3.6.2 we advise to use this function's arguments `mx` and `my` instead.
 
 If 'Handle inventory clicks in script' is enabled in the game options,
 this function can also be called with `eMouseLeftInv`,
@@ -204,6 +216,8 @@ scripts. This allows the room script to intercept a mouse-click first,
 and then decide whether to pass it on to the global script or not. See
 the [`ClaimEvent`](Globalfunctions_General#claimevent) function for
 more details.
+
+*Compatibility:* The `mx` and `my` arguments are only supported since AGS 3.6.2.
 
 ---
 
