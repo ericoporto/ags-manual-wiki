@@ -7,7 +7,7 @@
 - [Introduction](Introduction)
 - [Tutorial](Tutorial)
 - [Frequently Asked Questions](FAQ)
-- [Upgrading to AGS 3.6.1](UpgradeTo361)
+- [Upgrading to AGS 3.6.2](UpgradeTo362)
 - [Upgrading from a previous version](UpgradingFromPreviousVersion)
 
 ## Editor
