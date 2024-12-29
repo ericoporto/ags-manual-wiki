@@ -80,14 +80,14 @@ on which event has occurred. The possible values of event are:
             called when a mouse button is pressed down over a GUI
             DATA1 = GUI number
             DATA2 = mouse button id; see [MouseButton enum](StandardEnums#mousebutton)
-            DATA3 = mouse x position, at the time of pressing button down
-            DATA4 = mouse y position
+            DATA3 = mouse x position, *relative* to this exact GUI
+            DATA4 = mouse y position, *relative* to this exact GUI
     eEventGUIMouseUp
             called when a mouse button is released over a GUI
             DATA1 = GUI number
             DATA2 = mouse button id; see [MouseButton enum](StandardEnums#mousebutton)
-            DATA3 = mouse x position, at the time of releasing a button
-            DATA4 = mouse y position
+            DATA3 = mouse x position, *relative* to this exact GUI
+            DATA4 = mouse y position, *relative* to this exact GUI
     eEventAddInventory
             called when the player has just added an inventory item
             DATA1 = inventory item number that was added
