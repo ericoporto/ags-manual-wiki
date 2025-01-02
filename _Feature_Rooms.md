@@ -70,13 +70,33 @@ One downside of using a Room Edge is that it is a straight line running across t
 
 See Also: [Room events](EventTypes#room-events)
 
+### Room Objects
+
+Room Objects are things in room that have their own position, image, and few other visual properties. They may be moved, change their graphic and animate, be turned on and off. They are suitable to represent both static and dynamic things in the room, from decorations to simple characters (although Objects are more limited in what they can do if compared to actual [Characters](_Feature_Character)).
+
+Room Objects cannot change the owning room, they will always stay in one they are created in.
+
+Room Objects may be commanded to move using pathfinding (see also [Walkable areas](_Feature_Room#walkable-areas)), or freely. You may also just set the new position directly using their X and Y properties. They may be assigned a View and animated by a script command.
+
+Unlike Characters, Room Objects do not have a concept of "action animation", nor "facing direction", therefore they never animate automatically, only by your command, and the animation loop does not change on its own either if they, for example, change moving direction. You may achieve similar effects with scripting though, if you want to.
+
+Room Objects may be clicked on by player to trigger one of their interaction events, depending on the active cursor mode.
+
+See Also: [Tutorial: room objects](acintro4#objects), [Object events](EventTypes#object-events), [Object functions and properties](Object)
+
+### Room Areas
+
+There are 4 types of Room Areas: Hotspots, Walkable Areas, Regions, Walk-behinds. They have different uses, and are explained in a more detail below. But what they all have in common is that they are all created by drawing areas of different colors on a respective "mask" image, - that is a sort of a layer that covers whole room but is invisible at runtime. Each *type* of area has its own mask, where each *area* is associated with its own color on that mask.
+
+Masks are 8-bit, which means that pixel values are defined as indexes between 0 and 255 (inclusive), and max number of colors on them is technically limited to 256. The actual limit of areas of each type may be lower for historical reasons. Each color index corresponds to an area. Area 0 is treated as "no area" in the engine, and as an "eraser" in the editor.
+
+As there's a single mask per area type (for all areas of that type) in a room, and areas are made of pixels of certain color on that mask:
+1. Areas of the same type *cannot overlap*.
+2. A single area may consist of multiple disconnected parts and all of these parts will act as one.
+
 ### Hotspots
 
-Hotspots are parts of the room background that may be interacted with by the player. They are created by drawing areas of different colors on a "hotspot mask" image, - that is a sort of a layer that covers whole room but is invisible at runtime. Each hotspot is associated with its distinct color.
-
-As there's only the single "hotspot mask" in a room, and hotspots are made literally of pixels of certain color on that mask:
-1. Hotspots *cannot overlap*.
-2. A single hotspot may consist of multiple disconnected areas and all of these areas will act as one.
+Hotspots are parts of the room background that may be interacted with by the player. They are drawn on a "hotspot mask" room layer, were each color index correspond to a respective hotspot, and Hotspot 0 is treated as "no hotspot".
 
 Hotspots do not have any visual representation of their own, they rather use the room background for that. That's why hotspots are commonly used to add interaction to certain areas, or things drawn on the room background that *do not change position or shape*.
 
@@ -93,16 +113,52 @@ Hotspot may have a Walk-to Point: that's an optional setting that tells where a 
 
 See Also: [Tutorial: hotspots](acintro3#hotspots), [Hotspot events](EventTypes#hotspot-events), [Hotspot functions and properties](Hotspot)
 
-### Room Objects
-
-Room Objects are things in room that have their own image, position and visual properties. They may be moved around, change their visuals, turned on and off.
-
-Room Objects may be clicked on by player to trigger one of their interaction events.
-
-See Also: [Tutorial: room objects](acintro4#objects), [Object events](EventTypes#object-events), [Object functions and properties](Object)
-
 ### Walkable areas
+
+Walkable areas let define parts of the room that are permitted to move through by the Characters and Room Objects. Whenever a Character or a Room Object is commanded to walk or move using walkable areas, the engine's pathfinder searches the shortest path to destination which passes through only the enabled walkable areas that you've drawn in the room.
+
+Walkable areas are drawn on a "walkable mask" room layer, were each color index correspond to a respective hotspot, and Walkable Area 0 is considered to be "non-walkable" (or "blocking").
+
+Walkable areas may be enabled or disabled by [script commands](Globalfunctions_Room#removewalkablearea). Disabled areas are treated as non-walkable. All enabled areas are viewed as same by the pathfinder, thus having different areas is necessary only if you wish to toggle them separately, or apply different effects.
+
+Speaking of effects, Walkable Areas may have following configured:
+
+1. Scaling. This lets to scale any Character or Room Object positioned on the area. There are two kinds of scaling: uniform, that applies same scaling in each point of this area, and continuous scaling, that assigns a scaling range from maximum at the area's bottom edge to minimum at the area's topmost edge. Continuous scaling is used to simulate a perspective, where characters walking "away" from the player will become smaller, and those that walk "closer" will appear larger.
+
+2. Area specific view. You can assign a view number, which will be applied to a playable character automatically when it walks on this area.
+
+See Also: [Tutorial: creating your first room](acintro2), [Global functions (room actions)](Globalfunctions_Room)
 
 ### Regions
 
+Regions are parts of the room that may apply certain visual effects on the standing or passing characters and room objects. They are drawn on a "region mask" room layer, were each color index correspond to a respective region, and Region 0 is treated as "no region".
+
+Regions may have following effects configured:
+
+1. Color Tint.
+2. Light Level.
+
+Regions have a number of events, and react to following:
+* Player walking onto a region;
+* Player walking off a region;
+* Player standing on a region (triggers repeatedly).
+
+Each of the above triggers [corresponding event](EventTypes#region-events), which in turn may run a custom function in script.
+
+See Also: [Region events](EventTypes#region-events), [Region functions and properties](Region)
+
 ### Walk-behinds
+
+Walk-behinds are used to create "cut outs" from the room background, that may be "walked behind" by a character or object, hence - "walk-behinds". Walk-behinds are normally used to simulate the three-dimensional perspective in the room, where things that are further "away" from the player's view are visually covered by things that are "closer".
+
+Walk-behinds are drawn on a "walk-behind mask" room layer, were each color index correspond to a respective cut-out, and index 0 is unused.
+
+The one and only property of a walk-behind is the Baseline. Baseline defines this cut-out's sorting order. When characters and objects are positioned in the room, they are sorted among themselves and walk-behinds. Those things that have higher baseline are drawn above, and those that have lower baseline are drawn behind others. By default, character and objects have dynamic baseline equal to their Y coordinate. In AGS Y axis points from top of the room down to bottom. This means that, for example, if a character is standing lower than a walk-behind's baseline, then it has *higher* Y coordinate, and will be displayed *above* a cut-out. While if it is standing higher than a walk-behind's baseline, then it has *lower* Y coordinate, and will be displayed *behind* a cut-out.
+
+Walk-behinds have no interactions or events.
+
+Walk-behinds may be turned off by setting their Baseline to 0.
+
+Walk-behinds are an optional feature, as they may be substituted by room objects, which have certain advantages over them. Because walk-behinds are using parts of the room background, they cannot change their looks dynamically (unless you switch whole room background), cannot animate or change position. Thus they are only suitable for static parts of the scene that never change.
+
+See Also: [Global functions (room actions)](Globalfunctions_Room)
