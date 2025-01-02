@@ -42,8 +42,8 @@ Besides their basic settings, rooms may have following contents in them:
 
 * Backgrounds
 * Edges
-* Hotspots
 * Room Objects
+* Hotspots
 * Walkable areas
 * Regions
 * Walk-behinds
@@ -72,13 +72,13 @@ See Also: [Room events](EventTypes#room-events)
 
 ### Room Objects
 
-Room Objects are things in room that have their own position, image, and few other visual properties. They may be moved, change their graphic and animate, be turned on and off. They are suitable to represent both static and dynamic things in the room, from decorations to simple characters (although Objects are more limited in what they can do if compared to actual [Characters](_Feature_Character)).
+Room Objects are things in room that have their own position, image, and few other visual properties, and may be interacted with by the player. They may be moved, change their graphic and animate, be turned on and off. They are suitable to represent both static and dynamic things in the room, from decorations to simple characters (although Objects are more limited in what they can do if compared to actual [Characters](_Feature_Character)).
 
 Room Objects cannot change the owning room, they will always stay in one they are created in.
 
-Room Objects may be commanded to move using pathfinding (see also [Walkable areas](_Feature_Room#walkable-areas)), or freely. You may also just set the new position directly using their X and Y properties. They may be assigned a View and animated by a script command.
+Room Objects may be commanded to move using pathfinding (see also [Walkable areas](_Feature_Room#walkable-areas)), or freely. You may also just set the new position directly using their X and Y properties. Objects may be marked as "solid", in which case they will prevent moving characters from passing through the location which they occupy (see [Object.Solid](Object#objectsolid) property).
 
-Unlike Characters, Room Objects do not have a concept of "action animation", nor "facing direction", therefore they never animate automatically, only by your command, and the animation loop does not change on its own either if they, for example, change moving direction. You may achieve similar effects with scripting though, if you want to.
+They may be [assigned a View](Object#objectsetview) and animated by a [script command](Object#objectanimate). Unlike Characters, Room Objects do not have a concept of "action animation", nor "facing direction", therefore they never animate automatically, only by your command, and the animation loop does not change on its own either if they, for example, change moving direction. You may achieve similar effects with scripting though, if you want to.
 
 Room Objects may be clicked on by player to trigger one of their interaction events, depending on the active cursor mode.
 
@@ -86,11 +86,11 @@ See Also: [Tutorial: room objects](acintro4#objects), [Object events](EventTypes
 
 ### Room Areas
 
-There are 4 types of Room Areas: Hotspots, Walkable Areas, Regions, Walk-behinds. They have different uses, and are explained in a more detail below. But what they all have in common is that they are all created by drawing areas of different colors on a respective "mask" image, - that is a sort of a layer that covers whole room but is invisible at runtime. Each *type* of area has its own mask, where each *area* is associated with its own color on that mask.
+There are 4 types of Room Areas: Hotspots, Walkable Areas, Regions, Walk-behinds. They have different uses, and are explained in a more detail below. But what they all have in common is that they are created by drawing areas of different colors on a respective "mask" image, - a sort of a layer that covers whole room but is invisible at runtime. Each area  *type* has got its own mask, where each *area* is associated with its own color on that mask.
 
-Masks are 8-bit, which means that pixel values are defined as indexes between 0 and 255 (inclusive), and max number of colors on them is technically limited to 256. The actual limit of areas of each type may be lower for historical reasons. Each color index corresponds to an area. Area 0 is treated as "no area" in the engine, and as an "eraser" in the editor.
+Masks are 8-bit images, which means that pixel values are defined as indexes between 0 and 255 (inclusive), and max number of colors on them is technically limited to 256. The actual limit of usable areas in the engine may be lower for historical reasons. Each color index corresponds to an area. Area 0 is treated as "no area" in the engine, and as an "eraser" in the editor.
 
-As there's a single mask per area type (for all areas of that type) in a room, and areas are made of pixels of certain color on that mask:
+As there's a single mask per area type in a room, and areas are made of pixels of certain color on that mask:
 1. Areas of the same type *cannot overlap*.
 2. A single area may consist of multiple disconnected parts and all of these parts will act as one.
 
