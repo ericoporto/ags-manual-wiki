@@ -96,9 +96,9 @@ As there's a single mask per area type in a room, and areas are made of pixels o
 
 ### Hotspots
 
-Hotspots are parts of the room background that may be interacted with by the player. They are drawn on a "hotspot mask" room layer, were each color index correspond to a respective hotspot, and Hotspot 0 is treated as "no hotspot".
+Hotspots are parts of the room background that may be interacted with by the player. They are drawn on a "hotspot mask" room layer, where each color index correspond to a respective hotspot, and Hotspot 0 is treated as "no hotspot".
 
-Hotspots do not have any visual representation of their own, they rather use the room background for that. That's why hotspots are commonly used to add interaction to certain areas, or things drawn on the room background that *do not change position or shape*.
+Hotspots do not have any visual representation of their own, they rather rely on the room background for that. That's why hotspots are commonly used to add interaction to certain areas, or things drawn on the room background that *do not change position or shape*.
 
 Hotspots can react to following:
 * Player clicking on them;
@@ -115,11 +115,11 @@ See Also: [Tutorial: hotspots](acintro3#hotspots), [Hotspot events](EventTypes#h
 
 ### Walkable areas
 
-Walkable areas let define parts of the room that are permitted to move through by the Characters and Room Objects. Whenever a Character or a Room Object is commanded to walk or move using walkable areas, the engine's pathfinder searches the shortest path to destination which passes through only the enabled walkable areas that you've drawn in the room.
+Walkable areas let define parts of the room that are permitted to move through by the Characters and Room Objects. Whenever a Character or a Room Object is commanded to [walk](Character#characterwalk) or [move](Object#objectmove) using walkable areas, the engine's pathfinder searches the shortest path to destination which passes through only the enabled walkable areas that you've drawn in the room.
 
-Walkable areas are drawn on a "walkable mask" room layer, were each color index correspond to a respective hotspot, and Walkable Area 0 is considered to be "non-walkable" (or "blocking").
+Walkable areas are drawn on a "walkable mask" room layer, where each color index correspond to a respective hotspot, and Walkable Area 0 is considered to be "non-walkable" (or "blocking").
 
-Walkable areas may be enabled or disabled by [script commands](Globalfunctions_Room#removewalkablearea). Disabled areas are treated as non-walkable. All enabled areas are viewed as same by the pathfinder, thus having different areas is necessary only if you wish to toggle them separately, or apply different effects.
+Walkable areas may be enabled or disabled by [script commands](Globalfunctions_Room#removewalkablearea). Disabled areas are treated as non-walkable. All enabled areas are viewed as one by the pathfinder, thus having different areas is necessary only if you wish to toggle them separately, or apply different effects to them.
 
 Speaking of effects, Walkable Areas may have following configured:
 
@@ -131,7 +131,7 @@ See Also: [Tutorial: creating your first room](acintro2), [Global functions (roo
 
 ### Regions
 
-Regions are parts of the room that may apply certain visual effects on the standing or passing characters and room objects. They are drawn on a "region mask" room layer, were each color index correspond to a respective region, and Region 0 is treated as "no region".
+Regions are parts of the room that may apply certain visual effects on the standing or passing characters and room objects. They are drawn on a "region mask" room layer, where each color index correspond to a respective region, and Region 0 is treated as "no region".
 
 Regions may have following effects configured:
 
@@ -151,9 +151,9 @@ See Also: [Region events](EventTypes#region-events), [Region functions and prope
 
 Walk-behinds are used to create "cut outs" from the room background, that may be "walked behind" by a character or object, hence - "walk-behinds". Walk-behinds are normally used to simulate the three-dimensional perspective in the room, where things that are further "away" from the player's view are visually covered by things that are "closer".
 
-Walk-behinds are drawn on a "walk-behind mask" room layer, were each color index correspond to a respective cut-out, and index 0 is unused.
+Walk-behinds are drawn on a "walk-behind mask" room layer, where each color index correspond to a respective cut-out, and index 0 is unused.
 
-The one and only property of a walk-behind is the Baseline. Baseline defines this cut-out's sorting order. When characters and objects are positioned in the room, they are sorted among themselves and walk-behinds. Those things that have higher baseline are drawn above, and those that have lower baseline are drawn behind others. By default, character and objects have dynamic baseline equal to their Y coordinate. In AGS Y axis points from top of the room down to bottom. This means that, for example, if a character is standing lower than a walk-behind's baseline, then it has *higher* Y coordinate, and will be displayed *above* a cut-out. While if it is standing higher than a walk-behind's baseline, then it has *lower* Y coordinate, and will be displayed *behind* a cut-out.
+The one and only property of a walk-behind is the Baseline. Baseline defines this cut-out's drawing order. When characters and objects are positioned in the room, they are sorted among themselves and walk-behinds. Those things that have higher baseline are drawn above, and those that have lower baseline are drawn behind others. By default, character and objects have dynamic baseline equal to their Y coordinate. In AGS Y axis points from top of the room down to bottom. This means that, for example, if a character is standing lower than a walk-behind's baseline, then it has *higher* Y coordinate, and will be displayed *above* a cut-out. While if it is standing higher than a walk-behind's baseline, then it has *lower* Y coordinate, and will be displayed *behind* a cut-out.
 
 Walk-behinds have no interactions or events.
 
