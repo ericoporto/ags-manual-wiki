@@ -350,10 +350,10 @@ will search the save game directory for all files matching "*.dat" pattern, orde
 
 ---
 
-### `File.ReadBytes`
+### `File.ReadRawBytes`
 
 ```ags
-int File.ReadBytes(char bytes[], int index, int count);
+int File.ReadRawBytes(char bytes[], int index, int count);
 ```
 
 Reads up to "count" number of bytes and stores them in a provided dynamic array, starting with certain index.
@@ -374,7 +374,7 @@ void room_AfterFadeIn()
   int buf_len = 7;
   char buffer[] = new char[buf_len];
   
-  int read = f.ReadBytes(buffer, 0, buf_len);
+  int read = f.ReadRawBytes(buffer, 0, buf_len);
   f.Close();
   
   buffer[buf_len-1] = 0; // for safety
@@ -384,11 +384,11 @@ void room_AfterFadeIn()
 ```
 
 In this example, it reads a file `"example.dat"`,
-that has data that can be interpreted as text, from `File.WriteBytes` example.
+that has data that can be interpreted as text, from `File.WriteRawBytes` example.
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
-*See also:* [`File.WriteBytes`](File#filewritebytes)
+*See also:* [`File.WriteRawBytes`](File#filewriterawbytes)
 
 ---
 
@@ -612,10 +612,10 @@ will open the file test.dat, read `first_value`, skip 256 bytes, read
 
 ---
 
-### `File.WriteBytes`
+### `File.WriteRawBytes`
 
 ```ags
-int File.WriteBytes(char bytes[], int index, int count);
+int File.WriteRawBytes(char bytes[], int index, int count);
 ```
 
 Writes up to "count" number of bytes from the provided dynamic array, starting with certain index.
@@ -642,7 +642,7 @@ void room_AfterFadeIn()
   buffer[4] = 'o';
   buffer[5] = '!';
   
-  int written = f.WriteBytes(buffer, 0, buf_len);
+  int written = f.WriteRawBytes(buffer, 0, buf_len);
   f.Close();
   
   Display("Wrote '%d' bytes", written);
@@ -653,7 +653,7 @@ Writes the string `"Hello!"` using write bytes to a file named `"example.dat"`.
 
 *Compatibility:* Supported by **AGS 3.6.2** and later versions.
 
-*See also:* [`File.ReadBytes`](File#filereadbytes)
+*See also:* [`File.ReadRawBytes`](File#filereadrawbytes)
 
 ---
 
